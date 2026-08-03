@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prof. Gelvazio Camargo — SENAI/SC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* ── Tokens ── */
+    :root {
+      --bg:          #071425;
+      --surface:     #0D2137;
+      --surface-2:   #122B45;
+      --border:      #1A3A5C;
+      --accent:      #0891B2;
+      --accent-hl:   #22D3EE;
+      --senai:       #E31C23;
+      --green:       #10B981;
+      --text:        #E2EAF0;
+      --text-muted:  #7B9CB8;
+      --text-dim:    #4A6A8A;
+      --mono-bg:     #051020;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg:          #F0F5FA;
+        --surface:     #FFFFFF;
+        --surface-2:   #E8F0F8;
+        --border:      #C5D8EC;
+        --accent:      #0369A1;
+        --accent-hl:   #0891B2;
+        --senai:       #C01018;
+        --green:       #047857;
+        --text:        #0A1628;
+        --text-muted:  #4A6080;
+        --text-dim:    #8A9BB0;
+        --mono-bg:     #E4EDF7;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg:          #071425;
+      --surface:     #0D2137;
+      --surface-2:   #122B45;
+      --border:      #1A3A5C;
+      --accent:      #0891B2;
+      --accent-hl:   #22D3EE;
+      --senai:       #E31C23;
+      --green:       #10B981;
+      --text:        #E2EAF0;
+      --text-muted:  #7B9CB8;
+      --text-dim:    #4A6A8A;
+      --mono-bg:     #051020;
+    }
+
+    :root[data-theme="light"] {
+      --bg:          #F0F5FA;
+      --surface:     #FFFFFF;
+      --surface-2:   #E8F0F8;
+      --border:      #C5D8EC;
+      --accent:      #0369A1;
+      --accent-hl:   #0891B2;
+      --senai:       #C01018;
+      --green:       #047857;
+      --text:        #0A1628;
+      --text-muted:  #4A6080;
+      --text-dim:    #8A9BB0;
+      --mono-bg:     #E4EDF7;
+    }
+
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Barlow', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      font-size: 16px;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* ── Grid de fundo ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 48px 48px;
+      opacity: 0.25;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Tema toggle ── */
+    .theme-btn {
+      position: fixed;
+      top: 1.25rem;
+      right: 1.25rem;
+      z-index: 100;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── Wrapper ── */
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    /* ══════════════════════════════
+       HERO
+    ══════════════════════════════ */
+    .hero {
+      padding: 3.5rem 0 3rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: end;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      line-height: 0.9;
+      text-wrap: balance;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .hero-name span {
+      color: var(--accent);
+    }
+
+    .hero-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 400;
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      color: var(--text-muted);
+      margin-top: 0.75rem;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: 2px;
+      letter-spacing: 0.04em;
+    }
+    .badge-senai {
+      background: var(--senai);
+      color: #fff;
+    }
+    .badge-loc {
+      background: var(--surface-2);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    .hero-avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 3px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 2.8rem;
+      color: var(--accent);
+      flex-shrink: 0;
+      position: relative;
+    }
+    .hero-avatar::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+    }
+
+    /* ══════════════════════════════
+       SEÇÕES
+    ══════════════════════════════ */
+    .section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child { border-bottom: none; }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .section-rule {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ══════════════════════════════
+       TIMELINE DE EXPERIÊNCIAS
+    ══════════════════════════════ */
+    .exp-grid {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .exp-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--border);
+      padding: 1.5rem 1.75rem;
+      transition: border-color 0.2s;
+      position: relative;
+    }
+    .exp-card:hover { border-left-color: var(--accent); }
+    .exp-card.highlight { border-left-color: var(--accent); }
+    .exp-card.highlight-green { border-left-color: var(--green); }
+    .exp-card.highlight-senai { border-left-color: var(--senai); }
+
+    .exp-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .exp-role {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+      color: var(--text);
+    }
+
+    .exp-period {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--accent);
+      white-space: nowrap;
+      padding-top: 0.2rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .exp-company {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    .exp-duration {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      margin-top: 0.15rem;
+    }
+
+    .exp-desc {
+      margin-top: 1rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .exp-desc ul {
+      list-style: none;
+      display: grid;
+      gap: 0.35rem;
+    }
+    .exp-desc li::before {
+      content: '→ ';
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8em;
+    }
+
+    .exp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      padding: 0.2rem 0.55rem;
+      background: var(--mono-bg);
+      color: var(--accent-hl);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      letter-spacing: 0.02em;
+    }
+
+    /* Destaque: card atual */
+    .current-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      background: var(--senai);
+      color: #fff;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-left: 0.75rem;
+      vertical-align: middle;
+    }
+    .current-badge::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #fff;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ══════════════════════════════
+       DESTAQUES — DOIS EIXOS
+    ══════════════════════════════ */
+    .dual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 720px) { .dual-grid { grid-template-columns: 1fr; } }
+
+    .axis-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1.75rem;
+    }
+
+    .axis-icon {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .axis-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .axis-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .axis-body {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .axis-stat {
+      margin-top: 1.25rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+    .stat-number {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 2.5rem;
+      color: var(--accent);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Linha verde para docência */
+    .axis-card.axis-green { border-top: 3px solid var(--green); }
+    .axis-card.axis-green .axis-label { color: var(--green); }
+    .axis-card.axis-green .stat-number { color: var(--green); }
+
+    /* Linha ciano para dev */
+    .axis-card.axis-dev { border-top: 3px solid var(--accent); }
+
+    /* ══════════════════════════════
+       JOVEM PROGRAMADOR — DESTAQUE
+    ══════════════════════════════ */
+    .jp-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .jp-block::before {
+      content: 'JOVEM PROGRAMADOR';
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 4rem;
+      color: var(--green);
+      opacity: 0.04;
+      letter-spacing: -0.03em;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .jp-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .jp-logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 4px;
+      background: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .jp-info-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+    .jp-info-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--text);
+      margin-top: 0.15rem;
+    }
+    .jp-info-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    .jp-body {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 600px) { .jp-body { grid-template-columns: 1fr; } }
+
+    .jp-item {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      padding-left: 1rem;
+      border-left: 2px solid var(--green);
+      line-height: 1.5;
+    }
+    .jp-item strong {
+      display: block;
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.2rem;
+    }
+
+    /* ══════════════════════════════
+       SKILLS
+    ══════════════════════════════ */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .skill-group {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1.1rem 1.25rem;
+    }
+
+    .skill-group-name {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 0.6rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .skill-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+      background: var(--mono-bg);
+      color: var(--accent-hl);
+      border-radius: 2px;
+    }
+
+    /* ══════════════════════════════
+       FORMAÇÃO
+    ══════════════════════════════ */
+    .edu-grid {
+      display: grid;
+      gap: 1rem;
+    }
+    .edu-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+    .edu-year {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--accent);
+      white-space: nowrap;
+      padding-top: 0.1rem;
+      font-variant-numeric: tabular-nums;
+      flex-shrink: 0;
+      width: 7rem;
+    }
+    .edu-degree {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .edu-school {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+    .edu-note {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      margin-top: 0.4rem;
+      font-style: italic;
+    }
+    .edu-current {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.65rem;
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.15rem 0.5rem;
+      border-radius: 2px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ══════════════════════════════
+       RECOMENDAÇÕES
+    ══════════════════════════════ */
+    .rec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 600px) { .rec-grid { grid-template-columns: 1fr; } }
+
+    .rec-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      position: relative;
+    }
+    .rec-card::before {
+      content: '"';
+      position: absolute;
+      top: 0.75rem;
+      right: 1rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 4rem;
+      color: var(--border);
+      line-height: 1;
+    }
+
+    .rec-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    .rec-author {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .rec-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .rec-name {
+      font-weight: 600;
+      font-size: 0.82rem;
+      color: var(--text);
+    }
+    .rec-role {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+
+    /* ══════════════════════════════
+       FOOTER
+    ══════════════════════════════ */
+    .footer {
+      padding: 2rem 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-brand {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text-dim);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .footer-contact {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .footer-contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .footer-contact a:hover { color: var(--accent-hl); }
+
+    /* ══════════════════════════════
+       RESPONSIVO
+    ══════════════════════════════ */
+    @media (max-width: 640px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .hero-avatar {
+        order: -1;
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+      }
+    }
+
+    /* Foco acessível */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="theme-btn" onclick="toggleTheme()" aria-label="Alternar tema" title="Alternar tema claro/escuro">☀</button>
+
+  <div class="page">
+
+    <!-- ══ HERO ══ -->
+    <header class="hero">
+      <div class="hero-left">
+        <p class="hero-label">// SENAI/SC · Professor de TI</p>
+        <h1 class="hero-name">Gelvazio<br><span>Camargo</span></h1>
+        <p class="hero-title">Professor de Desenvolvimento de Software &amp; Desenvolvedor Full Stack</p>
+        <div class="hero-meta">
+          <span class="badge badge-senai">SENAI/SC</span>
+          <span class="badge badge-loc">Rio do Sul · SC</span>
+          <span class="badge badge-loc">+15 anos em TI</span>
+        </div>
+      </div>
+      <div class="hero-avatar" aria-hidden="true">GC</div>
+    </header>
+
+    <!-- ══ DOIS EIXOS ══ -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Perfil</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="dual-grid">
+        <div class="axis-card axis-dev">
+          <div class="axis-label">// Eixo 1 — Indústria</div>
+          <div class="axis-title">Desenvolvedor de Sistemas</div>
+          <p class="axis-body">
+            Mais de uma década desenvolvendo sistemas reais para empresas brasileiras, com foco em PHP, Python e Laravel. Atuou em integrações bancárias, APIs de gestão financeira, automação de processos e modernização de sistemas legados.
+          </p>
+          <div class="axis-stat">
+            <span class="stat-number">7</span>
+            <span class="stat-label">anos como Dev Full Stack na T2</span>
+          </div>
+        </div>
+
+        <div class="axis-card axis-green">
+          <div class="axis-label">// Eixo 2 — Educação</div>
+          <div class="axis-title">Professor de Programação</div>
+          <p class="axis-body">
+            Experiência docente consolidada no SENAI e no Senac, lecionando backend, frontend, lógica de programação e inteligência artificial. Comprometido com a formação profissional de jovens programadores e o alinhamento ao mercado de trabalho.
+          </p>
+          <div class="axis-stat">
+            <span class="stat-number">3,5</span>
+            <span class="stat-label">anos no Senac · Jovem Programador</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ JOVEM PROGRAMADOR (DESTAQUE) ══ -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Senac · Jovem Programador</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="jp-block">
+        <div class="jp-header">
+          <div class="jp-logo">JP</div>
+          <div>
+            <div class="jp-info-label">Senac Santa Catarina · Meio período</div>
+            <div class="jp-info-title">Professor de Desenvolvimento de Software</div>
+            <div class="jp-info-sub">Fevereiro de 2022 &ndash; Julho de 2025 · 3 anos e 6 meses · Rio do Sul, SC</div>
+          </div>
+        </div>
+
+        <div class="jp-body">
+          <div class="jp-item">
+            <strong>Backend &amp; Frontend</strong>
+            Ministração de aulas em Desenvolvimento de Sistemas com abordagem completa de back e front-end
+          </div>
+          <div class="jp-item">
+            <strong>Linguagens ensinadas</strong>
+            PHP, Java, Spring Boot, HTML5, CSS3 e JavaScript com foco em projetos práticos
+          </div>
+          <div class="jp-item">
+            <strong>Fundamentos</strong>
+            Orientação em APIs REST, banco de dados relacional e Programação Orientada a Objetos (POO)
+          </div>
+          <div class="jp-item">
+            <strong>Projetos integradores</strong>
+            Planejamento e orientação de projetos alinhados às exigências reais do mercado de TI
+          </div>
+          <div class="jp-item">
+            <strong>Avaliação e acompanhamento</strong>
+            Acompanhamento contínuo do desempenho dos alunos e execução de aulas teóricas e práticas
+          </div>
+          <div class="jp-item">
+            <strong>Formação profissional</strong>
+            Orientação de projetos finais e preparação dos alunos para inserção no mercado de desenvolvimento
+          </div>
+        </div>
+
+        <div class="exp-tags" style="margin-top:1.5rem">
+          <span class="tag">PHP</span>
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">API REST</span>
+          <span class="tag">POO</span>
+          <span class="tag">Python</span>
+          <span class="tag">JSON</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ EXPERIÊNCIA PROFISSIONAL ══ -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Trajetória</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="exp-grid">
+
+        <!-- SENAI — atual -->
+        <div class="exp-card highlight-senai">
+          <div class="exp-top">
+            <div>
+              <div class="exp-role">
+                Professor de Desenvolvimento de Software
+                <span class="current-badge">em atividade</span>
+              </div>
+              <div class="exp-company">SENAI/SC — Serviço Nacional de Aprendizagem Industrial · Tempo integral</div>
+              <div class="exp-duration">Rio do Sul, Santa Catarina, Brasil · No local</div>
+            </div>
+            <div class="exp-period">jul/2026 → atual</div>
+          </div>
+          <div class="exp-desc">
+            <ul>
+              <li>Desenvolvimento de software backend e frontend</li>
+              <li>Lógica de Programação e algoritmos</li>
+              <li>Inteligência Artificial aplicada ao desenvolvimento</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- T2 — 7 anos -->
+        <div class="exp-card highlight">
+          <div class="exp-top">
+            <div>
+              <div class="exp-role">Desenvolvedor Full Stack PHP | Python</div>
+              <div class="exp-company">T2 · Tempo integral · Remoto</div>
+              <div class="exp-duration">Rio do Sul, Santa Catarina · 7 anos</div>
+            </div>
+            <div class="exp-period">jun/2019 → mai/2026</div>
+          </div>
+          <div class="exp-desc">
+            <ul>
+              <li>Integrações com Questor, Tecnospeed NFS-e, Nexxera, Bradesco CNAB 240 e Cielo</li>
+              <li>Desenvolvimento de sistemas em Python e PHP/Laravel</li>
+              <li>Criação de APIs REST e automação de processos</li>
+              <li>Conciliação bancária e soluções para crédito e gestão financeira</li>
+              <li>Migração e modernização de sistemas legados</li>
+            </ul>
+          </div>
+          <div class="exp-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">Python</span>
+            <span class="tag">API REST</span>
+            <span class="tag">CNAB</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+
+        <!-- IPM Sistemas -->
+        <div class="exp-card">
+          <div class="exp-top">
+            <div>
+              <div class="exp-role">Analista Desenvolvedor de Sistemas / Desenvolvedor Web</div>
+              <div class="exp-company">IPM Sistemas · Rio do Sul e Região</div>
+              <div class="exp-duration">3 anos e 2 meses</div>
+            </div>
+            <div class="exp-period">mar/2016 → abr/2019</div>
+          </div>
+          <div class="exp-desc">
+            <ul>
+              <li>Desenvolvimento de aplicações web para Gestão Pública Municipal</li>
+              <li>Análise de sistemas para Procuradorias Municipais</li>
+              <li>Integração de sistemas, levantamento de requisitos e melhorias</li>
+              <li>Suporte técnico e resolução de demandas funcionais</li>
+            </ul>
+          </div>
+          <div class="exp-tags">
+            <span class="tag">JSON</span>
+            <span class="tag">API REST</span>
+            <span class="tag">Web</span>
+            <span class="tag">Gestão Pública</span>
+          </div>
+        </div>
+
+        <!-- IBS Sistemas -->
+        <div class="exp-card">
+          <div class="exp-top">
+            <div>
+              <div class="exp-role">Analista de Qualidade / Especialista em Suporte de TI</div>
+              <div class="exp-company">IBS Sistemas · Rio do Sul, Santa Catarina</div>
+              <div class="exp-duration">4 anos</div>
+            </div>
+            <div class="exp-period">ago/2011 → jul/2015</div>
+          </div>
+          <div class="exp-desc">
+            <ul>
+              <li>Gestão de releases e controle de versões de software Desktop e ERP</li>
+              <li>Automação de testes com TestComplete e Delphi Script</li>
+              <li>Validação de sistemas Desktop, ERP e Mobile</li>
+              <li>Suporte técnico e análise de regras de negócio</li>
+            </ul>
+          </div>
+          <div class="exp-tags">
+            <span class="tag">QA</span>
+            <span class="tag">TestComplete</span>
+            <span class="tag">Delphi</span>
+            <span class="tag">ERP</span>
+            <span class="tag">API REST</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ COMPETÊNCIAS ══ -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Competências Técnicas</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-name">// Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring Boot</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">// Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">// APIs &amp; Integração</div>
+          <div class="skill-tags">
+            <span class="skill-tag">API REST</span>
+            <span class="skill-tag">JSON</span>
+            <span class="skill-tag">CNAB 240</span>
+            <span class="skill-tag">NFS-e</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">// Inteligência Artificial</div>
+          <div class="skill-tags">
+            <span class="skill-tag">LLM</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Agentes</span>
+            <span class="skill-tag">IA Aplicada</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">// Banco de dados</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">// Dev &amp; Qualidade</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">POO</span>
+            <span class="skill-tag">Testes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FORMAÇÃO ══ -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Formação Acadêmica</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-year">2015<br>→ 2017</div>
+          <div>
+            <div class="edu-degree">Tecnólogo em Análise e Desenvolvimento de Sistemas</div>
+            <div class="edu-school">UNINTER Centro Universitário Internacional</div>
+            <div class="edu-note">Análise, modelagem e desenvolvimento de sistemas de software</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ RECOMENDAÇÕES ══ -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Recomendações</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="rec-grid">
+        <div class="rec-card">
+          <p class="rec-text">
+            "Recomendo muito o Gelvazio! Trabalhamos juntos na T2 e pude acompanhar de perto seu comprometimento, agilidade e capacidade de resolução de problemas. Ele possui uma curva de aprendizado rápida e uma energia excelente para trabalhar em equipe, sempre somando muito no ambiente de trabalho."
+          </p>
+          <div class="rec-author">
+            <div class="rec-avatar">EN</div>
+            <div>
+              <div class="rec-name">Erick Nunes</div>
+              <div class="rec-role">Desenvolvedor Full-Stack · T2</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rec-card">
+          <p class="rec-text">
+            "Tive a oportunidade de coordenar uma turma em que o professor Gelvazio atuou como docente na área de programação. Seu profissionalismo, organização e dedicação aos alunos contribuíram significativamente para o sucesso da turma. Recomendo como um profissional qualificado, comprometido e apaixonado pela educação e pela tecnologia."
+          </p>
+          <div class="rec-author">
+            <div class="rec-avatar" style="background:var(--green)">LR</div>
+            <div>
+              <div class="rec-name">Luis Ricardo Rosa</div>
+              <div class="rec-role">Coordenador · Senac Santa Catarina</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="footer">
+      <div class="footer-brand">Prof. Gelvazio Camargo · SENAI/SC · 2026</div>
+      <div class="footer-contact">
+        <a href="mailto:gelvazio.c@edu.sc.senai.br">gelvazio.c@edu.sc.senai.br</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.linkedin.com/in/gelvaziocamargo/" target="_blank" rel="noopener">linkedin.com/in/gelvaziocamargo</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const root = document.documentElement;
+      const current = root.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      document.querySelector('.theme-btn').textContent = next === 'dark' ? '☀' : '☾';
+    }
+
+    // Respeita preferência do sistema na inicialização
+    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      document.querySelector('.theme-btn').textContent = '☾';
+    }
+  </script>
+</body>
+</html>
