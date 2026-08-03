@@ -45,11 +45,14 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 
 /* Materials list */
 .materiais-list{display:flex;flex-direction:column;gap:6px}
-.material-btn{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:6px;border:1px solid #e0e0e0;background:#fafafa;text-decoration:none;color:#004384;font-size:12px;font-weight:500;transition:background .15s,border-color .15s}
+.material-row{display:flex;align-items:center;gap:5px}
+.material-btn{flex:1;display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:6px;border:1px solid #e0e0e0;background:#fafafa;text-decoration:none;color:#004384;font-size:12px;font-weight:500;transition:background .15s,border-color .15s;min-width:0}
 .material-btn:hover{background:#e8f0fe;border-color:#004384}
 .material-icon{font-size:15px;flex-shrink:0}
 .material-nome{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .material-arrow{font-size:11px;color:#999;flex-shrink:0}
+.material-pdf{display:flex;align-items:center;justify-content:center;gap:3px;padding:8px 9px;border-radius:6px;border:1px solid #f7941d;background:#fff8f0;color:#f7941d;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0;text-decoration:none;transition:background .15s}
+.material-pdf:hover{background:#f7941d;color:#fff}
 
 /* Locked overlay */
 .locked-badge{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px 0 4px;color:#999}
@@ -68,11 +71,14 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 .modal-close{background:none;border:none;font-size:22px;color:#999;cursor:pointer;padding:2px 6px;border-radius:4px;line-height:1}
 .modal-close:hover{background:#f1f3f4;color:#444}
 .modal-list{display:flex;flex-direction:column;gap:8px}
-.modal-material-btn{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:8px;border:1px solid #e0e0e0;background:#fafafa;text-decoration:none;color:#004384;font-size:13px;font-weight:500;transition:background .15s,border-color .15s}
+.modal-material-row{display:flex;align-items:center;gap:6px}
+.modal-material-btn{flex:1;display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:8px;border:1px solid #e0e0e0;background:#fafafa;text-decoration:none;color:#004384;font-size:13px;font-weight:500;transition:background .15s,border-color .15s}
 .modal-material-btn:hover{background:#e8f0fe;border-color:#004384}
 .modal-material-icon{font-size:20px}
 .modal-material-nome{flex:1}
 .modal-material-arrow{color:#0071e3;font-size:14px}
+.modal-material-pdf{display:flex;align-items:center;gap:4px;padding:10px 12px;border-radius:8px;border:1px solid #f7941d;background:#fff8f0;color:#f7941d;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:background .15s}
+.modal-material-pdf:hover{background:#f7941d;color:#fff}
 </style>
 </head>
 <body>
@@ -148,11 +154,14 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 
     const materiaisHTML = disponivel
       ? aula.materiais.map(m => `
-          <a class="material-btn" href="${m.arquivo}" target="_blank">
-            <span class="material-icon">${m.icone || '📄'}</span>
-            <span class="material-nome">${m.nome}</span>
-            <span class="material-arrow">↗</span>
-          </a>`).join('')
+          <div class="material-row">
+            <a class="material-btn" href="${m.arquivo}" target="_blank">
+              <span class="material-icon">${m.icone || '📄'}</span>
+              <span class="material-nome">${m.nome}</span>
+              <span class="material-arrow">↗</span>
+            </a>
+            <a class="material-pdf" href="${m.arquivo}#print" target="_blank" title="Abrir e imprimir como PDF">⬇ PDF</a>
+          </div>`).join('')
       : `<div class="locked-badge">
            <span class="locked-icon">🔒</span>
            <span class="locked-msg">Conteúdo indisponível</span>
@@ -197,11 +206,14 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
     document.getElementById('modalTitulo').textContent = aula.titulo;
     const list = document.getElementById('modalList');
     list.innerHTML = aula.materiais.map(m => `
-      <a class="modal-material-btn" href="${m.arquivo}" target="_blank">
-        <span class="modal-material-icon">${m.icone || '📄'}</span>
-        <span class="modal-material-nome">${m.nome}</span>
-        <span class="modal-material-arrow">↗</span>
-      </a>`).join('');
+      <div class="modal-material-row">
+        <a class="modal-material-btn" href="${m.arquivo}" target="_blank">
+          <span class="modal-material-icon">${m.icone || '📄'}</span>
+          <span class="modal-material-nome">${m.nome}</span>
+          <span class="modal-material-arrow">↗</span>
+        </a>
+        <a class="modal-material-pdf" href="${m.arquivo}#print" target="_blank" title="Abrir e imprimir como PDF">⬇ PDF</a>
+      </div>`).join('');
     modalBg.classList.add('open');
   }
 })();

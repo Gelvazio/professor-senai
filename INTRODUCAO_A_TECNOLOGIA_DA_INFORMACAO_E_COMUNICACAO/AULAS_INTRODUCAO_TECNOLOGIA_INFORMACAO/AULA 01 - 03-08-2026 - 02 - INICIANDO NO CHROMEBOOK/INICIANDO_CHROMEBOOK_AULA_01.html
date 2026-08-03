@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -67,6 +67,18 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;height
 .dots{display:flex;gap:5px;align-items:center}
 .dot{width:7px;height:7px;border-radius:50%;background:#ccc;cursor:pointer;border:none;padding:0;transition:.2s}
 .dot.on{background:#004384;transform:scale(1.35)}
+@media print {
+  @page { margin: 8mm; size: A4 landscape; }
+  body { height: auto !important; overflow: visible !important; background: #fff !important; }
+  .topbar, .nav, .progress { display: none !important; }
+  .btn-pdf { display: none !important; }
+  .main { height: auto !important; padding: 0 !important; align-items: flex-start !important; display: block !important; }
+  .wrap { max-width: 100% !important; aspect-ratio: unset !important; position: static !important; height: auto !important; width: 100% !important; }
+  .slide { position: static !important; display: flex !important; break-after: page !important; page-break-after: always !important; min-height: 140mm !important; border-radius: 0 !important; box-shadow: none !important; }
+  .slide:last-child { break-after: avoid !important; page-break-after: avoid !important; }
+}
+.btn-pdf{background:#f7941d;color:#fff;border:none;border-radius:5px;padding:4px 12px;font-size:12px;cursor:pointer;font-family:inherit;font-weight:600;display:flex;align-items:center;gap:5px;transition:.2s}
+.btn-pdf:hover{background:#e07a00}
 </style>
 </head>
 <body>
@@ -76,6 +88,7 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;height
     <span class="logo">SENAI</span>
     <span class="top-title">Aula 01 — Iniciando no Chromebook</span>
   </div>
+  <button class="btn-pdf" onclick="window.print()" title="Salvar como PDF">⬇ PDF</button>
   <span class="counter" id="ctr">1 / 10</span>
 </div>
 
@@ -238,6 +251,7 @@ function nav(d){go(cur+d);}
 function go(i){if(i<0||i>=total)return;cur=i;upd();}
 document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowDown')nav(1);if(e.key==='ArrowLeft'||e.key==='ArrowUp')nav(-1);});
 upd();
+if(window.location.hash==="#print"){window.addEventListener("load",function(){setTimeout(function(){window.print();},500);});}
 </script>
 </body>
 </html>
