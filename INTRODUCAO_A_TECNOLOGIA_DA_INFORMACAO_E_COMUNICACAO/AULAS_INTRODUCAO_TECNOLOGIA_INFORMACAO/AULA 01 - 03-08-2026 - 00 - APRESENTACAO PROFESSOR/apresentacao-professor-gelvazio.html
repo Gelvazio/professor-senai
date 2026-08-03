@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -763,11 +763,36 @@
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; transition: none !important; }
     }
+
+    /* PDF Print */
+    .btn-pdf-float {
+      position: fixed;
+      top: 4.75rem;
+      right: 1.25rem;
+      z-index: 100;
+      background: #f7941d;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.2s;
+    }
+    .btn-pdf-float:hover { background: #e07a00; }
+    @media print {
+      .theme-btn, .btn-pdf-float { display: none !important; }
+    }
   </style>
 </head>
 <body>
 
   <button class="theme-btn" onclick="toggleTheme()" aria-label="Alternar tema" title="Alternar tema claro/escuro">☀</button>
+  <button class="btn-pdf-float" onclick="window.print()" title="Salvar como PDF">⬇ PDF</button>
 
   <div class="page">
 
@@ -1139,6 +1164,7 @@
     if (window.matchMedia('(prefers-color-scheme: light)').matches) {
       document.querySelector('.theme-btn').textContent = '☾';
     }
-  </script>
+  if(window.location.hash==="#print"){window.addEventListener("load",function(){setTimeout(function(){window.print();},500);});}
+</script>
 </body>
 </html>
