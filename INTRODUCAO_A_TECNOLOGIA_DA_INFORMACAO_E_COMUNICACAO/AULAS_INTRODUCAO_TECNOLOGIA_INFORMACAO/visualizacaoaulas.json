@@ -1,0 +1,170 @@
+{
+  "curso": "Introdução à Tecnologia da Informação e Comunicação",
+  "aulas": [
+    {
+      "numero": 1,
+      "data": "03-08-2026",
+      "diaSemana": "Segunda-feira",
+      "titulo": "Comunicação em Equipes de Trabalho",
+      "icone": "🤝",
+      "visivel": 1,
+      "materiais": [
+        {
+          "nome": "Apresentação do Professor",
+          "icone": "👨‍🏫",
+          "arquivo": "AULA 01 - 03-08-2026 - 00 - APRESENTACAO PROFESSOR/apresentacao-professor-gelvazio.html"
+        },
+        {
+          "nome": "História da Computação",
+          "icone": "🖥️",
+          "arquivo": "AULA 01 - 03-08-2026 - 01 - HISTORIA DA COMPUTACAO/HISTORIA_COMPUTACAO_AULA_01.html"
+        },
+        {
+          "nome": "Iniciando no Chromebook",
+          "icone": "💻",
+          "arquivo": "AULA 01 - 03-08-2026 - 02 - INICIANDO NO CHROMEBOOK/INICIANDO_CHROMEBOOK_AULA_01.html"
+        },
+        {
+          "nome": "Conteúdo da Aula",
+          "icone": "📖",
+          "arquivo": "AULA 01 - 03-08-2026 - 03 - CONTEUDO AULA/SLIDE_AULA_01.html"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "data": "04-08-2026",
+      "diaSemana": "Terça-feira",
+      "titulo": "Segurança da Informação",
+      "icone": "🔒",
+      "visivel": 0,
+      "materiais": [
+        {
+          "nome": "Slide da Aula",
+          "icone": "📊",
+          "arquivo": "AULA 02 - 04-08-2026/SLIDE_AULA_02.html"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "data": "05-08-2026",
+      "diaSemana": "Quarta-feira",
+      "titulo": "Internet e World Wide Web",
+      "icone": "🌐",
+      "visivel": 0,
+      "materiais": [
+        {
+          "nome": "Slide da Aula",
+          "icone": "📊",
+          "arquivo": "AULA 03 - 05-08-2026/SLIDE_AULA_03.html"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "data": "06-08-2026",
+      "diaSemana": "Quinta-feira",
+      "titulo": "Hardware e Sistema Operacional",
+      "icone": "⚙️",
+      "visivel": 0,
+      "materiais": [
+        {
+          "nome": "Slide da Aula",
+          "icone": "📊",
+          "arquivo": "AULA 04 - 06-08-2026/SLIDE_AULA_04.html"
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "data": "07-08-2026",
+      "diaSemana": "Sexta-feira",
+      "titulo": "Google Docs — Editor de Textos",
+      "icone": "📝",
+      "visivel": 0,
+      "materiais": [
+        {
+          "nome": "Slide da Aula",
+          "icone": "📊",
+          "arquivo": "AULA 05 - 07-08-2026/SLIDE_AULA_05.html"
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "data": "10-08-2026",
+      "diaSemana": "Segunda-feira",
+      "titulo": "Google Sheets — Planilhas Eletrônicas",
+      "icone": "📊",
+      "visivel": 0,
+      "materiais": [
+        {
+          "nome": "Slide da Aula",
+          "icone": "📊",
+          "arquivo": "AULA 06 - 10-08-2026/SLIDE_AULA_06.html"
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "data": "11-08-2026",
+      "diaSemana": "Terça-feira",
+      "titulo": "Google Slides — Editor de Apresentações",
+      "icone": "🎨",
+      "visivel": 0,
+      "materiais": [
+        {
+          "nome": "Slide da Aula",
+          "icone": "📊",
+          "arquivo": "AULA 07 - 11-08-2026/SLIDE_AULA_07.html"
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "data": "12-08-2026",
+      "diaSemana": "Quarta-feira",
+      "titulo": "Textos Técnicos e Revisão Geral",
+      "icone": "📋",
+      "visivel": 0,
+      "materiais": [
+        {
+          "nome": "Slide da Aula",
+          "icone": "📊",
+          "arquivo": "AULA 08 - 12-08-2026/SLIDE_AULA_08.html"
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "data": "13-08-2026",
+      "diaSemana": "Quinta-feira",
+      "titulo": "Avaliação Prática — Google Workspace",
+      "icone": "✏️",
+      "visivel": 0,
+      "materiais": [
+        {
+          "nome": "Slide da Aula",
+          "icone": "📊",
+          "arquivo": "AULA 09 - 13-08-2026/SLIDE_AULA_09.html"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "data": "14-08-2026",
+      "diaSemana": "Sexta-feira",
+      "titulo": "Avaliação Objetiva — Múltipla Escolha",
+      "icone": "🏆",
+      "visivel": 0,
+      "materiais": [
+        {
+          "nome": "Slide da Aula",
+          "icone": "📊",
+          "arquivo": "AULA 10 - 14-08-2026/SLIDE_AULA_10.html"
+        }
+      ]
+    }
+  ]
+}
