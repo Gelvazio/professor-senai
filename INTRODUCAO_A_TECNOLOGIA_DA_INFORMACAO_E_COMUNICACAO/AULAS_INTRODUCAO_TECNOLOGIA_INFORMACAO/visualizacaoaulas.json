@@ -40,9 +40,14 @@
       "visivel": 1,
       "materiais": [
         {
-          "nome": "Slide da Aula",
+          "nome": "Elementos da Comunicação",
           "icone": "📊",
           "arquivo": "AULA 02 - 04-08-2026 - ELEMENTOS DA COMUNICAÇÃO/SLIDE_AULA_02.html"
+        },
+        {
+          "nome": "Comunicação em Equipes",
+          "icone": "🤝",
+          "arquivo": "AULA 02 - 04-08-2026 - ELEMENTOS DA COMUNICAÇÃO/SLIDE_AULA_02_COMUNICACAO.html"
         }
       ]
     },
