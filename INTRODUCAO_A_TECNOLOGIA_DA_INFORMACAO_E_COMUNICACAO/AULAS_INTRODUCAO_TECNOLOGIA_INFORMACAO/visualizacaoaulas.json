@@ -35,14 +35,14 @@
       "numero": 2,
       "data": "04-08-2026",
       "diaSemana": "Terça-feira",
-      "titulo": "Segurança da Informação",
+      "titulo": "Comunicação em Equipes de Trabalho e Elementos da Comunicação",
       "icone": "🔒",
-      "visivel": 0,
+      "visivel": 1,
       "materiais": [
         {
           "nome": "Slide da Aula",
           "icone": "📊",
-          "arquivo": "AULA 02 - 04-08-2026/SLIDE_AULA_02.html"
+          "arquivo": "AULA 02 - 04-08-2026 - ELEMENTOS DA COMUNICAÇÃO/SLIDE_AULA_02.html"
         }
       ]
     },
@@ -57,7 +57,7 @@
         {
           "nome": "Slide da Aula",
           "icone": "📊",
-          "arquivo": "AULA 03 - 05-08-2026/SLIDE_AULA_03.html"
+          "arquivo": "AULA 03 - 05-08-2026 - COMUNICAÇÃO EM EQUIPES/SLIDE_AULA_03.html"
         }
       ]
     },
