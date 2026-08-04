@@ -54,11 +54,43 @@ dupla 14
 isaque 
 cauan lucas
 
-
-
-
 site de digitacao
 agilefingers.com/pt/aluna
+
+
+
+#chamada 04-08
+caio 
+wagner 
+eliza
+andrew
+
+#Problemas usuario e senha
+Mirela:usuario funciona mas senha e incorreta
+Orientacao:usar em dupla
+
+Maria Clara:
+maria_cr_farias@estudante.sesisenai.org.br
+Não existe usuario 
+Orientacao:usar em dupla
+
+Andre:
+ja foi solicitado novo usuario pela SELMA.
+
+
+#Wagner nao logou 
+
+
+
+ 
+
+
+
+
+
+
+
+
 
 
 

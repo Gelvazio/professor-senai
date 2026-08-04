@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aula 02 — Elementos da Comunicação</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+.topbar{background:#fff;border-bottom:1px solid #ddd;padding:7px 18px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.logo{background:#004384;color:#fff;font-weight:700;font-size:13px;padding:3px 10px;border-radius:4px;letter-spacing:.5px}
+.top-title{font-size:13px;color:#444;font-weight:500;margin-left:10px}
+.counter{font-size:12px;color:#666;background:#f1f3f4;padding:3px 12px;border-radius:20px}
+.main{flex:1;display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden}
+.wrap{width:100%;max-width:960px;aspect-ratio:16/9;position:relative}
+.slide{position:absolute;inset:0;background:#fff;border-radius:4px;box-shadow:0 2px 12px rgba(0,0,0,.18);padding:44px 56px;display:none;flex-direction:column;justify-content:center;overflow:hidden}
+.slide.on{display:flex}
+
+/* Capa */
+.slide-capa{background:linear-gradient(135deg,#004384 0%,#0055b3 60%,#003572 100%);color:#fff;align-items:center;text-align:center;gap:12px}
+.capa-badge{background:rgba(255,255,255,.15);font-size:11px;padding:3px 14px;border-radius:20px;letter-spacing:1px;text-transform:uppercase}
+.capa-icon{font-size:50px;line-height:1}
+.capa-titulo{font-size:30px;font-weight:700;line-height:1.25;max-width:680px}
+.capa-sub{font-size:14px;opacity:.8;margin-top:4px}
+
+/* Títulos e listas */
+.slide-titulo{font-size:22px;font-weight:600;color:#004384;border-bottom:3px solid #f7941d;padding-bottom:8px;margin-bottom:16px}
+.pontos{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:13px;color:#333}
+.pontos>li{display:flex;align-items:flex-start;gap:9px;line-height:1.45}
+.pontos>li::before{content:"▶";color:#f7941d;font-size:10px;margin-top:3px;flex-shrink:0}
+.pontos ul{margin:4px 0 0 14px}
+.pontos li.sub{font-size:12px;color:#555;list-style:disc;list-style-position:inside;margin-top:2px}
+.pontos li.sub::before{display:none}
+
+/* Grid de cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.card{background:#f0f4ff;border-left:4px solid #004384;border-radius:0 8px 8px 0;padding:10px 12px}
+.card .c-titulo{font-size:12px;font-weight:700;color:#004384;margin-bottom:4px}
+.card .c-texto{font-size:11px;color:#444;line-height:1.4}
+.card-orange{border-left-color:#f7941d}
+.card-green{background:#f0fff4;border-left-color:#27ae60}
+.card-red{background:#fff0f0;border-left-color:#e74c3c}
+
+/* Badge de elemento */
+.elem-badge{display:inline-flex;align-items:center;gap:8px;background:#004384;color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:12px;align-self:flex-start}
+.elem-num{background:#f7941d;color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900}
+
+/* Diagrama */
+.diag{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;margin:10px 0}
+.d-box{background:#004384;color:#fff;font-size:10px;font-weight:700;padding:8px 12px;border-radius:6px;text-align:center;line-height:1.3}
+.d-arr{font-size:18px;color:#f7941d;padding:0 4px;font-weight:700}
+.d-yellow{background:#f7941d}
+.d-teal{background:#1abc9c}
+
+/* Tabela simples */
+.tabela{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px}
+.tabela th{background:#004384;color:#fff;padding:7px 10px;text-align:left}
+.tabela td{padding:6px 10px;border-bottom:1px solid #eee;color:#333}
+.tabela tr:nth-child(even) td{background:#f8f9ff}
+
+/* Atividade */
+.slide-atividade{background:linear-gradient(135deg,#0d2137,#0f3460);color:#fff}
+.slide-atividade .slide-titulo{color:#34e0d7;border-color:#34e0d7}
+.slide-atividade .pontos>li{color:#e6e3ff}
+.slide-atividade .pontos>li::before{color:#34e0d7}
+.slide-atividade .pontos li.sub{color:rgba(255,255,255,.88)}
+.at-tag{display:inline-block;background:#34e0d7;color:#0d2137;font-size:11px;font-weight:700;padding:3px 12px;border-radius:20px;margin-bottom:12px;align-self:flex-start;text-transform:uppercase;letter-spacing:.5px}
+.at-num{display:inline-block;background:#f7941d;color:#fff;font-size:10px;font-weight:700;padding:2px 9px;border-radius:20px;margin-left:6px}
+
+/* Encerramento */
+.slide-enc{background:linear-gradient(135deg,#004384,#f7941d);color:#fff;align-items:center;text-align:center}
+.slide-enc .slide-titulo{color:#fff;border-color:rgba(255,255,255,.4);text-align:center}
+.enc-icon{font-size:42px;margin-bottom:8px}
+.enc-pontos>li{color:rgba(255,255,255,.9);justify-content:center}
+
+/* Rodapé */
+.nota-rodape{margin-top:auto;padding-top:10px;font-size:10px;color:#999;border-top:1px solid #eee;font-style:italic}
+.slide-atividade .nota-rodape{color:rgba(255,255,255,.4);border-color:rgba(255,255,255,.12)}
+
+.progress{height:4px;background:#e0e0e0;flex-shrink:0}
+.pfill{height:100%;background:#004384;transition:width .3s}
+.nav{background:#fff;border-top:1px solid #ddd;padding:9px 18px;display:flex;align-items:center;justify-content:center;gap:12px;flex-shrink:0}
+.btn{background:#004384;color:#fff;border:none;border-radius:6px;padding:7px 18px;font-size:13px;cursor:pointer;font-family:inherit;transition:.2s}
+.btn:hover{background:#0066cc}
+.btn:disabled{background:#ccc;cursor:default}
+.dots{display:flex;gap:5px;align-items:center}
+.dot{width:7px;height:7px;border-radius:50%;background:#ccc;cursor:pointer;border:none;padding:0;transition:.2s}
+.dot.on{background:#004384;transform:scale(1.35)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="display:flex;align-items:center">
+    <span class="logo">SENAI</span>
+    <span class="top-title">Aula 02 — Elementos da Comunicação</span>
+  </div>
+  <span class="counter" id="ctr">1 / 26</span>
+</div>
+
+<div class="main"><div class="wrap">
+
+<!-- SLIDE 1 – CAPA -->
+<div class="slide slide-capa on">
+  <div class="capa-badge">SENAI — Aprendizagem Industrial · 04/08/2026</div>
+  <div class="capa-icon">💬</div>
+  <h1 class="capa-titulo">Elementos da Comunicação</h1>
+  <div class="capa-sub">Aula 02 · UC1 — Introdução à TIC · Professor Gelvazio</div>
+</div>
+
+<!-- SLIDE 2 – O QUE É COMUNICAÇÃO -->
+<div class="slide">
+  <h2 class="slide-titulo">O que é Comunicação?</h2>
+  <ul class="pontos">
+    <li>Comunicação é o processo de <strong>transmitir informações, ideias e sentimentos</strong> entre pessoas ou grupos</li>
+    <li>É impossível não se comunicar — até o silêncio comunica algo</li>
+    <li>A comunicação é <strong>bidirecional</strong>: emissor e receptor trocam papéis durante o diálogo</li>
+    <li>No ambiente profissional, a comunicação é a principal ferramenta de trabalho</li>
+    <li>Estudar seus elementos nos permite identificar onde e por que ela falha</li>
+  </ul>
+  <div class="diag" style="margin-top:14px">
+    <div class="d-box">📢 EMISSOR</div>
+    <div class="d-arr">⇄</div>
+    <div class="d-yellow d-box">💬 MENSAGEM / CANAL</div>
+    <div class="d-arr">⇄</div>
+    <div class="d-box">👂 RECEPTOR</div>
+  </div>
+  <div class="nota-rodape">Ementa UC1 — Conhecimento 1: Elementos da Comunicação</div>
+</div>
+
+<!-- SLIDE 3 – POR QUE ESTUDAR -->
+<div class="slide">
+  <h2 class="slide-titulo">Por que Estudar os Elementos da Comunicação?</h2>
+  <div class="grid3" style="margin-top:6px">
+    <div class="card">
+      <div class="c-titulo">🏭 Na Indústria</div>
+      <div class="c-texto">Falhas de comunicação causam acidentes, retrabalho e perdas. Uma instrução mal transmitida pode parar uma linha de produção.</div>
+    </div>
+    <div class="card card-orange">
+      <div class="c-titulo">👥 No Trabalho em Equipe</div>
+      <div class="c-texto">Times que se comunicam bem produzem mais e com menos conflitos. A comunicação eficaz constrói confiança entre colegas.</div>
+    </div>
+    <div class="card card-green">
+      <div class="c-titulo">📈 Na Carreira</div>
+      <div class="c-texto">Profissionais que sabem se comunicar se destacam. Saber ouvir, falar e escrever com clareza é uma competência valorizada.</div>
+    </div>
+  </div>
+  <ul class="pontos" style="margin-top:14px">
+    <li>Pesquisas apontam que <strong>70% dos erros organizacionais</strong> têm origem em falhas de comunicação</li>
+    <li>Conhecer os 7 elementos permite diagnosticar e corrigir problemas de comunicação</li>
+  </ul>
+</div>
+
+<!-- SLIDE 4 – OS 7 ELEMENTOS: VISÃO GERAL -->
+<div class="slide">
+  <h2 class="slide-titulo">Os 7 Elementos da Comunicação</h2>
+  <div class="grid4">
+    <div class="card"><div class="c-titulo">📢 1. Emissor</div><div class="c-texto">Quem envia a mensagem</div></div>
+    <div class="card"><div class="c-titulo">👂 2. Receptor</div><div class="c-texto">Quem recebe a mensagem</div></div>
+    <div class="card"><div class="c-titulo">📝 3. Mensagem</div><div class="c-texto">O conteúdo transmitido</div></div>
+    <div class="card card-orange"><div class="c-titulo">📡 4. Canal</div><div class="c-texto">O meio de transmissão</div></div>
+    <div class="card card-orange"><div class="c-titulo">🔤 5. Código</div><div class="c-texto">O sistema de sinais usado</div></div>
+    <div class="card card-red"><div class="c-titulo">🔇 6. Ruído</div><div class="c-texto">Interferências na mensagem</div></div>
+    <div class="card card-green"><div class="c-titulo">🔄 7. Feedback</div><div class="c-texto">A resposta ao emissor</div></div>
+    <div class="card" style="background:#fffbf0;border-left-color:#f7941d"><div class="c-titulo">💡 Dica</div><div class="c-texto">Todos os elementos são necessários para uma comunicação completa</div></div>
+  </div>
+</div>
+
+<!-- SLIDE 5 – EMISSOR -->
+<div class="slide">
+  <div class="elem-badge"><span class="elem-num">1</span> EMISSOR</div>
+  <h2 class="slide-titulo">Emissor — Quem Envia a Mensagem</h2>
+  <ul class="pontos">
+    <li>O emissor é a <strong>fonte</strong> da comunicação — quem inicia o processo enviando uma mensagem</li>
+    <li>Pode ser: uma pessoa, um grupo, uma empresa, uma máquina (alarme, painel de controle)</li>
+    <li><strong>Responsabilidades do bom emissor:</strong>
+      <ul>
+        <li class="sub">Conhecer seu receptor — adaptar a linguagem e o nível de detalhe</li>
+        <li class="sub">Formular a mensagem com clareza e objetividade</li>
+        <li class="sub">Escolher o canal e o momento adequados para enviar a mensagem</li>
+        <li class="sub">Verificar se a mensagem foi recebida e compreendida</li>
+      </ul>
+    </li>
+    <li><strong>Exemplos:</strong> Supervisor dando instrução de trabalho, empresa enviando comunicado, alarme de segurança disparando</li>
+  </ul>
+  <div class="nota-rodape">Ementa 1.1 — Emissor</div>
+</div>
+
+<!-- SLIDE 6 – RECEPTOR -->
+<div class="slide">
+  <div class="elem-badge"><span class="elem-num">2</span> RECEPTOR</div>
+  <h2 class="slide-titulo">Receptor — Quem Recebe a Mensagem</h2>
+  <ul class="pontos">
+    <li>O receptor é quem <strong>recebe, decodifica e interpreta</strong> a mensagem enviada pelo emissor</li>
+    <li>O receptor não é passivo — ele <strong>filtra</strong> a mensagem com base em sua experiência, cultura e estado emocional</li>
+    <li><strong>O receptor eficaz:</strong>
+      <ul>
+        <li class="sub">Ouve com atenção sem interromper desnecessariamente</li>
+        <li class="sub">Faz perguntas quando não entende</li>
+        <li class="sub">Demonstra que recebeu a mensagem (feedback)</li>
+        <li class="sub">Não presume — confirma sua interpretação</li>
+      </ul>
+    </li>
+    <li>Os papéis de emissor e receptor se <strong>alternam</strong> durante o diálogo</li>
+    <li><strong>Escuta ativa:</strong> técnica de ouvir com total atenção, focando no significado e não apenas nas palavras</li>
+  </ul>
+  <div class="nota-rodape">Ementa 1.2 — Receptor</div>
+</div>
+
+<!-- SLIDE 7 – MENSAGEM -->
+<div class="slide">
+  <div class="elem-badge"><span class="elem-num">3</span> MENSAGEM</div>
+  <h2 class="slide-titulo">Mensagem — O Conteúdo Transmitido</h2>
+  <div class="grid2">
+    <div>
+      <ul class="pontos">
+        <li>A mensagem é o <strong>conteúdo</strong> que o emissor quer transmitir ao receptor</li>
+        <li>Pode ser: uma instrução, uma informação, uma opinião, um aviso, um sentimento</li>
+        <li><strong>Características de uma boa mensagem:</strong>
+          <ul>
+            <li class="sub">Clara: sem ambiguidades ou duplos sentidos</li>
+            <li class="sub">Objetiva: vai direto ao ponto</li>
+            <li class="sub">Completa: contém todas as informações necessárias</li>
+            <li class="sub">Adequada: adaptada ao receptor e ao contexto</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <table class="tabela">
+        <tr><th>Tipo</th><th>Exemplo</th></tr>
+        <tr><td>Verbal oral</td><td>Reunião, instrução falada</td></tr>
+        <tr><td>Verbal escrita</td><td>E-mail, memorando, ata</td></tr>
+        <tr><td>Visual</td><td>Placa, gráfico, tabela</td></tr>
+        <tr><td>Gestual</td><td>Sinal de mão, expressão facial</td></tr>
+        <tr><td>Sonora</td><td>Alarme, campainha, sirene</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="nota-rodape">Ementa 1.3 — Mensagem</div>
+</div>
+
+<!-- SLIDE 8 – CLAREZA NA MENSAGEM -->
+<div class="slide">
+  <h2 class="slide-titulo">Como Formular uma Mensagem Clara</h2>
+  <div class="grid3">
+    <div class="card card-green">
+      <div class="c-titulo">✅ Mensagem Clara</div>
+      <div class="c-texto">"Feche a válvula B3 às 14h antes de iniciar a manutenção do compressor."</div>
+    </div>
+    <div class="card card-red">
+      <div class="c-titulo">❌ Mensagem Confusa</div>
+      <div class="c-texto">"Lembra de fechar aquilo lá antes de mexer na máquina, tá bom?"</div>
+    </div>
+    <div class="card card-orange">
+      <div class="c-titulo">🔑 A Diferença</div>
+      <div class="c-texto">Especificidade: quê, qual, quando, como. Sem especificidade, o receptor interpreta por conta própria.</div>
+    </div>
+  </div>
+  <ul class="pontos" style="margin-top:14px">
+    <li><strong>Regra dos 5W + 1H:</strong> O quê (What), Quem (Who), Quando (When), Onde (Where), Por quê (Why), Como (How)</li>
+    <li>Antes de enviar, pergunte-se: <em>"Se eu fosse o receptor, eu entenderia o que preciso fazer?"</em></li>
+    <li>Mensagens longas demais também falham — excesso de informação gera confusão</li>
+  </ul>
+</div>
+
+<!-- SLIDE 9 – LINGUAGEM E CONTEXTO -->
+<div class="slide">
+  <h2 class="slide-titulo">Linguagem e Contexto na Mensagem</h2>
+  <ul class="pontos">
+    <li>A linguagem deve ser <strong>adequada ao receptor</strong> — não use termos técnicos com quem não os conhece</li>
+    <li>O <strong>contexto</strong> influencia o significado: a mesma palavra pode ter sentidos diferentes em situações distintas</li>
+    <li><strong>Exemplos de linguagem inadequada:</strong>
+      <ul>
+        <li class="sub">Falar em jargão técnico com um cliente leigo</li>
+        <li class="sub">Usar gírias em uma reunião formal com a diretoria</li>
+        <li class="sub">Enviar um e-mail formal onde um recado informal seria mais eficiente</li>
+      </ul>
+    </li>
+    <li><strong>Linguagem não-verbal também compõe a mensagem:</strong>
+      <ul>
+        <li class="sub">Tom de voz, postura, expressão facial e gestos reforçam ou contradizem as palavras</li>
+        <li class="sub">Pesquisas indicam que 55% da comunicação é corporal, 38% é vocal e apenas 7% são as palavras</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!-- SLIDE 10 – ATIVIDADE PRÁTICA 1 -->
+<div class="slide slide-atividade">
+  <div class="at-tag">🔬 Atividade Prática <span class="at-num">1 de 2</span></div>
+  <h2 class="slide-titulo">Atividade 1 — Identificando Emissor, Receptor e Mensagem</h2>
+  <ul class="pontos">
+    <li><strong>Situação A:</strong> O supervisor deixa um bilhete colado na máquina: "Não ligar — em manutenção"
+      <ul>
+        <li class="sub">Quem é o emissor? Quem é o receptor? Qual é a mensagem? A mensagem é clara?</li>
+      </ul>
+    </li>
+    <li><strong>Situação B:</strong> Um colega pede ajuda por WhatsApp: "vc pode dar uma olhada nisso aqui depois?"
+      <ul>
+        <li class="sub">Identifique os elementos. Quais estão faltando? Como melhorar essa mensagem?</li>
+      </ul>
+    </li>
+    <li><strong>Situação C (crie a sua):</strong> Escreva uma mensagem profissional para comunicar um atraso na entrega de um relatório ao supervisor
+      <ul>
+        <li class="sub">Use a regra dos 5W+1H: explique o que aconteceu, quando, por quê e quando será entregue</li>
+      </ul>
+    </li>
+    <li>Anote as respostas no Google Docs e compartilhe: gelvazio.c@edu.sc.senai.br</li>
+  </ul>
+</div>
+
+<!-- SLIDE 11 – CANAL -->
+<div class="slide">
+  <div class="elem-badge"><span class="elem-num">4</span> CANAL</div>
+  <h2 class="slide-titulo">Canal — O Meio de Transmissão</h2>
+  <ul class="pontos">
+    <li>O canal é o <strong>meio físico ou virtual</strong> pelo qual a mensagem é transmitida do emissor ao receptor</li>
+    <li>O canal afeta diretamente a <strong>velocidade, confiabilidade e formalidade</strong> da comunicação</li>
+    <li>A escolha do canal errado pode comprometer toda a comunicação</li>
+    <li><strong>Fatores na escolha do canal:</strong>
+      <ul>
+        <li class="sub">Urgência: quanto tempo tem para a mensagem chegar?</li>
+        <li class="sub">Formalidade: a situação exige registro oficial?</li>
+        <li class="sub">Complexidade: a mensagem precisa de explicação visual ou presencial?</li>
+        <li class="sub">Receptor: o destinatário tem acesso ao canal escolhido?</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="nota-rodape">Ementa 1.4 — Canal</div>
+</div>
+
+<!-- SLIDE 12 – TIPOS DE CANAL -->
+<div class="slide">
+  <h2 class="slide-titulo">Tipos de Canal de Comunicação</h2>
+  <table class="tabela">
+    <tr><th>Canal</th><th>Exemplos</th><th>Vantagem</th><th>Desvantagem</th></tr>
+    <tr><td>Oral presencial</td><td>Reunião, conversa direta</td><td>Imediato, com feedback instantâneo</td><td>Sem registro formal</td></tr>
+    <tr><td>Oral à distância</td><td>Telefone, videochamada</td><td>Rápido, pessoal</td><td>Pode gerar ruídos técnicos</td></tr>
+    <tr><td>Escrito digital</td><td>E-mail, WhatsApp, chat</td><td>Registro, alcance amplo</td><td>Pode ser ignorado ou mal interpretado</td></tr>
+    <tr><td>Escrito físico</td><td>Memorando, cartaz, bilhete</td><td>Formal, visível</td><td>Lento, sem feedback imediato</td></tr>
+    <tr><td>Visual</td><td>Placa, sinal, gráfico, vídeo</td><td>Universal, direto</td><td>Limitado a mensagens simples</td></tr>
+    <tr><td>Sonoro</td><td>Sirene, alarme, campainha</td><td>Imediato, sem necessidade de leitura</td><td>Sem detalhes, apenas alerta</td></tr>
+  </table>
+</div>
+
+<!-- SLIDE 13 – ESCOLHENDO O CANAL CERTO -->
+<div class="slide">
+  <h2 class="slide-titulo">Escolhendo o Canal Certo para Cada Situação</h2>
+  <div class="grid3">
+    <div class="card card-green">
+      <div class="c-titulo">🚨 Urgência máxima</div>
+      <div class="c-texto">Use canal direto e imediato: voz, telefone, alarme. Não espere que o e-mail seja lido.</div>
+    </div>
+    <div class="card card-orange">
+      <div class="c-titulo">📋 Informação formal</div>
+      <div class="c-texto">Use canal escrito com registro: e-mail, memorando, ata. Garante documentação e prova de envio.</div>
+    </div>
+    <div class="card">
+      <div class="c-titulo">🤝 Assunto delicado</div>
+      <div class="c-texto">Prefira o presencial. Conversas sensíveis (feedback, conflito) exigem contato direto para evitar mal-entendidos.</div>
+    </div>
+    <div class="card">
+      <div class="c-titulo">📊 Dado complexo</div>
+      <div class="c-texto">Use suporte visual: gráfico, tabela, diagrama. Números isolados no verbal geram erros de interpretação.</div>
+    </div>
+    <div class="card card-red">
+      <div class="c-titulo">❌ Erro comum</div>
+      <div class="c-texto">Usar WhatsApp para comunicação oficial importante — sem formalidade e sem garantia de leitura.</div>
+    </div>
+    <div class="card card-green">
+      <div class="c-titulo">✅ Boa prática</div>
+      <div class="c-texto">Confirmar por escrito o que foi combinado verbalmente — reduz dúvidas e protege ambas as partes.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 14 – CÓDIGO -->
+<div class="slide">
+  <div class="elem-badge"><span class="elem-num">5</span> CÓDIGO</div>
+  <h2 class="slide-titulo">Código — O Sistema de Sinais Utilizado</h2>
+  <ul class="pontos">
+    <li>O código é o <strong>conjunto de sinais e regras</strong> usado para transformar a mensagem em algo transmissível e compreensível</li>
+    <li>Para que a comunicação funcione, emissor e receptor <strong>precisam compartilhar o mesmo código</strong></li>
+    <li><strong>Exemplos de códigos:</strong>
+      <ul>
+        <li class="sub">Língua portuguesa falada ou escrita</li>
+        <li class="sub">Linguagem técnica de uma área (elétrica, mecânica, TI)</li>
+        <li class="sub">Código Morse, Braille, LIBRAS (Língua Brasileira de Sinais)</li>
+        <li class="sub">Símbolos de segurança (NR-26): cores e formas das placas de risco</li>
+        <li class="sub">Linguagem de programação (código de computador)</li>
+      </ul>
+    </li>
+    <li><strong>Problema:</strong> usar um código que o receptor não domina = mensagem não compreendida</li>
+  </ul>
+  <div class="nota-rodape">Ementa 1.6 — Código</div>
+</div>
+
+<!-- SLIDE 15 – CÓDIGO NO AMBIENTE PROFISSIONAL -->
+<div class="slide">
+  <h2 class="slide-titulo">Código no Ambiente de Trabalho Industrial</h2>
+  <div class="grid2">
+    <div>
+      <ul class="pontos">
+        <li><strong>Linguagem técnica:</strong> termos específicos de cada área profissional</li>
+        <li>Ex.: "torque de 35 N·m", "tensão de 220V trifásico", "setup da máquina"</li>
+        <li>O código técnico é preciso, mas exclui quem não o conhece</li>
+        <li><strong>Normas e símbolos:</strong>
+          <ul>
+            <li class="sub">Placa vermelha = perigo imediato</li>
+            <li class="sub">Placa amarela = atenção / risco potencial</li>
+            <li class="sub">Placa verde = segurança / saída de emergência</li>
+            <li class="sub">Placa azul = obrigação (use EPI)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="card card-orange" style="margin-bottom:10px">
+        <div class="c-titulo">⚠️ Cuidado com jargões</div>
+        <div class="c-texto">Siglas e abreviações compreendidas internamente podem confundir clientes, novos funcionários ou outras áreas da empresa.</div>
+      </div>
+      <div class="card card-green">
+        <div class="c-titulo">✅ Boas práticas</div>
+        <div class="c-texto">Ao usar linguagem técnica, pergunte se o receptor conhece os termos. Se não, explique de forma acessível sem perder a precisão.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 16 – RUÍDO -->
+<div class="slide">
+  <div class="elem-badge" style="background:#e74c3c"><span class="elem-num" style="background:#fff;color:#e74c3c">6</span> RUÍDO</div>
+  <h2 class="slide-titulo">Ruído — As Interferências na Comunicação</h2>
+  <ul class="pontos">
+    <li>Ruído é <strong>qualquer fator que distorce, bloqueia ou prejudica</strong> a transmissão ou compreensão da mensagem</li>
+    <li>O ruído pode surgir em qualquer etapa do processo de comunicação</li>
+    <li>Mesmo uma mensagem bem formulada pode falhar por causa do ruído</li>
+    <li><strong>Consequências do ruído não tratado:</strong>
+      <ul>
+        <li class="sub">Mensagem mal interpretada → decisão errada</li>
+        <li class="sub">Instrução não compreendida → acidente ou não conformidade</li>
+        <li class="sub">Conflito por mal-entendido → ambiente de trabalho comprometido</li>
+      </ul>
+    </li>
+    <li>O ruído pode ser <strong>reduzido</strong> com escolha adequada de canal, linguagem clara e confirmação (feedback)</li>
+  </ul>
+  <div class="nota-rodape">Ementa 1.5 — Ruído</div>
+</div>
+
+<!-- SLIDE 17 – TIPOS DE RUÍDO -->
+<div class="slide">
+  <h2 class="slide-titulo">Tipos de Ruído na Comunicação</h2>
+  <div class="grid3">
+    <div class="card card-red">
+      <div class="c-titulo">🔊 Ruído Físico</div>
+      <div class="c-texto">Barulho do ambiente, sinal fraco de internet ou telefone, letra ilegível, iluminação ruim, interferência de rádio, ambiente quente demais.</div>
+    </div>
+    <div class="card card-orange">
+      <div class="c-titulo">📖 Ruído Semântico</div>
+      <div class="c-texto">Palavras com duplo sentido, jargão desconhecido, idioma diferente, gírias, abreviações não explicadas, texto ambíguo.</div>
+    </div>
+    <div class="card">
+      <div class="c-titulo">🧠 Ruído Psicológico</div>
+      <div class="c-texto">Preconceito, desatenção, cansaço, estresse, emoções fortes, suposições, falta de interesse no assunto tratado.</div>
+    </div>
+    <div class="card card-red">
+      <div class="c-titulo">📡 Ruído Técnico</div>
+      <div class="c-texto">Queda de conexão, e-mail na caixa de spam, arquivo corrompido, microfone com falha, impressão cortada.</div>
+    </div>
+    <div class="card card-orange">
+      <div class="c-titulo">🏢 Ruído Organizacional</div>
+      <div class="c-texto">Hierarquia excessiva que filtra informações, cultura de "não questionar", boatos e rádio-corredor que distorcem fatos.</div>
+    </div>
+    <div class="card card-green">
+      <div class="c-titulo">✅ Lembrete</div>
+      <div class="c-texto">Identificar o tipo de ruído é o primeiro passo para eliminá-lo. Pergunte: onde está a falha — no canal, no código ou no receptor?</div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 18 – COMO REDUZIR O RUÍDO -->
+<div class="slide">
+  <h2 class="slide-titulo">Como Reduzir o Ruído na Comunicação</h2>
+  <table class="tabela">
+    <tr><th>Tipo de Ruído</th><th>Estratégia de Redução</th></tr>
+    <tr><td>🔊 Físico (barulho)</td><td>Mudar o local, usar sinal visual, escolher outro canal, esperar o momento adequado</td></tr>
+    <tr><td>📖 Semântico (linguagem)</td><td>Usar linguagem adaptada ao receptor, definir termos técnicos, confirmar o entendimento</td></tr>
+    <tr><td>🧠 Psicológico (estado mental)</td><td>Escolher bom momento, criar ambiente confortável, ouvir ativamente, ter empatia</td></tr>
+    <tr><td>📡 Técnico (tecnologia)</td><td>Confirmar o recebimento, ter canal alternativo, testar antes de usar</td></tr>
+    <tr><td>🏢 Organizacional</td><td>Comunicação direta e transparente, cultura aberta a perguntas e dúvidas</td></tr>
+  </table>
+  <ul class="pontos" style="margin-top:12px">
+    <li><strong>Regra de ouro:</strong> confirme sempre que a mensagem foi recebida E compreendida — não presuma</li>
+  </ul>
+</div>
+
+<!-- SLIDE 19 – FEEDBACK -->
+<div class="slide">
+  <div class="elem-badge" style="background:#1abc9c"><span class="elem-num" style="background:#fff;color:#1abc9c">7</span> FEEDBACK</div>
+  <h2 class="slide-titulo">Feedback — O Retorno da Mensagem</h2>
+  <ul class="pontos">
+    <li>Feedback é a <strong>resposta do receptor ao emissor</strong> — fecha o ciclo da comunicação</li>
+    <li>Sem feedback, não há como saber se a mensagem foi recebida e compreendida corretamente</li>
+    <li><strong>Tipos de feedback:</strong>
+      <ul>
+        <li class="sub">Verbal: "Entendi", "Pode repetir?", "Não concordo porque…"</li>
+        <li class="sub">Não-verbal: acenar a cabeça, expressão facial, postura corporal</li>
+        <li class="sub">Escrito: resposta de e-mail, confirmação de recebimento, assinatura</li>
+        <li class="sub">Comportamental: executar (ou não) o que foi pedido</li>
+      </ul>
+    </li>
+    <li>O feedback positivo reforça comportamentos corretos</li>
+    <li>O feedback construtivo aponta melhorias de forma respeitosa e objetiva</li>
+  </ul>
+  <div class="nota-rodape">Ementa 1.7 — Feedback</div>
+</div>
+
+<!-- SLIDE 20 – ATIVIDADE PRÁTICA 2 -->
+<div class="slide slide-atividade">
+  <div class="at-tag">🔬 Atividade Prática <span class="at-num">2 de 2</span></div>
+  <h2 class="slide-titulo">Atividade 2 — Mapeando o Ciclo Completo</h2>
+  <ul class="pontos">
+    <li>Pense em uma situação de comunicação real que você já viveu (no trabalho, na escola ou no cotidiano)</li>
+    <li>No Google Docs, identifique os <strong>7 elementos</strong> dessa situação:
+      <ul>
+        <li class="sub">Emissor / Receptor / Mensagem / Canal / Código / Ruído / Feedback</li>
+      </ul>
+    </li>
+    <li>Responda: houve alguma <strong>falha</strong> nessa comunicação? Em qual elemento?</li>
+    <li>Proponha <strong>uma melhoria</strong>: o que poderia ter sido feito diferente para evitar a falha?</li>
+    <li>Escolha um colega e <strong>apresente</strong> sua situação oralmente (2 minutos) — pratique ser emissor e receptor!</li>
+    <li>Compartilhe o documento: gelvazio.c@edu.sc.senai.br</li>
+  </ul>
+</div>
+
+<!-- SLIDE 21 – FEEDBACK CONSTRUTIVO -->
+<div class="slide">
+  <h2 class="slide-titulo">Como Dar Feedback Construtivo</h2>
+  <div class="grid2">
+    <div>
+      <ul class="pontos">
+        <li>Feedback construtivo visa <strong>melhorar</strong>, não criticar ou humilhar</li>
+        <li><strong>Técnica SBI (Situação, Comportamento, Impacto):</strong>
+          <ul>
+            <li class="sub"><strong>S</strong>ituação: "Na reunião de ontem…"</li>
+            <li class="sub"><strong>B</strong>ehavio (comportamento): "…você interrompeu os colegas várias vezes…"</li>
+            <li class="sub"><strong>I</strong>mpacto: "…isso dificultou o andamento da discussão e deixou as pessoas desconfortáveis."</li>
+          </ul>
+        </li>
+        <li>Sempre fale sobre o comportamento — nunca sobre a pessoa</li>
+        <li>Termine com uma <strong>sugestão positiva</strong>: "Na próxima vez, aguardar a conclusão da fala ajuda o grupo a pensar melhor."</li>
+      </ul>
+    </div>
+    <div>
+      <div class="card card-red" style="margin-bottom:10px">
+        <div class="c-titulo">❌ Feedback destrutivo</div>
+        <div class="c-texto">"Você sempre faz bagunça nas reuniões. Não tem jeito com você."</div>
+      </div>
+      <div class="card card-green">
+        <div class="c-titulo">✅ Feedback construtivo</div>
+        <div class="c-texto">"Na reunião de ontem, quando você interrompeu os colegas, ficou difícil terminar a pauta. Aguardar a vez de falar vai ajudar muito."</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 22 – O CICLO COMPLETO -->
+<div class="slide">
+  <h2 class="slide-titulo">O Ciclo Completo da Comunicação</h2>
+  <div class="diag">
+    <div class="d-box">📢 EMISSOR</div>
+    <div class="d-arr">→</div>
+    <div class="d-yellow d-box">🔤 CODIFICA<br>mensagem</div>
+    <div class="d-arr">→</div>
+    <div class="d-yellow d-box">📡 CANAL<br>transmite</div>
+    <div class="d-arr">→</div>
+    <div class="d-box">👂 RECEPTOR<br>decodifica</div>
+    <div class="d-arr">→</div>
+    <div class="d-teal d-box">🔄 FEEDBACK<br>ao emissor</div>
+  </div>
+  <div style="margin-top:4px;text-align:center;font-size:12px;color:#e74c3c;font-weight:600">⚡ RUÍDO pode acontecer em qualquer etapa ⚡</div>
+  <ul class="pontos" style="margin-top:12px">
+    <li>O processo começa quando o emissor <strong>codifica</strong> a mensagem no código compartilhado</li>
+    <li>A mensagem viaja pelo canal escolhido, podendo sofrer interferência de ruídos</li>
+    <li>O receptor <strong>decodifica</strong> a mensagem com base em seu repertório e contexto</li>
+    <li>O feedback fecha o ciclo — confirma o recebimento e permite correções</li>
+    <li>Sem feedback, o ciclo fica aberto e não há certeza de comunicação eficaz</li>
+  </ul>
+</div>
+
+<!-- SLIDE 23 – VERBAL VS NÃO-VERBAL -->
+<div class="slide">
+  <h2 class="slide-titulo">Comunicação Verbal e Não-Verbal</h2>
+  <div class="grid2">
+    <div class="card">
+      <div class="c-titulo">🗣️ Comunicação Verbal</div>
+      <div class="c-texto" style="font-size:12px;line-height:1.6">
+        Usa <strong>palavras</strong> — faladas ou escritas.<br>
+        • Oral: reunião, ligação, instrução presencial<br>
+        • Escrita: e-mail, memorando, relatório, ata<br>
+        <br>
+        <strong>Vantagem:</strong> precisão, possibilidade de registro<br>
+        <strong>Desvantagem:</strong> pode ser interpretada fora do contexto
+      </div>
+    </div>
+    <div class="card card-orange">
+      <div class="c-titulo">🤝 Comunicação Não-Verbal</div>
+      <div class="c-texto" style="font-size:12px;line-height:1.6">
+        Usa <strong>sinais sem palavras</strong>.<br>
+        • Expressão facial: alegria, preocupação, raiva<br>
+        • Postura corporal: aberta ou fechada<br>
+        • Gestos: acenar, apontar, cruzar os braços<br>
+        • Olhar: confiança, desinteresse, atenção<br>
+        <br>
+        <strong>Dado:</strong> 55% da comunicação é corporal
+      </div>
+    </div>
+  </div>
+  <ul class="pontos" style="margin-top:12px">
+    <li>A <strong>congruência</strong> entre verbal e não-verbal é essencial: o que você diz deve combinar com o que seu corpo comunica</li>
+    <li>Inconsistência gera desconfiança: "Estou bem" dito com voz trêmula e olhos lacrimejantes não é convincente</li>
+  </ul>
+</div>
+
+<!-- SLIDE 24 – BARREIRAS À COMUNICAÇÃO -->
+<div class="slide">
+  <h2 class="slide-titulo">Principais Barreiras à Comunicação Eficaz</h2>
+  <table class="tabela">
+    <tr><th>Barreira</th><th>Descrição</th><th>Como superar</th></tr>
+    <tr><td>🔊 Ambiente inadequado</td><td>Barulho, temperatura, espaço físico</td><td>Mudar local ou canal</td></tr>
+    <tr><td>📖 Linguagem inacessível</td><td>Jargão, idioma diferente, termos técnicos</td><td>Adaptar ao receptor</td></tr>
+    <tr><td>🧠 Desatenção</td><td>Cansaço, distração, uso do celular</td><td>Escolher o momento certo</td></tr>
+    <tr><td>😤 Estado emocional</td><td>Raiva, medo, ansiedade</td><td>Aguardar ou criar ambiente seguro</td></tr>
+    <tr><td>🤔 Suposições</td><td>Presumir que o outro entendeu</td><td>Confirmar com feedback</td></tr>
+    <tr><td>📱 Multicanais simultâneos</td><td>Mensagens em excesso, sobrecarga</td><td>Priorizar e organizar comunicações</td></tr>
+  </table>
+</div>
+
+<!-- SLIDE 25 – COMUNICAÇÃO EFICAZ NO TRABALHO -->
+<div class="slide">
+  <h2 class="slide-titulo">Comunicação Eficaz no Ambiente de Trabalho</h2>
+  <div class="grid3">
+    <div class="card card-green">
+      <div class="c-titulo">👂 Escuta ativa</div>
+      <div class="c-texto">Ouça para entender, não para responder. Elimine distrações. Faça perguntas. Confirme o que ouviu.</div>
+    </div>
+    <div class="card card-green">
+      <div class="c-titulo">🎯 Objetividade</div>
+      <div class="c-texto">Seja direto. Diga o essencial sem rodeios. Respeite o tempo do receptor — mensagens longas são ignoradas.</div>
+    </div>
+    <div class="card card-green">
+      <div class="c-titulo">✅ Confirmação</div>
+      <div class="c-titulo" style="font-size:10px;margin-top:4px">Feedback ativo</div>
+      <div class="c-texto">Peça ao receptor para repetir o que entendeu. "Me conta como você interpretou isso" evita erros graves.</div>
+    </div>
+    <div class="card">
+      <div class="c-titulo">📝 Registro</div>
+      <div class="c-texto">Importantes decisões e instruções devem ser registradas por escrito — protege todas as partes.</div>
+    </div>
+    <div class="card">
+      <div class="c-titulo">🤝 Empatia</div>
+      <div class="c-texto">Coloque-se no lugar do receptor. A mensagem faz sentido para ele? Ele tem o conhecimento necessário para entendê-la?</div>
+    </div>
+    <div class="card card-orange">
+      <div class="c-titulo">⏰ Oportunidade</div>
+      <div class="c-texto">Comunique no momento certo. Uma boa mensagem no momento errado pode ser ignorada ou ter efeito contrário.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 26 – ENCERRAMENTO -->
+<div class="slide slide-enc">
+  <div class="enc-icon">💬</div>
+  <h2 class="slide-titulo">Resumo da Aula 02</h2>
+  <ul class="pontos enc-pontos">
+    <li>Os 7 elementos — Emissor, Receptor, Mensagem, Canal, Código, Ruído e Feedback — formam o ciclo completo da comunicação</li>
+    <li>O ruído pode surgir em qualquer etapa e deve ser identificado e reduzido</li>
+    <li>Sem feedback, o ciclo fica incompleto — sempre confirme se a mensagem foi compreendida</li>
+    <li>A comunicação eficaz no trabalho depende de clareza, escuta ativa, empatia e escolha adequada do canal</li>
+  </ul>
+  <div class="nota-rodape">Próxima aula: Comunicação em Equipes de Trabalho — 05/08/2026</div>
+</div>
+
+</div></div>
+
+<div class="progress"><div class="pfill" id="pf" style="width:3.85%"></div></div>
+
+<div class="nav">
+  <button class="btn" id="bPrev" onclick="nav(-1)" disabled>← Anterior</button>
+  <div class="dots" id="dots"></div>
+  <button class="btn" id="bNext" onclick="nav(1)">Próximo →</button>
+</div>
+
+<script>
+const slides=document.querySelectorAll('.slide');
+const total=slides.length;
+let cur=0;
+const dotsEl=document.getElementById('dots');
+for(let i=0;i<total;i++){const d=document.createElement('button');d.className='dot'+(i===0?' on':'');d.onclick=()=>go(i);dotsEl.appendChild(d);}
+function upd(){slides.forEach((s,i)=>s.classList.toggle('on',i===cur));document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i===cur));document.getElementById('ctr').textContent=(cur+1)+' / '+total;document.getElementById('pf').style.width=((cur+1)/total*100)+'%';document.getElementById('bPrev').disabled=cur===0;document.getElementById('bNext').disabled=cur===total-1;}
+function nav(d){go(cur+d);}
+function go(i){if(i<0||i>=total)return;cur=i;upd();}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowDown')nav(1);if(e.key==='ArrowLeft'||e.key==='ArrowUp')nav(-1);});
+upd();
+</script>
+</body>
+</html>
