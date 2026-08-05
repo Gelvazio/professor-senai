@@ -70,10 +70,8 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#004384;min-he
 </div>
 
 <script>
-const HASHES = {
-  PROFESSOR: '77aebc7e0bf1d6d73911d42377cec8c6b20d37760e04f3c91a5e542299a30b12',
-  ALUNO:     'a21d6f3803f0491c32444ef91a0836be243cc4da5186357e805b7009a5b0669b'
-};
+const SUPABASE_URL  = 'https://jwasbzdbkbryncpvfujc.supabase.co';
+const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
 
 async function sha256(text) {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
@@ -99,16 +97,31 @@ async function fazerLogin() {
   btn.disabled = true;
   spin.classList.add('show');
 
-  const hash = await sha256(senha);
+  const hash         = await sha256(senha);
+  const loginUsuario = perfil.toLowerCase();
 
-  if (hash === HASHES[perfil]) {
-    localStorage.setItem('senai_role', perfil);
-    localStorage.setItem('senai_login', Date.now());
-    window.location.href = 'index.html';
-  } else {
-    erro.textContent = 'Senha incorreta. Tente novamente.';
+  try {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/usuario?login_usuario=eq.${encodeURIComponent(loginUsuario)}&senha_hash=eq.${hash}&select=perfil`,
+      { headers: { 'apikey': SUPABASE_KEY, 'Content-Type': 'application/json' } }
+    );
+    const rows = await res.json();
+
+    if (Array.isArray(rows) && rows.length > 0) {
+      const role = rows[0].perfil;
+      localStorage.setItem('senai_role', role);
+      localStorage.setItem('senai_login', Date.now());
+      window.location.href = 'index.html';
+    } else {
+      erro.textContent = 'Usuário ou senha incorretos.';
+      erro.classList.add('show');
+      document.getElementById('senha').value = '';
+      btn.disabled = false;
+      spin.classList.remove('show');
+    }
+  } catch {
+    erro.textContent = 'Erro de conexão. Tente novamente.';
     erro.classList.add('show');
-    document.getElementById('senha').value = '';
     btn.disabled = false;
     spin.classList.remove('show');
   }

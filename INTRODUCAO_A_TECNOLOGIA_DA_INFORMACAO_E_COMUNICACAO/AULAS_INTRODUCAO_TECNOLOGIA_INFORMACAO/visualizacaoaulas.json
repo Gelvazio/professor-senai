@@ -5,10 +5,15 @@
       "numero": 1,
       "data": "03-08-2026",
       "diaSemana": "Segunda-feira",
-      "titulo": "Comunicação em Equipes de Trabalho",
+      "titulo": "História da Computação e Iniciando no Chromebook",
       "icone": "🤝",
       "visivel": 1,
       "materiais": [
+        {
+          "nome": "Apresentação Senai",
+          "icone": "📊",
+          "arquivo": "AULA 01 - 03-08-2026 - 00 - APRESENTACAO SENAI/Primeiro dia de aula_apresentacao.pptx"
+        },
         {
           "nome": "Apresentação do Professor",
           "icone": "👨‍🏫",
