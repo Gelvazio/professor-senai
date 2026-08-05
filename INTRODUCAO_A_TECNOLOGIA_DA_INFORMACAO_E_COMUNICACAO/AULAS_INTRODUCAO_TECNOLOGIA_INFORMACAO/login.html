@@ -52,16 +52,15 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#004384;min-he
 
     <div class="field">
       <label for="perfil">Perfil de acesso</label>
-      <select id="perfil">
-        <option value="">Selecione...</option>
-        <option value="ALUNO">👨‍🎓 Aluno</option>
+      <select id="perfil" onchange="toggleSenha()">
+        <option value="ALUNO" selected>👨‍🎓 Aluno</option>
         <option value="PROFESSOR">👨‍🏫 Professor</option>
       </select>
     </div>
 
-    <div class="field">
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="current-password">
+    <div class="field" id="campoSenha" style="display:none">
+      <label for="senha">Senha do Professor</label>
+      <input type="password" id="senha" placeholder="Digite a senha" autocomplete="current-password">
     </div>
 
     <button class="btn-login" id="btnLogin" onclick="fazerLogin()">Entrar</button>
@@ -71,12 +70,18 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#004384;min-he
 </div>
 
 <script>
-const SUPABASE_URL  = 'https://jwasbzdbkbryncpvfujc.supabase.co';
-const SUPABASE_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
+const SUPABASE_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
+const HASH_ALUNO   = 'a21d6f3803f0491c32444ef91a0836be243cc4da5186357e805b7009a5b0669b';
 
 async function sha256(text) {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
   return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+function toggleSenha() {
+  const perfil = document.getElementById('perfil').value;
+  document.getElementById('campoSenha').style.display = perfil === 'PROFESSOR' ? '' : 'none';
 }
 
 document.getElementById('senha').addEventListener('keydown', e => {
@@ -86,20 +91,23 @@ document.getElementById('senha').addEventListener('keydown', e => {
 async function fazerLogin() {
   const perfil = document.getElementById('perfil').value;
   const senha  = document.getElementById('senha').value;
-  const erro   = document.getElementById('erro') || document.getElementById('error');
+  const erro   = document.getElementById('error');
   const btn    = document.getElementById('btnLogin');
   const spin   = document.getElementById('spinner');
 
   erro.classList.remove('show');
 
-  if (!perfil) { erro.textContent = 'Selecione um perfil de acesso.'; erro.classList.add('show'); return; }
-  if (!senha)  { erro.textContent = 'Digite a senha.'; erro.classList.add('show'); return; }
+  if (perfil === 'PROFESSOR' && !senha) {
+    erro.textContent = 'Digite a senha do Professor.';
+    erro.classList.add('show');
+    return;
+  }
 
   btn.disabled = true;
   spin.classList.add('show');
 
-  const hash         = await sha256(senha);
   const loginUsuario = perfil.toLowerCase();
+  const hash = perfil === 'ALUNO' ? HASH_ALUNO : await sha256(senha);
 
   try {
     const res = await fetch(
@@ -109,12 +117,11 @@ async function fazerLogin() {
     const rows = await res.json();
 
     if (Array.isArray(rows) && rows.length > 0) {
-      const role = rows[0].perfil;
-      localStorage.setItem('senai_role', role);
+      localStorage.setItem('senai_role', rows[0].perfil);
       localStorage.setItem('senai_login', Date.now());
       window.location.href = 'index.html';
     } else {
-      erro.textContent = 'Usuário ou senha incorretos.';
+      erro.textContent = 'Senha incorreta. Tente novamente.';
       erro.classList.add('show');
       document.getElementById('senha').value = '';
       btn.disabled = false;
