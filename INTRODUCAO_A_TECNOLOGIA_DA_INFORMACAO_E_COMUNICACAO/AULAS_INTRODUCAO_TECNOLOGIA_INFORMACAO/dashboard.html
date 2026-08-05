@@ -13,54 +13,71 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 .header-logo{font-weight:700;font-size:15px;letter-spacing:.5px;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:4px;white-space:nowrap;text-decoration:none;color:#fff}
 .header-title{font-size:14px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .header-spacer{flex:1}
-.header-btn{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;text-decoration:none;transition:background .15s;white-space:nowrap}
+.header-btn{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;text-decoration:none;transition:background .15s;white-space:nowrap;font-family:inherit}
 .header-btn:hover{background:rgba(255,255,255,.28)}
 .role-badge{font-size:11px;background:rgba(255,255,255,.2);padding:3px 10px;border-radius:20px;white-space:nowrap}
 
 /* ── Hero ── */
-.hero{background:linear-gradient(135deg,#003068 0%,#004384 60%,#0055b3 100%);padding:36px 24px 32px;text-align:center;color:#fff;border-bottom:3px solid #f7941d}
-.hero-badge{display:inline-block;background:rgba(247,148,29,.2);border:1px solid rgba(247,148,29,.5);color:#f7941d;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:14px}
-.hero h1{font-size:22px;font-weight:700;margin-bottom:6px}
+.hero{background:linear-gradient(135deg,#003068 0%,#004384 60%,#0055b3 100%);padding:32px 24px 28px;text-align:center;color:#fff;border-bottom:3px solid #f7941d}
+.hero-badge{display:inline-block;background:rgba(247,148,29,.2);border:1px solid rgba(247,148,29,.5);color:#f7941d;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:12px}
+.hero h1{font-size:22px;font-weight:700;margin-bottom:4px}
 .hero p{font-size:13px;opacity:.8}
 
+/* ── Banner professor ── */
+.edit-banner{display:none;background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:12px 18px;margin:20px 24px 0;display:flex;align-items:center;gap:12px;font-size:13px;color:#5d4037}
+.edit-banner.hidden{display:none}
+.edit-banner strong{color:#e65100}
+
 /* ── Grid ── */
-.section{padding:28px 24px}
+.section{padding:24px}
 .section-label{font-size:11px;font-weight:600;color:#666;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto}
 @media(max-width:640px){.grid{grid-template-columns:1fr}}
 
 /* ── Card ── */
 .card{background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.12);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .15s}
-.card:hover{box-shadow:0 6px 24px rgba(0,67,132,.18);transform:translateY(-2px)}
-.card-locked{opacity:.6;cursor:not-allowed}
-.card-locked:hover{box-shadow:0 2px 8px rgba(0,0,0,.12);transform:none}
+.card.disponivel:hover{box-shadow:0 6px 24px rgba(0,67,132,.18);transform:translateY(-2px)}
+.card.bloqueado{opacity:.65}
 
 .card-thumb{height:100px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.card-thumb-opi{background:linear-gradient(135deg,#004384 0%,#0071e3 100%)}
-.card-thumb-locked{background:linear-gradient(135deg,#7a8390 0%,#9aa0a6 100%)}
 .card-thumb-icon{font-size:52px;opacity:.9}
-.card-thumb-stripe{position:absolute;bottom:0;left:0;right:0;height:4px;background:#f7941d}
+.card-thumb-stripe{position:absolute;bottom:0;left:0;right:0;height:4px}
 
-.card-body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column;gap:10px}
-.card-curso{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#004384}
+.card-body{padding:18px 20px 16px;flex:1;display:flex;flex-direction:column;gap:10px}
+.card-tipo{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
 .card-titulo{font-size:16px;font-weight:700;color:#202124;line-height:1.3}
 .card-desc{font-size:12px;color:#666;line-height:1.6;flex:1}
 
 .card-tags{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-size:10px;padding:3px 9px;border-radius:20px;font-weight:600}
-.tag-blue{background:#e8f0fe;color:#004384}
-.tag-orange{background:#fff3e0;color:#e65100}
-.tag-gray{background:#f1f3f4;color:#666}
+.tag{font-size:10px;padding:3px 9px;border-radius:20px;font-weight:600;background:#f1f3f4;color:#444}
 
-.card-footer{padding:14px 20px;border-top:1px solid #f0f0f0;display:flex;align-items:center;justify-content:space-between}
-.btn-acessar{display:flex;align-items:center;gap:6px;background:#004384;color:#fff;text-decoration:none;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;transition:background .15s}
+.card-footer{padding:12px 20px 14px;border-top:1px solid #f0f0f0;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.btn-acessar{display:flex;align-items:center;gap:6px;background:#004384;color:#fff;text-decoration:none;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;transition:background .15s;white-space:nowrap}
 .btn-acessar:hover{background:#00306a}
-.btn-em-breve{display:flex;align-items:center;gap:6px;background:#f1f3f4;color:#aaa;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;cursor:not-allowed}
+.btn-em-breve{display:flex;align-items:center;gap:6px;background:#f1f3f4;color:#aaa;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;cursor:not-allowed;white-space:nowrap}
 
-.progress-mini{flex:1;margin-right:16px}
+.progress-mini{flex:1}
 .progress-mini-bar{height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden;margin-bottom:4px}
-.progress-mini-fill{height:100%;background:linear-gradient(90deg,#004384,#0071e3);border-radius:2px}
+.progress-mini-fill{height:100%;border-radius:2px;transition:width .4s}
 .progress-mini-text{font-size:10px;color:#888}
+
+/* ── Toggle visibilidade (só professor) ── */
+.card-edit{display:none;padding:10px 20px;background:#f8f9fa;border-top:1px solid #e8eaed;align-items:center;justify-content:space-between;gap:10px}
+.card-edit-label{font-size:12px;color:#555;font-weight:500}
+
+.toggle-wrap{display:flex;align-items:center;gap:8px}
+.toggle-label{font-size:11px;color:#888}
+.toggle{position:relative;width:40px;height:22px;flex-shrink:0}
+.toggle input{opacity:0;width:0;height:0;position:absolute}
+.toggle-slider{position:absolute;inset:0;background:#ccc;border-radius:22px;cursor:pointer;transition:background .2s}
+.toggle-slider:before{content:'';position:absolute;width:16px;height:16px;left:3px;top:3px;background:#fff;border-radius:50%;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.toggle input:checked + .toggle-slider{background:#2e7d32}
+.toggle input:checked + .toggle-slider:before{transform:translateX(18px)}
+
+/* ── Botão exportar ── */
+.export-bar{display:none;padding:0 24px 24px;max-width:900px;margin:0 auto}
+.btn-export{display:flex;align-items:center;gap:8px;background:#004384;color:#fff;border:none;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;transition:background .15s;font-family:inherit}
+.btn-export:hover{background:#00306a}
 </style>
 </head>
 <body>
@@ -85,86 +102,144 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
   <p>Selecione o curso para acessar as aulas, materiais e avaliações</p>
 </div>
 
+<div class="edit-banner hidden" id="editBanner">
+  ✏️ <span><strong>Modo Professor:</strong> use os toggles em cada card para controlar a visibilidade dos cursos. Clique em <strong>Exportar JSON</strong> para salvar as alterações.</span>
+</div>
+
 <div class="section">
   <div class="section-label">Cursos disponíveis</div>
-  <div class="grid">
-
-    <!-- CARD 1 — Operador de Produção Industrial -->
-    <div class="card">
-      <div class="card-thumb card-thumb-opi">
-        <span class="card-thumb-icon">🏭</span>
-        <div class="card-thumb-stripe"></div>
-      </div>
-      <div class="card-body">
-        <div class="card-curso">Aprendizagem Industrial</div>
-        <div class="card-titulo">Operador de Produção Industrial</div>
-        <div class="card-desc">Capacitação para atuação em linhas de produção industrial, com foco em tecnologia da informação, segurança do trabalho e comunicação profissional.</div>
-        <div class="card-tags">
-          <span class="tag tag-blue">UC1 — Introdução à TIC</span>
-          <span class="tag tag-orange">UC2 — Segurança do Trabalho</span>
-          <span class="tag tag-gray">40h + 12h</span>
-        </div>
-      </div>
-      <div class="card-footer">
-        <div class="progress-mini">
-          <div class="progress-mini-bar"><div class="progress-mini-fill" id="progressFill" style="width:0%"></div></div>
-          <div class="progress-mini-text" id="progressText">Carregando...</div>
-        </div>
-        <a href="index.html" class="btn-acessar">Acessar ↗</a>
-      </div>
-    </div>
-
-    <!-- CARD 2 — Técnico em Desenvolvimento de Sistemas -->
-    <div class="card">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#1a237e 0%,#3949ab 100%)">
-        <span class="card-thumb-icon">💻</span>
-        <div class="card-thumb-stripe" style="background:#00bcd4"></div>
-      </div>
-      <div class="card-body">
-        <div class="card-curso" style="color:#3949ab">Habilitação Técnica</div>
-        <div class="card-titulo">Técnico em Desenvolvimento de Sistemas</div>
-        <div class="card-desc">Formação para desenvolvimento de sistemas, programação, banco de dados, interfaces e metodologias ágeis aplicadas à indústria de software.</div>
-        <div class="card-tags">
-          <span class="tag" style="background:#e8eaf6;color:#1a237e">Programação</span>
-          <span class="tag" style="background:#e0f7fa;color:#006064">Banco de Dados</span>
-          <span class="tag tag-gray">Em breve</span>
-        </div>
-      </div>
-      <div class="card-footer">
-        <div class="progress-mini">
-          <div class="progress-mini-bar"><div class="progress-mini-fill" style="width:0%;background:linear-gradient(90deg,#1a237e,#3949ab)"></div></div>
-          <div class="progress-mini-text">Conteúdo em preparação</div>
-        </div>
-        <span class="btn-em-breve">🔒 Em breve</span>
-      </div>
-    </div>
-
+  <div class="grid" id="grid">
+    <p style="color:#888;font-size:14px">Carregando cursos...</p>
   </div>
 </div>
 
-<script>
-// Perfil
-(function(){
-  const role = localStorage.getItem('senai_role') || 'ALUNO';
-  document.getElementById('roleBadge').textContent = role === 'PROFESSOR' ? '👨‍🏫 Professor' : '👨‍🎓 Aluno';
-})();
+<div class="export-bar" id="exportBar">
+  <button class="btn-export" onclick="exportarJSON()">⬇ Exportar visualizacaocursos.json</button>
+</div>
 
-// Progresso do curso (lê visualizacaoaulas.json)
-(async function(){
+<script>
+const role = localStorage.getItem('senai_role') || 'ALUNO';
+const isProfessor = role === 'PROFESSOR';
+
+// Badge de perfil
+document.getElementById('roleBadge').textContent = isProfessor ? '👨‍🏫 Professor' : '👨‍🎓 Aluno';
+
+// Mostrar controles de professor
+if (isProfessor) {
+  document.getElementById('editBanner').classList.remove('hidden');
+  document.getElementById('exportBar').style.display = 'block';
+}
+
+let dadosCursos = null;
+
+// Visibilidade sobreposta (localStorage por curso)
+function getVis(id, padrao) {
+  const salvo = localStorage.getItem('vis_curso_' + id);
+  return salvo !== null ? parseInt(salvo) : padrao;
+}
+function setVis(id, val) {
+  localStorage.setItem('vis_curso_' + id, val);
+}
+
+(async function () {
   try {
-    const r = await fetch('visualizacaoaulas.json');
-    const dados = await r.json();
-    const aulas = dados.aulas || [];
-    const visiveis = aulas.filter(a => a.visivel === 1).length;
-    const pct = aulas.length ? Math.round((visiveis / aulas.length) * 100) : 0;
-    document.getElementById('progressFill').style.width = pct + '%';
-    document.getElementById('progressText').textContent = `${visiveis} de ${aulas.length} aulas disponíveis`;
+    const r = await fetch('visualizacaocursos.json');
+    dadosCursos = await r.json();
   } catch {
-    document.getElementById('progressText').textContent = 'Progresso indisponível';
+    document.getElementById('grid').innerHTML = '<p style="color:#d32f2f;font-size:14px">Erro ao carregar visualizacaocursos.json</p>';
+    return;
+  }
+
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+
+  for (const curso of dadosCursos.cursos) {
+    const visivel = getVis(curso.id, curso.visivel);
+    const disponivel = visivel === 1;
+
+    // Progresso
+    let pct = 0, progressoTexto = 'Conteúdo em preparação';
+    if (disponivel && curso.progressoJson) {
+      try {
+        const rp = await fetch(curso.progressoJson);
+        const dp = await rp.json();
+        const aulas = dp.aulas || [];
+        const vis = aulas.filter(a => a.visivel === 1).length;
+        pct = aulas.length ? Math.round((vis / aulas.length) * 100) : 0;
+        progressoTexto = `${vis} de ${aulas.length} aulas disponíveis`;
+      } catch { progressoTexto = 'Progresso indisponível'; }
+    }
+
+    const tagsHTML = curso.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+    const card = document.createElement('div');
+    card.className = 'card ' + (disponivel ? 'disponivel' : 'bloqueado');
+    card.dataset.id = curso.id;
+
+    card.innerHTML = `
+      <div class="card-thumb" style="background:linear-gradient(135deg,${curso.corPrimaria} 0%,${curso.corSecundaria} 100%)">
+        <span class="card-thumb-icon">${curso.icone}</span>
+        <div class="card-thumb-stripe" style="background:${curso.corFaixa}"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-tipo" style="color:${curso.corSecundaria}">${curso.tipo}</div>
+        <div class="card-titulo">${disponivel ? curso.nome : '<span style="color:#9aa0a6">'+curso.nome+'</span>'}</div>
+        <div class="card-desc">${curso.descricao}</div>
+        <div class="card-tags">${tagsHTML}</div>
+      </div>
+      <div class="card-footer">
+        <div class="progress-mini">
+          <div class="progress-mini-bar">
+            <div class="progress-mini-fill" style="width:${pct}%;background:linear-gradient(90deg,${curso.corPrimaria},${curso.corSecundaria})"></div>
+          </div>
+          <div class="progress-mini-text">${progressoTexto}</div>
+        </div>
+        ${disponivel
+          ? `<a href="${curso.link}" class="btn-acessar" style="background:${curso.corPrimaria}">Acessar ↗</a>`
+          : `<span class="btn-em-breve">🔒 Em breve</span>`
+        }
+      </div>
+      <div class="card-edit" id="edit-${curso.id}">
+        <span class="card-edit-label">Visibilidade do curso</span>
+        <div class="toggle-wrap">
+          <span class="toggle-label">${visivel ? 'Visível' : 'Oculto'}</span>
+          <label class="toggle">
+            <input type="checkbox" id="tog-${curso.id}" ${visivel ? 'checked' : ''} onchange="alterarVis('${curso.id}', this)">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>`;
+
+    grid.appendChild(card);
+  }
+
+  // Mostrar linha de edição para professor
+  if (isProfessor) {
+    document.querySelectorAll('.card-edit').forEach(el => el.style.display = 'flex');
   }
 })();
 
-function sair(){
+function alterarVis(id, checkbox) {
+  const val = checkbox.checked ? 1 : 0;
+  setVis(id, val);
+  const label = checkbox.closest('.toggle-wrap').querySelector('.toggle-label');
+  if (label) label.textContent = val ? 'Visível' : 'Oculto';
+  // Recarrega para refletir mudança no card
+  location.reload();
+}
+
+function exportarJSON() {
+  if (!dadosCursos) return;
+  const copia = JSON.parse(JSON.stringify(dadosCursos));
+  copia.cursos.forEach(c => { c.visivel = getVis(c.id, c.visivel); });
+  const blob = new Blob([JSON.stringify(copia, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'visualizacaocursos.json';
+  a.click();
+}
+
+function sair() {
   localStorage.removeItem('senai_role');
   localStorage.removeItem('senai_login');
   window.location.href = 'login.html';
