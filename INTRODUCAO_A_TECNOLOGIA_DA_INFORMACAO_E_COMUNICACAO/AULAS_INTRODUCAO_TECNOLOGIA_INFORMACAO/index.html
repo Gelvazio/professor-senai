@@ -130,13 +130,21 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 
 <script>
 (async () => {
+  const SUPABASE_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
+  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
+
   let dados;
   try {
-    const r = await fetch('visualizacaoaulas.json');
-    dados = await r.json();
+    const r = await fetch(
+      `${SUPABASE_URL}/rest/v1/curso?select=descricaocurso,materias&limit=1`,
+      { headers: { 'apikey': SUPABASE_KEY } }
+    );
+    const rows = await r.json();
+    if (!Array.isArray(rows) || rows.length === 0) throw new Error('sem dados');
+    dados = { curso: rows[0].descricaocurso, aulas: rows[0].materias };
   } catch {
     document.getElementById('grid').innerHTML =
-      '<p style="color:#d32f2f;font-size:14px">Erro ao carregar visualizacaoaulas.json</p>';
+      '<p style="color:#d32f2f;font-size:14px">Erro ao carregar dados do Supabase</p>';
     return;
   }
 
