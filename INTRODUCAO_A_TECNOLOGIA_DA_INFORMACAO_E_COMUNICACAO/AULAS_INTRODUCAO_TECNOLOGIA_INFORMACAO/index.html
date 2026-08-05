@@ -151,8 +151,9 @@ let cursoId = 1;
 (async () => {
   let dados;
   try {
+    const cursoParam = new URLSearchParams(location.search).get('curso') || 'uc1';
     const r = await fetch(
-      `${SUPABASE_URL}/rest/v1/curso?select=id,descricaocurso,materias&limit=1`,
+      `${SUPABASE_URL}/rest/v1/curso?select=id,descricaocurso,materias&codigo=eq.${encodeURIComponent(cursoParam)}&limit=1`,
       { headers: { 'apikey': SUPABASE_KEY } }
     );
     const rows = await r.json();
