@@ -1,0 +1,32 @@
+{
+  "cursos": [
+    {
+      "id": "opi",
+      "nome": "Operador de Produção Industrial",
+      "tipo": "Aprendizagem Industrial",
+      "icone": "🏭",
+      "descricao": "Capacitação para atuação em linhas de produção industrial, com foco em tecnologia da informação, segurança do trabalho e comunicação profissional.",
+      "corPrimaria": "#004384",
+      "corSecundaria": "#0071e3",
+      "corFaixa": "#f7941d",
+      "tags": ["UC1 — Introdução à TIC", "UC2 — Segurança do Trabalho", "40h + 12h"],
+      "link": "index.html",
+      "progressoJson": "visualizacaoaulas.json",
+      "visivel": 1
+    },
+    {
+      "id": "tds",
+      "nome": "Técnico em Desenvolvimento de Sistemas",
+      "tipo": "Habilitação Técnica",
+      "icone": "💻",
+      "descricao": "Formação para desenvolvimento de sistemas, programação, banco de dados, interfaces e metodologias ágeis aplicadas à indústria de software.",
+      "corPrimaria": "#1a237e",
+      "corSecundaria": "#3949ab",
+      "corFaixa": "#00bcd4",
+      "tags": ["Programação", "Banco de Dados", "Em breve"],
+      "link": "#",
+      "progressoJson": null,
+      "visivel": 0
+    }
+  ]
+}
