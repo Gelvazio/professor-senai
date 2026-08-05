@@ -114,9 +114,6 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
   </div>
 </div>
 
-<div class="export-bar" id="exportBar">
-  <button class="btn-export" onclick="exportarJSON()">⬇ Exportar visualizacaocursos.json</button>
-</div>
 
 <script>
 const role = localStorage.getItem('senai_role') || 'ALUNO';
@@ -128,8 +125,10 @@ document.getElementById('roleBadge').textContent = isProfessor ? '👨‍🏫 Pr
 // Mostrar controles de professor
 if (isProfessor) {
   document.getElementById('editBanner').classList.remove('hidden');
-  document.getElementById('exportBar').style.display = 'block';
 }
+
+const SUPABASE_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
 
 let dadosCursos = null;
 
@@ -144,10 +143,28 @@ function setVis(id, val) {
 
 (async function () {
   try {
-    const r = await fetch('visualizacaocursos.json');
-    dadosCursos = await r.json();
+    const r = await fetch(
+      `${SUPABASE_URL}/rest/v1/curso?select=id,codigo,nome_completo,tipo_curso,icone,descricao_card,cor_primaria,cor_secundaria,cor_faixa,tags,link_aulas,visivel,materias&order=id`,
+      { headers: { 'apikey': SUPABASE_KEY } }
+    );
+    const rows = await r.json();
+    if (!Array.isArray(rows)) throw new Error();
+    dadosCursos = { cursos: rows.map(row => ({
+      id: row.codigo,
+      nome: row.nome_completo,
+      tipo: row.tipo_curso,
+      icone: row.icone,
+      descricao: row.descricao_card,
+      corPrimaria: row.cor_primaria,
+      corSecundaria: row.cor_secundaria,
+      corFaixa: row.cor_faixa,
+      tags: row.tags || [],
+      link: row.link_aulas,
+      visivel: row.visivel,
+      _materias: row.materias
+    })) };
   } catch {
-    document.getElementById('grid').innerHTML = '<p style="color:#d32f2f;font-size:14px">Erro ao carregar visualizacaocursos.json</p>';
+    document.getElementById('grid').innerHTML = '<p style="color:#d32f2f;font-size:14px">Erro ao carregar dados do Supabase</p>';
     return;
   }
 
@@ -158,17 +175,13 @@ function setVis(id, val) {
     const visivel = getVis(curso.id, curso.visivel);
     const disponivel = visivel === 1;
 
-    // Progresso
+    // Progresso a partir do campo materias do Supabase
     let pct = 0, progressoTexto = 'Conteúdo em preparação';
-    if (disponivel && curso.progressoJson) {
-      try {
-        const rp = await fetch(curso.progressoJson);
-        const dp = await rp.json();
-        const aulas = dp.aulas || [];
-        const vis = aulas.filter(a => a.visivel === 1).length;
-        pct = aulas.length ? Math.round((vis / aulas.length) * 100) : 0;
-        progressoTexto = `${vis} de ${aulas.length} aulas disponíveis`;
-      } catch { progressoTexto = 'Progresso indisponível'; }
+    if (disponivel && curso._materias) {
+      const aulas = Array.isArray(curso._materias) ? curso._materias : [];
+      const vis = aulas.filter(a => a.visivel === 1).length;
+      pct = aulas.length ? Math.round((vis / aulas.length) * 100) : 0;
+      progressoTexto = `${vis} de ${aulas.length} aulas disponíveis`;
     }
 
     const tagsHTML = curso.tags.map(t => `<span class="tag">${t}</span>`).join('');
@@ -229,16 +242,6 @@ function alterarVis(id, checkbox) {
   location.reload();
 }
 
-function exportarJSON() {
-  if (!dadosCursos) return;
-  const copia = JSON.parse(JSON.stringify(dadosCursos));
-  copia.cursos.forEach(c => { c.visivel = getVis(c.id, c.visivel); });
-  const blob = new Blob([JSON.stringify(copia, null, 2)], { type: 'application/json' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'visualizacaocursos.json';
-  a.click();
-}
 
 function sair() {
   localStorage.removeItem('senai_role');
