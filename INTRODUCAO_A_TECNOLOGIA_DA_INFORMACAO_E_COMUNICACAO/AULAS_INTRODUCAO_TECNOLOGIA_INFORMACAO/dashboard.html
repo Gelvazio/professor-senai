@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SENAI — Dashboard de Cursos</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-height:100vh}
+
+/* ── Header ── */
+.header{background:#004384;color:#fff;padding:0 24px;display:flex;align-items:center;gap:16px;height:56px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.header-logo{font-weight:700;font-size:15px;letter-spacing:.5px;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:4px;white-space:nowrap;text-decoration:none;color:#fff}
+.header-title{font-size:14px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.header-spacer{flex:1}
+.header-btn{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;text-decoration:none;transition:background .15s;white-space:nowrap}
+.header-btn:hover{background:rgba(255,255,255,.28)}
+.role-badge{font-size:11px;background:rgba(255,255,255,.2);padding:3px 10px;border-radius:20px;white-space:nowrap}
+
+/* ── Hero ── */
+.hero{background:linear-gradient(135deg,#003068 0%,#004384 60%,#0055b3 100%);padding:36px 24px 32px;text-align:center;color:#fff;border-bottom:3px solid #f7941d}
+.hero-badge{display:inline-block;background:rgba(247,148,29,.2);border:1px solid rgba(247,148,29,.5);color:#f7941d;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:14px}
+.hero h1{font-size:22px;font-weight:700;margin-bottom:6px}
+.hero p{font-size:13px;opacity:.8}
+
+/* ── Grid ── */
+.section{padding:28px 24px}
+.section-label{font-size:11px;font-weight:600;color:#666;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+
+/* ── Card ── */
+.card{background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.12);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .15s}
+.card:hover{box-shadow:0 6px 24px rgba(0,67,132,.18);transform:translateY(-2px)}
+.card-locked{opacity:.6;cursor:not-allowed}
+.card-locked:hover{box-shadow:0 2px 8px rgba(0,0,0,.12);transform:none}
+
+.card-thumb{height:100px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.card-thumb-opi{background:linear-gradient(135deg,#004384 0%,#0071e3 100%)}
+.card-thumb-locked{background:linear-gradient(135deg,#7a8390 0%,#9aa0a6 100%)}
+.card-thumb-icon{font-size:52px;opacity:.9}
+.card-thumb-stripe{position:absolute;bottom:0;left:0;right:0;height:4px;background:#f7941d}
+
+.card-body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column;gap:10px}
+.card-curso{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#004384}
+.card-titulo{font-size:16px;font-weight:700;color:#202124;line-height:1.3}
+.card-desc{font-size:12px;color:#666;line-height:1.6;flex:1}
+
+.card-tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:10px;padding:3px 9px;border-radius:20px;font-weight:600}
+.tag-blue{background:#e8f0fe;color:#004384}
+.tag-orange{background:#fff3e0;color:#e65100}
+.tag-gray{background:#f1f3f4;color:#666}
+
+.card-footer{padding:14px 20px;border-top:1px solid #f0f0f0;display:flex;align-items:center;justify-content:space-between}
+.btn-acessar{display:flex;align-items:center;gap:6px;background:#004384;color:#fff;text-decoration:none;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;transition:background .15s}
+.btn-acessar:hover{background:#00306a}
+.btn-em-breve{display:flex;align-items:center;gap:6px;background:#f1f3f4;color:#aaa;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;cursor:not-allowed}
+
+.progress-mini{flex:1;margin-right:16px}
+.progress-mini-bar{height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden;margin-bottom:4px}
+.progress-mini-fill{height:100%;background:linear-gradient(90deg,#004384,#0071e3);border-radius:2px}
+.progress-mini-text{font-size:10px;color:#888}
+</style>
+</head>
+<body>
+
+<script>
+(function(){
+  if(!localStorage.getItem('senai_role')) window.location.replace('login.html');
+})();
+</script>
+
+<div class="header">
+  <a class="header-logo" href="dashboard.html">SENAI</a>
+  <span class="header-title">Painel de Cursos</span>
+  <span class="header-spacer"></span>
+  <span class="role-badge" id="roleBadge"></span>
+  <button onclick="sair()" class="header-btn" style="margin-left:8px">🚪 Sair</button>
+</div>
+
+<div class="hero">
+  <div class="hero-badge">Módulo Educação para o Trabalho</div>
+  <h1>Painel de Cursos — SENAI</h1>
+  <p>Selecione o curso para acessar as aulas, materiais e avaliações</p>
+</div>
+
+<div class="section">
+  <div class="section-label">Cursos disponíveis</div>
+  <div class="grid">
+
+    <!-- CARD 1 — Operador de Produção Industrial -->
+    <div class="card">
+      <div class="card-thumb card-thumb-opi">
+        <span class="card-thumb-icon">🏭</span>
+        <div class="card-thumb-stripe"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-curso">Aprendizagem Industrial</div>
+        <div class="card-titulo">Operador de Produção Industrial</div>
+        <div class="card-desc">Capacitação para atuação em linhas de produção industrial, com foco em tecnologia da informação, segurança do trabalho e comunicação profissional.</div>
+        <div class="card-tags">
+          <span class="tag tag-blue">UC1 — Introdução à TIC</span>
+          <span class="tag tag-orange">UC2 — Segurança do Trabalho</span>
+          <span class="tag tag-gray">40h + 12h</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="progress-mini">
+          <div class="progress-mini-bar"><div class="progress-mini-fill" id="progressFill" style="width:0%"></div></div>
+          <div class="progress-mini-text" id="progressText">Carregando...</div>
+        </div>
+        <a href="index.html" class="btn-acessar">Acessar ↗</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 — Placeholder -->
+    <div class="card card-locked">
+      <div class="card-thumb card-thumb-locked">
+        <span class="card-thumb-icon">🔒</span>
+      </div>
+      <div class="card-body">
+        <div class="card-curso" style="color:#9aa0a6">Em breve</div>
+        <div class="card-titulo" style="color:#9aa0a6">Novo Curso</div>
+        <div class="card-desc">Este curso será disponibilizado em breve. Fique atento às atualizações do painel.</div>
+        <div class="card-tags">
+          <span class="tag tag-gray">Em preparação</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="progress-mini">
+          <div class="progress-mini-bar"><div class="progress-mini-fill" style="width:0%"></div></div>
+          <div class="progress-mini-text">Indisponível</div>
+        </div>
+        <span class="btn-em-breve">🔒 Em breve</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// Perfil
+(function(){
+  const role = localStorage.getItem('senai_role') || 'ALUNO';
+  document.getElementById('roleBadge').textContent = role === 'PROFESSOR' ? '👨‍🏫 Professor' : '👨‍🎓 Aluno';
+})();
+
+// Progresso do curso (lê visualizacaoaulas.json)
+(async function(){
+  try {
+    const r = await fetch('visualizacaoaulas.json');
+    const dados = await r.json();
+    const aulas = dados.aulas || [];
+    const visiveis = aulas.filter(a => a.visivel === 1).length;
+    const pct = aulas.length ? Math.round((visiveis / aulas.length) * 100) : 0;
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressText').textContent = `${visiveis} de ${aulas.length} aulas disponíveis`;
+  } catch {
+    document.getElementById('progressText').textContent = 'Progresso indisponível';
+  }
+})();
+
+function sair(){
+  localStorage.removeItem('senai_role');
+  localStorage.removeItem('senai_login');
+  window.location.href = 'login.html';
+}
+</script>
+</body>
+</html>
