@@ -1,0 +1,16 @@
+{
+  "PROFESSOR": {
+    "acessoTotal": true,
+    "verScripts": true,
+    "verGIFT": true,
+    "verResponder": true,
+    "redirecionarPara": "index.html"
+  },
+  "ALUNO": {
+    "acessoTotal": false,
+    "verScripts": false,
+    "verGIFT": false,
+    "verResponder": true,
+    "redirecionarPara": "index.html"
+  }
+}
