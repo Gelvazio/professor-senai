@@ -209,7 +209,7 @@ function setVis(id, val) {
           <div class="progress-mini-text">${progressoTexto}</div>
         </div>
         ${disponivel
-          ? `<a href="${curso.link}" class="btn-acessar" style="background:${curso.corPrimaria}">Acessar ↗</a>`
+          ? `<a href="${curso.link}?curso=${curso.id}" class="btn-acessar" style="background:${curso.corPrimaria}">Acessar ↗</a>`
           : `<span class="btn-em-breve">🔒 Em breve</span>`
         }
       </div>
