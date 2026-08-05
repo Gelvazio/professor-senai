@@ -119,7 +119,7 @@ async function fazerLogin() {
     if (Array.isArray(rows) && rows.length > 0) {
       localStorage.setItem('senai_role', rows[0].perfil);
       localStorage.setItem('senai_login', Date.now());
-      window.location.href = 'index.html';
+      window.location.href = 'dashboard.html';
     } else {
       erro.textContent = 'Senha incorreta. Tente novamente.';
       erro.classList.add('show');
