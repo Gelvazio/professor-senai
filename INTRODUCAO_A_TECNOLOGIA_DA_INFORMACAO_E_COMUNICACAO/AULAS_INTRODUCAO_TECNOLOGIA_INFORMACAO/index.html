@@ -188,7 +188,7 @@ let cursoId = 1;
     card.className = 'card ' + (disponivel ? 'card-available' : 'card-locked');
 
     const materiaisHTML = disponivel
-      ? aula.materiais.map(m => {
+      ? aula.materiais.filter(m => m.visivel !== 0).map(m => {
           if (m.tipo === 'questionario') {
             if (m.arquivo === '#') {
               return `<div class="material-row">
@@ -265,7 +265,7 @@ let cursoId = 1;
     document.getElementById('modalNum').textContent = `Aula ${String(aula.numero).padStart(2,'0')} · ${aula.data}`;
     document.getElementById('modalTitulo').textContent = aula.titulo;
     const list = document.getElementById('modalList');
-    list.innerHTML = aula.materiais.map(m => {
+    list.innerHTML = aula.materiais.filter(m => m.visivel !== 0).map(m => {
       if (m.tipo === 'questionario') {
         if (m.arquivo === '#') {
           return `<div class="modal-material-row">
