@@ -80,6 +80,17 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 .modal-material-arrow{color:#0071e3;font-size:14px}
 .modal-material-pdf{display:flex;align-items:center;gap:4px;padding:10px 12px;border-radius:8px;border:1px solid #f7941d;background:#fff8f0;color:#f7941d;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:background .15s}
 .modal-material-pdf:hover{background:#f7941d;color:#fff}
+
+/* ── Toggle de aula (só professor) ── */
+.card-edit-bar{display:none;padding:8px 16px;background:#f8f9fa;border-top:1px solid #e8eaed;align-items:center;justify-content:space-between;gap:8px}
+body.professor .card-edit-bar{display:flex}
+.edit-label-small{font-size:11px;color:#666;font-weight:500}
+.toggle-sm{position:relative;width:36px;height:20px;flex-shrink:0}
+.toggle-sm input{opacity:0;width:0;height:0;position:absolute}
+.toggle-sm-slider{position:absolute;inset:0;background:#ccc;border-radius:20px;cursor:pointer;transition:background .2s}
+.toggle-sm-slider:before{content:'';position:absolute;width:14px;height:14px;left:3px;top:3px;background:#fff;border-radius:50%;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.toggle-sm input:checked + .toggle-sm-slider{background:#2e7d32}
+.toggle-sm input:checked + .toggle-sm-slider:before{transform:translateX(16px)}
 </style>
 </head>
 <script>
@@ -130,18 +141,20 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 </div>
 
 <script>
-(async () => {
-  const SUPABASE_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
-  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
+const SUPABASE_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
+let cursoId = 1;
 
+(async () => {
   let dados;
   try {
     const r = await fetch(
-      `${SUPABASE_URL}/rest/v1/curso?select=descricaocurso,materias&limit=1`,
+      `${SUPABASE_URL}/rest/v1/curso?select=id,descricaocurso,materias&limit=1`,
       { headers: { 'apikey': SUPABASE_KEY } }
     );
     const rows = await r.json();
     if (!Array.isArray(rows) || rows.length === 0) throw new Error('sem dados');
+    cursoId = rows[0].id;
     dados = { curso: rows[0].descricaocurso, aulas: rows[0].materias };
   } catch {
     document.getElementById('grid').innerHTML =
@@ -199,6 +212,13 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
           <span class="card-data">📅 ${aula.data}</span>
         </div>
         <div class="materiais-list">${materiaisHTML}</div>
+      </div>
+      <div class="card-edit-bar">
+        <span class="edit-label-small">${disponivel ? '🟢 Visível aos alunos' : '🔒 Bloqueada'}</span>
+        <label class="toggle-sm">
+          <input type="checkbox" ${disponivel ? 'checked' : ''} onchange="toggleAula(${aula.numero}, this.checked)">
+          <span class="toggle-sm-slider"></span>
+        </label>
       </div>`;
 
     // Card com múltiplos materiais: abre modal ao clicar no header
@@ -244,11 +264,24 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 
   if (role === 'PROFESSOR') {
     badge.textContent = '👨‍🏫 Professor';
+    document.body.classList.add('professor');
   } else {
     badge.textContent = '👨‍🎓 Aluno';
     if (btnCodigos) btnCodigos.style.display = 'none';
   }
 })();
+
+async function toggleAula(numero, liberado) {
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/toggle_aula_visivel`, {
+      method: 'POST',
+      headers: { 'apikey': SUPABASE_KEY, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ p_curso_id: cursoId, p_aula_numero: numero, p_visivel: liberado ? 1 : 0 })
+    });
+    if (res.ok) location.reload();
+    else alert('Erro ao atualizar a aula. Tente novamente.');
+  } catch { alert('Erro de conexão.'); }
+}
 
 function sairSessao() {
   localStorage.removeItem('senai_role');
