@@ -54,6 +54,9 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 .material-arrow{font-size:11px;color:#999;flex-shrink:0}
 .material-pdf{display:flex;align-items:center;justify-content:center;gap:3px;padding:8px 9px;border-radius:6px;border:1px solid #f7941d;background:#fff8f0;color:#f7941d;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0;text-decoration:none;transition:background .15s}
 .material-pdf:hover{background:#f7941d;color:#fff}
+.material-quiz{flex:1;display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:6px;border:1px solid #1b5e20;background:#f1f8f2;text-decoration:none;color:#1b5e20;font-size:12px;font-weight:600;transition:background .15s,border-color .15s}
+.material-quiz:hover{background:#1b5e20;color:#fff}
+.material-quiz-em-breve{flex:1;display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:6px;border:1px solid #e0e0e0;background:#f8f9fa;color:#aaa;font-size:12px;font-weight:500;cursor:not-allowed}
 
 /* Locked overlay */
 .locked-badge{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px 0 4px;color:#999}
@@ -184,15 +187,33 @@ let cursoId = 1;
     card.className = 'card ' + (disponivel ? 'card-available' : 'card-locked');
 
     const materiaisHTML = disponivel
-      ? aula.materiais.map(m => `
-          <div class="material-row">
+      ? aula.materiais.map(m => {
+          if (m.tipo === 'questionario') {
+            if (m.arquivo === '#') {
+              return `<div class="material-row">
+                <span class="material-quiz-em-breve">
+                  <span class="material-icon">${m.icone || '📝'}</span>
+                  <span class="material-nome">${m.nome} — em breve</span>
+                </span>
+              </div>`;
+            }
+            return `<div class="material-row">
+              <a class="material-quiz" href="${m.arquivo}" target="_blank">
+                <span class="material-icon">${m.icone || '📝'}</span>
+                <span class="material-nome">${m.nome}</span>
+                <span class="material-arrow">↗</span>
+              </a>
+            </div>`;
+          }
+          return `<div class="material-row">
             <a class="material-btn" href="${m.arquivo}" target="_blank">
               <span class="material-icon">${m.icone || '📄'}</span>
               <span class="material-nome">${m.nome}</span>
               <span class="material-arrow">↗</span>
             </a>
             <a class="material-pdf" href="${m.arquivo}#print" target="_blank" title="Abrir e imprimir como PDF">⬇ PDF</a>
-          </div>`).join('')
+          </div>`;
+        }).join('')
       : `<div class="locked-badge">
            <span class="locked-icon">🔒</span>
            <span class="locked-msg">Conteúdo indisponível</span>
@@ -243,15 +264,33 @@ let cursoId = 1;
     document.getElementById('modalNum').textContent = `Aula ${String(aula.numero).padStart(2,'0')} · ${aula.data}`;
     document.getElementById('modalTitulo').textContent = aula.titulo;
     const list = document.getElementById('modalList');
-    list.innerHTML = aula.materiais.map(m => `
-      <div class="modal-material-row">
+    list.innerHTML = aula.materiais.map(m => {
+      if (m.tipo === 'questionario') {
+        if (m.arquivo === '#') {
+          return `<div class="modal-material-row">
+            <span class="modal-material-btn" style="color:#aaa;border-color:#e0e0e0;background:#f8f9fa;cursor:not-allowed">
+              <span class="modal-material-icon">${m.icone || '📝'}</span>
+              <span class="modal-material-nome">${m.nome} — em breve</span>
+            </span>
+          </div>`;
+        }
+        return `<div class="modal-material-row">
+          <a class="modal-material-btn" href="${m.arquivo}" target="_blank" style="border-color:#1b5e20;background:#f1f8f2;color:#1b5e20">
+            <span class="modal-material-icon">${m.icone || '📝'}</span>
+            <span class="modal-material-nome">${m.nome}</span>
+            <span class="modal-material-arrow" style="color:#1b5e20">↗</span>
+          </a>
+        </div>`;
+      }
+      return `<div class="modal-material-row">
         <a class="modal-material-btn" href="${m.arquivo}" target="_blank">
           <span class="modal-material-icon">${m.icone || '📄'}</span>
           <span class="modal-material-nome">${m.nome}</span>
           <span class="modal-material-arrow">↗</span>
         </a>
         <a class="modal-material-pdf" href="${m.arquivo}#print" target="_blank" title="Abrir e imprimir como PDF">⬇ PDF</a>
-      </div>`).join('');
+      </div>`;
+    }).join('');
     modalBg.classList.add('open');
   }
 })();
