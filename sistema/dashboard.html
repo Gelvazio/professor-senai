@@ -720,14 +720,6 @@
       <span class="header-title">Painel de Cursos</span>
       <span class="header-spacer"></span>
       <span class="role-badge" id="roleBadge"></span>
-      <button
-        id="btnAdmin"
-        onclick="toggleAdmin()"
-        class="header-btn"
-        style="display: none; margin-left: 8px"
-      >
-        ⚙️ Admin
-      </button>
       <button onclick="sair()" class="header-btn" style="margin-left: 8px">
         🚪 Sair
       </button>
@@ -1075,7 +1067,6 @@
 
       // Mostrar controles de professor
       if (isProfessor) {
-        document.getElementById("btnAdmin").style.display = "";
         document.getElementById("adminSection").style.display = "block";
       }
 
