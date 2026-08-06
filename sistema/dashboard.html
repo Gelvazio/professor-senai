@@ -351,7 +351,7 @@ function toggleAdmin() {
   const aberto = getComputedStyle(sec).display !== 'none';
   sec.style.display = aberto ? 'none' : 'block';
   btn.style.background = aberto ? '' : 'rgba(255,255,255,.35)';
-  if (!aberto) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  if (!aberto) window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // ── CRUD ─────────────────────────────────────
