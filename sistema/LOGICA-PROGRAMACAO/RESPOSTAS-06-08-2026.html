@@ -56,8 +56,17 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 .dot-g{background:#28c840}
 
 /* ── Bloco de código ── */
-.code-wrap{background:#0d1117;padding:20px 22px;overflow-x:auto;max-height:72vh;overflow-y:auto}
+.code-wrap{display:none;background:#0d1117;padding:20px 22px;overflow-x:auto;max-height:72vh;overflow-y:auto}
+.code-wrap.open{display:block}
 pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line-height:1.75;color:#e6edf3;white-space:pre;tab-size:3}
+
+/* ── Toggle da barra de código ── */
+.code-label-bar{cursor:pointer;user-select:none;transition:background .15s}
+.code-label-bar:hover{background:#1f2d3d}
+.code-toggle-hint{margin-left:auto;font-size:11px;color:#58a6ff;letter-spacing:.5px;font-weight:700}
+.code-toggle-arrow{display:inline-block;transition:transform .2s;margin-right:4px}
+.code-wrap.open ~ .code-label-bar .code-toggle-arrow,
+.code-label-bar.open .code-toggle-arrow{transform:rotate(90deg)}
 
 /* ── Syntax Portugol ── */
 .kw{color:#ff7b72}
@@ -70,6 +79,20 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
 
 /* ── Enunciado ── */
 .enunciado{padding:16px 22px 14px;background:#f8f9fa;border-bottom:1px solid #e8eaed;font-size:13px;color:#3c4043;line-height:1.8}
+
+/* ── Botão Professor ── */
+.prof-btn{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);color:#fff;font-size:13px;font-weight:600;padding:6px 14px;border-radius:20px;border:none;cursor:pointer;transition:background .2s,box-shadow .2s;white-space:nowrap;margin-right:4px;letter-spacing:.2px}
+.prof-btn:hover{background:rgba(255,255,255,.28)}
+.prof-btn.active{background:rgba(40,200,80,.4);box-shadow:0 0 0 2px rgba(40,200,80,.5)}
+
+/* ── Seção de código ── */
+.code-section{position:relative}
+
+/* ── Lock overlay ── */
+.lock-overlay{display:flex;position:absolute;inset:0;background:rgba(13,17,23,.94);z-index:10;align-items:center;justify-content:center;flex-direction:column;gap:10px;border-radius:0 0 12px 12px}
+.lock-icon{font-size:46px;line-height:1;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
+.lock-msg{font-size:15px;font-weight:700;color:#e6edf3;margin-top:2px}
+.lock-sub{font-size:12px;color:#8b949e;text-align:center;max-width:280px;line-height:1.6}
 </style>
 </head>
 <body>
@@ -78,6 +101,7 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
   <a class="header-logo" href="../sistema/index.html?curso=tds">SENAI</a>
   <span class="header-title">TDS — Lógica de Programação · Gabarito</span>
   <span class="header-spacer"></span>
+  <button class="prof-btn" id="profBtn" onclick="toggleProfMode()">🔒 Professor</button>
   <a class="back-btn" href="../sistema/index.html?curso=tds">← Voltar</a>
 </div>
 
@@ -96,13 +120,15 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
       <button class="modal-close" id="modalCloseBtn" title="Fechar (Esc)">✕</button>
     </div>
     <div class="enunciado" id="modalEnunciado"></div>
-    <div class="code-label-bar">
+    <div class="code-label-bar" id="codeLabelBar" onclick="toggleCode()">
+      <span class="code-toggle-arrow" id="codeArrow">▶</span>
       <span class="code-label-dot dot-r"></span>
       <span class="code-label-dot dot-y"></span>
       <span class="code-label-dot dot-g"></span>
       &nbsp;Portugol Studio
+      <span class="code-toggle-hint" id="codeHint">VER CÓDIGO</span>
     </div>
-    <div class="code-wrap">
+    <div class="code-wrap" id="codeWrap">
       <pre id="modalCode"></pre>
     </div>
   </div>
@@ -1342,6 +1368,10 @@ function abrirModal(num, q) {
   modalTitle.textContent = q.nome;
   document.getElementById('modalEnunciado').innerHTML = esc(q.enunciado).replace(/\n/g, '<br>');
   modalCode.innerHTML    = highlight(q.codigo);
+  // reset toggle ao abrir
+  document.getElementById('codeWrap').classList.remove('open');
+  document.getElementById('codeArrow').style.transform = '';
+  document.getElementById('codeHint').textContent = 'VER CÓDIGO';
   modalBg.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -1349,6 +1379,15 @@ function abrirModal(num, q) {
 function fecharModal() {
   modalBg.classList.remove('open');
   document.body.style.overflow = '';
+}
+
+function toggleCode() {
+  const wrap  = document.getElementById('codeWrap');
+  const arrow = document.getElementById('codeArrow');
+  const hint  = document.getElementById('codeHint');
+  const open  = wrap.classList.toggle('open');
+  arrow.style.transform = open ? 'rotate(90deg)' : '';
+  hint.textContent      = open ? 'OCULTAR' : 'VER CÓDIGO';
 }
 
 // ── Escape HTML ──────────────────────────────────────────────────────────────
