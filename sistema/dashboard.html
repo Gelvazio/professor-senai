@@ -1385,12 +1385,12 @@
           label: "Matérias",
           table: "materia",
           pk: "id",
-          listHeaders: ["ID", "Descrição", "Ativo"],
+          listHeaders: ["ID", "Nome", "Ativo"],
           listCols: ["id", "descricao", "ativo"],
           fields: [
             {
               key: "descricao",
-              label: "Descrição",
+              label: "Nome",
               type: "text",
               required: true,
             },
@@ -1591,10 +1591,12 @@
               .join("");
             let acoes = "";
             if (cfg.pk) {
-              const aulasBtn =
-                crudEntidade === "curso"
-                  ? `<button class="btn-aulas" onclick="abrirAulasCurso(${row.id}, '${(row.descricaocurso || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>`
-                  : "";
+              let aulasBtn = "";
+              if (crudEntidade === "curso") {
+                aulasBtn = `<button class="btn-aulas" onclick="abrirAulasCurso(${row.id}, '${(row.descricaocurso || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>`;
+              } else if (crudEntidade === "materia") {
+                aulasBtn = `<button class="btn-aulas" onclick="abrirAulasMateria(${row.id}, '${(row.descricao || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>`;
+              }
               acoes = `${aulasBtn}<button class="btn-ed" onclick="editarCRUD('${row[cfg.pk]}')">✏️</button>
              <button class="btn-del" onclick="excluirCRUD('${row[cfg.pk]}')">🗑️</button>`;
             } else {
@@ -1732,6 +1734,24 @@
           setAulasMsg("", "");
         } catch (e) {
           setAulasMsg("❌ Erro: " + e.message, "err");
+        }
+      }
+
+      async function abrirAulasMateria(materiaId, nome) {
+        setMsg("⏳ Buscando…", "");
+        try {
+          const links = await sbGet("cursomateria", `materiaid=eq.${materiaId}&select=cursoid`);
+          if (!links.length) {
+            setMsg("⚠️ Nenhum curso vinculado a esta matéria.", "warn");
+            return;
+          }
+          const cursoid = links[0].cursoid;
+          const cursoRows = await sbGet("curso", `id=eq.${cursoid}&select=descricaocurso`);
+          const cursoNome = cursoRows[0] ? cursoRows[0].descricaocurso : "Curso";
+          fecharCRUD();
+          await abrirAulasCurso(cursoid, cursoNome + " — " + nome);
+        } catch (e) {
+          setMsg("❌ " + e.message, "err");
         }
       }
 
