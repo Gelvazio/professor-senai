@@ -65,6 +65,8 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 /* ── Toggle visibilidade (só professor) ── */
 .card-edit{display:none;padding:10px 20px;background:#f8f9fa;border-top:1px solid #e8eaed;align-items:center;justify-content:space-between;gap:10px}
 .card-edit-label{font-size:12px;color:#555;font-weight:500}
+.btn-aulas-admin{display:inline-flex;align-items:center;gap:5px;background:#004384;color:#fff;font-size:11px;font-weight:700;padding:5px 12px;border-radius:6px;text-decoration:none;transition:background .15s}
+.btn-aulas-admin:hover{background:#003369}
 
 .toggle-wrap{display:flex;align-items:center;gap:8px}
 .toggle-label{font-size:11px;color:#888}
@@ -309,7 +311,8 @@ function setVis(id, val) {
         }
       </div>
       <div class="card-edit" id="edit-${curso.id}">
-        <span class="card-edit-label">Visibilidade do curso</span>
+        <a href="index.html?curso=${curso.id}" class="btn-aulas-admin">📋 Aulas</a>
+        <span class="card-edit-label">Visibilidade</span>
         <div class="toggle-wrap">
           <span class="toggle-label">${visivel ? 'Visível' : 'Oculto'}</span>
           <label class="toggle">
