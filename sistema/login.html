@@ -70,8 +70,11 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#004384;min-he
 </div>
 
 <script>
-// Auto-login como PROFESSOR em ambiente local (http://127.0.0.1)
-if (window.location.origin === 'http://127.0.0.1') {
+// Auto-login como PROFESSOR em ambiente local (127.0.0.1, localhost ou file://)
+const _isLocal = window.location.hostname === '127.0.0.1' ||
+                 window.location.hostname === 'localhost' ||
+                 window.location.protocol === 'file:';
+if (_isLocal) {
   localStorage.setItem('senai_role', 'PROFESSOR');
   localStorage.setItem('senai_login', Date.now());
   window.location.replace('dashboard.html');

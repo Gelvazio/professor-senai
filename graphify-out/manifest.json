@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786056737.8465245,
-    "ast_hash": "0742368791586d3ece2eaccda3a8d50c",
+    "mtime": 1786056897.766943,
+    "ast_hash": "0413493d8d0f7d78e5129a458e81df4d",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -310,8 +310,8 @@
     "semantic_hash": ""
   },
   "sistema/login.html": {
-    "mtime": 1786056689.5393853,
-    "ast_hash": "7fb3d10eaa3b2c2691ae94c5c7375d2d",
+    "mtime": 1786056999.1390748,
+    "ast_hash": "2838fd536bb04a50ffc925fab3753857",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -342,6 +342,16 @@
   "sistema/codigos_acesso.pdf": {
     "mtime": 1785941036.5779276,
     "ast_hash": "24cacf301441696e767471efe8549de8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/documentacao-padrao/SKILL.md": {
+    "mtime": 1781660741.0276847,
+    "ast_hash": "3200e9a9149be58ecc80f34e3f13d4b1",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1779573782.1656952,
+    "ast_hash": "e065bdafac4ca689ffd4e353ffd71160",
     "semantic_hash": ""
   }
 }
