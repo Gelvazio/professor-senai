@@ -70,6 +70,13 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#004384;min-he
 </div>
 
 <script>
+// Auto-login como PROFESSOR em ambiente local (http://127.0.0.1)
+if (window.location.origin === 'http://127.0.0.1') {
+  localStorage.setItem('senai_role', 'PROFESSOR');
+  localStorage.setItem('senai_login', Date.now());
+  window.location.replace('dashboard.html');
+}
+
 const SUPABASE_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
 const HASH_ALUNO   = 'a21d6f3803f0491c32444ef91a0836be243cc4da5186357e805b7009a5b0669b';
