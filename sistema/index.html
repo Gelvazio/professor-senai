@@ -93,7 +93,6 @@
         color: #666;
         letter-spacing: 1px;
         text-transform: uppercase;
-        margin-bottom: 14px;
       }
       .grid {
         display: grid;
@@ -481,6 +480,140 @@
       .toggle-sm input:checked + .toggle-sm-slider:before {
         transform: translateX(16px);
       }
+
+      /* ── Botão Nova Aula ── */
+      .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
+      }
+      .btn-nova-aula {
+        display: none;
+        align-items: center;
+        gap: 6px;
+        background: #004384;
+        color: #fff;
+        border: none;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.15s;
+      }
+      .btn-nova-aula:hover { background: #003369; }
+      body.professor .btn-nova-aula { display: flex; }
+
+      /* ── Botão Editar no card ── */
+      .card-edit-btn {
+        display: none;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: rgba(255,255,255,.22);
+        border: 1px solid rgba(255,255,255,.4);
+        color: #fff;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 3px 9px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.15s;
+        z-index: 2;
+      }
+      .card-edit-btn:hover { background: rgba(255,255,255,.38); }
+      body.professor .card-edit-btn { display: block; }
+
+      /* ── CRUD Modal ── */
+      .crud-modal-bg {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.52);
+        z-index: 300;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .crud-modal-bg.open { display: flex; }
+      .crud-modal {
+        background: #fff;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 560px;
+        max-height: 90vh;
+        overflow-y: auto;
+        box-shadow: 0 12px 48px rgba(0,0,0,.3);
+      }
+      .crud-modal-head {
+        background: #004384;
+        color: #fff;
+        padding: 16px 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 12px 12px 0 0;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      .crud-modal-head h3 { font-size: 15px; font-weight: 700; }
+      .crud-modal-body { padding: 22px; }
+      .form-group { margin-bottom: 14px; }
+      .form-label { font-size: 11px; font-weight: 700; color: #555; margin-bottom: 5px; display: block; text-transform: uppercase; letter-spacing: .4px; }
+      .form-input {
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 9px 12px;
+        font-size: 13px;
+        font-family: inherit;
+        color: #212121;
+        transition: border-color .15s;
+      }
+      .form-input:focus { outline: none; border-color: #004384; box-shadow: 0 0 0 2px rgba(0,67,132,.12); }
+      .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+      .mat-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
+      .mat-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #f8f9fa;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        padding: 8px 10px;
+      }
+      .mat-item-info { flex: 1; min-width: 0; }
+      .mat-item-nome { font-size: 12px; font-weight: 600; color: #212121; }
+      .mat-item-arquivo { font-size: 11px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .btn-mat-del { background: none; border: none; color: #d32f2f; font-size: 16px; cursor: pointer; padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+      .btn-mat-del:hover { background: #fce8e6; }
+      .btn-add-mat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background: #e8f0fe;
+        border: 1px dashed #004384;
+        color: #004384;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 8px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        transition: background .15s;
+      }
+      .btn-add-mat:hover { background: #d2e3fc; }
+      .crud-divider { border-top: 1px solid #eee; padding-top: 16px; margin-top: 4px; margin-bottom: 12px; font-size: 11px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: .5px; }
+      .crud-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; padding-top: 16px; border-top: 1px solid #eee; flex-wrap: wrap; }
+      .btn-primary { background: #004384; color: #fff; border: none; padding: 9px 20px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background .15s; }
+      .btn-primary:hover { background: #003369; }
+      .btn-danger { background: #d32f2f; color: #fff; border: none; padding: 9px 20px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; margin-right: auto; }
+      .btn-danger:hover { background: #b71c1c; }
+      .btn-secondary { background: #f1f3f4; color: #444; border: 1px solid #ddd; padding: 9px 20px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; }
+      .btn-secondary:hover { background: #e0e0e0; }
     </style>
   </head>
   <script>
@@ -544,9 +677,101 @@
     </div>
 
     <div class="grid-section">
-      <div class="section-label">Calendário de Aulas</div>
+      <div class="section-header">
+        <div class="section-label">Calendário de Aulas</div>
+        <button class="btn-nova-aula" onclick="abrirCadastro()">＋ Nova Aula</button>
+      </div>
       <div class="grid" id="grid">
         <p style="color: #888; font-size: 14px">Carregando aulas...</p>
+      </div>
+    </div>
+
+    <!-- Modal CRUD de Aulas -->
+    <div class="crud-modal-bg" id="crudModalBg">
+      <div class="crud-modal">
+        <div class="crud-modal-head">
+          <h3 id="crudModalTitulo">Nova Aula</h3>
+          <button onclick="fecharCrud()" style="background:none;border:none;color:#fff;font-size:20px;cursor:pointer;line-height:1">✕</button>
+        </div>
+        <div class="crud-modal-body">
+          <input type="hidden" id="crudNumeroOriginal">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Número</label>
+              <input class="form-input" id="crudNumero" type="number" min="1" placeholder="Ex: 5">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Ícone (emoji)</label>
+              <input class="form-input" id="crudIcone" type="text" placeholder="Ex: 📚">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Título da Aula</label>
+            <input class="form-input" id="crudTitulo" type="text" placeholder="Ex: Internet e World Wide Web">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Data</label>
+              <input class="form-input" id="crudData" type="text" placeholder="Ex: 07-08-2026">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Dia da Semana</label>
+              <input class="form-input" id="crudDia" type="text" placeholder="Ex: Quinta-feira">
+            </div>
+          </div>
+          <div class="form-group" style="display:flex;align-items:center;gap:10px">
+            <label class="form-label" style="margin:0">Visível aos alunos</label>
+            <label class="toggle-sm">
+              <input type="checkbox" id="crudVisivel">
+              <span class="toggle-sm-slider"></span>
+            </label>
+          </div>
+          <div class="crud-divider">Materiais</div>
+          <div class="mat-list" id="crudMatList"></div>
+          <button class="btn-add-mat" onclick="abrirAddMaterial()">＋ Adicionar Material</button>
+          <div class="crud-actions">
+            <button class="btn-danger" id="crudBtnExcluir" onclick="excluirAula()" style="display:none">🗑 Excluir Aula</button>
+            <button class="btn-secondary" onclick="fecharCrud()">Cancelar</button>
+            <button class="btn-primary" onclick="salvarAula()">💾 Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Adicionar Material -->
+    <div class="crud-modal-bg" id="matModalBg">
+      <div class="crud-modal" style="max-width:440px">
+        <div class="crud-modal-head">
+          <h3>Adicionar Material</h3>
+          <button onclick="fecharAddMaterial()" style="background:none;border:none;color:#fff;font-size:20px;cursor:pointer;line-height:1">✕</button>
+        </div>
+        <div class="crud-modal-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Ícone</label>
+              <input class="form-input" id="matIcone" placeholder="📄">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Tipo</label>
+              <select class="form-input" id="matTipo">
+                <option value="">Slide / Arquivo</option>
+                <option value="questionario">Questionário</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nome do Material</label>
+            <input class="form-input" id="matNome" placeholder="Ex: Slide — Internet e WWW">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Arquivo / URL</label>
+            <input class="form-input" id="matArquivo" placeholder="Caminho relativo ou https://...">
+          </div>
+          <div class="crud-actions">
+            <button class="btn-secondary" onclick="fecharAddMaterial()">Cancelar</button>
+            <button class="btn-primary" onclick="confirmarAddMaterial()">＋ Adicionar</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -570,6 +795,7 @@
       const SUPABASE_KEY =
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU";
       let cursoId = 1;
+      let todasAulas = [];
 
       (async () => {
         let dados;
@@ -592,6 +818,7 @@
         }
 
         const aulas = dados.aulas || [];
+        todasAulas = aulas;
         const visiveis = aulas.filter((a) => a.visivel === 1).length;
 
         // Header
@@ -656,6 +883,7 @@
 
           card.innerHTML = `
       <div class="card-header">
+        <button class="card-edit-btn" onclick="event.stopPropagation();abrirEdicao(${aula.numero})">✏️ Editar</button>
         <div class="card-icon">${disponivel ? aula.icone || "📚" : "🔒"}</div>
         <div class="card-meta">
           <div class="card-numero">Aula ${String(aula.numero).padStart(2, "0")}</div>
@@ -779,6 +1007,174 @@
         localStorage.removeItem("senai_login");
         window.location.href = "login.html";
       }
+
+      // ── CRUD Aulas ─────────────────────────────────────────────────
+      let materiaisTemp = [];
+      let editandoNumero = null;
+
+      function abrirCadastro() {
+        editandoNumero = null;
+        document.getElementById("crudModalTitulo").textContent = "Nova Aula";
+        document.getElementById("crudNumeroOriginal").value = "";
+        document.getElementById("crudNumero").value = "";
+        document.getElementById("crudIcone").value = "📚";
+        document.getElementById("crudTitulo").value = "";
+        document.getElementById("crudData").value = "";
+        document.getElementById("crudDia").value = "";
+        document.getElementById("crudVisivel").checked = false;
+        document.getElementById("crudBtnExcluir").style.display = "none";
+        materiaisTemp = [];
+        renderMatList();
+        document.getElementById("crudModalBg").classList.add("open");
+      }
+
+      function abrirEdicao(numero) {
+        const aula = todasAulas.find((a) => a.numero === numero);
+        if (!aula) return;
+        editandoNumero = numero;
+        document.getElementById("crudModalTitulo").textContent =
+          "Editar Aula " + String(numero).padStart(2, "0");
+        document.getElementById("crudNumeroOriginal").value = numero;
+        document.getElementById("crudNumero").value = numero;
+        document.getElementById("crudIcone").value = aula.icone || "📚";
+        document.getElementById("crudTitulo").value = aula.titulo || "";
+        document.getElementById("crudData").value = aula.data || "";
+        document.getElementById("crudDia").value = aula.diaSemana || "";
+        document.getElementById("crudVisivel").checked = aula.visivel === 1;
+        document.getElementById("crudBtnExcluir").style.display = "block";
+        materiaisTemp = JSON.parse(JSON.stringify(aula.materiais || []));
+        renderMatList();
+        document.getElementById("crudModalBg").classList.add("open");
+      }
+
+      function fecharCrud() {
+        document.getElementById("crudModalBg").classList.remove("open");
+      }
+
+      function renderMatList() {
+        const el = document.getElementById("crudMatList");
+        if (materiaisTemp.length === 0) {
+          el.innerHTML = '<p style="font-size:12px;color:#aaa;text-align:center;padding:8px 0">Nenhum material ainda</p>';
+          return;
+        }
+        el.innerHTML = materiaisTemp
+          .map(
+            (m, i) => `
+          <div class="mat-item">
+            <span style="font-size:18px">${m.icone || "📄"}</span>
+            <div class="mat-item-info">
+              <div class="mat-item-nome">${m.nome}</div>
+              <div class="mat-item-arquivo">${m.arquivo}</div>
+            </div>
+            <button class="btn-mat-del" onclick="removerMaterial(${i})">✕</button>
+          </div>`,
+          )
+          .join("");
+      }
+
+      function removerMaterial(i) {
+        materiaisTemp.splice(i, 1);
+        renderMatList();
+      }
+
+      function abrirAddMaterial() {
+        document.getElementById("matIcone").value = "📄";
+        document.getElementById("matNome").value = "";
+        document.getElementById("matArquivo").value = "";
+        document.getElementById("matTipo").value = "";
+        document.getElementById("matModalBg").classList.add("open");
+      }
+
+      function fecharAddMaterial() {
+        document.getElementById("matModalBg").classList.remove("open");
+      }
+
+      function confirmarAddMaterial() {
+        const nome = document.getElementById("matNome").value.trim();
+        const arquivo = document.getElementById("matArquivo").value.trim();
+        if (!nome || !arquivo) {
+          alert("Preencha nome e arquivo/URL.");
+          return;
+        }
+        const m = {
+          nome,
+          arquivo,
+          icone: document.getElementById("matIcone").value.trim() || "📄",
+        };
+        const tipo = document.getElementById("matTipo").value;
+        if (tipo) m.tipo = tipo;
+        materiaisTemp.push(m);
+        renderMatList();
+        fecharAddMaterial();
+      }
+
+      async function salvarAula() {
+        const numero = parseInt(document.getElementById("crudNumero").value);
+        const titulo = document.getElementById("crudTitulo").value.trim();
+        if (!numero || !titulo) {
+          alert("Preencha número e título.");
+          return;
+        }
+        const novaAula = {
+          numero,
+          titulo,
+          icone: document.getElementById("crudIcone").value.trim() || "📚",
+          data: document.getElementById("crudData").value.trim(),
+          diaSemana: document.getElementById("crudDia").value.trim(),
+          visivel: document.getElementById("crudVisivel").checked ? 1 : 0,
+          materiais: materiaisTemp,
+        };
+        const aulas = JSON.parse(JSON.stringify(todasAulas));
+        if (editandoNumero !== null) {
+          const idx = aulas.findIndex((a) => a.numero === editandoNumero);
+          if (idx >= 0) aulas[idx] = novaAula;
+          else aulas.push(novaAula);
+        } else {
+          aulas.push(novaAula);
+          aulas.sort((a, b) => a.numero - b.numero);
+        }
+        await patchMaterias(aulas);
+      }
+
+      async function excluirAula() {
+        if (!confirm(`Excluir a Aula ${editandoNumero}? Esta ação não pode ser desfeita.`)) return;
+        const aulas = todasAulas.filter((a) => a.numero !== editandoNumero);
+        await patchMaterias(aulas);
+      }
+
+      async function patchMaterias(aulas) {
+        try {
+          const res = await fetch(
+            `${SUPABASE_URL}/rest/v1/curso?id=eq.${cursoId}`,
+            {
+              method: "PATCH",
+              headers: {
+                apikey: SUPABASE_KEY,
+                "Content-Type": "application/json",
+                Prefer: "return=minimal",
+              },
+              body: JSON.stringify({ materias: aulas }),
+            },
+          );
+          if (res.ok) {
+            fecharCrud();
+            location.reload();
+          } else {
+            const err = await res.text();
+            alert("Erro ao salvar: " + err);
+          }
+        } catch {
+          alert("Erro de conexão. Tente novamente.");
+        }
+      }
+
+      // Fechar modais CRUD ao clicar fora
+      document.getElementById("crudModalBg").addEventListener("click", (e) => {
+        if (e.target === document.getElementById("crudModalBg")) fecharCrud();
+      });
+      document.getElementById("matModalBg").addEventListener("click", (e) => {
+        if (e.target === document.getElementById("matModalBg")) fecharAddMaterial();
+      });
     </script>
   </body>
 </html>
