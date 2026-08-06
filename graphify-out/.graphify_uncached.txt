@@ -1,0 +1,69 @@
+C:\fontes\professor-senai\.claude\settings.local.json
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\.claude\settings.local.json
+C:\fontes\professor-senai\sistema\supabase.js
+C:\fontes\professor-senai\sistema\CLAUDE.md
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 01 - 03-08-2026 - 00 - APRESENTACAO PROFESSOR\apresentacao-professor-gelvazio.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 01 - 03-08-2026 - 01 - HISTORIA DA COMPUTACAO\BANCO_QUESTOES_HISTORIA_COMPUTACAO.gift.txt
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 01 - 03-08-2026 - 01 - HISTORIA DA COMPUTACAO\HISTORIA_COMPUTACAO_AULA_01.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 01 - 03-08-2026 - 02 - INICIANDO NO CHROMEBOOK\BANCO_QUESTOES_INICIANDO_CHROMEBOOK.gift.txt
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 01 - 03-08-2026 - 02 - INICIANDO NO CHROMEBOOK\INICIANDO_CHROMEBOOK_AULA_01.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 01 - 03-08-2026 - 03 - CONTEUDO AULA\SLIDE_AULA_01.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 02 - 04-08-2026 - ELEMENTOS DA COMUNICACAO\SLIDE_AULA_02.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 02 - 04-08-2026 - ELEMENTOS DA COMUNICACAO\SLIDE_AULA_02_COMUNICACAO.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 03 - 05-08-2026 - COMUNICACAO EM EQUIPES\SLIDE_AULA_03.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 03 - 05-08-2026 - COMUNICACAO EM EQUIPES\SLIDE_INTERNET_WWW.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 03 - 05-08-2026 - SEGURANCA DA INFORMACAO\SLIDE_SEGURANCA_INFORMACAO.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 04 - 06-08-2026\ATIVIDADE_EQUIPE_06_08_2026.txt
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 04 - 06-08-2026\MEMBROS-EQUIPE-06-08-2026.txt
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 04 - 06-08-2026\SLIDE_AULA_04.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 05 - 07-08-2026\SLIDE_AULA_05.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 06 - 10-08-2026\SLIDE_AULA_06.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 07 - 11-08-2026\SLIDE_AULA_07.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 08 - 12-08-2026\SLIDE_AULA_08.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 09 - 13-08-2026\SLIDE_AULA_09.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\AULA 10 - 14-08-2026\SLIDE_AULA_10.html
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\PROBLEMAS-ACESSO-ALUNOS\PROBLEMAS-ACESSO-ALUNOS.txt
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\duplas-aula.txt
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\Chamada.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-01.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-02.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-03.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-04.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-05.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-06.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-07.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-08.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-09.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-10.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-11.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-12.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-13.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-14.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-15.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-16.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-17.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-18.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-19.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-20.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-21.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-22.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-23.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-24.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-25.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-26.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-27.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-28.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-29.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTAO-30.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\QUESTIONARIO-06-08-2026.txt
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\RESPOSTAS-06-08-2026.html
+C:\fontes\professor-senai\sistema\codigos.html
+C:\fontes\professor-senai\sistema\dashboard.html
+C:\fontes\professor-senai\sistema\index.html
+C:\fontes\professor-senai\sistema\login.html
+C:\fontes\professor-senai\sistema\questionarios.html
+C:\fontes\professor-senai\sistema\Guia Prático - etapas para elaboração do Plano de Ensino e SA (2).pdf
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AULAS\EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.pdf
+C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.pdf
+C:\fontes\professor-senai\sistema\LOGICA-PROGRAMACAO\LISTA DE 30 EXERCÍCIOS INTEGRADOS – PORTUGOL STUDIO.pdf
+C:\fontes\professor-senai\sistema\codigos_acesso.pdf
