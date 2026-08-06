@@ -308,6 +308,33 @@
 
 
 ================================================================================
+  PARTE 5 — QUESTIONÁRIOS INDIVIDUAIS
+================================================================================
+
+  QUESTÃO 18 — Responder os 3 Questionários
+  -------------------------------------------
+  Após concluir todas as questões em equipe, CADA MEMBRO deve responder
+  individualmente os três questionários abaixo no Google Forms:
+
+  [ ] 1. Questionário — Segurança da Informação
+         Acesse pelo link disponível na Aula 04 do Dashboard de Aulas.
+         Tempo estimado: 10 minutos.
+
+  [ ] 2. Questionário — Internet e WWW
+         Acesse pelo link disponível na Aula 04 do Dashboard de Aulas.
+         Tempo estimado: 10 minutos.
+
+  [ ] 3. Questionário — Hardware e Sistema Operacional
+         Acesse pelo link disponível na Aula 04 do Dashboard de Aulas.
+         Tempo estimado: 10 minutos.
+
+  ATENÇÃO:
+  - Os questionários são individuais — cada aluno responde com seu próprio login
+  - Não há tempo limite definido, mas devem ser concluídos até o fim da aula
+  - As respostas são enviadas automaticamente ao professor após submissão
+  - Você pode acessar o Dashboard em: sistema/index.html
+
+================================================================================
   ATA DA ATIVIDADE (preencher no Google Docs)
 ================================================================================
 
