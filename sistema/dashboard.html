@@ -171,6 +171,77 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
   </div>
 </div>
 
+<!-- ── Modal de Aulas ──────────────────────── -->
+<div class="crud-backdrop" id="aulasModal" style="display:none" onclick="aulasModalBgClick(event)">
+  <div class="crud-modal" style="max-width:700px">
+    <div class="crud-modal-head">
+      <h3 id="aulasModalTitulo">Aulas</h3>
+      <button class="crud-btn-fechar" onclick="fecharAulasModal()">✕</button>
+    </div>
+    <div class="crud-toolbar">
+      <button class="btn-novo" onclick="abrirFormAula(null)">＋ Nova Aula</button>
+      <span class="crud-msg" id="aulasMsg"></span>
+    </div>
+    <!-- Formulário inline -->
+    <div id="aulaFormArea" style="display:none;padding:16px 20px;border-bottom:1px solid #e8eaed;background:#fafafa;flex-shrink:0">
+      <input type="hidden" id="aulaNumOrig">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+        <div class="crud-field"><label class="crud-label">Número</label><input class="crud-input" id="aulaNum" type="number" min="1" placeholder="Ex: 5"></div>
+        <div class="crud-field"><label class="crud-label">Ícone (emoji)</label><input class="crud-input" id="aulaIcone" placeholder="📚"></div>
+      </div>
+      <div class="crud-field" style="margin-bottom:12px"><label class="crud-label">Título</label><input class="crud-input" id="aulaTitulo" placeholder="Ex: Internet e World Wide Web"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+        <div class="crud-field"><label class="crud-label">Data</label><input class="crud-input" id="aulaData" placeholder="07-08-2026"></div>
+        <div class="crud-field"><label class="crud-label">Dia da Semana</label><input class="crud-input" id="aulaDia" placeholder="Quinta-feira"></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
+        <span class="crud-label" style="margin:0">Visível aos alunos</span>
+        <label class="toggle" style="margin:0"><input type="checkbox" id="aulaVisivel"><span class="toggle-slider"></span></label>
+      </div>
+      <div style="border-top:1px solid #e0e0e0;padding-top:12px">
+        <div class="crud-label" style="margin-bottom:8px">Materiais</div>
+        <div id="aulaMatList" style="display:flex;flex-direction:column;gap:5px;margin-bottom:8px"></div>
+        <button onclick="abrirAddMatAula()" style="display:flex;align-items:center;justify-content:center;gap:5px;background:#e8f0fe;border:1px dashed #004384;color:#004384;font-size:12px;font-weight:600;padding:6px;border-radius:6px;cursor:pointer;width:100%;font-family:inherit">＋ Adicionar Material</button>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:14px;align-items:center">
+        <button class="btn-salvar" onclick="salvarAulaModal()">💾 Salvar Aula</button>
+        <button class="btn-cancelar" onclick="fecharFormAula()">Cancelar</button>
+        <button id="aulaBtnDel" onclick="excluirAulaModal()" style="display:none;background:#fce4ec;color:#c62828;border:none;padding:7px 14px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;margin-left:auto;font-family:inherit">🗑 Excluir Aula</button>
+      </div>
+    </div>
+    <!-- Lista -->
+    <div class="crud-table-wrap">
+      <table class="crud-table">
+        <thead><tr><th>#</th><th>Título</th><th>Data</th><th>Vis.</th><th>Ações</th></tr></thead>
+        <tbody id="aulasTbody"></tbody>
+      </table>
+      <div id="aulasVazio" style="display:none;padding:24px;text-align:center;color:#888;font-size:13px">Nenhuma aula cadastrada ainda.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Sub-modal Material -->
+<div class="crud-backdrop" id="matAulaModal" style="display:none;z-index:1100" onclick="if(event.target===this)fecharAddMatAula()">
+  <div class="crud-modal" style="max-width:440px">
+    <div class="crud-modal-head">
+      <h3>Adicionar Material</h3>
+      <button class="crud-btn-fechar" onclick="fecharAddMatAula()">✕</button>
+    </div>
+    <div style="padding:16px 20px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+        <div class="crud-field"><label class="crud-label">Ícone</label><input class="crud-input" id="mIcone" placeholder="📄"></div>
+        <div class="crud-field"><label class="crud-label">Tipo</label><select class="crud-input" id="mTipo"><option value="">Slide / Arquivo</option><option value="questionario">Questionário</option></select></div>
+      </div>
+      <div class="crud-field" style="margin-bottom:12px"><label class="crud-label">Nome</label><input class="crud-input" id="mNome" placeholder="Ex: Slide — Internet e WWW"></div>
+      <div class="crud-field" style="margin-bottom:16px"><label class="crud-label">Arquivo / URL</label><input class="crud-input" id="mArquivo" placeholder="Caminho relativo ou https://..."></div>
+      <div style="display:flex;gap:8px">
+        <button class="btn-salvar" onclick="confirmarMatAula()">＋ Adicionar</button>
+        <button class="btn-cancelar" onclick="fecharAddMatAula()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ── Modal CRUD ──────────────────────────── -->
 <div class="crud-backdrop" id="modalCRUD" style="display:none" onclick="crudBgClick(event)">
   <div class="crud-modal">
@@ -249,6 +320,7 @@ function setVis(id, val) {
     if (!Array.isArray(rows)) throw new Error();
     dadosCursos = { cursos: rows.map(row => ({
       id: row.codigo,
+      idNum: row.id,
       nome: row.nome_completo,
       tipo: row.tipo_curso,
       icone: row.icone,
@@ -312,7 +384,7 @@ function setVis(id, val) {
         }
       </div>
       <div class="card-edit" id="edit-${curso.id}">
-        <a href="index.html?curso=${curso.id}" class="btn-aulas-admin">📋 Aulas</a>
+        <button class="btn-aulas-admin" onclick="abrirAulasCurso(${curso.idNum}, '${curso.nome.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">📋 Aulas</button>
         <span class="card-edit-label">Visibilidade</span>
         <div class="toggle-wrap">
           <span class="toggle-label">${visivel ? 'Visível' : 'Oculto'}</span>
@@ -468,7 +540,7 @@ async function listarCRUD(){
     let acoes='';
     if(cfg.pk){
       const aulasBtn = crudEntidade==='curso'
-        ? `<a class="btn-aulas" href="index.html?curso=${row.codigo}" target="_blank">📋 Aulas</a>`
+        ? `<button class="btn-aulas" onclick="abrirAulasCurso(${row.id}, '${(row.descricaocurso||'').replace(/'/g,"\\'").replace(/"/g,'\\"')}')">📋 Aulas</button>`
         : '';
       acoes=`${aulasBtn}<button class="btn-ed" onclick="editarCRUD('${row[cfg.pk]}')">✏️</button>
              <button class="btn-del" onclick="excluirCRUD('${row[cfg.pk]}')">🗑️</button>`;
@@ -543,7 +615,167 @@ function setMsg(txt,tipo){
   if(tipo==='ok') setTimeout(()=>{ el.textContent=''; el.className='crud-msg'; },3000);
 }
 
-document.addEventListener('keydown',e=>{ if(e.key==='Escape') fecharCRUD(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ fecharCRUD(); fecharAulasModal(); fecharAddMatAula(); } });
+
+// ── Modal de Aulas ──────────────────────────────────────────
+let _aulaCursoId = null;
+let _aulaCursoNome = '';
+let _aulaLista = [];
+let _aulaMatTemp = [];
+
+async function abrirAulasCurso(idNum, nome) {
+  _aulaCursoId = idNum;
+  _aulaCursoNome = nome;
+  document.getElementById('aulasModalTitulo').textContent = 'Aulas — ' + nome;
+  document.getElementById('aulaFormArea').style.display = 'none';
+  setAulasMsg('⏳ Carregando…', '');
+  document.getElementById('aulasModal').style.display = 'flex';
+  try {
+    const rows = await sbGet('curso', `select=materias&id=eq.${idNum}`);
+    _aulaLista = (rows[0] && rows[0].materias) ? rows[0].materias : [];
+    renderAulasList();
+    setAulasMsg('', '');
+  } catch(e) { setAulasMsg('❌ Erro: ' + e.message, 'err'); }
+}
+
+function fecharAulasModal() {
+  document.getElementById('aulasModal').style.display = 'none';
+  fecharFormAula();
+}
+
+function aulasModalBgClick(e) {
+  if(e.target === document.getElementById('aulasModal')) fecharAulasModal();
+}
+
+function setAulasMsg(txt, tipo) {
+  const el = document.getElementById('aulasMsg');
+  el.textContent = txt; el.className = 'crud-msg ' + (tipo||'');
+  if(tipo==='ok') setTimeout(()=>{ el.textContent=''; el.className='crud-msg'; }, 3000);
+}
+
+function renderAulasList() {
+  const tbody = document.getElementById('aulasTbody');
+  const vazio = document.getElementById('aulasVazio');
+  if(!_aulaLista.length){ tbody.innerHTML=''; vazio.style.display='block'; return; }
+  vazio.style.display='none';
+  tbody.innerHTML = _aulaLista.map(a=>`
+    <tr>
+      <td>${String(a.numero).padStart(2,'0')}</td>
+      <td>${a.icone||''} ${a.titulo}</td>
+      <td>${a.data||''}</td>
+      <td>${a.visivel===1?'🟢':'🔒'}</td>
+      <td class="crud-acts">
+        <button class="btn-ed" onclick="abrirFormAula(${a.numero})">✏️ Editar</button>
+        <button class="btn-del" onclick="excluirAulaModal(${a.numero})">🗑️</button>
+      </td>
+    </tr>`).join('');
+}
+
+function abrirFormAula(numero) {
+  const form = document.getElementById('aulaFormArea');
+  if(numero===null){
+    document.getElementById('aulaNumOrig').value='';
+    document.getElementById('aulaNum').value='';
+    document.getElementById('aulaIcone').value='📚';
+    document.getElementById('aulaTitulo').value='';
+    document.getElementById('aulaData').value='';
+    document.getElementById('aulaDia').value='';
+    document.getElementById('aulaVisivel').checked=false;
+    document.getElementById('aulaBtnDel').style.display='none';
+    _aulaMatTemp=[];
+  } else {
+    const aula = _aulaLista.find(a=>a.numero===numero);
+    if(!aula) return;
+    document.getElementById('aulaNumOrig').value=numero;
+    document.getElementById('aulaNum').value=numero;
+    document.getElementById('aulaIcone').value=aula.icone||'📚';
+    document.getElementById('aulaTitulo').value=aula.titulo||'';
+    document.getElementById('aulaData').value=aula.data||'';
+    document.getElementById('aulaDia').value=aula.diaSemana||'';
+    document.getElementById('aulaVisivel').checked=aula.visivel===1;
+    document.getElementById('aulaBtnDel').style.display='';
+    _aulaMatTemp=JSON.parse(JSON.stringify(aula.materiais||[]));
+  }
+  renderAulaMatList();
+  form.style.display='block';
+  form.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function fecharFormAula() {
+  document.getElementById('aulaFormArea').style.display='none';
+}
+
+function renderAulaMatList() {
+  const el = document.getElementById('aulaMatList');
+  if(!_aulaMatTemp.length){ el.innerHTML='<p style="font-size:12px;color:#aaa;text-align:center;padding:4px 0">Nenhum material</p>'; return; }
+  el.innerHTML = _aulaMatTemp.map((m,i)=>`
+    <div style="display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:6px 10px">
+      <span style="font-size:15px">${m.icone||'📄'}</span>
+      <div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600">${m.nome}</div><div style="font-size:11px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${m.arquivo}</div></div>
+      <button onclick="removerMatAula(${i})" style="background:none;border:none;color:#d32f2f;font-size:15px;cursor:pointer;padding:2px 5px;border-radius:4px">✕</button>
+    </div>`).join('');
+}
+
+function removerMatAula(i){ _aulaMatTemp.splice(i,1); renderAulaMatList(); }
+
+function abrirAddMatAula(){
+  document.getElementById('mIcone').value='📄';
+  document.getElementById('mNome').value='';
+  document.getElementById('mArquivo').value='';
+  document.getElementById('mTipo').value='';
+  document.getElementById('matAulaModal').style.display='flex';
+}
+
+function fecharAddMatAula(){ document.getElementById('matAulaModal').style.display='none'; }
+
+function confirmarMatAula(){
+  const nome=document.getElementById('mNome').value.trim();
+  const arquivo=document.getElementById('mArquivo').value.trim();
+  if(!nome||!arquivo){ alert('Preencha nome e arquivo/URL.'); return; }
+  const m={nome,arquivo,icone:document.getElementById('mIcone').value.trim()||'📄'};
+  const tipo=document.getElementById('mTipo').value;
+  if(tipo) m.tipo=tipo;
+  _aulaMatTemp.push(m);
+  renderAulaMatList();
+  fecharAddMatAula();
+}
+
+async function salvarAulaModal(){
+  const numero=parseInt(document.getElementById('aulaNum').value);
+  const titulo=document.getElementById('aulaTitulo').value.trim();
+  if(!numero||!titulo){ alert('Preencha número e título.'); return; }
+  const novaAula={
+    numero, titulo,
+    icone: document.getElementById('aulaIcone').value.trim()||'📚',
+    data: document.getElementById('aulaData').value.trim(),
+    diaSemana: document.getElementById('aulaDia').value.trim(),
+    visivel: document.getElementById('aulaVisivel').checked?1:0,
+    materiais: _aulaMatTemp,
+  };
+  const lista=JSON.parse(JSON.stringify(_aulaLista));
+  const numOrig=parseInt(document.getElementById('aulaNumOrig').value)||null;
+  if(numOrig!==null){ const idx=lista.findIndex(a=>a.numero===numOrig); if(idx>=0) lista[idx]=novaAula; else lista.push(novaAula); }
+  else { lista.push(novaAula); lista.sort((a,b)=>a.numero-b.numero); }
+  await patchAulasMaterias(lista);
+}
+
+async function excluirAulaModal(numero){
+  const n=numero!==undefined?numero:parseInt(document.getElementById('aulaNumOrig').value);
+  if(!confirm(`Excluir Aula ${n}? Esta ação não pode ser desfeita.`)) return;
+  await patchAulasMaterias(_aulaLista.filter(a=>a.numero!==n));
+}
+
+async function patchAulasMaterias(lista){
+  try{
+    const res=await fetch(`${SB_URL}/rest/v1/curso?id=eq.${_aulaCursoId}`,{
+      method:'PATCH',
+      headers:{...sbH(),'Prefer':'return=minimal'},
+      body:JSON.stringify({materias:lista}),
+    });
+    if(res.ok){ _aulaLista=lista; fecharFormAula(); renderAulasList(); setAulasMsg('✅ Salvo!','ok'); }
+    else{ const err=await res.text(); setAulasMsg('❌ Erro: '+err,'err'); }
+  } catch{ setAulasMsg('❌ Erro de conexão.','err'); }
+}
 </script>
 </body>
 </html>
