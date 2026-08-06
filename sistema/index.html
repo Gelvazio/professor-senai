@@ -514,11 +514,30 @@
         border-radius: 4px;
       }
       .iframe-modal-close:hover { background: rgba(255, 255, 255, 0.2); }
-      .iframe-modal iframe {
+
+      .atividade-body {
         flex: 1;
-        border: none;
-        width: 100%;
+        overflow-y: auto;
+        background: #f8f9fc;
+        padding: 28px 32px;
       }
+      .atividade-pre {
+        margin: 0;
+        font-family: "Google Sans", Roboto, Arial, sans-serif;
+        font-size: 13.5px;
+        line-height: 1.85;
+        color: #3c4043;
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: transparent;
+        border: none;
+        padding: 0;
+      }
+      .at-sep    { display: block; color: #004384; font-weight: 700; letter-spacing: .5px; }
+      .at-dash   { display: block; color: #9aa0a6; }
+      .at-title  { display: block; color: #004384; font-weight: 700; font-size: 14px; letter-spacing: .4px; }
+      .at-section{ display: block; color: #1a73e8; font-weight: 700; }
+      .at-item   { display: block; color: #1e6823; font-weight: 500; }
 
       /* ── Toggle de aula (só professor) ── */
       .card-edit-bar {
@@ -878,8 +897,8 @@
           <h3 id="iframeModalTitulo">Atividade em Equipes</h3>
           <button class="iframe-modal-close" onclick="fecharIframe()">✕</button>
         </div>
-        <div style="flex:1;overflow-y:auto;background:#1e1e2e;padding:0">
-          <pre id="iframeModalPre" style="margin:0;padding:20px 24px;font-family:'Courier New',monospace;font-size:13px;line-height:1.6;color:#cdd6f4;white-space:pre-wrap;word-break:break-word">Carregando...</pre>
+        <div class="atividade-body">
+          <pre id="iframeModalPre" class="atividade-pre">Carregando...</pre>
         </div>
       </div>
     </div>
@@ -1319,12 +1338,29 @@
       async function abrirIframe(url, titulo) {
         document.getElementById("iframeModalTitulo").textContent = titulo || "Atividade";
         const pre = document.getElementById("iframeModalPre");
-        pre.textContent = "Carregando...";
+        pre.innerHTML = '<span style="color:#888">Carregando...</span>';
         document.getElementById("iframeModalBg").classList.add("open");
         try {
           const r = await fetch(url);
           if (!r.ok) throw new Error("HTTP " + r.status);
-          pre.textContent = await r.text();
+          const txt = await r.text();
+          pre.innerHTML = txt
+            .split("\n")
+            .map((line) => {
+              const esc = line.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+              if (/^={10,}/.test(line))
+                return `<span class="at-sep">${esc}</span>`;
+              if (/^-{10,}/.test(line))
+                return `<span class="at-dash">${esc}</span>`;
+              if (/^\s{0,4}[A-ZÁÉÍÓÚÃÕÀÂÊÎÔÛÇ][A-ZÁÉÍÓÚÃÕÀÂÊÎÔÛÇ\s\d—·–\/]+$/.test(line.trim()) && line.trim().length > 4)
+                return `<span class="at-title">${esc}</span>`;
+              if (/^\s*(QUESTÃO|PARTE|CRITÉRIO|ATA|ORIENTAÇ)/.test(line))
+                return `<span class="at-section">${esc}</span>`;
+              if (/^\s*[A-Z]\)/.test(line) || /^\s*\[/.test(line))
+                return `<span class="at-item">${esc}</span>`;
+              return esc;
+            })
+            .join("\n");
         } catch (err) {
           pre.textContent = "Erro ao carregar o arquivo: " + err.message;
         }
