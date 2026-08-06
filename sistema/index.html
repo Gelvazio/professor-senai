@@ -424,6 +424,102 @@
         color: #fff;
       }
 
+      /* ── Atividade em Equipes ── */
+      .material-atividade {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 10px;
+        border-radius: 6px;
+        border: 1px solid #7b1fa2;
+        background: #f3e5f5;
+        color: #7b1fa2;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: left;
+        transition: background 0.15s;
+        width: 100%;
+        font-family: inherit;
+      }
+      .material-atividade:hover {
+        background: #7b1fa2;
+        color: #fff;
+      }
+      .modal-material-atividade {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        border-radius: 8px;
+        border: 1px solid #7b1fa2;
+        background: #f3e5f5;
+        color: #7b1fa2;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: left;
+        transition: background 0.15s;
+        width: 100%;
+        font-family: inherit;
+      }
+      .modal-material-atividade:hover {
+        background: #7b1fa2;
+        color: #fff;
+      }
+
+      /* ── Modal Iframe ── */
+      .iframe-modal-bg {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 200;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .iframe-modal-bg.open { display: flex; }
+      .iframe-modal {
+        background: #fff;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 860px;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
+        overflow: hidden;
+      }
+      .iframe-modal-head {
+        background: #004384;
+        color: #fff;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+      }
+      .iframe-modal-head h3 { font-size: 14px; font-weight: 700; }
+      .iframe-modal-close {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        line-height: 1;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+      .iframe-modal-close:hover { background: rgba(255, 255, 255, 0.2); }
+      .iframe-modal iframe {
+        flex: 1;
+        border: none;
+        width: 100%;
+      }
+
       /* ── Toggle de aula (só professor) ── */
       .card-edit-bar {
         display: none;
@@ -775,6 +871,17 @@
       </div>
     </div>
 
+    <!-- Modal Iframe Atividade -->
+    <div class="iframe-modal-bg" id="iframeModalBg">
+      <div class="iframe-modal">
+        <div class="iframe-modal-head">
+          <h3 id="iframeModalTitulo">Atividade em Equipes</h3>
+          <button class="iframe-modal-close" onclick="fecharIframe()">✕</button>
+        </div>
+        <iframe id="iframeModalFrame" src="" title="Atividade"></iframe>
+      </div>
+    </div>
+
     <!-- Modal para múltiplos materiais -->
     <div class="modal-bg" id="modalBg">
       <div class="modal">
@@ -849,6 +956,15 @@
             ? aula.materiais
                 .filter((m) => m.visivel !== 0)
                 .map((m) => {
+                  if (m.tipo === "atividade") {
+                    return `<div class="material-row">
+              <button class="material-atividade" onclick="abrirIframe('${m.arquivo}', '${m.nome}')">
+                <span class="material-icon">${m.icone || "👥"}</span>
+                <span class="material-nome">${m.nome}</span>
+                <span class="material-arrow">↗</span>
+              </button>
+            </div>`;
+                  }
                   if (m.tipo === "questionario") {
                     if (m.arquivo === "#") {
                       return `<div class="material-row">
@@ -935,6 +1051,15 @@
           list.innerHTML = aula.materiais
             .filter((m) => m.visivel !== 0)
             .map((m) => {
+              if (m.tipo === "atividade") {
+                return `<div class="modal-material-row">
+          <button class="modal-material-atividade" onclick="abrirIframe('${m.arquivo}', '${m.nome}')">
+            <span class="modal-material-icon">${m.icone || "👥"}</span>
+            <span class="modal-material-nome">${m.nome}</span>
+            <span class="modal-material-arrow" style="color:#7b1fa2">↗</span>
+          </button>
+        </div>`;
+              }
               if (m.tipo === "questionario") {
                 if (m.arquivo === "#") {
                   return `<div class="modal-material-row">
@@ -1174,6 +1299,20 @@
       });
       document.getElementById("matModalBg").addEventListener("click", (e) => {
         if (e.target === document.getElementById("matModalBg")) fecharAddMaterial();
+      });
+
+      // ── Modal Iframe ──────────────────────────────────────────────
+      function abrirIframe(url, titulo) {
+        document.getElementById("iframeModalTitulo").textContent = titulo || "Atividade";
+        document.getElementById("iframeModalFrame").src = url;
+        document.getElementById("iframeModalBg").classList.add("open");
+      }
+      function fecharIframe() {
+        document.getElementById("iframeModalBg").classList.remove("open");
+        document.getElementById("iframeModalFrame").src = "";
+      }
+      document.getElementById("iframeModalBg").addEventListener("click", (e) => {
+        if (e.target === document.getElementById("iframeModalBg")) fecharIframe();
       });
     </script>
   </body>
