@@ -279,3 +279,60 @@
 ---
 
 *Documento baseado em: FM-NP-207-SENAI-001 | Revisão: 04 | Data da Revisão: 16/09/2024 | Aprovado por: Rômulo Thales Azevedo*
+
+---
+
+## Configuração Supabase
+
+**Projeto:** `controlemercadoria`
+**Project ID:** `jwasbzdbkbryncpvfujc`
+**URL:** `https://jwasbzdbkbryncpvfujc.supabase.co`
+**Anon Key:** `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU`
+**Região:** `sa-east-1`
+
+### Tabela `curso`
+
+| Coluna | Tipo | Descrição |
+|--------|------|-----------|
+| `id` | integer | PK auto-increment |
+| `codigo` | text | Identificador curto (ex: `tds`, `uc1`) |
+| `descricaocurso` | text | Nome completo do curso |
+| `materias` | jsonb | Array de aulas com materiais e `visivel` (0/1) |
+| `gabaritos` | jsonb | Array de gabaritos com `data_aula`, `exercicios` e `visualizar` (0/1) |
+| `visivel` | integer | Curso visível no dashboard (1=sim, 0=não) |
+
+**Registros:**
+
+| id | codigo | descricaocurso |
+|----|--------|----------------|
+| 2 | `uc1` | Introdução à Tecnologia da Informação e Comunicação |
+| 3 | `tds` | Técnico em Desenvolvimento de Sistemas |
+
+### Estrutura `gabaritos` (coluna JSONB da tabela `curso`)
+
+```json
+[
+  {
+    "data_aula": "2026-08-06",
+    "exercicios": "30 Algoritmos — Lógica de Programação",
+    "visualizar": 0
+  }
+]
+```
+
+- `visualizar: 1` → alunos podem ver as respostas
+- `visualizar: 0` → respostas bloqueadas para alunos
+
+### Funções RPC disponíveis
+
+| Função | Parâmetros | Descrição |
+|--------|-----------|-----------|
+| `toggle_aula_visivel` | `p_curso_id`, `p_aula_numero`, `p_visivel` | Liga/desliga visibilidade de uma aula |
+| `toggle_gabarito_visivel` | `p_curso_id`, `p_data_aula`, `p_visualizar` | Liga/desliga visibilidade das respostas de um gabarito |
+
+### Controle de perfil (frontend)
+
+O perfil do usuário é armazenado em `localStorage`:
+- `localStorage.getItem('senai_role')` → `'PROFESSOR'` ou `'ALUNO'`
+- `localStorage.getItem('senai_login')` → login do usuário
+- Apenas `PROFESSOR` pode alterar toggles de visibilidade
