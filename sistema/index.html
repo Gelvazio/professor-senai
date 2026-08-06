@@ -5,871 +5,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>SENAI — Dashboard de Aulas</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Google Sans", Roboto, Arial, sans-serif;
-        background: #e8eaed;
-        min-height: 100vh;
-      }
-
-      /* ── Header ── */
-      .header {
-        background: #004384;
-        color: #fff;
-        padding: 0 24px;
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        height: 56px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-      }
-      .header-logo {
-        font-weight: 700;
-        font-size: 15px;
-        letter-spacing: 0.5px;
-        background: rgba(255, 255, 255, 0.15);
-        padding: 4px 12px;
-        border-radius: 4px;
-        white-space: nowrap;
-      }
-      .header-title {
-        font-size: 14px;
-        opacity: 0.9;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      .header-spacer {
-        flex: 1;
-      }
-      .header-badge {
-        font-size: 12px;
-        background: rgba(255, 255, 255, 0.15);
-        padding: 3px 12px;
-        border-radius: 20px;
-        white-space: nowrap;
-      }
-
-      /* ── Subheader ── */
-      .subheader {
-        background: #fff;
-        border-bottom: 1px solid #ddd;
-        padding: 10px 24px;
-        display: flex;
-        align-items: center;
-        gap: 16px;
-      }
-      .progress-bar-wrap {
-        flex: 1;
-        height: 6px;
-        background: #e0e0e0;
-        border-radius: 3px;
-        overflow: hidden;
-      }
-      .progress-bar {
-        height: 100%;
-        background: linear-gradient(90deg, #004384, #0071e3);
-        border-radius: 3px;
-        transition: width 0.4s;
-      }
-      .progress-text {
-        font-size: 12px;
-        color: #555;
-        white-space: nowrap;
-      }
-
-      /* ── Grid ── */
-      .grid-section {
-        padding: 24px;
-      }
-      .section-label {
-        font-size: 11px;
-        font-weight: 600;
-        color: #666;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-      }
-
-      /* ── Card ── */
-      .card {
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-        overflow: hidden;
-        transition:
-          box-shadow 0.2s,
-          transform 0.15s;
-        position: relative;
-      }
-      .card-available:hover {
-        box-shadow: 0 4px 16px rgba(0, 67, 132, 0.2);
-        transform: translateY(-2px);
-        cursor: pointer;
-      }
-      .card-locked {
-        opacity: 0.65;
-        cursor: not-allowed;
-      }
-
-      .card-header {
-        background: linear-gradient(135deg, #004384 0%, #0055b3 100%);
-        padding: 16px 18px 14px;
-        display: flex;
-        align-items: flex-start;
-        gap: 12px;
-      }
-      .card-locked .card-header {
-        background: linear-gradient(135deg, #7a8390 0%, #9aa0a6 100%);
-      }
-      .card-icon {
-        font-size: 28px;
-        line-height: 1;
-        flex-shrink: 0;
-        margin-top: 2px;
-      }
-      .card-meta {
-        flex: 1;
-        min-width: 0;
-      }
-      .card-numero {
-        font-size: 10px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: rgba(255, 255, 255, 0.7);
-        text-transform: uppercase;
-        margin-bottom: 2px;
-      }
-      .card-titulo {
-        font-size: 14px;
-        font-weight: 700;
-        color: #fff;
-        line-height: 1.3;
-      }
-
-      .card-body {
-        padding: 14px 18px 16px;
-      }
-      .card-data-row {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        margin-bottom: 10px;
-      }
-      .card-dia {
-        font-size: 11px;
-        color: #666;
-        background: #f1f3f4;
-        padding: 2px 8px;
-        border-radius: 20px;
-      }
-      .card-data {
-        font-size: 12px;
-        color: #444;
-        font-weight: 500;
-      }
-
-      /* Materials list */
-      .materiais-list {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-      }
-      .material-row {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      }
-      .material-btn {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 10px;
-        border-radius: 6px;
-        border: 1px solid #e0e0e0;
-        background: #fafafa;
-        text-decoration: none;
-        color: #004384;
-        font-size: 12px;
-        font-weight: 500;
-        transition:
-          background 0.15s,
-          border-color 0.15s;
-        min-width: 0;
-      }
-      .material-btn:hover {
-        background: #e8f0fe;
-        border-color: #004384;
-      }
-      .material-icon {
-        font-size: 15px;
-        flex-shrink: 0;
-      }
-      .material-nome {
-        flex: 1;
-        min-width: 0;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      .material-arrow {
-        font-size: 11px;
-        color: #999;
-        flex-shrink: 0;
-      }
-      .material-pdf {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3px;
-        padding: 8px 9px;
-        border-radius: 6px;
-        border: 1px solid #f7941d;
-        background: #fff8f0;
-        color: #f7941d;
-        font-size: 11px;
-        font-weight: 700;
-        cursor: pointer;
-        white-space: nowrap;
-        flex-shrink: 0;
-        text-decoration: none;
-        transition: background 0.15s;
-      }
-      .material-pdf:hover {
-        background: #f7941d;
-        color: #fff;
-      }
-      .material-quiz {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 10px;
-        border-radius: 6px;
-        border: 1px solid #1b5e20;
-        background: #f1f8f2;
-        text-decoration: none;
-        color: #1b5e20;
-        font-size: 12px;
-        font-weight: 600;
-        transition:
-          background 0.15s,
-          border-color 0.15s;
-      }
-      .material-quiz:hover {
-        background: #1b5e20;
-        color: #fff;
-      }
-      .material-quiz-em-breve {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 10px;
-        border-radius: 6px;
-        border: 1px solid #e0e0e0;
-        background: #f8f9fa;
-        color: #aaa;
-        font-size: 12px;
-        font-weight: 500;
-        cursor: not-allowed;
-      }
-
-      /* Locked overlay */
-      .locked-badge {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        padding: 10px 0 4px;
-        color: #999;
-      }
-      .locked-icon {
-        font-size: 32px;
-      }
-      .locked-msg {
-        font-size: 11px;
-        color: #aaa;
-      }
-
-      /* ── Modal ── */
-      .modal-bg {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.45);
-        z-index: 100;
-        align-items: center;
-        justify-content: center;
-      }
-      .modal-bg.open {
-        display: flex;
-      }
-      .modal {
-        background: #fff;
-        border-radius: 10px;
-        padding: 24px;
-        max-width: 420px;
-        width: 90%;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-      }
-      .modal-header {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 16px;
-      }
-      .modal-icon {
-        font-size: 32px;
-      }
-      .modal-info {
-        flex: 1;
-      }
-      .modal-num {
-        font-size: 10px;
-        color: #004384;
-        font-weight: 600;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-      }
-      .modal-titulo {
-        font-size: 16px;
-        font-weight: 700;
-        color: #202124;
-      }
-      .modal-close {
-        background: none;
-        border: none;
-        font-size: 22px;
-        color: #999;
-        cursor: pointer;
-        padding: 2px 6px;
-        border-radius: 4px;
-        line-height: 1;
-      }
-      .modal-close:hover {
-        background: #f1f3f4;
-        color: #444;
-      }
-      .modal-list {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
-      .modal-material-row {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
-      .modal-material-btn {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 12px 14px;
-        border-radius: 8px;
-        border: 1px solid #e0e0e0;
-        background: #fafafa;
-        text-decoration: none;
-        color: #004384;
-        font-size: 13px;
-        font-weight: 500;
-        transition:
-          background 0.15s,
-          border-color 0.15s;
-      }
-      .modal-material-btn:hover {
-        background: #e8f0fe;
-        border-color: #004384;
-      }
-      .modal-material-icon {
-        font-size: 20px;
-      }
-      .modal-material-nome {
-        flex: 1;
-      }
-      .modal-material-arrow {
-        color: #0071e3;
-        font-size: 14px;
-      }
-      .modal-material-pdf {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        padding: 10px 12px;
-        border-radius: 8px;
-        border: 1px solid #f7941d;
-        background: #fff8f0;
-        color: #f7941d;
-        font-size: 12px;
-        font-weight: 700;
-        text-decoration: none;
-        white-space: nowrap;
-        flex-shrink: 0;
-        transition: background 0.15s;
-      }
-      .modal-material-pdf:hover {
-        background: #f7941d;
-        color: #fff;
-      }
-
-      /* ── Atividade em Equipes ── */
-      .material-atividade {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 10px;
-        border-radius: 6px;
-        border: 1px solid #7b1fa2;
-        background: #f3e5f5;
-        color: #7b1fa2;
-        font-size: 12px;
-        font-weight: 600;
-        cursor: pointer;
-        text-align: left;
-        transition: background 0.15s;
-        width: 100%;
-        font-family: inherit;
-      }
-      .material-atividade:hover {
-        background: #7b1fa2;
-        color: #fff;
-      }
-      .modal-material-atividade {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 12px 14px;
-        border-radius: 8px;
-        border: 1px solid #7b1fa2;
-        background: #f3e5f5;
-        color: #7b1fa2;
-        font-size: 13px;
-        font-weight: 600;
-        cursor: pointer;
-        text-align: left;
-        transition: background 0.15s;
-        width: 100%;
-        font-family: inherit;
-      }
-      .modal-material-atividade:hover {
-        background: #7b1fa2;
-        color: #fff;
-      }
-
-      /* ── Membros Equipe ── */
-      .material-membros {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 10px;
-        border-radius: 6px;
-        border: 1px solid #00796b;
-        background: #e0f2f1;
-        color: #00796b;
-        font-size: 12px;
-        font-weight: 600;
-        cursor: pointer;
-        text-align: left;
-        transition: background 0.15s;
-        width: 100%;
-        font-family: inherit;
-      }
-      .material-membros:hover { background: #00796b; color: #fff; }
-      .modal-material-membros {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 12px 14px;
-        border-radius: 8px;
-        border: 1px solid #00796b;
-        background: #e0f2f1;
-        color: #00796b;
-        font-size: 13px;
-        font-weight: 600;
-        cursor: pointer;
-        text-align: left;
-        transition: background 0.15s;
-        width: 100%;
-        font-family: inherit;
-      }
-      .modal-material-membros:hover { background: #00796b; color: #fff; }
-
-      /* ── Modal Membros ── */
-      .membros-modal-bg {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.55);
-        z-index: 200;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-      }
-      .membros-modal-bg.open { display: flex; }
-      .membros-modal {
-        background: #fff;
-        border-radius: 10px;
-        width: 100%;
-        max-width: 940px;
-        max-height: 96vh;
-        height: 96vh;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
-        overflow: hidden;
-      }
-      .membros-modal-head {
-        background: linear-gradient(135deg, #004384 0%, #00796b 100%);
-        color: #fff;
-        padding: 14px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-shrink: 0;
-      }
-      .membros-modal-head h3 { font-size: 15px; font-weight: 700; letter-spacing: .3px; }
-      .membros-modal-close {
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 22px;
-        cursor: pointer;
-        line-height: 1;
-        padding: 2px 6px;
-        border-radius: 4px;
-      }
-      .membros-modal-close:hover { background: rgba(255, 255, 255, 0.2); }
-      .membros-body {
-        flex: 1;
-        overflow-y: auto;
-        background: #f4f6f9;
-        padding: 20px 24px;
-      }
-      .membros-titulo-grupo {
-        font-size: 11px;
-        font-weight: 700;
-        color: #666;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 14px;
-      }
-      .membros-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-        gap: 10px;
-      }
-      .equipe-card {
-        background: #fff;
-        border-radius: 7px;
-        border: 1px solid #e0e0e0;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
-        overflow: hidden;
-      }
-      .equipe-card-header {
-        background: linear-gradient(135deg, #004384 0%, #0055b3 100%);
-        color: #fff;
-        padding: 7px 11px;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: .3px;
-      }
-      .equipe-card-body { padding: 6px 11px 8px; }
-      .membro-row {
-        display: flex;
-        gap: 6px;
-        align-items: baseline;
-        padding: 3px 0;
-        border-bottom: 1px solid #f1f3f4;
-        font-size: 11px;
-      }
-      .membro-row:last-child { border-bottom: none; }
-      .membro-papel {
-        font-size: 9px;
-        font-weight: 700;
-        color: #004384;
-        text-transform: uppercase;
-        letter-spacing: .4px;
-        min-width: 76px;
-        flex-shrink: 0;
-      }
-      .membro-nome { color: #3c4043; font-weight: 500; }
-
-      /* ── Modal Iframe ── */
-      .iframe-modal-bg {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 200;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-      }
-      .iframe-modal-bg.open { display: flex; }
-      .iframe-modal {
-        background: #fff;
-        border-radius: 10px;
-        width: 100%;
-        max-width: 860px;
-        height: 85vh;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35);
-        overflow: hidden;
-      }
-      .iframe-modal-head {
-        background: #004384;
-        color: #fff;
-        padding: 14px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-shrink: 0;
-      }
-      .iframe-modal-head h3 { font-size: 14px; font-weight: 700; }
-      .iframe-modal-close {
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 22px;
-        cursor: pointer;
-        line-height: 1;
-        padding: 2px 6px;
-        border-radius: 4px;
-      }
-      .iframe-modal-close:hover { background: rgba(255, 255, 255, 0.2); }
-
-      .atividade-body {
-        flex: 1;
-        overflow-y: auto;
-        background: #f8f9fc;
-        padding: 28px 32px;
-      }
-      .atividade-pre {
-        margin: 0;
-        font-family: "Google Sans", Roboto, Arial, sans-serif;
-        font-size: 13.5px;
-        line-height: 1.85;
-        color: #3c4043;
-        white-space: pre-wrap;
-        word-break: break-word;
-        background: transparent;
-        border: none;
-        padding: 0;
-      }
-      .at-sep    { display: block; color: #004384; font-weight: 700; letter-spacing: .5px; }
-      .at-dash   { display: block; color: #9aa0a6; }
-      .at-title  { display: block; color: #004384; font-weight: 700; font-size: 14px; letter-spacing: .4px; }
-      .at-section{ display: block; color: #1a73e8; font-weight: 700; }
-      .at-item   { display: block; color: #1e6823; font-weight: 500; }
-
-      /* ── Toggle de aula (só professor) ── */
-      .card-edit-bar {
-        display: none;
-        padding: 8px 16px;
-        background: #f8f9fa;
-        border-top: 1px solid #e8eaed;
-        align-items: center;
-        justify-content: space-between;
-        gap: 8px;
-      }
-      body.professor .card-edit-bar {
-        display: flex;
-      }
-      .edit-label-small {
-        font-size: 11px;
-        color: #666;
-        font-weight: 500;
-      }
-      .toggle-sm {
-        position: relative;
-        width: 36px;
-        height: 20px;
-        flex-shrink: 0;
-      }
-      .toggle-sm input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-        position: absolute;
-      }
-      .toggle-sm-slider {
-        position: absolute;
-        inset: 0;
-        background: #ccc;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: background 0.2s;
-      }
-      .toggle-sm-slider:before {
-        content: "";
-        position: absolute;
-        width: 14px;
-        height: 14px;
-        left: 3px;
-        top: 3px;
-        background: #fff;
-        border-radius: 50%;
-        transition: transform 0.2s;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-      }
-      .toggle-sm input:checked + .toggle-sm-slider {
-        background: #2e7d32;
-      }
-      .toggle-sm input:checked + .toggle-sm-slider:before {
-        transform: translateX(16px);
-      }
-
-      /* ── Botão Nova Aula ── */
-      .section-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 14px;
-      }
-      .btn-nova-aula {
-        display: none;
-        align-items: center;
-        gap: 6px;
-        background: #004384;
-        color: #fff;
-        border: none;
-        font-size: 12px;
-        font-weight: 600;
-        padding: 6px 14px;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background 0.15s;
-      }
-      .btn-nova-aula:hover { background: #003369; }
-      body.professor .btn-nova-aula { display: flex; }
-
-      /* ── Botão Editar no card ── */
-      .card-edit-btn {
-        display: none;
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        background: rgba(255,255,255,.22);
-        border: 1px solid rgba(255,255,255,.4);
-        color: #fff;
-        font-size: 11px;
-        font-weight: 600;
-        padding: 3px 9px;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background 0.15s;
-        z-index: 2;
-      }
-      .card-edit-btn:hover { background: rgba(255,255,255,.38); }
-      body.professor .card-edit-btn { display: block; }
-
-      /* ── CRUD Modal ── */
-      .crud-modal-bg {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,.52);
-        z-index: 300;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-      }
-      .crud-modal-bg.open { display: flex; }
-      .crud-modal {
-        background: #fff;
-        border-radius: 12px;
-        width: 100%;
-        max-width: 560px;
-        max-height: 90vh;
-        overflow-y: auto;
-        box-shadow: 0 12px 48px rgba(0,0,0,.3);
-      }
-      .crud-modal-head {
-        background: #004384;
-        color: #fff;
-        padding: 16px 22px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 12px 12px 0 0;
-        position: sticky;
-        top: 0;
-        z-index: 1;
-      }
-      .crud-modal-head h3 { font-size: 15px; font-weight: 700; }
-      .crud-modal-body { padding: 22px; }
-      .form-group { margin-bottom: 14px; }
-      .form-label { font-size: 11px; font-weight: 700; color: #555; margin-bottom: 5px; display: block; text-transform: uppercase; letter-spacing: .4px; }
-      .form-input {
-        width: 100%;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        padding: 9px 12px;
-        font-size: 13px;
-        font-family: inherit;
-        color: #212121;
-        transition: border-color .15s;
-      }
-      .form-input:focus { outline: none; border-color: #004384; box-shadow: 0 0 0 2px rgba(0,67,132,.12); }
-      .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-      .mat-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
-      .mat-item {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        background: #f8f9fa;
-        border: 1px solid #e0e0e0;
-        border-radius: 6px;
-        padding: 8px 10px;
-      }
-      .mat-item-info { flex: 1; min-width: 0; }
-      .mat-item-nome { font-size: 12px; font-weight: 600; color: #212121; }
-      .mat-item-arquivo { font-size: 11px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-      .btn-mat-del { background: none; border: none; color: #d32f2f; font-size: 16px; cursor: pointer; padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
-      .btn-mat-del:hover { background: #fce8e6; }
-      .btn-add-mat {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        background: #e8f0fe;
-        border: 1px dashed #004384;
-        color: #004384;
-        font-size: 12px;
-        font-weight: 600;
-        padding: 8px 14px;
-        border-radius: 6px;
-        cursor: pointer;
-        width: 100%;
-        transition: background .15s;
-      }
-      .btn-add-mat:hover { background: #d2e3fc; }
-      .crud-divider { border-top: 1px solid #eee; padding-top: 16px; margin-top: 4px; margin-bottom: 12px; font-size: 11px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: .5px; }
-      .crud-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; padding-top: 16px; border-top: 1px solid #eee; flex-wrap: wrap; }
-      .btn-primary { background: #004384; color: #fff; border: none; padding: 9px 20px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background .15s; }
-      .btn-primary:hover { background: #003369; }
-      .btn-danger { background: #d32f2f; color: #fff; border: none; padding: 9px 20px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; margin-right: auto; }
-      .btn-danger:hover { background: #b71c1c; }
-      .btn-secondary { background: #f1f3f4; color: #444; border: 1px solid #ddd; padding: 9px 20px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; }
-      .btn-secondary:hover { background: #e0e0e0; }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <script>
     (function () {
@@ -934,7 +70,9 @@
     <div class="grid-section">
       <div class="section-header">
         <div class="section-label">Calendário de Aulas</div>
-        <button class="btn-nova-aula" onclick="abrirCadastro()">＋ Nova Aula</button>
+        <button class="btn-nova-aula" onclick="abrirCadastro()">
+          ＋ Nova Aula
+        </button>
       </div>
       <div class="grid" id="grid">
         <p style="color: #888; font-size: 14px">Carregando aulas...</p>
@@ -946,48 +84,104 @@
       <div class="crud-modal">
         <div class="crud-modal-head">
           <h3 id="crudModalTitulo">Nova Aula</h3>
-          <button onclick="fecharCrud()" style="background:none;border:none;color:#fff;font-size:20px;cursor:pointer;line-height:1">✕</button>
+          <button
+            onclick="fecharCrud()"
+            style="
+              background: none;
+              border: none;
+              color: #fff;
+              font-size: 20px;
+              cursor: pointer;
+              line-height: 1;
+            "
+          >
+            ✕
+          </button>
         </div>
         <div class="crud-modal-body">
-          <input type="hidden" id="crudNumeroOriginal">
+          <input type="hidden" id="crudNumeroOriginal" />
           <div class="form-row">
             <div class="form-group">
               <label class="form-label">Número</label>
-              <input class="form-input" id="crudNumero" type="number" min="1" placeholder="Ex: 5">
+              <input
+                class="form-input"
+                id="crudNumero"
+                type="number"
+                min="1"
+                placeholder="Ex: 5"
+              />
             </div>
             <div class="form-group">
               <label class="form-label">Ícone (emoji)</label>
-              <input class="form-input" id="crudIcone" type="text" placeholder="Ex: 📚">
+              <input
+                class="form-input"
+                id="crudIcone"
+                type="text"
+                placeholder="Ex: 📚"
+              />
             </div>
           </div>
           <div class="form-group">
             <label class="form-label">Título da Aula</label>
-            <input class="form-input" id="crudTitulo" type="text" placeholder="Ex: Internet e World Wide Web">
+            <input
+              class="form-input"
+              id="crudTitulo"
+              type="text"
+              placeholder="Ex: Internet e World Wide Web"
+            />
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label">Data</label>
-              <input class="form-input" id="crudData" type="text" placeholder="Ex: 07-08-2026">
+              <input
+                class="form-input"
+                id="crudData"
+                type="text"
+                placeholder="Ex: 07-08-2026"
+              />
             </div>
             <div class="form-group">
               <label class="form-label">Dia da Semana</label>
-              <input class="form-input" id="crudDia" type="text" placeholder="Ex: Quinta-feira">
+              <input
+                class="form-input"
+                id="crudDia"
+                type="text"
+                placeholder="Ex: Quinta-feira"
+              />
             </div>
           </div>
-          <div class="form-group" style="display:flex;align-items:center;gap:10px">
-            <label class="form-label" style="margin:0">Visível aos alunos</label>
+          <div
+            class="form-group"
+            style="display: flex; align-items: center; gap: 10px"
+          >
+            <label class="form-label" style="margin: 0"
+              >Visível aos alunos</label
+            >
             <label class="toggle-sm">
-              <input type="checkbox" id="crudVisivel">
+              <input type="checkbox" id="crudVisivel" />
               <span class="toggle-sm-slider"></span>
             </label>
           </div>
           <div class="crud-divider">Materiais</div>
           <div class="mat-list" id="crudMatList"></div>
-          <button class="btn-add-mat" onclick="abrirAddMaterial()">＋ Adicionar Material</button>
+          <button class="btn-add-mat" onclick="abrirAddMaterial()">
+            ＋ Adicionar Material
+          </button>
           <div class="crud-actions">
-            <button class="btn-danger" id="crudBtnExcluir" onclick="excluirAula()" style="display:none">🗑 Excluir Aula</button>
-            <button class="btn-secondary" onclick="fecharCrud()">Cancelar</button>
-            <button class="btn-primary" onclick="salvarAula()">💾 Salvar</button>
+            <button
+              class="btn-danger"
+              id="crudBtnExcluir"
+              onclick="excluirAula()"
+              style="display: none"
+            >
+              🗑 Excluir Aula
+            </button>
+            <button class="btn-secondary" onclick="fecharCrud()">
+              Cancelar
+            </button>
+            <button class="btn-primary" onclick="salvarAula()">
+              💾 Salvar
+            </button>
           </div>
         </div>
       </div>
@@ -995,16 +189,28 @@
 
     <!-- Modal Adicionar Material -->
     <div class="crud-modal-bg" id="matModalBg">
-      <div class="crud-modal" style="max-width:440px">
+      <div class="crud-modal" style="max-width: 440px">
         <div class="crud-modal-head">
           <h3>Adicionar Material</h3>
-          <button onclick="fecharAddMaterial()" style="background:none;border:none;color:#fff;font-size:20px;cursor:pointer;line-height:1">✕</button>
+          <button
+            onclick="fecharAddMaterial()"
+            style="
+              background: none;
+              border: none;
+              color: #fff;
+              font-size: 20px;
+              cursor: pointer;
+              line-height: 1;
+            "
+          >
+            ✕
+          </button>
         </div>
         <div class="crud-modal-body">
           <div class="form-row">
             <div class="form-group">
               <label class="form-label">Ícone</label>
-              <input class="form-input" id="matIcone" placeholder="📄">
+              <input class="form-input" id="matIcone" placeholder="📄" />
             </div>
             <div class="form-group">
               <label class="form-label">Tipo</label>
@@ -1016,15 +222,27 @@
           </div>
           <div class="form-group">
             <label class="form-label">Nome do Material</label>
-            <input class="form-input" id="matNome" placeholder="Ex: Slide — Internet e WWW">
+            <input
+              class="form-input"
+              id="matNome"
+              placeholder="Ex: Slide — Internet e WWW"
+            />
           </div>
           <div class="form-group">
             <label class="form-label">Arquivo / URL</label>
-            <input class="form-input" id="matArquivo" placeholder="Caminho relativo ou https://...">
+            <input
+              class="form-input"
+              id="matArquivo"
+              placeholder="Caminho relativo ou https://..."
+            />
           </div>
           <div class="crud-actions">
-            <button class="btn-secondary" onclick="fecharAddMaterial()">Cancelar</button>
-            <button class="btn-primary" onclick="confirmarAddMaterial()">＋ Adicionar</button>
+            <button class="btn-secondary" onclick="fecharAddMaterial()">
+              Cancelar
+            </button>
+            <button class="btn-primary" onclick="confirmarAddMaterial()">
+              ＋ Adicionar
+            </button>
           </div>
         </div>
       </div>
@@ -1035,7 +253,9 @@
       <div class="membros-modal">
         <div class="membros-modal-head">
           <h3 id="membrosModalTitulo">Membros das Equipes</h3>
-          <button class="membros-modal-close" onclick="fecharMembros()">✕</button>
+          <button class="membros-modal-close" onclick="fecharMembros()">
+            ✕
+          </button>
         </div>
         <div class="membros-body">
           <div class="membros-titulo-grupo" id="membrosGrupoLabel"></div>
@@ -1109,7 +329,8 @@
               nome: "Atividade em Equipes",
               tipo: "atividade",
               icone: "👥",
-              arquivo: "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS_INTRODUCAO_TECNOLOGIA_INFORMACAO/AULA 04 - 06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.txt",
+              arquivo:
+                "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS_INTRODUCAO_TECNOLOGIA_INFORMACAO/AULA 04 - 06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.txt",
             });
           }
           if (!aula04.materiais.some((m) => m.tipo === "membros")) {
@@ -1117,7 +338,8 @@
               nome: "Membros Equipe",
               tipo: "membros",
               icone: "👨‍👩‍👧‍👦",
-              arquivo: "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS_INTRODUCAO_TECNOLOGIA_INFORMACAO/AULA 04 - 06-08-2026/MEMBROS-EQUIPE-06-08-2026.txt",
+              arquivo:
+                "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS_INTRODUCAO_TECNOLOGIA_INFORMACAO/AULA 04 - 06-08-2026/MEMBROS-EQUIPE-06-08-2026.txt",
             });
           }
         }
@@ -1394,7 +616,8 @@
       function renderMatList() {
         const el = document.getElementById("crudMatList");
         if (materiaisTemp.length === 0) {
-          el.innerHTML = '<p style="font-size:12px;color:#aaa;text-align:center;padding:8px 0">Nenhum material ainda</p>';
+          el.innerHTML =
+            '<p style="font-size:12px;color:#aaa;text-align:center;padding:8px 0">Nenhum material ainda</p>';
           return;
         }
         el.innerHTML = materiaisTemp
@@ -1477,7 +700,12 @@
       }
 
       async function excluirAula() {
-        if (!confirm(`Excluir a Aula ${editandoNumero}? Esta ação não pode ser desfeita.`)) return;
+        if (
+          !confirm(
+            `Excluir a Aula ${editandoNumero}? Esta ação não pode ser desfeita.`,
+          )
+        )
+          return;
         const aulas = todasAulas.filter((a) => a.numero !== editandoNumero);
         await patchMaterias(aulas);
       }
@@ -1513,12 +741,14 @@
         if (e.target === document.getElementById("crudModalBg")) fecharCrud();
       });
       document.getElementById("matModalBg").addEventListener("click", (e) => {
-        if (e.target === document.getElementById("matModalBg")) fecharAddMaterial();
+        if (e.target === document.getElementById("matModalBg"))
+          fecharAddMaterial();
       });
 
       // ── Modal Atividade (lê arquivo .txt diretamente) ─────────────
       async function abrirIframe(url, titulo) {
-        document.getElementById("iframeModalTitulo").textContent = titulo || "Atividade";
+        document.getElementById("iframeModalTitulo").textContent =
+          titulo || "Atividade";
         const pre = document.getElementById("iframeModalPre");
         pre.innerHTML = '<span style="color:#888">Carregando...</span>';
         document.getElementById("iframeModalBg").classList.add("open");
@@ -1529,12 +759,20 @@
           pre.innerHTML = txt
             .split("\n")
             .map((line) => {
-              const esc = line.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+              const esc = line
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;");
               if (/^={10,}/.test(line))
                 return `<span class="at-sep">${esc}</span>`;
               if (/^-{10,}/.test(line))
                 return `<span class="at-dash">${esc}</span>`;
-              if (/^\s{0,4}[A-ZÁÉÍÓÚÃÕÀÂÊÎÔÛÇ][A-ZÁÉÍÓÚÃÕÀÂÊÎÔÛÇ\s\d—·–\/]+$/.test(line.trim()) && line.trim().length > 4)
+              if (
+                /^\s{0,4}[A-ZÁÉÍÓÚÃÕÀÂÊÎÔÛÇ][A-ZÁÉÍÓÚÃÕÀÂÊÎÔÛÇ\s\d—·–\/]+$/.test(
+                  line.trim(),
+                ) &&
+                line.trim().length > 4
+              )
                 return `<span class="at-title">${esc}</span>`;
               if (/^\s*(QUESTÃO|PARTE|CRITÉRIO|ATA|ORIENTAÇ)/.test(line))
                 return `<span class="at-section">${esc}</span>`;
@@ -1547,20 +785,26 @@
           pre.textContent = "Erro ao carregar o arquivo: " + err.message;
         }
       }
+      
       function fecharIframe() {
         document.getElementById("iframeModalBg").classList.remove("open");
         document.getElementById("iframeModalPre").textContent = "";
       }
-      document.getElementById("iframeModalBg").addEventListener("click", (e) => {
-        if (e.target === document.getElementById("iframeModalBg")) fecharIframe();
-      });
+      document
+        .getElementById("iframeModalBg")
+        .addEventListener("click", (e) => {
+          if (e.target === document.getElementById("iframeModalBg"))
+            fecharIframe();
+        });
 
       // ── Modal Membros Equipe ───────────────────────────────────────
       async function abrirMembros(url, titulo) {
-        document.getElementById("membrosModalTitulo").textContent = titulo || "Membros das Equipes";
+        document.getElementById("membrosModalTitulo").textContent =
+          titulo || "Membros das Equipes";
         const grid = document.getElementById("membrosGrid");
         const label = document.getElementById("membrosGrupoLabel");
-        grid.innerHTML = '<p style="color:#888;font-size:13px">Carregando...</p>';
+        grid.innerHTML =
+          '<p style="color:#888;font-size:13px">Carregando...</p>';
         document.getElementById("membrosModalBg").classList.add("open");
         try {
           const r = await fetch(url);
@@ -1569,13 +813,16 @@
           const linhas = txt.split("\n");
           // Extrai título do grupo (primeira linha antes do primeiro #)
           const primeiraLinha = linhas[0].trim();
-          label.textContent = primeiraLinha.startsWith("#") ? "" : primeiraLinha;
+          label.textContent = primeiraLinha.startsWith("#")
+            ? ""
+            : primeiraLinha;
           // Parseia equipes
           const equipes = [];
           let atual = null;
           for (const linha of linhas) {
             const t = linha.trim();
-            if (!t || (!t.startsWith("#") && equipes.length === 0 && !atual)) continue;
+            if (!t || (!t.startsWith("#") && equipes.length === 0 && !atual))
+              continue;
             if (t.startsWith("#")) {
               if (atual) equipes.push(atual);
               atual = { nome: t.replace(/^#+\s*/, ""), membros: [] };
@@ -1590,17 +837,25 @@
           }
           if (atual) equipes.push(atual);
           // Renderiza cards
-          grid.innerHTML = equipes.map((eq) => `
+          grid.innerHTML = equipes
+            .map(
+              (eq) => `
             <div class="equipe-card">
               <div class="equipe-card-header">${eq.nome}</div>
               <div class="equipe-card-body">
-                ${eq.membros.map((m) => `
+                ${eq.membros
+                  .map(
+                    (m) => `
                   <div class="membro-row">
                     <span class="membro-papel">${m.papel}</span>
                     <span class="membro-nome">${m.nome}</span>
-                  </div>`).join("")}
+                  </div>`,
+                  )
+                  .join("")}
               </div>
-            </div>`).join("");
+            </div>`,
+            )
+            .join("");
         } catch (err) {
           grid.innerHTML = `<p style="color:#d32f2f;font-size:13px">Erro: ${err.message}</p>`;
         }
@@ -1609,9 +864,12 @@
         document.getElementById("membrosModalBg").classList.remove("open");
         document.getElementById("membrosGrid").innerHTML = "";
       }
-      document.getElementById("membrosModalBg").addEventListener("click", (e) => {
-        if (e.target === document.getElementById("membrosModalBg")) fecharMembros();
-      });
+      document
+        .getElementById("membrosModalBg")
+        .addEventListener("click", (e) => {
+          if (e.target === document.getElementById("membrosModalBg"))
+            fecharMembros();
+        });
     </script>
   </body>
 </html>
