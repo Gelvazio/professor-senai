@@ -871,14 +871,16 @@
       </div>
     </div>
 
-    <!-- Modal Iframe Atividade -->
+    <!-- Modal Atividade (lê .txt diretamente) -->
     <div class="iframe-modal-bg" id="iframeModalBg">
       <div class="iframe-modal">
         <div class="iframe-modal-head">
           <h3 id="iframeModalTitulo">Atividade em Equipes</h3>
           <button class="iframe-modal-close" onclick="fecharIframe()">✕</button>
         </div>
-        <iframe id="iframeModalFrame" src="" title="Atividade"></iframe>
+        <div style="flex:1;overflow-y:auto;background:#1e1e2e;padding:0">
+          <pre id="iframeModalPre" style="margin:0;padding:20px 24px;font-family:'Courier New',monospace;font-size:13px;line-height:1.6;color:#cdd6f4;white-space:pre-wrap;word-break:break-word">Carregando...</pre>
+        </div>
       </div>
     </div>
 
@@ -925,6 +927,18 @@
         }
 
         const aulas = dados.aulas || [];
+
+        // Injeta "Atividade em Equipes" na Aula 04 lendo direto do arquivo local
+        const aula04 = aulas.find((a) => a.numero === 4);
+        if (aula04 && !aula04.materiais.some((m) => m.tipo === "atividade")) {
+          aula04.materiais.push({
+            nome: "Atividade em Equipes",
+            tipo: "atividade",
+            icone: "👥",
+            arquivo: "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS_INTRODUCAO_TECNOLOGIA_INFORMACAO/AULA 04 - 06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.txt",
+          });
+        }
+
         todasAulas = aulas;
         const visiveis = aulas.filter((a) => a.visivel === 1).length;
 
@@ -1301,15 +1315,23 @@
         if (e.target === document.getElementById("matModalBg")) fecharAddMaterial();
       });
 
-      // ── Modal Iframe ──────────────────────────────────────────────
-      function abrirIframe(url, titulo) {
+      // ── Modal Atividade (lê arquivo .txt diretamente) ─────────────
+      async function abrirIframe(url, titulo) {
         document.getElementById("iframeModalTitulo").textContent = titulo || "Atividade";
-        document.getElementById("iframeModalFrame").src = url;
+        const pre = document.getElementById("iframeModalPre");
+        pre.textContent = "Carregando...";
         document.getElementById("iframeModalBg").classList.add("open");
+        try {
+          const r = await fetch(url);
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          pre.textContent = await r.text();
+        } catch (err) {
+          pre.textContent = "Erro ao carregar o arquivo: " + err.message;
+        }
       }
       function fecharIframe() {
         document.getElementById("iframeModalBg").classList.remove("open");
-        document.getElementById("iframeModalFrame").src = "";
+        document.getElementById("iframeModalPre").textContent = "";
       }
       document.getElementById("iframeModalBg").addEventListener("click", (e) => {
         if (e.target === document.getElementById("iframeModalBg")) fecharIframe();
