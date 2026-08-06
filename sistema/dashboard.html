@@ -1,373 +1,1163 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SENAI — Dashboard de Cursos</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-height:100vh}
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SENAI — Dashboard de Cursos</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Google Sans", Roboto, Arial, sans-serif;
+        background: #e8eaed;
+        min-height: 100vh;
+      }
 
-/* ── Header ── */
-.header{background:#004384;color:#fff;padding:0 24px;display:flex;align-items:center;gap:16px;height:56px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
-.header-logo{font-weight:700;font-size:15px;letter-spacing:.5px;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:4px;white-space:nowrap;text-decoration:none;color:#fff}
-.header-title{font-size:14px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.header-spacer{flex:1}
-.header-btn{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;text-decoration:none;transition:background .15s;white-space:nowrap;font-family:inherit}
-.header-btn:hover{background:rgba(255,255,255,.28)}
-.role-badge{font-size:11px;background:rgba(255,255,255,.2);padding:3px 10px;border-radius:20px;white-space:nowrap}
+      /* ── Header ── */
+      .header {
+        background: #004384;
+        color: #fff;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        height: 56px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      }
+      .header-logo {
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 4px 12px;
+        border-radius: 4px;
+        white-space: nowrap;
+        text-decoration: none;
+        color: #fff;
+      }
+      .header-title {
+        font-size: 14px;
+        opacity: 0.9;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .header-spacer {
+        flex: 1;
+      }
+      .header-btn {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.15);
+        border: none;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 6px 14px;
+        border-radius: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.15s;
+        white-space: nowrap;
+        font-family: inherit;
+      }
+      .header-btn:hover {
+        background: rgba(255, 255, 255, 0.28);
+      }
+      .role-badge {
+        font-size: 11px;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 3px 10px;
+        border-radius: 20px;
+        white-space: nowrap;
+      }
 
-/* ── Hero ── */
-.hero{background:linear-gradient(135deg,#003068 0%,#004384 60%,#0055b3 100%);padding:32px 24px 28px;text-align:center;color:#fff;border-bottom:3px solid #f7941d}
-.hero-badge{display:inline-block;background:rgba(247,148,29,.2);border:1px solid rgba(247,148,29,.5);color:#f7941d;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:12px}
-.hero h1{font-size:22px;font-weight:700;margin-bottom:4px}
-.hero p{font-size:13px;opacity:.8}
+      /* ── Hero ── */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          #003068 0%,
+          #004384 60%,
+          #0055b3 100%
+        );
+        padding: 32px 24px 28px;
+        text-align: center;
+        color: #fff;
+        border-bottom: 3px solid #f7941d;
+      }
+      .hero-badge {
+        display: inline-block;
+        background: rgba(247, 148, 29, 0.2);
+        border: 1px solid rgba(247, 148, 29, 0.5);
+        color: #f7941d;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 4px 14px;
+        border-radius: 20px;
+        margin-bottom: 12px;
+      }
+      .hero h1 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .hero p {
+        font-size: 13px;
+        opacity: 0.8;
+      }
 
-/* ── Banner professor ── */
-.edit-banner{display:none;background:#fff8e1;border:1px solid #ffe082;border-radius:8px;padding:12px 18px;margin:20px 24px 0;display:flex;align-items:center;gap:12px;font-size:13px;color:#5d4037}
-.edit-banner.hidden{display:none}
-.edit-banner strong{color:#e65100}
+      /* ── Banner professor ── */
+      .edit-banner {
+        display: none;
+        background: #fff8e1;
+        border: 1px solid #ffe082;
+        border-radius: 8px;
+        padding: 12px 18px;
+        margin: 20px 24px 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 13px;
+        color: #5d4037;
+      }
+      .edit-banner.hidden {
+        display: none;
+      }
+      .edit-banner strong {
+        color: #e65100;
+      }
 
-/* ── Grid ── */
-.section{padding:24px}
-.section-label{font-size:11px;font-weight:600;color:#666;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto}
-@media(max-width:640px){.grid{grid-template-columns:1fr}}
+      /* ── Grid ── */
+      .section {
+        padding: 24px;
+      }
+      .section-label {
+        font-size: 11px;
+        font-weight: 600;
+        color: #666;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      @media (max-width: 640px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
 
-/* ── Card ── */
-.card{background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.12);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .15s}
-.card.disponivel:hover{box-shadow:0 6px 24px rgba(0,67,132,.18);transform:translateY(-2px)}
-.card.bloqueado{opacity:.65}
+      /* ── Card ── */
+      .card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition:
+          box-shadow 0.2s,
+          transform 0.15s;
+      }
+      .card.disponivel:hover {
+        box-shadow: 0 6px 24px rgba(0, 67, 132, 0.18);
+        transform: translateY(-2px);
+      }
+      .card.bloqueado {
+        opacity: 0.65;
+      }
 
-.card-thumb{height:100px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.card-thumb-icon{font-size:52px;opacity:.9}
-.card-thumb-stripe{position:absolute;bottom:0;left:0;right:0;height:4px}
+      .card-thumb {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .card-thumb-icon {
+        font-size: 52px;
+        opacity: 0.9;
+      }
+      .card-thumb-stripe {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+      }
 
-.card-body{padding:18px 20px 16px;flex:1;display:flex;flex-direction:column;gap:10px}
-.card-tipo{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
-.card-titulo{font-size:16px;font-weight:700;color:#202124;line-height:1.3}
-.card-desc{font-size:12px;color:#666;line-height:1.6;flex:1}
+      .card-body {
+        padding: 18px 20px 16px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .card-tipo {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      .card-titulo {
+        font-size: 16px;
+        font-weight: 700;
+        color: #202124;
+        line-height: 1.3;
+      }
+      .card-desc {
+        font-size: 12px;
+        color: #666;
+        line-height: 1.6;
+        flex: 1;
+      }
 
-.card-tags{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-size:10px;padding:3px 9px;border-radius:20px;font-weight:600;background:#f1f3f4;color:#444}
+      .card-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .tag {
+        font-size: 10px;
+        padding: 3px 9px;
+        border-radius: 20px;
+        font-weight: 600;
+        background: #f1f3f4;
+        color: #444;
+      }
 
-.card-footer{padding:12px 20px 14px;border-top:1px solid #f0f0f0;display:flex;align-items:center;justify-content:space-between;gap:10px}
-.btn-acessar{display:flex;align-items:center;gap:6px;background:#004384;color:#fff;text-decoration:none;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;transition:background .15s;white-space:nowrap}
-.btn-acessar:hover{background:#00306a}
-.btn-em-breve{display:flex;align-items:center;gap:6px;background:#f1f3f4;color:#aaa;padding:9px 18px;border-radius:6px;font-size:13px;font-weight:600;cursor:not-allowed;white-space:nowrap}
+      .card-footer {
+        padding: 12px 20px 14px;
+        border-top: 1px solid #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .btn-acessar {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: #004384;
+        color: #fff;
+        text-decoration: none;
+        padding: 9px 18px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: background 0.15s;
+        white-space: nowrap;
+      }
+      .btn-acessar:hover {
+        background: #00306a;
+      }
+      .btn-em-breve {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: #f1f3f4;
+        color: #aaa;
+        padding: 9px 18px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: not-allowed;
+        white-space: nowrap;
+      }
 
-.progress-mini{flex:1}
-.progress-mini-bar{height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden;margin-bottom:4px}
-.progress-mini-fill{height:100%;border-radius:2px;transition:width .4s}
-.progress-mini-text{font-size:10px;color:#888}
+      .progress-mini {
+        flex: 1;
+      }
+      .progress-mini-bar {
+        height: 4px;
+        background: #e0e0e0;
+        border-radius: 2px;
+        overflow: hidden;
+        margin-bottom: 4px;
+      }
+      .progress-mini-fill {
+        height: 100%;
+        border-radius: 2px;
+        transition: width 0.4s;
+      }
+      .progress-mini-text {
+        font-size: 10px;
+        color: #888;
+      }
 
-/* ── Toggle visibilidade (só professor) ── */
-.card-edit{display:none;padding:10px 20px;background:#f8f9fa;border-top:1px solid #e8eaed;align-items:center;justify-content:space-between;gap:10px}
-.card-edit-label{font-size:12px;color:#555;font-weight:500}
-.btn-aulas-admin{display:inline-flex;align-items:center;gap:5px;background:#004384;color:#fff;font-size:11px;font-weight:700;padding:5px 12px;border-radius:6px;text-decoration:none;transition:background .15s}
-.btn-aulas-admin:hover{background:#003369}
+      /* ── Toggle visibilidade (só professor) ── */
+      .card-edit {
+        display: none;
+        padding: 10px 20px;
+        background: #f8f9fa;
+        border-top: 1px solid #e8eaed;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .card-edit-label {
+        font-size: 12px;
+        color: #555;
+        font-weight: 500;
+      }
+      .btn-aulas-admin {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: #004384;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 5px 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background 0.15s;
+      }
+      .btn-aulas-admin:hover {
+        background: #003369;
+      }
 
-.toggle-wrap{display:flex;align-items:center;gap:8px}
-.toggle-label{font-size:11px;color:#888}
-.toggle{position:relative;width:40px;height:22px;flex-shrink:0}
-.toggle input{opacity:0;width:0;height:0;position:absolute}
-.toggle-slider{position:absolute;inset:0;background:#ccc;border-radius:22px;cursor:pointer;transition:background .2s}
-.toggle-slider:before{content:'';position:absolute;width:16px;height:16px;left:3px;top:3px;background:#fff;border-radius:50%;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
-.toggle input:checked + .toggle-slider{background:#2e7d32}
-.toggle input:checked + .toggle-slider:before{transform:translateX(18px)}
+      .toggle-wrap {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .toggle-label {
+        font-size: 11px;
+        color: #888;
+      }
+      .toggle {
+        position: relative;
+        width: 40px;
+        height: 22px;
+        flex-shrink: 0;
+      }
+      .toggle input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        position: absolute;
+      }
+      .toggle-slider {
+        position: absolute;
+        inset: 0;
+        background: #ccc;
+        border-radius: 22px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .toggle-slider:before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 3px;
+        top: 3px;
+        background: #fff;
+        border-radius: 50%;
+        transition: transform 0.2s;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      }
+      .toggle input:checked + .toggle-slider {
+        background: #2e7d32;
+      }
+      .toggle input:checked + .toggle-slider:before {
+        transform: translateX(18px);
+      }
 
-/* ── Botão exportar ── */
-.export-bar{display:none;padding:0 24px 24px;max-width:900px;margin:0 auto}
-.btn-export{display:flex;align-items:center;gap:8px;background:#004384;color:#fff;border:none;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;transition:background .15s;font-family:inherit}
-.btn-export:hover{background:#00306a}
+      /* ── Botão exportar ── */
+      .export-bar {
+        display: none;
+        padding: 0 24px 24px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .btn-export {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #004384;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.15s;
+        font-family: inherit;
+      }
+      .btn-export:hover {
+        background: #00306a;
+      }
 
-/* ── Admin ── */
-.admin-section{display:none;background:#f0f4ff;border-top:3px solid #004384;border-bottom:3px solid #004384;padding:24px}
-.admin-section-title{font-size:13px;font-weight:700;color:#004384;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
-.admin-cards{display:flex;flex-wrap:wrap;gap:14px}
-.admin-card{display:flex;flex-direction:column;align-items:center;gap:8px;background:#fff;border:1px solid #d0d8e8;border-radius:10px;padding:18px 26px;cursor:pointer;font-family:inherit;transition:.18s;min-width:120px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.admin-card:hover{border-color:#004384;box-shadow:0 4px 16px rgba(0,67,132,.15);transform:translateY(-2px)}
-.admin-card-icon{font-size:28px}
-.admin-card-label{font-size:11px;font-weight:700;color:#004384;text-transform:uppercase;letter-spacing:.5px}
+      /* ── Admin ── */
+      .admin-section {
+        display: none;
+        background: #f0f4ff;
+        border-top: 3px solid #004384;
+        border-bottom: 3px solid #004384;
+        padding: 24px;
+      }
+      .admin-section-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #004384;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      .admin-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      .admin-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        background: #fff;
+        border: 1px solid #d0d8e8;
+        border-radius: 10px;
+        padding: 18px 26px;
+        cursor: pointer;
+        font-family: inherit;
+        transition: 0.18s;
+        min-width: 120px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+      }
+      .admin-card:hover {
+        border-color: #004384;
+        box-shadow: 0 4px 16px rgba(0, 67, 132, 0.15);
+        transform: translateY(-2px);
+      }
+      .admin-card-icon {
+        font-size: 28px;
+      }
+      .admin-card-label {
+        font-size: 11px;
+        font-weight: 700;
+        color: #004384;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
 
-/* ── Modal CRUD ── */
-.crud-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:1000;display:flex;align-items:center;justify-content:center;padding:16px}
-.crud-modal{background:#fff;border-radius:12px;box-shadow:0 8px 40px rgba(0,0,0,.3);width:100%;max-width:940px;max-height:88vh;display:flex;flex-direction:column;overflow:hidden}
-.crud-modal-head{background:#004384;color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-.crud-modal-head h3{margin:0;font-size:15px;font-weight:700}
-.crud-btn-fechar{background:rgba(255,255,255,.15);border:none;color:#fff;font-size:16px;width:28px;height:28px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s}
-.crud-btn-fechar:hover{background:rgba(255,255,255,.3)}
-.crud-toolbar{padding:12px 20px;border-bottom:1px solid #e8eaed;display:flex;align-items:center;gap:10px;flex-shrink:0;background:#f8f9fa}
-.btn-novo{background:#004384;color:#fff;border:none;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
-.btn-novo:hover{background:#00306a}
-.crud-msg{font-size:12px;font-weight:600}
-.crud-msg.ok{color:#2e7d32}.crud-msg.err{color:#c62828}.crud-msg.warn{color:#e65100}
+      /* ── Modal CRUD ── */
+      .crud-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+      }
+      .crud-modal {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 940px;
+        max-height: 88vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      .crud-modal-head {
+        background: #004384;
+        color: #fff;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+      }
+      .crud-modal-head h3 {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .crud-btn-fechar {
+        background: rgba(255, 255, 255, 0.15);
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.15s;
+      }
+      .crud-btn-fechar:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+      .crud-toolbar {
+        padding: 12px 20px;
+        border-bottom: 1px solid #e8eaed;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        background: #f8f9fa;
+      }
+      .btn-novo {
+        background: #004384;
+        color: #fff;
+        border: none;
+        padding: 7px 16px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        font-family: inherit;
+        transition: 0.15s;
+      }
+      .btn-novo:hover {
+        background: #00306a;
+      }
+      .crud-msg {
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .crud-msg.ok {
+        color: #2e7d32;
+      }
+      .crud-msg.err {
+        color: #c62828;
+      }
+      .crud-msg.warn {
+        color: #e65100;
+      }
 
-/* Form inline */
-.crud-form-area{padding:14px 20px;border-bottom:1px solid #e8eaed;background:#fafafa;flex-shrink:0}
-.crud-form{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px}
-.crud-field{display:flex;flex-direction:column;gap:3px;flex:1;min-width:150px}
-.crud-label{font-size:10px;font-weight:700;color:#666;text-transform:uppercase;letter-spacing:.4px}
-.crud-input{border:1px solid #ddd;border-radius:6px;padding:7px 10px;font-size:13px;font-family:inherit;color:#202124;background:#fff;outline:none;transition:.15s}
-.crud-input:focus{border-color:#004384;box-shadow:0 0 0 3px rgba(0,67,132,.1)}
-.crud-form-btns{display:flex;gap:8px}
-.btn-salvar{background:#2e7d32;color:#fff;border:none;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
-.btn-salvar:hover{background:#1b5e20}
-.btn-cancelar{background:#f1f3f4;color:#444;border:none;padding:7px 14px;border-radius:6px;font-size:13px;cursor:pointer;font-family:inherit;transition:.15s}
-.btn-cancelar:hover{background:#e0e0e0}
+      /* Form inline */
+      .crud-form-area {
+        padding: 14px 20px;
+        border-bottom: 1px solid #e8eaed;
+        background: #fafafa;
+        flex-shrink: 0;
+      }
+      .crud-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .crud-field {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        flex: 1;
+        min-width: 150px;
+      }
+      .crud-label {
+        font-size: 10px;
+        font-weight: 700;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+      .crud-input {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 7px 10px;
+        font-size: 13px;
+        font-family: inherit;
+        color: #202124;
+        background: #fff;
+        outline: none;
+        transition: 0.15s;
+      }
+      .crud-input:focus {
+        border-color: #004384;
+        box-shadow: 0 0 0 3px rgba(0, 67, 132, 0.1);
+      }
+      .crud-form-btns {
+        display: flex;
+        gap: 8px;
+      }
+      .btn-salvar {
+        background: #2e7d32;
+        color: #fff;
+        border: none;
+        padding: 7px 16px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        font-family: inherit;
+        transition: 0.15s;
+      }
+      .btn-salvar:hover {
+        background: #1b5e20;
+      }
+      .btn-cancelar {
+        background: #f1f3f4;
+        color: #444;
+        border: none;
+        padding: 7px 14px;
+        border-radius: 6px;
+        font-size: 13px;
+        cursor: pointer;
+        font-family: inherit;
+        transition: 0.15s;
+      }
+      .btn-cancelar:hover {
+        background: #e0e0e0;
+      }
 
-/* Tabela */
-.crud-table-wrap{overflow:auto;flex:1;padding:0 20px 16px}
-.crud-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
-.crud-table th{text-align:left;padding:8px 10px;font-size:11px;font-weight:700;color:#004384;text-transform:uppercase;letter-spacing:.4px;border-bottom:2px solid #e8eaed;white-space:nowrap}
-.crud-table td{padding:8px 10px;color:#333;border-bottom:1px solid #f0f0f0;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.crud-table tr:hover td{background:#f5f8ff}
-.crud-acts{display:flex;gap:4px;white-space:nowrap;max-width:none!important}
-.btn-ed,.btn-del,.btn-aulas{border:none;border-radius:4px;cursor:pointer;font-size:13px;padding:3px 7px;transition:.15s;text-decoration:none;display:inline-flex;align-items:center}
-.btn-ed{background:#e3f2fd;color:#1565c0}.btn-ed:hover{background:#bbdefb}
-.btn-del{background:#fce4ec;color:#c62828}.btn-del:hover{background:#f8bbd9}
-.btn-aulas{background:#e8f5e9;color:#2e7d32;font-weight:600}.btn-aulas:hover{background:#c8e6c9}
-.crud-vazio{padding:24px;text-align:center;color:#888;font-size:13px}
-</style>
-</head>
-<body>
+      /* Tabela */
+      .crud-table-wrap {
+        overflow: auto;
+        flex: 1;
+        padding: 0 20px 16px;
+      }
+      .crud-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+        margin-top: 12px;
+      }
+      .crud-table th {
+        text-align: left;
+        padding: 8px 10px;
+        font-size: 11px;
+        font-weight: 700;
+        color: #004384;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        border-bottom: 2px solid #e8eaed;
+        white-space: nowrap;
+      }
+      .crud-table td {
+        padding: 8px 10px;
+        color: #333;
+        border-bottom: 1px solid #f0f0f0;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .crud-table tr:hover td {
+        background: #f5f8ff;
+      }
+      .crud-acts {
+        display: flex;
+        gap: 4px;
+        white-space: nowrap;
+        max-width: none !important;
+      }
+      .btn-ed,
+      .btn-del,
+      .btn-aulas {
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 13px;
+        padding: 3px 7px;
+        transition: 0.15s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+      }
+      .btn-ed {
+        background: #e3f2fd;
+        color: #1565c0;
+      }
+      .btn-ed:hover {
+        background: #bbdefb;
+      }
+      .btn-del {
+        background: #fce4ec;
+        color: #c62828;
+      }
+      .btn-del:hover {
+        background: #f8bbd9;
+      }
+      .btn-aulas {
+        background: #e8f5e9;
+        color: #2e7d32;
+        font-weight: 600;
+      }
+      .btn-aulas:hover {
+        background: #c8e6c9;
+      }
+      .crud-vazio {
+        padding: 24px;
+        text-align: center;
+        color: #888;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      (function () {
+        if (!localStorage.getItem("senai_role"))
+          window.location.replace("login.html");
+      })();
+    </script>
 
-<script>
-(function(){
-  if(!localStorage.getItem('senai_role')) window.location.replace('login.html');
-})();
-</script>
-
-<div class="header">
-  <a class="header-logo" href="dashboard.html">SENAI</a>
-  <span class="header-title">Painel de Cursos</span>
-  <span class="header-spacer"></span>
-  <span class="role-badge" id="roleBadge"></span>
-  <button id="btnAdmin" onclick="toggleAdmin()" class="header-btn" style="display:none;margin-left:8px">⚙️ Admin</button>
-  <button onclick="sair()" class="header-btn" style="margin-left:8px">🚪 Sair</button>
-</div>
-
-<!-- ── Seção Admin ─────────────────────────── -->
-<div class="admin-section" id="adminSection">
-  <div class="admin-section-title">⚙️ Administração de Cadastros</div>
-  <div class="admin-cards">
-    <button class="admin-card" onclick="abrirCRUD('curso')">
-      <span class="admin-card-icon">📚</span>
-      <span class="admin-card-label">Cursos</span>
-    </button>
-    <button class="admin-card" onclick="abrirCRUD('materia')">
-      <span class="admin-card-icon">📖</span>
-      <span class="admin-card-label">Matérias</span>
-    </button>
-    <button class="admin-card" onclick="abrirCRUD('atividade')">
-      <span class="admin-card-icon">📝</span>
-      <span class="admin-card-label">Atividades</span>
-    </button>
-    <button class="admin-card" onclick="abrirCRUD('cursomateria')">
-      <span class="admin-card-icon">🔗</span>
-      <span class="admin-card-label">Matéria × Curso</span>
-    </button>
-  </div>
-</div>
-
-<!-- ── Modal de Aulas ──────────────────────── -->
-<div class="crud-backdrop" id="aulasModal" style="display:none" onclick="aulasModalBgClick(event)">
-  <div class="crud-modal" style="max-width:700px">
-    <div class="crud-modal-head">
-      <h3 id="aulasModalTitulo">Aulas</h3>
-      <button class="crud-btn-fechar" onclick="fecharAulasModal()">✕</button>
+    <div class="header">
+      <a class="header-logo" href="dashboard.html">SENAI</a>
+      <span class="header-title">Painel de Cursos</span>
+      <span class="header-spacer"></span>
+      <span class="role-badge" id="roleBadge"></span>
+      <button
+        id="btnAdmin"
+        onclick="toggleAdmin()"
+        class="header-btn"
+        style="display: none; margin-left: 8px"
+      >
+        ⚙️ Admin
+      </button>
+      <button onclick="sair()" class="header-btn" style="margin-left: 8px">
+        🚪 Sair
+      </button>
     </div>
-    <div class="crud-toolbar">
-      <button class="btn-novo" onclick="abrirFormAula(null)">＋ Nova Aula</button>
-      <span class="crud-msg" id="aulasMsg"></span>
-    </div>
-    <!-- Formulário inline -->
-    <div id="aulaFormArea" style="display:none;padding:16px 20px;border-bottom:1px solid #e8eaed;background:#fafafa;flex-shrink:0">
-      <input type="hidden" id="aulaNumOrig">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
-        <div class="crud-field"><label class="crud-label">Número</label><input class="crud-input" id="aulaNum" type="number" min="1" placeholder="Ex: 5"></div>
-        <div class="crud-field"><label class="crud-label">Ícone (emoji)</label><input class="crud-input" id="aulaIcone" placeholder="📚"></div>
+
+    <!-- ── Seção Admin ─────────────────────────── -->
+    <div class="admin-section" id="adminSection">
+      <div class="admin-section-title">⚙️ Administração de Cadastros</div>
+      <div class="admin-cards">
+        <button class="admin-card" onclick="abrirCRUD('curso')">
+          <span class="admin-card-icon">📚</span>
+          <span class="admin-card-label">Cursos</span>
+        </button>
+        <button class="admin-card" onclick="abrirCRUD('materia')">
+          <span class="admin-card-icon">📖</span>
+          <span class="admin-card-label">Matérias</span>
+        </button>
+        <button class="admin-card" onclick="abrirCRUD('atividade')">
+          <span class="admin-card-icon">📝</span>
+          <span class="admin-card-label">Atividades</span>
+        </button>
+        <button class="admin-card" onclick="abrirCRUD('cursomateria')">
+          <span class="admin-card-icon">🔗</span>
+          <span class="admin-card-label">Matéria × Curso</span>
+        </button>
       </div>
-      <div class="crud-field" style="margin-bottom:12px"><label class="crud-label">Título</label><input class="crud-input" id="aulaTitulo" placeholder="Ex: Internet e World Wide Web"></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
-        <div class="crud-field"><label class="crud-label">Data</label><input class="crud-input" id="aulaData" placeholder="07-08-2026"></div>
-        <div class="crud-field"><label class="crud-label">Dia da Semana</label><input class="crud-input" id="aulaDia" placeholder="Quinta-feira"></div>
+    </div>
+
+    <!-- ── Modal de Aulas ──────────────────────── -->
+    <div
+      class="crud-backdrop"
+      id="aulasModal"
+      style="display: none"
+      onclick="aulasModalBgClick(event)"
+    >
+      <div class="crud-modal" style="max-width: 700px">
+        <div class="crud-modal-head">
+          <h3 id="aulasModalTitulo">Aulas</h3>
+          <button class="crud-btn-fechar" onclick="fecharAulasModal()">
+            ✕
+          </button>
+        </div>
+        <div class="crud-toolbar">
+          <button class="btn-novo" onclick="abrirFormAula(null)">
+            ＋ Nova Aula
+          </button>
+          <span class="crud-msg" id="aulasMsg"></span>
+        </div>
+        <!-- Formulário inline -->
+        <div
+          id="aulaFormArea"
+          style="
+            display: none;
+            padding: 16px 20px;
+            border-bottom: 1px solid #e8eaed;
+            background: #fafafa;
+            flex-shrink: 0;
+          "
+        >
+          <input type="hidden" id="aulaNumOrig" />
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 12px;
+              margin-bottom: 12px;
+            "
+          >
+            <div class="crud-field">
+              <label class="crud-label">Número</label
+              ><input
+                class="crud-input"
+                id="aulaNum"
+                type="number"
+                min="1"
+                placeholder="Ex: 5"
+              />
+            </div>
+            <div class="crud-field">
+              <label class="crud-label">Ícone (emoji)</label
+              ><input class="crud-input" id="aulaIcone" placeholder="📚" />
+            </div>
+          </div>
+          <div class="crud-field" style="margin-bottom: 12px">
+            <label class="crud-label">Título</label
+            ><input
+              class="crud-input"
+              id="aulaTitulo"
+              placeholder="Ex: Internet e World Wide Web"
+            />
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 12px;
+              margin-bottom: 12px;
+            "
+          >
+            <div class="crud-field">
+              <label class="crud-label">Data</label
+              ><input
+                class="crud-input"
+                id="aulaData"
+                placeholder="07-08-2026"
+              />
+            </div>
+            <div class="crud-field">
+              <label class="crud-label">Dia da Semana</label
+              ><input
+                class="crud-input"
+                id="aulaDia"
+                placeholder="Quinta-feira"
+              />
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              margin-bottom: 14px;
+            "
+          >
+            <span class="crud-label" style="margin: 0">Visível aos alunos</span>
+            <label class="toggle" style="margin: 0"
+              ><input type="checkbox" id="aulaVisivel" /><span
+                class="toggle-slider"
+              ></span
+            ></label>
+          </div>
+          <div style="border-top: 1px solid #e0e0e0; padding-top: 12px">
+            <div class="crud-label" style="margin-bottom: 8px">Materiais</div>
+            <div
+              id="aulaMatList"
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 8px;
+              "
+            ></div>
+            <button
+              onclick="abrirAddMatAula()"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                background: #e8f0fe;
+                border: 1px dashed #004384;
+                color: #004384;
+                font-size: 12px;
+                font-weight: 600;
+                padding: 6px;
+                border-radius: 6px;
+                cursor: pointer;
+                width: 100%;
+                font-family: inherit;
+              "
+            >
+              ＋ Adicionar Material
+            </button>
+          </div>
+          <div
+            style="
+              display: flex;
+              gap: 8px;
+              margin-top: 14px;
+              align-items: center;
+            "
+          >
+            <button class="btn-salvar" onclick="salvarAulaModal()">
+              💾 Salvar Aula
+            </button>
+            <button class="btn-cancelar" onclick="fecharFormAula()">
+              Cancelar
+            </button>
+            <button
+              id="aulaBtnDel"
+              onclick="excluirAulaModal()"
+              style="
+                display: none;
+                background: #fce4ec;
+                color: #c62828;
+                border: none;
+                padding: 7px 14px;
+                border-radius: 6px;
+                font-size: 13px;
+                font-weight: 600;
+                cursor: pointer;
+                margin-left: auto;
+                font-family: inherit;
+              "
+            >
+              🗑 Excluir Aula
+            </button>
+          </div>
+        </div>
+        <!-- Lista -->
+        <div class="crud-table-wrap">
+          <table class="crud-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Título</th>
+                <th>Data</th>
+                <th>Vis.</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="aulasTbody"></tbody>
+          </table>
+          <div
+            id="aulasVazio"
+            style="
+              display: none;
+              padding: 24px;
+              text-align: center;
+              color: #888;
+              font-size: 13px;
+            "
+          >
+            Nenhuma aula cadastrada ainda.
+          </div>
+        </div>
       </div>
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
-        <span class="crud-label" style="margin:0">Visível aos alunos</span>
-        <label class="toggle" style="margin:0"><input type="checkbox" id="aulaVisivel"><span class="toggle-slider"></span></label>
-      </div>
-      <div style="border-top:1px solid #e0e0e0;padding-top:12px">
-        <div class="crud-label" style="margin-bottom:8px">Materiais</div>
-        <div id="aulaMatList" style="display:flex;flex-direction:column;gap:5px;margin-bottom:8px"></div>
-        <button onclick="abrirAddMatAula()" style="display:flex;align-items:center;justify-content:center;gap:5px;background:#e8f0fe;border:1px dashed #004384;color:#004384;font-size:12px;font-weight:600;padding:6px;border-radius:6px;cursor:pointer;width:100%;font-family:inherit">＋ Adicionar Material</button>
-      </div>
-      <div style="display:flex;gap:8px;margin-top:14px;align-items:center">
-        <button class="btn-salvar" onclick="salvarAulaModal()">💾 Salvar Aula</button>
-        <button class="btn-cancelar" onclick="fecharFormAula()">Cancelar</button>
-        <button id="aulaBtnDel" onclick="excluirAulaModal()" style="display:none;background:#fce4ec;color:#c62828;border:none;padding:7px 14px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;margin-left:auto;font-family:inherit">🗑 Excluir Aula</button>
-      </div>
     </div>
-    <!-- Lista -->
-    <div class="crud-table-wrap">
-      <table class="crud-table">
-        <thead><tr><th>#</th><th>Título</th><th>Data</th><th>Vis.</th><th>Ações</th></tr></thead>
-        <tbody id="aulasTbody"></tbody>
-      </table>
-      <div id="aulasVazio" style="display:none;padding:24px;text-align:center;color:#888;font-size:13px">Nenhuma aula cadastrada ainda.</div>
-    </div>
-  </div>
-</div>
 
-<!-- Sub-modal Material -->
-<div class="crud-backdrop" id="matAulaModal" style="display:none;z-index:1100" onclick="if(event.target===this)fecharAddMatAula()">
-  <div class="crud-modal" style="max-width:440px">
-    <div class="crud-modal-head">
-      <h3>Adicionar Material</h3>
-      <button class="crud-btn-fechar" onclick="fecharAddMatAula()">✕</button>
-    </div>
-    <div style="padding:16px 20px">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
-        <div class="crud-field"><label class="crud-label">Ícone</label><input class="crud-input" id="mIcone" placeholder="📄"></div>
-        <div class="crud-field"><label class="crud-label">Tipo</label><select class="crud-input" id="mTipo"><option value="">Slide / Arquivo</option><option value="questionario">Questionário</option></select></div>
-      </div>
-      <div class="crud-field" style="margin-bottom:12px"><label class="crud-label">Nome</label><input class="crud-input" id="mNome" placeholder="Ex: Slide — Internet e WWW"></div>
-      <div class="crud-field" style="margin-bottom:16px"><label class="crud-label">Arquivo / URL</label><input class="crud-input" id="mArquivo" placeholder="Caminho relativo ou https://..."></div>
-      <div style="display:flex;gap:8px">
-        <button class="btn-salvar" onclick="confirmarMatAula()">＋ Adicionar</button>
-        <button class="btn-cancelar" onclick="fecharAddMatAula()">Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ── Modal CRUD ──────────────────────────── -->
-<div class="crud-backdrop" id="modalCRUD" style="display:none" onclick="crudBgClick(event)">
-  <div class="crud-modal">
-    <div class="crud-modal-head">
-      <h3 id="crudTitulo">Cadastro</h3>
-      <button class="crud-btn-fechar" onclick="fecharCRUD()">✕</button>
-    </div>
-    <div class="crud-toolbar">
-      <button class="btn-novo" onclick="mostrarFormCRUD()">➕ Novo</button>
-      <span class="crud-msg" id="crudMsg"></span>
-    </div>
-    <div class="crud-form-area" id="crudFormArea" style="display:none">
-      <div class="crud-form" id="crudForm"></div>
-      <div class="crud-form-btns">
-        <button class="btn-salvar" onclick="salvarCRUD()">💾 Salvar</button>
-        <button class="btn-cancelar" onclick="ocultarFormCRUD()">Cancelar</button>
+    <!-- Sub-modal Material -->
+    <div
+      class="crud-backdrop"
+      id="matAulaModal"
+      style="display: none; z-index: 1100"
+      onclick="if (event.target === this) fecharAddMatAula();"
+    >
+      <div class="crud-modal" style="max-width: 440px">
+        <div class="crud-modal-head">
+          <h3>Adicionar Material</h3>
+          <button class="crud-btn-fechar" onclick="fecharAddMatAula()">
+            ✕
+          </button>
+        </div>
+        <div style="padding: 16px 20px">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 12px;
+              margin-bottom: 12px;
+            "
+          >
+            <div class="crud-field">
+              <label class="crud-label">Ícone</label
+              ><input class="crud-input" id="mIcone" placeholder="📄" />
+            </div>
+            <div class="crud-field">
+              <label class="crud-label">Tipo</label
+              ><select class="crud-input" id="mTipo">
+                <option value="">Slide / Arquivo</option>
+                <option value="questionario">Questionário</option>
+              </select>
+            </div>
+          </div>
+          <div class="crud-field" style="margin-bottom: 12px">
+            <label class="crud-label">Nome</label
+            ><input
+              class="crud-input"
+              id="mNome"
+              placeholder="Ex: Slide — Internet e WWW"
+            />
+          </div>
+          <div class="crud-field" style="margin-bottom: 16px">
+            <label class="crud-label">Arquivo / URL</label
+            ><input
+              class="crud-input"
+              id="mArquivo"
+              placeholder="Caminho relativo ou https://..."
+            />
+          </div>
+          <div style="display: flex; gap: 8px">
+            <button class="btn-salvar" onclick="confirmarMatAula()">
+              ＋ Adicionar
+            </button>
+            <button class="btn-cancelar" onclick="fecharAddMatAula()">
+              Cancelar
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="crud-table-wrap">
-      <table class="crud-table">
-        <thead id="crudThead"></thead>
-        <tbody id="crudTbody"></tbody>
-      </table>
-      <div class="crud-vazio" id="crudVazio" style="display:none">Nenhum registro encontrado.</div>
+
+    <!-- ── Modal CRUD ──────────────────────────── -->
+    <div
+      class="crud-backdrop"
+      id="modalCRUD"
+      style="display: none"
+      onclick="crudBgClick(event)"
+    >
+      <div class="crud-modal">
+        <div class="crud-modal-head">
+          <h3 id="crudTitulo">Cadastro</h3>
+          <button class="crud-btn-fechar" onclick="fecharCRUD()">✕</button>
+        </div>
+        <div class="crud-toolbar">
+          <button class="btn-novo" onclick="mostrarFormCRUD()">➕ Novo</button>
+          <span class="crud-msg" id="crudMsg"></span>
+        </div>
+        <div class="crud-form-area" id="crudFormArea" style="display: none">
+          <div class="crud-form" id="crudForm"></div>
+          <div class="crud-form-btns">
+            <button class="btn-salvar" onclick="salvarCRUD()">💾 Salvar</button>
+            <button class="btn-cancelar" onclick="ocultarFormCRUD()">
+              Cancelar
+            </button>
+          </div>
+        </div>
+        <div class="crud-table-wrap">
+          <table class="crud-table">
+            <thead id="crudThead"></thead>
+            <tbody id="crudTbody"></tbody>
+          </table>
+          <div class="crud-vazio" id="crudVazio" style="display: none">
+            Nenhum registro encontrado.
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
+    <div class="section">
+      <div class="section-label">Cursos disponíveis</div>
+      <div class="grid" id="grid">
+        <p style="color: #888; font-size: 14px">Carregando cursos...</p>
+      </div>
+    </div>
 
-<div class="edit-banner hidden" id="editBanner">
-  ✏️ <span><strong>Modo Professor:</strong> use os toggles em cada card para controlar a visibilidade dos cursos. Clique em <strong>Exportar JSON</strong> para salvar as alterações.</span>
-</div>
+    <script>
+      const role = localStorage.getItem("senai_role") || "ALUNO";
+      const isProfessor = role === "PROFESSOR";
 
-<div class="section">
-  <div class="section-label">Cursos disponíveis</div>
-  <div class="grid" id="grid">
-    <p style="color:#888;font-size:14px">Carregando cursos...</p>
-  </div>
-</div>
+      // Badge de perfil
+      document.getElementById("roleBadge").textContent = isProfessor
+        ? "👨‍🏫 Professor"
+        : "👨‍🎓 Aluno";
 
+      // Mostrar controles de professor
+      if (isProfessor) {
+        document.getElementById("btnAdmin").style.display = "";
+        document.getElementById("adminSection").style.display = "block";
+      }
 
-<script>
-const role = localStorage.getItem('senai_role') || 'ALUNO';
-const isProfessor = role === 'PROFESSOR';
+      const SUPABASE_URL = "https://jwasbzdbkbryncpvfujc.supabase.co";
+      const SUPABASE_KEY =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU";
 
-// Badge de perfil
-document.getElementById('roleBadge').textContent = isProfessor ? '👨‍🏫 Professor' : '👨‍🎓 Aluno';
+      let dadosCursos = null;
 
-// Mostrar controles de professor
-if (isProfessor) {
-  document.getElementById('editBanner').classList.remove('hidden');
-  document.getElementById('btnAdmin').style.display = '';
-}
+      // Visibilidade sobreposta (localStorage por curso)
+      function getVis(id, padrao) {
+        const salvo = localStorage.getItem("vis_curso_" + id);
+        return salvo !== null ? parseInt(salvo) : padrao;
+      }
+      function setVis(id, val) {
+        localStorage.setItem("vis_curso_" + id, val);
+      }
 
-const SUPABASE_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
+      (async function () {
+        try {
+          const r = await fetch(
+            `${SUPABASE_URL}/rest/v1/curso?select=id,codigo,nome_completo,tipo_curso,icone,descricao_card,cor_primaria,cor_secundaria,cor_faixa,tags,link_aulas,visivel,materias&order=id`,
+            { headers: { apikey: SUPABASE_KEY } },
+          );
+          const rows = await r.json();
+          if (!Array.isArray(rows)) throw new Error();
+          dadosCursos = {
+            cursos: rows.map((row) => ({
+              id: row.codigo,
+              idNum: row.id,
+              nome: row.nome_completo,
+              tipo: row.tipo_curso,
+              icone: row.icone,
+              descricao: row.descricao_card,
+              corPrimaria: row.cor_primaria,
+              corSecundaria: row.cor_secundaria,
+              corFaixa: row.cor_faixa,
+              tags: row.tags || [],
+              link: row.link_aulas,
+              visivel: row.visivel,
+              _materias: row.materias,
+            })),
+          };
+        } catch {
+          document.getElementById("grid").innerHTML =
+            '<p style="color:#d32f2f;font-size:14px">Erro ao carregar dados do Supabase</p>';
+          return;
+        }
 
-let dadosCursos = null;
+        const grid = document.getElementById("grid");
+        grid.innerHTML = "";
 
-// Visibilidade sobreposta (localStorage por curso)
-function getVis(id, padrao) {
-  const salvo = localStorage.getItem('vis_curso_' + id);
-  return salvo !== null ? parseInt(salvo) : padrao;
-}
-function setVis(id, val) {
-  localStorage.setItem('vis_curso_' + id, val);
-}
+        for (const curso of dadosCursos.cursos) {
+          const visivel = getVis(curso.id, curso.visivel);
+          const disponivel = visivel === 1;
 
-(async function () {
-  try {
-    const r = await fetch(
-      `${SUPABASE_URL}/rest/v1/curso?select=id,codigo,nome_completo,tipo_curso,icone,descricao_card,cor_primaria,cor_secundaria,cor_faixa,tags,link_aulas,visivel,materias&order=id`,
-      { headers: { 'apikey': SUPABASE_KEY } }
-    );
-    const rows = await r.json();
-    if (!Array.isArray(rows)) throw new Error();
-    dadosCursos = { cursos: rows.map(row => ({
-      id: row.codigo,
-      idNum: row.id,
-      nome: row.nome_completo,
-      tipo: row.tipo_curso,
-      icone: row.icone,
-      descricao: row.descricao_card,
-      corPrimaria: row.cor_primaria,
-      corSecundaria: row.cor_secundaria,
-      corFaixa: row.cor_faixa,
-      tags: row.tags || [],
-      link: row.link_aulas,
-      visivel: row.visivel,
-      _materias: row.materias
-    })) };
-  } catch {
-    document.getElementById('grid').innerHTML = '<p style="color:#d32f2f;font-size:14px">Erro ao carregar dados do Supabase</p>';
-    return;
-  }
+          // Progresso a partir do campo materias do Supabase
+          let pct = 0,
+            progressoTexto = "Conteúdo em preparação";
+          if (disponivel && curso._materias) {
+            const aulas = Array.isArray(curso._materias) ? curso._materias : [];
+            const vis = aulas.filter((a) => a.visivel === 1).length;
+            pct = aulas.length ? Math.round((vis / aulas.length) * 100) : 0;
+            progressoTexto = `${vis} de ${aulas.length} aulas disponíveis`;
+          }
 
-  const grid = document.getElementById('grid');
-  grid.innerHTML = '';
+          const tagsHTML = curso.tags
+            .map((t) => `<span class="tag">${t}</span>`)
+            .join("");
 
-  for (const curso of dadosCursos.cursos) {
-    const visivel = getVis(curso.id, curso.visivel);
-    const disponivel = visivel === 1;
+          const card = document.createElement("div");
+          card.className = "card " + (disponivel ? "disponivel" : "bloqueado");
+          card.dataset.id = curso.id;
 
-    // Progresso a partir do campo materias do Supabase
-    let pct = 0, progressoTexto = 'Conteúdo em preparação';
-    if (disponivel && curso._materias) {
-      const aulas = Array.isArray(curso._materias) ? curso._materias : [];
-      const vis = aulas.filter(a => a.visivel === 1).length;
-      pct = aulas.length ? Math.round((vis / aulas.length) * 100) : 0;
-      progressoTexto = `${vis} de ${aulas.length} aulas disponíveis`;
-    }
-
-    const tagsHTML = curso.tags.map(t => `<span class="tag">${t}</span>`).join('');
-
-    const card = document.createElement('div');
-    card.className = 'card ' + (disponivel ? 'disponivel' : 'bloqueado');
-    card.dataset.id = curso.id;
-
-    card.innerHTML = `
+          card.innerHTML = `
       <div class="card-thumb" style="background:linear-gradient(135deg,${curso.corPrimaria} 0%,${curso.corSecundaria} 100%)">
         <span class="card-thumb-icon">${curso.icone}</span>
         <div class="card-thumb-stripe" style="background:${curso.corFaixa}"></div>
       </div>
       <div class="card-body">
         <div class="card-tipo" style="color:${curso.corSecundaria}">${curso.tipo}</div>
-        <div class="card-titulo">${disponivel ? curso.nome : '<span style="color:#9aa0a6">'+curso.nome+'</span>'}</div>
+        <div class="card-titulo">${disponivel ? curso.nome : '<span style="color:#9aa0a6">' + curso.nome + "</span>"}</div>
         <div class="card-desc">${curso.descricao}</div>
         <div class="card-tags">${tagsHTML}</div>
       </div>
@@ -378,405 +1168,646 @@ function setVis(id, val) {
           </div>
           <div class="progress-mini-text">${progressoTexto}</div>
         </div>
-        ${disponivel
-          ? `<a href="${curso.link}?curso=${curso.id}" class="btn-acessar" style="background:${curso.corPrimaria}">Acessar ↗</a>`
-          : `<span class="btn-em-breve">🔒 Em breve</span>`
+        ${
+          disponivel
+            ? `<a href="${curso.link}?curso=${curso.id}" class="btn-acessar" style="background:${curso.corPrimaria}">Acessar ↗</a>`
+            : `<span class="btn-em-breve">🔒 Em breve</span>`
         }
       </div>
       <div class="card-edit" id="edit-${curso.id}">
-        <button class="btn-aulas-admin" onclick="abrirAulasCurso(${curso.idNum}, '${curso.nome.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">📋 Aulas</button>
+        <button class="btn-aulas-admin" onclick="abrirAulasCurso(${curso.idNum}, '${curso.nome.replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>
         <span class="card-edit-label">Visibilidade</span>
         <div class="toggle-wrap">
-          <span class="toggle-label">${visivel ? 'Visível' : 'Oculto'}</span>
+          <span class="toggle-label">${visivel ? "Visível" : "Oculto"}</span>
           <label class="toggle">
-            <input type="checkbox" id="tog-${curso.id}" ${visivel ? 'checked' : ''} onchange="alterarVis('${curso.id}', this)">
+            <input type="checkbox" id="tog-${curso.id}" ${visivel ? "checked" : ""} onchange="alterarVis('${curso.id}', this)">
             <span class="toggle-slider"></span>
           </label>
         </div>
       </div>`;
 
-    grid.appendChild(card);
-  }
+          grid.appendChild(card);
+        }
 
-  // Mostrar linha de edição para professor
-  if (isProfessor) {
-    document.querySelectorAll('.card-edit').forEach(el => el.style.display = 'flex');
-  }
-})();
+        // Mostrar linha de edição para professor
+        if (isProfessor) {
+          document
+            .querySelectorAll(".card-edit")
+            .forEach((el) => (el.style.display = "flex"));
+        }
+      })();
 
-function alterarVis(id, checkbox) {
-  const val = checkbox.checked ? 1 : 0;
-  setVis(id, val);
-  const label = checkbox.closest('.toggle-wrap').querySelector('.toggle-label');
-  if (label) label.textContent = val ? 'Visível' : 'Oculto';
-  // Recarrega para refletir mudança no card
-  location.reload();
-}
+      function alterarVis(id, checkbox) {
+        const val = checkbox.checked ? 1 : 0;
+        setVis(id, val);
+        const label = checkbox
+          .closest(".toggle-wrap")
+          .querySelector(".toggle-label");
+        if (label) label.textContent = val ? "Visível" : "Oculto";
+        // Recarrega para refletir mudança no card
+        location.reload();
+      }
 
+      function sair() {
+        localStorage.removeItem("senai_role");
+        localStorage.removeItem("senai_login");
+        window.location.href = "login.html";
+      }
 
-function sair() {
-  localStorage.removeItem('senai_role');
-  localStorage.removeItem('senai_login');
-  window.location.href = 'login.html';
-}
+      // ── Toggle Admin ─────────────────────────────
+      function toggleAdmin() {
+        const sec = document.getElementById("adminSection");
+        const btn = document.getElementById("btnAdmin");
+        const aberto = getComputedStyle(sec).display !== "none";
+        sec.style.display = aberto ? "none" : "block";
+        btn.style.background = aberto ? "" : "rgba(255,255,255,.35)";
+        if (!aberto) window.scrollTo({ top: 0, behavior: "smooth" });
+      }
 
-// ── Toggle Admin ─────────────────────────────
-function toggleAdmin() {
-  const sec = document.getElementById('adminSection');
-  const btn = document.getElementById('btnAdmin');
-  const aberto = getComputedStyle(sec).display !== 'none';
-  sec.style.display = aberto ? 'none' : 'block';
-  btn.style.background = aberto ? '' : 'rgba(255,255,255,.35)';
-  if (!aberto) window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+      // ── CRUD ─────────────────────────────────────
+      const SB_URL = "https://jwasbzdbkbryncpvfujc.supabase.co";
+      const SB_KEY =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU";
 
-// ── CRUD ─────────────────────────────────────
-const SB_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
-const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
+      const CRUD_CFG = {
+        curso: {
+          label: "Cursos",
+          table: "curso",
+          pk: "id",
+          listHeaders: ["ID", "Descrição", "Código", "Tipo", "Visível"],
+          listCols: ["id", "descricaocurso", "codigo", "tipo_curso", "visivel"],
+          fields: [
+            {
+              key: "descricaocurso",
+              label: "Descrição",
+              type: "text",
+              required: true,
+            },
+            { key: "codigo", label: "Código", type: "text" },
+            { key: "tipo_curso", label: "Tipo", type: "text" },
+            {
+              key: "visivel",
+              label: "Visível",
+              type: "select",
+              opts: [
+                { v: "1", l: "Sim" },
+                { v: "0", l: "Não" },
+              ],
+            },
+          ],
+        },
+        materia: {
+          label: "Matérias",
+          table: "materia",
+          pk: "id",
+          listHeaders: ["ID", "Descrição", "Ativo"],
+          listCols: ["id", "descricao", "ativo"],
+          fields: [
+            {
+              key: "descricao",
+              label: "Descrição",
+              type: "text",
+              required: true,
+            },
+            {
+              key: "ativo",
+              label: "Ativo",
+              type: "select",
+              opts: [
+                { v: "1", l: "Sim" },
+                { v: "0", l: "Não" },
+              ],
+            },
+          ],
+        },
+        atividade: {
+          label: "Atividades",
+          table: "atividade",
+          pk: "id",
+          listHeaders: [
+            "ID",
+            "Matéria",
+            "Descrição",
+            "Início",
+            "Fim",
+            "H.Início",
+            "H.Fim",
+            "Ativo",
+          ],
+          listCols: [
+            "id",
+            "materiaid",
+            "descricao",
+            "datainicio",
+            "datafim",
+            "horainicio",
+            "horafim",
+            "ativo",
+          ],
+          fields: [
+            {
+              key: "materiaid",
+              label: "Matéria",
+              type: "select-materia",
+              required: true,
+            },
+            {
+              key: "descricao",
+              label: "Descrição",
+              type: "text",
+              required: true,
+            },
+            { key: "datainicio", label: "Data Início", type: "date" },
+            { key: "datafim", label: "Data Fim", type: "date" },
+            { key: "horainicio", label: "Hora Início", type: "time" },
+            { key: "horafim", label: "Hora Fim", type: "time" },
+            {
+              key: "ativo",
+              label: "Ativo",
+              type: "select",
+              opts: [
+                { v: "1", l: "Sim" },
+                { v: "0", l: "Não" },
+              ],
+            },
+          ],
+        },
+        cursomateria: {
+          label: "Matéria × Curso",
+          table: "cursomateria",
+          pk: null,
+          listHeaders: ["Curso", "Matéria"],
+          listCols: ["cursoid", "materiaid"],
+          fields: [
+            {
+              key: "cursoid",
+              label: "Curso",
+              type: "select-curso",
+              required: true,
+            },
+            {
+              key: "materiaid",
+              label: "Matéria",
+              type: "select-materia",
+              required: true,
+            },
+          ],
+        },
+      };
 
-const CRUD_CFG = {
-  curso: {
-    label:'Cursos', table:'curso', pk:'id',
-    listHeaders:['ID','Descrição','Código','Tipo','Visível'],
-    listCols:['id','descricaocurso','codigo','tipo_curso','visivel'],
-    fields:[
-      {key:'descricaocurso', label:'Descrição', type:'text', required:true},
-      {key:'codigo',         label:'Código',    type:'text'},
-      {key:'tipo_curso',     label:'Tipo',      type:'text'},
-      {key:'visivel', label:'Visível', type:'select', opts:[{v:'1',l:'Sim'},{v:'0',l:'Não'}]}
-    ]
-  },
-  materia: {
-    label:'Matérias', table:'materia', pk:'id',
-    listHeaders:['ID','Descrição','Ativo'],
-    listCols:['id','descricao','ativo'],
-    fields:[
-      {key:'descricao', label:'Descrição', type:'text', required:true},
-      {key:'ativo', label:'Ativo', type:'select', opts:[{v:'1',l:'Sim'},{v:'0',l:'Não'}]}
-    ]
-  },
-  atividade: {
-    label:'Atividades', table:'atividade', pk:'id',
-    listHeaders:['ID','Matéria','Descrição','Início','Fim','H.Início','H.Fim','Ativo'],
-    listCols:['id','materiaid','descricao','datainicio','datafim','horainicio','horafim','ativo'],
-    fields:[
-      {key:'materiaid',  label:'Matéria',     type:'select-materia', required:true},
-      {key:'descricao',  label:'Descrição',   type:'text', required:true},
-      {key:'datainicio', label:'Data Início',  type:'date'},
-      {key:'datafim',    label:'Data Fim',     type:'date'},
-      {key:'horainicio', label:'Hora Início',  type:'time'},
-      {key:'horafim',    label:'Hora Fim',     type:'time'},
-      {key:'ativo', label:'Ativo', type:'select', opts:[{v:'1',l:'Sim'},{v:'0',l:'Não'}]}
-    ]
-  },
-  cursomateria: {
-    label:'Matéria × Curso', table:'cursomateria', pk:null,
-    listHeaders:['Curso','Matéria'],
-    listCols:['cursoid','materiaid'],
-    fields:[
-      {key:'cursoid',   label:'Curso',   type:'select-curso',   required:true},
-      {key:'materiaid', label:'Matéria', type:'select-materia', required:true}
-    ]
-  }
-};
+      let crudEntidade = null,
+        crudRegistros = [],
+        crudEditandoId = null;
+      let cacheMateria = [],
+        cacheCurso = [];
 
-let crudEntidade=null, crudRegistros=[], crudEditandoId=null;
-let cacheMateria=[], cacheCurso=[];
+      function sbH() {
+        return {
+          apikey: SB_KEY,
+          Authorization: "Bearer " + SB_KEY,
+          "Content-Type": "application/json",
+        };
+      }
+      async function sbGet(table, qs = "") {
+        const r = await fetch(`${SB_URL}/rest/v1/${table}?${qs}`, {
+          headers: sbH(),
+        });
+        if (!r.ok) throw new Error(await r.text());
+        return r.json();
+      }
+      async function sbPost(table, body) {
+        const r = await fetch(`${SB_URL}/rest/v1/${table}`, {
+          method: "POST",
+          headers: { ...sbH(), Prefer: "return=representation" },
+          body: JSON.stringify(body),
+        });
+        if (!r.ok) throw new Error(await r.text());
+        return r.json();
+      }
+      async function sbPatch(table, pk, pkVal, body) {
+        const r = await fetch(`${SB_URL}/rest/v1/${table}?${pk}=eq.${pkVal}`, {
+          method: "PATCH",
+          headers: { ...sbH(), Prefer: "return=representation" },
+          body: JSON.stringify(body),
+        });
+        if (!r.ok) throw new Error(await r.text());
+      }
+      async function sbDelete(table, qs) {
+        const r = await fetch(`${SB_URL}/rest/v1/${table}?${qs}`, {
+          method: "DELETE",
+          headers: sbH(),
+        });
+        if (!r.ok) throw new Error(await r.text());
+      }
 
-function sbH() {
-  return {'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Content-Type':'application/json'};
-}
-async function sbGet(table,qs=''){
-  const r=await fetch(`${SB_URL}/rest/v1/${table}?${qs}`,{headers:sbH()});
-  if(!r.ok) throw new Error(await r.text());
-  return r.json();
-}
-async function sbPost(table,body){
-  const r=await fetch(`${SB_URL}/rest/v1/${table}`,{method:'POST',headers:{...sbH(),'Prefer':'return=representation'},body:JSON.stringify(body)});
-  if(!r.ok) throw new Error(await r.text());
-  return r.json();
-}
-async function sbPatch(table,pk,pkVal,body){
-  const r=await fetch(`${SB_URL}/rest/v1/${table}?${pk}=eq.${pkVal}`,{method:'PATCH',headers:{...sbH(),'Prefer':'return=representation'},body:JSON.stringify(body)});
-  if(!r.ok) throw new Error(await r.text());
-}
-async function sbDelete(table,qs){
-  const r=await fetch(`${SB_URL}/rest/v1/${table}?${qs}`,{method:'DELETE',headers:sbH()});
-  if(!r.ok) throw new Error(await r.text());
-}
+      async function abrirCRUD(entidade) {
+        crudEntidade = entidade;
+        crudEditandoId = null;
+        document.getElementById("crudTitulo").textContent =
+          CRUD_CFG[entidade].label;
+        document.getElementById("crudFormArea").style.display = "none";
+        document.getElementById("crudMsg").textContent = "";
+        document.getElementById("modalCRUD").style.display = "flex";
+        setMsg("⏳ Carregando…", "");
+        if (!cacheMateria.length)
+          cacheMateria = await sbGet(
+            "materia",
+            "select=id,descricao&order=descricao",
+          );
+        if (!cacheCurso.length)
+          cacheCurso = await sbGet(
+            "curso",
+            "select=id,descricaocurso&order=descricaocurso",
+          );
+        await listarCRUD();
+      }
+      function fecharCRUD() {
+        document.getElementById("modalCRUD").style.display = "none";
+      }
+      function crudBgClick(e) {
+        if (e.target === document.getElementById("modalCRUD")) fecharCRUD();
+      }
 
-async function abrirCRUD(entidade){
-  crudEntidade=entidade; crudEditandoId=null;
-  document.getElementById('crudTitulo').textContent=CRUD_CFG[entidade].label;
-  document.getElementById('crudFormArea').style.display='none';
-  document.getElementById('crudMsg').textContent='';
-  document.getElementById('modalCRUD').style.display='flex';
-  setMsg('⏳ Carregando…','');
-  if(!cacheMateria.length) cacheMateria=await sbGet('materia','select=id,descricao&order=descricao');
-  if(!cacheCurso.length)   cacheCurso=await sbGet('curso','select=id,descricaocurso&order=descricaocurso');
-  await listarCRUD();
-}
-function fecharCRUD(){ document.getElementById('modalCRUD').style.display='none'; }
-function crudBgClick(e){ if(e.target===document.getElementById('modalCRUD')) fecharCRUD(); }
-
-async function listarCRUD(){
-  const cfg=CRUD_CFG[crudEntidade];
-  const order=cfg.pk?`&order=${cfg.pk}`:'&order=cursoid';
-  crudRegistros=await sbGet(cfg.table,`select=*${order}`);
-  document.getElementById('crudThead').innerHTML='<tr>'+cfg.listHeaders.map(h=>`<th>${h}</th>`).join('')+'<th>Ações</th></tr>';
-  const tbody=document.getElementById('crudTbody');
-  const vazio=document.getElementById('crudVazio');
-  if(!crudRegistros.length){ tbody.innerHTML=''; vazio.style.display='block'; setMsg('',''); return; }
-  vazio.style.display='none';
-  tbody.innerHTML=crudRegistros.map(row=>{
-    const cells=cfg.listCols.map(col=>{
-      let v=row[col];
-      if(col==='materiaid'){ const m=cacheMateria.find(x=>x.id==v); v=m?m.descricao:v; }
-      if(col==='cursoid'){   const c=cacheCurso.find(x=>x.id==v);   v=c?c.descricaocurso:v; }
-      if(col==='ativo'||col==='visivel') v=v==1?'✅ Sim':'❌ Não';
-      const s=v!=null?String(v):'';
-      return `<td title="${s}">${s.length>42?s.slice(0,42)+'…':s}</td>`;
-    }).join('');
-    let acoes='';
-    if(cfg.pk){
-      const aulasBtn = crudEntidade==='curso'
-        ? `<button class="btn-aulas" onclick="abrirAulasCurso(${row.id}, '${(row.descricaocurso||'').replace(/'/g,"\\'").replace(/"/g,'\\"')}')">📋 Aulas</button>`
-        : '';
-      acoes=`${aulasBtn}<button class="btn-ed" onclick="editarCRUD('${row[cfg.pk]}')">✏️</button>
+      async function listarCRUD() {
+        const cfg = CRUD_CFG[crudEntidade];
+        const order = cfg.pk ? `&order=${cfg.pk}` : "&order=cursoid";
+        crudRegistros = await sbGet(cfg.table, `select=*${order}`);
+        document.getElementById("crudThead").innerHTML =
+          "<tr>" +
+          cfg.listHeaders.map((h) => `<th>${h}</th>`).join("") +
+          "<th>Ações</th></tr>";
+        const tbody = document.getElementById("crudTbody");
+        const vazio = document.getElementById("crudVazio");
+        if (!crudRegistros.length) {
+          tbody.innerHTML = "";
+          vazio.style.display = "block";
+          setMsg("", "");
+          return;
+        }
+        vazio.style.display = "none";
+        tbody.innerHTML = crudRegistros
+          .map((row) => {
+            const cells = cfg.listCols
+              .map((col) => {
+                let v = row[col];
+                if (col === "materiaid") {
+                  const m = cacheMateria.find((x) => x.id == v);
+                  v = m ? m.descricao : v;
+                }
+                if (col === "cursoid") {
+                  const c = cacheCurso.find((x) => x.id == v);
+                  v = c ? c.descricaocurso : v;
+                }
+                if (col === "ativo" || col === "visivel")
+                  v = v == 1 ? "✅ Sim" : "❌ Não";
+                const s = v != null ? String(v) : "";
+                return `<td title="${s}">${s.length > 42 ? s.slice(0, 42) + "…" : s}</td>`;
+              })
+              .join("");
+            let acoes = "";
+            if (cfg.pk) {
+              const aulasBtn =
+                crudEntidade === "curso"
+                  ? `<button class="btn-aulas" onclick="abrirAulasCurso(${row.id}, '${(row.descricaocurso || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>`
+                  : "";
+              acoes = `${aulasBtn}<button class="btn-ed" onclick="editarCRUD('${row[cfg.pk]}')">✏️</button>
              <button class="btn-del" onclick="excluirCRUD('${row[cfg.pk]}')">🗑️</button>`;
-    } else {
-      const q=`cursoid=eq.${row.cursoid}&materiaid=eq.${row.materiaid}`;
-      acoes=`<button class="btn-del" onclick="excluirCompostoCRUD('${q}')">🗑️</button>`;
-    }
-    return `<tr>${cells}<td class="crud-acts">${acoes}</td></tr>`;
-  }).join('');
-  setMsg('','');
-}
+            } else {
+              const q = `cursoid=eq.${row.cursoid}&materiaid=eq.${row.materiaid}`;
+              acoes = `<button class="btn-del" onclick="excluirCompostoCRUD('${q}')">🗑️</button>`;
+            }
+            return `<tr>${cells}<td class="crud-acts">${acoes}</td></tr>`;
+          })
+          .join("");
+        setMsg("", "");
+      }
 
-function mostrarFormCRUD(reg=null){
-  const cfg=CRUD_CFG[crudEntidade];
-  crudEditandoId=reg?reg[cfg.pk]:null;
-  document.getElementById('crudForm').innerHTML=cfg.fields.map(f=>{
-    const v=reg?(reg[f.key]??''):'';
-    let inp='';
-    if(['text','date','time'].includes(f.type)){
-      inp=`<input class="crud-input" type="${f.type}" id="cf_${f.key}" value="${v}" placeholder="${f.label}" ${f.required?'required':''}>`;
-    } else if(f.type==='select'){
-      inp=`<select class="crud-input" id="cf_${f.key}">${f.opts.map(o=>`<option value="${o.v}" ${v==o.v?'selected':''}>${o.l}</option>`).join('')}</select>`;
-    } else if(f.type==='select-materia'){
-      inp=`<select class="crud-input" id="cf_${f.key}"><option value="">-- selecione --</option>${cacheMateria.map(m=>`<option value="${m.id}" ${v==m.id?'selected':''}>${m.descricao}</option>`).join('')}</select>`;
-    } else if(f.type==='select-curso'){
-      inp=`<select class="crud-input" id="cf_${f.key}"><option value="">-- selecione --</option>${cacheCurso.map(c=>`<option value="${c.id}" ${v==c.id?'selected':''}>${c.descricaocurso}</option>`).join('')}</select>`;
-    }
-    return `<div class="crud-field"><label class="crud-label">${f.label}</label>${inp}</div>`;
-  }).join('');
-  document.getElementById('crudFormArea').style.display='block';
-}
-function ocultarFormCRUD(){ document.getElementById('crudFormArea').style.display='none'; crudEditandoId=null; }
+      function mostrarFormCRUD(reg = null) {
+        const cfg = CRUD_CFG[crudEntidade];
+        crudEditandoId = reg ? reg[cfg.pk] : null;
+        document.getElementById("crudForm").innerHTML = cfg.fields
+          .map((f) => {
+            const v = reg ? (reg[f.key] ?? "") : "";
+            let inp = "";
+            if (["text", "date", "time"].includes(f.type)) {
+              inp = `<input class="crud-input" type="${f.type}" id="cf_${f.key}" value="${v}" placeholder="${f.label}" ${f.required ? "required" : ""}>`;
+            } else if (f.type === "select") {
+              inp = `<select class="crud-input" id="cf_${f.key}">${f.opts.map((o) => `<option value="${o.v}" ${v == o.v ? "selected" : ""}>${o.l}</option>`).join("")}</select>`;
+            } else if (f.type === "select-materia") {
+              inp = `<select class="crud-input" id="cf_${f.key}"><option value="">-- selecione --</option>${cacheMateria.map((m) => `<option value="${m.id}" ${v == m.id ? "selected" : ""}>${m.descricao}</option>`).join("")}</select>`;
+            } else if (f.type === "select-curso") {
+              inp = `<select class="crud-input" id="cf_${f.key}"><option value="">-- selecione --</option>${cacheCurso.map((c) => `<option value="${c.id}" ${v == c.id ? "selected" : ""}>${c.descricaocurso}</option>`).join("")}</select>`;
+            }
+            return `<div class="crud-field"><label class="crud-label">${f.label}</label>${inp}</div>`;
+          })
+          .join("");
+        document.getElementById("crudFormArea").style.display = "block";
+      }
+      function ocultarFormCRUD() {
+        document.getElementById("crudFormArea").style.display = "none";
+        crudEditandoId = null;
+      }
 
-async function salvarCRUD(){
-  const cfg=CRUD_CFG[crudEntidade];
-  const body={};
-  for(const f of cfg.fields){
-    const el=document.getElementById('cf_'+f.key);
-    if(!el) continue;
-    let v=el.value;
-    if(f.required&&!v){ setMsg('⚠️ Preencha: '+f.label,'warn'); return; }
-    if(v==='') v=null;
-    if(['materiaid','cursoid'].includes(f.key)) v=v?parseInt(v):null;
-    if(['ativo','visivel'].includes(f.key)) v=parseInt(v);
-    body[f.key]=v;
-  }
-  try{
-    if(crudEditandoId!==null){ await sbPatch(cfg.table,cfg.pk,crudEditandoId,body); setMsg('✅ Atualizado!','ok'); }
-    else { await sbPost(cfg.table,body); setMsg('✅ Inserido!','ok'); }
-    ocultarFormCRUD();
-    await listarCRUD();
-  } catch(e){ setMsg('❌ '+e.message,'err'); }
-}
-function editarCRUD(id){
-  const reg=crudRegistros.find(r=>r[CRUD_CFG[crudEntidade].pk]==id);
-  if(reg) mostrarFormCRUD(reg);
-}
-async function excluirCRUD(id){
-  if(!confirm('Excluir este registro?')) return;
-  const cfg=CRUD_CFG[crudEntidade];
-  try{ await sbDelete(cfg.table,`${cfg.pk}=eq.${id}`); setMsg('✅ Excluído!','ok'); await listarCRUD(); }
-  catch(e){ setMsg('❌ '+e.message,'err'); }
-}
-async function excluirCompostoCRUD(q){
-  if(!confirm('Remover este vínculo?')) return;
-  try{ await sbDelete(CRUD_CFG[crudEntidade].table,q); setMsg('✅ Removido!','ok'); await listarCRUD(); }
-  catch(e){ setMsg('❌ '+e.message,'err'); }
-}
-function setMsg(txt,tipo){
-  const el=document.getElementById('crudMsg');
-  el.textContent=txt; el.className='crud-msg '+(tipo||'');
-  if(tipo==='ok') setTimeout(()=>{ el.textContent=''; el.className='crud-msg'; },3000);
-}
+      async function salvarCRUD() {
+        const cfg = CRUD_CFG[crudEntidade];
+        const body = {};
+        for (const f of cfg.fields) {
+          const el = document.getElementById("cf_" + f.key);
+          if (!el) continue;
+          let v = el.value;
+          if (f.required && !v) {
+            setMsg("⚠️ Preencha: " + f.label, "warn");
+            return;
+          }
+          if (v === "") v = null;
+          if (["materiaid", "cursoid"].includes(f.key))
+            v = v ? parseInt(v) : null;
+          if (["ativo", "visivel"].includes(f.key)) v = parseInt(v);
+          body[f.key] = v;
+        }
+        try {
+          if (crudEditandoId !== null) {
+            await sbPatch(cfg.table, cfg.pk, crudEditandoId, body);
+            setMsg("✅ Atualizado!", "ok");
+          } else {
+            await sbPost(cfg.table, body);
+            setMsg("✅ Inserido!", "ok");
+          }
+          ocultarFormCRUD();
+          await listarCRUD();
+        } catch (e) {
+          setMsg("❌ " + e.message, "err");
+        }
+      }
+      function editarCRUD(id) {
+        const reg = crudRegistros.find(
+          (r) => r[CRUD_CFG[crudEntidade].pk] == id,
+        );
+        if (reg) mostrarFormCRUD(reg);
+      }
+      async function excluirCRUD(id) {
+        if (!confirm("Excluir este registro?")) return;
+        const cfg = CRUD_CFG[crudEntidade];
+        try {
+          await sbDelete(cfg.table, `${cfg.pk}=eq.${id}`);
+          setMsg("✅ Excluído!", "ok");
+          await listarCRUD();
+        } catch (e) {
+          setMsg("❌ " + e.message, "err");
+        }
+      }
+      async function excluirCompostoCRUD(q) {
+        if (!confirm("Remover este vínculo?")) return;
+        try {
+          await sbDelete(CRUD_CFG[crudEntidade].table, q);
+          setMsg("✅ Removido!", "ok");
+          await listarCRUD();
+        } catch (e) {
+          setMsg("❌ " + e.message, "err");
+        }
+      }
+      function setMsg(txt, tipo) {
+        const el = document.getElementById("crudMsg");
+        el.textContent = txt;
+        el.className = "crud-msg " + (tipo || "");
+        if (tipo === "ok")
+          setTimeout(() => {
+            el.textContent = "";
+            el.className = "crud-msg";
+          }, 3000);
+      }
 
-document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ fecharCRUD(); fecharAulasModal(); fecharAddMatAula(); } });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          fecharCRUD();
+          fecharAulasModal();
+          fecharAddMatAula();
+        }
+      });
 
-// ── Modal de Aulas ──────────────────────────────────────────
-let _aulaCursoId = null;
-let _aulaCursoNome = '';
-let _aulaLista = [];
-let _aulaMatTemp = [];
+      // ── Modal de Aulas ──────────────────────────────────────────
+      let _aulaCursoId = null;
+      let _aulaCursoNome = "";
+      let _aulaLista = [];
+      let _aulaMatTemp = [];
 
-async function abrirAulasCurso(idNum, nome) {
-  _aulaCursoId = idNum;
-  _aulaCursoNome = nome;
-  document.getElementById('aulasModalTitulo').textContent = 'Aulas — ' + nome;
-  document.getElementById('aulaFormArea').style.display = 'none';
-  setAulasMsg('⏳ Carregando…', '');
-  document.getElementById('aulasModal').style.display = 'flex';
-  try {
-    const rows = await sbGet('curso', `select=materias&id=eq.${idNum}`);
-    _aulaLista = (rows[0] && rows[0].materias) ? rows[0].materias : [];
-    renderAulasList();
-    setAulasMsg('', '');
-  } catch(e) { setAulasMsg('❌ Erro: ' + e.message, 'err'); }
-}
+      async function abrirAulasCurso(idNum, nome) {
+        _aulaCursoId = idNum;
+        _aulaCursoNome = nome;
+        document.getElementById("aulasModalTitulo").textContent =
+          "Aulas — " + nome;
+        document.getElementById("aulaFormArea").style.display = "none";
+        setAulasMsg("⏳ Carregando…", "");
+        document.getElementById("aulasModal").style.display = "flex";
+        try {
+          const rows = await sbGet("curso", `select=materias&id=eq.${idNum}`);
+          _aulaLista = rows[0] && rows[0].materias ? rows[0].materias : [];
+          renderAulasList();
+          setAulasMsg("", "");
+        } catch (e) {
+          setAulasMsg("❌ Erro: " + e.message, "err");
+        }
+      }
 
-function fecharAulasModal() {
-  document.getElementById('aulasModal').style.display = 'none';
-  fecharFormAula();
-}
+      function fecharAulasModal() {
+        document.getElementById("aulasModal").style.display = "none";
+        fecharFormAula();
+      }
 
-function aulasModalBgClick(e) {
-  if(e.target === document.getElementById('aulasModal')) fecharAulasModal();
-}
+      function aulasModalBgClick(e) {
+        if (e.target === document.getElementById("aulasModal"))
+          fecharAulasModal();
+      }
 
-function setAulasMsg(txt, tipo) {
-  const el = document.getElementById('aulasMsg');
-  el.textContent = txt; el.className = 'crud-msg ' + (tipo||'');
-  if(tipo==='ok') setTimeout(()=>{ el.textContent=''; el.className='crud-msg'; }, 3000);
-}
+      function setAulasMsg(txt, tipo) {
+        const el = document.getElementById("aulasMsg");
+        el.textContent = txt;
+        el.className = "crud-msg " + (tipo || "");
+        if (tipo === "ok")
+          setTimeout(() => {
+            el.textContent = "";
+            el.className = "crud-msg";
+          }, 3000);
+      }
 
-function renderAulasList() {
-  const tbody = document.getElementById('aulasTbody');
-  const vazio = document.getElementById('aulasVazio');
-  if(!_aulaLista.length){ tbody.innerHTML=''; vazio.style.display='block'; return; }
-  vazio.style.display='none';
-  tbody.innerHTML = _aulaLista.map(a=>`
+      function renderAulasList() {
+        const tbody = document.getElementById("aulasTbody");
+        const vazio = document.getElementById("aulasVazio");
+        if (!_aulaLista.length) {
+          tbody.innerHTML = "";
+          vazio.style.display = "block";
+          return;
+        }
+        vazio.style.display = "none";
+        tbody.innerHTML = _aulaLista
+          .map(
+            (a) => `
     <tr>
-      <td>${String(a.numero).padStart(2,'0')}</td>
-      <td>${a.icone||''} ${a.titulo}</td>
-      <td>${a.data||''}</td>
-      <td>${a.visivel===1?'🟢':'🔒'}</td>
+      <td>${String(a.numero).padStart(2, "0")}</td>
+      <td>${a.icone || ""} ${a.titulo}</td>
+      <td>${a.data || ""}</td>
+      <td>${a.visivel === 1 ? "🟢" : "🔒"}</td>
       <td class="crud-acts">
         <button class="btn-ed" onclick="abrirFormAula(${a.numero})">✏️ Editar</button>
         <button class="btn-del" onclick="excluirAulaModal(${a.numero})">🗑️</button>
       </td>
-    </tr>`).join('');
-}
+    </tr>`,
+          )
+          .join("");
+      }
 
-function abrirFormAula(numero) {
-  const form = document.getElementById('aulaFormArea');
-  if(numero===null){
-    document.getElementById('aulaNumOrig').value='';
-    document.getElementById('aulaNum').value='';
-    document.getElementById('aulaIcone').value='📚';
-    document.getElementById('aulaTitulo').value='';
-    document.getElementById('aulaData').value='';
-    document.getElementById('aulaDia').value='';
-    document.getElementById('aulaVisivel').checked=false;
-    document.getElementById('aulaBtnDel').style.display='none';
-    _aulaMatTemp=[];
-  } else {
-    const aula = _aulaLista.find(a=>a.numero===numero);
-    if(!aula) return;
-    document.getElementById('aulaNumOrig').value=numero;
-    document.getElementById('aulaNum').value=numero;
-    document.getElementById('aulaIcone').value=aula.icone||'📚';
-    document.getElementById('aulaTitulo').value=aula.titulo||'';
-    document.getElementById('aulaData').value=aula.data||'';
-    document.getElementById('aulaDia').value=aula.diaSemana||'';
-    document.getElementById('aulaVisivel').checked=aula.visivel===1;
-    document.getElementById('aulaBtnDel').style.display='';
-    _aulaMatTemp=JSON.parse(JSON.stringify(aula.materiais||[]));
-  }
-  renderAulaMatList();
-  form.style.display='block';
-  form.scrollIntoView({behavior:'smooth',block:'nearest'});
-}
+      function abrirFormAula(numero) {
+        const form = document.getElementById("aulaFormArea");
+        if (numero === null) {
+          document.getElementById("aulaNumOrig").value = "";
+          document.getElementById("aulaNum").value = "";
+          document.getElementById("aulaIcone").value = "📚";
+          document.getElementById("aulaTitulo").value = "";
+          document.getElementById("aulaData").value = "";
+          document.getElementById("aulaDia").value = "";
+          document.getElementById("aulaVisivel").checked = false;
+          document.getElementById("aulaBtnDel").style.display = "none";
+          _aulaMatTemp = [];
+        } else {
+          const aula = _aulaLista.find((a) => a.numero === numero);
+          if (!aula) return;
+          document.getElementById("aulaNumOrig").value = numero;
+          document.getElementById("aulaNum").value = numero;
+          document.getElementById("aulaIcone").value = aula.icone || "📚";
+          document.getElementById("aulaTitulo").value = aula.titulo || "";
+          document.getElementById("aulaData").value = aula.data || "";
+          document.getElementById("aulaDia").value = aula.diaSemana || "";
+          document.getElementById("aulaVisivel").checked = aula.visivel === 1;
+          document.getElementById("aulaBtnDel").style.display = "";
+          _aulaMatTemp = JSON.parse(JSON.stringify(aula.materiais || []));
+        }
+        renderAulaMatList();
+        form.style.display = "block";
+        form.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
 
-function fecharFormAula() {
-  document.getElementById('aulaFormArea').style.display='none';
-}
+      function fecharFormAula() {
+        document.getElementById("aulaFormArea").style.display = "none";
+      }
 
-function renderAulaMatList() {
-  const el = document.getElementById('aulaMatList');
-  if(!_aulaMatTemp.length){ el.innerHTML='<p style="font-size:12px;color:#aaa;text-align:center;padding:4px 0">Nenhum material</p>'; return; }
-  el.innerHTML = _aulaMatTemp.map((m,i)=>`
+      function renderAulaMatList() {
+        const el = document.getElementById("aulaMatList");
+        if (!_aulaMatTemp.length) {
+          el.innerHTML =
+            '<p style="font-size:12px;color:#aaa;text-align:center;padding:4px 0">Nenhum material</p>';
+          return;
+        }
+        el.innerHTML = _aulaMatTemp
+          .map(
+            (m, i) => `
     <div style="display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:6px 10px">
-      <span style="font-size:15px">${m.icone||'📄'}</span>
+      <span style="font-size:15px">${m.icone || "📄"}</span>
       <div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600">${m.nome}</div><div style="font-size:11px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${m.arquivo}</div></div>
       <button onclick="removerMatAula(${i})" style="background:none;border:none;color:#d32f2f;font-size:15px;cursor:pointer;padding:2px 5px;border-radius:4px">✕</button>
-    </div>`).join('');
-}
+    </div>`,
+          )
+          .join("");
+      }
 
-function removerMatAula(i){ _aulaMatTemp.splice(i,1); renderAulaMatList(); }
+      function removerMatAula(i) {
+        _aulaMatTemp.splice(i, 1);
+        renderAulaMatList();
+      }
 
-function abrirAddMatAula(){
-  document.getElementById('mIcone').value='📄';
-  document.getElementById('mNome').value='';
-  document.getElementById('mArquivo').value='';
-  document.getElementById('mTipo').value='';
-  document.getElementById('matAulaModal').style.display='flex';
-}
+      function abrirAddMatAula() {
+        document.getElementById("mIcone").value = "📄";
+        document.getElementById("mNome").value = "";
+        document.getElementById("mArquivo").value = "";
+        document.getElementById("mTipo").value = "";
+        document.getElementById("matAulaModal").style.display = "flex";
+      }
 
-function fecharAddMatAula(){ document.getElementById('matAulaModal').style.display='none'; }
+      function fecharAddMatAula() {
+        document.getElementById("matAulaModal").style.display = "none";
+      }
 
-function confirmarMatAula(){
-  const nome=document.getElementById('mNome').value.trim();
-  const arquivo=document.getElementById('mArquivo').value.trim();
-  if(!nome||!arquivo){ alert('Preencha nome e arquivo/URL.'); return; }
-  const m={nome,arquivo,icone:document.getElementById('mIcone').value.trim()||'📄'};
-  const tipo=document.getElementById('mTipo').value;
-  if(tipo) m.tipo=tipo;
-  _aulaMatTemp.push(m);
-  renderAulaMatList();
-  fecharAddMatAula();
-}
+      function confirmarMatAula() {
+        const nome = document.getElementById("mNome").value.trim();
+        const arquivo = document.getElementById("mArquivo").value.trim();
+        if (!nome || !arquivo) {
+          alert("Preencha nome e arquivo/URL.");
+          return;
+        }
+        const m = {
+          nome,
+          arquivo,
+          icone: document.getElementById("mIcone").value.trim() || "📄",
+        };
+        const tipo = document.getElementById("mTipo").value;
+        if (tipo) m.tipo = tipo;
+        _aulaMatTemp.push(m);
+        renderAulaMatList();
+        fecharAddMatAula();
+      }
 
-async function salvarAulaModal(){
-  const numero=parseInt(document.getElementById('aulaNum').value);
-  const titulo=document.getElementById('aulaTitulo').value.trim();
-  if(!numero||!titulo){ alert('Preencha número e título.'); return; }
-  const novaAula={
-    numero, titulo,
-    icone: document.getElementById('aulaIcone').value.trim()||'📚',
-    data: document.getElementById('aulaData').value.trim(),
-    diaSemana: document.getElementById('aulaDia').value.trim(),
-    visivel: document.getElementById('aulaVisivel').checked?1:0,
-    materiais: _aulaMatTemp,
-  };
-  const lista=JSON.parse(JSON.stringify(_aulaLista));
-  const numOrig=parseInt(document.getElementById('aulaNumOrig').value)||null;
-  if(numOrig!==null){ const idx=lista.findIndex(a=>a.numero===numOrig); if(idx>=0) lista[idx]=novaAula; else lista.push(novaAula); }
-  else { lista.push(novaAula); lista.sort((a,b)=>a.numero-b.numero); }
-  await patchAulasMaterias(lista);
-}
+      async function salvarAulaModal() {
+        const numero = parseInt(document.getElementById("aulaNum").value);
+        const titulo = document.getElementById("aulaTitulo").value.trim();
+        if (!numero || !titulo) {
+          alert("Preencha número e título.");
+          return;
+        }
+        const novaAula = {
+          numero,
+          titulo,
+          icone: document.getElementById("aulaIcone").value.trim() || "📚",
+          data: document.getElementById("aulaData").value.trim(),
+          diaSemana: document.getElementById("aulaDia").value.trim(),
+          visivel: document.getElementById("aulaVisivel").checked ? 1 : 0,
+          materiais: _aulaMatTemp,
+        };
+        const lista = JSON.parse(JSON.stringify(_aulaLista));
+        const numOrig =
+          parseInt(document.getElementById("aulaNumOrig").value) || null;
+        if (numOrig !== null) {
+          const idx = lista.findIndex((a) => a.numero === numOrig);
+          if (idx >= 0) lista[idx] = novaAula;
+          else lista.push(novaAula);
+        } else {
+          lista.push(novaAula);
+          lista.sort((a, b) => a.numero - b.numero);
+        }
+        await patchAulasMaterias(lista);
+      }
 
-async function excluirAulaModal(numero){
-  const n=numero!==undefined?numero:parseInt(document.getElementById('aulaNumOrig').value);
-  if(!confirm(`Excluir Aula ${n}? Esta ação não pode ser desfeita.`)) return;
-  await patchAulasMaterias(_aulaLista.filter(a=>a.numero!==n));
-}
+      async function excluirAulaModal(numero) {
+        const n =
+          numero !== undefined
+            ? numero
+            : parseInt(document.getElementById("aulaNumOrig").value);
+        if (!confirm(`Excluir Aula ${n}? Esta ação não pode ser desfeita.`))
+          return;
+        await patchAulasMaterias(_aulaLista.filter((a) => a.numero !== n));
+      }
 
-async function patchAulasMaterias(lista){
-  try{
-    const res=await fetch(`${SB_URL}/rest/v1/curso?id=eq.${_aulaCursoId}`,{
-      method:'PATCH',
-      headers:{...sbH(),'Prefer':'return=minimal'},
-      body:JSON.stringify({materias:lista}),
-    });
-    if(res.ok){ _aulaLista=lista; fecharFormAula(); renderAulasList(); setAulasMsg('✅ Salvo!','ok'); }
-    else{ const err=await res.text(); setAulasMsg('❌ Erro: '+err,'err'); }
-  } catch{ setAulasMsg('❌ Erro de conexão.','err'); }
-}
-</script>
-</body>
+      async function patchAulasMaterias(lista) {
+        try {
+          const res = await fetch(
+            `${SB_URL}/rest/v1/curso?id=eq.${_aulaCursoId}`,
+            {
+              method: "PATCH",
+              headers: { ...sbH(), Prefer: "return=minimal" },
+              body: JSON.stringify({ materias: lista }),
+            },
+          );
+          if (res.ok) {
+            _aulaLista = lista;
+            fecharFormAula();
+            renderAulasList();
+            setAulasMsg("✅ Salvo!", "ok");
+          } else {
+            const err = await res.text();
+            setAulasMsg("❌ Erro: " + err, "err");
+          }
+        } catch {
+          setAulasMsg("❌ Erro de conexão.", "err");
+        }
+      }
+    </script>
+  </body>
 </html>
-
