@@ -56,8 +56,9 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 .dot-g{background:#28c840}
 
 /* ── Bloco de código ── */
-.code-wrap{display:none;background:#0d1117;padding:20px 22px;overflow-x:auto;max-height:72vh;overflow-y:auto}
-.code-wrap.open{display:block}
+.code-wrap{max-height:0;overflow:hidden;background:#0d1117;opacity:0;transition:max-height .4s cubic-bezier(.4,0,.2,1),opacity .25s ease}
+.code-wrap.open{max-height:72vh;overflow-y:auto;opacity:1}
+.code-inner{padding:20px 22px;overflow-x:auto}
 pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line-height:1.75;color:#e6edf3;white-space:pre;tab-size:3}
 
 /* ── Toggle da barra de código ── */
@@ -129,7 +130,9 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
       <span class="code-toggle-hint" id="codeHint">VER CÓDIGO</span>
     </div>
     <div class="code-wrap" id="codeWrap">
-      <pre id="modalCode"></pre>
+      <div class="code-inner">
+        <pre id="modalCode"></pre>
+      </div>
     </div>
   </div>
 </div>
