@@ -1,0 +1,53 @@
+Equipes PG
+#Equipe 01
+Coordenador - Ana Maria 
+Revisor     - Yorbelis
+Relator     - João Lucas 
+Pesquisador - João Pedro 
+Apresentador- Ana Lívia
+
+#Equipe 02 
+Coordenador - Gabriel Vitor 
+Relator     - Pablo
+Pesquisador - Luan Rocha 
+Revisor     - Cleiton 
+Apresentador- Andriew e Henrique 
+
+#Equipe 03
+Coordenador - Isaque 
+Apresentador- Isaque
+Pesquisador - Antonio Vicente 
+Relator     - kaike 
+Revisor     - kauan 
+
+#Equipe 04
+Coordenador - Maria clara 
+Relator     - Mariana 
+Revisor     - Mariana 
+Pesquisador - Vitor 
+Apresentador- Maria Clara e Vitor 
+
+#Equipe 05
+Coordenador - Emily Raissa
+Relator     - Wagner
+Pesquisador - Helisa 
+Revisor     - Helisa 
+Apresentador- Mirela
+
+#Equipe 06
+Coordenador  - Eduardo K
+Relator      - Guilherme
+Pesquisador  - Emily 
+Apresentador - Heloisa
+Revisor      - Eduardo C.
+
+#Equipe 07 
+Coordenador - Caio 
+Revisor     - Jhiogo 
+Relator     - Luna 
+Apresentador- Lucas e André e Luna 
+Pesquisador - André
+
+
+
+
