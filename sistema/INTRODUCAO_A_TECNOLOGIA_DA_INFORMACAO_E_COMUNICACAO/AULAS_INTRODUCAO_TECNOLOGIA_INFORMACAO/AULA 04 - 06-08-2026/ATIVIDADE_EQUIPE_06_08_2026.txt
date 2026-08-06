@@ -5,15 +5,16 @@
   Data: 06/08/2026
 ================================================================================
 
-         ATIVIDADE EM EQUIPE — HISTÓRIA DA COMPUTAÇÃO E INTERNET/WWW
-                         Aula 04 · Revisão e Aplicação
+    ATIVIDADE EM EQUIPE — HISTÓRIA DA COMPUTAÇÃO, INTERNET/WWW
+                     E SEGURANÇA DA INFORMAÇÃO
+                      Aula 04 · Revisão e Aplicação
 
 ================================================================================
   ORIENTAÇÕES GERAIS
 ================================================================================
 
   - Formação das equipes: grupos de 4 a 5 alunos (definidos pelo professor)
-  - Tempo total da atividade: 40 minutos
+  - Tempo total da atividade: 60 minutos
   - Entrega: Google Docs compartilhado com gelvazio.c@edu.sc.senai.br
   - Título do documento: "Atividade Equipe 06/08 — [Nome da Equipe]"
 
@@ -163,30 +164,130 @@
     b) 3 regras de USO PROIBIDO
     c) O que acontece com quem descumprir? (citem o que aprenderam na aula)
 
+================================================================================
+  PARTE 3 — SEGURANÇA DA INFORMAÇÃO
+  (Base: Aula 03 — SLIDE_SEGURANCA_INFORMACAO.html)
+================================================================================
+
+  QUESTÃO 11 — Tríade CIA
+  -------------------------
+  A Segurança da Informação se baseia em três pilares fundamentais.
+  Preencham a tabela para cada pilar:
+
+  +--------------------+-------------------------------+---------------------------+
+  | PILAR              | O QUE GARANTE?                | EXEMPLO DE VIOLAÇÃO       |
+  +--------------------+-------------------------------+---------------------------+
+  | C — Confidencial.  |                               |                           |
+  | I — Integridade    |                               |                           |
+  | A — Disponibilid.  |                               |                           |
+  +--------------------+-------------------------------+---------------------------+
+
+  Responda: um ataque de ransomware que bloqueia todos os arquivos de uma
+  empresa viola qual(is) pilar(es) da Tríade CIA? Justifiquem.
+
+
+  QUESTÃO 12 — LGPD e Marco Civil
+  ---------------------------------
+  Sobre as leis que regulam o uso de dados e a internet no Brasil:
+    a) O que é a LGPD (Lei nº 13.709/2018) e o que ela protege?
+    b) Liste 3 direitos que um cidadão tem sobre seus próprios dados.
+    c) O que é a Lei Carolina Dieckmann e que tipo de crime ela pune?
+    d) Algum membro da equipe já teve dados vazados ou conhece alguém que teve?
+       Relatar (sem expor dados pessoais).
+
+
+  QUESTÃO 13 — Identificando Golpes
+  -----------------------------------
+  A equipe receberá os seguintes cenários. Para cada um, identifiquem:
+    - Qual tipo de golpe é (phishing, engenharia social, smishing, vishing,
+      clonagem de WhatsApp, ransomware, etc.)
+    - O que a vítima deveria fazer para não cair no golpe
+
+  CENÁRIO A:
+  "Você recebe um SMS: 'Seu pacote dos Correios está retido.
+  Pague a taxa de R$ 4,90 clicando aqui: bit.ly/rastreio-correios'"
+  Tipo de golpe: ______________________
+  O que fazer: ________________________
+
+  CENÁRIO B:
+  "Você abre o computador e aparece a mensagem: 'Seus arquivos foram
+  criptografados. Pague R$ 5.000 em Bitcoin para recuperá-los.'"
+  Tipo de golpe: ______________________
+  O que fazer: ________________________
+
+  CENÁRIO C:
+  "Alguém liga dizendo ser do suporte do banco. Pede o código SMS
+  que acabou de chegar no seu celular para 'confirmar sua identidade'."
+  Tipo de golpe: ______________________
+  O que fazer: ________________________
+
+  CENÁRIO D:
+  "Uma mensagem no WhatsApp de um número desconhecido diz:
+  'Mãe, troquei de número. Preciso de R$ 800 urgente para pagar a conta.'"
+  Tipo de golpe: ______________________
+  O que fazer: ________________________
+
+
+  QUESTÃO 14 — Senhas e 2FA
+  ---------------------------
+  Avaliem as senhas abaixo e classifiquem como FRACA, MÉDIA ou FORTE.
+  Justifiquem cada resposta e, quando fraca ou média, proponham uma versão melhorada:
+
+    a) senai2026          → Classificação: __________ | Versão melhorada: __________
+    b) J@o#1987!          → Classificação: __________ | Versão melhorada: __________
+    c) 12345678           → Classificação: __________ | Versão melhorada: __________
+    d) F@bric@_Seg4r@!    → Classificação: __________ | Versão melhorada: __________
+
+  Responda: o que é autenticação em dois fatores (2FA) e por que é importante
+  ativá-la mesmo que sua senha já seja forte? Cite 2 tipos de 2FA.
+
+
+  QUESTÃO 15 — Backup e Proteção contra Malware
+  -----------------------------------------------
+  a) Expliquem a Regra 3-2-1 de backup com suas palavras.
+     O que cada número significa na prática?
+
+  b) No Chromebook do SENAI, onde ficam salvos automaticamente os arquivos
+     do Google Docs? Isso garante a proteção segundo a Regra 3-2-1? Por quê?
+
+  c) Completem a tabela de tipos de malware:
+
+  +-------------------+-----------------------------------------------+
+  | TIPO DE MALWARE   | COMO AGE / O QUE FAZ                          |
+  +-------------------+-----------------------------------------------+
+  | Vírus             |                                               |
+  | Worm              |                                               |
+  | Trojan            |                                               |
+  | Spyware           |                                               |
+  | Ransomware        |                                               |
+  +-------------------+-----------------------------------------------+
+
+  d) Cite 3 boas práticas para se proteger de malware no dia a dia.
 
 ================================================================================
-  PARTE 3 — INTEGRAÇÃO: COMPUTAÇÃO + INTERNET + TRABALHO EM EQUIPE
+  PARTE 4 — INTEGRAÇÃO: COMPUTAÇÃO + INTERNET + SEGURANÇA + EQUIPE
 ================================================================================
 
-  QUESTÃO 11 — Desafio Criativo (vale ponto extra!)
+  QUESTÃO 16 — Desafio Criativo (vale ponto extra!)
   ---------------------------------------------------
-  A equipe deve criar um MINI GLOSSÁRIO com 8 termos técnicos
-  vistos nas aulas de História da Computação e Internet/WWW.
+  A equipe deve criar um MINI GLOSSÁRIO com 10 termos técnicos
+  vistos nas três aulas (Computação, Internet/WWW e Segurança).
 
   Para cada termo:
     - Escreva a definição com as palavras da equipe (sem copiar do slide)
     - Dê um exemplo prático do uso desse termo
 
   Sugestão de termos (a equipe pode escolher outros):
-  ENIAC, algoritmo, hardware, software, ARPANET, TCP/IP,
-  DNS, servidor, Web 2.0, ChatGPT, navegador, open source...
+  ENIAC, algoritmo, hardware, software, ARPANET, TCP/IP, DNS,
+  servidor, Web 2.0, phishing, ransomware, tríade CIA, LGPD,
+  backup, 2FA, malware, firewall, engenharia social...
 
 
-  QUESTÃO 12 — Reflexão da Equipe
+  QUESTÃO 17 — Reflexão da Equipe
   ---------------------------------
   Para finalizar, cada membro responde individualmente em 3 linhas:
-    "O que aprendi sobre computação e internet que vai fazer diferença
-     na minha vida profissional?"
+    "O que aprendi sobre computação, internet e segurança da informação
+     que vai fazer diferença na minha vida profissional?"
 
   O relator consolida todas as respostas no documento.
 
