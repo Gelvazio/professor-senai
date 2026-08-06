@@ -124,9 +124,10 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;min-he
 .crud-table td{padding:8px 10px;color:#333;border-bottom:1px solid #f0f0f0;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .crud-table tr:hover td{background:#f5f8ff}
 .crud-acts{display:flex;gap:4px;white-space:nowrap;max-width:none!important}
-.btn-ed,.btn-del{border:none;border-radius:4px;cursor:pointer;font-size:13px;padding:3px 7px;transition:.15s}
+.btn-ed,.btn-del,.btn-aulas{border:none;border-radius:4px;cursor:pointer;font-size:13px;padding:3px 7px;transition:.15s;text-decoration:none;display:inline-flex;align-items:center}
 .btn-ed{background:#e3f2fd;color:#1565c0}.btn-ed:hover{background:#bbdefb}
 .btn-del{background:#fce4ec;color:#c62828}.btn-del:hover{background:#f8bbd9}
+.btn-aulas{background:#e8f5e9;color:#2e7d32;font-weight:600}.btn-aulas:hover{background:#c8e6c9}
 .crud-vazio{padding:24px;text-align:center;color:#888;font-size:13px}
 </style>
 </head>
@@ -466,7 +467,10 @@ async function listarCRUD(){
     }).join('');
     let acoes='';
     if(cfg.pk){
-      acoes=`<button class="btn-ed" onclick="editarCRUD('${row[cfg.pk]}')">✏️</button>
+      const aulasBtn = crudEntidade==='curso'
+        ? `<a class="btn-aulas" href="index.html?curso=${row.codigo}" target="_blank">📋 Aulas</a>`
+        : '';
+      acoes=`${aulasBtn}<button class="btn-ed" onclick="editarCRUD('${row[cfg.pk]}')">✏️</button>
              <button class="btn-del" onclick="excluirCRUD('${row[cfg.pk]}')">🗑️</button>`;
     } else {
       const q=`cursoid=eq.${row.cursoid}&materiaid=eq.${row.materiaid}`;
