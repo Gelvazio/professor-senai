@@ -282,6 +282,27 @@
 
 ---
 
+## Regras de Trabalho — Claude
+
+### ✅ Commit e Push obrigatórios
+**Após TODA tarefa concluída**, sem exceção:
+1. `git status` — verificar tudo que está pendente (modificações, novos arquivos, deleções)
+2. `git add` dos arquivos relevantes
+3. `git commit` com mensagem descritiva
+4. `git push origin main`
+
+Isso vale mesmo que a tarefa só tenha alterado o Supabase — verificar e commitar qualquer pendência anterior.
+
+### ✅ Slides devem ter no mínimo 15 slides
+Todo arquivo de slide HTML criado ou editado deve ter **no mínimo 15 slides** de conteúdo, cobrindo:
+- Surgimento / história do tema
+- Conceitos fundamentais
+- Versões ou evolução (quando aplicável)
+- Exemplos práticos
+- Revisão e atividade
+
+---
+
 ## Configuração Supabase
 
 **Projeto:** `controlemercadoria`
