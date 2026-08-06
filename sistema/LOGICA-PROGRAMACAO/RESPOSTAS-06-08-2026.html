@@ -86,6 +86,11 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
 .prof-btn:hover{background:rgba(255,255,255,.28)}
 .prof-btn.active{background:rgba(40,200,80,.4);box-shadow:0 0 0 2px rgba(40,200,80,.5)}
 
+/* ── Botão Copiar ── */
+.btn-copiar{display:flex;align-items:center;gap:5px;background:rgba(88,166,255,.15);border:1px solid rgba(88,166,255,.3);color:#58a6ff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:5px;cursor:pointer;letter-spacing:.4px;transition:background .15s,border-color .15s;white-space:nowrap;margin-left:8px}
+.btn-copiar:hover{background:rgba(88,166,255,.28);border-color:#58a6ff}
+.btn-copiar.copiado{background:rgba(40,200,80,.2);border-color:rgba(40,200,80,.5);color:#28c840}
+
 /* ── Seção de código ── */
 .code-section{position:relative}
 
@@ -128,6 +133,7 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
       <span class="code-label-dot dot-g"></span>
       &nbsp;Código Fonte
       <span class="code-toggle-hint" id="codeHint">VER CÓDIGO</span>
+      <button class="btn-copiar" id="btnCopiar" onclick="copiarCodigo(event)" title="Copiar código">📋 Copiar</button>
     </div>
     <div class="code-wrap" id="codeWrap">
       <div class="code-inner">
@@ -1356,6 +1362,8 @@ const modalNum   = document.getElementById('modalNum');
 const modalTitle = document.getElementById('modalTitle');
 const modalCode  = document.getElementById('modalCode');
 
+let codigoAtual = '';
+
 document.getElementById('modalCloseBtn').addEventListener('click', fecharModal);
 modalBg.addEventListener('click', e => { if (e.target === modalBg) fecharModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') fecharModal(); });
@@ -1365,12 +1373,29 @@ function abrirModal(num, q) {
   modalTitle.textContent = q.nome;
   document.getElementById('modalEnunciado').innerHTML = esc(q.enunciado).replace(/\n/g, '<br>');
   modalCode.innerHTML    = highlight(q.codigo);
+  codigoAtual = q.codigo;
   // reset toggle ao abrir
   document.getElementById('codeWrap').classList.remove('open');
   document.getElementById('codeArrow').style.transform = '';
   document.getElementById('codeHint').textContent = 'VER CÓDIGO';
+  const btn = document.getElementById('btnCopiar');
+  btn.classList.remove('copiado');
+  btn.textContent = '📋 Copiar';
   modalBg.classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+
+function copiarCodigo(e) {
+  e.stopPropagation();
+  navigator.clipboard.writeText(codigoAtual).then(() => {
+    const btn = document.getElementById('btnCopiar');
+    btn.classList.add('copiado');
+    btn.textContent = '✅ Copiado!';
+    setTimeout(() => {
+      btn.classList.remove('copiado');
+      btn.textContent = '📋 Copiar';
+    }, 2000);
+  });
 }
 
 function fecharModal() {
