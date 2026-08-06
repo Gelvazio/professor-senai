@@ -67,6 +67,9 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
 .nm{color:#79c0ff}
 .op{color:#ff7b72}
 .id{color:#e6edf3}
+
+/* ── Enunciado ── */
+.enunciado{padding:16px 22px 14px;background:#f8f9fa;border-bottom:1px solid #e8eaed;font-size:13px;color:#3c4043;line-height:1.8}
 </style>
 </head>
 <body>
@@ -92,6 +95,7 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
       <span class="modal-title" id="modalTitle"></span>
       <button class="modal-close" id="modalCloseBtn" title="Fechar (Esc)">✕</button>
     </div>
+    <div class="enunciado" id="modalEnunciado"></div>
     <div class="code-label-bar">
       <span class="code-label-dot dot-r"></span>
       <span class="code-label-dot dot-y"></span>
@@ -107,7 +111,9 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
 <script>
 // ── Dados das 30 questões ────────────────────────────────────────────────────
 const questoes = [
-{nome:'Reajuste Salarial', codigo:
+{nome:'Reajuste Salarial',
+enunciado:'Escreva um programa que receba o salário atual de um funcionário. Se o salário for menor ou igual a R$ 2.000,00, conceda um aumento de 15%. Caso seja superior, conceda um aumento de 10%. Exiba o valor do aumento e o novo salário.',
+codigo:
 `algoritmo "Reajuste Salarial"
 
 var
@@ -130,7 +136,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Classificação de Triângulos', codigo:
+{nome:'Classificação de Triângulos',
+enunciado:'Desenvolva um algoritmo que leia três lados de um triângulo (A, B e C). Verifique primeiro se os lados formam um triângulo válido (a soma de dois lados deve ser sempre maior que o terceiro). Se for válido, informe se o triângulo é Equilátero (todos os lados iguais), Isósceles (dois lados iguais) ou Escaleno (todos os lados diferentes).',
+codigo:
 `algoritmo "Classificacao de Triangulos"
 
 var
@@ -160,7 +168,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Aprovação Escolar com Exame', codigo:
+{nome:'Aprovação Escolar com Exame',
+enunciado:'Crie um programa que leia 3 notas de um aluno e calcule a média aritmética simples. Se a média for maior ou igual a 7.0, exiba "Aprovado". Se estiver entre 5.0 e 6.9, exiba "Em Exame" e solicite a nota do exame final; se a média entre a nota do exame e a média anterior for maior ou igual a 5.0, exiba "Aprovado no Exame", caso contrário "Reprovado".',
+codigo:
 `algoritmo "Aprovacao Escolar com Exame"
 
 var
@@ -197,7 +207,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Calculadora de IMC com Categoria', codigo:
+{nome:'Calculadora de IMC com Categoria',
+enunciado:'Leia o peso (em kg) e a altura (em metros) de uma pessoa. Calcule o IMC (peso / altura²) e exiba a classificação correspondente:\n• IMC < 18.5: Abaixo do peso\n• 18.5 ≤ IMC < 25.0: Peso normal\n• 25.0 ≤ IMC < 30.0: Sobrepeso\n• IMC ≥ 30.0: Obesidade',
+codigo:
 `algoritmo "Calculadora de IMC com Categoria"
 
 var
@@ -228,7 +240,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Tarifação de Estacionamento', codigo:
+{nome:'Tarifação de Estacionamento',
+enunciado:'Um estacionamento cobra R$ 8,00 pela primeira hora de permanência e R$ 5,00 por hora adicional (ou fração de hora). Crie um programa que receba o total de horas completas que um veículo permaneceu no estacionamento e exiba o valor final da conta.',
+codigo:
 `algoritmo "Tarifacao de Estacionamento"
 
 var
@@ -249,7 +263,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Validação de Entrada de Dados', codigo:
+{nome:'Validação de Entrada de Dados',
+enunciado:'Desenvolva um programa que leia a idade de uma pessoa. O sistema deve utilizar a estrutura faca...enquanto para forçar o usuário a digitar uma idade válida (entre 0 e 120 anos). Se o valor for inválido, exiba uma mensagem de erro e peça a digitação novamente.',
+codigo:
 `algoritmo "Validacao de Entrada de Dados"
 
 var
@@ -268,7 +284,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Tabuada Completa', codigo:
+{nome:'Tabuada Completa',
+enunciado:'Escreva um programa que solicite ao usuário um número inteiro entre 1 e 10 e imprima a tabuada completa desse número (de 1 a 10) utilizando a estrutura de repetição para.',
+codigo:
 `algoritmo "Tabuada Completa"
 
 var
@@ -290,7 +308,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Estatísticas de Números com Valor Sentinela', codigo:
+{nome:'Estatísticas de Números com Valor Sentinela',
+enunciado:'Crie um programa que leia vários números inteiros informados pelo usuário. A leitura deve ser encerrada quando o usuário digitar o valor sentinela 0. Ao final, informe:\n1. A quantidade de números digitados (sem contar o zero);\n2. A soma de todos os números;\n3. O maior e o menor número digitados.',
+codigo:
 `algoritmo "Estatisticas de Numeros com Valor Sentinela"
 
 var
@@ -331,7 +351,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Cálculo do Fatorial', codigo:
+{nome:'Cálculo do Fatorial',
+enunciado:'Escreva um algoritmo que leia um número inteiro positivo N e calcule o seu fatorial (N!). Exemplo: 5! = 5 × 4 × 3 × 2 × 1 = 120. Utilize a estrutura de repetição que achar mais adequada.',
+codigo:
 `algoritmo "Calculo do Fatorial"
 
 var
@@ -355,7 +377,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Censo de População Simulado', codigo:
+{nome:'Censo de População Simulado',
+enunciado:'Foi feita uma pesquisa entre 10 habitantes de uma região. Foram coletados os dados de idade e salário. Faça um programa que calcule e mostre:\n• A média de salário do grupo;\n• A maior idade do grupo;\n• A quantidade de pessoas que ganham menos de R$ 1.500,00.',
+codigo:
 `algoritmo "Censo de Populacao Simulado"
 
 var
@@ -395,7 +419,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Inversão de Elementos de um Vetor', codigo:
+{nome:'Inversão de Elementos de um Vetor',
+enunciado:'Crie um programa que leia 8 números inteiros e os armazene em um vetor v1. Em seguida, copie os elementos de v1 para um segundo vetor v2 de forma invertida (o primeiro elemento de v1 será o último de v2). Exiba os dois vetores no console.',
+codigo:
 `algoritmo "Inversao de Elementos de um Vetor"
 
 var
@@ -427,7 +453,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Busca Linear em Vetor', codigo:
+{nome:'Busca Linear em Vetor',
+enunciado:'Escreva um programa que preencha um vetor de 10 posições com números digitados pelo usuário. Depois, solicite ao usuário um valor de busca X. O algoritmo deve informar se o número X está presente no vetor e em qual posição (índice) ele foi encontrado.',
+codigo:
 `algoritmo "Busca Linear em Vetor"
 
 var
@@ -460,7 +488,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Análise de Temperaturas Mensais', codigo:
+{nome:'Análise de Temperaturas Mensais',
+enunciado:'Faça um programa que armazene a temperatura média de cada um dos 12 meses do ano em um vetor do tipo real. Calcule a média anual da temperatura e exiba todos os meses em que a temperatura ficou acima da média anual.',
+codigo:
 `algoritmo "Analise de Temperaturas Mensais"
 
 var
@@ -502,7 +532,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Contador de Números Pares e Ímpares', codigo:
+{nome:'Contador de Números Pares e Ímpares',
+enunciado:'Leia 10 números inteiros e armazene-os em um vetor. Crie outros dois vetores: um contendo apenas os números pares e outro contendo apenas os ímpares. Exiba o conteúdo dos dois vetores resultantes.',
+codigo:
 `algoritmo "Contador de Numeros Pares e Impares"
 
 var
@@ -545,7 +577,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Controle de Estoque Mínimo', codigo:
+{nome:'Controle de Estoque Mínimo',
+enunciado:'Uma loja armazena o nome de 5 produtos em um vetor do tipo cadeia e a quantidade em estoque desses mesmos produtos em um vetor do tipo inteiro (na mesma ordem de índices). Exiba o nome de todos os produtos que estão com estoque abaixo de 5 unidades (alerta de reposição).',
+codigo:
 `algoritmo "Controle de Estoque Minimo"
 
 var
@@ -575,7 +609,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Preenchimento e Exibição de Matriz 3×3', codigo:
+{nome:'Preenchimento e Exibição de Matriz 3×3',
+enunciado:'Crie um programa que leia uma matriz de dimensão 3×3 de números inteiros. Em seguida, exiba a matriz formatada na tela em forma de grade (linhas e colunas).',
+codigo:
 `algoritmo "Preenchimento e Exibicao de Matriz 3x3"
 
 var
@@ -601,7 +637,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Soma das Linhas de uma Matriz de Vendas', codigo:
+{nome:'Soma das Linhas de uma Matriz de Vendas',
+enunciado:'Dada uma matriz 4×2 que armazena os valores de vendas de 4 vendedores em 2 semestres, calcule e exiba a soma das vendas de cada vendedor (soma de cada linha da matriz).',
+codigo:
 `algoritmo "Soma das Linhas de uma Matriz de Vendas"
 
 var
@@ -630,7 +668,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Diagonal Principal e Secundária de Matriz 4×4', codigo:
+{nome:'Diagonal Principal e Secundária de Matriz 4×4',
+enunciado:'Escreva um algoritmo que leia uma matriz quadrada 4×4 de inteiros. Ao final, calcule e exiba:\n1. A soma de todos os elementos da Diagonal Principal (linha == coluna);\n2. A soma de todos os elementos da Diagonal Secundária (linha + coluna == 3).',
+codigo:
 `algoritmo "Diagonal Principal e Secundaria de Matriz 4x4"
 
 var
@@ -661,7 +701,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Maior Valor em Matriz 3×4 e Sua Posição', codigo:
+{nome:'Maior Valor em Matriz 3×4 e Sua Posição',
+enunciado:'Construa um programa que leia uma matriz 3×4 de reais. Encontre o maior elemento presente na matriz e exiba em qual linha e em qual coluna ele está localizado.',
+codigo:
 `algoritmo "Maior Valor em Matriz 3x4 e Sua Posicao"
 
 var
@@ -699,7 +741,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Matriz Transposta 2×3 para 3×2', codigo:
+{nome:'Matriz Transposta 2×3 para 3×2',
+enunciado:'Desenvolva um programa que receba uma matriz A de ordem 2×3. Crie uma matriz B de ordem 3×2 que represente a Transposta de A (as linhas da matriz A passam a ser as colunas da matriz B). Imprima a matriz transposta B.',
+codigo:
 `algoritmo "Matriz Transposta 2x3 para 3x2"
 
 var
@@ -732,7 +776,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Função de Conversão de Temperatura', codigo:
+{nome:'Função de Conversão de Temperatura',
+enunciado:'Escreva uma função chamada celsius_para_fahrenheit(real c) que receba uma temperatura em Celsius e retorne o seu valor equivalente em Fahrenheit (F = C × 1.8 + 32). No programa principal, solicite o valor em Celsius ao usuário, chame a função e exiba o resultado.',
+codigo:
 `algoritmo "Funcao de Conversao de Temperatura"
 
 funcao celsius_para_fahrenheit(real c): real
@@ -753,7 +799,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Função Par ou Ímpar', codigo:
+{nome:'Função Par ou Ímpar',
+enunciado:'Crie uma função chamada eh_par(inteiro numero) que retorne um valor lógico (verdadeiro se o número for par e falso se for ímpar). No programa principal, leia um número e utilize essa função para decidir se a mensagem "O número é par" ou "O número é ímpar" deve ser impressa.',
+codigo:
 `algoritmo "Funcao Par ou Impar"
 
 funcao eh_par(inteiro numero): logico
@@ -776,7 +824,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Função de Média e Situação', codigo:
+{nome:'Função de Média e Situação',
+enunciado:'Crie uma função calcular_media(real n1, real n2, real n3) que receba três notas e retorne a média calculada. Crie uma segunda função verificar_situacao(real media) que receba essa média e retorne a mensagem "APROVADO" (se média ≥ 7) ou "REPROVADO" (se média < 7).',
+codigo:
 `algoritmo "Funcao de Media e Situacao"
 
 funcao calcular_media(real n1, real n2, real n3): real
@@ -811,7 +861,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Função para Maior Elemento do Vetor', codigo:
+{nome:'Função para Maior Elemento do Vetor',
+enunciado:'Escreva uma função chamada obter_maior() que acesse um vetor global de 10 números inteiros e retorne o maior elemento contido no vetor. No programa principal, preencha o vetor e exiba o resultado da função.',
+codigo:
 `algoritmo "Funcao para Maior Elemento do Vetor"
 
 var
@@ -842,7 +894,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Função de Validação de Intervalo', codigo:
+{nome:'Função de Validação de Intervalo',
+enunciado:'Desenvolva uma função validar_intervalo(inteiro valor, inteiro minimo, inteiro maximo) que retorne verdadeiro se o valor estiver dentro da faixa especificada (inclusive min e max) e falso caso contrário. Teste essa função dentro de um laço de repetição no programa principal.',
+codigo:
 `algoritmo "Funcao de Validacao de Intervalo"
 
 funcao validar_intervalo(inteiro valor, inteiro minimo, inteiro maximo): logico
@@ -880,7 +934,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Fila de Impressão — Enfileirar e Desenfileirar', codigo:
+{nome:'Fila de Impressão — Enfileirar e Desenfileirar',
+enunciado:'Tipo: Fila (FIFO)\nSimule o funcionamento de uma fila de impressão de documentos usando um vetor de 5 posições. Crie um menu para:\n1. Adicionar um documento à fila (enfileirar);\n2. Imprimir o próximo documento (desenfileirar);\n3. Exibir a lista de documentos aguardando impressão.',
+codigo:
 `algoritmo "Fila de Impressao - Enfileirar e Desenfileirar"
 
 var
@@ -958,7 +1014,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Pilha de Desfazer Ações — Undo', codigo:
+{nome:'Pilha de Desfazer Ações — Undo',
+enunciado:'Tipo: Pilha (LIFO)\nEm um editor de texto, as ações do usuário podem ser desfeitas. Crie uma pilha com vetor de tamanho 5 e as funções:\n1. empilhar_acao(cadeia acao): registra uma nova edição;\n2. desfazer_acao(): desfaz a última ação (remove do topo);\n3. exibir_historico(): mostra a ação no topo e o histórico restante.',
+codigo:
 `algoritmo "Pilha de Desfazer Acoes - Undo"
 
 var
@@ -1033,7 +1091,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Fila de Atendimento do Detran', codigo:
+{nome:'Fila de Atendimento do Detran',
+enunciado:'Tipo: Fila (FIFO)\nCrie um sistema para gerenciar senhas de atendimento do Detran.\n• gerar_senha(): adiciona uma nova senha ao final do vetor da fila;\n• chamar_senha(): retira o primeiro da fila e desloca os demais para a esquerda;\n• exibir_fila(): lista as senhas aguardando atendimento.',
+codigo:
 `algoritmo "Fila de Atendimento do Detran"
 
 var
@@ -1111,7 +1171,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Pilha de Pratos — Verificação de Cheia e Vazia', codigo:
+{nome:'Pilha de Pratos — Verificação de Cheia e Vazia',
+enunciado:'Tipo: Pilha (LIFO)\nImplemente o controle de uma pilha de pratos em uma cozinha (capacidade máxima: 4 pratos).\n• colocar_prato(): adiciona um prato (verifica se está cheia);\n• retirar_prato(): remove do topo (verifica se está vazia);\n• Exiba a quantidade atual de pratos empilhados a cada operação.',
+codigo:
 `algoritmo "Pilha de Pratos - Verificacao de Cheia e Vazia"
 
 var
@@ -1164,7 +1226,9 @@ inicio
 
 fimalgoritmo`},
 
-{nome:'Desafio Completo — Sistema Integrado de Compras', codigo:
+{nome:'Desafio Completo — Sistema Integrado de Compras',
+enunciado:'Tipo: Integradora (Vetor, Fila e Funções)\nUma lanchonete organiza seus pedidos com estruturas combinadas:\n1. Crie uma Fila (vetor de 5 nomes) para os clientes no caixa;\n2. Crie um procedimento que atenda o primeiro cliente (desenfileirar) e registre o valor da compra em um vetor de totais;\n3. Crie uma função que calcule e retorne o faturamento total do dia.',
+codigo:
 `algoritmo "Desafio Completo - Sistema Integrado de Compras"
 
 var
@@ -1276,6 +1340,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') fecharModal(
 function abrirModal(num, q) {
   modalNum.textContent   = 'Questão ' + String(num).padStart(2, '0');
   modalTitle.textContent = q.nome;
+  document.getElementById('modalEnunciado').innerHTML = esc(q.enunciado).replace(/\n/g, '<br>');
   modalCode.innerHTML    = highlight(q.codigo);
   modalBg.classList.add('open');
   document.body.style.overflow = 'hidden';
