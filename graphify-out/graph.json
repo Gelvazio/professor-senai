@@ -14,6 +14,426 @@
       "norm_label": "supabase.js"
     },
     {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "documentacao_padrao_skill",
+      "community": 6,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Documenta\u00e7\u00e3o Padr\u00e3o",
+      "file_type": "document",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
+      "community": 6,
+      "norm_label": "documentacao padrao"
+    },
+    {
+      "label": "Overview",
+      "file_type": "document",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "documentacao_padrao_skill_overview",
+      "community": 6,
+      "norm_label": "overview"
+    },
+    {
+      "label": "Fluxo Obrigat\u00f3rio",
+      "file_type": "document",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "documentacao_padrao_skill_fluxo_obrigat\u00f3rio",
+      "community": 6,
+      "norm_label": "fluxo obrigatorio"
+    },
+    {
+      "label": "Regras",
+      "file_type": "document",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "documentacao_padrao_skill_regras",
+      "community": 6,
+      "norm_label": "regras"
+    },
+    {
+      "label": "\u00cdcones de Status",
+      "file_type": "document",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "documentacao_padrao_skill_\u00edcones_de_status",
+      "community": 6,
+      "norm_label": "icones de status"
+    },
+    {
+      "label": "Modelo do Arquivo",
+      "file_type": "document",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "documentacao_padrao_skill_modelo_do_arquivo",
+      "community": 6,
+      "norm_label": "modelo do arquivo"
+    },
+    {
+      "label": "Regras dos Passos",
+      "file_type": "document",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "documentacao_padrao_skill_regras_dos_passos",
+      "community": 6,
+      "norm_label": "regras dos passos"
+    },
+    {
+      "label": "Red Flags \u2014 PARE e Corrija",
+      "file_type": "document",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "documentacao_padrao_skill_red_flags_pare_e_corrija",
+      "community": 6,
+      "norm_label": "red flags \u2014 pare e corrija"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_skill",
+      "community": 4,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "/graphify",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "graphify_skill_graphify",
+      "community": 4,
+      "norm_label": "/graphify"
+    },
+    {
+      "label": "Usage",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "graphify_skill_usage",
+      "community": 4,
+      "norm_label": "usage"
+    },
+    {
+      "label": "What graphify is for",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "graphify_skill_what_graphify_is_for",
+      "community": 4,
+      "norm_label": "what graphify is for"
+    },
+    {
+      "label": "What You Must Do When Invoked",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "graphify_skill_what_you_must_do_when_invoked",
+      "community": 5,
+      "norm_label": "what you must do when invoked"
+    },
+    {
+      "label": "Step 1 - Ensure graphify is installed",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "graphify_skill_step_1_ensure_graphify_is_installed",
+      "community": 5,
+      "norm_label": "step 1 - ensure graphify is installed"
+    },
+    {
+      "label": "Step 2 - Detect files",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "graphify_skill_step_2_detect_files",
+      "community": 5,
+      "norm_label": "step 2 - detect files"
+    },
+    {
+      "label": "Step 2.5 - Transcribe video / audio files (only if video files detected)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L156",
+      "_origin": "ast",
+      "id": "graphify_skill_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
+      "community": 5,
+      "norm_label": "step 2.5 - transcribe video / audio files (only if video files detected)"
+    },
+    {
+      "label": "Step 3 - Extract entities and relationships",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L202",
+      "_origin": "ast",
+      "id": "graphify_skill_step_3_extract_entities_and_relationships",
+      "community": 8,
+      "norm_label": "step 3 - extract entities and relationships"
+    },
+    {
+      "label": "Part A - Structural extraction for code files",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L212",
+      "_origin": "ast",
+      "id": "graphify_skill_part_a_structural_extraction_for_code_files",
+      "community": 8,
+      "norm_label": "part a - structural extraction for code files"
+    },
+    {
+      "label": "Part B - Semantic extraction (parallel subagents)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "graphify_skill_part_b_semantic_extraction_parallel_subagents",
+      "community": 8,
+      "norm_label": "part b - semantic extraction (parallel subagents)"
+    },
+    {
+      "label": "Part C - Merge AST + semantic into final extraction",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L449",
+      "_origin": "ast",
+      "id": "graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
+      "community": 8,
+      "norm_label": "part c - merge ast + semantic into final extraction"
+    },
+    {
+      "label": "Step 4 - Build graph, cluster, analyze, generate outputs",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L485",
+      "_origin": "ast",
+      "id": "graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
+      "community": 5,
+      "norm_label": "step 4 - build graph, cluster, analyze, generate outputs"
+    },
+    {
+      "label": "Step 5 - Label communities",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L537",
+      "_origin": "ast",
+      "id": "graphify_skill_step_5_label_communities",
+      "community": 5,
+      "norm_label": "step 5 - label communities"
+    },
+    {
+      "label": "Step 6 - Generate Obsidian vault (opt-in) + HTML",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L579",
+      "_origin": "ast",
+      "id": "graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
+      "community": 5,
+      "norm_label": "step 6 - generate obsidian vault (opt-in) + html"
+    },
+    {
+      "label": "Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L647",
+      "_origin": "ast",
+      "id": "graphify_skill_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
+      "community": 5,
+      "norm_label": "step 7 - neo4j export (only if --neo4j or --neo4j-push flag)"
+    },
+    {
+      "label": "Step 7b - SVG export (only if --svg flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L690",
+      "_origin": "ast",
+      "id": "graphify_skill_step_7b_svg_export_only_if_svg_flag",
+      "community": 5,
+      "norm_label": "step 7b - svg export (only if --svg flag)"
+    },
+    {
+      "label": "Step 7c - GraphML export (only if --graphml flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L714",
+      "_origin": "ast",
+      "id": "graphify_skill_step_7c_graphml_export_only_if_graphml_flag",
+      "community": 5,
+      "norm_label": "step 7c - graphml export (only if --graphml flag)"
+    },
+    {
+      "label": "Step 7d - MCP server (only if --mcp flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L736",
+      "_origin": "ast",
+      "id": "graphify_skill_step_7d_mcp_server_only_if_mcp_flag",
+      "community": 5,
+      "norm_label": "step 7d - mcp server (only if --mcp flag)"
+    },
+    {
+      "label": "Step 8 - Token reduction benchmark (only if total_words > 5000)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L756",
+      "_origin": "ast",
+      "id": "graphify_skill_step_8_token_reduction_benchmark_only_if_total_words_5000",
+      "community": 5,
+      "norm_label": "step 8 - token reduction benchmark (only if total_words > 5000)"
+    },
+    {
+      "label": "Step 9 - Save manifest, update cost tracker, clean up, and report",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L778",
+      "_origin": "ast",
+      "id": "graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
+      "community": 5,
+      "norm_label": "step 9 - save manifest, update cost tracker, clean up, and report"
+    },
+    {
+      "label": "For --update (incremental re-extraction)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L852",
+      "_origin": "ast",
+      "id": "graphify_skill_for_update_incremental_re_extraction",
+      "community": 4,
+      "norm_label": "for --update (incremental re-extraction)"
+    },
+    {
+      "label": "For --cluster-only",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1000",
+      "_origin": "ast",
+      "id": "graphify_skill_for_cluster_only",
+      "community": 4,
+      "norm_label": "for --cluster-only"
+    },
+    {
+      "label": "For /graphify query",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1049",
+      "_origin": "ast",
+      "id": "graphify_skill_for_graphify_query",
+      "community": 4,
+      "norm_label": "for /graphify query"
+    },
+    {
+      "label": "For /graphify path",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1180",
+      "_origin": "ast",
+      "id": "graphify_skill_for_graphify_path",
+      "community": 4,
+      "norm_label": "for /graphify path"
+    },
+    {
+      "label": "For /graphify explain",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1257",
+      "_origin": "ast",
+      "id": "graphify_skill_for_graphify_explain",
+      "community": 4,
+      "norm_label": "for /graphify explain"
+    },
+    {
+      "label": "For /graphify add",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1327",
+      "_origin": "ast",
+      "id": "graphify_skill_for_graphify_add",
+      "community": 4,
+      "norm_label": "for /graphify add"
+    },
+    {
+      "label": "For --watch",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1362",
+      "_origin": "ast",
+      "id": "graphify_skill_for_watch",
+      "community": 4,
+      "norm_label": "for --watch"
+    },
+    {
+      "label": "For git commit hook",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1383",
+      "_origin": "ast",
+      "id": "graphify_skill_for_git_commit_hook",
+      "community": 4,
+      "norm_label": "for git commit hook"
+    },
+    {
+      "label": "For native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1399",
+      "_origin": "ast",
+      "id": "graphify_skill_for_native_claude_md_integration",
+      "community": 4,
+      "norm_label": "for native claude.md integration"
+    },
+    {
+      "label": "Troubleshooting",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1415",
+      "_origin": "ast",
+      "id": "graphify_skill_troubleshooting",
+      "community": 4,
+      "norm_label": "troubleshooting"
+    },
+    {
+      "label": "PowerShell 5.1: Vertical scrolling stops working",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1417",
+      "_origin": "ast",
+      "id": "graphify_skill_powershell_5_1_vertical_scrolling_stops_working",
+      "community": 4,
+      "norm_label": "powershell 5.1: vertical scrolling stops working"
+    },
+    {
+      "label": "Honesty Rules",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1428",
+      "_origin": "ast",
+      "id": "graphify_skill_honesty_rules",
+      "community": 4,
+      "norm_label": "honesty rules"
+    },
+    {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "sistema/CLAUDE.md",
@@ -120,7 +540,7 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "sistema_claude_4_software_de_escrit\u00f3rio",
-      "community": 6,
+      "community": 0,
       "norm_label": "4. software de escritorio"
     },
     {
@@ -130,7 +550,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "sistema_claude_4_1_editor_de_textos",
-      "community": 6,
+      "community": 0,
       "norm_label": "4.1. editor de textos"
     },
     {
@@ -140,7 +560,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "sistema_claude_4_2_editor_de_planilhas_eletr\u00f4nicas",
-      "community": 6,
+      "community": 0,
       "norm_label": "4.2. editor de planilhas eletronicas"
     },
     {
@@ -150,7 +570,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "sistema_claude_4_3_editor_de_apresenta\u00e7\u00f5es",
-      "community": 6,
+      "community": 0,
       "norm_label": "4.3. editor de apresentacoes"
     },
     {
@@ -270,7 +690,7 @@
       "source_location": "L202",
       "_origin": "ast",
       "id": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "community": 4,
+      "community": 1,
       "norm_label": "unidade curricular 2: saude e seguranca no trabalho"
     },
     {
@@ -280,7 +700,7 @@
       "source_location": "L210",
       "_origin": "ast",
       "id": "sistema_claude_capacidades_b\u00e1sicas_210",
-      "community": 4,
+      "community": 1,
       "norm_label": "capacidades basicas"
     },
     {
@@ -360,7 +780,7 @@
       "source_location": "L257",
       "_origin": "ast",
       "id": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora_257",
-      "community": 4,
+      "community": 1,
       "norm_label": "eixo estruturante bncc / competencia integradora"
     },
     {
@@ -370,7 +790,7 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "sistema_claude_capacidades_socioemocionais_266",
-      "community": 4,
+      "community": 1,
       "norm_label": "capacidades socioemocionais"
     },
     {
@@ -380,7 +800,7 @@
       "source_location": "L272",
       "_origin": "ast",
       "id": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos_272",
-      "community": 4,
+      "community": 1,
       "norm_label": "ambientes pedagogicos e recursos"
     },
     {
@@ -420,7 +840,7 @@
       "source_location": "L306",
       "_origin": "ast",
       "id": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "community": 5,
+      "community": 3,
       "norm_label": "configuracao supabase"
     },
     {
@@ -430,7 +850,7 @@
       "source_location": "L314",
       "_origin": "ast",
       "id": "sistema_claude_tabela_curso",
-      "community": 5,
+      "community": 3,
       "norm_label": "tabela `curso`"
     },
     {
@@ -440,7 +860,7 @@
       "source_location": "L332",
       "_origin": "ast",
       "id": "sistema_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
-      "community": 5,
+      "community": 3,
       "norm_label": "estrutura `gabaritos` (coluna jsonb da tabela `curso`)"
     },
     {
@@ -450,7 +870,7 @@
       "source_location": "L347",
       "_origin": "ast",
       "id": "sistema_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
-      "community": 5,
+      "community": 3,
       "norm_label": "funcoes rpc disponiveis"
     },
     {
@@ -460,7 +880,7 @@
       "source_location": "L354",
       "_origin": "ast",
       "id": "sistema_claude_controle_de_perfil_frontend",
-      "community": 5,
+      "community": 3,
       "norm_label": "controle de perfil (frontend)"
     }
   ],
@@ -468,12 +888,412 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "documentacao_padrao_skill",
+      "target": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
+      "target": "documentacao_padrao_skill_fluxo_obrigat\u00f3rio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
+      "target": "documentacao_padrao_skill_modelo_do_arquivo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
+      "target": "documentacao_padrao_skill_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
+      "target": "documentacao_padrao_skill_red_flags_pare_e_corrija",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
+      "target": "documentacao_padrao_skill_regras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
+      "target": "documentacao_padrao_skill_regras_dos_passos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
+      "target": "documentacao_padrao_skill_\u00edcones_de_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "graphify_skill",
+      "target": "graphify_skill_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1000",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1383",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_git_commit_hook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1327",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_graphify_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1257",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_graphify_explain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1180",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_graphify_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1049",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_graphify_query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1399",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L852",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_update_incremental_re_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1362",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_for_watch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1428",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_honesty_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1415",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_troubleshooting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_what_graphify_is_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "graphify_skill_graphify",
+      "target": "graphify_skill_what_you_must_do_when_invoked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_1_ensure_graphify_is_installed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_2_detect_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_3_extract_entities_and_relationships",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L485",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L537",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_5_label_communities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L579",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L647",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L690",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_7b_svg_export_only_if_svg_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L714",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_7c_graphml_export_only_if_graphml_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L736",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_7d_mcp_server_only_if_mcp_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L756",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_8_token_reduction_benchmark_only_if_total_words_5000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L778",
+      "weight": 1.0,
+      "source": "graphify_skill_what_you_must_do_when_invoked",
+      "target": "graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "graphify_skill_part_a_structural_extraction_for_code_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "graphify_skill_part_b_semantic_extraction_parallel_subagents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L449",
+      "weight": 1.0,
+      "source": "graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1417",
+      "weight": 1.0,
+      "source": "graphify_skill_troubleshooting",
+      "target": "graphify_skill_powershell_5_1_vertical_scrolling_stops_working",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude",
-      "target": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "confidence_score": 1.0
+      "target": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial"
     },
     {
       "relation": "contains",
@@ -481,9 +1301,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L306",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "confidence_score": 1.0
+      "target": "sistema_claude_configura\u00e7\u00e3o_supabase"
     },
     {
       "relation": "contains",
@@ -491,9 +1311,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
-      "confidence_score": 1.0
+      "target": "sistema_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho"
     },
     {
       "relation": "contains",
@@ -501,9 +1321,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L285",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_regras_de_trabalho_claude",
-      "confidence_score": 1.0
+      "target": "sistema_claude_regras_de_trabalho_claude"
     },
     {
       "relation": "contains",
@@ -511,9 +1331,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -521,9 +1341,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "confidence_score": 1.0
+      "target": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho"
     },
     {
       "relation": "contains",
@@ -531,9 +1351,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos",
-      "confidence_score": 1.0
+      "target": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos"
     },
     {
       "relation": "contains",
@@ -541,9 +1361,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_capacidades_b\u00e1sicas",
-      "confidence_score": 1.0
+      "target": "sistema_claude_capacidades_b\u00e1sicas"
     },
     {
       "relation": "contains",
@@ -551,9 +1371,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_capacidades_socioemocionais",
-      "confidence_score": 1.0
+      "target": "sistema_claude_capacidades_socioemocionais"
     },
     {
       "relation": "contains",
@@ -561,9 +1381,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_carga_hor\u00e1ria",
-      "confidence_score": 1.0
+      "target": "sistema_claude_carga_hor\u00e1ria"
     },
     {
       "relation": "contains",
@@ -571,9 +1391,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_conhecimentos",
-      "confidence_score": 1.0
+      "target": "sistema_claude_conhecimentos"
     },
     {
       "relation": "contains",
@@ -581,9 +1401,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora",
-      "confidence_score": 1.0
+      "target": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora"
     },
     {
       "relation": "contains",
@@ -591,9 +1411,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_ferramentas_de_ensino",
-      "confidence_score": 1.0
+      "target": "sistema_claude_ferramentas_de_ensino"
     },
     {
       "relation": "contains",
@@ -601,9 +1421,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
-      "confidence_score": 1.0
+      "target": "sistema_claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho"
     },
     {
       "relation": "contains",
@@ -611,9 +1431,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "sistema_claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -621,9 +1441,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_3_internet_world_wide_web",
-      "confidence_score": 1.0
+      "target": "sistema_claude_3_internet_world_wide_web"
     },
     {
       "relation": "contains",
@@ -631,9 +1451,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_4_software_de_escrit\u00f3rio",
-      "confidence_score": 1.0
+      "target": "sistema_claude_4_software_de_escrit\u00f3rio"
     },
     {
       "relation": "contains",
@@ -641,9 +1461,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_5_inform\u00e1tica",
-      "confidence_score": 1.0
+      "target": "sistema_claude_5_inform\u00e1tica"
     },
     {
       "relation": "contains",
@@ -651,9 +1471,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_6_textos_t\u00e9cnicos",
-      "confidence_score": 1.0
+      "target": "sistema_claude_6_textos_t\u00e9cnicos"
     },
     {
       "relation": "contains",
@@ -661,9 +1481,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_7_comunica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "sistema_claude_7_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -671,9 +1491,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_8_n\u00edveis_de_fala",
-      "confidence_score": 1.0
+      "target": "sistema_claude_8_n\u00edveis_de_fala"
     },
     {
       "relation": "contains",
@@ -681,9 +1501,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_9_elementos_da_comunica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "sistema_claude_9_elementos_da_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -691,9 +1511,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_4_software_de_escrit\u00f3rio",
-      "target": "sistema_claude_4_1_editor_de_textos",
-      "confidence_score": 1.0
+      "target": "sistema_claude_4_1_editor_de_textos"
     },
     {
       "relation": "contains",
@@ -701,9 +1521,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_4_software_de_escrit\u00f3rio",
-      "target": "sistema_claude_4_2_editor_de_planilhas_eletr\u00f4nicas",
-      "confidence_score": 1.0
+      "target": "sistema_claude_4_2_editor_de_planilhas_eletr\u00f4nicas"
     },
     {
       "relation": "contains",
@@ -711,9 +1531,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_4_software_de_escrit\u00f3rio",
-      "target": "sistema_claude_4_3_editor_de_apresenta\u00e7\u00f5es",
-      "confidence_score": 1.0
+      "target": "sistema_claude_4_3_editor_de_apresenta\u00e7\u00f5es"
     },
     {
       "relation": "contains",
@@ -721,9 +1541,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_5_inform\u00e1tica",
-      "target": "sistema_claude_5_1_fundamentos_de_hardware",
-      "confidence_score": 1.0
+      "target": "sistema_claude_5_1_fundamentos_de_hardware"
     },
     {
       "relation": "contains",
@@ -731,9 +1551,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_5_inform\u00e1tica",
-      "target": "sistema_claude_5_2_sistema_operacional",
-      "confidence_score": 1.0
+      "target": "sistema_claude_5_2_sistema_operacional"
     },
     {
       "relation": "contains",
@@ -741,9 +1561,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L272",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos_272",
-      "confidence_score": 1.0
+      "target": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos_272"
     },
     {
       "relation": "contains",
@@ -751,9 +1571,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L210",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_capacidades_b\u00e1sicas_210",
-      "confidence_score": 1.0
+      "target": "sistema_claude_capacidades_b\u00e1sicas_210"
     },
     {
       "relation": "contains",
@@ -761,9 +1581,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L266",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_capacidades_socioemocionais_266",
-      "confidence_score": 1.0
+      "target": "sistema_claude_capacidades_socioemocionais_266"
     },
     {
       "relation": "contains",
@@ -771,9 +1591,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L220",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_conhecimentos_220",
-      "confidence_score": 1.0
+      "target": "sistema_claude_conhecimentos_220"
     },
     {
       "relation": "contains",
@@ -781,9 +1601,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora_257",
-      "confidence_score": 1.0
+      "target": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora_257"
     },
     {
       "relation": "contains",
@@ -791,9 +1611,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L222",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho",
-      "confidence_score": 1.0
+      "target": "sistema_claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho"
     },
     {
       "relation": "contains",
@@ -801,9 +1621,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L224",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_2_c\u00f3digo_de_\u00e9tica_profissional",
-      "confidence_score": 1.0
+      "target": "sistema_claude_2_c\u00f3digo_de_\u00e9tica_profissional"
     },
     {
       "relation": "contains",
@@ -811,9 +1631,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L226",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais",
-      "confidence_score": 1.0
+      "target": "sistema_claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais"
     },
     {
       "relation": "contains",
@@ -821,9 +1641,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L236",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_4_medidas_de_controle",
-      "confidence_score": 1.0
+      "target": "sistema_claude_4_medidas_de_controle"
     },
     {
       "relation": "contains",
@@ -831,9 +1651,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_5_riscos_ocupacionais",
-      "confidence_score": 1.0
+      "target": "sistema_claude_5_riscos_ocupacionais"
     },
     {
       "relation": "contains",
@@ -841,9 +1661,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L244",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_6_seguran\u00e7a_do_trabalho",
-      "confidence_score": 1.0
+      "target": "sistema_claude_6_seguran\u00e7a_do_trabalho"
     },
     {
       "relation": "contains",
@@ -851,9 +1671,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L287",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_regras_de_trabalho_claude",
-      "target": "sistema_claude_commit_e_push_obrigat\u00f3rios",
-      "confidence_score": 1.0
+      "target": "sistema_claude_commit_e_push_obrigat\u00f3rios"
     },
     {
       "relation": "contains",
@@ -861,9 +1681,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L296",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_regras_de_trabalho_claude",
-      "target": "sistema_claude_slides_devem_ter_no_m\u00ednimo_15_slides",
-      "confidence_score": 1.0
+      "target": "sistema_claude_slides_devem_ter_no_m\u00ednimo_15_slides"
     },
     {
       "relation": "contains",
@@ -871,9 +1691,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L354",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "target": "sistema_claude_controle_de_perfil_frontend",
-      "confidence_score": 1.0
+      "target": "sistema_claude_controle_de_perfil_frontend"
     },
     {
       "relation": "contains",
@@ -881,9 +1701,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L332",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "target": "sistema_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
-      "confidence_score": 1.0
+      "target": "sistema_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso"
     },
     {
       "relation": "contains",
@@ -891,9 +1711,9 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L347",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "target": "sistema_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
-      "confidence_score": 1.0
+      "target": "sistema_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis"
     },
     {
       "relation": "contains",
@@ -901,11 +1721,11 @@
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L314",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "target": "sistema_claude_tabela_curso",
-      "confidence_score": 1.0
+      "target": "sistema_claude_tabela_curso"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "682371c66dad59447dfb3af7404f9d12ee32cf45"
+  "built_at_commit": "3cd45e9cfb395c06d767381f5e3ee326ddd6d26d"
 }
