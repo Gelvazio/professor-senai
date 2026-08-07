@@ -2328,7 +2328,8 @@
     <div style="display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:6px 10px">
       <span style="font-size:15px">${m.icone || "📄"}</span>
       <div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600">${m.nome}</div><div style="font-size:11px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${m.arquivo}</div></div>
-      <button onclick="removerMatAula(${i})" style="background:none;border:none;color:#d32f2f;font-size:15px;cursor:pointer;padding:2px 5px;border-radius:4px">✕</button>
+      <button onclick="editarMatTemp(${i})" style="background:none;border:none;color:#1565c0;font-size:15px;cursor:pointer;padding:2px 5px;border-radius:4px" title="Editar material">✏️</button>
+      <button onclick="removerMatAula(${i})" style="background:none;border:none;color:#d32f2f;font-size:15px;cursor:pointer;padding:2px 5px;border-radius:4px" title="Remover material">✕</button>
     </div>`,
           )
           .join("");
@@ -2350,6 +2351,19 @@
         document.getElementById("mArquivo").value = "";
         document.getElementById("mTipo").value = "";
         document.getElementById("mVisivel").value = "1";
+        document.getElementById("matAulaModal").style.display = "flex";
+      }
+
+      function editarMatTemp(i) {
+        const m = _aulaMatTemp[i];
+        _matEditContext = { tempIdx: i };
+        document.getElementById("matAulaModalTitulo").textContent = "Editar Material";
+        document.getElementById("matAulaConfirmBtn").textContent = "💾 Salvar";
+        document.getElementById("mIcone").value = m.icone || "📄";
+        document.getElementById("mNome").value = m.nome || "";
+        document.getElementById("mArquivo").value = m.arquivo || "";
+        document.getElementById("mTipo").value = m.tipo || "";
+        document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
         document.getElementById("matAulaModal").style.display = "flex";
       }
 
@@ -2388,7 +2402,11 @@
         const tipo = document.getElementById("mTipo").value;
         if (tipo) m.tipo = tipo;
 
-        if (_matEditContext) {
+        if (_matEditContext && _matEditContext.tempIdx !== undefined) {
+          _aulaMatTemp[_matEditContext.tempIdx] = { ..._aulaMatTemp[_matEditContext.tempIdx], ...m };
+          renderAulaMatList();
+          fecharAddMatAula();
+        } else if (_matEditContext) {
           const aula = _aulaLista.find(a => a.numero === _matEditContext.aulaNum);
           aula.materiais[_matEditContext.idx] = { ...aula.materiais[_matEditContext.idx], ...m };
           fecharAddMatAula();
