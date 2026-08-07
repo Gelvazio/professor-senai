@@ -680,7 +680,7 @@
         padding: 0 20px 16px;
       }
       /* ── Accordion de Aulas ── */
-      .aulas-acc-wrap { overflow-y: auto; flex: 1; min-height: 0; }
+      .aulas-acc-wrap { overflow-y: auto; flex: 1; min-height: 0; overflow-anchor: none; }
       .aula-acc-item { border-bottom: 1px solid #e0e0e0; }
       .aula-acc-header {
         display: flex; align-items: stretch; cursor: pointer;
@@ -689,8 +689,7 @@
       }
       .aula-acc-header:hover:not(.ativa) {
         background: #e8f0fe;
-        box-shadow: 0 3px 12px rgba(0, 67, 132, 0.15);
-        transform: translateY(-1px);
+        box-shadow: inset 0 0 0 2px rgba(0, 67, 132, 0.18);
       }
       .aula-acc-header.ativa { background: #004384; color: #fff; }
       .aula-acc-box {
@@ -935,6 +934,87 @@
         color: #aaa;
         font-size: 12px;
       }
+
+      /* ── Tema Escuro ── */
+      [data-theme="dark"] body { background: #0e1117; color: #e0e3e8; }
+      [data-theme="dark"] .card { background: #1c1e26; }
+      [data-theme="dark"] .card.disponivel:hover { box-shadow: 0 6px 24px rgba(0,100,255,.18); }
+      [data-theme="dark"] .card-titulo { color: #e0e3e8; }
+      [data-theme="dark"] .card-desc { color: #8b919e; }
+      [data-theme="dark"] .tag { background: #252830; color: #b0b6c3; }
+      [data-theme="dark"] .card-footer { border-top-color: #2c2e38; }
+      [data-theme="dark"] .progress-mini-bar { background: #252830; }
+      [data-theme="dark"] .progress-mini-text { color: #8b919e; }
+      [data-theme="dark"] .section-label { color: #8b919e; }
+      [data-theme="dark"] .btn-em-breve { background: #252830; color: #555; }
+      /* Admin */
+      [data-theme="dark"] .admin-section { background: #13151e; border-top-color: #2c3a5c; border-bottom-color: #2c3a5c; }
+      [data-theme="dark"] .admin-card { background: #1c1e26; border-color: #2c2e38; }
+      [data-theme="dark"] .admin-card:hover { border-color: #4472b0; box-shadow: 0 4px 16px rgba(0,80,180,.18); }
+      /* Edit banner */
+      [data-theme="dark"] .edit-banner { background: #1e1c00; border-color: #4a3e00; color: #c9b46a; }
+      [data-theme="dark"] .edit-banner strong { color: #f0a840; }
+      /* Card edit strip */
+      [data-theme="dark"] .card-edit { background: #141620; border-top-color: #2c2e38; }
+      [data-theme="dark"] .card-edit-label { color: #8b919e; }
+      [data-theme="dark"] .toggle-label { color: #8b919e; }
+      [data-theme="dark"] .btn-card-editar { background: #1a2a40; color: #7ab4e8; }
+      [data-theme="dark"] .btn-card-editar:hover { background: #1e3454; }
+      /* Card add */
+      [data-theme="dark"] .card-add { background: #1c1e26; border-color: #2c4a2c; }
+      [data-theme="dark"] .card-add:hover { border-color: #2e7d32; background: #1a2e1a; }
+      /* CRUD / curso modais */
+      [data-theme="dark"] .crud-modal,
+      [data-theme="dark"] .curso-modal { background: #1c1e26; }
+      [data-theme="dark"] .crud-toolbar { background: #141620; border-bottom-color: #2c2e38; }
+      [data-theme="dark"] .crud-form-area { background: #141620; border-bottom-color: #2c2e38; }
+      [data-theme="dark"] .crud-label { color: #8b919e; }
+      [data-theme="dark"] .crud-input { background: #252830; border-color: #3a3d4a; color: #e0e3e8; }
+      [data-theme="dark"] .crud-input:focus { border-color: #5588cc; box-shadow: 0 0 0 3px rgba(50,100,200,.15); }
+      [data-theme="dark"] .crud-table th { color: #7aa3d4; border-bottom-color: #2c2e38; }
+      [data-theme="dark"] .crud-table td { color: #c0c6d0; border-bottom-color: #2c2e38; }
+      [data-theme="dark"] .crud-table tr:hover td { background: #22252e; }
+      [data-theme="dark"] .crud-vazio { color: #8b919e; }
+      [data-theme="dark"] .btn-cancelar { background: #252830; color: #b0b6c3; }
+      [data-theme="dark"] .btn-cancelar:hover { background: #303340; }
+      /* Accordion aulas */
+      [data-theme="dark"] .aulas-acc-wrap { background: #1c1e26; }
+      [data-theme="dark"] .aula-acc-item { border-bottom-color: #2c2e38; }
+      [data-theme="dark"] .aula-acc-header:not(.ativa) { background: #1c1e26; }
+      [data-theme="dark"] .aula-acc-header:hover:not(.ativa) { background: #1e2554; box-shadow: 0 3px 12px rgba(0,50,160,.18); }
+      [data-theme="dark"] .aula-acc-title-area { color: #7aa3d4; }
+      [data-theme="dark"] .aula-acc-header.ativa .aula-acc-title-area { color: #fff; }
+      [data-theme="dark"] .aula-acc-box { border-right-color: #2c2e38; }
+      [data-theme="dark"] .aula-mat-row { background: #1c1e26; border-bottom-color: #2c2e38; }
+      [data-theme="dark"] .aula-mat-nome { color: #e0e3e8; }
+      [data-theme="dark"] .aula-mat-tipo { color: #8b919e; }
+      [data-theme="dark"] .aula-mat-icon { background: #1e2a40; }
+      [data-theme="dark"] .aula-mat-bar { background: #252830; }
+      [data-theme="dark"] .aula-mat-pct { color: #7aa3d4; }
+      [data-theme="dark"] .aula-mat-vazio { color: #555; }
+      /* Curso modal interno */
+      [data-theme="dark"] .aula-item { border-color: #2c2e38; }
+      [data-theme="dark"] .aula-item-head { background: #141620; border-bottom-color: #2c2e38; }
+      [data-theme="dark"] .aula-item-titulo { color: #e0e3e8; }
+      [data-theme="dark"] .aula-item-num { color: #555; }
+      [data-theme="dark"] .aula-item-data { color: #8b919e; }
+      [data-theme="dark"] .aula-mat-link { color: #7aa3d4; }
+      [data-theme="dark"] .aula-mat-link:hover { color: #9ec4f0; }
+      [data-theme="dark"] .aula-locked { color: #555; }
+      /* Emoji picker */
+      [data-theme="dark"] .emoji-picker-btn { background: #252830; border-color: #3a3d4a; color: #e0e3e8; }
+      [data-theme="dark"] .emoji-picker-btn .ep-label { color: #8b919e; }
+      [data-theme="dark"] .emoji-picker-drop { background: #1c1e26; border-color: #3a3d4a; box-shadow: 0 4px 20px rgba(0,0,0,.4); }
+      [data-theme="dark"] .emoji-opt:hover { background: #1e2554; }
+      [data-theme="dark"] .emoji-opt.selected { background: #1a3060; }
+      [data-theme="dark"] .emoji-cat-label { color: #555; }
+      /* Filtro de curso */
+      [data-theme="dark"] #crudFiltroCurso { background: #141620; border-bottom-color: #2c2e38; }
+      [data-theme="dark"] #crudFiltroCurso label { color: #8b919e; }
+      /* Inline form aula */
+      [data-theme="dark"] #aulaFormArea { background: #141620!important; border-bottom-color: #2c2e38!important; }
+      [data-theme="dark"] #aulaMatList .aula-mat-row { background: #252830; }
+      [data-theme="dark"] #aulasVazio { color: #8b919e; }
     </style>
   </head>
   <body>
@@ -942,6 +1022,8 @@
       (function () {
         if (!localStorage.getItem("senai_role"))
           window.location.replace("login.html");
+        const _t = localStorage.getItem("senai_tema") || "light";
+        document.documentElement.setAttribute("data-theme", _t);
       })();
     </script>
 
@@ -950,7 +1032,8 @@
       <span class="header-title">Painel de Cursos</span>
       <span class="header-spacer"></span>
       <span class="role-badge" id="roleBadge"></span>
-      <button onclick="sair()" class="header-btn" style="margin-left: 8px">
+      <button onclick="toggleTema()" class="header-btn" id="btnTema" style="margin-left: 8px; min-width: 96px">🌙 Escuro</button>
+      <button onclick="sair()" class="header-btn" style="margin-left: 4px">
         🚪 Sair
       </button>
     </div>
@@ -1288,6 +1371,13 @@
         ? "👨‍🏫 Professor"
         : "👨‍🎓 Aluno";
 
+      // Botão de tema — sincroniza texto com estado atual
+      (function () {
+        const t = localStorage.getItem("senai_tema") || "light";
+        const btn = document.getElementById("btnTema");
+        if (btn) btn.innerHTML = t === "dark" ? "☀️ Claro" : "🌙 Escuro";
+      })();
+
       // Mostrar controles de professor
       if (isProfessor) {
         document.getElementById("adminSection").style.display = "block";
@@ -1429,6 +1519,17 @@
         if (label) label.textContent = val ? "Visível" : "Oculto";
         // Recarrega para refletir mudança no card
         location.reload();
+      }
+
+      function toggleTema() {
+        const t =
+          document.documentElement.getAttribute("data-theme") === "dark"
+            ? "light"
+            : "dark";
+        document.documentElement.setAttribute("data-theme", t);
+        localStorage.setItem("senai_tema", t);
+        const btn = document.getElementById("btnTema");
+        if (btn) btn.innerHTML = t === "dark" ? "☀️ Claro" : "🌙 Escuro";
       }
 
       function sair() {
