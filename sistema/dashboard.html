@@ -2373,6 +2373,10 @@
       function _preencherCheckboxesAulas(aulasComMaterial) {
         const container = document.getElementById("mAulaCheckboxes");
         const sorted = [..._aulaLista].sort((a, b) => a.numero - b.numero);
+        if (!sorted.length) {
+          container.innerHTML = '<span style="font-size:12px;color:#aaa">Nenhuma aula cadastrada ainda.</span>';
+          return;
+        }
         container.innerHTML = sorted.map(a => {
           const checked = aulasComMaterial.includes(a.numero) ? "checked" : "";
           return `<label style="display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer">
@@ -2380,6 +2384,25 @@
             <span>Aula ${a.numero} — ${a.titulo}</span>
           </label>`;
         }).join("");
+      }
+
+      function _aulasComMaterialId(matId, fallbackNum) {
+        if (matId) {
+          const nums = _aulaLista
+            .filter(a => (a.materiais || []).some(mat => mat.id === matId))
+            .map(a => a.numero);
+          if (nums.length) return nums;
+        }
+        return fallbackNum ? [fallbackNum] : [];
+      }
+
+      function _mostrarCheckboxesNoModal(aulasAtivas) {
+        if (!_aulaLista.length) {
+          document.getElementById("mAulaNumField").style.display = "none";
+          return;
+        }
+        document.getElementById("mAulaNumField").style.display = "block";
+        _preencherCheckboxesAulas(aulasAtivas);
       }
 
       function abrirAddMatAula() {
@@ -2405,7 +2428,8 @@
         document.getElementById("mArquivo").value = m.arquivo || "";
         document.getElementById("mTipo").value = m.tipo || "";
         document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
-        document.getElementById("mAulaNumField").style.display = "none";
+        const aulaAtual = parseInt(document.getElementById("aulaNum").value) || 0;
+        _mostrarCheckboxesNoModal(_aulasComMaterialId(m.id, aulaAtual));
         document.getElementById("matAulaModal").style.display = "flex";
       }
 
@@ -2420,8 +2444,7 @@
         document.getElementById("mArquivo").value = m.arquivo || "";
         document.getElementById("mTipo").value = m.tipo || "";
         document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
-        document.getElementById("mAulaNumField").style.display = "block";
-        _preencherCheckboxesAulas([aulaNum]);
+        _mostrarCheckboxesNoModal(_aulasComMaterialId(m.id, aulaNum));
         document.getElementById("matAulaModal").style.display = "flex";
       }
 
@@ -2448,12 +2471,30 @@
 
         if (_matEditContext && _matEditContext.tempIdx !== undefined) {
           const existing = _aulaMatTemp[_matEditContext.tempIdx];
+          const matId = existing.id || crypto.randomUUID();
+          const aulaAtual = parseInt(document.getElementById("aulaNum").value) || existing.numero_aula || 0;
           _aulaMatTemp[_matEditContext.tempIdx] = {
-            id: existing.id || crypto.randomUUID(),
-            numero_aula: parseInt(document.getElementById("aulaNum").value) || existing.numero_aula,
+            id: matId,
+            numero_aula: aulaAtual,
             ...existing,
             ...m,
           };
+          // propaga para outras aulas em _aulaLista (exceto a aula do formulário atual)
+          if (_aulaLista.length) {
+            const aulasSelecionadas = Array.from(
+              document.querySelectorAll("#mAulaCheckboxes input[type=checkbox]:checked")
+            ).map(cb => parseInt(cb.value));
+            _aulaLista.forEach(a => {
+              if (a.numero !== aulaAtual)
+                a.materiais = a.materiais.filter(mat => mat.id !== matId);
+            });
+            aulasSelecionadas.filter(n => n !== aulaAtual).forEach(numAula => {
+              const aula = _aulaLista.find(a => a.numero === numAula);
+              if (aula) aula.materiais.push({ id: matId, numero_aula: numAula, ...existing, ...m });
+            });
+            if (_aulaCursoId)
+              sbPatch("curso", "id", _aulaCursoId, { materias: _aulaLista }).catch(() => {});
+          }
           renderAulaMatList();
           fecharAddMatAula();
         } else if (_matEditContext) {
