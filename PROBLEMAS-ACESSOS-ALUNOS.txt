@@ -1,6 +1,14 @@
 #Aluno:FLAVIA LAYANE DA SILVA SILVA 
-E-MAIL:OK-flavia_silva-silva@estudante.sesisenai.org.br
-SENHA->NAO ACESSA->QMSS5177
+E-MAIL:flavia_silva-silva@estudante.sesisenai.org.br
+SENHA->QMSS5177
+Problema: Acha o login, mas não acessa pela senha 
+====================================================
+Wagner - conferir
+
+Andre- solicitado e sem respostas, solicitar de novo.
+
+
+
 
 
 

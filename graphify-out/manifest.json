@@ -190,18 +190,13 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786120158.928459,
-    "ast_hash": "c954e2e8fed21bb172f9604a99ebb73f",
-    "semantic_hash": ""
-  },
-  "sistema/login.html": {
-    "mtime": 1786098994.4055066,
-    "ast_hash": "02560448c5100ee6995027864e7b6405",
+    "mtime": 1786128038.0531847,
+    "ast_hash": "4fe6e0896c0cf673f6471ec866d5ee58",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
-    "mtime": 1786068605.1900804,
-    "ast_hash": "228907f9114c984a84cca23bcf2cc4de",
+    "mtime": 1786128040.5375645,
+    "ast_hash": "50bb941f7b83c925dae9bfc79b935c3a",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.pdf": {
@@ -295,8 +290,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.html": {
-    "mtime": 1786121367.3082569,
-    "ast_hash": "a4ab94f356a7801c855c7eb655b43159",
+    "mtime": 1786127899.9095495,
+    "ast_hash": "4b4586875e3b80f1887d29f228a0e9f1",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.txt": {
@@ -350,8 +345,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/MEMBROS-EQUIPE-06-08-2026.html": {
-    "mtime": 1786069272.6209836,
-    "ast_hash": "814b37b783818829eaa058e444ff736a",
+    "mtime": 1786127257.849415,
+    "ast_hash": "05f7ff41613f6423357e48b7fb10c1fd",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/ASSUNTO-ADICIONAL.txt": {
@@ -437,6 +432,16 @@
   "CLAUDE.md": {
     "mtime": 1786120299.8084147,
     "ast_hash": "427747c93188abd902ae810c9809beca",
+    "semantic_hash": ""
+  },
+  "PROBLEMAS-ACESSOS-ALUNOS.txt": {
+    "mtime": 1786127011.924615,
+    "ast_hash": "a661d83a19a0dbb1976b36869dc66207",
+    "semantic_hash": ""
+  },
+  "sistema/index.html": {
+    "mtime": 1786098994.4055066,
+    "ast_hash": "02560448c5100ee6995027864e7b6405",
     "semantic_hash": ""
   }
 }
