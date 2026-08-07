@@ -434,6 +434,56 @@
       "norm_label": "honesty rules"
     },
     {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 10,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "professor-senai \u2014 Regras do Projeto",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_professor_senai_regras_do_projeto",
+      "community": 10,
+      "norm_label": "professor-senai \u2014 regras do projeto"
+    },
+    {
+      "label": "Commit e Push obrigat\u00f3rios",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "claude_commit_e_push_obrigat\u00f3rios",
+      "community": 10,
+      "norm_label": "commit e push obrigatorios"
+    },
+    {
+      "label": "Graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "claude_graphify",
+      "community": 10,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "Slides",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "claude_slides",
+      "community": 10,
+      "norm_label": "slides"
+    },
+    {
       "label": "2026-08-07-analise-ementas.md",
       "file_type": "document",
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
@@ -620,7 +670,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sistema_claude",
-      "community": 2,
+      "community": 3,
       "norm_label": "claude.md"
     },
     {
@@ -630,7 +680,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "community": 2,
+      "community": 3,
       "norm_label": "senai \u2014 projeto de curso: aprendizagem industrial"
     },
     {
@@ -640,7 +690,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "sistema_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
-      "community": 2,
+      "community": 3,
       "norm_label": "modulo educacao para o trabalho"
     },
     {
@@ -990,7 +1040,7 @@
       "source_location": "L285",
       "_origin": "ast",
       "id": "sistema_claude_regras_de_trabalho_claude",
-      "community": 2,
+      "community": 3,
       "norm_label": "regras de trabalho \u2014 claude"
     },
     {
@@ -1000,7 +1050,7 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "sistema_claude_commit_e_push_obrigat\u00f3rios",
-      "community": 2,
+      "community": 3,
       "norm_label": "\u2705 commit e push obrigatorios"
     },
     {
@@ -1010,7 +1060,7 @@
       "source_location": "L296",
       "_origin": "ast",
       "id": "sistema_claude_slides_devem_ter_no_m\u00ednimo_15_slides",
-      "community": 2,
+      "community": 3,
       "norm_label": "\u2705 slides devem ter no minimo 15 slides"
     },
     {
@@ -1468,12 +1518,52 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_professor_senai_regras_do_projeto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_professor_senai_regras_do_projeto",
+      "target": "claude_commit_e_push_obrigat\u00f3rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "claude_professor_senai_regras_do_projeto",
+      "target": "claude_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "claude_professor_senai_regras_do_projeto",
+      "target": "claude_slides",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_08_07_analise_ementas",
-      "target": "plans_2026_08_07_analise_ementas_analise_ementas_implementation_plan",
-      "confidence_score": 1.0
+      "target": "plans_2026_08_07_analise_ementas_analise_ementas_implementation_plan"
     },
     {
       "relation": "contains",
@@ -1481,9 +1571,9 @@
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_08_07_analise_ementas_analise_ementas_implementation_plan",
-      "target": "plans_2026_08_07_analise_ementas_global_constraints",
-      "confidence_score": 1.0
+      "target": "plans_2026_08_07_analise_ementas_global_constraints"
     },
     {
       "relation": "contains",
@@ -1491,9 +1581,9 @@
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
       "source_location": "L365",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_08_07_analise_ementas_analise_ementas_implementation_plan",
-      "target": "plans_2026_08_07_analise_ementas_self_review",
-      "confidence_score": 1.0
+      "target": "plans_2026_08_07_analise_ementas_self_review"
     },
     {
       "relation": "contains",
@@ -1501,9 +1591,9 @@
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_08_07_analise_ementas_global_constraints",
-      "target": "plans_2026_08_07_analise_ementas_task_1_css_estilos_do_bot\u00e3o_e_do_modal_de_an\u00e1lise",
-      "confidence_score": 1.0
+      "target": "plans_2026_08_07_analise_ementas_task_1_css_estilos_do_bot\u00e3o_e_do_modal_de_an\u00e1lise"
     },
     {
       "relation": "contains",
@@ -1511,9 +1601,9 @@
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_08_07_analise_ementas_global_constraints",
-      "target": "plans_2026_08_07_analise_ementas_task_2_html_bot\u00e3o_na_toolbar_e_modal_de_an\u00e1lise",
-      "confidence_score": 1.0
+      "target": "plans_2026_08_07_analise_ementas_task_2_html_bot\u00e3o_na_toolbar_e_modal_de_an\u00e1lise"
     },
     {
       "relation": "contains",
@@ -1521,9 +1611,9 @@
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_08_07_analise_ementas_global_constraints",
-      "target": "plans_2026_08_07_analise_ementas_task_3_javascript_dicion\u00e1rio_matching_e_fun\u00e7\u00f5es_de_abrir_fechar",
-      "confidence_score": 1.0
+      "target": "plans_2026_08_07_analise_ementas_task_3_javascript_dicion\u00e1rio_matching_e_fun\u00e7\u00f5es_de_abrir_fechar"
     },
     {
       "relation": "contains",
@@ -1531,9 +1621,9 @@
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
       "source_location": "L339",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_08_07_analise_ementas_global_constraints",
-      "target": "plans_2026_08_07_analise_ementas_task_4_commit_e_push",
-      "confidence_score": 1.0
+      "target": "plans_2026_08_07_analise_ementas_task_4_commit_e_push"
     },
     {
       "relation": "contains",
@@ -1541,9 +1631,9 @@
       "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design",
-      "target": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
-      "confidence_score": 1.0
+      "target": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas"
     },
     {
       "relation": "contains",
@@ -1551,9 +1641,9 @@
       "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
-      "target": "specs_2026_08_07_analise_ementas_design_arquivos_modificados",
-      "confidence_score": 1.0
+      "target": "specs_2026_08_07_analise_ementas_design_arquivos_modificados"
     },
     {
       "relation": "contains",
@@ -1561,9 +1651,9 @@
       "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
-      "target": "specs_2026_08_07_analise_ementas_design_contexto",
-      "confidence_score": 1.0
+      "target": "specs_2026_08_07_analise_ementas_design_contexto"
     },
     {
       "relation": "contains",
@@ -1571,9 +1661,9 @@
       "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
-      "target": "specs_2026_08_07_analise_ementas_design_n\u00e3o_est\u00e1_no_escopo",
-      "confidence_score": 1.0
+      "target": "specs_2026_08_07_analise_ementas_design_n\u00e3o_est\u00e1_no_escopo"
     },
     {
       "relation": "contains",
@@ -1581,9 +1671,9 @@
       "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
-      "target": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -1591,9 +1681,9 @@
       "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
-      "target": "specs_2026_08_07_analise_ementas_design_1_bot\u00e3o_analise_ementas",
-      "confidence_score": 1.0
+      "target": "specs_2026_08_07_analise_ementas_design_1_bot\u00e3o_analise_ementas"
     },
     {
       "relation": "contains",
@@ -1601,9 +1691,9 @@
       "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
-      "target": "specs_2026_08_07_analise_ementas_design_2_modal_ementaanalisemodal",
-      "confidence_score": 1.0
+      "target": "specs_2026_08_07_analise_ementas_design_2_modal_ementaanalisemodal"
     },
     {
       "relation": "contains",
@@ -1611,9 +1701,9 @@
       "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
-      "target": "specs_2026_08_07_analise_ementas_design_3_l\u00f3gica_de_matching",
-      "confidence_score": 1.0
+      "target": "specs_2026_08_07_analise_ementas_design_3_l\u00f3gica_de_matching"
     },
     {
       "relation": "contains",
@@ -1621,9 +1711,9 @@
       "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
-      "target": "specs_2026_08_07_analise_ementas_design_4_keywords_por_t\u00f3pico",
-      "confidence_score": 1.0
+      "target": "specs_2026_08_07_analise_ementas_design_4_keywords_por_t\u00f3pico"
     },
     {
       "relation": "contains",
@@ -2067,5 +2157,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "887981af81b85d8853eee787af449b5b460d1843"
+  "built_at_commit": "c530538668c3a28e4e10a19f1d16c42a77ca2c18"
 }

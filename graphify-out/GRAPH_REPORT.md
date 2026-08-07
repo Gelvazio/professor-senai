@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-07)
 
 ## Corpus Check
-- 8 files · ~92,338 words
+- 9 files · ~98,210 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 106 nodes · 100 edges · 10 communities
+- 111 nodes · 104 edges · 11 communities
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `887981af`
+- Built from commit: `c5305386`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,6 +24,7 @@
 - [[_COMMUNITY_Community 6|Community 6]]
 - [[_COMMUNITY_Community 8|Community 8]]
 - [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `/graphify` - 15 edges
@@ -43,7 +44,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (10 total, 0 thin omitted)
+## Communities (11 total, 0 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.13
@@ -54,12 +55,12 @@ Cohesion: 0.17
 Nodes (12): 1. O Impacto da Falta de Ética nos Ambientes de Trabalho, 2. Código de Ética Profissional, 3. Acidentes do Trabalho e Doenças Ocupacionais, 4. Medidas de Controle, 5. Riscos Ocupacionais, 6. Segurança do Trabalho, Ambientes Pedagógicos e Recursos, Capacidades Básicas (+4 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.15
-Nodes (12): Ambientes Pedagógicos e Recursos, Capacidades Básicas, Capacidades Socioemocionais, Carga Horária, ✅ Commit e Push obrigatórios, Eixo Estruturante BNCC / Competência Integradora, Ferramentas de Ensino, Módulo Educação para o Trabalho (+4 more)
+Cohesion: 0.29
+Nodes (7): Ambientes Pedagógicos e Recursos, Capacidades Básicas, Capacidades Socioemocionais, Carga Horária, Eixo Estruturante BNCC / Competência Integradora, Ferramentas de Ensino, Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação
 
 ### Community 3 - "Community 3"
-Cohesion: 0.40
-Nodes (5): Configuração Supabase, Controle de perfil (frontend), Estrutura `gabaritos` (coluna JSONB da tabela `curso`), Funções RPC disponíveis, Tabela `curso`
+Cohesion: 0.18
+Nodes (10): ✅ Commit e Push obrigatórios, Configuração Supabase, Controle de perfil (frontend), Estrutura `gabaritos` (coluna JSONB da tabela `curso`), Funções RPC disponíveis, Módulo Educação para o Trabalho, Regras de Trabalho — Claude, SENAI — Projeto de Curso: Aprendizagem Industrial (+2 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.12
@@ -81,21 +82,25 @@ Nodes (9): 1. Botão "Analise Ementas", 2. Modal `ementaAnaliseModal`, 3. Lógic
 Cohesion: 0.25
 Nodes (7): Analise Ementas — Implementation Plan, Global Constraints, Self-Review, Task 1: CSS — Estilos do botão e do modal de análise, Task 2: HTML — Botão na toolbar e modal de análise, Task 3: JavaScript — Dicionário, matching e funções de abrir/fechar, Task 4: Commit e push
 
+### Community 10 - "Community 10"
+Cohesion: 0.40
+Nodes (4): Commit e Push obrigatórios, Graphify, professor-senai — Regras do Projeto, Slides
+
 ## Knowledge Gaps
-- **82 isolated node(s):** `Overview`, `Fluxo Obrigatório`, `Regras`, `Ícones de Status`, `Modelo do Arquivo` (+77 more)
+- **85 isolated node(s):** `Overview`, `Fluxo Obrigatório`, `Regras`, `Ícones de Status`, `Modelo do Arquivo` (+80 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `SENAI — Projeto de Curso: Aprendizagem Industrial` connect `Community 2` to `Community 1`, `Community 3`?**
-  _High betweenness centrality (0.116) - this node is a cross-community bridge._
-- **Why does `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` connect `Community 2` to `Community 0`?**
-  _High betweenness centrality (0.108) - this node is a cross-community bridge._
+- **Why does `SENAI — Projeto de Curso: Aprendizagem Industrial` connect `Community 3` to `Community 1`, `Community 2`?**
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
+- **Why does `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` connect `Community 2` to `Community 0`, `Community 3`?**
+  _High betweenness centrality (0.098) - this node is a cross-community bridge._
 - **Why does `Conhecimentos` connect `Community 0` to `Community 2`?**
-  _High betweenness centrality (0.092) - this node is a cross-community bridge._
+  _High betweenness centrality (0.084) - this node is a cross-community bridge._
 - **What connects `Overview`, `Fluxo Obrigatório`, `Regras` to the rest of the system?**
-  _82 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _85 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**

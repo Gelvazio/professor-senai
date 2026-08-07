@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786100181.1950452,
-    "ast_hash": "c6666605ddaf046c32b61584d8f69279",
+    "mtime": 1786105282.3165238,
+    "ast_hash": "3cf4a10168188f3b3368e6c05b489ff8",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -190,8 +190,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786099538.0937667,
-    "ast_hash": "4b5e2bb0128f020fdbdd500f6714a08a",
+    "mtime": 1786119922.1617599,
+    "ast_hash": "313c622d8dee2d005e67b5d6da47a190",
     "semantic_hash": ""
   },
   "sistema/login.html": {
@@ -202,11 +202,6 @@
   "sistema/questionarios.html": {
     "mtime": 1786068605.1900804,
     "ast_hash": "228907f9114c984a84cca23bcf2cc4de",
-    "semantic_hash": ""
-  },
-  "materiais/Guia Pr\u00e1tico - etapas para elabora\u00e7\u00e3o do Plano de Ensino e SA (2).pdf": {
-    "mtime": 1785713728.7034986,
-    "ast_hash": "90b61cc90aa961ff63049cf3229c7f41",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.pdf": {
@@ -377,6 +372,71 @@
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html": {
     "mtime": 1786100307.8977907,
     "ast_hash": "874d00c95351de957a7088dfe7039467",
+    "semantic_hash": ""
+  },
+  "sistema/ORIENTACAO-GOOGLE-FORMS-API.html": {
+    "mtime": 1786100671.5602746,
+    "ast_hash": "2bf633a3fd7313f2651a78fa3f045e69",
+    "semantic_hash": ""
+  },
+  "Lan\u00e7amentoHorasSenai.txt": {
+    "mtime": 1786112837.6935432,
+    "ast_hash": "71faae04018dfa32e309592e7687aa56",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/Guia Pr\u00e1tico - etapas para elabora\u00e7\u00e3o do Plano de Ensino e SA (2).pdf": {
+    "mtime": 1785713728.7034986,
+    "ast_hash": "90b61cc90aa961ff63049cf3229c7f41",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/materiais-selma/1 Primeiro acesso e p\u00e1gina inicial do docente.pdf": {
+    "mtime": 1786113236.6386,
+    "ast_hash": "0da09e017b1dfb2dcdb951eca942d155",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/materiais-selma/1 Recurso Arquivo AVA.pdf": {
+    "mtime": 1786113141.8802059,
+    "ast_hash": "9bb5059bd21db3e2495026ed64dc31a8",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/materiais-selma/2 Atividade Tarefa - Realizando a corre\u00e7\u00e3o.pdf": {
+    "mtime": 1786113220.3418567,
+    "ast_hash": "1076e06bd1f83cf20d4fefad68a69ae8",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/materiais-selma/2 Recurso URL.pdf": {
+    "mtime": 1786113205.5950162,
+    "ast_hash": "1b11aa7c0a7f400f263df3ea18ff0f5d",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/materiais-selma/3 A Sala de aula virtual.pdf": {
+    "mtime": 1786113188.9491806,
+    "ast_hash": "d95d6d7c6e1830ec4ed5585f233c2b72",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/materiais-selma/3 Recurso P\u00e1gina.pdf": {
+    "mtime": 1786113134.8360736,
+    "ast_hash": "6416bcde1d9d1f9a42dc1fb5bd7f2836",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/materiais-selma/5 Auto inscri\u00e7\u00e3o em salas no AVA.pdf": {
+    "mtime": 1786113127.1008272,
+    "ast_hash": "2bbe9ac82b1717c84aada78f6872b928",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/materiais-selma/6 Importar notas do AVA para o SGN.pdf": {
+    "mtime": 1786113174.8509834,
+    "ast_hash": "668206edff6bcadfedd97321425404a0",
+    "semantic_hash": ""
+  },
+  "materiais-capacitacao/materiais-selma/Capacita\u00e7\u00e3o AVA - Docentes AI.pptx.pdf": {
+    "mtime": 1786113119.964098,
+    "ast_hash": "da9fa173f8dc2beda4694a1117610c0b",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1786119936.5851324,
+    "ast_hash": "daf9555759d19131f095ee4546242d4b",
     "semantic_hash": ""
   }
 }
