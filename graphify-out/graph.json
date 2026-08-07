@@ -857,7 +857,7 @@
       "label": "Estrutura `gabaritos` (coluna JSONB da tabela `curso`)",
       "file_type": "document",
       "source_file": "sistema/CLAUDE.md",
-      "source_location": "L332",
+      "source_location": "L331",
       "_origin": "ast",
       "id": "sistema_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
       "community": 3,
@@ -867,7 +867,7 @@
       "label": "Fun\u00e7\u00f5es RPC dispon\u00edveis",
       "file_type": "document",
       "source_file": "sistema/CLAUDE.md",
-      "source_location": "L347",
+      "source_location": "L346",
       "_origin": "ast",
       "id": "sistema_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
       "community": 3,
@@ -877,7 +877,7 @@
       "label": "Controle de perfil (frontend)",
       "file_type": "document",
       "source_file": "sistema/CLAUDE.md",
-      "source_location": "L354",
+      "source_location": "L353",
       "_origin": "ast",
       "id": "sistema_claude_controle_de_perfil_frontend",
       "community": 3,
@@ -891,9 +891,9 @@
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "documentacao_padrao_skill",
-      "target": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
-      "confidence_score": 1.0
+      "target": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o"
     },
     {
       "relation": "contains",
@@ -901,9 +901,9 @@
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
-      "target": "documentacao_padrao_skill_fluxo_obrigat\u00f3rio",
-      "confidence_score": 1.0
+      "target": "documentacao_padrao_skill_fluxo_obrigat\u00f3rio"
     },
     {
       "relation": "contains",
@@ -911,9 +911,9 @@
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
-      "target": "documentacao_padrao_skill_modelo_do_arquivo",
-      "confidence_score": 1.0
+      "target": "documentacao_padrao_skill_modelo_do_arquivo"
     },
     {
       "relation": "contains",
@@ -921,9 +921,9 @@
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
-      "target": "documentacao_padrao_skill_overview",
-      "confidence_score": 1.0
+      "target": "documentacao_padrao_skill_overview"
     },
     {
       "relation": "contains",
@@ -931,9 +931,9 @@
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
-      "target": "documentacao_padrao_skill_red_flags_pare_e_corrija",
-      "confidence_score": 1.0
+      "target": "documentacao_padrao_skill_red_flags_pare_e_corrija"
     },
     {
       "relation": "contains",
@@ -941,9 +941,9 @@
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
-      "target": "documentacao_padrao_skill_regras",
-      "confidence_score": 1.0
+      "target": "documentacao_padrao_skill_regras"
     },
     {
       "relation": "contains",
@@ -951,9 +951,9 @@
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
-      "target": "documentacao_padrao_skill_regras_dos_passos",
-      "confidence_score": 1.0
+      "target": "documentacao_padrao_skill_regras_dos_passos"
     },
     {
       "relation": "contains",
@@ -961,9 +961,9 @@
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "documentacao_padrao_skill_documenta\u00e7\u00e3o_padr\u00e3o",
-      "target": "documentacao_padrao_skill_\u00edcones_de_status",
-      "confidence_score": 1.0
+      "target": "documentacao_padrao_skill_\u00edcones_de_status"
     },
     {
       "relation": "contains",
@@ -971,9 +971,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill",
-      "target": "graphify_skill_graphify",
-      "confidence_score": 1.0
+      "target": "graphify_skill_graphify"
     },
     {
       "relation": "contains",
@@ -981,9 +981,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1000",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_for_cluster_only",
-      "confidence_score": 1.0
+      "target": "graphify_skill_for_cluster_only"
     },
     {
       "relation": "contains",
@@ -991,9 +991,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1383",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_for_git_commit_hook",
-      "confidence_score": 1.0
+      "target": "graphify_skill_for_git_commit_hook"
     },
     {
       "relation": "contains",
@@ -1001,9 +1001,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1327",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_for_graphify_add",
-      "confidence_score": 1.0
+      "target": "graphify_skill_for_graphify_add"
     },
     {
       "relation": "contains",
@@ -1011,9 +1011,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_for_graphify_explain",
-      "confidence_score": 1.0
+      "target": "graphify_skill_for_graphify_explain"
     },
     {
       "relation": "contains",
@@ -1021,9 +1021,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_for_graphify_path",
-      "confidence_score": 1.0
+      "target": "graphify_skill_for_graphify_path"
     },
     {
       "relation": "contains",
@@ -1031,9 +1031,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1049",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_for_graphify_query",
-      "confidence_score": 1.0
+      "target": "graphify_skill_for_graphify_query"
     },
     {
       "relation": "contains",
@@ -1041,9 +1041,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1399",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_for_native_claude_md_integration",
-      "confidence_score": 1.0
+      "target": "graphify_skill_for_native_claude_md_integration"
     },
     {
       "relation": "contains",
@@ -1051,9 +1051,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L852",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_for_update_incremental_re_extraction",
-      "confidence_score": 1.0
+      "target": "graphify_skill_for_update_incremental_re_extraction"
     },
     {
       "relation": "contains",
@@ -1061,9 +1061,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1362",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_for_watch",
-      "confidence_score": 1.0
+      "target": "graphify_skill_for_watch"
     },
     {
       "relation": "contains",
@@ -1071,9 +1071,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1428",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_honesty_rules",
-      "confidence_score": 1.0
+      "target": "graphify_skill_honesty_rules"
     },
     {
       "relation": "contains",
@@ -1081,9 +1081,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1415",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_troubleshooting",
-      "confidence_score": 1.0
+      "target": "graphify_skill_troubleshooting"
     },
     {
       "relation": "contains",
@@ -1091,9 +1091,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_usage",
-      "confidence_score": 1.0
+      "target": "graphify_skill_usage"
     },
     {
       "relation": "contains",
@@ -1101,9 +1101,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_what_graphify_is_for",
-      "confidence_score": 1.0
+      "target": "graphify_skill_what_graphify_is_for"
     },
     {
       "relation": "contains",
@@ -1111,9 +1111,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_graphify",
-      "target": "graphify_skill_what_you_must_do_when_invoked",
-      "confidence_score": 1.0
+      "target": "graphify_skill_what_you_must_do_when_invoked"
     },
     {
       "relation": "contains",
@@ -1121,9 +1121,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_1_ensure_graphify_is_installed",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_1_ensure_graphify_is_installed"
     },
     {
       "relation": "contains",
@@ -1131,9 +1131,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_2_5_transcribe_video_audio_files_only_if_video_files_detected"
     },
     {
       "relation": "contains",
@@ -1141,9 +1141,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_2_detect_files",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_2_detect_files"
     },
     {
       "relation": "contains",
@@ -1151,9 +1151,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_3_extract_entities_and_relationships",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_3_extract_entities_and_relationships"
     },
     {
       "relation": "contains",
@@ -1161,9 +1161,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L485",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs"
     },
     {
       "relation": "contains",
@@ -1171,9 +1171,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L537",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_5_label_communities",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_5_label_communities"
     },
     {
       "relation": "contains",
@@ -1181,9 +1181,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L579",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_6_generate_obsidian_vault_opt_in_html"
     },
     {
       "relation": "contains",
@@ -1191,9 +1191,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L647",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag"
     },
     {
       "relation": "contains",
@@ -1201,9 +1201,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L690",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_7b_svg_export_only_if_svg_flag",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_7b_svg_export_only_if_svg_flag"
     },
     {
       "relation": "contains",
@@ -1211,9 +1211,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L714",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_7c_graphml_export_only_if_graphml_flag",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_7c_graphml_export_only_if_graphml_flag"
     },
     {
       "relation": "contains",
@@ -1221,9 +1221,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L736",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_7d_mcp_server_only_if_mcp_flag",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_7d_mcp_server_only_if_mcp_flag"
     },
     {
       "relation": "contains",
@@ -1231,9 +1231,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L756",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_8_token_reduction_benchmark_only_if_total_words_5000",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_8_token_reduction_benchmark_only_if_total_words_5000"
     },
     {
       "relation": "contains",
@@ -1241,9 +1241,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L778",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_what_you_must_do_when_invoked",
-      "target": "graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
-      "confidence_score": 1.0
+      "target": "graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report"
     },
     {
       "relation": "contains",
@@ -1251,9 +1251,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L212",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_step_3_extract_entities_and_relationships",
-      "target": "graphify_skill_part_a_structural_extraction_for_code_files",
-      "confidence_score": 1.0
+      "target": "graphify_skill_part_a_structural_extraction_for_code_files"
     },
     {
       "relation": "contains",
@@ -1261,9 +1261,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L250",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_step_3_extract_entities_and_relationships",
-      "target": "graphify_skill_part_b_semantic_extraction_parallel_subagents",
-      "confidence_score": 1.0
+      "target": "graphify_skill_part_b_semantic_extraction_parallel_subagents"
     },
     {
       "relation": "contains",
@@ -1271,9 +1271,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L449",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_step_3_extract_entities_and_relationships",
-      "target": "graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
-      "confidence_score": 1.0
+      "target": "graphify_skill_part_c_merge_ast_semantic_into_final_extraction"
     },
     {
       "relation": "contains",
@@ -1281,9 +1281,9 @@
       "source_file": ".claude/skills/graphify/SKILL.md",
       "source_location": "L1417",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_skill_troubleshooting",
-      "target": "graphify_skill_powershell_5_1_vertical_scrolling_stops_working",
-      "confidence_score": 1.0
+      "target": "graphify_skill_powershell_5_1_vertical_scrolling_stops_working"
     },
     {
       "relation": "contains",
@@ -1727,5 +1727,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3cd45e9cfb395c06d767381f5e3ee326ddd6d26d"
+  "built_at_commit": "0e0542fcb7f987c98b0d017504ee54a7b96dcf9b"
 }
