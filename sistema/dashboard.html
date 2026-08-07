@@ -1874,8 +1874,20 @@
           fecharCRUD();
           fecharAulasModal();
           fecharAddMatAula();
+          fecharModalIframe();
         }
       });
+
+      function abrirModalIframe(url, titulo) {
+        document.getElementById("modalIframeTitulo").textContent = titulo || "Conteúdo";
+        document.getElementById("modalIframeEl").src = url;
+        document.getElementById("modalIframe").style.display = "flex";
+      }
+
+      function fecharModalIframe() {
+        document.getElementById("modalIframe").style.display = "none";
+        document.getElementById("modalIframeEl").src = "";
+      }
 
       // ── Modal de Aulas ──────────────────────────────────────────
       let _aulaCursoId = null;
@@ -1957,9 +1969,11 @@
                 const bloqueado = !isProfessor && (a.visivel !== 1 || m.visivel === 0);
                 const btnAcessar = bloqueado
                   ? `<button class="btn-mat-acessar btn-mat-bloqueado" onclick="conteudoBloqueado()">🔒 Acessar</button>`
-                  : temLink
-                    ? `<a class="btn-mat-acessar" href="${m.arquivo}" target="_blank">Acessar ↗</a>`
-                    : `<span class="btn-mat-acessar btn-mat-em-breve">Em breve</span>`;
+                  : m.tipo === "membros"
+                    ? `<button class="btn-mat-acessar" onclick="abrirModalIframe('${m.arquivo}','${m.nome}')">👥 Ver Equipes</button>`
+                    : temLink
+                      ? `<a class="btn-mat-acessar" href="${m.arquivo}" target="_blank">Acessar ↗</a>`
+                      : `<span class="btn-mat-acessar btn-mat-em-breve">Em breve</span>`;
                 const btnEditar = isProfessor
                   ? `<button class="btn-mat-editar" onclick="event.stopPropagation();editarMatAula(${a.numero},${i})" title="Editar material">✏️</button>`
                   : '';
@@ -2418,6 +2432,17 @@
         }
       }
     </script>
+
+    <!-- Modal Iframe (membros, conteúdo embutido) -->
+    <div class="crud-backdrop" id="modalIframe" style="display:none; z-index:1200">
+      <div class="crud-modal" style="max-width:1000px; height:90vh; display:flex; flex-direction:column">
+        <div class="crud-modal-head">
+          <h3 id="modalIframeTitulo">Conteúdo</h3>
+          <button class="crud-btn-fechar" onclick="fecharModalIframe()">✕</button>
+        </div>
+        <iframe id="modalIframeEl" style="flex:1; border:none; width:100%; border-radius:0 0 12px 12px" src=""></iframe>
+      </div>
+    </div>
 
     <!-- Modal simples para editar/adicionar curso -->
     <div class="crud-backdrop" id="modalCursoForm" style="display:none">
