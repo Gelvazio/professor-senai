@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786068001.8350291,
-    "ast_hash": "6710147a6d64fbb616a01ae2925b2662",
+    "mtime": 1786069012.912061,
+    "ast_hash": "fd0d01d328edb1a43d46a780b8f3ff49",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786068652.3679645,
-    "ast_hash": "e1180834c016a6c4fcdc670d9f2598bb",
+    "mtime": 1786097796.128713,
+    "ast_hash": "b50f53de9c6987523db14abcf3905fa0",
     "semantic_hash": ""
   },
   "sistema/login.html": {
@@ -362,6 +362,11 @@
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/RECUPERACAO_AVALIACAO_OBJETIVA.html": {
     "mtime": 1786068148.9102323,
     "ast_hash": "a09195cb6ddf7cc53153dec9008df8ef",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/MEMBROS-EQUIPE-06-08-2026.html": {
+    "mtime": 1786069272.6209836,
+    "ast_hash": "814b37b783818829eaa058e444ff736a",
     "semantic_hash": ""
   }
 }
