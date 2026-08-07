@@ -51,6 +51,27 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;height
 .dots{display:flex;gap:5px;align-items:center}
 .dot{width:7px;height:7px;border-radius:50%;background:#ccc;cursor:pointer;border:none;padding:0;transition:.2s}
 .dot.on{background:#004384;transform:scale(1.35)}
+.slide-secao{background:linear-gradient(135deg,#f7941d 0%,#e07b00 100%);color:#fff;align-items:center;text-align:center;gap:12px}
+.slide-secao .capa-badge{background:rgba(255,255,255,.2)}
+.capa-badge{background:rgba(255,255,255,.15);font-size:11px;padding:3px 14px;border-radius:20px;letter-spacing:1px;text-transform:uppercase}
+.capa-icon{font-size:50px;line-height:1}
+.capa-titulo{font-size:30px;font-weight:700;line-height:1.25;max-width:680px}
+.capa-sub{font-size:14px;opacity:.8;margin-top:4px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+.card{background:#f0f4ff;border-left:4px solid #004384;border-radius:0 8px 8px 0;padding:10px 12px}
+.card .c-titulo{font-size:12px;font-weight:700;color:#004384;margin-bottom:4px}
+.card .c-texto{font-size:11px;color:#444;line-height:1.4}
+.card-orange{border-left-color:#f7941d}
+.card-green{background:#f0fff4;border-left-color:#27ae60}
+.card-red{background:#fff0f0;border-left-color:#e74c3c}
+.sec-badge{display:inline-flex;align-items:center;gap:8px;background:#004384;color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:12px;align-self:flex-start}
+.sec-num{background:#f7941d;color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900}
+.tabela{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px}
+.tabela th{background:#004384;color:#fff;padding:7px 10px;text-align:left}
+.tabela td{padding:6px 10px;border-bottom:1px solid #eee;color:#333}
+.tabela tr:nth-child(even) td{background:#f8f9ff}
 @media print {
   @page { margin: 8mm; size: A4 landscape; }
   body { height: auto !important; overflow: visible !important; background: #fff !important; }
@@ -83,6 +104,153 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;height
       <div class="capa-icon">📋</div>
       <h1 class="capa-titulo">Textos Técnicos<br>e Revisão Geral</h1>
     </div>
+
+    <!-- SLIDES IMPORTADOS DE AULA 02 — Comunicação: Textos no Ambiente de Trabalho -->
+    <div class="slide slide-secao">
+      <div class="capa-badge">Conhecimento 7 · Ementa UC1</div>
+      <div class="capa-icon">📄</div>
+      <h1 class="capa-titulo">Comunicação — Textos no Ambiente de Trabalho</h1>
+      <div class="capa-sub">7.1 Textos técnicos &nbsp;·&nbsp; 7.2 Relatórios &nbsp;·&nbsp; 7.3 Atas &nbsp;·&nbsp; 7.4 Memorandos &nbsp;·&nbsp; 7.5 Resumos</div>
+    </div>
+
+    <div class="slide">
+      <div class="sec-badge"><span class="sec-num">7.1</span> IDENTIFICAÇÃO DE TEXTOS TÉCNICOS</div>
+      <h2 class="slide-titulo">Textos Técnicos no Trabalho</h2>
+      <ul class="pontos">
+        <li>Textos técnicos são documentos escritos com linguagem <strong>objetiva, padronizada e formal</strong>, voltados à comunicação profissional</li>
+        <li>Cada tipo de texto tem uma <strong>estrutura e finalidade específicas</strong> — usar o tipo errado compromete a comunicação</li>
+        <li><strong>Características em comum:</strong>
+          <ul>
+            <li class="sub">Linguagem clara, direta e impessoal</li>
+            <li class="sub">Estrutura padronizada (cabeçalho, corpo, assinatura)</li>
+            <li class="sub">Objetivo definido: informar, solicitar, registrar ou resumir</li>
+            <li class="sub">Normalmente seguem normas institucionais ou da ABNT</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="grid4" style="margin-top:10px">
+        <div class="card"><div class="c-titulo">📊 Relatório</div><div class="c-texto">Descreve resultados, análises e recomendações</div></div>
+        <div class="card card-orange"><div class="c-titulo">📋 Ata</div><div class="c-texto">Registra o que aconteceu em uma reunião</div></div>
+        <div class="card card-green"><div class="c-titulo">📨 Memorando</div><div class="c-texto">Comunicação interna rápida entre setores</div></div>
+        <div class="card"><div class="c-titulo">📝 Resumo</div><div class="c-texto">Síntese das ideias principais de um texto</div></div>
+      </div>
+      <div class="nota-rodape">Ementa 7.1 — Identificação de textos técnicos</div>
+    </div>
+
+    <div class="slide">
+      <div class="sec-badge"><span class="sec-num">7.2</span> RELATÓRIO</div>
+      <h2 class="slide-titulo">Relatório</h2>
+      <div class="grid2">
+        <div>
+          <ul class="pontos">
+            <li>Documento que <strong>descreve fatos, analisa dados e apresenta conclusões</strong> sobre uma atividade ou período</li>
+            <li>Pode ser periódico (mensal, semanal) ou de ocorrência (incidente, visita, projeto)</li>
+            <li><strong>Estrutura básica:</strong>
+              <ul>
+                <li class="sub">Cabeçalho: empresa, setor, data, autor</li>
+                <li class="sub">Introdução: objetivo e contexto</li>
+                <li class="sub">Desenvolvimento: fatos, dados e análises</li>
+                <li class="sub">Conclusão: resultado e recomendações</li>
+                <li class="sub">Assinatura: responsável pelo documento</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="card card-green" style="margin-bottom:8px">
+            <div class="c-titulo">✅ Boas práticas</div>
+            <div class="c-texto">Use dados concretos. Evite opiniões pessoais sem embasamento. Seja objetivo — relatório não é redação.</div>
+          </div>
+          <div class="card card-red">
+            <div class="c-titulo">❌ Erros comuns</div>
+            <div class="c-texto">Linguagem informal, ausência de datas, dados sem fonte, conclusão vaga: "tudo correu bem".</div>
+          </div>
+        </div>
+      </div>
+      <div class="nota-rodape">Ementa 7.2 — Relatórios</div>
+    </div>
+
+    <div class="slide">
+      <div class="sec-badge"><span class="sec-num">7.3</span> ATA</div>
+      <h2 class="slide-titulo">Ata de Reunião</h2>
+      <ul class="pontos">
+        <li>A ata é o <strong>registro oficial do que foi discutido e decidido</strong> em uma reunião</li>
+        <li>Tem valor legal e serve como <strong>prova documental</strong> de decisões tomadas pelo grupo</li>
+        <li><strong>Elementos obrigatórios de uma ata:</strong>
+          <ul>
+            <li class="sub">Data, hora e local da reunião</li>
+            <li class="sub">Nome dos presentes (e ausentes justificados)</li>
+            <li class="sub">Pauta: assuntos tratados</li>
+            <li class="sub">Registro das discussões e decisões tomadas</li>
+            <li class="sub">Próximos passos: responsáveis e prazos</li>
+            <li class="sub">Assinatura do secretário e dos presentes</li>
+          </ul>
+        </li>
+        <li><strong>Estilo:</strong> linguagem impessoal, tempo verbal no passado, frases curtas e objetivas</li>
+        <li>Deve ser aprovada na <strong>reunião seguinte</strong> e arquivada formalmente</li>
+      </ul>
+      <div class="nota-rodape">Ementa 7.3 — Atas</div>
+    </div>
+
+    <div class="slide">
+      <div class="sec-badge"><span class="sec-num">7.4</span> MEMORANDO</div>
+      <h2 class="slide-titulo">Memorando</h2>
+      <div class="grid2">
+        <div>
+          <ul class="pontos">
+            <li>O memorando (ou memo) é a <strong>comunicação interna</strong> entre setores ou colaboradores da mesma empresa</li>
+            <li>É ágil e direto — substitui o e-mail formal em comunicações internas rápidas</li>
+            <li><strong>Estrutura do memorando:</strong>
+              <ul>
+                <li class="sub">PARA: destinatário (nome e cargo)</li>
+                <li class="sub">DE: remetente (nome e cargo)</li>
+                <li class="sub">DATA: dia/mês/ano</li>
+                <li class="sub">ASSUNTO: tema em poucas palavras</li>
+                <li class="sub">CORPO: mensagem objetiva</li>
+                <li class="sub">ASSINATURA: do remetente</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="card card-orange" style="margin-bottom:8px">
+            <div class="c-titulo">📌 Quando usar</div>
+            <div class="c-texto">Solicitações internas, avisos de procedimentos, comunicação entre departamentos, convocações para reunião.</div>
+          </div>
+          <div class="card card-red">
+            <div class="c-titulo">⚠️ Atenção</div>
+            <div class="c-texto">Memorando é apenas interno. Para comunicação externa (clientes, fornecedores), use ofício ou carta comercial.</div>
+          </div>
+        </div>
+      </div>
+      <div class="nota-rodape">Ementa 7.4 — Memorandos</div>
+    </div>
+
+    <div class="slide">
+      <div class="sec-badge"><span class="sec-num">7.5</span> RESUMO</div>
+      <h2 class="slide-titulo">Resumo</h2>
+      <ul class="pontos">
+        <li>Resumo é a <strong>síntese das ideias principais</strong> de um texto, mantendo o sentido original com menos palavras</li>
+        <li>Não contém opiniões pessoais — apenas o conteúdo do texto original</li>
+        <li><strong>Tipos de resumo:</strong>
+          <ul>
+            <li class="sub">Resumo indicativo: informa sobre o que trata o texto (não dispensa a leitura)</li>
+            <li class="sub">Resumo informativo: apresenta as principais ideias e conclusões (dispensa a leitura para fins gerais)</li>
+            <li class="sub">Resumo crítico: inclui análise e avaliação do conteúdo (resenha)</li>
+          </ul>
+        </li>
+        <li><strong>Como fazer um bom resumo:</strong>
+          <ul>
+            <li class="sub">Leia o texto completo antes de começar</li>
+            <li class="sub">Identifique a ideia central de cada parágrafo</li>
+            <li class="sub">Reescreva com suas palavras, sem copiar</li>
+            <li class="sub">Verifique se o resumo faz sentido sem o texto original</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nota-rodape">Ementa 7.5 — Resumos</div>
+    </div>
+    <!-- FIM DOS SLIDES IMPORTADOS -->
 
     <div class="slide">
       <h2 class="slide-titulo">O que são Textos Técnicos?</h2>
