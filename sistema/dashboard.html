@@ -2490,7 +2490,8 @@
             });
             aulasSelecionadas.filter(n => n !== aulaAtual).forEach(numAula => {
               const aula = _aulaLista.find(a => a.numero === numAula);
-              if (aula) aula.materiais.push({ id: matId, numero_aula: numAula, ...existing, ...m });
+              if (aula && !aula.materiais.some(mat => mat.id === matId))
+                aula.materiais.push({ id: matId, numero_aula: numAula, ...existing, ...m });
             });
             if (_aulaCursoId)
               sbPatch("curso", "id", _aulaCursoId, { materias: _aulaLista }).catch(() => {});
@@ -2518,7 +2519,8 @@
           });
           aulasSelecionadas.forEach(numAula => {
             const aula = _aulaLista.find(a => a.numero === numAula);
-            if (aula) aula.materiais.push(materialAtualizado(numAula));
+            if (aula && !aula.materiais.some(mat => mat.id === matId))
+              aula.materiais.push(materialAtualizado(numAula));
           });
 
           fecharAddMatAula();
@@ -2531,8 +2533,13 @@
             setAulasMsg("❌ " + e.message, "err");
           }
         } else {
+          const novoId = crypto.randomUUID();
+          if (_aulaMatTemp.some(mat => mat.id === novoId)) {
+            alert("Erro interno: ID duplicado gerado. Tente novamente.");
+            return;
+          }
           _aulaMatTemp.push({
-            id: crypto.randomUUID(),
+            id: novoId,
             numero_aula: parseInt(document.getElementById("aulaNum").value) || 0,
             ...m,
           });
