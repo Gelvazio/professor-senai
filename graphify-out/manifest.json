@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786056897.766943,
-    "ast_hash": "0413493d8d0f7d78e5129a458e81df4d",
+    "mtime": 1786065726.3702788,
+    "ast_hash": "cbae86d5f227746185c34fabe9b74d57",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -300,8 +300,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786065661.0674286,
-    "ast_hash": "e0d9e95e1b942eb352484315d679dcbb",
+    "mtime": 1786065782.4828386,
+    "ast_hash": "f5caf9dc7a5909e4ae629475f3b91b14",
     "semantic_hash": ""
   },
   "sistema/login.html": {
@@ -352,6 +352,11 @@
   "educacao.html": {
     "mtime": 1786057444.0261803,
     "ast_hash": "48b3f72e8b6a6f7cbba3ac30d1e6d367",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA 04 - 06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.html": {
+    "mtime": 1786065708.4357824,
+    "ast_hash": "5b6e0f79efcfada52ddcac1df54394a7",
     "semantic_hash": ""
   }
 }

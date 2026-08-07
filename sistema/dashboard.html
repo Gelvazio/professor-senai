@@ -657,11 +657,12 @@
       }
       .aula-acc-header.ativa .aula-acc-chevron { color: #fff; transform: rotate(180deg); }
       .aula-acc-body {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height .45s cubic-bezier(0.4, 0, 0.2, 1);
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows .45s cubic-bezier(0.4, 0, 0.2, 1);
       }
-      .aula-acc-body.open { max-height: 1200px; }
+      .aula-acc-body.open { grid-template-rows: 1fr; }
+      .aula-acc-body-inner { overflow: hidden; min-height: 0; }
       .aula-mat-row {
         display: flex; align-items: center; gap: 12px;
         padding: 10px 16px 10px 54px; border-bottom: 1px solid #f4f4f4; background: #fff;
@@ -1920,7 +1921,7 @@
               <div class="aula-acc-chevron" id="acc-chv-${a.numero}">▾</div>
             </div>
             <div class="aula-acc-body" id="acc-body-${a.numero}">
-              ${matsHtml}
+              <div class="aula-acc-body-inner">${matsHtml}</div>
             </div>
           </div>`;
         }).join("");
