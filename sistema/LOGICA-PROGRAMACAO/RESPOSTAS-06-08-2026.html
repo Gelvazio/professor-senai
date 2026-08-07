@@ -99,6 +99,16 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
 .lock-icon{font-size:46px;line-height:1;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
 .lock-msg{font-size:15px;font-weight:700;color:#e6edf3;margin-top:2px}
 .lock-sub{font-size:12px;color:#8b949e;text-align:center;max-width:280px;line-height:1.6}
+
+/* ── Tema Escuro ── */
+[data-theme="dark"] body{background:#0e1117}
+[data-theme="dark"] .page-title{color:#e0e3e8}
+[data-theme="dark"] .page-sub{color:#8b919e}
+[data-theme="dark"] .item{background:#1c1e26;border-color:#2c2e38}
+[data-theme="dark"] .item:hover{box-shadow:0 4px 16px rgba(0,80,200,.2);border-color:#3a5080}
+[data-theme="dark"] .item-name{color:#e0e3e8}
+[data-theme="dark"] .enunciado{background:#141620;border-bottom-color:#2c2e38;color:#c0c6d0}
+[data-theme="dark"] .modal{background:#1c1e26}
 </style>
 </head>
 <body>
@@ -144,6 +154,7 @@ pre{font-family:'Courier New',Consolas,'Fira Code',monospace;font-size:13px;line
 </div>
 
 <script>
+(function(){var t=localStorage.getItem('senai_tema')||'light';document.documentElement.setAttribute('data-theme',t)})();
 // ── Dados das 30 questões ────────────────────────────────────────────────────
 const questoes = [
 {nome:'Reajuste Salarial',
