@@ -305,14 +305,14 @@
           const cursoParam =
             new URLSearchParams(location.search).get("curso") || "uc1";
           const r = await fetch(
-            `${SUPABASE_URL}/rest/v1/curso?select=id,descricaocurso,materias&codigo=eq.${encodeURIComponent(cursoParam)}&limit=1`,
+            `${SUPABASE_URL}/rest/v1/curso?select=id,nome_completo,materias&codigo=eq.${encodeURIComponent(cursoParam)}&limit=1`,
             { headers: { apikey: SUPABASE_KEY } },
           );
           const rows = await r.json();
           if (!Array.isArray(rows) || rows.length === 0)
             throw new Error("sem dados");
           cursoId = rows[0].id;
-          dados = { curso: rows[0].descricaocurso, aulas: rows[0].materias };
+          dados = { curso: rows[0].nome_completo, aulas: rows[0].materias };
         } catch {
           document.getElementById("grid").innerHTML =
             '<p style="color:#d32f2f;font-size:14px">Erro ao carregar dados do Supabase</p>';
@@ -322,8 +322,9 @@
         const aulas = dados.aulas || [];
 
         // Injeta materiais locais na Aula 04
-        const aula04 = aulas.find((a) => a.numero === 4);
+        const aula04 = aulas.find((a) => Number(a.numero) === 4);
         if (aula04) {
+          if (!Array.isArray(aula04.materiais)) aula04.materiais = [];
           if (!aula04.materiais.some((m) => m.tipo === "atividade")) {
             aula04.materiais.push({
               nome: "Atividade em Equipes",
@@ -345,7 +346,7 @@
         }
 
         todasAulas = aulas;
-        const visiveis = aulas.filter((a) => a.visivel === 1).length;
+        const visiveis = aulas.filter((a) => Number(a.visivel) === 1).length;
 
         // Header
         document.getElementById("headerTitle").textContent =
@@ -366,14 +367,14 @@
         grid.innerHTML = "";
 
         aulas.forEach((aula) => {
-          const disponivel = aula.visivel === 1;
+          const disponivel = aulNumber(a.visivel) === 1;
           const card = document.createElement("div");
           card.className =
             "card " + (disponivel ? "card-available" : "card-locked");
 
           const materiaisHTML = disponivel
             ? aula.materiais
-                .filter((m) => m.visivel !== 0)
+                .filter((m) => Number(m.visivel) !== 0)
                 .map((m) => {
                   if (m.tipo === "membros") {
                     return `<div class="material-row">
@@ -477,7 +478,7 @@
           document.getElementById("modalTitulo").textContent = aula.titulo;
           const list = document.getElementById("modalList");
           list.innerHTML = aula.materiais
-            .filter((m) => m.visivel !== 0)
+            .filter((m) => Number(m.visivel) !== 0)
             .map((m) => {
               if (m.tipo === "membros") {
                 return `<div class="modal-material-row">
@@ -602,7 +603,7 @@
         document.getElementById("crudTitulo").value = aula.titulo || "";
         document.getElementById("crudData").value = aula.data || "";
         document.getElementById("crudDia").value = aula.diaSemana || "";
-        document.getElementById("crudVisivel").checked = aula.visivel === 1;
+        document.getElementById("crudVisivel").checked = aulNumber(a.visivel) === 1;
         document.getElementById("crudBtnExcluir").style.display = "block";
         materiaisTemp = JSON.parse(JSON.stringify(aula.materiais || []));
         renderMatList();

@@ -1179,6 +1179,14 @@
           <button class="btn-novo" onclick="mostrarFormCRUD()">➕ Novo</button>
           <span class="crud-msg" id="crudMsg"></span>
         </div>
+        <!-- Filtro de curso (só para Matérias) -->
+        <div id="crudFiltroCurso" style="display:none;padding:10px 20px;border-bottom:1px solid #e8eaed;background:#f8f9fa">
+          <label style="font-size:12px;font-weight:700;color:#444;display:block;margin-bottom:5px">Selecione o Curso</label>
+          <select id="filtroCursoMateria" class="crud-input" style="max-width:420px"
+            onchange="filtrarMateriasPorCurso(this.value)">
+            <option value="">-- selecione um curso --</option>
+          </select>
+        </div>
         <div class="crud-form-area" id="crudFormArea" style="display: none">
           <div class="crud-form" id="crudForm"></div>
           <div class="crud-form-btns">
@@ -1564,13 +1572,76 @@
             "curso",
             "select=id,nome_completo&order=nome_completo",
           );
-        await listarCRUD();
+
+        const filtroCursoDiv = document.getElementById("crudFiltroCurso");
+        if (entidade === "materia") {
+          filtroCursoDiv.style.display = "block";
+          const sel = document.getElementById("filtroCursoMateria");
+          sel.innerHTML = '<option value="">-- selecione um curso --</option>' +
+            cacheCurso.map(c => `<option value="${c.id}">${c.nome_completo}</option>`).join("");
+          sel.value = "";
+          // mostra tabela vazia aguardando seleção
+          document.getElementById("crudThead").innerHTML =
+            "<tr><th>ID</th><th>Nome</th><th>Ativo</th><th>Ações</th></tr>";
+          document.getElementById("crudTbody").innerHTML = "";
+          document.getElementById("crudVazio").style.display = "block";
+          document.getElementById("crudVazio").textContent = "Selecione um curso para listar as matérias.";
+          setMsg("", "");
+        } else {
+          filtroCursoDiv.style.display = "none";
+          await listarCRUD();
+        }
+      }
+
+      async function filtrarMateriasPorCurso(cursoid) {
+        if (!cursoid) {
+          document.getElementById("crudTbody").innerHTML = "";
+          document.getElementById("crudVazio").style.display = "block";
+          document.getElementById("crudVazio").textContent = "Selecione um curso para listar as matérias.";
+          return;
+        }
+        setMsg("⏳ Carregando…", "");
+        try {
+          const links = await sbGet("cursomateria", `cursoid=eq.${cursoid}&select=materiaid`);
+          const ids = links.map(l => l.materiaid);
+          if (!ids.length) {
+            document.getElementById("crudTbody").innerHTML = "";
+            document.getElementById("crudVazio").style.display = "block";
+            document.getElementById("crudVazio").textContent = "Nenhuma matéria vinculada a este curso.";
+            setMsg("", "");
+            return;
+          }
+          crudRegistros = await sbGet("materia", `id=in.(${ids.join(",")})&order=id`);
+          document.getElementById("crudVazio").style.display = "none";
+          document.getElementById("crudVazio").textContent = "Nenhum registro encontrado.";
+          const cfg = CRUD_CFG["materia"];
+          document.getElementById("crudThead").innerHTML =
+            "<tr>" + cfg.listHeaders.map(h => `<th>${h}</th>`).join("") + "<th>Ações</th></tr>";
+          document.getElementById("crudTbody").innerHTML = crudRegistros.map(row => {
+            const cells = cfg.listCols.map(col => {
+              let v = row[col];
+              if (col === "ativo") v = v == 1 ? "✅ Sim" : "❌ Não";
+              const s = v != null ? String(v) : "";
+              return `<td title="${s}">${s.length > 42 ? s.slice(0, 42) + "…" : s}</td>`;
+            }).join("");
+            const aulasBtn = `<button class="btn-aulas" onclick="abrirAulasMateria(${row.id}, '${(row.descricao||"").replace(/'/g,"\\'").replace(/"/g,'\\"')}')">📋 Aulas</button>`;
+            return `<tr>${cells}<td class="crud-acts">${aulasBtn}<button class="btn-ed" onclick="editarCRUD('${row.id}')">✏️</button><button class="btn-del" onclick="excluirCRUD('${row.id}')">🗑️</button></td></tr>`;
+          }).join("");
+          setMsg("", "");
+        } catch(e) {
+          setMsg("❌ " + e.message, "err");
+        }
       }
       function fecharCRUD() {
         document.getElementById("modalCRUD").style.display = "none";
       }
 
       async function listarCRUD() {
+        if (crudEntidade === "materia") {
+          const cursoid = document.getElementById("filtroCursoMateria")?.value;
+          await filtrarMateriasPorCurso(cursoid || "");
+          return;
+        }
         const cfg = CRUD_CFG[crudEntidade];
         const order = cfg.pk ? `&order=${cfg.pk}` : "&order=cursoid";
         crudRegistros = await sbGet(cfg.table, `select=*${order}`);
