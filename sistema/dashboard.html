@@ -701,7 +701,9 @@
         font-weight: 600; color: #004384; line-height: 1.3;
       }
       .aula-acc-header.ativa .aula-acc-title-area { color: #fff; }
-      .aula-acc-num { font-weight: 800; margin-right: 12px; letter-spacing: .4px; }
+      .aula-acc-num { font-weight: 800; margin-right: 8px; letter-spacing: .4px; }
+      .aula-acc-data { font-size: 11px; font-weight: 600; color: #888; margin-right: 10px; letter-spacing: .3px; }
+      .aula-acc-header.ativa .aula-acc-data { color: rgba(255,255,255,.7); }
       .aula-acc-acts { display: flex; align-items: center; gap: 4px; padding: 0 6px; }
       .aula-acc-chevron {
         padding: 0 14px; display: flex; align-items: center;
@@ -983,6 +985,7 @@
       [data-theme="dark"] .aula-acc-header:hover:not(.ativa) { background: #1e2554; box-shadow: 0 3px 12px rgba(0,50,160,.18); }
       [data-theme="dark"] .aula-acc-title-area { color: #7aa3d4; }
       [data-theme="dark"] .aula-acc-header.ativa .aula-acc-title-area { color: #fff; }
+      [data-theme="dark"] .aula-acc-data { color: #6b7280; }
       [data-theme="dark"] .aula-acc-box { border-right-color: #2c2e38; }
       [data-theme="dark"] .aula-mat-row { background: #1c1e26; border-bottom-color: #2c2e38; }
       [data-theme="dark"] .aula-mat-nome { color: #e0e3e8; }
@@ -2115,7 +2118,7 @@
             <div class="aula-acc-header" id="acc-hdr-${a.numero}" onclick="toggleAcc(${a.numero})">
               <div class="aula-acc-box">${a.icone || "▢"}</div>
               <div class="aula-acc-title-area">
-                <span class="aula-acc-num">AULA ${String(a.numero).padStart(2, "0")}</span>${a.titulo}
+                <span class="aula-acc-num">AULA ${String(a.numero).padStart(2, "0")}</span>${a.data ? `<span class="aula-acc-data">· ${a.data}</span>` : ""}${a.titulo}
               </div>
               <div class="aula-acc-acts" onclick="event.stopPropagation()">
                 <span title="${a.visivel===1?'Visível':'Oculta'}">${a.visivel===1?"🟢":"🔒"}</span>
