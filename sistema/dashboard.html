@@ -672,6 +672,9 @@
       .aula-mat-bar-fill { height: 100%; background: #004384; border-radius: 5px; }
       .aula-mat-pct { font-size: 12px; font-weight: 700; color: #004384; min-width: 36px; text-align: right; }
       .aula-mat-help { color: #bbb; font-size: 14px; cursor: default; flex-shrink: 0; }
+      .btn-mat-acessar { display:inline-flex; align-items:center; padding:4px 10px; border-radius:5px; background:#004384; color:#fff; font-size:11px; font-weight:700; text-decoration:none; white-space:nowrap; flex-shrink:0; transition:background .15s; }
+      .btn-mat-acessar:hover { background:#003369; }
+      .btn-mat-em-breve { background:#e0e0e0; color:#aaa; cursor:not-allowed; }
       .aula-mat-vazio { padding: 10px 16px 10px 80px; font-size: 12px; color: #bbb; font-style: italic; }
       .crud-table {
         width: 100%;
@@ -1880,6 +1883,10 @@
                 const tipo = m.tipo === "questionario" ? "Questionário"
                   : (m.arquivo && /youtube|vimeo|youtu\.be/i.test(m.arquivo)) ? "Videoaula"
                   : "Leitura";
+                const temLink = m.arquivo && m.arquivo !== "#";
+                const btnAcessar = temLink
+                  ? `<a class="btn-mat-acessar" href="${m.arquivo}" target="_blank">Acessar ↗</a>`
+                  : `<span class="btn-mat-acessar btn-mat-em-breve">Em breve</span>`;
                 return `<div class="aula-mat-row">
                   <span class="aula-mat-seq">${i + 1}</span>
                   <div class="aula-mat-icon">${m.icone || "📄"}</div>
@@ -1891,7 +1898,7 @@
                     <div class="aula-mat-bar"><div class="aula-mat-bar-fill" style="width:100%"></div></div>
                     <span class="aula-mat-pct">100%</span>
                   </div>
-                  <span class="aula-mat-help" title="${(m.arquivo||'').replace(/"/g,'&quot;')}">ⓘ</span>
+                  ${btnAcessar}
                 </div>`;
               }).join("")
             : `<div class="aula-mat-vazio">Nenhum material cadastrado.</div>`;
