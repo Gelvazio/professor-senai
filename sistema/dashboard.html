@@ -1023,7 +1023,7 @@
     <script>
       (function () {
         if (!localStorage.getItem("senai_role"))
-          window.location.replace("login.html");
+          window.location.replace("index.html");
         let _t = localStorage.getItem("senai_tema");
         if (_t === null) {
           _t = localStorage.getItem("senai_role") === "PROFESSOR" ? "dark" : "light";
@@ -1552,7 +1552,7 @@
       function sair() {
         localStorage.removeItem("senai_role");
         localStorage.removeItem("senai_login");
-        window.location.href = "login.html?logout=1";
+        window.location.href = "index.html?logout=1";
       }
 
       // ── Toggle Admin ─────────────────────────────
