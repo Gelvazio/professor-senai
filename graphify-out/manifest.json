@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786067909.5000966,
-    "ast_hash": "e75aa0d1ae9fb3f4ecff841b40445300",
+    "mtime": 1786068241.8126938,
+    "ast_hash": "7cb165a08a79759e607dd91462b8e04c",
     "semantic_hash": ""
   },
   "sistema/login.html": {
@@ -352,6 +352,16 @@
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/SLIDE_AULA_10.html": {
     "mtime": 1786068020.0121236,
     "ast_hash": "8f3f4a3966c224cc8a5b7d4ad307aec9",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-09-13-08-2026/RECUPERACAO_AVALIACAO_PRATICA.html": {
+    "mtime": 1786068243.28916,
+    "ast_hash": "c640e0256f16f559f53cc1dca70bde10",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/RECUPERACAO_AVALIACAO_OBJETIVA.html": {
+    "mtime": 1786068148.9102323,
+    "ast_hash": "a09195cb6ddf7cc53153dec9008df8ef",
     "semantic_hash": ""
   }
 }
