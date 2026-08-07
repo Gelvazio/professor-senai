@@ -739,6 +739,8 @@
       .btn-mat-acessar:hover { background:#003369; }
       .btn-mat-em-breve { background:#e0e0e0; color:#aaa; cursor:not-allowed; }
       .btn-mat-bloqueado { background:#757575; cursor:not-allowed; border:none; }
+      .btn-mat-editar { border:none; background:#e3f2fd; color:#1565c0; border-radius:5px; padding:4px 8px; font-size:12px; cursor:pointer; transition:background .15s; flex-shrink:0; }
+      .btn-mat-editar:hover { background:#bbdefb; }
       .btn-mat-bloqueado:hover { background:#616161; }
       .aula-mat-vazio { padding: 10px 16px 10px 80px; font-size: 12px; color: #bbb; font-style: italic; }
       .crud-table {
@@ -1165,7 +1167,7 @@
     >
       <div class="crud-modal" style="max-width: 440px">
         <div class="crud-modal-head">
-          <h3>Adicionar Material</h3>
+          <h3 id="matAulaModalTitulo">Adicionar Material</h3>
           <button class="crud-btn-fechar" onclick="fecharAddMatAula()">
             ✕
           </button>
@@ -1199,7 +1201,7 @@
               placeholder="Ex: Slide — Internet e WWW"
             />
           </div>
-          <div class="crud-field" style="margin-bottom: 16px">
+          <div class="crud-field" style="margin-bottom: 12px">
             <label class="crud-label">Arquivo / URL</label
             ><input
               class="crud-input"
@@ -1207,8 +1209,15 @@
               placeholder="Caminho relativo ou https://..."
             />
           </div>
+          <div class="crud-field" style="margin-bottom: 16px">
+            <label class="crud-label">Visível para alunos</label
+            ><select class="crud-input" id="mVisivel">
+              <option value="1">Sim</option>
+              <option value="0">Não</option>
+            </select>
+          </div>
           <div style="display: flex; gap: 8px">
-            <button class="btn-salvar" onclick="confirmarMatAula()">
+            <button class="btn-salvar" id="matAulaConfirmBtn" onclick="confirmarMatAula()">
               ＋ Adicionar
             </button>
             <button class="btn-cancelar" onclick="fecharAddMatAula()">
@@ -1951,6 +1960,9 @@
                   : temLink
                     ? `<a class="btn-mat-acessar" href="${m.arquivo}" target="_blank">Acessar ↗</a>`
                     : `<span class="btn-mat-acessar btn-mat-em-breve">Em breve</span>`;
+                const btnEditar = isProfessor
+                  ? `<button class="btn-mat-editar" onclick="event.stopPropagation();editarMatAula(${a.numero},${i})" title="Editar material">✏️</button>`
+                  : '';
                 return `<div class="aula-mat-row">
                   <span class="aula-mat-seq">${i + 1}</span>
                   <div class="aula-mat-icon">${m.icone || "📄"}</div>
@@ -1962,6 +1974,7 @@
                     <div class="aula-mat-bar"><div class="aula-mat-bar-fill" style="width:100%"></div></div>
                     <span class="aula-mat-pct">100%</span>
                   </div>
+                  ${btnEditar}
                   ${btnAcessar}
                 </div>`;
               }).join("")
@@ -2195,19 +2208,40 @@
         renderAulaMatList();
       }
 
+      let _matEditContext = null;
+
       function abrirAddMatAula() {
+        _matEditContext = null;
+        document.getElementById("matAulaModalTitulo").textContent = "Adicionar Material";
+        document.getElementById("matAulaConfirmBtn").textContent = "＋ Adicionar";
         document.getElementById("mIcone").value = "📄";
         document.getElementById("mNome").value = "";
         document.getElementById("mArquivo").value = "";
         document.getElementById("mTipo").value = "";
+        document.getElementById("mVisivel").value = "1";
+        document.getElementById("matAulaModal").style.display = "flex";
+      }
+
+      function editarMatAula(aulaNum, idx) {
+        const aula = _aulaLista.find(a => a.numero === aulaNum);
+        const m = aula.materiais[idx];
+        _matEditContext = { aulaNum, idx };
+        document.getElementById("matAulaModalTitulo").textContent = "Editar Material";
+        document.getElementById("matAulaConfirmBtn").textContent = "💾 Salvar";
+        document.getElementById("mIcone").value = m.icone || "📄";
+        document.getElementById("mNome").value = m.nome || "";
+        document.getElementById("mArquivo").value = m.arquivo || "";
+        document.getElementById("mTipo").value = m.tipo || "";
+        document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
         document.getElementById("matAulaModal").style.display = "flex";
       }
 
       function fecharAddMatAula() {
         document.getElementById("matAulaModal").style.display = "none";
+        _matEditContext = null;
       }
 
-      function confirmarMatAula() {
+      async function confirmarMatAula() {
         const nome = document.getElementById("mNome").value.trim();
         const arquivo = document.getElementById("mArquivo").value.trim();
         if (!nome || !arquivo) {
@@ -2218,12 +2252,28 @@
           nome,
           arquivo,
           icone: document.getElementById("mIcone").value.trim() || "📄",
+          visivel: parseInt(document.getElementById("mVisivel").value),
         };
         const tipo = document.getElementById("mTipo").value;
         if (tipo) m.tipo = tipo;
-        _aulaMatTemp.push(m);
-        renderAulaMatList();
-        fecharAddMatAula();
+
+        if (_matEditContext) {
+          const aula = _aulaLista.find(a => a.numero === _matEditContext.aulaNum);
+          aula.materiais[_matEditContext.idx] = { ...aula.materiais[_matEditContext.idx], ...m };
+          fecharAddMatAula();
+          setAulasMsg("⏳ Salvando…", "");
+          try {
+            await sbPatch("curso", "id", _aulaCursoId, { materias: _aulaLista });
+            renderAulasList();
+            setAulasMsg("✅ Material atualizado!", "ok");
+          } catch (e) {
+            setAulasMsg("❌ " + e.message, "err");
+          }
+        } else {
+          _aulaMatTemp.push(m);
+          renderAulaMatList();
+          fecharAddMatAula();
+        }
       }
 
       async function salvarAulaModal() {
