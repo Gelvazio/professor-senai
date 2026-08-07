@@ -608,6 +608,41 @@
         display: flex;
         gap: 8px;
       }
+      /* ── Emoji Picker ── */
+      .emoji-picker-wrap { position: relative; }
+      .emoji-picker-btn {
+        display: flex; align-items: center; gap: 10px;
+        border: 1px solid #ddd; border-radius: 6px;
+        padding: 6px 10px; font-size: 13px; font-family: inherit;
+        background: #fff; cursor: pointer; width: 100%;
+        transition: 0.15s; color: #202124;
+      }
+      .emoji-picker-btn:hover { border-color: #004384; }
+      .emoji-picker-btn .ep-preview { font-size: 26px; line-height: 1; }
+      .emoji-picker-btn .ep-label { flex:1; text-align:left; color:#555; font-size:12px; }
+      .emoji-picker-btn .ep-arrow { font-size:11px; color:#aaa; }
+      .emoji-picker-drop {
+        display: none; position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+        background: #fff; border: 1px solid #ddd; border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,.15);
+        z-index: 3000; padding: 8px;
+      }
+      .emoji-picker-drop.open { display: block; }
+      .emoji-cat-label {
+        font-size: 10px; font-weight: 700; color: #888;
+        text-transform: uppercase; letter-spacing: .5px;
+        margin: 6px 0 4px; padding: 0 2px;
+      }
+      .emoji-grid {
+        display: grid; grid-template-columns: repeat(8, 1fr); gap: 2px;
+      }
+      .emoji-opt {
+        font-size: 22px; padding: 4px; text-align: center;
+        border-radius: 5px; cursor: pointer; transition: background .1s;
+        line-height: 1.3;
+      }
+      .emoji-opt:hover { background: #e8f0fe; }
+      .emoji-opt.selected { background: #d2e3fc; }
       .btn-salvar {
         background: #2e7d32;
         color: #fff;
@@ -1949,6 +1984,56 @@
 
       let _cursoModalId = null;
 
+      /* ── Emoji Picker ── */
+      const _EMOJIS = [
+        { cat: 'Tecnologia', list: ['💻','🖥️','📱','⌨️','🖱️','💾','📀','🖨️','📡','🌐','🤖','🔌','🔋','📲','🖲️','💿'] },
+        { cat: 'Educação',   list: ['📚','📖','🎓','🏫','✏️','📝','📐','📏','🔬','🔭','🧪','🧮','📋','📄','📁','🗂️'] },
+        { cat: 'Trabalho',   list: ['💼','📊','📈','📉','🗓️','📆','🏢','🏭','⚙️','🔧','🔨','🛠️','🔩','⚡','🦺','⛑️'] },
+        { cat: 'Segurança',  list: ['🔐','🛡️','🔑','🗝️','🔒','🚨','⚠️','🚧','🧯','🔴','🟡','🟢','✅','❌','⛔','🚫'] },
+        { cat: 'Geral',      list: ['🚀','💡','⭐','🏆','🥇','🎯','🌱','🌍','💧','♻️','🎨','🎵','🎬','📸','🌟','🔥'] },
+      ];
+
+      function _buildEmojiDrop() {
+        const drop = document.getElementById('emojiPickerDrop');
+        if (drop.dataset.built) return;
+        drop.dataset.built = '1';
+        let html = '';
+        for (const grp of _EMOJIS) {
+          html += `<div class="emoji-cat-label">${grp.cat}</div><div class="emoji-grid">`;
+          for (const e of grp.list) {
+            html += `<span class="emoji-opt" onclick="selectEmoji('${e}')">${e}</span>`;
+          }
+          html += '</div>';
+        }
+        drop.innerHTML = html;
+      }
+
+      function setCfIcone(val) {
+        document.getElementById('cfIcone').value = val;
+        document.getElementById('cfIconePreview').textContent = val || '❓';
+        document.getElementById('cfIconeLabel').textContent = val ? val + ' selecionado' : 'Selecione um ícone...';
+        document.querySelectorAll('#emojiPickerDrop .emoji-opt').forEach(el => {
+          el.classList.toggle('selected', el.textContent === val);
+        });
+      }
+
+      function toggleEmojiPicker() {
+        _buildEmojiDrop();
+        document.getElementById('emojiPickerDrop').classList.toggle('open');
+      }
+
+      function selectEmoji(e) {
+        setCfIcone(e);
+        document.getElementById('emojiPickerDrop').classList.remove('open');
+      }
+
+      document.addEventListener('click', function(ev) {
+        const wrap = document.querySelector('.emoji-picker-wrap');
+        if (wrap && !wrap.contains(ev.target)) {
+          document.getElementById('emojiPickerDrop').classList.remove('open');
+        }
+      });
+
       function fecharModalCurso() {
         document.getElementById('modalCursoForm').style.display = 'none';
         _cursoModalId = null;
@@ -1961,7 +2046,7 @@
         document.getElementById('cfNome').value = c ? c.nome : '';
         document.getElementById('cfCodigo').value = c ? c.id : '';
         document.getElementById('cfTipo').value = c ? (c.tipo || '') : '';
-        document.getElementById('cfIcone').value = c ? (c.icone || '') : '';
+        setCfIcone(c ? (c.icone || '') : '');
         document.getElementById('cfDescricao').value = c ? (c.descricao || '') : '';
         document.getElementById('cfVisivel').value = c ? String(c.visivel) : '1';
         document.getElementById('cursoFormMsg').textContent = '';
@@ -1974,7 +2059,7 @@
         document.getElementById('cfNome').value = '';
         document.getElementById('cfCodigo').value = '';
         document.getElementById('cfTipo').value = '';
-        document.getElementById('cfIcone').value = '';
+        setCfIcone('');
         document.getElementById('cfDescricao').value = '';
         document.getElementById('cfVisivel').value = '1';
         document.getElementById('cursoFormMsg').textContent = '';
@@ -2300,8 +2385,16 @@
             <input class="crud-input" id="cfTipo" type="text" placeholder="ex: Aprendizagem Industrial">
           </div>
           <div>
-            <label class="crud-label">Ícone (emoji)</label>
-            <input class="crud-input" id="cfIcone" type="text" placeholder="ex: 💻 🖥️ 📚">
+            <label class="crud-label">Ícone</label>
+            <div class="emoji-picker-wrap">
+              <input type="hidden" id="cfIcone">
+              <button type="button" class="emoji-picker-btn" id="cfIconeBtn" onclick="toggleEmojiPicker()">
+                <span class="ep-preview" id="cfIconePreview">❓</span>
+                <span class="ep-label" id="cfIconeLabel">Selecione um ícone...</span>
+                <span class="ep-arrow">▾</span>
+              </button>
+              <div class="emoji-picker-drop" id="emojiPickerDrop"></div>
+            </div>
           </div>
           <div>
             <label class="crud-label">Descrição do Curso</label>
