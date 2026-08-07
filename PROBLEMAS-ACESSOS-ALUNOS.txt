@@ -1,11 +1,37 @@
 #Aluno:FLAVIA LAYANE DA SILVA SILVA 
 E-MAIL:flavia_silva-silva@estudante.sesisenai.org.br
 SENHA->QMSS5177
-Problema: Acha o login, mas não acessa pela senha 
-====================================================
-Wagner - conferir
+E-mail pessoal:Sem e-mail pessoal 
+Problema: Acha o login, mas não acessa pela senha, da senha invalida
+#====================================================
+Wagner Patrick da Mata
+E-mail pessoal(Funcionando):wagnerpatrick244@gmail.com
+Problema:Usuario e senha nao funciona
+#====================================================
+André Henrique Felippe de Souza - 
+E-mail:andre_hf_souza@estudante.sesisenai.org.br
+E-mail pessoal(Sem e-mail pessoal):
+Problema:solicitado novo acesso e sem respostas, solicitar de novo.
+#====================================================
+Maria Clara Ribeiro farias
+E-MAIL:maria_cr_farias@estudante.sesisenai.org.br 
+SENHA->QMSS5177
+Problema:Encontra o login, mas a senha esta errada
+Não tem e-mail pessoal
+#====================================================
+Aluno:Luna Amendo Sypriano Costa
+e-mail:luna_amendo@estudante.sesisenai.org.br	
+Problema:esqueceu senha
+#====================================================
 
-Andre- solicitado e sem respostas, solicitar de novo.
+ATIVIDADES PENDENTES - 07-08-2026
+EQUIPES COM ATIVIDADES PENDENTES
+LUNA - COLOCAR EM EQUIPE NOVA?
+
+EQUIPE JHYONE E CAIO
+
+DEMAIS EQUIPES PENDENTES:
+
 
 
 
