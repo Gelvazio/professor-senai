@@ -253,6 +253,12 @@
         transition: background .15s;
       }
       .btn-card-editar:hover { background: #bbdefb; }
+      .btn-card-excluir {
+        font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 7px;
+        background: #fdecea; color: #c62828; border: none; cursor: pointer;
+        transition: background .15s;
+      }
+      .btn-card-excluir:hover { background: #f5c6c2; }
       .card-footer {
         padding: 12px 20px 14px;
         border-top: 1px solid #f0f0f0;
@@ -1501,6 +1507,7 @@
       </div>
       <div class="card-edit" id="edit-${curso.id}">
         <button class="btn-card-editar" onclick="editarCursoCard(${curso.idNum})">✏️ Editar</button>
+        <button class="btn-card-excluir" onclick="excluirCurso(${curso.idNum}, '${curso.nome.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">🗑️ Excluir</button>
         <span class="card-edit-label">Visibilidade</span>
         <div class="toggle-wrap">
           <span class="toggle-label">${visivel ? "Visível" : "Oculto"}</span>
@@ -1966,6 +1973,16 @@
           setMsg("❌ " + e.message, "err");
         }
       }
+      async function excluirCurso(id, nome) {
+        if (!confirm(`Excluir o curso "${nome}"?\n\nEsta ação não pode ser desfeita.`)) return;
+        try {
+          await sbDelete("curso", `id=eq.${id}`);
+          location.reload();
+        } catch (e) {
+          alert("❌ Erro ao excluir: " + e.message);
+        }
+      }
+
       async function excluirCompostoCRUD(q) {
         if (!confirm("Remover este vínculo?")) return;
         try {
