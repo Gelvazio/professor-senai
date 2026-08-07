@@ -2386,6 +2386,21 @@
         }).join("");
       }
 
+      function _nextMatId() {
+        let max = 0;
+        for (const aula of _aulaLista) {
+          for (const mat of (aula.materiais || [])) {
+            const n = parseInt(mat.id);
+            if (!isNaN(n) && n > max) max = n;
+          }
+        }
+        for (const mat of _aulaMatTemp) {
+          const n = parseInt(mat.id);
+          if (!isNaN(n) && n > max) max = n;
+        }
+        return max + 1;
+      }
+
       function _aulasComMaterialId(matId, fallbackNum) {
         if (matId) {
           const nums = _aulaLista
@@ -2471,7 +2486,7 @@
 
         if (_matEditContext && _matEditContext.tempIdx !== undefined) {
           const existing = _aulaMatTemp[_matEditContext.tempIdx];
-          const matId = existing.id || crypto.randomUUID();
+          const matId = existing.id || _nextMatId();
           const aulaAtual = parseInt(document.getElementById("aulaNum").value) || existing.numero_aula || 0;
           _aulaMatTemp[_matEditContext.tempIdx] = {
             id: matId,
@@ -2501,7 +2516,7 @@
         } else if (_matEditContext) {
           const aulaOrigem = _aulaLista.find(a => a.numero === _matEditContext.aulaNum);
           const existing = aulaOrigem.materiais[_matEditContext.idx];
-          const matId = existing.id || crypto.randomUUID();
+          const matId = existing.id || _nextMatId();
           const aulasSelecionadas = Array.from(
             document.querySelectorAll("#mAulaCheckboxes input[type=checkbox]:checked")
           ).map(cb => parseInt(cb.value));
@@ -2533,13 +2548,8 @@
             setAulasMsg("❌ " + e.message, "err");
           }
         } else {
-          const novoId = crypto.randomUUID();
-          if (_aulaMatTemp.some(mat => mat.id === novoId)) {
-            alert("Erro interno: ID duplicado gerado. Tente novamente.");
-            return;
-          }
           _aulaMatTemp.push({
-            id: novoId,
+            id: _nextMatId(),
             numero_aula: parseInt(document.getElementById("aulaNum").value) || 0,
             ...m,
           });
