@@ -1455,6 +1455,7 @@
         for (const curso of dadosCursos.cursos) {
           const visivel = getVis(curso.id, curso.visivel);
           const disponivel = visivel === 1;
+          if (!isProfessor && !disponivel) continue;
 
           // Progresso a partir do campo materias do Supabase
           let pct = 0,
