@@ -684,9 +684,14 @@
       .aula-acc-item { border-bottom: 1px solid #e0e0e0; }
       .aula-acc-header {
         display: flex; align-items: stretch; cursor: pointer;
-        background: #fff; user-select: none; transition: background .2s;
+        background: #fff; user-select: none;
+        transition: background .25s, box-shadow .25s, transform .25s;
       }
-      .aula-acc-header:hover:not(.ativa) { background: #f5f8ff; }
+      .aula-acc-header:hover:not(.ativa) {
+        background: #e8f0fe;
+        box-shadow: 0 2px 10px rgba(0, 67, 132, 0.13);
+        transform: translateX(3px);
+      }
       .aula-acc-header.ativa { background: #004384; color: #fff; }
       .aula-acc-box {
         width: 54px; display: flex; align-items: center; justify-content: center;
