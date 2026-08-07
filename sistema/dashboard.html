@@ -1579,14 +1579,20 @@
           const sel = document.getElementById("filtroCursoMateria");
           sel.innerHTML = '<option value="">-- selecione um curso --</option>' +
             cacheCurso.map(c => `<option value="${c.id}">${c.nome_completo}</option>`).join("");
-          sel.value = "";
-          // mostra tabela vazia aguardando seleção
-          document.getElementById("crudThead").innerHTML =
-            "<tr><th>ID</th><th>Nome</th><th>Ativo</th><th>Ações</th></tr>";
-          document.getElementById("crudTbody").innerHTML = "";
-          document.getElementById("crudVazio").style.display = "block";
-          document.getElementById("crudVazio").textContent = "Selecione um curso para listar as matérias.";
-          setMsg("", "");
+          // auto-seleciona Operador de Produção Industrial
+          const opiOpt = cacheCurso.find(c => c.nome_completo && c.nome_completo.toUpperCase().includes("OPERADOR"));
+          if (opiOpt) {
+            sel.value = opiOpt.id;
+            await filtrarMateriasPorCurso(opiOpt.id);
+          } else {
+            sel.value = "";
+            document.getElementById("crudThead").innerHTML =
+              "<tr><th>ID</th><th>Nome</th><th>Ativo</th><th>Ações</th></tr>";
+            document.getElementById("crudTbody").innerHTML = "";
+            document.getElementById("crudVazio").style.display = "block";
+            document.getElementById("crudVazio").textContent = "Selecione um curso para listar as matérias.";
+            setMsg("", "");
+          }
         } else {
           filtroCursoDiv.style.display = "none";
           await listarCRUD();

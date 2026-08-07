@@ -321,30 +321,6 @@
 
         const aulas = dados.aulas || [];
 
-        // Injeta materiais locais na Aula 04
-        const aula04 = aulas.find((a) => Number(a.numero) === 4);
-        if (aula04) {
-          if (!Array.isArray(aula04.materiais)) aula04.materiais = [];
-          if (!aula04.materiais.some((m) => m.tipo === "atividade")) {
-            aula04.materiais.push({
-              nome: "Atividade em Equipes",
-              tipo: "atividade",
-              icone: "👥",
-              arquivo:
-                "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS_INTRODUCAO_TECNOLOGIA_INFORMACAO/AULA 04 - 06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.txt",
-            });
-          }
-          if (!aula04.materiais.some((m) => m.tipo === "membros")) {
-            aula04.materiais.push({
-              nome: "Membros Equipe",
-              tipo: "membros",
-              icone: "👨‍👩‍👧‍👦",
-              arquivo:
-                "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS_INTRODUCAO_TECNOLOGIA_INFORMACAO/AULA 04 - 06-08-2026/MEMBROS-EQUIPE-06-08-2026.txt",
-            });
-          }
-        }
-
         todasAulas = aulas;
         const visiveis = aulas.filter((a) => Number(a.visivel) === 1).length;
 
@@ -467,9 +443,6 @@
         modalClose.addEventListener("click", () =>
           modalBg.classList.remove("open"),
         );
-        modalBg.addEventListener("click", (e) => {
-          if (e.target === modalBg) modalBg.classList.remove("open");
-        });
 
         function abrirModal(aula) {
           document.getElementById("modalIcon").textContent = aula.icone || "📚";
