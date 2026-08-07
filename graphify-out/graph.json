@@ -190,7 +190,7 @@
       "source_location": "L202",
       "_origin": "ast",
       "id": "graphify_skill_step_3_extract_entities_and_relationships",
-      "community": 8,
+      "community": 5,
       "norm_label": "step 3 - extract entities and relationships"
     },
     {
@@ -200,7 +200,7 @@
       "source_location": "L212",
       "_origin": "ast",
       "id": "graphify_skill_part_a_structural_extraction_for_code_files",
-      "community": 8,
+      "community": 5,
       "norm_label": "part a - structural extraction for code files"
     },
     {
@@ -210,7 +210,7 @@
       "source_location": "L250",
       "_origin": "ast",
       "id": "graphify_skill_part_b_semantic_extraction_parallel_subagents",
-      "community": 8,
+      "community": 5,
       "norm_label": "part b - semantic extraction (parallel subagents)"
     },
     {
@@ -220,7 +220,7 @@
       "source_location": "L449",
       "_origin": "ast",
       "id": "graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
-      "community": 8,
+      "community": 5,
       "norm_label": "part c - merge ast + semantic into final extraction"
     },
     {
@@ -434,13 +434,193 @@
       "norm_label": "honesty rules"
     },
     {
+      "label": "2026-08-07-analise-ementas.md",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "plans_2026_08_07_analise_ementas",
+      "community": 9,
+      "norm_label": "2026-08-07-analise-ementas.md"
+    },
+    {
+      "label": "Analise Ementas \u2014 Implementation Plan",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "plans_2026_08_07_analise_ementas_analise_ementas_implementation_plan",
+      "community": 9,
+      "norm_label": "analise ementas \u2014 implementation plan"
+    },
+    {
+      "label": "Global Constraints",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "plans_2026_08_07_analise_ementas_global_constraints",
+      "community": 9,
+      "norm_label": "global constraints"
+    },
+    {
+      "label": "Task 1: CSS \u2014 Estilos do bot\u00e3o e do modal de an\u00e1lise",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "plans_2026_08_07_analise_ementas_task_1_css_estilos_do_bot\u00e3o_e_do_modal_de_an\u00e1lise",
+      "community": 9,
+      "norm_label": "task 1: css \u2014 estilos do botao e do modal de analise"
+    },
+    {
+      "label": "Task 2: HTML \u2014 Bot\u00e3o na toolbar e modal de an\u00e1lise",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "plans_2026_08_07_analise_ementas_task_2_html_bot\u00e3o_na_toolbar_e_modal_de_an\u00e1lise",
+      "community": 9,
+      "norm_label": "task 2: html \u2014 botao na toolbar e modal de analise"
+    },
+    {
+      "label": "Task 3: JavaScript \u2014 Dicion\u00e1rio, matching e fun\u00e7\u00f5es de abrir/fechar",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "plans_2026_08_07_analise_ementas_task_3_javascript_dicion\u00e1rio_matching_e_fun\u00e7\u00f5es_de_abrir_fechar",
+      "community": 9,
+      "norm_label": "task 3: javascript \u2014 dicionario, matching e funcoes de abrir/fechar"
+    },
+    {
+      "label": "Task 4: Commit e push",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L339",
+      "_origin": "ast",
+      "id": "plans_2026_08_07_analise_ementas_task_4_commit_e_push",
+      "community": 9,
+      "norm_label": "task 4: commit e push"
+    },
+    {
+      "label": "Self-Review",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L365",
+      "_origin": "ast",
+      "id": "plans_2026_08_07_analise_ementas_self_review",
+      "community": 9,
+      "norm_label": "self-review"
+    },
+    {
+      "label": "2026-08-07-analise-ementas-design.md",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design",
+      "community": 8,
+      "norm_label": "2026-08-07-analise-ementas-design.md"
+    },
+    {
+      "label": "Design: Bot\u00e3o \"Analise Ementas\" no Modal de Aulas",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
+      "community": 8,
+      "norm_label": "design: botao \"analise ementas\" no modal de aulas"
+    },
+    {
+      "label": "Contexto",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design_contexto",
+      "community": 8,
+      "norm_label": "contexto"
+    },
+    {
+      "label": "Solu\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
+      "community": 8,
+      "norm_label": "solucao"
+    },
+    {
+      "label": "1. Bot\u00e3o \"Analise Ementas\"",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design_1_bot\u00e3o_analise_ementas",
+      "community": 8,
+      "norm_label": "1. botao \"analise ementas\""
+    },
+    {
+      "label": "2. Modal `ementaAnaliseModal`",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design_2_modal_ementaanalisemodal",
+      "community": 8,
+      "norm_label": "2. modal `ementaanalisemodal`"
+    },
+    {
+      "label": "3. L\u00f3gica de Matching",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design_3_l\u00f3gica_de_matching",
+      "community": 8,
+      "norm_label": "3. logica de matching"
+    },
+    {
+      "label": "4. Keywords por T\u00f3pico",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design_4_keywords_por_t\u00f3pico",
+      "community": 8,
+      "norm_label": "4. keywords por topico"
+    },
+    {
+      "label": "N\u00e3o est\u00e1 no escopo",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design_n\u00e3o_est\u00e1_no_escopo",
+      "community": 8,
+      "norm_label": "nao esta no escopo"
+    },
+    {
+      "label": "Arquivos Modificados",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "specs_2026_08_07_analise_ementas_design_arquivos_modificados",
+      "community": 8,
+      "norm_label": "arquivos modificados"
+    },
+    {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
       "id": "sistema_claude",
-      "community": 3,
+      "community": 2,
       "norm_label": "claude.md"
     },
     {
@@ -450,7 +630,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "community": 3,
+      "community": 2,
       "norm_label": "senai \u2014 projeto de curso: aprendizagem industrial"
     },
     {
@@ -460,7 +640,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "sistema_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
-      "community": 3,
+      "community": 2,
       "norm_label": "modulo educacao para o trabalho"
     },
     {
@@ -810,7 +990,7 @@
       "source_location": "L285",
       "_origin": "ast",
       "id": "sistema_claude_regras_de_trabalho_claude",
-      "community": 3,
+      "community": 2,
       "norm_label": "regras de trabalho \u2014 claude"
     },
     {
@@ -820,7 +1000,7 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "sistema_claude_commit_e_push_obrigat\u00f3rios",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u2705 commit e push obrigatorios"
     },
     {
@@ -830,7 +1010,7 @@
       "source_location": "L296",
       "_origin": "ast",
       "id": "sistema_claude_slides_devem_ter_no_m\u00ednimo_15_slides",
-      "community": 3,
+      "community": 2,
       "norm_label": "\u2705 slides devem ter no minimo 15 slides"
     },
     {
@@ -1288,6 +1468,166 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "plans_2026_08_07_analise_ementas",
+      "target": "plans_2026_08_07_analise_ementas_analise_ementas_implementation_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "plans_2026_08_07_analise_ementas_analise_ementas_implementation_plan",
+      "target": "plans_2026_08_07_analise_ementas_global_constraints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L365",
+      "weight": 1.0,
+      "source": "plans_2026_08_07_analise_ementas_analise_ementas_implementation_plan",
+      "target": "plans_2026_08_07_analise_ementas_self_review",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "plans_2026_08_07_analise_ementas_global_constraints",
+      "target": "plans_2026_08_07_analise_ementas_task_1_css_estilos_do_bot\u00e3o_e_do_modal_de_an\u00e1lise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "plans_2026_08_07_analise_ementas_global_constraints",
+      "target": "plans_2026_08_07_analise_ementas_task_2_html_bot\u00e3o_na_toolbar_e_modal_de_an\u00e1lise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "plans_2026_08_07_analise_ementas_global_constraints",
+      "target": "plans_2026_08_07_analise_ementas_task_3_javascript_dicion\u00e1rio_matching_e_fun\u00e7\u00f5es_de_abrir_fechar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
+      "source_location": "L339",
+      "weight": 1.0,
+      "source": "plans_2026_08_07_analise_ementas_global_constraints",
+      "target": "plans_2026_08_07_analise_ementas_task_4_commit_e_push",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "specs_2026_08_07_analise_ementas_design",
+      "target": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
+      "target": "specs_2026_08_07_analise_ementas_design_arquivos_modificados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
+      "target": "specs_2026_08_07_analise_ementas_design_contexto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
+      "target": "specs_2026_08_07_analise_ementas_design_n\u00e3o_est\u00e1_no_escopo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "specs_2026_08_07_analise_ementas_design_design_bot\u00e3o_analise_ementas_no_modal_de_aulas",
+      "target": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
+      "target": "specs_2026_08_07_analise_ementas_design_1_bot\u00e3o_analise_ementas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
+      "target": "specs_2026_08_07_analise_ementas_design_2_modal_ementaanalisemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
+      "target": "specs_2026_08_07_analise_ementas_design_3_l\u00f3gica_de_matching",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/superpowers/specs/2026-08-07-analise-ementas-design.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
+      "target": "specs_2026_08_07_analise_ementas_design_4_keywords_por_t\u00f3pico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "sistema/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -1727,5 +2067,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0e0542fcb7f987c98b0d017504ee54a7b96dcf9b"
+  "built_at_commit": "887981af81b85d8853eee787af449b5b460d1843"
 }
