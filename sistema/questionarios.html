@@ -68,6 +68,21 @@ body.professor .steps{display:flex}
 
 .em-breve{font-size:12px;color:#aaa;text-align:center;padding:8px;background:#f5f5f5;border-radius:6px;border:1px dashed #ddd}
 body.professor .em-breve{display:none}
+
+/* ── Modal Gabarito ── */
+.gab-modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:300;align-items:center;justify-content:center;padding:20px}
+.gab-modal-bg.open{display:flex}
+.gab-modal{background:#fff;border-radius:10px;width:100%;max-width:560px;box-shadow:0 12px 40px rgba(0,0,0,.35);overflow:hidden}
+.gab-modal-header{background:linear-gradient(135deg,#004384 0%,#0055b3 100%);padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.gab-modal-title{font-size:15px;font-weight:700;color:#fff}
+.gab-modal-sub{font-size:11px;color:rgba(255,255,255,.75);margin-top:2px}
+.gab-modal-close{background:rgba(255,255,255,.15);border:none;color:#fff;font-size:16px;width:30px;height:30px;border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.gab-modal-close:hover{background:rgba(255,255,255,.3)}
+.gab-body{padding:20px;display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.gab-item{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f1f3f4;border-radius:7px;padding:10px 4px;gap:3px}
+.gab-num{font-size:10px;font-weight:700;color:#666}
+.gab-letra{font-size:17px;font-weight:800;color:#004384}
+.gab-footer{padding:10px 20px 14px;text-align:center;font-size:11px;color:#999}
 </style>
 </head>
 <body>
@@ -108,6 +123,7 @@ body.professor .em-breve{display:none}
           </div>
           <div class="script-path prof-only">📄 SCRIPTS_GOOGLE_FORMS/CRIAR_FORMS_HISTORIA_COMPUTACAO.gs</div>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhSr_vaP921OMAeEbdcVqhirVsGbgjHdAK0TKX4oBZ7-kyWA/viewform" target="_blank" class="btn btn-primary">📝 Responder Questionário</a>
+          <button onclick="abrirGabarito()" class="btn btn-secondary prof-only" style="background:#e8f5e9;color:#2e7d32;border:1px solid #c8e6c9">✅ Respostas</button>
           <a href="AULA 01 - 03-08-2026 - 01 - HISTORIA DA COMPUTACAO/BANCO_QUESTOES_HISTORIA_COMPUTACAO.gift.txt" target="_blank" class="btn btn-secondary prof-only">📥 Banco GIFT (AVA SENAI)</a>
         </div>
       </div>
@@ -171,6 +187,49 @@ body.professor .em-breve{display:none}
   </div>
 </div>
 
+<!-- Modal Gabarito — História da Computação -->
+<div class="gab-modal-bg" id="gabModalBg">
+  <div class="gab-modal">
+    <div class="gab-modal-header">
+      <div>
+        <div class="gab-modal-title">🖥️ Gabarito — História da Computação</div>
+        <div class="gab-modal-sub">27 questões · Múltipla escolha</div>
+      </div>
+      <button class="gab-modal-close" onclick="fecharGabarito()">✕</button>
+    </div>
+    <div class="gab-body">
+      <div class="gab-item"><span class="gab-num">Q01</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q02</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q03</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q04</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q05</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q06</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q07</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q08</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q09</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q10</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q11</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q12</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q13</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q14</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q15</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q16</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q17</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q18</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q19</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q20</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q21</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q22</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q23</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q24</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q25</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q26</span><span class="gab-letra">A</span></div>
+      <div class="gab-item"><span class="gab-num">Q27</span><span class="gab-letra">A</span></div>
+    </div>
+    <div class="gab-footer">A alternativa correta de cada questão é sempre a primeira opção (A)</div>
+  </div>
+</div>
+
 <script>
 (function () {
   const role = localStorage.getItem('senai_role') || 'ALUNO';
@@ -198,6 +257,21 @@ function sair() {
   localStorage.removeItem('senai_login');
   window.location.href = 'login.html';
 }
+
+function abrirGabarito() {
+  document.getElementById('gabModalBg').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function fecharGabarito() {
+  document.getElementById('gabModalBg').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('gabModalBg').addEventListener('click', function(e) {
+  if (e.target === this) fecharGabarito();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') fecharGabarito();
+});
 </script>
 </body>
 </html>
