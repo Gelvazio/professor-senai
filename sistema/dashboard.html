@@ -1360,10 +1360,10 @@
           table: "curso",
           pk: "id",
           listHeaders: ["ID", "Descrição", "Código", "Tipo", "Visível"],
-          listCols: ["id", "descricaocurso", "codigo", "tipo_curso", "visivel"],
+          listCols: ["id", "nome_completo", "codigo", "tipo_curso", "visivel"],
           fields: [
             {
-              key: "descricaocurso",
+              key: "nome_completo",
               label: "Descrição",
               type: "text",
               required: true,
@@ -1542,7 +1542,7 @@
         if (!cacheCurso.length)
           cacheCurso = await sbGet(
             "curso",
-            "select=id,descricaocurso&order=descricaocurso",
+            "select=id,nome_completo&order=nome_completo",
           );
         await listarCRUD();
       }
@@ -1581,7 +1581,7 @@
                 }
                 if (col === "cursoid") {
                   const c = cacheCurso.find((x) => x.id == v);
-                  v = c ? c.descricaocurso : v;
+                  v = c ? c.nome_completo : v;
                 }
                 if (col === "ativo" || col === "visivel")
                   v = v == 1 ? "✅ Sim" : "❌ Não";
@@ -1593,7 +1593,7 @@
             if (cfg.pk) {
               let aulasBtn = "";
               if (crudEntidade === "curso") {
-                aulasBtn = `<button class="btn-aulas" onclick="abrirAulasCurso(${row.id}, '${(row.descricaocurso || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>`;
+                aulasBtn = `<button class="btn-aulas" onclick="abrirAulasCurso(${row.id}, '${(row.nome_completo || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>`;
               } else if (crudEntidade === "materia") {
                 aulasBtn = `<button class="btn-aulas" onclick="abrirAulasMateria(${row.id}, '${(row.descricao || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>`;
               }
@@ -1623,7 +1623,7 @@
             } else if (f.type === "select-materia") {
               inp = `<select class="crud-input" id="cf_${f.key}"><option value="">-- selecione --</option>${cacheMateria.map((m) => `<option value="${m.id}" ${v == m.id ? "selected" : ""}>${m.descricao}</option>`).join("")}</select>`;
             } else if (f.type === "select-curso") {
-              inp = `<select class="crud-input" id="cf_${f.key}"><option value="">-- selecione --</option>${cacheCurso.map((c) => `<option value="${c.id}" ${v == c.id ? "selected" : ""}>${c.descricaocurso}</option>`).join("")}</select>`;
+              inp = `<select class="crud-input" id="cf_${f.key}"><option value="">-- selecione --</option>${cacheCurso.map((c) => `<option value="${c.id}" ${v == c.id ? "selected" : ""}>${c.nome_completo}</option>`).join("")}</select>`;
             }
             return `<div class="crud-field"><label class="crud-label">${f.label}</label>${inp}</div>`;
           })
@@ -1746,8 +1746,8 @@
             return;
           }
           const cursoid = links[0].cursoid;
-          const cursoRows = await sbGet("curso", `id=eq.${cursoid}&select=descricaocurso`);
-          const cursoNome = cursoRows[0] ? cursoRows[0].descricaocurso : "Curso";
+          const cursoRows = await sbGet("curso", `id=eq.${cursoid}&select=nome_completo`);
+          const cursoNome = cursoRows[0] ? cursoRows[0].nome_completo : "Curso";
           fecharCRUD();
           await abrirAulasCurso(cursoid, cursoNome + " — " + nome);
         } catch (e) {
