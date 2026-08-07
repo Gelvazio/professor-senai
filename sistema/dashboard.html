@@ -2041,7 +2041,10 @@
         document.getElementById("aulasModal").style.display = "flex";
         try {
           const rows = await sbGet("curso", `select=materias&id=eq.${idNum}`);
-          _aulaLista = rows[0] && rows[0].materias ? rows[0].materias : [];
+          _aulaLista = (rows[0]?.materias || []).map(aula => ({
+            ...aula,
+            materiais: (aula.materiais || []).map(m => ({ visivel: 1, ...m })),
+          }));
           renderAulasList();
           setAulasMsg("", "");
         } catch (e) {
@@ -2325,7 +2328,7 @@
           document.getElementById("aulaDia").value = aula.diaSemana || "";
           document.getElementById("aulaVisivel").checked = aula.visivel === 1;
           document.getElementById("aulaBtnDel").style.display = "";
-          _aulaMatTemp = JSON.parse(JSON.stringify(aula.materiais || []));
+          _aulaMatTemp = JSON.parse(JSON.stringify(aula.materiais || [])).map(m => ({ visivel: 1, ...m }));
         }
         renderAulaMatList();
         form.style.display = "block";
