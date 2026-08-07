@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade em Equipe — 06/08/2026</title>
+  <style>
+    :root {
+      --senai-red: #d32f2f;
+      --senai-blue: #1565c0;
+      --senai-dark: #1a1a2e;
+      --senai-gray: #f5f5f5;
+      --senai-light: #e3f2fd;
+      --accent-green: #2e7d32;
+      --accent-orange: #e65100;
+      --accent-purple: #6a1b9a;
+      --text-primary: #1a1a2e;
+      --text-muted: #555;
+      --border: #ddd;
+      --shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #f0f4f8;
+      color: var(--text-primary);
+      line-height: 1.7;
+    }
+
+    /* ── HEADER ── */
+    .page-header {
+      background: linear-gradient(135deg, var(--senai-red) 0%, #b71c1c 60%, var(--senai-dark) 100%);
+      color: #fff;
+      padding: 48px 40px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .page-header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 0.78rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .page-header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .page-header .subtitle {
+      font-size: 1.05rem;
+      opacity: 0.88;
+      margin-bottom: 24px;
+    }
+    .header-meta {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .header-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      opacity: 0.9;
+      background: rgba(255,255,255,0.12);
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* ── SECTION HEADER ── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 40px 0 20px;
+    }
+    .section-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      box-shadow: var(--shadow);
+    }
+    .icon-red   { background: var(--senai-red); color: #fff; }
+    .icon-blue  { background: var(--senai-blue); color: #fff; }
+    .icon-green { background: var(--accent-green); color: #fff; }
+    .icon-orange{ background: var(--accent-orange); color: #fff; }
+    .icon-purple{ background: var(--accent-purple); color: #fff; }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .section-title small {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* ── CARD ── */
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    /* ── ORIENTAÇÕES ── */
+    .orient-box {
+      background: linear-gradient(135deg, #fff8e1, #fff3e0);
+      border: 1.5px solid #ffcc02;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 20px;
+    }
+    .orient-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #e65100;
+      margin-bottom: 14px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .orient-list {
+      list-style: none;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+    }
+    .orient-list li {
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .orient-list li::before {
+      content: '▸';
+      color: var(--accent-orange);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    @media (max-width: 600px) {
+      .orient-list { grid-template-columns: 1fr; }
+    }
+
+    /* ── ROLES ── */
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .role-card {
+      border-radius: 10px;
+      padding: 16px 14px;
+      text-align: center;
+      font-size: 0.82rem;
+      border: 1.5px solid var(--border);
+      transition: transform 0.15s;
+    }
+    .role-card:hover { transform: translateY(-2px); }
+    .role-card .role-icon { font-size: 1.6rem; margin-bottom: 6px; display: block; }
+    .role-card .role-name { font-weight: 700; font-size: 0.78rem; color: var(--senai-red); letter-spacing: 0.5px; }
+    .role-card .role-desc { color: var(--text-muted); font-size: 0.77rem; margin-top: 4px; }
+
+    /* ── REGRA DE OURO ── */
+    .gold-rule {
+      background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+      border-left: 4px solid var(--accent-green);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 0.88rem;
+      color: #1b5e20;
+      margin-top: 16px;
+    }
+    .gold-rule strong { color: var(--accent-green); }
+
+    /* ── QUESTÃO ── */
+    .questao {
+      background: #fff;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .questao-num {
+      display: inline-flex;
+      align-items: center; justify-content: center;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 0.88rem;
+      color: #fff;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    .questao-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .questao-titulo {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text-primary);
+    }
+    .questao-body { font-size: 0.9rem; color: #333; }
+    .questao-body p { margin-bottom: 10px; }
+    .questao-body ol, .questao-body ul {
+      padding-left: 20px;
+      margin: 8px 0;
+    }
+    .questao-body li { margin-bottom: 4px; }
+
+    /* part colors */
+    .p1 .questao-num { background: var(--senai-red); }
+    .p2 .questao-num { background: var(--senai-blue); }
+    .p3 .questao-num { background: var(--accent-green); }
+    .p4 .questao-num { background: var(--accent-orange); }
+
+    /* ── TABLES ── */
+    .table-wrap { overflow-x: auto; margin: 12px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+    th {
+      background: var(--senai-dark);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: #333;
+    }
+    tr:nth-child(even) td { background: #f9f9f9; }
+    tr:hover td { background: var(--senai-light); }
+
+    /* ── BLANK FIELDS ── */
+    .blank {
+      display: inline-block;
+      min-width: 120px;
+      border-bottom: 1.5px solid var(--senai-blue);
+      margin: 0 4px;
+    }
+    .blank-long {
+      display: block;
+      border-bottom: 1.5px solid var(--senai-blue);
+      margin: 8px 0;
+      height: 24px;
+    }
+
+    /* ── CHECKBOX ITEMS ── */
+    .checkbox-list { list-style: none; }
+    .checkbox-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+      background: #fafafa;
+      border: 1px solid #eee;
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+    .checkbox-list li:hover { background: var(--senai-light); }
+    .checkbox-list li input[type="checkbox"] {
+      margin-top: 2px;
+      accent-color: var(--senai-red);
+      width: 16px; height: 16px;
+      flex-shrink: 0;
+    }
+
+    /* ── SCENARIO BOX ── */
+    .scenario {
+      background: #f3f4f6;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 10px 0;
+      font-size: 0.875rem;
+    }
+    .scenario-label {
+      font-weight: 700;
+      color: var(--senai-red);
+      font-size: 0.78rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .scenario-text {
+      font-style: italic;
+      color: #333;
+      border-left: 3px solid var(--senai-red);
+      padding-left: 12px;
+      margin-bottom: 12px;
+    }
+    .scenario-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .scenario-field label { font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 4px; }
+    .scenario-field .blank-long { margin: 0; }
+    @media (max-width: 500px) { .scenario-fields { grid-template-columns: 1fr; } }
+
+    /* ── PASSWORD TABLE ── */
+    .pwd-table td:nth-child(1) { font-family: monospace; font-weight: 600; color: var(--senai-blue); }
+
+    /* ── AVALIAÇÃO ── */
+    .avaliacao-card {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    .avaliacao-card h3 {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      color: #ffd54f;
+    }
+    .avaliacao-card table { width: 100%; }
+    .avaliacao-card th {
+      background: rgba(255,255,255,0.1);
+      color: #ccc;
+      font-size: 0.75rem;
+    }
+    .avaliacao-card td { border-bottom: 1px solid rgba(255,255,255,0.1); color: #e0e0e0; }
+    .avaliacao-card tr:last-child td {
+      border-top: 2px solid #ffd54f;
+      font-weight: 700;
+      color: #ffd54f;
+      background: rgba(255,213,79,0.1);
+    }
+    .avaliacao-card td:last-child { text-align: right; font-weight: 600; }
+
+    /* ── QUESTIONÁRIOS ── */
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .quiz-card {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .quiz-num {
+      width: 36px; height: 36px;
+      background: var(--senai-blue);
+      color: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .quiz-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
+    .quiz-time { font-size: 0.78rem; color: var(--text-muted); }
+
+    /* ── ATA ── */
+    .ata-card {
+      background: linear-gradient(135deg, #fff, #f8f9ff);
+      border: 2px dashed var(--senai-blue);
+      border-radius: 14px;
+      padding: 28px 32px;
+    }
+    .ata-card h3 {
+      color: var(--senai-blue);
+      font-size: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .ata-field {
+      margin-bottom: 16px;
+    }
+    .ata-field label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .ata-field .blank-long { border-color: var(--senai-blue); }
+    .ata-roles { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+    .ata-roles th { background: var(--senai-blue); color: #fff; padding: 8px 12px; font-size: 0.8rem; text-align: left; }
+    .ata-roles td { padding: 9px 12px; border-bottom: 1px solid #ddd; }
+    .ata-roles td:last-child { border-bottom: 1px solid var(--senai-blue); min-width: 200px; }
+
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    .strategy-opt {
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .strategy-opt:hover { background: var(--senai-light); border-color: var(--senai-blue); }
+    @media (max-width: 500px) { .strategy-grid { grid-template-columns: 1fr 1fr; } }
+
+    /* ── FOOTER ── */
+    .page-footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      padding: 20px;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+
+    /* ── DIVIDER ── */
+    .part-divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 40px 0;
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      body { background: #fff; }
+      .card, .questao, .ata-card { box-shadow: none; border: 1px solid #ccc; }
+      .page-header { background: var(--senai-red) !important; -webkit-print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════ HEADER ══════════════════════ -->
+<header class="page-header">
+  <div class="badge">SENAI — Aprendizagem Industrial</div>
+  <h1>Atividade em Equipe</h1>
+  <p class="subtitle">UC1 — Introdução à Tecnologia da Informação e Comunicação · Aula 04 · Revisão e Aplicação</p>
+  <div class="header-meta">
+    <span>👨‍🏫 Prof. Gelvazio</span>
+    <span>📅 06 de agosto de 2026</span>
+    <span>⏱️ 60 minutos</span>
+    <span>👥 Grupos de 4–5 alunos</span>
+  </div>
+</header>
+
+<!-- ══════════════════════ CONTAINER ══════════════════════ -->
+<div class="container">
+
+  <!-- ── TEMA ── -->
+  <div style="text-align:center; margin-bottom: 32px;">
+    <p style="font-size:1.1rem; font-weight:600; color: var(--text-muted);">
+      História da Computação &nbsp;·&nbsp; Internet / WWW &nbsp;·&nbsp; Segurança da Informação
+    </p>
+  </div>
+
+  <!-- ── ORIENTAÇÕES GERAIS ── -->
+  <div class="orient-box">
+    <div class="orient-title">📋 Orientações Gerais</div>
+    <ul class="orient-list">
+      <li>Grupos de 4 a 5 alunos (definidos pelo professor)</li>
+      <li>Tempo total da atividade: <strong>60 minutos</strong></li>
+      <li>Entrega: <strong>Google Docs</strong> compartilhado com <em>gelvazio.c@edu.sc.senai.br</em></li>
+      <li>Título do documento: <em>"Atividade Equipe 06/08 — [Nome da Equipe]"</em></li>
+    </ul>
+  </div>
+
+  <!-- ── PAPÉIS ── -->
+  <div class="card">
+    <div style="font-weight:700; margin-bottom: 14px; font-size:0.95rem;">🎭 Papéis dentro da Equipe</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <span class="role-icon">🎯</span>
+        <div class="role-name">Coordenador(a)</div>
+        <div class="role-desc">Organiza o grupo, distribui tarefas e garante o prazo</div>
+      </div>
+      <div class="role-card">
+        <span class="role-icon">✏️</span>
+        <div class="role-name">Relator(a)</div>
+        <div class="role-desc">Digita as respostas no Google Docs</div>
+      </div>
+      <div class="role-card">
+        <span class="role-icon">🔍</span>
+        <div class="role-name">Pesquisador(a)</div>
+        <div class="role-desc">Consulta os slides e materiais de apoio</div>
+      </div>
+      <div class="role-card">
+        <span class="role-icon">✅</span>
+        <div class="role-name">Revisor(a)</div>
+        <div class="role-desc">Verifica erros antes de enviar</div>
+      </div>
+      <div class="role-card">
+        <span class="role-icon">🎤</span>
+        <div class="role-name">Apresentador(a)</div>
+        <div class="role-desc">Apresenta as respostas para a turma</div>
+      </div>
+    </div>
+    <div class="gold-rule">
+      <strong>⭐ Regra de Ouro:</strong> Usem as técnicas de consenso aprendidas na Aula 02 — ouçam todas as opiniões antes de decidir a resposta. Não há espaço para "só um falar". Anotem na ata quem respondeu cada questão.
+    </div>
+  </div>
+
+  <!-- ══════════════════════ PARTE 1 ══════════════════════ -->
+  <div class="section-header">
+    <div class="section-icon icon-red">💻</div>
+    <div class="section-title">
+      Parte 1 — História da Computação
+      <small>Base: Aula 01 — HISTORIA_COMPUTACAO_AULA_01.html</small>
+    </div>
+  </div>
+
+  <div class="p1">
+
+    <!-- Q1 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">1</span>
+        <span class="questao-titulo">Linha do Tempo em Equipe</span>
+      </div>
+      <div class="questao-body">
+        <p>Cada membro da equipe escolhe <strong>UMA geração de computador</strong> (1ª a 5ª) e responde:</p>
+        <ol>
+          <li>Qual tecnologia define essa geração?</li>
+          <li>Cite uma característica que a diferencia da geração anterior.</li>
+          <li>Qual impacto ela trouxe para a sociedade?</li>
+        </ol>
+        <p style="margin-top:10px;">Montem uma linha do tempo resumida da equipe com as 5 gerações em ordem cronológica no documento.</p>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">2</span>
+        <span class="questao-titulo">Ciclo de Funcionamento</span>
+      </div>
+      <div class="questao-body">
+        <p>Expliquem com suas palavras o ciclo básico de funcionamento de um computador:</p>
+        <p style="text-align:center; font-weight:700; color: var(--senai-red); margin: 10px 0;">
+          Entrada → Processamento → Armazenamento → Saída
+        </p>
+        <p>Deem um <strong>exemplo prático do dia a dia industrial</strong> para cada etapa.<br>
+        <em style="font-size:0.85rem;">(Ex: entrada = leitor de código de barras em uma linha de produção)</em></p>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">3</span>
+        <span class="questao-titulo">Hardware vs. Software</span>
+      </div>
+      <div class="questao-body">
+        <p>Preencham a tabela abaixo com pelo menos <strong>3 exemplos</strong> em cada coluna:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>💾 Hardware</th><th>⚙️ Software</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1. <span class="blank"></span></td><td>1. <span class="blank"></span></td></tr>
+              <tr><td>2. <span class="blank"></span></td><td>2. <span class="blank"></span></td></tr>
+              <tr><td>3. <span class="blank"></span></td><td>3. <span class="blank"></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:10px;">Responda: qual dos dois seria inútil sem o outro? Justifiquem em 2 linhas.</p>
+        <div class="blank-long"></div>
+        <div class="blank-long"></div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">4</span>
+        <span class="questao-titulo">Algoritmo do Cotidiano</span>
+      </div>
+      <div class="questao-body">
+        <p>Criem um algoritmo com pelo menos <strong>5 passos</strong> para <strong>UMA</strong> das situações abaixo. A equipe deve escolher por consenso:</p>
+        <ul class="checkbox-list" style="margin-top:10px;">
+          <li><input type="checkbox"> <strong>A)</strong> Ligar e desligar uma máquina de produção com segurança</li>
+          <li><input type="checkbox"> <strong>B)</strong> Realizar o login no Chromebook e abrir o Google Docs</li>
+          <li><input type="checkbox"> <strong>C)</strong> Enviar um e-mail formal para o professor com uma tarefa anexada</li>
+        </ul>
+        <p style="margin-top:10px; font-size:0.85rem; color:var(--text-muted);">Escrevam os passos numerados, claros e sem ambiguidade.</p>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">5</span>
+        <span class="questao-titulo">Profissão de TI</span>
+      </div>
+      <div class="questao-body">
+        <p>A equipe deve escolher, por votação, a <strong>profissão de TI</strong> que mais tem relação com a área industrial. Expliquem:</p>
+        <ol>
+          <li>Qual profissão a equipe escolheu e por quê?</li>
+          <li>Quais habilidades essa pessoa precisaria ter?</li>
+          <li>Onde essa profissão seria usada dentro de uma fábrica?</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="part-divider"></div>
+
+  <!-- ══════════════════════ PARTE 2 ══════════════════════ -->
+  <div class="section-header">
+    <div class="section-icon icon-blue">🌐</div>
+    <div class="section-title">
+      Parte 2 — Internet e World Wide Web
+      <small>Base: Aula 03 — SLIDE_INTERNET_WWW.html</small>
+    </div>
+  </div>
+
+  <div class="p2">
+
+    <!-- Q6 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">6</span>
+        <span class="questao-titulo">Internet ≠ WWW</span>
+      </div>
+      <div class="questao-body">
+        <p>Muita gente confunde os dois termos. A equipe deve:</p>
+        <ol>
+          <li>Explicar com <strong>UMA frase simples</strong> a diferença entre Internet e WWW.</li>
+          <li>Dar <strong>2 exemplos</strong> de serviços que usam a Internet mas <strong>NÃO</strong> são a Web.</li>
+          <li>Quem criou a WWW, quando e onde? O que ele queria resolver?</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">7</span>
+        <span class="questao-titulo">Como Funciona a Internet</span>
+      </div>
+      <div class="questao-body">
+        <p>Relacionem cada conceito com sua definição correta:</p>
+        <div class="table-wrap" style="margin: 12px 0;">
+          <table>
+            <thead>
+              <tr><th>Conceito</th><th>Definição</th><th>Resposta</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>A)</strong> Endereço IP</td><td>Traduz nomes de sites para números de endereço</td><td><span class="blank" style="min-width:50px;"></span></td></tr>
+              <tr><td><strong>B)</strong> DNS</td><td>Computador que armazena e envia dados para quem pede</td><td><span class="blank" style="min-width:50px;"></span></td></tr>
+              <tr><td><strong>C)</strong> Servidor</td><td>Identificação única de cada dispositivo na rede</td><td><span class="blank" style="min-width:50px;"></span></td></tr>
+              <tr><td><strong>D)</strong> Pacotes de Dados</td><td>Fragmentos em que os dados são divididos para ser transmitidos</td><td><span class="blank" style="min-width:50px;"></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Resposta da equipe:</strong> A=(<span class="blank" style="min-width:30px;"></span>) B=(<span class="blank" style="min-width:30px;"></span>) C=(<span class="blank" style="min-width:30px;"></span>) D=(<span class="blank" style="min-width:30px;"></span>)</p>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">8</span>
+        <span class="questao-titulo">Evolução da Web</span>
+      </div>
+      <div class="questao-body">
+        <p>Completem a tabela com as características de cada versão da Web:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Versão</th><th>Período</th><th>Característica Principal</th><th>Exemplo Real</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Web 1.0</strong></td><td></td><td></td><td></td></tr>
+              <tr><td><strong>Web 2.0</strong></td><td></td><td></td><td></td></tr>
+              <tr><td><strong>Web 3.0</strong></td><td></td><td></td><td></td></tr>
+              <tr><td><strong>Web 4.0</strong></td><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:10px;">Em qual versão da Web vocês acreditam que vivem hoje? Justifiquem.</p>
+        <div class="blank-long"></div>
+        <div class="blank-long"></div>
+      </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">9</span>
+        <span class="questao-titulo">Marco Histórico</span>
+      </div>
+      <div class="questao-body">
+        <p>A equipe deve escolher, por consenso, o marco mais importante para a história da internet:</p>
+        <ul class="checkbox-list" style="margin: 10px 0;">
+          <li><input type="checkbox"> <strong>A)</strong> ARPANET (1969)</li>
+          <li><input type="checkbox"> <strong>B)</strong> Protocolo TCP/IP (1983)</li>
+          <li><input type="checkbox"> <strong>C)</strong> Criação da WWW por Tim Berners-Lee (1989)</li>
+          <li><input type="checkbox"> <strong>D)</strong> Navegador Mosaic (1993)</li>
+          <li><input type="checkbox"> <strong>E)</strong> Fundação do Google (1998)</li>
+          <li><input type="checkbox"> <strong>F)</strong> iPhone (2007)</li>
+          <li><input type="checkbox"> <strong>G)</strong> ChatGPT (2022)</li>
+        </ul>
+        <p>Registrem: qual marco foi escolhido, quantos votos cada opção recebeu e por que foi considerado o mais importante.</p>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">10</span>
+        <span class="questao-titulo">Netiqueta no SENAI</span>
+      </div>
+      <div class="questao-body">
+        <p>Imaginem que vocês são responsáveis por criar as regras de uso da internet para os alunos do SENAI. Listem:</p>
+        <ol>
+          <li>3 regras de <strong style="color: var(--accent-green);">USO PERMITIDO</strong></li>
+          <li>3 regras de <strong style="color: var(--senai-red);">USO PROIBIDO</strong></li>
+          <li>O que acontece com quem descumprir? (citem o que aprenderam na aula)</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="part-divider"></div>
+
+  <!-- ══════════════════════ PARTE 3 ══════════════════════ -->
+  <div class="section-header">
+    <div class="section-icon icon-green">🔒</div>
+    <div class="section-title">
+      Parte 3 — Segurança da Informação
+      <small>Base: Aula 03 — SLIDE_SEGURANCA_INFORMACAO.html</small>
+    </div>
+  </div>
+
+  <div class="p3">
+
+    <!-- Q11 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">11</span>
+        <span class="questao-titulo">Tríade CIA</span>
+      </div>
+      <div class="questao-body">
+        <p>A Segurança da Informação se baseia em três pilares fundamentais. Preencham a tabela:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Pilar</th><th>O que garante?</th><th>Exemplo de Violação</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>C</strong> — Confidencialidade</td><td></td><td></td></tr>
+              <tr><td><strong>I</strong> — Integridade</td><td></td><td></td></tr>
+              <tr><td><strong>A</strong> — Disponibilidade</td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:12px;">Um ataque de <strong>ransomware</strong> que bloqueia todos os arquivos de uma empresa viola qual(is) pilar(es) da Tríade CIA? Justifiquem.</p>
+        <div class="blank-long"></div>
+        <div class="blank-long"></div>
+      </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">12</span>
+        <span class="questao-titulo">LGPD e Marco Civil</span>
+      </div>
+      <div class="questao-body">
+        <p>Sobre as leis que regulam o uso de dados e a internet no Brasil:</p>
+        <ol>
+          <li>O que é a LGPD (Lei nº 13.709/2018) e o que ela protege?</li>
+          <li>Liste 3 direitos que um cidadão tem sobre seus próprios dados.</li>
+          <li>O que é a Lei Carolina Dieckmann e que tipo de crime ela pune?</li>
+          <li>Algum membro da equipe já teve dados vazados ou conhece alguém que teve? Relatar (sem expor dados pessoais).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">13</span>
+        <span class="questao-titulo">Identificando Golpes</span>
+      </div>
+      <div class="questao-body">
+        <p style="margin-bottom:12px;">Para cada cenário, identifiquem o tipo de golpe e o que a vítima deveria fazer:</p>
+
+        <div class="scenario">
+          <div class="scenario-label">📱 Cenário A</div>
+          <div class="scenario-text">"Você recebe um SMS: 'Seu pacote dos Correios está retido. Pague a taxa de R$ 4,90 clicando aqui: bit.ly/rastreio-correios'"</div>
+          <div class="scenario-fields">
+            <div class="scenario-field"><label>Tipo de golpe:</label><div class="blank-long"></div></div>
+            <div class="scenario-field"><label>O que fazer:</label><div class="blank-long"></div></div>
+          </div>
+        </div>
+
+        <div class="scenario">
+          <div class="scenario-label">💻 Cenário B</div>
+          <div class="scenario-text">"Você abre o computador e aparece a mensagem: 'Seus arquivos foram criptografados. Pague R$ 5.000 em Bitcoin para recuperá-los.'"</div>
+          <div class="scenario-fields">
+            <div class="scenario-field"><label>Tipo de golpe:</label><div class="blank-long"></div></div>
+            <div class="scenario-field"><label>O que fazer:</label><div class="blank-long"></div></div>
+          </div>
+        </div>
+
+        <div class="scenario">
+          <div class="scenario-label">📞 Cenário C</div>
+          <div class="scenario-text">"Alguém liga dizendo ser do suporte do banco. Pede o código SMS que acabou de chegar no seu celular para 'confirmar sua identidade'."</div>
+          <div class="scenario-fields">
+            <div class="scenario-field"><label>Tipo de golpe:</label><div class="blank-long"></div></div>
+            <div class="scenario-field"><label>O que fazer:</label><div class="blank-long"></div></div>
+          </div>
+        </div>
+
+        <div class="scenario">
+          <div class="scenario-label">💬 Cenário D</div>
+          <div class="scenario-text">"Uma mensagem no WhatsApp de um número desconhecido diz: 'Mãe, troquei de número. Preciso de R$ 800 urgente para pagar a conta.'"</div>
+          <div class="scenario-fields">
+            <div class="scenario-field"><label>Tipo de golpe:</label><div class="blank-long"></div></div>
+            <div class="scenario-field"><label>O que fazer:</label><div class="blank-long"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">14</span>
+        <span class="questao-titulo">Senhas e 2FA</span>
+      </div>
+      <div class="questao-body">
+        <p>Avaliem as senhas abaixo e classifiquem como FRACA, MÉDIA ou FORTE:</p>
+        <div class="table-wrap">
+          <table class="pwd-table">
+            <thead>
+              <tr><th>Senha</th><th>Classificação</th><th>Versão Melhorada</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>senai2026</td><td></td><td></td></tr>
+              <tr><td>J@o#1987!</td><td></td><td></td></tr>
+              <tr><td>12345678</td><td></td><td></td></tr>
+              <tr><td>F@bric@_Seg4r@!</td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:12px;">O que é <strong>autenticação em dois fatores (2FA)</strong> e por que é importante ativá-la mesmo que sua senha já seja forte? Cite 2 tipos de 2FA.</p>
+        <div class="blank-long"></div>
+        <div class="blank-long"></div>
+      </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">15</span>
+        <span class="questao-titulo">Backup e Proteção contra Malware</span>
+      </div>
+      <div class="questao-body">
+        <ol>
+          <li style="margin-bottom:10px;">Expliquem a <strong>Regra 3-2-1</strong> de backup com suas palavras. O que cada número significa na prática?</li>
+          <li style="margin-bottom:10px;">No Chromebook do SENAI, onde ficam salvos automaticamente os arquivos do Google Docs? Isso garante a proteção segundo a Regra 3-2-1? Por quê?</li>
+          <li style="margin-bottom:12px;">Completem a tabela de tipos de malware:</li>
+        </ol>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Tipo de Malware</th><th>Como Age / O que Faz</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>🦠 Vírus</td><td></td></tr>
+              <tr><td>🐛 Worm</td><td></td></tr>
+              <tr><td>🐴 Trojan</td><td></td></tr>
+              <tr><td>👁️ Spyware</td><td></td></tr>
+              <tr><td>🔐 Ransomware</td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:12px;"><strong>d)</strong> Cite 3 boas práticas para se proteger de malware no dia a dia.</p>
+        <div class="blank-long"></div>
+        <div class="blank-long"></div>
+        <div class="blank-long"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="part-divider"></div>
+
+  <!-- ══════════════════════ PARTE 4 ══════════════════════ -->
+  <div class="section-header">
+    <div class="section-icon icon-orange">🚀</div>
+    <div class="section-title">
+      Parte 4 — Integração: Computação + Internet + Segurança + Equipe
+    </div>
+  </div>
+
+  <div class="p4">
+
+    <!-- Q16 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">16</span>
+        <span class="questao-titulo">Desafio Criativo ⭐ <small style="font-weight:400; color: var(--accent-orange);">(vale ponto extra!)</small></span>
+      </div>
+      <div class="questao-body">
+        <p>A equipe deve criar um <strong>MINI GLOSSÁRIO</strong> com 10 termos técnicos vistos nas três aulas.</p>
+        <p style="margin-top:8px;">Para cada termo, escrevam a <strong>definição com as palavras da equipe</strong> (sem copiar do slide) e deem um exemplo prático do uso.</p>
+        <div style="background: #f0f4f8; border-radius: 8px; padding: 12px 16px; margin-top: 10px; font-size:0.85rem; color:var(--text-muted);">
+          <strong>Sugestão de termos:</strong> ENIAC, algoritmo, hardware, software, ARPANET, TCP/IP, DNS, servidor, Web 2.0, phishing, ransomware, tríade CIA, LGPD, backup, 2FA, malware, firewall, engenharia social…
+        </div>
+      </div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="questao">
+      <div class="questao-header">
+        <span class="questao-num">17</span>
+        <span class="questao-titulo">Reflexão da Equipe</span>
+      </div>
+      <div class="questao-body">
+        <p>Para finalizar, <strong>cada membro</strong> responde individualmente em 3 linhas:</p>
+        <div style="background: var(--senai-light); border-radius: 8px; padding: 14px 18px; margin: 10px 0; font-style:italic; font-size:0.9rem; color: var(--senai-blue); font-weight:600;">
+          "O que aprendi sobre computação, internet e segurança da informação que vai fazer diferença na minha vida profissional?"
+        </div>
+        <p style="font-size:0.85rem; color:var(--text-muted);">O relator consolida todas as respostas no documento.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="part-divider"></div>
+
+  <!-- ══════════════════════ CRITÉRIOS ══════════════════════ -->
+  <div class="section-header">
+    <div class="section-icon icon-purple">📊</div>
+    <div class="section-title">Critérios de Avaliação</div>
+  </div>
+
+  <div class="avaliacao-card">
+    <h3>📋 Pontuação</h3>
+    <table>
+      <thead><tr><th>Critério</th><th>Pontos</th></tr></thead>
+      <tbody>
+        <tr><td>Completude das respostas (todas as questões)</td><td>3,0</td></tr>
+        <tr><td>Qualidade e profundidade das respostas</td><td>3,0</td></tr>
+        <tr><td>Uso correto dos termos técnicos</td><td>1,5</td></tr>
+        <tr><td>Evidência de trabalho coletivo (registro de votos, consenso documentado, papéis utilizados)</td><td>1,5</td></tr>
+        <tr><td>Entrega dentro do prazo</td><td>1,0</td></tr>
+        <tr><td><strong>TOTAL</strong></td><td><strong>10,0</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="part-divider"></div>
+
+  <!-- ══════════════════════ PARTE 5 ══════════════════════ -->
+  <div class="section-header">
+    <div class="section-icon icon-blue">📝</div>
+    <div class="section-title">Parte 5 — Questionários Individuais</div>
+  </div>
+
+  <div class="card">
+    <p style="margin-bottom:16px; font-size:0.9rem;">Após concluir todas as questões em equipe, <strong>CADA MEMBRO</strong> deve responder individualmente os três questionários no Google Forms:</p>
+    <div class="quiz-grid">
+      <div class="quiz-card">
+        <div class="quiz-num">1</div>
+        <div>
+          <div class="quiz-title">Segurança da Informação</div>
+          <div class="quiz-time">⏱️ ~10 minutos · Aula 04 do Dashboard</div>
+        </div>
+      </div>
+      <div class="quiz-card">
+        <div class="quiz-num">2</div>
+        <div>
+          <div class="quiz-title">Internet e WWW</div>
+          <div class="quiz-time">⏱️ ~10 minutos · Aula 04 do Dashboard</div>
+        </div>
+      </div>
+      <div class="quiz-card">
+        <div class="quiz-num">3</div>
+        <div>
+          <div class="quiz-title">Hardware e Sistema Operacional</div>
+          <div class="quiz-time">⏱️ ~10 minutos · Aula 04 do Dashboard</div>
+        </div>
+      </div>
+    </div>
+    <div style="background:#fff3e0; border-radius:8px; padding:12px 16px; margin-top:16px; font-size:0.85rem; color:#e65100;">
+      <strong>⚠️ Atenção:</strong> Os questionários são <strong>individuais</strong> — cada aluno responde com seu próprio login. As respostas são enviadas automaticamente ao professor após submissão. Devem ser concluídos até o fim da aula.
+    </div>
+  </div>
+
+  <div class="part-divider"></div>
+
+  <!-- ══════════════════════ ATA ══════════════════════ -->
+  <div class="section-header">
+    <div class="section-icon icon-red">📄</div>
+    <div class="section-title">Ata da Atividade</div>
+  </div>
+
+  <div class="ata-card">
+    <h3>📄 Ata — preencher no Google Docs</h3>
+
+    <div class="ata-field">
+      <label>Nome da Equipe</label>
+      <div class="blank-long"></div>
+    </div>
+    <div class="ata-field">
+      <label>Membros</label>
+      <div class="blank-long"></div>
+      <div class="blank-long"></div>
+    </div>
+
+    <table class="ata-roles">
+      <thead><tr><th>Papel</th><th>Nome do Membro</th></tr></thead>
+      <tbody>
+        <tr><td>🎯 Coordenador(a)</td><td></td></tr>
+        <tr><td>✏️ Relator(a)</td><td></td></tr>
+        <tr><td>🔍 Pesquisador(a)</td><td></td></tr>
+        <tr><td>✅ Revisor(a)</td><td></td></tr>
+        <tr><td>🎤 Apresentador(a)</td><td></td></tr>
+      </tbody>
+    </table>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
+      <div class="ata-field">
+        <label>Horário de Início</label>
+        <div class="blank-long"></div>
+      </div>
+      <div class="ata-field">
+        <label>Horário de Entrega</label>
+        <div class="blank-long"></div>
+      </div>
+    </div>
+
+    <div class="ata-field">
+      <label>Questões que geraram mais debate na equipe</label>
+      <div class="blank-long"></div>
+      <div class="blank-long"></div>
+    </div>
+
+    <div class="ata-field">
+      <label>Estratégia de Consenso Utilizada</label>
+      <div class="strategy-grid" style="margin-top:8px;">
+        <div class="strategy-opt"><input type="checkbox"> 🗳️ Votação</div>
+        <div class="strategy-opt"><input type="checkbox"> 💡 Brainstorming</div>
+        <div class="strategy-opt"><input type="checkbox"> 🗣️ Rodada de Fala</div>
+        <div class="strategy-opt"><input type="checkbox"> ➕ Outra</div>
+      </div>
+    </div>
+
+    <div class="ata-field" style="margin-top:16px;">
+      <label>Assinatura do(a) Coordenador(a)</label>
+      <div class="blank-long" style="border-color: var(--senai-red);"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer class="page-footer">
+  SENAI — Aprendizagem Industrial &nbsp;·&nbsp; UC1 — Introdução à Tecnologia da Informação e Comunicação &nbsp;·&nbsp; gelvazio.c@edu.sc.senai.br
+</footer>
+
+</body>
+</html>
