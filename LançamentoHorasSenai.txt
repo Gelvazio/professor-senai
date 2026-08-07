@@ -1,10 +1,10 @@
 
 
-#04-08 - planejamento 
-08 - 11:30
+#04-08 - Planejamento 
+08:00 - 11:30
 
-#07-08 - planejamento
-08 - 11
+#07-08 - Planejamento
+08:00 - 11:00
 
 #12:30 - 13:30 - Deslocamento
 #17:30 - 18:30 - Deslocamento
@@ -12,7 +12,7 @@
 Aulas nao precisa lançar
 
 Horas a dispensar com planejamento
-Carga horaria x 20%
+Carga horaria x 20% Planejamento
 40h x 0,2 = 8h
 
 #Colocar Duvidas, depois repassar para Selma
