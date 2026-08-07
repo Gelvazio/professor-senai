@@ -317,17 +317,16 @@ Todo arquivo de slide HTML criado ou editado deve ter **no mínimo 15 slides** d
 |--------|------|-----------|
 | `id` | integer | PK auto-increment |
 | `codigo` | text | Identificador curto (ex: `tds`, `uc1`) |
-| `descricaocurso` | text | Nome completo do curso |
 | `materias` | jsonb | Array de aulas com materiais e `visivel` (0/1) |
 | `gabaritos` | jsonb | Array de gabaritos com `data_aula`, `exercicios` e `visualizar` (0/1) |
 | `visivel` | integer | Curso visível no dashboard (1=sim, 0=não) |
 
 **Registros:**
 
-| id | codigo | descricaocurso |
-|----|--------|----------------|
-| 2 | `uc1` | Introdução à Tecnologia da Informação e Comunicação |
-| 3 | `tds` | Técnico em Desenvolvimento de Sistemas |
+| id | codigo |
+|----|--------|
+| 2 | `uc1` |
+| 3 | `tds` |
 
 ### Estrutura `gabaritos` (coluna JSONB da tabela `curso`)
 

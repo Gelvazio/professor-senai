@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786065726.3702788,
-    "ast_hash": "cbae86d5f227746185c34fabe9b74d57",
+    "mtime": 1786068001.8350291,
+    "ast_hash": "6710147a6d64fbb616a01ae2925b2662",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "sistema/CLAUDE.md": {
-    "mtime": 1786036695.2290752,
-    "ast_hash": "39df898cd21c5e41ed971be1d1e32b4f",
+    "mtime": 1786068075.8333144,
+    "ast_hash": "821a4b174c47d5abecd80c849d3fec3b",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/duplas-aula.txt": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786067201.2133029,
-    "ast_hash": "d9900546147c50eb1a1486ed4cf2abea",
+    "mtime": 1786067909.5000966,
+    "ast_hash": "e75aa0d1ae9fb3f4ecff841b40445300",
     "semantic_hash": ""
   },
   "sistema/login.html": {
@@ -285,8 +285,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-02-04-08-2026/SLIDE_AULA_02_COMUNICACAO.html": {
-    "mtime": 1786064384.818894,
-    "ast_hash": "f7557bc6d747cd6fb619f1b28203f648",
+    "mtime": 1786067880.1551485,
+    "ast_hash": "a1c97165a6c4105868b0f5ffedea9b67",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-03-05-08-2026/SLIDE_AULA_03.html": {
@@ -340,8 +340,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/SLIDE_AULA_08.html": {
-    "mtime": 1786064969.6110253,
-    "ast_hash": "d0e944ba7ce4d819eb63bc3946d640dd",
+    "mtime": 1786067526.7320259,
+    "ast_hash": "08bf3f10225598bda0a7867390ff9330",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-09-13-08-2026/SLIDE_AULA_09.html": {
@@ -350,8 +350,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/SLIDE_AULA_10.html": {
-    "mtime": 1786064384.8527746,
-    "ast_hash": "93ffc860ba9c9265c59fbdbfdf94fed7",
+    "mtime": 1786068020.0121236,
+    "ast_hash": "8f3f4a3966c224cc8a5b7d4ad307aec9",
     "semantic_hash": ""
   }
 }
