@@ -239,6 +239,21 @@
         color: #444;
       }
 
+      .card-add {
+        border: 2px dashed #c8e6c9; border-radius: 16px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        cursor: pointer; min-height: 220px; gap: 10px;
+        background: #fff; transition: border-color .2s, background .2s;
+      }
+      .card-add:hover { border-color: #2e7d32; background: #f1f8e9; }
+      .card-add-icon { font-size: 52px; color: #2e7d32; line-height: 1; }
+      .card-add-label { font-size: 13px; font-weight: 700; color: #555; }
+      .btn-card-editar {
+        font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 5px;
+        background: #e3f2fd; color: #1565c0; border: none; cursor: pointer;
+        transition: background .15s;
+      }
+      .btn-card-editar:hover { background: #bbdefb; }
       .card-footer {
         padding: 12px 20px 14px;
         border-top: 1px solid #f0f0f0;
@@ -683,6 +698,8 @@
       .btn-mat-acessar { display:inline-flex; align-items:center; padding:4px 10px; border-radius:5px; background:#004384; color:#fff; font-size:11px; font-weight:700; text-decoration:none; white-space:nowrap; flex-shrink:0; transition:background .15s; }
       .btn-mat-acessar:hover { background:#003369; }
       .btn-mat-em-breve { background:#e0e0e0; color:#aaa; cursor:not-allowed; }
+      .btn-mat-bloqueado { background:#757575; cursor:not-allowed; border:none; }
+      .btn-mat-bloqueado:hover { background:#616161; }
       .aula-mat-vazio { padding: 10px 16px 10px 80px; font-size: 12px; color: #bbb; font-style: italic; }
       .crud-table {
         width: 100%;
@@ -912,15 +929,7 @@
     </div>
 
     <!-- ── Seção Admin ─────────────────────────── -->
-    <div class="admin-section" id="adminSection">
-      <div class="admin-section-title">⚙️ Administração de Cadastros</div>
-      <div class="admin-cards">
-        <button class="admin-card" onclick="abrirCRUD('curso')">
-          <span class="admin-card-icon">📚</span>
-          <span class="admin-card-label">Cursos</span>
-        </button>
-      </div>
-    </div>
+    <div class="admin-section" id="adminSection" style="display:none"></div>
 
     <!-- ── Modal de Aulas ──────────────────────── -->
     <div
@@ -1334,6 +1343,7 @@
         }
       </div>
       <div class="card-edit" id="edit-${curso.id}">
+        <button class="btn-card-editar" onclick="editarCursoCard(${curso.idNum})">✏️ Editar</button>
         <span class="card-edit-label">Visibilidade</span>
         <div class="toggle-wrap">
           <span class="toggle-label">${visivel ? "Visível" : "Oculto"}</span>
@@ -1352,6 +1362,12 @@
           document
             .querySelectorAll(".card-edit")
             .forEach((el) => (el.style.display = "flex"));
+
+          const addCard = document.createElement("div");
+          addCard.className = "card card-add";
+          addCard.onclick = adicionarCurso;
+          addCard.innerHTML = `<span class="card-add-icon">＋</span><span class="card-add-label">Adicionar</span>`;
+          document.getElementById("grid").appendChild(addCard);
         }
       })();
 
@@ -1889,9 +1905,12 @@
                   : (m.arquivo && /youtube|vimeo|youtu\.be/i.test(m.arquivo)) ? "Videoaula"
                   : "Leitura";
                 const temLink = m.arquivo && m.arquivo !== "#";
-                const btnAcessar = temLink
-                  ? `<a class="btn-mat-acessar" href="${m.arquivo}" target="_blank">Acessar ↗</a>`
-                  : `<span class="btn-mat-acessar btn-mat-em-breve">Em breve</span>`;
+                const bloqueado = !isProfessor && (a.visivel !== 1 || m.visivel === 0);
+                const btnAcessar = bloqueado
+                  ? `<button class="btn-mat-acessar btn-mat-bloqueado" onclick="conteudoBloqueado()">🔒 Acessar</button>`
+                  : temLink
+                    ? `<a class="btn-mat-acessar" href="${m.arquivo}" target="_blank">Acessar ↗</a>`
+                    : `<span class="btn-mat-acessar btn-mat-em-breve">Em breve</span>`;
                 return `<div class="aula-mat-row">
                   <span class="aula-mat-seq">${i + 1}</span>
                   <div class="aula-mat-icon">${m.icone || "📄"}</div>
@@ -1926,6 +1945,24 @@
             </div>
           </div>`;
         }).join("");
+      }
+
+      async function editarCursoCard(id) {
+        await abrirCRUD('curso');
+        editarCRUD(id);
+      }
+
+      async function adicionarCurso() {
+        await abrirCRUD('curso');
+        mostrarFormCRUD();
+      }
+
+      function conteudoBloqueado() {
+        const t = document.createElement("div");
+        t.textContent = "Bloqueado por enquanto ;)";
+        t.style.cssText = "position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:#e65100;color:#fff;padding:10px 22px;border-radius:8px;font-weight:700;font-size:14px;z-index:9999;box-shadow:0 4px 16px rgba(0,0,0,.25);pointer-events:none;transition:opacity .3s";
+        document.body.appendChild(t);
+        setTimeout(() => { t.style.opacity = "0"; setTimeout(() => t.remove(), 300); }, 1700);
       }
 
       function semPermissao() {
