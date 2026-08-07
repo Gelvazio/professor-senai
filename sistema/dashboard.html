@@ -739,6 +739,7 @@
       .btn-ed:hover {
         background: #bbdefb;
       }
+      .btn-ed.bloqueado, .btn-del.bloqueado { opacity: 0.4; cursor: not-allowed; }
       .btn-del {
         background: #fce4ec;
         color: #c62828;
@@ -1915,8 +1916,8 @@
               </div>
               <div class="aula-acc-acts" onclick="event.stopPropagation()">
                 <span title="${a.visivel===1?'Visível':'Oculta'}">${a.visivel===1?"🟢":"🔒"}</span>
-                <button class="btn-ed" onclick="abrirFormAula(${a.numero})">✏️</button>
-                <button class="btn-del" onclick="excluirAulaModal(${a.numero})">🗑️</button>
+                <button class="btn-ed${isProfessor ? '' : ' bloqueado'}" onclick="${isProfessor ? `abrirFormAula(${a.numero})` : 'semPermissao()'}">✏️</button>
+                <button class="btn-del${isProfessor ? '' : ' bloqueado'}" onclick="${isProfessor ? `excluirAulaModal(${a.numero})` : 'semPermissao()'}">🗑️</button>
               </div>
               <div class="aula-acc-chevron" id="acc-chv-${a.numero}">▾</div>
             </div>
@@ -1925,6 +1926,14 @@
             </div>
           </div>`;
         }).join("");
+      }
+
+      function semPermissao() {
+        const t = document.createElement("div");
+        t.textContent = "Sem permissão!";
+        t.style.cssText = "position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:#c62828;color:#fff;padding:10px 22px;border-radius:8px;font-weight:700;font-size:14px;z-index:9999;box-shadow:0 4px 16px rgba(0,0,0,.25);pointer-events:none;transition:opacity .3s";
+        document.body.appendChild(t);
+        setTimeout(() => { t.style.opacity = "0"; setTimeout(() => t.remove(), 300); }, 1700);
       }
 
       function toggleAcc(numero) {
