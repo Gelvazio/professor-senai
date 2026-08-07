@@ -2424,12 +2424,24 @@
         if (tipo) m.tipo = tipo;
 
         if (_matEditContext && _matEditContext.tempIdx !== undefined) {
-          _aulaMatTemp[_matEditContext.tempIdx] = { ..._aulaMatTemp[_matEditContext.tempIdx], ...m };
+          const existing = _aulaMatTemp[_matEditContext.tempIdx];
+          _aulaMatTemp[_matEditContext.tempIdx] = {
+            id: existing.id || crypto.randomUUID(),
+            numero_aula: parseInt(document.getElementById("aulaNum").value) || existing.numero_aula,
+            ...existing,
+            ...m,
+          };
           renderAulaMatList();
           fecharAddMatAula();
         } else if (_matEditContext) {
           const aula = _aulaLista.find(a => a.numero === _matEditContext.aulaNum);
-          aula.materiais[_matEditContext.idx] = { ...aula.materiais[_matEditContext.idx], ...m };
+          const existing = aula.materiais[_matEditContext.idx];
+          aula.materiais[_matEditContext.idx] = {
+            id: existing.id || crypto.randomUUID(),
+            numero_aula: _matEditContext.aulaNum,
+            ...existing,
+            ...m,
+          };
           fecharAddMatAula();
           setAulasMsg("⏳ Salvando…", "");
           try {
@@ -2440,7 +2452,11 @@
             setAulasMsg("❌ " + e.message, "err");
           }
         } else {
-          _aulaMatTemp.push(m);
+          _aulaMatTemp.push({
+            id: crypto.randomUUID(),
+            numero_aula: parseInt(document.getElementById("aulaNum").value) || 0,
+            ...m,
+          });
           renderAulaMatList();
           fecharAddMatAula();
         }
