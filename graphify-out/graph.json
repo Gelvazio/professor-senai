@@ -467,7 +467,7 @@
       "label": "Graphify",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L14",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "claude_graphify",
       "community": 10,
@@ -477,7 +477,7 @@
       "label": "Slides",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L22",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "claude_slides",
       "community": 10,
@@ -1521,9 +1521,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude",
-      "target": "claude_professor_senai_regras_do_projeto",
-      "confidence_score": 1.0
+      "target": "claude_professor_senai_regras_do_projeto"
     },
     {
       "relation": "contains",
@@ -1531,9 +1531,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_professor_senai_regras_do_projeto",
-      "target": "claude_commit_e_push_obrigat\u00f3rios",
-      "confidence_score": 1.0
+      "target": "claude_commit_e_push_obrigat\u00f3rios"
     },
     {
       "relation": "contains",
@@ -1541,9 +1541,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_professor_senai_regras_do_projeto",
-      "target": "claude_graphify",
-      "confidence_score": 1.0
+      "target": "claude_graphify"
     },
     {
       "relation": "contains",
@@ -1551,9 +1551,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_professor_senai_regras_do_projeto",
-      "target": "claude_slides",
-      "confidence_score": 1.0
+      "target": "claude_slides"
     },
     {
       "relation": "contains",
@@ -2157,5 +2157,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c530538668c3a28e4e10a19f1d16c42a77ca2c18"
+  "built_at_commit": "f6de8c99ec2058940955b6bd5d38b43cdaf58b1a"
 }

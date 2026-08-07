@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786105282.3165238,
-    "ast_hash": "3cf4a10168188f3b3368e6c05b489ff8",
+    "mtime": 1786120004.3477428,
+    "ast_hash": "32e1b76508ab4b83bbc177177cd50669",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -190,8 +190,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786119922.1617599,
-    "ast_hash": "313c622d8dee2d005e67b5d6da47a190",
+    "mtime": 1786120158.928459,
+    "ast_hash": "c954e2e8fed21bb172f9604a99ebb73f",
     "semantic_hash": ""
   },
   "sistema/login.html": {
@@ -295,8 +295,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.html": {
-    "mtime": 1786098687.430474,
-    "ast_hash": "64de8482b87f02a8fbfb7f44ac92e29d",
+    "mtime": 1786120686.6032932,
+    "ast_hash": "7e37b485ce314900e67c89ecab8742c8",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.txt": {
@@ -435,8 +435,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1786119936.5851324,
-    "ast_hash": "daf9555759d19131f095ee4546242d4b",
+    "mtime": 1786120299.8084147,
+    "ast_hash": "427747c93188abd902ae810c9809beca",
     "semantic_hash": ""
   }
 }
