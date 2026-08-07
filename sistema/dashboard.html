@@ -249,7 +249,7 @@
       .card-add-icon { font-size: 52px; color: #2e7d32; line-height: 1; }
       .card-add-label { font-size: 13px; font-weight: 700; color: #555; }
       .btn-card-editar {
-        font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 5px;
+        font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 7px;
         background: #e3f2fd; color: #1565c0; border: none; cursor: pointer;
         transition: background .15s;
       }
@@ -1947,14 +1947,54 @@
         }).join("");
       }
 
+      let _cursoModalId = null;
+
+      function fecharModalCurso() {
+        document.getElementById('modalCursoForm').style.display = 'none';
+        _cursoModalId = null;
+      }
+
       async function editarCursoCard(id) {
-        await abrirCRUD('curso');
-        editarCRUD(id);
+        _cursoModalId = id;
+        const c = dadosCursos.cursos.find(x => x.idNum === id);
+        document.getElementById('cursoFormTitulo').textContent = 'Editar Curso';
+        document.getElementById('cfNome').value = c ? c.nome : '';
+        document.getElementById('cfCodigo').value = c ? c.id : '';
+        document.getElementById('cfTipo').value = c ? (c.tipo || '') : '';
+        document.getElementById('cfVisivel').value = c ? String(c.visivel) : '1';
+        document.getElementById('cursoFormMsg').textContent = '';
+        document.getElementById('modalCursoForm').style.display = 'flex';
       }
 
       async function adicionarCurso() {
-        await abrirCRUD('curso');
-        mostrarFormCRUD();
+        _cursoModalId = null;
+        document.getElementById('cursoFormTitulo').textContent = 'Adicionar Curso';
+        document.getElementById('cfNome').value = '';
+        document.getElementById('cfCodigo').value = '';
+        document.getElementById('cfTipo').value = '';
+        document.getElementById('cfVisivel').value = '1';
+        document.getElementById('cursoFormMsg').textContent = '';
+        document.getElementById('modalCursoForm').style.display = 'flex';
+      }
+
+      async function salvarModalCurso() {
+        const payload = {
+          nome_completo: document.getElementById('cfNome').value.trim(),
+          codigo: document.getElementById('cfCodigo').value.trim(),
+          tipo_curso: document.getElementById('cfTipo').value.trim(),
+          visivel: parseInt(document.getElementById('cfVisivel').value),
+        };
+        try {
+          if (_cursoModalId !== null) {
+            await sbPatch('curso', 'id', _cursoModalId, payload);
+          } else {
+            await sbPost('curso', payload);
+          }
+          document.getElementById('cursoFormMsg').textContent = '✅ Salvo!';
+          setTimeout(() => { fecharModalCurso(); location.reload(); }, 900);
+        } catch (e) {
+          document.getElementById('cursoFormMsg').textContent = '❌ Erro: ' + e.message;
+        }
       }
 
       function conteudoBloqueado() {
@@ -2232,5 +2272,41 @@
         }
       }
     </script>
+
+    <!-- Modal simples para editar/adicionar curso -->
+    <div class="crud-backdrop" id="modalCursoForm" style="display:none">
+      <div class="crud-modal" style="max-width:460px">
+        <div class="crud-modal-head">
+          <h3 id="cursoFormTitulo">Editar Curso</h3>
+          <button class="crud-btn-fechar" onclick="fecharModalCurso()">✕</button>
+        </div>
+        <div style="padding:20px 24px;display:flex;flex-direction:column;gap:14px">
+          <div>
+            <label class="crud-label">Nome Completo</label>
+            <input class="crud-input" id="cfNome" type="text" placeholder="Nome completo do curso">
+          </div>
+          <div>
+            <label class="crud-label">Código</label>
+            <input class="crud-input" id="cfCodigo" type="text" placeholder="ex: uc1, tds">
+          </div>
+          <div>
+            <label class="crud-label">Tipo de Curso</label>
+            <input class="crud-input" id="cfTipo" type="text" placeholder="ex: Aprendizagem Industrial">
+          </div>
+          <div>
+            <label class="crud-label">Visível</label>
+            <select class="crud-input" id="cfVisivel">
+              <option value="1">Sim</option>
+              <option value="0">Não</option>
+            </select>
+          </div>
+          <div style="display:flex;gap:10px;margin-top:4px">
+            <button class="btn-salvar" onclick="salvarModalCurso()">💾 Salvar</button>
+            <button class="btn-cancelar" onclick="fecharModalCurso()">Cancelar</button>
+          </div>
+          <span id="cursoFormMsg" style="font-size:13px;color:#2e7d32;min-height:18px"></span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
