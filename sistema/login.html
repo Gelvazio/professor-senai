@@ -71,10 +71,12 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#004384;min-he
 
 <script>
 // Auto-login como PROFESSOR em ambiente local (127.0.0.1, localhost ou file://)
+// Não aplica se o usuário clicou em Sair (?logout=1)
 const _isLocal = window.location.hostname === '127.0.0.1' ||
                  window.location.hostname === 'localhost' ||
                  window.location.protocol === 'file:';
-if (_isLocal) {
+const _isLogout = new URLSearchParams(window.location.search).has('logout');
+if (_isLocal && !_isLogout) {
   localStorage.setItem('senai_role', 'PROFESSOR');
   localStorage.setItem('senai_login', Date.now());
   window.location.replace('dashboard.html');
