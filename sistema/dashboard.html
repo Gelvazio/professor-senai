@@ -1961,6 +1961,7 @@
         document.getElementById('cfNome').value = c ? c.nome : '';
         document.getElementById('cfCodigo').value = c ? c.id : '';
         document.getElementById('cfTipo').value = c ? (c.tipo || '') : '';
+        document.getElementById('cfIcone').value = c ? (c.icone || '') : '';
         document.getElementById('cfVisivel').value = c ? String(c.visivel) : '1';
         document.getElementById('cursoFormMsg').textContent = '';
         document.getElementById('modalCursoForm').style.display = 'flex';
@@ -1972,6 +1973,7 @@
         document.getElementById('cfNome').value = '';
         document.getElementById('cfCodigo').value = '';
         document.getElementById('cfTipo').value = '';
+        document.getElementById('cfIcone').value = '';
         document.getElementById('cfVisivel').value = '1';
         document.getElementById('cursoFormMsg').textContent = '';
         document.getElementById('modalCursoForm').style.display = 'flex';
@@ -1982,6 +1984,7 @@
           nome_completo: document.getElementById('cfNome').value.trim(),
           codigo: document.getElementById('cfCodigo').value.trim(),
           tipo_curso: document.getElementById('cfTipo').value.trim(),
+          icone: document.getElementById('cfIcone').value.trim(),
           visivel: parseInt(document.getElementById('cfVisivel').value),
         };
         try {
@@ -2292,6 +2295,10 @@
           <div>
             <label class="crud-label">Tipo de Curso</label>
             <input class="crud-input" id="cfTipo" type="text" placeholder="ex: Aprendizagem Industrial">
+          </div>
+          <div>
+            <label class="crud-label">Ícone (emoji)</label>
+            <input class="crud-input" id="cfIcone" type="text" placeholder="ex: 💻 🖥️ 📚">
           </div>
           <div>
             <label class="crud-label">Visível</label>
