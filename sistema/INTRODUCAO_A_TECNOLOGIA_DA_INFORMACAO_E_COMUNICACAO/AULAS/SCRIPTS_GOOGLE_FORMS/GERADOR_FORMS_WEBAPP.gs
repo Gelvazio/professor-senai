@@ -61,26 +61,26 @@ function doGet(e) {
 // ═══════════════════════════════════════════════════════════════════════
 
 function _htmlIndice() {
-  var base = ScriptApp.getService().getUrl();
   var forms = [
-    { id: 'aula06', label: 'Aula 06 — Google Sheets',               icone: '📊' },
-    { id: 'aula07', label: 'Aula 07 — Google Slides',               icone: '🖼️' },
-    { id: 'aula08', label: 'Aula 08 — Textos Técnicos e Revisão',   icone: '📝' },
-    { id: 'aula09', label: 'Aula 09 — Avaliação Prática (Checklist)',icone: '✅' },
-    { id: 'aula13', label: 'Aula 13 — Ferramentas Microsoft',        icone: '💻' },
+    { id: 'aula06', label: 'Aula 06 — Google Sheets',                icone: '&#128202;' },
+    { id: 'aula07', label: 'Aula 07 — Google Slides',                icone: '&#128444;' },
+    { id: 'aula08', label: 'Aula 08 — Textos Tecnicos e Revisao',    icone: '&#128221;' },
+    { id: 'aula09', label: 'Aula 09 — Avaliacao Pratica (Checklist)', icone: '&#9989;'  },
+    { id: 'aula13', label: 'Aula 13 — Ferramentas Microsoft',         icone: '&#128187;' },
   ];
 
   var linhas = forms.map(function(f) {
-    return '<a href="' + base + '?form=' + f.id + '" class="btn-form">' +
+    return '<button class="btn-form" onclick="ir(\'' + f.id + '\')">' +
            '<span class="fi">' + f.icone + '</span>' +
            '<span>' + f.label + '</span>' +
-           '<span class="arr">→</span></a>';
+           '<span class="arr">&#8594;</span></button>';
   }).join('');
 
-  return _shell('Gerador de Formulários · SENAI TI01',
-    '<div class="hero"><h1>📋 Gerador de Formulários</h1>' +
+  return _shell('Gerador de Formularios - SENAI TI01',
+    '<div class="hero"><h1>&#128203; Gerador de Formularios</h1>' +
     '<p>Selecione a aula para criar o Google Form automaticamente na sua conta Google.</p></div>' +
-    '<div class="card"><div class="form-list">' + linhas + '</div></div>'
+    '<div class="card"><div class="form-list">' + linhas + '</div></div>' +
+    '<script>function ir(id){var b=window.top.location.href.split("?")[0];window.top.location.href=b+"?form="+id;}<\/script>'
   );
 }
 
@@ -111,7 +111,7 @@ function _htmlSucesso(r) {
     '  </div>' +
     '</div>' +
     '<div style="text-align:center;margin-top:20px">' +
-    '  <a class="btn btn-secondary" href="' + ScriptApp.getService().getUrl() + '">← Voltar ao índice</a>' +
+    '  <button class="btn btn-secondary" onclick="window.top.location.href=window.top.location.href.split(\'?\')[0]">&#8592; Voltar ao indice</button>' +
     '</div>' +
     '<script>' +
     'function copiar(id){' +
@@ -134,7 +134,7 @@ function _htmlErro(r) {
   return _shell('❌ Erro · SENAI',
     '<div class="hero error"><h1>❌ Erro ao criar formulário</h1></div>' +
     '<div class="card"><div class="erro-msg">' + r.erro + '</div>' +
-    '<a class="btn btn-secondary" href="' + ScriptApp.getService().getUrl() + '">← Voltar ao índice</a></div>'
+    '<button class="btn btn-secondary" onclick="window.top.location.href=window.top.location.href.split(\'?\')[0]">&#8592; Voltar ao indice</button></div>'
   );
 }
 
@@ -160,7 +160,7 @@ function _shell(title, body) {
     '.hero p{font-size:13px;opacity:.85}' +
     '.card{background:#fff;border-radius:0 0 12px 12px;box-shadow:0 4px 16px rgba(0,0,0,.12);padding:24px}' +
     '.form-list{display:flex;flex-direction:column;gap:10px}' +
-    '.btn-form{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #dde3f0;border-radius:10px;padding:14px 18px;text-decoration:none;color:#202124;font-size:14px;font-weight:600;transition:.15s}' +
+    '.btn-form{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #dde3f0;border-radius:10px;padding:14px 18px;text-decoration:none;color:#202124;font-size:14px;font-weight:600;transition:.15s;cursor:pointer;width:100%;text-align:left;font-family:inherit}' +
     '.btn-form:hover{border-color:#004384;background:#f0f4ff;transform:translateX(3px)}' +
     '.btn-form .fi{font-size:22px}' +
     '.btn-form .arr{margin-left:auto;color:#004384;font-size:16px}' +
