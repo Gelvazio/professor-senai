@@ -1321,7 +1321,7 @@
         </div>
         ${
           disponivel
-            ? `<button class="btn-acessar" style="background:${curso.corPrimaria};border:none;cursor:pointer" onclick="abrirCursoModal('${curso.id}')">Acessar ↗</button>`
+            ? `<button class="btn-acessar" style="background:${curso.corPrimaria};border:none;cursor:pointer" onclick="abrirAulasCurso(${curso.idNum}, '${curso.nome.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">Acessar ↗</button>`
             : `<span class="btn-em-breve">🔒 Em breve</span>`
         }
       </div>
