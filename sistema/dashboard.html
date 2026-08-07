@@ -997,16 +997,22 @@
               ><input
                 class="crud-input"
                 id="aulaData"
-                placeholder="07-08-2026"
+                type="date"
+                onchange="autoPreencherDiaAula(this.value)"
               />
             </div>
             <div class="crud-field">
               <label class="crud-label">Dia da Semana</label
-              ><input
-                class="crud-input"
-                id="aulaDia"
-                placeholder="Quinta-feira"
-              />
+              ><select class="crud-input" id="aulaDia">
+                <option value="">Selecione...</option>
+                <option value="Segunda-feira">Segunda-feira</option>
+                <option value="Terça-feira">Terça-feira</option>
+                <option value="Quarta-feira">Quarta-feira</option>
+                <option value="Quinta-feira">Quinta-feira</option>
+                <option value="Sexta-feira">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+              </select>
             </div>
           </div>
           <div
@@ -1929,6 +1935,26 @@
         chv.textContent = isOpen ? "▾" : "▴";
       }
 
+      const _DIAS_SEMANA = ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"];
+
+      function autoPreencherDiaAula(isoDate) {
+        if (!isoDate) return;
+        const d = new Date(isoDate + "T12:00:00");
+        document.getElementById("aulaDia").value = _DIAS_SEMANA[d.getDay()];
+      }
+
+      function _dataParaInput(s) {
+        if (!s) return "";
+        const m = s.match(/^(\d{2})-(\d{2})-(\d{4})$/);
+        return m ? `${m[3]}-${m[2]}-${m[1]}` : s;
+      }
+
+      function _dataParaSalvar(s) {
+        if (!s) return "";
+        const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+        return m ? `${m[3]}-${m[2]}-${m[1]}` : s;
+      }
+
       function abrirFormAula(numero) {
         const form = document.getElementById("aulaFormArea");
         if (numero === null) {
@@ -1948,7 +1974,7 @@
           document.getElementById("aulaNum").value = numero;
           document.getElementById("aulaIcone").value = aula.icone || "📚";
           document.getElementById("aulaTitulo").value = aula.titulo || "";
-          document.getElementById("aulaData").value = aula.data || "";
+          document.getElementById("aulaData").value = _dataParaInput(aula.data || "");
           document.getElementById("aulaDia").value = aula.diaSemana || "";
           document.getElementById("aulaVisivel").checked = aula.visivel === 1;
           document.getElementById("aulaBtnDel").style.display = "";
@@ -2029,7 +2055,7 @@
           numero,
           titulo,
           icone: document.getElementById("aulaIcone").value.trim() || "📚",
-          data: document.getElementById("aulaData").value.trim(),
+          data: _dataParaSalvar(document.getElementById("aulaData").value.trim()),
           diaSemana: document.getElementById("aulaDia").value.trim(),
           visivel: document.getElementById("aulaVisivel").checked ? 1 : 0,
           materiais: _aulaMatTemp,
