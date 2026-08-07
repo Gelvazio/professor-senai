@@ -845,7 +845,6 @@
       class="curso-modal-backdrop"
       id="cursoModalBd"
       style="display: none"
-      onclick="if(event.target===this)fecharCursoModal()"
     >
       <div class="curso-modal">
         <div class="curso-modal-head">
@@ -884,7 +883,6 @@
       class="crud-backdrop"
       id="aulasModal"
       style="display: none"
-      onclick="aulasModalBgClick(event)"
     >
       <div class="crud-modal" style="max-width: 700px">
         <div class="crud-modal-head">
@@ -1085,7 +1083,6 @@
       class="crud-backdrop"
       id="matAulaModal"
       style="display: none; z-index: 1100"
-      onclick="if (event.target === this) fecharAddMatAula();"
     >
       <div class="crud-modal" style="max-width: 440px">
         <div class="crud-modal-head">
@@ -1148,7 +1145,6 @@
       class="crud-backdrop"
       id="modalCRUD"
       style="display: none"
-      onclick="crudBgClick(event)"
     >
       <div class="crud-modal">
         <div class="crud-modal-head">
@@ -1549,9 +1545,6 @@
       function fecharCRUD() {
         document.getElementById("modalCRUD").style.display = "none";
       }
-      function crudBgClick(e) {
-        if (e.target === document.getElementById("modalCRUD")) fecharCRUD();
-      }
 
       async function listarCRUD() {
         const cfg = CRUD_CFG[crudEntidade];
@@ -1760,10 +1753,6 @@
         fecharFormAula();
       }
 
-      function aulasModalBgClick(e) {
-        if (e.target === document.getElementById("aulasModal"))
-          fecharAulasModal();
-      }
 
       function setAulasMsg(txt, tipo) {
         const el = document.getElementById("aulasMsg");
