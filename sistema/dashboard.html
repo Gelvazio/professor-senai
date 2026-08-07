@@ -1300,6 +1300,10 @@
               </select>
             </div>
           </div>
+          <div class="crud-field" id="mAulaNumField" style="margin-bottom: 12px; display: none">
+            <label class="crud-label">Aula</label
+            ><select class="crud-input" id="mAulaNum"></select>
+          </div>
           <div class="crud-field" style="margin-bottom: 12px">
             <label class="crud-label">Nome</label
             ><input
@@ -2366,6 +2370,14 @@
 
       let _matEditContext = null;
 
+      function _preencherComboAulas(aulaNumSelecionado) {
+        const sel = document.getElementById("mAulaNum");
+        const sorted = [..._aulaLista].sort((a, b) => a.numero - b.numero);
+        sel.innerHTML = sorted.map(a =>
+          `<option value="${a.numero}"${a.numero === aulaNumSelecionado ? " selected" : ""}>Aula ${a.numero} — ${a.titulo}</option>`
+        ).join("");
+      }
+
       function abrirAddMatAula() {
         _matEditContext = null;
         document.getElementById("matAulaModalTitulo").textContent = "Adicionar Material";
@@ -2375,6 +2387,7 @@
         document.getElementById("mArquivo").value = "";
         document.getElementById("mTipo").value = "";
         document.getElementById("mVisivel").value = "1";
+        document.getElementById("mAulaNumField").style.display = "none";
         document.getElementById("matAulaModal").style.display = "flex";
       }
 
@@ -2388,6 +2401,7 @@
         document.getElementById("mArquivo").value = m.arquivo || "";
         document.getElementById("mTipo").value = m.tipo || "";
         document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
+        document.getElementById("mAulaNumField").style.display = "none";
         document.getElementById("matAulaModal").style.display = "flex";
       }
 
@@ -2402,6 +2416,8 @@
         document.getElementById("mArquivo").value = m.arquivo || "";
         document.getElementById("mTipo").value = m.tipo || "";
         document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
+        document.getElementById("mAulaNumField").style.display = "block";
+        _preencherComboAulas(aulaNum);
         document.getElementById("matAulaModal").style.display = "flex";
       }
 
@@ -2437,14 +2453,22 @@
           renderAulaMatList();
           fecharAddMatAula();
         } else if (_matEditContext) {
-          const aula = _aulaLista.find(a => a.numero === _matEditContext.aulaNum);
-          const existing = aula.materiais[_matEditContext.idx];
-          aula.materiais[_matEditContext.idx] = {
+          const aulaOrigem = _aulaLista.find(a => a.numero === _matEditContext.aulaNum);
+          const existing = aulaOrigem.materiais[_matEditContext.idx];
+          const novaAulaNum = parseInt(document.getElementById("mAulaNum").value) || _matEditContext.aulaNum;
+          const materialAtualizado = {
             id: existing.id || crypto.randomUUID(),
-            numero_aula: _matEditContext.aulaNum,
+            numero_aula: novaAulaNum,
             ...existing,
             ...m,
           };
+          if (novaAulaNum !== _matEditContext.aulaNum) {
+            aulaOrigem.materiais.splice(_matEditContext.idx, 1);
+            const aulaDestino = _aulaLista.find(a => a.numero === novaAulaNum);
+            if (aulaDestino) aulaDestino.materiais.push(materialAtualizado);
+          } else {
+            aulaOrigem.materiais[_matEditContext.idx] = materialAtualizado;
+          }
           fecharAddMatAula();
           setAulasMsg("⏳ Salvando…", "");
           try {
