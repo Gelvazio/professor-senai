@@ -1022,7 +1022,11 @@
       (function () {
         if (!localStorage.getItem("senai_role"))
           window.location.replace("login.html");
-        const _t = localStorage.getItem("senai_tema") || "light";
+        let _t = localStorage.getItem("senai_tema");
+        if (_t === null) {
+          _t = localStorage.getItem("senai_role") === "PROFESSOR" ? "dark" : "light";
+          localStorage.setItem("senai_tema", _t);
+        }
         document.documentElement.setAttribute("data-theme", _t);
       })();
     </script>
@@ -1356,8 +1360,7 @@
     </div>
 
     <div class="section">
-      <div class="section-label">Cursos disponíveis</div>
-      <div class="grid" id="grid">
+<div class="grid" id="grid">
         <p style="color: #888; font-size: 14px">Carregando cursos...</p>
       </div>
     </div>
