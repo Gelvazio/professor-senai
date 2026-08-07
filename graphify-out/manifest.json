@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786069012.912061,
-    "ast_hash": "fd0d01d328edb1a43d46a780b8f3ff49",
+    "mtime": 1786100181.1950452,
+    "ast_hash": "c6666605ddaf046c32b61584d8f69279",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -17,11 +17,6 @@
   "sistema/CLAUDE.md": {
     "mtime": 1786068075.8333144,
     "ast_hash": "821a4b174c47d5abecd80c849d3fec3b",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/duplas-aula.txt": {
-    "mtime": 1785948526.0144773,
-    "ast_hash": "5fd75a830d7943e7c1b066535b8f32ba",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/Chamada.txt": {
@@ -185,8 +180,8 @@
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/RESPOSTAS-06-08-2026.html": {
-    "mtime": 1786064394.9144237,
-    "ast_hash": "806f4001781a30ea9a1c28535ee7dcc1",
+    "mtime": 1786099628.2833042,
+    "ast_hash": "f36f9db98527f1d221c5b37793bf55cf",
     "semantic_hash": ""
   },
   "sistema/codigos.html": {
@@ -195,13 +190,13 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786097796.128713,
-    "ast_hash": "b50f53de9c6987523db14abcf3905fa0",
+    "mtime": 1786099538.0937667,
+    "ast_hash": "4b5e2bb0128f020fdbdd500f6714a08a",
     "semantic_hash": ""
   },
   "sistema/login.html": {
-    "mtime": 1786062462.2169013,
-    "ast_hash": "95e50a24fe9370ec1fbb9e74d8c4028f",
+    "mtime": 1786098994.4055066,
+    "ast_hash": "02560448c5100ee6995027864e7b6405",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -362,6 +357,26 @@
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/MEMBROS-EQUIPE-06-08-2026.html": {
     "mtime": 1786069272.6209836,
     "ast_hash": "814b37b783818829eaa058e444ff736a",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/ASSUNTO-ADICIONAL.txt": {
+    "mtime": 1786099783.7362757,
+    "ast_hash": "60205259722255b498f1f5cd9de84c40",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-08-07-analise-ementas.md": {
+    "mtime": 1786100196.4281237,
+    "ast_hash": "8625c7cadc72c777052b83aaa8d853a3",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-08-07-analise-ementas-design.md": {
+    "mtime": 1786100059.7628744,
+    "ast_hash": "13d6e39d659b03a2f304dced81b0a691",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html": {
+    "mtime": 1786100307.8977907,
+    "ast_hash": "874d00c95351de957a7088dfe7039467",
     "semantic_hash": ""
   }
 }
