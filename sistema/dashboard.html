@@ -1301,8 +1301,8 @@
             </div>
           </div>
           <div class="crud-field" id="mAulaNumField" style="margin-bottom: 12px; display: none">
-            <label class="crud-label">Aula</label
-            ><select class="crud-input" id="mAulaNum"></select>
+            <label class="crud-label">Aulas onde este material aparece</label>
+            <div id="mAulaCheckboxes" style="max-height:160px;overflow-y:auto;border:1px solid #e0e0e0;border-radius:6px;padding:8px 10px;display:flex;flex-direction:column;gap:6px;background:#fafafa"></div>
           </div>
           <div class="crud-field" style="margin-bottom: 12px">
             <label class="crud-label">Nome</label
@@ -2370,12 +2370,16 @@
 
       let _matEditContext = null;
 
-      function _preencherComboAulas(aulaNumSelecionado) {
-        const sel = document.getElementById("mAulaNum");
+      function _preencherCheckboxesAulas(aulasComMaterial) {
+        const container = document.getElementById("mAulaCheckboxes");
         const sorted = [..._aulaLista].sort((a, b) => a.numero - b.numero);
-        sel.innerHTML = sorted.map(a =>
-          `<option value="${a.numero}"${a.numero === aulaNumSelecionado ? " selected" : ""}>Aula ${a.numero} — ${a.titulo}</option>`
-        ).join("");
+        container.innerHTML = sorted.map(a => {
+          const checked = aulasComMaterial.includes(a.numero) ? "checked" : "";
+          return `<label style="display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer">
+            <input type="checkbox" value="${a.numero}" ${checked} style="width:15px;height:15px;cursor:pointer">
+            <span>Aula ${a.numero} — ${a.titulo}</span>
+          </label>`;
+        }).join("");
       }
 
       function abrirAddMatAula() {
@@ -2417,7 +2421,7 @@
         document.getElementById("mTipo").value = m.tipo || "";
         document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
         document.getElementById("mAulaNumField").style.display = "block";
-        _preencherComboAulas(aulaNum);
+        _preencherCheckboxesAulas([aulaNum]);
         document.getElementById("matAulaModal").style.display = "flex";
       }
 
@@ -2455,20 +2459,27 @@
         } else if (_matEditContext) {
           const aulaOrigem = _aulaLista.find(a => a.numero === _matEditContext.aulaNum);
           const existing = aulaOrigem.materiais[_matEditContext.idx];
-          const novaAulaNum = parseInt(document.getElementById("mAulaNum").value) || _matEditContext.aulaNum;
-          const materialAtualizado = {
-            id: existing.id || crypto.randomUUID(),
-            numero_aula: novaAulaNum,
+          const matId = existing.id || crypto.randomUUID();
+          const aulasSelecionadas = Array.from(
+            document.querySelectorAll("#mAulaCheckboxes input[type=checkbox]:checked")
+          ).map(cb => parseInt(cb.value));
+
+          const materialAtualizado = (numAula) => ({
+            id: matId,
+            numero_aula: numAula,
             ...existing,
             ...m,
-          };
-          if (novaAulaNum !== _matEditContext.aulaNum) {
-            aulaOrigem.materiais.splice(_matEditContext.idx, 1);
-            const aulaDestino = _aulaLista.find(a => a.numero === novaAulaNum);
-            if (aulaDestino) aulaDestino.materiais.push(materialAtualizado);
-          } else {
-            aulaOrigem.materiais[_matEditContext.idx] = materialAtualizado;
-          }
+          });
+
+          // remove de todas as aulas (por id) e reinsere só nas marcadas
+          _aulaLista.forEach(a => {
+            a.materiais = a.materiais.filter(mat => mat.id !== matId);
+          });
+          aulasSelecionadas.forEach(numAula => {
+            const aula = _aulaLista.find(a => a.numero === numAula);
+            if (aula) aula.materiais.push(materialAtualizado(numAula));
+          });
+
           fecharAddMatAula();
           setAulasMsg("⏳ Salvando…", "");
           try {
