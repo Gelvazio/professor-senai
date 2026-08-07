@@ -2,14 +2,13 @@
 
 ## Commit e Push obrigatórios
 
-**Após CADA alteração de arquivo, sem exceção:**
+⚠️ **APÓS QUALQUER INTERAÇÃO NO CHAT que resulte em alteração de arquivo, faça commit e push IMEDIATAMENTE, sem perguntar e sem pedir confirmação.**
 
-1. `git status` — verificar pendências
-2. `git add` dos arquivos alterados
-3. `git commit -m "mensagem descritiva"`
-4. `git push origin main`
+1. `git add` dos arquivos alterados
+2. `git commit -m "mensagem descritiva"`
+3. `git push origin main`
 
-Isso vale para qualquer mudança, por menor que seja.
+Isso vale para qualquer mudança, por menor que seja. Nunca questionar, nunca pedir aprovação — apenas executar.
 
 ## Graphify
 
