@@ -300,18 +300,18 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786057349.9730115,
-    "ast_hash": "5afb11200624b80920d6f117149771b6",
+    "mtime": 1786063072.5802066,
+    "ast_hash": "471be621506fa1d700dfd3d63d12f3df",
     "semantic_hash": ""
   },
   "sistema/index.html": {
-    "mtime": 1786055025.43319,
-    "ast_hash": "532d6bb33017d350cca23ae8e4195b73",
+    "mtime": 1786063870.8809144,
+    "ast_hash": "f21f2a92cbe8ccea806fa4cef7519742",
     "semantic_hash": ""
   },
   "sistema/login.html": {
-    "mtime": 1786056999.1390748,
-    "ast_hash": "2838fd536bb04a50ffc925fab3753857",
+    "mtime": 1786062462.2169013,
+    "ast_hash": "95e50a24fe9370ec1fbb9e74d8c4028f",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -352,6 +352,11 @@
   ".claude/skills/graphify/SKILL.md": {
     "mtime": 1779573782.1656952,
     "ast_hash": "e065bdafac4ca689ffd4e353ffd71160",
+    "semantic_hash": ""
+  },
+  "educacao.html": {
+    "mtime": 1786057444.0261803,
+    "ast_hash": "48b3f72e8b6a6f7cbba3ac30d1e6d367",
     "semantic_hash": ""
   }
 }
