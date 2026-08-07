@@ -136,18 +136,22 @@
               <input
                 class="form-input"
                 id="crudData"
-                type="text"
-                placeholder="Ex: 07-08-2026"
+                type="date"
+                onchange="autoPreencherDia(this.value)"
               />
             </div>
             <div class="form-group">
               <label class="form-label">Dia da Semana</label>
-              <input
-                class="form-input"
-                id="crudDia"
-                type="text"
-                placeholder="Ex: Quinta-feira"
-              />
+              <select class="form-input" id="crudDia">
+                <option value="">Selecione...</option>
+                <option value="Segunda-feira">Segunda-feira</option>
+                <option value="Terça-feira">Terça-feira</option>
+                <option value="Quarta-feira">Quarta-feira</option>
+                <option value="Quinta-feira">Quinta-feira</option>
+                <option value="Sexta-feira">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+              </select>
             </div>
           </div>
           <div
@@ -548,6 +552,28 @@
       let materiaisTemp = [];
       let editandoNumero = null;
 
+      const DIAS_SEMANA = ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"];
+
+      function autoPreencherDia(isoDate) {
+        if (!isoDate) return;
+        const d = new Date(isoDate + "T12:00:00");
+        document.getElementById("crudDia").value = DIAS_SEMANA[d.getDay()];
+      }
+
+      // DD-MM-YYYY → YYYY-MM-DD para o input date
+      function dataParaInput(s) {
+        if (!s) return "";
+        const m = s.match(/^(\d{2})-(\d{2})-(\d{4})$/);
+        return m ? `${m[3]}-${m[2]}-${m[1]}` : s;
+      }
+
+      // YYYY-MM-DD → DD-MM-YYYY para exibição e armazenamento
+      function dataParaSalvar(s) {
+        if (!s) return "";
+        const m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+        return m ? `${m[3]}-${m[2]}-${m[1]}` : s;
+      }
+
       function abrirCadastro() {
         editandoNumero = null;
         document.getElementById("crudModalTitulo").textContent = "Nova Aula";
@@ -574,9 +600,9 @@
         document.getElementById("crudNumero").value = numero;
         document.getElementById("crudIcone").value = aula.icone || "📚";
         document.getElementById("crudTitulo").value = aula.titulo || "";
-        document.getElementById("crudData").value = aula.data || "";
+        document.getElementById("crudData").value = dataParaInput(aula.data || "");
         document.getElementById("crudDia").value = aula.diaSemana || "";
-        document.getElementById("crudVisivel").checked = aulNumber(a.visivel) === 1;
+        document.getElementById("crudVisivel").checked = Number(aula.visivel) === 1;
         document.getElementById("crudBtnExcluir").style.display = "block";
         materiaisTemp = JSON.parse(JSON.stringify(aula.materiais || []));
         renderMatList();
@@ -656,7 +682,7 @@
           numero,
           titulo,
           icone: document.getElementById("crudIcone").value.trim() || "📚",
-          data: document.getElementById("crudData").value.trim(),
+          data: dataParaSalvar(document.getElementById("crudData").value.trim()),
           diaSemana: document.getElementById("crudDia").value.trim(),
           visivel: document.getElementById("crudVisivel").checked ? 1 : 0,
           materiais: materiaisTemp,
