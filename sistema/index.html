@@ -110,17 +110,6 @@ window.addEventListener("DOMContentLoaded", function () {
   if (btn) btn.textContent = t === "dark" ? "☀️" : "🌙";
 });
 
-// Auto-login como PROFESSOR em ambiente local (127.0.0.1, localhost ou file://)
-// Não aplica se o usuário clicou em Sair (?logout=1)
-const _isLocal = window.location.hostname === '127.0.0.1' ||
-                 window.location.hostname === 'localhost' ||
-                 window.location.protocol === 'file:';
-const _isLogout = new URLSearchParams(window.location.search).has('logout');
-if (_isLocal && !_isLogout) {
-  localStorage.setItem('senai_role', 'PROFESSOR');
-  localStorage.setItem('senai_login', Date.now());
-  window.location.replace('dashboard.html');
-}
 
 const SUPABASE_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
