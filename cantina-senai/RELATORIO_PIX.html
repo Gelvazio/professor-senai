@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório Comparativo — Serviços de Validação PIX</title>
+<style>
+  :root {
+    --bg:        #EFF3FA;
+    --surface:   #FFFFFF;
+    --ink:       #0D1B2A;
+    --ink-2:     #4A5E72;
+    --ink-3:     #8A9BB0;
+    --border:    #D4DCEA;
+    --pix:       #00BFA5;
+    --pix-dim:   #E0F7F5;
+    --blue:      #0059B3;
+    --blue-dim:  #E3EEFF;
+    --ok:        #16A34A;
+    --ok-dim:    #DCFCE7;
+    --warn:      #B45309;
+    --warn-dim:  #FEF3C7;
+    --bad:       #B91C1C;
+    --bad-dim:   #FEE2E2;
+    --radius:    6px;
+
+    --c1: #0059B3; /* ValidaPix */
+    --c2: #7C3AED; /* ConferePix */
+    --c3: #0891B2; /* PIXPDV */
+    --c4: #059669; /* PDV Pix */
+    --c5: #D97706; /* OpenPix */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:      #0B1524;
+      --surface: #111D2C;
+      --ink:     #D8E8F5;
+      --ink-2:   #7D9AB5;
+      --ink-3:   #4A6278;
+      --border:  #1E2F42;
+      --pix-dim: #003D37;
+      --blue-dim:#00204D;
+      --ok-dim:  #052E16;
+      --warn-dim:#431407;
+      --bad-dim: #450A0A;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg:      #0B1524;
+    --surface: #111D2C;
+    --ink:     #D8E8F5;
+    --ink-2:   #7D9AB5;
+    --ink-3:   #4A6278;
+    --border:  #1E2F42;
+    --pix-dim: #003D37;
+    --blue-dim:#00204D;
+    --ok-dim:  #052E16;
+    --warn-dim:#431407;
+    --bad-dim: #450A0A;
+  }
+
+  :root[data-theme="light"] {
+    --bg:        #EFF3FA;
+    --surface:   #FFFFFF;
+    --ink:       #0D1B2A;
+    --ink-2:     #4A5E72;
+    --ink-3:     #8A9BB0;
+    --border:    #D4DCEA;
+    --pix-dim:   #E0F7F5;
+    --blue-dim:  #E3EEFF;
+    --ok-dim:    #DCFCE7;
+    --warn-dim:  #FEF3C7;
+    --bad-dim:   #FEE2E2;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  /* ── HEADER ──────────────────────────────── */
+  .report-header {
+    background: var(--ink);
+    color: #fff;
+    padding: 56px 40px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .report-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--pix) 0%, var(--blue) 100%);
+  }
+  .header-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--pix);
+    margin-bottom: 14px;
+  }
+  .header-title {
+    font-size: clamp(26px, 4vw, 42px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    text-wrap: balance;
+    max-width: 640px;
+    margin-bottom: 16px;
+  }
+  .header-sub {
+    color: rgba(255,255,255,.55);
+    font-size: 14px;
+    max-width: 540px;
+  }
+  .header-meta {
+    display: flex;
+    gap: 32px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+  }
+  .meta-item { font-size: 12px; color: rgba(255,255,255,.45); }
+  .meta-item strong { display: block; color: rgba(255,255,255,.85); font-size: 14px; font-weight: 600; }
+
+  /* ── NAV QUICK JUMP ──────────────────────── */
+  .quick-nav {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .quick-nav-inner {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .quick-nav-inner::-webkit-scrollbar { display: none; }
+  .qnav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 14px 18px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--ink-2);
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: color .15s, border-color .15s;
+  }
+  .qnav-link:hover { color: var(--ink); }
+  .qnav-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── MAIN ────────────────────────────────── */
+  .main { max-width: 900px; margin: 0 auto; padding: 48px 24px 80px; }
+
+  /* ── INTRO ───────────────────────────────── */
+  .intro-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px 36px;
+    margin-bottom: 48px;
+  }
+  .intro-section p { color: var(--ink-2); max-width: 68ch; }
+  .intro-section p + p { margin-top: 12px; }
+  .context-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .ctx-stat {
+    background: var(--bg);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+  }
+  .ctx-stat-num {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--pix);
+    font-variant-numeric: tabular-nums;
+  }
+  .ctx-stat-label { font-size: 12px; color: var(--ink-2); margin-top: 3px; }
+
+  /* ── SECTION HEADING ─────────────────────── */
+  .section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    margin-top: 56px;
+  }
+  .section-heading:first-child { margin-top: 0; }
+  .sh-index {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .sh-rule { flex: 1; height: 1px; background: var(--border); }
+
+  /* ── SERVICE BLOCK ───────────────────────── */
+  .service-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+  .service-stripe {
+    height: 5px;
+  }
+  .service-head {
+    padding: 28px 32px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .service-logo-placeholder {
+    width: 48px; height: 48px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .service-head-text { flex: 1; }
+  .service-name {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+  .service-tagline {
+    font-size: 13px;
+    color: var(--ink-2);
+    margin-top: 4px;
+  }
+  .service-url {
+    font-size: 11px;
+    color: var(--ink-3);
+    text-decoration: none;
+    margin-top: 6px;
+    display: inline-block;
+  }
+  .service-url:hover { color: var(--blue); }
+
+  .service-body {
+    padding: 28px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 36px;
+  }
+
+  @media (max-width: 620px) {
+    .service-body { grid-template-columns: 1fr; }
+    .service-head, .report-header { padding-left: 20px; padding-right: 20px; }
+    .main { padding-left: 16px; padding-right: 16px; }
+    .quick-nav { padding: 0 16px; }
+    .intro-section { padding: 20px; }
+  }
+
+  .svc-col-full { grid-column: 1 / -1; }
+
+  .field-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 8px;
+  }
+  .field-body {
+    font-size: 13.5px;
+    color: var(--ink-2);
+    line-height: 1.6;
+  }
+
+  /* Chips */
+  .chip-group { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  .chip-ok   { background: var(--ok-dim);   color: var(--ok);   }
+  .chip-bad  { background: var(--bad-dim);  color: var(--bad);  }
+  .chip-warn { background: var(--warn-dim); color: var(--warn); }
+  .chip-blue { background: var(--blue-dim); color: var(--blue); }
+  .chip-pix  { background: var(--pix-dim);  color: #00796B; }
+
+  /* Banks */
+  .bank-list { display: flex; flex-wrap: wrap; gap: 6px; }
+  .bank-tag {
+    font-size: 11px;
+    font-weight: 600;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--ink-2);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  /* Price box */
+  .price-box {
+    background: var(--bg);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+  }
+  .price-main {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+  }
+  .price-note {
+    font-size: 12px;
+    color: var(--ink-3);
+    margin-top: 3px;
+  }
+  .price-trial {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ok);
+    background: var(--ok-dim);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  /* How it works */
+  .how-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+  }
+  .how-steps::before {
+    content: '';
+    position: absolute;
+    left: 15px; top: 20px; bottom: 20px;
+    width: 1px;
+    background: var(--border);
+  }
+  .how-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 6px 0;
+    position: relative;
+  }
+  .step-num {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 800;
+    color: var(--ink-2);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .step-text { font-size: 13px; color: var(--ink-2); padding-top: 5px; }
+
+  /* ── COMPARISON TABLE ────────────────────── */
+  .compare-section { margin-top: 64px; }
+  .compare-title {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+  .table-wrap { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--border); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+  th {
+    background: var(--surface);
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  td {
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+    color: var(--ink-2);
+  }
+  tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: var(--bg); }
+  .td-name {
+    font-weight: 700;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .td-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  .check { color: var(--ok); font-weight: 700; }
+  .cross { color: var(--bad); font-weight: 700; }
+  .partial { color: var(--warn); font-weight: 700; }
+
+  /* ── FOOTER ──────────────────────────────── */
+  .report-footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 40px;
+    font-size: 12px;
+    color: var(--ink-3);
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="report-header">
+  <div class="header-eyebrow">Relatório Comparativo · Pagamentos Digitais · Brasil 2026</div>
+  <h1 class="header-title">Serviços de Validação e Gestão de PIX para Empresas</h1>
+  <p class="header-sub">Análise de 5 plataformas: funcionamento, serviços, preços, vantagens, desvantagens e facilidade de integração.</p>
+  <div class="header-meta">
+    <div class="meta-item"><strong>5</strong>Serviços analisados</div>
+    <div class="meta-item"><strong>Agosto 2026</strong>Data de referência</div>
+    <div class="meta-item"><strong>B2B · Varejo e Serviços</strong>Público-alvo</div>
+  </div>
+</header>
+
+<!-- NAVEGAÇÃO RÁPIDA -->
+<nav class="quick-nav">
+  <div class="quick-nav-inner">
+    <a class="qnav-link" href="#validapix"><span class="qnav-dot" style="background:var(--c1)"></span>ValidaPix</a>
+    <a class="qnav-link" href="#conferepix"><span class="qnav-dot" style="background:var(--c2)"></span>ConferePix</a>
+    <a class="qnav-link" href="#pixpdv"><span class="qnav-dot" style="background:var(--c3)"></span>PIXPDV</a>
+    <a class="qnav-link" href="#pdvpix"><span class="qnav-dot" style="background:var(--c4)"></span>PDV Pix</a>
+    <a class="qnav-link" href="#openpix"><span class="qnav-dot" style="background:var(--c5)"></span>OpenPix</a>
+    <a class="qnav-link" href="#comparativo">Comparativo</a>
+  </div>
+</nav>
+
+<main class="main">
+
+  <!-- CONTEXTO -->
+  <div class="intro-section">
+    <h2>Contexto do Mercado</h2>
+    <p>O PIX se tornou o principal meio de pagamento do Brasil, superando cartões e dinheiro em volume de transações. No ambiente de varejo físico e clínicas, porém, a validação manual de PIX (verificar pelo celular ou extrato bancário) expõe empresas a golpes — o número de fraudes com comprovantes falsos cresceu 340% em 2026.</p>
+    <p>Para resolver isso, surgiram soluções especializadas que permitem confirmar automaticamente se o PIX foi realmente recebido, sem compartilhar acesso bancário com colaboradores. Este relatório analisa as 5 principais opções disponíveis no mercado.</p>
+    <div class="context-grid">
+      <div class="ctx-stat">
+        <div class="ctx-stat-num">+340%</div>
+        <div class="ctx-stat-label">Alta em fraudes com PIX falso em 2026</div>
+      </div>
+      <div class="ctx-stat">
+        <div class="ctx-stat-num">2.2s</div>
+        <div class="ctx-stat-label">Tempo médio de confirmação automatizada</div>
+      </div>
+      <div class="ctx-stat">
+        <div class="ctx-stat-num">24/7</div>
+        <div class="ctx-stat-label">Disponibilidade de todas as soluções</div>
+      </div>
+      <div class="ctx-stat">
+        <div class="ctx-stat-num">5</div>
+        <div class="ctx-stat-label">Plataformas analisadas neste relatório</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- 1. VALIDAPIX -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div class="section-heading">
+    <span class="sh-index">Serviço 01</span>
+    <span class="sh-rule"></span>
+  </div>
+
+  <div class="service-block" id="validapix">
+    <div class="service-stripe" style="background:var(--c1)"></div>
+    <div class="service-head">
+      <div class="service-logo-placeholder" style="background:#E3EEFF">🛡️</div>
+      <div class="service-head-text">
+        <div class="service-name" style="color:var(--c1)">ValidaPix</div>
+        <div class="service-tagline">Antifraude PIX no PDV — confirmação direto no banco do lojista</div>
+        <a class="service-url" href="https://www.validapix.com.br" target="_blank">validapix.com.br ↗</a>
+      </div>
+    </div>
+
+    <div class="service-body">
+
+      <div class="svc-col-full">
+        <div class="field-label">Como funciona</div>
+        <div class="how-steps">
+          <div class="how-step"><div class="step-num">1</div><div class="step-text">O cliente escaneia o QR Code estático ou informa a chave PIX do estabelecimento e realiza o pagamento.</div></div>
+          <div class="how-step"><div class="step-num">2</div><div class="step-text">O ValidaPix se conecta <strong>diretamente ao banco do lojista</strong> via integração homologada e monitora os lançamentos em tempo real.</div></div>
+          <div class="how-step"><div class="step-num">3</div><div class="step-text">Em até 2,2 segundos a plataforma detecta o crédito e exibe a confirmação no painel do caixa.</div></div>
+          <div class="how-step"><div class="step-num">4</div><div class="step-text">O colaborador libera o pedido sem precisar acessar o aplicativo bancário. O dinheiro já está na conta da empresa.</div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Serviços oferecidos</div>
+        <div class="chip-group">
+          <span class="chip chip-blue">Validação em tempo real</span>
+          <span class="chip chip-blue">QR Code por venda</span>
+          <span class="chip chip-blue">Painel web e app</span>
+          <span class="chip chip-blue">Rastreamento por caixa</span>
+          <span class="chip chip-blue">Multi-lojas</span>
+          <span class="chip chip-blue">Relatórios financeiros</span>
+          <span class="chip chip-blue">Controle de acesso por usuário</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Bancos homologados</div>
+        <div class="bank-list">
+          <span class="bank-tag">Banco do Brasil</span>
+          <span class="bank-tag">Itaú</span>
+          <span class="bank-tag">Bradesco</span>
+          <span class="bank-tag">Santander</span>
+          <span class="bank-tag">Inter</span>
+          <span class="bank-tag">Sicoob</span>
+          <span class="bank-tag">+ outros</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Preço</div>
+        <div class="price-box">
+          <div class="price-main">Sob consulta</div>
+          <div class="price-note">Planos mensais por volume de transações. Sem taxa percentual sobre vendas.</div>
+          <span class="price-trial">3 dias grátis · Sem cartão de crédito</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Segmentos atendidos</div>
+        <div class="field-body">Farmácias, vestuário, calçados, postos de combustível, alimentação e +25 segmentos. Clientes: Cacau Show, Hering, Reserva, Mais Cerveja, Vicofarma.</div>
+      </div>
+
+      <div>
+        <div class="field-label">Vantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-ok">✓ Dinheiro direto na conta bancária da empresa</span>
+          <span class="chip chip-ok">✓ Sem intermediário financeiro</span>
+          <span class="chip chip-ok">✓ Confirmação em 2,2 segundos</span>
+          <span class="chip chip-ok">✓ Maior quantidade de bancos homologados</span>
+          <span class="chip chip-ok">✓ Usado por grandes redes nacionais</span>
+          <span class="chip chip-ok">✓ Sem taxa por transação</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Desvantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-bad">✗ Preço não transparente (exige contato)</span>
+          <span class="chip chip-bad">✗ Não é fintech — depende de banco ser homologado</span>
+          <span class="chip chip-warn">⚠ Sem sandbox público para testes de API</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Integração</div>
+        <div class="field-body">Possui API para integração com PDVs e ERPs. Não exige troca de banco — integra ao banco que a empresa já usa. Suporte dedicado para implantação. Tempo de integração não divulgado.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- 2. CONFEREPIX -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div class="section-heading">
+    <span class="sh-index">Serviço 02</span>
+    <span class="sh-rule"></span>
+  </div>
+
+  <div class="service-block" id="conferepix">
+    <div class="service-stripe" style="background:var(--c2)"></div>
+    <div class="service-head">
+      <div class="service-logo-placeholder" style="background:#EDE9FE">✅</div>
+      <div class="service-head-text">
+        <div class="service-name" style="color:var(--c2)">ConferePix</div>
+        <div class="service-tagline">Confirmação PIX via app — acesso de leitura ao banco sem expor dados</div>
+        <a class="service-url" href="https://www.conferepix.app" target="_blank">conferepix.app ↗</a>
+      </div>
+    </div>
+
+    <div class="service-body">
+
+      <div class="svc-col-full">
+        <div class="field-label">Como funciona</div>
+        <div class="how-steps">
+          <div class="how-step"><div class="step-num">1</div><div class="step-text">O ConferePix estabelece uma <strong>conexão de leitura</strong> com a conta bancária da empresa — acesso somente para consultar PIX recebidos, sem nenhum outro dado bancário.</div></div>
+          <div class="how-step"><div class="step-num">2</div><div class="step-text">Para cada venda, o sistema gera um QR Code exclusivo com o valor exato, facilitando a identificação do recebimento correto.</div></div>
+          <div class="how-step"><div class="step-num">3</div><div class="step-text">O colaborador abre o app no celular ou computador e confirma instantaneamente se o PIX foi creditado, sem ver extrato ou saldo.</div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Serviços oferecidos</div>
+        <div class="chip-group">
+          <span class="chip chip-blue">App Android e iOS</span>
+          <span class="chip chip-blue">QR Code por venda</span>
+          <span class="chip chip-blue">Confirmação instantânea</span>
+          <span class="chip chip-blue">Controle de usuários</span>
+          <span class="chip chip-blue">Níveis de permissão</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Bancos homologados</div>
+        <div class="bank-list">
+          <span class="bank-tag">Banco do Brasil</span>
+          <span class="bank-tag">Itaú</span>
+          <span class="bank-tag">Santander</span>
+          <span class="bank-tag">Inter</span>
+          <span class="bank-tag">Bradesco</span>
+          <span class="bank-tag">Sicoob</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Preço</div>
+        <div class="price-box">
+          <div class="price-main">Sob consulta</div>
+          <div class="price-note">Modelo SaaS por assinatura. Preço não divulgado publicamente.</div>
+          <span class="price-trial">7 dias grátis</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Vantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-ok">✓ Dinheiro na conta bancária própria</span>
+          <span class="chip chip-ok">✓ App nativo para celular (Android/iOS)</span>
+          <span class="chip chip-ok">✓ Acesso restrito — alta segurança</span>
+          <span class="chip chip-ok">✓ Controle granular de permissões</span>
+          <span class="chip chip-ok">✓ Período de teste maior (7 dias)</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Desvantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-bad">✗ Plataforma menor, menos documentação pública</span>
+          <span class="chip chip-bad">✗ Preço não divulgado</span>
+          <span class="chip chip-warn">⚠ Focado em app — integração via API limitada</span>
+          <span class="chip chip-warn">⚠ Portfólio de clientes não divulgado</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Integração</div>
+        <div class="field-body">Solução principalmente via app mobile. Integração com PDV/ERP não é o foco principal. Indicado para operações que usam smartphone no caixa. API pública não documentada publicamente.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- 3. PIXPDV -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div class="section-heading">
+    <span class="sh-index">Serviço 03</span>
+    <span class="sh-rule"></span>
+  </div>
+
+  <div class="service-block" id="pixpdv">
+    <div class="service-stripe" style="background:var(--c3)"></div>
+    <div class="service-head">
+      <div class="service-logo-placeholder" style="background:#E0F7FA">🏦</div>
+      <div class="service-head-text">
+        <div class="service-name" style="color:var(--c3)">PIXPDV</div>
+        <div class="service-tagline">Conta de Pagamento própria regulada pelo Banco Central — fintech intermediária</div>
+        <a class="service-url" href="https://pixpdv.com.br" target="_blank">pixpdv.com.br ↗</a>
+      </div>
+    </div>
+
+    <div class="service-body">
+
+      <div class="svc-col-full">
+        <div class="field-label">Como funciona</div>
+        <div class="how-steps">
+          <div class="how-step"><div class="step-num">1</div><div class="step-text">O PIXPDV cria uma <strong>conta de pagamento exclusiva</strong> para a empresa, regulada e garantida pelo Banco Central — sem precisar de um banco tradicional.</div></div>
+          <div class="how-step"><div class="step-num">2</div><div class="step-text">O PDV/ERP gera um <strong>QR Code dinâmico</strong> por venda via API do PIXPDV. O cliente escaneia e paga.</div></div>
+          <div class="how-step"><div class="step-num">3</div><div class="step-text">O pagamento cai <strong>na conta de pagamento PIXPDV</strong> da empresa. O próprio sistema confirma o recebimento via API, sem consultar banco externo.</div></div>
+          <div class="how-step"><div class="step-num">4</div><div class="step-text">Quando quiser, a empresa envia o saldo para seu banco tradicional via <strong>Pix-out</strong> (R$ 1,00 por transferência).</div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Serviços oferecidos</div>
+        <div class="chip-group">
+          <span class="chip chip-blue">Conta de Pagamento (BC)</span>
+          <span class="chip chip-blue">QR Code dinâmico por venda</span>
+          <span class="chip chip-blue">API de cobranças</span>
+          <span class="chip chip-blue">Verificação de liquidação</span>
+          <span class="chip chip-blue">Conciliação automática</span>
+          <span class="chip chip-blue">Pix-out para qualquer banco</span>
+          <span class="chip chip-blue">Pix Cobrança / Boleto</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Preço</div>
+        <div class="price-box">
+          <div class="price-main">Tarifa fixa / transação</div>
+          <div class="price-note">Não cobra percentual sobre o valor da venda — tarifa fixa independente do valor. Pix-out: R$ 1,00 por transferência. Alta volumetria com tarifa diferenciada.</div>
+          <span class="price-trial">Tarifa diferenciada para Software Houses</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Disponibilidade</div>
+        <div class="field-body">24 horas, 7 dias por semana, incluindo feriados. Transações concluídas em segundos. Não depende de horário de nenhum banco.</div>
+      </div>
+
+      <div>
+        <div class="field-label">Vantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-ok">✓ Não depende de banco parceiro</span>
+          <span class="chip chip-ok">✓ QR Code dinâmico por venda (mais seguro)</span>
+          <span class="chip chip-ok">✓ API-first — integração rápida</span>
+          <span class="chip chip-ok">✓ Tarifa fixa, sem % sobre vendas</span>
+          <span class="chip chip-ok">✓ Conta regulada pelo Banco Central</span>
+          <span class="chip chip-ok">✓ Ideal para Software Houses e ERPs</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Desvantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-bad">✗ Dinheiro não vai direto para o banco da empresa</span>
+          <span class="chip chip-bad">✗ Exige Pix-out para receber no banco (+ R$1,00)</span>
+          <span class="chip chip-warn">⚠ Adiciona uma etapa no fluxo financeiro</span>
+          <span class="chip chip-warn">⚠ Empresa menor — suporte via Discord</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Integração</div>
+        <div class="field-body">Modelo <strong>API-first</strong>. Documentação técnica para integração com PDV/ERP. Compatível com todos os PDVs via API REST. Especialmente vantajoso para desenvolvedores de software (Software Houses) que querem oferecer PIX ao seus clientes. Suporte via Discord e WhatsApp.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- 4. PDV PIX -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div class="section-heading">
+    <span class="sh-index">Serviço 04</span>
+    <span class="sh-rule"></span>
+  </div>
+
+  <div class="service-block" id="pdvpix">
+    <div class="service-stripe" style="background:var(--c4)"></div>
+    <div class="service-head">
+      <div class="service-logo-placeholder" style="background:#D1FAE5">📋</div>
+      <div class="service-head-text">
+        <div class="service-name" style="color:var(--c4)">PDV Pix</div>
+        <div class="service-tagline">Plataforma de gestão completa — pagamento, fidelização, agenda e campanhas</div>
+        <a class="service-url" href="https://pdvpix.com.br" target="_blank">pdvpix.com.br ↗</a>
+      </div>
+    </div>
+
+    <div class="service-body">
+
+      <div class="svc-col-full">
+        <div class="field-label">Como funciona</div>
+        <div class="how-steps">
+          <div class="how-step"><div class="step-num">1</div><div class="step-text">Vai além da validação: o PDV Pix integra o recebimento PIX à <strong>gestão completa do negócio</strong> — atendimento, agenda, campanhas e fidelização.</div></div>
+          <div class="how-step"><div class="step-num">2</div><div class="step-text">O cliente realiza o pagamento via Pix e o sistema confirma instantaneamente, sem intermediários, diretamente no PDV.</div></div>
+          <div class="how-step"><div class="step-num">3</div><div class="step-text">O recebimento é registrado e vinculado ao perfil do cliente, histórico de compras, prontuário (para clínicas) ou campanha ativa.</div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Serviços oferecidos</div>
+        <div class="chip-group">
+          <span class="chip chip-blue">Recebimento PIX instantâneo</span>
+          <span class="chip chip-blue">Agenda online</span>
+          <span class="chip chip-blue">Autoatendimento</span>
+          <span class="chip chip-blue">Fidelização de clientes</span>
+          <span class="chip chip-blue">Campanhas promocionais</span>
+          <span class="chip chip-blue">Prontuário (clínicas)</span>
+          <span class="chip chip-blue">Controle financeiro</span>
+          <span class="chip chip-blue">Fluxo de caixa</span>
+          <span class="chip chip-blue">API de integração</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Segmentos atendidos</div>
+        <div class="field-body">Varejo, clínicas médicas e odontológicas, salões, serviços em geral. Diferente dos outros, possui módulo de <strong>prontuário do paciente</strong> para prestadores de saúde.</div>
+      </div>
+
+      <div>
+        <div class="field-label">Preço</div>
+        <div class="price-box">
+          <div class="price-main">Competitivo — sob consulta</div>
+          <div class="price-note">Promete uma das menores taxas do mercado. Valores não divulgados publicamente.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Vantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-ok">✓ Solução mais completa do grupo</span>
+          <span class="chip chip-ok">✓ Pagamento + gestão do negócio em uma só plataforma</span>
+          <span class="chip chip-ok">✓ Módulo específico para clínicas (prontuário)</span>
+          <span class="chip chip-ok">✓ Campanhas e fidelização integradas ao PIX</span>
+          <span class="chip chip-ok">✓ API disponível para integrações</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Desvantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-bad">✗ Preço não transparente</span>
+          <span class="chip chip-warn">⚠ Pode ser complexo demais para quem só quer validar PIX</span>
+          <span class="chip chip-warn">⚠ Documentação de API com menos detalhes públicos</span>
+          <span class="chip chip-warn">⚠ Presença menor no mercado de varejo de grande porte</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Integração</div>
+        <div class="field-body">Possui API (API PDV Pix) para integração com ERP, e-commerce e sistemas de gestão. Suporta automação de cobranças, conciliações e pagamentos. Arquitetura REST com segurança de ponta a ponta.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- 5. OPENPIX -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div class="section-heading">
+    <span class="sh-index">Serviço 05</span>
+    <span class="sh-rule"></span>
+  </div>
+
+  <div class="service-block" id="openpix">
+    <div class="service-stripe" style="background:var(--c5)"></div>
+    <div class="service-head">
+      <div class="service-logo-placeholder" style="background:#FEF3C7">⚡</div>
+      <div class="service-head-text">
+        <div class="service-name" style="color:var(--c5)">OpenPix</div>
+        <div class="service-tagline">Plataforma de pagamentos PIX com API robusta — varejo, e-commerce e ERPs</div>
+        <a class="service-url" href="https://openpix.com.br" target="_blank">openpix.com.br ↗</a>
+      </div>
+    </div>
+
+    <div class="service-body">
+
+      <div class="svc-col-full">
+        <div class="field-label">Como funciona</div>
+        <div class="how-steps">
+          <div class="how-step"><div class="step-num">1</div><div class="step-text">Para cada venda, o sistema gera um QR Code dinâmico. O cliente paga e o PIX é processado pela infraestrutura da OpenPix.</div></div>
+          <div class="how-step"><div class="step-num">2</div><div class="step-text">A confirmação chega via <strong>Webhook</strong> ao PDV/ERP em até 1,5 segundos (99% das transações). O sistema finaliza a venda automaticamente.</div></div>
+          <div class="how-step"><div class="step-num">3</div><div class="step-text">A plataforma oferece <strong>+60 recursos</strong> incluídos em todos os planos: cobranças, links de pagamento, WhatsApp Pix, conciliação e relatórios.</div></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Serviços oferecidos</div>
+        <div class="chip-group">
+          <span class="chip chip-blue">QR Code dinâmico</span>
+          <span class="chip chip-blue">Webhook (1,5s)</span>
+          <span class="chip chip-blue">+60 recursos inclusos</span>
+          <span class="chip chip-blue">Link de pagamento</span>
+          <span class="chip chip-blue">Pix por WhatsApp</span>
+          <span class="chip chip-blue">Conciliação automática</span>
+          <span class="chip chip-blue">Sandbox para testes</span>
+          <span class="chip chip-blue">API com documentação pública</span>
+          <span class="chip chip-blue">Plugins para e-commerce</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Planos e Preço</div>
+        <div class="price-box">
+          <div class="price-main">2 planos disponíveis</div>
+          <div class="price-note" style="margin-top:6px">
+            <strong>Essencial:</strong> Taxa fixa por transação · Ideal para volumes previsíveis<br>
+            <strong>Integrado:</strong> Taxa percentual sobre o valor · Ideal para volumes variáveis<br><br>
+            Paga apenas pelo Pix recebido. Cancela quando quiser. Sem fidelidade.
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Vantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-ok">✓ API mais documentada e madura do grupo</span>
+          <span class="chip chip-ok">✓ Sandbox disponível para testar a integração</span>
+          <span class="chip chip-ok">✓ Webhook em 1,5 segundos</span>
+          <span class="chip chip-ok">✓ +60 recursos inclusos em todos os planos</span>
+          <span class="chip chip-ok">✓ Suporte a e-commerce, PDV e WhatsApp</span>
+          <span class="chip chip-ok">✓ Preços em dois modelos (fixo ou percentual)</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Desvantagens</div>
+        <div class="chip-group">
+          <span class="chip chip-bad">✗ Reclamações de instabilidade no Reclame Aqui</span>
+          <span class="chip chip-warn">⚠ Plataforma mais ampla pode ser complexa para uso simples</span>
+          <span class="chip chip-warn">⚠ Dinheiro pode passar por conta intermediária (verificar modalidade)</span>
+          <span class="chip chip-warn">⚠ Suporte relatado como lento em picos de demanda</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="field-label">Integração</div>
+        <div class="field-body">A mais amigável para desenvolvedores. Possui documentação pública completa (<code>developers.openpix.com.br</code>), sandbox para simulação de erros, plugins prontos para WooCommerce, Shopify e outros. Integração com ERPs via API REST. Webhooks configuráveis.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- TABELA COMPARATIVA -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div class="compare-section" id="comparativo">
+    <h2 class="compare-title">Quadro Comparativo Geral</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Serviço</th>
+            <th>Modelo</th>
+            <th>Dinheiro direto no banco</th>
+            <th>Preço transparente</th>
+            <th>API documentada</th>
+            <th>Sandbox</th>
+            <th>App mobile</th>
+            <th>Bancos homologados</th>
+            <th>Teste grátis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-name"><span class="td-dot" style="background:var(--c1)"></span>ValidaPix</td>
+            <td>Antifraude PDV</td>
+            <td class="check">✓ Sim</td>
+            <td class="cross">✗ Não</td>
+            <td class="partial">⚠ Parcial</td>
+            <td class="cross">✗ Não</td>
+            <td class="check">✓ Sim</td>
+            <td>6+ bancos grandes</td>
+            <td>3 dias</td>
+          </tr>
+          <tr>
+            <td class="td-name"><span class="td-dot" style="background:var(--c2)"></span>ConferePix</td>
+            <td>App de conferência</td>
+            <td class="check">✓ Sim</td>
+            <td class="cross">✗ Não</td>
+            <td class="cross">✗ Limitada</td>
+            <td class="cross">✗ Não</td>
+            <td class="check">✓ Sim</td>
+            <td>6 bancos</td>
+            <td>7 dias</td>
+          </tr>
+          <tr>
+            <td class="td-name"><span class="td-dot" style="background:var(--c3)"></span>PIXPDV</td>
+            <td>Fintech / Conta BC</td>
+            <td class="cross">✗ Conta própria</td>
+            <td class="partial">⚠ Parcial</td>
+            <td class="check">✓ Sim</td>
+            <td class="cross">✗ Não</td>
+            <td class="cross">✗ Não</td>
+            <td>Não precisa de banco</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td class="td-name"><span class="td-dot" style="background:var(--c4)"></span>PDV Pix</td>
+            <td>Gestão completa</td>
+            <td class="check">✓ Sim</td>
+            <td class="cross">✗ Não</td>
+            <td class="check">✓ Sim</td>
+            <td class="cross">✗ Não</td>
+            <td class="partial">⚠ Parcial</td>
+            <td>Não especificado</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td class="td-name"><span class="td-dot" style="background:var(--c5)"></span>OpenPix</td>
+            <td>Plataforma de pagtos</td>
+            <td class="partial">⚠ Verificar plano</td>
+            <td class="check">✓ Sim</td>
+            <td class="check">✓ Completa</td>
+            <td class="check">✓ Sim</td>
+            <td class="partial">⚠ Parcial</td>
+            <td>Ampla cobertura</td>
+            <td>Plano gratuito</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- RECOMENDAÇÃO -->
+  <div class="intro-section" style="margin-top:40px;margin-bottom:0">
+    <h2>Recomendação por Perfil de Empresa</h2>
+    <p style="margin-top:12px"><strong style="color:var(--c1)">ValidaPix</strong> — Melhor escolha para varejo físico de médio e grande porte (redes de lojas, franquias) que precisa de antifraude robusto e mantém seus bancos tradicionais.</p>
+    <p><strong style="color:var(--c2)">ConferePix</strong> — Indicado para pequenas empresas com 1–2 caixas que querem uma solução de app simples, sem precisar integrar ao PDV.</p>
+    <p><strong style="color:var(--c3)">PIXPDV</strong> — Melhor para desenvolvedores de software (Software Houses e ERPs) que querem oferecer PIX integrado ao seu sistema sem depender de banco parceiro.</p>
+    <p><strong style="color:var(--c4)">PDV Pix</strong> — Melhor para clínicas, salões e prestadores de serviço que querem unificar pagamento, agenda, prontuário e fidelização em uma única plataforma.</p>
+    <p><strong style="color:var(--c5)">OpenPix</strong> — Melhor para e-commerce e empresas com equipe de desenvolvimento que precisam de API madura, sandbox e suporte a múltiplos canais (web, app, WhatsApp).</p>
+  </div>
+
+</main>
+
+<footer class="report-footer">
+  <span>Relatório produzido com base em informações públicas dos sites oficiais de cada serviço · Agosto 2026</span>
+  <span>Preços e funcionalidades sujeitos a alteração — confirmar diretamente com cada fornecedor</span>
+</footer>
+
+</body>
+</html>
