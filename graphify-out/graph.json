@@ -4,16 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "supabase.js",
-      "file_type": "code",
-      "source_file": "sistema/supabase.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "sistema_supabase",
-      "community": 7,
-      "norm_label": "supabase.js"
-    },
-    {
       "label": "SKILL.md",
       "file_type": "document",
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
@@ -484,6 +474,426 @@
       "norm_label": "slides"
     },
     {
+      "label": "RELATORIO_PIX.md",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix",
+      "community": 2,
+      "norm_label": "relatorio_pix.md"
+    },
+    {
+      "label": "Relat\u00f3rio Comparativo \u2014 Servi\u00e7os de Valida\u00e7\u00e3o PIX para Empresas",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "community": 2,
+      "norm_label": "relatorio comparativo \u2014 servicos de validacao pix para empresas"
+    },
+    {
+      "label": "Contexto do Mercado",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_contexto_do_mercado",
+      "community": 2,
+      "norm_label": "contexto do mercado"
+    },
+    {
+      "label": "1. ValidaPix \u2014 validapix.com.br",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
+      "community": 7,
+      "norm_label": "1. validapix \u2014 validapix.com.br"
+    },
+    {
+      "label": "Como Funciona",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_como_funciona",
+      "community": 7,
+      "norm_label": "como funciona"
+    },
+    {
+      "label": "Servi\u00e7os Oferecidos",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos",
+      "community": 7,
+      "norm_label": "servicos oferecidos"
+    },
+    {
+      "label": "Pre\u00e7o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_pre\u00e7o",
+      "community": 7,
+      "norm_label": "preco"
+    },
+    {
+      "label": "Bancos Homologados",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_bancos_homologados",
+      "community": 7,
+      "norm_label": "bancos homologados"
+    },
+    {
+      "label": "Vantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_vantagens",
+      "community": 7,
+      "norm_label": "vantagens"
+    },
+    {
+      "label": "Desvantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_desvantagens",
+      "community": 7,
+      "norm_label": "desvantagens"
+    },
+    {
+      "label": "Facilidade de Integra\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o",
+      "community": 7,
+      "norm_label": "facilidade de integracao"
+    },
+    {
+      "label": "2. ConferePix \u2014 conferepix.app",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
+      "community": 11,
+      "norm_label": "2. conferepix \u2014 conferepix.app"
+    },
+    {
+      "label": "Como Funciona",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_como_funciona_54",
+      "community": 11,
+      "norm_label": "como funciona"
+    },
+    {
+      "label": "Servi\u00e7os Oferecidos",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_57",
+      "community": 11,
+      "norm_label": "servicos oferecidos"
+    },
+    {
+      "label": "Pre\u00e7o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_pre\u00e7o_63",
+      "community": 11,
+      "norm_label": "preco"
+    },
+    {
+      "label": "Bancos Homologados",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_bancos_homologados_67",
+      "community": 11,
+      "norm_label": "bancos homologados"
+    },
+    {
+      "label": "Vantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_vantagens_70",
+      "community": 11,
+      "norm_label": "vantagens"
+    },
+    {
+      "label": "Desvantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_desvantagens_77",
+      "community": 11,
+      "norm_label": "desvantagens"
+    },
+    {
+      "label": "Facilidade de Integra\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_83",
+      "community": 11,
+      "norm_label": "facilidade de integracao"
+    },
+    {
+      "label": "3. PIXPDV \u2014 pixpdv.com.br",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
+      "community": 12,
+      "norm_label": "3. pixpdv \u2014 pixpdv.com.br"
+    },
+    {
+      "label": "Como Funciona",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_como_funciona_90",
+      "community": 12,
+      "norm_label": "como funciona"
+    },
+    {
+      "label": "Servi\u00e7os Oferecidos",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_93",
+      "community": 12,
+      "norm_label": "servicos oferecidos"
+    },
+    {
+      "label": "Pre\u00e7o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_pre\u00e7o_101",
+      "community": 12,
+      "norm_label": "preco"
+    },
+    {
+      "label": "Vantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_vantagens_107",
+      "community": 12,
+      "norm_label": "vantagens"
+    },
+    {
+      "label": "Desvantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_desvantagens_115",
+      "community": 12,
+      "norm_label": "desvantagens"
+    },
+    {
+      "label": "Facilidade de Integra\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_121",
+      "community": 12,
+      "norm_label": "facilidade de integracao"
+    },
+    {
+      "label": "4. PDV Pix \u2014 pdvpix.com.br",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
+      "community": 13,
+      "norm_label": "4. pdv pix \u2014 pdvpix.com.br"
+    },
+    {
+      "label": "Como Funciona",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_como_funciona_128",
+      "community": 13,
+      "norm_label": "como funciona"
+    },
+    {
+      "label": "Servi\u00e7os Oferecidos",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_131",
+      "community": 13,
+      "norm_label": "servicos oferecidos"
+    },
+    {
+      "label": "Pre\u00e7o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_pre\u00e7o_141",
+      "community": 13,
+      "norm_label": "preco"
+    },
+    {
+      "label": "Vantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L145",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_vantagens_145",
+      "community": 13,
+      "norm_label": "vantagens"
+    },
+    {
+      "label": "Desvantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_desvantagens_152",
+      "community": 13,
+      "norm_label": "desvantagens"
+    },
+    {
+      "label": "Facilidade de Integra\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_158",
+      "community": 13,
+      "norm_label": "facilidade de integracao"
+    },
+    {
+      "label": "5. OpenPix \u2014 openpix.com.br",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L163",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
+      "community": 2,
+      "norm_label": "5. openpix \u2014 openpix.com.br"
+    },
+    {
+      "label": "Como Funciona",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L165",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_como_funciona_165",
+      "community": 2,
+      "norm_label": "como funciona"
+    },
+    {
+      "label": "Servi\u00e7os Oferecidos",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_168",
+      "community": 2,
+      "norm_label": "servicos oferecidos"
+    },
+    {
+      "label": "Pre\u00e7o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L179",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_pre\u00e7o_179",
+      "community": 2,
+      "norm_label": "preco"
+    },
+    {
+      "label": "Vantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_vantagens_185",
+      "community": 2,
+      "norm_label": "vantagens"
+    },
+    {
+      "label": "Desvantagens",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_desvantagens_193",
+      "community": 2,
+      "norm_label": "desvantagens"
+    },
+    {
+      "label": "Facilidade de Integra\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L199",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_199",
+      "community": 2,
+      "norm_label": "facilidade de integracao"
+    },
+    {
+      "label": "Quadro Comparativo Geral",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L204",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_quadro_comparativo_geral",
+      "community": 2,
+      "norm_label": "quadro comparativo geral"
+    },
+    {
+      "label": "Recomenda\u00e7\u00e3o por Perfil de Empresa",
+      "file_type": "document",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L216",
+      "_origin": "ast",
+      "id": "cantina_senai_relatorio_pix_recomenda\u00e7\u00e3o_por_perfil_de_empresa",
+      "community": 2,
+      "norm_label": "recomendacao por perfil de empresa"
+    },
+    {
       "label": "2026-08-07-analise-ementas.md",
       "file_type": "document",
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
@@ -700,7 +1110,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "community": 2,
+      "community": 3,
       "norm_label": "unidade curricular 1: introducao a tecnologia da informacao e comunicacao"
     },
     {
@@ -710,7 +1120,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "sistema_claude_carga_hor\u00e1ria",
-      "community": 2,
+      "community": 3,
       "norm_label": "carga horaria"
     },
     {
@@ -720,7 +1130,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "sistema_claude_capacidades_b\u00e1sicas",
-      "community": 2,
+      "community": 3,
       "norm_label": "capacidades basicas"
     },
     {
@@ -880,7 +1290,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora",
-      "community": 2,
+      "community": 3,
       "norm_label": "eixo estruturante bncc / competencia integradora"
     },
     {
@@ -890,7 +1300,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "sistema_claude_capacidades_socioemocionais",
-      "community": 2,
+      "community": 3,
       "norm_label": "capacidades socioemocionais"
     },
     {
@@ -900,7 +1310,7 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos",
-      "community": 2,
+      "community": 3,
       "norm_label": "ambientes pedagogicos e recursos"
     },
     {
@@ -910,7 +1320,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "sistema_claude_ferramentas_de_ensino",
-      "community": 2,
+      "community": 3,
       "norm_label": "ferramentas de ensino"
     },
     {
@@ -1558,6 +1968,416 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix",
+      "target": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "target": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "target": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "target": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "target": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "target": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "target": "cantina_senai_relatorio_pix_contexto_do_mercado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "target": "cantina_senai_relatorio_pix_quadro_comparativo_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
+      "target": "cantina_senai_relatorio_pix_recomenda\u00e7\u00e3o_por_perfil_de_empresa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
+      "target": "cantina_senai_relatorio_pix_bancos_homologados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
+      "target": "cantina_senai_relatorio_pix_como_funciona",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
+      "target": "cantina_senai_relatorio_pix_desvantagens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
+      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
+      "target": "cantina_senai_relatorio_pix_pre\u00e7o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
+      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
+      "target": "cantina_senai_relatorio_pix_vantagens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
+      "target": "cantina_senai_relatorio_pix_bancos_homologados_67",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
+      "target": "cantina_senai_relatorio_pix_como_funciona_54",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
+      "target": "cantina_senai_relatorio_pix_desvantagens_77",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
+      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_83",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
+      "target": "cantina_senai_relatorio_pix_pre\u00e7o_63",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
+      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_57",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
+      "target": "cantina_senai_relatorio_pix_vantagens_70",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
+      "target": "cantina_senai_relatorio_pix_como_funciona_90",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
+      "target": "cantina_senai_relatorio_pix_desvantagens_115",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
+      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_121",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
+      "target": "cantina_senai_relatorio_pix_pre\u00e7o_101",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
+      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_93",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
+      "target": "cantina_senai_relatorio_pix_vantagens_107",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
+      "target": "cantina_senai_relatorio_pix_como_funciona_128",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
+      "target": "cantina_senai_relatorio_pix_desvantagens_152",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
+      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_158",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
+      "target": "cantina_senai_relatorio_pix_pre\u00e7o_141",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
+      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_131",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
+      "target": "cantina_senai_relatorio_pix_vantagens_145",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
+      "target": "cantina_senai_relatorio_pix_como_funciona_165",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
+      "target": "cantina_senai_relatorio_pix_desvantagens_193",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
+      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_199",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
+      "target": "cantina_senai_relatorio_pix_pre\u00e7o_179",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
+      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_168",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cantina-senai/RELATORIO_PIX.md",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
+      "target": "cantina_senai_relatorio_pix_vantagens_185",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/superpowers/plans/2026-08-07-analise-ementas.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -2157,5 +2977,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f6de8c99ec2058940955b6bd5d38b43cdaf58b1a"
+  "built_at_commit": "d51603293ef460cc0d8bb463fd35310790d68ab1"
 }
