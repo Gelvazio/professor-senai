@@ -1034,6 +1034,61 @@
       [data-theme="dark"] #aulaFormArea { background: #141620!important; border-bottom-color: #2c2e38!important; }
       [data-theme="dark"] #aulaMatList .aula-mat-row { background: #252830; }
       [data-theme="dark"] #aulasVazio { color: #8b919e; }
+
+      /* ── Modal Plano de Ensino ── */
+      .pe-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:3000; display:flex; align-items:center; justify-content:center; padding:12px; }
+      .pe-modal { background:#fff; border-radius:12px; box-shadow:0 8px 40px rgba(0,0,0,.3); width:100%; max-width:860px; max-height:92vh; display:flex; flex-direction:column; overflow:hidden; }
+      .pe-head { background:#004384; color:#fff; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-shrink:0; }
+      .pe-head h3 { margin:0; font-size:15px; font-weight:700; }
+      .pe-nav { display:flex; overflow-x:auto; border-bottom:2px solid #e8eaed; background:#f8f9fa; flex-shrink:0; scrollbar-width:thin; }
+      .pe-nav-tab { padding:10px 18px; font-size:13px; font-weight:600; color:#555; border:none; background:none; cursor:pointer; border-bottom:3px solid transparent; margin-bottom:-2px; white-space:nowrap; font-family:inherit; transition:color .15s,border-color .15s; }
+      .pe-nav-tab:hover { color:#004384; }
+      .pe-nav-tab.ativo { color:#004384; border-bottom-color:#004384; }
+      .pe-body { overflow-y:auto; flex:1; padding:0 32px 48px; }
+      .pe-section { scroll-margin-top:6px; padding-top:8px; }
+      .pe-section + .pe-section { border-top:2px solid #e8eaed; margin-top:12px; }
+      .pe-loading { text-align:center; color:#888; padding:48px; font-size:14px; }
+      /* Markdown */
+      .pe-md h1 { font-size:22px; font-weight:800; color:#004384; margin:28px 0 12px; line-height:1.25; }
+      .pe-md h2 { font-size:17px; font-weight:700; color:#004384; margin:22px 0 10px; border-bottom:2px solid #e8eaed; padding-bottom:6px; }
+      .pe-md h3 { font-size:14px; font-weight:700; color:#333; margin:18px 0 8px; }
+      .pe-md h4 { font-size:13px; font-weight:700; color:#555; margin:14px 0 6px; }
+      .pe-md p { font-size:13.5px; color:#333; line-height:1.75; margin:6px 0; }
+      .pe-md ul,.pe-md ol { margin:6px 0 6px 24px; }
+      .pe-md li { font-size:13.5px; color:#333; line-height:1.7; margin-bottom:3px; }
+      .pe-md ul li { list-style:disc; }
+      .pe-md ol li { list-style:decimal; }
+      .pe-md table { border-collapse:collapse; width:100%; margin:14px 0; font-size:13px; }
+      .pe-md th { background:#004384; color:#fff; padding:8px 12px; text-align:left; font-weight:700; font-size:12px; }
+      .pe-md td { padding:7px 12px; border-bottom:1px solid #e8eaed; color:#333; }
+      .pe-md tr:nth-child(even) td { background:#f5f8ff; }
+      .pe-md code { background:#f1f3f4; border-radius:4px; padding:2px 6px; font-size:12px; color:#c62828; font-family:monospace; }
+      .pe-md pre { background:#1e1e1e; border-radius:8px; padding:16px; overflow-x:auto; margin:12px 0; }
+      .pe-md pre code { background:none; color:#d4d4d4; padding:0; font-size:12.5px; }
+      .pe-md blockquote { border-left:4px solid #004384; background:#e8f0fe; padding:10px 16px; margin:12px 0; border-radius:0 6px 6px 0; }
+      .pe-md blockquote p { color:#003068; margin:0; }
+      .pe-md hr { border:none; border-top:2px solid #e8eaed; margin:20px 0; }
+      .pe-md strong { font-weight:700; color:#202124; }
+      .pe-md em { font-style:italic; }
+      /* dark */
+      [data-theme="dark"] .pe-modal { background:#1c1e26; }
+      [data-theme="dark"] .pe-nav { background:#141620; border-bottom-color:#2c2e38; }
+      [data-theme="dark"] .pe-nav-tab { color:#8b919e; }
+      [data-theme="dark"] .pe-nav-tab:hover,[data-theme="dark"] .pe-nav-tab.ativo { color:#7aa3d4; }
+      [data-theme="dark"] .pe-nav-tab.ativo { border-bottom-color:#7aa3d4; }
+      [data-theme="dark"] .pe-section + .pe-section { border-top-color:#2c2e38; }
+      [data-theme="dark"] .pe-md h1,[data-theme="dark"] .pe-md h2 { color:#7aa3d4; }
+      [data-theme="dark"] .pe-md h2 { border-bottom-color:#2c2e38; }
+      [data-theme="dark"] .pe-md h3 { color:#c0c8d8; }
+      [data-theme="dark"] .pe-md h4 { color:#9ba3b5; }
+      [data-theme="dark"] .pe-md p,[data-theme="dark"] .pe-md li { color:#c8cdd8; }
+      [data-theme="dark"] .pe-md td { color:#c0c8d8; border-bottom-color:#2c2e38; }
+      [data-theme="dark"] .pe-md tr:nth-child(even) td { background:#1a1f2e; }
+      [data-theme="dark"] .pe-md code { background:#252830; color:#f48771; }
+      [data-theme="dark"] .pe-md blockquote { background:#1a2540; border-left-color:#7aa3d4; }
+      [data-theme="dark"] .pe-md blockquote p { color:#9ec4f0; }
+      [data-theme="dark"] .pe-md hr { border-top-color:#2c2e38; }
+      [data-theme="dark"] .pe-md strong { color:#e0e3e8; }
     </style>
   </head>
   <body>
@@ -1056,10 +1111,25 @@
       <span class="header-spacer"></span>
       <span class="role-badge" id="roleBadge"></span>
       <button id="btnEmentaSlides" onclick="window.location.href='ementa-slides.html'" class="header-btn" style="display:none; margin-left:8px">📋 Ementa × Slides</button>
+      <button id="btnPlanoEnsino" onclick="abrirPlanoEnsino()" class="header-btn" style="display:none; margin-left:8px">📄 Plano Ensino</button>
       <button onclick="toggleTema()" class="header-btn" id="btnTema" style="margin-left: 8px; min-width: 96px">🌙 Escuro</button>
       <button onclick="sair()" class="header-btn" style="margin-left: 4px">
         🚪 Sair
       </button>
+    </div>
+
+    <!-- ── Modal Plano de Ensino ──────────────────── -->
+    <div class="pe-backdrop" id="peBd" style="display:none">
+      <div class="pe-modal">
+        <div class="pe-head">
+          <h3>📄 Plano de Ensino — UC1</h3>
+          <button class="crud-btn-fechar" onclick="fecharPlanoEnsino()">✕</button>
+        </div>
+        <nav class="pe-nav" id="peNav"></nav>
+        <div class="pe-body" id="peBody">
+          <div class="pe-loading">⏳ Carregando documentos…</div>
+        </div>
+      </div>
     </div>
 
     <!-- ── Modal Matérias do Curso ──────────────── -->
@@ -1410,10 +1480,12 @@
         ? "👨‍🏫 Professor"
         : "👨‍🎓 Aluno";
 
-      // Botão Ementa × Slides — visível apenas para professor
+      // Botões visíveis apenas para professor
       if (isProfessor) {
         const btnES = document.getElementById('btnEmentaSlides');
         if (btnES) btnES.style.display = 'inline-block';
+        const btnPE = document.getElementById('btnPlanoEnsino');
+        if (btnPE) btnPE.style.display = 'inline-block';
       }
 
       // Botão de tema — sincroniza texto com estado atual
@@ -2905,6 +2977,172 @@
 
       document.getElementById('gerarFormsModal').addEventListener('click', function(e) {
         if (e.target === this) fecharModalGerarForms();
+      });
+
+      // ── Modal Plano de Ensino ──────────────────────────────────────────
+      const PE_DOCS = [
+        { label: 'Ementa UC1',          path: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md' },
+        { label: 'SA Bloco 02',         path: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md' },
+        { label: 'Estratégia Bloco 02', path: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ESTRATEGIA-ENSINO-BLOCO-02.md' },
+        { label: 'Critérios Bloco 02',  path: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CRITERIOS-AVALIACAO-BLOCO-02.md' },
+      ];
+
+      function mdToHtml(md) {
+        // Protect code blocks
+        const blocks = [];
+        md = md.replace(/```[\w]*\n?([\s\S]*?)```/g, function(_, code) {
+          blocks.push('<pre><code>' + code.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</code></pre>');
+          return '\x00B' + (blocks.length - 1) + '\x00';
+        });
+        // Protect inline code
+        const inlines = [];
+        md = md.replace(/`([^`\n]+)`/g, function(_, code) {
+          inlines.push('<code>' + code.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</code>');
+          return '\x00I' + (inlines.length - 1) + '\x00';
+        });
+        // Bold + italic
+        md = md.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
+        md = md.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        md = md.replace(/__(.+?)__/g, '<strong>$1</strong>');
+        md = md.replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
+
+        var lines = md.split('\n');
+        var out = [];
+        var inUl = false, inOl = false, inTable = false;
+
+        function closeAll() {
+          if (inUl)    { out.push('</ul>');              inUl    = false; }
+          if (inOl)    { out.push('</ol>');              inOl    = false; }
+          if (inTable) { out.push('</tbody></table>');   inTable = false; }
+        }
+
+        for (var i = 0; i < lines.length; i++) {
+          var line = lines[i];
+          var m;
+
+          // Headings
+          if (m = line.match(/^#### (.+)$/))  { closeAll(); out.push('<h4>' + m[1] + '</h4>'); continue; }
+          if (m = line.match(/^### (.+)$/))   { closeAll(); out.push('<h3>' + m[1] + '</h3>'); continue; }
+          if (m = line.match(/^## (.+)$/))    { closeAll(); out.push('<h2>' + m[1] + '</h2>'); continue; }
+          if (m = line.match(/^# (.+)$/))     { closeAll(); out.push('<h1>' + m[1] + '</h1>'); continue; }
+
+          // HR
+          if (/^-{3,}$/.test(line.trim())) { closeAll(); out.push('<hr>'); continue; }
+
+          // Blockquote
+          if (m = line.match(/^> (.+)$/)) { closeAll(); out.push('<blockquote><p>' + m[1] + '</p></blockquote>'); continue; }
+
+          // Table
+          if (/^\|.+\|/.test(line)) {
+            if (/^[\|:\-\s]+$/.test(line.trim())) continue; // separator row
+            var cells = line.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return c.trim(); });
+            if (!inTable) {
+              if (inUl) { out.push('</ul>'); inUl = false; }
+              if (inOl) { out.push('</ol>'); inOl = false; }
+              inTable = true;
+              out.push('<table><thead><tr>' + cells.map(function(c){ return '<th>' + c + '</th>'; }).join('') + '</tr></thead><tbody>');
+            } else {
+              out.push('<tr>' + cells.map(function(c){ return '<td>' + c + '</td>'; }).join('') + '</tr>');
+            }
+            continue;
+          } else if (inTable) { out.push('</tbody></table>'); inTable = false; }
+
+          // Unordered list
+          if (m = line.match(/^[ \t]*[-*+] (.+)$/)) {
+            if (inOl) { out.push('</ol>'); inOl = false; }
+            if (!inUl) { out.push('<ul>'); inUl = true; }
+            out.push('<li>' + m[1] + '</li>');
+            continue;
+          }
+
+          // Ordered list
+          if (m = line.match(/^\d+\. (.+)$/)) {
+            if (inUl) { out.push('</ul>'); inUl = false; }
+            if (!inOl) { out.push('<ol>'); inOl = true; }
+            out.push('<li>' + m[2] + '</li>');
+            continue;
+          }
+
+          // Empty line
+          if (!line.trim()) { closeAll(); continue; }
+
+          // Code block placeholder on its own line
+          if (/^\x00B\d+\x00$/.test(line.trim())) { closeAll(); out.push(line.trim()); continue; }
+
+          // Paragraph
+          out.push('<p>' + line + '</p>');
+        }
+        closeAll();
+
+        var html = out.join('\n');
+        html = html.replace(/\x00I(\d+)\x00/g, function(_, i){ return inlines[+i]; });
+        html = html.replace(/\x00B(\d+)\x00/g, function(_, i){ return blocks[+i]; });
+        return html;
+      }
+
+      async function abrirPlanoEnsino() {
+        document.getElementById('peBd').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        var nav  = document.getElementById('peNav');
+        var body = document.getElementById('peBody');
+        nav.innerHTML  = '';
+        body.innerHTML = '<div class="pe-loading">⏳ Carregando documentos…</div>';
+
+        var sections = [];
+        for (var i = 0; i < PE_DOCS.length; i++) {
+          var doc = PE_DOCS[i];
+          var id  = 'pe-sec-' + i;
+          try {
+            var res  = await fetch(doc.path);
+            var txt  = await res.text();
+            sections.push({ id: id, label: doc.label, html: mdToHtml(txt) });
+          } catch(e) {
+            sections.push({ id: id, label: doc.label, html: '<p style="color:#c62828">Erro ao carregar ' + doc.path + '</p>' });
+          }
+        }
+
+        nav.innerHTML = sections.map(function(s, idx){
+          return '<button class="pe-nav-tab' + (idx === 0 ? ' ativo' : '') + '" data-sec="' + s.id + '" onclick="peGoTo(\'' + s.id + '\', this)">' + s.label + '</button>';
+        }).join('');
+
+        body.innerHTML = sections.map(function(s){
+          return '<div class="pe-section pe-md" id="' + s.id + '">' + s.html + '</div>';
+        }).join('');
+
+        body.addEventListener('scroll', peSyncTabs, { passive: true });
+      }
+
+      function peGoTo(id, btn) {
+        document.querySelectorAll('.pe-nav-tab').forEach(function(t){ t.classList.remove('ativo'); });
+        btn.classList.add('ativo');
+        var el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      function peSyncTabs() {
+        var body = document.getElementById('peBody');
+        var secs = body.querySelectorAll('.pe-section');
+        var active = secs[0];
+        var bodyTop = body.getBoundingClientRect().top;
+        secs.forEach(function(s){
+          if (s.getBoundingClientRect().top - bodyTop <= 48) active = s;
+        });
+        if (active) {
+          document.querySelectorAll('.pe-nav-tab').forEach(function(t){
+            t.classList.toggle('ativo', t.dataset.sec === active.id);
+          });
+        }
+      }
+
+      function fecharPlanoEnsino() {
+        document.getElementById('peBd').style.display = 'none';
+        document.body.style.overflow = '';
+        var body = document.getElementById('peBody');
+        body.removeEventListener('scroll', peSyncTabs);
+      }
+
+      document.getElementById('peBd').addEventListener('click', function(e){
+        if (e.target === this) fecharPlanoEnsino();
       });
     </script>
 
