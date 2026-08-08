@@ -120,6 +120,16 @@ body {
 }
 .filter-select:focus { border-color: var(--blue) }
 .filter-sep { width: 1px; height: 24px; background: var(--border); margin: 0 4px }
+.aulas-filter { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.aula-cb { display: none; }
+.aula-cb-label {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 11px; font-weight: 600; color: var(--text-2);
+  cursor: pointer; padding: 3px 9px; border: 1px solid var(--border);
+  border-radius: 20px; background: var(--surface); transition: background .15s, color .15s, border-color .15s;
+  white-space: nowrap; user-select: none;
+}
+.aula-cb:checked + .aula-cb-label { background: var(--blue); border-color: var(--blue); color: #fff; }
 .btn-analisar {
   background: var(--blue); color: #fff; border: none;
   padding: 7px 18px; border-radius: 20px; font-size: 12px; font-weight: 600;
@@ -427,7 +437,7 @@ body {
   <!-- Filter bar -->
   <div class="filter-bar">
     <label>Curso:</label>
-    <select id="filtroCurso" class="filter-select" onchange="renderFiltroMaterias(); renderTabela()">
+    <select id="filtroCurso" class="filter-select" onchange="renderFiltroMaterias(); renderFiltroAulas(); renderTabela()">
       <option value="uc1">UC1 — Introdução à TIC</option>
       <option value="uc2">UC2 — Saúde e Segurança no Trabalho</option>
     </select>
@@ -442,6 +452,9 @@ body {
       <option value="parcial">⚠️ Parcial</option>
       <option value="nao">❌ Não Abordado</option>
     </select>
+    <div class="filter-sep"></div>
+    <label>Aulas:</label>
+    <div class="aulas-filter" id="aulasFilter"></div>
     <button class="btn-analisar" onclick="abrirModal()">🔄 Mudar Seleção</button>
   </div>
 
@@ -491,7 +504,7 @@ const EMENTAS = {
         num: '1', nome: 'Comunicação em Equipes de Trabalho', ch: 3,
         subTopicos: ['1.1 Dinâmica do trabalho em equipe', '1.2 Busca de consenso', '1.3 Gestão de Conflitos'],
         slides: [
-          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html', aula: 1, titulo: 'Aula 01 — Apresentação e Comunicação no Trabalho', qtd: 25, cob: 'parcial', obs: 'Cobre comunicação assertiva, escuta ativa e gestão de conflitos' },
+          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html', aula: 1, titulo: 'Aula 01 — Apresentação e Comunicação no Trabalho', qtd: 30, cob: 'parcial', obs: 'Cobre comunicação assertiva, escuta ativa e gestão de conflitos' },
           { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-02-04-08-2026/SLIDE_AULA_02_COMUNICACAO.html', aula: 2, titulo: 'Aula 02 — Comunicação em Equipes de Trabalho', qtd: 12, cob: 'total', obs: 'Dedicado inteiramente ao tema: dinâmica, consenso e conflitos' }
         ],
         status: 'coberto'
@@ -515,35 +528,21 @@ const EMENTAS = {
       },
       {
         num: '4.1', nome: 'Software de Escritório — Editor de Textos', ch: 7,
-        subTopicos: ['4.1.1 Tipos', '4.1.2 Formatação', '4.1.3 Config. de páginas', '4.1.4 Figuras e objetos', '4.1.5 Tabelas e gráficos', '4.1.6 Arquivamento', '4.1.7 Impressão'],
+        subTopicos: ['4.1.1 Tipos', '4.1.2 Formatação', '4.1.3 Config. de páginas', '4.1.4 Figuras e objetos', '4.1.5 Tabelas e gráficos', '4.1.6 Arquivamento', '4.1.7 Controles de exibição', '4.1.8 Correção ortográfica', '4.1.9 Recuos e parágrafos', '4.1.10 Marcadores e numeração', '4.1.11 Bordas e sombreamento', '4.1.12 Colunas', '4.1.13 Controle de alterações', '4.1.14 Impressão'],
         slides: [
-          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-05-07-08-2026/SLIDE_AULA_05.html', aula: 5, titulo: 'Aula 05 — Google Docs — Editor de Textos', qtd: 13, cob: 'parcial', obs: 'Cobre Google Docs; Microsoft Word abordado em Aula 13' },
-          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html', aula: 13, titulo: 'Aula 13 — Ferramentas Microsoft (Word / Excel / PowerPoint)', qtd: 13, cob: 'parcial', obs: 'Compartilhado entre Word, Excel e PowerPoint' }
+          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-05-07-08-2026/SLIDE_AULA_05.html', aula: 5, titulo: 'Aula 05 — Google Docs — Editor de Textos', qtd: 16, cob: 'total', obs: 'Cobre todos os 14 subtópicos: tipos, formatação, páginas, figuras, tabelas, recuos, marcadores, bordas, colunas, controle de alterações, correção ortográfica e impressão' },
+          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html', aula: 13, titulo: 'Aula 13 — Ferramentas Microsoft (Word / Excel / PowerPoint)', qtd: 13, cob: 'parcial', obs: 'Complementa com Microsoft Word — visão comparativa com Google Docs' }
         ],
-        status: 'parcial',
-        faltantes: [
-          '4.1.8 Correção ortográfica e dicionário',
-          '4.1.9 Recuos, tabulação, parágrafos, espaçamentos e margens',
-          '4.1.10 Marcadores e numeradores',
-          '4.1.11 Bordas e sombreamento',
-          '4.1.12 Colunas',
-          '4.1.13 Controle de alterações',
-          '4.1.14 Impressão — configuração e impressão de documentos'
-        ]
+        status: 'coberto'
       },
       {
         num: '4.2', nome: 'Software de Escritório — Planilhas Eletrônicas', ch: 6,
-        subTopicos: ['4.2.1 Funções básicas', '4.2.2 Linhas, colunas e células', '4.2.3 Formatação de células', '4.2.4 Fórmulas', '4.2.5 Classificação e filtro', '4.2.6 Gráficos', '4.2.7 Impressão'],
+        subTopicos: ['4.2.1 Funções básicas', '4.2.2 Linhas, colunas e células', '4.2.3 Formatação de células', '4.2.4 Fórmulas básicas e avançadas', '4.2.5 Classificação e filtro', '4.2.6 Gráficos', '4.2.7 Tabelas dinâmicas', '4.2.8 Impressão', 'Comparativo Sheets × Excel'],
         slides: [
-          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-06-10-08-2026/SLIDE_AULA_06.html', aula: 6, titulo: 'Aula 06 — Google Sheets — Planilhas Eletrônicas', qtd: 13, cob: 'parcial', obs: 'Cobre Google Sheets; Microsoft Excel abordado em Aula 13' },
-          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html', aula: 13, titulo: 'Aula 13 — Ferramentas Microsoft (Word / Excel / PowerPoint)', qtd: 13, cob: 'parcial', obs: 'Compartilhado entre Word, Excel e PowerPoint' }
+          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-06-10-08-2026/SLIDE_AULA_06.html', aula: 6, titulo: 'Aula 06 — Google Sheets — Planilhas Eletrônicas', qtd: 18, cob: 'total', obs: 'Cobre todos os subtópicos: estrutura, formatação, fórmulas (PROCV, SE, SOMASE), filtros, gráficos, tabelas dinâmicas, impressão e comparativo com Excel' },
+          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html', aula: 13, titulo: 'Aula 13 — Ferramentas Microsoft (Word / Excel / PowerPoint)', qtd: 13, cob: 'parcial', obs: 'Complementa com Microsoft Excel — visão comparativa com Google Sheets' }
         ],
-        status: 'parcial',
-        faltantes: [
-          '4.2.5 Fórmulas avançadas — PROCV, SE aninhado, SOMASE, CONT.SE',
-          '4.2.7 Tabelas dinâmicas — agrupamento e análise de dados',
-          'Comparativo Google Sheets × Microsoft Excel — diferenças práticas'
-        ]
+        status: 'coberto'
       },
       {
         num: '4.3', nome: 'Software de Escritório — Editor de Apresentações', ch: 5,
@@ -576,30 +575,24 @@ const EMENTAS = {
         num: '7', nome: 'Comunicação — Gêneros Textuais', ch: 1,
         subTopicos: ['7.1 Identificação de textos técnicos', '7.2 Relatórios', '7.3 Atas', '7.4 Memorandos', '7.5 Resumos'],
         slides: [
-          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html', aula: 1, titulo: 'Aula 01 — Apresentação e Comunicação no Trabalho', qtd: 25, cob: 'parcial', obs: 'Aborda e-mail profissional e comunicação escrita' },
+          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html', aula: 1, titulo: 'Aula 01 — Apresentação e Comunicação no Trabalho', qtd: 30, cob: 'parcial', obs: 'Aborda e-mail profissional e comunicação escrita' },
           { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/SLIDE_AULA_08.html', aula: 8, titulo: 'Aula 08 — Textos Técnicos e Revisão Geral', qtd: 17, cob: 'total', obs: 'Cobre relatórios, atas, memorandos e resumos com estrutura e exemplos' }
         ],
         status: 'coberto'
       },
       {
         num: '8', nome: 'Níveis de Fala', ch: 1,
-        subTopicos: ['8.1 Linguagem culta', '8.2.1 Jargão', '8.2.2 Características da linguagem técnica'],
+        subTopicos: ['8.1 Linguagem culta', '8.2 Linguagem técnica', '8.2.1 Jargão', '8.2.2 Características'],
         slides: [
-          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html', aula: 1, titulo: 'Aula 01 — Apresentação e Comunicação no Trabalho', qtd: 25, cob: 'parcial', obs: 'Aborda linguagem culta, técnica e jargões de TI — conteúdo integrado ao slide geral' }
+          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html', aula: 1, titulo: 'Aula 01 — Apresentação e Comunicação no Trabalho', qtd: 30, cob: 'total', obs: 'Slides 24-26 cobrem linguagem culta (8.1), linguagem técnica (8.2), jargão (8.2.1) e exemplos de TI e indústria' }
         ],
-        status: 'parcial',
-        faltantes: [
-          'Slide dedicado exclusivamente ao tema Níveis de Fala',
-          '8.1 Linguagem culta — aprofundamento e exemplos práticos no contexto industrial',
-          '8.2.1 Jargão — exemplos de jargões do setor industrial e de TI',
-          '8.2.2 Características da linguagem técnica — comparativo formal × informal'
-        ]
+        status: 'coberto'
       },
       {
         num: '9', nome: 'Elementos da Comunicação', ch: 1,
         subTopicos: ['9.1 Emissor', '9.2 Receptor', '9.3 Mensagem', '9.4 Canal', '9.5 Ruído', '9.6 Código', '9.7 Feedback'],
         slides: [
-          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html', aula: 1, titulo: 'Aula 01 — Apresentação e Comunicação no Trabalho', qtd: 25, cob: 'parcial', obs: 'Introduz os 7 elementos com exemplos práticos' },
+          { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html', aula: 1, titulo: 'Aula 01 — Apresentação e Comunicação no Trabalho', qtd: 30, cob: 'parcial', obs: 'Introduz os 7 elementos com exemplos práticos' },
           { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-02-04-08-2026/SLIDE_AULA_02.html', aula: 2, titulo: 'Aula 02 — Elementos da Comunicação', qtd: 22, cob: 'total', obs: 'Dedicado aos 7 elementos: emissor, receptor, mensagem, canal, ruído, código, feedback' }
         ],
         status: 'coberto'
@@ -644,6 +637,18 @@ function renderFiltroMaterias() {
   buildMateriaOptions(document.getElementById('filtroCurso').value, document.getElementById('filtroMateria'));
 }
 
+function renderFiltroAulas() {
+  const cursoId = document.getElementById('filtroCurso').value;
+  const topicos = EMENTAS[cursoId]?.topicos || [];
+  const aulasSet = new Set();
+  topicos.forEach(t => t.slides.forEach(s => aulasSet.add(s.aula)));
+  const aulas = [...aulasSet].sort((a, b) => a - b);
+  document.getElementById('aulasFilter').innerHTML = aulas.map(a =>
+    `<input type="checkbox" class="aula-cb" id="aulaCb${a}" value="${a}" checked onchange="renderTabela()">` +
+    `<label class="aula-cb-label" for="aulaCb${a}">Aula ${a}</label>`
+  ).join('');
+}
+
 // ── Modal ─────────────────────────────────────────────────────
 function abrirModal() {
   document.getElementById('modalOverlay').style.display = 'flex';
@@ -670,9 +675,16 @@ function renderTabela() {
   const ementa = EMENTAS[cursoId];
   if (!ementa) return;
 
+  const checkedAulas = [...document.querySelectorAll('.aula-cb:checked')].map(c => parseInt(c.value));
+
   let topicos = ementa.topicos;
   if (matFiltro) topicos = topicos.filter(t => t.num === matFiltro);
   if (stFiltro)  topicos = topicos.filter(t => t.status === stFiltro);
+  if (checkedAulas.length > 0) {
+    topicos = topicos.filter(t =>
+      t.slides.length === 0 || t.slides.some(s => checkedAulas.includes(s.aula))
+    );
+  }
 
   // ── Summary ──
   const all = ementa.topicos;
@@ -774,6 +786,7 @@ function fecharFaltantes() {
 window.addEventListener('DOMContentLoaded', function() {
   atualizarMaterias();      // preenche modal matérias
   renderFiltroMaterias();   // preenche filtro matérias
+  renderFiltroAulas();      // preenche checkboxes de aulas
 
   // Proteção de acesso
   const role = localStorage.getItem('senai_role');
