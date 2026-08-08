@@ -11,7 +11,7 @@
 | **Curso** | Aprendizagem Industrial de Operador de Produção Industrial |
 | **Unidade Curricular** | Introdução à Tecnologia da Informação e Comunicação |
 | **Bloco** | 02 — Horas 20 a 40 |
-| **CH alocada** | 20 horas-aula (Encontros 6 a 9) |
+| **CH alocada** | 20 horas-aula (Encontros 6 a 10) |
 | **Turma** | AI OPIR 2026/2 V1 |
 | **Turno** | Tarde |
 | **Ano / Semestre** | 2026/02 |
@@ -50,10 +50,11 @@ gerando decisões baseadas em dados imprecisos e inconsistentes.
 A gerência contratou uma equipe de assistentes operacionais para digitalizar, 
 analisar e apresentar os dados de produção utilizando ferramentas de TIC. 
 Como membro dessa equipe, 
-o estudante deve produzir três documentos digitais integrados:
-	— um relatório técnico, 
-	- uma planilha analítica 
-	- e uma apresentação executiva —, todos baseados no mesmo cenário industrial.
+o estudante deve produzir quatro documentos digitais integrados:
+	— um relatório técnico,
+	- uma planilha analítica,
+	- uma apresentação executiva
+	- e um kit de documentação técnica (ata, memorando e resumo) —, todos baseados no mesmo cenário industrial.
 
 ---
 
@@ -180,6 +181,7 @@ Kit de Documentação Técnica contendo ata de reunião, memorando interno e res
 | **7** (4h) | Fórmulas básicas, filtros e análise gráfica | Atividade Prática Dirigida e Resolução de Problemas | **Entrega 2** |
 | **8** (4h) | Editor de Apresentações: design corporativo e multimídia | Workshop e Trabalho em Grupo | — |
 | **9** (4h) | Técnicas de apresentação e ensaio com feedback | Simulação e Sala de Aula Invertida | **Entrega 3** |
+| **10** (4h) | Textos Técnicos e Revisão Geral: ata, memorando e resumo técnico | Produção Textual Orientada e Revisão por Pares | **Entrega 4** |
 
 ### Detalhamento das Estratégias
 
@@ -190,6 +192,8 @@ Kit de Documentação Técnica contendo ata de reunião, memorando interno e res
 **Encontro 8** — O docente demonstra os princípios de design de slides (regra de contraste, legibilidade, síntese visual). As equipes convertem os dados do relatório técnico e das planilhas em uma apresentação executiva visualmente atraente.
 
 **Encontro 9** — As equipes realizam simulações da apresentação oral do projeto de melhoria da fábrica, recebendo feedback imediato dos colegas e do docente quanto ao tempo, uso da norma culta, clareza e postura profissional.
+
+**Encontro 10** — O docente apresenta os gêneros textuais técnicos (ata, memorando e resumo), com análise de modelos reais do ambiente industrial. Os estudantes produzem os três documentos do kit técnico referentes ao próprio projeto, aplicando normas ABNT, ativam o controle de alterações para revisão por pares e exportam os arquivos finais em `.docx` e `.pdf`.
 
 ---
 
@@ -228,6 +232,18 @@ Kit de Documentação Técnica contendo ata de reunião, memorando interno e res
 - **C5.1** Inseriu elementos multimídia e objetos gráficos externos na apresentação executiva respeitando os direitos autorais?
 - **C5.2** Exportou e salvou os arquivos finais nos formatos exigidos (.docx, .xlsx, .pdf, .pptx) na nuvem compartilhada?
 - **C5.3** Sincronizou os recursos virtuais com a apresentação presencial garantindo a fluidez do recurso multimídia?
+
+### Para a Capacidade C1 — Comunicação Escrita Técnica (Entrega 4)
+
+- **C1.4** Redigiu a ata de reunião com estrutura formal completa (data, participantes, pauta, deliberações e encerramento)?
+- **C1.5** Elaborou o memorando interno com linguagem técnica, tom profissional e formatação padronizada (destinatário, remetente, assunto, corpo e assinatura)?
+- **C1.6** Produziu o resumo técnico com máximo de 250 palavras, sintetizando problema, solução, dados e impacto esperado?
+
+### Para a Capacidade C3 — Textos Técnicos e Normas (Entrega 4)
+
+- **C3.4** Identificou e aplicou os gêneros textuais adequados para cada situação comunicativa do projeto industrial?
+- **C3.5** Aplicou normas ABNT de formatação (margens, fontes, espaçamento 1,5) em todos os documentos do kit técnico?
+- **C3.6** Ativou e utilizou o controle de alterações para revisão colaborativa antes da entrega final?
 
 ---
 
