@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786145996.187602,
-    "ast_hash": "ea8ae88de842c44335264fbd2bc32ddb",
+    "mtime": 1786231459.5050616,
+    "ast_hash": "06c0a6d42fa066fb4c5d3320970eb6ea",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/Chamada.txt": {
-    "mtime": 1785865045.639152,
-    "ast_hash": "1f8a3b4dfc7eb121afd606ab08605d44",
+    "mtime": 1786195222.206517,
+    "ast_hash": "33e04e089a317f21b669b5b9226a1475",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/QUESTAO-01.txt": {
@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786150579.3362465,
-    "ast_hash": "92be4c048c4c0417ead4d09ce2b69c12",
+    "mtime": 1786223920.1001692,
+    "ast_hash": "1fe875bec529459998d7c2d856ad8ce1",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -260,13 +260,13 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-02-04-08-2026/SLIDE_AULA_02.html": {
-    "mtime": 1786064384.8163795,
-    "ast_hash": "26f2362c45c35cae845befefe09ce877",
+    "mtime": 1786209762.118895,
+    "ast_hash": "b3dd3cc46210ee353edf549f5801ad9b",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-02-04-08-2026/SLIDE_AULA_02_COMUNICACAO.html": {
-    "mtime": 1786067880.1551485,
-    "ast_hash": "a1c97165a6c4105868b0f5ffedea9b67",
+    "mtime": 1786209767.9566984,
+    "ast_hash": "05c3c2eefa1057411d1ad90093dd3785",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-03-05-08-2026/SLIDE_AULA_03.html": {
@@ -275,8 +275,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-03-05-08-2026/SLIDE_INTERNET_WWW.html": {
-    "mtime": 1786064384.8289573,
-    "ast_hash": "0e144136a30c26c6ae68a3d06173d0d7",
+    "mtime": 1786209785.2294772,
+    "ast_hash": "828c9a35310b0dd01828bc0ff1ba8528",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-03-05-08-2026/SLIDE_SEGURANCA_INFORMACAO.html": {
@@ -305,8 +305,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-06-10-08-2026/SLIDE_AULA_06.html": {
-    "mtime": 1786064779.4892094,
-    "ast_hash": "99073f49ea25e8dd9923cbb1ce72d109",
+    "mtime": 1786224509.9818103,
+    "ast_hash": "82c3441eb2125e9bb0c8781623a770d4",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/SLIDE_AULA_07.html": {
@@ -340,8 +340,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/MEMBROS-EQUIPE-06-08-2026.html": {
-    "mtime": 1786127257.849415,
-    "ast_hash": "05f7ff41613f6423357e48b7fb10c1fd",
+    "mtime": 1786224006.227447,
+    "ast_hash": "7590d2976cbe79e3343642d63aa100fd",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/ASSUNTO-ADICIONAL.txt": {
@@ -425,8 +425,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1786120299.8084147,
-    "ast_hash": "427747c93188abd902ae810c9809beca",
+    "mtime": 1786231519.0088007,
+    "ast_hash": "8b9fa01dba3ebf4a74ae3e7efac4d5a5",
     "semantic_hash": ""
   },
   "PROBLEMAS-ACESSOS-ALUNOS.txt": {
@@ -435,8 +435,8 @@
     "semantic_hash": ""
   },
   "sistema/index.html": {
-    "mtime": 1786098994.4055066,
-    "ast_hash": "02560448c5100ee6995027864e7b6405",
+    "mtime": 1786233233.5804238,
+    "ast_hash": "0ab3b3ad5c28b5031d17c99ec0a5f9a6",
     "semantic_hash": ""
   },
   "cantina-senai/Passo a Passo - Santander - Valida Pix.pdf": {
@@ -459,14 +459,69 @@
     "ast_hash": "d85860063a8e4c1f10da139e481438fd",
     "semantic_hash": ""
   },
-  "cantina-senai/RELATORIO_PIX.html": {
-    "mtime": 1786154462.0393617,
-    "ast_hash": "752ad77004f55699fe0dcd6a6e994da8",
-    "semantic_hash": ""
-  },
   "cantina-senai/RELATORIO_PIX.md": {
     "mtime": 1786154522.0770369,
     "ast_hash": "7c7ab727398ded44bfa11ea902b5c89b",
+    "semantic_hash": ""
+  },
+  "cantina-senai/index.html": {
+    "mtime": 1786154981.7756176,
+    "ast_hash": "5fa5e36fb2eaad79b4154daebf886f9d",
+    "semantic_hash": ""
+  },
+  "sistema/ementa-slides.html": {
+    "mtime": 1786224705.2060015,
+    "ast_hash": "0354b95c9423524ab634690cf7220542",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md": {
+    "mtime": 1786190711.6666532,
+    "ast_hash": "5b00ec57ecc233b3f4dc9e406246c44b",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CRITERIOS-AVALIACAO-BLOCO-02.md": {
+    "mtime": 1786198008.1469736,
+    "ast_hash": "1d019b3b862b53c6a1b8b18f1ea58c8e",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CURSOS-GRATIS-ONLINE.txt": {
+    "mtime": 1786193677.8858945,
+    "ast_hash": "4bb815b019b235b3bf3a3036ba9b66df",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA X SLIDES - COBERTURA DE CONTEUDOS.txt": {
+    "mtime": 1786190731.2983985,
+    "ast_hash": "bd6b3026c0bc61adbde1177c3bc2a454",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ESTRATEGIA-ENSINO-BLOCO-02.md": {
+    "mtime": 1786192132.305378,
+    "ast_hash": "d34e5c9b347df2a20da40f2e81dbef0d",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md": {
+    "mtime": 1786197999.8381872,
+    "ast_hash": "8df03955c3403bc1ca38cfbc20cca831",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/PlanoEnsinoIntroducaoTICV1.pdf": {
+    "mtime": 1786195017.7216887,
+    "ast_hash": "cfbbb41b54239d586e3418933912215e",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/PlanoEnsinoIntroducaoTICV2.pdf": {
+    "mtime": 1786198859.408931,
+    "ast_hash": "0fbf0b3ad0cfb8448d23725bee2a962c",
+    "semantic_hash": ""
+  },
+  "cursos/curso-dj.html": {
+    "mtime": 1786232555.8146183,
+    "ast_hash": "c828bd17b3dabb825a4e8991de9bfbab",
+    "semantic_hash": ""
+  },
+  "cursos/data_dj.json": {
+    "mtime": 1786230971.962474,
+    "ast_hash": "d8754054801a925e0cf7ab6d7399544c",
     "semantic_hash": ""
   }
 }

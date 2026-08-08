@@ -544,10 +544,14 @@ function carregarProg() {
 function salvarProg(prog) { localStorage.setItem(LS_PROG, JSON.stringify(prog)); }
 function progKey(mod, sec, link) { return `${mod}_${sec}_${link}`; }
 
-fetch('data_dj.json')
+fetch('https://jwasbzdbkbryncpvfujc.supabase.co/rest/v1/curso?codigo=eq.dj&select=dados_dj', {
+  headers: {
+    'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU'
+  }
+})
   .then(r => r.json())
-  .then(data => { MODULOS = data; })
-  .catch(() => console.warn('data_dj.json não carregado — use um servidor HTTP local.'));
+  .then(rows => { if (rows && rows[0]) MODULOS = rows[0].dados_dj; })
+  .catch(() => console.warn('Erro ao carregar módulos do Supabase.'));
 
 function abrirModal(num) {
   if (!MODULOS) return;

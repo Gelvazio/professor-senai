@@ -128,16 +128,14 @@ O aluno deve ser capaz de usar a internet de forma produtiva e ética no ambient
 - **3.6. Direitos autorais** — Creative Commons, citação de fontes, o que pode e o que não pode ser reproduzido.
 - **3.7. Armazenamento e compartilhamento em nuvem** — Google Drive, OneDrive, Dropbox: organização, compartilhamento, permissões.
 
-*Slides que cobrem este tópico:*
-- `AULAS/AULA-03-05-08-2026/SLIDE_AULA_03.html` — parcial (5 slides introdutórios)
-- `AULAS/AULA-03-05-08-2026/SLIDE_INTERNET_WWW.html` — total (27 slides, cobertura completa)
-
 ---
 
 ### Tópico 4 — Software de Escritório
 **Carga horária total:** 18h-aula (4.1 + 4.2 + 4.3)
 
-Esta seção cobre as ferramentas digitais mais utilizadas no ambiente profissional. O SENAI adota uma abordagem independente de plataforma: tanto Google Workspace (Docs, Sheets, Slides) quanto Microsoft Office (Word, Excel, PowerPoint) são válidos.
+Esta seção cobre as ferramentas digitais mais utilizadas no ambiente profissional. 
+O SENAI adota uma abordagem independente de plataforma: tanto Google Workspace (Docs, Sheets, Slides) 
+quanto Microsoft Office (Word, Excel, PowerPoint) são válidos.
 
 ---
 
@@ -159,12 +157,6 @@ Esta seção cobre as ferramentas digitais mais utilizadas no ambiente profissio
 - **4.1.13. Controle de alterações** — rastrear mudanças, aceitar/rejeitar revisões, comentários.
 - **4.1.14. Impressão** — configurações de impressão, visualização de impressão, impressão de seleção.
 
-*Slides que cobrem este tópico:*
-- `AULAS/AULA-05-07-08-2026/SLIDE_AULA_05.html` — parcial (13 slides, foco em Google Docs)
-- `AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html` — parcial (compartilhado com 4.2 e 4.3, inclui Word)
-
-*Status de cobertura: Parcial — faltam slides específicos sobre formatação avançada (4.1.9–4.1.13)*
-
 ---
 
 #### 4.2. Editor de Planilhas Eletrônicas
@@ -178,12 +170,6 @@ Esta seção cobre as ferramentas digitais mais utilizadas no ambiente profissio
 - **4.2.6. Classificação e filtro de dados** — ordenar por coluna, filtro automático, filtros personalizados.
 - **4.2.7. Gráficos, quadros e tabelas** — tipos de gráfico (barras, linhas, pizza), criação, formatação e interpretação.
 - **4.2.8. Impressão** — configuração de área de impressão, repetir cabeçalhos em todas as páginas.
-
-*Slides que cobrem este tópico:*
-- `AULAS/AULA-06-10-08-2026/SLIDE_AULA_06.html` — parcial (13 slides, foco em Google Sheets)
-- `AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html` — parcial (compartilhado, inclui Excel)
-
-*Status de cobertura: Parcial — faltam slides sobre fórmulas avançadas (4.2.5) e tabelas dinâmicas*
 
 ---
 
@@ -200,10 +186,6 @@ Esta seção cobre as ferramentas digitais mais utilizadas no ambiente profissio
 - **4.3.8. Controles de exibição** — classificador de slides, modo de apresentação, notas do apresentador.
 - **4.3.9. Criação de apresentações em slides e vídeos** — estrutura narrativa, sequência lógica, exportação em vídeo.
 - **4.3.10. Recursos multimídia de apoio** — inserção de vídeo, áudio, animações e transições.
-
-*Slides que cobrem este tópico:*
-- `AULAS/AULA-07-11-08-2026/SLIDE_AULA_07.html` — total (12 slides, Google Slides)
-- `AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html` — parcial (inclui PowerPoint)
 
 ---
 
@@ -225,11 +207,6 @@ Esta seção fornece ao aluno o vocabulário técnico básico para se comunicar 
 - **5.2.6. Pesquisa de arquivos e diretórios** — busca por nome, tipo, data, conteúdo.
 - **5.2.7. Área de trabalho** — ícones, atalhos, personalização, wallpaper.
 - **5.2.8. Compactação de arquivos** — .zip, .rar, .7z: compactar, descompactar, criar arquivos compactados com senha.
-
-*Slides que cobrem este tópico:*
-- `AULAS/AULA-01-03-08-2026/HISTORIA_COMPUTACAO_AULA_01.html` — parcial (11 slides, histórico e evolução)
-- `AULAS/AULA-01-03-08-2026/INICIANDO_CHROMEBOOK_AULA_01.html` — parcial (7 slides, Chrome OS)
-- `AULAS/AULA-04-06-08-2026/SLIDE_AULA_04.html` — total (24 slides, hardware e SO completo)
 
 ---
 
@@ -257,10 +234,6 @@ Complementa o Tópico 6 com foco nos **gêneros textuais profissionais**: como p
 - **7.4. Memorandos** — comunicação interna formal: destinatário, remetente, assunto, corpo e assinatura.
 - **7.5. Resumos** — como sintetizar um texto mantendo os pontos essenciais. Diferença entre resumo e resenha.
 
-*Slides que cobrem este tópico:*
-- `AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html` — parcial (aborda e-mail profissional e comunicação escrita)
-- `AULAS/AULA-08-12-08-2026/SLIDE_AULA_08.html` — total (seção dedicada: relatórios, atas, memorandos, resumos)
-
 ---
 
 ### Tópico 8 — Níveis de Fala
@@ -270,11 +243,6 @@ Complementa o Tópico 6 com foco nos **gêneros textuais profissionais**: como p
 - **8.2. Linguagem técnica** — vocabulário específico de uma área profissional.
   - **8.2.1. Jargão** — termos próprios de uma área (ex: "deploy", "kernel", "overhead" em TI). Quando usar e quando evitar.
   - **8.2.2. Características** — precisão, economia vocabular, neutralidade, ausência de figuras de linguagem, uso de siglas e abreviações padronizadas.
-
-*Slides que cobrem este tópico:*
-- `AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html` — parcial (integrado ao slide geral; aborda linguagem culta, técnica e jargões de TI)
-
-*Status: Parcial — o tema não tem slide dedicado; está distribuído no SLIDE_AULA_01*
 
 ---
 
@@ -290,10 +258,6 @@ Modelo clássico de comunicação (Shannon-Weaver adaptado para o contexto educa
 - **9.5. Ruído** — qualquer interferência que distorça ou impeça a mensagem: ruído físico, semântico, psicológico.
 - **9.6. Código** — sistema de signos compartilhado (língua, gestos, imagens); a importância do código comum.
 - **9.7. Feedback** — resposta do receptor; como o feedback fecha o ciclo da comunicação e confirma o entendimento.
-
-*Slides que cobrem este tópico:*
-- `AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html` — parcial (introduz os 7 elementos com exemplos práticos)
-- `AULAS/AULA-02-04-08-2026/SLIDE_AULA_02.html` — total (22 slides dedicados inteiramente aos 7 elementos)
 
 ---
 
@@ -341,34 +305,3 @@ Complementam as capacidades básicas com dimensões de atitude e comportamento:
 | Estante Virtual SENAI DN | Plataforma digital | Repositório oficial de materiais e livros da rede |
 
 ---
-
-## Mapa de Slides × Ementa
-
-> Referência cruzada para análise de cobertura. Arquivo interativo: `sistema/ementa-slides.html`
-
-| Arquivo de Slide | Aula | Tópicos da Ementa Cobertos |
-|-----------------|:----:|---------------------------|
-| `SLIDE_AULA_01.html` | 01 | 1 (parcial), 7 (parcial), 8 (parcial), 9 (parcial) |
-| `HISTORIA_COMPUTACAO_AULA_01.html` | 01 | 5 (parcial) |
-| `INICIANDO_CHROMEBOOK_AULA_01.html` | 01 | 5 (parcial) |
-| `SLIDE_AULA_02.html` | 02 | 9 (total), 7 (parcial) |
-| `SLIDE_AULA_02_COMUNICACAO.html` | 02 | 1 (total) |
-| `SLIDE_AULA_03.html` | 03 | 3 (parcial) |
-| `SLIDE_INTERNET_WWW.html` | 03 | 3 (total) |
-| `SLIDE_SEGURANCA_INFORMACAO.html` | 03 | 2 (total) |
-| `SLIDE_AULA_04.html` | 04 | 5 (total) |
-| `SLIDE_AULA_05.html` | 05 | 4.1 (parcial) |
-| `SLIDE_AULA_06.html` | 06 | 4.2 (parcial) |
-| `SLIDE_AULA_07.html` | 07 | 4.3 (total) |
-| `SLIDE_AULA_08.html` | 08 | 6 (parcial), 7 (total) |
-| `FERRAMENTAS_MICROSOFT.html` | 13 | 4.1 (parcial), 4.2 (parcial), 4.3 (parcial) |
-
-**Lacunas identificadas:**
-- Tópico 8 (Níveis de Fala): sem slide dedicado — apenas integrado ao SLIDE_AULA_01
-- Tópico 4.1 (Editor de Textos): faltam subtópicos 4.1.9 a 4.1.13 (formatação avançada)
-- Tópico 4.2 (Planilhas): faltam fórmulas avançadas e tabelas dinâmicas
-
----
-
-*Documento criado para suporte a análise automatizada por sistemas de IA.*
-*Fonte: FM-NP-207-SENAI-001 | Revisão: 04 | Aprovado por: Rômulo Thales Azevedo*
