@@ -2220,8 +2220,7 @@
                         ? `<button class="btn-mat-acessar" onclick="abrirModalIframe('${m.arquivo}','${m.nome}')">📋 Acessar</button>`
                         : `<a class="btn-mat-acessar" href="${m.arquivo}" target="_blank">Acessar ↗</a>`
                       : `<span class="btn-mat-acessar btn-mat-em-breve">Em breve</span>`;
-                const isLocalHtml = m.arquivo && !m.arquivo.startsWith('http') && m.arquivo.endsWith('.html');
-                const btnPdf = (isLocalHtml && !bloqueado)
+                const btnPdf = (temLink && !bloqueado)
                   ? `<button class="btn-mat-pdf" onclick="event.stopPropagation();baixarPdfMat('${m.arquivo}')" title="Baixar como PDF">⬇ PDF</button>`
                   : '';
                 const btnEditar = isProfessor
@@ -2377,7 +2376,7 @@
 
       function baixarPdfMat(url) {
         const w = window.open(url, '_blank');
-        if (w) {
+        if (w && !url.startsWith('http')) {
           w.addEventListener('load', function() {
             setTimeout(function() { try { w.print(); } catch(e){} }, 400);
           });
