@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Curso de DJ — Do Zero ao Palco</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Google Sans", Roboto, Arial, sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: rgba(10,10,20,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(150,80,255,0.3);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      height: 56px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-logo {
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, #9650ff, #ff4da6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .header-sep { color: rgba(255,255,255,0.2); font-size: 18px; }
+    .header-title { font-size: 14px; color: rgba(255,255,255,0.7); }
+    .header-spacer { flex: 1; }
+    .header-badge {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(150,80,255,0.15);
+      border: 1px solid rgba(150,80,255,0.4);
+      color: #b97aff;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #0d001a 0%, #1a003a 50%, #0a0020 100%);
+      padding: 56px 24px 48px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%; transform: translateX(-50%);
+      width: 600px; height: 300px;
+      background: radial-gradient(ellipse, rgba(150,80,255,0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, #9650ff, #ff4da6, #00d4ff, #9650ff);
+      background-size: 200% 100%;
+      animation: shimmer 3s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 200% 0%; }
+    }
+    .hero-emoji { font-size: 64px; margin-bottom: 16px; display: block; animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(150,80,255,0.15);
+      border: 1px solid rgba(150,80,255,0.4);
+      color: #b97aff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #fff 30%, #b97aff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    .hero p { font-size: 15px; color: rgba(255,255,255,0.6); max-width: 540px; margin: 0 auto; }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      background: rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+    .stat-item {
+      padding: 16px 32px;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.07);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-val {
+      font-size: 22px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #9650ff, #ff4da6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-label { font-size: 11px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.8px; margin-top: 2px; }
+
+    /* ── Main layout ── */
+    .main { max-width: 1000px; margin: 0 auto; padding: 32px 24px 60px; }
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.35);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.08);
+    }
+
+    /* ── Módulos grid ── */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    @media(max-width:720px) { .modules-grid { grid-template-columns: 1fr; } }
+    @media(max-width:900px) { .modules-grid { grid-template-columns: repeat(2,1fr); } }
+
+    .module-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 22px 20px;
+      transition: border-color .2s, transform .15s, box-shadow .2s;
+      cursor: default;
+    }
+    .module-card:hover {
+      border-color: rgba(150,80,255,0.5);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(150,80,255,0.15);
+    }
+    .module-num {
+      font-size: 10px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .module-icon { font-size: 32px; margin-bottom: 12px; display: block; }
+    .module-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .module-desc { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+    .module-tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .mtag {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 20px;
+      background: rgba(150,80,255,0.12);
+      color: #b97aff;
+      border: 1px solid rgba(150,80,255,0.2);
+    }
+
+    /* ── Artistas referência ── */
+    .artistas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    @media(max-width:640px) { .artistas-grid { grid-template-columns: repeat(2,1fr); } }
+
+    .artista-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 18px 14px;
+      text-align: center;
+      transition: border-color .2s, transform .15s;
+    }
+    .artista-card:hover { border-color: rgba(255,77,166,0.4); transform: translateY(-2px); }
+    .artista-avatar { font-size: 40px; margin-bottom: 10px; display: block; }
+    .artista-nome { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .artista-estilo { font-size: 11px; color: rgba(255,255,255,0.4); }
+    .artista-badge {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    .badge-br { background: rgba(0,200,100,0.15); color: #00c864; border: 1px solid rgba(0,200,100,0.25); }
+    .badge-fr { background: rgba(0,180,255,0.15); color: #00b4ff; border: 1px solid rgba(0,180,255,0.25); }
+    .badge-se { background: rgba(255,200,0,0.15); color: #ffc800; border: 1px solid rgba(255,200,0,0.25); }
+    .badge-us { background: rgba(255,80,80,0.15); color: #ff5050; border: 1px solid rgba(255,80,80,0.25); }
+
+    /* ── Plataformas ── */
+    .plataformas-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    @media(max-width:600px) { .plataformas-grid { grid-template-columns: 1fr; } }
+
+    .plat-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: border-color .2s;
+    }
+    .plat-card:hover { border-color: rgba(0,212,255,0.3); }
+    .plat-icon { font-size: 30px; flex-shrink: 0; }
+    .plat-body {}
+    .plat-nome { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .plat-desc { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+    .plat-tipo {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .tipo-pago { background: rgba(255,165,0,0.15); color: #ffa500; border: 1px solid rgba(255,165,0,0.25); }
+    .tipo-gratis { background: rgba(0,200,100,0.15); color: #00c864; border: 1px solid rgba(0,200,100,0.25); }
+    .tipo-freemium { background: rgba(0,180,255,0.15); color: #00b4ff; border: 1px solid rgba(0,180,255,0.25); }
+
+    /* ── Software ── */
+    .software-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    @media(max-width:640px) { .software-grid { grid-template-columns: 1fr; } }
+
+    .sw-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 18px 16px;
+      text-align: center;
+      transition: border-color .2s, transform .15s;
+    }
+    .sw-card:hover { border-color: rgba(0,212,255,0.35); transform: translateY(-2px); }
+    .sw-icon { font-size: 36px; margin-bottom: 10px; display: block; }
+    .sw-nome { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .sw-desc { font-size: 11px; color: rgba(255,255,255,0.45); line-height: 1.5; }
+    .sw-preco {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    /* ── Cronograma ── */
+    .cronograma { margin-bottom: 36px; }
+    .crono-item {
+      display: flex;
+      gap: 18px;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .crono-item:last-child { border-bottom: none; }
+    .crono-semana {
+      flex-shrink: 0;
+      width: 72px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: #b97aff;
+      background: rgba(150,80,255,0.1);
+      border: 1px solid rgba(150,80,255,0.2);
+      border-radius: 8px;
+      padding: 8px 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+    }
+    .crono-semana span { font-size: 18px; font-weight: 800; }
+    .crono-body { flex: 1; }
+    .crono-titulo { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .crono-desc { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+    .crono-tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .crono-tag {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.07);
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ── Dicas card ── */
+    .dicas-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    @media(max-width:600px) { .dicas-grid { grid-template-columns: 1fr; } }
+    .dica-card {
+      background: rgba(255,255,255,0.04);
+      border-left: 3px solid;
+      border-radius: 0 12px 12px 0;
+      padding: 16px 18px;
+    }
+    .dica-titulo { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .dica-texto { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+
+    /* ── Footer ── */
+    .footer {
+      background: rgba(255,255,255,0.03);
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.25);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <a href="../sistema/dashboard.html" class="header-logo">🎧 DJ ACADEMY</a>
+  <span class="header-sep">/</span>
+  <span class="header-title">Curso Completo de DJ</span>
+  <div class="header-spacer"></div>
+  <span class="header-badge">Music Production</span>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <span class="hero-emoji">🎛️</span>
+  <div class="hero-badge">Do Zero ao Palco</div>
+  <h1>Curso Completo de DJ</h1>
+  <p>Aprenda a mixar, produzir e se apresentar como os grandes: Alok, David Guetta, Avicii e muito mais.</p>
+</section>
+
+<!-- Stats -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-val">8</div>
+    <div class="stat-label">Módulos</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-val">40h</div>
+    <div class="stat-label">Conteúdo</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-val">100%</div>
+    <div class="stat-label">Online</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-val">0</div>
+    <div class="stat-label">Pré-requisitos</div>
+  </div>
+</div>
+
+<!-- Main -->
+<main class="main">
+
+  <!-- Módulos -->
+  <div class="section-title">Módulos do Curso</div>
+  <div class="modules-grid">
+
+    <div class="module-card">
+      <div class="module-num">Módulo 01</div>
+      <span class="module-icon">🎵</span>
+      <div class="module-title">Fundamentos do Som</div>
+      <div class="module-desc">BPM, frequência, amplitude, graves, médios e agudos. O que é ritmo e como o ouvido humano percebe a música eletrônica.</div>
+      <div class="module-tags">
+        <span class="mtag">BPM</span>
+        <span class="mtag">Frequências</span>
+        <span class="mtag">Ritmo</span>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-num">Módulo 02</div>
+      <span class="module-icon">🎚️</span>
+      <div class="module-title">Equipamentos e Setup</div>
+      <div class="module-desc">Conhecendo CDJs, mixers, controladores, fones e monitores. Diferença entre DJ digital e analógico. Como montar seu setup inicial.</div>
+      <div class="module-tags">
+        <span class="mtag">CDJ</span>
+        <span class="mtag">Mixer</span>
+        <span class="mtag">Controlador</span>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-num">Módulo 03</div>
+      <span class="module-icon">🔊</span>
+      <div class="module-title">Software de DJ</div>
+      <div class="module-desc">Aprenda Virtual DJ, Serato e Traktor na prática. Interface, cue points, loops, efeitos e biblioteca de músicas.</div>
+      <div class="module-tags">
+        <span class="mtag">Virtual DJ</span>
+        <span class="mtag">Serato</span>
+        <span class="mtag">Traktor</span>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-num">Módulo 04</div>
+      <span class="module-icon">🎛️</span>
+      <div class="module-title">Técnicas de Mixagem</div>
+      <div class="module-desc">Beatmatching manual e automático, crossfader, EQ kill, harmonic mixing, transições suaves e dinâmicas. A arte de conectar músicas.</div>
+      <div class="module-tags">
+        <span class="mtag">Beatmatch</span>
+        <span class="mtag">EQ</span>
+        <span class="mtag">Transição</span>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-num">Módulo 05</div>
+      <span class="module-icon">🎹</span>
+      <div class="module-title">Produção Musical</div>
+      <div class="module-desc">Introdução ao FL Studio e Ableton Live. Criando seus próprios beats, drops e remixes. Da ideia ao arquivo WAV.</div>
+      <div class="module-tags">
+        <span class="mtag">FL Studio</span>
+        <span class="mtag">Ableton</span>
+        <span class="mtag">Produção</span>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-num">Módulo 06</div>
+      <span class="module-icon">🎤</span>
+      <div class="module-title">Gêneros Eletrônicos</div>
+      <div class="module-desc">House, Techno, Trance, Progressive, Big Room, EDM, Future Bass. Características sonoras e como cada gênero se mistura.</div>
+      <div class="module-tags">
+        <span class="mtag">House</span>
+        <span class="mtag">Techno</span>
+        <span class="mtag">EDM</span>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-num">Módulo 07</div>
+      <span class="module-icon">🌐</span>
+      <div class="module-title">Distribuição Digital</div>
+      <div class="module-desc">Como lançar sua música no Spotify, SoundCloud e Beatport. DistroKid, TuneCore e outros distribuidores digitais.</div>
+      <div class="module-tags">
+        <span class="mtag">Spotify</span>
+        <span class="mtag">SoundCloud</span>
+        <span class="mtag">Beatport</span>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-num">Módulo 08</div>
+      <span class="module-icon">🎪</span>
+      <div class="module-title">Performance ao Vivo</div>
+      <div class="module-desc">Leitura de pista, energia do público, set de abertura vs headliner, gestão de tempo e como lidar com imprevistos no palco.</div>
+      <div class="module-tags">
+        <span class="mtag">Live Set</span>
+        <span class="mtag">Pista</span>
+        <span class="mtag">Energia</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Artistas Referência -->
+  <div class="section-title">Artistas Referência</div>
+  <div class="artistas-grid">
+
+    <div class="artista-card">
+      <span class="artista-avatar">🇧🇷</span>
+      <div class="artista-nome"><a href="https://www.alok.com.br" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Alok ↗</a></div>
+      <div class="artista-estilo">Brazilian Bass / Progressive House</div>
+      <span class="artista-badge badge-br">Brasil</span>
+    </div>
+
+    <div class="artista-card">
+      <span class="artista-avatar">🎵</span>
+      <div class="artista-nome"><a href="https://www.davidguetta.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">David Guetta ↗</a></div>
+      <div class="artista-estilo">Big Room House / Future Rave</div>
+      <span class="artista-badge badge-fr">França</span>
+    </div>
+
+    <div class="artista-card">
+      <span class="artista-avatar">⚡</span>
+      <div class="artista-nome"><a href="https://avicii.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Avicii ↗</a></div>
+      <div class="artista-estilo">Progressive House / Melodic EDM</div>
+      <span class="artista-badge badge-se">Suécia</span>
+    </div>
+
+    <div class="artista-card">
+      <span class="artista-avatar">🔥</span>
+      <div class="artista-nome"><a href="https://marshmellomusic.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Marshmello ↗</a></div>
+      <div class="artista-estilo">Future Bass / Electro Pop</div>
+      <span class="artista-badge badge-us">EUA</span>
+    </div>
+
+    <div class="artista-card">
+      <span class="artista-avatar">🦁</span>
+      <div class="artista-nome"><a href="https://martingarrix.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Martin Garrix ↗</a></div>
+      <div class="artista-estilo">Progressive / Big Room House</div>
+      <span class="artista-badge badge-fr">Holanda</span>
+    </div>
+
+    <div class="artista-card">
+      <span class="artista-avatar">🎧</span>
+      <div class="artista-nome"><a href="https://tiesto.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Tiësto ↗</a></div>
+      <div class="artista-estilo">Trance / Club Life</div>
+      <span class="artista-badge badge-fr">Holanda</span>
+    </div>
+
+    <div class="artista-card">
+      <span class="artista-avatar">🌟</span>
+      <div class="artista-nome"><a href="https://thechainsmokers.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">The Chainsmokers ↗</a></div>
+      <div class="artista-estilo">Electropop / Future Bass</div>
+      <span class="artista-badge badge-us">EUA</span>
+    </div>
+
+    <div class="artista-card">
+      <span class="artista-avatar">🎶</span>
+      <div class="artista-nome"><a href="https://kygomusic.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Kygo ↗</a></div>
+      <div class="artista-estilo">Tropical House / Deep House</div>
+      <span class="artista-badge badge-se">Noruega</span>
+    </div>
+
+  </div>
+
+  <!-- Plataformas de Curso -->
+  <div class="section-title">Onde Estudar Online</div>
+  <div class="plataformas-grid">
+
+    <div class="plat-card">
+      <span class="plat-icon">🎓</span>
+      <div class="plat-body">
+        <div class="plat-nome"><a href="https://crossfaderpro.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Crossfader Pro ↗</a></div>
+        <div class="plat-desc">Escola online especializada em DJ. Cursos completos por nível (iniciante, intermediário, avançado). Muito bem avaliada pela comunidade.</div>
+        <span class="plat-tipo tipo-pago">Pago</span>
+      </div>
+    </div>
+
+    <div class="plat-card">
+      <span class="plat-icon">🎬</span>
+      <div class="plat-body">
+        <div class="plat-nome"><a href="https://www.youtube.com/@crossfaderpro" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">YouTube (Crossfader) ↗</a></div>
+        <div class="plat-desc">Canal oficial com dezenas de tutoriais gratuitos. Ideal para começar do zero antes de investir em curso pago.</div>
+        <span class="plat-tipo tipo-gratis">Gratuito</span>
+      </div>
+    </div>
+
+    <div class="plat-card">
+      <span class="plat-icon">📚</span>
+      <div class="plat-body">
+        <div class="plat-nome"><a href="https://www.udemy.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Udemy ↗</a></div>
+        <div class="plat-desc">Vários cursos de DJ e produção musical. Preços muito acessíveis (especialmente em promoção). Conteúdo vitalício.</div>
+        <span class="plat-tipo tipo-pago">Pago</span>
+      </div>
+    </div>
+
+    <div class="plat-card">
+      <span class="plat-icon">🎵</span>
+      <div class="plat-body">
+        <div class="plat-nome"><a href="https://www.pointblankmusicschool.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Point Blank Music School ↗</a></div>
+        <div class="plat-desc">Escola profissional de música eletrônica. Cursos de DJ, produção, sound design e masterização.</div>
+        <span class="plat-tipo tipo-pago">Pago</span>
+      </div>
+    </div>
+
+    <div class="plat-card">
+      <span class="plat-icon">🎧</span>
+      <div class="plat-body">
+        <div class="plat-nome"><a href="https://djtechtools.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">DJ TechTools ↗</a></div>
+        <div class="plat-desc">Tutoriais, reviews e artigos técnicos sobre DJing. Ótimo para aprender técnicas avançadas gratuitamente.</div>
+        <span class="plat-tipo tipo-gratis">Gratuito</span>
+      </div>
+    </div>
+
+    <div class="plat-card">
+      <span class="plat-icon">🌐</span>
+      <div class="plat-body">
+        <div class="plat-nome"><a href="https://www.skillshare.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Skillshare ↗</a></div>
+        <div class="plat-desc">Plataforma com cursos de produção musical e DJing. Assinatura mensal com acesso ilimitado a todo o catálogo.</div>
+        <span class="plat-tipo tipo-freemium">Freemium</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Software para Praticar -->
+  <div class="section-title">Software para Praticar</div>
+  <div class="software-grid">
+
+    <div class="sw-card">
+      <span class="sw-icon">💿</span>
+      <div class="sw-nome"><a href="https://www.virtualdj.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Virtual DJ ↗</a></div>
+      <div class="sw-desc">O mais popular para iniciantes. Interface intuitiva, suporte a controladores e versão gratuita disponível.</div>
+      <span class="sw-preco tipo-freemium">Freemium</span>
+    </div>
+
+    <div class="sw-card">
+      <span class="sw-icon">🎚️</span>
+      <div class="sw-nome"><a href="https://serato.com/dj/lite" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Serato DJ Lite ↗</a></div>
+      <div class="sw-desc">Versão gratuita do software profissional mais usado em clubs e festivais do mundo.</div>
+      <span class="sw-preco tipo-gratis">Gratuito</span>
+    </div>
+
+    <div class="sw-card">
+      <span class="sw-icon">🔊</span>
+      <div class="sw-nome"><a href="https://www.native-instruments.com/en/products/traktor/dj-software/traktor-pro-3/" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Traktor Pro ↗</a></div>
+      <div class="sw-desc">Software da Native Instruments. Preferido por DJs techno e de clubes. Curva de aprendizado maior.</div>
+      <span class="sw-preco tipo-pago">Pago</span>
+    </div>
+
+    <div class="sw-card">
+      <span class="sw-icon">🎹</span>
+      <div class="sw-nome"><a href="https://www.image-line.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">FL Studio ↗</a></div>
+      <div class="sw-desc">Para produzir suas próprias músicas. Favorito de Avicii, Martin Garrix e vários produtores famosos.</div>
+      <span class="sw-preco tipo-pago">Pago</span>
+    </div>
+
+    <div class="sw-card">
+      <span class="sw-icon">🎛️</span>
+      <div class="sw-nome"><a href="https://www.ableton.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Ableton Live ↗</a></div>
+      <div class="sw-desc">Referência em produção e performances ao vivo. Ideal para quem quer ir além do DJing tradicional.</div>
+      <span class="sw-preco tipo-pago">Pago</span>
+    </div>
+
+    <div class="sw-card">
+      <span class="sw-icon">🎤</span>
+      <div class="sw-nome"><a href="https://www.apple.com/mac/garageband/" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">GarageBand ↗</a></div>
+      <div class="sw-desc">Gratuito para Mac/iOS. Ótimo para dar os primeiros passos em produção musical sem investimento.</div>
+      <span class="sw-preco tipo-gratis">Gratuito (Mac)</span>
+    </div>
+
+  </div>
+
+  <!-- Cronograma de Estudo -->
+  <div class="section-title">Cronograma Sugerido (8 Semanas)</div>
+  <div class="cronograma">
+
+    <div class="crono-item">
+      <div class="crono-semana">SEM <span>1</span></div>
+      <div class="crono-body">
+        <div class="crono-titulo">Teoria e Fundamentos</div>
+        <div class="crono-desc">Estude BPM, gêneros musicais e como funciona o som. Instale o Virtual DJ gratuito e se familiarize com a interface.</div>
+        <div class="crono-tags">
+          <span class="crono-tag">Teoria do Som</span>
+          <span class="crono-tag">Instalação do Software</span>
+          <span class="crono-tag">Primeiros Cliques</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="crono-item">
+      <div class="crono-semana">SEM <span>2</span></div>
+      <div class="crono-body">
+        <div class="crono-titulo">Beatmatching Manual</div>
+        <div class="crono-desc">Pratique sincronizar duas músicas manualmente. Use o waveform visual para ajudar. Meta: fazer 10 transições limpas.</div>
+        <div class="crono-tags">
+          <span class="crono-tag">Beatmatch</span>
+          <span class="crono-tag">Waveform</span>
+          <span class="crono-tag">Pitch</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="crono-item">
+      <div class="crono-semana">SEM <span>3</span></div>
+      <div class="crono-body">
+        <div class="crono-titulo">EQ e Mixagem</div>
+        <div class="crono-desc">Aprenda a usar o equalizador (graves, médios, agudos). Faça transições tirando os graves de uma faixa antes de colocar a outra.</div>
+        <div class="crono-tags">
+          <span class="crono-tag">EQ Kill</span>
+          <span class="crono-tag">Bass Swap</span>
+          <span class="crono-tag">Filtros</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="crono-item">
+      <div class="crono-semana">SEM <span>4</span></div>
+      <div class="crono-body">
+        <div class="crono-titulo">Cue Points e Loops</div>
+        <div class="crono-desc">Marque pontos de entrada e crie loops. Grave seu primeiro mix de 30 minutos e ouça criticamente para melhorar.</div>
+        <div class="crono-tags">
+          <span class="crono-tag">Cue Points</span>
+          <span class="crono-tag">Loops</span>
+          <span class="crono-tag">Gravação</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="crono-item">
+      <div class="crono-semana">SEM <span>5</span></div>
+      <div class="crono-body">
+        <div class="crono-titulo">Efeitos (FX)</div>
+        <div class="crono-desc">Echo, reverb, flanger, phaser. Como usar efeitos para criar energia e surpresa nas transições sem exagerar.</div>
+        <div class="crono-tags">
+          <span class="crono-tag">FX</span>
+          <span class="crono-tag">Echo</span>
+          <span class="crono-tag">Reverb</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="crono-item">
+      <div class="crono-semana">SEM <span>6</span></div>
+      <div class="crono-body">
+        <div class="crono-titulo">Harmonic Mixing</div>
+        <div class="crono-desc">Aprenda a misturar músicas na mesma tonalidade usando a Camelot Wheel. Seu mix vai soar muito mais profissional.</div>
+        <div class="crono-tags">
+          <span class="crono-tag">Camelot</span>
+          <span class="crono-tag">Tonalidade</span>
+          <span class="crono-tag">Key Lock</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="crono-item">
+      <div class="crono-semana">SEM <span>7</span></div>
+      <div class="crono-body">
+        <div class="crono-titulo">Introdução à Produção</div>
+        <div class="crono-desc">Primeiros passos no FL Studio ou Ableton. Crie um loop simples de 4 compassos com kick, hihat e bass line.</div>
+        <div class="crono-tags">
+          <span class="crono-tag">Beat Maker</span>
+          <span class="crono-tag">Kick</span>
+          <span class="crono-tag">Bass Line</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="crono-item">
+      <div class="crono-semana">SEM <span>8</span></div>
+      <div class="crono-body">
+        <div class="crono-titulo">Primeiro Set Completo</div>
+        <div class="crono-desc">Monte e grave um set de 1 hora do início ao fim. Publique no SoundCloud para receber feedback da comunidade.</div>
+        <div class="crono-tags">
+          <span class="crono-tag">Set Completo</span>
+          <span class="crono-tag">SoundCloud</span>
+          <span class="crono-tag">Feedback</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dicas -->
+  <div class="section-title">Dicas Essenciais</div>
+  <div class="dicas-grid">
+
+    <div class="dica-card" style="border-color:#9650ff;">
+      <div class="dica-titulo">🎧 Ouça com fones bons</div>
+      <div class="dica-texto">Invista em um par de fones fechados com boa resposta de graves. Você precisa ouvir os detalhes que os caixinhas de computador não reproduzem.</div>
+    </div>
+
+    <div class="dica-card" style="border-color:#ff4da6;">
+      <div class="dica-titulo">📱 Use aplicativos de análise</div>
+      <div class="dica-texto">Mixed In Key analisa a tonalidade das suas músicas automaticamente. Economiza horas de trabalho na seleção de músicas compatíveis.</div>
+    </div>
+
+    <div class="dica-card" style="border-color:#00d4ff;">
+      <div class="dica-titulo">🗂️ Organize sua biblioteca</div>
+      <div class="dica-texto">Organize suas músicas por BPM, gênero e tonalidade antes de tentar mixar. Uma biblioteca bagunçada arruína a performance ao vivo.</div>
+    </div>
+
+    <div class="dica-card" style="border-color:#00c864;">
+      <div class="dica-titulo">🎵 Baixe músicas legalmente</div>
+      <div class="dica-texto">Beatport, Traxsource e Bandcamp são as melhores fontes. Músicas de qualidade (WAV/FLAC) soam muito melhor que MP3 comprimido.</div>
+    </div>
+
+    <div class="dica-card" style="border-color:#ffa500;">
+      <div class="dica-titulo">📹 Grave e analise seus sets</div>
+      <div class="dica-texto">Grave vídeo ou áudio de cada prática. Ouvir de volta te faz perceber erros que você não notou enquanto mixava ao vivo.</div>
+    </div>
+
+    <div class="dica-card" style="border-color:#ff5050;">
+      <div class="dica-titulo">🌐 Construa sua presença online</div>
+      <div class="dica-texto">SoundCloud, Instagram e TikTok são essenciais. Mostre seus sets, bastidores e progresso. As oportunidades vêm pelas redes.</div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+  🎛️ DJ Academy — Curso Online de DJ &nbsp;|&nbsp; Criado para aspirantes a DJs que querem chegar ao palco
+</footer>
+
+</body>
+</html>
