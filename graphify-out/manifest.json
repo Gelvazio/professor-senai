@@ -1,17 +1,12 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786120004.3477428,
-    "ast_hash": "32e1b76508ab4b83bbc177177cd50669",
+    "mtime": 1786145996.187602,
+    "ast_hash": "ea8ae88de842c44335264fbd2bc32ddb",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
     "mtime": 1786015580.6497562,
     "ast_hash": "d1376ea95efa56aafc4bdab315a0c3f9",
-    "semantic_hash": ""
-  },
-  "sistema/supabase.js": {
-    "mtime": 1786054922.285994,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "sistema/CLAUDE.md": {
@@ -190,8 +185,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786129895.8927388,
-    "ast_hash": "ca067385a2cedbbcdb8891c97333831a",
+    "mtime": 1786150579.3362465,
+    "ast_hash": "92be4c048c4c0417ead4d09ce2b69c12",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -442,6 +437,36 @@
   "sistema/index.html": {
     "mtime": 1786098994.4055066,
     "ast_hash": "02560448c5100ee6995027864e7b6405",
+    "semantic_hash": ""
+  },
+  "cantina-senai/Passo a Passo - Santander - Valida Pix.pdf": {
+    "mtime": 1786145379.6315074,
+    "ast_hash": "a9c116536c3af28e76878432eedee7e4",
+    "semantic_hash": ""
+  },
+  "ORGANOGRAMA_SENAI.png": {
+    "mtime": 1786144274.689695,
+    "ast_hash": "2c82867ea1b279b23e274d41886db687",
+    "semantic_hash": ""
+  },
+  "sistema/backfill-ids.html": {
+    "mtime": 1786146425.599338,
+    "ast_hash": "b6174a9cf4b65615007d27c5aa37fe54",
+    "semantic_hash": ""
+  },
+  "sistema/backfill-material-ids.sql": {
+    "mtime": 1786146514.3364618,
+    "ast_hash": "d85860063a8e4c1f10da139e481438fd",
+    "semantic_hash": ""
+  },
+  "cantina-senai/RELATORIO_PIX.html": {
+    "mtime": 1786154462.0393617,
+    "ast_hash": "752ad77004f55699fe0dcd6a6e994da8",
+    "semantic_hash": ""
+  },
+  "cantina-senai/RELATORIO_PIX.md": {
+    "mtime": 1786154522.0770369,
+    "ast_hash": "7c7ab727398ded44bfa11ea902b5c89b",
     "semantic_hash": ""
   }
 }
