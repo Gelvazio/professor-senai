@@ -301,6 +301,48 @@ body {
 }
 .btn-modal-ok:hover { background: var(--blue-mid) }
 
+/* ── Botão faltantes ── */
+.btn-faltantes {
+  display: inline-flex; align-items: center; gap: 4px;
+  margin-top: 7px; padding: 4px 10px; border-radius: 6px;
+  background: var(--par-bg); color: var(--par); border: 1px solid currentColor;
+  font-size: 11px; font-weight: 700; cursor: pointer;
+  font-family: inherit; transition: opacity .15s; white-space: nowrap;
+}
+.btn-faltantes:hover { opacity: .75 }
+
+/* ── Modal faltantes ── */
+.falt-bd {
+  position: fixed; inset: 0; z-index: 600;
+  background: rgba(0,0,0,.55); backdrop-filter: blur(3px);
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.falt-box {
+  background: var(--surface); border-radius: 12px;
+  width: 100%; max-width: 520px;
+  box-shadow: 0 16px 48px rgba(0,0,0,.3);
+  overflow: hidden; animation: slideUp .25s ease;
+}
+.falt-head {
+  background: linear-gradient(135deg, var(--par) 0%, #d4820a 100%);
+  padding: 20px 24px;
+}
+.falt-head h3 { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 2px }
+.falt-head p  { color: rgba(255,255,255,.8); font-size: 12px }
+.falt-body { padding: 20px 24px }
+.falt-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 9px 12px; border-radius: 7px;
+  background: var(--par-bg); margin-bottom: 7px;
+  font-size: 13px; color: var(--text);
+}
+.falt-item:last-child { margin-bottom: 0 }
+.falt-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px }
+.falt-foot {
+  padding: 12px 24px 18px; display: flex; justify-content: flex-end;
+  border-top: 1px solid var(--border);
+}
+
 /* ── Empty state ── */
 .empty-state {
   text-align: center; padding: 60px 20px;
@@ -361,6 +403,20 @@ body {
         <button class="btn-modal-cancel" onclick="fecharModal()">Cancelar</button>
         <button class="btn-modal-ok" onclick="confirmarSelecao()">Analisar →</button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Modal assuntos faltantes ── -->
+<div class="falt-bd" id="faltBd" style="display:none">
+  <div class="falt-box">
+    <div class="falt-head">
+      <h3 id="faltTitulo">⚠️ Assuntos Faltantes</h3>
+      <p id="faltSubtitulo"></p>
+    </div>
+    <div class="falt-body" id="faltBody"></div>
+    <div class="falt-foot">
+      <button class="btn-modal-ok" onclick="fecharFaltantes()">Fechar</button>
     </div>
   </div>
 </div>
@@ -464,7 +520,16 @@ const EMENTAS = {
           { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-05-07-08-2026/SLIDE_AULA_05.html', aula: 5, titulo: 'Aula 05 — Google Docs — Editor de Textos', qtd: 13, cob: 'parcial', obs: 'Cobre Google Docs; Microsoft Word abordado em Aula 13' },
           { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html', aula: 13, titulo: 'Aula 13 — Ferramentas Microsoft (Word / Excel / PowerPoint)', qtd: 13, cob: 'parcial', obs: 'Compartilhado entre Word, Excel e PowerPoint' }
         ],
-        status: 'parcial'
+        status: 'parcial',
+        faltantes: [
+          '4.1.8 Correção ortográfica e dicionário',
+          '4.1.9 Recuos, tabulação, parágrafos, espaçamentos e margens',
+          '4.1.10 Marcadores e numeradores',
+          '4.1.11 Bordas e sombreamento',
+          '4.1.12 Colunas',
+          '4.1.13 Controle de alterações',
+          '4.1.14 Impressão — configuração e impressão de documentos'
+        ]
       },
       {
         num: '4.2', nome: 'Software de Escritório — Planilhas Eletrônicas', ch: 6,
@@ -473,7 +538,12 @@ const EMENTAS = {
           { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-06-10-08-2026/SLIDE_AULA_06.html', aula: 6, titulo: 'Aula 06 — Google Sheets — Planilhas Eletrônicas', qtd: 13, cob: 'parcial', obs: 'Cobre Google Sheets; Microsoft Excel abordado em Aula 13' },
           { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html', aula: 13, titulo: 'Aula 13 — Ferramentas Microsoft (Word / Excel / PowerPoint)', qtd: 13, cob: 'parcial', obs: 'Compartilhado entre Word, Excel e PowerPoint' }
         ],
-        status: 'parcial'
+        status: 'parcial',
+        faltantes: [
+          '4.2.5 Fórmulas avançadas — PROCV, SE aninhado, SOMASE, CONT.SE',
+          '4.2.7 Tabelas dinâmicas — agrupamento e análise de dados',
+          'Comparativo Google Sheets × Microsoft Excel — diferenças práticas'
+        ]
       },
       {
         num: '4.3', nome: 'Software de Escritório — Editor de Apresentações', ch: 5,
@@ -517,7 +587,13 @@ const EMENTAS = {
         slides: [
           { arquivo: 'INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html', aula: 1, titulo: 'Aula 01 — Apresentação e Comunicação no Trabalho', qtd: 25, cob: 'parcial', obs: 'Aborda linguagem culta, técnica e jargões de TI — conteúdo integrado ao slide geral' }
         ],
-        status: 'parcial'
+        status: 'parcial',
+        faltantes: [
+          'Slide dedicado exclusivamente ao tema Níveis de Fala',
+          '8.1 Linguagem culta — aprofundamento e exemplos práticos no contexto industrial',
+          '8.2.1 Jargão — exemplos de jargões do setor industrial e de TI',
+          '8.2.2 Características da linguagem técnica — comparativo formal × informal'
+        ]
       },
       {
         num: '9', nome: 'Elementos da Comunicação', ch: 1,
@@ -648,12 +724,16 @@ function renderTabela() {
       ? `<small>${t.subTopicos.slice(0, 4).join(' · ')}${t.subTopicos.length > 4 ? ' …' : ''}</small>`
       : '';
 
+    const btnFaltantes = (t.status === 'parcial' && t.faltantes && t.faltantes.length)
+      ? `<br><button class="btn-faltantes" onclick="abrirFaltantes('${t.num}')">⚠️ Ver assuntos faltantes</button>`
+      : '';
+
     return `<tr>
       <td class="td-num">${t.num}</td>
       <td class="td-nome">${t.nome}${subHtml}</td>
       <td class="td-ch"><strong>${t.ch}</strong>h-aula</td>
       <td class="td-slides">${slidesHtml}</td>
-      <td><span class="badge ${cls}">${lbl}</span></td>
+      <td><span class="badge ${cls}">${lbl}</span>${btnFaltantes}</td>
     </tr>`;
   }).join('');
 
@@ -672,6 +752,22 @@ function renderTabela() {
         <tbody>${rows}</tbody>
       </table>
     </div>`;
+}
+
+// ── Modal faltantes ──────────────────────────────────────────
+function abrirFaltantes(num) {
+  const cursoId = document.getElementById('filtroCurso').value;
+  const topico = (EMENTAS[cursoId]?.topicos || []).find(t => t.num === num);
+  if (!topico) return;
+  document.getElementById('faltTitulo').textContent = '⚠️ ' + topico.num + ' — ' + topico.nome;
+  document.getElementById('faltSubtitulo').textContent = 'Assuntos não cobertos pelos slides existentes';
+  document.getElementById('faltBody').innerHTML = (topico.faltantes || [])
+    .map(f => `<div class="falt-item"><span class="falt-icon">📌</span><span>${f}</span></div>`)
+    .join('');
+  document.getElementById('faltBd').style.display = 'flex';
+}
+function fecharFaltantes() {
+  document.getElementById('faltBd').style.display = 'none';
 }
 
 // ── Init ──────────────────────────────────────────────────────
