@@ -747,6 +747,8 @@
       .btn-mat-bloqueado { background:#757575; cursor:not-allowed; border:none; }
       .btn-mat-editar { border:none; background:#e3f2fd; color:#1565c0; border-radius:5px; padding:4px 8px; font-size:12px; cursor:pointer; transition:background .15s; flex-shrink:0; }
       .btn-mat-editar:hover { background:#bbdefb; }
+      .btn-mat-excluir { border:none; background:#fce4ec; color:#c62828; border-radius:5px; padding:4px 8px; font-size:12px; cursor:pointer; transition:background .15s; flex-shrink:0; }
+      .btn-mat-excluir:hover { background:#f8bbd9; }
       .btn-mat-bloqueado:hover { background:#616161; }
       .aula-mat-vazio { padding: 10px 16px 10px 80px; font-size: 12px; color: #bbb; font-style: italic; }
       .crud-table {
@@ -2122,6 +2124,9 @@
                 const btnEditar = isProfessor
                   ? `<button class="btn-mat-editar" onclick="event.stopPropagation();editarMatAula(${a.numero},${i})" title="Editar material">✏️</button>`
                   : '';
+                const btnExcluir = isProfessor
+                  ? `<button class="btn-mat-excluir" onclick="event.stopPropagation();excluirMatAula(${a.numero},${i})" title="Excluir material">🗑️</button>`
+                  : '';
                 return `<div class="aula-mat-row">
                   <span class="aula-mat-seq">${i + 1}</span>
                   <div class="aula-mat-icon">${m.icone || "📄"}</div>
@@ -2134,6 +2139,7 @@
                     <span class="aula-mat-pct">100%</span>
                   </div>
                   ${btnEditar}
+                  ${btnExcluir}
                   ${btnAcessar}
                 </div>`;
               }).join("")
@@ -2596,6 +2602,18 @@
         if (!confirm(`Excluir Aula ${n}? Esta ação não pode ser desfeita.`))
           return;
         await patchAulasMaterias(_aulaLista.filter((a) => a.numero !== n));
+      }
+
+      async function excluirMatAula(aulaNum, idx) {
+        const aula = _aulaLista.find(a => a.numero === aulaNum);
+        if (!aula) return;
+        const mat = aula.materiais[idx];
+        if (!confirm(`Excluir o material "${mat.nome}"? Esta ação não pode ser desfeita.`)) return;
+        const novaLista = _aulaLista.map(a => {
+          if (a.numero !== aulaNum) return a;
+          return { ...a, materiais: a.materiais.filter((_, i) => i !== idx) };
+        });
+        await patchAulasMaterias(novaLista);
       }
 
       // ── Modal Matérias do Curso ────────────────────────────────────
