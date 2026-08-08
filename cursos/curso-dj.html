@@ -15,6 +15,7 @@
   <span class="header-sep">/</span>
   <span class="header-title">Curso Completo de DJ</span>
   <div class="header-spacer"></div>
+  <button class="header-btn-cursos" onclick="abrirCursos()">&#127891; Cursos Completos</button>
   <span class="header-badge">Music Production</span>
 </header>
 
@@ -489,6 +490,20 @@
   </div>
 </div>
 
+<!-- Modal Cursos Completos -->
+<div class="cursos-overlay" id="cursosOverlay" onclick="fecharCursosOverlay(event)">
+  <div class="cursos-modal">
+    <div class="cursos-header">
+      <div>
+        <h2>&#127891; Cursos Completos</h2>
+        <p>Playlists e cursos completos gratuitos no YouTube</p>
+      </div>
+      <button class="modal-close" onclick="fecharCursos()">&#x2715;</button>
+    </div>
+    <div class="cursos-body" id="cursosBody"></div>
+  </div>
+</div>
+
 <!-- Video overlay -->
 <div class="video-overlay" id="videoOverlay" onclick="fecharVideoOverlay(event)">
   <div class="video-header">
@@ -634,6 +649,63 @@ function fecharVideo() {
 
 function fecharVideoOverlay(e) {
   if (e.target === document.getElementById('videoOverlay')) fecharVideo();
+}
+
+// ── Cursos Completos ──
+const CURSOS_COMPLETOS = [
+  {
+    id: 'RaVbLMJapEs',
+    nome: 'Curso Completo de DJ — Do Zero ao Profissional',
+    desc: 'Aprenda todas as técnicas: beatmatching, mixagem, EQ, efeitos e performance ao vivo em uma playlist completa.',
+    fonte: 'YouTube',
+    tags: ['Iniciante', 'Mixagem', 'Equipamentos', 'Performance'],
+    thumb: 'https://img.youtube.com/vi/RaVbLMJapEs/hqdefault.jpg'
+  }
+];
+
+function abrirCursos() {
+  const body = document.getElementById('cursosBody');
+  body.innerHTML = CURSOS_COMPLETOS.map(c => `
+    <div class="curso-card" onclick="abrirCursoVideo('${c.id}','${encodeURIComponent(c.nome)}')">
+      <div class="curso-thumb">
+        <img class="curso-thumb-img" src="${c.thumb}" alt="${c.nome}" onerror="this.style.display='none'">
+        <div class="curso-thumb-play"><div class="play-btn">&#9654;</div></div>
+      </div>
+      <div class="curso-info">
+        <div class="curso-fonte">&#9654; ${c.fonte}</div>
+        <div class="curso-nome">${c.nome}</div>
+        <div class="curso-desc">${c.desc}</div>
+        <div class="curso-tags">${c.tags.map(t => `<span class="curso-tag">${t}</span>`).join('')}</div>
+      </div>
+    </div>
+  `).join('') + `
+    <div class="curso-em-breve">
+      <span>&#43;</span>
+      <p>Mais cursos em breve</p>
+    </div>
+  `;
+  document.getElementById('cursosOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function abrirCursoVideo(id, encodedTitulo) {
+  const titulo = decodeURIComponent(encodedTitulo);
+  const embedSrc = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1`;
+  document.getElementById('videoTitle').textContent = titulo;
+  document.getElementById('videoFrame').src = embedSrc;
+  document.getElementById('videoExtLink').href = `https://www.youtube.com/watch?v=${id}`;
+  document.getElementById('videoBlockedLink').href = `https://www.youtube.com/watch?v=${id}`;
+  document.getElementById('videoBlocked').style.display = 'none';
+  document.getElementById('videoOverlay').classList.add('open');
+}
+
+function fecharCursos() {
+  document.getElementById('cursosOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function fecharCursosOverlay(e) {
+  if (e.target === document.getElementById('cursosOverlay')) fecharCursos();
 }
 
 function fecharModal() {
