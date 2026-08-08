@@ -788,7 +788,8 @@
       }
       .btn-ed,
       .btn-del,
-      .btn-aulas {
+      .btn-aulas,
+      .btn-materiais {
         border: none;
         border-radius: 4px;
         cursor: pointer;
@@ -821,6 +822,14 @@
       }
       .btn-aulas:hover {
         background: #c8e6c9;
+      }
+      .btn-materiais {
+        background: #fff3e0;
+        color: #e65100;
+        font-weight: 600;
+      }
+      .btn-materiais:hover {
+        background: #ffe0b2;
       }
       .crud-vazio {
         padding: 24px;
@@ -1755,6 +1764,15 @@
         if (!r.ok) throw new Error(await r.text());
       }
 
+      async function abrirMateriaisCurso(cursoId) {
+        await abrirCRUD('materia');
+        const sel = document.getElementById('filtroCursoMateria');
+        if (sel) {
+          sel.value = cursoId;
+          await filtrarMateriasPorCurso(cursoId);
+        }
+      }
+
       async function abrirCRUD(entidade) {
         crudEntidade = entidade;
         crudEditandoId = null;
@@ -1889,7 +1907,7 @@
             if (cfg.pk) {
               let aulasBtn = "";
               if (crudEntidade === "curso") {
-                aulasBtn = `<button class="btn-aulas" onclick="abrirAulasCurso(${row.id}, '${(row.nome_completo || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>`;
+                aulasBtn = `<button class="btn-aulas" onclick="abrirAulasCurso(${row.id}, '${(row.nome_completo || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button><button class="btn-materiais" onclick="abrirMateriaisCurso(${row.id})">📦 Materiais</button>`;
               } else if (crudEntidade === "materia") {
                 aulasBtn = `<button class="btn-aulas" onclick="abrirAulasMateria(${row.id}, '${(row.descricao || "").replace(/'/g, "\\'").replace(/"/g, '\\"')}')">📋 Aulas</button>`;
               }
