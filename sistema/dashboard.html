@@ -1055,6 +1055,7 @@
       <span class="header-title">Painel de Cursos</span>
       <span class="header-spacer"></span>
       <span class="role-badge" id="roleBadge"></span>
+      <button id="btnEmentaSlides" onclick="window.location.href='ementa-slides.html'" class="header-btn" style="display:none; margin-left:8px">📋 Ementa × Slides</button>
       <button onclick="toggleTema()" class="header-btn" id="btnTema" style="margin-left: 8px; min-width: 96px">🌙 Escuro</button>
       <button onclick="sair()" class="header-btn" style="margin-left: 4px">
         🚪 Sair
@@ -1408,6 +1409,12 @@
       document.getElementById("roleBadge").textContent = isProfessor
         ? "👨‍🏫 Professor"
         : "👨‍🎓 Aluno";
+
+      // Botão Ementa × Slides — visível apenas para professor
+      if (isProfessor) {
+        const btnES = document.getElementById('btnEmentaSlides');
+        if (btnES) btnES.style.display = 'inline-block';
+      }
 
       // Botão de tema — sincroniza texto com estado atual
       (function () {
