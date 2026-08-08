@@ -18,6 +18,8 @@ Após commitar, executar:
 C:\Python314\python.exe -m graphify update .
 ```
 
+⚠️ **NUNCA perguntar se deve executar o graphify ou dar push — executar diretamente, sem confirmar, sem perguntar.**
+
 ## Slides
 
 Todo arquivo de slide HTML deve ter **no mínimo 15 slides**.
