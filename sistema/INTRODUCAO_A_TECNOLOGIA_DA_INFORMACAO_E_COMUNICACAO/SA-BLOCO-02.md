@@ -16,7 +16,7 @@
 | **Turno** | Tarde |
 | **Ano / Semestre** | 2026/02 |
 | **Docente** | Gelvazio Camargo |
-| **Número de Entregas** | 3 |
+| **Número de Entregas** | 4 |
 
 ---
 
@@ -41,9 +41,19 @@ Proporcionar o desenvolvimento de capacidades básicas e socioemocionais relativ
 
 ## Contextualização
 
-O setor administrativo de uma planta fabril enfrenta dois problemas críticos: o controle de estoque de insumos é feito manualmente em papel, causando falhas de reposição e paradas não planejadas na linha de produção; e as equipes não conseguem comunicar os resultados operacionais de forma clara para a liderança, gerando decisões baseadas em dados imprecisos e inconsistentes.
+O setor administrativo de uma planta fabril enfrenta dois problemas críticos: 
+o controle de estoque de insumos é feito manualmente em papel, 
+causando falhas de reposição e paradas não planejadas na linha de produção; 
+e as equipes não conseguem comunicar os resultados operacionais de forma clara para a liderança, 
+gerando decisões baseadas em dados imprecisos e inconsistentes.
 
-A gerência contratou uma equipe de assistentes operacionais para digitalizar, analisar e apresentar os dados de produção utilizando ferramentas de TIC. Como membro dessa equipe, o estudante deve produzir três documentos digitais integrados — um relatório técnico, uma planilha analítica e uma apresentação executiva —, todos baseados no mesmo cenário industrial.
+A gerência contratou uma equipe de assistentes operacionais para digitalizar, 
+analisar e apresentar os dados de produção utilizando ferramentas de TIC. 
+Como membro dessa equipe, 
+o estudante deve produzir três documentos digitais integrados:
+	— um relatório técnico, 
+	- uma planilha analítica 
+	- e uma apresentação executiva —, todos baseados no mesmo cenário industrial.
 
 ---
 
@@ -137,6 +147,31 @@ Apresentação executiva multimídia em formato de slides entregue em Google Sli
 
 ---
 
+## Entrega 4 — Textos Técnicos e Revisão Geral
+
+**Ferramentas:** Google Docs + Microsoft Word
+
+### Desafio
+
+Ao encerrar o projeto de melhoria digital da fábrica, a equipe precisa formalizar os resultados para a liderança por meio de documentos técnicos padronizados. O setor de qualidade exige que toda comunicação oficial siga normas de redação técnica e identidade documental da organização.
+
+O estudante deve produzir um **kit de documentação técnica** composto por três gêneros textuais distintos, todos referentes ao mesmo projeto industrial desenvolvido nas entregas anteriores:
+
+- **Ata de Reunião** — registro formal da reunião de encerramento do projeto de implantação do controle digital de estoque: data, participantes, pauta, deliberações e encerramento, seguindo estrutura padronizada.
+- **Memorando Interno** — comunicação oficial dirigida às equipes de turno, anunciando a adoção do novo sistema digital de controle de estoque, com linguagem técnica, tom profissional e formatação de memorando (destinatário, remetente, assunto, corpo e assinatura).
+- **Resumo Técnico** — síntese objetiva dos resultados alcançados pelo projeto (máximo de 250 palavras), destacando o problema identificado, a solução implementada, os dados da planilha (Entrega 2) e o impacto esperado na produção.
+
+Requisitos técnicos aplicados a todos os documentos:
+- Formatação ABNT: margens (2 cm superior/inferior, 3 cm esquerda, 2 cm direita), fonte Times New Roman ou Arial 12, espaçamento 1,5
+- Controle de alterações ativado para revisão entre pares antes da entrega final
+- Exportação em `.docx` e `.pdf` salvos na pasta compartilhada da equipe na nuvem
+
+### Resultado Esperado
+
+Kit de Documentação Técnica contendo ata de reunião, memorando interno e resumo técnico, todos formatados conforme normas ABNT, entregues em Google Docs e Microsoft Word (.docx e .pdf).
+
+---
+
 ## Plano de Aulas — Bloco 02
 
 | Encontro | Tema | Estratégia de Ensino | Entrega |
@@ -200,6 +235,7 @@ Apresentação executiva multimídia em formato de slides entregue em Google Sli
 
 - Ficha de Avaliação Prática de Planilha Eletrônica (Entrega 2)
 - Ficha de Avaliação de Desempenho Prático / Apresentação Oral (Entrega 3)
+- Ficha de Avaliação de Documentação Técnica — ata, memorando e resumo (Entrega 4)
 - Questionários do Google Forms (verificação de conhecimentos por encontro)
 
 ---
