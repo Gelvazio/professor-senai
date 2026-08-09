@@ -5,12 +5,17 @@ Conversor de slides HTML para PDF — SENAI TIC
 Converte todos os HTMLs das aulas TIC para PDF usando o Chrome headless.
 O arquivo HTML original nunca é modificado; o PDF fica no mesmo diretório.
 
+Para HTMLs com slides ocultos (display:none), cria um arquivo temporário com
+todos os slides visíveis antes de gerar o PDF — garante que todas as páginas
+apareçam no documento final.
+
 Uso:
     python converter_slides_pdf.py            # converte apenas os que ainda não têm PDF
     python converter_slides_pdf.py --forcar   # regera todos os PDFs (sobrescreve)
     python converter_slides_pdf.py --aula 03  # converte apenas a pasta AULA-03-*
 """
 
+import re
 import subprocess
 import sys
 import time
@@ -27,6 +32,55 @@ BASE_DIR = (
 
 IGNORAR = {"backfill-ids.html"}
 
+_SLIDE_OCULTO = re.compile(r'\.slide\s*\{[^}]*display\s*:\s*none', re.IGNORECASE)
+
+CSS_TODOS_SLIDES = (
+    '\n<style id="__pdf_override__">\n'
+    '  .slide {\n'
+    '    display: block !important;\n'
+    '    opacity: 1 !important;\n'
+    '    transform: none !important;\n'
+    '    animation: none !important;\n'
+    '    transition: none !important;\n'
+    '    page-break-after: always;\n'
+    '    margin-bottom: 16px;\n'
+    '  }\n'
+    '  * { animation: none !important; transition: none !important; }\n'
+    '  .topbar { display: none !important; }\n'
+    '  .nav { display: none !important; }\n'
+    '  .progress-wrap { display: none !important; }\n'
+    '  .btn-print { display: none !important; }\n'
+    '  .nav-dots { display: none !important; }\n'
+    '  main { padding: 8px 24px !important; }\n'
+    '</style>\n'
+    '<script>\n'
+    'document.addEventListener("DOMContentLoaded",function(){\n'
+    '  document.querySelectorAll(".slide").forEach(function(s){\n'
+    '    s.style.setProperty("display","block","important");\n'
+    '    s.style.setProperty("opacity","1","important");\n'
+    '    s.style.setProperty("transform","none","important");\n'
+    '    s.style.setProperty("animation","none","important");\n'
+    '  });\n'
+    '});\n'
+    '</script>\n'
+)
+
+
+def preparar_html(html_path: Path) -> tuple:
+    """
+    Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com
+    todos os slides visíveis. Retorna (caminho_a_usar, é_temporário).
+    """
+    content = html_path.read_text(encoding="utf-8")
+
+    if not _SLIDE_OCULTO.search(content):
+        return html_path, False
+
+    content_mod = content.replace("</head>", CSS_TODOS_SLIDES + "</head>", 1)
+    temp = html_path.parent / f"__tmp__{html_path.name}"
+    temp.write_text(content_mod, encoding="utf-8")
+    return temp, True
+
 
 def converter(html_path: Path, forcar: bool = False) -> bool:
     if html_path.name in IGNORAR:
@@ -38,7 +92,8 @@ def converter(html_path: Path, forcar: bool = False) -> bool:
         print(f"    [JÁ EXISTE] {html_path.name}")
         return True
 
-    abs_html = html_path.resolve()
+    html_para_converter, e_temp = preparar_html(html_path)
+    abs_html = html_para_converter.resolve()
     abs_pdf = str(pdf_path.resolve())
 
     cmd = [
@@ -58,17 +113,13 @@ def converter(html_path: Path, forcar: bool = False) -> bool:
     ]
 
     try:
-        resultado = subprocess.run(
-            cmd,
-            capture_output=True,
-            timeout=60,
-        )
-
+        resultado = subprocess.run(cmd, capture_output=True, timeout=60)
         time.sleep(0.5)
 
         if pdf_path.exists() and pdf_path.stat().st_size > 0:
             tamanho = pdf_path.stat().st_size // 1024
-            print(f"    [OK] {html_path.name} → {pdf_path.name} ({tamanho} KB)")
+            modo = " [todos slides]" if e_temp else ""
+            print(f"    [OK]{modo} {html_path.name} → {pdf_path.name} ({tamanho} KB)")
             return True
 
         print(f"    [ERRO] {html_path.name} — PDF não gerado")
@@ -82,11 +133,13 @@ def converter(html_path: Path, forcar: bool = False) -> bool:
         return False
     except FileNotFoundError:
         print(f"\n[FATAL] Chrome não encontrado em:\n  {CHROME}")
-        print("Verifique o caminho e tente novamente.")
         sys.exit(1)
     except Exception as exc:
         print(f"    [ERRO] {html_path.name}: {exc}")
         return False
+    finally:
+        if e_temp and html_para_converter.exists():
+            html_para_converter.unlink()
 
 
 def main():
