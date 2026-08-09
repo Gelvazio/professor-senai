@@ -4,6 +4,66 @@
   "graph": {},
   "nodes": [
     {
+      "label": "converter_slides_pdf.py",
+      "file_type": "code",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converter_slides_pdf",
+      "community": 20,
+      "norm_label": "converter_slides_pdf.py"
+    },
+    {
+      "label": "preparar_html()",
+      "file_type": "code",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "converter_slides_pdf_preparar_html",
+      "community": 20,
+      "norm_label": "preparar_html()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "path",
+      "community": 20,
+      "norm_label": "path"
+    },
+    {
+      "label": "converter()",
+      "file_type": "code",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "converter_slides_pdf_converter",
+      "community": 20,
+      "norm_label": "converter()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L145",
+      "_origin": "ast",
+      "id": "converter_slides_pdf_main",
+      "community": 20,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Se o HTML usa o padr\u00e3o de slides ocultos, cria um arquivo tempor\u00e1rio com     tod",
+      "file_type": "rationale",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "converter_slides_pdf_rationale_70",
+      "community": 20,
+      "norm_label": "se o html usa o padrao de slides ocultos, cria um arquivo temporario com     tod"
+    },
+    {
       "label": "SKILL.md",
       "file_type": "document",
       "source_file": ".claude/skills/documentacao-padrao/SKILL.md",
@@ -424,6 +484,146 @@
       "norm_label": "honesty rules"
     },
     {
+      "label": "AULAS-TIC.md",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aulas_tic",
+      "community": 14,
+      "norm_label": "aulas-tic.md"
+    },
+    {
+      "label": "Aulas \u2014 TIC (Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o)",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "community": 14,
+      "norm_label": "aulas \u2014 tic (introducao a tecnologia da informacao e comunicacao)"
+    },
+    {
+      "label": "AULA 01 \u2014 03/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_01_03_08_2026",
+      "community": 14,
+      "norm_label": "aula 01 \u2014 03/08/2026"
+    },
+    {
+      "label": "AULA 02 \u2014 04/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_02_04_08_2026",
+      "community": 14,
+      "norm_label": "aula 02 \u2014 04/08/2026"
+    },
+    {
+      "label": "AULA 03 \u2014 05/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_03_05_08_2026",
+      "community": 14,
+      "norm_label": "aula 03 \u2014 05/08/2026"
+    },
+    {
+      "label": "AULA 04 \u2014 06/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_04_06_08_2026",
+      "community": 14,
+      "norm_label": "aula 04 \u2014 06/08/2026"
+    },
+    {
+      "label": "AULA 05 \u2014 07/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_05_07_08_2026",
+      "community": 14,
+      "norm_label": "aula 05 \u2014 07/08/2026"
+    },
+    {
+      "label": "AULA 06 \u2014 10/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_06_10_08_2026",
+      "community": 14,
+      "norm_label": "aula 06 \u2014 10/08/2026"
+    },
+    {
+      "label": "AULA 07 \u2014 11/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_07_11_08_2026",
+      "community": 14,
+      "norm_label": "aula 07 \u2014 11/08/2026"
+    },
+    {
+      "label": "AULA 08 \u2014 12/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_08_12_08_2026",
+      "community": 14,
+      "norm_label": "aula 08 \u2014 12/08/2026"
+    },
+    {
+      "label": "AULA 09 \u2014 13/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_09_13_08_2026",
+      "community": 14,
+      "norm_label": "aula 09 \u2014 13/08/2026"
+    },
+    {
+      "label": "AULA 10 \u2014 14/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_10_14_08_2026",
+      "community": 14,
+      "norm_label": "aula 10 \u2014 14/08/2026"
+    },
+    {
+      "label": "AULA 13 \u2014 24/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "aulas_tic_aula_13_24_08_2026",
+      "community": 14,
+      "norm_label": "aula 13 \u2014 24/08/2026"
+    },
+    {
+      "label": "Resumo",
+      "file_type": "document",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "aulas_tic_resumo",
+      "community": 14,
+      "norm_label": "resumo"
+    },
+    {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
@@ -464,10 +664,20 @@
       "norm_label": "graphify"
     },
     {
-      "label": "Slides",
+      "label": "Nunca perguntar \u2014 sempre executar",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L23",
+      "_origin": "ast",
+      "id": "claude_nunca_perguntar_sempre_executar",
+      "community": 10,
+      "norm_label": "nunca perguntar \u2014 sempre executar"
+    },
+    {
+      "label": "Slides",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "claude_slides",
       "community": 10,
@@ -480,7 +690,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix",
-      "community": 12,
+      "community": 7,
       "norm_label": "relatorio_pix.md"
     },
     {
@@ -490,7 +700,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "community": 12,
+      "community": 7,
       "norm_label": "relatorio comparativo \u2014 servicos de validacao pix para empresas"
     },
     {
@@ -500,7 +710,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_contexto_do_mercado",
-      "community": 12,
+      "community": 7,
       "norm_label": "contexto do mercado"
     },
     {
@@ -590,7 +800,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "community": 11,
+      "community": 12,
       "norm_label": "2. conferepix \u2014 conferepix.app"
     },
     {
@@ -600,7 +810,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_como_funciona_54",
-      "community": 11,
+      "community": 12,
       "norm_label": "como funciona"
     },
     {
@@ -610,7 +820,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_57",
-      "community": 11,
+      "community": 12,
       "norm_label": "servicos oferecidos"
     },
     {
@@ -620,7 +830,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_pre\u00e7o_63",
-      "community": 11,
+      "community": 12,
       "norm_label": "preco"
     },
     {
@@ -630,7 +840,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_bancos_homologados_67",
-      "community": 11,
+      "community": 12,
       "norm_label": "bancos homologados"
     },
     {
@@ -640,7 +850,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_vantagens_70",
-      "community": 11,
+      "community": 12,
       "norm_label": "vantagens"
     },
     {
@@ -650,7 +860,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_desvantagens_77",
-      "community": 11,
+      "community": 12,
       "norm_label": "desvantagens"
     },
     {
@@ -660,7 +870,7 @@
       "source_location": "L83",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_83",
-      "community": 11,
+      "community": 12,
       "norm_label": "facilidade de integracao"
     },
     {
@@ -670,7 +880,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
-      "community": 12,
+      "community": 19,
       "norm_label": "3. pixpdv \u2014 pixpdv.com.br"
     },
     {
@@ -680,7 +890,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_como_funciona_90",
-      "community": 12,
+      "community": 19,
       "norm_label": "como funciona"
     },
     {
@@ -690,7 +900,7 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_93",
-      "community": 12,
+      "community": 19,
       "norm_label": "servicos oferecidos"
     },
     {
@@ -700,7 +910,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_pre\u00e7o_101",
-      "community": 12,
+      "community": 19,
       "norm_label": "preco"
     },
     {
@@ -710,7 +920,7 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_vantagens_107",
-      "community": 12,
+      "community": 19,
       "norm_label": "vantagens"
     },
     {
@@ -720,7 +930,7 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_desvantagens_115",
-      "community": 12,
+      "community": 19,
       "norm_label": "desvantagens"
     },
     {
@@ -730,7 +940,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_121",
-      "community": 12,
+      "community": 19,
       "norm_label": "facilidade de integracao"
     },
     {
@@ -740,7 +950,7 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
-      "community": 15,
+      "community": 7,
       "norm_label": "4. pdv pix \u2014 pdvpix.com.br"
     },
     {
@@ -750,7 +960,7 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_como_funciona_128",
-      "community": 15,
+      "community": 7,
       "norm_label": "como funciona"
     },
     {
@@ -760,7 +970,7 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_131",
-      "community": 15,
+      "community": 7,
       "norm_label": "servicos oferecidos"
     },
     {
@@ -770,7 +980,7 @@
       "source_location": "L141",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_pre\u00e7o_141",
-      "community": 15,
+      "community": 7,
       "norm_label": "preco"
     },
     {
@@ -780,7 +990,7 @@
       "source_location": "L145",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_vantagens_145",
-      "community": 15,
+      "community": 7,
       "norm_label": "vantagens"
     },
     {
@@ -790,7 +1000,7 @@
       "source_location": "L152",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_desvantagens_152",
-      "community": 15,
+      "community": 7,
       "norm_label": "desvantagens"
     },
     {
@@ -800,7 +1010,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_158",
-      "community": 15,
+      "community": 7,
       "norm_label": "facilidade de integracao"
     },
     {
@@ -810,7 +1020,7 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
-      "community": 12,
+      "community": 21,
       "norm_label": "5. openpix \u2014 openpix.com.br"
     },
     {
@@ -820,7 +1030,7 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_como_funciona_165",
-      "community": 12,
+      "community": 21,
       "norm_label": "como funciona"
     },
     {
@@ -830,7 +1040,7 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_168",
-      "community": 12,
+      "community": 21,
       "norm_label": "servicos oferecidos"
     },
     {
@@ -840,7 +1050,7 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_pre\u00e7o_179",
-      "community": 12,
+      "community": 21,
       "norm_label": "preco"
     },
     {
@@ -850,7 +1060,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_vantagens_185",
-      "community": 12,
+      "community": 21,
       "norm_label": "vantagens"
     },
     {
@@ -860,7 +1070,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_desvantagens_193",
-      "community": 12,
+      "community": 21,
       "norm_label": "desvantagens"
     },
     {
@@ -870,7 +1080,7 @@
       "source_location": "L199",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_199",
-      "community": 12,
+      "community": 21,
       "norm_label": "facilidade de integracao"
     },
     {
@@ -880,7 +1090,7 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_quadro_comparativo_geral",
-      "community": 12,
+      "community": 7,
       "norm_label": "quadro comparativo geral"
     },
     {
@@ -890,7 +1100,7 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_recomenda\u00e7\u00e3o_por_perfil_de_empresa",
-      "community": 12,
+      "community": 7,
       "norm_label": "recomendacao por perfil de empresa"
     },
     {
@@ -1072,6 +1282,166 @@
       "id": "specs_2026_08_07_analise_ementas_design_arquivos_modificados",
       "community": 8,
       "norm_label": "arquivos modificados"
+    },
+    {
+      "label": "Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "community": 11,
+      "norm_label": "operador de producao industrial_ 860h_3e7bbae4.md"
+    },
+    {
+      "label": "DEMANDA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_demanda",
+      "community": 11,
+      "norm_label": "demanda"
+    },
+    {
+      "label": "Justificativa para Oferta",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_justificativa_para_oferta",
+      "community": 11,
+      "norm_label": "justificativa para oferta"
+    },
+    {
+      "label": "DADOS DO CURSO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "community": 11,
+      "norm_label": "dados do curso"
+    },
+    {
+      "label": "Objetivo Geral",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_objetivo_geral",
+      "community": 11,
+      "norm_label": "objetivo geral"
+    },
+    {
+      "label": "Objetivos Espec\u00edficos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_objetivos_espec\u00edficos",
+      "community": 11,
+      "norm_label": "objetivos especificos"
+    },
+    {
+      "label": "Perfil Profissional de Conclus\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_perfil_profissional_de_conclus\u00e3o",
+      "community": 11,
+      "norm_label": "perfil profissional de conclusao"
+    },
+    {
+      "label": "Matriz Curricular",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_matriz_curricular",
+      "community": 11,
+      "norm_label": "matriz curricular"
+    },
+    {
+      "label": "PROCEDIMENTOS METODOL\u00d3GICOS E AVALIA\u00c7\u00c3O",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_procedimentos_metodol\u00f3gicos_e_avalia\u00e7\u00e3o",
+      "community": 11,
+      "norm_label": "procedimentos metodologicos e avaliacao"
+    },
+    {
+      "label": "METODOLOGIA DE ENSINO INTEGRADA A BNCC",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_metodologia_de_ensino_integrada_a_bncc",
+      "community": 11,
+      "norm_label": "metodologia de ensino integrada a bncc"
+    },
+    {
+      "label": "ORIENTA\u00c7\u00d5ES METODOL\u00d3GICAS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_orienta\u00e7\u00f5es_metodol\u00f3gicas",
+      "community": 11,
+      "norm_label": "orientacoes metodologicas"
+    },
+    {
+      "label": "CRIT\u00c9RIOS DE AVALIA\u00c7\u00c3O DA APRENDIZAGEM",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_crit\u00e9rios_de_avalia\u00e7\u00e3o_da_aprendizagem",
+      "community": 11,
+      "norm_label": "criterios de avaliacao da aprendizagem"
+    },
+    {
+      "label": "APROVEITAMENTO DE ESTUDOS PARA HABILITA\u00c7\u00c3O T\u00c9CNICA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_aproveitamento_de_estudos_para_habilita\u00e7\u00e3o_t\u00e9cnica",
+      "community": 11,
+      "norm_label": "aproveitamento de estudos para habilitacao tecnica"
+    },
+    {
+      "label": "6\tEXECU\u00c7\u00c3O DAS TURMAS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_6_execu\u00e7\u00e3o_das_turmas",
+      "community": 11,
+      "norm_label": "6\texecucao das turmas"
+    },
+    {
+      "label": "Anexo I \u2013 Detalhamento do Perfil Profissional de Conclus\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_anexo_i_detalhamento_do_perfil_profissional_de_conclus\u00e3o",
+      "community": 11,
+      "norm_label": "anexo i \u2013 detalhamento do perfil profissional de conclusao"
+    },
+    {
+      "label": "Anexo II \u2013 Detalhamento da Matriz Curricular",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_anexo_ii_detalhamento_da_matriz_curricular",
+      "community": 11,
+      "norm_label": "anexo ii \u2013 detalhamento da matriz curricular"
     },
     {
       "label": "CLAUDE.md",
@@ -1540,7 +1910,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia",
-      "community": 14,
+      "community": 15,
       "norm_label": "ementa-introducao-tecnologia.md"
     },
     {
@@ -1550,7 +1920,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "community": 14,
+      "community": 15,
       "norm_label": "ementa oficial \u2014 unidade curricular 1"
     },
     {
@@ -1560,7 +1930,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "community": 14,
+      "community": 15,
       "norm_label": "introducao a tecnologia da informacao e comunicacao"
     },
     {
@@ -1570,7 +1940,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_metadados_do_documento",
-      "community": 14,
+      "community": 15,
       "norm_label": "metadados do documento"
     },
     {
@@ -1580,7 +1950,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_prop\u00f3sito_e_contexto",
-      "community": 14,
+      "community": 15,
       "norm_label": "proposito e contexto"
     },
     {
@@ -1590,7 +1960,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_objetivo_geral",
-      "community": 14,
+      "community": 15,
       "norm_label": "objetivo geral"
     },
     {
@@ -1600,7 +1970,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_distribui\u00e7\u00e3o_de_carga_hor\u00e1ria",
-      "community": 14,
+      "community": 15,
       "norm_label": "distribuicao de carga horaria"
     },
     {
@@ -1610,7 +1980,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_capacidades_b\u00e1sicas",
-      "community": 14,
+      "community": 15,
       "norm_label": "capacidades basicas"
     },
     {
@@ -1770,7 +2140,7 @@
       "source_location": "L264",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_eixo_estruturante_bncc_compet\u00eancia_integradora",
-      "community": 14,
+      "community": 15,
       "norm_label": "eixo estruturante bncc / competencia integradora"
     },
     {
@@ -1780,7 +2150,7 @@
       "source_location": "L278",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_capacidades_socioemocionais",
-      "community": 14,
+      "community": 15,
       "norm_label": "capacidades socioemocionais"
     },
     {
@@ -1790,7 +2160,7 @@
       "source_location": "L292",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ambientes_pedag\u00f3gicos_e_recursos",
-      "community": 14,
+      "community": 15,
       "norm_label": "ambientes pedagogicos e recursos"
     },
     {
@@ -2155,6 +2525,90 @@
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converter_slides_pdf",
+      "target": "converter_slides_pdf_converter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converter_slides_pdf",
+      "target": "converter_slides_pdf_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converter_slides_pdf",
+      "target": "converter_slides_pdf_preparar_html"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converter_slides_pdf_converter",
+      "target": "converter_slides_pdf_preparar_html"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converter_slides_pdf_preparar_html",
+      "target": "path"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "converter_slides_pdf_rationale_70",
+      "target": "converter_slides_pdf_preparar_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converter_slides_pdf_converter",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "converter_slides_pdf.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converter_slides_pdf_main",
+      "target": "converter_slides_pdf_converter"
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -2558,6 +3012,136 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic",
+      "target": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_01_03_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_02_04_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_03_05_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_04_06_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_05_07_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_06_10_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_07_11_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_08_12_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_09_13_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_10_14_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_aula_13_24_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS-TIC.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "aulas_tic_resumo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -2584,6 +3168,16 @@
       "confidence_score": 1.0,
       "source": "claude_professor_senai_regras_do_projeto",
       "target": "claude_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_professor_senai_regras_do_projeto",
+      "target": "claude_nunca_perguntar_sempre_executar"
     },
     {
       "relation": "contains",
@@ -3164,6 +3758,156 @@
       "confidence_score": 1.0,
       "source": "specs_2026_08_07_analise_ementas_design_solu\u00e7\u00e3o",
       "target": "specs_2026_08_07_analise_ementas_design_4_keywords_por_t\u00f3pico"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_6_execu\u00e7\u00e3o_das_turmas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_aproveitamento_de_estudos_para_habilita\u00e7\u00e3o_t\u00e9cnica"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_crit\u00e9rios_de_avalia\u00e7\u00e3o_da_aprendizagem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_demanda"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_metodologia_de_ensino_integrada_a_bncc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_orienta\u00e7\u00f5es_metodol\u00f3gicas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_procedimentos_metodol\u00f3gicos_e_avalia\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_demanda",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_justificativa_para_oferta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_matriz_curricular"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_objetivo_geral"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_objetivos_espec\u00edficos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_perfil_profissional_de_conclus\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_6_execu\u00e7\u00e3o_das_turmas",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_anexo_i_detalhamento_do_perfil_profissional_de_conclus\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_6_execu\u00e7\u00e3o_das_turmas",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_anexo_ii_detalhamento_da_matriz_curricular"
     },
     {
       "relation": "contains",
@@ -4197,5 +4941,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e274c63ee7dab46ec452c53e022826e954d51464"
+  "built_at_commit": "10e391d396eedcf93e8abb63463c1fc9b7be5526"
 }
