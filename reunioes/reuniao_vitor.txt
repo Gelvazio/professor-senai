@@ -1,7 +1,11 @@
 #Duvida 01
 https://espacodocente.sesisenai.org.br/login
 Este local temos acesso?, nao con sigo acessar
-duvida 02
+
+#Duvida 02 
+Qual a melhor estrategia de criacao de Blocos, por semana ou por aula?
+Pois as SA(Situacao de Aprendizagem), podem estar ocorrendo por aula.
+
 
 
 
