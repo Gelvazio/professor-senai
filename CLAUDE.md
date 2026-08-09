@@ -20,6 +20,12 @@ C:\Python314\python.exe -m graphify update .
 
 ⚠️ **NUNCA perguntar se deve executar o graphify ou dar push — executar diretamente, sem confirmar, sem perguntar.**
 
+## Nunca perguntar — sempre executar
+
+⚠️ **NUNCA faça perguntas antes de executar uma tarefa.** Sempre execute diretamente, sem pedir confirmação, sem perguntar se deve prosseguir, sem listar opções e aguardar resposta.
+
+Se houver ambiguidade, escolha a opção mais razoável e execute. Ajustes podem ser feitos depois.
+
 ## Slides
 
 Todo arquivo de slide HTML deve ter **no mínimo 15 slides**.
