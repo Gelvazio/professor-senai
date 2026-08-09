@@ -911,7 +911,7 @@
       document.getElementById('btn-next').disabled = cur === total - 1;
     }
 
-    function go(d) { jump(Math.max(0, Math.min(total - 1, cur + d)); }
+    function go(d) { jump(Math.max(0, Math.min(total - 1, cur + d))); }
 
     document.addEventListener('keydown', e => {
       if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
