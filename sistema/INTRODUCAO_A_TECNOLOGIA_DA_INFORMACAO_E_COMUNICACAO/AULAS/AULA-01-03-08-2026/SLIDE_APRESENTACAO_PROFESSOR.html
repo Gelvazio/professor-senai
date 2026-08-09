@@ -396,9 +396,68 @@
       background: #ccc; cursor: pointer; transition: background .15s;
     }
     .dot.active { background: #004384; }
+
+    /* ── BOTÃO PDF ── */
+    .btn-pdf {
+      position: fixed;
+      top: 10px;
+      right: 14px;
+      z-index: 200;
+      background: #f7941d;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 5px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.2);
+      transition: background .15s;
+    }
+    .btn-pdf:hover { background: #e07a00; }
+
+    /* ── IMPRESSÃO / PDF ── */
+    @media print {
+      @page { size: A4 landscape; margin: 0; }
+
+      html, body {
+        height: auto;
+        overflow: visible;
+        background: #fff;
+      }
+      .topbar, nav, .btn-pdf { display: none !important; }
+
+      .main {
+        padding: 0;
+        display: block;
+        overflow: visible;
+      }
+      .wrap {
+        position: static;
+        max-width: 100%;
+        aspect-ratio: unset;
+        width: 100%;
+      }
+      .slide {
+        position: relative !important;
+        display: flex !important;
+        width: 100%;
+        height: 100vh;
+        box-shadow: none;
+        border-radius: 0;
+        page-break-after: always;
+        break-after: page;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <!-- BOTÃO PDF -->
+  <button class="btn-pdf" onclick="imprimirPDF()" title="Salvar como PDF">⬇ PDF</button>
 
   <!-- TOPBAR -->
   <div class="topbar">
@@ -432,9 +491,9 @@
       <div class="slide">
         <div class="slide-titulo">Quem Sou Eu?</div>
         <ul class="pontos">
-          <li>Me chamo <strong>Gelvazio Camargo</strong> — mas pode me chamar de <strong>Gel</strong></li>
-          <li>Sou de <strong>Rio do Sul, Santa Catarina</strong>, onde vivo e trabalho</li>
-          <li>Comecei na área de TI em <strong>2011</strong> — já são mais de <strong>15 anos</strong> de experiência</li>
+          <li>Me chamo <strong>Gelvazio Camargo</strong> — mas pode me chamar de <strong>Gêo</strong></li>
+          <li>Sou de <strong>Rio do Sul, Santa Catarina,</strong>onde vivo e trabalho</li>
+          <li>Comecei na área de TI em <strong>2010</strong> — já são mais de <strong>15 anos</strong> de experiência</li>
           <li>Trabalhei em empresas como <strong>IBS Sistemas, IPM Sistemas</strong> e por 7 anos na <strong>T2</strong> como desenvolvedor Full Stack</li>
           <li>Antes do SENAI ensinei por <strong>2 anos e meio</strong> no <strong>Senac</strong> no programa Jovem Programador</li>
           <li>Hoje estou aqui no <strong>SENAI/SC</strong> como Professor de Desenvolvimento de Software — e muito animado com essa turma!</li>
@@ -866,7 +925,7 @@
         <div class="big-icon">🚀</div>
         <div class="capa-nome">Vamos Começar!</div>
         <p>
-          Seja bem-vindo à Unidade Curricular 1 — Introdução à Tecnologia da Informação e Comunicação.<br>
+          Sejam bem-vindo!<br>
           Estou aqui para ajudá-lo a crescer. Qualquer dúvida, pode perguntar!
         </p>
         <div class="capa-tags">
@@ -917,6 +976,10 @@
       if (e.key === 'ArrowRight' || e.key === 'ArrowDown') go(1);
       if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   go(-1);
     });
+
+    function imprimirPDF() {
+      window.print();
+    }
   </script>
 </body>
 </html>
