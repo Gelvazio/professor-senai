@@ -11,6 +11,36 @@
 
 ---
 
+### Turma
+
+| Campo | Valor |
+|-------|-------|
+| Total de alunos | **30 alunos** |
+| Faixa etária | **14 a 17 anos** |
+| Turno | Tarde |
+
+---
+
+### Tempo Real de Instrução
+
+Cada encontro tem duração de **4 horas** no total, mas há deduções operacionais obrigatórias:
+
+| Desconto | Tempo |
+|----------|------:|
+| Intervalo | 15 min |
+| Pegar Chromebooks | 15 min |
+| Devolver Chromebooks | 15 min |
+| Ajustes da sala | 15 min |
+| **Total de desconto por encontro** | **60 min** |
+
+- Tempo efetivo por encontro: **3 horas** (180 min)
+- Total institucional: 40 horas-aula
+- **Total real de instrução: 30 horas** (40h × 75%)
+
+> ⚠️ Planejamento de aulas deve considerar **30 horas efetivas**, não 40h. Os conteúdos da ementa precisam ser proporcionalmente ajustados a 30h.
+
+---
+
 ### Carga Horária
 
 > Cada hora-aula tem duração de **45 minutos**.
