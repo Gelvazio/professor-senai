@@ -1091,6 +1091,42 @@
       [data-theme="dark"] .pe-md blockquote p { color:#9ec4f0; }
       [data-theme="dark"] .pe-md hr { border-top-color:#2c2e38; }
       [data-theme="dark"] .pe-md strong { color:#e0e3e8; }
+
+      /* ── Modal Didática ── */
+      .did-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:3000; display:flex; align-items:center; justify-content:center; padding:12px; }
+      .did-modal { background:#fff; border-radius:12px; box-shadow:0 8px 40px rgba(0,0,0,.3); width:100%; max-width:800px; max-height:90vh; display:flex; flex-direction:column; overflow:hidden; }
+      .did-head { background:#004384; color:#fff; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-shrink:0; gap:12px; }
+      .did-head h3 { margin:0; font-size:15px; font-weight:700; }
+      .did-head p { margin:0; font-size:12px; opacity:.8; }
+      .did-tabs { display:flex; overflow-x:auto; border-bottom:2px solid #e8eaed; background:#f8f9fa; flex-shrink:0; scrollbar-width:thin; }
+      .did-tab { padding:10px 18px; font-size:13px; font-weight:600; color:#555; border:none; background:none; cursor:pointer; border-bottom:3px solid transparent; margin-bottom:-2px; white-space:nowrap; font-family:inherit; transition:color .15s,border-color .15s; }
+      .did-tab:hover { color:#004384; }
+      .did-tab.ativo { color:#004384; border-bottom-color:#004384; }
+      .did-body { overflow-y:auto; flex:1; }
+      .did-panel { display:none; padding:24px 28px 36px; }
+      .did-panel.ativo { display:block; }
+      .did-tip { background:#f4f7ff; border-left:3px solid #004384; border-radius:0 8px 8px 0; padding:14px 16px; margin-bottom:14px; }
+      .did-tip-title { font-size:13px; font-weight:700; color:#004384; margin-bottom:5px; }
+      .did-tip-body { font-size:13px; color:#444; line-height:1.6; }
+      .did-tip-body a { color:#1a73e8; text-decoration:none; }
+      .did-tip-body a:hover { text-decoration:underline; }
+      .did-tip-body ul { margin-top:6px; padding-left:18px; }
+      .did-tip-body li { margin-bottom:4px; }
+      .did-chip { display:inline-block; background:#e8f0fe; color:#1557b0; font-size:11px; font-weight:600; padding:2px 8px; border-radius:12px; margin:2px 2px 0 0; }
+      .did-chip.verde { background:#e6f4ea; color:#1e7e34; }
+      .did-chip.laranja { background:#fef3e2; color:#b06000; }
+      .did-chip.roxo { background:#f3e8ff; color:#6b21a8; }
+      .did-chip.vermelho { background:#fce8e6; color:#c62828; }
+      .did-section-title { font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:#999; margin:22px 0 10px; }
+      [data-theme="dark"] .did-modal { background:#1c1e26; }
+      [data-theme="dark"] .did-tabs { background:#141620; border-bottom-color:#2c2e38; }
+      [data-theme="dark"] .did-tab { color:#8b919e; }
+      [data-theme="dark"] .did-tab:hover,[data-theme="dark"] .did-tab.ativo { color:#7aa3d4; }
+      [data-theme="dark"] .did-tab.ativo { border-bottom-color:#7aa3d4; }
+      [data-theme="dark"] .did-tip { background:#1a2540; border-left-color:#7aa3d4; }
+      [data-theme="dark"] .did-tip-title { color:#7aa3d4; }
+      [data-theme="dark"] .did-tip-body { color:#c8cdd8; }
+      [data-theme="dark"] .did-chip { background:#1e2d55; color:#7aa3d4; }
     </style>
   </head>
   <body>
@@ -1114,6 +1150,7 @@
       <span class="role-badge" id="roleBadge"></span>
       <button id="btnEmentaSlides" onclick="window.location.href='ementa-slides.html'" class="header-btn" style="display:none; margin-left:8px">📋 Ementa × Slides</button>
       <button id="btnPlanoEnsino" onclick="abrirPlanoEnsino()" class="header-btn" style="display:none; margin-left:8px">📄 Plano Ensino</button>
+      <button id="btnDidatica" onclick="abrirDidatica()" class="header-btn" style="display:none; margin-left:8px">🎓 Didática</button>
       <button onclick="toggleTema()" class="header-btn" id="btnTema" style="margin-left: 8px; min-width: 96px">🌙 Escuro</button>
       <button onclick="sair()" class="header-btn" style="margin-left: 4px">
         🚪 Sair
@@ -1133,6 +1170,264 @@
         </div>
       </div>
     </div>
+
+    <!-- ── Modal Didática ──────────────────────── -->
+    <div class="did-backdrop" id="didBd" style="display:none">
+      <div class="did-modal">
+        <div class="did-head">
+          <div>
+            <h3>🎓 Dicas de Didática</h3>
+            <p>Turma de 30 alunos · 14–17 anos · 3h efetivas por encontro</p>
+          </div>
+          <button class="crud-btn-fechar" onclick="fecharDidatica()">✕</button>
+        </div>
+        <div class="did-tabs">
+          <button class="did-tab ativo" onclick="didMudarTab('ia',this)">🤖 IA</button>
+          <button class="did-tab" onclick="didMudarTab('youtube',this)">📺 YouTube</button>
+          <button class="did-tab" onclick="didMudarTab('gamificacao',this)">🎮 Gamificação</button>
+          <button class="did-tab" onclick="didMudarTab('internet',this)">🌐 Internet</button>
+          <button class="did-tab" onclick="didMudarTab('sala',this)">🏫 Sala de Aula</button>
+        </div>
+        <div class="did-body">
+
+          <!-- Tab: IA -->
+          <div class="did-panel ativo" id="did-ia">
+            <div class="did-section-title">Ferramentas de IA para o Professor</div>
+            <div class="did-tip">
+              <div class="did-tip-title">Gerar questões personalizadas</div>
+              <div class="did-tip-body">
+                Peça ao ChatGPT ou Gemini para criar questões de múltipla escolha sobre o tópico da aula, adaptadas para adolescentes de 14–17 anos em contexto industrial.
+                <ul>
+                  <li>Prompt modelo: <em>"Crie 5 questões de múltipla escolha sobre [tópico] para jovens aprendizes industriais, com linguagem acessível e exemplos práticos da indústria."</em></li>
+                  <li>Peça também a <strong>justificativa de cada gabarito</strong> — útil para o feedback em sala.</li>
+                </ul>
+                <span class="did-chip">ChatGPT</span>
+                <span class="did-chip">Gemini</span>
+                <span class="did-chip roxo">Copilot</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Criar situações-problema industriais</div>
+              <div class="did-tip-body">
+                Use IA para gerar cenários realistas conectados ao conteúdo. Exemplo: "A impressora da fábrica não imprime — o que verificar primeiro?" (tópico Hardware + SO).
+                <ul>
+                  <li>Contexto fixo no prompt: <em>"Turma de Aprendizagem Industrial, Operador de Produção, unidade fabril."</em></li>
+                  <li>Varie o cenário por dupla para evitar cópia entre alunos.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Adaptar linguagem e exemplos</div>
+              <div class="did-tip-body">
+                Peça à IA para reescrever definições técnicas em linguagem mais próxima do cotidiano dos alunos, mantendo o rigor técnico.
+                <ul>
+                  <li>Prompt: <em>"Explique o que é firewall usando uma analogia com a portaria de uma fábrica."</em></li>
+                  <li>Ideal para tópicos de Segurança da Informação e Hardware.</li>
+                </ul>
+                <span class="did-chip verde">Acessibilidade</span>
+                <span class="did-chip laranja">Engajamento</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Resumos e fichas de revisão</div>
+              <div class="did-tip-body">
+                Gere fichas-resumo de uma página para cada tópico da ementa — útil para revisão nos 10 minutos finais da aula.
+                <ul>
+                  <li>Formato sugerido: definição, 3 pontos-chave, 1 exemplo prático, 1 pegadinha comum.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: YouTube -->
+          <div class="did-panel" id="did-youtube">
+            <div class="did-section-title">Usando Vídeos em Sala</div>
+            <div class="did-tip">
+              <div class="did-tip-title">Regra dos 5 minutos</div>
+              <div class="did-tip-body">
+                Vídeos para adolescentes devem ter <strong>no máximo 5 minutos</strong>. Acima disso, a atenção cai. Use clipes curtos para introduzir um tema, não para explicar tudo.
+                <ul>
+                  <li>Pause no momento-chave e pergunte: <em>"O que vocês acharam que ia acontecer?"</em></li>
+                  <li>Use a legenda — ajuda na compreensão e na leitura técnica.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Técnica "Antes e Depois"</div>
+              <div class="did-tip-body">
+                <strong>Antes:</strong> faça 2 perguntas sobre o que os alunos já sabem do assunto.<br>
+                <strong>Durante:</strong> peça que anotem 1 coisa nova que virem.<br>
+                <strong>Depois:</strong> compare as respostas iniciais com o que aprenderam.
+                <span class="did-chip verde">Conhecimento Prévio</span>
+                <span class="did-chip">Metacognição</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Canais recomendados por tópico</div>
+              <div class="did-tip-body">
+                <ul>
+                  <li><strong>Hardware/SO:</strong> Canal do YouTube do Curso em Vídeo, TecMundo, Manual do Mundo</li>
+                  <li><strong>Segurança da Informação:</strong> Alura, Felipe Deschamps, Hacking na Web</li>
+                  <li><strong>Software de Escritório:</strong> Hashtag Treinamentos, Planilhando, Guia do Excel</li>
+                  <li><strong>Internet/WWW:</strong> NIC.br, Canal Futura, TED-Ed (legendado)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">YouTube + Google Forms = avaliação em tempo real</div>
+              <div class="did-tip-body">
+                Crie um Forms com 3 perguntas sobre o vídeo e compartilhe o link antes de exibir. Os alunos respondem imediatamente após assistir — você vê os resultados em tempo real na tela.
+                <span class="did-chip laranja">Avaliação Formativa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Gamificação -->
+          <div class="did-panel" id="did-gamificacao">
+            <div class="did-section-title">Ferramentas de Gamificação</div>
+            <div class="did-tip">
+              <div class="did-tip-title">Kahoot — revisão rápida (10 min)</div>
+              <div class="did-tip-body">
+                Use no início da aula para revisar o conteúdo anterior, ou nos últimos 10 minutos como fechamento. Crie o quiz em <strong>kahoot.com</strong>.
+                <ul>
+                  <li>Máximo de 10 questões para caber no tempo útil.</li>
+                  <li>Mostre o pódio — adolescentes respondem bem à competição saudável.</li>
+                  <li>Salve os quizzes para reusar nas turmas seguintes.</li>
+                </ul>
+                <span class="did-chip verde">Kahoot.com</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Quizlet — vocabulário técnico</div>
+              <div class="did-tip-body">
+                Crie baralhos de flashcards com termos técnicos da UC1 (phishing, backup, malware, CPU, RAM…). Os alunos estudam no Chromebook em <strong>quizlet.com</strong>.
+                <ul>
+                  <li>Modo "Match" transforma revisão em jogo de tempo — ideal para aquecimento de 5 min.</li>
+                </ul>
+                <span class="did-chip verde">Quizlet.com</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Wordwall — atividades interativas</div>
+              <div class="did-tip-body">
+                Crie caça-palavras, cruzadinhas e jogos de correspondência sobre os tópicos da ementa. Compartilhe o link no chat do Google Classroom.
+                <span class="did-chip verde">Wordwall.net</span>
+                <span class="did-chip laranja">+15 tipos de atividade</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Sistema de pontos na turma</div>
+              <div class="did-tip-body">
+                Mantenha um placar simples de participação em uma planilha projetada. Pontos por: resposta correta, ajudar o colega, pontualidade, entrega no prazo.
+                <ul>
+                  <li>Não vincule os pontos diretamente à nota — mantenha como motivação extrínseca.</li>
+                  <li>Revele o placar 1x por semana para gerar expectativa.</li>
+                </ul>
+                <span class="did-chip roxo">Motivação Extrínseca</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Internet -->
+          <div class="did-panel" id="did-internet">
+            <div class="did-section-title">Ferramentas Online para Aula</div>
+            <div class="did-tip">
+              <div class="did-tip-title">Google Forms — avaliação formativa rápida</div>
+              <div class="did-tip-body">
+                Crie um Forms de 5 questões sobre o conteúdo do dia e compartilhe via QR Code na última tela do slide. Os alunos respondem antes de sair.
+                <ul>
+                  <li>Ative <strong>"ver pontuação imediatamente"</strong> — o aluno sai sabendo onde errou.</li>
+                  <li>Você vê o resultado em tempo real na aba de respostas.</li>
+                </ul>
+                <span class="did-chip verde">Google Forms</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Digitação — prática produtiva</div>
+              <div class="did-tip-body">
+                Para os primeiros 10 minutos de aulas de Software de Escritório, use sites de treino de digitação enquanto todos os Chromebooks são ligados.
+                <ul>
+                  <li><strong>agilefingers.com/pt</strong> — já usado pela turma</li>
+                  <li><strong>typingclub.com</strong> — com gamificação integrada</li>
+                  <li>Meta sugerida: 40 PPM ao final da UC1</li>
+                </ul>
+                <span class="did-chip laranja">agilefingers.com/pt/aluna</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Canva — criatividade com Software de Apresentações</div>
+              <div class="did-tip-body">
+                Permita o uso do Canva como alternativa ao PowerPoint/Slides para a Entrega 3 (Apresentação Executiva). Reforça tópico 4.3 de forma motivadora.
+                <span class="did-chip verde">Canva.com</span>
+                <span class="did-chip">Criatividade</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Mentimeter — nuvem de palavras ao vivo</div>
+              <div class="did-tip-body">
+                No início da aula, projete uma pergunta no Mentimeter e peça que os alunos respondam pelo celular. A nuvem de palavras aparece em tempo real — excelente para ativar conhecimento prévio.
+                <span class="did-chip verde">Mentimeter.com</span>
+                <span class="did-chip">Engajamento inicial</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Sala de Aula -->
+          <div class="did-panel" id="did-sala">
+            <div class="did-section-title">Gestão do Tempo e da Sala (30 alunos · 3h úteis)</div>
+            <div class="did-tip">
+              <div class="did-tip-title">Estrutura recomendada por encontro (180 min úteis)</div>
+              <div class="did-tip-body">
+                <ul>
+                  <li><strong>0–15 min</strong> — Revisão do encontro anterior (Kahoot ou perguntas orais)</li>
+                  <li><strong>15–60 min</strong> — Exposição dialogada com slides (sem mais de 20 min sem interação)</li>
+                  <li><strong>60–90 min</strong> — Atividade prática individual ou em duplas no Chromebook</li>
+                  <li><strong>90–150 min</strong> — Desenvolvimento guiado da entrega ou exercício aplicado</li>
+                  <li><strong>150–175 min</strong> — Socialização de resultados (2–3 grupos apresentam)</li>
+                  <li><strong>175–180 min</strong> — Google Forms de fechamento + orientação para próxima aula</li>
+                </ul>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Gestão dos Chromebooks (−30 min de overhead)</div>
+              <div class="did-tip-body">
+                Os 30 min de pegar + devolver são inevitáveis. Estratégias para minimizar impacto:
+                <ul>
+                  <li>Já chegue com a tarefa projetada — os alunos sabem o que fazer ao pegar o Chromebook.</li>
+                  <li>Nomeie 4 "monitores de Chromebook" rotativos por semana — agiliza a distribuição.</li>
+                  <li>Devolução: anuncie 10 min antes do fim — evita correria.</li>
+                </ul>
+                <span class="did-chip vermelho">−30 min recuperáveis com organização</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Think-Pair-Share com duplas fixas</div>
+              <div class="did-tip-body">
+                Use as duplas já definidas na chamada. Para cada questão difícil: <br>
+                1. <strong>Pense</strong> sozinho (1 min) → 2. <strong>Discuta</strong> com a dupla (2 min) → 3. <strong>Compartilhe</strong> com a turma.
+                <ul>
+                  <li>Reduz ansiedade de responder individualmente.</li>
+                  <li>Funciona bem para tópicos de Segurança e Comunicação.</li>
+                </ul>
+                <span class="did-chip verde">Aprendizagem Colaborativa</span>
+              </div>
+            </div>
+            <div class="did-tip">
+              <div class="did-tip-title">Gerenciar 14–17 anos em atividades de TIC</div>
+              <div class="did-tip-body">
+                <ul>
+                  <li><strong>Contextualize sempre:</strong> "Para que isso serve numa fábrica?" — adolescentes precisam do "porquê".</li>
+                  <li><strong>Desafio antes da instrução:</strong> lance o problema antes de explicar a solução — cria curiosidade.</li>
+                  <li><strong>Rotação de funções:</strong> em atividades de grupo, rotacione quem digita, quem pesquisa, quem apresenta.</li>
+                  <li><strong>Celular como aliado:</strong> permita o uso para buscar respostas, mas com prazo (2 min de pesquisa, depois fecha).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.did-body -->
+      </div><!-- /.did-modal -->
+    </div><!-- /.did-backdrop -->
 
     <!-- ── Modal Matérias do Curso ──────────────── -->
     <div
@@ -1488,6 +1783,8 @@
         if (btnES) btnES.style.display = 'inline-block';
         const btnPE = document.getElementById('btnPlanoEnsino');
         if (btnPE) btnPE.style.display = 'inline-block';
+        const btnDid = document.getElementById('btnDidatica');
+        if (btnDid) btnDid.style.display = 'inline-block';
       }
 
       // Botão de tema — sincroniza texto com estado atual
@@ -3158,6 +3455,27 @@
 
       document.getElementById('peBd').addEventListener('click', function(e){
         if (e.target === this) fecharPlanoEnsino();
+      });
+
+      function abrirDidatica() {
+        document.getElementById('didBd').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function fecharDidatica() {
+        document.getElementById('didBd').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+      function didMudarTab(id, btn) {
+        document.querySelectorAll('.did-tab').forEach(function(t){ t.classList.remove('ativo'); });
+        document.querySelectorAll('.did-panel').forEach(function(p){ p.classList.remove('ativo'); });
+        btn.classList.add('ativo');
+        document.getElementById('did-' + id).classList.add('ativo');
+      }
+
+      document.getElementById('didBd').addEventListener('click', function(e){
+        if (e.target === this) fecharDidatica();
       });
     </script>
 
