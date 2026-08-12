@@ -350,6 +350,7 @@ Todo arquivo de slide HTML criado ou editado deve ter **no mínimo 15 slides** d
 | `materias` | jsonb | Array de aulas com materiais e `visivel` (0/1) |
 | `gabaritos` | jsonb | Array de gabaritos com `data_aula`, `exercicios` e `visualizar` (0/1) |
 | `visivel` | integer | Curso visível no dashboard (1=sim, 0=não) |
+| `permitecopiar` | integer | Permite copiar texto dos modais de atividade (1=sim, 0=não — padrão 0) |
 
 **Registros:**
 
@@ -379,6 +380,7 @@ Todo arquivo de slide HTML criado ou editado deve ter **no mínimo 15 slides** d
 |--------|-----------|-----------|
 | `toggle_aula_visivel` | `p_curso_id`, `p_aula_numero`, `p_visivel` | Liga/desliga visibilidade de uma aula |
 | `toggle_gabarito_visivel` | `p_curso_id`, `p_data_aula`, `p_visualizar` | Liga/desliga visibilidade das respostas de um gabarito |
+| `toggle_permitecopiar` | `p_curso_id`, `p_valor` | Permite (1) ou bloqueia (0) cópia de texto nos modais de atividade |
 
 ### Controle de perfil (frontend)
 

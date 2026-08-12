@@ -63,6 +63,47 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;height
 }
 .btn-pdf{background:#f7941d;color:#fff;border:none;border-radius:5px;padding:4px 12px;font-size:12px;cursor:pointer;font-family:inherit;font-weight:600;display:flex;align-items:center;gap:5px;transition:.2s}
 .btn-pdf:hover{background:#e07a00}
+.btn-ativ{background:#1a8754;color:#fff;border:none;border-radius:5px;padding:4px 12px;font-size:12px;cursor:pointer;font-family:inherit;font-weight:600;display:flex;align-items:center;gap:5px;transition:.2s}
+.btn-ativ:hover{background:#136940}
+/* Modal */
+.mov{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:18px 12px}
+.mov.on{display:flex}
+.mbox{background:#fafaf7;border-radius:4px;width:100%;max-width:810px;margin:auto;box-shadow:0 8px 48px rgba(0,0,0,.4);overflow:hidden;font-family:Arial,Helvetica,sans-serif}
+.mhdr{background:#003476;color:#fff;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid #f7941d}
+.mhdr-left{display:flex;flex-direction:column;gap:2px}
+.mhdr-sub{font-size:9px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.mhdr-title{font-size:14px;font-weight:700}
+.mclose{background:none;border:none;color:#fff;font-size:22px;cursor:pointer;line-height:1;padding:0 4px}
+.mclose:hover{color:#f7941d}
+.mbody{padding:22px 26px 28px;max-height:84vh;overflow-y:auto}
+.cfg{border:1.5px solid #f7941d;border-radius:3px;padding:10px 14px;margin-bottom:18px;background:#fff9f0}
+.cfg-t{font-size:9px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#c07000;margin-bottom:5px}
+.cfg p{font-family:'Courier New',monospace;font-size:11px;line-height:1.75;color:#333}
+.mdtitle{font-size:15px;font-weight:900;text-align:center;text-transform:uppercase;letter-spacing:.5px;color:#1c1c1c;margin-bottom:5px;line-height:1.25}
+.midl{font-size:11px;color:#1c1c1c;padding-bottom:8px;border-bottom:1px solid #d4cfc6;margin-bottom:15px;display:flex;gap:22px;flex-wrap:wrap}
+.midl b{font-weight:700}
+.mblank{border-bottom:1px solid #888;min-width:140px;display:inline-block}
+.ftag{display:inline-block;background:#e6eef9;color:#1a4e8c;border:1px solid #b8d0ee;font-family:'Courier New',monospace;font-size:9px;padding:1px 7px;border-radius:3px;margin-bottom:4px}
+.msec{margin-bottom:16px}
+.mstit{font-size:11.5px;font-weight:700;color:#003476;text-transform:uppercase;letter-spacing:.4px;padding-bottom:3px;border-bottom:2px solid #f7941d;margin-bottom:7px}
+.mpt{font-size:11.5px;line-height:1.85;text-align:justify;text-indent:1.25cm;color:#1c1c1c;margin-bottom:8px;font-family:Georgia,serif}
+.mlst{list-style:disc;padding-left:18px;display:flex;flex-direction:column;gap:5px;margin-top:2px}
+.mlst li{font-size:11.5px;line-height:1.6;color:#1c1c1c;font-family:Georgia,serif}
+.mlst li b{font-family:Arial,Helvetica,sans-serif;color:#003476}
+.mtwrap{overflow-x:auto;margin-top:4px}
+.mtbl{width:100%;border-collapse:collapse;font-size:11px}
+.mtbl thead tr{background:#003476;color:#fff}
+.mtbl thead th{padding:6px 10px;text-align:left;font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:.3px}
+.mtbl thead th:first-child{text-align:center;width:38px}
+.mtbl tbody tr:nth-child(even){background:#f2f0eb}
+.mtbl tbody td{padding:6px 10px;border-bottom:1px solid #d4cfc6;color:#1c1c1c}
+.mtbl tbody td:first-child{text-align:center;font-weight:700}
+.mhr{border:none;border-top:1px solid #d4cfc6;margin:14px 0}
+.mentrega{border:1.5px solid #003476;border-radius:3px;padding:10px 14px;margin-top:16px;background:#eef3fb}
+.mentrega-t{font-size:9px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#003476;margin-bottom:5px}
+.mentrega p{font-family:'Courier New',monospace;font-size:11px;line-height:1.75;color:#1c1c1c}
+.nc{user-select:none;-webkit-user-select:none;-moz-user-select:none;pointer-events:none}
+.mbody .nc{pointer-events:auto}
 </style>
 </head>
 <body>
@@ -71,6 +112,7 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;height
     <a class="logo" href="../../../dashboard.html" style="text-decoration:none">SENAI</a>
     <span class="top-title">Aula 05 — Google Docs — Editor de Textos</span>
   </div>
+  <button class="btn-ativ" onclick="document.getElementById('mov').classList.add('on')">✏️ Atividade Digitação</button>
   <button class="btn-pdf" onclick="window.print()" title="Salvar como PDF">⬇ PDF</button>
   <span class="counter" id="ctr">1 / 15</span>
 </div>
@@ -295,6 +337,99 @@ body{font-family:'Google Sans',Roboto,Arial,sans-serif;background:#e8eaed;height
   <button class="btn" id="bNext" onclick="nav(1)">Próximo →</button>
 </div>
 
+<!-- Modal: Atividade Digitação 12-08-2026 -->
+<div class="mov" id="mov" onclick="if(event.target===this)fecharModal()">
+  <div class="mbox">
+    <div class="mhdr">
+      <div class="mhdr-left">
+        <span class="mhdr-sub">Turma TI01 · 12/08/2026</span>
+        <span class="mhdr-title">✏️ Atividade Digitação 12-08-2026</span>
+      </div>
+      <button class="mclose" onclick="fecharModal()" title="Fechar (Esc)">✕</button>
+    </div>
+    <div class="mbody" oncopy="return false" ondragstart="return false" oncontextmenu="return false">
+
+      <div class="cfg">
+        <div class="cfg-t">⚙ Configure a página ANTES de digitar</div>
+        <p class="nc">Arquivo → Configurar página → Tamanho: A4<br>
+        Margens: Superior 3 cm · Inferior 2 cm · Esquerda 3 cm · Direita 2 cm<br>
+        Espaçamento entre linhas: 1,5 · Recuo de primeira linha: 1,25 cm</p>
+      </div>
+
+      <div class="ftag">TÍTULO — negrito · tamanho 16 · centralizado · maiúsculas</div>
+      <div class="mdtitle nc">Relatório de Aprendizagem<br>Tecnologia da Informação e Comunicação</div>
+
+      <div class="ftag" style="margin-top:8px">linha de identificação — tamanho 12 · alinhado à esquerda</div>
+      <div class="midl nc">
+        <span><b>Nome:</b> <span class="mblank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+        <span><b>Turma:</b> TI01</span>
+        <span><b>Data:</b> 12/08/2026</span>
+      </div>
+
+      <div class="msec">
+        <div class="ftag">SUBTÍTULO — negrito · tamanho 14</div>
+        <div class="mstit nc">Introdução</div>
+        <div class="ftag">parágrafo — justificado · recuo 1,25 cm · espaçamento 1,5</div>
+        <p class="mpt nc">O Google Docs é um editor de textos online que faz parte do Google Workspace, pacote de ferramentas de produtividade desenvolvido pela Google. Diferente de editores simples, como o Bloco de Notas, o Google Docs permite realizar formatações avançadas, inserir tabelas, imagens, listas e gráficos, tudo diretamente pelo navegador de internet, sem necessidade de instalação de programas adicionais.</p>
+        <p class="mpt nc">Uma das maiores vantagens do Google Docs é o salvamento automático no Google Drive. O documento é atualizado continuamente, eliminando o risco de perda de dados por falta de salvar o arquivo. Além disso, é possível colaborar em tempo real: vários usuários editam o mesmo documento ao mesmo tempo, de qualquer lugar, desde que tenham acesso à internet. Essa funcionalidade é muito utilizada em ambientes de trabalho modernos, onde o trabalho em equipe e a comunicação eficiente são fundamentais para a produtividade.</p>
+      </div>
+
+      <div class="msec">
+        <div class="ftag">SUBTÍTULO — negrito · tamanho 14</div>
+        <div class="mstit nc">Formatação e Normas ABNT</div>
+        <div class="ftag">parágrafo — justificado · recuo 1,25 cm · espaçamento 1,5</div>
+        <p class="mpt nc">Para produzir documentos profissionais no ambiente de trabalho, é necessário seguir as normas da ABNT. No Google Docs, as configurações de página são acessadas em Arquivo → Configurar página. As margens exigidas são: superior 3 cm, inferior 2 cm, esquerda 3 cm e direita 2 cm. O espaçamento entre linhas deve ser de 1,5 e o recuo de primeira linha de cada parágrafo deve ser de 1,25 cm. Para aplicar formatações rapidamente, use os atalhos: Ctrl+B para negrito, Ctrl+I para itálico, Ctrl+J para justificado e Ctrl+\ para remover toda a formatação do texto selecionado.</p>
+      </div>
+
+      <hr class="mhr">
+
+      <div class="msec">
+        <div class="ftag">SUBTÍTULO — negrito · tamanho 14 · Inserir → Lista com marcadores</div>
+        <div class="mstit nc">Termos Técnicos Aprendidos</div>
+        <div class="ftag">lista com marcadores — tamanho 12</div>
+        <ul class="mlst nc">
+          <li><b>Google Workspace</b> — conjunto de ferramentas online do Google para produtividade e colaboração</li>
+          <li><b>Formatação</b> — aplicação de estilos visuais ao texto, como negrito, tamanho de fonte e cor</li>
+          <li><b>ABNT</b> — Associação Brasileira de Normas Técnicas, responsável por padronizar documentos técnicos no Brasil</li>
+          <li><b>Colaboração em tempo real</b> — edição simultânea de um documento por vários usuários na internet</li>
+          <li><b>Espaçamento entre linhas</b> — distância vertical entre as linhas de um parágrafo no documento</li>
+        </ul>
+      </div>
+
+      <div class="msec">
+        <div class="ftag">SUBTÍTULO — negrito · tamanho 14 · Inserir → Tabela → 3 colunas × 5 linhas</div>
+        <div class="mstit nc">Resumo das Aulas Anteriores</div>
+        <div class="ftag">tabela 3 × 5 — numeração centralizada</div>
+        <div class="mtwrap">
+          <table class="mtbl nc">
+            <thead><tr><th>Nº</th><th>Aula</th><th>Conteúdo Principal</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Aula 01</td><td>Comunicação em Equipes de Trabalho</td></tr>
+              <tr><td>2</td><td>Aula 02</td><td>Segurança da Informação</td></tr>
+              <tr><td>3</td><td>Aula 03</td><td>Internet e World Wide Web</td></tr>
+              <tr><td>4</td><td>Aula 04</td><td>Google Chrome e Ferramentas de Busca</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="msec">
+        <div class="ftag">SUBTÍTULO — negrito · tamanho 14</div>
+        <div class="mstit nc">Conclusão</div>
+        <div class="ftag">parágrafo — justificado · recuo 1,25 cm · espaçamento 1,5</div>
+        <p class="mpt nc">O aprendizado das ferramentas do Google Workspace prepara o estudante para o mercado de trabalho atual, onde a tecnologia está presente em praticamente todas as atividades. Saber criar documentos bem formatados, compartilhar arquivos e trabalhar de forma colaborativa são habilidades essenciais para qualquer profissional, independentemente da área de atuação.</p>
+      </div>
+
+      <div class="mentrega">
+        <div class="mentrega-t">📤 Ao terminar — entrega</div>
+        <p class="nc">Arquivo → Fazer download → Microsoft Word (.docx)<br>
+        Compartilhar → gelvazio.c@edu.sc.senai.br → Permissão: Comentarista</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <script>
 const slides=document.querySelectorAll('.slide');
 const total=slides.length;
@@ -304,7 +439,41 @@ for(let i=0;i<total;i++){const d=document.createElement('button');d.className='d
 function upd(){slides.forEach((s,i)=>s.classList.toggle('on',i===cur));document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i===cur));document.getElementById('ctr').textContent=(cur+1)+' / '+total;document.getElementById('pf').style.width=((cur+1)/total*100)+'%';document.getElementById('bPrev').disabled=cur===0;document.getElementById('bNext').disabled=cur===total-1;}
 function nav(d){go(cur+d);}
 function go(i){if(i<0||i>=total)return;cur=i;upd();}
-document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowDown')nav(1);if(e.key==='ArrowLeft'||e.key==='ArrowUp')nav(-1);});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')fecharModal();
+  if(e.key==='ArrowRight'||e.key==='ArrowDown')nav(1);
+  if(e.key==='ArrowLeft'||e.key==='ArrowUp')nav(-1);
+});
+function fecharModal(){document.getElementById('mov').classList.remove('on');}
+
+// Busca permitecopiar do Supabase e aplica/remove proteção no modal
+(async function(){
+  const SUPA_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
+  const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
+  const CURSO_ID = 2; // TIC — Introdução à TIC
+  try {
+    const res = await fetch(
+      `${SUPA_URL}/rest/v1/curso?select=permitecopiar&id=eq.${CURSO_ID}`,
+      { headers: { apikey: SUPA_KEY, Authorization: `Bearer ${SUPA_KEY}` } }
+    );
+    const [curso] = await res.json();
+    if (curso && curso.permitecopiar === 1) {
+      // Remove proteção: habilita seleção e cópia
+      document.querySelectorAll('.nc').forEach(el => {
+        el.style.userSelect = 'text';
+        el.style.webkitUserSelect = 'text';
+        el.style.pointerEvents = 'auto';
+      });
+      const mbody = document.querySelector('.mbody');
+      if (mbody) {
+        mbody.removeAttribute('oncopy');
+        mbody.removeAttribute('ondragstart');
+        mbody.removeAttribute('oncontextmenu');
+      }
+    }
+  } catch(e) { /* sem internet — mantém proteção padrão */ }
+})();
+
 upd();
 if(window.location.hash==="#print"){window.addEventListener("load",function(){setTimeout(function(){window.print();},500);});}
 </script>
