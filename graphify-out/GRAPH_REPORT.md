@@ -1,16 +1,16 @@
-# Graph Report - professor-senai  (2026-08-09)
+# Graph Report - professor-senai  (2026-08-12)
 
 ## Corpus Check
-- 17 files · ~369,801 words
+- 24 files · ~393,593 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 252 nodes · 241 edges · 22 communities
+- 287 nodes · 276 edges · 26 communities (24 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `10e391d3`
+- Built from commit: `058b387c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -35,18 +35,21 @@
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
 - [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 25|Community 25]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Situação de Aprendizagem — Bloco 02` - 19 edges
 2. `/graphify` - 15 edges
 3. `What You Must Do When Invoked` - 14 edges
 4. `Aulas — TIC (Introdução à Tecnologia da Informação e Comunicação)` - 13 edges
-5. `Ementa Oficial — Unidade Curricular 1` - 11 edges
-6. `Conhecimentos` - 10 edges
-7. `Conhecimentos Detalhados` - 10 edges
-8. `Relatório Comparativo — Serviços de Validação PIX para Empresas` - 9 edges
-9. `Documentação Padrão` - 8 edges
-10. `1. ValidaPix — validapix.com.br` - 8 edges
+5. `Como este projeto funciona — Documentação Técnica Detalhada` - 11 edges
+6. `Ementa Oficial — Unidade Curricular 1` - 11 edges
+7. `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` - 10 edges
+8. `Conhecimentos` - 10 edges
+9. `Conhecimentos Detalhados` - 10 edges
+10. `Relatório Comparativo — Serviços de Validação PIX para Empresas` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -54,23 +57,23 @@
 ## Import Cycles
 - None detected.
 
-## Communities (22 total, 0 thin omitted)
+## Communities (26 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.13
-Nodes (15): 1. Comunicação em Equipes de Trabalho, 2. Segurança da Informação, 3. Internet (World Wide Web), 4.1. Editor de Textos, 4.2. Editor de Planilhas Eletrônicas, 4.3. Editor de Apresentações, 4. Software de Escritório, 5.1. Fundamentos de Hardware (+7 more)
+Cohesion: 0.10
+Nodes (19): Ambientes Pedagógicos e Recursos, Capacidades Básicas, Capacidades Socioemocionais, Carga Horária, ✅ Commit e Push obrigatórios, Configuração Supabase, Controle de perfil (frontend), Eixo Estruturante BNCC / Competência Integradora (+11 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.17
-Nodes (12): 1. O Impacto da Falta de Ética nos Ambientes de Trabalho, 2. Código de Ética Profissional, 3. Acidentes do Trabalho e Doenças Ocupacionais, 4. Medidas de Controle, 5. Riscos Ocupacionais, 6. Segurança do Trabalho, Ambientes Pedagógicos e Recursos, Capacidades Básicas (+4 more)
+Cohesion: 0.13
+Nodes (15): 1. Comunicação em Equipes de Trabalho, 2. Segurança da Informação, 3. Internet (World Wide Web), 4.1. Editor de Textos, 4.2. Editor de Planilhas Eletrônicas, 4.3. Editor de Apresentações, 4. Software de Escritório, 5.1. Fundamentos de Hardware (+7 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.07
 Nodes (27): Capacidades Básicas, Capacidades Socioemocionais, Competência Geral do Curso, Contextualização, Desafio, Desafio, Desafio, Desafio (+19 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.11
-Nodes (17): Ambientes Pedagógicos e Recursos, Capacidades Básicas, Capacidades Socioemocionais, Carga Horária, ✅ Commit e Push obrigatórios, Configuração Supabase, Controle de perfil (frontend), Eixo Estruturante BNCC / Competência Integradora (+9 more)
+Cohesion: 0.17
+Nodes (12): 1. O Impacto da Falta de Ética nos Ambientes de Trabalho, 2. Código de Ética Profissional, 3. Acidentes do Trabalho e Doenças Ocupacionais, 4. Medidas de Controle, 5. Riscos Ocupacionais, 6. Segurança do Trabalho, Ambientes Pedagógicos e Recursos, Capacidades Básicas (+4 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.12
@@ -85,8 +88,8 @@ Cohesion: 0.22
 Nodes (8): Documentação Padrão, Fluxo Obrigatório, Modelo do Arquivo, Overview, Red Flags — PARE e Corrija, Regras, Regras dos Passos, Ícones de Status
 
 ### Community 7 - "Community 7"
-Cohesion: 0.10
-Nodes (19): 1. ValidaPix — validapix.com.br, 4. PDV Pix — pdvpix.com.br, Bancos Homologados, Como Funciona, Como Funciona, Contexto do Mercado, Desvantagens, Desvantagens (+11 more)
+Cohesion: 0.25
+Nodes (8): 2. ConferePix — conferepix.app, Bancos Homologados, Como Funciona, Desvantagens, Facilidade de Integração, Preço, Serviços Oferecidos, Vantagens
 
 ### Community 8 - "Community 8"
 Cohesion: 0.20
@@ -105,8 +108,8 @@ Cohesion: 0.12
 Nodes (15): 6	EXECUÇÃO DAS TURMAS, Anexo I – Detalhamento do Perfil Profissional de Conclusão, Anexo II – Detalhamento da Matriz Curricular, APROVEITAMENTO DE ESTUDOS PARA HABILITAÇÃO TÉCNICA, CRITÉRIOS DE AVALIAÇÃO DA APRENDIZAGEM, DADOS DO CURSO, DEMANDA, Justificativa para Oferta (+7 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.25
-Nodes (8): 2. ConferePix — conferepix.app, Bancos Homologados, Como Funciona, Desvantagens, Facilidade de Integração, Preço, Serviços Oferecidos, Vantagens
+Cohesion: 0.07
+Nodes (26): 1. ValidaPix — validapix.com.br, 3. PIXPDV — pixpdv.com.br, 4. PDV Pix — pdvpix.com.br, Bancos Homologados, Como Funciona, Como Funciona, Como Funciona, Contexto do Mercado (+18 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.13
@@ -121,39 +124,44 @@ Cohesion: 0.18
 Nodes (10): Ambientes Pedagógicos e Recursos, Capacidades Básicas, Capacidades Socioemocionais, Distribuição de Carga Horária, Eixo Estruturante BNCC / Competência Integradora, Ementa Oficial — Unidade Curricular 1, Introdução à Tecnologia da Informação e Comunicação, Metadados do Documento (+2 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.29
-Nodes (7): Critérios de Avaliação, Para a Capacidade C1 — Comunicação Escrita Técnica (Entrega 4), Para a Capacidade C1 — Comunicação Oral e Escrita Profissional, Para a Capacidade C3 — Interpretação de Textos Técnicos, Para a Capacidade C3 — Textos Técnicos e Normas (Entrega 4), Para a Capacidade C4 — Hardware e Software, Para a Capacidade C5 — Recursos Web
+Cohesion: 0.11
+Nodes (18): Autonomia Total — NUNCA peça permissão, Como este projeto funciona — Documentação Técnica Detalhada, Efeitos Visuais, Estrutura de Arquivos, Favicon, Git: Commit e Push Automático, Hero Cards (grid 2×2), Idioma (+10 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.29
-Nodes (7): 3. PIXPDV — pixpdv.com.br, Como Funciona, Desvantagens, Facilidade de Integração, Preço, Serviços Oferecidos, Vantagens
+Nodes (7): 5. OpenPix — openpix.com.br, Como Funciona, Desvantagens, Facilidade de Integração, Preço, Serviços Oferecidos, Vantagens
 
 ### Community 20 - "Community 20"
 Cohesion: 0.53
 Nodes (5): converter(), main(), preparar_html(), Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com     tod, Path
 
 ### Community 21 - "Community 21"
+Cohesion: 0.36
+Nodes (5): applyLanguage(), getTypingPhrases(), restartTyping(), t(), typeLoop()
+
+### Community 22 - "Community 22"
 Cohesion: 0.29
-Nodes (7): 5. OpenPix — openpix.com.br, Como Funciona, Desvantagens, Facilidade de Integração, Preço, Serviços Oferecidos, Vantagens
+Nodes (7): Critérios de Avaliação, Para a Capacidade C1 — Comunicação Escrita Técnica (Entrega 4), Para a Capacidade C1 — Comunicação Oral e Escrita Profissional, Para a Capacidade C3 — Interpretação de Textos Técnicos, Para a Capacidade C3 — Textos Técnicos e Normas (Entrega 4), Para a Capacidade C4 — Hardware e Software, Para a Capacidade C5 — Recursos Web
 
 ## Knowledge Gaps
-- **193 isolated node(s):** `Overview`, `Fluxo Obrigatório`, `Regras`, `Ícones de Status`, `Modelo do Arquivo` (+188 more)
+- **213 isolated node(s):** `Overview`, `Fluxo Obrigatório`, `Regras`, `Ícones de Status`, `Modelo do Arquivo` (+208 more)
   These have ≤1 connection - possible missing edges or undocumented components.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Relatório Comparativo — Serviços de Validação PIX para Empresas` connect `Community 7` to `Community 19`, `Community 12`, `Community 21`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `SENAI — Projeto de Curso: Aprendizagem Industrial` connect `Community 3` to `Community 1`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` connect `Community 3` to `Community 0`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `Relatório Comparativo — Serviços de Validação PIX para Empresas` connect `Community 12` to `Community 19`, `Community 7`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `SENAI — Projeto de Curso: Aprendizagem Industrial` connect `Community 0` to `Community 3`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` connect `Community 0` to `Community 1`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **What connects `Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com     tod`, `Overview`, `Fluxo Obrigatório` to the rest of the system?**
-  _194 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _214 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._

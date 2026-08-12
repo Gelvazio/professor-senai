@@ -4,6 +4,106 @@
   "graph": {},
   "nodes": [
     {
+      "label": "alteracoes.js",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/alteracoes.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_alteracoes",
+      "community": 24,
+      "norm_label": "alteracoes.js"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_main",
+      "community": 21,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "t()",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L374",
+      "_origin": "ast",
+      "id": "js_main_t",
+      "community": 21,
+      "norm_label": "t()"
+    },
+    {
+      "label": "applyLanguage()",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L379",
+      "_origin": "ast",
+      "id": "js_main_applylanguage",
+      "community": 21,
+      "norm_label": "applylanguage()"
+    },
+    {
+      "label": "applyTheme()",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L426",
+      "_origin": "ast",
+      "id": "js_main_applytheme",
+      "community": 21,
+      "norm_label": "applytheme()"
+    },
+    {
+      "label": "getTypingPhrases()",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L445",
+      "_origin": "ast",
+      "id": "js_main_gettypingphrases",
+      "community": 21,
+      "norm_label": "gettypingphrases()"
+    },
+    {
+      "label": "typeLoop()",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L457",
+      "_origin": "ast",
+      "id": "js_main_typeloop",
+      "community": 21,
+      "norm_label": "typeloop()"
+    },
+    {
+      "label": "restartTyping()",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L483",
+      "_origin": "ast",
+      "id": "js_main_restarttyping",
+      "community": 21,
+      "norm_label": "restarttyping()"
+    },
+    {
+      "label": "createParticle()",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L497",
+      "_origin": "ast",
+      "id": "js_main_createparticle",
+      "community": 21,
+      "norm_label": "createparticle()"
+    },
+    {
+      "label": "onScroll()",
+      "file_type": "code",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L534",
+      "_origin": "ast",
+      "id": "js_main_onscroll",
+      "community": 21,
+      "norm_label": "onscroll()"
+    },
+    {
       "label": "converter_slides_pdf.py",
       "file_type": "code",
       "source_file": "converter_slides_pdf.py",
@@ -684,13 +784,223 @@
       "norm_label": "slides"
     },
     {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude",
+      "community": 16,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "Instru\u00e7\u00f5es do Projeto \u2014 gelvazio.github.io",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
+      "community": 16,
+      "norm_label": "instrucoes do projeto \u2014 gelvazio.github.io"
+    },
+    {
+      "label": "Autonomia Total \u2014 NUNCA pe\u00e7a permiss\u00e3o",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_autonomia_total_nunca_pe\u00e7a_permiss\u00e3o",
+      "community": 16,
+      "norm_label": "autonomia total \u2014 nunca peca permissao"
+    },
+    {
+      "label": "Git: Commit e Push Autom\u00e1tico",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_git_commit_e_push_autom\u00e1tico",
+      "community": 16,
+      "norm_label": "git: commit e push automatico"
+    },
+    {
+      "label": "Idioma",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_idioma",
+      "community": 16,
+      "norm_label": "idioma"
+    },
+    {
+      "label": "\u26a0\ufe0f LLMS.txt \u2014 Atualiza\u00e7\u00e3o Obrigat\u00f3ria",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_llms_txt_atualiza\u00e7\u00e3o_obrigat\u00f3ria",
+      "community": 16,
+      "norm_label": "\u26a0\ufe0f llms.txt \u2014 atualizacao obrigatoria"
+    },
+    {
+      "label": "Registro de Altera\u00e7\u00f5es (alteracoes.js)",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_registro_de_altera\u00e7\u00f5es_alteracoes_js",
+      "community": 16,
+      "norm_label": "registro de alteracoes (alteracoes.js)"
+    },
+    {
+      "label": "Idioma inicial do site",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_idioma_inicial_do_site",
+      "community": 16,
+      "norm_label": "idioma inicial do site"
+    },
+    {
+      "label": "Como este projeto funciona \u2014 Documenta\u00e7\u00e3o T\u00e9cnica Detalhada",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "community": 16,
+      "norm_label": "como este projeto funciona \u2014 documentacao tecnica detalhada"
+    },
+    {
+      "label": "Vis\u00e3o Geral",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_vis\u00e3o_geral",
+      "community": 16,
+      "norm_label": "visao geral"
+    },
+    {
+      "label": "Estrutura de Arquivos",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_estrutura_de_arquivos",
+      "community": 16,
+      "norm_label": "estrutura de arquivos"
+    },
+    {
+      "label": "Se\u00e7\u00f5es do Site (`index.html`)",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_se\u00e7\u00f5es_do_site_index_html",
+      "community": 16,
+      "norm_label": "secoes do site (`index.html`)"
+    },
+    {
+      "label": "Sistema de i18n (Internacionaliza\u00e7\u00e3o)",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_sistema_de_i18n_internacionaliza\u00e7\u00e3o",
+      "community": 16,
+      "norm_label": "sistema de i18n (internacionalizacao)"
+    },
+    {
+      "label": "Hero Cards (grid 2\u00d72)",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_hero_cards_grid_2_2",
+      "community": 16,
+      "norm_label": "hero cards (grid 2\u00d72)"
+    },
+    {
+      "label": "Timeline de Experi\u00eancia",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_timeline_de_experi\u00eancia",
+      "community": 16,
+      "norm_label": "timeline de experiencia"
+    },
+    {
+      "label": "Tema (Dark / Light)",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_tema_dark_light",
+      "community": 16,
+      "norm_label": "tema (dark / light)"
+    },
+    {
+      "label": "Efeitos Visuais",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_efeitos_visuais",
+      "community": 16,
+      "norm_label": "efeitos visuais"
+    },
+    {
+      "label": "Painel de Altera\u00e7\u00f5es (`alteracoes.js`)",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_painel_de_altera\u00e7\u00f5es_alteracoes_js",
+      "community": 16,
+      "norm_label": "painel de alteracoes (`alteracoes.js`)"
+    },
+    {
+      "label": "Favicon",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_claude_favicon",
+      "community": 16,
+      "norm_label": "favicon"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_readme",
+      "community": 23,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "gelvazio.github.io",
+      "file_type": "document",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "estilo_tema_exemplo_readme_gelvazio_github_io",
+      "community": 23,
+      "norm_label": "gelvazio.github.io"
+    },
+    {
       "label": "RELATORIO_PIX.md",
       "file_type": "document",
       "source_file": "cantina-senai/RELATORIO_PIX.md",
       "source_location": "L1",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix",
-      "community": 7,
+      "community": 12,
       "norm_label": "relatorio_pix.md"
     },
     {
@@ -700,7 +1010,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "community": 7,
+      "community": 12,
       "norm_label": "relatorio comparativo \u2014 servicos de validacao pix para empresas"
     },
     {
@@ -710,7 +1020,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_contexto_do_mercado",
-      "community": 7,
+      "community": 12,
       "norm_label": "contexto do mercado"
     },
     {
@@ -720,7 +1030,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
-      "community": 7,
+      "community": 12,
       "norm_label": "1. validapix \u2014 validapix.com.br"
     },
     {
@@ -730,7 +1040,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_como_funciona",
-      "community": 7,
+      "community": 12,
       "norm_label": "como funciona"
     },
     {
@@ -740,7 +1050,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos",
-      "community": 7,
+      "community": 12,
       "norm_label": "servicos oferecidos"
     },
     {
@@ -750,7 +1060,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_pre\u00e7o",
-      "community": 7,
+      "community": 12,
       "norm_label": "preco"
     },
     {
@@ -760,7 +1070,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_bancos_homologados",
-      "community": 7,
+      "community": 12,
       "norm_label": "bancos homologados"
     },
     {
@@ -770,7 +1080,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_vantagens",
-      "community": 7,
+      "community": 12,
       "norm_label": "vantagens"
     },
     {
@@ -780,7 +1090,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_desvantagens",
-      "community": 7,
+      "community": 12,
       "norm_label": "desvantagens"
     },
     {
@@ -790,7 +1100,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o",
-      "community": 7,
+      "community": 12,
       "norm_label": "facilidade de integracao"
     },
     {
@@ -800,7 +1110,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "community": 12,
+      "community": 7,
       "norm_label": "2. conferepix \u2014 conferepix.app"
     },
     {
@@ -810,7 +1120,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_como_funciona_54",
-      "community": 12,
+      "community": 7,
       "norm_label": "como funciona"
     },
     {
@@ -820,7 +1130,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_57",
-      "community": 12,
+      "community": 7,
       "norm_label": "servicos oferecidos"
     },
     {
@@ -830,7 +1140,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_pre\u00e7o_63",
-      "community": 12,
+      "community": 7,
       "norm_label": "preco"
     },
     {
@@ -840,7 +1150,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_bancos_homologados_67",
-      "community": 12,
+      "community": 7,
       "norm_label": "bancos homologados"
     },
     {
@@ -850,7 +1160,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_vantagens_70",
-      "community": 12,
+      "community": 7,
       "norm_label": "vantagens"
     },
     {
@@ -860,7 +1170,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_desvantagens_77",
-      "community": 12,
+      "community": 7,
       "norm_label": "desvantagens"
     },
     {
@@ -870,7 +1180,7 @@
       "source_location": "L83",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_83",
-      "community": 12,
+      "community": 7,
       "norm_label": "facilidade de integracao"
     },
     {
@@ -880,7 +1190,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
-      "community": 19,
+      "community": 12,
       "norm_label": "3. pixpdv \u2014 pixpdv.com.br"
     },
     {
@@ -890,7 +1200,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_como_funciona_90",
-      "community": 19,
+      "community": 12,
       "norm_label": "como funciona"
     },
     {
@@ -900,7 +1210,7 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_93",
-      "community": 19,
+      "community": 12,
       "norm_label": "servicos oferecidos"
     },
     {
@@ -910,7 +1220,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_pre\u00e7o_101",
-      "community": 19,
+      "community": 12,
       "norm_label": "preco"
     },
     {
@@ -920,7 +1230,7 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_vantagens_107",
-      "community": 19,
+      "community": 12,
       "norm_label": "vantagens"
     },
     {
@@ -930,7 +1240,7 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_desvantagens_115",
-      "community": 19,
+      "community": 12,
       "norm_label": "desvantagens"
     },
     {
@@ -940,7 +1250,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_121",
-      "community": 19,
+      "community": 12,
       "norm_label": "facilidade de integracao"
     },
     {
@@ -950,7 +1260,7 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
-      "community": 7,
+      "community": 12,
       "norm_label": "4. pdv pix \u2014 pdvpix.com.br"
     },
     {
@@ -960,7 +1270,7 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_como_funciona_128",
-      "community": 7,
+      "community": 12,
       "norm_label": "como funciona"
     },
     {
@@ -970,7 +1280,7 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_131",
-      "community": 7,
+      "community": 12,
       "norm_label": "servicos oferecidos"
     },
     {
@@ -980,7 +1290,7 @@
       "source_location": "L141",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_pre\u00e7o_141",
-      "community": 7,
+      "community": 12,
       "norm_label": "preco"
     },
     {
@@ -990,7 +1300,7 @@
       "source_location": "L145",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_vantagens_145",
-      "community": 7,
+      "community": 12,
       "norm_label": "vantagens"
     },
     {
@@ -1000,7 +1310,7 @@
       "source_location": "L152",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_desvantagens_152",
-      "community": 7,
+      "community": 12,
       "norm_label": "desvantagens"
     },
     {
@@ -1010,7 +1320,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_158",
-      "community": 7,
+      "community": 12,
       "norm_label": "facilidade de integracao"
     },
     {
@@ -1020,7 +1330,7 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
-      "community": 21,
+      "community": 19,
       "norm_label": "5. openpix \u2014 openpix.com.br"
     },
     {
@@ -1030,7 +1340,7 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_como_funciona_165",
-      "community": 21,
+      "community": 19,
       "norm_label": "como funciona"
     },
     {
@@ -1040,7 +1350,7 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_168",
-      "community": 21,
+      "community": 19,
       "norm_label": "servicos oferecidos"
     },
     {
@@ -1050,7 +1360,7 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_pre\u00e7o_179",
-      "community": 21,
+      "community": 19,
       "norm_label": "preco"
     },
     {
@@ -1060,7 +1370,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_vantagens_185",
-      "community": 21,
+      "community": 19,
       "norm_label": "vantagens"
     },
     {
@@ -1070,7 +1380,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_desvantagens_193",
-      "community": 21,
+      "community": 19,
       "norm_label": "desvantagens"
     },
     {
@@ -1080,7 +1390,7 @@
       "source_location": "L199",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_199",
-      "community": 21,
+      "community": 19,
       "norm_label": "facilidade de integracao"
     },
     {
@@ -1090,7 +1400,7 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_quadro_comparativo_geral",
-      "community": 7,
+      "community": 12,
       "norm_label": "quadro comparativo geral"
     },
     {
@@ -1100,7 +1410,7 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "cantina_senai_relatorio_pix_recomenda\u00e7\u00e3o_por_perfil_de_empresa",
-      "community": 7,
+      "community": 12,
       "norm_label": "recomendacao por perfil de empresa"
     },
     {
@@ -1444,453 +1754,493 @@
       "norm_label": "anexo ii \u2013 detalhamento da matriz curricular"
     },
     {
-      "label": "CLAUDE.md",
+      "label": "duplas-aula-12-08-2026_26445d56.md",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "sistema_claude",
-      "community": 3,
+      "id": "converted_duplas_aula_12_08_2026_26445d56",
+      "community": 25,
+      "norm_label": "duplas-aula-12-08-2026_26445d56.md"
+    },
+    {
+      "label": "Sheet: Sheet1",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_duplas_aula_12_08_2026_26445d56_sheet_sheet1",
+      "community": 25,
+      "norm_label": "sheet: sheet1"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude",
+      "community": 0,
       "norm_label": "claude.md"
     },
     {
       "label": "SENAI \u2014 Projeto de Curso: Aprendizagem Industrial",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "community": 0,
       "norm_label": "senai \u2014 projeto de curso: aprendizagem industrial"
     },
     {
       "label": "M\u00f3dulo Educa\u00e7\u00e3o para o Trabalho",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "sistema_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
+      "community": 0,
       "norm_label": "modulo educacao para o trabalho"
     },
     {
       "label": "Unidade Curricular 1: Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "community": 0,
       "norm_label": "unidade curricular 1: introducao a tecnologia da informacao e comunicacao"
+    },
+    {
+      "label": "Turma",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_turma",
+      "community": 0,
+      "norm_label": "turma"
+    },
+    {
+      "label": "Tempo Real de Instru\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_tempo_real_de_instru\u00e7\u00e3o",
+      "community": 0,
+      "norm_label": "tempo real de instrucao"
     },
     {
       "label": "Carga Hor\u00e1ria",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L14",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L44",
       "_origin": "ast",
-      "id": "sistema_claude_carga_hor\u00e1ria",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_carga_hor\u00e1ria",
+      "community": 0,
       "norm_label": "carga horaria"
     },
     {
       "label": "Capacidades B\u00e1sicas",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L36",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L66",
       "_origin": "ast",
-      "id": "sistema_claude_capacidades_b\u00e1sicas",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_b\u00e1sicas",
+      "community": 0,
       "norm_label": "capacidades basicas"
     },
     {
       "label": "Conhecimentos",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L46",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L76",
       "_origin": "ast",
-      "id": "sistema_claude_conhecimentos",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "community": 1,
       "norm_label": "conhecimentos"
     },
     {
       "label": "1. Comunica\u00e7\u00e3o em Equipes de Trabalho",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L48",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L78",
       "_origin": "ast",
-      "id": "sistema_claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
+      "community": 1,
       "norm_label": "1. comunicacao em equipes de trabalho"
     },
     {
       "label": "2. Seguran\u00e7a da Informa\u00e7\u00e3o",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L53",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L83",
       "_origin": "ast",
-      "id": "sistema_claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
+      "community": 1,
       "norm_label": "2. seguranca da informacao"
     },
     {
       "label": "3. Internet (World Wide Web)",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L62",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L92",
       "_origin": "ast",
-      "id": "sistema_claude_3_internet_world_wide_web",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_3_internet_world_wide_web",
+      "community": 1,
       "norm_label": "3. internet (world wide web)"
     },
     {
       "label": "4. Software de Escrit\u00f3rio",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L71",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L101",
       "_origin": "ast",
-      "id": "sistema_claude_4_software_de_escrit\u00f3rio",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_software_de_escrit\u00f3rio",
+      "community": 1,
       "norm_label": "4. software de escritorio"
     },
     {
       "label": "4.1. Editor de Textos",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L73",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L103",
       "_origin": "ast",
-      "id": "sistema_claude_4_1_editor_de_textos",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_1_editor_de_textos",
+      "community": 1,
       "norm_label": "4.1. editor de textos"
     },
     {
       "label": "4.2. Editor de Planilhas Eletr\u00f4nicas",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L89",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L119",
       "_origin": "ast",
-      "id": "sistema_claude_4_2_editor_de_planilhas_eletr\u00f4nicas",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_2_editor_de_planilhas_eletr\u00f4nicas",
+      "community": 1,
       "norm_label": "4.2. editor de planilhas eletronicas"
     },
     {
       "label": "4.3. Editor de Apresenta\u00e7\u00f5es",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L99",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L129",
       "_origin": "ast",
-      "id": "sistema_claude_4_3_editor_de_apresenta\u00e7\u00f5es",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_3_editor_de_apresenta\u00e7\u00f5es",
+      "community": 1,
       "norm_label": "4.3. editor de apresentacoes"
     },
     {
       "label": "5. Inform\u00e1tica",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L111",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L141",
       "_origin": "ast",
-      "id": "sistema_claude_5_inform\u00e1tica",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_inform\u00e1tica",
+      "community": 1,
       "norm_label": "5. informatica"
     },
     {
       "label": "5.1. Fundamentos de Hardware",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L113",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L143",
       "_origin": "ast",
-      "id": "sistema_claude_5_1_fundamentos_de_hardware",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_1_fundamentos_de_hardware",
+      "community": 1,
       "norm_label": "5.1. fundamentos de hardware"
     },
     {
       "label": "5.2. Sistema Operacional",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L117",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L147",
       "_origin": "ast",
-      "id": "sistema_claude_5_2_sistema_operacional",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_2_sistema_operacional",
+      "community": 1,
       "norm_label": "5.2. sistema operacional"
     },
     {
       "label": "6. Textos T\u00e9cnicos",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L127",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L157",
       "_origin": "ast",
-      "id": "sistema_claude_6_textos_t\u00e9cnicos",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_6_textos_t\u00e9cnicos",
+      "community": 1,
       "norm_label": "6. textos tecnicos"
     },
     {
       "label": "7. Comunica\u00e7\u00e3o",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L133",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L163",
       "_origin": "ast",
-      "id": "sistema_claude_7_comunica\u00e7\u00e3o",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_7_comunica\u00e7\u00e3o",
+      "community": 1,
       "norm_label": "7. comunicacao"
     },
     {
       "label": "8. N\u00edveis de Fala",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L140",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L170",
       "_origin": "ast",
-      "id": "sistema_claude_8_n\u00edveis_de_fala",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_8_n\u00edveis_de_fala",
+      "community": 1,
       "norm_label": "8. niveis de fala"
     },
     {
       "label": "9. Elementos da Comunica\u00e7\u00e3o",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L146",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L176",
       "_origin": "ast",
-      "id": "sistema_claude_9_elementos_da_comunica\u00e7\u00e3o",
-      "community": 0,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_9_elementos_da_comunica\u00e7\u00e3o",
+      "community": 1,
       "norm_label": "9. elementos da comunicacao"
     },
     {
       "label": "Eixo Estruturante BNCC / Compet\u00eancia Integradora",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L157",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L187",
       "_origin": "ast",
-      "id": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_eixo_estruturante_bncc_compet\u00eancia_integradora",
+      "community": 0,
       "norm_label": "eixo estruturante bncc / competencia integradora"
     },
     {
       "label": "Capacidades Socioemocionais",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L166",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L196",
       "_origin": "ast",
-      "id": "sistema_claude_capacidades_socioemocionais",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_socioemocionais",
+      "community": 0,
       "norm_label": "capacidades socioemocionais"
     },
     {
       "label": "Ambientes Pedag\u00f3gicos e Recursos",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L175",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L205",
       "_origin": "ast",
-      "id": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_ambientes_pedag\u00f3gicos_e_recursos",
+      "community": 0,
       "norm_label": "ambientes pedagogicos e recursos"
     },
     {
       "label": "Ferramentas de Ensino",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L185",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L215",
       "_origin": "ast",
-      "id": "sistema_claude_ferramentas_de_ensino",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_ferramentas_de_ensino",
+      "community": 0,
       "norm_label": "ferramentas de ensino"
     },
     {
       "label": "Unidade Curricular 2: Sa\u00fade e Seguran\u00e7a no Trabalho",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L202",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L232",
       "_origin": "ast",
-      "id": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "community": 3,
       "norm_label": "unidade curricular 2: saude e seguranca no trabalho"
     },
     {
       "label": "Capacidades B\u00e1sicas",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L210",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L240",
       "_origin": "ast",
-      "id": "sistema_claude_capacidades_b\u00e1sicas_210",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_b\u00e1sicas_240",
+      "community": 3,
       "norm_label": "capacidades basicas"
     },
     {
       "label": "Conhecimentos",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L220",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L250",
       "_origin": "ast",
-      "id": "sistema_claude_conhecimentos_220",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos_250",
+      "community": 3,
       "norm_label": "conhecimentos"
     },
     {
       "label": "1. O Impacto da Falta de \u00c9tica nos Ambientes de Trabalho",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L222",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L252",
       "_origin": "ast",
-      "id": "sistema_claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho",
+      "community": 3,
       "norm_label": "1. o impacto da falta de etica nos ambientes de trabalho"
     },
     {
       "label": "2. C\u00f3digo de \u00c9tica Profissional",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L224",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L254",
       "_origin": "ast",
-      "id": "sistema_claude_2_c\u00f3digo_de_\u00e9tica_profissional",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_2_c\u00f3digo_de_\u00e9tica_profissional",
+      "community": 3,
       "norm_label": "2. codigo de etica profissional"
     },
     {
       "label": "3. Acidentes do Trabalho e Doen\u00e7as Ocupacionais",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L226",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L256",
       "_origin": "ast",
-      "id": "sistema_claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais",
+      "community": 3,
       "norm_label": "3. acidentes do trabalho e doencas ocupacionais"
     },
     {
       "label": "4. Medidas de Controle",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L236",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L266",
       "_origin": "ast",
-      "id": "sistema_claude_4_medidas_de_controle",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_medidas_de_controle",
+      "community": 3,
       "norm_label": "4. medidas de controle"
     },
     {
       "label": "5. Riscos Ocupacionais",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L239",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L269",
       "_origin": "ast",
-      "id": "sistema_claude_5_riscos_ocupacionais",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_riscos_ocupacionais",
+      "community": 3,
       "norm_label": "5. riscos ocupacionais"
     },
     {
       "label": "6. Seguran\u00e7a do Trabalho",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L244",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L274",
       "_origin": "ast",
-      "id": "sistema_claude_6_seguran\u00e7a_do_trabalho",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_6_seguran\u00e7a_do_trabalho",
+      "community": 3,
       "norm_label": "6. seguranca do trabalho"
     },
     {
       "label": "Eixo Estruturante BNCC / Compet\u00eancia Integradora",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L257",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L287",
       "_origin": "ast",
-      "id": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora_257",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_eixo_estruturante_bncc_compet\u00eancia_integradora_287",
+      "community": 3,
       "norm_label": "eixo estruturante bncc / competencia integradora"
     },
     {
       "label": "Capacidades Socioemocionais",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L266",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L296",
       "_origin": "ast",
-      "id": "sistema_claude_capacidades_socioemocionais_266",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_socioemocionais_296",
+      "community": 3,
       "norm_label": "capacidades socioemocionais"
     },
     {
       "label": "Ambientes Pedag\u00f3gicos e Recursos",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L272",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L302",
       "_origin": "ast",
-      "id": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos_272",
-      "community": 1,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_ambientes_pedag\u00f3gicos_e_recursos_302",
+      "community": 3,
       "norm_label": "ambientes pedagogicos e recursos"
     },
     {
       "label": "Regras de Trabalho \u2014 Claude",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L285",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L315",
       "_origin": "ast",
-      "id": "sistema_claude_regras_de_trabalho_claude",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_regras_de_trabalho_claude",
+      "community": 0,
       "norm_label": "regras de trabalho \u2014 claude"
     },
     {
       "label": "\u2705 Commit e Push obrigat\u00f3rios",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L287",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L317",
       "_origin": "ast",
-      "id": "sistema_claude_commit_e_push_obrigat\u00f3rios",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios",
+      "community": 0,
       "norm_label": "\u2705 commit e push obrigatorios"
     },
     {
       "label": "\u2705 Slides devem ter no m\u00ednimo 15 slides",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L296",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L326",
       "_origin": "ast",
-      "id": "sistema_claude_slides_devem_ter_no_m\u00ednimo_15_slides",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_slides_devem_ter_no_m\u00ednimo_15_slides",
+      "community": 0,
       "norm_label": "\u2705 slides devem ter no minimo 15 slides"
     },
     {
       "label": "Configura\u00e7\u00e3o Supabase",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L306",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L336",
       "_origin": "ast",
-      "id": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase",
+      "community": 0,
       "norm_label": "configuracao supabase"
     },
     {
       "label": "Tabela `curso`",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L314",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L344",
       "_origin": "ast",
-      "id": "sistema_claude_tabela_curso",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_tabela_curso",
+      "community": 0,
       "norm_label": "tabela `curso`"
     },
     {
       "label": "Estrutura `gabaritos` (coluna JSONB da tabela `curso`)",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L331",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L362",
       "_origin": "ast",
-      "id": "sistema_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
+      "community": 0,
       "norm_label": "estrutura `gabaritos` (coluna jsonb da tabela `curso`)"
     },
     {
       "label": "Fun\u00e7\u00f5es RPC dispon\u00edveis",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L346",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L377",
       "_origin": "ast",
-      "id": "sistema_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
+      "community": 0,
       "norm_label": "funcoes rpc disponiveis"
     },
     {
       "label": "Controle de perfil (frontend)",
       "file_type": "document",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L353",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L385",
       "_origin": "ast",
-      "id": "sistema_claude_controle_de_perfil_frontend",
-      "community": 3,
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_controle_de_perfil_frontend",
+      "community": 0,
       "norm_label": "controle de perfil (frontend)"
     },
     {
@@ -2440,7 +2790,7 @@
       "source_location": "L210",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o",
-      "community": 16,
+      "community": 22,
       "norm_label": "criterios de avaliacao"
     },
     {
@@ -2450,7 +2800,7 @@
       "source_location": "L212",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c1_comunica\u00e7\u00e3o_oral_e_escrita_profissional",
-      "community": 16,
+      "community": 22,
       "norm_label": "para a capacidade c1 \u2014 comunicacao oral e escrita profissional"
     },
     {
@@ -2460,7 +2810,7 @@
       "source_location": "L218",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c3_interpreta\u00e7\u00e3o_de_textos_t\u00e9cnicos",
-      "community": 16,
+      "community": 22,
       "norm_label": "para a capacidade c3 \u2014 interpretacao de textos tecnicos"
     },
     {
@@ -2470,7 +2820,7 @@
       "source_location": "L224",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c4_hardware_e_software",
-      "community": 16,
+      "community": 22,
       "norm_label": "para a capacidade c4 \u2014 hardware e software"
     },
     {
@@ -2480,7 +2830,7 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c5_recursos_web",
-      "community": 16,
+      "community": 22,
       "norm_label": "para a capacidade c5 \u2014 recursos web"
     },
     {
@@ -2490,7 +2840,7 @@
       "source_location": "L236",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c1_comunica\u00e7\u00e3o_escrita_t\u00e9cnica_entrega_4",
-      "community": 16,
+      "community": 22,
       "norm_label": "para a capacidade c1 \u2014 comunicacao escrita tecnica (entrega 4)"
     },
     {
@@ -2500,7 +2850,7 @@
       "source_location": "L242",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c3_textos_t\u00e9cnicos_e_normas_entrega_4",
-      "community": 16,
+      "community": 22,
       "norm_label": "para a capacidade c3 \u2014 textos tecnicos e normas (entrega 4)"
     },
     {
@@ -2525,6 +2875,141 @@
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L379",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_applylanguage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L426",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_applytheme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L497",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_createparticle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L445",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_gettypingphrases"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L534",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_onscroll"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L483",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_restarttyping"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L374",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_t"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L457",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_typeloop"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L385",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main_applylanguage",
+      "target": "js_main_t"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L446",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main_gettypingphrases",
+      "target": "js_main_t"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L410",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main_applylanguage",
+      "target": "js_main_restarttyping"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L458",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main_typeloop",
+      "target": "js_main_gettypingphrases"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
+      "source_location": "L490",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main_restarttyping",
+      "target": "js_main_typeloop"
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -2583,9 +3068,9 @@
       "source_file": "converter_slides_pdf.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converter_slides_pdf_rationale_70",
-      "target": "converter_slides_pdf_preparar_html",
-      "confidence_score": 1.0
+      "target": "converter_slides_pdf_preparar_html"
     },
     {
       "relation": "references",
@@ -3188,6 +3673,196 @@
       "confidence_score": 1.0,
       "source": "claude_professor_senai_regras_do_projeto",
       "target": "claude_slides"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude",
+      "target": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
+      "target": "estilo_tema_exemplo_claude_autonomia_total_nunca_pe\u00e7a_permiss\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
+      "target": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
+      "target": "estilo_tema_exemplo_claude_git_commit_e_push_autom\u00e1tico"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
+      "target": "estilo_tema_exemplo_claude_idioma"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
+      "target": "estilo_tema_exemplo_claude_idioma_inicial_do_site"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
+      "target": "estilo_tema_exemplo_claude_llms_txt_atualiza\u00e7\u00e3o_obrigat\u00f3ria"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
+      "target": "estilo_tema_exemplo_claude_registro_de_altera\u00e7\u00f5es_alteracoes_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L184",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_efeitos_visuais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_estrutura_de_arquivos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L205",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_favicon"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_hero_cards_grid_2_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_painel_de_altera\u00e7\u00f5es_alteracoes_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_se\u00e7\u00f5es_do_site_index_html"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_sistema_de_i18n_internacionaliza\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L175",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_tema_dark_light"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_timeline_de_experi\u00eancia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
+      "target": "estilo_tema_exemplo_claude_vis\u00e3o_geral"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "estilo_tema_exemplo_readme",
+      "target": "estilo_tema_exemplo_readme_gelvazio_github_io"
     },
     {
       "relation": "contains",
@@ -3912,442 +4587,472 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_duplas_aula_12_08_2026_26445d56",
+      "target": "converted_duplas_aula_12_08_2026_26445d56_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude",
-      "target": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_senai_projeto_de_curso_aprendizagem_industrial"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L306",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_configura\u00e7\u00e3o_supabase"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L285",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_regras_de_trabalho_claude"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_regras_de_trabalho_claude"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L202",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L175",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_ambientes_pedag\u00f3gicos_e_recursos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L36",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_capacidades_b\u00e1sicas"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_b\u00e1sicas"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L166",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_capacidades_socioemocionais"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_socioemocionais"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_carga_hor\u00e1ria"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_carga_hor\u00e1ria"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L46",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_conhecimentos"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L157",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_eixo_estruturante_bncc_compet\u00eancia_integradora"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L185",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "sistema_claude_ferramentas_de_ensino"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_ferramentas_de_ensino"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_tempo_real_de_instru\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_turma"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L48",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L53",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L62",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_3_internet_world_wide_web"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_3_internet_world_wide_web"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L71",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_4_software_de_escrit\u00f3rio"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_software_de_escrit\u00f3rio"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L111",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_5_inform\u00e1tica"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_inform\u00e1tica"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L127",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_6_textos_t\u00e9cnicos"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_6_textos_t\u00e9cnicos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L133",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_7_comunica\u00e7\u00e3o"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_7_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L140",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_8_n\u00edveis_de_fala"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_8_n\u00edveis_de_fala"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L146",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos",
-      "target": "sistema_claude_9_elementos_da_comunica\u00e7\u00e3o"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_9_elementos_da_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L73",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_4_software_de_escrit\u00f3rio",
-      "target": "sistema_claude_4_1_editor_de_textos"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_software_de_escrit\u00f3rio",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_1_editor_de_textos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L89",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_4_software_de_escrit\u00f3rio",
-      "target": "sistema_claude_4_2_editor_de_planilhas_eletr\u00f4nicas"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_software_de_escrit\u00f3rio",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_2_editor_de_planilhas_eletr\u00f4nicas"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L99",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_4_software_de_escrit\u00f3rio",
-      "target": "sistema_claude_4_3_editor_de_apresenta\u00e7\u00f5es"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_software_de_escrit\u00f3rio",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_3_editor_de_apresenta\u00e7\u00f5es"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L113",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_5_inform\u00e1tica",
-      "target": "sistema_claude_5_1_fundamentos_de_hardware"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_inform\u00e1tica",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_1_fundamentos_de_hardware"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L117",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_5_inform\u00e1tica",
-      "target": "sistema_claude_5_2_sistema_operacional"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_inform\u00e1tica",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_2_sistema_operacional"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L272",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L302",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_ambientes_pedag\u00f3gicos_e_recursos_272"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_ambientes_pedag\u00f3gicos_e_recursos_302"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L210",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L240",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_capacidades_b\u00e1sicas_210"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_b\u00e1sicas_240"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L266",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_capacidades_socioemocionais_266"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L220",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_conhecimentos_220"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L257",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "sistema_claude_eixo_estruturante_bncc_compet\u00eancia_integradora_257"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L222",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L224",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_2_c\u00f3digo_de_\u00e9tica_profissional"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L226",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L236",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_4_medidas_de_controle"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L239",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_5_riscos_ocupacionais"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L244",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_conhecimentos_220",
-      "target": "sistema_claude_6_seguran\u00e7a_do_trabalho"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L287",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sistema_claude_regras_de_trabalho_claude",
-      "target": "sistema_claude_commit_e_push_obrigat\u00f3rios"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L296",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_regras_de_trabalho_claude",
-      "target": "sistema_claude_slides_devem_ter_no_m\u00ednimo_15_slides"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_socioemocionais_296"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L354",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L250",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "target": "sistema_claude_controle_de_perfil_frontend"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos_250"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L332",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L287",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "target": "sistema_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_eixo_estruturante_bncc_compet\u00eancia_integradora_287"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
-      "source_location": "L347",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L252",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "target": "sistema_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos_250",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "sistema/CLAUDE.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L254",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos_250",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_2_c\u00f3digo_de_\u00e9tica_profissional"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L256",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos_250",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos_250",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_4_medidas_de_controle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L269",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos_250",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_5_riscos_ocupacionais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L274",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_conhecimentos_250",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_6_seguran\u00e7a_do_trabalho"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L287",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_regras_de_trabalho_claude",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L296",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_regras_de_trabalho_claude",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_slides_devem_ter_no_m\u00ednimo_15_slides"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L353",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_controle_de_perfil_frontend"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L331",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
+      "source_location": "L346",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L314",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "sistema_claude_configura\u00e7\u00e3o_supabase",
-      "target": "sistema_claude_tabela_curso"
+      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase",
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_tabela_curso"
     },
     {
       "relation": "contains",
@@ -4941,5 +5646,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "10e391d396eedcf93e8abb63463c1fc9b7be5526"
+  "built_at_commit": "058b387cc0457e64beffebcc80a8c4f3d62e3c93"
 }

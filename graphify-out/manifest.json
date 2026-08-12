@@ -1,17 +1,12 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786302201.0785518,
-    "ast_hash": "ff37eb4bb30da94bffeb7393d18d39d2",
+    "mtime": 1786406475.9059455,
+    "ast_hash": "1495a23f41eb32bac10d77768bc5d39f",
     "semantic_hash": ""
   },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
     "mtime": 1786015580.6497562,
     "ast_hash": "d1376ea95efa56aafc4bdab315a0c3f9",
-    "semantic_hash": ""
-  },
-  "sistema/CLAUDE.md": {
-    "mtime": 1786068075.8333144,
-    "ast_hash": "821a4b174c47d5abecd80c849d3fec3b",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/Chamada.txt": {
@@ -185,8 +180,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786223920.1001692,
-    "ast_hash": "1fe875bec529459998d7c2d856ad8ce1",
+    "mtime": 1786560401.8479111,
+    "ast_hash": "5c70e5b18c86065f7890a03fbfa840fe",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -290,12 +285,12 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-05-07-08-2026/SLIDE_AULA_05.html": {
-    "mtime": 1786066149.248816,
-    "ast_hash": "2d73b6374041775eeae7fe06edadd24d",
+    "mtime": 1786559891.1245346,
+    "ast_hash": "5828e08b06aaeb6af66c67b44d521a7b",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-06-10-08-2026/SLIDE_AULA_06.html": {
-    "mtime": 1786224509.9818103,
+    "mtime": 1786559100.118016,
     "ast_hash": "82c3441eb2125e9bb0c8781623a770d4",
     "semantic_hash": ""
   },
@@ -429,11 +424,6 @@
     "ast_hash": "0ab3b3ad5c28b5031d17c99ec0a5f9a6",
     "semantic_hash": ""
   },
-  "cantina-senai/Passo a Passo - Santander - Valida Pix.pdf": {
-    "mtime": 1786145379.6315074,
-    "ast_hash": "a9c116536c3af28e76878432eedee7e4",
-    "semantic_hash": ""
-  },
   "ORGANOGRAMA_SENAI.png": {
     "mtime": 1786144274.689695,
     "ast_hash": "2c82867ea1b279b23e274d41886db687",
@@ -510,8 +500,8 @@
     "semantic_hash": ""
   },
   "reunioes/reuniao_vitor.txt": {
-    "mtime": 1786288317.972864,
-    "ast_hash": "94be745b6027527d0fe1c17684252192",
+    "mtime": 1786543964.9864,
+    "ast_hash": "23b69d39825f79cc2ad12773feb0733d",
     "semantic_hash": ""
   },
   "PERFIL_GELVAZIO_CAMARGO.png": {
@@ -677,6 +667,126 @@
   "sistema/APRESENTA\u00c7\u00c3O-PROFESSOR-GELVAZIO-CAMARGO.pdf": {
     "mtime": 1786315253.0372496,
     "ast_hash": "fe61c829ba4643e36e5e6cc684019400",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md": {
+    "mtime": 1786559910.1572864,
+    "ast_hash": "c87f5ea449082db117a0cf4b41f377a0",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/PLANO-DE-ENSINO.txt": {
+    "mtime": 1786317782.0517519,
+    "ast_hash": "47f0a4240c34ab8de5f95c621dfd3789",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/.claude/settings.local.json": {
+    "mtime": 1786318620.973553,
+    "ast_hash": "a9d66e0c1901b49be0f3f0b6b21cb0c7",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/alteracoes.js": {
+    "mtime": 1786318599.42311,
+    "ast_hash": "42eff7baef690e487786dedb337a3cf6",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js": {
+    "mtime": 1786317058.67652,
+    "ast_hash": "99fd7d377140e4d7bec087cdf9ba3cdc",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/languages.json": {
+    "mtime": 1786317075.007111,
+    "ast_hash": "b5880dd5210af2060e8ee48ccba5cd97",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md": {
+    "mtime": 1786318586.196144,
+    "ast_hash": "3b5277f251417d397766f0a524bfa146",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/README.md": {
+    "mtime": 1786316017.5645447,
+    "ast_hash": "185d0ca7444028aee288dc0558087851",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/index.html": {
+    "mtime": 1786318561.943367,
+    "ast_hash": "bd7b42335d4245726b4a4eb5b08fcb82",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/llms.txt": {
+    "mtime": 1786318359.7059557,
+    "ast_hash": "275a3fe11fe1508524989310b465ef01",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/index.html": {
+    "mtime": 1786406796.0443017,
+    "ast_hash": "447ce504ac369c0cc6bf4a75635b8d21",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/CURRICULO_GELVAZIO_CAMARGO_V2.pdf": {
+    "mtime": 1786316017.5635693,
+    "ast_hash": "6abf0fc1310d44d0af07d3db4eba880d",
+    "semantic_hash": ""
+  },
+  "CURSO-ARDUINO/estilo-tema-exemplo/favicon.svg": {
+    "mtime": 1786317880.1890528,
+    "ast_hash": "9c1510735171de54e6884813f36fda88",
+    "semantic_hash": ""
+  },
+  "atividade_digitacao_aula05.html": {
+    "mtime": 1786558540.5641842,
+    "ast_hash": "02d27ef41597be63bd0c9a9ac330c62b",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md": {
+    "mtime": 1786559351.275068,
+    "ast_hash": "3d29f48ae94b355d3c911430789cc349",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ACESSOS-ALUNOS-PRESIDENTE-GETULIO-2026-02.txt": {
+    "mtime": 1786555003.1027098,
+    "ast_hash": "86642705531e83e5bdb4344c52b88eb9",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/ATIVIDADE_DIGITACAO_12-08-2026.txt": {
+    "mtime": 1786559129.5230236,
+    "ast_hash": "1b7fccafde8b0898202eeeac7272b1a5",
+    "semantic_hash": ""
+  },
+  "sistema/LISTA-AULAS-PLANEJAMENTO.txt": {
+    "mtime": 1786481789.6191473,
+    "ast_hash": "0f610f38e1521bf9503e6866823e8ce8",
+    "semantic_hash": ""
+  },
+  "boletos/GelvazioCamargo.pdf": {
+    "mtime": 1786457122.0876257,
+    "ast_hash": "a308f14d27394d2103cb87e87c3d3cd6",
+    "semantic_hash": ""
+  },
+  "boletos/GelvazioCamargo_08_2026.pdf": {
+    "mtime": 1786537245.7831037,
+    "ast_hash": "b461fa26f57e48ea8781efd2eb72738f",
+    "semantic_hash": ""
+  },
+  "boletos/COMPROVANTE-BOLETO-UNIMED.jpeg": {
+    "mtime": 1786457311.8157003,
+    "ast_hash": "2e64869d5927d3cedef4bd31146eab5b",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/ATIVIDADE-DIGITACAO-12-08-2026.txt": {
+    "mtime": 1786559370.257911,
+    "ast_hash": "cf950160a6c1fb794908ab566045eeb2",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ANOTACOES-PEDAGOGICAS.txt": {
+    "mtime": 1786560048.1234307,
+    "ast_hash": "d576a25c8753182c5d0d9313980948a3",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/acessos-turma-estudante-impressao.pdf": {
+    "mtime": 1786560267.938773,
+    "ast_hash": "7a56bfbd4746ec59d3bd24dd330e937f",
     "semantic_hash": ""
   }
 }
