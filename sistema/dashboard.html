@@ -2584,7 +2584,7 @@
                 const bloqueado = !isProfessor && (a.visivel !== 1 || m.visivel === 0);
                 const btnAcessar = bloqueado
                   ? `<button class="btn-mat-acessar btn-mat-bloqueado" onclick="conteudoBloqueado()">🔒 Acessar</button>`
-                  : m.tipo === "membros"
+                  : (m.tipo === "membros" || m.tipo === "modal")
                     ? `<button class="btn-mat-acessar" onclick="abrirModalIframe('${m.arquivo}','${m.nome}')">Acessar</button>`
                     : temLink
                       ? (m.arquivo && m.arquivo.includes("ATIVIDADE_EQUIPE_06_08_2026"))
