@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SENAI — Unidades Curriculares</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: "Google Sans", Roboto, Arial, sans-serif; background: #e8eaed; min-height: 100vh; }
+
+      /* ── Header ── */
+      .header {
+        background: #004384; color: #fff; padding: 0 24px;
+        display: flex; align-items: center; gap: 16px; height: 56px;
+      }
+      .header-logo {
+        font-weight: 700; font-size: 15px; letter-spacing: 0.5px;
+        background: rgba(255,255,255,0.15); padding: 4px 12px;
+        border-radius: 4px; white-space: nowrap; text-decoration: none; color: #fff;
+      }
+      .header-title { font-size: 14px; opacity: 0.9; white-space: nowrap; }
+      .header-spacer { flex: 1; }
+      .header-btn {
+        display: flex; align-items: center; gap: 6px;
+        background: rgba(255,255,255,0.15); border: none; color: #fff;
+        font-size: 13px; font-weight: 500; padding: 6px 14px; border-radius: 20px;
+        cursor: pointer; text-decoration: none; transition: background 0.15s;
+        white-space: nowrap; font-family: inherit;
+      }
+      .header-btn:hover { background: rgba(255,255,255,0.28); }
+
+      /* ── Hero ── */
+      .hero {
+        background: linear-gradient(135deg, #003068 0%, #004384 60%, #0055b3 100%);
+        padding: 32px 24px 28px; text-align: center; color: #fff;
+        border-bottom: 3px solid #f7941d;
+      }
+      .hero-badge {
+        display: inline-block; background: rgba(247,148,29,0.2);
+        border: 1px solid rgba(247,148,29,0.5); color: #f7941d;
+        font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+        text-transform: uppercase; padding: 4px 14px; border-radius: 20px; margin-bottom: 12px;
+      }
+      .hero h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+      .hero p { font-size: 13px; opacity: 0.8; }
+
+      /* ── Conteúdo ── */
+      .container { max-width: 960px; margin: 0 auto; padding: 28px 24px; }
+      .section-label {
+        font-size: 11px; font-weight: 600; color: #666;
+        letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px;
+      }
+
+      /* ── Cards de UC ── */
+      .uc-grid { display: flex; flex-direction: column; gap: 16px; }
+      .uc-card {
+        background: #fff; border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden;
+      }
+      .uc-card-header {
+        display: flex; align-items: center; gap: 16px;
+        padding: 18px 24px; cursor: pointer; user-select: none;
+        transition: background 0.15s;
+      }
+      .uc-card-header:hover { background: #f5f8ff; }
+      .uc-card-header.ativa { background: #004384; color: #fff; }
+      .uc-icon {
+        width: 48px; height: 48px; border-radius: 10px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 22px; flex-shrink: 0; background: #e8f0fe;
+      }
+      .uc-card-header.ativa .uc-icon { background: rgba(255,255,255,0.2); }
+      .uc-info { flex: 1; min-width: 0; }
+      .uc-num {
+        font-size: 10px; font-weight: 700; text-transform: uppercase;
+        letter-spacing: 1px; color: #888; margin-bottom: 3px;
+      }
+      .uc-card-header.ativa .uc-num { color: rgba(255,255,255,0.7); }
+      .uc-nome { font-size: 15px; font-weight: 700; color: #202124; }
+      .uc-card-header.ativa .uc-nome { color: #fff; }
+      .uc-ch {
+        font-size: 12px; color: #888; margin-top: 4px;
+      }
+      .uc-card-header.ativa .uc-ch { color: rgba(255,255,255,0.7); }
+      .uc-chevron {
+        font-size: 14px; color: #888; transition: transform 0.3s;
+        flex-shrink: 0;
+      }
+      .uc-card-header.ativa .uc-chevron { color: #fff; transform: rotate(180deg); }
+
+      /* ── Accordion body ── */
+      .uc-body {
+        display: grid; grid-template-rows: 0fr;
+        transition: grid-template-rows 0.4s cubic-bezier(0.4,0,0.2,1);
+      }
+      .uc-body.open { grid-template-rows: 1fr; }
+      .uc-body-inner { overflow: hidden; min-height: 0; }
+      .uc-body-content { padding: 20px 24px 24px; border-top: 1px solid #e8eaed; }
+
+      .uc-detail-grid {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;
+      }
+      @media (max-width: 600px) { .uc-detail-grid { grid-template-columns: 1fr; } }
+      .uc-detail-box {
+        background: #f8f9fa; border-radius: 8px; padding: 12px 16px;
+      }
+      .uc-detail-label {
+        font-size: 10px; font-weight: 700; text-transform: uppercase;
+        letter-spacing: 0.5px; color: #888; margin-bottom: 4px;
+      }
+      .uc-detail-value { font-size: 15px; font-weight: 700; color: #004384; }
+
+      .uc-objetivo {
+        background: #e8f0fe; border-left: 4px solid #004384;
+        border-radius: 0 8px 8px 0; padding: 12px 16px; margin-bottom: 16px;
+      }
+      .uc-objetivo-label {
+        font-size: 10px; font-weight: 700; text-transform: uppercase;
+        letter-spacing: 0.5px; color: #004384; margin-bottom: 6px;
+      }
+      .uc-objetivo p { font-size: 13px; color: #333; line-height: 1.7; }
+
+      .uc-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      @media (max-width: 640px) { .uc-cols { grid-template-columns: 1fr; } }
+      .uc-bloco { }
+      .uc-bloco-titulo {
+        font-size: 11px; font-weight: 700; text-transform: uppercase;
+        letter-spacing: 0.5px; color: #004384; margin-bottom: 10px;
+        padding-bottom: 6px; border-bottom: 2px solid #e8eaed;
+      }
+      .uc-lista { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+      .uc-lista li {
+        display: flex; align-items: flex-start; gap: 8px;
+        font-size: 13px; color: #444; line-height: 1.5;
+      }
+      .uc-lista li::before {
+        content: "▸"; color: #f7941d; font-size: 11px;
+        flex-shrink: 0; margin-top: 2px;
+      }
+
+      /* ── Tema Escuro ── */
+      [data-theme="dark"] body { background: #0e1117; color: #e0e3e8; }
+      [data-theme="dark"] .uc-card { background: #1c1e26; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+      [data-theme="dark"] .uc-card-header:hover:not(.ativa) { background: #1e2554; }
+      [data-theme="dark"] .uc-num { color: #6b7280; }
+      [data-theme="dark"] .uc-nome { color: #e0e3e8; }
+      [data-theme="dark"] .uc-ch { color: #6b7280; }
+      [data-theme="dark"] .uc-chevron { color: #6b7280; }
+      [data-theme="dark"] .uc-icon { background: #1e2a40; }
+      [data-theme="dark"] .uc-body-content { border-top-color: #2c2e38; }
+      [data-theme="dark"] .uc-detail-box { background: #141620; }
+      [data-theme="dark"] .uc-detail-label { color: #6b7280; }
+      [data-theme="dark"] .uc-detail-value { color: #7aa3d4; }
+      [data-theme="dark"] .uc-objetivo { background: #1a2540; border-left-color: #7aa3d4; }
+      [data-theme="dark"] .uc-objetivo-label { color: #7aa3d4; }
+      [data-theme="dark"] .uc-objetivo p { color: #c8cdd8; }
+      [data-theme="dark"] .uc-bloco-titulo { color: #7aa3d4; border-bottom-color: #2c2e38; }
+      [data-theme="dark"] .uc-lista li { color: #c0c6d0; }
+      [data-theme="dark"] .section-label { color: #8b919e; }
+    </style>
+  </head>
+  <body>
+    <script>
+      (function () {
+        if (localStorage.getItem("senai_role") !== "PROFESSOR")
+          window.location.replace("dashboard.html");
+        const t = localStorage.getItem("senai_tema") || "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
+
+    <div class="header">
+      <a class="header-logo" href="dashboard.html">SENAI</a>
+      <span class="header-title">Unidades Curriculares</span>
+      <span class="header-spacer"></span>
+      <a class="header-btn" href="dashboard.html">← Voltar ao Dashboard</a>
+    </div>
+
+    <div class="hero">
+      <div class="hero-badge">📚 Professor</div>
+      <h1>Unidades Curriculares</h1>
+      <p>Visualize objetivos, cargas horárias e conteúdos formativos de cada UC</p>
+    </div>
+
+    <div class="container">
+      <div class="section-label">Módulo Único — Rio do Sul Mais Tech · SENAI</div>
+      <div class="uc-grid" id="ucGrid">
+        <!-- UCs renderizadas via JS -->
+      </div>
+    </div>
+
+    <script>
+      const UCS = [
+        {
+          id: 1,
+          icone: "➕",
+          nome: "Reforço Matemática e Raciocínio Lógico",
+          chTotal: "63h",
+          chPresencial: "63h",
+          chEad: "—",
+          objetivo: "Fortalecer os conhecimentos matemáticos essenciais para a vida acadêmica, profissional e cotidiana, desenvolvendo o raciocínio lógico, a capacidade de resolução de problemas e a autonomia no uso de conceitos matemáticos.",
+          capacidades: [
+            "Organizar informações numéricas e simbólicas de forma clara e lógica.",
+            "Desenvolver autonomia de estudo, utilizando estratégias para resolver problemas matemáticos.",
+            "Aplicar pensamento crítico e lógico, analisando situações e identificando soluções possíveis.",
+            "Trabalhar em grupo, colaborando na resolução de exercícios e desafios matemáticos.",
+            "Comunicar raciocínios e resultados, justificando procedimentos e soluções encontradas.",
+            "Persistir na resolução de problemas, desenvolvendo resiliência diante de desafios matemáticos.",
+          ],
+          conhecimentos: [
+            "Operações Básicas e Cálculo Numérico",
+            "Frações, Decimais e Porcentagem",
+            "Proporcionalidade",
+            "Medidas e Grandezas",
+            "Raciocínio Lógico e Resolução de Problemas",
+            "Introdução à Álgebra",
+            "Tratamento da Informação",
+          ],
+        },
+      ];
+
+      function renderUCs() {
+        const grid = document.getElementById("ucGrid");
+        grid.innerHTML = UCS.map((uc, i) => `
+          <div class="uc-card">
+            <div class="uc-card-header" id="hdr-${i}" onclick="toggleUC(${i})">
+              <div class="uc-icon">${uc.icone}</div>
+              <div class="uc-info">
+                <div class="uc-num">Unidade Curricular ${uc.id}</div>
+                <div class="uc-nome">${uc.nome}</div>
+                <div class="uc-ch">⏱ CH Total: ${uc.chTotal} &nbsp;|&nbsp; Presencial: ${uc.chPresencial} &nbsp;|&nbsp; EaD: ${uc.chEad}</div>
+              </div>
+              <span class="uc-chevron">▼</span>
+            </div>
+            <div class="uc-body" id="body-${i}">
+              <div class="uc-body-inner">
+                <div class="uc-body-content">
+                  <div class="uc-detail-grid">
+                    <div class="uc-detail-box">
+                      <div class="uc-detail-label">CH Total</div>
+                      <div class="uc-detail-value">${uc.chTotal}</div>
+                    </div>
+                    <div class="uc-detail-box">
+                      <div class="uc-detail-label">CH Presencial</div>
+                      <div class="uc-detail-value">${uc.chPresencial}</div>
+                    </div>
+                    <div class="uc-detail-box">
+                      <div class="uc-detail-label">CH EaD</div>
+                      <div class="uc-detail-value">${uc.chEad}</div>
+                    </div>
+                  </div>
+                  <div class="uc-objetivo">
+                    <div class="uc-objetivo-label">Objetivo</div>
+                    <p>${uc.objetivo}</p>
+                  </div>
+                  <div class="uc-cols">
+                    <div class="uc-bloco">
+                      <div class="uc-bloco-titulo">Capacidades Básicas / Técnicas</div>
+                      <ul class="uc-lista">
+                        ${uc.capacidades.map(c => `<li>${c}</li>`).join("")}
+                      </ul>
+                    </div>
+                    <div class="uc-bloco">
+                      <div class="uc-bloco-titulo">Conhecimentos</div>
+                      <ul class="uc-lista">
+                        ${uc.conhecimentos.map(c => `<li>${c}</li>`).join("")}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      function toggleUC(i) {
+        const hdr  = document.getElementById(`hdr-${i}`);
+        const body = document.getElementById(`body-${i}`);
+        const isOpen = body.classList.contains("open");
+        hdr.classList.toggle("ativa", !isOpen);
+        body.classList.toggle("open", !isOpen);
+      }
+
+      renderUCs();
+    </script>
+  </body>
+</html>

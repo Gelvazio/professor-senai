@@ -1148,6 +1148,7 @@
       <span class="header-title">Painel de Cursos</span>
       <span class="header-spacer"></span>
       <span class="role-badge" id="roleBadge"></span>
+      <button id="btnUnidadesCurriculares" onclick="window.location.href='uc.html'" class="header-btn" style="display:none; margin-left:8px">📚 Unidades Curriculares</button>
       <button id="btnEmentaSlides" onclick="window.location.href='ementa-slides.html'" class="header-btn" style="display:none; margin-left:8px">📋 Ementa × Slides</button>
       <button id="btnPlanoEnsino" onclick="abrirPlanoEnsino()" class="header-btn" style="display:none; margin-left:8px">📄 Plano Ensino</button>
       <button id="btnDidatica" onclick="abrirDidatica()" class="header-btn" style="display:none; margin-left:8px">🎓 Didática</button>
@@ -1853,6 +1854,8 @@
 
       // Botões visíveis apenas para professor
       if (isProfessor) {
+        const btnUC = document.getElementById('btnUnidadesCurriculares');
+        if (btnUC) btnUC.style.display = 'inline-block';
         const btnES = document.getElementById('btnEmentaSlides');
         if (btnES) btnES.style.display = 'inline-block';
         const btnPE = document.getElementById('btnPlanoEnsino');
