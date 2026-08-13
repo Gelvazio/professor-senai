@@ -59,6 +59,28 @@ Planilha Excel de gastos domésticos criada para a aula de 13/08/2026.
 
 ---
 
+### `ATIVIDADE-EXCEL.md`
+Descrição completa da atividade prática de planilha eletrônica para os alunos.
+- **Finalidade:** roteiro detalhado da atividade em formato texto/Markdown
+- **Trabalho:** em duplas — Aluno A (Word) + Aluno B (Planilha)
+- **Contexto:** criação de planilha de controle de abate simplificada (baseada na Pamplona)
+- **Conteúdo:** divisão de tarefas, dados para digitar, fórmulas guiadas, perguntas e critérios de avaliação
+- **Duração prevista:** 1 hora
+
+### `ATIVIDADE-EXCEL.docx`
+Versão Word da atividade prática — documento entregável pelos alunos.
+- **Formato:** Word (.docx), layout profissional com identidade visual SENAI
+- **Estrutura:**
+  - Cabeçalho SENAI + título da atividade
+  - Campos para identificação da dupla (nome, turma, data)
+  - Divisão da dupla: Aluno A (Word) × Aluno B (Planilha)
+  - Parte 2 — Passo a passo para criar a planilha (7 colunas, 5 linhas de dados, fórmulas, formatação)
+  - Parte 3 — 5 perguntas com espaço de resposta (Aluno A preenche)
+  - Critérios de avaliação (10 pontos)
+- **Destinado a:** alunos de 14–17 anos com primeiro contato com computador
+
+---
+
 ## Relação com o Plano de Ensino
 
 | Conteúdo da Ementa | Arquivo |
@@ -67,3 +89,4 @@ Planilha Excel de gastos domésticos criada para a aula de 13/08/2026.
 | 4.2 — Editor de Planilhas Eletrônicas | `Controle_Abate_Pamplona.xlsx`, `Planilha-Gastos-Casa-AULA-13-08-2026.xlsx` |
 | 4.2.5 — Inserção de fórmulas básicas | `GASTOS-CASA.ini` (dados-base), planilhas |
 | 4.2.7 — Gráficos, quadros e tabelas | `Controle_Abate_Pamplona.xlsx` (Dashboard) |
+| 4.2.5 — Inserção de fórmulas básicas (prática alunos) | `ATIVIDADE-EXCEL.md`, `ATIVIDADE-EXCEL.docx` |
