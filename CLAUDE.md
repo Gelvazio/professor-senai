@@ -29,3 +29,24 @@ Se houver ambiguidade, escolha a opção mais razoável e execute. Ajustes podem
 ## Slides
 
 Todo arquivo de slide HTML deve ter **no mínimo 15 slides**.
+
+## Estrutura de Unidades Curriculares
+
+Cada subpasta dentro de `sistema/` representa uma **Unidade Curricular (UC)**. As pastas existentes são:
+
+- `BANCO_DE_DADOS`
+- `FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO`
+- `INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO`
+- `INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO`
+- `LOGICA-PROGRAMACAO`
+- `TECNICO DE INFORMATICA PARA INTERNET`
+
+### Estrutura obrigatória de cada UC
+
+Toda UC **deve conter** as subpastas:
+- `AULAS/` — aulas da unidade curricular
+- `MATERIAIS/` — materiais de apoio
+
+Se uma dessas pastas não existir ao tentar acessar a UC no sistema (`uc.html`), deve ser exibido um **alerta visual** informando quais pastas estão faltando.
+
+Ao criar ou mencionar arquivos de uma UC, use sempre o caminho `sistema/<NOME_DA_PASTA_UC>/AULAS/` ou `sistema/<NOME_DA_PASTA_UC>/MATERIAIS/`.
