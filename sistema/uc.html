@@ -45,118 +45,80 @@
       .hero h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
       .hero p { font-size: 13px; opacity: 0.8; }
 
-      /* ── Conteúdo ── */
+      /* ── Container ── */
       .container { max-width: 960px; margin: 0 auto; padding: 28px 24px; }
       .section-label {
         font-size: 11px; font-weight: 600; color: #666;
         letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px;
       }
 
-      /* ── Cards de UC ── */
-      .uc-grid { display: flex; flex-direction: column; gap: 16px; }
+      /* ── Grid de UCs ── */
+      .uc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+      @media (max-width: 640px) { .uc-grid { grid-template-columns: 1fr; } }
+
+      /* ── Card de UC ── */
       .uc-card {
-        background: #fff; border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden;
+        background: #fff; border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;
+        display: flex; flex-direction: column;
+        transition: box-shadow 0.2s, transform 0.15s;
+        cursor: pointer;
       }
-      .uc-card-header {
-        display: flex; align-items: center; gap: 16px;
-        padding: 18px 24px; cursor: pointer; user-select: none;
-        transition: background 0.15s;
+      .uc-card:hover {
+        box-shadow: 0 6px 24px rgba(0,67,132,0.18);
+        transform: translateY(-2px);
       }
-      .uc-card-header:hover { background: #f5f8ff; }
-      .uc-card-header.ativa { background: #004384; color: #fff; }
+      .uc-card-top {
+        height: 8px; width: 100%;
+      }
+      .uc-card-body { padding: 20px 22px 16px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+      .uc-header { display: flex; align-items: flex-start; gap: 14px; }
       .uc-icon {
-        width: 48px; height: 48px; border-radius: 10px;
-        display: flex; align-items: center; justify-content: center;
-        font-size: 22px; flex-shrink: 0; background: #e8f0fe;
+        width: 50px; height: 50px; border-radius: 12px; flex-shrink: 0;
+        display: flex; align-items: center; justify-content: center; font-size: 24px;
       }
-      .uc-card-header.ativa .uc-icon { background: rgba(255,255,255,0.2); }
-      .uc-info { flex: 1; min-width: 0; }
+      .uc-meta { flex: 1; min-width: 0; }
       .uc-num {
         font-size: 10px; font-weight: 700; text-transform: uppercase;
-        letter-spacing: 1px; color: #888; margin-bottom: 3px;
+        letter-spacing: 1px; color: #888; margin-bottom: 4px;
       }
-      .uc-card-header.ativa .uc-num { color: rgba(255,255,255,0.7); }
-      .uc-nome { font-size: 15px; font-weight: 700; color: #202124; }
-      .uc-card-header.ativa .uc-nome { color: #fff; }
-      .uc-ch {
-        font-size: 12px; color: #888; margin-top: 4px;
+      .uc-nome {
+        font-size: 14px; font-weight: 700; color: #202124; line-height: 1.35;
       }
-      .uc-card-header.ativa .uc-ch { color: rgba(255,255,255,0.7); }
-      .uc-chevron {
-        font-size: 14px; color: #888; transition: transform 0.3s;
-        flex-shrink: 0;
+      .uc-pasta {
+        font-size: 11px; color: #aaa; font-family: monospace; margin-top: 3px;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
       }
-      .uc-card-header.ativa .uc-chevron { color: #fff; transform: rotate(180deg); }
-
-      /* ── Accordion body ── */
-      .uc-body {
-        display: grid; grid-template-rows: 0fr;
-        transition: grid-template-rows 0.4s cubic-bezier(0.4,0,0.2,1);
+      .uc-card-footer {
+        padding: 10px 22px 14px;
+        border-top: 1px solid #f0f0f0;
+        display: flex; align-items: center; justify-content: space-between; gap: 10px;
       }
-      .uc-body.open { grid-template-rows: 1fr; }
-      .uc-body-inner { overflow: hidden; min-height: 0; }
-      .uc-body-content { padding: 20px 24px 24px; border-top: 1px solid #e8eaed; }
-
-      .uc-detail-grid {
-        display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;
+      .uc-status {
+        display: flex; align-items: center; gap: 6px;
+        font-size: 11px; color: #888;
       }
-      @media (max-width: 600px) { .uc-detail-grid { grid-template-columns: 1fr; } }
-      .uc-detail-box {
-        background: #f8f9fa; border-radius: 8px; padding: 12px 16px;
+      .uc-dot {
+        width: 8px; height: 8px; border-radius: 50%;
       }
-      .uc-detail-label {
-        font-size: 10px; font-weight: 700; text-transform: uppercase;
-        letter-spacing: 0.5px; color: #888; margin-bottom: 4px;
+      .btn-abrir {
+        display: inline-flex; align-items: center; gap: 6px;
+        background: #004384; color: #fff; text-decoration: none;
+        padding: 8px 16px; border-radius: 6px; font-size: 12px;
+        font-weight: 600; border: none; cursor: pointer; font-family: inherit;
+        transition: background 0.15s; white-space: nowrap;
       }
-      .uc-detail-value { font-size: 15px; font-weight: 700; color: #004384; }
-
-      .uc-objetivo {
-        background: #e8f0fe; border-left: 4px solid #004384;
-        border-radius: 0 8px 8px 0; padding: 12px 16px; margin-bottom: 16px;
-      }
-      .uc-objetivo-label {
-        font-size: 10px; font-weight: 700; text-transform: uppercase;
-        letter-spacing: 0.5px; color: #004384; margin-bottom: 6px;
-      }
-      .uc-objetivo p { font-size: 13px; color: #333; line-height: 1.7; }
-
-      .uc-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-      @media (max-width: 640px) { .uc-cols { grid-template-columns: 1fr; } }
-      .uc-bloco { }
-      .uc-bloco-titulo {
-        font-size: 11px; font-weight: 700; text-transform: uppercase;
-        letter-spacing: 0.5px; color: #004384; margin-bottom: 10px;
-        padding-bottom: 6px; border-bottom: 2px solid #e8eaed;
-      }
-      .uc-lista { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-      .uc-lista li {
-        display: flex; align-items: flex-start; gap: 8px;
-        font-size: 13px; color: #444; line-height: 1.5;
-      }
-      .uc-lista li::before {
-        content: "▸"; color: #f7941d; font-size: 11px;
-        flex-shrink: 0; margin-top: 2px;
-      }
+      .btn-abrir:hover { background: #00306a; }
 
       /* ── Tema Escuro ── */
       [data-theme="dark"] body { background: #0e1117; color: #e0e3e8; }
-      [data-theme="dark"] .uc-card { background: #1c1e26; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
-      [data-theme="dark"] .uc-card-header:hover:not(.ativa) { background: #1e2554; }
+      [data-theme="dark"] .uc-card { background: #1c1e26; box-shadow: 0 2px 10px rgba(0,0,0,0.35); }
+      [data-theme="dark"] .uc-card:hover { box-shadow: 0 6px 24px rgba(0,80,200,0.2); }
       [data-theme="dark"] .uc-num { color: #6b7280; }
       [data-theme="dark"] .uc-nome { color: #e0e3e8; }
-      [data-theme="dark"] .uc-ch { color: #6b7280; }
-      [data-theme="dark"] .uc-chevron { color: #6b7280; }
-      [data-theme="dark"] .uc-icon { background: #1e2a40; }
-      [data-theme="dark"] .uc-body-content { border-top-color: #2c2e38; }
-      [data-theme="dark"] .uc-detail-box { background: #141620; }
-      [data-theme="dark"] .uc-detail-label { color: #6b7280; }
-      [data-theme="dark"] .uc-detail-value { color: #7aa3d4; }
-      [data-theme="dark"] .uc-objetivo { background: #1a2540; border-left-color: #7aa3d4; }
-      [data-theme="dark"] .uc-objetivo-label { color: #7aa3d4; }
-      [data-theme="dark"] .uc-objetivo p { color: #c8cdd8; }
-      [data-theme="dark"] .uc-bloco-titulo { color: #7aa3d4; border-bottom-color: #2c2e38; }
-      [data-theme="dark"] .uc-lista li { color: #c0c6d0; }
+      [data-theme="dark"] .uc-pasta { color: #555; }
+      [data-theme="dark"] .uc-card-footer { border-top-color: #2c2e38; }
+      [data-theme="dark"] .uc-status { color: #6b7280; }
       [data-theme="dark"] .section-label { color: #8b919e; }
     </style>
   </head>
@@ -180,107 +142,111 @@
     <div class="hero">
       <div class="hero-badge">📚 Professor</div>
       <h1>Unidades Curriculares</h1>
-      <p>Visualize objetivos, cargas horárias e conteúdos formativos de cada UC</p>
+      <p>Selecione uma UC para acessar seus materiais, aulas e conteúdos</p>
     </div>
 
     <div class="container">
-      <div class="section-label">Módulo Único — Rio do Sul Mais Tech · SENAI</div>
-      <div class="uc-grid" id="ucGrid">
-        <!-- UCs renderizadas via JS -->
-      </div>
+      <div class="section-label" id="sectionLabel">Carregando unidades…</div>
+      <div class="uc-grid" id="ucGrid"></div>
     </div>
 
     <script>
+      /* ──────────────────────────────────────────────────────────────
+         Unidades Curriculares baseadas nas pastas de /sistema
+         Cada entrada corresponde a uma subpasta real.
+      ────────────────────────────────────────────────────────────── */
       const UCS = [
         {
-          id: 1,
-          icone: "➕",
-          nome: "Reforço Matemática e Raciocínio Lógico",
-          chTotal: "63h",
-          chPresencial: "63h",
-          chEad: "—",
-          objetivo: "Fortalecer os conhecimentos matemáticos essenciais para a vida acadêmica, profissional e cotidiana, desenvolvendo o raciocínio lógico, a capacidade de resolução de problemas e a autonomia no uso de conceitos matemáticos.",
-          capacidades: [
-            "Organizar informações numéricas e simbólicas de forma clara e lógica.",
-            "Desenvolver autonomia de estudo, utilizando estratégias para resolver problemas matemáticos.",
-            "Aplicar pensamento crítico e lógico, analisando situações e identificando soluções possíveis.",
-            "Trabalhar em grupo, colaborando na resolução de exercícios e desafios matemáticos.",
-            "Comunicar raciocínios e resultados, justificando procedimentos e soluções encontradas.",
-            "Persistir na resolução de problemas, desenvolvendo resiliência diante de desafios matemáticos.",
-          ],
-          conhecimentos: [
-            "Operações Básicas e Cálculo Numérico",
-            "Frações, Decimais e Porcentagem",
-            "Proporcionalidade",
-            "Medidas e Grandezas",
-            "Raciocínio Lógico e Resolução de Problemas",
-            "Introdução à Álgebra",
-            "Tratamento da Informação",
-          ],
+          pasta: "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO",
+          nome: "Introdução à Tecnologia da Informação e Comunicação",
+          icone: "💻",
+          cor: "#004384",
+          corBg: "#e8f0fe",
+          status: "Em andamento",
+          corDot: "#2e7d32",
+        },
+        {
+          pasta: "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO",
+          nome: "Introdução à Comunicação Oral e Escrita para o Mundo do Trabalho",
+          icone: "🗣️",
+          cor: "#6a1b9a",
+          corBg: "#f3e8ff",
+          status: "Em andamento",
+          corDot: "#2e7d32",
+        },
+        {
+          pasta: "LOGICA-PROGRAMACAO",
+          nome: "Lógica de Programação",
+          icone: "⚙️",
+          cor: "#e65100",
+          corBg: "#fff3e0",
+          status: "Prevista",
+          corDot: "#f7941d",
+        },
+        {
+          pasta: "FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO",
+          nome: "Fundamentos da Tecnologia e Programação",
+          icone: "🔧",
+          cor: "#1565c0",
+          corBg: "#e3f2fd",
+          status: "Prevista",
+          corDot: "#f7941d",
+        },
+        {
+          pasta: "BANCO_DE_DADOS",
+          nome: "Banco de Dados",
+          icone: "🗄️",
+          cor: "#2e7d32",
+          corBg: "#e8f5e9",
+          status: "Prevista",
+          corDot: "#f7941d",
+        },
+        {
+          pasta: "TECNICO DE INFORMATICA PARA INTERNET",
+          nome: "Técnico de Informática para Internet",
+          icone: "🌐",
+          cor: "#c62828",
+          corBg: "#fce8e6",
+          status: "Prevista",
+          corDot: "#f7941d",
         },
       ];
 
       function renderUCs() {
         const grid = document.getElementById("ucGrid");
+        const label = document.getElementById("sectionLabel");
+        label.textContent = `${UCS.length} Unidade${UCS.length !== 1 ? "s Curriculares" : " Curricular"} — Rio do Sul Mais Tech · SENAI`;
+
         grid.innerHTML = UCS.map((uc, i) => `
-          <div class="uc-card">
-            <div class="uc-card-header" id="hdr-${i}" onclick="toggleUC(${i})">
-              <div class="uc-icon">${uc.icone}</div>
-              <div class="uc-info">
-                <div class="uc-num">Unidade Curricular ${uc.id}</div>
-                <div class="uc-nome">${uc.nome}</div>
-                <div class="uc-ch">⏱ CH Total: ${uc.chTotal} &nbsp;|&nbsp; Presencial: ${uc.chPresencial} &nbsp;|&nbsp; EaD: ${uc.chEad}</div>
-              </div>
-              <span class="uc-chevron">▼</span>
-            </div>
-            <div class="uc-body" id="body-${i}">
-              <div class="uc-body-inner">
-                <div class="uc-body-content">
-                  <div class="uc-detail-grid">
-                    <div class="uc-detail-box">
-                      <div class="uc-detail-label">CH Total</div>
-                      <div class="uc-detail-value">${uc.chTotal}</div>
-                    </div>
-                    <div class="uc-detail-box">
-                      <div class="uc-detail-label">CH Presencial</div>
-                      <div class="uc-detail-value">${uc.chPresencial}</div>
-                    </div>
-                    <div class="uc-detail-box">
-                      <div class="uc-detail-label">CH EaD</div>
-                      <div class="uc-detail-value">${uc.chEad}</div>
-                    </div>
-                  </div>
-                  <div class="uc-objetivo">
-                    <div class="uc-objetivo-label">Objetivo</div>
-                    <p>${uc.objetivo}</p>
-                  </div>
-                  <div class="uc-cols">
-                    <div class="uc-bloco">
-                      <div class="uc-bloco-titulo">Capacidades Básicas / Técnicas</div>
-                      <ul class="uc-lista">
-                        ${uc.capacidades.map(c => `<li>${c}</li>`).join("")}
-                      </ul>
-                    </div>
-                    <div class="uc-bloco">
-                      <div class="uc-bloco-titulo">Conhecimentos</div>
-                      <ul class="uc-lista">
-                        ${uc.conhecimentos.map(c => `<li>${c}</li>`).join("")}
-                      </ul>
-                    </div>
-                  </div>
+          <div class="uc-card" onclick="abrirUC('${encodeURIComponent(uc.pasta)}')">
+            <div class="uc-card-top" style="background:${uc.cor}"></div>
+            <div class="uc-card-body">
+              <div class="uc-header">
+                <div class="uc-icon" style="background:${uc.corBg}">${uc.icone}</div>
+                <div class="uc-meta">
+                  <div class="uc-num">UC ${String(i + 1).padStart(2, "0")}</div>
+                  <div class="uc-nome">${uc.nome}</div>
+                  <div class="uc-pasta">${uc.pasta}</div>
                 </div>
               </div>
+            </div>
+            <div class="uc-card-footer">
+              <div class="uc-status">
+                <div class="uc-dot" style="background:${uc.corDot}"></div>
+                ${uc.status}
+              </div>
+              <button class="btn-abrir" onclick="event.stopPropagation(); abrirUC('${encodeURIComponent(uc.pasta)}')">
+                Acessar →
+              </button>
             </div>
           </div>
         `).join("");
       }
 
-      function toggleUC(i) {
-        const hdr  = document.getElementById(`hdr-${i}`);
-        const body = document.getElementById(`body-${i}`);
-        const isOpen = body.classList.contains("open");
-        hdr.classList.toggle("ativa", !isOpen);
-        body.classList.toggle("open", !isOpen);
+      function abrirUC(pastaCodificada) {
+        const pasta = decodeURIComponent(pastaCodificada);
+        /* Abre a pasta da UC — ajuste o caminho conforme a estrutura do servidor */
+        window.location.href = pasta + "/";
       }
 
       renderUCs();
