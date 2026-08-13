@@ -67,8 +67,8 @@ Descrição completa da atividade prática de planilha eletrônica para os aluno
 - **Conteúdo:** divisão de tarefas, dados para digitar, fórmulas guiadas, perguntas e critérios de avaliação
 - **Duração prevista:** 1 hora
 
-### `ATIVIDADE-EXCEL.docx`
-Versão Word da atividade prática — documento entregável pelos alunos.
+### `ATIVIDADE-EXCEL-13-08-2026.docx`
+Versão Word da atividade prática — documento distribuído aos alunos na aula de 13/08/2026.
 - **Formato:** Word (.docx), layout profissional com identidade visual SENAI
 - **Estrutura:**
   - Cabeçalho SENAI + título da atividade
@@ -89,4 +89,4 @@ Versão Word da atividade prática — documento entregável pelos alunos.
 | 4.2 — Editor de Planilhas Eletrônicas | `Controle_Abate_Pamplona.xlsx`, `Planilha-Gastos-Casa-AULA-13-08-2026.xlsx` |
 | 4.2.5 — Inserção de fórmulas básicas | `GASTOS-CASA.ini` (dados-base), planilhas |
 | 4.2.7 — Gráficos, quadros e tabelas | `Controle_Abate_Pamplona.xlsx` (Dashboard) |
-| 4.2.5 — Inserção de fórmulas básicas (prática alunos) | `ATIVIDADE-EXCEL.md`, `ATIVIDADE-EXCEL.docx` |
+| 4.2.5 — Inserção de fórmulas básicas (prática alunos) | `ATIVIDADE-EXCEL.md`, `ATIVIDADE-EXCEL-13-08-2026.docx` |
