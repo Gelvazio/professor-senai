@@ -1,9 +1,4 @@
 {
-  ".claude/settings.local.json": {
-    "mtime": 1786406475.9059455,
-    "ast_hash": "1495a23f41eb32bac10d77768bc5d39f",
-    "semantic_hash": ""
-  },
   "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
     "mtime": 1786015580.6497562,
     "ast_hash": "d1376ea95efa56aafc4bdab315a0c3f9",
@@ -180,8 +175,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786560401.8479111,
-    "ast_hash": "5c70e5b18c86065f7890a03fbfa840fe",
+    "mtime": 1786626346.9529927,
+    "ast_hash": "d40592d6170b35c9a80806f2769ece6a",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -210,18 +205,13 @@
     "semantic_hash": ""
   },
   ".claude/skills/documentacao-padrao/SKILL.md": {
-    "mtime": 1781660741.0276847,
-    "ast_hash": "3200e9a9149be58ecc80f34e3f13d4b1",
+    "mtime": 1786629986.8358312,
+    "ast_hash": "a1a963982a91726b83296ae792b747f1",
     "semantic_hash": ""
   },
   ".claude/skills/graphify/SKILL.md": {
-    "mtime": 1779573782.1656952,
-    "ast_hash": "e065bdafac4ca689ffd4e353ffd71160",
-    "semantic_hash": ""
-  },
-  "educacao.html": {
-    "mtime": 1786057444.0261803,
-    "ast_hash": "48b3f72e8b6a6f7cbba3ac30d1e6d367",
+    "mtime": 1786629986.836938,
+    "ast_hash": "7c432aa7c72acf1eac923e30dfd781f9",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/BANCO_QUESTOES_HISTORIA_COMPUTACAO.gift.txt": {
@@ -335,13 +325,13 @@
     "semantic_hash": ""
   },
   "docs/superpowers/plans/2026-08-07-analise-ementas.md": {
-    "mtime": 1786100196.4281237,
-    "ast_hash": "8625c7cadc72c777052b83aaa8d853a3",
+    "mtime": 1786629986.8842936,
+    "ast_hash": "9f04de65c5ba21c3eb4875d5508ffd35",
     "semantic_hash": ""
   },
   "docs/superpowers/specs/2026-08-07-analise-ementas-design.md": {
-    "mtime": 1786100059.7628744,
-    "ast_hash": "13d6e39d659b03a2f304dced81b0a691",
+    "mtime": 1786629986.886307,
+    "ast_hash": "7bfe15e2c0bca6647e8f45aa0ca5b5d4",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html": {
@@ -354,79 +344,14 @@
     "ast_hash": "2bf633a3fd7313f2651a78fa3f045e69",
     "semantic_hash": ""
   },
-  "Lan\u00e7amentoHorasSenai.txt": {
-    "mtime": 1786141311.1411774,
-    "ast_hash": "dfe563ec853cfa79d5a60f7eacc59cf7",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/Guia Pr\u00e1tico - etapas para elabora\u00e7\u00e3o do Plano de Ensino e SA (2).pdf": {
-    "mtime": 1785713728.7034986,
-    "ast_hash": "90b61cc90aa961ff63049cf3229c7f41",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/materiais-selma/1 Primeiro acesso e p\u00e1gina inicial do docente.pdf": {
-    "mtime": 1786113236.6386,
-    "ast_hash": "0da09e017b1dfb2dcdb951eca942d155",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/materiais-selma/1 Recurso Arquivo AVA.pdf": {
-    "mtime": 1786113141.8802059,
-    "ast_hash": "9bb5059bd21db3e2495026ed64dc31a8",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/materiais-selma/2 Atividade Tarefa - Realizando a corre\u00e7\u00e3o.pdf": {
-    "mtime": 1786113220.3418567,
-    "ast_hash": "1076e06bd1f83cf20d4fefad68a69ae8",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/materiais-selma/2 Recurso URL.pdf": {
-    "mtime": 1786113205.5950162,
-    "ast_hash": "1b11aa7c0a7f400f263df3ea18ff0f5d",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/materiais-selma/3 A Sala de aula virtual.pdf": {
-    "mtime": 1786113188.9491806,
-    "ast_hash": "d95d6d7c6e1830ec4ed5585f233c2b72",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/materiais-selma/3 Recurso P\u00e1gina.pdf": {
-    "mtime": 1786113134.8360736,
-    "ast_hash": "6416bcde1d9d1f9a42dc1fb5bd7f2836",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/materiais-selma/5 Auto inscri\u00e7\u00e3o em salas no AVA.pdf": {
-    "mtime": 1786113127.1008272,
-    "ast_hash": "2bbe9ac82b1717c84aada78f6872b928",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/materiais-selma/6 Importar notas do AVA para o SGN.pdf": {
-    "mtime": 1786113174.8509834,
-    "ast_hash": "668206edff6bcadfedd97321425404a0",
-    "semantic_hash": ""
-  },
-  "materiais-capacitacao/materiais-selma/Capacita\u00e7\u00e3o AVA - Docentes AI.pptx.pdf": {
-    "mtime": 1786113119.964098,
-    "ast_hash": "da9fa173f8dc2beda4694a1117610c0b",
-    "semantic_hash": ""
-  },
   "CLAUDE.md": {
-    "mtime": 1786308618.2575068,
-    "ast_hash": "bbedb2819d8cb03f4cfe25f9e3a00ce7",
-    "semantic_hash": ""
-  },
-  "PROBLEMAS-ACESSOS-ALUNOS.txt": {
-    "mtime": 1786133791.0325973,
-    "ast_hash": "f67759901210555b23f9001519e6b5ff",
+    "mtime": 1786629986.8383586,
+    "ast_hash": "493291a71a1edcb4b833f27ae5f4d9d2",
     "semantic_hash": ""
   },
   "sistema/index.html": {
     "mtime": 1786233233.5804238,
     "ast_hash": "0ab3b3ad5c28b5031d17c99ec0a5f9a6",
-    "semantic_hash": ""
-  },
-  "ORGANOGRAMA_SENAI.png": {
-    "mtime": 1786144274.689695,
-    "ast_hash": "2c82867ea1b279b23e274d41886db687",
     "semantic_hash": ""
   },
   "sistema/backfill-ids.html": {
@@ -437,16 +362,6 @@
   "sistema/backfill-material-ids.sql": {
     "mtime": 1786146514.3364618,
     "ast_hash": "d85860063a8e4c1f10da139e481438fd",
-    "semantic_hash": ""
-  },
-  "cantina-senai/RELATORIO_PIX.md": {
-    "mtime": 1786154522.0770369,
-    "ast_hash": "7c7ab727398ded44bfa11ea902b5c89b",
-    "semantic_hash": ""
-  },
-  "cantina-senai/index.html": {
-    "mtime": 1786154981.7756176,
-    "ast_hash": "5fa5e36fb2eaad79b4154daebf886f9d",
     "semantic_hash": ""
   },
   "sistema/ementa-slides.html": {
@@ -494,33 +409,8 @@
     "ast_hash": "0fbf0b3ad0cfb8448d23725bee2a962c",
     "semantic_hash": ""
   },
-  "cursos/curso-dj.html": {
-    "mtime": 1786233284.5558226,
-    "ast_hash": "678dda1cb6bc9b078ec468a143c5f239",
-    "semantic_hash": ""
-  },
-  "reunioes/reuniao_vitor.txt": {
-    "mtime": 1786543964.9864,
-    "ast_hash": "23b69d39825f79cc2ad12773feb0733d",
-    "semantic_hash": ""
-  },
-  "PERFIL_GELVAZIO_CAMARGO.png": {
-    "mtime": 1780409546.5262022,
-    "ast_hash": "1ea9ac94705ccea44dedb4c8657a310f",
-    "semantic_hash": ""
-  },
-  "converter_slides_pdf.py": {
-    "mtime": 1786311995.6456306,
-    "ast_hash": "360ed3948705bc45913f06b2aecdcc91",
-    "semantic_hash": ""
-  },
-  "AULAS-TIC.md": {
-    "mtime": 1786299654.6206439,
-    "ast_hash": "2c5aa596cb5adfb095f1c165d4d42c53",
-    "semantic_hash": ""
-  },
   "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md": {
-    "mtime": 1786301189.126022,
+    "mtime": 1786629986.9253995,
     "ast_hash": "6c15a68d091b0bd75a43b90d32fa511b",
     "semantic_hash": ""
   },
@@ -537,11 +427,6 @@
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/MATERIAIS/PlanoEnsinoIntroducaoTICV2.pdf": {
     "mtime": 1786198859.408931,
     "ast_hash": "0fbf0b3ad0cfb8448d23725bee2a962c",
-    "semantic_hash": ""
-  },
-  "assinatura_gelvazio.html": {
-    "mtime": 1786308576.686224,
-    "ast_hash": "113a80dd57f1eb3ded437f096db2769d",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/HISTORIA_COMPUTACAO_AULA_01.pdf": {
@@ -629,21 +514,6 @@
     "ast_hash": "bf6fb441edda16a7552898a0e1183c0e",
     "semantic_hash": ""
   },
-  "imagem_selma.png": {
-    "mtime": 1786301824.8160279,
-    "ast_hash": "5f0d632f551e8531cd909c1f13ecfe23",
-    "semantic_hash": ""
-  },
-  "banner_senai.png": {
-    "mtime": 1786302017.925,
-    "ast_hash": "44726d1a462dd73db890693ac6544e99",
-    "semantic_hash": ""
-  },
-  "perfil_senai_gelvazio.png": {
-    "mtime": 1786303268.766723,
-    "ast_hash": "bd0b9df462f7a977c79df56dcfbb14db",
-    "semantic_hash": ""
-  },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_APRESENTACAO_PROFESSOR.html": {
     "mtime": 1786315308.8259513,
     "ast_hash": "45e185dce8caefb66b67f921d639d87a",
@@ -657,11 +527,6 @@
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/SLIDE_AULA_04_Hardware e Sistema Operacional.pdf": {
     "mtime": 1786301319.6483834,
     "ast_hash": "425fd26f430d9fc880222aa841a50d6d",
-    "semantic_hash": ""
-  },
-  "assinatura_senai_gelvazio.png": {
-    "mtime": 1786308720.8917425,
-    "ast_hash": "d79e80d3e04345b51ece6d834f62f28b",
     "semantic_hash": ""
   },
   "sistema/APRESENTA\u00c7\u00c3O-PROFESSOR-GELVAZIO-CAMARGO.pdf": {
@@ -679,68 +544,8 @@
     "ast_hash": "47f0a4240c34ab8de5f95c621dfd3789",
     "semantic_hash": ""
   },
-  "CURSO-ARDUINO/estilo-tema-exemplo/.claude/settings.local.json": {
-    "mtime": 1786318620.973553,
-    "ast_hash": "a9d66e0c1901b49be0f3f0b6b21cb0c7",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/estilo-tema-exemplo/alteracoes.js": {
-    "mtime": 1786318599.42311,
-    "ast_hash": "42eff7baef690e487786dedb337a3cf6",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js": {
-    "mtime": 1786317058.67652,
-    "ast_hash": "99fd7d377140e4d7bec087cdf9ba3cdc",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/estilo-tema-exemplo/languages.json": {
-    "mtime": 1786317075.007111,
-    "ast_hash": "b5880dd5210af2060e8ee48ccba5cd97",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md": {
-    "mtime": 1786318586.196144,
-    "ast_hash": "3b5277f251417d397766f0a524bfa146",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/estilo-tema-exemplo/README.md": {
-    "mtime": 1786316017.5645447,
-    "ast_hash": "185d0ca7444028aee288dc0558087851",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/estilo-tema-exemplo/index.html": {
-    "mtime": 1786318561.943367,
-    "ast_hash": "bd7b42335d4245726b4a4eb5b08fcb82",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/estilo-tema-exemplo/llms.txt": {
-    "mtime": 1786318359.7059557,
-    "ast_hash": "275a3fe11fe1508524989310b465ef01",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/index.html": {
-    "mtime": 1786406796.0443017,
-    "ast_hash": "447ce504ac369c0cc6bf4a75635b8d21",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/estilo-tema-exemplo/CURRICULO_GELVAZIO_CAMARGO_V2.pdf": {
-    "mtime": 1786316017.5635693,
-    "ast_hash": "6abf0fc1310d44d0af07d3db4eba880d",
-    "semantic_hash": ""
-  },
-  "CURSO-ARDUINO/estilo-tema-exemplo/favicon.svg": {
-    "mtime": 1786317880.1890528,
-    "ast_hash": "9c1510735171de54e6884813f36fda88",
-    "semantic_hash": ""
-  },
-  "atividade_digitacao_aula05.html": {
-    "mtime": 1786558540.5641842,
-    "ast_hash": "02d27ef41597be63bd0c9a9ac330c62b",
-    "semantic_hash": ""
-  },
   "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md": {
-    "mtime": 1786559351.275068,
+    "mtime": 1786629986.9253995,
     "ast_hash": "3d29f48ae94b355d3c911430789cc349",
     "semantic_hash": ""
   },
@@ -759,26 +564,6 @@
     "ast_hash": "0f610f38e1521bf9503e6866823e8ce8",
     "semantic_hash": ""
   },
-  "boletos/GelvazioCamargo.pdf": {
-    "mtime": 1786457122.0876257,
-    "ast_hash": "a308f14d27394d2103cb87e87c3d3cd6",
-    "semantic_hash": ""
-  },
-  "boletos/GelvazioCamargo_08_2026.pdf": {
-    "mtime": 1786537245.7831037,
-    "ast_hash": "b461fa26f57e48ea8781efd2eb72738f",
-    "semantic_hash": ""
-  },
-  "boletos/COMPROVANTE-BOLETO-UNIMED.jpeg": {
-    "mtime": 1786457311.8157003,
-    "ast_hash": "2e64869d5927d3cedef4bd31146eab5b",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/ATIVIDADE-DIGITACAO-12-08-2026.txt": {
-    "mtime": 1786559370.257911,
-    "ast_hash": "cf950160a6c1fb794908ab566045eeb2",
-    "semantic_hash": ""
-  },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ANOTACOES-PEDAGOGICAS.txt": {
     "mtime": 1786560048.1234307,
     "ast_hash": "d576a25c8753182c5d0d9313980948a3",
@@ -787,6 +572,126 @@
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/acessos-turma-estudante-impressao.pdf": {
     "mtime": 1786560267.938773,
     "ast_hash": "7a56bfbd4746ec59d3bd24dd330e937f",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/converter_slides_pdf.py": {
+    "mtime": 1786629986.8767312,
+    "ast_hash": "2d1483635761bd31d92485f65388a96e",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/FICHA PRODUTO MAISTECH ATUALIZADA_5cbc16da.md": {
+    "mtime": 1786631236.6008174,
+    "ast_hash": "34321cd9435a45dd5f116f298b7ac296",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/AULAS-TIC.md": {
+    "mtime": 1786629986.8383586,
+    "ast_hash": "54fced6c00d32bb0369e4bb90f51071a",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/Lan\u00e7amentoHorasSenai.txt": {
+    "mtime": 1786629986.8408833,
+    "ast_hash": "dfe563ec853cfa79d5a60f7eacc59cf7",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/PROBLEMAS-ACESSOS-ALUNOS.txt": {
+    "mtime": 1786629986.8433282,
+    "ast_hash": "f67759901210555b23f9001519e6b5ff",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/assinatura_gelvazio.html": {
+    "mtime": 1786629986.8457956,
+    "ast_hash": "af6588501ec0318a5a50e3f6e1285ade",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/atividade_digitacao_aula05.html": {
+    "mtime": 1786629986.847767,
+    "ast_hash": "cc09e2ddebdc36f346da2bbc386d9904",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/educacao.html": {
+    "mtime": 1786629986.8883197,
+    "ast_hash": "1c245f77724bf27d937b85359a17c99a",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/reunioes/reuniao_vitor.txt": {
+    "mtime": 1786629987.3272817,
+    "ast_hash": "23b69d39825f79cc2ad12773feb0733d",
+    "semantic_hash": ""
+  },
+  "sistema/BANCO_DE_DADOS/ORIENTACAO_UC.txt": {
+    "mtime": 1786631003.1559472,
+    "ast_hash": "9e73aaa9d835e16df9ddedf94ba70e64",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md": {
+    "mtime": 1786626254.8112483,
+    "ast_hash": "00688d2f01e1246859362b2ec5ab59e0",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/ATIVIDADE-DIGITACAO-12-08-2026_OLD.txt": {
+    "mtime": 1786559370.257911,
+    "ast_hash": "cf950160a6c1fb794908ab566045eeb2",
+    "semantic_hash": ""
+  },
+  "sistema/uc.html": {
+    "mtime": 1786626638.838227,
+    "ast_hash": "2ceb358a8c3d97aea112d28ebbe755a1",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/ORGANOGRAMA_SENAI.png": {
+    "mtime": 1786629986.842289,
+    "ast_hash": "2c82867ea1b279b23e274d41886db687",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/PERFIL_GELVAZIO_CAMARGO.png": {
+    "mtime": 1786629986.8433282,
+    "ast_hash": "1ea9ac94705ccea44dedb4c8657a310f",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/assinatura_senai_gelvazio.png": {
+    "mtime": 1786629986.847767,
+    "ast_hash": "d79e80d3e04345b51ece6d834f62f28b",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/banner_senai.png": {
+    "mtime": 1786629986.8690224,
+    "ast_hash": "44726d1a462dd73db890693ac6544e99",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/imagem_selma.png": {
+    "mtime": 1786629986.9478238,
+    "ast_hash": "5f0d632f551e8531cd909c1f13ecfe23",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/perfil_senai_gelvazio.png": {
+    "mtime": 1786629987.3127334,
+    "ast_hash": "bd0b9df462f7a977c79df56dcfbb14db",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-01.png": {
+    "mtime": 1786560779.8502584,
+    "ast_hash": "b15e9584b1591fbd0a0cb2af677b66da",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-02.png": {
+    "mtime": 1786560799.372459,
+    "ast_hash": "cf3073c9b0401d268d54276373bdbcfd",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-03.png": {
+    "mtime": 1786560819.6442127,
+    "ast_hash": "66cffff960378f0be14e00fbfa5590af",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-04.png": {
+    "mtime": 1786560853.1291258,
+    "ast_hash": "fc9ffec2dd0c9a73492a88dfbbdf57cf",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-05.png": {
+    "mtime": 1786560870.5825434,
+    "ast_hash": "dfa5b6afac0d0144c9f64ac36659700d",
     "semantic_hash": ""
   }
 }

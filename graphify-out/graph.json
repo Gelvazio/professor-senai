@@ -4,129 +4,29 @@
   "graph": {},
   "nodes": [
     {
-      "label": "alteracoes.js",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/alteracoes.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_alteracoes",
-      "community": 24,
-      "norm_label": "alteracoes.js"
-    },
-    {
-      "label": "main.js",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "js_main",
-      "community": 21,
-      "norm_label": "main.js"
-    },
-    {
-      "label": "t()",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L374",
-      "_origin": "ast",
-      "id": "js_main_t",
-      "community": 21,
-      "norm_label": "t()"
-    },
-    {
-      "label": "applyLanguage()",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L379",
-      "_origin": "ast",
-      "id": "js_main_applylanguage",
-      "community": 21,
-      "norm_label": "applylanguage()"
-    },
-    {
-      "label": "applyTheme()",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L426",
-      "_origin": "ast",
-      "id": "js_main_applytheme",
-      "community": 21,
-      "norm_label": "applytheme()"
-    },
-    {
-      "label": "getTypingPhrases()",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L445",
-      "_origin": "ast",
-      "id": "js_main_gettypingphrases",
-      "community": 21,
-      "norm_label": "gettypingphrases()"
-    },
-    {
-      "label": "typeLoop()",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L457",
-      "_origin": "ast",
-      "id": "js_main_typeloop",
-      "community": 21,
-      "norm_label": "typeloop()"
-    },
-    {
-      "label": "restartTyping()",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L483",
-      "_origin": "ast",
-      "id": "js_main_restarttyping",
-      "community": 21,
-      "norm_label": "restarttyping()"
-    },
-    {
-      "label": "createParticle()",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L497",
-      "_origin": "ast",
-      "id": "js_main_createparticle",
-      "community": 21,
-      "norm_label": "createparticle()"
-    },
-    {
-      "label": "onScroll()",
-      "file_type": "code",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L534",
-      "_origin": "ast",
-      "id": "js_main_onscroll",
-      "community": 21,
-      "norm_label": "onscroll()"
-    },
-    {
       "label": "converter_slides_pdf.py",
       "file_type": "code",
-      "source_file": "converter_slides_pdf.py",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "converter_slides_pdf",
+      "id": "recursos_humanos_converter_slides_pdf",
       "community": 20,
       "norm_label": "converter_slides_pdf.py"
     },
     {
       "label": "preparar_html()",
       "file_type": "code",
-      "source_file": "converter_slides_pdf.py",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L69",
       "_origin": "ast",
-      "id": "converter_slides_pdf_preparar_html",
+      "id": "recursos_humanos_converter_slides_pdf_preparar_html",
       "community": 20,
       "norm_label": "preparar_html()"
     },
     {
       "label": "Path",
       "file_type": "code",
-      "source_file": "converter_slides_pdf.py",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L69",
       "_origin": "ast",
       "id": "path",
@@ -136,32 +36,32 @@
     {
       "label": "converter()",
       "file_type": "code",
-      "source_file": "converter_slides_pdf.py",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L85",
       "_origin": "ast",
-      "id": "converter_slides_pdf_converter",
+      "id": "recursos_humanos_converter_slides_pdf_converter",
       "community": 20,
       "norm_label": "converter()"
     },
     {
       "label": "main()",
       "file_type": "code",
-      "source_file": "converter_slides_pdf.py",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L145",
       "_origin": "ast",
-      "id": "converter_slides_pdf_main",
+      "id": "recursos_humanos_converter_slides_pdf_main",
       "community": 20,
       "norm_label": "main()"
     },
     {
-      "label": "Se o HTML usa o padr\u00e3o de slides ocultos, cria um arquivo tempor\u00e1rio com     tod",
+      "label": "Se o HTML usa o padr\u00e3o de slides ocultos, cria um arquivo tempor\u00e1rio com     to",
       "file_type": "rationale",
-      "source_file": "converter_slides_pdf.py",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L70",
       "_origin": "ast",
-      "id": "converter_slides_pdf_rationale_70",
+      "id": "recursos_humanos_converter_slides_pdf_rationale_70",
       "community": 20,
-      "norm_label": "se o html usa o padrao de slides ocultos, cria um arquivo temporario com     tod"
+      "norm_label": "se o html usa o padrao de slides ocultos, cria um arquivo temporario com     to"
     },
     {
       "label": "SKILL.md",
@@ -584,146 +484,6 @@
       "norm_label": "honesty rules"
     },
     {
-      "label": "AULAS-TIC.md",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "aulas_tic",
-      "community": 14,
-      "norm_label": "aulas-tic.md"
-    },
-    {
-      "label": "Aulas \u2014 TIC (Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o)",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "community": 14,
-      "norm_label": "aulas \u2014 tic (introducao a tecnologia da informacao e comunicacao)"
-    },
-    {
-      "label": "AULA 01 \u2014 03/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_01_03_08_2026",
-      "community": 14,
-      "norm_label": "aula 01 \u2014 03/08/2026"
-    },
-    {
-      "label": "AULA 02 \u2014 04/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_02_04_08_2026",
-      "community": 14,
-      "norm_label": "aula 02 \u2014 04/08/2026"
-    },
-    {
-      "label": "AULA 03 \u2014 05/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L28",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_03_05_08_2026",
-      "community": 14,
-      "norm_label": "aula 03 \u2014 05/08/2026"
-    },
-    {
-      "label": "AULA 04 \u2014 06/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_04_06_08_2026",
-      "community": 14,
-      "norm_label": "aula 04 \u2014 06/08/2026"
-    },
-    {
-      "label": "AULA 05 \u2014 07/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_05_07_08_2026",
-      "community": 14,
-      "norm_label": "aula 05 \u2014 07/08/2026"
-    },
-    {
-      "label": "AULA 06 \u2014 10/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_06_10_08_2026",
-      "community": 14,
-      "norm_label": "aula 06 \u2014 10/08/2026"
-    },
-    {
-      "label": "AULA 07 \u2014 11/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L64",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_07_11_08_2026",
-      "community": 14,
-      "norm_label": "aula 07 \u2014 11/08/2026"
-    },
-    {
-      "label": "AULA 08 \u2014 12/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L72",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_08_12_08_2026",
-      "community": 14,
-      "norm_label": "aula 08 \u2014 12/08/2026"
-    },
-    {
-      "label": "AULA 09 \u2014 13/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L80",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_09_13_08_2026",
-      "community": 14,
-      "norm_label": "aula 09 \u2014 13/08/2026"
-    },
-    {
-      "label": "AULA 10 \u2014 14/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L89",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_10_14_08_2026",
-      "community": 14,
-      "norm_label": "aula 10 \u2014 14/08/2026"
-    },
-    {
-      "label": "AULA 13 \u2014 24/08/2026",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L98",
-      "_origin": "ast",
-      "id": "aulas_tic_aula_13_24_08_2026",
-      "community": 14,
-      "norm_label": "aula 13 \u2014 24/08/2026"
-    },
-    {
-      "label": "Resumo",
-      "file_type": "document",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L106",
-      "_origin": "ast",
-      "id": "aulas_tic_resumo",
-      "community": 14,
-      "norm_label": "resumo"
-    },
-    {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
@@ -784,634 +544,24 @@
       "norm_label": "slides"
     },
     {
-      "label": "CLAUDE.md",
+      "label": "Estrutura de Unidades Curriculares",
       "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L1",
+      "source_file": "CLAUDE.md",
+      "source_location": "L33",
       "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude",
-      "community": 16,
-      "norm_label": "claude.md"
+      "id": "claude_estrutura_de_unidades_curriculares",
+      "community": 10,
+      "norm_label": "estrutura de unidades curriculares"
     },
     {
-      "label": "Instru\u00e7\u00f5es do Projeto \u2014 gelvazio.github.io",
+      "label": "Estrutura obrigat\u00f3ria de cada UC",
       "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L1",
+      "source_file": "CLAUDE.md",
+      "source_location": "L44",
       "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
-      "community": 16,
-      "norm_label": "instrucoes do projeto \u2014 gelvazio.github.io"
-    },
-    {
-      "label": "Autonomia Total \u2014 NUNCA pe\u00e7a permiss\u00e3o",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_autonomia_total_nunca_pe\u00e7a_permiss\u00e3o",
-      "community": 16,
-      "norm_label": "autonomia total \u2014 nunca peca permissao"
-    },
-    {
-      "label": "Git: Commit e Push Autom\u00e1tico",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_git_commit_e_push_autom\u00e1tico",
-      "community": 16,
-      "norm_label": "git: commit e push automatico"
-    },
-    {
-      "label": "Idioma",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_idioma",
-      "community": 16,
-      "norm_label": "idioma"
-    },
-    {
-      "label": "\u26a0\ufe0f LLMS.txt \u2014 Atualiza\u00e7\u00e3o Obrigat\u00f3ria",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L34",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_llms_txt_atualiza\u00e7\u00e3o_obrigat\u00f3ria",
-      "community": 16,
-      "norm_label": "\u26a0\ufe0f llms.txt \u2014 atualizacao obrigatoria"
-    },
-    {
-      "label": "Registro de Altera\u00e7\u00f5es (alteracoes.js)",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_registro_de_altera\u00e7\u00f5es_alteracoes_js",
-      "community": 16,
-      "norm_label": "registro de alteracoes (alteracoes.js)"
-    },
-    {
-      "label": "Idioma inicial do site",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L65",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_idioma_inicial_do_site",
-      "community": 16,
-      "norm_label": "idioma inicial do site"
-    },
-    {
-      "label": "Como este projeto funciona \u2014 Documenta\u00e7\u00e3o T\u00e9cnica Detalhada",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L75",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "community": 16,
-      "norm_label": "como este projeto funciona \u2014 documentacao tecnica detalhada"
-    },
-    {
-      "label": "Vis\u00e3o Geral",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L80",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_vis\u00e3o_geral",
-      "community": 16,
-      "norm_label": "visao geral"
-    },
-    {
-      "label": "Estrutura de Arquivos",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L88",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_estrutura_de_arquivos",
-      "community": 16,
-      "norm_label": "estrutura de arquivos"
-    },
-    {
-      "label": "Se\u00e7\u00f5es do Site (`index.html`)",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L109",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_se\u00e7\u00f5es_do_site_index_html",
-      "community": 16,
-      "norm_label": "secoes do site (`index.html`)"
-    },
-    {
-      "label": "Sistema de i18n (Internacionaliza\u00e7\u00e3o)",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L122",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_sistema_de_i18n_internacionaliza\u00e7\u00e3o",
-      "community": 16,
-      "norm_label": "sistema de i18n (internacionalizacao)"
-    },
-    {
-      "label": "Hero Cards (grid 2\u00d72)",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L149",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_hero_cards_grid_2_2",
-      "community": 16,
-      "norm_label": "hero cards (grid 2\u00d72)"
-    },
-    {
-      "label": "Timeline de Experi\u00eancia",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L160",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_timeline_de_experi\u00eancia",
-      "community": 16,
-      "norm_label": "timeline de experiencia"
-    },
-    {
-      "label": "Tema (Dark / Light)",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L175",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_tema_dark_light",
-      "community": 16,
-      "norm_label": "tema (dark / light)"
-    },
-    {
-      "label": "Efeitos Visuais",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L184",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_efeitos_visuais",
-      "community": 16,
-      "norm_label": "efeitos visuais"
-    },
-    {
-      "label": "Painel de Altera\u00e7\u00f5es (`alteracoes.js`)",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L194",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_painel_de_altera\u00e7\u00f5es_alteracoes_js",
-      "community": 16,
-      "norm_label": "painel de alteracoes (`alteracoes.js`)"
-    },
-    {
-      "label": "Favicon",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L205",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_claude_favicon",
-      "community": 16,
-      "norm_label": "favicon"
-    },
-    {
-      "label": "README.md",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_readme",
-      "community": 23,
-      "norm_label": "readme.md"
-    },
-    {
-      "label": "gelvazio.github.io",
-      "file_type": "document",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "estilo_tema_exemplo_readme_gelvazio_github_io",
-      "community": 23,
-      "norm_label": "gelvazio.github.io"
-    },
-    {
-      "label": "RELATORIO_PIX.md",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix",
-      "community": 12,
-      "norm_label": "relatorio_pix.md"
-    },
-    {
-      "label": "Relat\u00f3rio Comparativo \u2014 Servi\u00e7os de Valida\u00e7\u00e3o PIX para Empresas",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "community": 12,
-      "norm_label": "relatorio comparativo \u2014 servicos de validacao pix para empresas"
-    },
-    {
-      "label": "Contexto do Mercado",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_contexto_do_mercado",
-      "community": 12,
-      "norm_label": "contexto do mercado"
-    },
-    {
-      "label": "1. ValidaPix \u2014 validapix.com.br",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
-      "community": 12,
-      "norm_label": "1. validapix \u2014 validapix.com.br"
-    },
-    {
-      "label": "Como Funciona",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_como_funciona",
-      "community": 12,
-      "norm_label": "como funciona"
-    },
-    {
-      "label": "Servi\u00e7os Oferecidos",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos",
-      "community": 12,
-      "norm_label": "servicos oferecidos"
-    },
-    {
-      "label": "Pre\u00e7o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L26",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_pre\u00e7o",
-      "community": 12,
-      "norm_label": "preco"
-    },
-    {
-      "label": "Bancos Homologados",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_bancos_homologados",
-      "community": 12,
-      "norm_label": "bancos homologados"
-    },
-    {
-      "label": "Vantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L34",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_vantagens",
-      "community": 12,
-      "norm_label": "vantagens"
-    },
-    {
-      "label": "Desvantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L42",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_desvantagens",
-      "community": 12,
-      "norm_label": "desvantagens"
-    },
-    {
-      "label": "Facilidade de Integra\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L47",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o",
-      "community": 12,
-      "norm_label": "facilidade de integracao"
-    },
-    {
-      "label": "2. ConferePix \u2014 conferepix.app",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L52",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "community": 7,
-      "norm_label": "2. conferepix \u2014 conferepix.app"
-    },
-    {
-      "label": "Como Funciona",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L54",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_como_funciona_54",
-      "community": 7,
-      "norm_label": "como funciona"
-    },
-    {
-      "label": "Servi\u00e7os Oferecidos",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L57",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_57",
-      "community": 7,
-      "norm_label": "servicos oferecidos"
-    },
-    {
-      "label": "Pre\u00e7o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L63",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_pre\u00e7o_63",
-      "community": 7,
-      "norm_label": "preco"
-    },
-    {
-      "label": "Bancos Homologados",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L67",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_bancos_homologados_67",
-      "community": 7,
-      "norm_label": "bancos homologados"
-    },
-    {
-      "label": "Vantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L70",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_vantagens_70",
-      "community": 7,
-      "norm_label": "vantagens"
-    },
-    {
-      "label": "Desvantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L77",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_desvantagens_77",
-      "community": 7,
-      "norm_label": "desvantagens"
-    },
-    {
-      "label": "Facilidade de Integra\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L83",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_83",
-      "community": 7,
-      "norm_label": "facilidade de integracao"
-    },
-    {
-      "label": "3. PIXPDV \u2014 pixpdv.com.br",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L88",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
-      "community": 12,
-      "norm_label": "3. pixpdv \u2014 pixpdv.com.br"
-    },
-    {
-      "label": "Como Funciona",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L90",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_como_funciona_90",
-      "community": 12,
-      "norm_label": "como funciona"
-    },
-    {
-      "label": "Servi\u00e7os Oferecidos",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L93",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_93",
-      "community": 12,
-      "norm_label": "servicos oferecidos"
-    },
-    {
-      "label": "Pre\u00e7o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L101",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_pre\u00e7o_101",
-      "community": 12,
-      "norm_label": "preco"
-    },
-    {
-      "label": "Vantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L107",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_vantagens_107",
-      "community": 12,
-      "norm_label": "vantagens"
-    },
-    {
-      "label": "Desvantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L115",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_desvantagens_115",
-      "community": 12,
-      "norm_label": "desvantagens"
-    },
-    {
-      "label": "Facilidade de Integra\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L121",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_121",
-      "community": 12,
-      "norm_label": "facilidade de integracao"
-    },
-    {
-      "label": "4. PDV Pix \u2014 pdvpix.com.br",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L126",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
-      "community": 12,
-      "norm_label": "4. pdv pix \u2014 pdvpix.com.br"
-    },
-    {
-      "label": "Como Funciona",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L128",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_como_funciona_128",
-      "community": 12,
-      "norm_label": "como funciona"
-    },
-    {
-      "label": "Servi\u00e7os Oferecidos",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L131",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_131",
-      "community": 12,
-      "norm_label": "servicos oferecidos"
-    },
-    {
-      "label": "Pre\u00e7o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L141",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_pre\u00e7o_141",
-      "community": 12,
-      "norm_label": "preco"
-    },
-    {
-      "label": "Vantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L145",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_vantagens_145",
-      "community": 12,
-      "norm_label": "vantagens"
-    },
-    {
-      "label": "Desvantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L152",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_desvantagens_152",
-      "community": 12,
-      "norm_label": "desvantagens"
-    },
-    {
-      "label": "Facilidade de Integra\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L158",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_158",
-      "community": 12,
-      "norm_label": "facilidade de integracao"
-    },
-    {
-      "label": "5. OpenPix \u2014 openpix.com.br",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L163",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
-      "community": 19,
-      "norm_label": "5. openpix \u2014 openpix.com.br"
-    },
-    {
-      "label": "Como Funciona",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L165",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_como_funciona_165",
-      "community": 19,
-      "norm_label": "como funciona"
-    },
-    {
-      "label": "Servi\u00e7os Oferecidos",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L168",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_168",
-      "community": 19,
-      "norm_label": "servicos oferecidos"
-    },
-    {
-      "label": "Pre\u00e7o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L179",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_pre\u00e7o_179",
-      "community": 19,
-      "norm_label": "preco"
-    },
-    {
-      "label": "Vantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L185",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_vantagens_185",
-      "community": 19,
-      "norm_label": "vantagens"
-    },
-    {
-      "label": "Desvantagens",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L193",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_desvantagens_193",
-      "community": 19,
-      "norm_label": "desvantagens"
-    },
-    {
-      "label": "Facilidade de Integra\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L199",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_199",
-      "community": 19,
-      "norm_label": "facilidade de integracao"
-    },
-    {
-      "label": "Quadro Comparativo Geral",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L204",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_quadro_comparativo_geral",
-      "community": 12,
-      "norm_label": "quadro comparativo geral"
-    },
-    {
-      "label": "Recomenda\u00e7\u00e3o por Perfil de Empresa",
-      "file_type": "document",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L216",
-      "_origin": "ast",
-      "id": "cantina_senai_relatorio_pix_recomenda\u00e7\u00e3o_por_perfil_de_empresa",
-      "community": 12,
-      "norm_label": "recomendacao por perfil de empresa"
+      "id": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
+      "community": 10,
+      "norm_label": "estrutura obrigatoria de cada uc"
     },
     {
       "label": "2026-08-07-analise-ementas.md",
@@ -1594,6 +744,16 @@
       "norm_label": "arquivos modificados"
     },
     {
+      "label": "FICHA PRODUTO MAISTECH ATUALIZADA_5cbc16da.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/FICHA PRODUTO MAISTECH ATUALIZADA_5cbc16da.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_ficha_produto_maistech_atualizada_5cbc16da",
+      "community": 14,
+      "norm_label": "ficha produto maistech atualizada_5cbc16da.md"
+    },
+    {
       "label": "Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
@@ -1772,6 +932,346 @@
       "id": "converted_duplas_aula_12_08_2026_26445d56_sheet_sheet1",
       "community": 25,
       "norm_label": "sheet: sheet1"
+    },
+    {
+      "label": "AULAS-TIC.md",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic",
+      "community": 12,
+      "norm_label": "aulas-tic.md"
+    },
+    {
+      "label": "Aulas \u2014 TIC (Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o)",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "community": 12,
+      "norm_label": "aulas \u2014 tic (introducao a tecnologia da informacao e comunicacao)"
+    },
+    {
+      "label": "AULA 01 \u2014 03/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_01_03_08_2026",
+      "community": 12,
+      "norm_label": "aula 01 \u2014 03/08/2026"
+    },
+    {
+      "label": "AULA 02 \u2014 04/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_02_04_08_2026",
+      "community": 12,
+      "norm_label": "aula 02 \u2014 04/08/2026"
+    },
+    {
+      "label": "AULA 03 \u2014 05/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_03_05_08_2026",
+      "community": 12,
+      "norm_label": "aula 03 \u2014 05/08/2026"
+    },
+    {
+      "label": "AULA 04 \u2014 06/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_04_06_08_2026",
+      "community": 12,
+      "norm_label": "aula 04 \u2014 06/08/2026"
+    },
+    {
+      "label": "AULA 05 \u2014 07/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_05_07_08_2026",
+      "community": 12,
+      "norm_label": "aula 05 \u2014 07/08/2026"
+    },
+    {
+      "label": "AULA 06 \u2014 10/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_06_10_08_2026",
+      "community": 12,
+      "norm_label": "aula 06 \u2014 10/08/2026"
+    },
+    {
+      "label": "AULA 07 \u2014 11/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_07_11_08_2026",
+      "community": 12,
+      "norm_label": "aula 07 \u2014 11/08/2026"
+    },
+    {
+      "label": "AULA 08 \u2014 12/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_08_12_08_2026",
+      "community": 12,
+      "norm_label": "aula 08 \u2014 12/08/2026"
+    },
+    {
+      "label": "AULA 09 \u2014 13/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_09_13_08_2026",
+      "community": 12,
+      "norm_label": "aula 09 \u2014 13/08/2026"
+    },
+    {
+      "label": "AULA 10 \u2014 14/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_10_14_08_2026",
+      "community": 12,
+      "norm_label": "aula 10 \u2014 14/08/2026"
+    },
+    {
+      "label": "AULA 13 \u2014 24/08/2026",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_aula_13_24_08_2026",
+      "community": 12,
+      "norm_label": "aula 13 \u2014 24/08/2026"
+    },
+    {
+      "label": "Resumo",
+      "file_type": "document",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "recursos_humanos_aulas_tic_resumo",
+      "community": 12,
+      "norm_label": "resumo"
+    },
+    {
+      "label": "FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada",
+      "community": 7,
+      "norm_label": "ficha produto maistech atualizada.md"
+    },
+    {
+      "label": "Ficha de Cadastro de Produto Customizado \u2014 Rio do Sul Mais Tech / SENAI",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "community": 7,
+      "norm_label": "ficha de cadastro de produto customizado \u2014 rio do sul mais tech / senai"
+    },
+    {
+      "label": "1. Identifica\u00e7\u00e3o do Produto",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_1_identifica\u00e7\u00e3o_do_produto",
+      "community": 7,
+      "norm_label": "1. identificacao do produto"
+    },
+    {
+      "label": "2. Informa\u00e7\u00f5es Operacionais",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_informa\u00e7\u00f5es_operacionais",
+      "community": 7,
+      "norm_label": "2. informacoes operacionais"
+    },
+    {
+      "label": "2.1 Cronograma e Carga Hor\u00e1ria",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_1_cronograma_e_carga_hor\u00e1ria",
+      "community": 7,
+      "norm_label": "2.1 cronograma e carga horaria"
+    },
+    {
+      "label": "2.2 Turnos e Locais por Escola",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_2_turnos_e_locais_por_escola",
+      "community": 7,
+      "norm_label": "2.2 turnos e locais por escola"
+    },
+    {
+      "label": "3. Requisitos de Acesso",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_3_requisitos_de_acesso",
+      "community": 7,
+      "norm_label": "3. requisitos de acesso"
+    },
+    {
+      "label": "4. Objetivo Geral do Curso",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_4_objetivo_geral_do_curso",
+      "community": 7,
+      "norm_label": "4. objetivo geral do curso"
+    },
+    {
+      "label": "Interpreta\u00e7\u00e3o expandida para IA",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_interpreta\u00e7\u00e3o_expandida_para_ia",
+      "community": 7,
+      "norm_label": "interpretacao expandida para ia"
+    },
+    {
+      "label": "5. Conte\u00fado Program\u00e1tico",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_conte\u00fado_program\u00e1tico",
+      "community": 7,
+      "norm_label": "5. conteudo programatico"
+    },
+    {
+      "label": "5.1 Estrutura do M\u00f3dulo \u00danico",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_1_estrutura_do_m\u00f3dulo_\u00fanico",
+      "community": 7,
+      "norm_label": "5.1 estrutura do modulo unico"
+    },
+    {
+      "label": "5.2 Unidade Curricular: Refor\u00e7o Matem\u00e1tica e Racioc\u00ednio L\u00f3gico",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
+      "community": 7,
+      "norm_label": "5.2 unidade curricular: reforco matematica e raciocinio logico"
+    },
+    {
+      "label": "Carga Hor\u00e1ria",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_carga_hor\u00e1ria",
+      "community": 7,
+      "norm_label": "carga horaria"
+    },
+    {
+      "label": "Objetivo da Unidade Curricular",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_objetivo_da_unidade_curricular",
+      "community": 7,
+      "norm_label": "objetivo da unidade curricular"
+    },
+    {
+      "label": "Capacidades B\u00e1sicas e T\u00e9cnicas a Desenvolver",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_capacidades_b\u00e1sicas_e_t\u00e9cnicas_a_desenvolver",
+      "community": 7,
+      "norm_label": "capacidades basicas e tecnicas a desenvolver"
+    },
+    {
+      "label": "Conte\u00fados Formativos (Conhecimentos)",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_conte\u00fados_formativos_conhecimentos",
+      "community": 7,
+      "norm_label": "conteudos formativos (conhecimentos)"
+    },
+    {
+      "label": "Detalhamento dos T\u00f3picos para IA",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_detalhamento_dos_t\u00f3picos_para_ia",
+      "community": 7,
+      "norm_label": "detalhamento dos topicos para ia"
+    },
+    {
+      "label": "6. Campos Pendentes de Preenchimento",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L195",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_6_campos_pendentes_de_preenchimento",
+      "community": 7,
+      "norm_label": "6. campos pendentes de preenchimento"
+    },
+    {
+      "label": "7. Metadados do Documento",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L215",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_7_metadados_do_documento",
+      "community": 7,
+      "norm_label": "7. metadados do documento"
+    },
+    {
+      "label": "8. Orienta\u00e7\u00f5es de Uso para IA",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L229",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_8_orienta\u00e7\u00f5es_de_uso_para_ia",
+      "community": 7,
+      "norm_label": "8. orientacoes de uso para ia"
     },
     {
       "label": "CLAUDE.md",
@@ -2260,7 +1760,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia",
-      "community": 15,
+      "community": 13,
       "norm_label": "ementa-introducao-tecnologia.md"
     },
     {
@@ -2270,7 +1770,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "community": 15,
+      "community": 13,
       "norm_label": "ementa oficial \u2014 unidade curricular 1"
     },
     {
@@ -2280,7 +1780,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "community": 15,
+      "community": 13,
       "norm_label": "introducao a tecnologia da informacao e comunicacao"
     },
     {
@@ -2290,7 +1790,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_metadados_do_documento",
-      "community": 15,
+      "community": 13,
       "norm_label": "metadados do documento"
     },
     {
@@ -2300,7 +1800,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_prop\u00f3sito_e_contexto",
-      "community": 15,
+      "community": 13,
       "norm_label": "proposito e contexto"
     },
     {
@@ -2310,7 +1810,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_objetivo_geral",
-      "community": 15,
+      "community": 13,
       "norm_label": "objetivo geral"
     },
     {
@@ -2320,7 +1820,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_distribui\u00e7\u00e3o_de_carga_hor\u00e1ria",
-      "community": 15,
+      "community": 13,
       "norm_label": "distribuicao de carga horaria"
     },
     {
@@ -2330,7 +1830,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_capacidades_b\u00e1sicas",
-      "community": 15,
+      "community": 13,
       "norm_label": "capacidades basicas"
     },
     {
@@ -2490,7 +1990,7 @@
       "source_location": "L264",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_eixo_estruturante_bncc_compet\u00eancia_integradora",
-      "community": 15,
+      "community": 13,
       "norm_label": "eixo estruturante bncc / competencia integradora"
     },
     {
@@ -2500,7 +2000,7 @@
       "source_location": "L278",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_capacidades_socioemocionais",
-      "community": 15,
+      "community": 13,
       "norm_label": "capacidades socioemocionais"
     },
     {
@@ -2510,7 +2010,7 @@
       "source_location": "L292",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ambientes_pedag\u00f3gicos_e_recursos",
-      "community": 15,
+      "community": 13,
       "norm_label": "ambientes pedagogicos e recursos"
     },
     {
@@ -2790,7 +2290,7 @@
       "source_location": "L210",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o",
-      "community": 22,
+      "community": 2,
       "norm_label": "criterios de avaliacao"
     },
     {
@@ -2800,7 +2300,7 @@
       "source_location": "L212",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c1_comunica\u00e7\u00e3o_oral_e_escrita_profissional",
-      "community": 22,
+      "community": 2,
       "norm_label": "para a capacidade c1 \u2014 comunicacao oral e escrita profissional"
     },
     {
@@ -2810,7 +2310,7 @@
       "source_location": "L218",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c3_interpreta\u00e7\u00e3o_de_textos_t\u00e9cnicos",
-      "community": 22,
+      "community": 2,
       "norm_label": "para a capacidade c3 \u2014 interpretacao de textos tecnicos"
     },
     {
@@ -2820,7 +2320,7 @@
       "source_location": "L224",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c4_hardware_e_software",
-      "community": 22,
+      "community": 2,
       "norm_label": "para a capacidade c4 \u2014 hardware e software"
     },
     {
@@ -2830,7 +2330,7 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c5_recursos_web",
-      "community": 22,
+      "community": 2,
       "norm_label": "para a capacidade c5 \u2014 recursos web"
     },
     {
@@ -2840,7 +2340,7 @@
       "source_location": "L236",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c1_comunica\u00e7\u00e3o_escrita_t\u00e9cnica_entrega_4",
-      "community": 22,
+      "community": 2,
       "norm_label": "para a capacidade c1 \u2014 comunicacao escrita tecnica (entrega 4)"
     },
     {
@@ -2850,7 +2350,7 @@
       "source_location": "L242",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c3_textos_t\u00e9cnicos_e_normas_entrega_4",
-      "community": 22,
+      "community": 2,
       "norm_label": "para a capacidade c3 \u2014 textos tecnicos e normas (entrega 4)"
     },
     {
@@ -2878,221 +2378,86 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L379",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
+      "source_location": "L85",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main",
-      "target": "js_main_applylanguage"
+      "source": "recursos_humanos_converter_slides_pdf",
+      "target": "recursos_humanos_converter_slides_pdf_converter",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L426",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
+      "source_location": "L145",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main",
-      "target": "js_main_applytheme"
+      "source": "recursos_humanos_converter_slides_pdf",
+      "target": "recursos_humanos_converter_slides_pdf_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L497",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
+      "source_location": "L69",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main",
-      "target": "js_main_createparticle"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L445",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main",
-      "target": "js_main_gettypingphrases"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L534",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main",
-      "target": "js_main_onscroll"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L483",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main",
-      "target": "js_main_restarttyping"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L374",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main",
-      "target": "js_main_t"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L457",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main",
-      "target": "js_main_typeloop"
+      "source": "recursos_humanos_converter_slides_pdf",
+      "target": "recursos_humanos_converter_slides_pdf_preparar_html",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L385",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
+      "source_location": "L95",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main_applylanguage",
-      "target": "js_main_t"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L446",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main_gettypingphrases",
-      "target": "js_main_t"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L410",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main_applylanguage",
-      "target": "js_main_restarttyping"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L458",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main_typeloop",
-      "target": "js_main_gettypingphrases"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/js/main.js",
-      "source_location": "L490",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "js_main_restarttyping",
-      "target": "js_main_typeloop"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "converter_slides_pdf.py",
-      "source_location": "L31",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "converter_slides_pdf",
-      "target": "converter_slides_pdf_converter"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "converter_slides_pdf.py",
-      "source_location": "L92",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "converter_slides_pdf",
-      "target": "converter_slides_pdf_main"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "converter_slides_pdf.py",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "converter_slides_pdf",
-      "target": "converter_slides_pdf_preparar_html"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "converter_slides_pdf.py",
-      "source_location": "L77",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "converter_slides_pdf_converter",
-      "target": "converter_slides_pdf_preparar_html"
+      "source": "recursos_humanos_converter_slides_pdf_converter",
+      "target": "recursos_humanos_converter_slides_pdf_preparar_html",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
-      "source_file": "converter_slides_pdf.py",
-      "source_location": "L51",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
+      "source_location": "L69",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "converter_slides_pdf_preparar_html",
-      "target": "path"
+      "source": "recursos_humanos_converter_slides_pdf_preparar_html",
+      "target": "path",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "source_file": "converter_slides_pdf.py",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L70",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "converter_slides_pdf_rationale_70",
-      "target": "converter_slides_pdf_preparar_html"
+      "source": "recursos_humanos_converter_slides_pdf_rationale_70",
+      "target": "recursos_humanos_converter_slides_pdf_preparar_html",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
-      "source_file": "converter_slides_pdf.py",
-      "source_location": "L31",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
+      "source_location": "L85",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "converter_slides_pdf_converter",
-      "target": "path"
+      "source": "recursos_humanos_converter_slides_pdf_converter",
+      "target": "path",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "converter_slides_pdf.py",
-      "source_location": "L135",
+      "source_file": "recursos-humanos/converter_slides_pdf.py",
+      "source_location": "L188",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "converter_slides_pdf_main",
-      "target": "converter_slides_pdf_converter"
+      "source": "recursos_humanos_converter_slides_pdf_main",
+      "target": "recursos_humanos_converter_slides_pdf_converter",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3497,136 +2862,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic",
-      "target": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_01_03_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_02_04_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_03_05_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L38",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_04_06_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L48",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_05_07_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_06_10_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L64",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_07_11_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L72",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_08_12_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L80",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_09_13_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L89",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_10_14_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L98",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_aula_13_24_08_2026"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "AULAS-TIC.md",
-      "source_location": "L106",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "aulas_tic_resumo"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -3643,6 +2878,16 @@
       "confidence_score": 1.0,
       "source": "claude_professor_senai_regras_do_projeto",
       "target": "claude_commit_e_push_obrigat\u00f3rios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "claude_professor_senai_regras_do_projeto",
+      "target": "claude_estrutura_de_unidades_curriculares",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3677,602 +2922,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L1",
+      "source_file": "CLAUDE.md",
+      "source_location": "L44",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude",
-      "target": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
-      "target": "estilo_tema_exemplo_claude_autonomia_total_nunca_pe\u00e7a_permiss\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L75",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
-      "target": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
-      "target": "estilo_tema_exemplo_claude_git_commit_e_push_autom\u00e1tico"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
-      "target": "estilo_tema_exemplo_claude_idioma"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L65",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
-      "target": "estilo_tema_exemplo_claude_idioma_inicial_do_site"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L34",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
-      "target": "estilo_tema_exemplo_claude_llms_txt_atualiza\u00e7\u00e3o_obrigat\u00f3ria"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L48",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_instru\u00e7\u00f5es_do_projeto_gelvazio_github_io",
-      "target": "estilo_tema_exemplo_claude_registro_de_altera\u00e7\u00f5es_alteracoes_js"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L184",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_efeitos_visuais"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L88",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_estrutura_de_arquivos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L205",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_favicon"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L149",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_hero_cards_grid_2_2"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L194",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_painel_de_altera\u00e7\u00f5es_alteracoes_js"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L109",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_se\u00e7\u00f5es_do_site_index_html"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L122",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_sistema_de_i18n_internacionaliza\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L175",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_tema_dark_light"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L160",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_timeline_de_experi\u00eancia"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/CLAUDE.md",
-      "source_location": "L80",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_claude_como_este_projeto_funciona_documenta\u00e7\u00e3o_t\u00e9cnica_detalhada",
-      "target": "estilo_tema_exemplo_claude_vis\u00e3o_geral"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CURSO-ARDUINO/estilo-tema-exemplo/README.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "estilo_tema_exemplo_readme",
-      "target": "estilo_tema_exemplo_readme_gelvazio_github_io"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix",
-      "target": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "target": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L52",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "target": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L88",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "target": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L126",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "target": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L163",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "target": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "target": "cantina_senai_relatorio_pix_contexto_do_mercado"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L204",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "target": "cantina_senai_relatorio_pix_quadro_comparativo_geral"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L216",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_relat\u00f3rio_comparativo_servi\u00e7os_de_valida\u00e7\u00e3o_pix_para_empresas",
-      "target": "cantina_senai_relatorio_pix_recomenda\u00e7\u00e3o_por_perfil_de_empresa"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
-      "target": "cantina_senai_relatorio_pix_bancos_homologados"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
-      "target": "cantina_senai_relatorio_pix_como_funciona"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
-      "target": "cantina_senai_relatorio_pix_desvantagens"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L47",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
-      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
-      "target": "cantina_senai_relatorio_pix_pre\u00e7o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
-      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L34",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_1_validapix_validapix_com_br",
-      "target": "cantina_senai_relatorio_pix_vantagens"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L67",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "target": "cantina_senai_relatorio_pix_bancos_homologados_67"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L54",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "target": "cantina_senai_relatorio_pix_como_funciona_54"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L77",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "target": "cantina_senai_relatorio_pix_desvantagens_77"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L83",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_83"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L63",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "target": "cantina_senai_relatorio_pix_pre\u00e7o_63"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L57",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_57"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L70",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_2_conferepix_conferepix_app",
-      "target": "cantina_senai_relatorio_pix_vantagens_70"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L90",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
-      "target": "cantina_senai_relatorio_pix_como_funciona_90"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L115",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
-      "target": "cantina_senai_relatorio_pix_desvantagens_115"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L121",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
-      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_121"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L101",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
-      "target": "cantina_senai_relatorio_pix_pre\u00e7o_101"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L93",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
-      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_93"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L107",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_3_pixpdv_pixpdv_com_br",
-      "target": "cantina_senai_relatorio_pix_vantagens_107"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L128",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
-      "target": "cantina_senai_relatorio_pix_como_funciona_128"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L152",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
-      "target": "cantina_senai_relatorio_pix_desvantagens_152"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L158",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
-      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_158"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L141",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
-      "target": "cantina_senai_relatorio_pix_pre\u00e7o_141"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L131",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
-      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_131"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L145",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_4_pdv_pix_pdvpix_com_br",
-      "target": "cantina_senai_relatorio_pix_vantagens_145"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L165",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
-      "target": "cantina_senai_relatorio_pix_como_funciona_165"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L193",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
-      "target": "cantina_senai_relatorio_pix_desvantagens_193"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L199",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
-      "target": "cantina_senai_relatorio_pix_facilidade_de_integra\u00e7\u00e3o_199"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L179",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
-      "target": "cantina_senai_relatorio_pix_pre\u00e7o_179"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L168",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
-      "target": "cantina_senai_relatorio_pix_servi\u00e7os_oferecidos_168"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "cantina-senai/RELATORIO_PIX.md",
-      "source_location": "L185",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "cantina_senai_relatorio_pix_5_openpix_openpix_com_br",
-      "target": "cantina_senai_relatorio_pix_vantagens_185"
+      "source": "claude_estrutura_de_unidades_curriculares",
+      "target": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4593,6 +3248,326 @@
       "confidence_score": 1.0,
       "source": "converted_duplas_aula_12_08_2026_26445d56",
       "target": "converted_duplas_aula_12_08_2026_26445d56_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic",
+      "target": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_01_03_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_02_04_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_03_05_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_04_06_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_05_07_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_06_10_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_07_11_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_08_12_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_09_13_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_10_14_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_aula_13_24_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/AULAS-TIC.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "recursos_humanos_aulas_tic_resumo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_1_identifica\u00e7\u00e3o_do_produto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_informa\u00e7\u00f5es_operacionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_3_requisitos_de_acesso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_4_objetivo_geral_do_curso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_conte\u00fado_program\u00e1tico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_6_campos_pendentes_de_preenchimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_7_metadados_do_documento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L229",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_8_orienta\u00e7\u00f5es_de_uso_para_ia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_informa\u00e7\u00f5es_operacionais",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_1_cronograma_e_carga_hor\u00e1ria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_informa\u00e7\u00f5es_operacionais",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_2_turnos_e_locais_por_escola",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_4_objetivo_geral_do_curso",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_interpreta\u00e7\u00e3o_expandida_para_ia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_conte\u00fado_program\u00e1tico",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_1_estrutura_do_m\u00f3dulo_\u00fanico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_conte\u00fado_program\u00e1tico",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_capacidades_b\u00e1sicas_e_t\u00e9cnicas_a_desenvolver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_carga_hor\u00e1ria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_conte\u00fados_formativos_conhecimentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_objetivo_da_unidade_curricular",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_conte\u00fados_formativos_conhecimentos",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_detalhamento_dos_t\u00f3picos_para_ia",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5646,5 +4621,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "058b387cc0457e64beffebcc80a8c4f3d62e3c93"
+  "built_at_commit": "208cc6b3ec516189c3b44ef59b2454f6dddaa5de"
 }
