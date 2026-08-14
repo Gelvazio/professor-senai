@@ -744,14 +744,49 @@
     "ast_hash": "d19a33f704aa7d03c6699443302149a7",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md": {
+  "erp-victor-anato-senai/CLAUDE.md": {
+    "mtime": 1786715977.5536332,
+    "ast_hash": "5345a2c33c66487ec33dd7700158e3e5",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md": {
     "mtime": 1786714267.6310265,
     "ast_hash": "05a90a24153c9cd744efa3a460d7a82f",
     "semantic_hash": ""
   },
-  "erp-victor-anato-senai/CLAUDE.md": {
-    "mtime": 1786714442.0553398,
-    "ast_hash": "c48ea036e076f273ed5b5da60782c5f1",
+  "erp-victor-anato-senai/.claude/settings.local.json": {
+    "mtime": 1786715898.3984892,
+    "ast_hash": "e39cfe218826e03d5328e9580ceee660",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/AJUSTE-HORARIOS.png": {
+    "mtime": 1786715978.134686,
+    "ast_hash": "21aaeeb705a3050c6fe7be9a95a80291",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/DATABASE.sql": {
+    "mtime": 1786716628.0530405,
+    "ast_hash": "044998b2236985022e2938937196ee8c",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/organizacao sala.txt": {
+    "mtime": 1786716446.4450274,
+    "ast_hash": "3d1153d5ccbdf83304c855d0a422e14c",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/SUPABASE.js": {
+    "mtime": 1786716732.0092642,
+    "ast_hash": "6b210674b4d7cd2126cc26c0608dd813",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md": {
+    "mtime": 1786716979.2935877,
+    "ast_hash": "6ecb06980f59f582ef7008a1730da2e7",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.html": {
+    "mtime": 1786716828.9725573,
+    "ast_hash": "f66ac84d7a65153760187b32f6444a1c",
     "semantic_hash": ""
   }
 }

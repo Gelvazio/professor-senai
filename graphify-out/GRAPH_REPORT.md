@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-14)
 
 ## Corpus Check
-- 29 files · ~372,728 words
+- 33 files · ~384,716 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 356 nodes · 336 edges · 28 communities (27 shown, 1 thin omitted)
+- 411 nodes · 407 edges · 30 communities (29 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b8e51b5d`
+- Built from commit: `1f036cce`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -39,6 +39,8 @@
 - [[_COMMUNITY_Community 25|Community 25]]
 - [[_COMMUNITY_Community 26|Community 26]]
 - [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Situação de Aprendizagem — Bloco 02` - 19 edges
@@ -46,11 +48,11 @@
 3. `ATIVIDADE INTEGRADORA — UC1 Introdução à TIC` - 15 edges
 4. `What You Must Do When Invoked` - 14 edges
 5. `Aulas — TIC (Introdução à Tecnologia da Informação e Comunicação)` - 13 edges
-6. `ERP Victor Anato — Orientações de Desenvolvimento` - 11 edges
-7. `Ementa Oficial — Unidade Curricular 1` - 11 edges
-8. `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` - 10 edges
-9. `Conhecimentos` - 10 edges
-10. `Conhecimentos Detalhados` - 10 edges
+6. `ERP Victor Anato — Orientações de Desenvolvimento` - 12 edges
+7. `Passos de Criação — ERP Victor Anato` - 11 edges
+8. `Ementa Oficial — Unidade Curricular 1` - 11 edges
+9. `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` - 10 edges
+10. `Conhecimentos` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -58,11 +60,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (28 total, 1 thin omitted)
+## Communities (30 total, 1 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.10
-Nodes (19): Ambientes Pedagógicos e Recursos, Capacidades Básicas, Capacidades Socioemocionais, Carga Horária, ✅ Commit e Push obrigatórios, Configuração Supabase, Controle de perfil (frontend), Eixo Estruturante BNCC / Competência Integradora (+11 more)
+Nodes (24): fetchComTimeout(), HEADERS, HEADERS_READ, Numerar, sbAtualizar(), sbBuscar(), sbContar(), sbData() (+16 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.13
@@ -121,8 +123,8 @@ Cohesion: 0.11
 Nodes (17): Abas criadas, ABATE, AGENDAMENTOS (Porcos a chegar), Arquivo Excel Gerado, Boas Práticas Operacionais, Campos Principais, COLONOS, Contexto (+9 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.06
-Nodes (32): 1.1 Clientes, 1.2 Fornecedores, 1.3 Produtos, 1.4 Transportadoras, 3.1 Armazenagem, 3.2 Controle de Estoque, 3.3 Movimentações, 3.4 Inventário (+24 more)
+Cohesion: 0.05
+Nodes (43): 1.1 Clientes, 1.2 Fornecedores, 1.3 Produtos, 1.4 Transportadoras, 3.1 Armazenagem, 3.2 Controle de Estoque, 3.3 Movimentações, 3.4 Inventário (+35 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.40
@@ -149,27 +151,35 @@ Cohesion: 0.12
 Nodes (15): ATIVIDADE INTEGRADORA — UC1 Introdução à TIC, Distribuição do Tempo, Identificação da Dupla, Orientações Gerais, Pontuação Total, SENAI · Aprendizagem Industrial · Turma TI01, SEÇÃO 1 — Aula 01 · História da Computação, Hardware e Software, SEÇÃO 2 — Aula 02 · Comunicação, Elementos e Equipes (+7 more)
 
 ### Community 27 - "Community 27"
+Cohesion: 0.10
+Nodes (19): Ambientes Pedagógicos e Recursos, Capacidades Básicas, Capacidades Socioemocionais, Carga Horária, ✅ Commit e Push obrigatórios, Configuração Supabase, Controle de perfil (frontend), Eixo Estruturante BNCC / Competência Integradora (+11 more)
+
+### Community 28 - "Community 28"
 Cohesion: 0.25
 Nodes (8): 2.1 Planejamento, 2.2 Solicitação de Compras, 2.3 Pedido de Compras, 2.4 Recebimento, 2.5 Conferência, 2.6 Entrada de Nota Fiscal, Fluxo do Módulo de Compras, Módulo 2 — COMPRAS
 
+### Community 29 - "Community 29"
+Cohesion: 0.17
+Nodes (11): Arquivos Base, Passo 1 — Autenticação, Passo 2 — Dashboard (Visão Geral), Passo 3 — Módulo Cadastros, Passo 4 — Módulo Compras, Passo 5 — Módulo Estoque, Passo 6 — Módulo Vendas e Logística, Passo 7 — Módulo Configurações (+3 more)
+
 ## Knowledge Gaps
-- **266 isolated node(s):** `Overview`, `Fluxo Obrigatório`, `Regras`, `Ícones de Status`, `Modelo do Arquivo` (+261 more)
+- **288 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Overview`, `Fluxo Obrigatório` (+283 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ERP Victor Anato — Orientações de Desenvolvimento` connect `Community 16` to `Community 27`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `SENAI — Projeto de Curso: Aprendizagem Industrial` connect `Community 0` to `Community 3`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` connect `Community 0` to `Community 1`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **What connects `Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com     to`, `Overview`, `Fluxo Obrigatório` to the rest of the system?**
-  _267 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `ERP Victor Anato — Orientações de Desenvolvimento` connect `Community 16` to `Community 28`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `SENAI — Projeto de Curso: Aprendizagem Industrial` connect `Community 27` to `Community 3`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` connect `Community 27` to `Community 1`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
+  _289 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09879032258064516 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**

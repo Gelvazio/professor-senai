@@ -4,6 +4,326 @@
   "graph": {},
   "nodes": [
     {
+      "label": "SUPABASE.js",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase",
+      "community": 0,
+      "norm_label": "supabase.js"
+    },
+    {
+      "label": "HEADERS",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_headers",
+      "community": 0,
+      "norm_label": "headers"
+    },
+    {
+      "label": "HEADERS_READ",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_headers_read",
+      "community": 0,
+      "norm_label": "headers_read"
+    },
+    {
+      "label": "fetchComTimeout()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_fetchcomtimeout",
+      "community": 0,
+      "norm_label": "fetchcomtimeout()"
+    },
+    {
+      "label": "sbListar()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sblistar",
+      "community": 0,
+      "norm_label": "sblistar()"
+    },
+    {
+      "label": "sbBuscar()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbbuscar",
+      "community": 0,
+      "norm_label": "sbbuscar()"
+    },
+    {
+      "label": "sbInserir()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbinserir",
+      "community": 0,
+      "norm_label": "sbinserir()"
+    },
+    {
+      "label": "sbAtualizar()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbatualizar",
+      "community": 0,
+      "norm_label": "sbatualizar()"
+    },
+    {
+      "label": "sbExcluir()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbexcluir",
+      "community": 0,
+      "norm_label": "sbexcluir()"
+    },
+    {
+      "label": "sbContar()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbcontar",
+      "community": 0,
+      "norm_label": "sbcontar()"
+    },
+    {
+      "label": "sbProximoNumero()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbproximonumero",
+      "community": 0,
+      "norm_label": "sbproximonumero()"
+    },
+    {
+      "label": "Numerar",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L174",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_numerar",
+      "community": 0,
+      "norm_label": "numerar"
+    },
+    {
+      "label": "sha256()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sha256",
+      "community": 0,
+      "norm_label": "sha256()"
+    },
+    {
+      "label": "sbLogin()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L211",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sblogin",
+      "community": 0,
+      "norm_label": "sblogin()"
+    },
+    {
+      "label": "sbLogout()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L231",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sblogout",
+      "community": 0,
+      "norm_label": "sblogout()"
+    },
+    {
+      "label": "sbVerificarSessao()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L249",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbverificarsessao",
+      "community": 0,
+      "norm_label": "sbverificarsessao()"
+    },
+    {
+      "label": "sbPerfil()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L259",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbperfil",
+      "community": 0,
+      "norm_label": "sbperfil()"
+    },
+    {
+      "label": "sbIsAdmin()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L264",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbisadmin",
+      "community": 0,
+      "norm_label": "sbisadmin()"
+    },
+    {
+      "label": "sbTemPermissao()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L274",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbtempermissao",
+      "community": 0,
+      "norm_label": "sbtempermissao()"
+    },
+    {
+      "label": "sbExigirPermissao()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L281",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbexigirpermissao",
+      "community": 0,
+      "norm_label": "sbexigirpermissao()"
+    },
+    {
+      "label": "sbUserNome()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L289",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbusernome",
+      "community": 0,
+      "norm_label": "sbusernome()"
+    },
+    {
+      "label": "sbAplicarTema()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L299",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbaplicartema",
+      "community": 0,
+      "norm_label": "sbaplicartema()"
+    },
+    {
+      "label": "sbToggleTema()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L305",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbtoggletema",
+      "community": 0,
+      "norm_label": "sbtoggletema()"
+    },
+    {
+      "label": "sbIniciarBtnTema()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L316",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbiniciarbtntema",
+      "community": 0,
+      "norm_label": "sbiniciarbtntema()"
+    },
+    {
+      "label": "sbMensagem()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L339",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbmensagem",
+      "community": 0,
+      "norm_label": "sbmensagem()"
+    },
+    {
+      "label": "sbMoeda()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L353",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbmoeda",
+      "community": 0,
+      "norm_label": "sbmoeda()"
+    },
+    {
+      "label": "sbData()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L365",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbdata",
+      "community": 0,
+      "norm_label": "sbdata()"
+    },
+    {
+      "label": "sbPopularSelect()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L380",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbpopularselect",
+      "community": 0,
+      "norm_label": "sbpopularselect()"
+    },
+    {
+      "label": "sbViaCEP()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L406",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbviacep",
+      "community": 0,
+      "norm_label": "sbviacep()"
+    },
+    {
+      "label": "sbMovimentarEstoque()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L447",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbmovimentarestoque",
+      "community": 0,
+      "norm_label": "sbmovimentarestoque()"
+    },
+    {
+      "label": "sbVerificarEstoque()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L470",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbverificarestoque",
+      "community": 0,
+      "norm_label": "sbverificarestoque()"
+    },
+    {
+      "label": "sbGerarPDFPedidoCompra()",
+      "file_type": "code",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L488",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_supabase_sbgerarpdfpedidocompra",
+      "community": 0,
+      "norm_label": "sbgerarpdfpedidocompra()"
+    },
+    {
       "label": "converter_slides_pdf.py",
       "file_type": "code",
       "source_file": "recursos-humanos/converter_slides_pdf.py",
@@ -850,7 +1170,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
-      "community": 27,
+      "community": 28,
       "norm_label": "modulo 2 \u2014 compras"
     },
     {
@@ -860,7 +1180,7 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_compras",
-      "community": 27,
+      "community": 28,
       "norm_label": "fluxo do modulo de compras"
     },
     {
@@ -870,7 +1190,7 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_2_1_planejamento",
-      "community": 27,
+      "community": 28,
       "norm_label": "2.1 planejamento"
     },
     {
@@ -880,7 +1200,7 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_2_2_solicita\u00e7\u00e3o_de_compras",
-      "community": 27,
+      "community": 28,
       "norm_label": "2.2 solicitacao de compras"
     },
     {
@@ -890,7 +1210,7 @@
       "source_location": "L167",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_2_3_pedido_de_compras",
-      "community": 27,
+      "community": 28,
       "norm_label": "2.3 pedido de compras"
     },
     {
@@ -900,7 +1220,7 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_2_4_recebimento",
-      "community": 27,
+      "community": 28,
       "norm_label": "2.4 recebimento"
     },
     {
@@ -910,7 +1230,7 @@
       "source_location": "L209",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_2_5_confer\u00eancia",
-      "community": 27,
+      "community": 28,
       "norm_label": "2.5 conferencia"
     },
     {
@@ -920,7 +1240,7 @@
       "source_location": "L227",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_2_6_entrada_de_nota_fiscal",
-      "community": 27,
+      "community": 28,
       "norm_label": "2.6 entrada de nota fiscal"
     },
     {
@@ -1144,24 +1464,254 @@
       "norm_label": "autenticacao"
     },
     {
-      "label": "Tecnologias Recomendadas",
+      "label": "Tecnologias",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L550",
       "_origin": "ast",
-      "id": "erp_victor_anato_senai_claude_tecnologias_recomendadas",
+      "id": "erp_victor_anato_senai_claude_tecnologias",
       "community": 16,
-      "norm_label": "tecnologias recomendadas"
+      "norm_label": "tecnologias"
+    },
+    {
+      "label": "Frontend \u2014 Vanilla JS (obrigat\u00f3rio)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L552",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_frontend_vanilla_js_obrigat\u00f3rio",
+      "community": 16,
+      "norm_label": "frontend \u2014 vanilla js (obrigatorio)"
+    },
+    {
+      "label": "Estrutura de arquivos HTML (uma por tela/m\u00f3dulo)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L564",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo",
+      "community": 16,
+      "norm_label": "estrutura de arquivos html (uma por tela/modulo)"
+    },
+    {
+      "label": "Padr\u00f5es JavaScript obrigat\u00f3rios",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L599",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_padr\u00f5es_javascript_obrigat\u00f3rios",
+      "community": 16,
+      "norm_label": "padroes javascript obrigatorios"
+    },
+    {
+      "label": "Backend / Banco de Dados",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L632",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_backend_banco_de_dados",
+      "community": 16,
+      "norm_label": "backend / banco de dados"
+    },
+    {
+      "label": "Supabase \u2014 Configura\u00e7\u00e3o e Uso da API",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L640",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "community": 16,
+      "norm_label": "supabase \u2014 configuracao e uso da api"
+    },
+    {
+      "label": "Credenciais",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L642",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_credenciais",
+      "community": 16,
+      "norm_label": "credenciais"
+    },
+    {
+      "label": "Padr\u00e3o de CRUD \u2014 fun\u00e7\u00f5es reutiliz\u00e1veis",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L656",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis",
+      "community": 16,
+      "norm_label": "padrao de crud \u2014 funcoes reutilizaveis"
+    },
+    {
+      "label": "Filtros e operadores da API REST Supabase",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L716",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_filtros_e_operadores_da_api_rest_supabase",
+      "community": 16,
+      "norm_label": "filtros e operadores da api rest supabase"
+    },
+    {
+      "label": "Esquema de tabelas do banco (PostgreSQL)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L730",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_esquema_de_tabelas_do_banco_postgresql",
+      "community": 16,
+      "norm_label": "esquema de tabelas do banco (postgresql)"
+    },
+    {
+      "label": "RLS (Row Level Security)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L1038",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_rls_row_level_security",
+      "community": 16,
+      "norm_label": "rls (row level security)"
+    },
+    {
+      "label": "Autentica\u00e7\u00e3o do ERP",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L1049",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_autentica\u00e7\u00e3o_do_erp",
+      "community": 16,
+      "norm_label": "autenticacao do erp"
     },
     {
       "label": "Ordem de Implementa\u00e7\u00e3o Sugerida",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L563",
+      "source_location": "L1093",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
       "community": 16,
       "norm_label": "ordem de implementacao sugerida"
+    },
+    {
+      "label": "PASSOS-CRIACAO-ERP.md",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp",
+      "community": 29,
+      "norm_label": "passos-criacao-erp.md"
+    },
+    {
+      "label": "Passos de Cria\u00e7\u00e3o \u2014 ERP Victor Anato",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "community": 29,
+      "norm_label": "passos de criacao \u2014 erp victor anato"
+    },
+    {
+      "label": "Arquivos Base",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_arquivos_base",
+      "community": 29,
+      "norm_label": "arquivos base"
+    },
+    {
+      "label": "Passo 1 \u2014 Autentica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_passo_1_autentica\u00e7\u00e3o",
+      "community": 29,
+      "norm_label": "passo 1 \u2014 autenticacao"
+    },
+    {
+      "label": "Passo 2 \u2014 Dashboard (Vis\u00e3o Geral)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral",
+      "community": 29,
+      "norm_label": "passo 2 \u2014 dashboard (visao geral)"
+    },
+    {
+      "label": "Passo 3 \u2014 M\u00f3dulo Cadastros",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_passo_3_m\u00f3dulo_cadastros",
+      "community": 29,
+      "norm_label": "passo 3 \u2014 modulo cadastros"
+    },
+    {
+      "label": "Passo 4 \u2014 M\u00f3dulo Compras",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_passo_4_m\u00f3dulo_compras",
+      "community": 29,
+      "norm_label": "passo 4 \u2014 modulo compras"
+    },
+    {
+      "label": "Passo 5 \u2014 M\u00f3dulo Estoque",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_passo_5_m\u00f3dulo_estoque",
+      "community": 29,
+      "norm_label": "passo 5 \u2014 modulo estoque"
+    },
+    {
+      "label": "Passo 6 \u2014 M\u00f3dulo Vendas e Log\u00edstica",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica",
+      "community": 29,
+      "norm_label": "passo 6 \u2014 modulo vendas e logistica"
+    },
+    {
+      "label": "Passo 7 \u2014 M\u00f3dulo Configura\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es",
+      "community": 29,
+      "norm_label": "passo 7 \u2014 modulo configuracoes"
+    },
+    {
+      "label": "Passo 8 \u2014 Ajustes Finais e Testes",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_passo_8_ajustes_finais_e_testes",
+      "community": 29,
+      "norm_label": "passo 8 \u2014 ajustes finais e testes"
+    },
+    {
+      "label": "Resumo de Progresso",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_passos_criacao_erp_resumo_de_progresso",
+      "community": 29,
+      "norm_label": "resumo de progresso"
     },
     {
       "label": "ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md",
@@ -2304,19 +2854,19 @@
       "norm_label": "referencias"
     },
     {
-      "label": "ATIVIDADE 14-08-2026.md",
+      "label": "ATIVIDADE-14-08-2026.md",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L1",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026",
       "community": 26,
-      "norm_label": "atividade 14-08-2026.md"
+      "norm_label": "atividade-14-08-2026.md"
     },
     {
       "label": "ATIVIDADE INTEGRADORA \u2014 UC1 Introdu\u00e7\u00e3o \u00e0 TIC",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L1",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
@@ -2326,7 +2876,7 @@
     {
       "label": "SENAI \u00b7 Aprendizagem Industrial \u00b7 Turma TI01",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L2",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_senai_aprendizagem_industrial_turma_ti01",
@@ -2336,7 +2886,7 @@
     {
       "label": "Identifica\u00e7\u00e3o da Dupla",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L10",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_identifica\u00e7\u00e3o_da_dupla",
@@ -2346,7 +2896,7 @@
     {
       "label": "Orienta\u00e7\u00f5es Gerais",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L21",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_orienta\u00e7\u00f5es_gerais",
@@ -2356,7 +2906,7 @@
     {
       "label": "Distribui\u00e7\u00e3o do Tempo",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L31",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_distribui\u00e7\u00e3o_do_tempo",
@@ -2366,7 +2916,7 @@
     {
       "label": "SE\u00c7\u00c3O 1 \u2014 Aula 01 \u00b7 Hist\u00f3ria da Computa\u00e7\u00e3o, Hardware e Software",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L49",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_1_aula_01_hist\u00f3ria_da_computa\u00e7\u00e3o_hardware_e_software",
@@ -2376,7 +2926,7 @@
     {
       "label": "SE\u00c7\u00c3O 2 \u2014 Aula 02 \u00b7 Comunica\u00e7\u00e3o, Elementos e Equipes",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L85",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_2_aula_02_comunica\u00e7\u00e3o_elementos_e_equipes",
@@ -2386,7 +2936,7 @@
     {
       "label": "SE\u00c7\u00c3O 3 \u2014 Aula 03 \u00b7 Seguran\u00e7a da Informa\u00e7\u00e3o",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L123",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_3_aula_03_seguran\u00e7a_da_informa\u00e7\u00e3o",
@@ -2396,7 +2946,7 @@
     {
       "label": "SE\u00c7\u00c3O 4 \u2014 Aula 04 \u00b7 Internet e World Wide Web",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L167",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_4_aula_04_internet_e_world_wide_web",
@@ -2406,7 +2956,7 @@
     {
       "label": "SE\u00c7\u00c3O 5 \u2014 Aula 05 \u00b7 Google Docs \u2014 Editor de Textos",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L200",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_5_aula_05_google_docs_editor_de_textos",
@@ -2416,7 +2966,7 @@
     {
       "label": "SE\u00c7\u00c3O 6 \u2014 Aula 06 \u00b7 Google Sheets \u2014 Planilhas Eletr\u00f4nicas",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L247",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_6_aula_06_google_sheets_planilhas_eletr\u00f4nicas",
@@ -2426,7 +2976,7 @@
     {
       "label": "SE\u00c7\u00c3O 7 \u2014 Aula 07 \u00b7 Google Slides \u2014 Editor de Apresenta\u00e7\u00f5es",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L298",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_7_aula_07_google_slides_editor_de_apresenta\u00e7\u00f5es",
@@ -2436,7 +2986,7 @@
     {
       "label": "SE\u00c7\u00c3O 8 \u2014 Aula 08 \u00b7 Textos T\u00e9cnicos e Linguagem Profissional",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L334",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_8_aula_08_textos_t\u00e9cnicos_e_linguagem_profissional",
@@ -2446,7 +2996,7 @@
     {
       "label": "SE\u00c7\u00c3O 9 \u2014 Projeto Final \u00b7 Integra\u00e7\u00e3o e Organiza\u00e7\u00e3o no Drive",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L376",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_9_projeto_final_integra\u00e7\u00e3o_e_organiza\u00e7\u00e3o_no_drive",
@@ -2456,7 +3006,7 @@
     {
       "label": "Pontua\u00e7\u00e3o Total",
       "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
       "source_location": "L422",
       "_origin": "ast",
       "id": "aula_10_14_08_2026_atividade_14_08_2026_pontua\u00e7\u00e3o_total",
@@ -2470,7 +3020,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude",
-      "community": 0,
+      "community": 27,
       "norm_label": "claude.md"
     },
     {
@@ -2480,7 +3030,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "community": 0,
+      "community": 27,
       "norm_label": "senai \u2014 projeto de curso: aprendizagem industrial"
     },
     {
@@ -2490,7 +3040,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
-      "community": 0,
+      "community": 27,
       "norm_label": "modulo educacao para o trabalho"
     },
     {
@@ -2500,7 +3050,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "community": 0,
+      "community": 27,
       "norm_label": "unidade curricular 1: introducao a tecnologia da informacao e comunicacao"
     },
     {
@@ -2510,7 +3060,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_turma",
-      "community": 0,
+      "community": 27,
       "norm_label": "turma"
     },
     {
@@ -2520,7 +3070,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_tempo_real_de_instru\u00e7\u00e3o",
-      "community": 0,
+      "community": 27,
       "norm_label": "tempo real de instrucao"
     },
     {
@@ -2530,7 +3080,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_carga_hor\u00e1ria",
-      "community": 0,
+      "community": 27,
       "norm_label": "carga horaria"
     },
     {
@@ -2540,7 +3090,7 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_b\u00e1sicas",
-      "community": 0,
+      "community": 27,
       "norm_label": "capacidades basicas"
     },
     {
@@ -2700,7 +3250,7 @@
       "source_location": "L187",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_eixo_estruturante_bncc_compet\u00eancia_integradora",
-      "community": 0,
+      "community": 27,
       "norm_label": "eixo estruturante bncc / competencia integradora"
     },
     {
@@ -2710,7 +3260,7 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_capacidades_socioemocionais",
-      "community": 0,
+      "community": 27,
       "norm_label": "capacidades socioemocionais"
     },
     {
@@ -2720,7 +3270,7 @@
       "source_location": "L205",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_ambientes_pedag\u00f3gicos_e_recursos",
-      "community": 0,
+      "community": 27,
       "norm_label": "ambientes pedagogicos e recursos"
     },
     {
@@ -2730,7 +3280,7 @@
       "source_location": "L215",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_ferramentas_de_ensino",
-      "community": 0,
+      "community": 27,
       "norm_label": "ferramentas de ensino"
     },
     {
@@ -2860,7 +3410,7 @@
       "source_location": "L315",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_regras_de_trabalho_claude",
-      "community": 0,
+      "community": 27,
       "norm_label": "regras de trabalho \u2014 claude"
     },
     {
@@ -2870,7 +3420,7 @@
       "source_location": "L317",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios",
-      "community": 0,
+      "community": 27,
       "norm_label": "\u2705 commit e push obrigatorios"
     },
     {
@@ -2880,7 +3430,7 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_slides_devem_ter_no_m\u00ednimo_15_slides",
-      "community": 0,
+      "community": 27,
       "norm_label": "\u2705 slides devem ter no minimo 15 slides"
     },
     {
@@ -2890,7 +3440,7 @@
       "source_location": "L336",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase",
-      "community": 0,
+      "community": 27,
       "norm_label": "configuracao supabase"
     },
     {
@@ -2900,7 +3450,7 @@
       "source_location": "L344",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_tabela_curso",
-      "community": 0,
+      "community": 27,
       "norm_label": "tabela `curso`"
     },
     {
@@ -2910,7 +3460,7 @@
       "source_location": "L362",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
-      "community": 0,
+      "community": 27,
       "norm_label": "estrutura `gabaritos` (coluna jsonb da tabela `curso`)"
     },
     {
@@ -2920,7 +3470,7 @@
       "source_location": "L377",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
-      "community": 0,
+      "community": 27,
       "norm_label": "funcoes rpc disponiveis"
     },
     {
@@ -2930,7 +3480,7 @@
       "source_location": "L385",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_controle_de_perfil_frontend",
-      "community": 0,
+      "community": 27,
       "norm_label": "controle de perfil (frontend)"
     },
     {
@@ -3565,6 +4115,514 @@
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_fetchcomtimeout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_headers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_headers_read"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L174",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_numerar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L299",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbaplicartema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbatualizar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbbuscar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbcontar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L365",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbdata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbexcluir"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L281",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbexigirpermissao"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L488",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbgerarpdfpedidocompra"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L316",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbiniciarbtntema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbinserir"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L264",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbisadmin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sblistar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L211",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sblogin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sblogout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L339",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbmensagem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L353",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbmoeda"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L447",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbmovimentarestoque"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L259",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbperfil"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L380",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbpopularselect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L162",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbproximonumero"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L274",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbtempermissao"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L305",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbtoggletema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L289",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbusernome"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L470",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbverificarestoque"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L249",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbverificarsessao"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L406",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sbviacep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase",
+      "target": "erp_victor_anato_senai_supabase_sha256"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbatualizar",
+      "target": "erp_victor_anato_senai_supabase_fetchcomtimeout"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L138",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbcontar",
+      "target": "erp_victor_anato_senai_supabase_fetchcomtimeout"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbexcluir",
+      "target": "erp_victor_anato_senai_supabase_fetchcomtimeout"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbinserir",
+      "target": "erp_victor_anato_senai_supabase_fetchcomtimeout"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sblistar",
+      "target": "erp_victor_anato_senai_supabase_fetchcomtimeout"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbbuscar",
+      "target": "erp_victor_anato_senai_supabase_sblistar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L213",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sblogin",
+      "target": "erp_victor_anato_senai_supabase_sblistar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L389",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbpopularselect",
+      "target": "erp_victor_anato_senai_supabase_sblistar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbproximonumero",
+      "target": "erp_victor_anato_senai_supabase_sblistar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L471",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbverificarestoque",
+      "target": "erp_victor_anato_senai_supabase_sbbuscar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L449",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbmovimentarestoque",
+      "target": "erp_victor_anato_senai_supabase_sbinserir"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L212",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sblogin",
+      "target": "erp_victor_anato_senai_supabase_sha256"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L265",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbisadmin",
+      "target": "erp_victor_anato_senai_supabase_sbperfil"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L275",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbtempermissao",
+      "target": "erp_victor_anato_senai_supabase_sbisadmin"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L282",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbexigirpermissao",
+      "target": "erp_victor_anato_senai_supabase_sbtempermissao"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L458",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbmovimentarestoque",
+      "target": "erp_victor_anato_senai_supabase_sbusernome"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L525",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbgerarpdfpedidocompra",
+      "target": "erp_victor_anato_senai_supabase_sbmoeda"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/SUPABASE.js",
+      "source_location": "L510",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_supabase_sbgerarpdfpedidocompra",
+      "target": "erp_victor_anato_senai_supabase_sbdata"
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -4305,9 +5363,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude",
-      "target": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento"
     },
     {
       "relation": "contains",
@@ -4315,9 +5373,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros"
     },
     {
       "relation": "contains",
@@ -4325,9 +5383,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras"
     },
     {
       "relation": "contains",
@@ -4335,9 +5393,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L247",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque"
     },
     {
       "relation": "contains",
@@ -4345,9 +5403,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L324",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica"
     },
     {
       "relation": "contains",
@@ -4355,9 +5413,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L472",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_5_configura\u00e7\u00f5es"
     },
     {
       "relation": "contains",
@@ -4365,9 +5423,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L563",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_ordem_de_implementa\u00e7\u00e3o_sugerida"
     },
     {
       "relation": "contains",
@@ -4375,9 +5433,19 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L511",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_regras_gerais_de_interface"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L640",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api"
     },
     {
       "relation": "contains",
@@ -4385,9 +5453,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L550",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_tecnologias_recomendadas",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_tecnologias"
     },
     {
       "relation": "contains",
@@ -4395,9 +5463,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L497",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_dashboard",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_dashboard"
     },
     {
       "relation": "contains",
@@ -4405,9 +5473,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_do_sistema",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_do_sistema"
     },
     {
       "relation": "contains",
@@ -4415,9 +5483,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_vis\u00e3o_geral_do_sistema",
-      "target": "erp_victor_anato_senai_claude_princ\u00edpios_fundamentais",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_princ\u00edpios_fundamentais"
     },
     {
       "relation": "contains",
@@ -4425,9 +5493,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
-      "target": "erp_victor_anato_senai_claude_1_1_clientes",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_1_1_clientes"
     },
     {
       "relation": "contains",
@@ -4435,9 +5503,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
-      "target": "erp_victor_anato_senai_claude_1_2_fornecedores",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_1_2_fornecedores"
     },
     {
       "relation": "contains",
@@ -4445,9 +5513,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
-      "target": "erp_victor_anato_senai_claude_1_3_produtos",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_1_3_produtos"
     },
     {
       "relation": "contains",
@@ -4455,9 +5523,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
-      "target": "erp_victor_anato_senai_claude_1_4_transportadoras",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_1_4_transportadoras"
     },
     {
       "relation": "contains",
@@ -4465,9 +5533,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L131",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
-      "target": "erp_victor_anato_senai_claude_2_1_planejamento",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_2_1_planejamento"
     },
     {
       "relation": "contains",
@@ -4475,9 +5543,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
-      "target": "erp_victor_anato_senai_claude_2_2_solicita\u00e7\u00e3o_de_compras",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_2_2_solicita\u00e7\u00e3o_de_compras"
     },
     {
       "relation": "contains",
@@ -4485,9 +5553,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
-      "target": "erp_victor_anato_senai_claude_2_3_pedido_de_compras",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_2_3_pedido_de_compras"
     },
     {
       "relation": "contains",
@@ -4495,9 +5563,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
-      "target": "erp_victor_anato_senai_claude_2_4_recebimento",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_2_4_recebimento"
     },
     {
       "relation": "contains",
@@ -4505,9 +5573,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L209",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
-      "target": "erp_victor_anato_senai_claude_2_5_confer\u00eancia",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_2_5_confer\u00eancia"
     },
     {
       "relation": "contains",
@@ -4515,9 +5583,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L227",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
-      "target": "erp_victor_anato_senai_claude_2_6_entrada_de_nota_fiscal",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_2_6_entrada_de_nota_fiscal"
     },
     {
       "relation": "contains",
@@ -4525,9 +5593,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
-      "target": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_compras",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_compras"
     },
     {
       "relation": "contains",
@@ -4535,9 +5603,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L251",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
-      "target": "erp_victor_anato_senai_claude_3_1_armazenagem",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_3_1_armazenagem"
     },
     {
       "relation": "contains",
@@ -4545,9 +5613,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L270",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
-      "target": "erp_victor_anato_senai_claude_3_2_controle_de_estoque",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_3_2_controle_de_estoque"
     },
     {
       "relation": "contains",
@@ -4555,9 +5623,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L284",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
-      "target": "erp_victor_anato_senai_claude_3_3_movimenta\u00e7\u00f5es",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_3_3_movimenta\u00e7\u00f5es"
     },
     {
       "relation": "contains",
@@ -4565,9 +5633,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L303",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
-      "target": "erp_victor_anato_senai_claude_3_4_invent\u00e1rio",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_3_4_invent\u00e1rio"
     },
     {
       "relation": "contains",
@@ -4575,9 +5643,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L334",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "erp_victor_anato_senai_claude_4_1_pedido_de_venda",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_4_1_pedido_de_venda"
     },
     {
       "relation": "contains",
@@ -4585,9 +5653,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L357",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "erp_victor_anato_senai_claude_4_2_nota_fiscal_de_venda",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_4_2_nota_fiscal_de_venda"
     },
     {
       "relation": "contains",
@@ -4595,9 +5663,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L390",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "erp_victor_anato_senai_claude_4_3_romaneio",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_4_3_romaneio"
     },
     {
       "relation": "contains",
@@ -4605,9 +5673,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L414",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "erp_victor_anato_senai_claude_4_4_separa\u00e7\u00e3o_picking",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_4_4_separa\u00e7\u00e3o_picking"
     },
     {
       "relation": "contains",
@@ -4615,9 +5683,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L431",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "erp_victor_anato_senai_claude_4_5_expedi\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_4_5_expedi\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -4625,9 +5693,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L453",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "erp_victor_anato_senai_claude_4_6_entrega",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_4_6_entrega"
     },
     {
       "relation": "contains",
@@ -4635,9 +5703,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L328",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica"
     },
     {
       "relation": "contains",
@@ -4645,9 +5713,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L474",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
-      "target": "erp_victor_anato_senai_claude_5_1_usu\u00e1rios",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_5_1_usu\u00e1rios"
     },
     {
       "relation": "contains",
@@ -4655,9 +5723,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L542",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
-      "target": "erp_victor_anato_senai_claude_autentica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_autentica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -4665,9 +5733,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L518",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
-      "target": "erp_victor_anato_senai_claude_formul\u00e1rios",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_formul\u00e1rios"
     },
     {
       "relation": "contains",
@@ -4675,9 +5743,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L513",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
-      "target": "erp_victor_anato_senai_claude_listagens_tabelas",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_listagens_tabelas"
     },
     {
       "relation": "contains",
@@ -4685,9 +5753,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L524",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
-      "target": "erp_victor_anato_senai_claude_numera\u00e7\u00e3o_autom\u00e1tica",
-      "confidence_score": 1.0
+      "target": "erp_victor_anato_senai_claude_numera\u00e7\u00e3o_autom\u00e1tica"
     },
     {
       "relation": "contains",
@@ -4695,8 +5763,218 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L538",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
-      "target": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_responsividade"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L632",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_tecnologias",
+      "target": "erp_victor_anato_senai_claude_backend_banco_de_dados"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L564",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_tecnologias",
+      "target": "erp_victor_anato_senai_claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L552",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_tecnologias",
+      "target": "erp_victor_anato_senai_claude_frontend_vanilla_js_obrigat\u00f3rio"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L599",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_tecnologias",
+      "target": "erp_victor_anato_senai_claude_padr\u00f5es_javascript_obrigat\u00f3rios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L1049",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "erp_victor_anato_senai_claude_autentica\u00e7\u00e3o_do_erp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L642",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "erp_victor_anato_senai_claude_credenciais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L730",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "erp_victor_anato_senai_claude_esquema_de_tabelas_do_banco_postgresql"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L716",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "erp_victor_anato_senai_claude_filtros_e_operadores_da_api_rest_supabase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L656",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "erp_victor_anato_senai_claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L1038",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "erp_victor_anato_senai_claude_rls_row_level_security"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_arquivos_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_1_autentica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_3_m\u00f3dulo_cadastros",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_4_m\u00f3dulo_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_5_m\u00f3dulo_estoque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_8_ajustes_finais_e_testes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_resumo_de_progresso",
       "confidence_score": 1.0
     },
     {
@@ -6931,5 +8209,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b8e51b5d1be47661a3d53dc6419943e4ec7438f6"
+  "built_at_commit": "1f036ccefe4c646a3d6e7d4e5db48a8edff3f157"
 }
