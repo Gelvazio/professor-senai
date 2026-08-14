@@ -370,7 +370,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "claude_m\u00f3dulo_1_cadastros",
-      "community": 9,
+      "community": 1,
       "norm_label": "modulo 1 \u2014 cadastros"
     },
     {
@@ -380,7 +380,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "claude_1_1_clientes",
-      "community": 9,
+      "community": 1,
       "norm_label": "1.1 clientes"
     },
     {
@@ -390,7 +390,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "claude_1_2_fornecedores",
-      "community": 9,
+      "community": 1,
       "norm_label": "1.2 fornecedores"
     },
     {
@@ -400,7 +400,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "claude_1_3_produtos",
-      "community": 9,
+      "community": 1,
       "norm_label": "1.3 produtos"
     },
     {
@@ -410,7 +410,7 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "claude_1_4_transportadoras",
-      "community": 9,
+      "community": 1,
       "norm_label": "1.4 transportadoras"
     },
     {
@@ -704,10 +704,80 @@
       "norm_label": "responsividade"
     },
     {
-      "label": "Autentica\u00e7\u00e3o",
+      "label": "Layout geral",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L542",
+      "_origin": "ast",
+      "id": "claude_layout_geral",
+      "community": 8,
+      "norm_label": "layout geral"
+    },
+    {
+      "label": "Tabelas",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L548",
+      "_origin": "ast",
+      "id": "claude_tabelas",
+      "community": 8,
+      "norm_label": "tabelas"
+    },
+    {
+      "label": "Formul\u00e1rios / Modais",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L553",
+      "_origin": "ast",
+      "id": "claude_formul\u00e1rios_modais",
+      "community": 8,
+      "norm_label": "formularios / modais"
+    },
+    {
+      "label": "Header",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L559",
+      "_origin": "ast",
+      "id": "claude_header",
+      "community": 8,
+      "norm_label": "header"
+    },
+    {
+      "label": "Breakpoints utilizados",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L563",
+      "_origin": "ast",
+      "id": "claude_breakpoints_utilizados",
+      "community": 8,
+      "norm_label": "breakpoints utilizados"
+    },
+    {
+      "label": "CSS proibido em mobile",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L570",
+      "_origin": "ast",
+      "id": "claude_css_proibido_em_mobile",
+      "community": 8,
+      "norm_label": "css proibido em mobile"
+    },
+    {
+      "label": "Classe `.crud-table-wrap` (j\u00e1 definida em styles.css)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L575",
+      "_origin": "ast",
+      "id": "claude_classe_crud_table_wrap_j\u00e1_definida_em_styles_css",
+      "community": 8,
+      "norm_label": "classe `.crud-table-wrap` (ja definida em styles.css)"
+    },
+    {
+      "label": "Autentica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L581",
       "_origin": "ast",
       "id": "claude_autentica\u00e7\u00e3o",
       "community": 8,
@@ -717,7 +787,7 @@
       "label": "Tecnologias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L550",
+      "source_location": "L589",
       "_origin": "ast",
       "id": "claude_tecnologias",
       "community": 10,
@@ -727,7 +797,7 @@
       "label": "Frontend \u2014 Vanilla JS (obrigat\u00f3rio)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L552",
+      "source_location": "L591",
       "_origin": "ast",
       "id": "claude_frontend_vanilla_js_obrigat\u00f3rio",
       "community": 10,
@@ -737,7 +807,7 @@
       "label": "Estrutura de arquivos HTML (uma por tela/m\u00f3dulo)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L564",
+      "source_location": "L603",
       "_origin": "ast",
       "id": "claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo",
       "community": 10,
@@ -747,7 +817,7 @@
       "label": "Padr\u00f5es JavaScript obrigat\u00f3rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L599",
+      "source_location": "L638",
       "_origin": "ast",
       "id": "claude_padr\u00f5es_javascript_obrigat\u00f3rios",
       "community": 10,
@@ -757,7 +827,7 @@
       "label": "Backend / Banco de Dados",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L632",
+      "source_location": "L671",
       "_origin": "ast",
       "id": "claude_backend_banco_de_dados",
       "community": 10,
@@ -767,7 +837,7 @@
       "label": "Supabase \u2014 Configura\u00e7\u00e3o e Uso da API",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L640",
+      "source_location": "L679",
       "_origin": "ast",
       "id": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
       "community": 5,
@@ -777,7 +847,7 @@
       "label": "Credenciais",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L642",
+      "source_location": "L681",
       "_origin": "ast",
       "id": "claude_credenciais",
       "community": 5,
@@ -787,7 +857,7 @@
       "label": "Padr\u00e3o de CRUD \u2014 fun\u00e7\u00f5es reutiliz\u00e1veis",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L656",
+      "source_location": "L695",
       "_origin": "ast",
       "id": "claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis",
       "community": 5,
@@ -797,7 +867,7 @@
       "label": "Filtros e operadores da API REST Supabase",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L716",
+      "source_location": "L755",
       "_origin": "ast",
       "id": "claude_filtros_e_operadores_da_api_rest_supabase",
       "community": 5,
@@ -807,7 +877,7 @@
       "label": "Esquema de tabelas do banco (PostgreSQL)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L730",
+      "source_location": "L769",
       "_origin": "ast",
       "id": "claude_esquema_de_tabelas_do_banco_postgresql",
       "community": 5,
@@ -817,7 +887,7 @@
       "label": "RLS (Row Level Security)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L1038",
+      "source_location": "L1077",
       "_origin": "ast",
       "id": "claude_rls_row_level_security",
       "community": 5,
@@ -827,7 +897,7 @@
       "label": "Autentica\u00e7\u00e3o do ERP",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L1049",
+      "source_location": "L1088",
       "_origin": "ast",
       "id": "claude_autentica\u00e7\u00e3o_do_erp",
       "community": 5,
@@ -837,7 +907,7 @@
       "label": "Ordem de Implementa\u00e7\u00e3o Sugerida",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L1093",
+      "source_location": "L1132",
       "_origin": "ast",
       "id": "claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
       "community": 1,
@@ -971,9 +1041,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_fetchcomtimeout",
-      "confidence_score": 1.0
+      "target": "supabase_fetchcomtimeout"
     },
     {
       "relation": "contains",
@@ -981,9 +1051,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_headers",
-      "confidence_score": 1.0
+      "target": "supabase_headers"
     },
     {
       "relation": "contains",
@@ -991,9 +1061,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_headers_read",
-      "confidence_score": 1.0
+      "target": "supabase_headers_read"
     },
     {
       "relation": "contains",
@@ -1001,9 +1071,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_numerar",
-      "confidence_score": 1.0
+      "target": "supabase_numerar"
     },
     {
       "relation": "contains",
@@ -1011,9 +1081,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L300",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbaplicartema",
-      "confidence_score": 1.0
+      "target": "supabase_sbaplicartema"
     },
     {
       "relation": "contains",
@@ -1021,9 +1091,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbatualizar",
-      "confidence_score": 1.0
+      "target": "supabase_sbatualizar"
     },
     {
       "relation": "contains",
@@ -1031,9 +1101,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbbuscar",
-      "confidence_score": 1.0
+      "target": "supabase_sbbuscar"
     },
     {
       "relation": "contains",
@@ -1041,9 +1111,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbcontar",
-      "confidence_score": 1.0
+      "target": "supabase_sbcontar"
     },
     {
       "relation": "contains",
@@ -1051,9 +1121,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L366",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbdata",
-      "confidence_score": 1.0
+      "target": "supabase_sbdata"
     },
     {
       "relation": "contains",
@@ -1061,9 +1131,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbexcluir",
-      "confidence_score": 1.0
+      "target": "supabase_sbexcluir"
     },
     {
       "relation": "contains",
@@ -1071,9 +1141,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L282",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbexigirpermissao",
-      "confidence_score": 1.0
+      "target": "supabase_sbexigirpermissao"
     },
     {
       "relation": "contains",
@@ -1081,9 +1151,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L489",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbgerarpdfpedidocompra",
-      "confidence_score": 1.0
+      "target": "supabase_sbgerarpdfpedidocompra"
     },
     {
       "relation": "contains",
@@ -1091,9 +1161,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L317",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbiniciarbtntema",
-      "confidence_score": 1.0
+      "target": "supabase_sbiniciarbtntema"
     },
     {
       "relation": "contains",
@@ -1101,9 +1171,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbinserir",
-      "confidence_score": 1.0
+      "target": "supabase_sbinserir"
     },
     {
       "relation": "contains",
@@ -1111,9 +1181,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L265",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbisadmin",
-      "confidence_score": 1.0
+      "target": "supabase_sbisadmin"
     },
     {
       "relation": "contains",
@@ -1121,9 +1191,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sblistar",
-      "confidence_score": 1.0
+      "target": "supabase_sblistar"
     },
     {
       "relation": "contains",
@@ -1131,9 +1201,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L212",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sblogin",
-      "confidence_score": 1.0
+      "target": "supabase_sblogin"
     },
     {
       "relation": "contains",
@@ -1141,9 +1211,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sblogout",
-      "confidence_score": 1.0
+      "target": "supabase_sblogout"
     },
     {
       "relation": "contains",
@@ -1151,9 +1221,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L340",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbmensagem",
-      "confidence_score": 1.0
+      "target": "supabase_sbmensagem"
     },
     {
       "relation": "contains",
@@ -1161,9 +1231,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L354",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbmoeda",
-      "confidence_score": 1.0
+      "target": "supabase_sbmoeda"
     },
     {
       "relation": "contains",
@@ -1171,9 +1241,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L448",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbmovimentarestoque",
-      "confidence_score": 1.0
+      "target": "supabase_sbmovimentarestoque"
     },
     {
       "relation": "contains",
@@ -1181,9 +1251,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L260",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbperfil",
-      "confidence_score": 1.0
+      "target": "supabase_sbperfil"
     },
     {
       "relation": "contains",
@@ -1191,9 +1261,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L381",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbpopularselect",
-      "confidence_score": 1.0
+      "target": "supabase_sbpopularselect"
     },
     {
       "relation": "contains",
@@ -1201,9 +1271,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbproximonumero",
-      "confidence_score": 1.0
+      "target": "supabase_sbproximonumero"
     },
     {
       "relation": "contains",
@@ -1211,9 +1281,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L275",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbtempermissao",
-      "confidence_score": 1.0
+      "target": "supabase_sbtempermissao"
     },
     {
       "relation": "contains",
@@ -1221,9 +1291,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L306",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbtoggletema",
-      "confidence_score": 1.0
+      "target": "supabase_sbtoggletema"
     },
     {
       "relation": "contains",
@@ -1231,9 +1301,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L290",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbusernome",
-      "confidence_score": 1.0
+      "target": "supabase_sbusernome"
     },
     {
       "relation": "contains",
@@ -1241,9 +1311,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L471",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbverificarestoque",
-      "confidence_score": 1.0
+      "target": "supabase_sbverificarestoque"
     },
     {
       "relation": "contains",
@@ -1251,9 +1321,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L250",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbverificarsessao",
-      "confidence_score": 1.0
+      "target": "supabase_sbverificarsessao"
     },
     {
       "relation": "contains",
@@ -1261,9 +1331,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L407",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbviacep",
-      "confidence_score": 1.0
+      "target": "supabase_sbviacep"
     },
     {
       "relation": "contains",
@@ -1271,9 +1341,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sha256",
-      "confidence_score": 1.0
+      "target": "supabase_sha256"
     },
     {
       "relation": "calls",
@@ -1282,9 +1352,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbatualizar",
-      "target": "supabase_fetchcomtimeout",
-      "confidence_score": 1.0
+      "target": "supabase_fetchcomtimeout"
     },
     {
       "relation": "calls",
@@ -1293,9 +1363,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbcontar",
-      "target": "supabase_fetchcomtimeout",
-      "confidence_score": 1.0
+      "target": "supabase_fetchcomtimeout"
     },
     {
       "relation": "calls",
@@ -1304,9 +1374,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbexcluir",
-      "target": "supabase_fetchcomtimeout",
-      "confidence_score": 1.0
+      "target": "supabase_fetchcomtimeout"
     },
     {
       "relation": "calls",
@@ -1315,9 +1385,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbinserir",
-      "target": "supabase_fetchcomtimeout",
-      "confidence_score": 1.0
+      "target": "supabase_fetchcomtimeout"
     },
     {
       "relation": "calls",
@@ -1326,9 +1396,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sblistar",
-      "target": "supabase_fetchcomtimeout",
-      "confidence_score": 1.0
+      "target": "supabase_fetchcomtimeout"
     },
     {
       "relation": "calls",
@@ -1337,9 +1407,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbbuscar",
-      "target": "supabase_sblistar",
-      "confidence_score": 1.0
+      "target": "supabase_sblistar"
     },
     {
       "relation": "calls",
@@ -1348,9 +1418,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L214",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sblogin",
-      "target": "supabase_sblistar",
-      "confidence_score": 1.0
+      "target": "supabase_sblistar"
     },
     {
       "relation": "calls",
@@ -1359,9 +1429,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L390",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbpopularselect",
-      "target": "supabase_sblistar",
-      "confidence_score": 1.0
+      "target": "supabase_sblistar"
     },
     {
       "relation": "calls",
@@ -1370,9 +1440,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbproximonumero",
-      "target": "supabase_sblistar",
-      "confidence_score": 1.0
+      "target": "supabase_sblistar"
     },
     {
       "relation": "calls",
@@ -1381,9 +1451,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L472",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbverificarestoque",
-      "target": "supabase_sbbuscar",
-      "confidence_score": 1.0
+      "target": "supabase_sbbuscar"
     },
     {
       "relation": "calls",
@@ -1392,9 +1462,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L450",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbmovimentarestoque",
-      "target": "supabase_sbinserir",
-      "confidence_score": 1.0
+      "target": "supabase_sbinserir"
     },
     {
       "relation": "calls",
@@ -1403,9 +1473,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L213",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sblogin",
-      "target": "supabase_sha256",
-      "confidence_score": 1.0
+      "target": "supabase_sha256"
     },
     {
       "relation": "calls",
@@ -1414,9 +1484,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L266",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbisadmin",
-      "target": "supabase_sbperfil",
-      "confidence_score": 1.0
+      "target": "supabase_sbperfil"
     },
     {
       "relation": "calls",
@@ -1425,9 +1495,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L276",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbtempermissao",
-      "target": "supabase_sbisadmin",
-      "confidence_score": 1.0
+      "target": "supabase_sbisadmin"
     },
     {
       "relation": "calls",
@@ -1436,9 +1506,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L283",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbexigirpermissao",
-      "target": "supabase_sbtempermissao",
-      "confidence_score": 1.0
+      "target": "supabase_sbtempermissao"
     },
     {
       "relation": "calls",
@@ -1447,9 +1517,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L459",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbmovimentarestoque",
-      "target": "supabase_sbusernome",
-      "confidence_score": 1.0
+      "target": "supabase_sbusernome"
     },
     {
       "relation": "calls",
@@ -1458,9 +1528,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L526",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbgerarpdfpedidocompra",
-      "target": "supabase_sbmoeda",
-      "confidence_score": 1.0
+      "target": "supabase_sbmoeda"
     },
     {
       "relation": "calls",
@@ -1469,9 +1539,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L511",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbgerarpdfpedidocompra",
-      "target": "supabase_sbdata",
-      "confidence_score": 1.0
+      "target": "supabase_sbdata"
     },
     {
       "relation": "contains",
@@ -1479,9 +1549,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude",
-      "target": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "confidence_score": 1.0
+      "target": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento"
     },
     {
       "relation": "contains",
@@ -1489,9 +1559,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_m\u00f3dulo_1_cadastros",
-      "confidence_score": 1.0
+      "target": "claude_m\u00f3dulo_1_cadastros"
     },
     {
       "relation": "contains",
@@ -1499,9 +1569,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_m\u00f3dulo_2_compras",
-      "confidence_score": 1.0
+      "target": "claude_m\u00f3dulo_2_compras"
     },
     {
       "relation": "contains",
@@ -1509,9 +1579,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L247",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_m\u00f3dulo_3_estoque",
-      "confidence_score": 1.0
+      "target": "claude_m\u00f3dulo_3_estoque"
     },
     {
       "relation": "contains",
@@ -1519,9 +1589,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L324",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "confidence_score": 1.0
+      "target": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica"
     },
     {
       "relation": "contains",
@@ -1529,9 +1599,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L472",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
-      "confidence_score": 1.0
+      "target": "claude_m\u00f3dulo_5_configura\u00e7\u00f5es"
     },
     {
       "relation": "contains",
@@ -1539,9 +1609,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1093",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
-      "confidence_score": 1.0
+      "target": "claude_ordem_de_implementa\u00e7\u00e3o_sugerida"
     },
     {
       "relation": "contains",
@@ -1549,9 +1619,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L511",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_regras_gerais_de_interface",
-      "confidence_score": 1.0
+      "target": "claude_regras_gerais_de_interface"
     },
     {
       "relation": "contains",
@@ -1559,9 +1629,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L640",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
-      "confidence_score": 1.0
+      "target": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api"
     },
     {
       "relation": "contains",
@@ -1569,9 +1639,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L550",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_tecnologias",
-      "confidence_score": 1.0
+      "target": "claude_tecnologias"
     },
     {
       "relation": "contains",
@@ -1579,9 +1649,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L497",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_vis\u00e3o_geral_dashboard",
-      "confidence_score": 1.0
+      "target": "claude_vis\u00e3o_geral_dashboard"
     },
     {
       "relation": "contains",
@@ -1589,9 +1659,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "claude_vis\u00e3o_geral_do_sistema",
-      "confidence_score": 1.0
+      "target": "claude_vis\u00e3o_geral_do_sistema"
     },
     {
       "relation": "contains",
@@ -1599,9 +1669,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_vis\u00e3o_geral_do_sistema",
-      "target": "claude_princ\u00edpios_fundamentais",
-      "confidence_score": 1.0
+      "target": "claude_princ\u00edpios_fundamentais"
     },
     {
       "relation": "contains",
@@ -1609,9 +1679,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_1_cadastros",
-      "target": "claude_1_1_clientes",
-      "confidence_score": 1.0
+      "target": "claude_1_1_clientes"
     },
     {
       "relation": "contains",
@@ -1619,9 +1689,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_1_cadastros",
-      "target": "claude_1_2_fornecedores",
-      "confidence_score": 1.0
+      "target": "claude_1_2_fornecedores"
     },
     {
       "relation": "contains",
@@ -1629,9 +1699,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_1_cadastros",
-      "target": "claude_1_3_produtos",
-      "confidence_score": 1.0
+      "target": "claude_1_3_produtos"
     },
     {
       "relation": "contains",
@@ -1639,9 +1709,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_1_cadastros",
-      "target": "claude_1_4_transportadoras",
-      "confidence_score": 1.0
+      "target": "claude_1_4_transportadoras"
     },
     {
       "relation": "contains",
@@ -1649,9 +1719,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L131",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_2_compras",
-      "target": "claude_2_1_planejamento",
-      "confidence_score": 1.0
+      "target": "claude_2_1_planejamento"
     },
     {
       "relation": "contains",
@@ -1659,9 +1729,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_2_compras",
-      "target": "claude_2_2_solicita\u00e7\u00e3o_de_compras",
-      "confidence_score": 1.0
+      "target": "claude_2_2_solicita\u00e7\u00e3o_de_compras"
     },
     {
       "relation": "contains",
@@ -1669,9 +1739,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_2_compras",
-      "target": "claude_2_3_pedido_de_compras",
-      "confidence_score": 1.0
+      "target": "claude_2_3_pedido_de_compras"
     },
     {
       "relation": "contains",
@@ -1679,9 +1749,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_2_compras",
-      "target": "claude_2_4_recebimento",
-      "confidence_score": 1.0
+      "target": "claude_2_4_recebimento"
     },
     {
       "relation": "contains",
@@ -1689,9 +1759,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L209",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_2_compras",
-      "target": "claude_2_5_confer\u00eancia",
-      "confidence_score": 1.0
+      "target": "claude_2_5_confer\u00eancia"
     },
     {
       "relation": "contains",
@@ -1699,9 +1769,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L227",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_2_compras",
-      "target": "claude_2_6_entrada_de_nota_fiscal",
-      "confidence_score": 1.0
+      "target": "claude_2_6_entrada_de_nota_fiscal"
     },
     {
       "relation": "contains",
@@ -1709,9 +1779,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_2_compras",
-      "target": "claude_fluxo_do_m\u00f3dulo_de_compras",
-      "confidence_score": 1.0
+      "target": "claude_fluxo_do_m\u00f3dulo_de_compras"
     },
     {
       "relation": "contains",
@@ -1719,9 +1789,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L251",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_3_estoque",
-      "target": "claude_3_1_armazenagem",
-      "confidence_score": 1.0
+      "target": "claude_3_1_armazenagem"
     },
     {
       "relation": "contains",
@@ -1729,9 +1799,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L270",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_3_estoque",
-      "target": "claude_3_2_controle_de_estoque",
-      "confidence_score": 1.0
+      "target": "claude_3_2_controle_de_estoque"
     },
     {
       "relation": "contains",
@@ -1739,9 +1809,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L284",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_3_estoque",
-      "target": "claude_3_3_movimenta\u00e7\u00f5es",
-      "confidence_score": 1.0
+      "target": "claude_3_3_movimenta\u00e7\u00f5es"
     },
     {
       "relation": "contains",
@@ -1749,9 +1819,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L303",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_3_estoque",
-      "target": "claude_3_4_invent\u00e1rio",
-      "confidence_score": 1.0
+      "target": "claude_3_4_invent\u00e1rio"
     },
     {
       "relation": "contains",
@@ -1759,9 +1829,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L334",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "claude_4_1_pedido_de_venda",
-      "confidence_score": 1.0
+      "target": "claude_4_1_pedido_de_venda"
     },
     {
       "relation": "contains",
@@ -1769,9 +1839,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L357",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "claude_4_2_nota_fiscal_de_venda",
-      "confidence_score": 1.0
+      "target": "claude_4_2_nota_fiscal_de_venda"
     },
     {
       "relation": "contains",
@@ -1779,9 +1849,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L390",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "claude_4_3_romaneio",
-      "confidence_score": 1.0
+      "target": "claude_4_3_romaneio"
     },
     {
       "relation": "contains",
@@ -1789,9 +1859,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L414",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "claude_4_4_separa\u00e7\u00e3o_picking",
-      "confidence_score": 1.0
+      "target": "claude_4_4_separa\u00e7\u00e3o_picking"
     },
     {
       "relation": "contains",
@@ -1799,9 +1869,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L431",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "claude_4_5_expedi\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "claude_4_5_expedi\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -1809,9 +1879,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L453",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "claude_4_6_entrega",
-      "confidence_score": 1.0
+      "target": "claude_4_6_entrega"
     },
     {
       "relation": "contains",
@@ -1819,9 +1889,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L328",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "target": "claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica",
-      "confidence_score": 1.0
+      "target": "claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica"
     },
     {
       "relation": "contains",
@@ -1829,8 +1899,108 @@
       "source_file": "CLAUDE.md",
       "source_location": "L474",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
-      "target": "claude_5_1_usu\u00e1rios",
+      "target": "claude_5_1_usu\u00e1rios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L542",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_autentica\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L518",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_formul\u00e1rios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L513",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_listagens_tabelas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L524",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_numera\u00e7\u00e3o_autom\u00e1tica"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L538",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_responsividade"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L563",
+      "weight": 1.0,
+      "source": "claude_responsividade",
+      "target": "claude_breakpoints_utilizados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L575",
+      "weight": 1.0,
+      "source": "claude_responsividade",
+      "target": "claude_classe_crud_table_wrap_j\u00e1_definida_em_styles_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L570",
+      "weight": 1.0,
+      "source": "claude_responsividade",
+      "target": "claude_css_proibido_em_mobile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L553",
+      "weight": 1.0,
+      "source": "claude_responsividade",
+      "target": "claude_formul\u00e1rios_modais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L559",
+      "weight": 1.0,
+      "source": "claude_responsividade",
+      "target": "claude_header",
       "confidence_score": 1.0
     },
     {
@@ -1839,48 +2009,18 @@
       "source_file": "CLAUDE.md",
       "source_location": "L542",
       "weight": 1.0,
-      "source": "claude_regras_gerais_de_interface",
-      "target": "claude_autentica\u00e7\u00e3o",
+      "source": "claude_responsividade",
+      "target": "claude_layout_geral",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L518",
+      "source_location": "L548",
       "weight": 1.0,
-      "source": "claude_regras_gerais_de_interface",
-      "target": "claude_formul\u00e1rios",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L513",
-      "weight": 1.0,
-      "source": "claude_regras_gerais_de_interface",
-      "target": "claude_listagens_tabelas",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L524",
-      "weight": 1.0,
-      "source": "claude_regras_gerais_de_interface",
-      "target": "claude_numera\u00e7\u00e3o_autom\u00e1tica",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L538",
-      "weight": 1.0,
-      "source": "claude_regras_gerais_de_interface",
-      "target": "claude_responsividade",
+      "source": "claude_responsividade",
+      "target": "claude_tabelas",
       "confidence_score": 1.0
     },
     {
@@ -1889,9 +2029,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L632",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_tecnologias",
-      "target": "claude_backend_banco_de_dados",
-      "confidence_score": 1.0
+      "target": "claude_backend_banco_de_dados"
     },
     {
       "relation": "contains",
@@ -1899,9 +2039,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L564",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_tecnologias",
-      "target": "claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo",
-      "confidence_score": 1.0
+      "target": "claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo"
     },
     {
       "relation": "contains",
@@ -1909,9 +2049,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L552",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_tecnologias",
-      "target": "claude_frontend_vanilla_js_obrigat\u00f3rio",
-      "confidence_score": 1.0
+      "target": "claude_frontend_vanilla_js_obrigat\u00f3rio"
     },
     {
       "relation": "contains",
@@ -1919,9 +2059,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L599",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_tecnologias",
-      "target": "claude_padr\u00f5es_javascript_obrigat\u00f3rios",
-      "confidence_score": 1.0
+      "target": "claude_padr\u00f5es_javascript_obrigat\u00f3rios"
     },
     {
       "relation": "contains",
@@ -1929,9 +2069,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1049",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
-      "target": "claude_autentica\u00e7\u00e3o_do_erp",
-      "confidence_score": 1.0
+      "target": "claude_autentica\u00e7\u00e3o_do_erp"
     },
     {
       "relation": "contains",
@@ -1939,9 +2079,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L642",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
-      "target": "claude_credenciais",
-      "confidence_score": 1.0
+      "target": "claude_credenciais"
     },
     {
       "relation": "contains",
@@ -1949,9 +2089,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L730",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
-      "target": "claude_esquema_de_tabelas_do_banco_postgresql",
-      "confidence_score": 1.0
+      "target": "claude_esquema_de_tabelas_do_banco_postgresql"
     },
     {
       "relation": "contains",
@@ -1959,9 +2099,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L716",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
-      "target": "claude_filtros_e_operadores_da_api_rest_supabase",
-      "confidence_score": 1.0
+      "target": "claude_filtros_e_operadores_da_api_rest_supabase"
     },
     {
       "relation": "contains",
@@ -1969,9 +2109,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L656",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
-      "target": "claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis",
-      "confidence_score": 1.0
+      "target": "claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis"
     },
     {
       "relation": "contains",
@@ -1979,9 +2119,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1038",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
-      "target": "claude_rls_row_level_security",
-      "confidence_score": 1.0
+      "target": "claude_rls_row_level_security"
     },
     {
       "relation": "contains",
@@ -1989,9 +2129,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato"
     },
     {
       "relation": "contains",
@@ -1999,9 +2139,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_arquivos_base",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_arquivos_base"
     },
     {
       "relation": "contains",
@@ -2009,9 +2149,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_passo_1_autentica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_passo_1_autentica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -2019,9 +2159,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral"
     },
     {
       "relation": "contains",
@@ -2029,9 +2169,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_passo_3_m\u00f3dulo_cadastros",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_passo_3_m\u00f3dulo_cadastros"
     },
     {
       "relation": "contains",
@@ -2039,9 +2179,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_passo_4_m\u00f3dulo_compras",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_passo_4_m\u00f3dulo_compras"
     },
     {
       "relation": "contains",
@@ -2049,9 +2189,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_passo_5_m\u00f3dulo_estoque",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_passo_5_m\u00f3dulo_estoque"
     },
     {
       "relation": "contains",
@@ -2059,9 +2199,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica"
     },
     {
       "relation": "contains",
@@ -2069,9 +2209,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es"
     },
     {
       "relation": "contains",
@@ -2079,9 +2219,9 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_passo_8_ajustes_finais_e_testes",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_passo_8_ajustes_finais_e_testes"
     },
     {
       "relation": "contains",
@@ -2089,11 +2229,11 @@
       "source_file": "PASSOS-CRIACAO-ERP.md",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "passos_criacao_erp_resumo_de_progresso",
-      "confidence_score": 1.0
+      "target": "passos_criacao_erp_resumo_de_progresso"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6dddcb5ee7b8259b3c2d2de2de835d90a0001bf7"
+  "built_at_commit": "72233712f702e7112abde1c790a3fd329af3584b"
 }

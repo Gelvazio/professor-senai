@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786718983.2217612,
-    "ast_hash": "19eb18621d8ddd7264e5473f20fd46a5",
+    "mtime": 1786725168.2809286,
+    "ast_hash": "13ab308bfcd26c51d9f839643cd48a57",
     "semantic_hash": ""
   },
   "DATABASE.sql": {
@@ -15,13 +15,13 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1786715977.5536332,
-    "ast_hash": "5345a2c33c66487ec33dd7700158e3e5",
+    "mtime": 1786724959.0687132,
+    "ast_hash": "e69fe58c4519fcf188db1c32f3c4c0ea",
     "semantic_hash": ""
   },
   "PASSOS-CRIACAO-ERP.md": {
-    "mtime": 1786717349.3477085,
-    "ast_hash": "3053be40c23e17434771e92b0831d141",
+    "mtime": 1786719059.1949716,
+    "ast_hash": "0defcd5ca2e9d0356536112e288a86df",
     "semantic_hash": ""
   },
   "dashboard.html": {
