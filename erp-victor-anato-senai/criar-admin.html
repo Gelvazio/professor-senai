@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Admin — ERP</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 480px; margin: 80px auto; padding: 0 20px; }
+    h2 { color: #004384; }
+    button { background: #004384; color: #fff; border: none; padding: 12px 28px; font-size: 15px; border-radius: 6px; cursor: pointer; }
+    button:hover { background: #00306a; }
+    #msg { margin-top: 20px; padding: 12px 16px; border-radius: 6px; display: none; font-size: 14px; }
+    .ok  { background: #e6f4ea; color: #1e7e34; border: 1px solid #a8d5b5; }
+    .err { background: #fce8e6; color: #c62828; border: 1px solid #f5c6c6; }
+    pre  { background: #f5f5f5; padding: 10px; border-radius: 4px; font-size: 12px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <h2>🔧 Criar usuário Administrador</h2>
+  <p>Clique no botão para inserir o usuário <strong>admin@erp.com</strong> com senha <strong>admin</strong>.</p>
+
+  <pre>E-mail : admin@erp.com
+Senha  : admin
+Perfil : Administrador</pre>
+
+  <button onclick="criarAdmin()">Criar Admin</button>
+  <div id="msg"></div>
+
+  <script>
+    const SUPABASE_URL = 'https://vdhahqicqlrdvcpesiwk.supabase.co';
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkaGFocWljcWxyZHZjcGVzaXdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY3MTI3OTYsImV4cCI6MjEwMjI4ODc5Nn0.7ACHuUUv6VMyy4-BbQcdAcmabMtqhiuVgrTGUUcV7RY';
+
+    async function sha256(text) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    function mostrar(texto, tipo) {
+      const el = document.getElementById('msg');
+      el.textContent = texto;
+      el.className = tipo;
+      el.style.display = 'block';
+    }
+
+    async function criarAdmin() {
+      mostrar('Criando usuário...', 'ok');
+      try {
+        const hash = await sha256('admin');
+
+        // Verificar se já existe
+        const check = await fetch(
+          `${SUPABASE_URL}/rest/v1/erp_usuarios?email=eq.admin@erp.com&select=id`,
+          { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
+        );
+        const existentes = await check.json();
+        if (existentes.length > 0) {
+          mostrar('⚠️ Usuário admin@erp.com já existe!', 'err');
+          return;
+        }
+
+        const res = await fetch(`${SUPABASE_URL}/rest/v1/erp_usuarios`, {
+          method: 'POST',
+          headers: {
+            apikey: SUPABASE_KEY,
+            Authorization: `Bearer ${SUPABASE_KEY}`,
+            'Content-Type': 'application/json',
+            Prefer: 'return=representation'
+          },
+          body: JSON.stringify({
+            nome: 'Administrador',
+            email: 'admin@erp.com',
+            senha_hash: hash,
+            cargo: 'Administrador do Sistema',
+            perfil: 'Administrador',
+            status: true,
+            permissoes: {
+              visao_geral: true,
+              cadastros: true,
+              compras: true,
+              estoque: true,
+              vendas: true
+            }
+          })
+        });
+
+        if (!res.ok) {
+          const err = await res.text();
+          mostrar('Erro: ' + err, 'err');
+          return;
+        }
+
+        mostrar('✅ Admin criado! Acesse index.html com admin@erp.com / admin', 'ok');
+      } catch (e) {
+        mostrar('Erro: ' + e.message, 'err');
+      }
+    }
+  </script>
+</body>
+</html>
