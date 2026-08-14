@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ERP — Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Layout ── */
+    .app-layout { display: flex; min-height: calc(100vh - 56px); }
+
+    /* ── Sidebar ── */
+    .sidebar { width: 240px; background: var(--color-surface); border-right: 1px solid var(--color-border-faint); display: flex; flex-direction: column; position: fixed; top: 56px; left: 0; bottom: 0; overflow-y: auto; z-index: 50; transition: transform .25s; }
+    [data-theme="dark"] .sidebar { background: var(--color-surface); border-right-color: var(--color-border-light); }
+
+    .sidebar-section { padding: 20px 0 4px; }
+    .sidebar-section-label { font-size: 10px; font-weight: 700; color: var(--color-text-disabled); letter-spacing: 1.2px; text-transform: uppercase; padding: 0 20px 6px; }
+    .sidebar-link { display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 13px; font-weight: 500; color: var(--color-text-muted); text-decoration: none; border-left: 3px solid transparent; transition: background .15s, color .15s, border-color .15s; }
+    .sidebar-link:hover { background: #e8f0fe; color: var(--color-primary); }
+    .sidebar-link.ativo { background: #e8f0fe; color: var(--color-primary); border-left-color: var(--color-primary); font-weight: 600; }
+    [data-theme="dark"] .sidebar-link:hover, [data-theme="dark"] .sidebar-link.ativo { background: #1e2554; color: #7aa3d4; }
+    [data-theme="dark"] .sidebar-link.ativo { border-left-color: #7aa3d4; }
+    .sidebar-icon { font-size: 16px; width: 20px; text-align: center; flex-shrink: 0; }
+
+    /* ── Conteúdo principal ── */
+    .main { margin-left: 240px; padding: 28px 32px; flex: 1; }
+    @media (max-width: 768px) { .sidebar { transform: translateX(-100%); } .main { margin-left: 0; padding: 16px; } .sidebar.open { transform: translateX(0); } }
+
+    /* ── Página title ── */
+    .page-header { margin-bottom: 28px; }
+    .page-header h1 { font-size: 22px; font-weight: 700; color: var(--color-text); }
+    .page-header p { font-size: 13px; color: var(--color-text-muted); margin-top: 2px; }
+
+    /* ── KPI Cards ── */
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
+
+    .kpi-card { background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; border-left: 4px solid transparent; transition: box-shadow .2s, transform .15s; cursor: default; }
+    .kpi-card:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+    [data-theme="dark"] .kpi-card { background: var(--color-surface); }
+
+    .kpi-card.azul   { border-left-color: #004384; }
+    .kpi-card.verde  { border-left-color: #2e7d32; }
+    .kpi-card.laranja{ border-left-color: #f7941d; }
+    .kpi-card.vermelho{ border-left-color: #c62828; }
+    .kpi-card.roxo   { border-left-color: #6b21a8; }
+
+    .kpi-label { font-size: 11px; font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: .5px; }
+    .kpi-value { font-size: 32px; font-weight: 800; color: var(--color-text); line-height: 1; }
+    .kpi-card.vermelho .kpi-value { color: #c62828; }
+    .kpi-sub   { font-size: 11px; color: var(--color-text-faint); }
+
+    /* ── Seção de conteúdo ── */
+    .content-section { background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); overflow: hidden; margin-bottom: 24px; }
+    [data-theme="dark"] .content-section { background: var(--color-surface); }
+
+    .content-section-header { padding: 16px 20px; border-bottom: 1px solid var(--color-border-faint); display: flex; align-items: center; justify-content: space-between; }
+    [data-theme="dark"] .content-section-header { border-bottom-color: var(--color-border-light); }
+
+    .content-section-title { font-size: 14px; font-weight: 700; color: var(--color-text); display: flex; align-items: center; gap: 8px; }
+
+    /* ── Tabela de movimentações ── */
+    .mov-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .mov-table th { text-align: left; padding: 8px 16px; font-size: 10px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: .4px; border-bottom: 2px solid var(--color-border-faint); white-space: nowrap; background: var(--color-surface); }
+    .mov-table td { padding: 10px 16px; border-bottom: 1px solid var(--color-border-faint); color: var(--color-text-secondary); }
+    .mov-table tr:last-child td { border-bottom: none; }
+    .mov-table tr:hover td { background: #f5f8ff; }
+    [data-theme="dark"] .mov-table th { color: #7aa3d4; border-bottom-color: var(--color-border-light); }
+    [data-theme="dark"] .mov-table td { color: var(--color-text-secondary); border-bottom-color: var(--color-border-light); }
+    [data-theme="dark"] .mov-table tr:hover td { background: #22252e; }
+
+    .tipo-badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+    .tipo-entrada  { background: #e6f4ea; color: #1e7e34; }
+    .tipo-saida    { background: #fce8e6; color: #c62828; }
+    .tipo-ajuste   { background: #fef3e2; color: #b06000; }
+    .tipo-transf   { background: #e8f0fe; color: #1557b0; }
+
+    /* ── Alerta estoque ── */
+    .estoque-alerta { background: #fff3cd; border: 1px solid #ffc107; border-radius: var(--radius-md); padding: 12px 16px; margin-bottom: 24px; font-size: 13px; color: #856404; display: none; }
+    .estoque-alerta.show { display: flex; align-items: center; gap: 10px; }
+    [data-theme="dark"] .estoque-alerta { background: #2a2000; border-color: #7a5c00; color: #f0c040; }
+
+    /* ── 2 colunas no desktop ── */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+
+    /* ── Vazio ── */
+    .vazio { text-align: center; color: var(--color-text-faint); font-size: 13px; padding: 24px; font-style: italic; }
+
+    /* ── Hamburguer ── */
+    .btn-menu { display: none; background: rgba(255,255,255,.15); border: none; color: #fff; font-size: 20px; width: 36px; height: 36px; border-radius: 6px; cursor: pointer; align-items: center; justify-content: center; }
+    @media (max-width: 768px) { .btn-menu { display: flex; } }
+    .sidebar-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 49; }
+    .sidebar-overlay.show { display: block; }
+  </style>
+
+  <script>
+    (function () {
+      const t = localStorage.getItem('senai_tema') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────── -->
+<header class="header">
+  <button class="btn-menu" id="btnMenu" onclick="toggleSidebar()">☰</button>
+  <a class="header-logo" href="dashboard.html">ERP</a>
+  <span class="header-title">Victor Anato</span>
+  <span class="header-spacer"></span>
+  <span class="role-badge" id="roleBadge"></span>
+  <button class="header-btn" id="btnTema" onclick="alternarTema()" style="min-width:96px">🌙 Escuro</button>
+  <button class="header-btn" onclick="sair()">🚪 Sair</button>
+</header>
+
+<!-- ── Overlay mobile ─────────────────────────── -->
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+<!-- ── Layout ─────────────────────────────────── -->
+<div class="app-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Principal</div>
+      <a class="sidebar-link ativo" href="dashboard.html"><span class="sidebar-icon">🏠</span> Visão Geral</a>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Cadastros</div>
+      <a class="sidebar-link" href="cadastros/clientes.html"><span class="sidebar-icon">👥</span> Clientes</a>
+      <a class="sidebar-link" href="cadastros/fornecedores.html"><span class="sidebar-icon">🏭</span> Fornecedores</a>
+      <a class="sidebar-link" href="cadastros/produtos.html"><span class="sidebar-icon">📦</span> Produtos</a>
+      <a class="sidebar-link" href="cadastros/transportadoras.html"><span class="sidebar-icon">🚚</span> Transportadoras</a>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Compras</div>
+      <a class="sidebar-link" href="compras/planejamento.html"><span class="sidebar-icon">📋</span> Planejamento</a>
+      <a class="sidebar-link" href="compras/solicitacoes.html"><span class="sidebar-icon">📝</span> Solicitações</a>
+      <a class="sidebar-link" href="compras/pedidos.html"><span class="sidebar-icon">🛒</span> Pedidos</a>
+      <a class="sidebar-link" href="compras/recebimento.html"><span class="sidebar-icon">📥</span> Recebimento</a>
+      <a class="sidebar-link" href="compras/conferencia.html"><span class="sidebar-icon">✅</span> Conferência</a>
+      <a class="sidebar-link" href="compras/nota-fiscal.html"><span class="sidebar-icon">🧾</span> Nota Fiscal</a>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Estoque</div>
+      <a class="sidebar-link" href="estoque/controle.html"><span class="sidebar-icon">📊</span> Controle</a>
+      <a class="sidebar-link" href="estoque/movimentacoes.html"><span class="sidebar-icon">🔄</span> Movimentações</a>
+      <a class="sidebar-link" href="estoque/armazenagem.html"><span class="sidebar-icon">🏪</span> Armazenagem</a>
+      <a class="sidebar-link" href="estoque/inventario.html"><span class="sidebar-icon">🔍</span> Inventário</a>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Vendas e Logística</div>
+      <a class="sidebar-link" href="vendas/pedidos-venda.html"><span class="sidebar-icon">🛍️</span> Pedidos de Venda</a>
+      <a class="sidebar-link" href="vendas/nota-fiscal-venda.html"><span class="sidebar-icon">📄</span> NF de Venda</a>
+      <a class="sidebar-link" href="vendas/separacao.html"><span class="sidebar-icon">📤</span> Separação</a>
+      <a class="sidebar-link" href="vendas/romaneio.html"><span class="sidebar-icon">📃</span> Romaneio</a>
+      <a class="sidebar-link" href="vendas/expedicao.html"><span class="sidebar-icon">🚀</span> Expedição</a>
+      <a class="sidebar-link" href="vendas/entrega.html"><span class="sidebar-icon">📍</span> Entrega</a>
+    </div>
+
+    <div class="sidebar-section" id="menuConfiguracoes" style="display:none">
+      <div class="sidebar-section-label">Sistema</div>
+      <a class="sidebar-link" href="configuracoes/usuarios.html"><span class="sidebar-icon">👤</span> Usuários</a>
+    </div>
+
+    <div style="height:24px"></div>
+  </aside>
+
+  <!-- Conteúdo -->
+  <main class="main">
+
+    <!-- Alerta estoque crítico -->
+    <div class="estoque-alerta" id="alertaEstoque">
+      ⚠️ <span id="alertaEstoqueTexto"></span>
+    </div>
+
+    <!-- Cabeçalho da página -->
+    <div class="page-header">
+      <h1>Visão Geral</h1>
+      <p id="saudacao">Bem-vindo ao ERP Victor Anato</p>
+    </div>
+
+    <!-- KPI Cards -->
+    <div class="kpi-grid" id="kpiGrid">
+      <div class="kpi-card azul">
+        <div class="kpi-label">Clientes Ativos</div>
+        <div class="kpi-value" id="kpiClientes">—</div>
+        <div class="kpi-sub">cadastrados no sistema</div>
+      </div>
+      <div class="kpi-card verde">
+        <div class="kpi-label">Fornecedores Ativos</div>
+        <div class="kpi-value" id="kpiFornecedores">—</div>
+        <div class="kpi-sub">cadastrados no sistema</div>
+      </div>
+      <div class="kpi-card laranja">
+        <div class="kpi-label">Produtos</div>
+        <div class="kpi-value" id="kpiProdutos">—</div>
+        <div class="kpi-sub">ativos no catálogo</div>
+      </div>
+      <div class="kpi-card vermelho">
+        <div class="kpi-label">Estoque Crítico</div>
+        <div class="kpi-value" id="kpiCritico">—</div>
+        <div class="kpi-sub">abaixo do mínimo</div>
+      </div>
+      <div class="kpi-card azul">
+        <div class="kpi-label">Pedidos de Compra</div>
+        <div class="kpi-value" id="kpiPC">—</div>
+        <div class="kpi-sub">em aberto</div>
+      </div>
+      <div class="kpi-card roxo">
+        <div class="kpi-label">Pedidos de Venda</div>
+        <div class="kpi-value" id="kpiPV">—</div>
+        <div class="kpi-sub">em aberto</div>
+      </div>
+    </div>
+
+    <!-- Duas colunas: movimentações + pedidos recentes -->
+    <div class="two-col">
+
+      <!-- Últimas movimentações -->
+      <div class="content-section">
+        <div class="content-section-header">
+          <div class="content-section-title">🔄 Últimas Movimentações</div>
+          <a href="estoque/movimentacoes.html" style="font-size:12px;color:var(--color-primary);text-decoration:none">Ver todas →</a>
+        </div>
+        <table class="mov-table">
+          <thead>
+            <tr>
+              <th>Nº</th>
+              <th>Produto</th>
+              <th>Tipo</th>
+              <th>Qtd</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyMov">
+            <tr><td colspan="5" class="vazio">Carregando…</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pedidos de venda recentes -->
+      <div class="content-section">
+        <div class="content-section-header">
+          <div class="content-section-title">🛍️ Pedidos de Venda Recentes</div>
+          <a href="vendas/pedidos-venda.html" style="font-size:12px;color:var(--color-primary);text-decoration:none">Ver todos →</a>
+        </div>
+        <table class="mov-table">
+          <thead>
+            <tr>
+              <th>Nº</th>
+              <th>Cliente</th>
+              <th>Valor</th>
+              <th>Status</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyPV">
+            <tr><td colspan="5" class="vazio">Carregando…</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div><!-- /.two-col -->
+
+    <!-- Pedidos de Compra recentes -->
+    <div class="content-section">
+      <div class="content-section-header">
+        <div class="content-section-title">🛒 Pedidos de Compra Recentes</div>
+        <a href="compras/pedidos.html" style="font-size:12px;color:var(--color-primary);text-decoration:none">Ver todos →</a>
+      </div>
+      <table class="mov-table">
+        <thead>
+          <tr>
+            <th>Nº</th>
+            <th>Fornecedor</th>
+            <th>Produto</th>
+            <th>Valor Total</th>
+            <th>Status</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyPC">
+          <tr><td colspan="6" class="vazio">Carregando…</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div><!-- /.app-layout -->
+
+<script src="SUPABASE.js"></script>
+<script>
+  // ── Sessão ──────────────────────────────────────
+  sbVerificarSessao('index.html');
+
+  // ── Header ─────────────────────────────────────
+  document.getElementById('roleBadge').textContent = sbPerfil() || '';
+  document.getElementById('saudacao').textContent =
+    'Bem-vindo, ' + sbUserNome() + ' · ' + new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' });
+
+  if (sbIsAdmin()) {
+    document.getElementById('menuConfiguracoes').style.display = '';
+  }
+
+  // ── Tema ───────────────────────────────────────
+  (function () {
+    const t   = localStorage.getItem('senai_tema') || 'light';
+    const btn = document.getElementById('btnTema');
+    if (btn) btn.textContent = t === 'dark' ? '☀️ Claro' : '🌙 Escuro';
+  })();
+
+  function alternarTema() {
+    const novo = sbToggleTema();
+    const btn  = document.getElementById('btnTema');
+    if (btn) btn.textContent = novo === 'dark' ? '☀️ Claro' : '🌙 Escuro';
+  }
+
+  function sair() {
+    sbLogout('index.html');
+  }
+
+  // ── Sidebar mobile ─────────────────────────────
+  function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('open');
+    document.getElementById('sidebarOverlay').classList.toggle('show');
+  }
+
+  // ── Helpers ────────────────────────────────────
+  function statusBadge(status) {
+    const map = {
+      'Confirmado': 'badge-azul', 'Rascunho': 'badge-cinza', 'Cancelado': 'badge-vermelho',
+      'Recebido': 'badge-verde', 'Enviado': 'badge-laranja', 'Em Separação': 'badge-laranja',
+      'Em Expedição': 'badge-laranja', 'Entregue': 'badge-verde'
+    };
+    const cls = map[status] || 'badge-cinza';
+    return `<span class="badge ${cls}">${status}</span>`;
+  }
+
+  function tipoBadge(tipo) {
+    const map = { 'Entrada': 'tipo-entrada', 'Saída': 'tipo-saida', 'Ajuste': 'tipo-ajuste', 'Transferência': 'tipo-transf' };
+    return `<span class="tipo-badge ${map[tipo] || ''}">${tipo}</span>`;
+  }
+
+  // ── Carregar KPIs ──────────────────────────────
+  async function carregarKPIs() {
+    try {
+      const [clientes, fornecedores, produtos, criticos, pedidosCompra, pedidosVenda] = await Promise.all([
+        sbContar('clientes',          'ativo=eq.true'),
+        sbContar('fornecedores',      'ativo=eq.true'),
+        sbContar('produtos',          'ativo=eq.true'),
+        sbListar('produtos',          'ativo=eq.true&select=id,nome,estoque_atual,estoque_minimo'),
+        sbContar('compras_pedidos',   'status=in.(Rascunho,Enviado,Confirmado)'),
+        sbContar('vendas_pedidos',    'status=in.(Confirmado,Em Separação,Em Expedição)')
+      ]);
+
+      document.getElementById('kpiClientes').textContent     = clientes;
+      document.getElementById('kpiFornecedores').textContent = fornecedores;
+      document.getElementById('kpiProdutos').textContent     = produtos;
+      document.getElementById('kpiPC').textContent           = pedidosCompra;
+      document.getElementById('kpiPV').textContent           = pedidosVenda;
+
+      const critico = criticos.filter(p => p.estoque_atual <= p.estoque_minimo);
+      document.getElementById('kpiCritico').textContent = critico.length;
+
+      if (critico.length > 0) {
+        const nomes = critico.slice(0, 3).map(p => p.nome).join(', ');
+        const extra = critico.length > 3 ? ` e mais ${critico.length - 3}` : '';
+        document.getElementById('alertaEstoqueTexto').textContent =
+          `${critico.length} produto(s) com estoque crítico: ${nomes}${extra}.`;
+        document.getElementById('alertaEstoque').classList.add('show');
+      }
+    } catch (e) {
+      console.error('[KPIs]', e);
+    }
+  }
+
+  // ── Últimas movimentações ──────────────────────
+  async function carregarMovimentacoes() {
+    const tbody = document.getElementById('tbodyMov');
+    try {
+      const rows = await sbListar(
+        'estoque_movimentacoes',
+        'select=numero,tipo,quantidade,data,produto_id,produtos(nome)&order=created_at.desc&limit=5'
+      );
+      if (!rows.length) { tbody.innerHTML = '<tr><td colspan="5" class="vazio">Nenhuma movimentação registrada.</td></tr>'; return; }
+      tbody.innerHTML = rows.map(r => `
+        <tr>
+          <td style="font-family:monospace;font-size:12px">${r.numero}</td>
+          <td>${r.produtos?.nome ?? '—'}</td>
+          <td>${tipoBadge(r.tipo)}</td>
+          <td>${Number(r.quantidade).toLocaleString('pt-BR')}</td>
+          <td>${sbData(r.data)}</td>
+        </tr>
+      `).join('');
+    } catch {
+      tbody.innerHTML = '<tr><td colspan="5" class="vazio">Erro ao carregar movimentações.</td></tr>';
+    }
+  }
+
+  // ── Pedidos de Venda recentes ──────────────────
+  async function carregarPedidosVenda() {
+    const tbody = document.getElementById('tbodyPV');
+    try {
+      const rows = await sbListar(
+        'vendas_pedidos',
+        'select=numero,valor_total,status,data,cliente_id,clientes(nome)&order=created_at.desc&limit=5'
+      );
+      if (!rows.length) { tbody.innerHTML = '<tr><td colspan="5" class="vazio">Nenhum pedido de venda.</td></tr>'; return; }
+      tbody.innerHTML = rows.map(r => `
+        <tr>
+          <td style="font-family:monospace;font-size:12px">${r.numero}</td>
+          <td>${r.clientes?.nome ?? '—'}</td>
+          <td>${sbMoeda(r.valor_total)}</td>
+          <td>${statusBadge(r.status)}</td>
+          <td>${sbData(r.data)}</td>
+        </tr>
+      `).join('');
+    } catch {
+      tbody.innerHTML = '<tr><td colspan="5" class="vazio">Erro ao carregar pedidos.</td></tr>';
+    }
+  }
+
+  // ── Pedidos de Compra recentes ─────────────────
+  async function carregarPedidosCompra() {
+    const tbody = document.getElementById('tbodyPC');
+    try {
+      const rows = await sbListar(
+        'compras_pedidos',
+        'select=numero,valor_total,status,data,fornecedor_id,fornecedores(nome),produto_id,produtos(nome)&order=created_at.desc&limit=5'
+      );
+      if (!rows.length) { tbody.innerHTML = '<tr><td colspan="6" class="vazio">Nenhum pedido de compra.</td></tr>'; return; }
+      tbody.innerHTML = rows.map(r => `
+        <tr>
+          <td style="font-family:monospace;font-size:12px">${r.numero}</td>
+          <td>${r.fornecedores?.nome ?? '—'}</td>
+          <td>${r.produtos?.nome ?? '—'}</td>
+          <td>${sbMoeda(r.valor_total)}</td>
+          <td>${statusBadge(r.status)}</td>
+          <td>${sbData(r.data)}</td>
+        </tr>
+      `).join('');
+    } catch {
+      tbody.innerHTML = '<tr><td colspan="6" class="vazio">Erro ao carregar pedidos.</td></tr>';
+    }
+  }
+
+  // ── Inicializar ────────────────────────────────
+  carregarKPIs();
+  carregarMovimentacoes();
+  carregarPedidosVenda();
+  carregarPedidosCompra();
+</script>
+</body>
+</html>

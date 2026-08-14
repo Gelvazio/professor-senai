@@ -32,11 +32,11 @@
 
 | # | Tarefa | Status |
 |---|--------|--------|
-| 2.1 | Criar `dashboard.html` com header, sidebar e área de conteúdo | ⬜ NAO INICIADO |
-| 2.2 | Exibir cards de totais: Clientes, Fornecedores, Produtos com estoque crítico | ⬜ NAO INICIADO |
-| 2.3 | Exibir cards de totais: Pedidos de Compra em aberto, Pedidos de Venda em aberto | ⬜ NAO INICIADO |
-| 2.4 | Exibir tabela de últimas 5 movimentações de estoque | ⬜ NAO INICIADO |
-| 2.5 | Implementar menu lateral com links para todos os módulos | ⬜ NAO INICIADO |
+| 2.1 | Criar `dashboard.html` com header, sidebar e área de conteúdo | 🔄 INICIADO |
+| 2.2 | Exibir cards de totais: Clientes, Fornecedores, Produtos com estoque crítico | 🔄 INICIADO |
+| 2.3 | Exibir cards de totais: Pedidos de Compra em aberto, Pedidos de Venda em aberto | 🔄 INICIADO |
+| 2.4 | Exibir tabela de últimas 5 movimentações de estoque | 🔄 INICIADO |
+| 2.5 | Implementar menu lateral com links para todos os módulos | 🔄 INICIADO |
 
 ---
 

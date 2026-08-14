@@ -350,8 +350,8 @@
     "semantic_hash": ""
   },
   "sistema/index.html": {
-    "mtime": 1786662817.5807686,
-    "ast_hash": "672aa7fc0b3f853b46413d60fd2d6274",
+    "mtime": 1786717070.8023517,
+    "ast_hash": "55fec6f1124b45119c6b96a952a7a345",
     "semantic_hash": ""
   },
   "sistema/backfill-ids.html": {
@@ -775,18 +775,23 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/SUPABASE.js": {
-    "mtime": 1786716732.0092642,
-    "ast_hash": "6b210674b4d7cd2126cc26c0608dd813",
+    "mtime": 1786717217.217447,
+    "ast_hash": "78656c2e6a542cad06e9cad9394238cb",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md": {
-    "mtime": 1786716979.2935877,
-    "ast_hash": "6ecb06980f59f582ef7008a1730da2e7",
+    "mtime": 1786717248.221806,
+    "ast_hash": "64ef121594463d8b4907955e1555147b",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.html": {
     "mtime": 1786716828.9725573,
     "ast_hash": "f66ac84d7a65153760187b32f6444a1c",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/index.html": {
+    "mtime": 1786717229.6812458,
+    "ast_hash": "ad198823b787ec2fffd15aeba8b93c69",
     "semantic_hash": ""
   }
 }
