@@ -1,10 +1,20 @@
-E MAIL 
+#Problema:
+Os alunos estavam logados normalmente ate as 15 horas e 
+apos este horario na data de 14-08-2026, estavam logados e deslogou sozinho
 
-Maria 
+Lista de e-mails abaixo que deslogou sozinho
+
+Maria Clara Ribeiro Farias
 maria_cr_farias@estudante.sesisenai.org.br
 Senha:LNxa5121
 
-luna amendo - acesso ok
+Luna Amendo
 luna_amendo@estudante.sesisenai.org.br
 senha:TLyv5035
+
+Andre Henrique 
+andre_hf_souza@estudante.sesisenai.org.br
+Senha:ILxe7262@
+																																																					LUC	AS 				E																																																																														
+
 
