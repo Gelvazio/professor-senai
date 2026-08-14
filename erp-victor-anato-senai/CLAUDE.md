@@ -631,10 +631,462 @@ async function proximoNumero(tabela, campo, prefixo, digitos = 5) {
 
 ### Backend / Banco de Dados
 
-- **Supabase** (PostgreSQL) — mesma instância do sistema SENAI já configurado
-- **Autenticação**: tabela `usuario` com `login_usuario` + `senha_hash` (SHA-256), mesma lógica do `index.html` do sistema
+- **Supabase** (PostgreSQL) — backend exclusivo, sem servidor Node/Express próprio
 - **API REST**: Supabase REST API via `fetch` diretamente do frontend (sem backend próprio)
 - **Sessão**: `localStorage` com `erp_role` e `erp_login` (timestamp)
+
+---
+
+## Supabase — Configuração e Uso da API
+
+### Credenciais
+
+```js
+const SUPABASE_URL = 'https://jwasbzdbkbryncpvfujc.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YXNiemRia2JyeW5jcHZmdWpjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MzA3ODEsImV4cCI6MjA2MjQwNjc4MX0.Bz7aZ6yG6DUTtWQ4WdeNbslWzE4qU81zzblUeHdTduU';
+
+const HEADERS = {
+  'apikey': SUPABASE_KEY,
+  'Authorization': `Bearer ${SUPABASE_KEY}`,
+  'Content-Type': 'application/json',
+  'Prefer': 'return=representation'
+};
+```
+
+### Padrão de CRUD — funções reutilizáveis
+
+```js
+const API = `${SUPABASE_URL}/rest/v1`;
+
+// LIST — listar registros (com filtros opcionais)
+async function listar(tabela, queryParams = '') {
+  const res = await fetch(`${API}/${tabela}?${queryParams}`, { headers: HEADERS });
+  if (!res.ok) throw new Error(await res.text());
+  return res.json();
+}
+
+// GET — buscar um registro por id
+async function buscar(tabela, id) {
+  const res = await fetch(`${API}/${tabela}?id=eq.${id}&limit=1`, { headers: HEADERS });
+  if (!res.ok) throw new Error(await res.text());
+  const rows = await res.json();
+  return rows[0] || null;
+}
+
+// INSERT — criar novo registro
+async function inserir(tabela, dados) {
+  const res = await fetch(`${API}/${tabela}`, {
+    method: 'POST',
+    headers: HEADERS,
+    body: JSON.stringify(dados)
+  });
+  if (!res.ok) throw new Error(await res.text());
+  return res.json();
+}
+
+// UPDATE — atualizar registro por id
+async function atualizar(tabela, id, dados) {
+  const res = await fetch(`${API}/${tabela}?id=eq.${id}`, {
+    method: 'PATCH',
+    headers: HEADERS,
+    body: JSON.stringify(dados)
+  });
+  if (!res.ok) throw new Error(await res.text());
+  return res.json();
+}
+
+// DELETE — excluir registro por id
+async function excluir(tabela, id) {
+  const res = await fetch(`${API}/${tabela}?id=eq.${id}`, {
+    method: 'DELETE',
+    headers: HEADERS
+  });
+  if (!res.ok) throw new Error(await res.text());
+  return true;
+}
+
+// Numeração automática sequencial
+async function proximoNumero(tabela, campo, prefixo, digitos = 5) {
+  const rows = await listar(tabela, `select=${campo}&order=${campo}.desc&limit=1`);
+  const ultimo = rows.length ? parseInt(rows[0][campo].replace(prefixo, '')) : 0;
+  return prefixo + String(ultimo + 1).padStart(digitos, '0');
+}
+```
+
+### Filtros e operadores da API REST Supabase
+
+| Operador | URL | Exemplo |
+|----------|-----|---------|
+| Igual | `campo=eq.valor` | `?ativo=eq.true` |
+| Diferente | `campo=neq.valor` | `?status=neq.Cancelado` |
+| Maior que | `campo=gt.valor` | `?estoque_atual=gt.0` |
+| Menor ou igual | `campo=lte.valor` | `?estoque_atual=lte.estoque_minimo` |
+| Contém texto | `campo=ilike.*valor*` | `?nome=ilike.*ferr*` |
+| In (lista) | `campo=in.(a,b,c)` | `?status=in.(Ativo,Pendente)` |
+| Ordenar | `order=campo.asc` | `?order=nome.asc` |
+| Limitar | `limit=N&offset=N` | `?limit=50&offset=0` |
+| Selecionar campos | `select=a,b,c` | `?select=id,nome,ativo` |
+
+### Esquema de tabelas do banco (PostgreSQL)
+
+Criar estas tabelas no Supabase SQL Editor:
+
+```sql
+-- CADASTROS
+CREATE TABLE clientes (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  nome        text NOT NULL,
+  cnpj_cpf    text,
+  email       text,
+  telefone    text,
+  segmento    text,
+  endereco    text,
+  cidade      text,
+  estado      text,
+  cep         text,
+  ativo       boolean DEFAULT true,
+  created_at  timestamptz DEFAULT now()
+);
+
+CREATE TABLE fornecedores (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  nome        text NOT NULL,
+  cnpj        text,
+  contato     text,
+  email       text,
+  telefone    text,
+  segmento    text,
+  endereco    text,
+  cidade      text,
+  estado      text,
+  cep         text,
+  ativo       boolean DEFAULT true,
+  created_at  timestamptz DEFAULT now()
+);
+
+CREATE TABLE produtos (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  codigo          text UNIQUE NOT NULL,   -- gerado: P00001
+  nome            text NOT NULL,
+  categoria       text,
+  unidade         text,
+  preco_custo     numeric(12,2),
+  preco_venda     numeric(12,2),
+  estoque_atual   numeric(12,3) DEFAULT 0,
+  estoque_minimo  numeric(12,3) DEFAULT 0,
+  estoque_maximo  numeric(12,3),
+  imagem_url      text,
+  descricao       text,
+  ativo           boolean DEFAULT true,
+  created_at      timestamptz DEFAULT now()
+);
+
+CREATE TABLE transportadoras (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  nome            text NOT NULL,
+  cnpj            text,
+  tipo_servico    text,
+  contato         text,
+  email           text,
+  telefone        text,
+  cidade          text,
+  estado          text,
+  ativa           boolean DEFAULT true,
+  created_at      timestamptz DEFAULT now()
+);
+
+-- COMPRAS
+CREATE TABLE compras_planejamento (
+  id            uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  titulo        text NOT NULL,
+  tipo          text,
+  produto_id    uuid REFERENCES produtos(id),
+  periodo       text,
+  qtd_planejada numeric(12,3),
+  qtd_realizada numeric(12,3) DEFAULT 0,
+  status        text DEFAULT 'Em Planejamento',
+  data          date,
+  observacoes   text,
+  created_at    timestamptz DEFAULT now()
+);
+
+CREATE TABLE compras_solicitacoes (
+  id            uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero        text UNIQUE NOT NULL,    -- gerado: SC00001
+  produto_id    uuid REFERENCES produtos(id),
+  quantidade    numeric(12,3) NOT NULL,
+  unidade       text,
+  solicitante   text,
+  prioridade    text DEFAULT 'Média',
+  status        text DEFAULT 'Pendente',
+  data          date DEFAULT CURRENT_DATE,
+  observacoes   text,
+  created_at    timestamptz DEFAULT now()
+);
+
+CREATE TABLE compras_pedidos (
+  id                uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero            text UNIQUE NOT NULL,  -- gerado: PC00001
+  solicitacao_id    uuid REFERENCES compras_solicitacoes(id),
+  fornecedor_id     uuid REFERENCES fornecedores(id),
+  produto_id        uuid REFERENCES produtos(id),
+  quantidade        numeric(12,3) NOT NULL,
+  preco_unitario    numeric(12,2),
+  valor_total       numeric(12,2) GENERATED ALWAYS AS (quantidade * preco_unitario) STORED,
+  status            text DEFAULT 'Rascunho',
+  data              date DEFAULT CURRENT_DATE,
+  data_prevista     date,
+  observacoes       text,
+  created_at        timestamptz DEFAULT now()
+);
+
+CREATE TABLE compras_recebimentos (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero          text UNIQUE NOT NULL,   -- gerado: RC00001
+  pedido_id       uuid REFERENCES compras_pedidos(id),
+  fornecedor_id   uuid REFERENCES fornecedores(id),
+  produto_id      uuid REFERENCES produtos(id),
+  qtd_esperada    numeric(12,3),
+  qtd_recebida    numeric(12,3),
+  status          text DEFAULT 'Aguardando',
+  responsavel     text,
+  data            date DEFAULT CURRENT_DATE,
+  observacoes     text,
+  created_at      timestamptz DEFAULT now()
+);
+
+CREATE TABLE compras_conferencias (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  recebimento_id  uuid REFERENCES compras_recebimentos(id),
+  fornecedor_id   uuid REFERENCES fornecedores(id),
+  produto_id      uuid REFERENCES produtos(id),
+  qtd_esperada    numeric(12,3),
+  qtd_recebida    numeric(12,3),
+  status          text DEFAULT 'Em Análise',
+  responsavel     text,
+  data            date DEFAULT CURRENT_DATE,
+  observacoes     text,
+  created_at      timestamptz DEFAULT now()
+);
+
+CREATE TABLE compras_notas_fiscais (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero_nf       text NOT NULL,
+  fornecedor_id   uuid REFERENCES fornecedores(id),
+  recebimento_id  uuid REFERENCES compras_recebimentos(id),
+  valor           numeric(12,2),
+  qtd_itens       integer,
+  status          text DEFAULT 'Pendente',
+  data            date DEFAULT CURRENT_DATE,
+  observacoes     text,
+  created_at      timestamptz DEFAULT now()
+);
+
+-- ESTOQUE
+CREATE TABLE estoque_movimentacoes (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero      text UNIQUE NOT NULL,   -- gerado: MV00001
+  produto_id  uuid REFERENCES produtos(id),
+  tipo        text,  -- Entrada, Saída, Transferência
+  quantidade  numeric(12,3) NOT NULL,
+  origem      text,
+  destino     text,
+  usuario     text,
+  data        date DEFAULT CURRENT_DATE,
+  hora        time DEFAULT CURRENT_TIME,
+  observacoes text,
+  created_at  timestamptz DEFAULT now()
+);
+
+CREATE TABLE estoque_inventarios (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero      text UNIQUE NOT NULL,   -- gerado: INV00001
+  produto_id  uuid REFERENCES produtos(id),
+  qtd_sistema numeric(12,3),
+  qtd_contada numeric(12,3),
+  diferenca   numeric(12,3) GENERATED ALWAYS AS (qtd_contada - qtd_sistema) STORED,
+  status      text DEFAULT 'Pendente',
+  responsavel text,
+  data        date DEFAULT CURRENT_DATE,
+  observacoes text,
+  created_at  timestamptz DEFAULT now()
+);
+
+-- VENDAS E LOGÍSTICA
+CREATE TABLE vendas_pedidos (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero          text UNIQUE NOT NULL,   -- gerado: PV00001
+  cliente_id      uuid REFERENCES clientes(id),
+  produto_id      uuid REFERENCES produtos(id),
+  quantidade      numeric(12,3) NOT NULL,
+  preco_unitario  numeric(12,2),
+  valor_total     numeric(12,2) GENERATED ALWAYS AS (quantidade * preco_unitario) STORED,
+  status          text DEFAULT 'Rascunho',
+  data            date DEFAULT CURRENT_DATE,
+  data_prevista   date,
+  observacoes     text,
+  created_at      timestamptz DEFAULT now()
+);
+
+CREATE TABLE vendas_notas_fiscais (
+  id                      uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero_nf               text NOT NULL,
+  serie                   text,
+  data_emissao            date,
+  natureza_operacao       text,
+  empresa_emitente        text,
+  cliente_id              uuid REFERENCES clientes(id),
+  pedido_id               uuid REFERENCES vendas_pedidos(id),
+  produto_id              uuid REFERENCES produtos(id),
+  quantidade              numeric(12,3),
+  valor_unitario          numeric(12,2),
+  valor_produtos          numeric(12,2),
+  desconto                numeric(12,2) DEFAULT 0,
+  frete                   numeric(12,2) DEFAULT 0,
+  base_icms               numeric(12,2),
+  valor_icms              numeric(12,2),
+  valor_ipi               numeric(12,2),
+  valor_total             numeric(12,2),
+  transportadora_id       uuid REFERENCES transportadoras(id),
+  frete_por_conta         text,
+  qtd_volumes             integer,
+  peso_liquido            numeric(12,3),
+  peso_bruto              numeric(12,3),
+  status                  text DEFAULT 'Rascunho',
+  informacoes_complementares text,
+  created_at              timestamptz DEFAULT now()
+);
+
+CREATE TABLE vendas_romaneios (
+  id                uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero            text UNIQUE NOT NULL,   -- gerado: ROM00001
+  data              date DEFAULT CURRENT_DATE,
+  pedido_id         uuid REFERENCES vendas_pedidos(id),
+  nota_fiscal_id    uuid,
+  expedicao_id      uuid,
+  cliente_id        uuid REFERENCES clientes(id),
+  transportadora_id uuid REFERENCES transportadoras(id),
+  produto_id        uuid REFERENCES produtos(id),
+  quantidade        numeric(12,3),
+  qtd_volumes       integer,
+  peso_liquido      numeric(12,3),
+  peso_bruto        numeric(12,3),
+  responsavel       text,
+  status            text DEFAULT 'Rascunho',
+  observacoes       text,
+  created_at        timestamptz DEFAULT now()
+);
+
+CREATE TABLE vendas_separacoes (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero      text UNIQUE NOT NULL,   -- gerado: SEP00001
+  pedido_id   uuid REFERENCES vendas_pedidos(id),
+  produto_id  uuid REFERENCES produtos(id),
+  quantidade  numeric(12,3) NOT NULL,
+  separador   text,
+  status      text DEFAULT 'Pendente',
+  data        date DEFAULT CURRENT_DATE,
+  observacoes text,
+  created_at  timestamptz DEFAULT now()
+);
+
+CREATE TABLE vendas_expedicoes (
+  id                uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero            text UNIQUE NOT NULL,   -- gerado: EXP00001
+  pedido_id         uuid REFERENCES vendas_pedidos(id),
+  separacao_id      uuid REFERENCES vendas_separacoes(id),
+  transportadora_id uuid REFERENCES transportadoras(id),
+  quantidade        numeric(12,3),
+  tipo_embalagem    text,
+  status            text DEFAULT 'Pendente',
+  responsavel       text,
+  data              date DEFAULT CURRENT_DATE,
+  observacoes       text,
+  created_at        timestamptz DEFAULT now()
+);
+
+CREATE TABLE vendas_entregas (
+  id                uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero            text UNIQUE NOT NULL,   -- gerado: ENT00001
+  expedicao_id      uuid REFERENCES vendas_expedicoes(id),
+  transportadora_id uuid REFERENCES transportadoras(id),
+  cliente_id        uuid REFERENCES clientes(id),
+  codigo_rastreio   text,
+  status            text DEFAULT 'Em Trânsito',
+  data              date DEFAULT CURRENT_DATE,
+  data_entrega      date,
+  responsavel       text,
+  observacoes       text,
+  created_at        timestamptz DEFAULT now()
+);
+
+-- CONFIGURAÇÕES
+CREATE TABLE erp_usuarios (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  nome        text NOT NULL,
+  email       text UNIQUE NOT NULL,
+  cargo       text,
+  telefone    text,
+  perfil      text NOT NULL CHECK (perfil IN ('Administrador','Usuário')),
+  senha_hash  text NOT NULL,
+  status      boolean DEFAULT true,
+  permissoes  jsonb DEFAULT '{"visao_geral":true,"cadastros":false,"compras":false,"estoque":false,"vendas":false}'::jsonb,
+  created_at  timestamptz DEFAULT now()
+);
+```
+
+### RLS (Row Level Security)
+
+Para simplificar o desenvolvimento inicial, usar a `anon key` com RLS desabilitado nas tabelas do ERP, ou criar uma policy permissiva:
+
+```sql
+-- Habilitar RLS e criar policy permissiva (para a anon key durante desenvolvimento)
+ALTER TABLE clientes ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "anon full access" ON clientes FOR ALL USING (true) WITH CHECK (true);
+-- Repetir para cada tabela
+```
+
+### Autenticação do ERP
+
+```js
+// Login — verificar usuário na tabela erp_usuarios
+async function fazerLogin(email, senha) {
+  const hash = await sha256(senha);
+  const rows = await listar('erp_usuarios', `email=eq.${encodeURIComponent(email)}&senha_hash=eq.${hash}&status=eq.true&select=id,nome,perfil,permissoes`);
+  if (rows.length === 0) throw new Error('Credenciais inválidas');
+  const user = rows[0];
+  localStorage.setItem('erp_role', user.perfil);
+  localStorage.setItem('erp_user_id', user.id);
+  localStorage.setItem('erp_user_nome', user.nome);
+  localStorage.setItem('erp_permissoes', JSON.stringify(user.permissoes));
+  localStorage.setItem('erp_login', Date.now());
+  return user;
+}
+
+// SHA-256 (mesmo padrão do sistema SENAI)
+async function sha256(text) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+// Verificar sessão (chamar no início de cada tela protegida)
+function verificarSessao() {
+  const role = localStorage.getItem('erp_role');
+  const login = parseInt(localStorage.getItem('erp_login') || '0');
+  const OITO_HORAS = 8 * 60 * 60 * 1000;
+  if (!role || Date.now() - login > OITO_HORAS) {
+    localStorage.clear();
+    window.location.replace('../index.html');
+  }
+}
+
+// Verificar permissão de módulo
+function temPermissao(modulo) {
+  const perms = JSON.parse(localStorage.getItem('erp_permissoes') || '{}');
+  const role  = localStorage.getItem('erp_role');
+  return role === 'Administrador' || perms[modulo] === true;
+}
+```
 
 ---
 
