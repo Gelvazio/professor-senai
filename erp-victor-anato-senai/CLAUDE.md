@@ -547,16 +547,94 @@ Todos os números sequenciais devem usar padding fixo de 5 dígitos:
 
 ---
 
-## Tecnologias Recomendadas
+## Tecnologias
 
-> Estas são sugestões — adaptar conforme decisão do time.
+### Frontend — Vanilla JS (obrigatório)
 
-- **Frontend**: React + TypeScript + Tailwind CSS (ou similar)
-- **Backend**: Node.js + Express (ou Next.js full-stack)
-- **Banco de dados**: PostgreSQL (Supabase) ou MySQL
-- **Autenticação**: Supabase Auth ou JWT próprio
-- **PDF**: `jsPDF`, `pdfmake` ou geração server-side
-- **API de CEP**: ViaCEP (`https://viacep.com.br/ws/{cep}/json/`)
+O frontend é construído com **HTML + CSS + JavaScript puro**, sem nenhum framework ou biblioteca de componentes. Seguir o mesmo padrão do sistema SENAI existente (`sistema/`).
+
+- **HTML5** — arquivos `.html` por módulo/tela (sem bundler, sem transpilação)
+- **CSS** — arquivo único `styles.css` já criado com todo o design system (variáveis, tema claro/escuro, componentes)
+- **JavaScript** — vanilla JS ES6+ (arrow functions, async/await, fetch, template literals)
+- **Sem dependências de npm** — nenhum `package.json`, nenhum build step
+- **Tema claro/escuro** — via `[data-theme="dark"]` no `<html>`, persistido em `localStorage.getItem("senai_tema")`
+- **PDF** — `window.print()` com CSS `@media print` ou biblioteca CDN embutida via `<script>` (ex: jsPDF via CDN)
+- **API de CEP** — ViaCEP via `fetch('https://viacep.com.br/ws/{cep}/json/')`
+
+### Estrutura de arquivos HTML (uma por tela/módulo)
+
+```
+erp-victor-anato-senai/
+├── styles.css              ← design system global (já criado)
+├── index.html              ← login
+├── dashboard.html          ← visão geral / home
+├── cadastros/
+│   ├── clientes.html
+│   ├── fornecedores.html
+│   ├── produtos.html
+│   └── transportadoras.html
+├── compras/
+│   ├── planejamento.html
+│   ├── solicitacoes.html
+│   ├── pedidos.html
+│   ├── recebimento.html
+│   ├── conferencia.html
+│   └── nota-fiscal.html
+├── estoque/
+│   ├── armazenagem.html
+│   ├── controle.html
+│   ├── movimentacoes.html
+│   └── inventario.html
+├── vendas/
+│   ├── pedidos-venda.html
+│   ├── nota-fiscal-venda.html
+│   ├── romaneio.html
+│   ├── separacao.html
+│   ├── expedicao.html
+│   └── entrega.html
+└── configuracoes/
+    └── usuarios.html
+```
+
+### Padrões JavaScript obrigatórios
+
+```js
+// Tema — aplicar antes do render para evitar flash
+(function () {
+  const t = localStorage.getItem("senai_tema") || "light";
+  document.documentElement.setAttribute("data-theme", t);
+})();
+
+// Autenticação — verificar sessão em toda tela protegida
+(function () {
+  if (!localStorage.getItem("erp_role"))
+    window.location.replace("../index.html");
+})();
+
+// Fetch com Supabase
+const SUPABASE_URL = '...';
+const SUPABASE_KEY = '...';
+const headers = { 'apikey': SUPABASE_KEY, 'Content-Type': 'application/json' };
+
+async function fetchData(endpoint) {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/${endpoint}`, { headers });
+  return res.json();
+}
+
+// Numeração automática — buscar o último e incrementar
+async function proximoNumero(tabela, campo, prefixo, digitos = 5) {
+  const rows = await fetchData(`${tabela}?select=${campo}&order=${campo}.desc&limit=1`);
+  const ultimo = rows.length ? parseInt(rows[0][campo].replace(prefixo, '')) : 0;
+  return prefixo + String(ultimo + 1).padStart(digitos, '0');
+}
+```
+
+### Backend / Banco de Dados
+
+- **Supabase** (PostgreSQL) — mesma instância do sistema SENAI já configurado
+- **Autenticação**: tabela `usuario` com `login_usuario` + `senha_hash` (SHA-256), mesma lógica do `index.html` do sistema
+- **API REST**: Supabase REST API via `fetch` diretamente do frontend (sem backend próprio)
+- **Sessão**: `localStorage` com `erp_role` e `erp_login` (timestamp)
 
 ---
 
