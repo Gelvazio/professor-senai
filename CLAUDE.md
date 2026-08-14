@@ -41,6 +41,14 @@ Cada subpasta dentro de `sistema/` representa uma **Unidade Curricular (UC)**. A
 - `LOGICA-PROGRAMACAO`
 - `TECNICO DE INFORMATICA PARA INTERNET`
 
+## Pasta PROFESSOR
+
+A pasta `PROFESSOR/` (dentro de `sistema/`) **NÃO é uma Unidade Curricular (matéria)**. Ela contém:
+- Configurações e dados de aulas para edição pelo professor
+- Trabalhos e arquivos de uso exclusivo do professor
+
+Não aplicar a ela a estrutura obrigatória de UC (`AULAS/`, `MATERIAIS/`), nem listá-la como matéria no sistema.
+
 ### Estrutura obrigatória de cada UC
 
 Toda UC **deve conter** as subpastas:
