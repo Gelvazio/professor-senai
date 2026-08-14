@@ -345,13 +345,13 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1786629986.8383586,
-    "ast_hash": "493291a71a1edcb4b833f27ae5f4d9d2",
+    "mtime": 1786713529.076974,
+    "ast_hash": "1670a1ed0c9d6f8978f47a655f357447",
     "semantic_hash": ""
   },
   "sistema/index.html": {
-    "mtime": 1786233233.5804238,
-    "ast_hash": "0ab3b3ad5c28b5031d17c99ec0a5f9a6",
+    "mtime": 1786662817.5807686,
+    "ast_hash": "672aa7fc0b3f853b46413d60fd2d6274",
     "semantic_hash": ""
   },
   "sistema/backfill-ids.html": {
@@ -692,6 +692,66 @@
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-05.png": {
     "mtime": 1786560870.5825434,
     "ast_hash": "dfa5b6afac0d0144c9f64ac36659700d",
+    "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1786646108.207878,
+    "ast_hash": "f0b106ca7e1d514ee7f9dff683d9f516",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md": {
+    "mtime": 1786645882.952765,
+    "ast_hash": "6aa9e9fbf040fe3f8356de7f171a18b9",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Controle_Abate_Pamplona_633c4d9d.md": {
+    "mtime": 1786646073.4464116,
+    "ast_hash": "008e6d84373b15faff06ca239f46e5f8",
+    "semantic_hash": ""
+  },
+  "sistema/.claude/settings.local.json": {
+    "mtime": 1786662633.1423187,
+    "ast_hash": "07f0e8f4449cfc05a5a107a8531716dc",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/.claude/settings.local.json": {
+    "mtime": 1786661451.0429592,
+    "ast_hash": "c48574f65eb48e020db675734019f9c3",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md": {
+    "mtime": 1786713432.8421843,
+    "ast_hash": "c5a31097259aeb0813acd5fe81188b6a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md": {
+    "mtime": 1786713433.9387128,
+    "ast_hash": "008e6d84373b15faff06ca239f46e5f8",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md": {
+    "mtime": 1786646609.8502848,
+    "ast_hash": "281379f064d1894317feeb93a5688312",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md": {
+    "mtime": 1786647052.6606941,
+    "ast_hash": "f0e59716f82689abfa69e21e038bc473",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md": {
+    "mtime": 1786645853.3471835,
+    "ast_hash": "d19a33f704aa7d03c6699443302149a7",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md": {
+    "mtime": 1786714267.6310265,
+    "ast_hash": "05a90a24153c9cd744efa3a460d7a82f",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/CLAUDE.md": {
+    "mtime": 1786714442.0553398,
+    "ast_hash": "c48ea036e076f273ed5b5da60782c5f1",
     "semantic_hash": ""
   }
 }

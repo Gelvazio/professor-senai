@@ -1,0 +1,607 @@
+{
+  ".claude/settings.local.json": {
+    "mtime": 1786646108.207878,
+    "ast_hash": "f0b106ca7e1d514ee7f9dff683d9f516",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/converter_slides_pdf.py": {
+    "mtime": 1786629986.8767312,
+    "ast_hash": "2d1483635761bd31d92485f65388a96e",
+    "semantic_hash": ""
+  },
+  "sistema/.claude/settings.local.json": {
+    "mtime": 1786662633.1423187,
+    "ast_hash": "07f0e8f4449cfc05a5a107a8531716dc",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/.claude/settings.local.json": {
+    "mtime": 1786661451.0429592,
+    "ast_hash": "c48574f65eb48e020db675734019f9c3",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
+    "mtime": 1786015580.6497562,
+    "ast_hash": "d1376ea95efa56aafc4bdab315a0c3f9",
+    "semantic_hash": ""
+  },
+  "sistema/backfill-material-ids.sql": {
+    "mtime": 1786146514.3364618,
+    "ast_hash": "d85860063a8e4c1f10da139e481438fd",
+    "semantic_hash": ""
+  },
+  ".claude/skills/documentacao-padrao/SKILL.md": {
+    "mtime": 1786629986.8358312,
+    "ast_hash": "a1a963982a91726b83296ae792b747f1",
+    "semantic_hash": ""
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1786629986.836938,
+    "ast_hash": "7c432aa7c72acf1eac923e30dfd781f9",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1786713529.076974,
+    "ast_hash": "1670a1ed0c9d6f8978f47a655f357447",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-08-07-analise-ementas.md": {
+    "mtime": 1786629986.8842936,
+    "ast_hash": "9f04de65c5ba21c3eb4875d5508ffd35",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-08-07-analise-ementas-design.md": {
+    "mtime": 1786629986.886307,
+    "ast_hash": "7bfe15e2c0bca6647e8f45aa0ca5b5d4",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/CLAUDE.md": {
+    "mtime": 1786714442.0553398,
+    "ast_hash": "c48ea036e076f273ed5b5da60782c5f1",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md": {
+    "mtime": 1786713432.8421843,
+    "ast_hash": "c5a31097259aeb0813acd5fe81188b6a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md": {
+    "mtime": 1786713433.9387128,
+    "ast_hash": "008e6d84373b15faff06ca239f46e5f8",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/FICHA PRODUTO MAISTECH ATUALIZADA_5cbc16da.md": {
+    "mtime": 1786631236.6008174,
+    "ast_hash": "34321cd9435a45dd5f116f298b7ac296",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md": {
+    "mtime": 1786629986.9253995,
+    "ast_hash": "6c15a68d091b0bd75a43b90d32fa511b",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md": {
+    "mtime": 1786645882.952765,
+    "ast_hash": "6aa9e9fbf040fe3f8356de7f171a18b9",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md": {
+    "mtime": 1786629986.9253995,
+    "ast_hash": "3d29f48ae94b355d3c911430789cc349",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/AULAS-TIC.md": {
+    "mtime": 1786629986.8383586,
+    "ast_hash": "54fced6c00d32bb0369e4bb90f51071a",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/Lan\u00e7amentoHorasSenai.txt": {
+    "mtime": 1786629986.8408833,
+    "ast_hash": "dfe563ec853cfa79d5a60f7eacc59cf7",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/PROBLEMAS-ACESSOS-ALUNOS.txt": {
+    "mtime": 1786629986.8433282,
+    "ast_hash": "f67759901210555b23f9001519e6b5ff",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/assinatura_gelvazio.html": {
+    "mtime": 1786629986.8457956,
+    "ast_hash": "af6588501ec0318a5a50e3f6e1285ade",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/atividade_digitacao_aula05.html": {
+    "mtime": 1786629986.847767,
+    "ast_hash": "cc09e2ddebdc36f346da2bbc386d9904",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/educacao.html": {
+    "mtime": 1786629986.8883197,
+    "ast_hash": "1c245f77724bf27d937b85359a17c99a",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/reunioes/reuniao_vitor.txt": {
+    "mtime": 1786629987.3272817,
+    "ast_hash": "23b69d39825f79cc2ad12773feb0733d",
+    "semantic_hash": ""
+  },
+  "sistema/BANCO_DE_DADOS/ORIENTACAO_UC.txt": {
+    "mtime": 1786631003.1559472,
+    "ast_hash": "9e73aaa9d835e16df9ddedf94ba70e64",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md": {
+    "mtime": 1786626254.8112483,
+    "ast_hash": "00688d2f01e1246859362b2ec5ab59e0",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ACESSOS-ALUNOS-PRESIDENTE-GETULIO-2026-02.txt": {
+    "mtime": 1786555003.1027098,
+    "ast_hash": "86642705531e83e5bdb4344c52b88eb9",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ANOTACOES-PEDAGOGICAS.txt": {
+    "mtime": 1786560048.1234307,
+    "ast_hash": "d576a25c8753182c5d0d9313980948a3",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/ASSUNTO-ADICIONAL.txt": {
+    "mtime": 1786099783.7362757,
+    "ast_hash": "60205259722255b498f1f5cd9de84c40",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/ATIVIDADE_DIGITACAO_12-08-2026.txt": {
+    "mtime": 1786559129.5230236,
+    "ast_hash": "1b7fccafde8b0898202eeeac7272b1a5",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/BANCO_QUESTOES_HISTORIA_COMPUTACAO.gift.txt": {
+    "mtime": 1785869870.9703064,
+    "ast_hash": "7f2c5dc58ced47a24029439b1b8a2bde",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/BANCO_QUESTOES_INICIANDO_CHROMEBOOK.gift.txt": {
+    "mtime": 1785869925.791005,
+    "ast_hash": "9b07419d222228f3287e0ce8002891e9",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/HISTORIA_COMPUTACAO_AULA_01.html": {
+    "mtime": 1786064384.75087,
+    "ast_hash": "241be31f974f9ad45376670f36b62618",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/INICIANDO_CHROMEBOOK_AULA_01.html": {
+    "mtime": 1786064384.8073814,
+    "ast_hash": "22605ddf80dc9c9ad96e419e17b30db7",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_APRESENTACAO_PROFESSOR.html": {
+    "mtime": 1786315308.8259513,
+    "ast_hash": "45e185dce8caefb66b67f921d639d87a",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html": {
+    "mtime": 1786064384.8133814,
+    "ast_hash": "9818250c2c303bb7855b6914fc5d9a49",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-02-04-08-2026/SLIDE_AULA_02.html": {
+    "mtime": 1786209762.118895,
+    "ast_hash": "b3dd3cc46210ee353edf549f5801ad9b",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-02-04-08-2026/SLIDE_AULA_02_COMUNICACAO.html": {
+    "mtime": 1786209767.9566984,
+    "ast_hash": "05c3c2eefa1057411d1ad90093dd3785",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-03-05-08-2026/SLIDE_INTERNET_WWW.html": {
+    "mtime": 1786312173.8955052,
+    "ast_hash": "c38951f3d73a6a1a50af924e1a4629b5",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-03-05-08-2026/SLIDE_SEGURANCA_INFORMACAO.html": {
+    "mtime": 1786064384.8319585,
+    "ast_hash": "236c6620532bdcb74a1baa3afdfbcf59",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.html": {
+    "mtime": 1786127899.9095495,
+    "ast_hash": "4b4586875e3b80f1887d29f228a0e9f1",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.txt": {
+    "mtime": 1786053992.094654,
+    "ast_hash": "1a9936e925f0f07a6d6a937c16e9fc11",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/MEMBROS-EQUIPE-06-08-2026.html": {
+    "mtime": 1786224006.227447,
+    "ast_hash": "7590d2976cbe79e3343642d63aa100fd",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/SLIDE_AULA_04.html": {
+    "mtime": 1786064384.8344777,
+    "ast_hash": "a8321e0230730f19938cbb7e180f76ff",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-05-07-08-2026/SLIDE_AULA_05.html": {
+    "mtime": 1786559891.1245346,
+    "ast_hash": "5828e08b06aaeb6af66c67b44d521a7b",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-06-10-08-2026/SLIDE_AULA_06.html": {
+    "mtime": 1786559100.118016,
+    "ast_hash": "82c3441eb2125e9bb0c8781623a770d4",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md": {
+    "mtime": 1786646609.8502848,
+    "ast_hash": "281379f064d1894317feeb93a5688312",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md": {
+    "mtime": 1786647052.6606941,
+    "ast_hash": "f0e59716f82689abfa69e21e038bc473",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md": {
+    "mtime": 1786645853.3471835,
+    "ast_hash": "d19a33f704aa7d03c6699443302149a7",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/SLIDE_AULA_07.html": {
+    "mtime": 1786064872.489791,
+    "ast_hash": "a378a38a34802a3a0c9fe740f8a26ef8",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/ATIVIDADE-DIGITACAO-12-08-2026_OLD.txt": {
+    "mtime": 1786559370.257911,
+    "ast_hash": "cf950160a6c1fb794908ab566045eeb2",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/SLIDE_AULA_08.html": {
+    "mtime": 1786067526.7320259,
+    "ast_hash": "08bf3f10225598bda0a7867390ff9330",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-09-13-08-2026/RECUPERACAO_AVALIACAO_PRATICA.html": {
+    "mtime": 1786068243.28916,
+    "ast_hash": "c640e0256f16f559f53cc1dca70bde10",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-09-13-08-2026/SLIDE_AULA_09.html": {
+    "mtime": 1786065063.3774297,
+    "ast_hash": "7aa31b41e7b9b8cda61f476c74e9b7c4",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md": {
+    "mtime": 1786714267.6310265,
+    "ast_hash": "05a90a24153c9cd744efa3a460d7a82f",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/RECUPERACAO_AVALIACAO_OBJETIVA.html": {
+    "mtime": 1786068148.9102323,
+    "ast_hash": "a09195cb6ddf7cc53153dec9008df8ef",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/SLIDE_AULA_10.html": {
+    "mtime": 1786068020.0121236,
+    "ast_hash": "8f3f4a3966c224cc8a5b7d4ad307aec9",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html": {
+    "mtime": 1786100307.8977907,
+    "ast_hash": "874d00c95351de957a7088dfe7039467",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md": {
+    "mtime": 1786559910.1572864,
+    "ast_hash": "c87f5ea449082db117a0cf4b41f377a0",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CRITERIOS-AVALIACAO-BLOCO-02.md": {
+    "mtime": 1786198008.1469736,
+    "ast_hash": "1d019b3b862b53c6a1b8b18f1ea58c8e",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CURSOS-GRATIS-ONLINE.txt": {
+    "mtime": 1786193677.8858945,
+    "ast_hash": "4bb815b019b235b3bf3a3036ba9b66df",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/Chamada.txt": {
+    "mtime": 1786195222.206517,
+    "ast_hash": "33e04e089a317f21b669b5b9226a1475",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA X SLIDES - COBERTURA DE CONTEUDOS.txt": {
+    "mtime": 1786190731.2983985,
+    "ast_hash": "bd6b3026c0bc61adbde1177c3bc2a454",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md": {
+    "mtime": 1786190711.6666532,
+    "ast_hash": "5b00ec57ecc233b3f4dc9e406246c44b",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ESTRATEGIA-ENSINO-BLOCO-02.md": {
+    "mtime": 1786192132.305378,
+    "ast_hash": "d34e5c9b347df2a20da40f2e81dbef0d",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md": {
+    "mtime": 1786197999.8381872,
+    "ast_hash": "8df03955c3403bc1ca38cfbc20cca831",
+    "semantic_hash": ""
+  },
+  "sistema/LISTA-AULAS-PLANEJAMENTO.txt": {
+    "mtime": 1786481789.6191473,
+    "ast_hash": "0f610f38e1521bf9503e6866823e8ce8",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-01.txt": {
+    "mtime": 1786016006.9211192,
+    "ast_hash": "2d0b66f3aa3eeb77b06606f6a6d9ea4c",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-02.txt": {
+    "mtime": 1786016012.9479668,
+    "ast_hash": "92ec57ae34b14cc31ae26a80f5e8da05",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-03.txt": {
+    "mtime": 1786016018.7564948,
+    "ast_hash": "e165a4e8c8b6d728f19f1187d65a5976",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-04.txt": {
+    "mtime": 1786016023.6589646,
+    "ast_hash": "ff9e81f96ff6c3e81df1a33c2b61b6b1",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-05.txt": {
+    "mtime": 1786016029.4836962,
+    "ast_hash": "a9cf53d0981cc77411f2bcf4f95d5f55",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-06.txt": {
+    "mtime": 1786016034.628661,
+    "ast_hash": "197b30f320b8873ea113be2cca843e63",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-07.txt": {
+    "mtime": 1786016040.5903697,
+    "ast_hash": "91cce036d933956a16faac6d28bf0dc6",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-08.txt": {
+    "mtime": 1786016048.8371034,
+    "ast_hash": "790411a8a54e9e41ac14db70723fd9ff",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-09.txt": {
+    "mtime": 1786016053.3865943,
+    "ast_hash": "79d4aa0bc3536052297a7340b7adbe78",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-10.txt": {
+    "mtime": 1786016061.1724467,
+    "ast_hash": "001cda3754b1dca7fb802a938df85405",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-11.txt": {
+    "mtime": 1786016066.965684,
+    "ast_hash": "8743dd1b458fd9e4a1b94a1c76dd7777",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-12.txt": {
+    "mtime": 1786016072.2916472,
+    "ast_hash": "b84d366390f30838b5d5e2a62dc094f9",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-13.txt": {
+    "mtime": 1786016079.6450717,
+    "ast_hash": "d126b2f044b8f4fa52b858e84d39ac19",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-14.txt": {
+    "mtime": 1786016087.164963,
+    "ast_hash": "0f5a18a8fb43284ae392377acceab2f0",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-15.txt": {
+    "mtime": 1786016093.91525,
+    "ast_hash": "f6d0f5db2aec3961f6c2ca7c1c8cb2a7",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-16.txt": {
+    "mtime": 1786016100.0570965,
+    "ast_hash": "068c32df4ac6ee4a1fad61aeee780693",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-17.txt": {
+    "mtime": 1786016105.9671886,
+    "ast_hash": "d024ea0c6615a00cb606d05e4d0269a2",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-18.txt": {
+    "mtime": 1786016113.5089,
+    "ast_hash": "31bf6d25327fa9b3ed6c725eafa4927c",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-19.txt": {
+    "mtime": 1786016120.0783706,
+    "ast_hash": "840de63a1a3f401fd357803d4676be1a",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-20.txt": {
+    "mtime": 1786016127.636111,
+    "ast_hash": "6a767e143553790756b0ba18a5789c5f",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-21.txt": {
+    "mtime": 1786016133.442863,
+    "ast_hash": "5b955b00908997bf2ffef79150f0adfe",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-22.txt": {
+    "mtime": 1786016138.3494234,
+    "ast_hash": "ba9a90aa33c79cd51effaccf2089fee5",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-23.txt": {
+    "mtime": 1786016147.319455,
+    "ast_hash": "f3d908e6f51be19008479c2935c96598",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-24.txt": {
+    "mtime": 1786016153.4787471,
+    "ast_hash": "5a5bc9b5ce57f172440ff5afe6c8d6a3",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-25.txt": {
+    "mtime": 1786016160.003943,
+    "ast_hash": "460307fe61c10559936266a79492840c",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-26.txt": {
+    "mtime": 1786016170.7043843,
+    "ast_hash": "2ecd3f19300fb091a24d4be56ee78b93",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-27.txt": {
+    "mtime": 1786016183.7273962,
+    "ast_hash": "4f9b46f6a3fb121e7bf3d0492d942ae0",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-28.txt": {
+    "mtime": 1786016194.1087108,
+    "ast_hash": "5921bdd4a7443798797c8492b6ed9d3c",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-29.txt": {
+    "mtime": 1786016203.4223325,
+    "ast_hash": "58dbdf48410a40bcb053953462876b12",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTAO-30.txt": {
+    "mtime": 1786016215.5748322,
+    "ast_hash": "0771dc2eaa5bb042fb4333bceb5f3217",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/QUESTIONARIO-06-08-2026.txt": {
+    "mtime": 1786015700.7593503,
+    "ast_hash": "3efcdc709e9af4699fc5bae4e36ea506",
+    "semantic_hash": ""
+  },
+  "sistema/LOGICA-PROGRAMACAO/RESPOSTAS-06-08-2026.html": {
+    "mtime": 1786099628.2833042,
+    "ast_hash": "f36f9db98527f1d221c5b37793bf55cf",
+    "semantic_hash": ""
+  },
+  "sistema/ORIENTACAO-GOOGLE-FORMS-API.html": {
+    "mtime": 1786100671.5602746,
+    "ast_hash": "2bf633a3fd7313f2651a78fa3f045e69",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/PLANO-DE-ENSINO.txt": {
+    "mtime": 1786317782.0517519,
+    "ast_hash": "47f0a4240c34ab8de5f95c621dfd3789",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/HORARIO.txt": {
+    "mtime": 1786300758.4423022,
+    "ast_hash": "56c8eb84663f76fdcaabc21efdffdb85",
+    "semantic_hash": ""
+  },
+  "sistema/backfill-ids.html": {
+    "mtime": 1786146425.599338,
+    "ast_hash": "b6174a9cf4b65615007d27c5aa37fe54",
+    "semantic_hash": ""
+  },
+  "sistema/codigos.html": {
+    "mtime": 1786064394.851801,
+    "ast_hash": "2eae178e2df13cf2a18472adf49a7f96",
+    "semantic_hash": ""
+  },
+  "sistema/dashboard.html": {
+    "mtime": 1786626346.9529927,
+    "ast_hash": "d40592d6170b35c9a80806f2769ece6a",
+    "semantic_hash": ""
+  },
+  "sistema/ementa-slides.html": {
+    "mtime": 1786224705.2060015,
+    "ast_hash": "0354b95c9423524ab634690cf7220542",
+    "semantic_hash": ""
+  },
+  "sistema/index.html": {
+    "mtime": 1786662817.5807686,
+    "ast_hash": "672aa7fc0b3f853b46413d60fd2d6274",
+    "semantic_hash": ""
+  },
+  "sistema/questionarios.html": {
+    "mtime": 1786128040.5375645,
+    "ast_hash": "50bb941f7b83c925dae9bfc79b935c3a",
+    "semantic_hash": ""
+  },
+  "sistema/uc.html": {
+    "mtime": 1786626638.838227,
+    "ast_hash": "2ceb358a8c3d97aea112d28ebbe755a1",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/ORGANOGRAMA_SENAI.png": {
+    "mtime": 1786629986.842289,
+    "ast_hash": "2c82867ea1b279b23e274d41886db687",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/PERFIL_GELVAZIO_CAMARGO.png": {
+    "mtime": 1786629986.8433282,
+    "ast_hash": "1ea9ac94705ccea44dedb4c8657a310f",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/assinatura_senai_gelvazio.png": {
+    "mtime": 1786629986.847767,
+    "ast_hash": "d79e80d3e04345b51ece6d834f62f28b",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/banner_senai.png": {
+    "mtime": 1786629986.8690224,
+    "ast_hash": "44726d1a462dd73db890693ac6544e99",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/imagem_selma.png": {
+    "mtime": 1786629986.9478238,
+    "ast_hash": "5f0d632f551e8531cd909c1f13ecfe23",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/perfil_senai_gelvazio.png": {
+    "mtime": 1786629987.3127334,
+    "ast_hash": "bd0b9df462f7a977c79df56dcfbb14db",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-01.png": {
+    "mtime": 1786560779.8502584,
+    "ast_hash": "b15e9584b1591fbd0a0cb2af677b66da",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-02.png": {
+    "mtime": 1786560799.372459,
+    "ast_hash": "cf3073c9b0401d268d54276373bdbcfd",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-03.png": {
+    "mtime": 1786560819.6442127,
+    "ast_hash": "66cffff960378f0be14e00fbfa5590af",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-04.png": {
+    "mtime": 1786560853.1291258,
+    "ast_hash": "fc9ffec2dd0c9a73492a88dfbbdf57cf",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-05.png": {
+    "mtime": 1786560870.5825434,
+    "ast_hash": "dfa5b6afac0d0144c9f64ac36659700d",
+    "semantic_hash": ""
+  }
+}

@@ -554,10 +554,20 @@
       "norm_label": "estrutura de unidades curriculares"
     },
     {
-      "label": "Estrutura obrigat\u00f3ria de cada UC",
+      "label": "Pasta PROFESSOR",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L44",
+      "_origin": "ast",
+      "id": "claude_pasta_professor",
+      "community": 10,
+      "norm_label": "pasta professor"
+    },
+    {
+      "label": "Estrutura obrigat\u00f3ria de cada UC",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
       "community": 10,
@@ -744,6 +754,506 @@
       "norm_label": "arquivos modificados"
     },
     {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude",
+      "community": 16,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "ERP Victor Anato \u2014 Orienta\u00e7\u00f5es de Desenvolvimento",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "community": 16,
+      "norm_label": "erp victor anato \u2014 orientacoes de desenvolvimento"
+    },
+    {
+      "label": "Vis\u00e3o Geral do Sistema",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_vis\u00e3o_geral_do_sistema",
+      "community": 16,
+      "norm_label": "visao geral do sistema"
+    },
+    {
+      "label": "Princ\u00edpios Fundamentais",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_princ\u00edpios_fundamentais",
+      "community": 16,
+      "norm_label": "principios fundamentais"
+    },
+    {
+      "label": "M\u00f3dulo 1 \u2014 CADASTROS",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
+      "community": 16,
+      "norm_label": "modulo 1 \u2014 cadastros"
+    },
+    {
+      "label": "1.1 Clientes",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_1_1_clientes",
+      "community": 16,
+      "norm_label": "1.1 clientes"
+    },
+    {
+      "label": "1.2 Fornecedores",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_1_2_fornecedores",
+      "community": 16,
+      "norm_label": "1.2 fornecedores"
+    },
+    {
+      "label": "1.3 Produtos",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_1_3_produtos",
+      "community": 16,
+      "norm_label": "1.3 produtos"
+    },
+    {
+      "label": "1.4 Transportadoras",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_1_4_transportadoras",
+      "community": 16,
+      "norm_label": "1.4 transportadoras"
+    },
+    {
+      "label": "M\u00f3dulo 2 \u2014 COMPRAS",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "community": 27,
+      "norm_label": "modulo 2 \u2014 compras"
+    },
+    {
+      "label": "Fluxo do M\u00f3dulo de Compras",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_compras",
+      "community": 27,
+      "norm_label": "fluxo do modulo de compras"
+    },
+    {
+      "label": "2.1 Planejamento",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_2_1_planejamento",
+      "community": 27,
+      "norm_label": "2.1 planejamento"
+    },
+    {
+      "label": "2.2 Solicita\u00e7\u00e3o de Compras",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_2_2_solicita\u00e7\u00e3o_de_compras",
+      "community": 27,
+      "norm_label": "2.2 solicitacao de compras"
+    },
+    {
+      "label": "2.3 Pedido de Compras",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_2_3_pedido_de_compras",
+      "community": 27,
+      "norm_label": "2.3 pedido de compras"
+    },
+    {
+      "label": "2.4 Recebimento",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_2_4_recebimento",
+      "community": 27,
+      "norm_label": "2.4 recebimento"
+    },
+    {
+      "label": "2.5 Confer\u00eancia",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L209",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_2_5_confer\u00eancia",
+      "community": 27,
+      "norm_label": "2.5 conferencia"
+    },
+    {
+      "label": "2.6 Entrada de Nota Fiscal",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L227",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_2_6_entrada_de_nota_fiscal",
+      "community": 27,
+      "norm_label": "2.6 entrada de nota fiscal"
+    },
+    {
+      "label": "M\u00f3dulo 3 \u2014 ESTOQUE",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L247",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
+      "community": 16,
+      "norm_label": "modulo 3 \u2014 estoque"
+    },
+    {
+      "label": "3.1 Armazenagem",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_3_1_armazenagem",
+      "community": 16,
+      "norm_label": "3.1 armazenagem"
+    },
+    {
+      "label": "3.2 Controle de Estoque",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L270",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_3_2_controle_de_estoque",
+      "community": 16,
+      "norm_label": "3.2 controle de estoque"
+    },
+    {
+      "label": "3.3 Movimenta\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L284",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_3_3_movimenta\u00e7\u00f5es",
+      "community": 16,
+      "norm_label": "3.3 movimentacoes"
+    },
+    {
+      "label": "3.4 Invent\u00e1rio",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L303",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_3_4_invent\u00e1rio",
+      "community": 16,
+      "norm_label": "3.4 inventario"
+    },
+    {
+      "label": "M\u00f3dulo 4 \u2014 VENDAS E LOG\u00cdSTICA",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L324",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "community": 16,
+      "norm_label": "modulo 4 \u2014 vendas e logistica"
+    },
+    {
+      "label": "Fluxo do M\u00f3dulo de Vendas e Log\u00edstica",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L328",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica",
+      "community": 16,
+      "norm_label": "fluxo do modulo de vendas e logistica"
+    },
+    {
+      "label": "4.1 Pedido de Venda",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L334",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_4_1_pedido_de_venda",
+      "community": 16,
+      "norm_label": "4.1 pedido de venda"
+    },
+    {
+      "label": "4.2 Nota Fiscal de Venda",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L357",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_4_2_nota_fiscal_de_venda",
+      "community": 16,
+      "norm_label": "4.2 nota fiscal de venda"
+    },
+    {
+      "label": "4.3 Romaneio",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L390",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_4_3_romaneio",
+      "community": 16,
+      "norm_label": "4.3 romaneio"
+    },
+    {
+      "label": "4.4 Separa\u00e7\u00e3o (Picking)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L414",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_4_4_separa\u00e7\u00e3o_picking",
+      "community": 16,
+      "norm_label": "4.4 separacao (picking)"
+    },
+    {
+      "label": "4.5 Expedi\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L431",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_4_5_expedi\u00e7\u00e3o",
+      "community": 16,
+      "norm_label": "4.5 expedicao"
+    },
+    {
+      "label": "4.6 Entrega",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L453",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_4_6_entrega",
+      "community": 16,
+      "norm_label": "4.6 entrega"
+    },
+    {
+      "label": "M\u00f3dulo 5 \u2014 CONFIGURA\u00c7\u00d5ES",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L472",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
+      "community": 16,
+      "norm_label": "modulo 5 \u2014 configuracoes"
+    },
+    {
+      "label": "5.1 Usu\u00e1rios",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L474",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_5_1_usu\u00e1rios",
+      "community": 16,
+      "norm_label": "5.1 usuarios"
+    },
+    {
+      "label": "Vis\u00e3o Geral (Dashboard)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L497",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_vis\u00e3o_geral_dashboard",
+      "community": 16,
+      "norm_label": "visao geral (dashboard)"
+    },
+    {
+      "label": "Regras Gerais de Interface",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L511",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
+      "community": 16,
+      "norm_label": "regras gerais de interface"
+    },
+    {
+      "label": "Listagens (tabelas)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L513",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_listagens_tabelas",
+      "community": 16,
+      "norm_label": "listagens (tabelas)"
+    },
+    {
+      "label": "Formul\u00e1rios",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L518",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_formul\u00e1rios",
+      "community": 16,
+      "norm_label": "formularios"
+    },
+    {
+      "label": "Numera\u00e7\u00e3o Autom\u00e1tica",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L524",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_numera\u00e7\u00e3o_autom\u00e1tica",
+      "community": 16,
+      "norm_label": "numeracao automatica"
+    },
+    {
+      "label": "Responsividade",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L538",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_responsividade",
+      "community": 16,
+      "norm_label": "responsividade"
+    },
+    {
+      "label": "Autentica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L542",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_autentica\u00e7\u00e3o",
+      "community": 16,
+      "norm_label": "autenticacao"
+    },
+    {
+      "label": "Tecnologias Recomendadas",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L550",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_tecnologias_recomendadas",
+      "community": 16,
+      "norm_label": "tecnologias recomendadas"
+    },
+    {
+      "label": "Ordem de Implementa\u00e7\u00e3o Sugerida",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L563",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
+      "community": 16,
+      "norm_label": "ordem de implementacao sugerida"
+    },
+    {
+      "label": "ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_excel_13_08_2026_3025f8ae",
+      "community": 24,
+      "norm_label": "atividade-excel-13-08-2026_3025f8ae.md"
+    },
+    {
+      "label": "Controle_Abate_Pamplona_2ddd9b53.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53",
+      "community": 23,
+      "norm_label": "controle_abate_pamplona_2ddd9b53.md"
+    },
+    {
+      "label": "Sheet: DASHBOARD",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_dashboard",
+      "community": 23,
+      "norm_label": "sheet: dashboard"
+    },
+    {
+      "label": "Sheet: COLONOS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_colonos",
+      "community": 23,
+      "norm_label": "sheet: colonos"
+    },
+    {
+      "label": "Sheet: AGENDAMENTOS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_agendamentos",
+      "community": 23,
+      "norm_label": "sheet: agendamentos"
+    },
+    {
+      "label": "Sheet: RECEBIMENTO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_recebimento",
+      "community": 23,
+      "norm_label": "sheet: recebimento"
+    },
+    {
+      "label": "Sheet: ABATE",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_abate",
+      "community": 23,
+      "norm_label": "sheet: abate"
+    },
+    {
+      "label": "Sheet: RELATORIO_DIARIO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_relatorio_diario",
+      "community": 23,
+      "norm_label": "sheet: relatorio_diario"
+    },
+    {
+      "label": "Sheet: LEGENDA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_legenda",
+      "community": 23,
+      "norm_label": "sheet: legenda"
+    },
+    {
       "label": "FICHA PRODUTO MAISTECH ATUALIZADA_5cbc16da.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/FICHA PRODUTO MAISTECH ATUALIZADA_5cbc16da.md",
@@ -912,6 +1422,56 @@
       "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_anexo_ii_detalhamento_da_matriz_curricular",
       "community": 11,
       "norm_label": "anexo ii \u2013 detalhamento da matriz curricular"
+    },
+    {
+      "label": "Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "community": 19,
+      "norm_label": "planilha-gastos-casa-aula-13-08-2026_5a5f37d8.md"
+    },
+    {
+      "label": "Sheet: RECEITA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_receita",
+      "community": 19,
+      "norm_label": "sheet: receita"
+    },
+    {
+      "label": "Sheet: DESPESA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_despesa",
+      "community": 19,
+      "norm_label": "sheet: despesa"
+    },
+    {
+      "label": "Sheet: SALDO-MENSAL",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_saldo_mensal",
+      "community": 19,
+      "norm_label": "sheet: saldo-mensal"
+    },
+    {
+      "label": "Sheet: EXEMPLO-FILTROS-CLASSIFICACAO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_exemplo_filtros_classificacao",
+      "community": 19,
+      "norm_label": "sheet: exemplo-filtros-classificacao"
     },
     {
       "label": "duplas-aula-12-08-2026_26445d56.md",
@@ -1272,6 +1832,636 @@
       "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_8_orienta\u00e7\u00f5es_de_uso_para_ia",
       "community": 7,
       "norm_label": "8. orientacoes de uso para ia"
+    },
+    {
+      "label": "ATIVIDADE-EXCEL.md",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel",
+      "community": 21,
+      "norm_label": "atividade-excel.md"
+    },
+    {
+      "label": "ATIVIDADE PR\u00c1TICA \u2014 Planilha Eletr\u00f4nica",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "community": 21,
+      "norm_label": "atividade pratica \u2014 planilha eletronica"
+    },
+    {
+      "label": "UC: Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_uc_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "community": 21,
+      "norm_label": "uc: introducao a tecnologia da informacao e comunicacao"
+    },
+    {
+      "label": "Contexto",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_contexto",
+      "community": 21,
+      "norm_label": "contexto"
+    },
+    {
+      "label": "Divis\u00e3o da Dupla",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_divis\u00e3o_da_dupla",
+      "community": 21,
+      "norm_label": "divisao da dupla"
+    },
+    {
+      "label": "PARTE 1 \u2014 Aluno A (Word)",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_parte_1_aluno_a_word",
+      "community": 21,
+      "norm_label": "parte 1 \u2014 aluno a (word)"
+    },
+    {
+      "label": "O que fazer",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_o_que_fazer",
+      "community": 21,
+      "norm_label": "o que fazer"
+    },
+    {
+      "label": "PARTE 2 \u2014 Aluno B (Planilha)",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "community": 21,
+      "norm_label": "parte 2 \u2014 aluno b (planilha)"
+    },
+    {
+      "label": "O que criar",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_o_que_criar",
+      "community": 21,
+      "norm_label": "o que criar"
+    },
+    {
+      "label": "Colunas da planilha",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_colunas_da_planilha",
+      "community": 21,
+      "norm_label": "colunas da planilha"
+    },
+    {
+      "label": "F\u00f3rmula da coluna F \u2014 Peso M\u00e9dio",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_f\u00f3rmula_da_coluna_f_peso_m\u00e9dio",
+      "community": 21,
+      "norm_label": "formula da coluna f \u2014 peso medio"
+    },
+    {
+      "label": "Dados para digitar",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_dados_para_digitar",
+      "community": 21,
+      "norm_label": "dados para digitar"
+    },
+    {
+      "label": "Linha de TOTAL (linha 7)",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_linha_de_total_linha_7",
+      "community": 21,
+      "norm_label": "linha de total (linha 7)"
+    },
+    {
+      "label": "Formata\u00e7\u00e3o obrigat\u00f3ria",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_formata\u00e7\u00e3o_obrigat\u00f3ria",
+      "community": 21,
+      "norm_label": "formatacao obrigatoria"
+    },
+    {
+      "label": "Perguntas \u2014 Aluno A responde no Word",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_perguntas_aluno_a_responde_no_word",
+      "community": 21,
+      "norm_label": "perguntas \u2014 aluno a responde no word"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "community": 21,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude",
+      "community": 22,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "AULA 07 \u2014 11/08/2026",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_aula_07_11_08_2026",
+      "community": 22,
+      "norm_label": "aula 07 \u2014 11/08/2026"
+    },
+    {
+      "label": "UC: Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_uc_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "community": 22,
+      "norm_label": "uc: introducao a tecnologia da informacao e comunicacao"
+    },
+    {
+      "label": "Arquivos",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_arquivos",
+      "community": 22,
+      "norm_label": "arquivos"
+    },
+    {
+      "label": "`SLIDE_AULA_07.html`",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_slide_aula_07_html",
+      "community": 22,
+      "norm_label": "`slide_aula_07.html`"
+    },
+    {
+      "label": "`SLIDE_AULA_07.pdf`",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_slide_aula_07_pdf",
+      "community": 22,
+      "norm_label": "`slide_aula_07.pdf`"
+    },
+    {
+      "label": "`Controle_Abate_Pamplona.xlsx`",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_controle_abate_pamplona_xlsx",
+      "community": 22,
+      "norm_label": "`controle_abate_pamplona.xlsx`"
+    },
+    {
+      "label": "`PESQUISA-PAMPLONA-EXCEL-PG.md`",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_pesquisa_pamplona_excel_pg_md",
+      "community": 22,
+      "norm_label": "`pesquisa-pamplona-excel-pg.md`"
+    },
+    {
+      "label": "`GASTOS-CASA.ini`",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_gastos_casa_ini",
+      "community": 22,
+      "norm_label": "`gastos-casa.ini`"
+    },
+    {
+      "label": "`Planilha-Gastos-Casa-AULA-13-08-2026.xlsx`",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_planilha_gastos_casa_aula_13_08_2026_xlsx",
+      "community": 22,
+      "norm_label": "`planilha-gastos-casa-aula-13-08-2026.xlsx`"
+    },
+    {
+      "label": "`ATIVIDADE-EXCEL.md`",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_atividade_excel_md",
+      "community": 22,
+      "norm_label": "`atividade-excel.md`"
+    },
+    {
+      "label": "`ATIVIDADE-EXCEL-13-08-2026.docx`",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_atividade_excel_13_08_2026_docx",
+      "community": 22,
+      "norm_label": "`atividade-excel-13-08-2026.docx`"
+    },
+    {
+      "label": "Rela\u00e7\u00e3o com o Plano de Ensino",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_rela\u00e7\u00e3o_com_o_plano_de_ensino",
+      "community": 22,
+      "norm_label": "relacao com o plano de ensino"
+    },
+    {
+      "label": "PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg",
+      "community": 15,
+      "norm_label": "pesquisa-pamplona-excel-pg.md"
+    },
+    {
+      "label": "Pesquisa \u2014 Planilha Excel de Controle de Abate de Su\u00ednos",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "community": 15,
+      "norm_label": "pesquisa \u2014 planilha excel de controle de abate de suinos"
+    },
+    {
+      "label": "Contexto",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_contexto",
+      "community": 15,
+      "norm_label": "contexto"
+    },
+    {
+      "label": "Estrutura da Planilha Proposta",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_estrutura_da_planilha_proposta",
+      "community": 15,
+      "norm_label": "estrutura da planilha proposta"
+    },
+    {
+      "label": "Abas criadas",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_abas_criadas",
+      "community": 15,
+      "norm_label": "abas criadas"
+    },
+    {
+      "label": "Campos Principais",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "community": 15,
+      "norm_label": "campos principais"
+    },
+    {
+      "label": "COLONOS",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_colonos",
+      "community": 15,
+      "norm_label": "colonos"
+    },
+    {
+      "label": "AGENDAMENTOS (Porcos a chegar)",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_agendamentos_porcos_a_chegar",
+      "community": 15,
+      "norm_label": "agendamentos (porcos a chegar)"
+    },
+    {
+      "label": "RECEBIMENTO",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_recebimento",
+      "community": 15,
+      "norm_label": "recebimento"
+    },
+    {
+      "label": "ABATE",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_abate",
+      "community": 15,
+      "norm_label": "abate"
+    },
+    {
+      "label": "Status dos Porcos \u2014 Fluxo Completo",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_status_dos_porcos_fluxo_completo",
+      "community": 15,
+      "norm_label": "status dos porcos \u2014 fluxo completo"
+    },
+    {
+      "label": "KPIs do Dashboard",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_kpis_do_dashboard",
+      "community": 15,
+      "norm_label": "kpis do dashboard"
+    },
+    {
+      "label": "Boas Pr\u00e1ticas Operacionais",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais",
+      "community": 15,
+      "norm_label": "boas praticas operacionais"
+    },
+    {
+      "label": "Descanso pr\u00e9-abate",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_descanso_pr\u00e9_abate",
+      "community": 15,
+      "norm_label": "descanso pre-abate"
+    },
+    {
+      "label": "Rendimento de carca\u00e7a esperado",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_rendimento_de_carca\u00e7a_esperado",
+      "community": 15,
+      "norm_label": "rendimento de carcaca esperado"
+    },
+    {
+      "label": "Inspe\u00e7\u00e3o SIF",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_inspe\u00e7\u00e3o_sif",
+      "community": 15,
+      "norm_label": "inspecao sif"
+    },
+    {
+      "label": "Arquivo Excel Gerado",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_arquivo_excel_gerado",
+      "community": 15,
+      "norm_label": "arquivo excel gerado"
+    },
+    {
+      "label": "Refer\u00eancias",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_refer\u00eancias",
+      "community": 15,
+      "norm_label": "referencias"
+    },
+    {
+      "label": "ATIVIDADE 14-08-2026.md",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026",
+      "community": 26,
+      "norm_label": "atividade 14-08-2026.md"
+    },
+    {
+      "label": "ATIVIDADE INTEGRADORA \u2014 UC1 Introdu\u00e7\u00e3o \u00e0 TIC",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "community": 26,
+      "norm_label": "atividade integradora \u2014 uc1 introducao a tic"
+    },
+    {
+      "label": "SENAI \u00b7 Aprendizagem Industrial \u00b7 Turma TI01",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_senai_aprendizagem_industrial_turma_ti01",
+      "community": 26,
+      "norm_label": "senai \u00b7 aprendizagem industrial \u00b7 turma ti01"
+    },
+    {
+      "label": "Identifica\u00e7\u00e3o da Dupla",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_identifica\u00e7\u00e3o_da_dupla",
+      "community": 26,
+      "norm_label": "identificacao da dupla"
+    },
+    {
+      "label": "Orienta\u00e7\u00f5es Gerais",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_orienta\u00e7\u00f5es_gerais",
+      "community": 26,
+      "norm_label": "orientacoes gerais"
+    },
+    {
+      "label": "Distribui\u00e7\u00e3o do Tempo",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_distribui\u00e7\u00e3o_do_tempo",
+      "community": 26,
+      "norm_label": "distribuicao do tempo"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 1 \u2014 Aula 01 \u00b7 Hist\u00f3ria da Computa\u00e7\u00e3o, Hardware e Software",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_1_aula_01_hist\u00f3ria_da_computa\u00e7\u00e3o_hardware_e_software",
+      "community": 26,
+      "norm_label": "secao 1 \u2014 aula 01 \u00b7 historia da computacao, hardware e software"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 2 \u2014 Aula 02 \u00b7 Comunica\u00e7\u00e3o, Elementos e Equipes",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_2_aula_02_comunica\u00e7\u00e3o_elementos_e_equipes",
+      "community": 26,
+      "norm_label": "secao 2 \u2014 aula 02 \u00b7 comunicacao, elementos e equipes"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 3 \u2014 Aula 03 \u00b7 Seguran\u00e7a da Informa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_3_aula_03_seguran\u00e7a_da_informa\u00e7\u00e3o",
+      "community": 26,
+      "norm_label": "secao 3 \u2014 aula 03 \u00b7 seguranca da informacao"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 4 \u2014 Aula 04 \u00b7 Internet e World Wide Web",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_4_aula_04_internet_e_world_wide_web",
+      "community": 26,
+      "norm_label": "secao 4 \u2014 aula 04 \u00b7 internet e world wide web"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 5 \u2014 Aula 05 \u00b7 Google Docs \u2014 Editor de Textos",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_5_aula_05_google_docs_editor_de_textos",
+      "community": 26,
+      "norm_label": "secao 5 \u2014 aula 05 \u00b7 google docs \u2014 editor de textos"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 6 \u2014 Aula 06 \u00b7 Google Sheets \u2014 Planilhas Eletr\u00f4nicas",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L247",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_6_aula_06_google_sheets_planilhas_eletr\u00f4nicas",
+      "community": 26,
+      "norm_label": "secao 6 \u2014 aula 06 \u00b7 google sheets \u2014 planilhas eletronicas"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 7 \u2014 Aula 07 \u00b7 Google Slides \u2014 Editor de Apresenta\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_7_aula_07_google_slides_editor_de_apresenta\u00e7\u00f5es",
+      "community": 26,
+      "norm_label": "secao 7 \u2014 aula 07 \u00b7 google slides \u2014 editor de apresentacoes"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 8 \u2014 Aula 08 \u00b7 Textos T\u00e9cnicos e Linguagem Profissional",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L334",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_8_aula_08_textos_t\u00e9cnicos_e_linguagem_profissional",
+      "community": 26,
+      "norm_label": "secao 8 \u2014 aula 08 \u00b7 textos tecnicos e linguagem profissional"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 9 \u2014 Projeto Final \u00b7 Integra\u00e7\u00e3o e Organiza\u00e7\u00e3o no Drive",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L376",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_9_projeto_final_integra\u00e7\u00e3o_e_organiza\u00e7\u00e3o_no_drive",
+      "community": 26,
+      "norm_label": "secao 9 \u2014 projeto final \u00b7 integracao e organizacao no drive"
+    },
+    {
+      "label": "Pontua\u00e7\u00e3o Total",
+      "file_type": "document",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L422",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_pontua\u00e7\u00e3o_total",
+      "community": 26,
+      "norm_label": "pontuacao total"
     },
     {
       "label": "CLAUDE.md",
@@ -2381,9 +3571,9 @@
       "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_converter_slides_pdf",
-      "target": "recursos_humanos_converter_slides_pdf_converter",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_converter_slides_pdf_converter"
     },
     {
       "relation": "contains",
@@ -2391,9 +3581,9 @@
       "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_converter_slides_pdf",
-      "target": "recursos_humanos_converter_slides_pdf_main",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_converter_slides_pdf_main"
     },
     {
       "relation": "contains",
@@ -2401,9 +3591,9 @@
       "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_converter_slides_pdf",
-      "target": "recursos_humanos_converter_slides_pdf_preparar_html",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_converter_slides_pdf_preparar_html"
     },
     {
       "relation": "calls",
@@ -2412,9 +3602,9 @@
       "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_converter_slides_pdf_converter",
-      "target": "recursos_humanos_converter_slides_pdf_preparar_html",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_converter_slides_pdf_preparar_html"
     },
     {
       "relation": "references",
@@ -2423,9 +3613,9 @@
       "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_converter_slides_pdf_preparar_html",
-      "target": "path",
-      "confidence_score": 1.0
+      "target": "path"
     },
     {
       "relation": "rationale_for",
@@ -2433,9 +3623,9 @@
       "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_converter_slides_pdf_rationale_70",
-      "target": "recursos_humanos_converter_slides_pdf_preparar_html",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_converter_slides_pdf_preparar_html"
     },
     {
       "relation": "references",
@@ -2444,9 +3634,9 @@
       "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_converter_slides_pdf_converter",
-      "target": "path",
-      "confidence_score": 1.0
+      "target": "path"
     },
     {
       "relation": "calls",
@@ -2455,9 +3645,9 @@
       "source_file": "recursos-humanos/converter_slides_pdf.py",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_converter_slides_pdf_main",
-      "target": "recursos_humanos_converter_slides_pdf_converter",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_converter_slides_pdf_converter"
     },
     {
       "relation": "contains",
@@ -2885,9 +4075,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_professor_senai_regras_do_projeto",
-      "target": "claude_estrutura_de_unidades_curriculares",
-      "confidence_score": 1.0
+      "target": "claude_estrutura_de_unidades_curriculares"
     },
     {
       "relation": "contains",
@@ -2913,6 +4103,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_professor_senai_regras_do_projeto",
+      "target": "claude_pasta_professor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
       "source_location": "L22",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2925,9 +4125,19 @@
       "source_file": "CLAUDE.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_estrutura_de_unidades_curriculares",
-      "target": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
-      "confidence_score": 1.0
+      "target": "claude_estrutura_obrigat\u00f3ria_de_cada_uc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_pasta_professor",
+      "target": "claude_estrutura_obrigat\u00f3ria_de_cada_uc"
     },
     {
       "relation": "contains",
@@ -3092,6 +4302,476 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L247",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L324",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L472",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L563",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L511",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L550",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_tecnologias_recomendadas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L497",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_do_sistema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_vis\u00e3o_geral_do_sistema",
+      "target": "erp_victor_anato_senai_claude_princ\u00edpios_fundamentais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
+      "target": "erp_victor_anato_senai_claude_1_1_clientes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
+      "target": "erp_victor_anato_senai_claude_1_2_fornecedores",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
+      "target": "erp_victor_anato_senai_claude_1_3_produtos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
+      "target": "erp_victor_anato_senai_claude_1_4_transportadoras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "target": "erp_victor_anato_senai_claude_2_1_planejamento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "target": "erp_victor_anato_senai_claude_2_2_solicita\u00e7\u00e3o_de_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "target": "erp_victor_anato_senai_claude_2_3_pedido_de_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "target": "erp_victor_anato_senai_claude_2_4_recebimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L209",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "target": "erp_victor_anato_senai_claude_2_5_confer\u00eancia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "target": "erp_victor_anato_senai_claude_2_6_entrada_de_nota_fiscal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "target": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L251",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
+      "target": "erp_victor_anato_senai_claude_3_1_armazenagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L270",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
+      "target": "erp_victor_anato_senai_claude_3_2_controle_de_estoque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L284",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
+      "target": "erp_victor_anato_senai_claude_3_3_movimenta\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L303",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
+      "target": "erp_victor_anato_senai_claude_3_4_invent\u00e1rio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L334",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "erp_victor_anato_senai_claude_4_1_pedido_de_venda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L357",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "erp_victor_anato_senai_claude_4_2_nota_fiscal_de_venda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L390",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "erp_victor_anato_senai_claude_4_3_romaneio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L414",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "erp_victor_anato_senai_claude_4_4_separa\u00e7\u00e3o_picking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L431",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "erp_victor_anato_senai_claude_4_5_expedi\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L453",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "erp_victor_anato_senai_claude_4_6_entrega",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L328",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L474",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
+      "target": "erp_victor_anato_senai_claude_5_1_usu\u00e1rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L542",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
+      "target": "erp_victor_anato_senai_claude_autentica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L518",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
+      "target": "erp_victor_anato_senai_claude_formul\u00e1rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L513",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
+      "target": "erp_victor_anato_senai_claude_listagens_tabelas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L524",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
+      "target": "erp_victor_anato_senai_claude_numera\u00e7\u00e3o_autom\u00e1tica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L538",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
+      "target": "erp_victor_anato_senai_claude_responsividade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_abate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_agendamentos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_colonos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_dashboard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_legenda"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_recebimento"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_relatorio_diario"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
       "source_location": "L139",
       "weight": 1.0,
@@ -3242,6 +4922,46 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "target": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_despesa"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "target": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_exemplo_filtros_classificacao"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "target": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_receita"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "target": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_saldo_mensal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md",
       "source_location": "L3",
       "weight": 1.0,
@@ -3255,9 +4975,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic",
-      "target": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -3265,9 +4985,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_01_03_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_01_03_08_2026"
     },
     {
       "relation": "contains",
@@ -3275,9 +4995,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_02_04_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_02_04_08_2026"
     },
     {
       "relation": "contains",
@@ -3285,9 +5005,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_03_05_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_03_05_08_2026"
     },
     {
       "relation": "contains",
@@ -3295,9 +5015,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_04_06_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_04_06_08_2026"
     },
     {
       "relation": "contains",
@@ -3305,9 +5025,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_05_07_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_05_07_08_2026"
     },
     {
       "relation": "contains",
@@ -3315,9 +5035,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_06_10_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_06_10_08_2026"
     },
     {
       "relation": "contains",
@@ -3325,9 +5045,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_07_11_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_07_11_08_2026"
     },
     {
       "relation": "contains",
@@ -3335,9 +5055,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_08_12_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_08_12_08_2026"
     },
     {
       "relation": "contains",
@@ -3345,9 +5065,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_09_13_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_09_13_08_2026"
     },
     {
       "relation": "contains",
@@ -3355,9 +5075,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_10_14_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_10_14_08_2026"
     },
     {
       "relation": "contains",
@@ -3365,9 +5085,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_aula_13_24_08_2026",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_aula_13_24_08_2026"
     },
     {
       "relation": "contains",
@@ -3375,9 +5095,9 @@
       "source_file": "recursos-humanos/AULAS-TIC.md",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "recursos_humanos_aulas_tic_aulas_tic_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "recursos_humanos_aulas_tic_resumo",
-      "confidence_score": 1.0
+      "target": "recursos_humanos_aulas_tic_resumo"
     },
     {
       "relation": "contains",
@@ -3385,9 +5105,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai"
     },
     {
       "relation": "contains",
@@ -3395,9 +5115,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_1_identifica\u00e7\u00e3o_do_produto",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_1_identifica\u00e7\u00e3o_do_produto"
     },
     {
       "relation": "contains",
@@ -3405,9 +5125,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_informa\u00e7\u00f5es_operacionais",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_informa\u00e7\u00f5es_operacionais"
     },
     {
       "relation": "contains",
@@ -3415,9 +5135,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_3_requisitos_de_acesso",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_3_requisitos_de_acesso"
     },
     {
       "relation": "contains",
@@ -3425,9 +5145,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_4_objetivo_geral_do_curso",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_4_objetivo_geral_do_curso"
     },
     {
       "relation": "contains",
@@ -3435,9 +5155,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_conte\u00fado_program\u00e1tico",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_conte\u00fado_program\u00e1tico"
     },
     {
       "relation": "contains",
@@ -3445,9 +5165,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_6_campos_pendentes_de_preenchimento",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_6_campos_pendentes_de_preenchimento"
     },
     {
       "relation": "contains",
@@ -3455,9 +5175,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L215",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_7_metadados_do_documento",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_7_metadados_do_documento"
     },
     {
       "relation": "contains",
@@ -3465,9 +5185,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L229",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_ficha_de_cadastro_de_produto_customizado_rio_do_sul_mais_tech_senai",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_8_orienta\u00e7\u00f5es_de_uso_para_ia",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_8_orienta\u00e7\u00f5es_de_uso_para_ia"
     },
     {
       "relation": "contains",
@@ -3475,9 +5195,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_informa\u00e7\u00f5es_operacionais",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_1_cronograma_e_carga_hor\u00e1ria",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_1_cronograma_e_carga_hor\u00e1ria"
     },
     {
       "relation": "contains",
@@ -3485,9 +5205,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_informa\u00e7\u00f5es_operacionais",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_2_turnos_e_locais_por_escola",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_2_2_turnos_e_locais_por_escola"
     },
     {
       "relation": "contains",
@@ -3495,9 +5215,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_4_objetivo_geral_do_curso",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_interpreta\u00e7\u00e3o_expandida_para_ia",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_interpreta\u00e7\u00e3o_expandida_para_ia"
     },
     {
       "relation": "contains",
@@ -3505,9 +5225,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_conte\u00fado_program\u00e1tico",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_1_estrutura_do_m\u00f3dulo_\u00fanico",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_1_estrutura_do_m\u00f3dulo_\u00fanico"
     },
     {
       "relation": "contains",
@@ -3515,9 +5235,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_conte\u00fado_program\u00e1tico",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico"
     },
     {
       "relation": "contains",
@@ -3525,9 +5245,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_capacidades_b\u00e1sicas_e_t\u00e9cnicas_a_desenvolver",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_capacidades_b\u00e1sicas_e_t\u00e9cnicas_a_desenvolver"
     },
     {
       "relation": "contains",
@@ -3535,9 +5255,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_carga_hor\u00e1ria",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_carga_hor\u00e1ria"
     },
     {
       "relation": "contains",
@@ -3545,9 +5265,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_conte\u00fados_formativos_conhecimentos",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_conte\u00fados_formativos_conhecimentos"
     },
     {
       "relation": "contains",
@@ -3555,9 +5275,9 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_objetivo_da_unidade_curricular",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_objetivo_da_unidade_curricular"
     },
     {
       "relation": "contains",
@@ -3565,9 +5285,599 @@
       "source_file": "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_conte\u00fados_formativos_conhecimentos",
-      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_detalhamento_dos_t\u00f3picos_para_ia",
-      "confidence_score": 1.0
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_detalhamento_dos_t\u00f3picos_para_ia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel",
+      "target": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_contexto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_crit\u00e9rios_de_avalia\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_divis\u00e3o_da_dupla"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_parte_1_aluno_a_word"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_perguntas_aluno_a_responde_no_word"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_uc_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_1_aluno_a_word",
+      "target": "aula_07_11_08_2026_atividade_excel_o_que_fazer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_colunas_da_planilha"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_dados_para_digitar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_formata\u00e7\u00e3o_obrigat\u00f3ria"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_f\u00f3rmula_da_coluna_f_peso_m\u00e9dio"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_linha_de_total_linha_7"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_o_que_criar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude",
+      "target": "aula_07_11_08_2026_claude_aula_07_11_08_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_aula_07_11_08_2026",
+      "target": "aula_07_11_08_2026_claude_arquivos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_aula_07_11_08_2026",
+      "target": "aula_07_11_08_2026_claude_rela\u00e7\u00e3o_com_o_plano_de_ensino"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_aula_07_11_08_2026",
+      "target": "aula_07_11_08_2026_claude_uc_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_atividade_excel_13_08_2026_docx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_atividade_excel_md"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_controle_abate_pamplona_xlsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_gastos_casa_ini"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_pesquisa_pamplona_excel_pg_md"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_planilha_gastos_casa_aula_13_08_2026_xlsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_slide_aula_07_html"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_slide_aula_07_pdf"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_arquivo_excel_gerado"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_contexto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_estrutura_da_planilha_proposta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_kpis_do_dashboard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_refer\u00eancias"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_status_dos_porcos_fluxo_completo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_estrutura_da_planilha_proposta",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_abas_criadas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_abate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_agendamentos_porcos_a_chegar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_colonos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_recebimento"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_descanso_pr\u00e9_abate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_inspe\u00e7\u00e3o_sif"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_rendimento_de_carca\u00e7a_esperado"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_distribui\u00e7\u00e3o_do_tempo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_identifica\u00e7\u00e3o_da_dupla"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_orienta\u00e7\u00f5es_gerais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L422",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_pontua\u00e7\u00e3o_total"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_senai_aprendizagem_industrial_turma_ti01"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_1_aula_01_hist\u00f3ria_da_computa\u00e7\u00e3o_hardware_e_software"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_2_aula_02_comunica\u00e7\u00e3o_elementos_e_equipes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_3_aula_03_seguran\u00e7a_da_informa\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_4_aula_04_internet_e_world_wide_web"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L200",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_5_aula_05_google_docs_editor_de_textos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L247",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_6_aula_06_google_sheets_planilhas_eletr\u00f4nicas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_7_aula_07_google_slides_editor_de_apresenta\u00e7\u00f5es"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L334",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_8_aula_08_textos_t\u00e9cnicos_e_linguagem_profissional"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE 14-08-2026.md",
+      "source_location": "L376",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_9_projeto_final_integra\u00e7\u00e3o_e_organiza\u00e7\u00e3o_no_drive"
     },
     {
       "relation": "contains",
@@ -4621,5 +6931,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "208cc6b3ec516189c3b44ef59b2454f6dddaa5de"
+  "built_at_commit": "b8e51b5d1be47661a3d53dc6419943e4ec7438f6"
 }

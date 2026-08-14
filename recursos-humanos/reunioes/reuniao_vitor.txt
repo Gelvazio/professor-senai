@@ -1,0 +1,97 @@
+#Duvida 01
+https://espacodocente.sesisenai.org.br/login
+Este local temos acesso?, nao con sigo acessar
+
+#Duvida 02 
+Qual a melhor estrategia de criacao de Blocos, por semana ou por aula?
+Pois as SA(Situacao de Aprendizagem), podem estar ocorrendo por aula.
+
+#Duvida 03
+ONDE SOLICITO E COM QUEM SOLICITO O NOTEBOOK?
+
+#Duvida 04 - Horario de Trabalho 
+Onde consultar horario de trabalho, SESI, SENAI?
+Ver horario no Sistema de RH.
+
+Manhã
+Das 07:15 ate as 11:15
+
+Tarde
+Das 13:15 ate as 17:15
+
+
+#Duvida 05
+Se eu nao tenho aula atribuida no calendario, 
+é so ficar no Senai e aguardar?
+Sim, cumprindo o meu horario.4
+Conversar com Bini sobre as horas que nao estava no Senai.
+
+#Duvida 06
+horario de trabalho
+
+==================================================================
+Plataformas de gamificação
+kahoot
+woodwall
+
+#Google Agenda - Se remover, nao tem, 
+Se for no Senai mesmo, usar o Celular sempre
+se for aula externa, olhar o sistema, ver se nao foi removido aquele dia
+
+===================================================================
+Passar sistema ERP para Victor Anato passar em sala de aula 
+com os alunos 
+Deve ter 
+Cadastro de produtos
+Cadastro de pessoas
+Cadastro de pedidos 
+Contas a Pagar 
+Contas a Receber 
+
+	=>Fabricacao
+		-> Deve ter os detalhes de Fabricacao
+		-> perdas, estoque, materia prima, etc
+Gestao de Pessoas - RH
+Deve ter a parte de gestao de pessoas completo		
+
+====================================================
+#pedagogicos na sala de aula 
+Sempre que aluno faltar, abrir um pedagogico 
+Sempre marcar como Extra Classe
+
+#avaliacoes
+usar o ava pra criar avaliacoes controladas
+ou via link com o Google Forms
+
+#solicitacoes de ferias - solicitar em sistema de RH 
+Conversar com gestor da area e aguardar
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

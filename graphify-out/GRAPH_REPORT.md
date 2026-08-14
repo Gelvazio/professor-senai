@@ -1,16 +1,16 @@
-# Graph Report - professor-senai  (2026-08-13)
+# Graph Report - professor-senai  (2026-08-14)
 
 ## Corpus Check
-- 18 files · ~361,316 words
+- 29 files · ~372,728 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 237 nodes · 224 edges · 19 communities (18 shown, 1 thin omitted)
+- 356 nodes · 336 edges · 28 communities (27 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `208cc6b3`
+- Built from commit: `b8e51b5d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,20 +29,28 @@
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Situação de Aprendizagem — Bloco 02` - 19 edges
 2. `/graphify` - 15 edges
-3. `What You Must Do When Invoked` - 14 edges
-4. `Aulas — TIC (Introdução à Tecnologia da Informação e Comunicação)` - 13 edges
-5. `Ementa Oficial — Unidade Curricular 1` - 11 edges
-6. `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` - 10 edges
-7. `Conhecimentos` - 10 edges
-8. `Conhecimentos Detalhados` - 10 edges
-9. `Ficha de Cadastro de Produto Customizado — Rio do Sul Mais Tech / SENAI` - 9 edges
-10. `Documentação Padrão` - 8 edges
+3. `ATIVIDADE INTEGRADORA — UC1 Introdução à TIC` - 15 edges
+4. `What You Must Do When Invoked` - 14 edges
+5. `Aulas — TIC (Introdução à Tecnologia da Informação e Comunicação)` - 13 edges
+6. `ERP Victor Anato — Orientações de Desenvolvimento` - 11 edges
+7. `Ementa Oficial — Unidade Curricular 1` - 11 edges
+8. `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` - 10 edges
+9. `Conhecimentos` - 10 edges
+10. `Conhecimentos Detalhados` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -50,7 +58,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (19 total, 1 thin omitted)
+## Communities (28 total, 1 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.10
@@ -94,7 +102,7 @@ Nodes (7): Analise Ementas — Implementation Plan, Global Constraints, Self-Rev
 
 ### Community 10 - "Community 10"
 Cohesion: 0.25
-Nodes (7): Commit e Push obrigatórios, Estrutura de Unidades Curriculares, Estrutura obrigatória de cada UC, Graphify, Nunca perguntar — sempre executar, professor-senai — Regras do Projeto, Slides
+Nodes (8): Commit e Push obrigatórios, Estrutura de Unidades Curriculares, Estrutura obrigatória de cada UC, Graphify, Nunca perguntar — sempre executar, Pasta PROFESSOR, professor-senai — Regras do Projeto, Slides
 
 ### Community 11 - "Community 11"
 Cohesion: 0.12
@@ -108,26 +116,58 @@ Nodes (13): AULA 01 — 03/08/2026, AULA 02 — 04/08/2026, AULA 03 — 05/08/20
 Cohesion: 0.08
 Nodes (25): 4.1. Editor de Textos, 4.2. Editor de Planilhas Eletrônicas, 4.3. Editor de Apresentações, 5.1. Fundamentos de Hardware, 5.2. Sistema Operacional, Ambientes Pedagógicos e Recursos, Capacidades Básicas, Capacidades Socioemocionais (+17 more)
 
+### Community 15 - "Community 15"
+Cohesion: 0.11
+Nodes (17): Abas criadas, ABATE, AGENDAMENTOS (Porcos a chegar), Arquivo Excel Gerado, Boas Práticas Operacionais, Campos Principais, COLONOS, Contexto (+9 more)
+
+### Community 16 - "Community 16"
+Cohesion: 0.06
+Nodes (32): 1.1 Clientes, 1.2 Fornecedores, 1.3 Produtos, 1.4 Transportadoras, 3.1 Armazenagem, 3.2 Controle de Estoque, 3.3 Movimentações, 3.4 Inventário (+24 more)
+
+### Community 19 - "Community 19"
+Cohesion: 0.40
+Nodes (4): Sheet: DESPESA, Sheet: EXEMPLO-FILTROS-CLASSIFICACAO, Sheet: RECEITA, Sheet: SALDO-MENSAL
+
 ### Community 20 - "Community 20"
 Cohesion: 0.53
 Nodes (5): Path, converter(), main(), preparar_html(), Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com     to
 
+### Community 21 - "Community 21"
+Cohesion: 0.12
+Nodes (15): ATIVIDADE PRÁTICA — Planilha Eletrônica, Colunas da planilha, Contexto, Critérios de Avaliação, Dados para digitar, Divisão da Dupla, Formatação obrigatória, Fórmula da coluna F — Peso Médio (+7 more)
+
+### Community 22 - "Community 22"
+Cohesion: 0.15
+Nodes (12): Arquivos, `ATIVIDADE-EXCEL-13-08-2026.docx`, `ATIVIDADE-EXCEL.md`, AULA 07 — 11/08/2026, `Controle_Abate_Pamplona.xlsx`, `GASTOS-CASA.ini`, `PESQUISA-PAMPLONA-EXCEL-PG.md`, `Planilha-Gastos-Casa-AULA-13-08-2026.xlsx` (+4 more)
+
+### Community 23 - "Community 23"
+Cohesion: 0.25
+Nodes (7): Sheet: ABATE, Sheet: AGENDAMENTOS, Sheet: COLONOS, Sheet: DASHBOARD, Sheet: LEGENDA, Sheet: RECEBIMENTO, Sheet: RELATORIO_DIARIO
+
+### Community 26 - "Community 26"
+Cohesion: 0.12
+Nodes (15): ATIVIDADE INTEGRADORA — UC1 Introdução à TIC, Distribuição do Tempo, Identificação da Dupla, Orientações Gerais, Pontuação Total, SENAI · Aprendizagem Industrial · Turma TI01, SEÇÃO 1 — Aula 01 · História da Computação, Hardware e Software, SEÇÃO 2 — Aula 02 · Comunicação, Elementos e Equipes (+7 more)
+
+### Community 27 - "Community 27"
+Cohesion: 0.25
+Nodes (8): 2.1 Planejamento, 2.2 Solicitação de Compras, 2.3 Pedido de Compras, 2.4 Recebimento, 2.5 Conferência, 2.6 Entrada de Nota Fiscal, Fluxo do Módulo de Compras, Módulo 2 — COMPRAS
+
 ## Knowledge Gaps
-- **175 isolated node(s):** `Overview`, `Fluxo Obrigatório`, `Regras`, `Ícones de Status`, `Modelo do Arquivo` (+170 more)
+- **266 isolated node(s):** `Overview`, `Fluxo Obrigatório`, `Regras`, `Ícones de Status`, `Modelo do Arquivo` (+261 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `ERP Victor Anato — Orientações de Desenvolvimento` connect `Community 16` to `Community 27`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **Why does `SENAI — Projeto de Curso: Aprendizagem Industrial` connect `Community 0` to `Community 3`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **Why does `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` connect `Community 0` to `Community 1`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
-- **Why does `Conhecimentos` connect `Community 1` to `Community 0`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **What connects `Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com     to`, `Overview`, `Fluxo Obrigatório` to the rest of the system?**
-  _176 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _267 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
