@@ -755,8 +755,8 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/.claude/settings.local.json": {
-    "mtime": 1786715898.3984892,
-    "ast_hash": "e39cfe218826e03d5328e9580ceee660",
+    "mtime": 1786717863.387216,
+    "ast_hash": "d85e9a63f4a8f64f2af71d58ad293e76",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/AJUSTE-HORARIOS.png": {
@@ -775,13 +775,13 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/SUPABASE.js": {
-    "mtime": 1786717217.217447,
-    "ast_hash": "78656c2e6a542cad06e9cad9394238cb",
+    "mtime": 1786717486.1453507,
+    "ast_hash": "3a52ecb9d3308c3edb3a93a5e4e59f54",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md": {
-    "mtime": 1786717248.221806,
-    "ast_hash": "64ef121594463d8b4907955e1555147b",
+    "mtime": 1786717349.3477085,
+    "ast_hash": "3053be40c23e17434771e92b0831d141",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.html": {
@@ -792,6 +792,96 @@
   "erp-victor-anato-senai/index.html": {
     "mtime": 1786717229.6812458,
     "ast_hash": "ad198823b787ec2fffd15aeba8b93c69",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/.vscode/settings.json": {
+    "mtime": 1786718250.209483,
+    "ast_hash": "51b69d2e590701fbd83940a48867e5ec",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/cadastros/clientes.html": {
+    "mtime": 1786718088.7295258,
+    "ast_hash": "6b4461934b772740c4b24b8810a1c908",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/cadastros/fornecedores.html": {
+    "mtime": 1786718202.2293026,
+    "ast_hash": "99f8676c82e6a229bcf17a869a9c34f4",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/cadastros/produtos.html": {
+    "mtime": 1786718316.523344,
+    "ast_hash": "7901f3657ae1044822062e3ad5915d16",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/compras/conferencia.html": {
+    "mtime": 1786718267.6766813,
+    "ast_hash": "e0fc1f404c671d8498fed9b52ca5c153",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/compras/pedidos.html": {
+    "mtime": 1786718086.7658691,
+    "ast_hash": "c5e6d5778e3c839b5a3d185071d48372",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/compras/planejamento.html": {
+    "mtime": 1786717897.5821397,
+    "ast_hash": "ad74886c4ea8bc7dc0a9add2a1e7a52f",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/compras/recebimento.html": {
+    "mtime": 1786718179.0297668,
+    "ast_hash": "a243b92b20114eecb00c3490917801d8",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/compras/solicitacoes.html": {
+    "mtime": 1786717988.2340207,
+    "ast_hash": "0c0d2b0f4a5ade92c97a60660a3f828c",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/configuracoes/usuarios.html": {
+    "mtime": 1786718045.5902667,
+    "ast_hash": "a598a53704b047f20e20f955ff202dee",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/dashboard.html": {
+    "mtime": 1786717438.7279499,
+    "ast_hash": "8b65df79894313d0523585f00f3160a5",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/estoque/armazenagem.html": {
+    "mtime": 1786718178.3192675,
+    "ast_hash": "2054d0316cd621ba3ad62ecfe16c6f66",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/estoque/controle.html": {
+    "mtime": 1786717928.3810356,
+    "ast_hash": "250f667c58757eac8121408db14560ee",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/estoque/inventario.html": {
+    "mtime": 1786718326.6022763,
+    "ast_hash": "200b92b49fa68cb1cbf7548f081e3205",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/estoque/movimentacoes.html": {
+    "mtime": 1786718051.3315547,
+    "ast_hash": "8802fabf07eea873f6147744351822cf",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/vendas/nota-fiscal-venda.html": {
+    "mtime": 1786718243.922076,
+    "ast_hash": "f0def872633b7100f5047439bc1a484b",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/vendas/pedidos-venda.html": {
+    "mtime": 1786718139.309799,
+    "ast_hash": "d37fed09dd7f09b329018e7156e5107a",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/vendas/separacao.html": {
+    "mtime": 1786718320.8187113,
+    "ast_hash": "e383fc53f1e019682810002bc5ba3823",
     "semantic_hash": ""
   }
 }
