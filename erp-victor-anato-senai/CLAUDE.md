@@ -536,8 +536,47 @@ Todos os números sequenciais devem usar padding fixo de 5 dígitos:
 - Entrega: `ENT00001`
 
 ### Responsividade
-- O sistema deve ser responsivo (funcionar em desktop, tablet e mobile).
-- Menu lateral recolhível em telas menores.
+
+O sistema deve funcionar sem quebras em **celular, tablet e desktop**. Regras obrigatórias:
+
+#### Layout geral
+- Sidebar oculta por padrão em telas ≤ 768px, exibida via botão hambúrguer (☰) no header.
+- `.main` com `margin-left: 0` em mobile (sem sidebar ocupando espaço).
+- Padding do conteúdo principal reduzido em mobile: `16px` em vez de `28px 32px`.
+- Todo container de conteúdo usa `max-width: 100%` e evita larguras fixas.
+
+#### Tabelas
+- **Sempre** envolver tabelas em `<div class="crud-table-wrap">` (que tem `overflow-x: auto`).
+- Tabelas nunca forçam quebra de layout — o container delas que rola horizontalmente.
+- Em mobile, colunas de ações ficam fixas (não ocultar via display:none).
+
+#### Formulários / Modais
+- Grids de formulário com `grid-template-columns: 1fr 1fr` colapsam para `1fr` em telas ≤ 600px.
+- Modais têm `max-height: 90vh` e `overflow-y: auto` no corpo — nunca ultrapassam a tela.
+- Modal ocupa `width: calc(100% - 24px)` em mobile (padding lateral de 12px de cada lado).
+- Inputs e selects com `font-size: 16px` em mobile (evita zoom automático no iOS).
+
+#### Header
+- Em telas muito pequenas (≤ 480px), ocultar `.header-title` (só manter logo + botões).
+- Botões do header com padding reduzido em mobile.
+
+#### Breakpoints utilizados
+```css
+@media (max-width: 768px)  { /* tablet e celular — sidebar oculta */ }
+@media (max-width: 600px)  { /* celular — formulários em 1 coluna */ }
+@media (max-width: 480px)  { /* celular pequeno — ajustes de header */ }
+```
+
+#### CSS proibido em mobile
+- Nunca usar `white-space: nowrap` em células de tabela sem estar dentro de `.crud-table-wrap`.
+- Nunca usar `width` fixo em px em containers de nível superior.
+- Nunca usar `position: absolute` sem fallback para mobile.
+
+#### Classe `.crud-table-wrap` (já definida em styles.css)
+```css
+.crud-table-wrap { overflow-x: auto; }
+```
+Usar sempre. Nunca colocar `<table>` diretamente dentro de `.content-section` sem esse wrapper.
 
 ### Autenticação
 - Login por e-mail + senha.

@@ -1144,9 +1144,74 @@ body {
 /* ============================================================
    RESPONSIVIDADE GLOBAL
    ============================================================ */
+
+/* ── Tablet e celular (≤ 768px) ── */
 @media (max-width: 768px) {
-  .header { padding: 0 16px; }
+  /* Header */
+  .header { padding: 0 12px; gap: 8px; }
+  .header-btn { padding: 5px 10px; font-size: 12px; }
+
+  /* Layout principal */
   .section { padding: 16px; }
   .hero { padding: 24px 16px 20px; }
   .hero h1 { font-size: 18px; }
+
+  /* CRUD — área principal */
+  .main { margin-left: 0 !important; padding: 14px !important; }
+
+  /* Tabelas — sempre roláveis horizontalmente */
+  .crud-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .crud-table { min-width: 600px; }
+
+  /* Modal — largura quase total em mobile */
+  .crud-backdrop,
+  .modal-backdrop { padding: 8px; }
+  .crud-modal,
+  .modal { max-height: 95vh; border-radius: var(--radius-lg); }
+
+  /* Paginação */
+  .paginacao { flex-direction: column; gap: 8px; text-align: center; }
+
+  /* Toolbar de filtros */
+  .toolbar { flex-wrap: wrap; gap: 6px; }
+  .search-input { min-width: 100%; }
+}
+
+/* ── Celular (≤ 600px) ── */
+@media (max-width: 600px) {
+  /* Formulários em 1 coluna */
+  .form-grid,
+  .crud-form { grid-template-columns: 1fr !important; }
+  .form-grid .span-2,
+  .form-grid [class*="span-"] { grid-column: 1 !important; }
+
+  /* Inputs com font-size 16px para evitar zoom no iOS */
+  .form-input,
+  .form-select,
+  .form-textarea,
+  .search-input,
+  .crud-input { font-size: 16px; }
+
+  /* KPI grid */
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .kpi-value { font-size: 24px; }
+
+  /* Dois colunas de conteúdo viram 1 */
+  .two-col { grid-template-columns: 1fr !important; }
+}
+
+/* ── Celular pequeno (≤ 480px) ── */
+@media (max-width: 480px) {
+  /* Ocultar título do header para ganhar espaço */
+  .header-title { display: none; }
+
+  /* KPI em 1 coluna */
+  .kpi-grid { grid-template-columns: 1fr; }
+
+  /* Resumo cards em 1 coluna */
+  .resumo-grid { grid-template-columns: 1fr; }
+
+  /* Botão "Novo" no page-header: largura total */
+  .page-header { flex-direction: column; align-items: stretch; }
+  .page-header .btn { width: 100%; justify-content: center; }
 }
