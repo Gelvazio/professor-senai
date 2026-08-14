@@ -1,0 +1,2099 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "SUPABASE.js",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "supabase",
+      "community": 0,
+      "norm_label": "supabase.js"
+    },
+    {
+      "label": "HEADERS",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "supabase_headers",
+      "community": 0,
+      "norm_label": "headers"
+    },
+    {
+      "label": "HEADERS_READ",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "supabase_headers_read",
+      "community": 0,
+      "norm_label": "headers_read"
+    },
+    {
+      "label": "fetchComTimeout()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "supabase_fetchcomtimeout",
+      "community": 6,
+      "norm_label": "fetchcomtimeout()"
+    },
+    {
+      "label": "sbListar()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "supabase_sblistar",
+      "community": 7,
+      "norm_label": "sblistar()"
+    },
+    {
+      "label": "sbBuscar()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "supabase_sbbuscar",
+      "community": 7,
+      "norm_label": "sbbuscar()"
+    },
+    {
+      "label": "sbInserir()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "supabase_sbinserir",
+      "community": 6,
+      "norm_label": "sbinserir()"
+    },
+    {
+      "label": "sbAtualizar()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "supabase_sbatualizar",
+      "community": 6,
+      "norm_label": "sbatualizar()"
+    },
+    {
+      "label": "sbExcluir()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "supabase_sbexcluir",
+      "community": 6,
+      "norm_label": "sbexcluir()"
+    },
+    {
+      "label": "sbContar()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "supabase_sbcontar",
+      "community": 6,
+      "norm_label": "sbcontar()"
+    },
+    {
+      "label": "sbProximoNumero()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L163",
+      "_origin": "ast",
+      "id": "supabase_sbproximonumero",
+      "community": 7,
+      "norm_label": "sbproximonumero()"
+    },
+    {
+      "label": "Numerar",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "supabase_numerar",
+      "community": 0,
+      "norm_label": "numerar"
+    },
+    {
+      "label": "sha256()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L195",
+      "_origin": "ast",
+      "id": "supabase_sha256",
+      "community": 7,
+      "norm_label": "sha256()"
+    },
+    {
+      "label": "sbLogin()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L212",
+      "_origin": "ast",
+      "id": "supabase_sblogin",
+      "community": 7,
+      "norm_label": "sblogin()"
+    },
+    {
+      "label": "sbLogout()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L232",
+      "_origin": "ast",
+      "id": "supabase_sblogout",
+      "community": 0,
+      "norm_label": "sblogout()"
+    },
+    {
+      "label": "sbVerificarSessao()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "supabase_sbverificarsessao",
+      "community": 0,
+      "norm_label": "sbverificarsessao()"
+    },
+    {
+      "label": "sbPerfil()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "supabase_sbperfil",
+      "community": 11,
+      "norm_label": "sbperfil()"
+    },
+    {
+      "label": "sbIsAdmin()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L265",
+      "_origin": "ast",
+      "id": "supabase_sbisadmin",
+      "community": 11,
+      "norm_label": "sbisadmin()"
+    },
+    {
+      "label": "sbTemPermissao()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L275",
+      "_origin": "ast",
+      "id": "supabase_sbtempermissao",
+      "community": 11,
+      "norm_label": "sbtempermissao()"
+    },
+    {
+      "label": "sbExigirPermissao()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L282",
+      "_origin": "ast",
+      "id": "supabase_sbexigirpermissao",
+      "community": 11,
+      "norm_label": "sbexigirpermissao()"
+    },
+    {
+      "label": "sbUserNome()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L290",
+      "_origin": "ast",
+      "id": "supabase_sbusernome",
+      "community": 6,
+      "norm_label": "sbusernome()"
+    },
+    {
+      "label": "sbAplicarTema()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L300",
+      "_origin": "ast",
+      "id": "supabase_sbaplicartema",
+      "community": 0,
+      "norm_label": "sbaplicartema()"
+    },
+    {
+      "label": "sbToggleTema()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L306",
+      "_origin": "ast",
+      "id": "supabase_sbtoggletema",
+      "community": 0,
+      "norm_label": "sbtoggletema()"
+    },
+    {
+      "label": "sbIniciarBtnTema()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L317",
+      "_origin": "ast",
+      "id": "supabase_sbiniciarbtntema",
+      "community": 0,
+      "norm_label": "sbiniciarbtntema()"
+    },
+    {
+      "label": "sbMensagem()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L340",
+      "_origin": "ast",
+      "id": "supabase_sbmensagem",
+      "community": 0,
+      "norm_label": "sbmensagem()"
+    },
+    {
+      "label": "sbMoeda()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L354",
+      "_origin": "ast",
+      "id": "supabase_sbmoeda",
+      "community": 0,
+      "norm_label": "sbmoeda()"
+    },
+    {
+      "label": "sbData()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L366",
+      "_origin": "ast",
+      "id": "supabase_sbdata",
+      "community": 0,
+      "norm_label": "sbdata()"
+    },
+    {
+      "label": "sbPopularSelect()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L381",
+      "_origin": "ast",
+      "id": "supabase_sbpopularselect",
+      "community": 7,
+      "norm_label": "sbpopularselect()"
+    },
+    {
+      "label": "sbViaCEP()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L407",
+      "_origin": "ast",
+      "id": "supabase_sbviacep",
+      "community": 0,
+      "norm_label": "sbviacep()"
+    },
+    {
+      "label": "sbMovimentarEstoque()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L448",
+      "_origin": "ast",
+      "id": "supabase_sbmovimentarestoque",
+      "community": 6,
+      "norm_label": "sbmovimentarestoque()"
+    },
+    {
+      "label": "sbVerificarEstoque()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L471",
+      "_origin": "ast",
+      "id": "supabase_sbverificarestoque",
+      "community": 7,
+      "norm_label": "sbverificarestoque()"
+    },
+    {
+      "label": "sbGerarPDFPedidoCompra()",
+      "file_type": "code",
+      "source_file": "SUPABASE.js",
+      "source_location": "L489",
+      "_origin": "ast",
+      "id": "supabase_sbgerarpdfpedidocompra",
+      "community": 0,
+      "norm_label": "sbgerarpdfpedidocompra()"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 1,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "ERP Victor Anato \u2014 Orienta\u00e7\u00f5es de Desenvolvimento",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "community": 1,
+      "norm_label": "erp victor anato \u2014 orientacoes de desenvolvimento"
+    },
+    {
+      "label": "Vis\u00e3o Geral do Sistema",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "claude_vis\u00e3o_geral_do_sistema",
+      "community": 1,
+      "norm_label": "visao geral do sistema"
+    },
+    {
+      "label": "Princ\u00edpios Fundamentais",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "claude_princ\u00edpios_fundamentais",
+      "community": 1,
+      "norm_label": "principios fundamentais"
+    },
+    {
+      "label": "M\u00f3dulo 1 \u2014 CADASTROS",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "claude_m\u00f3dulo_1_cadastros",
+      "community": 9,
+      "norm_label": "modulo 1 \u2014 cadastros"
+    },
+    {
+      "label": "1.1 Clientes",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "claude_1_1_clientes",
+      "community": 9,
+      "norm_label": "1.1 clientes"
+    },
+    {
+      "label": "1.2 Fornecedores",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "claude_1_2_fornecedores",
+      "community": 9,
+      "norm_label": "1.2 fornecedores"
+    },
+    {
+      "label": "1.3 Produtos",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "claude_1_3_produtos",
+      "community": 9,
+      "norm_label": "1.3 produtos"
+    },
+    {
+      "label": "1.4 Transportadoras",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "claude_1_4_transportadoras",
+      "community": 9,
+      "norm_label": "1.4 transportadoras"
+    },
+    {
+      "label": "M\u00f3dulo 2 \u2014 COMPRAS",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "claude_m\u00f3dulo_2_compras",
+      "community": 3,
+      "norm_label": "modulo 2 \u2014 compras"
+    },
+    {
+      "label": "Fluxo do M\u00f3dulo de Compras",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "claude_fluxo_do_m\u00f3dulo_de_compras",
+      "community": 3,
+      "norm_label": "fluxo do modulo de compras"
+    },
+    {
+      "label": "2.1 Planejamento",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "claude_2_1_planejamento",
+      "community": 3,
+      "norm_label": "2.1 planejamento"
+    },
+    {
+      "label": "2.2 Solicita\u00e7\u00e3o de Compras",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "claude_2_2_solicita\u00e7\u00e3o_de_compras",
+      "community": 3,
+      "norm_label": "2.2 solicitacao de compras"
+    },
+    {
+      "label": "2.3 Pedido de Compras",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "claude_2_3_pedido_de_compras",
+      "community": 3,
+      "norm_label": "2.3 pedido de compras"
+    },
+    {
+      "label": "2.4 Recebimento",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "claude_2_4_recebimento",
+      "community": 3,
+      "norm_label": "2.4 recebimento"
+    },
+    {
+      "label": "2.5 Confer\u00eancia",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L209",
+      "_origin": "ast",
+      "id": "claude_2_5_confer\u00eancia",
+      "community": 3,
+      "norm_label": "2.5 conferencia"
+    },
+    {
+      "label": "2.6 Entrada de Nota Fiscal",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L227",
+      "_origin": "ast",
+      "id": "claude_2_6_entrada_de_nota_fiscal",
+      "community": 3,
+      "norm_label": "2.6 entrada de nota fiscal"
+    },
+    {
+      "label": "M\u00f3dulo 3 \u2014 ESTOQUE",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L247",
+      "_origin": "ast",
+      "id": "claude_m\u00f3dulo_3_estoque",
+      "community": 1,
+      "norm_label": "modulo 3 \u2014 estoque"
+    },
+    {
+      "label": "3.1 Armazenagem",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "claude_3_1_armazenagem",
+      "community": 1,
+      "norm_label": "3.1 armazenagem"
+    },
+    {
+      "label": "3.2 Controle de Estoque",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L270",
+      "_origin": "ast",
+      "id": "claude_3_2_controle_de_estoque",
+      "community": 1,
+      "norm_label": "3.2 controle de estoque"
+    },
+    {
+      "label": "3.3 Movimenta\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L284",
+      "_origin": "ast",
+      "id": "claude_3_3_movimenta\u00e7\u00f5es",
+      "community": 1,
+      "norm_label": "3.3 movimentacoes"
+    },
+    {
+      "label": "3.4 Invent\u00e1rio",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L303",
+      "_origin": "ast",
+      "id": "claude_3_4_invent\u00e1rio",
+      "community": 1,
+      "norm_label": "3.4 inventario"
+    },
+    {
+      "label": "M\u00f3dulo 4 \u2014 VENDAS E LOG\u00cdSTICA",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L324",
+      "_origin": "ast",
+      "id": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "community": 4,
+      "norm_label": "modulo 4 \u2014 vendas e logistica"
+    },
+    {
+      "label": "Fluxo do M\u00f3dulo de Vendas e Log\u00edstica",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L328",
+      "_origin": "ast",
+      "id": "claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica",
+      "community": 4,
+      "norm_label": "fluxo do modulo de vendas e logistica"
+    },
+    {
+      "label": "4.1 Pedido de Venda",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L334",
+      "_origin": "ast",
+      "id": "claude_4_1_pedido_de_venda",
+      "community": 4,
+      "norm_label": "4.1 pedido de venda"
+    },
+    {
+      "label": "4.2 Nota Fiscal de Venda",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L357",
+      "_origin": "ast",
+      "id": "claude_4_2_nota_fiscal_de_venda",
+      "community": 4,
+      "norm_label": "4.2 nota fiscal de venda"
+    },
+    {
+      "label": "4.3 Romaneio",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L390",
+      "_origin": "ast",
+      "id": "claude_4_3_romaneio",
+      "community": 4,
+      "norm_label": "4.3 romaneio"
+    },
+    {
+      "label": "4.4 Separa\u00e7\u00e3o (Picking)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L414",
+      "_origin": "ast",
+      "id": "claude_4_4_separa\u00e7\u00e3o_picking",
+      "community": 4,
+      "norm_label": "4.4 separacao (picking)"
+    },
+    {
+      "label": "4.5 Expedi\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L431",
+      "_origin": "ast",
+      "id": "claude_4_5_expedi\u00e7\u00e3o",
+      "community": 4,
+      "norm_label": "4.5 expedicao"
+    },
+    {
+      "label": "4.6 Entrega",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L453",
+      "_origin": "ast",
+      "id": "claude_4_6_entrega",
+      "community": 4,
+      "norm_label": "4.6 entrega"
+    },
+    {
+      "label": "M\u00f3dulo 5 \u2014 CONFIGURA\u00c7\u00d5ES",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L472",
+      "_origin": "ast",
+      "id": "claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
+      "community": 1,
+      "norm_label": "modulo 5 \u2014 configuracoes"
+    },
+    {
+      "label": "5.1 Usu\u00e1rios",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L474",
+      "_origin": "ast",
+      "id": "claude_5_1_usu\u00e1rios",
+      "community": 1,
+      "norm_label": "5.1 usuarios"
+    },
+    {
+      "label": "Vis\u00e3o Geral (Dashboard)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L497",
+      "_origin": "ast",
+      "id": "claude_vis\u00e3o_geral_dashboard",
+      "community": 1,
+      "norm_label": "visao geral (dashboard)"
+    },
+    {
+      "label": "Regras Gerais de Interface",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L511",
+      "_origin": "ast",
+      "id": "claude_regras_gerais_de_interface",
+      "community": 8,
+      "norm_label": "regras gerais de interface"
+    },
+    {
+      "label": "Listagens (tabelas)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L513",
+      "_origin": "ast",
+      "id": "claude_listagens_tabelas",
+      "community": 8,
+      "norm_label": "listagens (tabelas)"
+    },
+    {
+      "label": "Formul\u00e1rios",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L518",
+      "_origin": "ast",
+      "id": "claude_formul\u00e1rios",
+      "community": 8,
+      "norm_label": "formularios"
+    },
+    {
+      "label": "Numera\u00e7\u00e3o Autom\u00e1tica",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L524",
+      "_origin": "ast",
+      "id": "claude_numera\u00e7\u00e3o_autom\u00e1tica",
+      "community": 8,
+      "norm_label": "numeracao automatica"
+    },
+    {
+      "label": "Responsividade",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L538",
+      "_origin": "ast",
+      "id": "claude_responsividade",
+      "community": 8,
+      "norm_label": "responsividade"
+    },
+    {
+      "label": "Autentica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L542",
+      "_origin": "ast",
+      "id": "claude_autentica\u00e7\u00e3o",
+      "community": 8,
+      "norm_label": "autenticacao"
+    },
+    {
+      "label": "Tecnologias",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L550",
+      "_origin": "ast",
+      "id": "claude_tecnologias",
+      "community": 10,
+      "norm_label": "tecnologias"
+    },
+    {
+      "label": "Frontend \u2014 Vanilla JS (obrigat\u00f3rio)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L552",
+      "_origin": "ast",
+      "id": "claude_frontend_vanilla_js_obrigat\u00f3rio",
+      "community": 10,
+      "norm_label": "frontend \u2014 vanilla js (obrigatorio)"
+    },
+    {
+      "label": "Estrutura de arquivos HTML (uma por tela/m\u00f3dulo)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L564",
+      "_origin": "ast",
+      "id": "claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo",
+      "community": 10,
+      "norm_label": "estrutura de arquivos html (uma por tela/modulo)"
+    },
+    {
+      "label": "Padr\u00f5es JavaScript obrigat\u00f3rios",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L599",
+      "_origin": "ast",
+      "id": "claude_padr\u00f5es_javascript_obrigat\u00f3rios",
+      "community": 10,
+      "norm_label": "padroes javascript obrigatorios"
+    },
+    {
+      "label": "Backend / Banco de Dados",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L632",
+      "_origin": "ast",
+      "id": "claude_backend_banco_de_dados",
+      "community": 10,
+      "norm_label": "backend / banco de dados"
+    },
+    {
+      "label": "Supabase \u2014 Configura\u00e7\u00e3o e Uso da API",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L640",
+      "_origin": "ast",
+      "id": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "community": 5,
+      "norm_label": "supabase \u2014 configuracao e uso da api"
+    },
+    {
+      "label": "Credenciais",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L642",
+      "_origin": "ast",
+      "id": "claude_credenciais",
+      "community": 5,
+      "norm_label": "credenciais"
+    },
+    {
+      "label": "Padr\u00e3o de CRUD \u2014 fun\u00e7\u00f5es reutiliz\u00e1veis",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L656",
+      "_origin": "ast",
+      "id": "claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis",
+      "community": 5,
+      "norm_label": "padrao de crud \u2014 funcoes reutilizaveis"
+    },
+    {
+      "label": "Filtros e operadores da API REST Supabase",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L716",
+      "_origin": "ast",
+      "id": "claude_filtros_e_operadores_da_api_rest_supabase",
+      "community": 5,
+      "norm_label": "filtros e operadores da api rest supabase"
+    },
+    {
+      "label": "Esquema de tabelas do banco (PostgreSQL)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L730",
+      "_origin": "ast",
+      "id": "claude_esquema_de_tabelas_do_banco_postgresql",
+      "community": 5,
+      "norm_label": "esquema de tabelas do banco (postgresql)"
+    },
+    {
+      "label": "RLS (Row Level Security)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1038",
+      "_origin": "ast",
+      "id": "claude_rls_row_level_security",
+      "community": 5,
+      "norm_label": "rls (row level security)"
+    },
+    {
+      "label": "Autentica\u00e7\u00e3o do ERP",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1049",
+      "_origin": "ast",
+      "id": "claude_autentica\u00e7\u00e3o_do_erp",
+      "community": 5,
+      "norm_label": "autenticacao do erp"
+    },
+    {
+      "label": "Ordem de Implementa\u00e7\u00e3o Sugerida",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1093",
+      "_origin": "ast",
+      "id": "claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
+      "community": 1,
+      "norm_label": "ordem de implementacao sugerida"
+    },
+    {
+      "label": "PASSOS-CRIACAO-ERP.md",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "passos_criacao_erp",
+      "community": 2,
+      "norm_label": "passos-criacao-erp.md"
+    },
+    {
+      "label": "Passos de Cria\u00e7\u00e3o \u2014 ERP Victor Anato",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "community": 2,
+      "norm_label": "passos de criacao \u2014 erp victor anato"
+    },
+    {
+      "label": "Arquivos Base",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_arquivos_base",
+      "community": 2,
+      "norm_label": "arquivos base"
+    },
+    {
+      "label": "Passo 1 \u2014 Autentica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_passo_1_autentica\u00e7\u00e3o",
+      "community": 2,
+      "norm_label": "passo 1 \u2014 autenticacao"
+    },
+    {
+      "label": "Passo 2 \u2014 Dashboard (Vis\u00e3o Geral)",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral",
+      "community": 2,
+      "norm_label": "passo 2 \u2014 dashboard (visao geral)"
+    },
+    {
+      "label": "Passo 3 \u2014 M\u00f3dulo Cadastros",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_passo_3_m\u00f3dulo_cadastros",
+      "community": 2,
+      "norm_label": "passo 3 \u2014 modulo cadastros"
+    },
+    {
+      "label": "Passo 4 \u2014 M\u00f3dulo Compras",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_passo_4_m\u00f3dulo_compras",
+      "community": 2,
+      "norm_label": "passo 4 \u2014 modulo compras"
+    },
+    {
+      "label": "Passo 5 \u2014 M\u00f3dulo Estoque",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_passo_5_m\u00f3dulo_estoque",
+      "community": 2,
+      "norm_label": "passo 5 \u2014 modulo estoque"
+    },
+    {
+      "label": "Passo 6 \u2014 M\u00f3dulo Vendas e Log\u00edstica",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica",
+      "community": 2,
+      "norm_label": "passo 6 \u2014 modulo vendas e logistica"
+    },
+    {
+      "label": "Passo 7 \u2014 M\u00f3dulo Configura\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es",
+      "community": 2,
+      "norm_label": "passo 7 \u2014 modulo configuracoes"
+    },
+    {
+      "label": "Passo 8 \u2014 Ajustes Finais e Testes",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_passo_8_ajustes_finais_e_testes",
+      "community": 2,
+      "norm_label": "passo 8 \u2014 ajustes finais e testes"
+    },
+    {
+      "label": "Resumo de Progresso",
+      "file_type": "document",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "passos_criacao_erp_resumo_de_progresso",
+      "community": 2,
+      "norm_label": "resumo de progresso"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_fetchcomtimeout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_headers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_headers_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_numerar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L300",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbaplicartema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbatualizar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbbuscar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbcontar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L366",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbexcluir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L282",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbexigirpermissao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L489",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbgerarpdfpedidocompra",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L317",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbiniciarbtntema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbinserir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L265",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbisadmin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sblistar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sblogin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sblogout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L340",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbmensagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L354",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbmoeda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L448",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbmovimentarestoque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbperfil",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L381",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbpopularselect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbproximonumero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L275",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbtempermissao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L306",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbtoggletema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L290",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbusernome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L471",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbverificarestoque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbverificarsessao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L407",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sbviacep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "supabase",
+      "target": "supabase_sha256",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "supabase_sbatualizar",
+      "target": "supabase_fetchcomtimeout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "supabase_sbcontar",
+      "target": "supabase_fetchcomtimeout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "supabase_sbexcluir",
+      "target": "supabase_fetchcomtimeout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "supabase_sbinserir",
+      "target": "supabase_fetchcomtimeout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "supabase_sblistar",
+      "target": "supabase_fetchcomtimeout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "supabase_sbbuscar",
+      "target": "supabase_sblistar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "supabase_sblogin",
+      "target": "supabase_sblistar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L390",
+      "weight": 1.0,
+      "source": "supabase_sbpopularselect",
+      "target": "supabase_sblistar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "supabase_sbproximonumero",
+      "target": "supabase_sblistar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L472",
+      "weight": 1.0,
+      "source": "supabase_sbverificarestoque",
+      "target": "supabase_sbbuscar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L450",
+      "weight": 1.0,
+      "source": "supabase_sbmovimentarestoque",
+      "target": "supabase_sbinserir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "supabase_sblogin",
+      "target": "supabase_sha256",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "supabase_sbisadmin",
+      "target": "supabase_sbperfil",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L276",
+      "weight": 1.0,
+      "source": "supabase_sbtempermissao",
+      "target": "supabase_sbisadmin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L283",
+      "weight": 1.0,
+      "source": "supabase_sbexigirpermissao",
+      "target": "supabase_sbtempermissao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L459",
+      "weight": 1.0,
+      "source": "supabase_sbmovimentarestoque",
+      "target": "supabase_sbusernome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L526",
+      "weight": 1.0,
+      "source": "supabase_sbgerarpdfpedidocompra",
+      "target": "supabase_sbmoeda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
+      "source_location": "L511",
+      "weight": 1.0,
+      "source": "supabase_sbgerarpdfpedidocompra",
+      "target": "supabase_sbdata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_m\u00f3dulo_1_cadastros",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_m\u00f3dulo_2_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L247",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_m\u00f3dulo_3_estoque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L324",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L472",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1093",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L511",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_regras_gerais_de_interface",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L640",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L550",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_tecnologias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L497",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_vis\u00e3o_geral_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
+      "target": "claude_vis\u00e3o_geral_do_sistema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "claude_vis\u00e3o_geral_do_sistema",
+      "target": "claude_princ\u00edpios_fundamentais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_1_cadastros",
+      "target": "claude_1_1_clientes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_1_cadastros",
+      "target": "claude_1_2_fornecedores",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_1_cadastros",
+      "target": "claude_1_3_produtos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_1_cadastros",
+      "target": "claude_1_4_transportadoras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_2_compras",
+      "target": "claude_2_1_planejamento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_2_compras",
+      "target": "claude_2_2_solicita\u00e7\u00e3o_de_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_2_compras",
+      "target": "claude_2_3_pedido_de_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_2_compras",
+      "target": "claude_2_4_recebimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L209",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_2_compras",
+      "target": "claude_2_5_confer\u00eancia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_2_compras",
+      "target": "claude_2_6_entrada_de_nota_fiscal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_2_compras",
+      "target": "claude_fluxo_do_m\u00f3dulo_de_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L251",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_3_estoque",
+      "target": "claude_3_1_armazenagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L270",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_3_estoque",
+      "target": "claude_3_2_controle_de_estoque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L284",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_3_estoque",
+      "target": "claude_3_3_movimenta\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L303",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_3_estoque",
+      "target": "claude_3_4_invent\u00e1rio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L334",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "claude_4_1_pedido_de_venda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L357",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "claude_4_2_nota_fiscal_de_venda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L390",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "claude_4_3_romaneio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L414",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "claude_4_4_separa\u00e7\u00e3o_picking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L431",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "claude_4_5_expedi\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L453",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "claude_4_6_entrega",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L328",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "target": "claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L474",
+      "weight": 1.0,
+      "source": "claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
+      "target": "claude_5_1_usu\u00e1rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L542",
+      "weight": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_autentica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L518",
+      "weight": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_formul\u00e1rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L513",
+      "weight": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_listagens_tabelas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L524",
+      "weight": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_numera\u00e7\u00e3o_autom\u00e1tica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L538",
+      "weight": 1.0,
+      "source": "claude_regras_gerais_de_interface",
+      "target": "claude_responsividade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L632",
+      "weight": 1.0,
+      "source": "claude_tecnologias",
+      "target": "claude_backend_banco_de_dados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L564",
+      "weight": 1.0,
+      "source": "claude_tecnologias",
+      "target": "claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L552",
+      "weight": 1.0,
+      "source": "claude_tecnologias",
+      "target": "claude_frontend_vanilla_js_obrigat\u00f3rio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L599",
+      "weight": 1.0,
+      "source": "claude_tecnologias",
+      "target": "claude_padr\u00f5es_javascript_obrigat\u00f3rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1049",
+      "weight": 1.0,
+      "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "claude_autentica\u00e7\u00e3o_do_erp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L642",
+      "weight": 1.0,
+      "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "claude_credenciais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L730",
+      "weight": 1.0,
+      "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "claude_esquema_de_tabelas_do_banco_postgresql",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L716",
+      "weight": 1.0,
+      "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "claude_filtros_e_operadores_da_api_rest_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L656",
+      "weight": 1.0,
+      "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1038",
+      "weight": 1.0,
+      "source": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "target": "claude_rls_row_level_security",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "passos_criacao_erp",
+      "target": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_arquivos_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_passo_1_autentica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_passo_3_m\u00f3dulo_cadastros",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_passo_4_m\u00f3dulo_compras",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_passo_5_m\u00f3dulo_estoque",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_passo_8_ajustes_finais_e_testes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PASSOS-CRIACAO-ERP.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
+      "target": "passos_criacao_erp_resumo_de_progresso",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "6dddcb5ee7b8259b3c2d2de2de835d90a0001bf7"
+}

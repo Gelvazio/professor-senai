@@ -1,0 +1,157 @@
+{
+  ".claude/settings.local.json": {
+    "mtime": 1786718477.630186,
+    "ast_hash": "d100a1e7f03f03d4df6b71a4b17913d0",
+    "semantic_hash": ""
+  },
+  "DATABASE.sql": {
+    "mtime": 1786716628.0530405,
+    "ast_hash": "044998b2236985022e2938937196ee8c",
+    "semantic_hash": ""
+  },
+  "SUPABASE.js": {
+    "mtime": 1786717486.1453507,
+    "ast_hash": "3a52ecb9d3308c3edb3a93a5e4e59f54",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1786715977.5536332,
+    "ast_hash": "5345a2c33c66487ec33dd7700158e3e5",
+    "semantic_hash": ""
+  },
+  "PASSOS-CRIACAO-ERP.md": {
+    "mtime": 1786717349.3477085,
+    "ast_hash": "3053be40c23e17434771e92b0831d141",
+    "semantic_hash": ""
+  },
+  "dashboard.html": {
+    "mtime": 1786717438.7279499,
+    "ast_hash": "8b65df79894313d0523585f00f3160a5",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1786717229.6812458,
+    "ast_hash": "ad198823b787ec2fffd15aeba8b93c69",
+    "semantic_hash": ""
+  },
+  "AJUSTE-HORARIOS.png": {
+    "mtime": 1786715978.134686,
+    "ast_hash": "21aaeeb705a3050c6fe7be9a95a80291",
+    "semantic_hash": ""
+  },
+  ".vscode/settings.json": {
+    "mtime": 1786718250.209483,
+    "ast_hash": "51b69d2e590701fbd83940a48867e5ec",
+    "semantic_hash": ""
+  },
+  "compras/pedidos.html": {
+    "mtime": 1786718086.7658691,
+    "ast_hash": "c5e6d5778e3c839b5a3d185071d48372",
+    "semantic_hash": ""
+  },
+  "compras/planejamento.html": {
+    "mtime": 1786717897.5821397,
+    "ast_hash": "ad74886c4ea8bc7dc0a9add2a1e7a52f",
+    "semantic_hash": ""
+  },
+  "compras/solicitacoes.html": {
+    "mtime": 1786717988.2340207,
+    "ast_hash": "0c0d2b0f4a5ade92c97a60660a3f828c",
+    "semantic_hash": ""
+  },
+  "configuracoes/usuarios.html": {
+    "mtime": 1786718045.5902667,
+    "ast_hash": "a598a53704b047f20e20f955ff202dee",
+    "semantic_hash": ""
+  },
+  "estoque/controle.html": {
+    "mtime": 1786717928.3810356,
+    "ast_hash": "250f667c58757eac8121408db14560ee",
+    "semantic_hash": ""
+  },
+  "estoque/movimentacoes.html": {
+    "mtime": 1786718051.3315547,
+    "ast_hash": "8802fabf07eea873f6147744351822cf",
+    "semantic_hash": ""
+  },
+  "cadastros/clientes.html": {
+    "mtime": 1786718088.7295258,
+    "ast_hash": "6b4461934b772740c4b24b8810a1c908",
+    "semantic_hash": ""
+  },
+  "cadastros/fornecedores.html": {
+    "mtime": 1786718202.2293026,
+    "ast_hash": "99f8676c82e6a229bcf17a869a9c34f4",
+    "semantic_hash": ""
+  },
+  "cadastros/produtos.html": {
+    "mtime": 1786718316.523344,
+    "ast_hash": "7901f3657ae1044822062e3ad5915d16",
+    "semantic_hash": ""
+  },
+  "compras/conferencia.html": {
+    "mtime": 1786718267.6766813,
+    "ast_hash": "e0fc1f404c671d8498fed9b52ca5c153",
+    "semantic_hash": ""
+  },
+  "compras/recebimento.html": {
+    "mtime": 1786718179.0297668,
+    "ast_hash": "a243b92b20114eecb00c3490917801d8",
+    "semantic_hash": ""
+  },
+  "estoque/armazenagem.html": {
+    "mtime": 1786718178.3192675,
+    "ast_hash": "2054d0316cd621ba3ad62ecfe16c6f66",
+    "semantic_hash": ""
+  },
+  "estoque/inventario.html": {
+    "mtime": 1786718326.6022763,
+    "ast_hash": "200b92b49fa68cb1cbf7548f081e3205",
+    "semantic_hash": ""
+  },
+  "vendas/nota-fiscal-venda.html": {
+    "mtime": 1786718243.922076,
+    "ast_hash": "f0def872633b7100f5047439bc1a484b",
+    "semantic_hash": ""
+  },
+  "vendas/pedidos-venda.html": {
+    "mtime": 1786718139.309799,
+    "ast_hash": "d37fed09dd7f09b329018e7156e5107a",
+    "semantic_hash": ""
+  },
+  "vendas/separacao.html": {
+    "mtime": 1786718320.8187113,
+    "ast_hash": "e383fc53f1e019682810002bc5ba3823",
+    "semantic_hash": ""
+  },
+  "cadastros/transportadoras.html": {
+    "mtime": 1786718426.7925258,
+    "ast_hash": "cce8d478856e802dfaa07be74e38ccd7",
+    "semantic_hash": ""
+  },
+  "compras/nota-fiscal.html": {
+    "mtime": 1786718366.44516,
+    "ast_hash": "fe797959ef9ad4032198d54d5ed9c19e",
+    "semantic_hash": ""
+  },
+  "criar-admin.html": {
+    "mtime": 1786718414.3973932,
+    "ast_hash": "5ad2fcab5e1fa5d607a923e9488122ca",
+    "semantic_hash": ""
+  },
+  "vendas/entrega.html": {
+    "mtime": 1786718572.0272512,
+    "ast_hash": "9505e5a503aee2ea4f96933a93bd7906",
+    "semantic_hash": ""
+  },
+  "vendas/expedicao.html": {
+    "mtime": 1786718490.262588,
+    "ast_hash": "222141f57f144085b9301c78c3f62878",
+    "semantic_hash": ""
+  },
+  "vendas/romaneio.html": {
+    "mtime": 1786718404.5479782,
+    "ast_hash": "7459618b00e01e176f904cc8f79233ce",
+    "semantic_hash": ""
+  }
+}
