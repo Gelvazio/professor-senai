@@ -21,10 +21,10 @@
 
 | # | Tarefa | Status |
 |---|--------|--------|
-| 1.1 | Criar `index.html` — tela de login (e-mail + senha, tema claro/escuro) | ⬜ NAO INICIADO |
-| 1.2 | Implementar lógica de login via `SUPABASE.js` (`sbLogin`) | ⬜ NAO INICIADO |
-| 1.3 | Implementar redirecionamento pós-login para `dashboard.html` | ⬜ NAO INICIADO |
-| 1.4 | Implementar logout e verificação de sessão (`sbVerificarSessao`) | ⬜ NAO INICIADO |
+| 1.1 | Criar `index.html` — tela de login (e-mail + senha, tema claro/escuro) | ✅ CONCLUIDO |
+| 1.2 | Implementar lógica de login via `SUPABASE.js` (`sbLogin`) | ✅ CONCLUIDO |
+| 1.3 | Implementar redirecionamento pós-login para `dashboard.html` | ✅ CONCLUIDO |
+| 1.4 | Implementar logout e verificação de sessão (`sbVerificarSessao`) | ✅ CONCLUIDO |
 
 ---
 
@@ -124,7 +124,7 @@
 | Módulo | Total | Concluídos | Progresso |
 |--------|-------|------------|-----------|
 | Arquivos Base | 5 | 5 | 100% |
-| Autenticação | 4 | 0 | 0% |
+| Autenticação | 4 | 4 | 100% |
 | Dashboard | 5 | 0 | 0% |
 | Cadastros | 6 | 0 | 0% |
 | Compras | 8 | 0 | 0% |
@@ -132,7 +132,7 @@
 | Vendas e Logística | 8 | 0 | 0% |
 | Configurações | 4 | 0 | 0% |
 | Ajustes Finais | 6 | 0 | 0% |
-| **TOTAL** | **51** | **5** | **10%** |
+| **TOTAL** | **51** | **9** | **18%** |
 
 ---
 
