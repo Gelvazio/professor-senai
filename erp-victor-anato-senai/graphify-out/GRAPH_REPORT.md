@@ -1,7 +1,7 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-15)
 
 ## Corpus Check
-- 9 files · ~67,810 words
+- 9 files · ~67,531 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `998c9647`
+- Built from commit: `76cbb862`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

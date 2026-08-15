@@ -367,7 +367,7 @@
       "label": "_sbFilenameFromHref()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L723",
+      "source_location": "L727",
       "_origin": "ast",
       "id": "supabase_sbfilenamefromhref",
       "community": 0,
@@ -377,7 +377,7 @@
       "label": "_sbConfigPath()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L734",
+      "source_location": "L738",
       "_origin": "ast",
       "id": "supabase_sbconfigpath",
       "community": 11,
@@ -387,7 +387,7 @@
       "label": "sbInjetarMenuConfiguracoes()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L744",
+      "source_location": "L748",
       "_origin": "ast",
       "id": "supabase_sbinjetarmenuconfiguracoes",
       "community": 11,
@@ -1251,9 +1251,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L723",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbfilenamefromhref",
-      "confidence_score": 1.0
+      "target": "supabase_sbfilenamefromhref"
     },
     {
       "relation": "contains",
@@ -2461,5 +2461,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "998c9647074d1c7bae26ad41b448b0e71b8af5c6"
+  "built_at_commit": "76cbb862f2f08e6d75fac917fcdcb5192061d48a"
 }
