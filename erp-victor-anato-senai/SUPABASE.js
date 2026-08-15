@@ -229,33 +229,6 @@ async function sbLogin(email, senha) {
   localStorage.setItem('erp_permissoes', JSON.stringify(user.permissoes));
   localStorage.setItem('erp_login',      String(Date.now()));
 
-  // ── Carregar telas permitidas para este perfil ──────────────
-  if (nomePerfil === 'Administrador') {
-    // Admin tem acesso irrestrito — marca como 'all'
-    localStorage.setItem('erp_telas_html', 'all');
-  } else {
-    try {
-      // Busca telas vinculadas ao perfil na tabela perfil_sistema
-      const vinc = await sbListar('perfil_sistema',
-        `perfil_id=eq.${user.perfil_id}&select=tela_id`);
-      const ids = new Set(vinc.map(v => v.tela_id));
-
-      // Mapeia tela_id → nome_html via telas.json (login sempre na raiz)
-      const telaJSON = await fetch('telas.json').then(r => r.json()).catch(() => []);
-      const telasHtml = telaJSON
-        .filter(t => ids.has(t.id) && (t.ativo === 1 || t.ativo === true))
-        .map(t => t.nome_html);
-
-      // dashboard.html é sempre incluído
-      if (!telasHtml.includes('dashboard.html')) telasHtml.unshift('dashboard.html');
-
-      localStorage.setItem('erp_telas_html', JSON.stringify(telasHtml));
-    } catch {
-      // Falha silenciosa: permite tudo para não travar o sistema
-      localStorage.setItem('erp_telas_html', 'all');
-    }
-  }
-
   return user;
 }
 
@@ -264,12 +237,12 @@ function sbLogout(paginaLogin = '/index.html') {
   localStorage.removeItem('erp_role');
   localStorage.removeItem('erp_perfil_id');
   localStorage.removeItem('erp_telas');
-  localStorage.removeItem('erp_telas_html');
   localStorage.removeItem('erp_user_id');
   localStorage.removeItem('erp_user_nome');
   localStorage.removeItem('erp_user_email');
   localStorage.removeItem('erp_permissoes');
   localStorage.removeItem('erp_login');
+  sessionStorage.removeItem('_telas_json'); // limpa cache de sessão
   window.location.href = paginaLogin;
 }
 
@@ -644,40 +617,85 @@ function sbGerarPDFPedidoCompra(pedido, fornecedor, produto) {
 // ============================================================
 
 /**
- * Esconde links do sidebar cujas telas não estão na lista permitida do perfil.
- * Também bloqueia acesso direto a páginas não autorizadas.
- * Deve ser chamada após o DOM estar pronto.
+ * Carrega o mapeamento de telas (telas.json) com cache em sessionStorage.
+ * Tenta o caminho relativo correto conforme a profundidade da página.
+ * @returns {Promise<Array>} Array de objetos {id, nome_html, ativo, ...}
  */
-function sbFiltrarSidebar() {
-  const raw = localStorage.getItem('erp_telas_html');
-  if (!raw || raw === 'all') return; // Administrador ou erro: mostra tudo
+async function _sbCarregarTelasJson() {
+  const cached = sessionStorage.getItem('_telas_json');
+  if (cached) return JSON.parse(cached);
 
-  const permitidas = new Set(JSON.parse(raw));
+  // Tenta caminhos possíveis conforme a pasta atual
+  const tentativas = ['telas.json', '../telas.json', '../../telas.json'];
+  for (const p of tentativas) {
+    try {
+      const r = await fetch(p);
+      if (r.ok) {
+        const data = await r.json();
+        sessionStorage.setItem('_telas_json', JSON.stringify(data));
+        return data;
+      }
+    } catch { /* continua tentando */ }
+  }
+  return [];
+}
+
+/**
+ * Busca as telas permitidas do perfil no banco (perfil_sistema) e filtra o
+ * sidebar, ocultando links não autorizados. Também bloqueia acesso direto a
+ * páginas não autorizadas. Sempre consulta o banco — nunca usa cache de sessão
+ * para as permissões, garantindo que mudanças de perfil reflitam imediatamente.
+ */
+async function sbFiltrarSidebar() {
+  // Administrador: acesso irrestrito, nada a filtrar
+  if (sbIsAdmin()) return;
+
+  const perfilId = localStorage.getItem('erp_perfil_id');
+  if (!perfilId) return;
+
+  let permitidas;
+  try {
+    // ── Busca SEMPRE do banco ────────────────────────────────
+    const vinc = await sbListar('perfil_sistema',
+      `perfil_id=eq.${encodeURIComponent(perfilId)}&select=tela_id`);
+    const ids = new Set(vinc.map(v => v.tela_id));
+
+    // Mapa tela_id → nome_html (telas.json cacheado em sessionStorage)
+    const telaJSON = await _sbCarregarTelasJson();
+    permitidas = new Set(
+      telaJSON
+        .filter(t => ids.has(t.id) && (t.ativo === 1 || t.ativo === true))
+        .map(t => t.nome_html)
+    );
+    // Dashboard sempre permitido
+    permitidas.add('dashboard.html');
+  } catch {
+    // Em caso de falha de rede: não bloqueia o usuário
+    return;
+  }
 
   // ── Ocultar links do sidebar que o perfil não pode acessar ──
   document.querySelectorAll('.sidebar-link').forEach(link => {
     const href = (link.getAttribute('href') || '').replace(/\\/g, '/');
     const filename = href.split('/').pop().split('?')[0];
-    if (!filename || filename === '#' || filename === 'dashboard.html') return;
-    if (!permitidas.has(filename)) {
-      link.style.display = 'none';
-    }
+    if (!filename || filename === '#') return;
+    if (!permitidas.has(filename)) link.style.display = 'none';
   });
 
-  // Ocultar seções do accordion que ficaram sem links visíveis
+  // Ocultar seções accordion que ficaram sem nenhum link visível
   document.querySelectorAll('.sidebar-section').forEach(section => {
     const links = section.querySelectorAll('.sidebar-link');
+    if (!links.length) return;
     const algumVisivel = Array.from(links).some(l => l.style.display !== 'none');
-    if (links.length > 0 && !algumVisivel) section.style.display = 'none';
+    if (!algumVisivel) section.style.display = 'none';
   });
 
   // ── Bloquear acesso direto a páginas não autorizadas ────────
   const currentFile = window.location.pathname.replace(/\\/g, '/').split('/').pop() || '';
   if (!currentFile || currentFile === 'index.html' || currentFile === 'dashboard.html') return;
   if (!permitidas.has(currentFile)) {
-    // Determina caminho do dashboard conforme profundidade da pasta
-    const profundidade = window.location.pathname.replace(/\\/g, '/').split('/').filter(Boolean).length;
-    const dash = profundidade >= 2 ? '../dashboard.html' : 'dashboard.html';
+    const partes = window.location.pathname.replace(/\\/g, '/').split('/').filter(Boolean);
+    const dash = partes.length >= 2 ? '../dashboard.html' : 'dashboard.html';
     alert('Você não tem permissão para acessar esta tela.');
     window.location.replace(dash);
   }
@@ -743,5 +761,5 @@ sbAplicarTema();
 document.addEventListener('DOMContentLoaded', () => {
   sbIniciarBtnTema('btnTema');
   sbInjetarMenuConfiguracoes();
-  sbFiltrarSidebar();
+  sbFiltrarSidebar().catch(() => { /* falha de rede silenciosa */ });
 });
