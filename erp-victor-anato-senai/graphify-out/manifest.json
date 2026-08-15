@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786820672.2034738,
-    "ast_hash": "bf04ae3f34504119fc0e680d855fa959",
+    "mtime": 1786826917.1881227,
+    "ast_hash": "a28d20a9c3d26a186c6554597309f931",
     "semantic_hash": ""
   },
   "DATABASE.sql": {
@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "SUPABASE.js": {
-    "mtime": 1786820554.772319,
-    "ast_hash": "8d80fdb93ccde9cf0c419d6291052fed",
+    "mtime": 1786828380.5197918,
+    "ast_hash": "52cdd71d0454fc61a42400a3f06948bf",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "configuracoes/usuarios.html": {
-    "mtime": 1786820554.8061395,
-    "ast_hash": "1a09d69d5ea9fdd3adc347d6af7170e6",
+    "mtime": 1786828388.7465096,
+    "ast_hash": "fc3661228747b4afd550683d9f35526f",
     "semantic_hash": ""
   },
   "estoque/controle.html": {
@@ -155,8 +155,23 @@
     "semantic_hash": ""
   },
   "seed.sql": {
-    "mtime": 1786820602.769311,
-    "ast_hash": "deee7fbd43fcddce199ebc3b32008b85",
+    "mtime": 1786820995.5904431,
+    "ast_hash": "0c28d6a26ff7e14cd08bfb0bdf496cab",
+    "semantic_hash": ""
+  },
+  "telas.json": {
+    "mtime": 1786828217.2556841,
+    "ast_hash": "7cfe8ebb23d4d551814a48d995b2d190",
+    "semantic_hash": ""
+  },
+  "sistema.json": {
+    "mtime": 1786828222.4108794,
+    "ast_hash": "909be16ea88ed951dad558c703b54715",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/REGRAS-NEGOCIOS.txt": {
+    "mtime": 1786828164.688372,
+    "ast_hash": "41d87b2d9f3e66f18edcd098daad9c88",
     "semantic_hash": ""
   }
 }

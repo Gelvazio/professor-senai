@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786738853.1378634,
-    "ast_hash": "bc06eca030b609b9abffa20418bc15cd",
+    "mtime": 1786820747.5911179,
+    "ast_hash": "c6c5f3c5ffa6b143c3d3780430f2f6a7",
     "semantic_hash": ""
   },
   "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md": {
@@ -59,16 +59,6 @@
     "ast_hash": "00688d2f01e1246859362b2ec5ab59e0",
     "semantic_hash": ""
   },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ACESSOS-ALUNOS-PRESIDENTE-GETULIO-2026-02.txt": {
-    "mtime": 1786735273.9231613,
-    "ast_hash": "941b3d8ae637bfcbfb5b5242cfe12d22",
-    "semantic_hash": ""
-  },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ANOTACOES-PEDAGOGICAS.txt": {
-    "mtime": 1786560048.1234307,
-    "ast_hash": "d576a25c8753182c5d0d9313980948a3",
-    "semantic_hash": ""
-  },
   "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/ASSUNTO-ADICIONAL.txt": {
     "mtime": 1786099783.7362757,
     "ast_hash": "60205259722255b498f1f5cd9de84c40",
@@ -110,8 +100,8 @@
     "semantic_hash": ""
   },
   "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-02-04-08-2026/SLIDE_AULA_02.html": {
-    "mtime": 1786735846.9200003,
-    "ast_hash": "994baaaf88939c502afce22fdb47d0b6",
+    "mtime": 1786819992.4300368,
+    "ast_hash": "7816fd6388af15f6e9edbad6afe85c0f",
     "semantic_hash": ""
   },
   "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-03-05-08-2026/SLIDE_INTERNET_WWW.html": {
@@ -219,49 +209,9 @@
     "ast_hash": "3d1153d5ccbdf83304c855d0a422e14c",
     "semantic_hash": ""
   },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-13-24-08-2026/FERRAMENTAS_MICROSOFT.html": {
-    "mtime": 1786100307.8977907,
-    "ast_hash": "874d00c95351de957a7088dfe7039467",
-    "semantic_hash": ""
-  },
   "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md": {
     "mtime": 1786559910.1572864,
     "ast_hash": "c87f5ea449082db117a0cf4b41f377a0",
-    "semantic_hash": ""
-  },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CRITERIOS-AVALIACAO-BLOCO-02.md": {
-    "mtime": 1786198008.1469736,
-    "ast_hash": "1d019b3b862b53c6a1b8b18f1ea58c8e",
-    "semantic_hash": ""
-  },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CURSOS-GRATIS-ONLINE.txt": {
-    "mtime": 1786193677.8858945,
-    "ast_hash": "4bb815b019b235b3bf3a3036ba9b66df",
-    "semantic_hash": ""
-  },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/Chamada.txt": {
-    "mtime": 1786195222.206517,
-    "ast_hash": "33e04e089a317f21b669b5b9226a1475",
-    "semantic_hash": ""
-  },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA X SLIDES - COBERTURA DE CONTEUDOS.txt": {
-    "mtime": 1786190731.2983985,
-    "ast_hash": "bd6b3026c0bc61adbde1177c3bc2a454",
-    "semantic_hash": ""
-  },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md": {
-    "mtime": 1786190711.6666532,
-    "ast_hash": "5b00ec57ecc233b3f4dc9e406246c44b",
-    "semantic_hash": ""
-  },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ESTRATEGIA-ENSINO-BLOCO-02.md": {
-    "mtime": 1786192132.305378,
-    "ast_hash": "d34e5c9b347df2a20da40f2e81dbef0d",
-    "semantic_hash": ""
-  },
-  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md": {
-    "mtime": 1786197999.8381872,
-    "ast_hash": "8df03955c3403bc1ca38cfbc20cca831",
     "semantic_hash": ""
   },
   "LISTA-AULAS-PLANEJAMENTO.txt": {
@@ -502,6 +452,16 @@
   "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-05.png": {
     "mtime": 1786560870.5825434,
     "ast_hash": "dfa5b6afac0d0144c9f64ac36659700d",
+    "semantic_hash": ""
+  },
+  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/FERRAMENTAS_MICROSOFT.html": {
+    "mtime": 1786100307.8977907,
+    "ast_hash": "874d00c95351de957a7088dfe7039467",
+    "semantic_hash": ""
+  },
+  "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/MATERIAL_INTRODUCAO_TIC.html": {
+    "mtime": 1786820524.1017027,
+    "ast_hash": "439f729ca99fedb0dff65beca36b31d8",
     "semantic_hash": ""
   }
 }

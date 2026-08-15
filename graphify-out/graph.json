@@ -814,10 +814,20 @@
       "norm_label": "claude.md"
     },
     {
-      "label": "professor-senai \u2014 Regras do Projeto",
+      "label": "update branch",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_update_branch",
+      "community": 10,
+      "norm_label": "update branch"
+    },
+    {
+      "label": "professor-senai \u2014 Regras do Projeto",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L2",
       "_origin": "ast",
       "id": "claude_professor_senai_regras_do_projeto",
       "community": 10,
@@ -827,7 +837,7 @@
       "label": "Commit e Push obrigat\u00f3rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L3",
+      "source_location": "L4",
       "_origin": "ast",
       "id": "claude_commit_e_push_obrigat\u00f3rios",
       "community": 10,
@@ -837,7 +847,7 @@
       "label": "Graphify",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L13",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "claude_graphify",
       "community": 10,
@@ -847,7 +857,7 @@
       "label": "Nunca perguntar \u2014 sempre executar",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "claude_nunca_perguntar_sempre_executar",
       "community": 10,
@@ -857,7 +867,7 @@
       "label": "Slides",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L29",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "claude_slides",
       "community": 10,
@@ -867,7 +877,7 @@
       "label": "Estrutura de Unidades Curriculares",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L33",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "claude_estrutura_de_unidades_curriculares",
       "community": 10,
@@ -877,7 +887,7 @@
       "label": "Pasta PROFESSOR",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L44",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "claude_pasta_professor",
       "community": 10,
@@ -887,7 +897,7 @@
       "label": "Estrutura obrigat\u00f3ria de cada UC",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L52",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
       "community": 10,
@@ -1082,16 +1092,6 @@
       "id": "erp_victor_anato_senai_claude",
       "community": 16,
       "norm_label": "claude.md"
-    },
-    {
-      "label": "ERP Victor Anato \u2014 Orienta\u00e7\u00f5es de Desenvolvimento",
-      "file_type": "document",
-      "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "community": 16,
-      "norm_label": "erp victor anato \u2014 orientacoes de desenvolvimento"
     },
     {
       "label": "Vis\u00e3o Geral do Sistema",
@@ -1300,7 +1300,7 @@
       "source_location": "L324",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "community": 16,
+      "community": 13,
       "norm_label": "modulo 4 \u2014 vendas e logistica"
     },
     {
@@ -1310,7 +1310,7 @@
       "source_location": "L328",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica",
-      "community": 16,
+      "community": 13,
       "norm_label": "fluxo do modulo de vendas e logistica"
     },
     {
@@ -1320,7 +1320,7 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_4_1_pedido_de_venda",
-      "community": 16,
+      "community": 13,
       "norm_label": "4.1 pedido de venda"
     },
     {
@@ -1330,7 +1330,7 @@
       "source_location": "L357",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_4_2_nota_fiscal_de_venda",
-      "community": 16,
+      "community": 13,
       "norm_label": "4.2 nota fiscal de venda"
     },
     {
@@ -1340,7 +1340,7 @@
       "source_location": "L390",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_4_3_romaneio",
-      "community": 16,
+      "community": 13,
       "norm_label": "4.3 romaneio"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_location": "L414",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_4_4_separa\u00e7\u00e3o_picking",
-      "community": 16,
+      "community": 13,
       "norm_label": "4.4 separacao (picking)"
     },
     {
@@ -1360,7 +1360,7 @@
       "source_location": "L431",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_4_5_expedi\u00e7\u00e3o",
-      "community": 16,
+      "community": 13,
       "norm_label": "4.5 expedicao"
     },
     {
@@ -1370,7 +1370,7 @@
       "source_location": "L453",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_4_6_entrega",
-      "community": 16,
+      "community": 13,
       "norm_label": "4.6 entrega"
     },
     {
@@ -1410,7 +1410,7 @@
       "source_location": "L511",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
-      "community": 16,
+      "community": 2,
       "norm_label": "regras gerais de interface"
     },
     {
@@ -1420,7 +1420,7 @@
       "source_location": "L513",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_listagens_tabelas",
-      "community": 16,
+      "community": 2,
       "norm_label": "listagens (tabelas)"
     },
     {
@@ -1430,7 +1430,7 @@
       "source_location": "L518",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_formul\u00e1rios",
-      "community": 16,
+      "community": 2,
       "norm_label": "formularios"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_location": "L524",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_numera\u00e7\u00e3o_autom\u00e1tica",
-      "community": 16,
+      "community": 2,
       "norm_label": "numeracao automatica"
     },
     {
@@ -1450,24 +1450,114 @@
       "source_location": "L538",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_responsividade",
-      "community": 16,
+      "community": 2,
       "norm_label": "responsividade"
+    },
+    {
+      "label": "Objetivo mobile",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L542",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_objetivo_mobile",
+      "community": 2,
+      "norm_label": "objetivo mobile"
+    },
+    {
+      "label": "Layout geral",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L548",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_layout_geral",
+      "community": 2,
+      "norm_label": "layout geral"
+    },
+    {
+      "label": "Tabelas (regra cr\u00edtica)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L555",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_tabelas_regra_cr\u00edtica",
+      "community": 2,
+      "norm_label": "tabelas (regra critica)"
+    },
+    {
+      "label": "Formul\u00e1rios",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L562",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_formul\u00e1rios_562",
+      "community": 2,
+      "norm_label": "formularios"
+    },
+    {
+      "label": "Modais",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L573",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_modais",
+      "community": 2,
+      "norm_label": "modais"
+    },
+    {
+      "label": "Header",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L579",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_header",
+      "community": 2,
+      "norm_label": "header"
+    },
+    {
+      "label": "Breakpoints obrigat\u00f3rios",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L584",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_breakpoints_obrigat\u00f3rios",
+      "community": 2,
+      "norm_label": "breakpoints obrigatorios"
+    },
+    {
+      "label": "CSS proibido em mobile",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L591",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_css_proibido_em_mobile",
+      "community": 2,
+      "norm_label": "css proibido em mobile"
+    },
+    {
+      "label": "Verifica\u00e7\u00e3o r\u00e1pida (checklist antes de cada commit)",
+      "file_type": "document",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L597",
+      "_origin": "ast",
+      "id": "erp_victor_anato_senai_claude_verifica\u00e7\u00e3o_r\u00e1pida_checklist_antes_de_cada_commit",
+      "community": 2,
+      "norm_label": "verificacao rapida (checklist antes de cada commit)"
     },
     {
       "label": "Autentica\u00e7\u00e3o",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L542",
+      "source_location": "L604",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_autentica\u00e7\u00e3o",
-      "community": 16,
+      "community": 2,
       "norm_label": "autenticacao"
     },
     {
       "label": "Tecnologias",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L550",
+      "source_location": "L612",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_tecnologias",
       "community": 16,
@@ -1477,7 +1567,7 @@
       "label": "Frontend \u2014 Vanilla JS (obrigat\u00f3rio)",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L552",
+      "source_location": "L614",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_frontend_vanilla_js_obrigat\u00f3rio",
       "community": 16,
@@ -1487,7 +1577,7 @@
       "label": "Estrutura de arquivos HTML (uma por tela/m\u00f3dulo)",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L564",
+      "source_location": "L626",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo",
       "community": 16,
@@ -1497,7 +1587,7 @@
       "label": "Padr\u00f5es JavaScript obrigat\u00f3rios",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L599",
+      "source_location": "L661",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_padr\u00f5es_javascript_obrigat\u00f3rios",
       "community": 16,
@@ -1507,7 +1597,7 @@
       "label": "Backend / Banco de Dados",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L632",
+      "source_location": "L694",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_backend_banco_de_dados",
       "community": 16,
@@ -1517,7 +1607,7 @@
       "label": "Supabase \u2014 Configura\u00e7\u00e3o e Uso da API",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L640",
+      "source_location": "L702",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
       "community": 16,
@@ -1527,7 +1617,7 @@
       "label": "Credenciais",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L642",
+      "source_location": "L704",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_credenciais",
       "community": 16,
@@ -1537,7 +1627,7 @@
       "label": "Padr\u00e3o de CRUD \u2014 fun\u00e7\u00f5es reutiliz\u00e1veis",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L656",
+      "source_location": "L718",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis",
       "community": 16,
@@ -1547,7 +1637,7 @@
       "label": "Filtros e operadores da API REST Supabase",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L716",
+      "source_location": "L778",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_filtros_e_operadores_da_api_rest_supabase",
       "community": 16,
@@ -1557,7 +1647,7 @@
       "label": "Esquema de tabelas do banco (PostgreSQL)",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L730",
+      "source_location": "L792",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_esquema_de_tabelas_do_banco_postgresql",
       "community": 16,
@@ -1567,7 +1657,7 @@
       "label": "RLS (Row Level Security)",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L1038",
+      "source_location": "L1100",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_rls_row_level_security",
       "community": 16,
@@ -1577,7 +1667,7 @@
       "label": "Autentica\u00e7\u00e3o do ERP",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L1049",
+      "source_location": "L1111",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_autentica\u00e7\u00e3o_do_erp",
       "community": 16,
@@ -1587,7 +1677,7 @@
       "label": "Ordem de Implementa\u00e7\u00e3o Sugerida",
       "file_type": "document",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L1093",
+      "source_location": "L1155",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
       "community": 16,
@@ -1602,16 +1692,6 @@
       "id": "erp_victor_anato_senai_passos_criacao_erp",
       "community": 29,
       "norm_label": "passos-criacao-erp.md"
-    },
-    {
-      "label": "Passos de Cria\u00e7\u00e3o \u2014 ERP Victor Anato",
-      "file_type": "document",
-      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "community": 29,
-      "norm_label": "passos de criacao \u2014 erp victor anato"
     },
     {
       "label": "Arquivos Base",
@@ -3482,636 +3562,6 @@
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_controle_de_perfil_frontend",
       "community": 27,
       "norm_label": "controle de perfil (frontend)"
-    },
-    {
-      "label": "CRITERIOS-AVALIACAO-BLOCO-02.md",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CRITERIOS-AVALIACAO-BLOCO-02.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_criterios_avaliacao_bloco_02",
-      "community": 17,
-      "norm_label": "criterios-avaliacao-bloco-02.md"
-    },
-    {
-      "label": "EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia",
-      "community": 13,
-      "norm_label": "ementa-introducao-tecnologia.md"
-    },
-    {
-      "label": "Ementa Oficial \u2014 Unidade Curricular 1",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "community": 13,
-      "norm_label": "ementa oficial \u2014 unidade curricular 1"
-    },
-    {
-      "label": "Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L2",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "community": 13,
-      "norm_label": "introducao a tecnologia da informacao e comunicacao"
-    },
-    {
-      "label": "Metadados do Documento",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_metadados_do_documento",
-      "community": 13,
-      "norm_label": "metadados do documento"
-    },
-    {
-      "label": "Prop\u00f3sito e Contexto",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_prop\u00f3sito_e_contexto",
-      "community": 13,
-      "norm_label": "proposito e contexto"
-    },
-    {
-      "label": "Objetivo Geral",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L32",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_objetivo_geral",
-      "community": 13,
-      "norm_label": "objetivo geral"
-    },
-    {
-      "label": "Distribui\u00e7\u00e3o de Carga Hor\u00e1ria",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_distribui\u00e7\u00e3o_de_carga_hor\u00e1ria",
-      "community": 13,
-      "norm_label": "distribuicao de carga horaria"
-    },
-    {
-      "label": "Capacidades B\u00e1sicas",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L63",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_capacidades_b\u00e1sicas",
-      "community": 13,
-      "norm_label": "capacidades basicas"
-    },
-    {
-      "label": "Conhecimentos Detalhados",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L79",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "community": 13,
-      "norm_label": "conhecimentos detalhados"
-    },
-    {
-      "label": "T\u00f3pico 1 \u2014 Comunica\u00e7\u00e3o em Equipes de Trabalho",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L85",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
-      "community": 13,
-      "norm_label": "topico 1 \u2014 comunicacao em equipes de trabalho"
-    },
-    {
-      "label": "T\u00f3pico 2 \u2014 Seguran\u00e7a da Informa\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L100",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
-      "community": 13,
-      "norm_label": "topico 2 \u2014 seguranca da informacao"
-    },
-    {
-      "label": "T\u00f3pico 3 \u2014 Internet (World Wide Web)",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L118",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_3_internet_world_wide_web",
-      "community": 13,
-      "norm_label": "topico 3 \u2014 internet (world wide web)"
-    },
-    {
-      "label": "T\u00f3pico 4 \u2014 Software de Escrit\u00f3rio",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L133",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_4_software_de_escrit\u00f3rio",
-      "community": 13,
-      "norm_label": "topico 4 \u2014 software de escritorio"
-    },
-    {
-      "label": "4.1. Editor de Textos",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L142",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_4_1_editor_de_textos",
-      "community": 13,
-      "norm_label": "4.1. editor de textos"
-    },
-    {
-      "label": "4.2. Editor de Planilhas Eletr\u00f4nicas",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L162",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_4_2_editor_de_planilhas_eletr\u00f4nicas",
-      "community": 13,
-      "norm_label": "4.2. editor de planilhas eletronicas"
-    },
-    {
-      "label": "4.3. Editor de Apresenta\u00e7\u00f5es",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L176",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_4_3_editor_de_apresenta\u00e7\u00f5es",
-      "community": 13,
-      "norm_label": "4.3. editor de apresentacoes"
-    },
-    {
-      "label": "T\u00f3pico 5 \u2014 Inform\u00e1tica (Hardware e Sistema Operacional)",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L192",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_5_inform\u00e1tica_hardware_e_sistema_operacional",
-      "community": 13,
-      "norm_label": "topico 5 \u2014 informatica (hardware e sistema operacional)"
-    },
-    {
-      "label": "5.1. Fundamentos de Hardware",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L197",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_5_1_fundamentos_de_hardware",
-      "community": 13,
-      "norm_label": "5.1. fundamentos de hardware"
-    },
-    {
-      "label": "5.2. Sistema Operacional",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L201",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_5_2_sistema_operacional",
-      "community": 13,
-      "norm_label": "5.2. sistema operacional"
-    },
-    {
-      "label": "T\u00f3pico 6 \u2014 Textos T\u00e9cnicos",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L213",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_6_textos_t\u00e9cnicos",
-      "community": 13,
-      "norm_label": "topico 6 \u2014 textos tecnicos"
-    },
-    {
-      "label": "T\u00f3pico 7 \u2014 Comunica\u00e7\u00e3o \u2014 G\u00eaneros Textuais",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L226",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_7_comunica\u00e7\u00e3o_g\u00eaneros_textuais",
-      "community": 13,
-      "norm_label": "topico 7 \u2014 comunicacao \u2014 generos textuais"
-    },
-    {
-      "label": "T\u00f3pico 8 \u2014 N\u00edveis de Fala",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L239",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_8_n\u00edveis_de_fala",
-      "community": 13,
-      "norm_label": "topico 8 \u2014 niveis de fala"
-    },
-    {
-      "label": "T\u00f3pico 9 \u2014 Elementos da Comunica\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L249",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_9_elementos_da_comunica\u00e7\u00e3o",
-      "community": 13,
-      "norm_label": "topico 9 \u2014 elementos da comunicacao"
-    },
-    {
-      "label": "Eixo Estruturante BNCC / Compet\u00eancia Integradora",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L264",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_eixo_estruturante_bncc_compet\u00eancia_integradora",
-      "community": 13,
-      "norm_label": "eixo estruturante bncc / competencia integradora"
-    },
-    {
-      "label": "Capacidades Socioemocionais",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L278",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_capacidades_socioemocionais",
-      "community": 13,
-      "norm_label": "capacidades socioemocionais"
-    },
-    {
-      "label": "Ambientes Pedag\u00f3gicos e Recursos",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L292",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ambientes_pedag\u00f3gicos_e_recursos",
-      "community": 13,
-      "norm_label": "ambientes pedagogicos e recursos"
-    },
-    {
-      "label": "ESTRATEGIA-ENSINO-BLOCO-02.md",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ESTRATEGIA-ENSINO-BLOCO-02.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_estrategia_ensino_bloco_02",
-      "community": 18,
-      "norm_label": "estrategia-ensino-bloco-02.md"
-    },
-    {
-      "label": "SA-BLOCO-02.md",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02",
-      "community": 2,
-      "norm_label": "sa-bloco-02.md"
-    },
-    {
-      "label": "Situa\u00e7\u00e3o de Aprendizagem \u2014 Bloco 02",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "community": 2,
-      "norm_label": "situacao de aprendizagem \u2014 bloco 02"
-    },
-    {
-      "label": "F\u00e1brica Digital: An\u00e1lise, Controle e Comunica\u00e7\u00e3o de Dados Industriais",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L2",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_f\u00e1brica_digital_an\u00e1lise_controle_e_comunica\u00e7\u00e3o_de_dados_industriais",
-      "community": 2,
-      "norm_label": "fabrica digital: analise, controle e comunicacao de dados industriais"
-    },
-    {
-      "label": "Identifica\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_identifica\u00e7\u00e3o",
-      "community": 2,
-      "norm_label": "identificacao"
-    },
-    {
-      "label": "Compet\u00eancia Geral do Curso",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_compet\u00eancia_geral_do_curso",
-      "community": 2,
-      "norm_label": "competencia geral do curso"
-    },
-    {
-      "label": "Objetivo Geral da Unidade Curricular",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_objetivo_geral_da_unidade_curricular",
-      "community": 2,
-      "norm_label": "objetivo geral da unidade curricular"
-    },
-    {
-      "label": "Estrat\u00e9gia de Aprendizagem Desafiadora",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L33",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_estrat\u00e9gia_de_aprendizagem_desafiadora",
-      "community": 2,
-      "norm_label": "estrategia de aprendizagem desafiadora"
-    },
-    {
-      "label": "Contextualiza\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L42",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_contextualiza\u00e7\u00e3o",
-      "community": 2,
-      "norm_label": "contextualizacao"
-    },
-    {
-      "label": "Capacidades B\u00e1sicas",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L61",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_capacidades_b\u00e1sicas",
-      "community": 2,
-      "norm_label": "capacidades basicas"
-    },
-    {
-      "label": "Capacidades Socioemocionais",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L69",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_capacidades_socioemocionais",
-      "community": 2,
-      "norm_label": "capacidades socioemocionais"
-    },
-    {
-      "label": "Objetos de Conhecimento",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L78",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_objetos_de_conhecimento",
-      "community": 2,
-      "norm_label": "objetos de conhecimento"
-    },
-    {
-      "label": "Entrega 1 \u2014 Relat\u00f3rio T\u00e9cnico",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L95",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_1_relat\u00f3rio_t\u00e9cnico",
-      "community": 2,
-      "norm_label": "entrega 1 \u2014 relatorio tecnico"
-    },
-    {
-      "label": "Desafio",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L99",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_desafio",
-      "community": 2,
-      "norm_label": "desafio"
-    },
-    {
-      "label": "Resultado Esperado",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L103",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_resultado_esperado",
-      "community": 2,
-      "norm_label": "resultado esperado"
-    },
-    {
-      "label": "Entrega 2 \u2014 Planilha de Controle de Estoque",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L109",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_2_planilha_de_controle_de_estoque",
-      "community": 2,
-      "norm_label": "entrega 2 \u2014 planilha de controle de estoque"
-    },
-    {
-      "label": "Desafio",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L113",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_desafio_113",
-      "community": 2,
-      "norm_label": "desafio"
-    },
-    {
-      "label": "Resultado Esperado",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L124",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_resultado_esperado_124",
-      "community": 2,
-      "norm_label": "resultado esperado"
-    },
-    {
-      "label": "Entrega 3 \u2014 Apresenta\u00e7\u00e3o Executiva",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L130",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_3_apresenta\u00e7\u00e3o_executiva",
-      "community": 2,
-      "norm_label": "entrega 3 \u2014 apresentacao executiva"
-    },
-    {
-      "label": "Desafio",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L134",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_desafio_134",
-      "community": 2,
-      "norm_label": "desafio"
-    },
-    {
-      "label": "Resultado Esperado",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L145",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_resultado_esperado_145",
-      "community": 2,
-      "norm_label": "resultado esperado"
-    },
-    {
-      "label": "Entrega 4 \u2014 Textos T\u00e9cnicos e Revis\u00e3o Geral",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L151",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_4_textos_t\u00e9cnicos_e_revis\u00e3o_geral",
-      "community": 2,
-      "norm_label": "entrega 4 \u2014 textos tecnicos e revisao geral"
-    },
-    {
-      "label": "Desafio",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L155",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_desafio_155",
-      "community": 2,
-      "norm_label": "desafio"
-    },
-    {
-      "label": "Resultado Esperado",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L170",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_resultado_esperado_170",
-      "community": 2,
-      "norm_label": "resultado esperado"
-    },
-    {
-      "label": "Plano de Aulas \u2014 Bloco 02",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L176",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_plano_de_aulas_bloco_02",
-      "community": 2,
-      "norm_label": "plano de aulas \u2014 bloco 02"
-    },
-    {
-      "label": "Detalhamento das Estrat\u00e9gias",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L186",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_detalhamento_das_estrat\u00e9gias",
-      "community": 2,
-      "norm_label": "detalhamento das estrategias"
-    },
-    {
-      "label": "Recursos e Ambientes Pedag\u00f3gicos",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L200",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_recursos_e_ambientes_pedag\u00f3gicos",
-      "community": 2,
-      "norm_label": "recursos e ambientes pedagogicos"
-    },
-    {
-      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L210",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o",
-      "community": 2,
-      "norm_label": "criterios de avaliacao"
-    },
-    {
-      "label": "Para a Capacidade C1 \u2014 Comunica\u00e7\u00e3o Oral e Escrita Profissional",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L212",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c1_comunica\u00e7\u00e3o_oral_e_escrita_profissional",
-      "community": 2,
-      "norm_label": "para a capacidade c1 \u2014 comunicacao oral e escrita profissional"
-    },
-    {
-      "label": "Para a Capacidade C3 \u2014 Interpreta\u00e7\u00e3o de Textos T\u00e9cnicos",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L218",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c3_interpreta\u00e7\u00e3o_de_textos_t\u00e9cnicos",
-      "community": 2,
-      "norm_label": "para a capacidade c3 \u2014 interpretacao de textos tecnicos"
-    },
-    {
-      "label": "Para a Capacidade C4 \u2014 Hardware e Software",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L224",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c4_hardware_e_software",
-      "community": 2,
-      "norm_label": "para a capacidade c4 \u2014 hardware e software"
-    },
-    {
-      "label": "Para a Capacidade C5 \u2014 Recursos Web",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L230",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c5_recursos_web",
-      "community": 2,
-      "norm_label": "para a capacidade c5 \u2014 recursos web"
-    },
-    {
-      "label": "Para a Capacidade C1 \u2014 Comunica\u00e7\u00e3o Escrita T\u00e9cnica (Entrega 4)",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L236",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c1_comunica\u00e7\u00e3o_escrita_t\u00e9cnica_entrega_4",
-      "community": 2,
-      "norm_label": "para a capacidade c1 \u2014 comunicacao escrita tecnica (entrega 4)"
-    },
-    {
-      "label": "Para a Capacidade C3 \u2014 Textos T\u00e9cnicos e Normas (Entrega 4)",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L242",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c3_textos_t\u00e9cnicos_e_normas_entrega_4",
-      "community": 2,
-      "norm_label": "para a capacidade c3 \u2014 textos tecnicos e normas (entrega 4)"
-    },
-    {
-      "label": "Instrumentos de Avalia\u00e7\u00e3o da Aprendizagem",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L250",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_instrumentos_de_avalia\u00e7\u00e3o_da_aprendizagem",
-      "community": 2,
-      "norm_label": "instrumentos de avaliacao da aprendizagem"
-    },
-    {
-      "label": "Refer\u00eancias Bibliogr\u00e1ficas",
-      "file_type": "document",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L259",
-      "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_refer\u00eancias_bibliogr\u00e1ficas",
-      "community": 2,
-      "norm_label": "referencias bibliograficas"
     }
   ],
   "links": [
@@ -5121,6 +4571,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_update_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5361,21 +4821,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude",
-      "target": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L21",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_1_cadastros",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5383,9 +4833,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L121",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_2_compras",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5393,9 +4843,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L247",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_3_estoque",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5403,9 +4853,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L324",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5413,19 +4863,19 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L472",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_5_configura\u00e7\u00f5es"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L563",
+      "source_location": "L1155",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_ordem_de_implementa\u00e7\u00e3o_sugerida"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5433,29 +4883,29 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L511",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_regras_gerais_de_interface"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_regras_gerais_de_interface",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L640",
+      "source_location": "L702",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
-      "source_location": "L550",
+      "source_location": "L612",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_tecnologias"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_tecnologias",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5463,9 +4913,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L497",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_dashboard"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_dashboard",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5473,9 +4923,9 @@
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_claude_erp_victor_anato_orienta\u00e7\u00f5es_de_desenvolvimento",
-      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_do_sistema"
+      "source": "erp_victor_anato_senai_claude",
+      "target": "erp_victor_anato_senai_claude_vis\u00e3o_geral_do_sistema",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5771,6 +5221,96 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L584",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_breakpoints_obrigat\u00f3rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L591",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_css_proibido_em_mobile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L562",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_formul\u00e1rios_562",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L579",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L548",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_layout_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L573",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_modais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L542",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_objetivo_mobile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L555",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_tabelas_regra_cr\u00edtica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
+      "source_location": "L597",
+      "weight": 1.0,
+      "source": "erp_victor_anato_senai_claude_responsividade",
+      "target": "erp_victor_anato_senai_claude_verifica\u00e7\u00e3o_r\u00e1pida_checklist_antes_de_cada_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "erp-victor-anato-senai/CLAUDE.md",
       "source_location": "L632",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5871,21 +5411,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_arquivos_base"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_arquivos_base",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5893,9 +5423,9 @@
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_1_autentica\u00e7\u00e3o"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_1_autentica\u00e7\u00e3o",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5903,9 +5433,9 @@
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L31",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5913,9 +5443,9 @@
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L43",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_3_m\u00f3dulo_cadastros"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_3_m\u00f3dulo_cadastros",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5923,9 +5453,9 @@
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L56",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_4_m\u00f3dulo_compras"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_4_m\u00f3dulo_compras",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5933,9 +5463,9 @@
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L71",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_5_m\u00f3dulo_estoque"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_5_m\u00f3dulo_estoque",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5943,9 +5473,9 @@
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L83",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5953,9 +5483,9 @@
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L98",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5963,9 +5493,9 @@
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L109",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_8_ajustes_finais_e_testes"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_passo_8_ajustes_finais_e_testes",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5973,9 +5503,9 @@
       "source_file": "erp-victor-anato-senai/PASSOS-CRIACAO-ERP.md",
       "source_location": "L122",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "erp_victor_anato_senai_passos_criacao_erp_passos_de_cria\u00e7\u00e3o_erp_victor_anato",
-      "target": "erp_victor_anato_senai_passos_criacao_erp_resumo_de_progresso"
+      "source": "erp_victor_anato_senai_passos_criacao_erp",
+      "target": "erp_victor_anato_senai_passos_criacao_erp_resumo_de_progresso",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7616,598 +7146,8 @@
       "confidence_score": 1.0,
       "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase",
       "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_tabela_curso"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L328",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ambientes_pedag\u00f3gicos_e_recursos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L63",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_capacidades_b\u00e1sicas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L314",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_capacidades_socioemocionais"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L79",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L40",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_distribui\u00e7\u00e3o_de_carga_hor\u00e1ria"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L300",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_eixo_estruturante_bncc_compet\u00eancia_integradora"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_metadados_do_documento"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L32",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_objetivo_geral"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_ementa_oficial_unidade_curricular_1",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_prop\u00f3sito_e_contexto"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L85",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_2_seguran\u00e7a_da_informa\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L118",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_3_internet_world_wide_web"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L137",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_4_software_de_escrit\u00f3rio"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L210",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_5_inform\u00e1tica_hardware_e_sistema_operacional"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L236",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_6_textos_t\u00e9cnicos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L249",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_7_comunica\u00e7\u00e3o_g\u00eaneros_textuais"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L266",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_8_n\u00edveis_de_fala"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L281",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_conhecimentos_detalhados",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_9_elementos_da_comunica\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L144",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_4_software_de_escrit\u00f3rio",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_4_1_editor_de_textos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L170",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_4_software_de_escrit\u00f3rio",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_4_2_editor_de_planilhas_eletr\u00f4nicas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L190",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_4_software_de_escrit\u00f3rio",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_4_3_editor_de_apresenta\u00e7\u00f5es"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L215",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_5_inform\u00e1tica_hardware_e_sistema_operacional",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_5_1_fundamentos_de_hardware"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TECNOLOGIA.md",
-      "source_location": "L219",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_t\u00f3pico_5_inform\u00e1tica_hardware_e_sistema_operacional",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_ementa_introducao_tecnologia_5_2_sistema_operacional"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_capacidades_b\u00e1sicas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L69",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_capacidades_socioemocionais"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_compet\u00eancia_geral_do_curso"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_contextualiza\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L210",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L95",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_1_relat\u00f3rio_t\u00e9cnico"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L109",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_2_planilha_de_controle_de_estoque"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L130",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_3_apresenta\u00e7\u00e3o_executiva"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L151",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_4_textos_t\u00e9cnicos_e_revis\u00e3o_geral"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L33",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_estrat\u00e9gia_de_aprendizagem_desafiadora"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_f\u00e1brica_digital_an\u00e1lise_controle_e_comunica\u00e7\u00e3o_de_dados_industriais"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_identifica\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L250",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_instrumentos_de_avalia\u00e7\u00e3o_da_aprendizagem"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_objetivo_geral_da_unidade_curricular"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L78",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_objetos_de_conhecimento"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L176",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_plano_de_aulas_bloco_02"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L200",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_recursos_e_ambientes_pedag\u00f3gicos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L259",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_situa\u00e7\u00e3o_de_aprendizagem_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_refer\u00eancias_bibliogr\u00e1ficas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L99",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_1_relat\u00f3rio_t\u00e9cnico",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_desafio"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L103",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_1_relat\u00f3rio_t\u00e9cnico",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_resultado_esperado"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L113",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_2_planilha_de_controle_de_estoque",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_desafio_113"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L124",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_2_planilha_de_controle_de_estoque",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_resultado_esperado_124"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L134",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_3_apresenta\u00e7\u00e3o_executiva",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_desafio_134"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L145",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_3_apresenta\u00e7\u00e3o_executiva",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_resultado_esperado_145"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L155",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_4_textos_t\u00e9cnicos_e_revis\u00e3o_geral",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_desafio_155"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L170",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_entrega_4_textos_t\u00e9cnicos_e_revis\u00e3o_geral",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_resultado_esperado_170"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L186",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_plano_de_aulas_bloco_02",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_detalhamento_das_estrat\u00e9gias"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L236",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c1_comunica\u00e7\u00e3o_escrita_t\u00e9cnica_entrega_4"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L212",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c1_comunica\u00e7\u00e3o_oral_e_escrita_profissional"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L218",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c3_interpreta\u00e7\u00e3o_de_textos_t\u00e9cnicos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L242",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c3_textos_t\u00e9cnicos_e_normas_entrega_4"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L224",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c4_hardware_e_software"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/SA-BLOCO-02.md",
-      "source_location": "L230",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_crit\u00e9rios_de_avalia\u00e7\u00e3o",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_sa_bloco_02_para_a_capacidade_c5_recursos_web"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6dddcb5ee7b8259b3c2d2de2de835d90a0001bf7"
+  "built_at_commit": "68f54b60193c9c328f839c23853e0ce1663bbeea"
 }

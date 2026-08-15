@@ -1,16 +1,16 @@
-# Graph Report - professor-senai  (2026-08-14)
+# Graph Report - professor-senai  (2026-08-15)
 
 ## Corpus Check
-- 33 files · ~385,769 words
+- 31 files · ~427,869 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 411 nodes · 407 edges · 30 communities (29 shown, 1 thin omitted)
+- 356 nodes · 356 edges · 28 communities (27 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6dddcb5e`
+- Built from commit: `68f54b60`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,16 +43,16 @@
 - [[_COMMUNITY_Community 29|Community 29]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Situação de Aprendizagem — Bloco 02` - 19 edges
-2. `/graphify` - 15 edges
-3. `ATIVIDADE INTEGRADORA — UC1 Introdução à TIC` - 15 edges
-4. `What You Must Do When Invoked` - 14 edges
-5. `Aulas — TIC (Introdução à Tecnologia da Informação e Comunicação)` - 13 edges
-6. `ERP Victor Anato — Orientações de Desenvolvimento` - 12 edges
-7. `Passos de Criação — ERP Victor Anato` - 11 edges
-8. `Ementa Oficial — Unidade Curricular 1` - 11 edges
-9. `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` - 10 edges
-10. `Conhecimentos` - 10 edges
+1. `/graphify` - 15 edges
+2. `ATIVIDADE INTEGRADORA — UC1 Introdução à TIC` - 15 edges
+3. `What You Must Do When Invoked` - 14 edges
+4. `Aulas — TIC (Introdução à Tecnologia da Informação e Comunicação)` - 13 edges
+5. `Responsividade` - 10 edges
+6. `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` - 10 edges
+7. `Conhecimentos` - 10 edges
+8. `Ficha de Cadastro de Produto Customizado — Rio do Sul Mais Tech / SENAI` - 9 edges
+9. `Arquivos` - 9 edges
+10. `Pesquisa — Planilha Excel de Controle de Abate de Suínos` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -60,7 +60,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (30 total, 1 thin omitted)
+## Communities (28 total, 1 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.10
@@ -71,8 +71,8 @@ Cohesion: 0.13
 Nodes (15): 1. Comunicação em Equipes de Trabalho, 2. Segurança da Informação, 3. Internet (World Wide Web), 4.1. Editor de Textos, 4.2. Editor de Planilhas Eletrônicas, 4.3. Editor de Apresentações, 4. Software de Escritório, 5.1. Fundamentos de Hardware (+7 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.06
-Nodes (34): Capacidades Básicas, Capacidades Socioemocionais, Competência Geral do Curso, Contextualização, Critérios de Avaliação, Desafio, Desafio, Desafio (+26 more)
+Cohesion: 0.13
+Nodes (15): Autenticação, Breakpoints obrigatórios, CSS proibido em mobile, Formulários, Formulários, Header, Layout geral, Listagens (tabelas) (+7 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.17
@@ -103,8 +103,8 @@ Cohesion: 0.25
 Nodes (7): Analise Ementas — Implementation Plan, Global Constraints, Self-Review, Task 1: CSS — Estilos do botão e do modal de análise, Task 2: HTML — Botão na toolbar e modal de análise, Task 3: JavaScript — Dicionário, matching e funções de abrir/fechar, Task 4: Commit e push
 
 ### Community 10 - "Community 10"
-Cohesion: 0.25
-Nodes (8): Commit e Push obrigatórios, Estrutura de Unidades Curriculares, Estrutura obrigatória de cada UC, Graphify, Nunca perguntar — sempre executar, Pasta PROFESSOR, professor-senai — Regras do Projeto, Slides
+Cohesion: 0.22
+Nodes (9): Commit e Push obrigatórios, Estrutura de Unidades Curriculares, Estrutura obrigatória de cada UC, Graphify, Nunca perguntar — sempre executar, Pasta PROFESSOR, professor-senai — Regras do Projeto, Slides (+1 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.12
@@ -115,16 +115,16 @@ Cohesion: 0.14
 Nodes (13): AULA 01 — 03/08/2026, AULA 02 — 04/08/2026, AULA 03 — 05/08/2026, AULA 04 — 06/08/2026, AULA 05 — 07/08/2026, AULA 06 — 10/08/2026, AULA 07 — 11/08/2026, AULA 08 — 12/08/2026 (+5 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.08
-Nodes (25): 4.1. Editor de Textos, 4.2. Editor de Planilhas Eletrônicas, 4.3. Editor de Apresentações, 5.1. Fundamentos de Hardware, 5.2. Sistema Operacional, Ambientes Pedagógicos e Recursos, Capacidades Básicas, Capacidades Socioemocionais (+17 more)
+Cohesion: 0.25
+Nodes (8): 4.1 Pedido de Venda, 4.2 Nota Fiscal de Venda, 4.3 Romaneio, 4.4 Separação (Picking), 4.5 Expedição, 4.6 Entrega, Fluxo do Módulo de Vendas e Logística, Módulo 4 — VENDAS E LOGÍSTICA
 
 ### Community 15 - "Community 15"
 Cohesion: 0.11
 Nodes (17): Abas criadas, ABATE, AGENDAMENTOS (Porcos a chegar), Arquivo Excel Gerado, Boas Práticas Operacionais, Campos Principais, COLONOS, Contexto (+9 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.05
-Nodes (43): 1.1 Clientes, 1.2 Fornecedores, 1.3 Produtos, 1.4 Transportadoras, 3.1 Armazenagem, 3.2 Controle de Estoque, 3.3 Movimentações, 3.4 Inventário (+35 more)
+Cohesion: 0.07
+Nodes (28): 1.1 Clientes, 1.2 Fornecedores, 1.3 Produtos, 1.4 Transportadoras, 3.1 Armazenagem, 3.2 Controle de Estoque, 3.3 Movimentações, 3.4 Inventário (+20 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.40
@@ -159,28 +159,28 @@ Cohesion: 0.25
 Nodes (8): 2.1 Planejamento, 2.2 Solicitação de Compras, 2.3 Pedido de Compras, 2.4 Recebimento, 2.5 Conferência, 2.6 Entrada de Nota Fiscal, Fluxo do Módulo de Compras, Módulo 2 — COMPRAS
 
 ### Community 29 - "Community 29"
-Cohesion: 0.17
-Nodes (11): Arquivos Base, Passo 1 — Autenticação, Passo 2 — Dashboard (Visão Geral), Passo 3 — Módulo Cadastros, Passo 4 — Módulo Compras, Passo 5 — Módulo Estoque, Passo 6 — Módulo Vendas e Logística, Passo 7 — Módulo Configurações (+3 more)
+Cohesion: 0.18
+Nodes (10): Arquivos Base, Passo 1 — Autenticação, Passo 2 — Dashboard (Visão Geral), Passo 3 — Módulo Cadastros, Passo 4 — Módulo Compras, Passo 5 — Módulo Estoque, Passo 6 — Módulo Vendas e Logística, Passo 7 — Módulo Configurações (+2 more)
 
 ## Knowledge Gaps
-- **288 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Overview`, `Fluxo Obrigatório` (+283 more)
+- **249 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Overview`, `Fluxo Obrigatório` (+244 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ERP Victor Anato — Orientações de Desenvolvimento` connect `Community 16` to `Community 28`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Why does `SENAI — Projeto de Curso: Aprendizagem Industrial` connect `Community 27` to `Community 3`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **Why does `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` connect `Community 27` to `Community 1`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `Regras Gerais de Interface` connect `Community 2` to `Community 16`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _289 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _250 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.09879032258064516 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
