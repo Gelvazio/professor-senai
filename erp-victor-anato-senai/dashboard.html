@@ -18,8 +18,8 @@
     .sidebar-link { display: flex; align-items: center; gap: 10px; padding: 9px 20px; font-size: 13px; font-weight: 500; color: var(--color-text-muted); text-decoration: none; border-left: 3px solid transparent; transition: background .15s, color .15s, border-color .15s; }
     .sidebar-link:hover { background: #e8f0fe; color: var(--color-primary); }
     .sidebar-link.ativo { background: #e8f0fe; color: var(--color-primary); border-left-color: var(--color-primary); font-weight: 600; }
-    [data-theme="dark"] .sidebar-link:hover, [data-theme="dark"] .sidebar-link.ativo { background: #1e2554; color: #7aa3d4; }
-    [data-theme="dark"] .sidebar-link.ativo { border-left-color: #7aa3d4; }
+    [data-theme="dark"] .sidebar-link:hover, [data-theme="dark"] .sidebar-link.ativo { background: #2d1f5e; color: #c4b5fd; }
+    [data-theme="dark"] .sidebar-link.ativo { border-left-color: #8b5cf6; }
     .sidebar-icon { font-size: 16px; width: 20px; text-align: center; flex-shrink: 0; }
 
     /* ── Conteúdo principal ── */
@@ -64,9 +64,9 @@
     .mov-table td { padding: 10px 16px; border-bottom: 1px solid var(--color-border-faint); color: var(--color-text-secondary); }
     .mov-table tr:last-child td { border-bottom: none; }
     .mov-table tr:hover td { background: #f5f8ff; }
-    [data-theme="dark"] .mov-table th { color: #7aa3d4; border-bottom-color: var(--color-border-light); }
+    [data-theme="dark"] .mov-table th { color: #a78bfa; border-bottom-color: var(--color-border-light); }
     [data-theme="dark"] .mov-table td { color: var(--color-text-secondary); border-bottom-color: var(--color-border-light); }
-    [data-theme="dark"] .mov-table tr:hover td { background: #22252e; }
+    [data-theme="dark"] .mov-table tr:hover td { background: #1a1535; }
 
     .tipo-badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
     .tipo-entrada  { background: #e6f4ea; color: #1e7e34; }
@@ -77,7 +77,36 @@
     /* ── Alerta estoque ── */
     .estoque-alerta { background: #fff3cd; border: 1px solid #ffc107; border-radius: var(--radius-md); padding: 12px 16px; margin-bottom: 24px; font-size: 13px; color: #856404; display: none; }
     .estoque-alerta.show { display: flex; align-items: center; gap: 10px; }
-    [data-theme="dark"] .estoque-alerta { background: #2a2000; border-color: #7a5c00; color: #f0c040; }
+    [data-theme="dark"] .estoque-alerta { background: #1e1200; border-color: #fbbf24; color: #fbbf24; box-shadow: 0 0 16px rgba(251,191,36,0.15); }
+
+    /* ── KPI dark mode — glow + cores neon ── */
+    [data-theme="dark"] .kpi-card { box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 0 1px rgba(139,92,246,0.12); background: linear-gradient(135deg, #130e28 0%, #1a1535 100%); }
+    [data-theme="dark"] .kpi-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 28px rgba(139,92,246,0.25); transform: translateY(-2px); }
+    [data-theme="dark"] .kpi-card.azul    { border-left-color: #60a5fa; }
+    [data-theme="dark"] .kpi-card.verde   { border-left-color: #34d399; }
+    [data-theme="dark"] .kpi-card.laranja { border-left-color: #fb923c; }
+    [data-theme="dark"] .kpi-card.vermelho{ border-left-color: #f87171; }
+    [data-theme="dark"] .kpi-card.roxo    { border-left-color: #a78bfa; }
+    [data-theme="dark"] .kpi-card.vermelho .kpi-value { color: #f87171; }
+    [data-theme="dark"] .kpi-value { color: var(--color-text); }
+    [data-theme="dark"] .kpi-label { color: var(--color-text-muted); }
+
+    /* ── Badges dark mode neon ── */
+    [data-theme="dark"] .badge-azul    { background: rgba(96,165,250,0.15);  color: #93c5fd; }
+    [data-theme="dark"] .badge-verde   { background: rgba(52,211,153,0.15);  color: #6ee7b7; }
+    [data-theme="dark"] .badge-laranja { background: rgba(251,146,60,0.15);  color: #fdba74; }
+    [data-theme="dark"] .badge-roxo    { background: rgba(167,139,250,0.15); color: #c4b5fd; }
+    [data-theme="dark"] .badge-vermelho{ background: rgba(248,113,113,0.15); color: #fca5a5; }
+    [data-theme="dark"] .badge-cinza   { background: rgba(139,92,246,0.1);   color: var(--color-text-muted); }
+
+    /* ── Content section dark ── */
+    [data-theme="dark"] .content-section { background: linear-gradient(135deg, #130e28 0%, #1a1535 100%); box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 0 1px rgba(139,92,246,0.12); }
+
+    /* ── Tipo badge dark ── */
+    [data-theme="dark"] .tipo-entrada { background: rgba(52,211,153,0.15);  color: #6ee7b7; }
+    [data-theme="dark"] .tipo-saida   { background: rgba(248,113,113,0.15); color: #fca5a5; }
+    [data-theme="dark"] .tipo-ajuste  { background: rgba(251,191,36,0.15);  color: #fde68a; }
+    [data-theme="dark"] .tipo-transf  { background: rgba(167,139,250,0.15); color: #c4b5fd; }
 
     /* ── 2 colunas no desktop ── */
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
