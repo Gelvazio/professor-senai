@@ -112,11 +112,11 @@
   --color-surface-2:     #1a1535;
   --color-surface-3:     #211a40;
 
-  --color-text:          #ede9fe;
-  --color-text-secondary:#c4b5fd;
-  --color-text-muted:    #9d8ec0;
-  --color-text-faint:    #6b5e8a;
-  --color-text-disabled: #4a3f65;
+  --color-text:          #f8f6ff;
+  --color-text-secondary:#e2d9f8;
+  --color-text-muted:    #c0b2d8;
+  --color-text-faint:    #9080b4;
+  --color-text-disabled: #5e5080;
 
   --color-border:        rgba(139,92,246,0.30);
   --color-border-light:  rgba(139,92,246,0.18);
@@ -678,7 +678,7 @@ body {
   font-size: var(--font-size-md);
   font-style: italic;
 }
-[data-theme="dark"] .crud-vazio { color: var(--color-text-muted); }
+[data-theme="dark"] .crud-vazio { color: #9080b4; }
 
 /* ============================================================
    MODAL
@@ -802,7 +802,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-[data-theme="dark"] .section-label { color: var(--color-text-muted); }
+[data-theme="dark"] .section-label { color: #c4b5fd; }
 
 .grid-2 {
   display: grid;
@@ -1188,6 +1188,15 @@ body {
   color: var(--color-primary);
   margin-bottom: 12px;
 }
+
+/* ── Tipografia dark mode — textos mais brancos ── */
+[data-theme="dark"] .page-title    { color: #f8f6ff; }
+[data-theme="dark"] .page-subtitle { color: #c0b2d8; }
+[data-theme="dark"] .section-title { color: #a78bfa; }
+[data-theme="dark"] .card-title    { color: #f8f6ff; }
+[data-theme="dark"] .card-desc     { color: #c0b2d8; }
+[data-theme="dark"] .sidebar-section-label { color: #7e6faa; }
+[data-theme="dark"] .admin-card-label { color: #c4b5fd; }
 
 /* ============================================================
    UTILITÁRIOS
