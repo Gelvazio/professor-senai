@@ -91,9 +91,7 @@
       <a class="sidebar-link" href="expedicao.html"><span class="sidebar-icon">🚀</span> Expedição</a>
       <a class="sidebar-link" href="entrega.html"><span class="sidebar-icon">📍</span> Entrega</a>
     </div>
-    <div class="sidebar-section" id="menuConfiguracoes" style="display:none">
-      <div class="sidebar-section-label">Configurações</div>
-      <a class="sidebar-link" href="../configuracoes/usuarios.html"><span class="sidebar-icon">👤</span> Usuários</a>
+<a class="sidebar-link" href="../configuracoes/usuarios.html"><span class="sidebar-icon">👤</span> Usuários</a>
       <a class="sidebar-link" href="../configuracoes/telas.html"><span class="sidebar-icon">🖥️</span> Telas</a>
       <a class="sidebar-link" href="../configuracoes/perfis.html"><span class="sidebar-icon">🔑</span> Perfis</a>
     </div>
@@ -243,7 +241,6 @@
   sbExigirPermissao('vendas', '../dashboard.html');
 
   document.getElementById('roleBadge').textContent = sbPerfil() || '';
-  if (sbIsAdmin()) document.getElementById('menuConfiguracoes').style.display = '';
 
   (function () {
     const t = localStorage.getItem('senai_tema') || 'light';
