@@ -214,15 +214,14 @@ async function sbLogin(email, senha) {
   const rows = await sbListar(
     'erp_usuarios',
     `email=eq.${encodeURIComponent(email)}&senha_hash=eq.${hash}&status=eq.true` +
-    `&select=id,nome,email,cargo,perfil_id,permissoes,perfil(descricao,telas)`
+    `&select=id,nome,email,cargo,perfil_id,permissoes,perfil(nome,ativo)`
   );
   if (!rows.length) throw new Error('E-mail ou senha incorretos.');
 
   const user = rows[0];
-  const descricaoPerfil = (user.perfil && user.perfil.descricao) || 'Usuário';
-  localStorage.setItem('erp_role',       descricaoPerfil);
+  const nomePerfil = (user.perfil && user.perfil.nome) || 'Usuário';
+  localStorage.setItem('erp_role',       nomePerfil);
   localStorage.setItem('erp_perfil_id',  String(user.perfil_id));
-  localStorage.setItem('erp_telas',      JSON.stringify((user.perfil && user.perfil.telas) || []));
   localStorage.setItem('erp_user_id',    user.id);
   localStorage.setItem('erp_user_nome',  user.nome);
   localStorage.setItem('erp_user_email', user.email);

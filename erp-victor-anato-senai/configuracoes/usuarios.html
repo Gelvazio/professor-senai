@@ -447,7 +447,7 @@
     const perfilId = parseInt(document.getElementById('fPerfil').value) || 0;
     const p = perfis.find(x => x.id === perfilId);
     const grupo = document.getElementById('groupPermissoes');
-    grupo.style.display = (p && p.descricao !== 'Administrador') ? '' : 'none';
+    grupo.style.display = (p && p.nome !== 'Administrador') ? '' : 'none';
   }
 
   // ── Abrir modal criar ──────────────────────────────────────
@@ -553,7 +553,7 @@
   // ── Coleta permissões do formulário ────────────────────────
   function coletarPermissoes(perfilId) {
     const p = perfis.find(x => x.id === perfilId);
-    if (p && p.descricao === 'Administrador') {
+    if (p && p.nome === 'Administrador') {
       return { visao_geral: true, cadastros: true, compras: true, estoque: true, vendas: true };
     }
     return {
@@ -745,7 +745,7 @@
 
   // ── Renderizar badges ───────────────────────────────────────
   function perfilBadge(perfil) {
-    const desc = typeof perfil === 'object' ? (perfil && perfil.descricao) : perfil;
+    const desc = typeof perfil === 'object' ? (perfil && perfil.nome) : perfil;
     if (desc === 'Administrador') return '<span class="badge badge-azul">Administrador</span>';
     return `<span class="badge badge-cinza">${escHtml(desc || 'Usuário')}</span>`;
   }
@@ -756,7 +756,7 @@
   }
 
   function permissoesBadge(perfil, perms) {
-    const desc = typeof perfil === 'object' ? (perfil && perfil.descricao) : perfil;
+    const desc = typeof perfil === 'object' ? (perfil && perfil.nome) : perfil;
     if (desc === 'Administrador') return '<span style="font-size:11px;color:var(--color-text-faint)">Acesso total</span>';
     const perms_obj = perms || {};
     const ativos = [
@@ -775,7 +775,7 @@
     const tbody = document.getElementById('tbodyUsuarios');
     tbody.innerHTML = '<tr><td colspan="6" class="vazio">Carregando…</td></tr>';
     try {
-      const rows = await sbListar('erp_usuarios', 'order=nome.asc&select=id,nome,email,cargo,perfil_id,status,permissoes,created_at,perfil(descricao,telas)');
+      const rows = await sbListar('erp_usuarios', 'order=nome.asc&select=id,nome,email,cargo,perfil_id,status,permissoes,created_at,perfil(nome,ativo)');
       todosUsuarios = rows;
       renderizarTabela(rows);
     } catch (e) {
@@ -862,7 +862,7 @@
     } catch (e) {
       perfis = [];
     }
-    const adminPerfil = perfis.find(p => p.descricao === 'Administrador');
+    const adminPerfil = perfis.find(p => p.nome === 'Administrador');
     adminPerfilId = adminPerfil ? adminPerfil.id : null;
 
     const selectPerfil  = document.getElementById('fPerfil');
@@ -871,12 +871,12 @@
     perfis.forEach(p => {
       const opt1 = document.createElement('option');
       opt1.value = p.id;
-      opt1.textContent = p.descricao;
+      opt1.textContent = p.nome;
       selectPerfil.appendChild(opt1);
 
       const opt2 = document.createElement('option');
       opt2.value = p.id;
-      opt2.textContent = p.descricao;
+      opt2.textContent = p.nome;
       selectFiltro.appendChild(opt2);
     });
 
