@@ -915,10 +915,26 @@ body {
   transition: color var(--transition-fast), background var(--transition-fast);
 }
 .sidebar-acc-btn:hover { color: var(--color-text-muted); background: rgba(0,67,132,0.05); }
-[data-theme="dark"] .sidebar-acc-btn:hover { background: rgba(122,163,212,0.08); }
-.sidebar-acc-arrow { font-size: 9px; flex-shrink: 0; transition: transform var(--transition-mid); }
-.sidebar-acc-body { overflow: hidden; max-height: 0; transition: max-height 0.28s ease; }
-.sidebar-acc-body.open { max-height: 600px; }
+[data-theme="dark"] .sidebar-acc-btn:hover { background: rgba(139,92,246,0.10); color: #c4b5fd; }
+[data-theme="dark"] .sidebar-acc-btn { color: #7e6faa; }
+
+.sidebar-acc-arrow {
+  font-size: 10px;
+  flex-shrink: 0;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.30s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sidebar-acc-arrow.open { transform: rotate(180deg); }
+
+.sidebar-acc-body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity  0.25s ease;
+  opacity: 0;
+}
+.sidebar-acc-body.open { max-height: 800px; opacity: 1; }
 
 .main-content {
   margin-left: 240px;

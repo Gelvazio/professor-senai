@@ -355,9 +355,12 @@ function sbInitSidebarAccordion() {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'sidebar-acc-btn';
-    btn.innerHTML =
-      `<span>${labelText}</span>` +
-      `<span class="sidebar-acc-arrow">${hasActive ? '▲' : '▼'}</span>`;
+    const arrow = document.createElement('span');
+    arrow.className = 'sidebar-acc-arrow' + (hasActive ? ' open' : '');
+    arrow.textContent = '▼';
+    btn.appendChild(document.createTextNode(''));
+    btn.innerHTML = `<span>${labelText}</span>`;
+    btn.appendChild(arrow);
 
     // Corpo colapsável
     const body = document.createElement('div');
@@ -373,7 +376,7 @@ function sbInitSidebarAccordion() {
 
     btn.addEventListener('click', () => {
       const open = body.classList.toggle('open');
-      btn.querySelector('.sidebar-acc-arrow').textContent = open ? '▲' : '▼';
+      btn.querySelector('.sidebar-acc-arrow').classList.toggle('open', open);
     });
   });
 }
