@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "nome": "Dashboard",
+    "nome_html": "dashboard.html",
+    "ativo": 1
+  },
+  {
+    "id": 2,
+    "nome": "Clientes",
+    "nome_html": "clientes.html",
+    "ativo": 1
+  },
+  {
+    "id": 3,
+    "nome": "Fornecedores",
+    "nome_html": "fornecedores.html",
+    "ativo": 1
+  },
+  {
+    "id": 4,
+    "nome": "Produtos",
+    "nome_html": "produtos.html",
+    "ativo": 1
+  },
+  {
+    "id": 5,
+    "nome": "Transportadoras",
+    "nome_html": "transportadoras.html",
+    "ativo": 1
+  },
+  {
+    "id": 6,
+    "nome": "Planejamento de Compras",
+    "nome_html": "planejamento.html",
+    "ativo": 1
+  },
+  {
+    "id": 7,
+    "nome": "Solicitações de Compras",
+    "nome_html": "solicitacoes.html",
+    "ativo": 1
+  },
+  {
+    "id": 8,
+    "nome": "Pedidos de Compras",
+    "nome_html": "pedidos.html",
+    "ativo": 1
+  },
+  {
+    "id": 9,
+    "nome": "Recebimento",
+    "nome_html": "recebimento.html",
+    "ativo": 1
+  },
+  {
+    "id": 10,
+    "nome": "Conferência",
+    "nome_html": "conferencia.html",
+    "ativo": 1
+  },
+  {
+    "id": 11,
+    "nome": "Nota Fiscal de Compra",
+    "nome_html": "nota-fiscal.html",
+    "ativo": 1
+  },
+  {
+    "id": 12,
+    "nome": "Controle de Estoque",
+    "nome_html": "controle.html",
+    "ativo": 1
+  },
+  {
+    "id": 13,
+    "nome": "Movimentações de Estoque",
+    "nome_html": "movimentacoes.html",
+    "ativo": 1
+  },
+  {
+    "id": 14,
+    "nome": "Armazenagem",
+    "nome_html": "armazenagem.html",
+    "ativo": 1
+  },
+  {
+    "id": 15,
+    "nome": "Inventário",
+    "nome_html": "inventario.html",
+    "ativo": 1
+  },
+  {
+    "id": 16,
+    "nome": "Pedidos de Venda",
+    "nome_html": "pedidos-venda.html",
+    "ativo": 1
+  },
+  {
+    "id": 17,
+    "nome": "Nota Fiscal de Venda",
+    "nome_html": "nota-fiscal-venda.html",
+    "ativo": 1
+  },
+  {
+    "id": 18,
+    "nome": "Romaneio",
+    "nome_html": "romaneio.html",
+    "ativo": 1
+  },
+  {
+    "id": 19,
+    "nome": "Separação",
+    "nome_html": "separacao.html",
+    "ativo": 1
+  },
+  {
+    "id": 20,
+    "nome": "Expedição",
+    "nome_html": "expedicao.html",
+    "ativo": 1
+  },
+  {
+    "id": 21,
+    "nome": "Entrega",
+    "nome_html": "entrega.html",
+    "ativo": 1
+  },
+  {
+    "id": 22,
+    "nome": "Usuários",
+    "nome_html": "usuarios.html",
+    "ativo": 1
+  }
+]
