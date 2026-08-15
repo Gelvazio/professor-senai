@@ -239,8 +239,6 @@
       <input class="search-input" type="search" id="inputBusca" placeholder="🔍  Buscar por nome, e-mail ou cargo…" oninput="filtrarTabela()">
       <select class="form-select" style="width:auto;min-width:150px" id="filtroPerfil" onchange="filtrarTabela()">
         <option value="">Todos os perfis</option>
-        <option value="Administrador">Administrador</option>
-        <option value="Usuário">Usuário</option>
       </select>
       <select class="form-select" style="width:auto;min-width:150px" id="filtroStatus" onchange="filtrarTabela()">
         <option value="">Todos os status</option>
@@ -320,8 +318,6 @@
         <label class="form-label" for="fPerfil">Perfil <span class="req">*</span></label>
         <select class="form-select" id="fPerfil" onchange="onPerfilChange()">
           <option value="">— Selecione —</option>
-          <option value="Administrador">Administrador</option>
-          <option value="Usuário">Usuário</option>
         </select>
       </div>
 
@@ -427,6 +423,8 @@
   let modoEdicao    = false; // false = criar, true = editar
   let idEdicao      = null;  // UUID do usuário em edição
   let idExcluir     = null;  // UUID para confirmar exclusão
+  let perfis        = [];    // lista de perfis do banco
+  let adminPerfilId = null;  // id do perfil Administrador
 
   // ── Toggle status label ────────────────────────────────────
   document.getElementById('fStatus').addEventListener('change', function () {
@@ -446,9 +444,10 @@
 
   // ── Exibir/ocultar permissões conforme perfil ──────────────
   function onPerfilChange() {
-    const perfil = document.getElementById('fPerfil').value;
-    const grupo  = document.getElementById('groupPermissoes');
-    grupo.style.display = perfil === 'Usuário' ? '' : 'none';
+    const perfilId = parseInt(document.getElementById('fPerfil').value) || 0;
+    const p = perfis.find(x => x.id === perfilId);
+    const grupo = document.getElementById('groupPermissoes');
+    grupo.style.display = (p && p.descricao !== 'Administrador') ? '' : 'none';
   }
 
   // ── Abrir modal criar ──────────────────────────────────────
@@ -495,7 +494,7 @@
     document.getElementById('fSenha').value   = '';
     document.getElementById('fCargo').value   = user.cargo   || '';
     document.getElementById('fTelefone').value = user.telefone || '';
-    document.getElementById('fPerfil').value  = user.perfil  || '';
+    document.getElementById('fPerfil').value  = user.perfil_id || '';
     document.getElementById('fStatus').checked = user.status !== false;
     document.getElementById('statusLabel').textContent = user.status !== false ? 'Ativo' : 'Inativo';
 
@@ -552,8 +551,9 @@
   });
 
   // ── Coleta permissões do formulário ────────────────────────
-  function coletarPermissoes(perfil) {
-    if (perfil === 'Administrador') {
+  function coletarPermissoes(perfilId) {
+    const p = perfis.find(x => x.id === perfilId);
+    if (p && p.descricao === 'Administrador') {
       return { visao_geral: true, cadastros: true, compras: true, estoque: true, vendas: true };
     }
     return {
@@ -574,7 +574,7 @@
     const senha    = document.getElementById('fSenha').value;
     const cargo    = document.getElementById('fCargo').value.trim();
     const telefone = document.getElementById('fTelefone').value.trim();
-    const perfil   = document.getElementById('fPerfil').value;
+    const perfilId = parseInt(document.getElementById('fPerfil').value) || 0;
     const status   = document.getElementById('fStatus').checked;
 
     // Validações
@@ -586,13 +586,13 @@
     if (!modoEdicao && !senha) { sbMensagem('msgModal', 'Senha é obrigatória para novo usuário.', 'err'); return; }
     if (!modoEdicao && senha.length < 6) { sbMensagem('msgModal', 'Senha deve ter ao menos 6 caracteres.', 'err'); return; }
     if (senha && senha.length > 0 && senha.length < 6) { sbMensagem('msgModal', 'Nova senha deve ter ao menos 6 caracteres.', 'err'); return; }
-    if (!perfil) { sbMensagem('msgModal', 'Selecione um perfil.', 'err'); return; }
+    if (!perfilId) { sbMensagem('msgModal', 'Selecione um perfil.', 'err'); return; }
 
     btn.disabled = true;
     btn.textContent = 'Salvando…';
 
     try {
-      const permissoes = coletarPermissoes(perfil);
+      const permissoes = coletarPermissoes(perfilId);
 
       if (!modoEdicao) {
         // ── CRIAR ──────────────────────────────────────────
@@ -610,7 +610,7 @@
           senha_hash: hash,
           cargo:      cargo || null,
           telefone:   telefone || null,
-          perfil,
+          perfil_id:  perfilId,
           status,
           permissoes
         });
@@ -620,7 +620,7 @@
         // ── EDITAR ─────────────────────────────────────────
         // Proteção do último admin ao tentar rebaixar
         const userAtual = todosUsuarios.find(u => u.id === idEdicao);
-        if (userAtual && userAtual.perfil === 'Administrador' && perfil !== 'Administrador') {
+        if (userAtual && userAtual.perfil_id === adminPerfilId && perfilId !== adminPerfilId) {
           const ehUltimo = await verificarUltimoAdmin(idEdicao);
           if (ehUltimo) {
             sbMensagem('msgModal', 'Não é possível rebaixar o único Administrador ativo do sistema.', 'err');
@@ -631,7 +631,7 @@
         const updates = {
           cargo:      cargo || null,
           telefone:   telefone || null,
-          perfil,
+          perfil_id:  perfilId,
           status,
           permissoes
         };
@@ -657,7 +657,8 @@
 
   // ── Verificar se seria o último admin ativo ─────────────────
   async function verificarUltimoAdmin(ignorarId = null) {
-    const admins = await sbListar('erp_usuarios', 'perfil=eq.Administrador&status=eq.true&select=id');
+    if (!adminPerfilId) return false;
+    const admins = await sbListar('erp_usuarios', `perfil_id=eq.${adminPerfilId}&status=eq.true&select=id`);
     const ativos = admins.filter(a => a.id !== ignorarId);
     return ativos.length === 0;
   }
@@ -670,7 +671,7 @@
     const novoStatus = !user.status;
 
     // Proteção: não desativar o último admin
-    if (!novoStatus && user.perfil === 'Administrador') {
+    if (!novoStatus && user.perfil_id === adminPerfilId) {
       const ehUltimo = await verificarUltimoAdmin(id);
       if (ehUltimo) {
         sbMensagem('msgGlobal', 'Não é possível desativar o único Administrador ativo.', 'err');
@@ -717,7 +718,7 @@
     const btn  = document.getElementById('btnConfirmExcluir');
 
     // Proteção: não excluir o último admin
-    if (user && user.perfil === 'Administrador') {
+    if (user && user.perfil_id === adminPerfilId) {
       const ehUltimo = await verificarUltimoAdmin(idExcluir);
       if (ehUltimo) {
         fecharConfirm();
@@ -744,8 +745,9 @@
 
   // ── Renderizar badges ───────────────────────────────────────
   function perfilBadge(perfil) {
-    if (perfil === 'Administrador') return '<span class="badge badge-azul">Administrador</span>';
-    return '<span class="badge badge-cinza">Usuário</span>';
+    const desc = typeof perfil === 'object' ? (perfil && perfil.descricao) : perfil;
+    if (desc === 'Administrador') return '<span class="badge badge-azul">Administrador</span>';
+    return `<span class="badge badge-cinza">${escHtml(desc || 'Usuário')}</span>`;
   }
 
   function statusBadge(status) {
@@ -754,7 +756,8 @@
   }
 
   function permissoesBadge(perfil, perms) {
-    if (perfil === 'Administrador') return '<span style="font-size:11px;color:var(--color-text-faint)">Acesso total</span>';
+    const desc = typeof perfil === 'object' ? (perfil && perfil.descricao) : perfil;
+    if (desc === 'Administrador') return '<span style="font-size:11px;color:var(--color-text-faint)">Acesso total</span>';
     const perms_obj = perms || {};
     const ativos = [
       perms_obj.visao_geral && 'Visão Geral',
@@ -772,7 +775,7 @@
     const tbody = document.getElementById('tbodyUsuarios');
     tbody.innerHTML = '<tr><td colspan="6" class="vazio">Carregando…</td></tr>';
     try {
-      const rows = await sbListar('erp_usuarios', 'order=nome.asc&select=id,nome,email,cargo,perfil,status,permissoes,created_at');
+      const rows = await sbListar('erp_usuarios', 'order=nome.asc&select=id,nome,email,cargo,perfil_id,status,permissoes,created_at,perfil(descricao,telas)');
       todosUsuarios = rows;
       renderizarTabela(rows);
     } catch (e) {
@@ -828,7 +831,7 @@
         || u.email.toLowerCase().includes(busca)
         || (u.cargo || '').toLowerCase().includes(busca);
 
-      const matchPerfil  = !perfil  || u.perfil === perfil;
+      const matchPerfil  = !perfil  || String(u.perfil_id) === perfil;
       const matchStatus  = status === ''
         ? true
         : status === 'true'
@@ -852,7 +855,35 @@
   }
 
   // ── Inicializar ─────────────────────────────────────────────
-  carregarUsuarios();
+  async function init() {
+    // Carrega perfis do banco e popula os selects
+    try {
+      perfis = await sbListar('perfil', 'order=id.asc');
+    } catch (e) {
+      perfis = [];
+    }
+    const adminPerfil = perfis.find(p => p.descricao === 'Administrador');
+    adminPerfilId = adminPerfil ? adminPerfil.id : null;
+
+    const selectPerfil  = document.getElementById('fPerfil');
+    const selectFiltro  = document.getElementById('filtroPerfil');
+
+    perfis.forEach(p => {
+      const opt1 = document.createElement('option');
+      opt1.value = p.id;
+      opt1.textContent = p.descricao;
+      selectPerfil.appendChild(opt1);
+
+      const opt2 = document.createElement('option');
+      opt2.value = p.id;
+      opt2.textContent = p.descricao;
+      selectFiltro.appendChild(opt2);
+    });
+
+    await carregarUsuarios();
+  }
+
+  init();
 </script>
 </body>
 </html>

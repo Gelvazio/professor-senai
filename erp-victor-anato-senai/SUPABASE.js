@@ -214,12 +214,15 @@ async function sbLogin(email, senha) {
   const rows = await sbListar(
     'erp_usuarios',
     `email=eq.${encodeURIComponent(email)}&senha_hash=eq.${hash}&status=eq.true` +
-    `&select=id,nome,email,cargo,perfil,permissoes`
+    `&select=id,nome,email,cargo,perfil_id,permissoes,perfil(descricao,telas)`
   );
   if (!rows.length) throw new Error('E-mail ou senha incorretos.');
 
   const user = rows[0];
-  localStorage.setItem('erp_role',       user.perfil);
+  const descricaoPerfil = (user.perfil && user.perfil.descricao) || 'Usuário';
+  localStorage.setItem('erp_role',       descricaoPerfil);
+  localStorage.setItem('erp_perfil_id',  String(user.perfil_id));
+  localStorage.setItem('erp_telas',      JSON.stringify((user.perfil && user.perfil.telas) || []));
   localStorage.setItem('erp_user_id',    user.id);
   localStorage.setItem('erp_user_nome',  user.nome);
   localStorage.setItem('erp_user_email', user.email);
@@ -231,6 +234,8 @@ async function sbLogin(email, senha) {
 /** Encerrar sessão e redirecionar para o login. */
 function sbLogout(paginaLogin = '/index.html') {
   localStorage.removeItem('erp_role');
+  localStorage.removeItem('erp_perfil_id');
+  localStorage.removeItem('erp_telas');
   localStorage.removeItem('erp_user_id');
   localStorage.removeItem('erp_user_nome');
   localStorage.removeItem('erp_user_email');
@@ -324,6 +329,67 @@ function sbIniciarBtnTema(btnId = 'btnTema') {
     btn.textContent = novo === 'dark' ? '☀️ Claro' : '🌙 Escuro';
   });
 }
+
+
+// ============================================================
+//  SIDEBAR ACCORDION
+// ============================================================
+
+/**
+ * Transforma as seções do sidebar em accordion (Cadastros, Compras, Estoque, Vendas e Logística).
+ * Chamada automaticamente quando o DOM estiver pronto e houver um .sidebar na página.
+ */
+function sbInitSidebarAccordion() {
+  const ACC_KEYS = ['cadastros', 'compras', 'estoque', 'vendas'];
+
+  document.querySelectorAll('.sidebar-section').forEach(section => {
+    const labelEl = section.querySelector('.sidebar-section-label');
+    if (!labelEl) return;
+
+    const labelKey = labelEl.textContent.trim().toLowerCase();
+    if (!ACC_KEYS.some(k => labelKey.startsWith(k))) return;
+
+    const labelText = labelEl.textContent.trim();
+    const hasActive = !!section.querySelector('.sidebar-link.ativo');
+
+    // Botão de toggle
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'sidebar-acc-btn';
+    btn.innerHTML =
+      `<span>${labelText}</span>` +
+      `<span class="sidebar-acc-arrow">${hasActive ? '▲' : '▼'}</span>`;
+
+    // Corpo colapsável
+    const body = document.createElement('div');
+    body.className = 'sidebar-acc-body' + (hasActive ? ' open' : '');
+
+    // Move links para o corpo (mantém labelEl no lugar por enquanto)
+    Array.from(section.children).forEach(child => {
+      if (child !== labelEl) body.appendChild(child);
+    });
+
+    labelEl.replaceWith(btn);
+    section.appendChild(body);
+
+    btn.addEventListener('click', () => {
+      const open = body.classList.toggle('open');
+      btn.querySelector('.sidebar-acc-arrow').textContent = open ? '▲' : '▼';
+    });
+  });
+}
+
+// Auto-init em páginas que possuem sidebar
+(function () {
+  function _tryInit() {
+    if (document.querySelector('.sidebar')) sbInitSidebarAccordion();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', _tryInit);
+  } else {
+    _tryInit();
+  }
+})();
 
 
 // ============================================================

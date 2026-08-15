@@ -852,6 +852,30 @@ body {
 
 .sidebar-link-icon { font-size: 18px; width: 22px; text-align: center; flex-shrink: 0; }
 
+/* ── Sidebar Accordion ── */
+.sidebar-acc-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 6px;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-text-faint);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+.sidebar-acc-btn:hover { color: var(--color-text-muted); background: rgba(0,67,132,0.05); }
+[data-theme="dark"] .sidebar-acc-btn:hover { background: rgba(122,163,212,0.08); }
+.sidebar-acc-arrow { font-size: 9px; flex-shrink: 0; transition: transform var(--transition-mid); }
+.sidebar-acc-body { overflow: hidden; max-height: 0; transition: max-height 0.28s ease; }
+.sidebar-acc-body.open { max-height: 600px; }
+
 .main-content {
   margin-left: 240px;
   padding: 24px;
