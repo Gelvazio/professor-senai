@@ -217,6 +217,39 @@ body {
 }
 .header-btn:hover { background: rgba(255,255,255,0.28); }
 
+/* ── Dropdown de Configurações no header ── */
+.sb-dd { position: relative; display: inline-flex; }
+
+.sb-dd-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 200px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  z-index: 400;
+  overflow: hidden;
+}
+.sb-dd-menu.show { display: block; }
+
+.sb-dd-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.sb-dd-item:hover { background: #e8f0fe; color: var(--color-primary); }
+[data-theme="dark"] .sb-dd-menu { background: #1c1e26; border-color: #3a3d4a; }
+[data-theme="dark"] .sb-dd-item:hover { background: #1e2554; color: #7aa3d4; }
+
 .role-badge {
   font-size: var(--font-size-sm);
   background: rgba(255,255,255,0.2);

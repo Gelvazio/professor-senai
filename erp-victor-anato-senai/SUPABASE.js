@@ -315,7 +315,8 @@ function sbToggleTema() {
   return novo;
 }
 
-/** Inicializar botão de tema após DOMContentLoaded.
+/** Sincronizar o texto do botão de tema com o estado atual.
+ *  Apenas atualiza o label — o clique é tratado pelo onclick da página.
  *  @param {string} btnId - ID do botão de toggle.
  */
 function sbIniciarBtnTema(btnId = 'btnTema') {
@@ -323,10 +324,6 @@ function sbIniciarBtnTema(btnId = 'btnTema') {
   if (!btn) return;
   const t = localStorage.getItem('senai_tema') || 'light';
   btn.textContent = t === 'dark' ? '☀️ Claro' : '🌙 Escuro';
-  btn.addEventListener('click', () => {
-    const novo = sbToggleTema();
-    btn.textContent = novo === 'dark' ? '☀️ Claro' : '🌙 Escuro';
-  });
 }
 
 
@@ -613,13 +610,62 @@ function sbGerarPDFPedidoCompra(pedido, fornecedor, produto) {
 
 
 // ============================================================
+//  MENU CONFIGURAÇÕES (dropdown no header)
+// ============================================================
+
+/** Detecta o prefixo de caminho para a pasta configuracoes/ */
+function _sbConfigPath() {
+  const p = window.location.pathname.replace(/\\/g, '/');
+  const partes = p.split('/').filter(Boolean);
+  const pasta  = partes.length >= 2 ? partes[partes.length - 2].toLowerCase() : '';
+  if (pasta === 'configuracoes') return './';
+  if (['cadastros', 'compras', 'estoque', 'vendas'].includes(pasta)) return '../configuracoes/';
+  return 'configuracoes/';
+}
+
+/** Injeta o botão ⚙️ Configurações (com dropdown) antes do botão Sair. */
+function sbInjetarMenuConfiguracoes() {
+  if (!sbIsAdmin()) return;
+  if (document.getElementById('sbDdConfigBtn')) return; // já injetado
+
+  const sairBtn = document.querySelector('.header-btn[onclick*="sair"]') ||
+                  document.querySelector('.header-btn[onclick*="sbLogout"]');
+  if (!sairBtn) return;
+
+  const base = _sbConfigPath();
+  const wrap = document.createElement('div');
+  wrap.className = 'sb-dd';
+  wrap.id        = 'sbDdConfigWrap';
+  wrap.innerHTML = `
+    <button class="header-btn" id="sbDdConfigBtn" type="button">⚙️ Configurações ▾</button>
+    <div class="sb-dd-menu" id="sbDdConfigMenu">
+      <a class="sb-dd-item" href="${base}usuarios.html">👤 Usuários</a>
+      <a class="sb-dd-item" href="${base}telas.html">🖥️ Telas</a>
+      <a class="sb-dd-item" href="${base}perfis.html">🔑 Perfis</a>
+    </div>`;
+  sairBtn.before(wrap);
+
+  document.getElementById('sbDdConfigBtn').addEventListener('click', function (e) {
+    e.stopPropagation();
+    document.getElementById('sbDdConfigMenu').classList.toggle('show');
+  });
+
+  document.addEventListener('click', function () {
+    const menu = document.getElementById('sbDdConfigMenu');
+    if (menu) menu.classList.remove('show');
+  });
+}
+
+
+// ============================================================
 //  INICIALIZAÇÃO AUTOMÁTICA
 // ============================================================
 
 // Aplicar tema assim que o script carregar (antes do DOMContentLoaded)
 sbAplicarTema();
 
-// Quando o DOM estiver pronto, inicializar o botão de tema (se existir)
+// Quando o DOM estiver pronto, inicializar componentes de UI
 document.addEventListener('DOMContentLoaded', () => {
   sbIniciarBtnTema('btnTema');
+  sbInjetarMenuConfiguracoes();
 });
