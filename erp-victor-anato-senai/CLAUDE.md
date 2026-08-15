@@ -537,46 +537,69 @@ Todos os números sequenciais devem usar padding fixo de 5 dígitos:
 
 ### Responsividade
 
-O sistema deve funcionar sem quebras em **celular, tablet e desktop**. Regras obrigatórias:
+O sistema deve ser **100% utilizável no celular**, sem rolagem horizontal, sem elementos cortados, sem zoom indesejado. Prioridade: celular primeiro — se funcionar no mobile, funciona em tudo.
+
+#### Objetivo mobile
+- Nenhum elemento deve ultrapassar a largura da viewport.
+- Nenhuma rolagem horizontal no `<body>` — apenas dentro de containers específicos (tabelas).
+- Todos os formulários, modais e botões devem ser tocáveis e legíveis sem zoom.
+- A página deve carregar e ser utilizável **sem a sidebar visível**.
 
 #### Layout geral
-- Sidebar oculta por padrão em telas ≤ 768px, exibida via botão hambúrguer (☰) no header.
-- `.main` com `margin-left: 0` em mobile (sem sidebar ocupando espaço).
-- Padding do conteúdo principal reduzido em mobile: `16px` em vez de `28px 32px`.
-- Todo container de conteúdo usa `max-width: 100%` e evita larguras fixas.
+- Sidebar **oculta por padrão** em telas ≤ 768px, abre via botão ☰ no header.
+- `.main` com `margin-left: 0` em mobile — nunca deixar margem reservada para sidebar.
+- Padding do conteúdo principal: `16px` em mobile, `28px 32px` em desktop.
+- **Proibido** usar `width` fixo em px em qualquer container de nível superior.
+- Todo elemento usa `max-width: 100%` para não vazar da viewport.
 
-#### Tabelas
-- **Sempre** envolver tabelas em `<div class="crud-table-wrap">` (que tem `overflow-x: auto`).
-- Tabelas nunca forçam quebra de layout — o container delas que rola horizontalmente.
-- Em mobile, colunas de ações ficam fixas (não ocultar via display:none).
+#### Tabelas (regra crítica)
+- **Sempre** envolver `<table>` em `<div class="crud-table-wrap">` — sem exceção.
+- `.crud-table-wrap` tem `overflow-x: auto` — a tabela rola horizontalmente dentro dele.
+- O `<body>` nunca rola na horizontal por causa de tabela.
+- **Proibido** `white-space: nowrap` em `<td>` fora de `.crud-table-wrap`.
+- Coluna de Ações nunca some em mobile (não usar `display:none`).
 
-#### Formulários / Modais
-- Grids de formulário com `grid-template-columns: 1fr 1fr` colapsam para `1fr` em telas ≤ 600px.
-- Modais têm `max-height: 90vh` e `overflow-y: auto` no corpo — nunca ultrapassam a tela.
-- Modal ocupa `width: calc(100% - 24px)` em mobile (padding lateral de 12px de cada lado).
-- Inputs e selects com `font-size: 16px` em mobile (evita zoom automático no iOS).
+#### Formulários
+- Grid de formulário `1fr 1fr` **colapsa para `1fr`** em telas ≤ 600px:
+  ```css
+  @media (max-width: 600px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .form-grid .span-2 { grid-column: span 1; }
+  }
+  ```
+- `font-size: 16px` em `input`, `select`, `textarea` no mobile — **obrigatório** para evitar zoom automático no iOS.
+- Labels e inputs com `width: 100%` — nunca largura fixa.
+
+#### Modais
+- Modal com `max-height: 90vh` e `overflow-y: auto` no corpo — nunca ultrapassa a tela.
+- Em mobile: `width: calc(100% - 24px)`, margem lateral de 12px.
+- Backdrop (`crud-backdrop`) com `padding: 12px` em mobile.
+- Botões do modal footer em coluna em telas ≤ 480px se necessário.
 
 #### Header
-- Em telas muito pequenas (≤ 480px), ocultar `.header-title` (só manter logo + botões).
-- Botões do header com padding reduzido em mobile.
+- Em telas ≤ 480px, ocultar `.header-title` para liberar espaço aos botões.
+- Botões do header com padding reduzido: `6px 10px` em mobile.
+- Logo e botões ☰ / Sair sempre visíveis.
 
-#### Breakpoints utilizados
+#### Breakpoints obrigatórios
 ```css
-@media (max-width: 768px)  { /* tablet e celular — sidebar oculta */ }
-@media (max-width: 600px)  { /* celular — formulários em 1 coluna */ }
-@media (max-width: 480px)  { /* celular pequeno — ajustes de header */ }
+@media (max-width: 768px)  { /* tablet/celular — sidebar oculta, margin-left:0 */ }
+@media (max-width: 600px)  { /* celular — formulários 1 coluna, font-size 16px inputs */ }
+@media (max-width: 480px)  { /* celular pequeno — header compacto */ }
 ```
 
 #### CSS proibido em mobile
-- Nunca usar `white-space: nowrap` em células de tabela sem estar dentro de `.crud-table-wrap`.
-- Nunca usar `width` fixo em px em containers de nível superior.
-- Nunca usar `position: absolute` sem fallback para mobile.
+- `white-space: nowrap` em `<td>` fora de wrapper com `overflow-x: auto`
+- `width: NNNpx` fixo em containers de layout (`.main`, `.content-section`, `.page-header`)
+- `position: absolute` sem `max-width: 100vw` ou fallback mobile
+- `overflow: hidden` no `<body>` ou `<html>` — quebra scroll em iOS
 
-#### Classe `.crud-table-wrap` (já definida em styles.css)
-```css
-.crud-table-wrap { overflow-x: auto; }
-```
-Usar sempre. Nunca colocar `<table>` diretamente dentro de `.content-section` sem esse wrapper.
+#### Verificação rápida (checklist antes de cada commit)
+- [ ] Abrir no DevTools em 375px (iPhone SE) — nenhum scroll horizontal
+- [ ] Formulário abre e fecha corretamente no mobile
+- [ ] Tabela rola dentro do seu container, não na página
+- [ ] Inputs não causam zoom ao focar (font-size ≥ 16px)
+- [ ] Sidebar abre e fecha via ☰
 
 ### Autenticação
 - Login por e-mail + senha.

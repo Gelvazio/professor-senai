@@ -1145,6 +1145,15 @@ body {
    RESPONSIVIDADE GLOBAL
    ============================================================ */
 
+/* Regra base — impede overflow horizontal em qualquer tela */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Imagens nunca vazam do container */
+img { max-width: 100%; height: auto; display: block; }
+
 /* ── Tablet e celular (≤ 768px) ── */
 @media (max-width: 768px) {
   /* Header */
@@ -1158,16 +1167,25 @@ body {
 
   /* CRUD — área principal */
   .main { margin-left: 0 !important; padding: 14px !important; }
+  .main-content { margin-left: 0 !important; padding: 14px !important; }
 
-  /* Tabelas — sempre roláveis horizontalmente */
-  .crud-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  /* Tabelas — sempre roláveis horizontalmente, nunca causam overflow na página */
+  .crud-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
   .crud-table { min-width: 600px; }
 
-  /* Modal — largura quase total em mobile */
+  /* Modal — ocupa quase toda a tela em mobile */
   .crud-backdrop,
-  .modal-backdrop { padding: 8px; }
+  .modal-backdrop { padding: 8px; align-items: flex-end; }
   .crud-modal,
-  .modal { max-height: 95vh; border-radius: var(--radius-lg); }
+  .modal {
+    max-height: 95vh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+  }
+
+  /* Modal body scroll */
+  .modal-body-scroll { max-height: 60vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 
   /* Paginação */
   .paginacao { flex-direction: column; gap: 8px; text-align: center; }
@@ -1175,6 +1193,9 @@ body {
   /* Toolbar de filtros */
   .toolbar { flex-wrap: wrap; gap: 6px; }
   .search-input { min-width: 100%; }
+
+  /* Tabelas do dashboard */
+  .two-col { grid-template-columns: 1fr !important; }
 }
 
 /* ── Celular (≤ 600px) ── */
@@ -1185,24 +1206,27 @@ body {
   .form-grid .span-2,
   .form-grid [class*="span-"] { grid-column: 1 !important; }
 
-  /* Inputs com font-size 16px para evitar zoom no iOS */
+  /* Inputs com font-size 16px para evitar zoom automático no iOS */
   .form-input,
   .form-select,
   .form-textarea,
   .search-input,
-  .crud-input { font-size: 16px; }
+  .crud-input,
+  .field input,
+  .field select,
+  .field textarea { font-size: 16px !important; }
 
   /* KPI grid */
   .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .kpi-value { font-size: 24px; }
 
-  /* Dois colunas de conteúdo viram 1 */
-  .two-col { grid-template-columns: 1fr !important; }
+  /* Resumo grid */
+  .resumo-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
 }
 
 /* ── Celular pequeno (≤ 480px) ── */
 @media (max-width: 480px) {
-  /* Ocultar título do header para ganhar espaço */
+  /* Ocultar título do header para ganhar espaço aos botões */
   .header-title { display: none; }
 
   /* KPI em 1 coluna */
@@ -1211,7 +1235,11 @@ body {
   /* Resumo cards em 1 coluna */
   .resumo-grid { grid-template-columns: 1fr; }
 
-  /* Botão "Novo" no page-header: largura total */
+  /* Botão "Novo" no page-header ocupa largura total */
   .page-header { flex-direction: column; align-items: stretch; }
   .page-header .btn { width: 100%; justify-content: center; }
+
+  /* Modal ocupa tela toda em celular pequeno */
+  .crud-modal, .modal { width: 100%; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+  .crud-backdrop, .modal-backdrop { padding: 0; align-items: flex-end; }
 }

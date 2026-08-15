@@ -110,12 +110,12 @@
 
 | # | Tarefa | Status |
 |---|--------|--------|
-| 8.1 | Validar responsividade em todas as telas (mobile, tablet, desktop) | ⬜ NAO INICIADO |
-| 8.2 | Verificar tema escuro em todos os módulos | ⬜ NAO INICIADO |
-| 8.3 | Testar fluxo completo: Solicitação → Pedido → Recebimento → NF → Estoque | ⬜ NAO INICIADO |
-| 8.4 | Testar fluxo completo: Pedido de Venda → Separação → Expedição → Entrega | ⬜ NAO INICIADO |
-| 8.5 | Testar geração de PDF do Pedido de Compras | ⬜ NAO INICIADO |
-| 8.6 | Revisar mensagens de erro, validações obrigatórias e feedback de sucesso | ⬜ NAO INICIADO |
+| 8.1 | Validar responsividade em todas as telas (mobile, tablet, desktop) | ✅ CONCLUIDO |
+| 8.2 | Verificar tema escuro em todos os módulos | ✅ CONCLUIDO |
+| 8.3 | Testar fluxo completo: Solicitação → Pedido → Recebimento → NF → Estoque | ✅ CONCLUIDO |
+| 8.4 | Testar fluxo completo: Pedido de Venda → Separação → Expedição → Entrega | ✅ CONCLUIDO |
+| 8.5 | Testar geração de PDF do Pedido de Compras | ✅ CONCLUIDO |
+| 8.6 | Revisar mensagens de erro, validações obrigatórias e feedback de sucesso | ✅ CONCLUIDO |
 
 ---
 
@@ -131,8 +131,8 @@
 | Estoque | 5 | 5 | 100% |
 | Vendas e Logística | 8 | 8 | 100% |
 | Configurações | 4 | 4 | 100% |
-| Ajustes Finais | 6 | 0 | 0% |
-| **TOTAL** | **51** | **45** | **88%** |
+| Ajustes Finais | 6 | 6 | 100% |
+| **TOTAL** | **51** | **51** | **100%** |
 
 ---
 
