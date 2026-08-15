@@ -641,48 +641,66 @@ async function _sbCarregarTelasJson() {
 }
 
 /**
- * Busca as telas permitidas do perfil no banco (perfil_sistema) e filtra o
- * sidebar, ocultando links não autorizados. Também bloqueia acesso direto a
- * páginas não autorizadas. Sempre consulta o banco — nunca usa cache de sessão
- * para as permissões, garantindo que mudanças de perfil reflitam imediatamente.
+ * Filtra o sidebar conforme as telas permitidas do perfil (perfil_sistema).
+ * Também bloqueia acesso direto a páginas não autorizadas.
+ *
+ * Estratégia:
+ *   1. SÍNCRONO — oculta imediatamente todos os links não-essenciais
+ *      (evita flicker: links nunca aparecem antes da checagem)
+ *   2. ASYNC    — busca as permissões SEMPRE do banco (nunca de cache)
+ *   3. Revela apenas os links cujas telas estão no perfil
+ *   4. Em caso de falha de rede: restaura todos os links (fail-open)
  */
 async function sbFiltrarSidebar() {
-  // Administrador: acesso irrestrito, nada a filtrar
   if (sbIsAdmin()) return;
 
   const perfilId = localStorage.getItem('erp_perfil_id');
-  if (!perfilId) return;
+  if (!perfilId || perfilId === 'null' || perfilId === 'undefined') return;
 
-  let permitidas;
+  // ── PASSO 1 (síncrono): ocultar tudo imediatamente ────────────
+  document.querySelectorAll('.sidebar-link').forEach(link => {
+    const filename = _sbFilenameFromHref(link.getAttribute('href'));
+    if (!filename || filename === '#' || filename === 'dashboard.html') return;
+    link.setAttribute('data-sb-filter', 'pending');
+    link.style.display = 'none';
+  });
+
+  let permitidas = null;
+
+  // ── PASSO 2: buscar permissões no banco ────────────────────────
   try {
-    // ── Busca SEMPRE do banco ────────────────────────────────
     const vinc = await sbListar('perfil_sistema',
       `perfil_id=eq.${encodeURIComponent(perfilId)}&select=tela_id`);
-    const ids = new Set(vinc.map(v => v.tela_id));
+    const ids = new Set(vinc.map(v => Number(v.tela_id)));
 
-    // Mapa tela_id → nome_html (telas.json cacheado em sessionStorage)
     const telaJSON = await _sbCarregarTelasJson();
     permitidas = new Set(
       telaJSON
-        .filter(t => ids.has(t.id) && (t.ativo === 1 || t.ativo === true))
+        .filter(t => ids.has(Number(t.id)) && (t.ativo === 1 || t.ativo === true))
         .map(t => t.nome_html)
     );
-    // Dashboard sempre permitido
     permitidas.add('dashboard.html');
+
   } catch {
-    // Em caso de falha de rede: não bloqueia o usuário
+    // Falha de rede: restaura todos os links para não bloquear o usuário
+    document.querySelectorAll('.sidebar-link[data-sb-filter]').forEach(link => {
+      link.removeAttribute('data-sb-filter');
+      link.style.display = '';
+    });
     return;
   }
 
-  // ── Ocultar links do sidebar que o perfil não pode acessar ──
-  document.querySelectorAll('.sidebar-link').forEach(link => {
-    const href = (link.getAttribute('href') || '').replace(/\\/g, '/');
-    const filename = href.split('/').pop().split('?')[0];
-    if (!filename || filename === '#') return;
-    if (!permitidas.has(filename)) link.style.display = 'none';
+  // ── PASSO 3: revelar apenas os links permitidos ────────────────
+  document.querySelectorAll('.sidebar-link[data-sb-filter]').forEach(link => {
+    const filename = _sbFilenameFromHref(link.getAttribute('href'));
+    if (permitidas.has(filename)) {
+      link.removeAttribute('data-sb-filter');
+      link.style.display = '';
+    }
+    // links não permitidos permanecem com display:none
   });
 
-  // Ocultar seções accordion que ficaram sem nenhum link visível
+  // ── PASSO 4: ocultar seções/accordions sem links visíveis ──────
   document.querySelectorAll('.sidebar-section').forEach(section => {
     const links = section.querySelectorAll('.sidebar-link');
     if (!links.length) return;
@@ -690,7 +708,7 @@ async function sbFiltrarSidebar() {
     if (!algumVisivel) section.style.display = 'none';
   });
 
-  // ── Bloquear acesso direto a páginas não autorizadas ────────
+  // ── PASSO 5: bloquear acesso direto a página não autorizada ────
   const currentFile = window.location.pathname.replace(/\\/g, '/').split('/').pop() || '';
   if (!currentFile || currentFile === 'index.html' || currentFile === 'dashboard.html') return;
   if (!permitidas.has(currentFile)) {
@@ -699,6 +717,12 @@ async function sbFiltrarSidebar() {
     alert('Você não tem permissão para acessar esta tela.');
     window.location.replace(dash);
   }
+}
+
+/** Extrai o nome do arquivo (sem caminho) de um href. */
+function _sbFilenameFromHref(href) {
+  if (!href) return '';
+  return href.replace(/\\/g, '/').split('/').pop().split('?')[0];
 }
 
 
