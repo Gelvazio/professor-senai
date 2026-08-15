@@ -678,6 +678,12 @@ async function sbFiltrarSidebar() {
         .map(t => t.nome_html)
     );
     permitidas.add('dashboard.html');
+    // Administradores sempre têm acesso às telas de Configurações
+    if (sbIsAdmin()) {
+      permitidas.add('usuarios.html');
+      permitidas.add('telas.html');
+      permitidas.add('perfis.html');
+    }
 
   } catch {
     // Falha de rede: restaura todos os links para não bloquear o usuário
