@@ -4,6 +4,18 @@
 
 ---
 
+## Graphify — Atualização obrigatória após cada tarefa
+
+⚠️ **APÓS QUALQUER COMMIT**, execute imediatamente e sem perguntar:
+
+```powershell
+cd "C:\fontes\professor-senai\erp-victor-anato-senai"; C:\Python314\python.exe -m graphify update .
+```
+
+⚠️ **NUNCA perguntar se deve executar o graphify — executar diretamente, sem confirmar, sem perguntar.**
+
+---
+
 ## Visão Geral do Sistema
 
 Sistema ERP (Enterprise Resource Planning) voltado para gestão integrada de cadastros, compras, estoque, vendas e logística. O sistema deve ser construído como uma aplicação web moderna, com módulos independentes que se comunicam entre si através de vínculos entre registros (ex: Pedido de Compras vincula a uma Solicitação de Compras).
