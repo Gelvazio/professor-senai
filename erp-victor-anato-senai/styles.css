@@ -1318,10 +1318,11 @@ img { max-width: 100%; height: auto; display: block; }
   .crud-field { min-width: 100% !important; width: 100%; }
 }
 
-/* ── Toolbar: search sempre ocupa linha inteira no mobile ── */
-@media (max-width: 600px) {
+/* ── Toolbar: search ocupa linha inteira em celular pequeno ── */
+@media (max-width: 480px) {
   .toolbar { flex-direction: column; align-items: stretch; gap: 8px; }
-  .toolbar .search-input { min-width: 100%; width: 100%; }
+  .toolbar .search-input { min-width: 100%; width: 100%; max-width: none; }
+  .toolbar select, .toolbar .filter-btn { width: 100%; }
   .toolbar-filters { display: flex; flex-wrap: wrap; gap: 6px; }
 }
 
@@ -1332,11 +1333,6 @@ img { max-width: 100%; height: auto; display: block; }
   .header-btn { padding: 5px 8px; font-size: 12px; gap: 4px; }
 }
 
-/* ── Garante que nenhum elemento ultrapasse a viewport ── */
-*, *::before, *::after { max-width: 100%; }
-/* Exceção para elementos que precisam de largura maior (tabelas roláveis no container) */
-.crud-table, .crud-table * { max-width: none; }
-
 /* ── Página de listagem em mobile: padding compacto ── */
 @media (max-width: 768px) {
   .content-section { border-radius: var(--radius-md); }
@@ -1345,7 +1341,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ── Botões de ação da tabela: garantir toque fácil em mobile ── */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .btn-ed, .btn-del, .btn-mat-pdf, .btn-pdf {
     padding: 5px 10px;
     font-size: 12px;
