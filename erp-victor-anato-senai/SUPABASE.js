@@ -652,8 +652,6 @@ async function _sbCarregarTelasJson() {
  *   4. Em caso de falha de rede: restaura todos os links (fail-open)
  */
 async function sbFiltrarSidebar() {
-  if (sbIsAdmin()) return;
-
   const perfilId = localStorage.getItem('erp_perfil_id');
   if (!perfilId || perfilId === 'null' || perfilId === 'undefined') return;
 
