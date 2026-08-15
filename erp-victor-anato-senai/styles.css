@@ -1285,6 +1285,10 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 480px) {
   /* Ocultar título do header para ganhar espaço aos botões */
   .header-title { display: none; }
+  /* Ocultar role badge no header em mobile pequeno */
+  .role-badge { display: none; }
+  /* Botão tema: só ícone */
+  #btnTema { min-width: auto !important; font-size: 16px; padding: 6px 8px !important; }
 
   /* KPI em 1 coluna */
   .kpi-grid { grid-template-columns: 1fr; }
@@ -1294,9 +1298,57 @@ img { max-width: 100%; height: auto; display: block; }
 
   /* Botão "Novo" no page-header ocupa largura total */
   .page-header { flex-direction: column; align-items: stretch; }
-  .page-header .btn { width: 100%; justify-content: center; }
+  .page-header .btn, .page-header .btn-novo { width: 100%; justify-content: center; }
 
   /* Modal ocupa tela toda em celular pequeno */
   .crud-modal, .modal { width: 100%; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
   .crud-backdrop, .modal-backdrop { padding: 0; align-items: flex-end; }
+
+  /* Footer do modal — botões empilham */
+  .modal-footer,
+  .modal-foot {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .modal-footer > *,
+  .modal-foot > * { width: 100%; justify-content: center; text-align: center; }
+
+  /* crud-form (barra de filtros) — empilha os campos */
+  .crud-form { flex-direction: column; }
+  .crud-field { min-width: 100% !important; width: 100%; }
+}
+
+/* ── Toolbar: search sempre ocupa linha inteira no mobile ── */
+@media (max-width: 600px) {
+  .toolbar { flex-direction: column; align-items: stretch; gap: 8px; }
+  .toolbar .search-input { min-width: 100%; width: 100%; }
+  .toolbar-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+}
+
+/* ── Header: espaçamento reduzido em mobile ── */
+@media (max-width: 768px) {
+  .header { padding: 0 10px; gap: 6px; }
+  .header-logo { padding: 4px 10px; font-size: 13px; }
+  .header-btn { padding: 5px 8px; font-size: 12px; gap: 4px; }
+}
+
+/* ── Garante que nenhum elemento ultrapasse a viewport ── */
+*, *::before, *::after { max-width: 100%; }
+/* Exceção para elementos que precisam de largura maior (tabelas roláveis no container) */
+.crud-table, .crud-table * { max-width: none; }
+
+/* ── Página de listagem em mobile: padding compacto ── */
+@media (max-width: 768px) {
+  .content-section { border-radius: var(--radius-md); }
+  .page-header h1 { font-size: 18px; }
+  .page-header p  { font-size: 12px; }
+}
+
+/* ── Botões de ação da tabela: garantir toque fácil em mobile ── */
+@media (max-width: 600px) {
+  .btn-ed, .btn-del, .btn-mat-pdf, .btn-pdf {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .crud-acts { gap: 6px; }
 }
