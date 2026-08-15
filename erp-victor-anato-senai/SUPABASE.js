@@ -204,6 +204,7 @@ async function sha256(text) {
 
 /**
  * Autenticar usuário do ERP.
+ * Após o login, busca as telas permitidas do perfil e salva em localStorage.
  * @param {string} email
  * @param {string} senha - Senha em texto puro (será hasheada).
  * @returns {Promise<Object>} Dados do usuário logado.
@@ -227,6 +228,34 @@ async function sbLogin(email, senha) {
   localStorage.setItem('erp_user_email', user.email);
   localStorage.setItem('erp_permissoes', JSON.stringify(user.permissoes));
   localStorage.setItem('erp_login',      String(Date.now()));
+
+  // ── Carregar telas permitidas para este perfil ──────────────
+  if (nomePerfil === 'Administrador') {
+    // Admin tem acesso irrestrito — marca como 'all'
+    localStorage.setItem('erp_telas_html', 'all');
+  } else {
+    try {
+      // Busca telas vinculadas ao perfil na tabela perfil_sistema
+      const vinc = await sbListar('perfil_sistema',
+        `perfil_id=eq.${user.perfil_id}&select=tela_id`);
+      const ids = new Set(vinc.map(v => v.tela_id));
+
+      // Mapeia tela_id → nome_html via telas.json (login sempre na raiz)
+      const telaJSON = await fetch('telas.json').then(r => r.json()).catch(() => []);
+      const telasHtml = telaJSON
+        .filter(t => ids.has(t.id) && (t.ativo === 1 || t.ativo === true))
+        .map(t => t.nome_html);
+
+      // dashboard.html é sempre incluído
+      if (!telasHtml.includes('dashboard.html')) telasHtml.unshift('dashboard.html');
+
+      localStorage.setItem('erp_telas_html', JSON.stringify(telasHtml));
+    } catch {
+      // Falha silenciosa: permite tudo para não travar o sistema
+      localStorage.setItem('erp_telas_html', 'all');
+    }
+  }
+
   return user;
 }
 
@@ -235,6 +264,7 @@ function sbLogout(paginaLogin = '/index.html') {
   localStorage.removeItem('erp_role');
   localStorage.removeItem('erp_perfil_id');
   localStorage.removeItem('erp_telas');
+  localStorage.removeItem('erp_telas_html');
   localStorage.removeItem('erp_user_id');
   localStorage.removeItem('erp_user_nome');
   localStorage.removeItem('erp_user_email');
@@ -610,6 +640,51 @@ function sbGerarPDFPedidoCompra(pedido, fornecedor, produto) {
 
 
 // ============================================================
+//  FILTRO DE TELAS POR PERFIL
+// ============================================================
+
+/**
+ * Esconde links do sidebar cujas telas não estão na lista permitida do perfil.
+ * Também bloqueia acesso direto a páginas não autorizadas.
+ * Deve ser chamada após o DOM estar pronto.
+ */
+function sbFiltrarSidebar() {
+  const raw = localStorage.getItem('erp_telas_html');
+  if (!raw || raw === 'all') return; // Administrador ou erro: mostra tudo
+
+  const permitidas = new Set(JSON.parse(raw));
+
+  // ── Ocultar links do sidebar que o perfil não pode acessar ──
+  document.querySelectorAll('.sidebar-link').forEach(link => {
+    const href = (link.getAttribute('href') || '').replace(/\\/g, '/');
+    const filename = href.split('/').pop().split('?')[0];
+    if (!filename || filename === '#' || filename === 'dashboard.html') return;
+    if (!permitidas.has(filename)) {
+      link.style.display = 'none';
+    }
+  });
+
+  // Ocultar seções do accordion que ficaram sem links visíveis
+  document.querySelectorAll('.sidebar-section').forEach(section => {
+    const links = section.querySelectorAll('.sidebar-link');
+    const algumVisivel = Array.from(links).some(l => l.style.display !== 'none');
+    if (links.length > 0 && !algumVisivel) section.style.display = 'none';
+  });
+
+  // ── Bloquear acesso direto a páginas não autorizadas ────────
+  const currentFile = window.location.pathname.replace(/\\/g, '/').split('/').pop() || '';
+  if (!currentFile || currentFile === 'index.html' || currentFile === 'dashboard.html') return;
+  if (!permitidas.has(currentFile)) {
+    // Determina caminho do dashboard conforme profundidade da pasta
+    const profundidade = window.location.pathname.replace(/\\/g, '/').split('/').filter(Boolean).length;
+    const dash = profundidade >= 2 ? '../dashboard.html' : 'dashboard.html';
+    alert('Você não tem permissão para acessar esta tela.');
+    window.location.replace(dash);
+  }
+}
+
+
+// ============================================================
 //  MENU CONFIGURAÇÕES (dropdown no header)
 // ============================================================
 
@@ -668,4 +743,5 @@ sbAplicarTema();
 document.addEventListener('DOMContentLoaded', () => {
   sbIniciarBtnTema('btnTema');
   sbInjetarMenuConfiguracoes();
+  sbFiltrarSidebar();
 });
