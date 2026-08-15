@@ -1,5 +1,5 @@
--- ============================================================
---  SEED — ERP Victor Anato
+﻿-- ============================================================
+--  SEED — ERP Senai
 --  Dados de teste: Cadastros, Compras, Estoque, Vendas e Logística
 --  Execute no Supabase SQL Editor
 --
@@ -661,7 +661,7 @@ VALUES
   'b0000000-0000-0000-0000-000000000007',
   'MV00007',
   '30000000-0000-0000-0000-000000000003',
-  'Saída (ajuste inventário)', 2,
+  'Saída', 2,
   'Estoque Principal — Prateleira C3',
   'Ajuste',
   'Administrador',
@@ -784,7 +784,7 @@ VALUES
   '000001', '001',
   '2026-08-09',
   'Venda de Mercadoria',
-  'ERP Victor Anato LTDA',
+  'ERP Senai LTDA',
   '10000000-0000-0000-0000-000000000001',
   'd0000000-0000-0000-0000-000000000001',
   '30000000-0000-0000-0000-000000000001',
@@ -800,7 +800,7 @@ VALUES
   '000002', '001',
   '2026-08-10',
   'Venda de Mercadoria',
-  'ERP Victor Anato LTDA',
+  'ERP Senai LTDA',
   '10000000-0000-0000-0000-000000000002',
   'd0000000-0000-0000-0000-000000000002',
   '30000000-0000-0000-0000-000000000004',

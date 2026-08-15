@@ -1,5 +1,5 @@
-// ============================================================
-//  ERP Victor Anato — Configuração e Utilitários Supabase
+﻿// ============================================================
+//  ERP Senai — Configuração e Utilitários Supabase
 //  Incluir em todas as páginas: <script src="../SUPABASE.js"></script>
 //  (ajustar o caminho relativo conforme a pasta da página)
 // ============================================================
@@ -537,7 +537,7 @@ function sbGerarPDFPedidoCompra(pedido, fornecedor, produto) {
         </tr>
       </table>
       ${pedido.observacoes ? `<p><strong>Observações:</strong> ${pedido.observacoes}</p>` : ''}
-      <div class="rodape">ERP Victor Anato &nbsp;·&nbsp; Gerado em ${new Date().toLocaleString('pt-BR')}</div>
+      <div class="rodape">ERP Senai &nbsp;·&nbsp; Gerado em ${new Date().toLocaleString('pt-BR')}</div>
     </body>
     </html>
   `);

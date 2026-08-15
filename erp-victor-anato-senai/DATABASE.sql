@@ -1,5 +1,5 @@
--- ============================================================
---  ERP Victor Anato — Schema PostgreSQL (Supabase)
+﻿-- ============================================================
+--  ERP Senai — Schema PostgreSQL (Supabase)
 --  Gerado em: 2026-08-14
 -- ============================================================
 -- Executar no SQL Editor do Supabase na ordem abaixo.

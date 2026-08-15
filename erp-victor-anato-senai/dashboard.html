@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -106,7 +106,7 @@
 <header class="header">
   <button class="btn-menu" id="btnMenu" onclick="toggleSidebar()">☰</button>
   <a class="header-logo" href="dashboard.html">ERP</a>
-  <span class="header-title">Victor Anato</span>
+  <span class="header-title">Senai</span>
   <span class="header-spacer"></span>
   <span class="role-badge" id="roleBadge"></span>
   <button class="header-btn" id="btnTema" onclick="alternarTema()" style="min-width:96px">🌙 Escuro</button>
@@ -181,7 +181,7 @@
     <!-- Cabeçalho da página -->
     <div class="page-header">
       <h1>Visão Geral</h1>
-      <p id="saudacao">Bem-vindo ao ERP Victor Anato</p>
+      <p id="saudacao">Bem-vindo ao ERP Senai</p>
     </div>
 
     <!-- KPI Cards -->
@@ -342,8 +342,14 @@
   }
 
   function tipoBadge(tipo) {
-    const map = { 'Entrada': 'tipo-entrada', 'Saída': 'tipo-saida', 'Ajuste': 'tipo-ajuste', 'Transferência': 'tipo-transf' };
-    return `<span class="tipo-badge ${map[tipo] || ''}">${tipo}</span>`;
+    if (!tipo) return '<span class="tipo-badge">—</span>';
+    const t = tipo.toLowerCase();
+    let cls = '';
+    if (t.includes('entrada'))       cls = 'tipo-entrada';
+    else if (t.includes('saída') || t.includes('saida')) cls = 'tipo-saida';
+    else if (t.includes('transfer'))  cls = 'tipo-transf';
+    else if (t.includes('ajuste'))    cls = 'tipo-ajuste';
+    return `<span class="tipo-badge ${cls}">${tipo}</span>`;
   }
 
   // ── Carregar KPIs ──────────────────────────────

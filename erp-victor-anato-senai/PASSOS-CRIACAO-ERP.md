@@ -1,4 +1,4 @@
-# Passos de Criação — ERP Victor Anato
+﻿# Passos de Criação — ERP Senai
 
 > Arquivo de controle de progresso. Atualizado ao final de cada passo.
 > A cada passo concluído, solicitar permissão antes de prosseguir ao próximo.
