@@ -370,7 +370,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "claude_m\u00f3dulo_1_cadastros",
-      "community": 1,
+      "community": 9,
       "norm_label": "modulo 1 \u2014 cadastros"
     },
     {
@@ -380,7 +380,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "claude_1_1_clientes",
-      "community": 1,
+      "community": 9,
       "norm_label": "1.1 clientes"
     },
     {
@@ -390,7 +390,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "claude_1_2_fornecedores",
-      "community": 1,
+      "community": 9,
       "norm_label": "1.2 fornecedores"
     },
     {
@@ -400,7 +400,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "claude_1_3_produtos",
-      "community": 1,
+      "community": 9,
       "norm_label": "1.3 produtos"
     },
     {
@@ -410,7 +410,7 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "claude_1_4_transportadoras",
-      "community": 1,
+      "community": 9,
       "norm_label": "1.4 transportadoras"
     },
     {
@@ -500,7 +500,7 @@
       "source_location": "L247",
       "_origin": "ast",
       "id": "claude_m\u00f3dulo_3_estoque",
-      "community": 1,
+      "community": 10,
       "norm_label": "modulo 3 \u2014 estoque"
     },
     {
@@ -510,7 +510,7 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "claude_3_1_armazenagem",
-      "community": 1,
+      "community": 10,
       "norm_label": "3.1 armazenagem"
     },
     {
@@ -520,7 +520,7 @@
       "source_location": "L270",
       "_origin": "ast",
       "id": "claude_3_2_controle_de_estoque",
-      "community": 1,
+      "community": 10,
       "norm_label": "3.2 controle de estoque"
     },
     {
@@ -530,7 +530,7 @@
       "source_location": "L284",
       "_origin": "ast",
       "id": "claude_3_3_movimenta\u00e7\u00f5es",
-      "community": 1,
+      "community": 10,
       "norm_label": "3.3 movimentacoes"
     },
     {
@@ -540,7 +540,7 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "claude_3_4_invent\u00e1rio",
-      "community": 1,
+      "community": 10,
       "norm_label": "3.4 inventario"
     },
     {
@@ -704,80 +704,100 @@
       "norm_label": "responsividade"
     },
     {
-      "label": "Layout geral",
+      "label": "Objetivo mobile",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": "L542",
+      "_origin": "ast",
+      "id": "claude_objetivo_mobile",
+      "community": 8,
+      "norm_label": "objetivo mobile"
+    },
+    {
+      "label": "Layout geral",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L548",
       "_origin": "ast",
       "id": "claude_layout_geral",
       "community": 8,
       "norm_label": "layout geral"
     },
     {
-      "label": "Tabelas",
+      "label": "Tabelas (regra cr\u00edtica)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L548",
+      "source_location": "L555",
       "_origin": "ast",
-      "id": "claude_tabelas",
+      "id": "claude_tabelas_regra_cr\u00edtica",
       "community": 8,
-      "norm_label": "tabelas"
+      "norm_label": "tabelas (regra critica)"
     },
     {
-      "label": "Formul\u00e1rios / Modais",
+      "label": "Formul\u00e1rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L553",
+      "source_location": "L562",
       "_origin": "ast",
-      "id": "claude_formul\u00e1rios_modais",
+      "id": "claude_formul\u00e1rios_562",
       "community": 8,
-      "norm_label": "formularios / modais"
+      "norm_label": "formularios"
+    },
+    {
+      "label": "Modais",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L573",
+      "_origin": "ast",
+      "id": "claude_modais",
+      "community": 8,
+      "norm_label": "modais"
     },
     {
       "label": "Header",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L559",
+      "source_location": "L579",
       "_origin": "ast",
       "id": "claude_header",
       "community": 8,
       "norm_label": "header"
     },
     {
-      "label": "Breakpoints utilizados",
+      "label": "Breakpoints obrigat\u00f3rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L563",
+      "source_location": "L584",
       "_origin": "ast",
-      "id": "claude_breakpoints_utilizados",
+      "id": "claude_breakpoints_obrigat\u00f3rios",
       "community": 8,
-      "norm_label": "breakpoints utilizados"
+      "norm_label": "breakpoints obrigatorios"
     },
     {
       "label": "CSS proibido em mobile",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L570",
+      "source_location": "L591",
       "_origin": "ast",
       "id": "claude_css_proibido_em_mobile",
       "community": 8,
       "norm_label": "css proibido em mobile"
     },
     {
-      "label": "Classe `.crud-table-wrap` (j\u00e1 definida em styles.css)",
+      "label": "Verifica\u00e7\u00e3o r\u00e1pida (checklist antes de cada commit)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L575",
+      "source_location": "L597",
       "_origin": "ast",
-      "id": "claude_classe_crud_table_wrap_j\u00e1_definida_em_styles_css",
+      "id": "claude_verifica\u00e7\u00e3o_r\u00e1pida_checklist_antes_de_cada_commit",
       "community": 8,
-      "norm_label": "classe `.crud-table-wrap` (ja definida em styles.css)"
+      "norm_label": "verificacao rapida (checklist antes de cada commit)"
     },
     {
       "label": "Autentica\u00e7\u00e3o",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L581",
+      "source_location": "L604",
       "_origin": "ast",
       "id": "claude_autentica\u00e7\u00e3o",
       "community": 8,
@@ -787,57 +807,57 @@
       "label": "Tecnologias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L589",
+      "source_location": "L612",
       "_origin": "ast",
       "id": "claude_tecnologias",
-      "community": 10,
+      "community": 1,
       "norm_label": "tecnologias"
     },
     {
       "label": "Frontend \u2014 Vanilla JS (obrigat\u00f3rio)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L591",
+      "source_location": "L614",
       "_origin": "ast",
       "id": "claude_frontend_vanilla_js_obrigat\u00f3rio",
-      "community": 10,
+      "community": 1,
       "norm_label": "frontend \u2014 vanilla js (obrigatorio)"
     },
     {
       "label": "Estrutura de arquivos HTML (uma por tela/m\u00f3dulo)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L603",
+      "source_location": "L626",
       "_origin": "ast",
       "id": "claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo",
-      "community": 10,
+      "community": 1,
       "norm_label": "estrutura de arquivos html (uma por tela/modulo)"
     },
     {
       "label": "Padr\u00f5es JavaScript obrigat\u00f3rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L638",
+      "source_location": "L661",
       "_origin": "ast",
       "id": "claude_padr\u00f5es_javascript_obrigat\u00f3rios",
-      "community": 10,
+      "community": 1,
       "norm_label": "padroes javascript obrigatorios"
     },
     {
       "label": "Backend / Banco de Dados",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L671",
+      "source_location": "L694",
       "_origin": "ast",
       "id": "claude_backend_banco_de_dados",
-      "community": 10,
+      "community": 1,
       "norm_label": "backend / banco de dados"
     },
     {
       "label": "Supabase \u2014 Configura\u00e7\u00e3o e Uso da API",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L679",
+      "source_location": "L702",
       "_origin": "ast",
       "id": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
       "community": 5,
@@ -847,7 +867,7 @@
       "label": "Credenciais",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L681",
+      "source_location": "L704",
       "_origin": "ast",
       "id": "claude_credenciais",
       "community": 5,
@@ -857,7 +877,7 @@
       "label": "Padr\u00e3o de CRUD \u2014 fun\u00e7\u00f5es reutiliz\u00e1veis",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L695",
+      "source_location": "L718",
       "_origin": "ast",
       "id": "claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis",
       "community": 5,
@@ -867,7 +887,7 @@
       "label": "Filtros e operadores da API REST Supabase",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L755",
+      "source_location": "L778",
       "_origin": "ast",
       "id": "claude_filtros_e_operadores_da_api_rest_supabase",
       "community": 5,
@@ -877,7 +897,7 @@
       "label": "Esquema de tabelas do banco (PostgreSQL)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L769",
+      "source_location": "L792",
       "_origin": "ast",
       "id": "claude_esquema_de_tabelas_do_banco_postgresql",
       "community": 5,
@@ -887,7 +907,7 @@
       "label": "RLS (Row Level Security)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L1077",
+      "source_location": "L1100",
       "_origin": "ast",
       "id": "claude_rls_row_level_security",
       "community": 5,
@@ -897,7 +917,7 @@
       "label": "Autentica\u00e7\u00e3o do ERP",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L1088",
+      "source_location": "L1111",
       "_origin": "ast",
       "id": "claude_autentica\u00e7\u00e3o_do_erp",
       "community": 5,
@@ -907,7 +927,7 @@
       "label": "Ordem de Implementa\u00e7\u00e3o Sugerida",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L1132",
+      "source_location": "L1155",
       "_origin": "ast",
       "id": "claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
       "community": 1,
@@ -1957,20 +1977,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L563",
+      "source_location": "L584",
       "weight": 1.0,
       "source": "claude_responsividade",
-      "target": "claude_breakpoints_utilizados",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CLAUDE.md",
-      "source_location": "L575",
-      "weight": 1.0,
-      "source": "claude_responsividade",
-      "target": "claude_classe_crud_table_wrap_j\u00e1_definida_em_styles_css",
+      "target": "claude_breakpoints_obrigat\u00f3rios",
       "confidence_score": 1.0
     },
     {
@@ -1979,18 +1989,18 @@
       "source_file": "CLAUDE.md",
       "source_location": "L570",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_responsividade",
-      "target": "claude_css_proibido_em_mobile",
-      "confidence_score": 1.0
+      "target": "claude_css_proibido_em_mobile"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L553",
+      "source_location": "L562",
       "weight": 1.0,
       "source": "claude_responsividade",
-      "target": "claude_formul\u00e1rios_modais",
+      "target": "claude_formul\u00e1rios_562",
       "confidence_score": 1.0
     },
     {
@@ -1999,8 +2009,28 @@
       "source_file": "CLAUDE.md",
       "source_location": "L559",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_responsividade",
-      "target": "claude_header",
+      "target": "claude_header"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L542",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_responsividade",
+      "target": "claude_layout_geral"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L573",
+      "weight": 1.0,
+      "source": "claude_responsividade",
+      "target": "claude_modais",
       "confidence_score": 1.0
     },
     {
@@ -2010,17 +2040,27 @@
       "source_location": "L542",
       "weight": 1.0,
       "source": "claude_responsividade",
-      "target": "claude_layout_geral",
+      "target": "claude_objetivo_mobile",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L548",
+      "source_location": "L555",
       "weight": 1.0,
       "source": "claude_responsividade",
-      "target": "claude_tabelas",
+      "target": "claude_tabelas_regra_cr\u00edtica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L597",
+      "weight": 1.0,
+      "source": "claude_responsividade",
+      "target": "claude_verifica\u00e7\u00e3o_r\u00e1pida_checklist_antes_de_cada_commit",
       "confidence_score": 1.0
     },
     {
@@ -2235,5 +2275,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "72233712f702e7112abde1c790a3fd329af3584b"
+  "built_at_commit": "68537a5cf9806259a01aabf9983f28a26760cdeb"
 }
