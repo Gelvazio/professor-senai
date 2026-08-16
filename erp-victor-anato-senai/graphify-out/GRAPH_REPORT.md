@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-16)
 
 ## Corpus Check
-- 46 files · ~579,640 words
+- 48 files · ~598,460 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 905 nodes · 919 edges · 46 communities (44 shown, 2 thin omitted)
+- 922 nodes · 934 edges · 48 communities (46 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `29c8cc7d`
+- Built from commit: `34cf9353`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,12 +42,14 @@
 - [[_COMMUNITY_Community 24|Community 24]]
 - [[_COMMUNITY_Community 25|Community 25]]
 - [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
 - [[_COMMUNITY_Community 35|Community 35]]
 - [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
 - [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Community 47|Community 47]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -67,7 +69,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (46 total, 2 thin omitted)
+## Communities (48 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.08
@@ -177,6 +179,10 @@ Nodes (13): About Me, AI & Tools I Use, At a Glance (KPIs principais), Audience 
 Cohesion: 0.33
 Nodes (5): Estrutura da tabela SISTEMA, Estrutura da tabela TELA_SISTEMA, Módulos como registros na tabela SISTEMA, REGRAS DE NEGÓCIOS, Telas — Tabela TELA_SISTEMA
 
+### Community 27 - "Community 27"
+Cohesion: 0.15
+Nodes (12): Arquivo HTML, Campos, Funcionalidades da Tela, Inserção manual (opcional), Integração com Sistema Externo (IRP), Listagem, Modal de Edição, Módulo Tele Vendas — Especificação (+4 more)
+
 ### Community 35 - "Community 35"
 Cohesion: 0.31
 Nodes (16): _calcularNivel(), carregarPerfil(), _cincoMissoes24h(), _eventosConcluidos(), _garantirPerfil(), _get(), _inicializarMissoesOnboarding(), _liderGrupo() (+8 more)
@@ -193,8 +199,12 @@ Nodes (5): Backend / Banco de Dados, Estrutura de arquivos HTML (uma por tela/m�
 Cohesion: 0.05
 Nodes (38): 10. Telas do Módulo, 11.1 Tabelas com Nomenclatura Definitiva, 11. Estrutura de Dados — Tabelas Supabase, 12. Numeração Automática, 13. Sidebar HTML (RH), 14. Sistema e Telas no Banco, 15. Ordem de Implementação Sugerida, 1.1 Princípios (+30 more)
 
+### Community 47 - "Community 47"
+Cohesion: 0.50
+Nodes (3): Andamento — Módulo Tele Vendas, Legenda, Tarefas
+
 ## Knowledge Gaps
-- **758 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Tasks`, `Graphify — Atualização obrigatória após cada tarefa` (+753 more)
+- **769 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Tasks`, `Graphify — Atualização obrigatória após cada tarefa` (+764 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -202,7 +212,7 @@ Nodes (38): 10. Telas do Módulo, 11.1 Tabelas com Nomenclatura Definitiva, 11. 
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _758 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _769 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.08048780487804878 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

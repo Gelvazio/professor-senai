@@ -13,8 +13,8 @@ Arquivo de rastreamento de tarefas. Verificar no início de cada interação.
 | 3 | Criar tabela SQL `televendas` no Supabase | 🔵 Aberto |
 | 4 | Criar `vendas/televendas.html` com CRUD completo | ✅ Concluído |
 | 5 | Adicionar link Tele Vendas no sidebar de todos os arquivos HTML | ✅ Concluído |
-| 6 | Commit e push de todos os arquivos alterados | 🟡 Iniciado |
-| 7 | Executar graphify | 🔵 Aberto |
+| 6 | Commit e push de todos os arquivos alterados | ✅ Concluído |
+| 7 | Executar graphify | ✅ Concluído |
 
 ---
 
