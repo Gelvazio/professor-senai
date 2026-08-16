@@ -45,23 +45,23 @@
     "semantic_hash": ""
   },
   "compras/pedidos.html": {
-    "mtime": 1786831452.1128685,
-    "ast_hash": "b9e05a12f568e87bf55f26a9585587bc",
+    "mtime": 1786880065.650358,
+    "ast_hash": "5dae405b796132c4b8491f8baef3ab81",
     "semantic_hash": ""
   },
   "compras/planejamento.html": {
-    "mtime": 1786831452.1168242,
-    "ast_hash": "1895ba3a69bc4c28f17feb6b4f48b5a8",
+    "mtime": 1786880065.6523373,
+    "ast_hash": "c04502aa5739d1fff7421ce9b5ff8156",
     "semantic_hash": ""
   },
   "compras/solicitacoes.html": {
-    "mtime": 1786831452.1260724,
-    "ast_hash": "a29aebebf811e0928f3777bd4d1e223d",
+    "mtime": 1786880065.6613405,
+    "ast_hash": "1e855f1eae890fdf8306ddd407865bb5",
     "semantic_hash": ""
   },
   "configuracoes/usuarios.html": {
-    "mtime": 1786830452.2611997,
-    "ast_hash": "11d2db7d2c75569a89584ec502ef2d74",
+    "mtime": 1786880065.680368,
+    "ast_hash": "d03b37474d791dee91ef21808c58cb66",
     "semantic_hash": ""
   },
   "estoque/controle.html": {
@@ -70,68 +70,68 @@
     "semantic_hash": ""
   },
   "estoque/movimentacoes.html": {
-    "mtime": 1786831452.1466167,
-    "ast_hash": "ea54bf592c98bfc21854a643125f9ae0",
+    "mtime": 1786880065.7200904,
+    "ast_hash": "3a3b4beeb5ffae792c3f0727227aac80",
     "semantic_hash": ""
   },
   "cadastros/clientes.html": {
-    "mtime": 1786831452.0836215,
-    "ast_hash": "ca81782b954ac2454eaeab98eab9a873",
+    "mtime": 1786880065.572846,
+    "ast_hash": "86c2ed4936ee2ec149f176063aff0683",
     "semantic_hash": ""
   },
   "cadastros/fornecedores.html": {
-    "mtime": 1786831452.0875998,
-    "ast_hash": "d96945e1220d6a3f4bc8e0edb16841d5",
+    "mtime": 1786880065.6317458,
+    "ast_hash": "b4e90c8403aa04e9a09d03360a524857",
     "semantic_hash": ""
   },
   "cadastros/produtos.html": {
-    "mtime": 1786831452.0940835,
-    "ast_hash": "eff78a3273ca7407bfa72b13eb1b5489",
+    "mtime": 1786880065.6347916,
+    "ast_hash": "50fb2c6552ba8d673dab51f43604156d",
     "semantic_hash": ""
   },
   "compras/conferencia.html": {
-    "mtime": 1786831452.102556,
-    "ast_hash": "8426eb1509fbe8ef793c626a1c3f7b76",
+    "mtime": 1786880065.6427798,
+    "ast_hash": "7a7a78c22a4b9758628b591d23015507",
     "semantic_hash": ""
   },
   "compras/recebimento.html": {
-    "mtime": 1786831452.1210468,
-    "ast_hash": "dcf34e1fa01d6a1f4ddf428e9d407758",
+    "mtime": 1786880065.6553557,
+    "ast_hash": "beab9f225eb7d76b3254582aa5024507",
     "semantic_hash": ""
   },
   "estoque/armazenagem.html": {
-    "mtime": 1786831452.1323762,
-    "ast_hash": "c9e4cccab03c96096a62e98b4d6c412f",
+    "mtime": 1786880077.9574914,
+    "ast_hash": "f295c35515ff8e9c82169a6d106cfa2b",
     "semantic_hash": ""
   },
   "estoque/inventario.html": {
-    "mtime": 1786831452.1416178,
-    "ast_hash": "ea7c5e430489cf285ca3ae9920f84411",
+    "mtime": 1786880065.7034578,
+    "ast_hash": "3b622be79941e2079a269db2ab29fb6a",
     "semantic_hash": ""
   },
   "vendas/nota-fiscal-venda.html": {
-    "mtime": 1786831452.160689,
-    "ast_hash": "918a5c9b38868d4f0499db13946bf5eb",
+    "mtime": 1786880065.7425113,
+    "ast_hash": "8964ea8aa1068868857ef13809e48531",
     "semantic_hash": ""
   },
   "vendas/pedidos-venda.html": {
-    "mtime": 1786831452.1646867,
-    "ast_hash": "fb339345f258ef042202d63e28065c1b",
+    "mtime": 1786880065.7470193,
+    "ast_hash": "161432171f2a5c978e44fdc7c8f2b9d9",
     "semantic_hash": ""
   },
   "vendas/separacao.html": {
-    "mtime": 1786831452.1719081,
-    "ast_hash": "484e4dfa7e7f41076b28e76e98c74230",
+    "mtime": 1786880065.7535565,
+    "ast_hash": "ac11c1f17310b1ee0c1d00dbe6ea8d1e",
     "semantic_hash": ""
   },
   "cadastros/transportadoras.html": {
-    "mtime": 1786831452.0985546,
-    "ast_hash": "fe73f502c387590dc36bf7c02ae3f571",
+    "mtime": 1786880065.6377919,
+    "ast_hash": "6cb07be38a903590e6bd1724a122d09c",
     "semantic_hash": ""
   },
   "compras/nota-fiscal.html": {
-    "mtime": 1786831452.1075556,
-    "ast_hash": "0a64d10a52b11339c54b20e9316cc83f",
+    "mtime": 1786880065.6467774,
+    "ast_hash": "133bb9fe013ce5a6143ff5e0445ef027",
     "semantic_hash": ""
   },
   "criar-admin.html": {
@@ -140,18 +140,18 @@
     "semantic_hash": ""
   },
   "vendas/entrega.html": {
-    "mtime": 1786831452.1508758,
-    "ast_hash": "46a897da9d776963773bc42abeba4faf",
+    "mtime": 1786880065.728088,
+    "ast_hash": "c67752ddb1ecfbc2fb98d5da97a7fb89",
     "semantic_hash": ""
   },
   "vendas/expedicao.html": {
-    "mtime": 1786831452.1548743,
-    "ast_hash": "b194bcae7fe829c301033423e0cb9509",
+    "mtime": 1786880065.7354746,
+    "ast_hash": "7338747a8553fd72429db8db289f0075",
     "semantic_hash": ""
   },
   "vendas/romaneio.html": {
-    "mtime": 1786831452.167687,
-    "ast_hash": "17251170480e70bef8d96b81733200d5",
+    "mtime": 1786880065.75054,
+    "ast_hash": "1c478887eb401bc3daf0fa9bfb75be6e",
     "semantic_hash": ""
   },
   "seed.sql": {
@@ -175,8 +175,8 @@
     "semantic_hash": ""
   },
   "configuracoes/perfis.html": {
-    "mtime": 1786830452.319059,
-    "ast_hash": "3599eb8960ae2a94aebd6ce62ced2f95",
+    "mtime": 1786880065.6673388,
+    "ast_hash": "e7d1f5d154004e9c0092e9cc82983fab",
     "semantic_hash": ""
   },
   "configuracoes/telas.html": {
