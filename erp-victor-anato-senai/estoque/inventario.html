@@ -143,6 +143,7 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+  <script src="../gamificacao/gamif.js"></script>
 </head>
 <body>
 
@@ -703,6 +704,7 @@
         dados.numero = numero;
         registroSalvo = await sbInserir('estoque_inventarios', dados);
         sbMensagem('msgGlobal', 'Inventário registrado com sucesso!', 'ok');
+        if (window.gamif) await gamif.registrarEvento('inventario_realizado');
       }
 
       // ── Regra: ao marcar como Ajustado, gerar movimentação de ajuste ──

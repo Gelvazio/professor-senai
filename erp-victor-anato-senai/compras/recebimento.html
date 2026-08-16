@@ -67,6 +67,7 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+  <script src="../gamificacao/gamif.js"></script>
 </head>
 <body>
 
@@ -413,6 +414,7 @@
       } else {
         dados.numero = await Numerar.recebimento();
         await sbInserir('compras_recebimentos', dados);
+        if (window.gamif) await gamif.registrarEvento('recebimento_registrado');
       }
       fecharModal();
       sbMensagem('msgCrud', 'Recebimento salvo com sucesso!', 'ok');

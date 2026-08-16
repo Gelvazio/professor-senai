@@ -127,6 +127,7 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+  <script src="../gamificacao/gamif.js"></script>
 </head>
 <body>
 
@@ -595,6 +596,7 @@
         dados.numero = document.getElementById('fNumero').value;
         await sbInserir('estoque_movimentacoes', dados);
         sbMensagem('msgGlobal', 'Movimentação registrada com sucesso!', 'ok');
+        if (window.gamif) await gamif.registrarEvento('movimentacao_estoque');
       }
 
       fecharModal();

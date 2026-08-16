@@ -70,6 +70,7 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+  <script src="../gamificacao/gamif.js"></script>
 </head>
 <body>
 
@@ -487,7 +488,7 @@
     };
     try {
       if (modoEdicao) { await sbAtualizar('fornecedores', idEdicao, dados); msg('Fornecedor atualizado!', 'ok'); }
-      else            { await sbInserir('fornecedores', dados);             msg('Fornecedor cadastrado!', 'ok'); }
+      else            { await sbInserir('fornecedores', dados); msg('Fornecedor cadastrado!', 'ok'); if (window.gamif) await gamif.registrarEvento('fornecedor_cadastrado'); }
       fecharModal(); await carregar();
     } catch (er) { msgModal('Erro ao salvar: ' + er.message); }
   }

@@ -50,6 +50,7 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+  <script src="../gamificacao/gamif.js"></script>
 </head>
 <body>
 
@@ -498,6 +499,7 @@
         await sbAtualizar('vendas_pedidos', editId, dados);
       } else {
         await sbInserir('vendas_pedidos', dados);
+        if (window.gamif) await gamif.registrarEvento('pedido_venda_criado');
       }
       fecharModal();
       sbMensagem('msgGlobal', editId ? 'Pedido atualizado com sucesso!' : 'Pedido criado com sucesso!', 'ok');

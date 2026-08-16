@@ -69,6 +69,7 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+  <script src="../gamificacao/gamif.js"></script>
 </head>
 <body>
 
@@ -448,6 +449,7 @@
       } else {
         dados.numero = await Numerar.pedidoCompra();
         await sbInserir('compras_pedidos', dados);
+        if (window.gamif) await gamif.registrarEvento('pedido_compra_criado');
       }
       fecharModal();
       sbMensagem('msgCrud', 'Pedido salvo com sucesso!', 'ok');

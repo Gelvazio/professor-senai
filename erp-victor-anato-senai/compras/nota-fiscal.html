@@ -69,6 +69,7 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+  <script src="../gamificacao/gamif.js"></script>
 </head>
 <body>
 
@@ -443,6 +444,7 @@
       } else {
         const novo = await sbInserir('compras_notas_fiscais', dados);
         savedId = novo?.id;
+        if (window.gamif) await gamif.registrarEvento('nota_fiscal_compra_lancada');
       }
 
       // Lançar estoque somente se o status mudou para "Lançada"
