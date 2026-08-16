@@ -7,5 +7,6 @@
   { "siscodigo": 6, "sisnome": "Estoque",            "sisativo": 1, "sisordem": 6 },
   { "siscodigo": 7, "sisnome": "Financeiro",         "sisativo": 1, "sisordem": 7 },
   { "siscodigo": 8, "sisnome": "Configurações",      "sisativo": 1, "sisordem": 8 },
-  { "siscodigo": 9, "sisnome": "Marketing",          "sisativo": 1, "sisordem": 9 }
+  { "siscodigo": 9, "sisnome": "Marketing",          "sisativo": 1, "sisordem": 9 },
+  { "siscodigo": 10, "sisnome": "Gamificação",       "sisativo": 1, "sisordem": 10 }
 ]

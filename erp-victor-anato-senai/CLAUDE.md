@@ -506,6 +506,173 @@ Gerenciamento de usuários e permissões de acesso ao sistema.
 
 ---
 
+## Módulo 6 — GAMIFICAÇÃO
+
+Transforma a turma em uma empresa virtual. Cada equipe gerencia um setor do ERP. Um motor de simulação gera eventos de negócio automaticamente enquanto o professor controla o fluxo com Play/Pause.
+
+### 6.1 Equipes e Setores
+
+| Equipe | Setor | Tabelas principais |
+|--------|-------|--------------------|
+| Compras | Módulo Compras | compras_solicitacoes, compras_pedidos |
+| Estoque | Módulo Estoque | estoque_movimentacoes, estoque_inventarios |
+| Vendas | Módulo Vendas | vendas_pedidos, vendas_separacoes |
+| Logística | Romaneio/Expedição/Entrega | vendas_romaneios, vendas_expedicoes, vendas_entregas |
+| Financeiro | Fluxo de caixa | fin_contas_pagar, fin_contas_receber |
+| Marketing | Campanhas | marketing_campanhas, marketing_retornos |
+
+### 6.2 Telas do Módulo
+
+```
+gamificacao/
+├── professor.html      ← Dashboard do professor (Play/Pause, ranking, eventos ao vivo)
+├── equipe.html         ← View da equipe (?equipe=uuid), countdown por evento
+├── placar.html         ← Placar para projeção no telão (full-screen, dark, auto-refresh 5s)
+├── config-sessao.html  ← Criar/editar sessão (equipes, membros, config do motor)
+├── index.html          ← Hub do usuário (XP, nível, badges, missões) — já existe
+├── ranking.html        ← Leaderboard — já existe
+└── admin.html          ← Admin — já existe
+```
+
+### 6.3 Tabelas no Supabase (Gamificação)
+
+```sql
+CREATE TABLE gamificacao_sessoes (
+  id            uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  titulo        text NOT NULL,
+  professor_id  uuid REFERENCES erp_usuarios(id),
+  status        text DEFAULT 'pausada',   -- 'ativa','pausada','encerrada'
+  velocidade    integer DEFAULT 1,        -- 1x, 2x, 5x
+  rodada_atual  integer DEFAULT 1,
+  iniciada_em   timestamptz,
+  encerrada_em  timestamptz,
+  created_at    timestamptz DEFAULT now()
+);
+
+CREATE TABLE gamificacao_equipes (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  sessao_id   uuid REFERENCES gamificacao_sessoes(id),
+  nome        text NOT NULL,
+  setor       text NOT NULL,  -- 'compras','estoque','vendas','logistica','financeiro','marketing'
+  cor         text DEFAULT '#3B82F6',
+  pontos      integer DEFAULT 0,
+  created_at  timestamptz DEFAULT now()
+);
+
+CREATE TABLE gamificacao_membros (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  equipe_id   uuid REFERENCES gamificacao_equipes(id),
+  nome        text NOT NULL,
+  usuario_id  uuid REFERENCES erp_usuarios(id),
+  created_at  timestamptz DEFAULT now()
+);
+
+CREATE TABLE gamificacao_eventos (
+  id            uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  sessao_id     uuid REFERENCES gamificacao_sessoes(id),
+  rodada        integer NOT NULL,
+  tipo          text NOT NULL,   -- 'pedido_venda','solicitacao_compra','chegada_mercadoria', etc.
+  titulo        text NOT NULL,
+  descricao     text,
+  setor_alvo    text NOT NULL,
+  prioridade    text DEFAULT 'normal',   -- 'normal','alta','urgente'
+  prazo_minutos integer DEFAULT 5,
+  status        text DEFAULT 'pendente', -- 'pendente','resolvido','expirado'
+  referencia_id uuid,
+  pontos_base   integer DEFAULT 10,
+  resolvido_em  timestamptz,
+  created_at    timestamptz DEFAULT now()
+);
+
+CREATE TABLE gamificacao_pontuacoes (
+  id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  sessao_id   uuid REFERENCES gamificacao_sessoes(id),
+  equipe_id   uuid REFERENCES gamificacao_equipes(id),
+  evento_id   uuid REFERENCES gamificacao_eventos(id),
+  pontos      integer NOT NULL,
+  motivo      text,   -- 'resolucao_rapida','resolucao_no_prazo','expirado','bonus'
+  created_at  timestamptz DEFAULT now()
+);
+
+CREATE TABLE gamificacao_config_motor (
+  id                  uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  sessao_id           uuid REFERENCES gamificacao_sessoes(id),
+  intervalo_segundos  integer DEFAULT 60,
+  max_eventos_ativos  integer DEFAULT 5,
+  chance_urgente      integer DEFAULT 20,
+  produtos_ids        uuid[],
+  clientes_ids        uuid[],
+  fornecedores_ids    uuid[],
+  created_at          timestamptz DEFAULT now()
+);
+
+-- RLS permissivo
+ALTER TABLE gamificacao_sessoes      ENABLE ROW LEVEL SECURITY;
+ALTER TABLE gamificacao_equipes      ENABLE ROW LEVEL SECURITY;
+ALTER TABLE gamificacao_membros      ENABLE ROW LEVEL SECURITY;
+ALTER TABLE gamificacao_eventos      ENABLE ROW LEVEL SECURITY;
+ALTER TABLE gamificacao_pontuacoes   ENABLE ROW LEVEL SECURITY;
+ALTER TABLE gamificacao_config_motor ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "anon full" ON gamificacao_sessoes      FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "anon full" ON gamificacao_equipes      FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "anon full" ON gamificacao_membros      FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "anon full" ON gamificacao_eventos      FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "anon full" ON gamificacao_pontuacoes   FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "anon full" ON gamificacao_config_motor FOR ALL USING (true) WITH CHECK (true);
+```
+
+### 6.4 Sistema e Telas no Banco
+
+```sql
+-- Sistema (siscodigo 10)
+INSERT INTO sistema (siscodigo, sisnome, sisativo, sisordem)
+VALUES (10, 'Gamificação', 1, 10);
+
+-- Telas vinculadas ao sistema 10
+INSERT INTO tela (nome, nome_html, ativo) VALUES
+  ('Professor',     'gamificacao/professor.html',    1),
+  ('Minha Equipe',  'gamificacao/equipe.html',       1),
+  ('Placar',        'gamificacao/placar.html',        1),
+  ('Config Sessão', 'gamificacao/config-sessao.html', 1);
+-- Depois inserir os IDs gerados em tela_sistema com sistema_id=10
+```
+
+### 6.5 Sidebar HTML (Gamificação)
+
+```html
+<div class="sidebar-section">
+  <div class="sidebar-section-label">Gamificação</div>
+  <a class="sidebar-link" href="../gamificacao/professor.html"><span class="sidebar-icon">🎮</span> Professor</a>
+  <a class="sidebar-link" href="../gamificacao/equipe.html"><span class="sidebar-icon">👥</span> Minha Equipe</a>
+  <a class="sidebar-link" href="../gamificacao/placar.html"><span class="sidebar-icon">🏆</span> Placar</a>
+</div>
+```
+
+### 6.6 Pontuação
+
+| Situação | Pontos |
+|----------|--------|
+| Resolvido dentro do prazo | +pontos_base |
+| Resolvido em < 50% do prazo | +pontos_base × 1,5 |
+| Evento expirado | −5 pontos |
+| Zero erros de validação | +3 bônus |
+| Primeiro a resolver urgente | +15 bônus |
+
+### 6.7 sistema.json — adicionar entrada
+
+```json
+{ "siscodigo": 10, "sisnome": "Gamificação", "sisativo": 1, "sisordem": 10 }
+```
+
+### 6.8 perfis.html — atualizar sisOrdem
+
+```js
+const sisOrdem = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+```
+
+---
+
 ## Visão Geral (Dashboard)
 
 A tela inicial do sistema deve exibir um painel resumido com:
@@ -666,8 +833,16 @@ erp-victor-anato-senai/
 │   ├── separacao.html
 │   ├── expedicao.html
 │   └── entrega.html
-└── configuracoes/
-    └── usuarios.html
+├── configuracoes/
+│   └── usuarios.html
+└── gamificacao/
+    ├── professor.html      ← Dashboard do professor
+    ├── equipe.html         ← View da equipe
+    ├── placar.html         ← Placar para telão
+    ├── config-sessao.html  ← Configuração da sessão
+    ├── index.html          ← Hub do usuário (já existe)
+    ├── ranking.html        ← Leaderboard (já existe)
+    └── admin.html          ← Admin (já existe)
 ```
 
 ### Padrões JavaScript obrigatórios
