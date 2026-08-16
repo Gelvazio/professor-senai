@@ -292,29 +292,30 @@
 
 ## Banco de Dados (Supabase) — SQL a executar
 
-Todos os SQLs estão disponíveis na seção 11 e 11.1 de `rh/recursos-humanos.md`.
+Todos os SQLs foram aplicados via MCP Supabase em 2026-08-16.
 
 | Tabela | Status |
 |--------|--------|
-| `rh_departamentos` | ❌ A criar no Supabase |
-| `rh_cargos` | ❌ A criar no Supabase |
-| `rh_funcionarios` | ❌ A criar no Supabase |
-| `rh_beneficios` | ❌ A criar no Supabase |
-| `rh_funcionario_beneficios` | ❌ A criar no Supabase |
-| `rh_jornadas` | ❌ A criar no Supabase |
-| `rh_ponto` | ❌ A criar no Supabase |
-| `rh_folha_competencias` | ❌ A criar no Supabase |
-| `rh_folha_lancamentos` | ❌ A criar no Supabase |
-| `rh_decimo_terceiro` | ❌ A criar no Supabase |
-| `rh_ferias` | ❌ A criar no Supabase |
-| `rh_afastamentos` | ❌ A criar no Supabase |
-| `rh_treinamentos` | ❌ A criar no Supabase |
-| `rh_participacoes` | ❌ A criar no Supabase |
-| `rh_admissoes` | ❌ A criar no Supabase |
-| `rh_desligamentos` | ❌ A criar no Supabase |
-| `beneficio_funcionario` (sec 11.1) | ❌ A criar no Supabase |
-| `progressao_desempenho` (sec 11.1) | ❌ A criar no Supabase |
-| `avaliacao_desempenho` (sec 11.1) | ❌ A criar no Supabase |
+| `rh_departamentos` | ✅ Criada |
+| `rh_cargos` | ✅ Criada |
+| `rh_funcionarios` | ✅ Criada |
+| `rh_beneficios` | ✅ Criada |
+| `rh_funcionario_beneficios` | ✅ Criada |
+| `rh_jornadas` | ✅ Criada |
+| `rh_ponto` | ✅ Criada |
+| `rh_folha_competencias` | ✅ Criada |
+| `rh_folha_lancamentos` | ✅ Criada |
+| `rh_decimo_terceiro` | ✅ Criada |
+| `rh_ferias` | ✅ Criada |
+| `rh_afastamentos` | ✅ Criada |
+| `rh_treinamentos` | ✅ Criada |
+| `rh_participacoes` | ✅ Criada |
+| `rh_admissoes` | ✅ Criada |
+| `rh_desligamentos` | ✅ Criada |
+| `beneficios` (sec 11.1) | ✅ Criada |
+| `beneficio_funcionario` (sec 11.1) | ✅ Criada |
+| `progressao_desempenho` (sec 11.1) | ✅ Criada |
+| `avaliacao_desempenho` (sec 11.1) | ✅ Criada |
 
 ---
 
@@ -324,12 +325,12 @@ Todos os SQLs estão disponíveis na seção 11 e 11.1 de `rh/recursos-humanos.m
 |-----------|-----------|--------------|--------------|
 | Páginas HTML (seção 10) | 10 | 6 | 0 |
 | Páginas extras (seção 11.1) | 0 | 0 | 3 |
-| Tabelas Supabase | 0 | 0 | 19 |
+| Tabelas Supabase | 20 | 0 | 0 |
 | Integração (sistema.json, sidebar, perfis) | 3 | 0 | 0 |
 
 ### Pendências prioritárias
 
-1. **Banco de dados** — executar os SQLs da seção 11 e 11.1 no Supabase (19 tabelas)
+1. ~~**Banco de dados** — executar os SQLs da seção 11 e 11.1 no Supabase (19 tabelas)~~ ✅ Concluído em 2026-08-16
 2. **`rh/desligamento.html`** — adicionar campos: `data_aviso_previo`, `dias_aviso`, `aviso_trabalhado`, `saldo_ferias`, `decimo_proporcional`, `multa_fgts`, `homologado_por`
 3. **`rh/treinamentos.html`** — adicionar campos: `modalidade`, `obrigatorio`
 4. **`rh/vinculo-beneficios.html`** — criar tela de vínculos funcionário × benefício
