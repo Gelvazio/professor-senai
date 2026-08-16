@@ -236,10 +236,6 @@
             <input class="form-input" type="text" id="fEndereco" placeholder="Rua, número, complemento">
           </div>
           <div class="form-group">
-            <label class="form-label" for="fCidade">Cidade</label>
-            <input class="form-input" type="text" id="fCidade" placeholder="Cidade">
-          </div>
-          <div class="form-group">
             <label class="form-label" for="fEstado">Estado</label>
             <select class="form-select" id="fEstado">
               <option value="">— UF —</option>
@@ -250,6 +246,12 @@
               <option>PI</option><option>PR</option><option>RJ</option><option>RN</option>
               <option>RO</option><option>RR</option><option>RS</option><option>SC</option>
               <option>SE</option><option>SP</option><option>TO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fCidade">Cidade</label>
+            <select class="form-select" id="fCidade">
+              <option value="">— Cidade —</option>
             </select>
           </div>
           <div class="form-group span-2">
@@ -318,8 +320,9 @@
     document.getElementById('sidebarOverlay').classList.toggle('show');
   }
 
-  // ── ViaCEP ──
+  // ── ViaCEP + Estado→Cidade ──
   sbViaCEP('fCep', { endereco: 'fEndereco', cidade: 'fCidade', estado: 'fEstado' });
+  sbBindEstadoCidade('fEstado', 'fCidade', 'SC');
 
   // ── Estado ──
   let todos = [];
@@ -496,11 +499,11 @@
     document.getElementById('fSegmento').value  = c.segmento || '';
     document.getElementById('fCep').value       = c.cep || '';
     document.getElementById('fEndereco').value  = c.endereco || '';
-    document.getElementById('fCidade').value    = c.cidade || '';
-    document.getElementById('fEstado').value    = c.estado || '';
+    document.getElementById('fEstado').value    = c.estado || 'SC';
     document.getElementById('fObs').value       = c.observacoes || '';
     document.getElementById('fAtivo').checked   = c.ativo !== false;
     document.getElementById('modalFormulario').style.display = 'flex';
+    await sbCarregarCidades(c.estado || 'SC', 'fCidade', c.cidade || '');
   }
 
   function fecharModal() {

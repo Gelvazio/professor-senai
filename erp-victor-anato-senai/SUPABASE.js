@@ -469,6 +469,7 @@ async function sbPopularSelect(
 
 /**
  * Integração com ViaCEP — preenche campos de endereço ao sair do CEP.
+ * Se o campo cidade for um <select>, recarrega as cidades do estado retornado pelo CEP.
  * @param {string} cepInputId - ID do input de CEP.
  * @param {{ endereco, cidade, estado }} campos - IDs dos campos a preencher.
  */
@@ -486,16 +487,75 @@ function sbViaCEP(cepInputId, campos = {}) {
         const el = document.getElementById(campos.endereco);
         if (el) el.value = data.logradouro || '';
       }
-      if (campos.cidade) {
-        const el = document.getElementById(campos.cidade);
-        if (el) el.value = data.localidade || '';
-      }
       if (campos.estado) {
         const el = document.getElementById(campos.estado);
         if (el) el.value = data.uf || '';
       }
+      if (campos.cidade) {
+        const el = document.getElementById(campos.cidade);
+        if (el) {
+          if (el.tagName === 'SELECT') {
+            // Recarrega cidades do estado e pré-seleciona a cidade do CEP
+            await sbCarregarCidades(data.uf || '', campos.cidade, data.localidade || '');
+          } else {
+            el.value = data.localidade || '';
+          }
+        }
+      }
     } catch { /* silencioso */ }
   });
+}
+
+/**
+ * Carrega municípios de uma UF via IBGE e popula um <select>.
+ * @param {string} uf - Sigla do estado (ex: 'SC', 'SP')
+ * @param {string} cidadeSelectId - ID do <select> de cidade
+ * @param {string} [cidadeSelecionada=''] - Nome da cidade a pré-selecionar
+ */
+async function sbCarregarCidades(uf, cidadeSelectId, cidadeSelecionada = '') {
+  const sel = document.getElementById(cidadeSelectId);
+  if (!sel) return;
+  if (!uf) {
+    sel.innerHTML = '<option value="">— Selecione o estado —</option>';
+    sel.disabled = true;
+    return;
+  }
+  sel.innerHTML = '<option value="">Carregando cidades…</option>';
+  sel.disabled = true;
+  try {
+    const res = await fetch(
+      `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios?orderBy=nome`
+    );
+    const municipios = await res.json();
+    sel.innerHTML = '<option value="">— Cidade —</option>';
+    municipios.forEach(m => {
+      const opt = document.createElement('option');
+      opt.value       = m.nome;
+      opt.textContent = m.nome;
+      if (m.nome === cidadeSelecionada) opt.selected = true;
+      sel.appendChild(opt);
+    });
+  } catch {
+    sel.innerHTML = '<option value="">Erro ao carregar cidades</option>';
+  } finally {
+    sel.disabled = false;
+  }
+}
+
+/**
+ * Vincula o select de Estado ao select de Cidade.
+ * Ao mudar o estado, recarrega as cidades automaticamente.
+ * Por padrão, carrega SC ao inicializar.
+ * @param {string} estadoId - ID do <select> de estado
+ * @param {string} cidadeId - ID do <select> de cidade
+ * @param {string} [defaultUF='SC'] - UF padrão se o estado estiver vazio
+ */
+function sbBindEstadoCidade(estadoId, cidadeId, defaultUF = 'SC') {
+  const selEstado = document.getElementById(estadoId);
+  if (!selEstado) return;
+  selEstado.addEventListener('change', () => sbCarregarCidades(selEstado.value, cidadeId));
+  if (!selEstado.value && defaultUF) selEstado.value = defaultUF;
+  sbCarregarCidades(selEstado.value || defaultUF, cidadeId);
 }
 
 

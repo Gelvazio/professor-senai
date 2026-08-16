@@ -217,10 +217,6 @@
             <input class="form-input" type="email" id="fEmail" placeholder="email@transportadora.com.br">
           </div>
           <div class="form-group">
-            <label class="form-label" for="fCidade">Cidade</label>
-            <input class="form-input" type="text" id="fCidade" placeholder="Cidade">
-          </div>
-          <div class="form-group">
             <label class="form-label" for="fEstado">Estado</label>
             <select class="form-select" id="fEstado">
               <option value="">— UF —</option>
@@ -231,6 +227,12 @@
               <option>PI</option><option>PR</option><option>RJ</option><option>RN</option>
               <option>RO</option><option>RR</option><option>RS</option><option>SC</option>
               <option>SE</option><option>SP</option><option>TO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fCidade">Cidade</label>
+            <select class="form-select" id="fCidade">
+              <option value="">— Cidade —</option>
             </select>
           </div>
           <div class="form-group span-2">
@@ -296,6 +298,8 @@
     document.getElementById('sidebar').classList.toggle('open');
     document.getElementById('sidebarOverlay').classList.toggle('show');
   }
+
+  sbBindEstadoCidade('fEstado', 'fCidade', 'SC');
 
   let todos = [], filtrados = [], filtroAtual = 'todos', paginaAtual = 0;
   const POR_PAGINA = 50;
@@ -424,8 +428,8 @@
     document.getElementById('fContato').value     = t.contato || '';
     document.getElementById('fTelefone').value    = t.telefone || '';
     document.getElementById('fEmail').value       = t.email || '';
-    document.getElementById('fCidade').value      = t.cidade || '';
-    document.getElementById('fEstado').value      = t.estado || '';
+    document.getElementById('fEstado').value      = t.estado || 'SC';
+    await sbCarregarCidades(t.estado || 'SC', 'fCidade', t.cidade || '');
     document.getElementById('fObs').value         = t.observacoes || '';
     document.getElementById('fAtiva').checked     = t.ativa !== false;
     document.getElementById('modalFormulario').style.display = 'flex';
