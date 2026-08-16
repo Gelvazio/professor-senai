@@ -463,10 +463,10 @@ body {
 }
 .btn-salvar:hover, .btn-confirmar:hover { background: var(--color-success-dark); }
 
-/* Neutro — cancelar */
+/* Cancelar — fundo vermelho claro */
 .btn-cancelar {
-  background: var(--color-surface-2);
-  color: var(--color-text-secondary);
+  background: #fee2e2;
+  color: #b91c1c;
   border: none;
   border-radius: var(--radius-md);
   padding: 9px 14px;
@@ -475,9 +475,9 @@ body {
   font-family: inherit;
   transition: background var(--transition-fast);
 }
-.btn-cancelar:hover { background: #e0e0e0; }
-[data-theme="dark"] .btn-cancelar { background: var(--color-surface-3); color: var(--color-text-muted); }
-[data-theme="dark"] .btn-cancelar:hover { background: #303340; }
+.btn-cancelar:hover { background: #fecaca; }
+[data-theme="dark"] .btn-cancelar { background: rgba(239,68,68,0.15); color: #fca5a5; }
+[data-theme="dark"] .btn-cancelar:hover { background: rgba(239,68,68,0.25); }
 
 /* Ação em tabela — editar */
 .btn-ed, .btn-mat-editar, .btn-card-editar {
