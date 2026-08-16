@@ -10,18 +10,13 @@
     "semantic_hash": ""
   },
   "SUPABASE.js": {
-    "mtime": 1786906291.8011193,
-    "ast_hash": "52ea4a96a8d7d2ead91d82cafe335b5f",
+    "mtime": 1786908164.0783916,
+    "ast_hash": "264194ab44155d5230aac25e5b303a91",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
     "mtime": 1786907426.1034381,
     "ast_hash": "7580529a89149ee0a90bf3da32b4b199",
-    "semantic_hash": ""
-  },
-  "PASSOS-CRIACAO-ERP.md": {
-    "mtime": 1786820554.7611847,
-    "ast_hash": "3835c3019925af55758b97428e26e1d3",
     "semantic_hash": ""
   },
   "dashboard.html": {
@@ -32,11 +27,6 @@
   "index.html": {
     "mtime": 1786820554.7611847,
     "ast_hash": "8d9d5c1e6d064af551f4c4a6bbc64de0",
-    "semantic_hash": ""
-  },
-  "AJUSTE-HORARIOS.png": {
-    "mtime": 1786715978.134686,
-    "ast_hash": "21aaeeb705a3050c6fe7be9a95a80291",
     "semantic_hash": ""
   },
   ".vscode/settings.json": {
@@ -154,14 +144,9 @@
     "ast_hash": "bb04a0bf6e8aea6b6f427ab49551a6d7",
     "semantic_hash": ""
   },
-  "seed.sql": {
-    "mtime": 1786820995.5904431,
-    "ast_hash": "0c28d6a26ff7e14cd08bfb0bdf496cab",
-    "semantic_hash": ""
-  },
   "sistema.json": {
-    "mtime": 1786907444.669772,
-    "ast_hash": "ba4fbf5cd635b97f3daa4a33f265531d",
+    "mtime": 1786907835.7727678,
+    "ast_hash": "3cf66483b90ce1e739dab3a7ab72ea02",
     "semantic_hash": ""
   },
   "REGRAS-NEGOCIOS/REGRAS-NEGOCIOS.txt": {
@@ -170,8 +155,8 @@
     "semantic_hash": ""
   },
   "configuracoes/perfis.html": {
-    "mtime": 1786907554.5565841,
-    "ast_hash": "7b4d1010c3cd83a72238767aac2705c1",
+    "mtime": 1786907887.6285963,
+    "ast_hash": "aaa693db2a5e2d7e361d11fcead1e237",
     "semantic_hash": ""
   },
   "configuracoes/telas.html": {
@@ -345,8 +330,8 @@
     "semantic_hash": ""
   },
   ".superpowers/sdd/progress.md": {
-    "mtime": 1786905918.384053,
-    "ast_hash": "8025f7c3842af9c1e80427b2ff233ea2",
+    "mtime": 1786907697.183786,
+    "ast_hash": "bd5299cde570653cfd9cd1c85588efd6",
     "semantic_hash": ""
   },
   "docs/superpowers/plans/2026-08-16-gamificacao-erp.md": {
@@ -415,13 +400,53 @@
     "semantic_hash": ""
   },
   "recursos-humanos/recursos-humanos.md": {
-    "mtime": 1786907391.444465,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "mtime": 1786907699.9080403,
+    "ast_hash": "8791f86094c5e2d4e3ba8c56f32a00e1",
     "semantic_hash": ""
   },
-  "recursos-humanos.md": {
-    "mtime": 1786907643.8198369,
-    "ast_hash": "2ddd8cfe21a3c4db0eab6616ff0bf7fd",
+  "REGRAS-NEGOCIOS/seed.sql": {
+    "mtime": 1786820995.5904431,
+    "ast_hash": "0c28d6a26ff7e14cd08bfb0bdf496cab",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md": {
+    "mtime": 1786820554.7611847,
+    "ast_hash": "3835c3019925af55758b97428e26e1d3",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/AJUSTE-HORARIOS.png": {
+    "mtime": 1786715978.134686,
+    "ast_hash": "21aaeeb705a3050c6fe7be9a95a80291",
+    "semantic_hash": ""
+  },
+  "financeiro/creditscore.json": {
+    "mtime": 1786908334.3341477,
+    "ast_hash": "346948de29945f3561ede384f67006ab",
+    "semantic_hash": ""
+  },
+  "financeiro/analisecredito.html": {
+    "mtime": 1786908470.0377345,
+    "ast_hash": "25c7064cbb672a2c9aa164642b789c1a",
+    "semantic_hash": ""
+  },
+  "rh/beneficios.html": {
+    "mtime": 1786908306.267494,
+    "ast_hash": "3a945c3fc840b6b7675cf60bcf33720a",
+    "semantic_hash": ""
+  },
+  "rh/cargos.html": {
+    "mtime": 1786908209.5892894,
+    "ast_hash": "7dba1f866ecf5c8915e7853b83a889f8",
+    "semantic_hash": ""
+  },
+  "rh/departamentos.html": {
+    "mtime": 1786908101.6396155,
+    "ast_hash": "795269b55e7c3ce7db3ed82faae39733",
+    "semantic_hash": ""
+  },
+  "rh/jornadas.html": {
+    "mtime": 1786908408.2344534,
+    "ast_hash": "302311f1634fb6ebcc23ac0859e0a12b",
     "semantic_hash": ""
   }
 }

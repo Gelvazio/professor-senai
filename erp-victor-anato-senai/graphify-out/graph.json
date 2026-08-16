@@ -387,7 +387,7 @@
       "label": "_sbFilenameFromHref()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L787",
+      "source_location": "L791",
       "_origin": "ast",
       "id": "supabase_sbfilenamefromhref",
       "community": 0,
@@ -397,7 +397,7 @@
       "label": "_sbConfigPath()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L798",
+      "source_location": "L802",
       "_origin": "ast",
       "id": "supabase_sbconfigpath",
       "community": 0,
@@ -407,7 +407,7 @@
       "label": "sbInjetarMenuConfiguracoes()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L808",
+      "source_location": "L812",
       "_origin": "ast",
       "id": "supabase_sbinjetarmenuconfiguracoes",
       "community": 0,
@@ -1314,116 +1314,6 @@
       "norm_label": "ordem de implementacao sugerida"
     },
     {
-      "label": "PASSOS-CRIACAO-ERP.md",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "passos_criacao_erp",
-      "community": 2,
-      "norm_label": "passos-criacao-erp.md"
-    },
-    {
-      "label": "Arquivos Base",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_arquivos_base",
-      "community": 2,
-      "norm_label": "arquivos base"
-    },
-    {
-      "label": "Passo 1 \u2014 Autentica\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_passo_1_autentica\u00e7\u00e3o",
-      "community": 2,
-      "norm_label": "passo 1 \u2014 autenticacao"
-    },
-    {
-      "label": "Passo 2 \u2014 Dashboard (Vis\u00e3o Geral)",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral",
-      "community": 2,
-      "norm_label": "passo 2 \u2014 dashboard (visao geral)"
-    },
-    {
-      "label": "Passo 3 \u2014 M\u00f3dulo Cadastros",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_passo_3_m\u00f3dulo_cadastros",
-      "community": 2,
-      "norm_label": "passo 3 \u2014 modulo cadastros"
-    },
-    {
-      "label": "Passo 4 \u2014 M\u00f3dulo Compras",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_passo_4_m\u00f3dulo_compras",
-      "community": 2,
-      "norm_label": "passo 4 \u2014 modulo compras"
-    },
-    {
-      "label": "Passo 5 \u2014 M\u00f3dulo Estoque",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L71",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_passo_5_m\u00f3dulo_estoque",
-      "community": 2,
-      "norm_label": "passo 5 \u2014 modulo estoque"
-    },
-    {
-      "label": "Passo 6 \u2014 M\u00f3dulo Vendas e Log\u00edstica",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L83",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica",
-      "community": 2,
-      "norm_label": "passo 6 \u2014 modulo vendas e logistica"
-    },
-    {
-      "label": "Passo 7 \u2014 M\u00f3dulo Configura\u00e7\u00f5es",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L98",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es",
-      "community": 2,
-      "norm_label": "passo 7 \u2014 modulo configuracoes"
-    },
-    {
-      "label": "Passo 8 \u2014 Ajustes Finais e Testes",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L109",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_passo_8_ajustes_finais_e_testes",
-      "community": 2,
-      "norm_label": "passo 8 \u2014 ajustes finais e testes"
-    },
-    {
-      "label": "Resumo de Progresso",
-      "file_type": "document",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L122",
-      "_origin": "ast",
-      "id": "passos_criacao_erp_resumo_de_progresso",
-      "community": 2,
-      "norm_label": "resumo de progresso"
-    },
-    {
       "label": "Assist. de PCP_436h_Pr\u00e1tica Profissional.md",
       "file_type": "document",
       "source_file": "REGRAS-NEGOCIOS/Assist. de PCP_436h_Pr\u00e1tica Profissional.md",
@@ -1552,6 +1442,116 @@
       "id": "regras_negocios_ct_automa\u00e7\u00e3o_industrial_1300h_b734befb",
       "community": 46,
       "norm_label": "ct automacao industrial_1300h_b734befb.md"
+    },
+    {
+      "label": "PASSOS-CRIACAO-ERP.md",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp",
+      "community": 2,
+      "norm_label": "passos-criacao-erp.md"
+    },
+    {
+      "label": "Arquivos Base",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_arquivos_base",
+      "community": 2,
+      "norm_label": "arquivos base"
+    },
+    {
+      "label": "Passo 1 \u2014 Autentica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_passo_1_autentica\u00e7\u00e3o",
+      "community": 2,
+      "norm_label": "passo 1 \u2014 autenticacao"
+    },
+    {
+      "label": "Passo 2 \u2014 Dashboard (Vis\u00e3o Geral)",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral",
+      "community": 2,
+      "norm_label": "passo 2 \u2014 dashboard (visao geral)"
+    },
+    {
+      "label": "Passo 3 \u2014 M\u00f3dulo Cadastros",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_passo_3_m\u00f3dulo_cadastros",
+      "community": 2,
+      "norm_label": "passo 3 \u2014 modulo cadastros"
+    },
+    {
+      "label": "Passo 4 \u2014 M\u00f3dulo Compras",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_passo_4_m\u00f3dulo_compras",
+      "community": 2,
+      "norm_label": "passo 4 \u2014 modulo compras"
+    },
+    {
+      "label": "Passo 5 \u2014 M\u00f3dulo Estoque",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_passo_5_m\u00f3dulo_estoque",
+      "community": 2,
+      "norm_label": "passo 5 \u2014 modulo estoque"
+    },
+    {
+      "label": "Passo 6 \u2014 M\u00f3dulo Vendas e Log\u00edstica",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica",
+      "community": 2,
+      "norm_label": "passo 6 \u2014 modulo vendas e logistica"
+    },
+    {
+      "label": "Passo 7 \u2014 M\u00f3dulo Configura\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es",
+      "community": 2,
+      "norm_label": "passo 7 \u2014 modulo configuracoes"
+    },
+    {
+      "label": "Passo 8 \u2014 Ajustes Finais e Testes",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_passo_8_ajustes_finais_e_testes",
+      "community": 2,
+      "norm_label": "passo 8 \u2014 ajustes finais e testes"
+    },
+    {
+      "label": "Resumo de Progresso",
+      "file_type": "document",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "regras_negocios_passos_criacao_erp_resumo_de_progresso",
+      "community": 2,
+      "norm_label": "resumo de progresso"
     },
     {
       "label": "REGRAS-NEGOCIOS.md",
@@ -8666,352 +8666,392 @@
     {
       "label": "recursos-humanos.md",
       "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "recursos_humanos",
-      "community": 27,
-      "norm_label": "recursos-humanos.md"
-    },
-    {
-      "label": "M\u00f3dulo de Recursos Humanos (RH) \u2014 Plano Completo de Implementa\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "community": 27,
-      "norm_label": "modulo de recursos humanos (rh) \u2014 plano completo de implementacao"
-    },
-    {
-      "label": "1. Vis\u00e3o Geral",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "recursos_humanos_1_vis\u00e3o_geral",
-      "community": 27,
-      "norm_label": "1. visao geral"
-    },
-    {
-      "label": "1.1 Princ\u00edpios",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "recursos_humanos_1_1_princ\u00edpios",
-      "community": 27,
-      "norm_label": "1.1 principios"
-    },
-    {
-      "label": "2. Cadastros Base",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L26",
-      "_origin": "ast",
-      "id": "recursos_humanos_2_cadastros_base",
-      "community": 27,
-      "norm_label": "2. cadastros base"
-    },
-    {
-      "label": "2.1 Departamentos",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L28",
-      "_origin": "ast",
-      "id": "recursos_humanos_2_1_departamentos",
-      "community": 27,
-      "norm_label": "2.1 departamentos"
-    },
-    {
-      "label": "2.2 Cargos",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L45",
-      "_origin": "ast",
-      "id": "recursos_humanos_2_2_cargos",
-      "community": 27,
-      "norm_label": "2.2 cargos"
-    },
-    {
-      "label": "2.3 Funcion\u00e1rios",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L60",
-      "_origin": "ast",
-      "id": "recursos_humanos_2_3_funcion\u00e1rios",
-      "community": 27,
-      "norm_label": "2.3 funcionarios"
-    },
-    {
-      "label": "2.4 Benef\u00edcios Cadastrados",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L102",
-      "_origin": "ast",
-      "id": "recursos_humanos_2_4_benef\u00edcios_cadastrados",
-      "community": 27,
-      "norm_label": "2.4 beneficios cadastrados"
-    },
-    {
-      "label": "3. Ponto Eletr\u00f4nico",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L117",
-      "_origin": "ast",
-      "id": "recursos_humanos_3_ponto_eletr\u00f4nico",
-      "community": 27,
-      "norm_label": "3. ponto eletronico"
-    },
-    {
-      "label": "3.1 Jornadas de Trabalho",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L119",
-      "_origin": "ast",
-      "id": "recursos_humanos_3_1_jornadas_de_trabalho",
-      "community": 27,
-      "norm_label": "3.1 jornadas de trabalho"
-    },
-    {
-      "label": "3.2 Registros de Ponto",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L136",
-      "_origin": "ast",
-      "id": "recursos_humanos_3_2_registros_de_ponto",
-      "community": 27,
-      "norm_label": "3.2 registros de ponto"
-    },
-    {
-      "label": "3.3 Apura\u00e7\u00e3o de Ponto (Painel)",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L162",
-      "_origin": "ast",
-      "id": "recursos_humanos_3_3_apura\u00e7\u00e3o_de_ponto_painel",
-      "community": 27,
-      "norm_label": "3.3 apuracao de ponto (painel)"
-    },
-    {
-      "label": "4. Folha de Pagamento",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L172",
-      "_origin": "ast",
-      "id": "recursos_humanos_4_folha_de_pagamento",
-      "community": 27,
-      "norm_label": "4. folha de pagamento"
-    },
-    {
-      "label": "4.1 Compet\u00eancias (Per\u00edodos de Folha)",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L174",
-      "_origin": "ast",
-      "id": "recursos_humanos_4_1_compet\u00eancias_per\u00edodos_de_folha",
-      "community": 27,
-      "norm_label": "4.1 competencias (periodos de folha)"
-    },
-    {
-      "label": "4.2 Lan\u00e7amentos da Folha",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L185",
-      "_origin": "ast",
-      "id": "recursos_humanos_4_2_lan\u00e7amentos_da_folha",
-      "community": 27,
-      "norm_label": "4.2 lancamentos da folha"
-    },
-    {
-      "label": "4.3 13\u00ba Sal\u00e1rio",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L222",
-      "_origin": "ast",
-      "id": "recursos_humanos_4_3_13o_sal\u00e1rio",
-      "community": 27,
-      "norm_label": "4.3 13o salario"
-    },
-    {
-      "label": "5. F\u00e9rias e Afastamentos",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L238",
-      "_origin": "ast",
-      "id": "recursos_humanos_5_f\u00e9rias_e_afastamentos",
-      "community": 27,
-      "norm_label": "5. ferias e afastamentos"
-    },
-    {
-      "label": "5.1 Controle de F\u00e9rias",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L240",
-      "_origin": "ast",
-      "id": "recursos_humanos_5_1_controle_de_f\u00e9rias",
-      "community": 27,
-      "norm_label": "5.1 controle de ferias"
-    },
-    {
-      "label": "5.2 Afastamentos",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L263",
-      "_origin": "ast",
-      "id": "recursos_humanos_5_2_afastamentos",
-      "community": 27,
-      "norm_label": "5.2 afastamentos"
-    },
-    {
-      "label": "6. Treinamentos",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L283",
-      "_origin": "ast",
-      "id": "recursos_humanos_6_treinamentos",
-      "community": 27,
-      "norm_label": "6. treinamentos"
-    },
-    {
-      "label": "6.1 Cat\u00e1logo de Treinamentos",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L285",
-      "_origin": "ast",
-      "id": "recursos_humanos_6_1_cat\u00e1logo_de_treinamentos",
-      "community": 27,
-      "norm_label": "6.1 catalogo de treinamentos"
-    },
-    {
-      "label": "6.2 Participa\u00e7\u00f5es em Treinamentos",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L303",
-      "_origin": "ast",
-      "id": "recursos_humanos_6_2_participa\u00e7\u00f5es_em_treinamentos",
-      "community": 27,
-      "norm_label": "6.2 participacoes em treinamentos"
-    },
-    {
-      "label": "7. Admiss\u00e3o e Desligamento",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L323",
-      "_origin": "ast",
-      "id": "recursos_humanos_7_admiss\u00e3o_e_desligamento",
-      "community": 27,
-      "norm_label": "7. admissao e desligamento"
-    },
-    {
-      "label": "7.1 Solicita\u00e7\u00e3o de Admiss\u00e3o",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L325",
-      "_origin": "ast",
-      "id": "recursos_humanos_7_1_solicita\u00e7\u00e3o_de_admiss\u00e3o",
-      "community": 27,
-      "norm_label": "7.1 solicitacao de admissao"
-    },
-    {
-      "label": "7.2 Desligamento",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L343",
-      "_origin": "ast",
-      "id": "recursos_humanos_7_2_desligamento",
-      "community": 27,
-      "norm_label": "7.2 desligamento"
-    },
-    {
-      "label": "8. V\u00ednculos de Benef\u00edcios",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L367",
-      "_origin": "ast",
-      "id": "recursos_humanos_8_v\u00ednculos_de_benef\u00edcios",
-      "community": 27,
-      "norm_label": "8. vinculos de beneficios"
-    },
-    {
-      "label": "9. Painel de RH (Dashboard do M\u00f3dulo)",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L382",
-      "_origin": "ast",
-      "id": "recursos_humanos_9_painel_de_rh_dashboard_do_m\u00f3dulo",
-      "community": 27,
-      "norm_label": "9. painel de rh (dashboard do modulo)"
-    },
-    {
-      "label": "10. Telas do M\u00f3dulo",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L396",
-      "_origin": "ast",
-      "id": "recursos_humanos_10_telas_do_m\u00f3dulo",
-      "community": 27,
-      "norm_label": "10. telas do modulo"
-    },
-    {
-      "label": "11. Estrutura de Dados \u2014 Tabelas Supabase",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L420",
-      "_origin": "ast",
-      "id": "recursos_humanos_11_estrutura_de_dados_tabelas_supabase",
-      "community": 27,
-      "norm_label": "11. estrutura de dados \u2014 tabelas supabase"
-    },
-    {
-      "label": "12. Numera\u00e7\u00e3o Autom\u00e1tica",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L710",
-      "_origin": "ast",
-      "id": "recursos_humanos_12_numera\u00e7\u00e3o_autom\u00e1tica",
-      "community": 27,
-      "norm_label": "12. numeracao automatica"
-    },
-    {
-      "label": "13. Sidebar HTML (RH)",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L729",
-      "_origin": "ast",
-      "id": "recursos_humanos_13_sidebar_html_rh",
-      "community": 27,
-      "norm_label": "13. sidebar html (rh)"
-    },
-    {
-      "label": "14. Sistema e Telas no Banco",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L746",
-      "_origin": "ast",
-      "id": "recursos_humanos_14_sistema_e_telas_no_banco",
-      "community": 27,
-      "norm_label": "14. sistema e telas no banco"
-    },
-    {
-      "label": "15. Ordem de Implementa\u00e7\u00e3o Sugerida",
-      "file_type": "document",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L776",
-      "_origin": "ast",
-      "id": "recursos_humanos_15_ordem_de_implementa\u00e7\u00e3o_sugerida",
-      "community": 27,
-      "norm_label": "15. ordem de implementacao sugerida"
-    },
-    {
-      "label": "recursos-humanos.md",
-      "file_type": "document",
       "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L1",
       "_origin": "ast",
       "id": "recursos_humanos_recursos_humanos",
       "community": 40,
       "norm_label": "recursos-humanos.md"
+    },
+    {
+      "label": "M\u00f3dulo de Recursos Humanos (RH) \u2014 Plano Completo de Implementa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "community": 40,
+      "norm_label": "modulo de recursos humanos (rh) \u2014 plano completo de implementacao"
+    },
+    {
+      "label": "1. Vis\u00e3o Geral",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_1_vis\u00e3o_geral",
+      "community": 40,
+      "norm_label": "1. visao geral"
+    },
+    {
+      "label": "1.1 Princ\u00edpios",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_1_1_princ\u00edpios",
+      "community": 40,
+      "norm_label": "1.1 principios"
+    },
+    {
+      "label": "2. Cadastros Base",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_2_cadastros_base",
+      "community": 40,
+      "norm_label": "2. cadastros base"
+    },
+    {
+      "label": "2.1 Departamentos",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_2_1_departamentos",
+      "community": 40,
+      "norm_label": "2.1 departamentos"
+    },
+    {
+      "label": "2.2 Cargos",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_2_2_cargos",
+      "community": 40,
+      "norm_label": "2.2 cargos"
+    },
+    {
+      "label": "2.3 Funcion\u00e1rios",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_2_3_funcion\u00e1rios",
+      "community": 40,
+      "norm_label": "2.3 funcionarios"
+    },
+    {
+      "label": "2.4 Benef\u00edcios Cadastrados",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_2_4_benef\u00edcios_cadastrados",
+      "community": 40,
+      "norm_label": "2.4 beneficios cadastrados"
+    },
+    {
+      "label": "3. Ponto Eletr\u00f4nico",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L117",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_3_ponto_eletr\u00f4nico",
+      "community": 40,
+      "norm_label": "3. ponto eletronico"
+    },
+    {
+      "label": "3.1 Jornadas de Trabalho",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_3_1_jornadas_de_trabalho",
+      "community": 40,
+      "norm_label": "3.1 jornadas de trabalho"
+    },
+    {
+      "label": "3.2 Registros de Ponto",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_3_2_registros_de_ponto",
+      "community": 40,
+      "norm_label": "3.2 registros de ponto"
+    },
+    {
+      "label": "3.3 Apura\u00e7\u00e3o de Ponto (Painel)",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_3_3_apura\u00e7\u00e3o_de_ponto_painel",
+      "community": 40,
+      "norm_label": "3.3 apuracao de ponto (painel)"
+    },
+    {
+      "label": "4. Folha de Pagamento",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L172",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_4_folha_de_pagamento",
+      "community": 40,
+      "norm_label": "4. folha de pagamento"
+    },
+    {
+      "label": "4.1 Compet\u00eancias (Per\u00edodos de Folha)",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L174",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_4_1_compet\u00eancias_per\u00edodos_de_folha",
+      "community": 40,
+      "norm_label": "4.1 competencias (periodos de folha)"
+    },
+    {
+      "label": "4.2 Lan\u00e7amentos da Folha",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_4_2_lan\u00e7amentos_da_folha",
+      "community": 40,
+      "norm_label": "4.2 lancamentos da folha"
+    },
+    {
+      "label": "4.3 13\u00ba Sal\u00e1rio",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L222",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_4_3_13o_sal\u00e1rio",
+      "community": 40,
+      "norm_label": "4.3 13o salario"
+    },
+    {
+      "label": "5. F\u00e9rias e Afastamentos",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L238",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_5_f\u00e9rias_e_afastamentos",
+      "community": 40,
+      "norm_label": "5. ferias e afastamentos"
+    },
+    {
+      "label": "5.1 Controle de F\u00e9rias",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L240",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_5_1_controle_de_f\u00e9rias",
+      "community": 40,
+      "norm_label": "5.1 controle de ferias"
+    },
+    {
+      "label": "5.2 Afastamentos",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L263",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_5_2_afastamentos",
+      "community": 40,
+      "norm_label": "5.2 afastamentos"
+    },
+    {
+      "label": "6. Treinamentos",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L283",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_6_treinamentos",
+      "community": 40,
+      "norm_label": "6. treinamentos"
+    },
+    {
+      "label": "6.1 Cat\u00e1logo de Treinamentos",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L285",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_6_1_cat\u00e1logo_de_treinamentos",
+      "community": 40,
+      "norm_label": "6.1 catalogo de treinamentos"
+    },
+    {
+      "label": "6.2 Participa\u00e7\u00f5es em Treinamentos",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L303",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_6_2_participa\u00e7\u00f5es_em_treinamentos",
+      "community": 40,
+      "norm_label": "6.2 participacoes em treinamentos"
+    },
+    {
+      "label": "7. Admiss\u00e3o e Desligamento",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L323",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_7_admiss\u00e3o_e_desligamento",
+      "community": 40,
+      "norm_label": "7. admissao e desligamento"
+    },
+    {
+      "label": "7.1 Solicita\u00e7\u00e3o de Admiss\u00e3o",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L325",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_7_1_solicita\u00e7\u00e3o_de_admiss\u00e3o",
+      "community": 40,
+      "norm_label": "7.1 solicitacao de admissao"
+    },
+    {
+      "label": "7.2 Desligamento",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L343",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_7_2_desligamento",
+      "community": 40,
+      "norm_label": "7.2 desligamento"
+    },
+    {
+      "label": "8. V\u00ednculos de Benef\u00edcios",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L367",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_8_v\u00ednculos_de_benef\u00edcios",
+      "community": 40,
+      "norm_label": "8. vinculos de beneficios"
+    },
+    {
+      "label": "9. Painel de RH (Dashboard do M\u00f3dulo)",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L382",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_9_painel_de_rh_dashboard_do_m\u00f3dulo",
+      "community": 40,
+      "norm_label": "9. painel de rh (dashboard do modulo)"
+    },
+    {
+      "label": "10. Telas do M\u00f3dulo",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L396",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_10_telas_do_m\u00f3dulo",
+      "community": 40,
+      "norm_label": "10. telas do modulo"
+    },
+    {
+      "label": "11. Estrutura de Dados \u2014 Tabelas Supabase",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L420",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_11_estrutura_de_dados_tabelas_supabase",
+      "community": 40,
+      "norm_label": "11. estrutura de dados \u2014 tabelas supabase"
+    },
+    {
+      "label": "11.1 Tabelas com Nomenclatura Definitiva",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L710",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_11_1_tabelas_com_nomenclatura_definitiva",
+      "community": 40,
+      "norm_label": "11.1 tabelas com nomenclatura definitiva"
+    },
+    {
+      "label": "`beneficios` \u2014 Cat\u00e1logo de Benef\u00edcios",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L714",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_beneficios_cat\u00e1logo_de_benef\u00edcios",
+      "community": 40,
+      "norm_label": "`beneficios` \u2014 catalogo de beneficios"
+    },
+    {
+      "label": "`beneficio_funcionario` \u2014 V\u00ednculo Funcion\u00e1rio \u00d7 Benef\u00edcio",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L738",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_beneficio_funcionario_v\u00ednculo_funcion\u00e1rio_benef\u00edcio",
+      "community": 40,
+      "norm_label": "`beneficio_funcionario` \u2014 vinculo funcionario \u00d7 beneficio"
+    },
+    {
+      "label": "`progressao_desempenho` \u2014 Progress\u00e3o de Carreira e Sal\u00e1rio",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L766",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_progressao_desempenho_progress\u00e3o_de_carreira_e_sal\u00e1rio",
+      "community": 40,
+      "norm_label": "`progressao_desempenho` \u2014 progressao de carreira e salario"
+    },
+    {
+      "label": "`avaliacao_desempenho` \u2014 Avalia\u00e7\u00f5es Peri\u00f3dicas por Funcion\u00e1rio",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L811",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_avaliacao_desempenho_avalia\u00e7\u00f5es_peri\u00f3dicas_por_funcion\u00e1rio",
+      "community": 40,
+      "norm_label": "`avaliacao_desempenho` \u2014 avaliacoes periodicas por funcionario"
+    },
+    {
+      "label": "12. Numera\u00e7\u00e3o Autom\u00e1tica",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L863",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_12_numera\u00e7\u00e3o_autom\u00e1tica",
+      "community": 40,
+      "norm_label": "12. numeracao automatica"
+    },
+    {
+      "label": "13. Sidebar HTML (RH)",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L883",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_13_sidebar_html_rh",
+      "community": 40,
+      "norm_label": "13. sidebar html (rh)"
+    },
+    {
+      "label": "14. Sistema e Telas no Banco",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L900",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_14_sistema_e_telas_no_banco",
+      "community": 40,
+      "norm_label": "14. sistema e telas no banco"
+    },
+    {
+      "label": "15. Ordem de Implementa\u00e7\u00e3o Sugerida",
+      "file_type": "document",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L930",
+      "_origin": "ast",
+      "id": "recursos_humanos_recursos_humanos_15_ordem_de_implementa\u00e7\u00e3o_sugerida",
+      "community": 40,
+      "norm_label": "15. ordem de implementacao sugerida"
     }
   ],
   "links": [
@@ -10860,112 +10900,112 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_arquivos_base"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_passo_1_autentica\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L43",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_passo_3_m\u00f3dulo_cadastros"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_passo_4_m\u00f3dulo_compras"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L71",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_passo_5_m\u00f3dulo_estoque"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L83",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L98",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L109",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_passo_8_ajustes_finais_e_testes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "PASSOS-CRIACAO-ERP.md",
-      "source_location": "L122",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "passos_criacao_erp",
-      "target": "passos_criacao_erp_resumo_de_progresso"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "REGRAS-NEGOCIOS/Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional_b0c8fb28.md",
       "source_location": "L68",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "regras_negocios_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28",
       "target": "regras_negocios_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28_conte\u00fados_referidos_na_portaria_mte_3_872_23"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_arquivos_base"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_passo_1_autentica\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_passo_2_dashboard_vis\u00e3o_geral"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_passo_3_m\u00f3dulo_cadastros"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_passo_4_m\u00f3dulo_compras"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_passo_5_m\u00f3dulo_estoque"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_passo_6_m\u00f3dulo_vendas_e_log\u00edstica"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_passo_7_m\u00f3dulo_configura\u00e7\u00f5es"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_passo_8_ajustes_finais_e_testes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "regras_negocios_passos_criacao_erp",
+      "target": "regras_negocios_passos_criacao_erp_resumo_de_progresso"
     },
     {
       "relation": "contains",
@@ -17880,334 +17920,384 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L1",
       "weight": 1.0,
-      "source": "recursos_humanos",
-      "target": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos",
+      "target": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L396",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_10_telas_do_m\u00f3dulo",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_10_telas_do_m\u00f3dulo"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L420",
-      "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_11_estrutura_de_dados_tabelas_supabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L710",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_12_numera\u00e7\u00e3o_autom\u00e1tica",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_11_1_tabelas_com_nomenclatura_definitiva"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L729",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L420",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_13_sidebar_html_rh",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_11_estrutura_de_dados_tabelas_supabase"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L746",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L863",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_14_sistema_e_telas_no_banco",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_12_numera\u00e7\u00e3o_autom\u00e1tica"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
-      "source_location": "L776",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L883",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_15_ordem_de_implementa\u00e7\u00e3o_sugerida",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_13_sidebar_html_rh"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L900",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_14_sistema_e_telas_no_banco"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L930",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_15_ordem_de_implementa\u00e7\u00e3o_sugerida"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L8",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_1_vis\u00e3o_geral",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_1_vis\u00e3o_geral"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L26",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_2_cadastros_base",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_2_cadastros_base"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L117",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_3_ponto_eletr\u00f4nico",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_3_ponto_eletr\u00f4nico"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L172",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_4_folha_de_pagamento",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_4_folha_de_pagamento"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L238",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_5_f\u00e9rias_e_afastamentos",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_5_f\u00e9rias_e_afastamentos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L283",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_6_treinamentos",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_6_treinamentos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L323",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_7_admiss\u00e3o_e_desligamento",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_7_admiss\u00e3o_e_desligamento"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L367",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_8_v\u00ednculos_de_benef\u00edcios",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_8_v\u00ednculos_de_benef\u00edcios"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L382",
       "weight": 1.0,
-      "source": "recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
-      "target": "recursos_humanos_9_painel_de_rh_dashboard_do_m\u00f3dulo",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_m\u00f3dulo_de_recursos_humanos_rh_plano_completo_de_implementa\u00e7\u00e3o",
+      "target": "recursos_humanos_recursos_humanos_9_painel_de_rh_dashboard_do_m\u00f3dulo"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L17",
       "weight": 1.0,
-      "source": "recursos_humanos_1_vis\u00e3o_geral",
-      "target": "recursos_humanos_1_1_princ\u00edpios",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_1_vis\u00e3o_geral",
+      "target": "recursos_humanos_recursos_humanos_1_1_princ\u00edpios"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L28",
       "weight": 1.0,
-      "source": "recursos_humanos_2_cadastros_base",
-      "target": "recursos_humanos_2_1_departamentos",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_2_cadastros_base",
+      "target": "recursos_humanos_recursos_humanos_2_1_departamentos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L45",
       "weight": 1.0,
-      "source": "recursos_humanos_2_cadastros_base",
-      "target": "recursos_humanos_2_2_cargos",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_2_cadastros_base",
+      "target": "recursos_humanos_recursos_humanos_2_2_cargos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L60",
       "weight": 1.0,
-      "source": "recursos_humanos_2_cadastros_base",
-      "target": "recursos_humanos_2_3_funcion\u00e1rios",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_2_cadastros_base",
+      "target": "recursos_humanos_recursos_humanos_2_3_funcion\u00e1rios"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L102",
       "weight": 1.0,
-      "source": "recursos_humanos_2_cadastros_base",
-      "target": "recursos_humanos_2_4_benef\u00edcios_cadastrados",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_2_cadastros_base",
+      "target": "recursos_humanos_recursos_humanos_2_4_benef\u00edcios_cadastrados"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L119",
       "weight": 1.0,
-      "source": "recursos_humanos_3_ponto_eletr\u00f4nico",
-      "target": "recursos_humanos_3_1_jornadas_de_trabalho",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_3_ponto_eletr\u00f4nico",
+      "target": "recursos_humanos_recursos_humanos_3_1_jornadas_de_trabalho"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L136",
       "weight": 1.0,
-      "source": "recursos_humanos_3_ponto_eletr\u00f4nico",
-      "target": "recursos_humanos_3_2_registros_de_ponto",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_3_ponto_eletr\u00f4nico",
+      "target": "recursos_humanos_recursos_humanos_3_2_registros_de_ponto"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L162",
       "weight": 1.0,
-      "source": "recursos_humanos_3_ponto_eletr\u00f4nico",
-      "target": "recursos_humanos_3_3_apura\u00e7\u00e3o_de_ponto_painel",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_3_ponto_eletr\u00f4nico",
+      "target": "recursos_humanos_recursos_humanos_3_3_apura\u00e7\u00e3o_de_ponto_painel"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L174",
       "weight": 1.0,
-      "source": "recursos_humanos_4_folha_de_pagamento",
-      "target": "recursos_humanos_4_1_compet\u00eancias_per\u00edodos_de_folha",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_4_folha_de_pagamento",
+      "target": "recursos_humanos_recursos_humanos_4_1_compet\u00eancias_per\u00edodos_de_folha"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L185",
       "weight": 1.0,
-      "source": "recursos_humanos_4_folha_de_pagamento",
-      "target": "recursos_humanos_4_2_lan\u00e7amentos_da_folha",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_4_folha_de_pagamento",
+      "target": "recursos_humanos_recursos_humanos_4_2_lan\u00e7amentos_da_folha"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L222",
       "weight": 1.0,
-      "source": "recursos_humanos_4_folha_de_pagamento",
-      "target": "recursos_humanos_4_3_13o_sal\u00e1rio",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_4_folha_de_pagamento",
+      "target": "recursos_humanos_recursos_humanos_4_3_13o_sal\u00e1rio"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L240",
       "weight": 1.0,
-      "source": "recursos_humanos_5_f\u00e9rias_e_afastamentos",
-      "target": "recursos_humanos_5_1_controle_de_f\u00e9rias",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_5_f\u00e9rias_e_afastamentos",
+      "target": "recursos_humanos_recursos_humanos_5_1_controle_de_f\u00e9rias"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L263",
       "weight": 1.0,
-      "source": "recursos_humanos_5_f\u00e9rias_e_afastamentos",
-      "target": "recursos_humanos_5_2_afastamentos",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_5_f\u00e9rias_e_afastamentos",
+      "target": "recursos_humanos_recursos_humanos_5_2_afastamentos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L285",
       "weight": 1.0,
-      "source": "recursos_humanos_6_treinamentos",
-      "target": "recursos_humanos_6_1_cat\u00e1logo_de_treinamentos",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_6_treinamentos",
+      "target": "recursos_humanos_recursos_humanos_6_1_cat\u00e1logo_de_treinamentos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L303",
       "weight": 1.0,
-      "source": "recursos_humanos_6_treinamentos",
-      "target": "recursos_humanos_6_2_participa\u00e7\u00f5es_em_treinamentos",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_6_treinamentos",
+      "target": "recursos_humanos_recursos_humanos_6_2_participa\u00e7\u00f5es_em_treinamentos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L325",
       "weight": 1.0,
-      "source": "recursos_humanos_7_admiss\u00e3o_e_desligamento",
-      "target": "recursos_humanos_7_1_solicita\u00e7\u00e3o_de_admiss\u00e3o",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_7_admiss\u00e3o_e_desligamento",
+      "target": "recursos_humanos_recursos_humanos_7_1_solicita\u00e7\u00e3o_de_admiss\u00e3o"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "recursos-humanos.md",
+      "source_file": "recursos-humanos/recursos-humanos.md",
       "source_location": "L343",
       "weight": 1.0,
-      "source": "recursos_humanos_7_admiss\u00e3o_e_desligamento",
-      "target": "recursos_humanos_7_2_desligamento",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_7_admiss\u00e3o_e_desligamento",
+      "target": "recursos_humanos_recursos_humanos_7_2_desligamento"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L811",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_11_1_tabelas_com_nomenclatura_definitiva",
+      "target": "recursos_humanos_recursos_humanos_avaliacao_desempenho_avalia\u00e7\u00f5es_peri\u00f3dicas_por_funcion\u00e1rio"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L738",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_11_1_tabelas_com_nomenclatura_definitiva",
+      "target": "recursos_humanos_recursos_humanos_beneficio_funcionario_v\u00ednculo_funcion\u00e1rio_benef\u00edcio"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L714",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_11_1_tabelas_com_nomenclatura_definitiva",
+      "target": "recursos_humanos_recursos_humanos_beneficios_cat\u00e1logo_de_benef\u00edcios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "recursos-humanos/recursos-humanos.md",
+      "source_location": "L766",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "recursos_humanos_recursos_humanos_11_1_tabelas_com_nomenclatura_definitiva",
+      "target": "recursos_humanos_recursos_humanos_progressao_desempenho_progress\u00e3o_de_carreira_e_sal\u00e1rio"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f0ca761a37395034bc5a41fa402625a38da66143"
+  "built_at_commit": "29c8cc7dd7e8bf89b49b22c6ca60453227391007"
 }
