@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "SUPABASE.js": {
-    "mtime": 1786890353.7312815,
-    "ast_hash": "c9eb57da575923c502eab11754e71d3d",
+    "mtime": 1786906291.8011193,
+    "ast_hash": "52ea4a96a8d7d2ead91d82cafe335b5f",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "configuracoes/perfis.html": {
-    "mtime": 1786891833.5057714,
-    "ast_hash": "2526100987e500b5e32d420dfa3159a7",
+    "mtime": 1786906068.5222273,
+    "ast_hash": "def98b7df21bc87c3c0dd3f541c9a23a",
     "semantic_hash": ""
   },
   "configuracoes/telas.html": {
@@ -390,8 +390,8 @@
     "semantic_hash": ""
   },
   ".superpowers/sdd/progress.md": {
-    "mtime": 1786905644.945693,
-    "ast_hash": "bafeb680f8e57188e04b0f335e0eb3c5",
+    "mtime": 1786905918.384053,
+    "ast_hash": "8025f7c3842af9c1e80427b2ff233ea2",
     "semantic_hash": ""
   },
   "docs/superpowers/plans/2026-08-16-gamificacao-erp.md": {
@@ -417,6 +417,11 @@
   "gamificacao/ranking.html": {
     "mtime": 1786905768.8424582,
     "ast_hash": "c221a80bc9a26d9ed9eb5c8493125668",
+    "semantic_hash": ""
+  },
+  "gamificacao/admin.html": {
+    "mtime": 1786906087.4886212,
+    "ast_hash": "1d6993f459517b74ffc36b81ef4a1f60",
     "semantic_hash": ""
   }
 }
