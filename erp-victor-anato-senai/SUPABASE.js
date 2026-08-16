@@ -339,7 +339,7 @@ function sbIniciarBtnTema(btnId = 'btnTema') {
  * Chamada automaticamente quando o DOM estiver pronto e houver um .sidebar na página.
  */
 function sbInitSidebarAccordion() {
-  const ACC_KEYS = ['cadastros', 'compras', 'estoque', 'vendas', 'logística', 'log'];
+  const ACC_KEYS = ['cadastros', 'compras', 'estoque', 'vendas', 'logística', 'log', 'financeiro', 'configurações', 'config'];
 
   document.querySelectorAll('.sidebar-section').forEach(section => {
     const labelEl = section.querySelector('.sidebar-section-label');
