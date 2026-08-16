@@ -9,16 +9,14 @@
 
 | Item | Descrição | Status |
 |------|-----------|--------|
-| `gamificacao_sessoes` | Tabela de sessões de aula | ⚠️ Iniciado — SQL disponível em `DATABASE.sql`, mas precisa ser executado no Supabase |
-| `gamificacao_equipes` | Tabela de equipes por sessão | ⚠️ Iniciado — SQL disponível em `DATABASE.sql` |
-| `gamificacao_membros` | Tabela de membros das equipes | ⚠️ Iniciado — SQL disponível em `DATABASE.sql` |
-| `gamificacao_eventos` | Tabela de eventos gerados pelo motor | ⚠️ Iniciado — SQL disponível em `DATABASE.sql` |
-| `gamificacao_pontuacoes` | Histórico de pontuação por equipe | ⚠️ Iniciado — SQL disponível em `DATABASE.sql` |
-| `gamificacao_config_motor` | Configurações do motor de simulação | ⚠️ Iniciado — SQL disponível em `DATABASE.sql` |
-| RLS (Row Level Security) | Políticas permissivas para anon key | ⚠️ Iniciado — SQL disponível em `DATABASE.sql` |
-| Seed de dados (exemplos) | Dados iniciais para teste | ⚠️ Iniciado — disponível em `DATABASE_SEED.sql` |
-
-> **Ação necessária:** Executar `DATABASE.sql` no Supabase SQL Editor para criar as tabelas.
+| `gamificacao_sessoes` | Tabela de sessões de aula | ✅ Concluído — tabela criada e ativa no Supabase |
+| `gamificacao_equipes` | Tabela de equipes por sessão | ✅ Concluído — tabela criada e ativa no Supabase |
+| `gamificacao_membros` | Tabela de membros das equipes | ✅ Concluído — tabela criada e ativa no Supabase |
+| `gamificacao_eventos` | Tabela de eventos gerados pelo motor | ✅ Concluído — tabela criada e ativa no Supabase |
+| `gamificacao_pontuacoes` | Histórico de pontuação por equipe | ✅ Concluído — tabela criada e ativa no Supabase |
+| `gamificacao_config_motor` | Configurações do motor de simulação | ✅ Concluído — tabela criada e ativa no Supabase |
+| RLS (Row Level Security) | Políticas permissivas para anon key | ✅ Concluído — policies "anon full" aplicadas em todas as tabelas |
+| Seed de dados (exemplos) | Dados iniciais para teste | ⚠️ Iniciado — disponível em `DATABASE_SEED.sql` mas não executado |
 
 ---
 
@@ -156,11 +154,363 @@
 
 ---
 
+## 11. Agente de API — Tele Vendas com Gamificação
+
+> Especificação do agente automático que gera pedidos na tabela `televendas` durante as sessões de aula. O professor controla o agente a partir do dashboard (`professor.html`).
+
+### Visão Geral
+
+O **Agente Tele Vendas** é um motor JavaScript embutido no `professor.html` que, ao receber o comando do professor, envia automaticamente múltiplos pedidos para a tabela `televendas` via REST API do Supabase, simulando chamadas de um sistema externo (IRP). Cada pedido inserido gera um **evento de gamificação** para a equipe de Vendas, que deve atendê-lo dentro do prazo para pontuar.
+
+```
+Professor configura → Professor dá Start → Agente insere N pedidos na tabela televendas
+                                          → Para cada pedido: cria evento gamificação (setor: vendas)
+                                          → Equipe Vendas vê o evento no equipe.html
+                                          → Equipe acessa televendas.html e muda status para Concluído
+                                          → Evento marcado como resolvido → pontos creditados
+```
+
+---
+
+### 11.1 Estrutura da Tabela `televendas` (já existente)
+
+```sql
+CREATE TABLE televendas (
+  id         bigserial PRIMARY KEY,
+  pedido_d   text,                         -- ID/referência gerada pelo agente
+  datahora   timestamptz DEFAULT now(),    -- timestamp do pedido
+  id_chave   text,                         -- chave de identificação da sessão/rodada
+  status     text DEFAULT 'Em Aberto',     -- status de atendimento
+  observacao text,                         -- anotação do operador
+  created_at timestamptz DEFAULT now()
+);
+```
+
+**Campos utilizados pelo agente:**
+- `pedido_d` — gerado pelo agente no formato `TV-{sessao_rodada}-{sequencial}` (ex: `TV-R3-001`)
+- `id_chave` — `{sessao_id}:{rodada}` — permite rastrear todos os pedidos de uma rodada
+- `datahora` — timestamp exato do envio
+- `status` — sempre `'Em Aberto'` ao inserir (agente nunca fecha)
+
+---
+
+### 11.2 Painel de Controle do Agente (UI no `professor.html`)
+
+Um novo bloco **"📞 Agente Tele Vendas"** é adicionado ao dashboard do professor, com os seguintes controles:
+
+#### Campos de Configuração
+
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| Quantidade de Pedidos | Número (1–50) | Quantos pedidos o agente vai criar nesta rodada |
+| Intervalo entre Pedidos | Número (1–60 s) | Segundos entre cada inserção (simula chegada gradual) |
+| Modo de Produto | Select | **Aleatório** ou **Produto Específico** |
+| Produto Específico | Select (produtos ativos) | Visível apenas quando modo = "Produto Específico" |
+| Faixa de Valor Mínimo | Número (R$) | Valor mínimo do pedido (usado para gerar `observacao`) |
+| Faixa de Valor Máximo | Número (R$) | Valor máximo do pedido |
+| Prazo do Evento (min) | Número (1–30) | Minutos que a equipe de Vendas tem para resolver |
+| Prioridade | Select | Normal / Alta / Urgente |
+
+#### Botões
+
+| Botão | Ação |
+|-------|------|
+| ▶ Iniciar Agente | Começa a enviar pedidos conforme configuração |
+| ⏹ Parar Agente | Cancela o envio (pedidos já enviados permanecem) |
+| 🔄 Resetar Contador | Zera o sequencial da rodada atual |
+
+#### Indicador de Progresso
+
+```
+[███████░░░░░░░] 7 / 10 pedidos enviados  — Próximo em 4s
+```
+
+---
+
+### 11.3 Lógica JavaScript do Agente
+
+```js
+// ── Configuração do agente ─────────────────────────────────────
+let agenteInterval = null;
+let agenteContador = 0;
+
+const AGENTE_CFG = {
+  quantidade:      10,
+  intervaloSegundos: 5,
+  modoAleatório:   true,
+  produtoEspecifico: null,   // uuid do produto (quando modo = específico)
+  valorMin:        100,
+  valorMax:        5000,
+  prazoMinutos:    8,
+  prioridade:      'normal'
+};
+
+// ── Iniciar agente ────────────────────────────────────────────
+async function iniciarAgente() {
+  if (agenteInterval) return;
+  agenteContador = 0;
+
+  const cfg = lerConfiguracaoAgente();
+  const sessao = sessaoAtual;            // sessão carregada no dashboard
+  if (!sessao) { alert('Selecione uma sessão ativa.'); return; }
+
+  atualizarBtnAgente(true);
+
+  agenteInterval = setInterval(async () => {
+    if (agenteContador >= cfg.quantidade) {
+      pararAgente();
+      return;
+    }
+    agenteContador++;
+    await enviarPedidoTelevendas(cfg, sessao);
+    atualizarProgressoAgente(agenteContador, cfg.quantidade, cfg.intervaloSegundos);
+  }, cfg.intervaloSegundos * 1000);
+
+  // enviar o primeiro imediatamente
+  await enviarPedidoTelevendas(cfg, sessao);
+  agenteContador++;
+  atualizarProgressoAgente(agenteContador, cfg.quantidade, cfg.intervaloSegundos);
+}
+
+// ── Enviar um pedido ──────────────────────────────────────────
+async function enviarPedidoTelevendas(cfg, sessao) {
+  // 1. Selecionar produto
+  const produto = cfg.modoAleatório
+    ? produtos[Math.floor(Math.random() * produtos.length)]   // array de produtos ativos
+    : cfg.produtoEspecifico;
+
+  // 2. Gerar valor aleatório dentro da faixa
+  const valor = (Math.random() * (cfg.valorMax - cfg.valorMin) + cfg.valorMin).toFixed(2);
+
+  // 3. Montar referência do pedido
+  const seq     = String(agenteContador).padStart(3, '0');
+  const pedidoD = `TV-R${sessao.rodada_atual}-${seq}`;
+  const idChave = `${sessao.id}:R${sessao.rodada_atual}`;
+
+  // 4. Observação automática com detalhes do pedido
+  const nomeProd = produto?.nome || 'Produto não informado';
+  const obs = `Agente: ${nomeProd} | Qtd: ${Math.floor(Math.random()*10)+1} | Valor: R$ ${parseFloat(valor).toLocaleString('pt-BR',{minimumFractionDigits:2})}`;
+
+  // 5. Inserir na tabela televendas
+  const teleRow = await sbInserir('televendas', {
+    pedido_d:   pedidoD,
+    datahora:   new Date().toISOString(),
+    id_chave:   idChave,
+    status:     'Em Aberto',
+    observacao: obs
+  });
+
+  // 6. Criar evento de gamificação vinculado
+  await sbInserir('gamificacao_eventos', {
+    sessao_id:     sessao.id,
+    rodada:        sessao.rodada_atual,
+    tipo:          'televendas_pedido',
+    titulo:        `📞 Pedido ${pedidoD} — ${nomeProd}`,
+    descricao:     obs,
+    setor_alvo:    'vendas',
+    prioridade:    cfg.prioridade,
+    prazo_minutos: cfg.prazoMinutos,
+    status:        'pendente',
+    referencia_id: teleRow[0]?.id?.toString(),   // ID do registro televendas
+    pontos_base:   cfg.prioridade === 'urgente' ? 25 : cfg.prioridade === 'alta' ? 15 : 10
+  });
+}
+
+// ── Parar agente ──────────────────────────────────────────────
+function pararAgente() {
+  clearInterval(agenteInterval);
+  agenteInterval = null;
+  atualizarBtnAgente(false);
+}
+```
+
+---
+
+### 11.4 Fluxo Completo (Passo a Passo)
+
+```
+1. Professor abre professor.html com sessão ativa
+2. Professor configura o Agente Tele Vendas:
+   ├── Quantidade: 10 pedidos
+   ├── Intervalo: 5 segundos entre cada um
+   ├── Modo: Aleatório (ou seleciona produto específico)
+   ├── Valor: R$ 500 a R$ 5.000
+   ├── Prazo: 8 minutos
+   └── Prioridade: Normal
+3. Professor clica ▶ Iniciar Agente
+4. Agente insere 1 registro em televendas a cada 5 segundos
+5. Para cada insert em televendas, o agente também cria 1 evento em gamificacao_eventos
+   └── setor_alvo = 'vendas' | tipo = 'televendas_pedido'
+6. Equipe Vendas vê o evento no equipe.html com countdown de 8 minutos
+7. Equipe clica em "Abrir Tele Vendas" → abre vendas/televendas.html
+8. Operador busca o pedido pelo Pedido D (ex: TV-R3-001) e muda status para "Concluído"
+9. De volta ao equipe.html, clica "Marcar Resolvido"
+10. Sistema calcula pontos:
+    ├── Dentro do prazo: +10 pts
+    ├── Em menos de 50% do prazo: +15 pts (bônus)
+    └── Expirado: −5 pts
+11. Pontos atualizados no placar em tempo real
+```
+
+---
+
+### 11.5 Modos de Produto
+
+#### Modo Aleatório
+- O agente sorteia um produto da lista de produtos ativos do banco
+- Cada pedido pode ter um produto diferente
+- A quantidade de itens por pedido também é aleatória (1 a 10 unidades)
+- O valor pode ser aleatório dentro da faixa configurada OU calculado como `qtd × preco_venda` do produto
+
+#### Modo Produto Específico
+- O professor seleciona um produto do select (carregado da tabela `produtos`)
+- Todos os pedidos daquela rodada são daquele produto
+- Útil para simular uma campanha ou promoção específica
+- O valor ainda pode ser aleatório dentro da faixa ou fixado pelo `preco_venda`
+
+---
+
+### 11.6 `id_chave` como Rastreador de Sessão
+
+O campo `id_chave` usa o formato `{sessao_id}:R{rodada}`, que permite:
+
+```js
+// Buscar todos os pedidos de uma rodada específica
+GET /rest/v1/televendas?id_chave=eq.{sessao_id}:R3
+```
+
+- Filtrar os pedidos de uma sessão/rodada no módulo `televendas.html`
+- O professor pode ver quantos pedidos foram enviados e quantos foram atendidos
+
+---
+
+### 11.7 Novo Tipo de Evento no Motor
+
+O tipo `televendas_pedido` deve ser adicionado ao objeto `TIPOS` em `professor.html`:
+
+```js
+const TIPOS = {
+  // ... tipos existentes ...
+  televendas_pedido: {
+    setor:   'vendas',
+    pts:     10,
+    prazo:   8,
+    prio:    'normal',
+    titulo:  (p) => `📞 Pedido Tele Vendas — ${p?.nome || 'Produto'}`
+  }
+};
+```
+
+O agente usa esse tipo mas **não passa pelo motor aleatório** — é disparado diretamente pelo painel do agente.
+
+---
+
+### 11.8 HTML do Painel do Agente (Bloco a inserir em `professor.html`)
+
+```html
+<!-- ── Agente Tele Vendas ───────────────────────────────────── -->
+<div class="panel" style="margin-bottom:16px">
+  <div class="panel-hdr">
+    <span>📞 Agente Tele Vendas</span>
+    <span id="agenteStatusBadge" style="font-size:11px;font-weight:600;color:var(--color-text-muted)">Parado</span>
+  </div>
+  <div style="padding:14px 16px;display:flex;flex-direction:column;gap:12px">
+
+    <!-- Linha 1: qtd / intervalo / prioridade / prazo -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end">
+      <div style="display:flex;flex-direction:column;gap:4px;min-width:80px">
+        <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Pedidos</label>
+        <input type="number" id="agQtd" value="10" min="1" max="50" class="crud-input" style="width:80px">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:4px;min-width:80px">
+        <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Intervalo (s)</label>
+        <input type="number" id="agIntervalo" value="5" min="1" max="60" class="crud-input" style="width:80px">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:4px;min-width:100px">
+        <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Prazo (min)</label>
+        <input type="number" id="agPrazo" value="8" min="1" max="30" class="crud-input" style="width:100px">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Prioridade</label>
+        <select id="agPrioridade" class="crud-input" style="min-width:110px">
+          <option value="normal">Normal</option>
+          <option value="alta">Alta</option>
+          <option value="urgente">Urgente</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Linha 2: valor mín / valor máx -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end">
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Valor Mín (R$)</label>
+        <input type="number" id="agValMin" value="100" min="1" class="crud-input" style="width:110px">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Valor Máx (R$)</label>
+        <input type="number" id="agValMax" value="5000" min="1" class="crud-input" style="width:110px">
+      </div>
+    </div>
+
+    <!-- Linha 3: modo de produto -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end">
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Modo Produto</label>
+        <select id="agModoProduto" class="crud-input" style="min-width:180px" onchange="toggleProdutoEspecifico()">
+          <option value="aleatorio">🎲 Aleatório</option>
+          <option value="especifico">📦 Produto Específico</option>
+        </select>
+      </div>
+      <div id="agProdutoEspecificoWrap" style="display:none;flex-direction:column;gap:4px">
+        <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Produto</label>
+        <select id="agProduto" class="crud-input" style="min-width:200px"></select>
+      </div>
+    </div>
+
+    <!-- Progresso -->
+    <div id="agenteProgresso" style="display:none">
+      <div style="display:flex;justify-content:space-between;margin-bottom:4px;font-size:12px;font-weight:600;color:var(--color-text-muted)">
+        <span id="agenteProgressoLabel">0 / 10 pedidos enviados</span>
+        <span id="agenteProximoLabel"></span>
+      </div>
+      <div style="height:6px;background:var(--color-border);border-radius:100px;overflow:hidden">
+        <div id="agenteProgressoBar" style="height:100%;background:var(--color-primary);border-radius:100px;transition:width .3s;width:0%"></div>
+      </div>
+    </div>
+
+    <!-- Botões -->
+    <div style="display:flex;gap:8px">
+      <button id="btnAgenteStart" class="btn" onclick="iniciarAgente()" style="background:#16a34a">▶ Iniciar Agente</button>
+      <button id="btnAgenteStop" class="btn" onclick="pararAgente()" style="background:#dc2626;display:none">⏹ Parar</button>
+    </div>
+
+  </div>
+</div>
+```
+
+---
+
+### 11.9 Status de Implementação
+
+| Item | Descrição | Status |
+|------|-----------|--------|
+| Especificação do agente | Lógica, campos, fluxo e HTML documentados | ✅ Concluído (este documento) |
+| Painel UI no `professor.html` | Bloco HTML com campos de configuração | ❌ Não Iniciado |
+| Função `iniciarAgente()` | JavaScript de envio com setInterval | ❌ Não Iniciado |
+| Função `enviarPedidoTelevendas()` | Insert em `televendas` + insert em `gamificacao_eventos` | ❌ Não Iniciado |
+| Modo aleatório de produto | Sorteia produto da lista de ativos | ❌ Não Iniciado |
+| Modo produto específico | Professor escolhe produto do select | ❌ Não Iniciado |
+| Barra de progresso do agente | Exibe X/N pedidos e próximo envio em Ys | ❌ Não Iniciado |
+| Equipe Vendas: link para televendas.html | Botão "Abrir Tele Vendas" em `equipe.html` | ❌ Não Iniciado |
+| Filtro por `id_chave` em televendas.html | Permite ver só os pedidos da sessão/rodada | ❌ Não Iniciado |
+
+---
+
 ## Resumo Geral
 
 | Categoria | Concluído | Iniciado | Não Iniciado | Total |
 |-----------|:---------:|:--------:|:------------:|:-----:|
-| Banco de dados | 0 | 8 | 0 | 8 |
+| Banco de dados | 7 | 1 | 0 | 8 |
 | Telas HTML | 7 | 0 | 0 | 7 |
 | Motor de simulação | 7 | 0 | 0 | 7 |
 | Sistema de pontuação | 4 | 0 | 2 | 6 |
@@ -170,13 +520,14 @@
 | Config Sessão | 9 | 0 | 2 | 11 |
 | Integração ERP | 2 | 1 | 3 | 6 |
 | gamif.js | 3 | 1 | 0 | 4 |
-| **Total** | **60** | **10** | **9** | **79** |
+| Agente Tele Vendas | 1 | 0 | 9 | 10 |
+| **Total** | **68** | **3** | **18** | **89** |
 
 ---
 
 ## Próximos Passos Prioritários
 
-1. **Executar `DATABASE.sql` no Supabase** — sem isso, nenhuma tela de gamificação funciona
+1. **Implementar Agente Tele Vendas** — adicionar o painel HTML e as funções JS em `professor.html`
 2. **Motor criar registros reais no ERP** — hoje o motor só cria o evento, não o pedido/SC no banco
 3. **Detecção automática de resolução** — polling que verifica status no módulo ERP sem precisar do botão manual
 4. **Atualizar sidebar das telas antigas** (`index.html`, `ranking.html`, `admin.html`) com links para professor/equipe/placar
@@ -185,4 +536,4 @@
 
 ---
 
-*Atualizado em 2026-08-16 após criação das telas professor.html, equipe.html, placar.html e config-sessao.html.*
+*Atualizado em 2026-08-16 após leitura do módulo Tele Vendas e especificação do Agente de API.*
