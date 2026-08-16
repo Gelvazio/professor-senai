@@ -323,10 +323,19 @@ function dataFmt(d){if(!d)return'—';const[a,m,dd]=d.split('-');return`${dd}/${
 function hoje(){return new Date().toISOString().split('T')[0]}
 function msgGlobal(txt,tipo='ok'){const el=document.getElementById('msgGlobal');el.textContent=txt;el.className=`crud-msg ${tipo}`;el.style.display='block';setTimeout(()=>el.style.display='none',3500)}
 
-// ── Carrega creditscore.json ──────────────────────────────────────────────────
+// ── Carrega creditscore.json da internet (GitHub raw) ────────────────────────
+const CREDITSCORE_URL = 'https://raw.githubusercontent.com/Gelvazio/professor-senai/main/erp-victor-anato-senai/financeiro/creditscore.json';
+
 async function carregarConfig(){
-  const res = await fetch('./creditscore.json');
-  SCORE_CONFIG = await res.json();
+  try {
+    const res = await fetch(CREDITSCORE_URL, { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    SCORE_CONFIG = await res.json();
+  } catch(err) {
+    console.warn('Falha ao buscar creditscore.json remoto, tentando local…', err);
+    const res = await fetch('./creditscore.json');
+    SCORE_CONFIG = await res.json();
+  }
   renderVariaveis();
 }
 
