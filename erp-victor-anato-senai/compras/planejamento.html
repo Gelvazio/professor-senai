@@ -134,6 +134,18 @@
       <a class="sidebar-link" href="../marketing/campanhas.html"><span class="sidebar-icon">📣</span> Campanhas</a>
       <a class="sidebar-link" href="../marketing/retornos.html"><span class="sidebar-icon">📈</span> Retornos</a>
     </div>
+<div class="sidebar-section">
+  <div class="sidebar-section-label">Gamificação</div>
+  <a class="sidebar-link" href="../gamificacao/index.html"
+    ><span class="sidebar-icon">🎮</span> Minha Jornada</a
+  >
+  <a class="sidebar-link" href="../gamificacao/ranking.html"
+    ><span class="sidebar-icon">🏆</span> Ranking</a
+  >
+  <a class="sidebar-link" id="linkAdmin" href="../gamificacao/admin.html" style="display:none"
+    ><span class="sidebar-icon">⚙️</span> Admin Gamif.</a
+  >
+</div>
 <div style="height:24px"></div>
   </aside>
 
@@ -445,6 +457,14 @@
   }
 
   inicializar();
+</script>
+<script>
+  (function () {
+    if (localStorage.getItem('erp_role') === 'Administrador') {
+      var el = document.getElementById('linkAdmin');
+      if (el) el.style.display = 'flex';
+    }
+  })();
 </script>
 </body>
 </html>
