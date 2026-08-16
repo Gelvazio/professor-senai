@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786826917.1881227,
-    "ast_hash": "a28d20a9c3d26a186c6554597309f931",
+    "mtime": 1786833352.500111,
+    "ast_hash": "08f64a16cd3f82883e73d613d515210a",
     "semantic_hash": ""
   },
   "DATABASE.sql": {
@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "dashboard.html": {
-    "mtime": 1786832761.306668,
-    "ast_hash": "5e2449b5c539124b68f34a1b37916722",
+    "mtime": 1786879804.5698292,
+    "ast_hash": "2b7ca24e900bbca82dbbcfcdd50a6f9f",
     "semantic_hash": ""
   },
   "index.html": {

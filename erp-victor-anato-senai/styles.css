@@ -448,7 +448,7 @@ body {
 }
 .btn-full { width: 100%; justify-content: center; }
 
-/* Sucesso — verde */
+/* Sucesso — verde (Confirmar) */
 .btn-salvar, .btn-confirmar {
   background: var(--color-success);
   color: #fff;
@@ -460,11 +460,29 @@ body {
   cursor: pointer;
   font-family: inherit;
   transition: background var(--transition-fast);
+  order: 1;
 }
 .btn-salvar:hover, .btn-confirmar:hover { background: var(--color-success-dark); }
 
-/* Cancelar — fundo vermelho claro */
+/* ── Footer do modal — centralizado, Confirmar à esquerda, Cancelar à direita ── */
+.modal-footer,
+.modal-foot,
+.crud-modal-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-top: 1px solid var(--color-border-faint);
+  flex-wrap: wrap;
+}
+[data-theme="dark"] .modal-footer,
+[data-theme="dark"] .modal-foot,
+[data-theme="dark"] .crud-modal-foot { border-top-color: rgba(139,92,246,0.12); }
+
+/* Cancelar — fundo vermelho claro, sempre após o Confirmar */
 .btn-cancelar {
+  order: 2;
   background: #fee2e2;
   color: #b91c1c;
   border: none;

@@ -327,7 +327,7 @@
     </div>
     <div class="modal-footer">
       <button class="btn btn-secondary" onclick="fecharModal()">Cancelar</button>
-      <button class="btn btn-primary" id="btnSalvar" onclick="salvar()">Salvar Transferência</button>
+      <button class="btn btn-primary" id="btnSalvar" onclick="salvar()">Confirmar Transferência</button>
     </div>
   </div>
 </div>
@@ -582,7 +582,7 @@
       sbMensagem('msgModal', 'Erro ao salvar: ' + e.message, 'err');
     } finally {
       btn.disabled = false;
-      btn.textContent = 'Salvar Transferência';
+      btn.textContent = 'Confirmar Transferência';
     }
   }
 
