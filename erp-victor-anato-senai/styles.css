@@ -162,6 +162,7 @@ body {
   min-height: 100vh;
   font-size: var(--font-size-base);
   line-height: 1.5;
+  padding-top: var(--header-height);
 }
 
 /* ============================================================
@@ -175,8 +176,10 @@ body {
   align-items: center;
   gap: 16px;
   height: var(--header-height);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
 }
 
