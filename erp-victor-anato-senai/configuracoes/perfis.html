@@ -178,18 +178,23 @@
       <a class="sidebar-link" href="../marketing/retornos.html"><span class="sidebar-icon">📈</span> Retornos</a>
     </div>
     <div class="sidebar-section">
-  <div class="sidebar-section-label">Gamificação</div>
-  <a class="sidebar-link" href="../gamificacao/index.html"
-    ><span class="sidebar-icon">🎮</span> Minha Jornada</a
-  >
-  <a class="sidebar-link" href="../gamificacao/ranking.html"
-    ><span class="sidebar-icon">🏆</span> Ranking</a
-  >
-  <a class="sidebar-link" id="linkAdmin" href="../gamificacao/admin.html" style="display:none"
-    ><span class="sidebar-icon">⚙️</span> Admin Gamif.</a
-  >
-</div>
-<div style="height:24px"></div>
+      <div class="sidebar-section-label">Gamificação</div>
+      <a class="sidebar-link" href="../gamificacao/professor.html"><span class="sidebar-icon">🎮</span> Professor</a>
+      <a class="sidebar-link" href="../gamificacao/equipe.html"><span class="sidebar-icon">👥</span> Minha Equipe</a>
+      <a class="sidebar-link" href="../gamificacao/placar.html"><span class="sidebar-icon">🏆</span> Placar</a>
+      <a class="sidebar-link" href="../gamificacao/index.html"><span class="sidebar-icon">⭐</span> Minha Jornada</a>
+      <a class="sidebar-link" href="../gamificacao/ranking.html"><span class="sidebar-icon">📊</span> Ranking</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Recursos Humanos</div>
+      <a class="sidebar-link" href="../rh/dashboard.html"><span class="sidebar-icon">📊</span> Painel RH</a>
+      <a class="sidebar-link" href="../rh/funcionarios.html"><span class="sidebar-icon">👤</span> Funcionários</a>
+      <a class="sidebar-link" href="../rh/ponto.html"><span class="sidebar-icon">🕐</span> Ponto Eletrônico</a>
+      <a class="sidebar-link" href="../rh/folha.html"><span class="sidebar-icon">💰</span> Folha de Pagamento</a>
+      <a class="sidebar-link" href="../rh/ferias.html"><span class="sidebar-icon">🏖️</span> Férias</a>
+      <a class="sidebar-link" href="../rh/treinamentos.html"><span class="sidebar-icon">🎓</span> Treinamentos</a>
+    </div>
+    <div style="height:24px"></div>
   </aside>
 
   <main class="main">
@@ -494,7 +499,7 @@
       grupos[g].push(t);
     });
 
-    const sisOrdem = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const sisOrdem = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
     let html = '';
     sisOrdem.forEach(sisId => {
       if (!grupos[sisId] || !grupos[sisId].length) return;
