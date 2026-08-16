@@ -804,7 +804,7 @@ function _sbConfigPath() {
   const partes = p.split('/').filter(Boolean);
   const pasta  = partes.length >= 2 ? partes[partes.length - 2].toLowerCase() : '';
   if (pasta === 'configuracoes') return './';
-  if (['cadastros', 'compras', 'estoque', 'vendas', 'financeiro'].includes(pasta)) return '../configuracoes/';
+  if (['cadastros', 'compras', 'estoque', 'vendas', 'financeiro', 'rh', 'marketing', 'gamificacao'].includes(pasta)) return '../configuracoes/';
   return 'configuracoes/';
 }
 
@@ -828,6 +828,8 @@ function sbInjetarMenuConfiguracoes() {
       <a class="sb-dd-item" href="${base}telas.html">🖥️ Telas</a>
       <a class="sb-dd-item" href="${base}perfis.html">🔑 Perfis</a>
       <a class="sb-dd-item" href="${base}regras-negocios.html">📋 Regras de Negócios</a>
+      <hr style="margin:4px 0;border:none;border-top:1px solid var(--color-border-faint)">
+      <button class="sb-dd-item" style="width:100%;background:none;border:none;text-align:left;cursor:pointer;font-family:inherit" onclick="sbAbrirAndamento()">📝 Andamento Alterações</button>
     </div>`;
   sairBtn.before(wrap);
 
@@ -839,6 +841,164 @@ function sbInjetarMenuConfiguracoes() {
   document.addEventListener('click', function () {
     const menu = document.getElementById('sbDdConfigMenu');
     if (menu) menu.classList.remove('show');
+  });
+}
+
+
+// ============================================================
+//  ANDAMENTO DE ALTERAÇÕES (modal com tabs por módulo)
+// ============================================================
+
+function _sbRootPath() {
+  const p = (window.location.pathname || '').replace(/\\/g, '/');
+  const parts = p.split('/').filter(Boolean);
+  const folder = parts.length >= 2 ? parts[parts.length - 2].toLowerCase() : '';
+  const sub = ['cadastros','compras','estoque','vendas','financeiro',
+               'configuracoes','marketing','gamificacao','rh','score-credito'];
+  return sub.includes(folder) ? '../' : '';
+}
+
+const _SB_AND_MODULOS = [
+  { key: 'geral',         label: '📊 Geral',         file: 'andamento.md' },
+  { key: 'cadastros',     label: '👥 Cadastros',      file: 'cadastros/andamento.md' },
+  { key: 'compras',       label: '🛒 Compras',        file: 'compras/andamento.md' },
+  { key: 'estoque',       label: '📦 Estoque',        file: 'estoque/andamento.md' },
+  { key: 'vendas',        label: '🛍️ Vendas',         file: 'vendas/andamento.md' },
+  { key: 'financeiro',    label: '💰 Financeiro',     file: 'financeiro/andamento.md' },
+  { key: 'marketing',     label: '📣 Marketing',      file: 'marketing/andamento.md' },
+  { key: 'configuracoes', label: '⚙️ Config',         file: 'configuracoes/andamento.md' },
+  { key: 'gamificacao',   label: '🎮 Gamificação',    file: 'gamificacao/andamento.md' },
+  { key: 'rh',            label: '👤 RH',             file: 'rh/andamento.md' },
+];
+
+function _sbMdInline(t) {
+  return t
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g,'<em>$1</em>')
+    .replace(/`(.+?)`/g,'<code style="background:rgba(0,0,0,.08);padding:1px 5px;border-radius:3px;font-size:.88em;font-family:monospace">$1</code>');
+}
+
+function _sbMdToHtml(md) {
+  if (!md) return '<p style="color:var(--color-text-faint);font-style:italic;font-size:13px">Arquivo não encontrado.</p>';
+  const lines = md.split('\n');
+  let html = '';
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    if (line.startsWith('### ')) { html += `<h3 style="font-size:13px;font-weight:700;margin:14px 0 4px;color:var(--color-text)">${_sbMdInline(line.slice(4))}</h3>`; i++; continue; }
+    if (line.startsWith('## '))  { html += `<h2 style="font-size:15px;font-weight:700;margin:18px 0 6px;color:var(--color-text);border-bottom:1px solid var(--color-border-faint);padding-bottom:4px">${_sbMdInline(line.slice(3))}</h2>`; i++; continue; }
+    if (line.startsWith('# '))   { html += `<h1 style="font-size:18px;font-weight:800;margin:0 0 8px;color:var(--color-text)">${_sbMdInline(line.slice(2))}</h1>`; i++; continue; }
+    if (/^-{3,}$/.test(line.trim())) { html += '<hr style="border:none;border-top:1px solid var(--color-border-faint);margin:12px 0">'; i++; continue; }
+    if (line.startsWith('> ')) { html += `<blockquote style="border-left:3px solid var(--color-primary);margin:8px 0;padding:4px 12px;font-size:12px;color:var(--color-text-muted)">${_sbMdInline(line.slice(2))}</blockquote>`; i++; continue; }
+    if (line.startsWith('```')) {
+      i++; let code = '';
+      while (i < lines.length && !lines[i].startsWith('```')) { code += lines[i] + '\n'; i++; }
+      html += `<pre style="background:rgba(0,0,0,.06);border-radius:6px;padding:10px 14px;overflow-x:auto;font-size:11px;margin:8px 0;font-family:monospace"><code>${code.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</code></pre>`;
+      i++; continue;
+    }
+    if (line.startsWith('|')) {
+      const rows = [];
+      while (i < lines.length && lines[i].startsWith('|')) { rows.push(lines[i]); i++; }
+      if (rows.length === 0) continue;
+      const th = rows[0].split('|').slice(1,-1).map(c => `<th style="background:var(--color-primary);color:#fff;padding:7px 10px;text-align:left;font-size:11px;font-weight:600;white-space:nowrap">${_sbMdInline(c.trim())}</th>`).join('');
+      let tbody = '';
+      for (let r = 2; r < rows.length; r++) {
+        const td = rows[r].split('|').slice(1,-1).map(c => `<td style="padding:6px 10px;font-size:12px;border-top:1px solid var(--color-border-faint);color:var(--color-text-secondary)">${_sbMdInline(c.trim())}</td>`).join('');
+        tbody += `<tr style="transition:background .1s" onmouseover="this.style.background='rgba(0,67,132,.04)'" onmouseout="this.style.background=''">${td}</tr>`;
+      }
+      html += `<div style="overflow-x:auto;margin:8px 0;border-radius:8px;border:1px solid var(--color-border-faint)"><table style="border-collapse:collapse;width:100%;min-width:320px"><thead><tr>${th}</tr></thead><tbody>${tbody}</tbody></table></div>`;
+      continue;
+    }
+    if (/^[-*]\s/.test(line)) {
+      html += '<ul style="margin:6px 0 6px 20px;padding:0">';
+      while (i < lines.length && /^[-*]\s/.test(lines[i])) { html += `<li style="font-size:13px;margin:3px 0;color:var(--color-text-secondary)">${_sbMdInline(lines[i].replace(/^[-*]\s/,''))}</li>`; i++; }
+      html += '</ul>'; continue;
+    }
+    if (/^\d+\.\s/.test(line)) {
+      html += '<ol style="margin:6px 0 6px 20px;padding:0">';
+      while (i < lines.length && /^\d+\.\s/.test(lines[i])) { html += `<li style="font-size:13px;margin:3px 0;color:var(--color-text-secondary)">${_sbMdInline(lines[i].replace(/^\d+\.\s/,''))}</li>`; i++; }
+      html += '</ol>'; continue;
+    }
+    if (line.trim() === '') { i++; continue; }
+    html += `<p style="font-size:13px;margin:4px 0;color:var(--color-text-secondary)">${_sbMdInline(line)}</p>`;
+    i++;
+  }
+  return html || '<p style="color:var(--color-text-faint);font-style:italic">Vazio.</p>';
+}
+
+async function sbAbrirAndamento() {
+  const menu = document.getElementById('sbDdConfigMenu');
+  if (menu) menu.classList.remove('show');
+
+  if (document.getElementById('sbAndBackdrop')) {
+    document.getElementById('sbAndBackdrop').style.display = 'flex';
+    return;
+  }
+
+  const root = _sbRootPath();
+  const modulos = _SB_AND_MODULOS;
+
+  const tabsHtml = modulos.map((m, idx) =>
+    `<button class="sb-and-tab${idx===0?' sb-and-active':''}" data-key="${m.key}"
+      onclick="window._sbAndTab('${m.key}')">${m.label}</button>`
+  ).join('');
+
+  const panelsHtml = modulos.map((m, idx) =>
+    `<div class="sb-and-panel${idx===0?' sb-and-active':''}" id="sbAP_${m.key}">
+      <div id="sbAC_${m.key}" style="color:var(--color-text-faint);font-style:italic;font-size:13px">Carregando...</div>
+    </div>`
+  ).join('');
+
+  const bd = document.createElement('div');
+  bd.id = 'sbAndBackdrop';
+  bd.className = 'crud-backdrop';
+  bd.addEventListener('click', e => { if (e.target === bd) window.sbFecharAndamento(); });
+  bd.innerHTML = `
+    <div class="crud-modal" style="max-width:920px">
+      <div class="crud-modal-head">
+        <h3>📝 Andamento de Alterações</h3>
+        <button class="crud-btn-fechar" onclick="window.sbFecharAndamento()">✕</button>
+      </div>
+      <div style="overflow-x:auto;background:var(--color-surface-2,#f4f6fa);border-bottom:1px solid var(--color-border-faint);flex-shrink:0">
+        <div style="display:flex;gap:2px;padding:8px 16px;min-width:max-content">${tabsHtml}</div>
+      </div>
+      <div style="flex:1;overflow-y:auto;padding:20px 24px">${panelsHtml}</div>
+    </div>`;
+
+  if (!document.getElementById('sbAndStyle')) {
+    const s = document.createElement('style');
+    s.id = 'sbAndStyle';
+    s.textContent = `
+      .sb-and-tab{background:none;border:none;padding:6px 14px;border-radius:6px;font-size:12px;font-weight:500;cursor:pointer;color:var(--color-text-muted);transition:all .15s;white-space:nowrap;font-family:inherit}
+      .sb-and-tab:hover{background:rgba(0,67,132,.08);color:var(--color-primary)}
+      .sb-and-tab.sb-and-active{background:var(--color-primary);color:#fff}
+      [data-theme="dark"] .sb-and-tab:hover{background:rgba(139,92,246,.15);color:#c4b5fd}
+      [data-theme="dark"] .sb-and-tab.sb-and-active{background:#8b5cf6}
+      [data-theme="dark"] .sb-and-panel pre{background:rgba(255,255,255,.05)}
+      [data-theme="dark"] .sb-and-panel code{background:rgba(255,255,255,.08)!important}
+      .sb-and-panel{display:none}
+      .sb-and-panel.sb-and-active{display:block}
+    `;
+    document.head.appendChild(s);
+  }
+  document.body.appendChild(bd);
+
+  window._sbAndTab = function(key) {
+    document.querySelectorAll('.sb-and-tab').forEach(t => t.classList.toggle('sb-and-active', t.dataset.key === key));
+    document.querySelectorAll('.sb-and-panel').forEach(p => p.classList.toggle('sb-and-active', p.id === `sbAP_${key}`));
+  };
+  window.sbFecharAndamento = function() {
+    const el = document.getElementById('sbAndBackdrop');
+    if (el) el.style.display = 'none';
+  };
+
+  const results = await Promise.all(
+    modulos.map(m => fetch(root + m.file).then(r => r.ok ? r.text() : null).catch(() => null))
+  );
+  modulos.forEach((m, idx) => {
+    const el = document.getElementById(`sbAC_${m.key}`);
+    if (el) el.innerHTML = _sbMdToHtml(results[idx]);
   });
 }
 
