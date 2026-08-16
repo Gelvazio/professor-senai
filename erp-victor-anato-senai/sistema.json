@@ -2,7 +2,9 @@
   { "siscodigo": 1, "sisnome": "Dashboard",          "sisativo": 1, "sisordem": 1 },
   { "siscodigo": 2, "sisnome": "Cadastros",          "sisativo": 1, "sisordem": 2 },
   { "siscodigo": 3, "sisnome": "Compras",            "sisativo": 1, "sisordem": 3 },
-  { "siscodigo": 4, "sisnome": "Estoque",            "sisativo": 1, "sisordem": 4 },
-  { "siscodigo": 5, "sisnome": "Vendas e Logística", "sisativo": 1, "sisordem": 5 },
-  { "siscodigo": 6, "sisnome": "Configurações",      "sisativo": 1, "sisordem": 6 }
+  { "siscodigo": 4, "sisnome": "Vendas",             "sisativo": 1, "sisordem": 4 },
+  { "siscodigo": 5, "sisnome": "Logística",          "sisativo": 1, "sisordem": 5 },
+  { "siscodigo": 6, "sisnome": "Estoque",            "sisativo": 1, "sisordem": 6 },
+  { "siscodigo": 7, "sisnome": "Financeiro",         "sisativo": 1, "sisordem": 7 },
+  { "siscodigo": 8, "sisnome": "Configurações",      "sisativo": 1, "sisordem": 8 }
 ]

@@ -126,8 +126,7 @@
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 
 <div class="app-layout">
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-section">
+  <aside class="sidebar" id="sidebar">    <div class="sidebar-section">
       <div class="sidebar-section-label">Principal</div>
       <a class="sidebar-link" href="../dashboard.html"><span class="sidebar-icon">🏠</span> Visão Geral</a>
     </div>
@@ -139,12 +138,6 @@
       <a class="sidebar-link" href="../cadastros/transportadoras.html"><span class="sidebar-icon">🚚</span> Transportadoras</a>
     </div>
     <div class="sidebar-section">
-      <div class="sidebar-section-label">Financeiro</div>
-      <a class="sidebar-link" href="../financeiro/contas-pagar.html"><span class="sidebar-icon">💸</span> Contas a Pagar</a>
-      <a class="sidebar-link" href="../financeiro/contas-receber.html"><span class="sidebar-icon">💰</span> Contas a Receber</a>
-      <a class="sidebar-link" href="../financeiro/balancete.html"><span class="sidebar-icon">📊</span> Balancete Gerencial</a>
-    </div>
-    <div class="sidebar-section">
       <div class="sidebar-section-label">Compras</div>
       <a class="sidebar-link" href="../compras/planejamento.html"><span class="sidebar-icon">📋</span> Planejamento</a>
       <a class="sidebar-link" href="../compras/solicitacoes.html"><span class="sidebar-icon">📝</span> Solicitações</a>
@@ -152,13 +145,6 @@
       <a class="sidebar-link" href="../compras/recebimento.html"><span class="sidebar-icon">📥</span> Recebimento</a>
       <a class="sidebar-link" href="../compras/conferencia.html"><span class="sidebar-icon">✅</span> Conferência</a>
       <a class="sidebar-link" href="../compras/nota-fiscal.html"><span class="sidebar-icon">🧾</span> Nota Fiscal</a>
-    </div>
-    <div class="sidebar-section">
-      <div class="sidebar-section-label">Estoque</div>
-      <a class="sidebar-link" href="../estoque/controle.html"><span class="sidebar-icon">📊</span> Controle</a>
-      <a class="sidebar-link" href="../estoque/movimentacoes.html"><span class="sidebar-icon">🔄</span> Movimentações</a>
-      <a class="sidebar-link" href="../estoque/armazenagem.html"><span class="sidebar-icon">🏪</span> Armazenagem</a>
-      <a class="sidebar-link" href="../estoque/inventario.html"><span class="sidebar-icon">🔍</span> Inventário</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-section-label">Vendas</div>
@@ -173,7 +159,27 @@
       <a class="sidebar-link" href="../vendas/expedicao.html"><span class="sidebar-icon">🚀</span> Expedição</a>
       <a class="sidebar-link" href="../vendas/entrega.html"><span class="sidebar-icon">📍</span> Entrega</a>
     </div>
-<div style="height:24px"></div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Estoque</div>
+      <a class="sidebar-link" href="../estoque/controle.html"><span class="sidebar-icon">📊</span> Controle</a>
+      <a class="sidebar-link" href="../estoque/movimentacoes.html"><span class="sidebar-icon">🔄</span> Movimentações</a>
+      <a class="sidebar-link" href="../estoque/armazenagem.html"><span class="sidebar-icon">🏪</span> Armazenagem</a>
+      <a class="sidebar-link" href="../estoque/inventario.html"><span class="sidebar-icon">🔍</span> Inventário</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Financeiro</div>
+      <a class="sidebar-link" href="../financeiro/contas-pagar.html"><span class="sidebar-icon">💸</span> Contas a Pagar</a>
+      <a class="sidebar-link" href="../financeiro/contas-receber.html"><span class="sidebar-icon">💰</span> Contas a Receber</a>
+      <a class="sidebar-link" href="../financeiro/balancete.html"><span class="sidebar-icon">📊</span> Balancete Gerencial</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Configurações</div>
+      <a class="sidebar-link" href="./usuarios.html"><span class="sidebar-icon">👤</span> Usuários</a>
+      <a class="sidebar-link" href="./telas.html"><span class="sidebar-icon">🖥️</span> Telas</a>
+      <a class="sidebar-link ativo" href="./perfis.html"><span class="sidebar-icon">🔐</span> Perfis</a>
+      <a class="sidebar-link" href="./regras-negocios.html"><span class="sidebar-icon">📋</span> Regras de Negócios</a>
+    </div>
+    <div style="height:24px"></div>
   </aside>
 
   <main class="main">
@@ -307,17 +313,14 @@
   // ── Init ────────────────────────────────────────────────────────
   async function init() {
     try {
-      // Carregar telas.json (base)
-      const telaJSON = await fetch('../telas.json').then(r => r.json());
-      // Carregar tela do banco (ativo)
-      const telaDB   = await sbListar('tela', 'order=id.asc&select=id,ativo');
-      const dbAtivo  = {};
-      telaDB.forEach(t => { dbAtivo[t.id] = t.ativo; });
-      // Fusão
-      todasTelas = telaJSON.map(t => ({
-        ...t,
-        ativo: dbAtivo[t.id] !== undefined ? dbAtivo[t.id] : (t.ativo ?? 1)
-      }));
+      // Carregar telas e vínculos do banco
+      const [telaDB, vinculos] = await Promise.all([
+        sbListar('tela', 'order=id.asc'),
+        sbListar('tela_sistema', '')
+      ]);
+      const sisMap = {};
+      vinculos.forEach(v => { if (!sisMap[v.tela_id]) sisMap[v.tela_id] = v.sistema_id; });
+      todasTelas = telaDB.map(t => ({ ...t, sistema_id: sisMap[t.id] ?? 0 }));
 
       // Sistemas
       const sis = await fetch('../sistema.json').then(r => r.json());
@@ -481,7 +484,7 @@
       grupos[g].push(t);
     });
 
-    const sisOrdem = [1, 2, 3, 4, 5, 6];
+    const sisOrdem = [1, 2, 3, 4, 5, 6, 7, 8];
     let html = '';
     sisOrdem.forEach(sisId => {
       if (!grupos[sisId] || !grupos[sisId].length) return;

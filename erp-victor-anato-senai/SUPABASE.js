@@ -242,7 +242,7 @@ function sbLogout(paginaLogin = '/index.html') {
   localStorage.removeItem('erp_user_email');
   localStorage.removeItem('erp_permissoes');
   localStorage.removeItem('erp_login');
-  sessionStorage.removeItem('_telas_json'); // limpa cache de sessão
+  sessionStorage.removeItem('_telas_cache'); // limpa cache de sessão
   window.location.href = paginaLogin;
 }
 
@@ -339,7 +339,7 @@ function sbIniciarBtnTema(btnId = 'btnTema') {
  * Chamada automaticamente quando o DOM estiver pronto e houver um .sidebar na página.
  */
 function sbInitSidebarAccordion() {
-  const ACC_KEYS = ['cadastros', 'financeiro', 'compras', 'estoque', 'vendas', 'logística', 'log'];
+  const ACC_KEYS = ['cadastros', 'compras', 'estoque', 'vendas', 'logística', 'log'];
 
   document.querySelectorAll('.sidebar-section').forEach(section => {
     const labelEl = section.querySelector('.sidebar-section-label');
@@ -685,22 +685,18 @@ function sbGerarPDFPedidoCompra(pedido, fornecedor, produto) {
  * @returns {Promise<Array>} Array de objetos {id, nome_html, ativo, ...}
  */
 async function _sbCarregarTelasJson() {
-  const cached = sessionStorage.getItem('_telas_json');
+  const cached = sessionStorage.getItem('_telas_cache');
   if (cached) return JSON.parse(cached);
 
-  // Tenta caminhos possíveis conforme a pasta atual
-  const tentativas = ['telas.json', '../telas.json', '../../telas.json'];
-  for (const p of tentativas) {
-    try {
-      const r = await fetch(p);
-      if (r.ok) {
-        const data = await r.json();
-        sessionStorage.setItem('_telas_json', JSON.stringify(data));
-        return data;
-      }
-    } catch { /* continua tentando */ }
-  }
-  return [];
+  const [telas, vinculos] = await Promise.all([
+    sbListar('tela', 'order=id.asc'),
+    sbListar('tela_sistema', '')
+  ]);
+  const sisMap = {};
+  vinculos.forEach(v => { if (!sisMap[v.tela_id]) sisMap[v.tela_id] = v.sistema_id; });
+  const data = telas.map(t => ({ ...t, sistema_id: sisMap[t.id] ?? 0 }));
+  sessionStorage.setItem('_telas_cache', JSON.stringify(data));
+  return data;
 }
 
 /**
@@ -803,7 +799,7 @@ function _sbConfigPath() {
   const partes = p.split('/').filter(Boolean);
   const pasta  = partes.length >= 2 ? partes[partes.length - 2].toLowerCase() : '';
   if (pasta === 'configuracoes') return './';
-  if (['cadastros', 'compras', 'estoque', 'vendas'].includes(pasta)) return '../configuracoes/';
+  if (['cadastros', 'compras', 'estoque', 'vendas', 'financeiro'].includes(pasta)) return '../configuracoes/';
   return 'configuracoes/';
 }
 
@@ -826,6 +822,7 @@ function sbInjetarMenuConfiguracoes() {
       <a class="sb-dd-item" href="${base}usuarios.html">👤 Usuários</a>
       <a class="sb-dd-item" href="${base}telas.html">🖥️ Telas</a>
       <a class="sb-dd-item" href="${base}perfis.html">🔑 Perfis</a>
+      <a class="sb-dd-item" href="${base}regras-negocios.html">📋 Regras de Negócios</a>
     </div>`;
   sairBtn.before(wrap);
 

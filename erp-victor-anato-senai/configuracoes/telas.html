@@ -88,8 +88,7 @@
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 
 <div class="app-layout">
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-section">
+  <aside class="sidebar" id="sidebar">    <div class="sidebar-section">
       <div class="sidebar-section-label">Principal</div>
       <a class="sidebar-link" href="../dashboard.html"><span class="sidebar-icon">🏠</span> Visão Geral</a>
     </div>
@@ -101,12 +100,6 @@
       <a class="sidebar-link" href="../cadastros/transportadoras.html"><span class="sidebar-icon">🚚</span> Transportadoras</a>
     </div>
     <div class="sidebar-section">
-      <div class="sidebar-section-label">Financeiro</div>
-      <a class="sidebar-link" href="../financeiro/contas-pagar.html"><span class="sidebar-icon">💸</span> Contas a Pagar</a>
-      <a class="sidebar-link" href="../financeiro/contas-receber.html"><span class="sidebar-icon">💰</span> Contas a Receber</a>
-      <a class="sidebar-link" href="../financeiro/balancete.html"><span class="sidebar-icon">📊</span> Balancete Gerencial</a>
-    </div>
-    <div class="sidebar-section">
       <div class="sidebar-section-label">Compras</div>
       <a class="sidebar-link" href="../compras/planejamento.html"><span class="sidebar-icon">📋</span> Planejamento</a>
       <a class="sidebar-link" href="../compras/solicitacoes.html"><span class="sidebar-icon">📝</span> Solicitações</a>
@@ -114,13 +107,6 @@
       <a class="sidebar-link" href="../compras/recebimento.html"><span class="sidebar-icon">📥</span> Recebimento</a>
       <a class="sidebar-link" href="../compras/conferencia.html"><span class="sidebar-icon">✅</span> Conferência</a>
       <a class="sidebar-link" href="../compras/nota-fiscal.html"><span class="sidebar-icon">🧾</span> Nota Fiscal</a>
-    </div>
-    <div class="sidebar-section">
-      <div class="sidebar-section-label">Estoque</div>
-      <a class="sidebar-link" href="../estoque/controle.html"><span class="sidebar-icon">📊</span> Controle</a>
-      <a class="sidebar-link" href="../estoque/movimentacoes.html"><span class="sidebar-icon">🔄</span> Movimentações</a>
-      <a class="sidebar-link" href="../estoque/armazenagem.html"><span class="sidebar-icon">🏪</span> Armazenagem</a>
-      <a class="sidebar-link" href="../estoque/inventario.html"><span class="sidebar-icon">🔍</span> Inventário</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-section-label">Vendas</div>
@@ -135,14 +121,34 @@
       <a class="sidebar-link" href="../vendas/expedicao.html"><span class="sidebar-icon">🚀</span> Expedição</a>
       <a class="sidebar-link" href="../vendas/entrega.html"><span class="sidebar-icon">📍</span> Entrega</a>
     </div>
-<div style="height:24px"></div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Estoque</div>
+      <a class="sidebar-link" href="../estoque/controle.html"><span class="sidebar-icon">📊</span> Controle</a>
+      <a class="sidebar-link" href="../estoque/movimentacoes.html"><span class="sidebar-icon">🔄</span> Movimentações</a>
+      <a class="sidebar-link" href="../estoque/armazenagem.html"><span class="sidebar-icon">🏪</span> Armazenagem</a>
+      <a class="sidebar-link" href="../estoque/inventario.html"><span class="sidebar-icon">🔍</span> Inventário</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Financeiro</div>
+      <a class="sidebar-link" href="../financeiro/contas-pagar.html"><span class="sidebar-icon">💸</span> Contas a Pagar</a>
+      <a class="sidebar-link" href="../financeiro/contas-receber.html"><span class="sidebar-icon">💰</span> Contas a Receber</a>
+      <a class="sidebar-link" href="../financeiro/balancete.html"><span class="sidebar-icon">📊</span> Balancete Gerencial</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Configurações</div>
+      <a class="sidebar-link" href="./usuarios.html"><span class="sidebar-icon">👤</span> Usuários</a>
+      <a class="sidebar-link ativo" href="./telas.html"><span class="sidebar-icon">🖥️</span> Telas</a>
+      <a class="sidebar-link" href="./perfis.html"><span class="sidebar-icon">🔐</span> Perfis</a>
+      <a class="sidebar-link" href="./regras-negocios.html"><span class="sidebar-icon">📋</span> Regras de Negócios</a>
+    </div>
+    <div style="height:24px"></div>
   </aside>
 
   <main class="main">
     <div class="page-header">
       <div class="page-header-left">
         <h1>🖥️ Telas do Sistema</h1>
-        <p>Ative ou desative telas. A lista base vem de <code>telas.json</code>; o status é salvo no banco.</p>
+        <p>Ative ou desative telas do sistema. Dados gerenciados diretamente no banco.</p>
       </div>
     </div>
 
@@ -169,7 +175,6 @@
               <th>Tela</th>
               <th>Módulo</th>
               <th>Arquivo</th>
-              <th>Fonte</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -218,19 +223,19 @@
   // ── Inicializar ───────────────────────────────────────────
   async function init() {
     try {
-      // 1. Base: telas.json (fonte local)
-      const telaJSON = await fetch('../telas.json').then(r => r.json());
+      // 1. Buscar telas e vínculos do banco
+      const [telaDB, vinculos, sistemas] = await Promise.all([
+        sbListar('tela', 'order=id.asc'),
+        sbListar('tela_sistema', ''),
+        fetch('../sistema.json').then(r => r.json())
+      ]);
 
-      // 2. Configurações do banco (ativo pode ter sido alterado)
-      const telaDB = await sbListar('tela', 'order=id.asc&select=id,ativo');
-      const dbMap  = {};
-      telaDB.forEach(t => { dbMap[t.id] = { ativo: t.ativo, noDb: true }; });
+      const sisMap = {};
+      vinculos.forEach(v => { if (!sisMap[v.tela_id]) sisMap[v.tela_id] = v.sistema_id; });
+      todasTelas = telaDB.map(t => ({ ...t, sistema_id: sisMap[t.id] ?? 0 }));
 
-      // 3. Sistemas (nomes dos módulos)
-      const sistemas = await fetch('../sistema.json').then(r => r.json());
+      // 2. Montar mapa de sistemas e filtro
       sistemas.forEach(s => { sistemasMap[s.siscodigo] = s.sisnome; });
-
-      // Popula filtro de módulo
       const sel = document.getElementById('filtroSistema');
       sistemas.forEach(s => {
         const opt = document.createElement('option');
@@ -239,17 +244,10 @@
         sel.appendChild(opt);
       });
 
-      // 4. Merge: JSON como base, DB sobrepõe ativo
-      todasTelas = telaJSON.map(t => ({
-        ...t,
-        ativo:   dbMap[t.id] !== undefined ? dbMap[t.id].ativo : (t.ativo ?? 1),
-        noDb:    !!dbMap[t.id]
-      }));
-
       renderizar(todasTelas);
     } catch (e) {
       document.getElementById('tbodyTelas').innerHTML =
-        `<tr><td colspan="6" class="vazio">Erro ao carregar telas: ${e.message}</td></tr>`;
+        `<tr><td colspan="5" class="vazio">Erro ao carregar telas: ${e.message}</td></tr>`;
     }
   }
 
@@ -289,18 +287,12 @@
     tbody.innerHTML = lista.map(t => {
       const modulo = sistemasMap[t.sistema_id] || '—';
       const ativo  = t.ativo === 1 || t.ativo === true;
-      const fonte  = t.noDb
-        ? '<span class="fonte-badge fonte-db">Banco</span>'
-        : '<span class="fonte-badge fonte-json">JSON</span>';
       return `
         <tr>
           <td style="color:var(--color-text-faint);font-size:12px">${t.id}</td>
-          <td>
-            <div class="nome-tela">${escHtml(t.nome)}</div>
-          </td>
+          <td><div class="nome-tela">${escHtml(t.nome)}</div></td>
           <td><span class="badge badge-azul">${escHtml(modulo)}</span></td>
           <td><span class="html-file">${escHtml(t.nome_html)}</span></td>
-          <td>${fonte}</td>
           <td>
             <label class="tog">
               <input type="checkbox" id="tog_${t.id}" ${ativo ? 'checked' : ''}
