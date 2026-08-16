@@ -420,7 +420,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "claude",
-      "community": 5,
+      "community": 4,
       "norm_label": "claude.md"
     },
     {
@@ -430,7 +430,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "claude_graphify_atualiza\u00e7\u00e3o_obrigat\u00f3ria_ap\u00f3s_cada_tarefa",
-      "community": 5,
+      "community": 4,
       "norm_label": "graphify \u2014 atualizacao obrigatoria apos cada tarefa"
     },
     {
@@ -440,7 +440,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "claude_vis\u00e3o_geral_do_sistema",
-      "community": 5,
+      "community": 4,
       "norm_label": "visao geral do sistema"
     },
     {
@@ -450,7 +450,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "claude_princ\u00edpios_fundamentais",
-      "community": 5,
+      "community": 4,
       "norm_label": "principios fundamentais"
     },
     {
@@ -590,7 +590,7 @@
       "source_location": "L259",
       "_origin": "ast",
       "id": "claude_m\u00f3dulo_3_estoque",
-      "community": 5,
+      "community": 1,
       "norm_label": "modulo 3 \u2014 estoque"
     },
     {
@@ -600,7 +600,7 @@
       "source_location": "L263",
       "_origin": "ast",
       "id": "claude_3_1_armazenagem",
-      "community": 5,
+      "community": 1,
       "norm_label": "3.1 armazenagem"
     },
     {
@@ -610,7 +610,7 @@
       "source_location": "L282",
       "_origin": "ast",
       "id": "claude_3_2_controle_de_estoque",
-      "community": 5,
+      "community": 1,
       "norm_label": "3.2 controle de estoque"
     },
     {
@@ -620,7 +620,7 @@
       "source_location": "L296",
       "_origin": "ast",
       "id": "claude_3_3_movimenta\u00e7\u00f5es",
-      "community": 5,
+      "community": 1,
       "norm_label": "3.3 movimentacoes"
     },
     {
@@ -630,7 +630,7 @@
       "source_location": "L315",
       "_origin": "ast",
       "id": "claude_3_4_invent\u00e1rio",
-      "community": 5,
+      "community": 1,
       "norm_label": "3.4 inventario"
     },
     {
@@ -720,7 +720,7 @@
       "source_location": "L484",
       "_origin": "ast",
       "id": "claude_m\u00f3dulo_5_configura\u00e7\u00f5es",
-      "community": 5,
+      "community": 4,
       "norm_label": "modulo 5 \u2014 configuracoes"
     },
     {
@@ -730,7 +730,7 @@
       "source_location": "L486",
       "_origin": "ast",
       "id": "claude_5_1_usu\u00e1rios",
-      "community": 5,
+      "community": 4,
       "norm_label": "5.1 usuarios"
     },
     {
@@ -740,7 +740,7 @@
       "source_location": "L509",
       "_origin": "ast",
       "id": "claude_vis\u00e3o_geral_dashboard",
-      "community": 5,
+      "community": 4,
       "norm_label": "visao geral (dashboard)"
     },
     {
@@ -900,7 +900,7 @@
       "source_location": "L624",
       "_origin": "ast",
       "id": "claude_tecnologias",
-      "community": 1,
+      "community": 4,
       "norm_label": "tecnologias"
     },
     {
@@ -910,7 +910,7 @@
       "source_location": "L626",
       "_origin": "ast",
       "id": "claude_frontend_vanilla_js_obrigat\u00f3rio",
-      "community": 1,
+      "community": 4,
       "norm_label": "frontend \u2014 vanilla js (obrigatorio)"
     },
     {
@@ -920,7 +920,7 @@
       "source_location": "L638",
       "_origin": "ast",
       "id": "claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo",
-      "community": 1,
+      "community": 4,
       "norm_label": "estrutura de arquivos html (uma por tela/modulo)"
     },
     {
@@ -930,7 +930,7 @@
       "source_location": "L673",
       "_origin": "ast",
       "id": "claude_padr\u00f5es_javascript_obrigat\u00f3rios",
-      "community": 1,
+      "community": 4,
       "norm_label": "padroes javascript obrigatorios"
     },
     {
@@ -940,7 +940,7 @@
       "source_location": "L706",
       "_origin": "ast",
       "id": "claude_backend_banco_de_dados",
-      "community": 1,
+      "community": 4,
       "norm_label": "backend / banco de dados"
     },
     {
@@ -1020,7 +1020,7 @@
       "source_location": "L1167",
       "_origin": "ast",
       "id": "claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
-      "community": 5,
+      "community": 4,
       "norm_label": "ordem de implementacao sugerida"
     },
     {
@@ -1132,6 +1132,76 @@
       "id": "passos_criacao_erp_resumo_de_progresso",
       "community": 2,
       "norm_label": "resumo de progresso"
+    },
+    {
+      "label": "Assist. de PCP_436h_Pr\u00e1tica Profissional_41a56ba3.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Assist. de PCP_436h_Pr\u00e1tica Profissional_41a56ba3.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_assist_de_pcp_436h_pr\u00e1tica_profissional_41a56ba3",
+      "community": 13,
+      "norm_label": "assist. de pcp_436h_pratica profissional_41a56ba3.md"
+    },
+    {
+      "label": "Assist. de PCP_516h_Pr\u00e1tica Profissional_ff613011.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Assist. de PCP_516h_Pr\u00e1tica Profissional_ff613011.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_assist_de_pcp_516h_pr\u00e1tica_profissional_ff613011",
+      "community": 14,
+      "norm_label": "assist. de pcp_516h_pratica profissional_ff613011.md"
+    },
+    {
+      "label": "Assist. de PCP_FLEX_ 860h_9014e82a.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Assist. de PCP_FLEX_ 860h_9014e82a.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_assist_de_pcp_flex_860h_9014e82a",
+      "community": 15,
+      "norm_label": "assist. de pcp_flex_ 860h_9014e82a.md"
+    },
+    {
+      "label": "Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional_b0c8fb28.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional_b0c8fb28.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28",
+      "community": 12,
+      "norm_label": "assist. em processos administrativos e industriais_1636h_pratica profissional_b0c8fb28.md"
+    },
+    {
+      "label": "CONTE\u00daDOS REFERIDOS NA PORTARIA MTE 3.872/23:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional_b0c8fb28.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "converted_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28_conte\u00fados_referidos_na_portaria_mte_3_872_23",
+      "community": 12,
+      "norm_label": "conteudos referidos na portaria mte 3.872/23:"
+    },
+    {
+      "label": "Assist. em Processos da Qualidade e Log\u00edstica Industrial_860h_a23a07b2.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Assist. em Processos da Qualidade e Log\u00edstica Industrial_860h_a23a07b2.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_assist_em_processos_da_qualidade_e_log\u00edstica_industrial_860h_a23a07b2",
+      "community": 17,
+      "norm_label": "assist. em processos da qualidade e logistica industrial_860h_a23a07b2.md"
+    },
+    {
+      "label": "_Assist. em Processos Administrativos e Industriais_1280h_09ea01ca.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/_Assist. em Processos Administrativos e Industriais_1280h_09ea01ca.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_assist_em_processos_administrativos_e_industriais_1280h_09ea01ca",
+      "community": 16,
+      "norm_label": "_assist. em processos administrativos e industriais_1280h_09ea01ca.md"
     }
   ],
   "links": [
@@ -1201,9 +1271,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L553",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbbindestadocidade",
-      "confidence_score": 1.0
+      "target": "supabase_sbbindestadocidade"
     },
     {
       "relation": "contains",
@@ -1221,9 +1291,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L515",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase",
-      "target": "supabase_sbcarregarcidades",
-      "confidence_score": 1.0
+      "target": "supabase_sbcarregarcidades"
     },
     {
       "relation": "contains",
@@ -1784,9 +1854,9 @@
       "source_file": "SUPABASE.js",
       "source_location": "L558",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "supabase_sbbindestadocidade",
-      "target": "supabase_sbcarregarcidades",
-      "confidence_score": 1.0
+      "target": "supabase_sbcarregarcidades"
     },
     {
       "relation": "calls",
@@ -2509,8 +2579,18 @@
       "confidence_score": 1.0,
       "source": "passos_criacao_erp",
       "target": "passos_criacao_erp_resumo_de_progresso"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional_b0c8fb28.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "converted_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28",
+      "target": "converted_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28_conte\u00fados_referidos_na_portaria_mte_3_872_23",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cd9e26ac19e5404bcc226c37f6abf61c3502b7df"
+  "built_at_commit": "cc36de33a3367b456443a6206cde9fe5b4342c5d"
 }

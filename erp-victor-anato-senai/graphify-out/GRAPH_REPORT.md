@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-16)
 
 ## Corpus Check
-- 9 files · ~79,065 words
+- 15 files · ~256,335 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 113 nodes · 135 edges · 12 communities
+- 120 nodes · 136 edges · 18 communities (17 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `cd9e26ac`
+- Built from commit: `cc36de33`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -27,6 +27,7 @@
 - [[_COMMUNITY_Community 9|Community 9]]
 - [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Responsividade` - 10 edges
@@ -49,7 +50,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (12 total, 0 thin omitted)
+## Communities (18 total, 1 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.14
@@ -57,7 +58,7 @@ Nodes (7): HEADERS, HEADERS_READ, Numerar, sbBindEstadoCidade(), sbCarregarCidad
 
 ### Community 1 - "Community 1"
 Cohesion: 0.40
-Nodes (5): Backend / Banco de Dados, Estrutura de arquivos HTML (uma por tela/módulo), Frontend — Vanilla JS (obrigatório), Padrões JavaScript obrigatórios, Tecnologias
+Nodes (5): 3.1 Armazenagem, 3.2 Controle de Estoque, 3.3 Movimentações, 3.4 Inventário, Módulo 3 — ESTOQUE
 
 ### Community 2 - "Community 2"
 Cohesion: 0.18
@@ -68,12 +69,12 @@ Cohesion: 0.25
 Nodes (8): 2.1 Planejamento, 2.2 Solicitação de Compras, 2.3 Pedido de Compras, 2.4 Recebimento, 2.5 Conferência, 2.6 Entrada de Nota Fiscal, Fluxo do Módulo de Compras, Módulo 2 — COMPRAS
 
 ### Community 4 - "Community 4"
-Cohesion: 0.25
-Nodes (8): 4.1 Pedido de Venda, 4.2 Nota Fiscal de Venda, 4.3 Romaneio, 4.4 Separação (Picking), 4.5 Expedição, 4.6 Entrega, Fluxo do Módulo de Vendas e Logística, Módulo 4 — VENDAS E LOGÍSTICA
+Cohesion: 0.10
+Nodes (20): 4.1 Pedido de Venda, 4.2 Nota Fiscal de Venda, 4.3 Romaneio, 4.4 Separação (Picking), 4.5 Expedição, 4.6 Entrega, 5.1 Usuários, Backend / Banco de Dados (+12 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.11
-Nodes (17): 1.1 Clientes, 1.2 Fornecedores, 1.3 Produtos, 1.4 Transportadoras, 3.1 Armazenagem, 3.2 Controle de Estoque, 3.3 Movimentações, 3.4 Inventário (+9 more)
+Cohesion: 0.40
+Nodes (5): 1.1 Clientes, 1.2 Fornecedores, 1.3 Produtos, 1.4 Transportadoras, Módulo 1 — CADASTROS
 
 ### Community 6 - "Community 6"
 Cohesion: 0.29
@@ -100,21 +101,22 @@ Cohesion: 0.25
 Nodes (8): _sbCarregarTelasJson(), _sbConfigPath(), sbExigirPermissao(), sbFiltrarSidebar(), sbInjetarMenuConfiguracoes(), sbIsAdmin(), sbPerfil(), sbTemPermissao()
 
 ## Knowledge Gaps
-- **63 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Graphify — Atualização obrigatória após cada tarefa`, `Princípios Fundamentais` (+58 more)
+- **64 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Graphify — Atualização obrigatória após cada tarefa`, `Princípios Fundamentais` (+59 more)
   These have ≤1 connection - possible missing edges or undocumented components.
+- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Regras Gerais de Interface` connect `Community 8` to `Community 5`?**
-  _High betweenness centrality (0.111) - this node is a cross-community bridge._
-- **Why does `Módulo 2 — COMPRAS` connect `Community 3` to `Community 5`?**
-  _High betweenness centrality (0.063) - this node is a cross-community bridge._
+- **Why does `Regras Gerais de Interface` connect `Community 8` to `Community 4`?**
+  _High betweenness centrality (0.098) - this node is a cross-community bridge._
+- **Why does `Módulo 2 — COMPRAS` connect `Community 3` to `Community 4`?**
+  _High betweenness centrality (0.056) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _63 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _64 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.14166666666666666 - nodes in this community are weakly interconnected._
-- **Should `Community 5` be split into smaller, more focused modules?**
-  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
+- **Should `Community 4` be split into smaller, more focused modules?**
+  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
 - **Should `Community 8` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
