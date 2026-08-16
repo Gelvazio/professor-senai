@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ERP — Separação (Picking)</title>
+  <title>ERP — Tele Vendas</title>
   <link rel="stylesheet" href="../styles.css">
   <style>
     .app-layout { display: flex; min-height: calc(100vh - 56px); }
@@ -26,9 +26,13 @@
     [data-theme="dark"] .search-input { background: var(--color-surface-2); border-color: var(--color-border); color: var(--color-text); }
 
     .content-card { background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); overflow: hidden; }
+
     .msg-global { margin-bottom: 14px; display: none; }
+
     .modal-foot { padding: 12px 20px; display: flex; gap: 10px; justify-content: flex-end; align-items: center; border-top: 1px solid var(--color-border-faint); background: var(--color-surface); flex-shrink: 0; }
     [data-theme="dark"] .modal-foot { border-top-color: var(--color-border-light); }
+
+    .readonly-field { background: var(--color-surface-2) !important; color: var(--color-text-muted) !important; }
   </style>
   <script>
     (function () {
@@ -36,9 +40,11 @@
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
+  <script src="../gamificacao/gamif.js"></script>
 </head>
 <body>
 
+<!-- ── Header ─────────────────────────────────── -->
 <header class="header">
   <button class="btn-menu" id="btnMenu" onclick="toggleSidebar()">☰</button>
   <a class="header-logo" href="../dashboard.html">ERP</a>
@@ -49,10 +55,15 @@
   <button class="header-btn" onclick="sair()">🚪 Sair</button>
 </header>
 
+<!-- ── Overlay mobile ─────────────────────────── -->
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 
+<!-- ── Layout ─────────────────────────────────── -->
 <div class="app-layout">
-  <aside class="sidebar" id="sidebar">    <div class="sidebar-section">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-section">
       <div class="sidebar-section-label">Principal</div>
       <a class="sidebar-link" href="../dashboard.html"><span class="sidebar-icon">🏠</span> Visão Geral</a>
     </div>
@@ -76,12 +87,12 @@
       <div class="sidebar-section-label">Vendas</div>
       <a class="sidebar-link" href="pedidos-venda.html"><span class="sidebar-icon">🛍️</span> Pedidos de Venda</a>
       <a class="sidebar-link" href="nota-fiscal-venda.html"><span class="sidebar-icon">📄</span> NF de Venda</a>
-      <a class="sidebar-link" href="televendas.html"><span class="sidebar-icon">📞</span> Tele Vendas</a>
+      <a class="sidebar-link ativo" href="televendas.html"><span class="sidebar-icon">📞</span> Tele Vendas</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-section-label">Logística</div>
       <a class="sidebar-link" href="logistica.html"><span class="sidebar-icon">🗺️</span> Pipeline</a>
-      <a class="sidebar-link ativo" href="separacao.html"><span class="sidebar-icon">📤</span> Separação</a>
+      <a class="sidebar-link" href="separacao.html"><span class="sidebar-icon">📤</span> Separação</a>
       <a class="sidebar-link" href="romaneio.html"><span class="sidebar-icon">📃</span> Romaneio</a>
       <a class="sidebar-link" href="expedicao.html"><span class="sidebar-icon">🚀</span> Expedição</a>
       <a class="sidebar-link" href="entrega.html"><span class="sidebar-icon">📍</span> Entrega</a>
@@ -105,7 +116,6 @@
       <a class="sidebar-link" href="../marketing/campanhas.html"><span class="sidebar-icon">📣</span> Campanhas</a>
       <a class="sidebar-link" href="../marketing/retornos.html"><span class="sidebar-icon">📈</span> Retornos</a>
     </div>
-
     <div class="sidebar-section">
       <div class="sidebar-section-label">Recursos Humanos</div>
       <a class="sidebar-link" href="../rh/dashboard.html"><span class="sidebar-icon">📊</span> Painel RH</a>
@@ -116,127 +126,125 @@
       <a class="sidebar-link" href="../rh/afastamentos.html"><span class="sidebar-icon">🏥</span> Afastamentos</a>
       <a class="sidebar-link" href="../rh/treinamentos.html"><span class="sidebar-icon">🎓</span> Treinamentos</a>
     </div>
-<div class="sidebar-section">
-  <div class="sidebar-section-label">Gamificação</div>
-  <a class="sidebar-link" href="../gamificacao/index.html"
-    ><span class="sidebar-icon">🎮</span> Minha Jornada</a
-  >
-  <a class="sidebar-link" href="../gamificacao/ranking.html"
-    ><span class="sidebar-icon">🏆</span> Ranking</a
-  >
-  <a class="sidebar-link" id="linkAdmin" href="../gamificacao/admin.html" style="display:none"
-    ><span class="sidebar-icon">⚙️</span> Admin Gamif.</a
-  >
-</div>
-<div style="height:24px"></div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Gamificação</div>
+      <a class="sidebar-link" href="../gamificacao/index.html"><span class="sidebar-icon">🎮</span> Minha Jornada</a>
+      <a class="sidebar-link" href="../gamificacao/ranking.html"><span class="sidebar-icon">🏆</span> Ranking</a>
+      <a class="sidebar-link" id="linkAdmin" href="../gamificacao/admin.html" style="display:none"><span class="sidebar-icon">⚙️</span> Admin Gamif.</a>
+    </div>
+    <div style="height:24px"></div>
   </aside>
 
+  <!-- Conteúdo -->
   <main class="main">
+
     <div class="page-header">
       <div>
-        <h1>📤 Separação (Picking)</h1>
-        <p>Gerencie a separação de produtos para atender pedidos de venda</p>
+        <h1>📞 Tele Vendas</h1>
+        <p>Pedidos recebidos via sistema externo (IRP)</p>
       </div>
-      <button class="btn" onclick="abrirModalNovo()">+ Nova Separação</button>
+      <button class="btn" onclick="abrirModalNovo()">+ Novo Registro</button>
     </div>
 
+    <!-- Mensagem global -->
     <div id="msgGlobal" class="crud-msg msg-global"></div>
 
+    <!-- Toolbar -->
     <div class="toolbar">
-      <input class="search-input" type="text" id="campoBusca" placeholder="Buscar por número ou pedido…" oninput="aplicarFiltros()">
-      <select class="search-input" id="filtroStatus" style="flex:0 0 180px" onchange="aplicarFiltros()">
+      <input class="search-input" type="text" id="campoBusca" placeholder="Buscar por Pedido D ou ID Chave…" oninput="aplicarFiltros()">
+      <select class="search-input" id="filtroStatus" style="flex:0 0 200px" onchange="aplicarFiltros()">
         <option value="">Todos os status</option>
-        <option>Pendente</option>
-        <option>Em Separação</option>
+        <option>Em Aberto</option>
+        <option>Em Atendimento</option>
+        <option>Aguardando Retorno</option>
         <option>Concluído</option>
-        <option>Com Divergência</option>
+        <option>Cancelado</option>
       </select>
     </div>
 
+    <!-- Tabela -->
     <div class="content-card">
       <div class="crud-table-wrap">
         <table class="crud-table">
           <thead>
             <tr>
-              <th>Nº</th>
-              <th>Pedido de Venda</th>
-              <th>Produto</th>
-              <th>Quantidade</th>
-              <th>Separador</th>
+              <th>ID</th>
+              <th>Pedido D</th>
+              <th>ID Chave</th>
+              <th>Data / Hora</th>
               <th>Status</th>
-              <th>Data</th>
+              <th>Observação</th>
               <th>Ações</th>
             </tr>
           </thead>
           <tbody id="tabelaBody">
-            <tr><td colspan="8" class="crud-vazio">Carregando…</td></tr>
+            <tr><td colspan="7" class="crud-vazio">Carregando…</td></tr>
           </tbody>
         </table>
       </div>
     </div>
+
   </main>
 </div>
 
-<!-- Modal -->
+<!-- ── Modal ──────────────────────────────────── -->
 <div class="crud-backdrop" id="modalBackdrop" style="display:none" onclick="backdropClick(event)">
-  <div class="crud-modal" style="max-width:640px">
+  <div class="crud-modal" style="max-width:560px">
     <div class="crud-modal-head">
-      <h3 id="modalTitulo">Nova Separação</h3>
+      <h3 id="modalTitulo">Novo Registro</h3>
       <button class="crud-btn-fechar" onclick="fecharModal()">✕</button>
     </div>
     <div style="overflow-y:auto; flex:1;">
       <div class="crud-form-area">
+
         <div class="crud-form">
-          <div class="crud-field" style="flex:0 0 140px">
-            <label class="crud-label">Nº da Separação</label>
-            <input class="crud-input" id="fNumero" readonly style="background:var(--color-surface-2);color:var(--color-text-muted)">
+          <div class="crud-field" style="flex:0 0 100px">
+            <label class="crud-label">ID</label>
+            <input class="crud-input readonly-field" id="fId" readonly>
           </div>
-          <div class="crud-field" style="flex:1; min-width:200px">
-            <label class="crud-label">Pedido de Venda</label>
-            <select class="crud-input" id="fPedido" onchange="onPedidoChange()"></select>
+          <div class="crud-field" style="flex:1">
+            <label class="crud-label">Pedido D</label>
+            <input class="crud-input" id="fPedidoD" placeholder="ID do pedido externo">
           </div>
         </div>
+
         <div class="crud-form">
-          <div class="crud-field" style="flex:1; min-width:200px">
-            <label class="crud-label">Produto <span style="color:var(--color-error)">*</span></label>
-            <select class="crud-input" id="fProduto"></select>
+          <div class="crud-field" style="flex:1">
+            <label class="crud-label">ID Chave</label>
+            <input class="crud-input" id="fIdChave" placeholder="Chave do sistema IRP">
           </div>
-          <div class="crud-field" style="flex:0 0 120px">
-            <label class="crud-label">Quantidade <span style="color:var(--color-error)">*</span></label>
-            <input class="crud-input" type="number" id="fQuantidade" min="0.001" step="any" placeholder="0">
+          <div class="crud-field" style="flex:0 0 220px">
+            <label class="crud-label">Data / Hora</label>
+            <input class="crud-input" type="datetime-local" id="fDatahora">
           </div>
         </div>
+
         <div class="crud-form">
-          <div class="crud-field" style="flex:1; min-width:180px">
-            <label class="crud-label">Separador</label>
-            <input class="crud-input" id="fSeparador" placeholder="Nome do responsável pela separação">
-          </div>
-          <div class="crud-field" style="flex:0 0 180px">
-            <label class="crud-label">Status</label>
+          <div class="crud-field" style="flex:1">
+            <label class="crud-label">Status <span style="color:var(--color-error)">*</span></label>
             <select class="crud-input" id="fStatus">
-              <option>Pendente</option>
-              <option>Em Separação</option>
+              <option>Em Aberto</option>
+              <option>Em Atendimento</option>
+              <option>Aguardando Retorno</option>
               <option>Concluído</option>
-              <option>Com Divergência</option>
+              <option>Cancelado</option>
             </select>
           </div>
-          <div class="crud-field" style="flex:0 0 150px">
-            <label class="crud-label">Data</label>
-            <input class="crud-input" type="date" id="fData">
-          </div>
         </div>
+
         <div class="crud-form">
           <div class="crud-field">
-            <label class="crud-label">Observações</label>
-            <textarea class="crud-input" id="fObs" rows="3" style="resize:vertical"></textarea>
+            <label class="crud-label">Observação</label>
+            <textarea class="crud-input" id="fObservacao" rows="4" style="resize:vertical" placeholder="Anotações sobre o atendimento…"></textarea>
           </div>
         </div>
+
       </div>
     </div>
     <div class="modal-foot">
       <div id="msgModal" class="crud-msg" style="flex:1;display:none"></div>
       <button class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
-      <button class="btn-salvar" onclick="salvar()">Confirmar</button>
+      <button class="btn-salvar" onclick="salvar()">Salvar</button>
     </div>
   </div>
 </div>
@@ -261,199 +269,210 @@
   }
 
   function sair() { sbLogout('../index.html'); }
+
   function toggleSidebar() {
     document.getElementById('sidebar').classList.toggle('open');
     document.getElementById('sidebarOverlay').classList.toggle('show');
   }
 
+  // ── Estado ─────────────────────────────────────
   let registros = [];
   let editId    = null;
-  let pedidos   = [];
 
+  // ── Carregar dados ─────────────────────────────
   async function carregarDados() {
     try {
-      const rows = await sbListar(
-        'vendas_separacoes',
-        'select=*,vendas_pedidos(numero),produtos(nome)&order=created_at.desc'
-      );
+      const rows = await sbListar('televendas', 'order=id.desc');
       registros = rows;
       renderTabela(rows);
     } catch (e) {
       document.getElementById('tabelaBody').innerHTML =
-        `<tr><td colspan="8" class="crud-vazio">Erro ao carregar: ${e.message}</td></tr>`;
+        `<tr><td colspan="7" class="crud-vazio">Erro ao carregar dados: ${e.message}</td></tr>`;
     }
   }
 
+  // ── Badges de status ────────────────────────────
   function statusBadge(s) {
     const m = {
-      'Pendente': 'badge-cinza', 'Em Separação': 'badge-laranja',
-      'Concluído': 'badge-verde', 'Com Divergência': 'badge-vermelho'
+      'Em Aberto':        'badge-cinza',
+      'Em Atendimento':   'badge-azul',
+      'Aguardando Retorno':'badge-laranja',
+      'Concluído':        'badge-verde',
+      'Cancelado':        'badge-vermelho'
     };
     return `<span class="badge ${m[s] || 'badge-cinza'}">${s}</span>`;
   }
 
+  // ── Renderizar tabela ───────────────────────────
   function renderTabela(arr) {
     const tbody = document.getElementById('tabelaBody');
     if (!arr.length) {
-      tbody.innerHTML = '<tr><td colspan="8" class="crud-vazio">Nenhuma separação encontrada.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="7" class="crud-vazio">Nenhum registro de Tele Vendas encontrado.</td></tr>';
       return;
     }
-    tbody.innerHTML = arr.map(r => `
-      <tr>
-        <td style="font-family:monospace;font-size:12px">${r.numero}</td>
-        <td style="font-family:monospace;font-size:12px">${r.vendas_pedidos?.numero ?? '—'}</td>
-        <td>${r.produtos?.nome ?? '—'}</td>
-        <td>${Number(r.quantidade).toLocaleString('pt-BR')}</td>
-        <td>${r.separador ?? '—'}</td>
-        <td>${statusBadge(r.status)}</td>
-        <td>${sbData(r.data)}</td>
-        <td class="crud-acts">
-          <button class="btn-ed" onclick="abrirModalEditar('${r.id}')">✏️</button>
-          <button class="btn-del" onclick="confirmarExcluir('${r.id}')">🗑️</button>
-        </td>
-      </tr>
-    `).join('');
+    tbody.innerHTML = arr.map(r => {
+      const dh = r.datahora
+        ? new Date(r.datahora).toLocaleString('pt-BR', { dateStyle:'short', timeStyle:'short' })
+        : '—';
+      const obs = r.observacao
+        ? `<span title="${r.observacao.replace(/"/g,'&quot;')}" style="cursor:help">${r.observacao.length > 30 ? r.observacao.slice(0,30) + '…' : r.observacao}</span>`
+        : '<span style="color:var(--color-text-muted)">—</span>';
+      return `
+        <tr>
+          <td style="font-family:monospace;font-size:12px">#${r.id}</td>
+          <td>${r.pedido_d ?? '—'}</td>
+          <td style="font-family:monospace;font-size:12px">${r.id_chave ?? '—'}</td>
+          <td style="white-space:nowrap">${dh}</td>
+          <td>${statusBadge(r.status)}</td>
+          <td>${obs}</td>
+          <td>
+            <button class="crud-btn-acao" onclick="abrirModalEditar(${r.id})">✏️</button>
+            <button class="crud-btn-acao" style="color:var(--color-error)" onclick="excluir(${r.id})">🗑️</button>
+          </td>
+        </tr>`;
+    }).join('');
   }
 
+  // ── Filtros ─────────────────────────────────────
   function aplicarFiltros() {
     const busca  = document.getElementById('campoBusca').value.toLowerCase();
     const status = document.getElementById('filtroStatus').value;
     const filtrado = registros.filter(r => {
-      const textoOk  = !busca || r.numero.toLowerCase().includes(busca) || (r.vendas_pedidos?.numero ?? '').toLowerCase().includes(busca);
-      const statusOk = !status || r.status === status;
-      return textoOk && statusOk;
+      const textMatch = !busca ||
+        (r.pedido_d  ?? '').toLowerCase().includes(busca) ||
+        (r.id_chave  ?? '').toLowerCase().includes(busca);
+      const statusMatch = !status || r.status === status;
+      return textMatch && statusMatch;
     });
     renderTabela(filtrado);
   }
 
-  async function popularSelects() {
-    // Carregar pedidos e produtos juntos
-    const [pvRows] = await Promise.all([
-      sbListar('vendas_pedidos', 'select=id,numero,produto_id,quantidade&order=numero.desc')
-    ]);
-    pedidos = pvRows;
-
-    const selPedido = document.getElementById('fPedido');
-    selPedido.innerHTML = '<option value="">— Nenhum pedido vinculado —</option>';
-    pvRows.forEach(p => {
-      const opt = document.createElement('option');
-      opt.value = p.id;
-      opt.textContent = p.numero;
-      selPedido.appendChild(opt);
-    });
-
-    await sbPopularSelect('fProduto', 'produtos', 'ativo=eq.true&select=id,nome&order=nome.asc', 'id', 'nome', 'Selecione o produto');
-  }
-
-  async function onPedidoChange() {
-    const pedidoId = document.getElementById('fPedido').value;
-    if (!pedidoId) return;
-    const pv = pedidos.find(p => p.id === pedidoId);
-    if (!pv) return;
-    if (pv.produto_id) document.getElementById('fProduto').value = pv.produto_id;
-    if (pv.quantidade) document.getElementById('fQuantidade').value = pv.quantidade;
-  }
-
-  function resetForm() {
-    ['fNumero','fPedido','fProduto','fQuantidade','fSeparador','fData','fObs'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.value = '';
-    });
-    document.getElementById('fStatus').value = 'Pendente';
-    document.getElementById('msgModal').style.display = 'none';
-  }
-
-  async function abrirModalNovo() {
+  // ── Modal Novo ──────────────────────────────────
+  function abrirModalNovo() {
     editId = null;
-    document.getElementById('modalTitulo').textContent = 'Nova Separação';
-    resetForm();
-    document.getElementById('fData').value = new Date().toISOString().split('T')[0];
-    document.getElementById('fNumero').value = await Numerar.separacao();
-    await popularSelects();
+    document.getElementById('modalTitulo').textContent = 'Novo Registro';
+    document.getElementById('fId').value        = '(gerado automaticamente)';
+    document.getElementById('fPedidoD').value   = '';
+    document.getElementById('fIdChave').value   = '';
+    document.getElementById('fDatahora').value  = new Date().toISOString().slice(0,16);
+    document.getElementById('fStatus').value    = 'Em Aberto';
+    document.getElementById('fObservacao').value= '';
+
+    document.getElementById('fPedidoD').removeAttribute('readonly');
+    document.getElementById('fIdChave').removeAttribute('readonly');
+    document.getElementById('fDatahora').removeAttribute('readonly');
+    document.getElementById('fPedidoD').classList.remove('readonly-field');
+    document.getElementById('fIdChave').classList.remove('readonly-field');
+    document.getElementById('fDatahora').classList.remove('readonly-field');
+
+    mostrarMsgModal('', false);
     document.getElementById('modalBackdrop').style.display = 'flex';
   }
 
-  async function abrirModalEditar(id) {
+  // ── Modal Editar ────────────────────────────────
+  function abrirModalEditar(id) {
+    const r = registros.find(x => x.id === id);
+    if (!r) return;
     editId = id;
-    document.getElementById('modalTitulo').textContent = 'Editar Separação';
-    resetForm();
-    const r = await sbBuscar('vendas_separacoes', id);
-    await popularSelects();
-    document.getElementById('fNumero').value    = r.numero;
-    document.getElementById('fPedido').value    = r.pedido_id || '';
-    document.getElementById('fProduto').value   = r.produto_id || '';
-    document.getElementById('fQuantidade').value = r.quantidade || '';
-    document.getElementById('fSeparador').value = r.separador || '';
-    document.getElementById('fStatus').value    = r.status || 'Pendente';
-    document.getElementById('fData').value      = r.data || '';
-    document.getElementById('fObs').value       = r.observacoes || '';
+    document.getElementById('modalTitulo').textContent = `Editar Registro #${id}`;
+    document.getElementById('fId').value = r.id;
+    document.getElementById('fPedidoD').value   = r.pedido_d  ?? '';
+    document.getElementById('fIdChave').value   = r.id_chave  ?? '';
+    document.getElementById('fDatahora').value  = r.datahora
+      ? r.datahora.slice(0,16)
+      : '';
+    document.getElementById('fStatus').value    = r.status    ?? 'Em Aberto';
+    document.getElementById('fObservacao').value= r.observacao ?? '';
+
+    // campos do sistema externo: somente leitura na edição
+    document.getElementById('fPedidoD').setAttribute('readonly', true);
+    document.getElementById('fIdChave').setAttribute('readonly', true);
+    document.getElementById('fDatahora').setAttribute('readonly', true);
+    document.getElementById('fPedidoD').classList.add('readonly-field');
+    document.getElementById('fIdChave').classList.add('readonly-field');
+    document.getElementById('fDatahora').classList.add('readonly-field');
+
+    mostrarMsgModal('', false);
     document.getElementById('modalBackdrop').style.display = 'flex';
   }
 
+  function fecharModal() {
+    document.getElementById('modalBackdrop').style.display = 'none';
+    editId = null;
+  }
+
+  function backdropClick(e) {
+    if (e.target === document.getElementById('modalBackdrop')) fecharModal();
+  }
+
+  // ── Salvar ──────────────────────────────────────
   async function salvar() {
-    const pedido_id  = document.getElementById('fPedido').value || null;
-    const produto_id = document.getElementById('fProduto').value;
-    const quantidade = parseFloat(document.getElementById('fQuantidade').value);
-    const separador  = document.getElementById('fSeparador').value.trim() || null;
-    const status     = document.getElementById('fStatus').value;
-    const data       = document.getElementById('fData').value || null;
-    const observacoes = document.getElementById('fObs').value.trim() || null;
-    const numero     = document.getElementById('fNumero').value;
+    const status = document.getElementById('fStatus').value.trim();
+    if (!status) { mostrarMsgModal('Selecione um status.', true); return; }
 
-    if (!produto_id) { mostrarMsgModal('Selecione o produto.', 'err'); return; }
-    if (!quantidade || quantidade <= 0) { mostrarMsgModal('Informe a quantidade.', 'err'); return; }
-
-    const dados = { pedido_id, produto_id, quantidade, separador, status, data, observacoes };
-    if (!editId) dados.numero = numero;
+    const btn = document.querySelector('.btn-salvar');
+    btn.disabled = true;
 
     try {
       if (editId) {
-        await sbAtualizar('vendas_separacoes', editId, dados);
+        // Edição: atualizar apenas status e observacao
+        await sbAtualizar('televendas', editId, {
+          status:     status,
+          observacao: document.getElementById('fObservacao').value.trim() || null
+        });
+        mostrarMsg('Registro atualizado com sucesso!', false);
       } else {
-        await sbInserir('vendas_separacoes', dados);
+        // Novo registro
+        const dados = {
+          pedido_d:   document.getElementById('fPedidoD').value.trim()  || null,
+          id_chave:   document.getElementById('fIdChave').value.trim()  || null,
+          datahora:   document.getElementById('fDatahora').value        || null,
+          status:     status,
+          observacao: document.getElementById('fObservacao').value.trim() || null
+        };
+        await sbInserir('televendas', dados);
+        mostrarMsg('Registro criado com sucesso!', false);
       }
       fecharModal();
-      sbMensagem('msgGlobal', editId ? 'Separação atualizada!' : 'Separação criada com sucesso!', 'ok');
-      document.getElementById('msgGlobal').style.display = 'block';
       await carregarDados();
     } catch (e) {
-      mostrarMsgModal('Erro ao salvar: ' + e.message, 'err');
+      mostrarMsgModal(`Erro ao salvar: ${e.message}`, true);
+    } finally {
+      btn.disabled = false;
     }
   }
 
-  function mostrarMsgModal(texto, tipo) {
-    const el = document.getElementById('msgModal');
+  // ── Excluir ─────────────────────────────────────
+  async function excluir(id) {
+    if (!confirm(`Deseja excluir o registro #${id}? Esta ação não pode ser desfeita.`)) return;
+    try {
+      await sbExcluir('televendas', id);
+      mostrarMsg('Registro excluído.', false);
+      await carregarDados();
+    } catch (e) {
+      mostrarMsg(`Erro ao excluir: ${e.message}`, true);
+    }
+  }
+
+  // ── Mensagens ───────────────────────────────────
+  function mostrarMsg(texto, erro) {
+    const el = document.getElementById('msgGlobal');
     el.textContent = texto;
-    el.className   = 'crud-msg ' + tipo;
+    el.className   = `crud-msg msg-global ${erro ? 'crud-msg-erro' : 'crud-msg-ok'}`;
     el.style.display = 'block';
     setTimeout(() => { el.style.display = 'none'; }, 4000);
   }
 
-  async function confirmarExcluir(id) {
-    if (!confirm('Tem certeza que deseja excluir esta separação? Esta ação não pode ser desfeita.')) return;
-    try {
-      await sbExcluir('vendas_separacoes', id);
-      sbMensagem('msgGlobal', 'Separação excluída.', 'ok');
-      document.getElementById('msgGlobal').style.display = 'block';
-      await carregarDados();
-    } catch (e) {
-      sbMensagem('msgGlobal', 'Erro ao excluir: ' + e.message, 'err');
-      document.getElementById('msgGlobal').style.display = 'block';
-    }
+  function mostrarMsgModal(texto, erro) {
+    const el = document.getElementById('msgModal');
+    if (!texto) { el.style.display = 'none'; return; }
+    el.textContent = texto;
+    el.className   = `crud-msg ${erro ? 'crud-msg-erro' : 'crud-msg-ok'}`;
+    el.style.display = 'block';
   }
 
-  function fecharModal() { document.getElementById('modalBackdrop').style.display = 'none'; }
-  function backdropClick(e) { if (e.target === document.getElementById('modalBackdrop')) fecharModal(); }
-
+  // ── Init ────────────────────────────────────────
   carregarDados();
-</script>
-<script>
-  (function () {
-    if (localStorage.getItem('erp_role') === 'Administrador') {
-      var el = document.getElementById('linkAdmin');
-      if (el) el.style.display = 'flex';
-    }
-  })();
 </script>
 </body>
 </html>
