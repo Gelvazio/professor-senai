@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-16)
 
 ## Corpus Check
-- 44 files · ~573,286 words
+- 46 files · ~572,439 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 857 nodes · 872 edges · 38 communities (36 shown, 2 thin omitted)
+- 901 nodes · 914 edges · 47 communities (45 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `989d3bf8`
+- Built from commit: `f0ca761a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -28,6 +28,11 @@
 - [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
@@ -37,9 +42,12 @@
 - [[_COMMUNITY_Community 24|Community 24]]
 - [[_COMMUNITY_Community 25|Community 25]]
 - [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
 - [[_COMMUNITY_Community 35|Community 35]]
 - [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -59,7 +67,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (38 total, 2 thin omitted)
+## Communities (47 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.08
@@ -78,8 +86,8 @@ Cohesion: 0.03
 Nodes (78): Página 1, Página 10, Página 11, Página 12, Página 13, Página 14, Página 15, Página 16 (+70 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.04
-Nodes (45): 1.1 Clientes, 1.2 Fornecedores, 1.3 Produtos, 1.4 Transportadoras, 2.1 Planejamento, 2.2 Solicitação de Compras, 2.3 Pedido de Compras, 2.4 Recebimento (+37 more)
+Cohesion: 0.25
+Nodes (7): 5.1 Usuários, Graphify — Atualização obrigatória após cada tarefa, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Princípios Fundamentais, Visão Geral (Dashboard), Visão Geral do Sistema
 
 ### Community 5 - "Community 5"
 Cohesion: 0.03
@@ -108,6 +116,30 @@ Nodes (43): Página 1, Página 10, Página 11, Página 12, Página 13, Página 1
 ### Community 11 - "Community 11"
 Cohesion: 0.05
 Nodes (39): Página 1, Página 10, Página 11, Página 12, Página 13, Página 14, Página 15, Página 16 (+31 more)
+
+### Community 12 - "Community 12"
+Cohesion: 0.22
+Nodes (9): 6.1 Equipes e Setores, 6.2 Telas do Módulo, 6.3 Tabelas no Supabase (Gamificação), 6.4 Sistema e Telas no Banco, 6.5 Sidebar HTML (Gamificação), 6.6 Pontuação, 6.7 sistema.json — adicionar entrada, 6.8 perfis.html — atualizar sisOrdem (+1 more)
+
+### Community 13 - "Community 13"
+Cohesion: 0.25
+Nodes (8): 2.1 Planejamento, 2.2 Solicitação de Compras, 2.3 Pedido de Compras, 2.4 Recebimento, 2.5 Conferência, 2.6 Entrada de Nota Fiscal, Fluxo do Módulo de Compras, Módulo 2 — COMPRAS
+
+### Community 14 - "Community 14"
+Cohesion: 0.25
+Nodes (8): 4.1 Pedido de Venda, 4.2 Nota Fiscal de Venda, 4.3 Romaneio, 4.4 Separação (Picking), 4.5 Expedição, 4.6 Entrega, Fluxo do Módulo de Vendas e Logística, Módulo 4 — VENDAS E LOGÍSTICA
+
+### Community 15 - "Community 15"
+Cohesion: 0.29
+Nodes (7): Autenticação do ERP, Credenciais, Esquema de tabelas do banco (PostgreSQL), Filtros e operadores da API REST Supabase, Padrão de CRUD — funções reutilizáveis, RLS (Row Level Security), Supabase — Configuração e Uso da API
+
+### Community 16 - "Community 16"
+Cohesion: 0.40
+Nodes (5): 1.1 Clientes, 1.2 Fornecedores, 1.3 Produtos, 1.4 Transportadoras, Módulo 1 — CADASTROS
+
+### Community 17 - "Community 17"
+Cohesion: 0.40
+Nodes (5): 3.1 Armazenagem, 3.2 Controle de Estoque, 3.3 Movimentações, 3.4 Inventário, Módulo 3 — ESTOQUE
 
 ### Community 18 - "Community 18"
 Cohesion: 0.05
@@ -145,6 +177,10 @@ Nodes (13): About Me, AI & Tools I Use, At a Glance (KPIs principais), Audience 
 Cohesion: 0.33
 Nodes (5): Estrutura da tabela SISTEMA, Estrutura da tabela TELA_SISTEMA, Módulos como registros na tabela SISTEMA, REGRAS DE NEGÓCIOS, Telas — Tabela TELA_SISTEMA
 
+### Community 27 - "Community 27"
+Cohesion: 0.06
+Nodes (33): 10. Telas do Módulo, 11. Estrutura de Dados — Tabelas Supabase, 12. Numeração Automática, 13. Sidebar HTML (RH), 14. Sistema e Telas no Banco, 15. Ordem de Implementação Sugerida, 1.1 Princípios, 1. Visão Geral (+25 more)
+
 ### Community 35 - "Community 35"
 Cohesion: 0.31
 Nodes (16): _calcularNivel(), carregarPerfil(), _cincoMissoes24h(), _eventosConcluidos(), _garantirPerfil(), _get(), _inicializarMissoesOnboarding(), _liderGrupo() (+8 more)
@@ -153,8 +189,12 @@ Nodes (16): _calcularNivel(), carregarPerfil(), _cincoMissoes24h(), _eventosConc
 Cohesion: 0.17
 Nodes (11): Gamificação do ERP SENAI — Plano de Implementação, Global Constraints, Mapa de Arquivos, Task 1: Criar tabelas Supabase e seeds de missões de onboarding, Task 2: gamif.js — motor central, Task 3: index.html — Hub do Usuário, Task 4: ranking.html — Leaderboard do Grupo, Task 5: admin.html — Painel Administrativo (+3 more)
 
+### Community 38 - "Community 38"
+Cohesion: 0.40
+Nodes (5): Backend / Banco de Dados, Estrutura de arquivos HTML (uma por tela/módulo), Frontend — Vanilla JS (obrigatório), Padrões JavaScript obrigatórios, Tecnologias
+
 ## Knowledge Gaps
-- **721 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Tasks`, `Graphify — Atualização obrigatória após cada tarefa` (+716 more)
+- **754 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Tasks`, `Graphify — Atualização obrigatória após cada tarefa` (+749 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -162,16 +202,16 @@ Nodes (11): Gamificação do ERP SENAI — Plano de Implementação, Global Cons
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _721 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _754 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.08048780487804878 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.020618556701030927 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.02531645569620253 - nodes in this community are weakly interconnected._
-- **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.043478260869565216 - nodes in this community are weakly interconnected._
 - **Should `Community 5` be split into smaller, more focused modules?**
   _Cohesion score 0.02702702702702703 - nodes in this community are weakly interconnected._
 - **Should `Community 6` be split into smaller, more focused modules?**
   _Cohesion score 0.03773584905660377 - nodes in this community are weakly interconnected._
+- **Should `Community 7` be split into smaller, more focused modules?**
+  _Cohesion score 0.04081632653061224 - nodes in this community are weakly interconnected._

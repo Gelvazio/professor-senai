@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1786905710.948159,
-    "ast_hash": "a4ad76880f6c8fe086a582c63a201cc8",
+    "mtime": 1786907426.1034381,
+    "ast_hash": "7580529a89149ee0a90bf3da32b4b199",
     "semantic_hash": ""
   },
   "PASSOS-CRIACAO-ERP.md": {
@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "dashboard.html": {
-    "mtime": 1786891771.2899225,
-    "ast_hash": "de6e01760711f1be81980c351f965b8d",
+    "mtime": 1786907563.7189841,
+    "ast_hash": "e5ea8972213c05313d38d9547fde5f28",
     "semantic_hash": ""
   },
   "index.html": {
@@ -45,93 +45,93 @@
     "semantic_hash": ""
   },
   "compras/pedidos.html": {
-    "mtime": 1786891771.4072437,
-    "ast_hash": "fbddf6988543c5cb54bce583485c913f",
+    "mtime": 1786907554.5434265,
+    "ast_hash": "69119ff356b73374e6e1435a7ad6cfc8",
     "semantic_hash": ""
   },
   "compras/planejamento.html": {
-    "mtime": 1786891771.4112687,
-    "ast_hash": "af67e807b493f9a0e41ef29a4f601325",
+    "mtime": 1786907554.5464067,
+    "ast_hash": "e7a7decb01c3e6dcd2d0c36a8262e772",
     "semantic_hash": ""
   },
   "compras/solicitacoes.html": {
-    "mtime": 1786891771.4331002,
-    "ast_hash": "db89adbac996d187114f362c6a70a8d2",
+    "mtime": 1786907554.5536034,
+    "ast_hash": "a5be10ae093d40b212e0c053dfdc9155",
     "semantic_hash": ""
   },
   "configuracoes/usuarios.html": {
-    "mtime": 1786891784.671965,
-    "ast_hash": "9d085c0c6359f32b6240c7043efed05f",
+    "mtime": 1786907554.5656087,
+    "ast_hash": "39c22200750f1a477746a00d0bc31db5",
     "semantic_hash": ""
   },
   "estoque/controle.html": {
-    "mtime": 1786891771.4600644,
-    "ast_hash": "9f2c3c44881c79b60566fe989d2988d9",
+    "mtime": 1786907554.5736487,
+    "ast_hash": "7c4b578e44212c82df2e89d886715beb",
     "semantic_hash": ""
   },
   "estoque/movimentacoes.html": {
-    "mtime": 1786891771.5132918,
-    "ast_hash": "3ffad46ae121a592a3a655fd07421c64",
+    "mtime": 1786907554.5801375,
+    "ast_hash": "d6c456d2984226dd3b218c67e1c21858",
     "semantic_hash": ""
   },
   "cadastros/clientes.html": {
-    "mtime": 1786891823.0396657,
-    "ast_hash": "18c87f50795da1779600fb26f069bb2c",
+    "mtime": 1786907554.4742868,
+    "ast_hash": "8bfffd83e5c2cc14f58329250cd2aceb",
     "semantic_hash": ""
   },
   "cadastros/fornecedores.html": {
-    "mtime": 1786891823.1678314,
-    "ast_hash": "9a71bf52376ced30946b843b68415811",
+    "mtime": 1786907554.5258825,
+    "ast_hash": "f74099f020c40231d2c506cf07eee0f0",
     "semantic_hash": ""
   },
   "cadastros/produtos.html": {
-    "mtime": 1786891823.170629,
-    "ast_hash": "b0df46b58f18bd78aa3a81ddcaccbd0e",
+    "mtime": 1786907554.5300286,
+    "ast_hash": "35080109dc6323bbae1b9b25166ee657",
     "semantic_hash": ""
   },
   "compras/conferencia.html": {
-    "mtime": 1786891771.399057,
-    "ast_hash": "77215d7180e6f8d174a10a6d7e7911ea",
+    "mtime": 1786907554.5371857,
+    "ast_hash": "eda5bee94a998277b3ab0930a58ba6e3",
     "semantic_hash": ""
   },
   "compras/recebimento.html": {
-    "mtime": 1786891771.4160678,
-    "ast_hash": "e53a606e503d711b827559911be4388b",
+    "mtime": 1786907554.550416,
+    "ast_hash": "4a71f8cb5cbfcd9951546ff102d27acb",
     "semantic_hash": ""
   },
   "estoque/armazenagem.html": {
-    "mtime": 1786891771.4376254,
-    "ast_hash": "253653f81b134e56450e5fd45e19dbcc",
+    "mtime": 1786907554.57064,
+    "ast_hash": "1f026500465bc0321a6f39dacb19e00a",
     "semantic_hash": ""
   },
   "estoque/inventario.html": {
-    "mtime": 1786891771.5030146,
-    "ast_hash": "2153fe024b9e4280f265702bf6f666ce",
+    "mtime": 1786907554.5771384,
+    "ast_hash": "49731a5c9b5a512b8a94a2002a294603",
     "semantic_hash": ""
   },
   "vendas/nota-fiscal-venda.html": {
-    "mtime": 1786891771.5961156,
-    "ast_hash": "19cae530f9f085667b3db253bc959b51",
+    "mtime": 1786907554.61409,
+    "ast_hash": "61fd5123a437f053658e2bc790c12b18",
     "semantic_hash": ""
   },
   "vendas/pedidos-venda.html": {
-    "mtime": 1786891771.6237674,
-    "ast_hash": "919932744c486e074a358e9e0a011cdd",
+    "mtime": 1786907554.6190293,
+    "ast_hash": "1728dbc7e6e68d1e3430cd396e51ef4f",
     "semantic_hash": ""
   },
   "vendas/separacao.html": {
-    "mtime": 1786891771.6748793,
-    "ast_hash": "6e77e31a2ee249b10075ba4230546acd",
+    "mtime": 1786907554.626028,
+    "ast_hash": "f1fca6f79edbebb133178756e367ba78",
     "semantic_hash": ""
   },
   "cadastros/transportadoras.html": {
-    "mtime": 1786891823.1777875,
-    "ast_hash": "cd3f93e0f49409c9a552d33562f6b029",
+    "mtime": 1786907554.5341723,
+    "ast_hash": "084a0df33f5a8037b2e4b6aa71399060",
     "semantic_hash": ""
   },
   "compras/nota-fiscal.html": {
-    "mtime": 1786891771.4030628,
-    "ast_hash": "9f98f6eafdf1f5f8d328acfe355e2f81",
+    "mtime": 1786907554.540171,
+    "ast_hash": "d2c3f5fcc5ab9ac6a2395ba251c088f0",
     "semantic_hash": ""
   },
   "criar-admin.html": {
@@ -140,18 +140,18 @@
     "semantic_hash": ""
   },
   "vendas/entrega.html": {
-    "mtime": 1786891771.5303936,
-    "ast_hash": "f58b41b839f82396ba395f836a6781f8",
+    "mtime": 1786907554.602526,
+    "ast_hash": "39cad4906f474e8ae9d5eada53beae01",
     "semantic_hash": ""
   },
   "vendas/expedicao.html": {
-    "mtime": 1786891771.54336,
-    "ast_hash": "13afbdbefb18e4919c30c15db3f9e425",
+    "mtime": 1786907554.6055396,
+    "ast_hash": "888b015177bd729b7a1f2f49c2dbf332",
     "semantic_hash": ""
   },
   "vendas/romaneio.html": {
-    "mtime": 1786891771.6612525,
-    "ast_hash": "eb778d1e209a5d06d00de069b295e85e",
+    "mtime": 1786907554.6221266,
+    "ast_hash": "bb04a0bf6e8aea6b6f427ab49551a6d7",
     "semantic_hash": ""
   },
   "seed.sql": {
@@ -160,8 +160,8 @@
     "semantic_hash": ""
   },
   "sistema.json": {
-    "mtime": 1786891279.8894775,
-    "ast_hash": "4949ef9d65e72d42f31895ac9786d718",
+    "mtime": 1786907444.669772,
+    "ast_hash": "ba4fbf5cd635b97f3daa4a33f265531d",
     "semantic_hash": ""
   },
   "REGRAS-NEGOCIOS/REGRAS-NEGOCIOS.txt": {
@@ -170,68 +170,28 @@
     "semantic_hash": ""
   },
   "configuracoes/perfis.html": {
-    "mtime": 1786906068.5222273,
-    "ast_hash": "def98b7df21bc87c3c0dd3f541c9a23a",
+    "mtime": 1786907554.5565841,
+    "ast_hash": "7b4d1010c3cd83a72238767aac2705c1",
     "semantic_hash": ""
   },
   "configuracoes/telas.html": {
-    "mtime": 1786891784.66677,
-    "ast_hash": "99c32832ba5fa3b1947ea7b74866b5fb",
-    "semantic_hash": ""
-  },
-  "REGRAS-NEGOCIOS/tema_dashboard_01.jpg": {
-    "mtime": 1786894201.0528004,
-    "ast_hash": "6dcadc5ecb8b5694d5717d44816d1175",
-    "semantic_hash": ""
-  },
-  "REGRAS-NEGOCIOS/tema_dashboard_02.jpg": {
-    "mtime": 1786894201.2193227,
-    "ast_hash": "2e1c4b3d68c86b56e2fe5dee0caf485f",
+    "mtime": 1786907554.5615897,
+    "ast_hash": "c1d9248ae0515b6d47307d97f97ac819",
     "semantic_hash": ""
   },
   "financeiro/balancete.html": {
-    "mtime": 1786891771.6951432,
-    "ast_hash": "0a3a04c530ed232034c8bb9325efc66f",
+    "mtime": 1786907554.5847714,
+    "ast_hash": "cd4a49d262ff61f8a2ee541c420e5752",
     "semantic_hash": ""
   },
   "financeiro/contas-pagar.html": {
-    "mtime": 1786891771.7112737,
-    "ast_hash": "50af7857a6cb8fb639bf0d3f217c7e8d",
+    "mtime": 1786907554.5877717,
+    "ast_hash": "7f37e429d60ae3c664b86d4e4b2c8b1e",
     "semantic_hash": ""
   },
   "financeiro/contas-receber.html": {
-    "mtime": 1786891771.7345712,
-    "ast_hash": "347153137f8c1415acd3ff66fb499ac9",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/Assist. de PCP_436h_Pr\u00e1tica Profissional_41a56ba3.md": {
-    "mtime": 1786888540.7768364,
-    "ast_hash": "6fc4c1a3e6ef94a18b30301990208887",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/Assist. de PCP_516h_Pr\u00e1tica Profissional_ff613011.md": {
-    "mtime": 1786888541.439564,
-    "ast_hash": "39f3273ad701b943229c9bf1b6db852c",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/Assist. de PCP_FLEX_ 860h_9014e82a.md": {
-    "mtime": 1786888541.8516562,
-    "ast_hash": "72cea26ffe39c3360a7bd636104f46c3",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional_b0c8fb28.md": {
-    "mtime": 1786888542.8479815,
-    "ast_hash": "d72607dfcf6e7ac79787c8f1b642cdde",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/Assist. em Processos da Qualidade e Log\u00edstica Industrial_860h_a23a07b2.md": {
-    "mtime": 1786888543.3183122,
-    "ast_hash": "ab83f026bb8e1d84009becb5347057ea",
-    "semantic_hash": ""
-  },
-  "graphify-out/converted/_Assist. em Processos Administrativos e Industriais_1280h_09ea01ca.md": {
-    "mtime": 1786888543.793035,
-    "ast_hash": "73d0e5ce22558afc7f903cd647ddbe40",
+    "mtime": 1786907554.5911994,
+    "ast_hash": "07cb71a2e6d01024db1092d050a9b70b",
     "semantic_hash": ""
   },
   "score-credito/MATERIAIS-PESQUISA-SORE-CREDITO-INDUSTRIA.txt": {
@@ -240,13 +200,13 @@
     "semantic_hash": ""
   },
   "vendas/logistica.html": {
-    "mtime": 1786891771.5657587,
-    "ast_hash": "9e98f5fb15718a03a2535334dd5fdd4a",
+    "mtime": 1786907554.6100307,
+    "ast_hash": "d7e62c9c118fe01a3f93241253d8a119",
     "semantic_hash": ""
   },
   "configuracoes/regras-negocios.html": {
-    "mtime": 1786891809.0354824,
-    "ast_hash": "0c32c5f20334d11ab6d6e1911a3c4414",
+    "mtime": 1786907554.5595849,
+    "ast_hash": "a090e1f93984cab3808eecaa5c95396e",
     "semantic_hash": ""
   },
   "gamificacao/gamificacao.md": {
@@ -255,13 +215,13 @@
     "semantic_hash": ""
   },
   "marketing/campanhas.html": {
-    "mtime": 1786891432.9229116,
-    "ast_hash": "052a77722f51fbdcbe49d1a00dd2d1d1",
+    "mtime": 1786907554.5953214,
+    "ast_hash": "5ccb616862480e3a83ce7376da01ad99",
     "semantic_hash": ""
   },
   "marketing/retornos.html": {
-    "mtime": 1786891566.2575192,
-    "ast_hash": "b6cc30467eaea39e5ea8832ca89efba7",
+    "mtime": 1786907554.5975404,
+    "ast_hash": "5e4bad7e5ed8adadb21f2fa2b1598d52",
     "semantic_hash": ""
   },
   "REGRAS-NEGOCIOS/Assist. de PCP_436h_Pr\u00e1tica Profissional.md": {
@@ -379,11 +339,6 @@
     "ast_hash": "72a4c6de4959f4e2bbc39334d5e21883",
     "semantic_hash": ""
   },
-  "graphify-out/converted/CT Automa\u00e7\u00e3o Industrial_1300h_b734befb.md": {
-    "mtime": 1786894300.2129278,
-    "ast_hash": "687030117b5792d7341c9ae229003fe1",
-    "semantic_hash": ""
-  },
   "gamificacao/gamif.js": {
     "mtime": 1786905247.0783286,
     "ast_hash": "ab0a7646298b92d46f2833fbe0e2dd69",
@@ -422,6 +377,51 @@
   "gamificacao/admin.html": {
     "mtime": 1786906087.4886212,
     "ast_hash": "1d6993f459517b74ffc36b81ef4a1f60",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/Assist. de PCP_436h_Pr\u00e1tica Profissional_41a56ba3.md": {
+    "mtime": 1786888540.7768364,
+    "ast_hash": "6fc4c1a3e6ef94a18b30301990208887",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/Assist. de PCP_516h_Pr\u00e1tica Profissional_ff613011.md": {
+    "mtime": 1786888541.439564,
+    "ast_hash": "39f3273ad701b943229c9bf1b6db852c",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/Assist. de PCP_FLEX_ 860h_9014e82a.md": {
+    "mtime": 1786888541.8516562,
+    "ast_hash": "72cea26ffe39c3360a7bd636104f46c3",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional_b0c8fb28.md": {
+    "mtime": 1786888542.8479815,
+    "ast_hash": "d72607dfcf6e7ac79787c8f1b642cdde",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/Assist. em Processos da Qualidade e Log\u00edstica Industrial_860h_a23a07b2.md": {
+    "mtime": 1786888543.3183122,
+    "ast_hash": "ab83f026bb8e1d84009becb5347057ea",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/CT Automa\u00e7\u00e3o Industrial_1300h_b734befb.md": {
+    "mtime": 1786894300.2129278,
+    "ast_hash": "687030117b5792d7341c9ae229003fe1",
+    "semantic_hash": ""
+  },
+  "REGRAS-NEGOCIOS/_Assist. em Processos Administrativos e Industriais_1280h_09ea01ca.md": {
+    "mtime": 1786888543.793035,
+    "ast_hash": "73d0e5ce22558afc7f903cd647ddbe40",
+    "semantic_hash": ""
+  },
+  "recursos-humanos/recursos-humanos.md": {
+    "mtime": 1786907391.444465,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "recursos-humanos.md": {
+    "mtime": 1786907643.8198369,
+    "ast_hash": "2ddd8cfe21a3c4db0eab6616ff0bf7fd",
     "semantic_hash": ""
   }
 }
