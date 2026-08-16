@@ -668,7 +668,434 @@ INSERT INTO tela (nome, nome_html, ativo) VALUES
 ### 6.8 perfis.html — atualizar sisOrdem
 
 ```js
-const sisOrdem = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sisOrdem = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+```
+
+---
+
+## Módulo 7 — RECURSOS HUMANOS
+
+Gerencia o ciclo completo do colaborador — da admissão ao desligamento — com ponto eletrônico, folha de pagamento, férias, afastamentos, treinamentos e benefícios.
+
+### Fluxo do Módulo de RH
+
+```
+Admissão → Cadastro → Ponto Eletrônico → Folha de Pagamento → Férias / Afastamentos → Desligamento
+                    ↘ Treinamentos / Benefícios
+```
+
+### 7.1 Telas do Módulo
+
+```
+rh/
+├── dashboard.html          ← Painel de RH
+├── departamentos.html      ← CRUD de departamentos
+├── cargos.html             ← CRUD de cargos
+├── funcionarios.html       ← CRUD de funcionários
+├── beneficios.html         ← CRUD de benefícios cadastrados
+├── jornadas.html           ← CRUD de jornadas de trabalho
+├── ponto.html              ← Lançamentos de ponto
+├── apuracao-ponto.html     ← Painel de apuração por período
+├── folha.html              ← Competências e lançamentos da folha
+├── decimo-terceiro.html    ← 13º salário
+├── ferias.html             ← Controle de férias
+├── afastamentos.html       ← Afastamentos e atestados
+├── treinamentos.html       ← Catálogo de treinamentos
+├── participacoes.html      ← Participações em treinamentos
+├── admissao.html           ← Solicitações de admissão
+└── desligamento.html       ← Registro de desligamento / rescisão
+```
+
+### 7.2 Numeração Automática
+
+| Entidade | Prefixo | Exemplo |
+|----------|---------|---------|
+| Departamento | `DEP` | `DEP00001` |
+| Cargo | `CGO` | `CGO00001` |
+| Funcionário | `F` | `F00001` |
+| Registro de Ponto | `PT` | `PT00001` |
+| Lançamento de Folha | `FL` | `FL00001` |
+| 13º Salário | `13S` | `13S00001` |
+| Férias | `FER` | `FER00001` |
+| Afastamento | `AFS` | `AFS00001` |
+| Treinamento | `TRN` | `TRN00001` |
+| Participação | `PAR` | `PAR00001` |
+| Admissão | `ADM` | `ADM00001` |
+| Desligamento | `DLG` | `DLG00001` |
+| Avaliação de Desempenho | `AVL` | `AVL00001` |
+
+### 7.3 Tabelas no Supabase (RH)
+
+```sql
+-- DEPARTAMENTOS
+CREATE TABLE rh_departamentos (
+  id            uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  codigo        text UNIQUE NOT NULL,   -- gerado: DEP00001
+  nome          text NOT NULL,
+  responsavel_id uuid REFERENCES erp_usuarios(id),
+  centro_custo  text,
+  ativo         boolean DEFAULT true,
+  observacoes   text,
+  created_at    timestamptz DEFAULT now()
+);
+
+-- CARGOS
+CREATE TABLE rh_cargos (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  codigo          text UNIQUE NOT NULL,  -- gerado: CGO00001
+  nome            text NOT NULL,
+  departamento_id uuid REFERENCES rh_departamentos(id),
+  cbo             text,
+  salario_base    numeric(12,2),
+  nivel           text,
+  ativo           boolean DEFAULT true,
+  descricao       text,
+  created_at      timestamptz DEFAULT now()
+);
+
+-- FUNCIONÁRIOS
+CREATE TABLE rh_funcionarios (
+  id                uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  matricula         text UNIQUE NOT NULL,   -- gerado: F00001
+  nome              text NOT NULL,
+  cpf               text UNIQUE NOT NULL,
+  rg                text,
+  data_nascimento   date,
+  sexo              text,
+  estado_civil      text,
+  email             text,
+  telefone          text,
+  endereco          text,
+  cidade            text,
+  estado            text,
+  cep               text,
+  departamento_id   uuid REFERENCES rh_departamentos(id),
+  cargo_id          uuid REFERENCES rh_cargos(id),
+  tipo_contrato     text,
+  salario           numeric(12,2),
+  data_admissao     date NOT NULL,
+  data_desligamento date,
+  banco             text,
+  agencia           text,
+  conta             text,
+  tipo_conta        text,
+  chave_pix         text,
+  foto_url          text,
+  pis_pasep         text,
+  ctps              text,
+  ativo             boolean DEFAULT true,
+  observacoes       text,
+  created_at        timestamptz DEFAULT now()
+);
+
+-- BENEFÍCIOS (catálogo — nome definitivo: beneficios)
+CREATE TABLE beneficios (
+  id                uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  nome              text NOT NULL,
+  tipo              text,
+  descricao         text,
+  valor_empresa     numeric(12,2) DEFAULT 0,
+  valor_funcionario numeric(12,2) DEFAULT 0,
+  periodicidade     text DEFAULT 'Mensal',
+  obrigatorio       boolean DEFAULT false,
+  ativo             boolean DEFAULT true,
+  created_at        timestamptz DEFAULT now()
+);
+
+-- VÍNCULOS FUNCIONÁRIO × BENEFÍCIO (nome definitivo: beneficio_funcionario)
+CREATE TABLE beneficio_funcionario (
+  id                uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  funcionario_id    uuid REFERENCES rh_funcionarios(id) ON DELETE CASCADE,
+  beneficio_id      uuid REFERENCES beneficios(id),
+  data_inicio       date NOT NULL DEFAULT CURRENT_DATE,
+  data_termino      date,
+  valor_customizado numeric(12,2),
+  observacoes       text,
+  created_at        timestamptz DEFAULT now()
+);
+
+-- PROGRESSÃO DE CARREIRA E SALÁRIO (nome definitivo: progressao_desempenho)
+CREATE TABLE progressao_desempenho (
+  id                    uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  cargo_id              uuid REFERENCES rh_cargos(id),
+  nivel                 text NOT NULL,
+  nivel_ordem           integer NOT NULL,
+  salario_minimo        numeric(12,2) NOT NULL,
+  salario_medio         numeric(12,2),
+  salario_maximo        numeric(12,2) NOT NULL,
+  tempo_minimo_meses    integer DEFAULT 12,
+  nota_minima           numeric(4,1) DEFAULT 7.0,
+  requisitos            text,
+  ativo                 boolean DEFAULT true,
+  created_at            timestamptz DEFAULT now()
+);
+
+-- AVALIAÇÕES DE DESEMPENHO
+CREATE TABLE avaliacao_desempenho (
+  id                    uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero                text UNIQUE NOT NULL,   -- gerado: AVL00001
+  funcionario_id        uuid REFERENCES rh_funcionarios(id),
+  avaliador             text,
+  periodo               text NOT NULL,
+  nota_tecnica          numeric(4,1),
+  nota_comportamental   numeric(4,1),
+  nota_geral            numeric(4,1),
+  elegivel_promocao     boolean DEFAULT false,
+  promocao_aprovada     boolean DEFAULT false,
+  novo_nivel            text,
+  novo_salario          numeric(12,2),
+  data_avaliacao        date NOT NULL,
+  proxima_avaliacao     date,
+  observacoes           text,
+  created_at            timestamptz DEFAULT now()
+);
+
+-- JORNADAS
+CREATE TABLE rh_jornadas (
+  id                   uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  nome                 text NOT NULL,
+  entrada              time,
+  inicio_intervalo     time,
+  fim_intervalo        time,
+  saida                time,
+  carga_horaria_diaria numeric(4,2),
+  dias_semana          text[],
+  ativo                boolean DEFAULT true,
+  created_at           timestamptz DEFAULT now()
+);
+
+-- PONTO
+CREATE TABLE rh_ponto (
+  id               uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero           text UNIQUE NOT NULL,   -- gerado: PT00001
+  funcionario_id   uuid REFERENCES rh_funcionarios(id),
+  data             date NOT NULL,
+  entrada          time,
+  inicio_intervalo time,
+  fim_intervalo    time,
+  saida            time,
+  horas_trabalhadas numeric(5,2),
+  horas_extras     numeric(5,2),
+  ocorrencia       text DEFAULT 'Normal',
+  responsavel      text,
+  observacoes      text,
+  created_at       timestamptz DEFAULT now()
+);
+
+-- COMPETÊNCIAS DE FOLHA
+CREATE TABLE rh_folha_competencias (
+  id             uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  competencia    text UNIQUE NOT NULL,
+  status         text DEFAULT 'Em Elaboração',
+  data_pagamento date,
+  observacoes    text,
+  created_at     timestamptz DEFAULT now()
+);
+
+-- LANÇAMENTOS DA FOLHA
+CREATE TABLE rh_folha_lancamentos (
+  id                   uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero               text UNIQUE NOT NULL,   -- gerado: FL00001
+  competencia_id       uuid REFERENCES rh_folha_competencias(id),
+  funcionario_id       uuid REFERENCES rh_funcionarios(id),
+  salario_bruto        numeric(12,2),
+  horas_extras         numeric(5,2) DEFAULT 0,
+  valor_horas_extras   numeric(12,2) DEFAULT 0,
+  adicionais           numeric(12,2) DEFAULT 0,
+  inss                 numeric(12,2) DEFAULT 0,
+  irrf                 numeric(12,2) DEFAULT 0,
+  desc_vale_transporte numeric(12,2) DEFAULT 0,
+  desc_vale_refeicao   numeric(12,2) DEFAULT 0,
+  outros_descontos     numeric(12,2) DEFAULT 0,
+  salario_liquido      numeric(12,2),
+  status               text DEFAULT 'Rascunho',
+  observacoes          text,
+  created_at           timestamptz DEFAULT now()
+);
+
+-- 13º SALÁRIO
+CREATE TABLE rh_decimo_terceiro (
+  id             uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero         text UNIQUE NOT NULL,   -- gerado: 13S00001
+  competencia    text NOT NULL,
+  funcionario_id uuid REFERENCES rh_funcionarios(id),
+  parcela        text NOT NULL,
+  valor_bruto    numeric(12,2),
+  inss           numeric(12,2) DEFAULT 0,
+  irrf           numeric(12,2) DEFAULT 0,
+  valor_liquido  numeric(12,2),
+  status         text DEFAULT 'Rascunho',
+  created_at     timestamptz DEFAULT now()
+);
+
+-- FÉRIAS
+CREATE TABLE rh_ferias (
+  id                 uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero             text UNIQUE NOT NULL,   -- gerado: FER00001
+  funcionario_id     uuid REFERENCES rh_funcionarios(id),
+  periodo_aquisitivo text,
+  dias_ferias        integer DEFAULT 30,
+  data_inicio        date NOT NULL,
+  data_termino       date,
+  abono_pecuniario   boolean DEFAULT false,
+  valor_adicional    numeric(12,2),
+  status             text DEFAULT 'Agendada',
+  aprovado_por       text,
+  observacoes        text,
+  created_at         timestamptz DEFAULT now()
+);
+
+-- AFASTAMENTOS
+CREATE TABLE rh_afastamentos (
+  id             uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero         text UNIQUE NOT NULL,   -- gerado: AFS00001
+  funcionario_id uuid REFERENCES rh_funcionarios(id),
+  tipo           text NOT NULL,
+  data_inicio    date NOT NULL,
+  data_termino   date,
+  dias_afastados integer,
+  cid            text,
+  numero_inss    text,
+  gera_desconto  boolean DEFAULT false,
+  documento_url  text,
+  status         text DEFAULT 'Ativo',
+  responsavel    text,
+  observacoes    text,
+  created_at     timestamptz DEFAULT now()
+);
+
+-- TREINAMENTOS (catálogo)
+CREATE TABLE rh_treinamentos (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  codigo          text UNIQUE NOT NULL,   -- gerado: TRN00001
+  nome            text NOT NULL,
+  tipo            text,
+  modalidade      text,
+  carga_horaria   numeric(5,1),
+  obrigatorio     boolean DEFAULT false,
+  validade_meses  integer DEFAULT 0,
+  instrutor       text,
+  custo           numeric(12,2) DEFAULT 0,
+  ativo           boolean DEFAULT true,
+  descricao       text,
+  created_at      timestamptz DEFAULT now()
+);
+
+-- PARTICIPAÇÕES EM TREINAMENTOS
+CREATE TABLE rh_participacoes (
+  id              uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero          text UNIQUE NOT NULL,   -- gerado: PAR00001
+  treinamento_id  uuid REFERENCES rh_treinamentos(id),
+  funcionario_id  uuid REFERENCES rh_funcionarios(id),
+  data_realizacao date NOT NULL,
+  data_vencimento date,
+  nota            numeric(4,1),
+  status          text DEFAULT 'Realizado',
+  certificado_url text,
+  observacoes     text,
+  created_at      timestamptz DEFAULT now()
+);
+
+-- ADMISSÕES
+CREATE TABLE rh_admissoes (
+  id                   uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero               text UNIQUE NOT NULL,   -- gerado: ADM00001
+  cargo_id             uuid REFERENCES rh_cargos(id),
+  departamento_id      uuid REFERENCES rh_departamentos(id),
+  salario_proposto     numeric(12,2),
+  justificativa        text,
+  tipo_contrato        text,
+  data_inicio_prevista date,
+  solicitante          text,
+  status               text DEFAULT 'Pendente',
+  aprovado_por         text,
+  observacoes          text,
+  created_at           timestamptz DEFAULT now()
+);
+
+-- DESLIGAMENTOS
+CREATE TABLE rh_desligamentos (
+  id                  uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  numero              text UNIQUE NOT NULL,   -- gerado: DLG00001
+  funcionario_id      uuid REFERENCES rh_funcionarios(id),
+  tipo_desligamento   text NOT NULL,
+  data_aviso_previo   date,
+  data_desligamento   date NOT NULL,
+  dias_aviso          integer DEFAULT 30,
+  aviso_trabalhado    boolean DEFAULT true,
+  saldo_ferias        numeric(5,1),
+  decimo_proporcional numeric(4,2),
+  multa_fgts          numeric(12,2) DEFAULT 0,
+  motivo              text,
+  homologado_por      text,
+  status              text DEFAULT 'Em Andamento',
+  created_at          timestamptz DEFAULT now()
+);
+
+-- RLS permissivo
+DO $$
+DECLARE tbl text;
+BEGIN
+  FOREACH tbl IN ARRAY ARRAY[
+    'rh_departamentos','rh_cargos','rh_funcionarios','beneficios',
+    'beneficio_funcionario','progressao_desempenho','avaliacao_desempenho',
+    'rh_jornadas','rh_ponto','rh_folha_competencias','rh_folha_lancamentos',
+    'rh_decimo_terceiro','rh_ferias','rh_afastamentos','rh_treinamentos',
+    'rh_participacoes','rh_admissoes','rh_desligamentos'
+  ]
+  LOOP
+    EXECUTE format('ALTER TABLE %I ENABLE ROW LEVEL SECURITY', tbl);
+    EXECUTE format('CREATE POLICY "anon full" ON %I FOR ALL USING (true) WITH CHECK (true)', tbl);
+  END LOOP;
+END $$;
+```
+
+### 7.4 Sistema e Telas no Banco
+
+```sql
+-- Sistema (siscodigo 11)
+INSERT INTO sistema (siscodigo, sisnome, sisativo, sisordem)
+VALUES (11, 'Recursos Humanos', 1, 11);
+
+-- Telas do módulo (vincular IDs em tela_sistema com sistema_id=11)
+INSERT INTO tela (nome, nome_html, ativo) VALUES
+  ('Painel RH',          'rh/dashboard.html',        1),
+  ('Departamentos',      'rh/departamentos.html',     1),
+  ('Cargos',             'rh/cargos.html',            1),
+  ('Funcionários',       'rh/funcionarios.html',      1),
+  ('Benefícios',         'rh/beneficios.html',        1),
+  ('Jornadas',           'rh/jornadas.html',          1),
+  ('Ponto Eletrônico',   'rh/ponto.html',             1),
+  ('Apuração de Ponto',  'rh/apuracao-ponto.html',    1),
+  ('Folha de Pagamento', 'rh/folha.html',             1),
+  ('13º Salário',        'rh/decimo-terceiro.html',   1),
+  ('Férias',             'rh/ferias.html',            1),
+  ('Afastamentos',       'rh/afastamentos.html',      1),
+  ('Treinamentos',       'rh/treinamentos.html',      1),
+  ('Participações',      'rh/participacoes.html',     1),
+  ('Admissão',           'rh/admissao.html',          1),
+  ('Desligamento',       'rh/desligamento.html',      1);
+```
+
+### 7.5 Sidebar HTML (RH)
+
+```html
+<div class="sidebar-section">
+  <div class="sidebar-section-label">Recursos Humanos</div>
+  <a class="sidebar-link" href="../rh/dashboard.html"><span class="sidebar-icon">📊</span> Painel RH</a>
+  <a class="sidebar-link" href="../rh/funcionarios.html"><span class="sidebar-icon">👤</span> Funcionários</a>
+  <a class="sidebar-link" href="../rh/ponto.html"><span class="sidebar-icon">🕐</span> Ponto Eletrônico</a>
+  <a class="sidebar-link" href="../rh/folha.html"><span class="sidebar-icon">💰</span> Folha de Pagamento</a>
+  <a class="sidebar-link" href="../rh/ferias.html"><span class="sidebar-icon">🏖️</span> Férias</a>
+  <a class="sidebar-link" href="../rh/afastamentos.html"><span class="sidebar-icon">🏥</span> Afastamentos</a>
+  <a class="sidebar-link" href="../rh/treinamentos.html"><span class="sidebar-icon">🎓</span> Treinamentos</a>
+</div>
+```
+
+### 7.6 sistema.json — adicionar entrada
+
+```json
+{ "siscodigo": 11, "sisnome": "Recursos Humanos", "sisativo": 1, "sisordem": 11 }
 ```
 
 ---
@@ -835,14 +1262,31 @@ erp-victor-anato-senai/
 │   └── entrega.html
 ├── configuracoes/
 │   └── usuarios.html
-└── gamificacao/
-    ├── professor.html      ← Dashboard do professor
-    ├── equipe.html         ← View da equipe
-    ├── placar.html         ← Placar para telão
-    ├── config-sessao.html  ← Configuração da sessão
-    ├── index.html          ← Hub do usuário (já existe)
-    ├── ranking.html        ← Leaderboard (já existe)
-    └── admin.html          ← Admin (já existe)
+├── gamificacao/
+│   ├── professor.html      ← Dashboard do professor
+│   ├── equipe.html         ← View da equipe
+│   ├── placar.html         ← Placar para telão
+│   ├── config-sessao.html  ← Configuração da sessão
+│   ├── index.html          ← Hub do usuário (já existe)
+│   ├── ranking.html        ← Leaderboard (já existe)
+│   └── admin.html          ← Admin (já existe)
+└── rh/
+    ├── dashboard.html
+    ├── departamentos.html
+    ├── cargos.html
+    ├── funcionarios.html
+    ├── beneficios.html
+    ├── jornadas.html
+    ├── ponto.html
+    ├── apuracao-ponto.html
+    ├── folha.html
+    ├── decimo-terceiro.html
+    ├── ferias.html
+    ├── afastamentos.html
+    ├── treinamentos.html
+    ├── participacoes.html
+    ├── admissao.html
+    └── desligamento.html
 ```
 
 ### Padrões JavaScript obrigatórios
