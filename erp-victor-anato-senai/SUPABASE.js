@@ -339,7 +339,7 @@ function sbIniciarBtnTema(btnId = 'btnTema') {
  * Chamada automaticamente quando o DOM estiver pronto e houver um .sidebar na página.
  */
 function sbInitSidebarAccordion() {
-  const ACC_KEYS = ['cadastros', 'compras', 'estoque', 'vendas', 'logística', 'log', 'financeiro', 'configurações', 'config', 'marketing'];
+  const ACC_KEYS = ['cadastros', 'compras', 'estoque', 'vendas', 'logística', 'log', 'financeiro', 'configurações', 'config', 'marketing', 'gamificação', 'gamif', 'recursos humanos', 'rh'];
 
   document.querySelectorAll('.sidebar-section').forEach(section => {
     const labelEl = section.querySelector('.sidebar-section-label');
@@ -731,11 +731,15 @@ async function sbFiltrarSidebar() {
     const ids = new Set(vinc.map(v => Number(v.tela_id)));
 
     const telaJSON = await _sbCarregarTelasJson();
-    permitidas = new Set(
-      telaJSON
-        .filter(t => ids.has(Number(t.id)) && (t.ativo === 1 || t.ativo === true))
-        .map(t => t.nome_html)
-    );
+    // Adiciona o nome_html completo E só o filename para compatibilidade com
+    // hrefs em subpastas (ex: gamificacao/professor.html → também professor.html)
+    permitidas = new Set();
+    telaJSON
+      .filter(t => ids.has(Number(t.id)) && (t.ativo === 1 || t.ativo === true))
+      .forEach(t => {
+        permitidas.add(t.nome_html);
+        permitidas.add(t.nome_html.split('/').pop());
+      });
     permitidas.add('dashboard.html');
     // Administradores sempre têm acesso às telas de Configurações
     if (sbIsAdmin()) {
