@@ -130,7 +130,7 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "supabase_sha256",
-      "community": 7,
+      "community": 18,
       "norm_label": "sha256()"
     },
     {
@@ -140,7 +140,7 @@
       "source_location": "L213",
       "_origin": "ast",
       "id": "supabase_sblogin",
-      "community": 7,
+      "community": 18,
       "norm_label": "sblogin()"
     },
     {
@@ -370,24 +370,24 @@
       "source_location": "L687",
       "_origin": "ast",
       "id": "supabase_sbcarregartelasjson",
-      "community": 11,
+      "community": 7,
       "norm_label": "_sbcarregartelasjson()"
     },
     {
       "label": "sbFiltrarSidebar()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L717",
+      "source_location": "L713",
       "_origin": "ast",
       "id": "supabase_sbfiltrarsidebar",
-      "community": 11,
+      "community": 7,
       "norm_label": "sbfiltrarsidebar()"
     },
     {
       "label": "_sbFilenameFromHref()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L790",
+      "source_location": "L786",
       "_origin": "ast",
       "id": "supabase_sbfilenamefromhref",
       "community": 0,
@@ -397,7 +397,7 @@
       "label": "_sbConfigPath()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L801",
+      "source_location": "L797",
       "_origin": "ast",
       "id": "supabase_sbconfigpath",
       "community": 11,
@@ -407,7 +407,7 @@
       "label": "sbInjetarMenuConfiguracoes()",
       "file_type": "code",
       "source_file": "SUPABASE.js",
-      "source_location": "L811",
+      "source_location": "L807",
       "_origin": "ast",
       "id": "supabase_sbinjetarmenuconfiguracoes",
       "community": 11,
@@ -510,7 +510,7 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "claude_m\u00f3dulo_2_compras",
-      "community": 3,
+      "community": 4,
       "norm_label": "modulo 2 \u2014 compras"
     },
     {
@@ -520,7 +520,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "claude_fluxo_do_m\u00f3dulo_de_compras",
-      "community": 3,
+      "community": 4,
       "norm_label": "fluxo do modulo de compras"
     },
     {
@@ -530,7 +530,7 @@
       "source_location": "L143",
       "_origin": "ast",
       "id": "claude_2_1_planejamento",
-      "community": 3,
+      "community": 4,
       "norm_label": "2.1 planejamento"
     },
     {
@@ -540,7 +540,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "claude_2_2_solicita\u00e7\u00e3o_de_compras",
-      "community": 3,
+      "community": 4,
       "norm_label": "2.2 solicitacao de compras"
     },
     {
@@ -550,7 +550,7 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "claude_2_3_pedido_de_compras",
-      "community": 3,
+      "community": 4,
       "norm_label": "2.3 pedido de compras"
     },
     {
@@ -560,7 +560,7 @@
       "source_location": "L202",
       "_origin": "ast",
       "id": "claude_2_4_recebimento",
-      "community": 3,
+      "community": 4,
       "norm_label": "2.4 recebimento"
     },
     {
@@ -570,7 +570,7 @@
       "source_location": "L221",
       "_origin": "ast",
       "id": "claude_2_5_confer\u00eancia",
-      "community": 3,
+      "community": 4,
       "norm_label": "2.5 conferencia"
     },
     {
@@ -580,7 +580,7 @@
       "source_location": "L239",
       "_origin": "ast",
       "id": "claude_2_6_entrada_de_nota_fiscal",
-      "community": 3,
+      "community": 4,
       "norm_label": "2.6 entrada de nota fiscal"
     },
     {
@@ -640,7 +640,7 @@
       "source_location": "L336",
       "_origin": "ast",
       "id": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
-      "community": 4,
+      "community": 3,
       "norm_label": "modulo 4 \u2014 vendas e logistica"
     },
     {
@@ -650,7 +650,7 @@
       "source_location": "L340",
       "_origin": "ast",
       "id": "claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica",
-      "community": 4,
+      "community": 3,
       "norm_label": "fluxo do modulo de vendas e logistica"
     },
     {
@@ -660,7 +660,7 @@
       "source_location": "L346",
       "_origin": "ast",
       "id": "claude_4_1_pedido_de_venda",
-      "community": 4,
+      "community": 3,
       "norm_label": "4.1 pedido de venda"
     },
     {
@@ -670,7 +670,7 @@
       "source_location": "L369",
       "_origin": "ast",
       "id": "claude_4_2_nota_fiscal_de_venda",
-      "community": 4,
+      "community": 3,
       "norm_label": "4.2 nota fiscal de venda"
     },
     {
@@ -680,7 +680,7 @@
       "source_location": "L402",
       "_origin": "ast",
       "id": "claude_4_3_romaneio",
-      "community": 4,
+      "community": 3,
       "norm_label": "4.3 romaneio"
     },
     {
@@ -690,7 +690,7 @@
       "source_location": "L426",
       "_origin": "ast",
       "id": "claude_4_4_separa\u00e7\u00e3o_picking",
-      "community": 4,
+      "community": 3,
       "norm_label": "4.4 separacao (picking)"
     },
     {
@@ -700,7 +700,7 @@
       "source_location": "L443",
       "_origin": "ast",
       "id": "claude_4_5_expedi\u00e7\u00e3o",
-      "community": 4,
+      "community": 3,
       "norm_label": "4.5 expedicao"
     },
     {
@@ -710,7 +710,7 @@
       "source_location": "L465",
       "_origin": "ast",
       "id": "claude_4_6_entrega",
-      "community": 4,
+      "community": 3,
       "norm_label": "4.6 entrega"
     },
     {
@@ -1676,6 +1676,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "SUPABASE.js",
+      "source_location": "L692",
+      "weight": 1.0,
+      "source": "supabase_sbcarregartelasjson",
+      "target": "supabase_sblistar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "SUPABASE.js",
       "source_location": "L659",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2586,11 +2597,11 @@
       "source_file": "graphify-out/converted/Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional_b0c8fb28.md",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28",
-      "target": "converted_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28_conte\u00fados_referidos_na_portaria_mte_3_872_23",
-      "confidence_score": 1.0
+      "target": "converted_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28_conte\u00fados_referidos_na_portaria_mte_3_872_23"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cc36de33a3367b456443a6206cde9fe5b4342c5d"
+  "built_at_commit": "12ea4cd68690fea141156919d5310babc0a294da"
 }

@@ -742,6 +742,7 @@ async function sbFiltrarSidebar() {
       permitidas.add('usuarios.html');
       permitidas.add('telas.html');
       permitidas.add('perfis.html');
+      permitidas.add('regras-negocios.html');
     }
 
   } catch {
