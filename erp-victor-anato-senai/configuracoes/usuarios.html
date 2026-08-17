@@ -641,6 +641,12 @@
           return;
         }
 
+        // Bloquear segundo Administrador
+        if (perfilId === adminPerfilId && await verificarAdminExistente()) {
+          sbMensagem('msgModal', 'Já existe um Administrador ativo. O sistema permite apenas um.', 'err');
+          return;
+        }
+
         const hash = await sha256(senha);
         await sbInserir('erp_usuarios', {
           nome,
@@ -656,12 +662,21 @@
         sbMensagem('msgGlobal', `Usuário "${nome}" criado com sucesso.`, 'ok');
       } else {
         // ── EDITAR ─────────────────────────────────────────
-        // Proteção do último admin ao tentar rebaixar
         const userAtual = todosUsuarios.find(u => u.id === idEdicao);
+
+        // Proteção do último admin ao tentar rebaixar
         if (userAtual && userAtual.perfil_id === adminPerfilId && perfilId !== adminPerfilId) {
           const ehUltimo = await verificarUltimoAdmin(idEdicao);
           if (ehUltimo) {
             sbMensagem('msgModal', 'Não é possível rebaixar o único Administrador ativo do sistema.', 'err');
+            return;
+          }
+        }
+
+        // Bloquear promoção a Administrador se já existe um
+        if (perfilId === adminPerfilId && userAtual && userAtual.perfil_id !== adminPerfilId) {
+          if (await verificarAdminExistente(idEdicao)) {
+            sbMensagem('msgModal', 'Já existe um Administrador ativo. O sistema permite apenas um.', 'err');
             return;
           }
         }
@@ -699,6 +714,13 @@
     const admins = await sbListar('erp_usuarios', `perfil_id=eq.${adminPerfilId}&status=eq.true&select=id`);
     const ativos = admins.filter(a => a.id !== ignorarId);
     return ativos.length === 0;
+  }
+
+  // ── Verificar se já existe um Administrador ativo ───────────
+  async function verificarAdminExistente(ignorarId = null) {
+    if (!adminPerfilId) return false;
+    const admins = await sbListar('erp_usuarios', `perfil_id=eq.${adminPerfilId}&status=eq.true&select=id`);
+    return admins.some(a => a.id !== ignorarId);
   }
 
   // ── Toggle rápido de status ─────────────────────────────────
