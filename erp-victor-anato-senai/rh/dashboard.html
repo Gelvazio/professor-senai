@@ -32,6 +32,37 @@
     .dash-list .meta{font-size:11px;color:var(--color-text-muted);margin-left:auto}
     .dash-empty{padding:20px 18px;font-size:13px;color:var(--color-text-muted);text-align:center}
     .aniv-dia{display:inline-block;background:var(--color-primary);color:#fff;border-radius:50%;width:26px;height:26px;line-height:26px;text-align:center;font-size:11px;font-weight:700;flex-shrink:0}
+
+    /* ── Pendências gamificação ── */
+    .pend-banner{background:var(--color-surface);border:2px solid #ef4444;border-radius:var(--radius-lg);margin-bottom:24px;overflow:hidden}
+    .pend-banner-head{background:#fef2f2;padding:12px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;cursor:pointer;user-select:none;justify-content:space-between}
+    [data-theme="dark"] .pend-banner-head{background:#2d1515}
+    .pend-banner-title{font-size:14px;font-weight:700;color:#b91c1c;display:flex;align-items:center;gap:6px}
+    [data-theme="dark"] .pend-banner-title{color:#f87171}
+    .pend-badge-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .pend-badge{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:100px;font-size:12px;font-weight:700;cursor:pointer;border:2px solid transparent;transition:border-color .15s,box-shadow .15s}
+    .pend-badge:hover{box-shadow:0 0 0 3px rgba(239,68,68,.2)}
+    .pend-badge.ativo{border-color:#ef4444}
+    .pend-badge.b-contratacao{background:#dbeafe;color:#1e40af}
+    .pend-badge.b-demissao{background:#fee2e2;color:#991b1b}
+    .pend-badge.b-promocao{background:#d1fae5;color:#065f46}
+    .pend-badge.b-ferias{background:#fef3c7;color:#92400e}
+    .pend-badge.b-atestado{background:#ede9fe;color:#5b21b6}
+    .pend-lista{display:none;border-top:1px solid #fca5a5;max-height:420px;overflow-y:auto}
+    .pend-lista.show{display:block}
+    .pend-item{display:flex;align-items:center;gap:12px;padding:10px 18px;border-bottom:1px solid var(--color-border-faint);flex-wrap:wrap}
+    .pend-item:last-child{border-bottom:none}
+    .pend-item-info{flex:1;min-width:180px}
+    .pend-item-nome{font-size:13px;font-weight:700;color:var(--color-text)}
+    .pend-item-meta{font-size:11px;color:var(--color-text-muted);margin-top:2px}
+    .pend-prio{font-size:11px;font-weight:700;padding:2px 8px;border-radius:100px}
+    .pend-prio.Normal{background:#f3f4f6;color:#4b5563}
+    .pend-prio.Alta{background:#fef3c7;color:#92400e}
+    .pend-prio.Urgente{background:#fee2e2;color:#991b1b;animation:urgpulse 1.5s ease-in-out infinite}
+    @keyframes urgpulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.3)}50%{box-shadow:0 0 0 4px rgba(239,68,68,0)}}
+    .btn-resolver{background:#16a34a;color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:12px;font-weight:700;cursor:pointer;transition:background .15s}
+    .btn-resolver:hover{background:#15803d}
+    .btn-resolver:disabled{background:#6b7280;cursor:not-allowed}
   </style>
   <script>(function(){const t=localStorage.getItem('senai_tema')||'light';document.documentElement.setAttribute('data-theme',t);})();</script>
   <script src="../gamificacao/gamif.js"></script>
@@ -83,6 +114,19 @@
     <div class="page-header">
       <div><h1>📊 Painel RH</h1><p>Visão geral de Recursos Humanos</p></div>
       <button class="btn" onclick="carregar()">↻ Atualizar</button>
+    </div>
+
+    <!-- ── Pendências Gamificação ── -->
+    <div class="pend-banner" id="pendBanner" style="display:none">
+      <div class="pend-banner-head" onclick="togglePendLista()">
+        <div class="pend-banner-title">
+          🎮 Pendências da Gamificação
+          <span id="pendTotal" style="background:#ef4444;color:#fff;border-radius:100px;padding:2px 10px;font-size:12px;margin-left:4px"></span>
+        </div>
+        <div class="pend-badge-row" id="pendBadges"></div>
+        <span style="font-size:12px;color:#b91c1c;white-space:nowrap" id="pendToggleHint">▼ ver pendências</span>
+      </div>
+      <div class="pend-lista" id="pendLista"></div>
     </div>
 
     <!-- KPIs -->
@@ -219,6 +263,118 @@
   }
 
   carregar();
+
+  // ── Pendências Gamificação ─────────────────────────────────────────
+  const PEND_ACOES = {
+    contratacao: { label: 'Contratação',  icon: '📝', cls: 'b-contratacao' },
+    demissao:    { label: 'Demissão',     icon: '🚪', cls: 'b-demissao'    },
+    promocao:    { label: 'Promoção',     icon: '⬆️', cls: 'b-promocao'   },
+    ferias:      { label: 'Férias',       icon: '🏖️', cls: 'b-ferias'     },
+    atestado:    { label: 'Atestado',     icon: '🏥', cls: 'b-atestado'   }
+  };
+
+  let pendFiltroTipo = null;
+  let pendDados = [];
+
+  async function carregarPendencias() {
+    const SBURL = 'https://vdhahqicqlrdvcpesiwk.supabase.co/rest/v1';
+    const SBKEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkaGFocWljcWxyZHZjcGVzaXdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY3MTI3OTYsImV4cCI6MjEwMjI4ODc5Nn0.7ACHuUUv6VMyy4-BbQcdAcmabMtqhiuVgrTGUUcV7RY';
+    const HDR = { apikey: SBKEY, Authorization: `Bearer ${SBKEY}`, 'Content-Type': 'application/json', Prefer: 'return=representation' };
+
+    try {
+      const res = await fetch(`${SBURL}/rh_pendencias?status=neq.Resolvido&order=created_at.desc&select=id,tipo,titulo,funcionario_nome,prioridade,status,observacao,created_at`, { headers: HDR });
+      pendDados = await res.json();
+    } catch(e) { pendDados = []; }
+
+    const banner = document.getElementById('pendBanner');
+    if (!pendDados.length) { banner.style.display = 'none'; return; }
+    banner.style.display = 'block';
+
+    document.getElementById('pendTotal').textContent = pendDados.length;
+
+    // Contar por tipo
+    const counts = {};
+    pendDados.forEach(p => { counts[p.tipo] = (counts[p.tipo] || 0) + 1; });
+
+    const badgesEl = document.getElementById('pendBadges');
+    badgesEl.innerHTML = Object.entries(PEND_ACOES).map(([tipo, a]) => {
+      const c = counts[tipo] || 0;
+      if (!c) return '';
+      return `<span class="pend-badge ${a.cls}${pendFiltroTipo===tipo?' ativo':''}" onclick="filtrarPend('${tipo}',event)">${a.icon} ${a.label} <strong>${c}</strong></span>`;
+    }).join('');
+
+    renderPendLista();
+  }
+
+  function filtrarPend(tipo, e) {
+    e.stopPropagation();
+    pendFiltroTipo = pendFiltroTipo === tipo ? null : tipo;
+    document.querySelectorAll('.pend-badge').forEach(b => b.classList.remove('ativo'));
+    if (pendFiltroTipo) e.currentTarget.classList.add('ativo');
+    const lista = document.getElementById('pendLista');
+    lista.classList.add('show');
+    document.getElementById('pendToggleHint').textContent = '▲ fechar';
+    renderPendLista();
+  }
+
+  function renderPendLista() {
+    const lista = document.getElementById('pendLista');
+    const filtrado = pendFiltroTipo ? pendDados.filter(p => p.tipo === pendFiltroTipo) : pendDados;
+
+    if (!filtrado.length) {
+      lista.innerHTML = '<div style="padding:16px 18px;font-size:13px;color:var(--color-text-muted)">Nenhuma pendência encontrada.</div>';
+      return;
+    }
+
+    lista.innerHTML = filtrado.map(p => {
+      const acao = PEND_ACOES[p.tipo] || { label: p.tipo, icon: '📋', cls: '' };
+      const dh   = p.created_at ? new Date(p.created_at).toLocaleString('pt-BR', { dateStyle:'short', timeStyle:'short' }) : '—';
+      const prioClass = p.prioridade === 'Urgente' ? 'Urgente' : p.prioridade === 'Alta' ? 'Alta' : 'Normal';
+      return `<div class="pend-item" id="pend-${p.id}">
+        <span style="font-size:22px;flex-shrink:0">${acao.icon}</span>
+        <div class="pend-item-info">
+          <div class="pend-item-nome">${p.funcionario_nome}</div>
+          <div class="pend-item-meta">${acao.label} · ${dh}${p.observacao ? ' · ' + p.observacao : ''}</div>
+        </div>
+        <span class="pend-prio ${prioClass}">${p.prioridade}</span>
+        <button class="btn-resolver" onclick="resolverPend('${p.id}', this)">✅ Resolver</button>
+      </div>`;
+    }).join('');
+  }
+
+  function togglePendLista() {
+    const lista = document.getElementById('pendLista');
+    const hint  = document.getElementById('pendToggleHint');
+    const show  = lista.classList.toggle('show');
+    hint.textContent = show ? '▲ fechar' : '▼ ver pendências';
+  }
+
+  async function resolverPend(id, btn) {
+    btn.disabled = true; btn.textContent = '…';
+    const SBURL = 'https://vdhahqicqlrdvcpesiwk.supabase.co/rest/v1';
+    const SBKEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkaGFocWljcWxyZHZjcGVzaXdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY3MTI3OTYsImV4cCI6MjEwMjI4ODc5Nn0.7ACHuUUv6VMyy4-BbQcdAcmabMtqhiuVgrTGUUcV7RY';
+    const HDR = { apikey: SBKEY, Authorization: `Bearer ${SBKEY}`, 'Content-Type': 'application/json', Prefer: 'return=representation' };
+    try {
+      await fetch(`${SBURL}/rh_pendencias?id=eq.${id}`, {
+        method: 'PATCH',
+        headers: HDR,
+        body: JSON.stringify({ status: 'Resolvido', resolvido_em: new Date().toISOString() })
+      });
+      const el = document.getElementById(`pend-${id}`);
+      if (el) { el.style.opacity = '0'; el.style.transition = 'opacity .4s'; setTimeout(() => el.remove(), 400); }
+      pendDados = pendDados.filter(p => p.id !== id);
+      document.getElementById('pendTotal').textContent = pendDados.length;
+      if (!pendDados.length) { document.getElementById('pendBanner').style.display = 'none'; }
+      else renderPendLista();
+    } catch(e) {
+      btn.disabled = false; btn.textContent = '✅ Resolver';
+      alert('Erro ao resolver: ' + e.message);
+    }
+  }
+
+  // Atualizar pendências automaticamente a cada 30s
+  carregarPendencias();
+  setInterval(carregarPendencias, 30000);
 </script>
 </body>
 </html>
