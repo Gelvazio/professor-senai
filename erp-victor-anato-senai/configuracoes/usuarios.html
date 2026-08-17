@@ -533,7 +533,7 @@
     document.getElementById('fSenha').value   = '';
     document.getElementById('fCargo').value   = user.cargo   || '';
     document.getElementById('fTelefone').value = user.telefone || '';
-    document.getElementById('fPerfil').value  = user.perfil_id || '';
+    document.getElementById('fPerfil').value  = String(user.perfil_id || '');
     document.getElementById('fStatus').checked = user.status !== false;
     document.getElementById('statusLabel').textContent = user.status !== false ? 'Ativo' : 'Inativo';
 
@@ -687,10 +687,10 @@
       await carregarUsuarios();
 
     } catch (e) {
-      sbMensagem('msgModal', 'Erro: ' + (e.message || 'Tente novamente.'), 'err');
+      sbMensagem('msgModal', 'Erro: ' + (e.message || 'Tente novamente.'), 'err', 8000);
     } finally {
       btn.disabled = false;
-      btn.textContent = 'Salvar';
+      btn.textContent = 'Confirmar';
     }
   }
 
@@ -900,6 +900,13 @@
       perfis = await sbListar('perfil', 'order=id.asc');
     } catch (e) {
       perfis = [];
+    }
+    // Fallback hardcoded caso a tabela perfil esteja vazia ou inacessível
+    if (!perfis.length) {
+      perfis = [
+        { id: 1, nome: 'Administrador', ativo: 1 },
+        { id: 2, nome: 'Usuário', ativo: 1 }
+      ];
     }
     const adminPerfil = perfis.find(p => p.nome === 'Administrador');
     adminPerfilId = adminPerfil ? adminPerfil.id : null;
