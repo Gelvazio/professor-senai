@@ -448,6 +448,7 @@
     if (!quantidade || quantidade <= 0) { sbMensagem('msgModal', 'A quantidade deve ser maior que zero.', 'err'); return; }
 
     const prod = produtosCache.find(p => p.id === produtoId);
+    const novoStatus = document.getElementById('fStatus').value;
 
     const dados = {
       produto_id:  produtoId,
@@ -455,26 +456,57 @@
       unidade:     prod?.unidade || document.getElementById('fUnidade').value || null,
       solicitante: document.getElementById('fSolicitante').value || null,
       prioridade:  document.getElementById('fPrioridade').value,
-      status:      document.getElementById('fStatus').value,
+      status:      novoStatus,
       data:        document.getElementById('fData').value || null,
       observacoes: document.getElementById('fObs').value || null,
     };
 
     try {
       const id = document.getElementById('fId').value;
+      let savedId = id;
+      let statusAnterior = '';
+
       if (id) {
+        const anterior = registros.find(x => x.id === id);
+        statusAnterior = anterior?.status || '';
         await sbAtualizar('compras_solicitacoes', id, dados);
       } else {
         dados.numero = await Numerar.solicitacao();
-        await sbInserir('compras_solicitacoes', dados);
+        const nova = await sbInserir('compras_solicitacoes', dados);
+        savedId = nova?.id;
+        statusAnterior = '';
         if (window.gamif) await gamif.registrarEvento('solicitacao_criada');
       }
+
       fecharModal();
-      sbMensagem('msgCrud', 'Solicitação salva com sucesso!', 'ok');
+
+      if (novoStatus === 'Aprovada' && statusAnterior !== 'Aprovada' && savedId) {
+        const numeroPedido = await gerarPedidoAutomatico(savedId, produtoId, quantidade);
+        sbMensagem('msgCrud',
+          `Solicitação aprovada! Pedido de Compra <strong>${numeroPedido}</strong> gerado automaticamente como Rascunho — adicione o fornecedor em <a href="pedidos.html" style="color:inherit;font-weight:700">Pedidos de Compra</a>.`,
+          'ok');
+      } else {
+        sbMensagem('msgCrud', 'Solicitação salva com sucesso!', 'ok');
+      }
+
       await carregar();
     } catch (e) {
       sbMensagem('msgModal', 'Erro ao salvar: ' + e.message, 'err');
     }
+  }
+
+  async function gerarPedidoAutomatico(scId, produtoId, quantidade) {
+    const numeroPedido = await Numerar.pedidoCompra();
+    await sbInserir('compras_pedidos', {
+      numero:         numeroPedido,
+      solicitacao_id: scId,
+      produto_id:     produtoId,
+      quantidade,
+      status:         'Rascunho',
+      data:           new Date().toISOString().split('T')[0],
+      observacoes:    'Gerado automaticamente via aprovação da Solicitação de Compra',
+    });
+    return numeroPedido;
   }
 
   // ── Exclusão ───────────────────────────────────
