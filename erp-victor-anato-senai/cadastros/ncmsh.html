@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ERP — Produtos</title>
+  <title>ERP — NCMSH</title>
   <link rel="stylesheet" href="../styles.css">
   <style>
     .app-layout { display: flex; min-height: calc(100vh - 56px); }
@@ -35,23 +35,16 @@
     .filter-btn:hover:not(.ativo) { background: var(--color-surface-2); }
     .content-section { background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); overflow: hidden; }
     #msgGlobal { display: none; padding: 10px 16px; border-radius: var(--radius-md); font-size: 13px; font-weight: 600; margin-bottom: 14px; }
-    #msgGlobal.ok { background: var(--color-success-bg); border: 1px solid var(--color-success-border); color: var(--color-success); display: block; }
+    #msgGlobal.ok  { background: var(--color-success-bg); border: 1px solid var(--color-success-border); color: var(--color-success); display: block; }
     #msgGlobal.err { background: var(--color-error-bg); border: 1px solid var(--color-error-border); color: var(--color-error); display: block; }
-    .crud-modal { max-width: 900px !important; }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
-    .form-grid .span-2 { grid-column: span 2; }
-    .form-grid .span-3 { grid-column: span 3; }
-    @media (max-width: 700px) { .form-grid { grid-template-columns: 1fr 1fr; } .form-grid .span-2, .form-grid .span-3 { grid-column: span 2; } }
-    @media (max-width: 480px) { .form-grid { grid-template-columns: 1fr; } .form-grid .span-2, .form-grid .span-3 { grid-column: span 1; } }
+    .crud-modal { max-width: 580px !important; }
+    .form-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
     .form-group { display: flex; flex-direction: column; gap: 4px; }
     .form-label { font-size: 10px; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.3px; }
     .form-label span { color: var(--color-error); }
-    .form-input, .form-select, .form-textarea { width: 100%; padding: 9px 12px; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 13px; color: var(--color-text); background: var(--color-surface-3); font-family: inherit; outline: none; transition: border-color .15s, box-shadow .15s; }
-    .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(0,67,132,0.12); }
-    .form-input[readonly] { background: var(--color-border-light); color: var(--color-text-muted); cursor: default; }
-    .form-textarea { resize: vertical; min-height: 70px; }
-    [data-theme="dark"] .form-input, [data-theme="dark"] .form-select, [data-theme="dark"] .form-textarea { background: var(--color-surface-2); border-color: var(--color-border); color: var(--color-text); }
-    [data-theme="dark"] .form-input[readonly] { background: var(--color-surface-3); }
+    .form-input, .form-select { width: 100%; padding: 9px 12px; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 13px; color: var(--color-text); background: var(--color-surface-3); font-family: inherit; outline: none; transition: border-color .15s, box-shadow .15s; }
+    .form-input:focus, .form-select:focus { border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(0,67,132,0.12); }
+    [data-theme="dark"] .form-input, [data-theme="dark"] .form-select { background: var(--color-surface-2); border-color: var(--color-border); color: var(--color-text); }
     .toggle-wrap { display: flex; align-items: center; gap: 10px; padding: 10px 0; }
     .toggle { position: relative; width: 44px; height: 24px; flex-shrink: 0; }
     .toggle input { opacity: 0; width: 0; height: 0; }
@@ -67,9 +60,7 @@
     .pag-btn { padding: 4px 10px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface); color: var(--color-text-muted); font-size: 12px; cursor: pointer; font-family: inherit; }
     .pag-btn:disabled { opacity: 0.4; cursor: default; }
     .pag-btn:not(:disabled):hover { background: var(--color-surface-2); }
-    .badge-critico { background: #fce8e6; color: #c62828; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; display: inline-block; }
-    .badge-ok-estoque { background: #e6f4ea; color: #1e7e34; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; display: inline-block; }
-    .estoque-info { font-size: 11px; color: var(--color-text-muted); margin-top: 4px; }
+    .imposto-hint { font-size: 11px; color: var(--color-text-muted); margin-top: 4px; }
   </style>
   <script>
     (function () {
@@ -95,7 +86,9 @@
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
 
 <div class="app-layout">
-  <aside class="sidebar" id="sidebar">    <div class="sidebar-section">
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-section">
       <div class="sidebar-section-label">Principal</div>
       <a class="sidebar-link" href="../dashboard.html"><span class="sidebar-icon">🏠</span> Visão Geral</a>
     </div>
@@ -103,8 +96,10 @@
       <div class="sidebar-section-label">Cadastros</div>
       <a class="sidebar-link" href="clientes.html"><span class="sidebar-icon">👥</span> Clientes</a>
       <a class="sidebar-link" href="fornecedores.html"><span class="sidebar-icon">🏭</span> Fornecedores</a>
-      <a class="sidebar-link ativo" href="produtos.html"><span class="sidebar-icon">📦</span> Produtos</a>
+      <a class="sidebar-link" href="produtos.html"><span class="sidebar-icon">📦</span> Produtos</a>
       <a class="sidebar-link" href="transportadoras.html"><span class="sidebar-icon">🚚</span> Transportadoras</a>
+      <a class="sidebar-link" href="impostos.html"><span class="sidebar-icon">🧾</span> Impostos</a>
+      <a class="sidebar-link ativo" href="ncmsh.html"><span class="sidebar-icon">📋</span> NCMSH</a>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-section-label">Compras</div>
@@ -144,7 +139,6 @@
       <a class="sidebar-link" href="../marketing/campanhas.html"><span class="sidebar-icon">📣</span> Campanhas</a>
       <a class="sidebar-link" href="../marketing/retornos.html"><span class="sidebar-icon">📈</span> Retornos</a>
     </div>
-
     <div class="sidebar-section">
       <div class="sidebar-section-label">Recursos Humanos</div>
       <a class="sidebar-link" href="../rh/dashboard.html"><span class="sidebar-icon">📊</span> Painel RH</a>
@@ -164,57 +158,49 @@
       <a class="sidebar-link" href="../rh/admissao.html"><span class="sidebar-icon">📝</span> Admissão</a>
       <a class="sidebar-link" href="../rh/desligamento.html"><span class="sidebar-icon">🚪</span> Desligamento</a>
     </div>
-<div class="sidebar-section">
-  <div class="sidebar-section-label">Gamificação</div>
-  <a class="sidebar-link" href="../gamificacao/index.html"
-    ><span class="sidebar-icon">🎮</span> Minha Jornada</a
-  >
-  <a class="sidebar-link" href="../gamificacao/ranking.html"
-    ><span class="sidebar-icon">🏆</span> Ranking</a
-  >
-  <a class="sidebar-link" id="linkAdmin" href="../gamificacao/admin.html" style="display:none"
-    ><span class="sidebar-icon">⚙️</span> Admin Gamif.</a
-  >
-</div>
-<div style="height:24px"></div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Gamificação</div>
+      <a class="sidebar-link" href="../gamificacao/index.html"><span class="sidebar-icon">🎮</span> Minha Jornada</a>
+      <a class="sidebar-link" href="../gamificacao/ranking.html"><span class="sidebar-icon">🏆</span> Ranking</a>
+      <a class="sidebar-link" id="linkAdmin" href="../gamificacao/admin.html" style="display:none"><span class="sidebar-icon">⚙️</span> Admin Gamif.</a>
+    </div>
+    <div style="height:24px"></div>
   </aside>
 
+  <!-- Main -->
   <main class="main">
     <div class="page-header">
       <div>
-        <h1>📦 Produtos</h1>
-        <p>Catálogo de produtos · estoque atualizado automaticamente por movimentações</p>
+        <h1>📋 NCMSH</h1>
+        <p>Nomenclatura Comum do Mercosul com Substituição Homologada</p>
       </div>
-      <button class="btn" onclick="abrirModalNovo()">+ Novo Produto</button>
+      <button class="btn" onclick="abrirModalNovo()">+ Novo NCMSH</button>
     </div>
 
     <div id="msgGlobal"></div>
 
+    <!-- Toolbar -->
     <div class="toolbar">
-      <input class="search-input" type="text" id="campoBusca" placeholder="🔍  Buscar por código ou nome..." oninput="filtrar()">
-      <button class="filter-btn ativo" onclick="setFiltro('todos',this)">Todos</button>
-      <button class="filter-btn" onclick="setFiltro('ativos',this)">Ativos</button>
-      <button class="filter-btn" onclick="setFiltro('inativos',this)">Inativos</button>
-      <button class="filter-btn" onclick="setFiltro('criticos',this)" style="border-color:#f44336;color:#c62828">⚠️ Críticos</button>
+      <input class="search-input" type="text" id="campoBusca" placeholder="🔍  Buscar por descrição..." oninput="filtrar()">
+      <button class="filter-btn ativo" data-filtro="todos" onclick="setFiltro('todos',this)">Todos</button>
+      <button class="filter-btn" data-filtro="ativos" onclick="setFiltro('ativos',this)">Ativos</button>
+      <button class="filter-btn" data-filtro="inativos" onclick="setFiltro('inativos',this)">Inativos</button>
     </div>
 
+    <!-- Tabela -->
     <div class="content-section">
       <div class="crud-table-wrap">
         <table class="crud-table">
           <thead>
             <tr>
-              <th>Código</th>
-              <th>Nome</th>
-              <th>Categoria</th>
-              <th>Unid.</th>
-              <th>Estoque Atual</th>
-              <th>Preço Venda</th>
-              <th>Status</th>
+              <th>Descrição</th>
+              <th>Imposto Vinculado</th>
+              <th style="width:100px">Status</th>
               <th style="width:100px">Ações</th>
             </tr>
           </thead>
-          <tbody id="tbodyProdutos">
-            <tr><td colspan="8" class="crud-vazio">Carregando…</td></tr>
+          <tbody id="tbodyNcmsh">
+            <tr><td colspan="4" class="crud-vazio">Carregando…</td></tr>
           </tbody>
         </table>
       </div>
@@ -229,82 +215,37 @@
   </main>
 </div>
 
-<!-- Modal Formulário -->
+<!-- ── Modal Formulário ── -->
 <div class="crud-backdrop" id="modalFormulario" style="display:none" onclick="fecharSeClicouFora(event,'modalFormulario')">
   <div class="crud-modal">
     <div class="crud-modal-head">
-      <h3 id="modalTitulo">Novo Produto</h3>
+      <h3 id="modalTitulo">Novo NCMSH</h3>
       <button class="crud-btn-fechar" onclick="fecharModal()">✕</button>
     </div>
     <div class="modal-body-scroll">
       <div id="msgModal" style="display:none;margin-bottom:12px;padding:10px 14px;border-radius:6px;font-size:13px;font-weight:600;"></div>
-      <form id="formProduto" onsubmit="salvar(event)">
+      <form id="formNcmsh" onsubmit="salvar(event)">
         <div class="form-grid">
-          <!-- Código (somente leitura no modo edição) -->
-          <div class="form-group" id="grupoCodigo" style="display:none">
-            <label class="form-label" for="fCodigo">Código (automático)</label>
-            <input class="form-input" type="text" id="fCodigo" readonly placeholder="Gerado automaticamente">
-          </div>
-          <div class="form-group span-2" id="grupoNome">
-            <label class="form-label" for="fNome">Nome do Produto <span>*</span></label>
-            <input class="form-input" type="text" id="fNome" required placeholder="Nome do produto">
+          <div class="form-group">
+            <label class="form-label" for="fDescricao">Descrição <span>*</span></label>
+            <input class="form-input" type="text" id="fDescricao" required
+              placeholder="Ex: 8471.30.19 — Máquinas automáticas para processamento…"
+              style="font-size:16px">
           </div>
           <div class="form-group">
-            <label class="form-label" for="fCategoria">Categoria</label>
-            <select class="form-select" id="fCategoria">
-              <option value="">— Selecione —</option>
-              <option>Tecnologia</option><option>Saúde</option><option>Varejo</option>
-              <option>Alimentação</option><option>Automobilístico</option><option>Metalmecânica</option>
-              <option>Madeireiro</option><option>Serviços</option><option>Agricultura</option>
-              <option>Transporte</option><option>Embalagens</option><option>Manutenção e Reparos</option>
-              <option>Outros</option>
+            <label class="form-label" for="fImpostoId">Imposto <span>*</span></label>
+            <select class="form-select" id="fImpostoId" required style="font-size:16px">
+              <option value="">— Selecione o imposto —</option>
             </select>
+            <span class="imposto-hint" id="impostoHint"></span>
           </div>
           <div class="form-group">
-            <label class="form-label" for="fUnidade">Unidade</label>
-            <select class="form-select" id="fUnidade">
-              <option value="">— Selecione —</option>
-              <option value="UN">UN — Unidade</option>
-              <option value="KG">KG — Quilograma</option>
-              <option value="LT">LT — Litro</option>
-              <option value="CX">CX — Caixa</option>
-              <option value="PC">PC — Peça</option>
-              <option value="MT">MT — Metro</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="fPrecoCusto">Preço de Custo (R$)</label>
-            <input class="form-input" type="number" id="fPrecoCusto" min="0" step="0.01" placeholder="0,00">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="fPrecoVenda">Preço de Venda (R$)</label>
-            <input class="form-input" type="number" id="fPrecoVenda" min="0" step="0.01" placeholder="0,00">
-          </div>
-          <!-- Estoque atual (somente leitura) -->
-          <div class="form-group" id="grupoEstoqueAtual" style="display:none">
-            <label class="form-label">Estoque Atual (somente leitura)</label>
-            <input class="form-input" type="text" id="fEstoqueAtualDisplay" readonly>
-            <span class="estoque-info">Atualizado automaticamente pelas movimentações de estoque.</span>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="fEstoqueMin">Estoque Mínimo</label>
-            <input class="form-input" type="number" id="fEstoqueMin" min="0" step="0.001" placeholder="0">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="fEstoqueMax">Estoque Máximo</label>
-            <input class="form-input" type="number" id="fEstoqueMax" min="0" step="0.001" placeholder="0">
-          </div>
-          <div class="form-group span-3">
-            <label class="form-label" for="fDescricao">Descrição</label>
-            <textarea class="form-textarea" id="fDescricao" placeholder="Descrição detalhada do produto…"></textarea>
-          </div>
-          <div class="form-group span-3">
             <div class="toggle-wrap">
               <label class="toggle">
                 <input type="checkbox" id="fAtivo" checked>
                 <span class="toggle-slider"></span>
               </label>
-              <span class="toggle-label">Produto ativo</span>
+              <span class="toggle-label">NCMSH ativo</span>
             </div>
           </div>
         </div>
@@ -312,12 +253,12 @@
     </div>
     <div class="modal-footer">
       <button class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
-      <button class="btn-salvar" onclick="document.getElementById('formProduto').requestSubmit()">Confirmar</button>
+      <button class="btn-salvar" onclick="document.getElementById('formNcmsh').requestSubmit()">Confirmar</button>
     </div>
   </div>
 </div>
 
-<!-- Modal Excluir -->
+<!-- ── Modal Confirmar Exclusão ── -->
 <div class="crud-backdrop" id="modalExcluir" style="display:none" onclick="fecharSeClicouFora(event,'modalExcluir')">
   <div class="crud-modal" style="max-width:440px">
     <div class="crud-modal-head" style="background:#c62828">
@@ -325,7 +266,7 @@
       <button class="crud-btn-fechar" onclick="fecharModalExcluir()">✕</button>
     </div>
     <div class="modal-body-scroll" style="padding:20px">
-      <p style="font-size:14px;color:var(--color-text)">Tem certeza que deseja excluir o produto <strong id="nomeExcluir"></strong>?</p>
+      <p style="font-size:14px;color:var(--color-text)">Tem certeza que deseja excluir o NCMSH <strong id="nomeExcluir"></strong>?</p>
       <p style="font-size:12px;color:var(--color-text-muted);margin-top:8px">Esta ação não pode ser desfeita.</p>
     </div>
     <div class="modal-footer">
@@ -358,10 +299,18 @@
     document.getElementById('sidebarOverlay').classList.toggle('show');
   }
 
-  let todos = [], filtrados = [], filtroAtual = 'todos', paginaAtual = 0;
+  // ── Estado ──
+  let todos = [];
+  let impostos = [];
+  let filtrados = [];
+  let filtroAtual = 'todos';
+  let paginaAtual = 0;
   const POR_PAGINA = 50;
-  let idParaExcluir = null, modoEdicao = false, idEdicao = null;
+  let idParaExcluir = null;
+  let modoEdicao = false;
+  let idEdicao = null;
 
+  // ── Mensagens ──
   function msg(texto, tipo = 'ok', ms = 4000) {
     const el = document.getElementById('msgGlobal');
     el.textContent = texto; el.className = tipo; el.style.display = 'block';
@@ -376,163 +325,200 @@
       : 'display:block;background:#e8f5e9;border:1px solid #c8e6c9;color:#2e7d32';
   }
 
-  function estoqueBadge(p) {
-    const atual = Number(p.estoque_atual || 0);
-    const min   = Number(p.estoque_minimo || 0);
-    if (atual <= min) return `<span class="badge-critico">⚠️ Crítico</span>`;
-    return `<span class="badge-ok-estoque">✓ OK</span>`;
+  // ── Lookup de imposto por ID ──
+  function nomeImposto(id) {
+    const imp = impostos.find(i => i.id === id);
+    if (!imp) return '—';
+    return `${imp.descricao} (${Number(imp.taxa_imposto).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}%)`;
   }
 
+  // ── Preencher select de impostos ──
+  async function carregarImpostos() {
+    impostos = await sbListar('impostos', 'ativo=eq.true&order=descricao.asc');
+    const sel = document.getElementById('fImpostoId');
+    impostos.forEach(imp => {
+      const opt = document.createElement('option');
+      opt.value       = imp.id;
+      opt.textContent = `${imp.descricao} — ${Number(imp.taxa_imposto).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}%`;
+      sel.appendChild(opt);
+    });
+  }
+
+  // ── Atualizar hint de taxa ao mudar o select ──
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('fImpostoId').addEventListener('change', function () {
+      const imp = impostos.find(i => i.id === this.value);
+      document.getElementById('impostoHint').textContent = imp
+        ? `Alíquota: ${Number(imp.taxa_imposto).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}%`
+        : '';
+    });
+  });
+
+  // ── Carregar tabela principal ──
   async function carregar() {
-    document.getElementById('tbodyProdutos').innerHTML = '<tr><td colspan="8" class="crud-vazio">Carregando…</td></tr>';
+    document.getElementById('tbodyNcmsh').innerHTML = '<tr><td colspan="4" class="crud-vazio">Carregando…</td></tr>';
     try {
-      todos = await sbListar('produtos', 'order=codigo.asc');
+      todos = await sbListar('ncmsh', 'order=descricao.asc');
       filtrar();
     } catch (e) {
-      document.getElementById('tbodyProdutos').innerHTML = `<tr><td colspan="8" class="crud-vazio">Erro: ${e.message}</td></tr>`;
+      document.getElementById('tbodyNcmsh').innerHTML = `<tr><td colspan="4" class="crud-vazio">Erro: ${e.message}</td></tr>`;
     }
   }
 
+  // ── Filtrar ──
   function setFiltro(f, el) {
-    filtroAtual = f; paginaAtual = 0;
+    filtroAtual = f;
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('ativo'));
     el.classList.add('ativo');
+    paginaAtual = 0;
     filtrar();
   }
 
   function filtrar() {
     const termo = document.getElementById('campoBusca').value.toLowerCase().trim();
-    filtrados = todos.filter(p => {
-      if (filtroAtual === 'ativos' && !p.ativo) return false;
-      if (filtroAtual === 'inativos' && p.ativo) return false;
-      if (filtroAtual === 'criticos' && Number(p.estoque_atual || 0) > Number(p.estoque_minimo || 0)) return false;
-      if (termo) return (p.codigo || '').toLowerCase().includes(termo) || (p.nome || '').toLowerCase().includes(termo);
+    filtrados = todos.filter(r => {
+      if (filtroAtual === 'ativos'   && !r.ativo) return false;
+      if (filtroAtual === 'inativos' &&  r.ativo) return false;
+      if (termo) return (r.descricao || '').toLowerCase().includes(termo);
       return true;
     });
     renderTabela();
   }
 
   function renderTabela() {
-    const tbody = document.getElementById('tbodyProdutos');
+    const tbody = document.getElementById('tbodyNcmsh');
     const inicio = paginaAtual * POR_PAGINA;
     const pagina = filtrados.slice(inicio, inicio + POR_PAGINA);
+
     document.getElementById('paginacaoInfo').textContent =
       `${filtrados.length} registro(s) · página ${paginaAtual + 1} de ${Math.max(1, Math.ceil(filtrados.length / POR_PAGINA))}`;
     document.getElementById('btnAnterior').disabled = paginaAtual === 0;
-    document.getElementById('btnProximo').disabled = inicio + POR_PAGINA >= filtrados.length;
+    document.getElementById('btnProximo').disabled  = inicio + POR_PAGINA >= filtrados.length;
+
     if (!pagina.length) {
-      tbody.innerHTML = '<tr><td colspan="8" class="crud-vazio">Nenhum produto encontrado.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="4" class="crud-vazio">Nenhum NCMSH encontrado.</td></tr>';
       return;
     }
-    tbody.innerHTML = pagina.map(p => `
+
+    tbody.innerHTML = pagina.map(r => `
       <tr>
-        <td style="font-family:monospace;font-weight:600;font-size:12px">${p.codigo || '—'}</td>
-        <td title="${p.nome || ''}">${p.nome || '—'}</td>
-        <td>${p.categoria || '—'}</td>
-        <td>${p.unidade || '—'}</td>
-        <td>
-          ${Number(p.estoque_atual || 0).toLocaleString('pt-BR')} ${p.unidade || ''}
-          &nbsp;${estoqueBadge(p)}
-        </td>
-        <td>${sbMoeda(p.preco_venda)}</td>
-        <td>${p.ativo ? '<span class="badge badge-verde">Ativo</span>' : '<span class="badge badge-vermelho">Inativo</span>'}</td>
+        <td title="${r.descricao || ''}">${r.descricao || '—'}</td>
+        <td style="font-size:12px;color:var(--color-text-muted)">${nomeImposto(r.imposto_id)}</td>
+        <td>${r.ativo
+          ? '<span class="badge badge-verde">Ativo</span>'
+          : '<span class="badge badge-vermelho">Inativo</span>'}</td>
         <td class="crud-acts">
-          <button class="btn-ed" title="Editar" onclick="abrirModalEditar('${p.id}')">✏️</button>
-          <button class="btn-del" title="Excluir" onclick="confirmarExcluir('${p.id}','${(p.nome||'').replace(/'/g,"\\'")}')">🗑️</button>
+          <button class="btn-ed"  title="Editar"  onclick="abrirModalEditar('${r.id}')">✏️</button>
+          <button class="btn-del" title="Excluir" onclick="confirmarExcluir('${r.id}','${(r.descricao || '').replace(/'/g, "\\'")}')">🗑️</button>
         </td>
       </tr>
     `).join('');
   }
 
-  function mudarPagina(dir) { paginaAtual += dir; renderTabela(); window.scrollTo(0,0); }
+  function mudarPagina(dir) {
+    paginaAtual += dir;
+    renderTabela();
+    window.scrollTo(0, 0);
+  }
 
+  // ── Modal ──
   function abrirModalNovo() {
     modoEdicao = false; idEdicao = null;
-    document.getElementById('modalTitulo').textContent = 'Novo Produto';
-    document.getElementById('formProduto').reset();
+    document.getElementById('modalTitulo').textContent = 'Novo NCMSH';
+    document.getElementById('formNcmsh').reset();
     document.getElementById('fAtivo').checked = true;
     document.getElementById('msgModal').style.display = 'none';
-    // Modo novo: esconder código e estoque atual
-    document.getElementById('grupoCodigo').style.display = 'none';
-    document.getElementById('grupoEstoqueAtual').style.display = 'none';
-    document.getElementById('grupoNome').className = 'form-group span-2';
+    document.getElementById('impostoHint').textContent = '';
     document.getElementById('modalFormulario').style.display = 'flex';
+    document.getElementById('fDescricao').focus();
   }
 
-  async function abrirModalEditar(id) {
+  function abrirModalEditar(id) {
     modoEdicao = true; idEdicao = id;
-    document.getElementById('modalTitulo').textContent = 'Editar Produto';
+    document.getElementById('modalTitulo').textContent = 'Editar NCMSH';
     document.getElementById('msgModal').style.display = 'none';
-    const p = todos.find(x => x.id === id);
-    if (!p) return;
-    // Modo edição: mostrar código e estoque atual
-    document.getElementById('grupoCodigo').style.display = '';
-    document.getElementById('grupoEstoqueAtual').style.display = '';
-    document.getElementById('grupoNome').className = 'form-group span-2';
-    document.getElementById('fCodigo').value             = p.codigo || '';
-    document.getElementById('fNome').value               = p.nome || '';
-    document.getElementById('fCategoria').value          = p.categoria || '';
-    document.getElementById('fUnidade').value            = p.unidade || '';
-    document.getElementById('fPrecoCusto').value         = p.preco_custo || '';
-    document.getElementById('fPrecoVenda').value         = p.preco_venda || '';
-    document.getElementById('fEstoqueAtualDisplay').value= `${Number(p.estoque_atual || 0).toLocaleString('pt-BR')} ${p.unidade || ''}`;
-    document.getElementById('fEstoqueMin').value         = p.estoque_minimo || '';
-    document.getElementById('fEstoqueMax').value         = p.estoque_maximo || '';
-    document.getElementById('fDescricao').value          = p.descricao || '';
-    document.getElementById('fAtivo').checked            = p.ativo !== false;
+    const r = todos.find(x => x.id === id);
+    if (!r) return;
+    document.getElementById('fDescricao').value  = r.descricao  || '';
+    document.getElementById('fImpostoId').value  = r.imposto_id || '';
+    document.getElementById('fAtivo').checked    = r.ativo !== false;
+    const imp = impostos.find(i => i.id === r.imposto_id);
+    document.getElementById('impostoHint').textContent = imp
+      ? `Alíquota: ${Number(imp.taxa_imposto).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}%`
+      : '';
     document.getElementById('modalFormulario').style.display = 'flex';
+    document.getElementById('fDescricao').focus();
   }
 
-  function fecharModal() { document.getElementById('modalFormulario').style.display = 'none'; }
-  function fecharSeClicouFora(e, id) { if (e.target.id === id) document.getElementById(id).style.display = 'none'; }
+  function fecharModal() {
+    document.getElementById('modalFormulario').style.display = 'none';
+  }
 
+  function fecharSeClicouFora(e, id) {
+    if (e.target.id === id) document.getElementById(id).style.display = 'none';
+  }
+
+  // ── Salvar ──
   async function salvar(e) {
     e.preventDefault();
-    const nome = document.getElementById('fNome').value.trim();
-    if (!nome) { msgModal('Nome do produto é obrigatório.'); return; }
+
+    const descricao  = document.getElementById('fDescricao').value.trim();
+    const impostoId  = document.getElementById('fImpostoId').value;
+
+    if (!descricao) { msgModal('Descrição é obrigatória.'); return; }
+    if (!impostoId) { msgModal('Selecione um imposto.'); return; }
 
     const dados = {
-      nome,
-      categoria:      document.getElementById('fCategoria').value || null,
-      unidade:        document.getElementById('fUnidade').value || null,
-      preco_custo:    parseFloat(document.getElementById('fPrecoCusto').value) || null,
-      preco_venda:    parseFloat(document.getElementById('fPrecoVenda').value) || null,
-      estoque_minimo: parseFloat(document.getElementById('fEstoqueMin').value) || 0,
-      estoque_maximo: parseFloat(document.getElementById('fEstoqueMax').value) || null,
-      descricao:      document.getElementById('fDescricao').value.trim() || null,
-      ativo:          document.getElementById('fAtivo').checked,
+      descricao,
+      imposto_id: impostoId,
+      ativo: document.getElementById('fAtivo').checked,
     };
 
     try {
       if (modoEdicao) {
-        await sbAtualizar('produtos', idEdicao, dados);
-        msg('Produto atualizado com sucesso!', 'ok');
+        await sbAtualizar('ncmsh', idEdicao, dados);
+        msg('NCMSH atualizado com sucesso!', 'ok');
       } else {
-        const codigo = await Numerar.produto();
-        await sbInserir('produtos', { ...dados, codigo });
-        msg(`Produto cadastrado! Código: ${codigo}`, 'ok');
-        if (window.gamif) await gamif.registrarEvento('produto_cadastrado');
+        await sbInserir('ncmsh', dados);
+        msg('NCMSH cadastrado com sucesso!', 'ok');
       }
-      fecharModal(); await carregar();
-    } catch (er) { msgModal('Erro ao salvar: ' + er.message); }
+      fecharModal();
+      await carregar();
+    } catch (er) {
+      msgModal('Erro ao salvar: ' + er.message);
+    }
   }
 
+  // ── Excluir ──
   function confirmarExcluir(id, nome) {
     idParaExcluir = id;
     document.getElementById('nomeExcluir').textContent = nome;
     document.getElementById('modalExcluir').style.display = 'flex';
   }
-  function fecharModalExcluir() { document.getElementById('modalExcluir').style.display = 'none'; idParaExcluir = null; }
+
+  function fecharModalExcluir() {
+    document.getElementById('modalExcluir').style.display = 'none';
+    idParaExcluir = null;
+  }
+
   async function excluirConfirmado() {
     if (!idParaExcluir) return;
     try {
-      await sbExcluir('produtos', idParaExcluir);
-      msg('Produto excluído.', 'ok');
-      fecharModalExcluir(); await carregar();
-    } catch (e) { fecharModalExcluir(); msg('Erro ao excluir: ' + e.message, 'err'); }
+      await sbExcluir('ncmsh', idParaExcluir);
+      msg('NCMSH excluído com sucesso.', 'ok');
+      fecharModalExcluir();
+      await carregar();
+    } catch (e) {
+      fecharModalExcluir();
+      msg('Erro ao excluir: ' + e.message, 'err');
+    }
   }
 
-  carregar();
+  // ── Inicializar ──
+  (async () => {
+    await carregarImpostos();
+    await carregar();
+  })();
 </script>
 <script>
   (function () {

@@ -10,18 +10,18 @@
     "semantic_hash": ""
   },
   "SUPABASE.js": {
-    "mtime": 1786908164.0783916,
-    "ast_hash": "264194ab44155d5230aac25e5b303a91",
+    "mtime": 1786911514.3111694,
+    "ast_hash": "5d21ea50ec6763f939aee68976e0edd1",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1786907426.1034381,
-    "ast_hash": "7580529a89149ee0a90bf3da32b4b199",
+    "mtime": 1786910983.319611,
+    "ast_hash": "796b659b7f654718b902c72ff525893f",
     "semantic_hash": ""
   },
   "dashboard.html": {
-    "mtime": 1786910527.0097399,
-    "ast_hash": "2cbfa013bfca3cfc20d599ab4e1433cd",
+    "mtime": 1786912027.4562578,
+    "ast_hash": "38fc52cb5c47237fbc95d05f54880fcc",
     "semantic_hash": ""
   },
   "index.html": {
@@ -35,93 +35,93 @@
     "semantic_hash": ""
   },
   "compras/pedidos.html": {
-    "mtime": 1786910527.0221438,
-    "ast_hash": "5c016ac11466f3f4d6a657e045555184",
+    "mtime": 1786911693.5434084,
+    "ast_hash": "ab86d26037a3e43d6dffff4ab3081454",
     "semantic_hash": ""
   },
   "compras/planejamento.html": {
-    "mtime": 1786910527.0221438,
-    "ast_hash": "7265a1736745b42a9399fad333fcbfd6",
+    "mtime": 1786911693.5449846,
+    "ast_hash": "146f3a78c676a9d22205aabb768b5aed",
     "semantic_hash": ""
   },
   "compras/solicitacoes.html": {
-    "mtime": 1786910527.0221438,
-    "ast_hash": "ab39b2e9aef6ab5d7036636d4d6c8780",
+    "mtime": 1786911693.5474946,
+    "ast_hash": "5cfefc3be699cb9f293617200d2d3b8d",
     "semantic_hash": ""
   },
   "configuracoes/usuarios.html": {
-    "mtime": 1786910527.0295815,
-    "ast_hash": "d9aee59c87fc947ba88d02cc4c78f370",
+    "mtime": 1786911693.55532,
+    "ast_hash": "c3bb297b338902f041c25bd8cb9d77d6",
     "semantic_hash": ""
   },
   "estoque/controle.html": {
-    "mtime": 1786910527.0295815,
-    "ast_hash": "c31f19d1613be2a5f057f6da26a989fd",
+    "mtime": 1786911693.5583353,
+    "ast_hash": "f28c9e3fcfb78f44673bee2b2982caeb",
     "semantic_hash": ""
   },
   "estoque/movimentacoes.html": {
-    "mtime": 1786910527.0295815,
-    "ast_hash": "496419e8febd1ed40070ab7e155ba062",
+    "mtime": 1786911693.5623498,
+    "ast_hash": "685541ba9cec45392785054a24c7c9b6",
     "semantic_hash": ""
   },
   "cadastros/clientes.html": {
-    "mtime": 1786910527.0097399,
-    "ast_hash": "3713fde9606920e44fdb196ab2f71b9a",
+    "mtime": 1786911693.4894998,
+    "ast_hash": "aa7b6d5d789d9a1eedf3fe3c5c0d3419",
     "semantic_hash": ""
   },
   "cadastros/fornecedores.html": {
-    "mtime": 1786910527.0171182,
-    "ast_hash": "afbb0fda76eb7cc3854fb4ffdf558840",
+    "mtime": 1786911693.5347023,
+    "ast_hash": "7eb187c73a3adec412ec730f5810417c",
     "semantic_hash": ""
   },
   "cadastros/produtos.html": {
-    "mtime": 1786910527.0185106,
-    "ast_hash": "83992a941a998eafb513606962614136",
+    "mtime": 1786911693.5370183,
+    "ast_hash": "f922aba3940aa445bdaf06318483840e",
     "semantic_hash": ""
   },
   "compras/conferencia.html": {
-    "mtime": 1786910527.019981,
-    "ast_hash": "d09954642774761c16a1170923000936",
+    "mtime": 1786911693.540411,
+    "ast_hash": "1b4d80663d12db39ab4131feddf4bfed",
     "semantic_hash": ""
   },
   "compras/recebimento.html": {
-    "mtime": 1786910527.0221438,
-    "ast_hash": "53d65f709484cdc8ed27542343b1c138",
+    "mtime": 1786911693.5459905,
+    "ast_hash": "5c5efd26b814a6003d99c24472c39f14",
     "semantic_hash": ""
   },
   "estoque/armazenagem.html": {
-    "mtime": 1786910527.0295815,
-    "ast_hash": "be19864dfd4d236953ce4fc08aa8118c",
+    "mtime": 1786911693.5568252,
+    "ast_hash": "57ae46edc7a11020ae2c4e8d6bb4d567",
     "semantic_hash": ""
   },
   "estoque/inventario.html": {
-    "mtime": 1786910527.0295815,
-    "ast_hash": "3f01a23e7534536d82b8ca54cbae999c",
+    "mtime": 1786911693.5603411,
+    "ast_hash": "6f596f8b1fc132551523102da6e9c658",
     "semantic_hash": ""
   },
   "vendas/nota-fiscal-venda.html": {
-    "mtime": 1786910527.0578475,
-    "ast_hash": "01ab87399236eae94c8dd7387c4ac282",
+    "mtime": 1786911693.5918076,
+    "ast_hash": "ddac13753b2068ff5cf7601b6f41d684",
     "semantic_hash": ""
   },
   "vendas/pedidos-venda.html": {
-    "mtime": 1786910527.0598722,
-    "ast_hash": "517cf8ac36c5c70e13cdb789dcb207e5",
+    "mtime": 1786911693.594034,
+    "ast_hash": "32a536d6c7aaedb553556661151145a5",
     "semantic_hash": ""
   },
   "vendas/separacao.html": {
-    "mtime": 1786910527.0598722,
-    "ast_hash": "f5b3b44c7aa46655a51452bdc033b88b",
+    "mtime": 1786911693.5960336,
+    "ast_hash": "d088405af1d4ce5858c41ef11bf956e9",
     "semantic_hash": ""
   },
   "cadastros/transportadoras.html": {
-    "mtime": 1786910527.019981,
-    "ast_hash": "6283295d63f43e3c20db7ca4d2b6793a",
+    "mtime": 1786911693.538272,
+    "ast_hash": "ac3ccfabff345876d77b480e169f0b6b",
     "semantic_hash": ""
   },
   "compras/nota-fiscal.html": {
-    "mtime": 1786910527.0221438,
-    "ast_hash": "fbc1ee2acc8927b6f479b73d0f5777a4",
+    "mtime": 1786911693.5414097,
+    "ast_hash": "81248808fbb33e3a2b51a495fdc044ab",
     "semantic_hash": ""
   },
   "criar-admin.html": {
@@ -130,18 +130,18 @@
     "semantic_hash": ""
   },
   "vendas/entrega.html": {
-    "mtime": 1786910527.051572,
-    "ast_hash": "a1892f971fb89727b6fe9350b41e2504",
+    "mtime": 1786911693.5875888,
+    "ast_hash": "19c964cd83a5b07e6b6ed7a64e35ea70",
     "semantic_hash": ""
   },
   "vendas/expedicao.html": {
-    "mtime": 1786910527.0578475,
-    "ast_hash": "465f34e75783e8cfb4913b8a987356ce",
+    "mtime": 1786911693.588587,
+    "ast_hash": "5ce8cbf6594adbefd294f054d2faadd3",
     "semantic_hash": ""
   },
   "vendas/romaneio.html": {
-    "mtime": 1786910527.0598722,
-    "ast_hash": "4da22593e7b30ba55feddc7e385c0bfc",
+    "mtime": 1786911693.5950325,
+    "ast_hash": "2fd2e34148aec3f57f2f3ae8b43b6273",
     "semantic_hash": ""
   },
   "sistema.json": {
@@ -155,28 +155,28 @@
     "semantic_hash": ""
   },
   "configuracoes/perfis.html": {
-    "mtime": 1786910527.0221438,
-    "ast_hash": "bb05881c1d75bfcc6c3cc2b9707da498",
+    "mtime": 1786911887.1360965,
+    "ast_hash": "2a9f459ae33e29f72f02060269b3b104",
     "semantic_hash": ""
   },
   "configuracoes/telas.html": {
-    "mtime": 1786910527.0278287,
-    "ast_hash": "3049b0f3c8f52c71ec7c520e55b4a182",
+    "mtime": 1786911693.5529768,
+    "ast_hash": "f5ee248b9b68040c8cd1a8168581658c",
     "semantic_hash": ""
   },
   "financeiro/balancete.html": {
-    "mtime": 1786910527.0350387,
-    "ast_hash": "85492452e53cc22c83ab2859180601f6",
+    "mtime": 1786911693.56694,
+    "ast_hash": "f454aa3f87498ce0ba90d16d2c153dfe",
     "semantic_hash": ""
   },
   "financeiro/contas-pagar.html": {
-    "mtime": 1786910527.0350387,
-    "ast_hash": "3859f0db63ff06bdf8806b62f5c3af0c",
+    "mtime": 1786911693.567948,
+    "ast_hash": "ff5cb537f8554b4927aa5577a5c73575",
     "semantic_hash": ""
   },
   "financeiro/contas-receber.html": {
-    "mtime": 1786910527.0372424,
-    "ast_hash": "09501c70f579e185cc8e2f0312254b37",
+    "mtime": 1786911693.570094,
+    "ast_hash": "3952301acc4b1cebe9091011cee5515c",
     "semantic_hash": ""
   },
   "score-credito/MATERIAIS-PESQUISA-SORE-CREDITO-INDUSTRIA.txt": {
@@ -185,13 +185,13 @@
     "semantic_hash": ""
   },
   "vendas/logistica.html": {
-    "mtime": 1786910527.0578475,
-    "ast_hash": "dc820f14c73b053bdc7981ea035fd0c2",
+    "mtime": 1786911693.5905998,
+    "ast_hash": "70bf1319d1fd718623fab011749617be",
     "semantic_hash": ""
   },
   "configuracoes/regras-negocios.html": {
-    "mtime": 1786910527.0221438,
-    "ast_hash": "ad873b72ca8b5569f0742657ceca28af",
+    "mtime": 1786911693.5500197,
+    "ast_hash": "023bc5c0e24ae7cda6f5c32dc7af4f68",
     "semantic_hash": ""
   },
   "gamificacao/gamificacao.md": {
@@ -200,13 +200,13 @@
     "semantic_hash": ""
   },
   "marketing/campanhas.html": {
-    "mtime": 1786910527.0399609,
-    "ast_hash": "913b9d5a3f10766fd4c572cd0985573a",
+    "mtime": 1786925540.3847363,
+    "ast_hash": "704eb19ec67d0af39fd9bce4016fbdac",
     "semantic_hash": ""
   },
   "marketing/retornos.html": {
-    "mtime": 1786910527.0399609,
-    "ast_hash": "4930a18e01c15ddea62caafdfe24f6b0",
+    "mtime": 1786911693.585013,
+    "ast_hash": "39bc03b403f7a21a80d190540482f34f",
     "semantic_hash": ""
   },
   "REGRAS-NEGOCIOS/Assist. de PCP_436h_Pr\u00e1tica Profissional.md": {
@@ -340,8 +340,8 @@
     "semantic_hash": ""
   },
   "gamificacao/index.html": {
-    "mtime": 1786910527.0372424,
-    "ast_hash": "58dbba4ebbe4b5974eca6c548c5a1970",
+    "mtime": 1786911835.9418075,
+    "ast_hash": "c7ac65f99d765a95732d395bde7f2fa5",
     "semantic_hash": ""
   },
   "gamificacao/DATABASE.sql": {
@@ -355,13 +355,13 @@
     "semantic_hash": ""
   },
   "gamificacao/ranking.html": {
-    "mtime": 1786910527.0399609,
-    "ast_hash": "16df7852b89f4ba4edceae2b7285bd8d",
+    "mtime": 1786911693.5775642,
+    "ast_hash": "0cb803fd0d9d46910c9504bfcd91da3b",
     "semantic_hash": ""
   },
   "gamificacao/admin.html": {
-    "mtime": 1786910567.589609,
-    "ast_hash": "67834fd7f321177fff0419082f796f43",
+    "mtime": 1786925295.2884998,
+    "ast_hash": "6365c54a848ca099dc4a24591c209910",
     "semantic_hash": ""
   },
   "REGRAS-NEGOCIOS/Assist. de PCP_436h_Pr\u00e1tica Profissional_41a56ba3.md": {
@@ -420,13 +420,13 @@
     "semantic_hash": ""
   },
   "financeiro/analisecredito.html": {
-    "mtime": 1786910550.1637044,
-    "ast_hash": "c0000f0f49c498e0700c7e419ce76f38",
+    "mtime": 1786911693.564891,
+    "ast_hash": "c830ad8c1f99ba7e9e3861e3ad22d6b4",
     "semantic_hash": ""
   },
   "rh/beneficios.html": {
-    "mtime": 1786910527.0399609,
-    "ast_hash": "6059980ab147f2a15b65af8beee2eae2",
+    "mtime": 1786924822.6282012,
+    "ast_hash": "1728b8d85258c3170aef0791d813b407",
     "semantic_hash": ""
   },
   "rh/cargos.html": {
@@ -480,33 +480,33 @@
     "semantic_hash": ""
   },
   "rh/treinamentos.html": {
-    "mtime": 1786910527.051572,
-    "ast_hash": "fbeec583696566dda9accaf1e63496c6",
+    "mtime": 1786924807.140067,
+    "ast_hash": "54c66e15dc346f427ed69042954a675f",
     "semantic_hash": ""
   },
   "rh/admissao.html": {
-    "mtime": 1786910527.0399609,
-    "ast_hash": "31ba2d956bdeffd7fb7ef97392db1538",
+    "mtime": 1786924874.0140393,
+    "ast_hash": "712a3c699a2882984f6a1906a8b8feb6",
     "semantic_hash": ""
   },
   "rh/dashboard.html": {
-    "mtime": 1786910527.047207,
-    "ast_hash": "a2ffa49c7ae747b45b5a3a0715ed7a0f",
+    "mtime": 1786924904.620384,
+    "ast_hash": "24eafecb2e18eea21a43f0fa69634bf1",
     "semantic_hash": ""
   },
   "rh/desligamento.html": {
-    "mtime": 1786910527.047207,
-    "ast_hash": "c4cf203e21e0b3cd829e1ccce9153bc2",
+    "mtime": 1786924943.6008973,
+    "ast_hash": "5e609ad8fabbf73548b9621af431bb97",
     "semantic_hash": ""
   },
   "rh/participacoes.html": {
-    "mtime": 1786910527.051572,
-    "ast_hash": "8a92ec9c98d03d807ae1cbdff98f29ae",
+    "mtime": 1786924844.5045562,
+    "ast_hash": "bfd0c00f9986679e74d33253f708885f",
     "semantic_hash": ""
   },
   "andamento.md": {
-    "mtime": 1786910594.830652,
-    "ast_hash": "7e8b2a8a238f79283d6efe9ad3b4de33",
+    "mtime": 1786911632.0790663,
+    "ast_hash": "a50d983d1aafb3a94f1c557c1109c645",
     "semantic_hash": ""
   },
   "vendas/CLAUDE.md": {
@@ -515,8 +515,8 @@
     "semantic_hash": ""
   },
   "vendas/televendas.html": {
-    "mtime": 1786910581.9664826,
-    "ast_hash": "b3e380ea8c15ecd0f823dc5b0019e101",
+    "mtime": 1786912772.0746386,
+    "ast_hash": "38c3842a966a5fe9e408f07fcd8508e1",
     "semantic_hash": ""
   },
   "gamificacao/equipe.html": {
@@ -525,13 +525,128 @@
     "semantic_hash": ""
   },
   "gamificacao/professor.html": {
-    "mtime": 1786910527.0372424,
-    "ast_hash": "0015a90066ffb85d7bd3cf92a8cd23aa",
+    "mtime": 1786925283.5635462,
+    "ast_hash": "0d4c43d2dd9f8aa0718313d34973ea60",
     "semantic_hash": ""
   },
   "rh/recursos-humanos.md": {
     "mtime": 1786907699.9080403,
     "ast_hash": "8791f86094c5e2d4e3ba8c56f32a00e1",
+    "semantic_hash": ""
+  },
+  "gamificacao/config-sessao.html": {
+    "mtime": 1786910747.7294643,
+    "ast_hash": "11c7007df45779cc65c1cb20425cce93",
+    "semantic_hash": ""
+  },
+  "gamificacao/placar.html": {
+    "mtime": 1786910640.9007373,
+    "ast_hash": "c8e21d76bc5c28a031f26a0539157757",
+    "semantic_hash": ""
+  },
+  "rh/andamento.md": {
+    "mtime": 1786925471.2967422,
+    "ast_hash": "ee5eb9f61aa5ec6f8ef4211c2924dbe4",
+    "semantic_hash": ""
+  },
+  "gamificacao/andamento.md": {
+    "mtime": 1786925300.3765507,
+    "ast_hash": "752f174934fc830e6ab83d7ee29d0ea3",
+    "semantic_hash": ""
+  },
+  "cadastros/andamento.md": {
+    "mtime": 1786925438.482725,
+    "ast_hash": "be8dd30d08a29f1ef9080ebd5175a57e",
+    "semantic_hash": ""
+  },
+  "compras/andamento.md": {
+    "mtime": 1786925446.988788,
+    "ast_hash": "76133fda2324126fbe69b56589ead9e6",
+    "semantic_hash": ""
+  },
+  "estoque/andamento.md": {
+    "mtime": 1786925594.0323954,
+    "ast_hash": "fdc8667b3c689231c913b4233cbf70b5",
+    "semantic_hash": ""
+  },
+  "configuracoes/andamento.md": {
+    "mtime": 1786925475.7426367,
+    "ast_hash": "e03ad3f77929739408b68818e9a9cbca",
+    "semantic_hash": ""
+  },
+  "financeiro/andamento.md": {
+    "mtime": 1786925463.8468988,
+    "ast_hash": "710a5db95e0cb443f07508e4cd4f1062",
+    "semantic_hash": ""
+  },
+  "marketing/andamento.md": {
+    "mtime": 1786925555.7039773,
+    "ast_hash": "f8078ad0119f2b100d481a6e3685f8dc",
+    "semantic_hash": ""
+  },
+  "vendas/andamento.md": {
+    "mtime": 1786925559.5822735,
+    "ast_hash": "de8ae5be4022ae5be0cbb99a0e67a263",
+    "semantic_hash": ""
+  },
+  "gamificacao/LISTA-PENDENCIAS-GAMIFICACAO.txt": {
+    "mtime": 1786913059.0428257,
+    "ast_hash": "110fc59ae8f888272dbf8d4e20e613f8",
+    "semantic_hash": ""
+  },
+  "cadastros/CLAUDE.md": {
+    "mtime": 1786925072.8155048,
+    "ast_hash": "8b27e1c72e889cac6f6fe117e25eb560",
+    "semantic_hash": ""
+  },
+  "compras/CLAUDE.md": {
+    "mtime": 1786925104.3407116,
+    "ast_hash": "ffc71a89a480a701b82af0a046c22614",
+    "semantic_hash": ""
+  },
+  "estoque/CLAUDE.md": {
+    "mtime": 1786925120.853387,
+    "ast_hash": "a541e06a21da600ed33aa8bda1f297e2",
+    "semantic_hash": ""
+  },
+  "financeiro/CLAUDE.md": {
+    "mtime": 1786925139.199816,
+    "ast_hash": "eea25ad660c3289ff8c6265a7747cfd6",
+    "semantic_hash": ""
+  },
+  "marketing/CLAUDE.md": {
+    "mtime": 1786925153.1424482,
+    "ast_hash": "2edda8f96631ae6ac6fc9a475d0063b4",
+    "semantic_hash": ""
+  },
+  "rh/progressao-desempenho.html": {
+    "mtime": 1786925261.4527044,
+    "ast_hash": "52b39c38ac8041d23e82718e4403e250",
+    "semantic_hash": ""
+  },
+  "rh/vinculo-beneficios.html": {
+    "mtime": 1786925044.379531,
+    "ast_hash": "2d33c2f74a0c88f785629845e548c905",
+    "semantic_hash": ""
+  },
+  "configuracoes/CLAUDE.md": {
+    "mtime": 1786925334.9141028,
+    "ast_hash": "59c01e87b29e9a2ea603b4174cf77c43",
+    "semantic_hash": ""
+  },
+  "gamificacao/CLAUDE.md": {
+    "mtime": 1786925368.9493916,
+    "ast_hash": "26f3b73a67783fab94e9097ab6c2ca58",
+    "semantic_hash": ""
+  },
+  "rh/CLAUDE.md": {
+    "mtime": 1786925422.7180502,
+    "ast_hash": "b53e774aeac805af384a122733c72f58",
+    "semantic_hash": ""
+  },
+  "rh/avaliacao-desempenho.html": {
+    "mtime": 1786925387.1532133,
+    "ast_hash": "9fd90144b8359561fffecd75ccbba30d",
     "semantic_hash": ""
   }
 }

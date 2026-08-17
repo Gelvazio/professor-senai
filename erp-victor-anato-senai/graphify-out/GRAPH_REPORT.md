@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-16)
 
 ## Corpus Check
-- 48 files · ~598,460 words
+- 65 files · ~625,479 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 922 nodes · 934 edges · 48 communities (46 shown, 2 thin omitted)
+- 1201 nodes · 1198 edges · 66 communities (64 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `34cf9353`
+- Built from commit: `beee8d13`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -50,6 +50,24 @@
 - [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
 - [[_COMMUNITY_Community 47|Community 47]]
+- [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Community 50|Community 50]]
+- [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -69,11 +87,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (48 total, 2 thin omitted)
+## Communities (66 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.08
-Nodes (32): fetchComTimeout(), HEADERS, HEADERS_READ, Numerar, sbAtualizar(), sbBindEstadoCidade(), sbBuscar(), sbCarregarCidades() (+24 more)
+Cohesion: 0.07
+Nodes (37): fetchComTimeout(), HEADERS, HEADERS_READ, Numerar, _SB_AND_MODULOS, sbAbrirAndamento(), sbAtualizar(), sbBindEstadoCidade() (+29 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.02
@@ -203,8 +221,80 @@ Nodes (38): 10. Telas do Módulo, 11.1 Tabelas com Nomenclatura Definitiva, 11. 
 Cohesion: 0.50
 Nodes (3): Andamento — Módulo Tele Vendas, Legenda, Tarefas
 
+### Community 48 - "Community 48"
+Cohesion: 0.06
+Nodes (32): 2.1 Departamentos, 2.2 Cargos, 2.3 Funcionários, 2.4 Benefícios Cadastrados, 3.1 Jornadas de Trabalho, 3.2 Registros de Ponto, 3.3 Apuração de Ponto (Painel), 4.1 Competências (Períodos de Folha) (+24 more)
+
+### Community 49 - "Community 49"
+Cohesion: 0.06
+Nodes (33): 10. JavaScript Compartilhado (`gamif.js`), 11.1 Estrutura da Tabela `televendas` (já existente), 11.2 Painel de Controle do Agente (UI no `professor.html`), 11.3 Lógica JavaScript do Agente, 11.4 Fluxo Completo (Passo a Passo), 11.5 Modos de Produto, 11.6 `id_chave` como Rastreador de Sessão, 11.7 Novo Tipo de Evento no Motor (+25 more)
+
+### Community 50 - "Community 50"
+Cohesion: 0.25
+Nodes (8): 7.1 Telas do Módulo, 7.2 Numeração Automática, 7.3 Tabelas no Supabase (RH), 7.4 Sistema e Telas no Banco, 7.5 Sidebar HTML (RH), 7.6 sistema.json — adicionar entrada, Fluxo do Módulo de RH, Módulo 7 — RECURSOS HUMANOS
+
+### Community 51 - "Community 51"
+Cohesion: 0.29
+Nodes (6): Andamento — Módulo Compras, Banco de Dados (Supabase), Fluxo, Funcionalidades Especiais, Observações, Telas
+
+### Community 52 - "Community 52"
+Cohesion: 0.33
+Nodes (5): Andamento — Módulo Cadastros, Banco de Dados (Supabase), Integrações, Observações, Telas
+
+### Community 53 - "Community 53"
+Cohesion: 0.33
+Nodes (5): Andamento — Módulo Estoque, Banco de Dados (Supabase), Funcionalidades Especiais, Observações, Telas
+
+### Community 54 - "Community 54"
+Cohesion: 0.33
+Nodes (5): Andamento — Módulo Configurações, Banco de Dados (Supabase), Infraestrutura Global (SUPABASE.js), Observações, Telas
+
+### Community 55 - "Community 55"
+Cohesion: 0.29
+Nodes (6): Andamento — Módulo Vendas e Logística, Banco de Dados (Supabase), Fluxo, Funcionalidades Especiais, Observações, Telas
+
+### Community 56 - "Community 56"
+Cohesion: 0.33
+Nodes (5): Andamento — Módulo Financeiro, Banco de Dados (Supabase), Funcionalidades Especiais, Observações, Telas
+
+### Community 57 - "Community 57"
+Cohesion: 0.33
+Nodes (5): Andamento — Módulo Marketing, Banco de Dados (Supabase), Funcionalidades Especiais, Observações, Telas
+
+### Community 58 - "Community 58"
+Cohesion: 0.08
+Nodes (23): 1. Planejamento (`planejamento.html`), 2. Solicitações de Compras (`solicitacoes.html`), 3. Pedidos de Compras (`pedidos.html`), 4. Recebimento (`recebimento.html`), 5. Conferência (`conferencia.html`), 6. Entrada de Nota Fiscal (`nota-fiscal.html`), Ação Especial, Campos (+15 more)
+
+### Community 59 - "Community 59"
+Cohesion: 0.10
+Nodes (19): 1. Clientes (`clientes.html`), 2. Fornecedores (`fornecedores.html`), 3. Produtos (`produtos.html`), 4. Transportadoras (`transportadoras.html`), Campos, Campos, Campos, Campos (+11 more)
+
+### Community 60 - "Community 60"
+Cohesion: 0.14
+Nodes (13): 1. Controle de Estoque (`controle.html`), 2. Movimentações (`movimentacoes.html`), 3. Armazenagem (`armazenagem.html`), 4. Inventário (`inventario.html`), Campos, Campos, Campos, Funcionalidade (+5 more)
+
+### Community 61 - "Community 61"
+Cohesion: 0.14
+Nodes (13): 1. Contas a Pagar (`contas-pagar.html`), 2. Contas a Receber (`contas-receber.html`), 3. Balancete Gerencial (`balancete.html`), 4. Análise de Crédito (`analisecredito.html`), Campos, Campos, Funcionalidade, Funcionalidade (+5 more)
+
+### Community 62 - "Community 62"
+Cohesion: 0.18
+Nodes (10): 1. Campanhas (`campanhas.html`), 2. Retornos (`retornos.html`), Campos, Campos, Módulo Marketing — Referência de Desenvolvimento, Numeração Automática, Regras de Negócio, Regras de Negócio (+2 more)
+
+### Community 63 - "Community 63"
+Cohesion: 0.10
+Nodes (20): 1. Hub do Usuário (`index.html`), 2. Ranking (`ranking.html`), 3. Dashboard do Professor (`professor.html`), 4. Minha Equipe (`equipe.html`), 5. Placar (`placar.html`), 6. Config Sessão (`config-sessao.html`), 7. Admin (`admin.html`), Campos (+12 more)
+
+### Community 64 - "Community 64"
+Cohesion: 0.11
+Nodes (17): 1. Usuários (`usuarios.html`), 2. Perfis (`perfis.html`), 3. Telas (`telas.html`), 4. Regras de Negócio (`regras-negocios.html`), Autenticação, Campos, Campos, Campos (+9 more)
+
+### Community 65 - "Community 65"
+Cohesion: 0.06
+Nodes (32): 10. 13º Salário (`decimo-terceiro.html`), 11. Férias (`ferias.html`), 12. Afastamentos (`afastamentos.html`), 13. Treinamentos (`treinamentos.html`), 14. Participações (`participacoes.html`), 15. Admissão (`admissao.html`), 16. Desligamento (`desligamento.html`), 1. Dashboard RH (`dashboard.html`) (+24 more)
+
 ## Knowledge Gaps
-- **769 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `Tasks`, `Graphify — Atualização obrigatória após cada tarefa` (+764 more)
+- **957 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Tasks` (+952 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -212,9 +302,9 @@ Nodes (3): Andamento — Módulo Tele Vendas, Legenda, Tarefas
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _769 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _957 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.08048780487804878 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07053140096618357 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.020618556701030927 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
