@@ -1,17 +1,17 @@
 # Andamento — Módulo Cadastros
 
-Arquivo de rastreamento de tarefas do módulo de Cadastros.
+> Módulo base do sistema. Atualizado em: 2026-08-16
 
 ---
 
 ## Telas
 
-| # | Tela | Status | Observação |
-|---|------|--------|------------|
-| 1 | `cadastros/clientes.html` | ✅ Concluído | CRUD completo com validação CPF/CNPJ e ViaCEP |
-| 2 | `cadastros/fornecedores.html` | ✅ Concluído | CRUD completo com validação CNPJ |
-| 3 | `cadastros/produtos.html` | ✅ Concluído | CRUD com upload de imagem e alertas de estoque |
-| 4 | `cadastros/transportadoras.html` | ✅ Concluído | CRUD completo |
+| Tela | Arquivo | Status |
+|------|---------|--------|
+| Clientes | `cadastros/clientes.html` | ✅ Concluído |
+| Fornecedores | `cadastros/fornecedores.html` | ✅ Concluído |
+| Produtos | `cadastros/produtos.html` | ✅ Concluído |
+| Transportadoras | `cadastros/transportadoras.html` | ✅ Concluído |
 
 ---
 
@@ -19,15 +19,25 @@ Arquivo de rastreamento de tarefas do módulo de Cadastros.
 
 | Tabela | Status |
 |--------|--------|
-| `clientes` | ✅ Criada |
-| `fornecedores` | ✅ Criada |
-| `produtos` | ✅ Criada |
-| `transportadoras` | ✅ Criada |
+| `clientes` | ❌ A criar |
+| `fornecedores` | ❌ A criar |
+| `produtos` | ❌ A criar |
+| `transportadoras` | ❌ A criar |
 
 ---
 
-## Legenda
+## Integrações
 
-- ✅ Concluído
-- 🔄 Em andamento
-- ❌ Não iniciado
+| Integração | Status |
+|------------|--------|
+| ViaCEP (autopreenchimento CEP) | ❌ A implementar |
+| Validação CPF/CNPJ | ❌ A implementar |
+| Soft delete (ativo/inativo filtrando selects) | ❌ A implementar |
+| Upload de imagem de produto | ❌ A implementar |
+
+---
+
+## Observações
+
+- Telas existem e renderizam corretamente.
+- Integração com Supabase pendente — dados estão em mock local.

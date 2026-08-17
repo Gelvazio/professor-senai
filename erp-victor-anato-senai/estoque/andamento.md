@@ -1,17 +1,17 @@
 # Andamento — Módulo Estoque
 
-Arquivo de rastreamento de tarefas do módulo de Estoque.
+> Controle de armazenagem, movimentações e inventário. Atualizado em: 2026-08-16
 
 ---
 
 ## Telas
 
-| # | Tela | Status | Observação |
-|---|------|--------|------------|
-| 1 | `estoque/controle.html` | ✅ Concluído | Painel com indicadores de status (Normal/Atenção/Crítico) |
-| 2 | `estoque/movimentacoes.html` | ✅ Concluído | CRUD com numeração MV00001 |
-| 3 | `estoque/armazenagem.html` | ✅ Concluído | CRUD completo |
-| 4 | `estoque/inventario.html` | ✅ Concluído | CRUD com numeração INV00001 e ajuste automático |
+| Tela | Arquivo | Status |
+|------|---------|--------|
+| Controle de Estoque | `estoque/controle.html` | ✅ Concluído |
+| Movimentações | `estoque/movimentacoes.html` | ✅ Concluído |
+| Armazenagem | `estoque/armazenagem.html` | ✅ Concluído |
+| Inventário | `estoque/inventario.html` | ✅ Concluído |
 
 ---
 
@@ -19,13 +19,22 @@ Arquivo de rastreamento de tarefas do módulo de Estoque.
 
 | Tabela | Status |
 |--------|--------|
-| `estoque_movimentacoes` | ❌ A criar |
-| `estoque_inventarios` | ❌ A criar |
+| `estoque_movimentacoes` | ✅ Criada |
+| `estoque_inventarios` | ✅ Criada |
 
 ---
 
-## Legenda
+## Funcionalidades Especiais
 
-- ✅ Concluído
-- 🔄 Em andamento
-- ❌ Não iniciado
+| Funcionalidade | Status |
+|----------------|--------|
+| Indicadores de status (🟢🟡🔴) no Controle | ❌ A implementar |
+| Geração automática de movimentação ao ajustar inventário | ❌ A implementar |
+| Atualização de `estoque_atual` via movimentações | ❌ A implementar |
+
+---
+
+## Observações
+
+- Todas as telas existem e renderizam corretamente.
+- O painel de Controle de Estoque lê dados de `produtos` — depende do módulo Cadastros estar integrado.
