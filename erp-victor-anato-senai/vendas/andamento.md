@@ -1,6 +1,6 @@
 # Andamento — Módulo Vendas e Logística
 
-Arquivo de rastreamento de tarefas do módulo de Vendas e Logística.
+> Ciclo completo de vendas. Atualizado em: 2026-08-16
 
 ---
 
@@ -14,35 +14,47 @@ Pedido de Venda → NF Venda → Separação → Romaneio → Expedição → En
 
 ## Telas
 
-| # | Tela | Status | Observação |
-|---|------|--------|------------|
-| 1 | `vendas/pedidos-venda.html` | ✅ Concluído | CRUD com numeração PV00001 |
-| 2 | `vendas/nota-fiscal-venda.html` | ✅ Concluído | CRUD completo com campos fiscais |
-| 3 | `vendas/televendas.html` | ✅ Concluído | CRUD com pipeline de status |
-| 4 | `vendas/logistica.html` | ✅ Concluído | Painel pipeline logístico |
-| 5 | `vendas/separacao.html` | ✅ Concluído | CRUD com numeração SEP00001 |
-| 6 | `vendas/romaneio.html` | ✅ Concluído | CRUD com numeração ROM00001 |
-| 7 | `vendas/expedicao.html` | ✅ Concluído | CRUD com numeração EXP00001 |
-| 8 | `vendas/entrega.html` | ✅ Concluído | CRUD com numeração ENT00001 |
+| Tela | Arquivo | Status |
+|------|---------|--------|
+| Pedidos de Venda | `vendas/pedidos-venda.html` | ✅ Concluído |
+| Nota Fiscal de Venda | `vendas/nota-fiscal-venda.html` | ✅ Concluído |
+| Separação (Picking) | `vendas/separacao.html` | ✅ Concluído |
+| Romaneio | `vendas/romaneio.html` | ✅ Concluído |
+| Expedição | `vendas/expedicao.html` | ✅ Concluído |
+| Entrega | `vendas/entrega.html` | ✅ Concluído |
+| Tele Vendas | `vendas/televendas.html` | ✅ Concluído |
+| Logística | `vendas/logistica.html` | ✅ Concluído |
 
 ---
 
 ## Banco de Dados (Supabase)
 
-| Tabela | Status |
-|--------|--------|
-| `vendas_pedidos` | ❌ A criar |
-| `vendas_notas_fiscais` | ❌ A criar |
-| `vendas_separacoes` | ❌ A criar |
-| `vendas_romaneios` | ❌ A criar |
-| `vendas_expedicoes` | ❌ A criar |
-| `vendas_entregas` | ❌ A criar |
-| `televendas` | ❌ A criar |
+| Tabela | Status | Obs |
+|--------|--------|-----|
+| `vendas_pedidos` | ✅ Criada | Inclui coluna `etapa` (default: 'Pedido de Venda') |
+| `vendas_notas_fiscais` | ✅ Criada | — |
+| `vendas_separacoes` | ✅ Criada | — |
+| `vendas_romaneios` | ✅ Criada | — |
+| `vendas_expedicoes` | ✅ Criada | — |
+| `vendas_entregas` | ✅ Criada | — |
+| `televendas` | ✅ Criada | 10 registros de teste |
 
 ---
 
-## Legenda
+## Funcionalidades Especiais
 
-- ✅ Concluído
-- 🔄 Em andamento
-- ❌ Não iniciado
+| Funcionalidade | Status |
+|----------------|--------|
+| Verificação de estoque ao confirmar PV | ❌ A implementar |
+| Múltiplos produtos por pedido | ❌ A implementar |
+| Baixa automática de estoque na Expedição | ❌ A implementar |
+| Rastreamento de entrega por código | ❌ A implementar |
+
+---
+
+## Observações
+
+- Todas as 8 telas existem e renderizam corretamente.
+- `televendas.html` tem spec de tabela própria (ver `vendas/CLAUDE.md`).
+- Todas as tabelas no Supabase já foram criadas com dados de teste.
+- `logistica.html` usa campo `etapa` da tabela `vendas_pedidos` para controlar o pipeline.
