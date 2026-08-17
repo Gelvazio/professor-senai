@@ -97,6 +97,7 @@
     </div>
     <div class="sidebar-section">
       <div class="sidebar-section-label">Compras</div>
+      <a class="sidebar-link" href="pipeline.html"><span class="sidebar-icon">🗺️</span> Pipeline</a>
       <a class="sidebar-link ativo" href="planejamento.html"><span class="sidebar-icon">📋</span> Planejamento</a>
       <a class="sidebar-link" href="solicitacoes.html"><span class="sidebar-icon">📝</span> Solicitações</a>
       <a class="sidebar-link" href="pedidos.html"><span class="sidebar-icon">🛒</span> Pedidos</a>
@@ -322,6 +323,7 @@
   let registros = [];
   let idParaExcluir = null;
   let produtosMap = {};
+  let produtosUnidadeMap = {};
 
   async function carregar() {
     try {
@@ -413,9 +415,37 @@
     document.getElementById('modalOverlay').classList.add('show');
   }
 
+  async function proximoNumeroSC() {
+    const rows = await sbListar('compras_solicitacoes', 'select=numero&order=numero.desc&limit=1');
+    const ultimo = rows.length ? parseInt(rows[0].numero.replace('SC', '')) : 0;
+    return 'SC' + String(ultimo + 1).padStart(5, '0');
+  }
+
+  async function criarSolicitacaoAutomatica(planej) {
+    if (!planej.produto_id) return null;
+    const numero = await proximoNumeroSC();
+    const sc = {
+      numero,
+      produto_id:  planej.produto_id,
+      quantidade:  planej.qtd_planejada || 0,
+      unidade:     produtosUnidadeMap[planej.produto_id] || '',
+      solicitante: localStorage.getItem('erp_user_nome') || 'Sistema',
+      prioridade:  'Média',
+      status:      'Pendente',
+      data:        new Date().toISOString().split('T')[0],
+      observacoes: `Gerada automaticamente pelo planejamento: ${planej.titulo}`,
+    };
+    await sbInserir('compras_solicitacoes', sc);
+    return numero;
+  }
+
   async function salvar() {
     const titulo = document.getElementById('fTitulo').value.trim();
     if (!titulo) { sbMensagem('msgModal', 'O título é obrigatório.', 'err'); return; }
+
+    const novoStatus = document.getElementById('fStatus').value;
+    const id = document.getElementById('fId').value;
+    const statusAnterior = id ? (registros.find(x => x.id === id)?.status || '') : '';
 
     const dados = {
       titulo,
@@ -424,20 +454,35 @@
       periodo:       document.getElementById('fPeriodo').value || null,
       qtd_planejada: document.getElementById('fQtdPlanejada').value ? parseFloat(document.getElementById('fQtdPlanejada').value) : null,
       qtd_realizada: document.getElementById('fQtdRealizada').value ? parseFloat(document.getElementById('fQtdRealizada').value) : null,
-      status:        document.getElementById('fStatus').value,
+      status:        novoStatus,
       data:          document.getElementById('fData').value || null,
       observacoes:   document.getElementById('fObs').value || null,
     };
 
     try {
-      const id = document.getElementById('fId').value;
       if (id) {
         await sbAtualizar('compras_planejamento', id, dados);
       } else {
         await sbInserir('compras_planejamento', dados);
       }
       fecharModal();
-      sbMensagem('msgCrud', 'Planejamento salvo com sucesso!', 'ok');
+
+      const concluindo = novoStatus === 'Concluído' && statusAnterior !== 'Concluído';
+      if (concluindo) {
+        try {
+          const numSC = await criarSolicitacaoAutomatica(dados);
+          if (numSC) {
+            sbMensagem('msgCrud', `Planejamento concluído! Solicitação ${numSC} criada automaticamente.`, 'ok');
+          } else {
+            sbMensagem('msgCrud', 'Planejamento concluído. Nenhum produto vinculado — solicitação não gerada.', 'warn');
+          }
+        } catch (eSC) {
+          sbMensagem('msgCrud', 'Planejamento salvo, mas erro ao criar solicitação: ' + eSC.message, 'warn');
+        }
+      } else {
+        sbMensagem('msgCrud', 'Planejamento salvo com sucesso!', 'ok');
+      }
+
       await carregar();
     } catch (e) {
       sbMensagem('msgModal', 'Erro ao salvar: ' + e.message, 'err');
@@ -473,8 +518,8 @@
     await sbPopularSelect('selProduto', 'produtos', 'ativo=eq.true&order=nome.asc&select=id,nome');
     // Montar mapa produto_id → nome para a tabela
     try {
-      const prods = await sbListar('produtos', 'select=id,nome&ativo=eq.true');
-      prods.forEach(p => { produtosMap[p.id] = p.nome; });
+      const prods = await sbListar('produtos', 'select=id,nome,unidade&ativo=eq.true');
+      prods.forEach(p => { produtosMap[p.id] = p.nome; produtosUnidadeMap[p.id] = p.unidade; });
     } catch {}
     await carregar();
   }
