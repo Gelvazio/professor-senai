@@ -35,23 +35,23 @@
     "semantic_hash": ""
   },
   "compras/pedidos.html": {
-    "mtime": 1786965596.4455156,
-    "ast_hash": "88594ea241c26ed1ce02c90aeea8da8d",
+    "mtime": 1786967421.5839386,
+    "ast_hash": "2c8ebd2952a7203f91ea35130c8f38f8",
     "semantic_hash": ""
   },
   "compras/planejamento.html": {
-    "mtime": 1786965596.59976,
-    "ast_hash": "c2d6bf6ea0e58762d4047320779764f3",
+    "mtime": 1786967852.7784102,
+    "ast_hash": "f99b4f63ac9dfbbe6271cea26c2ff582",
     "semantic_hash": ""
   },
   "compras/solicitacoes.html": {
-    "mtime": 1786965596.917949,
-    "ast_hash": "b917633dbca119cf693abcbe7605f020",
+    "mtime": 1786967419.1706686,
+    "ast_hash": "048b249066200fc3b52e69836280002e",
     "semantic_hash": ""
   },
   "configuracoes/usuarios.html": {
-    "mtime": 1786966770.7026908,
-    "ast_hash": "a3ce59cbee3de27bce7cd44ad2d7a019",
+    "mtime": 1786967779.093815,
+    "ast_hash": "0e5e2e0c8185494b3a782012e7b08f1e",
     "semantic_hash": ""
   },
   "estoque/controle.html": {
@@ -80,13 +80,13 @@
     "semantic_hash": ""
   },
   "compras/conferencia.html": {
-    "mtime": 1786965596.0651493,
-    "ast_hash": "3b6fad12cbc1186e2c2c32cb4b1932bb",
+    "mtime": 1786967461.5940459,
+    "ast_hash": "4c5384ff7ca6e7f993a0673a6232dbaa",
     "semantic_hash": ""
   },
   "compras/recebimento.html": {
-    "mtime": 1786965596.7733066,
-    "ast_hash": "d676779417af5f7a05d117cac0ab5592",
+    "mtime": 1786967456.8728716,
+    "ast_hash": "6779da77ce57e50fbb946d722d8ea4e3",
     "semantic_hash": ""
   },
   "estoque/armazenagem.html": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "compras/nota-fiscal.html": {
-    "mtime": 1786965596.258547,
-    "ast_hash": "30a79df88f4c633206be22d72609cae7",
+    "mtime": 1786967466.024867,
+    "ast_hash": "5753af30ebf1376aadc7962e032eccf2",
     "semantic_hash": ""
   },
   "criar-admin.html": {
@@ -185,7 +185,7 @@
     "semantic_hash": ""
   },
   "vendas/logistica.html": {
-    "mtime": 1786965603.100624,
+    "mtime": 1786967151.5597878,
     "ast_hash": "8f9453f9872d1723783fdd5f7ff8e7ae",
     "semantic_hash": ""
   },
@@ -360,8 +360,8 @@
     "semantic_hash": ""
   },
   "gamificacao/admin.html": {
-    "mtime": 1786965598.6713748,
-    "ast_hash": "6365c54a848ca099dc4a24591c209910",
+    "mtime": 1786967712.3505962,
+    "ast_hash": "56fab09ca0b649788ec3e007241943bc",
     "semantic_hash": ""
   },
   "REGRAS-NEGOCIOS/Assist. de PCP_436h_Pr\u00e1tica Profissional_41a56ba3.md": {
@@ -662,6 +662,11 @@
   "favicon.svg": {
     "mtime": 1786965060.1413298,
     "ast_hash": "aa8734750a089d173e96c1746e22c6e9",
+    "semantic_hash": ""
+  },
+  "compras/pipeline.html": {
+    "mtime": 1786967392.5127242,
+    "ast_hash": "5a35818990d9aa5a38c1aa917917492e",
     "semantic_hash": ""
   }
 }
