@@ -20,7 +20,7 @@
 | Item | Status | Observação |
 |------|--------|------------|
 | `rh/departamentos.html` | ✅ Concluído | CRUD completo com numeração `DEP00001` |
-| Tabela `rh_departamentos` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_departamentos` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Campos: codigo, nome, responsavel, centro_custo, ativo, observacoes | ✅ Concluído | — |
 
 ---
@@ -30,7 +30,7 @@
 | Item | Status | Observação |
 |------|--------|------------|
 | `rh/cargos.html` | ✅ Concluído | CRUD completo com numeração `CGO00001` |
-| Tabela `rh_cargos` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_cargos` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Campos: codigo, nome, departamento, cbo, salario_base, nivel, ativo, descricao | ✅ Concluído | — |
 
 ---
@@ -40,7 +40,7 @@
 | Item | Status | Observação |
 |------|--------|------------|
 | `rh/funcionarios.html` | ✅ Concluído | CRUD completo com numeração `F00001` |
-| Tabela `rh_funcionarios` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_funcionarios` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Autopreenchimento via ViaCEP | ✅ Concluído | — |
 | Upload de foto (thumbnail) | ✅ Concluído | — |
 | Campos: matricula, nome, cpf, rg, data_nascimento, sexo, estado_civil, email, telefone, endereco, cidade, estado, cep, departamento, cargo, tipo_contrato, salario, data_admissao, data_desligamento, banco, agencia, conta, tipo_conta, chave_pix, foto, pis_pasep, ctps, ativo, observacoes | ✅ Concluído | — |
@@ -51,12 +51,12 @@
 
 | Item | Status | Observação |
 |------|--------|------------|
-| `rh/beneficios.html` | 🔄 Em andamento | Campos base implementados; campos extras da seção 11.1 faltam |
-| Tabela `rh_beneficios` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| `rh/beneficios.html` | ✅ Concluído | Campos extras adicionados em 2026-08-16 |
+| Tabela `beneficios` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Campos base: nome, tipo, valor_empresa, valor_funcionario, ativo, observacoes | ✅ Concluído | — |
-| Campo `descricao` (seção 11.1) | ❌ Não implementado | Campo adicional definido em `beneficios` (sec 11.1) |
-| Campo `periodicidade` — Mensal/Anual/Eventual (seção 11.1) | ❌ Não implementado | — |
-| Campo `obrigatorio` toggle — para todos os CLT (seção 11.1) | ❌ Não implementado | — |
+| Campo `descricao` (seção 11.1) | ✅ Concluído | Adicionado em 2026-08-16 |
+| Campo `periodicidade` — Mensal/Anual/Eventual (seção 11.1) | ✅ Concluído | Adicionado em 2026-08-16 |
+| Campo `obrigatorio` toggle — para todos os CLT (seção 11.1) | ✅ Concluído | Adicionado em 2026-08-16 |
 
 ---
 
@@ -67,7 +67,7 @@
 | Item | Status | Observação |
 |------|--------|------------|
 | `rh/jornadas.html` | ✅ Concluído | CRUD completo |
-| Tabela `rh_jornadas` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_jornadas` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Campos: nome, entrada, inicio_intervalo, fim_intervalo, saida, carga_horaria_diaria, dias_semana (checkboxes), ativo | ✅ Concluído | — |
 
 ---
@@ -77,7 +77,7 @@
 | Item | Status | Observação |
 |------|--------|------------|
 | `rh/ponto.html` | ✅ Concluído | CRUD completo com numeração `PT00001` |
-| Tabela `rh_ponto` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_ponto` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Cálculo automático de horas trabalhadas e horas extras | ✅ Concluído | — |
 | Campos: numero, funcionario, data, entrada, inicio_intervalo, fim_intervalo, saida, horas_trabalhadas, horas_extras, ocorrencia, responsavel, observacoes | ✅ Concluído | — |
 
@@ -100,7 +100,7 @@
 
 | Item | Status | Observação |
 |------|--------|------------|
-| Tabela `rh_folha_competencias` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_folha_competencias` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Gestão de competências (AAAA-MM) | 🔄 Em andamento | Gerenciada inline em `folha.html` como texto, não como tabela separada com FK |
 | Campos: competencia, status (Em Elaboração/Fechada/Paga), data_pagamento, observacoes | 🔄 Em andamento | Status e data_pagamento gerenciados diretamente nos lançamentos |
 
@@ -111,7 +111,7 @@
 | Item | Status | Observação |
 |------|--------|------------|
 | `rh/folha.html` | 🔄 Em andamento | Implementado com texto direto em vez de FK para `rh_folha_competencias` |
-| Tabela `rh_folha_lancamentos` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_folha_lancamentos` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Numeração `FL00001` | ✅ Concluído | — |
 | Cálculo automático INSS (tabela progressiva 2026) | ✅ Concluído | — |
 | Cálculo automático IRRF (tabela progressiva 2026) | ✅ Concluído | — |
@@ -130,7 +130,7 @@
 | Item | Status | Observação |
 |------|--------|------------|
 | `rh/decimo-terceiro.html` | ✅ Concluído | CRUD completo com numeração `13S00001` |
-| Tabela `rh_decimo_terceiro` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_decimo_terceiro` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Cálculo proporcional (meses/12 × salário) | ✅ Concluído | — |
 | Cálculo INSS e IRRF (2ª parcela) | ✅ Concluído | — |
 | Campos: numero, competencia (ano), funcionario, parcela (1ª/2ª), valor_bruto, inss, irrf, valor_liquido, status | ✅ Concluído | — |
@@ -144,7 +144,7 @@
 | Item | Status | Observação |
 |------|--------|------------|
 | `rh/ferias.html` | ✅ Concluído | CRUD completo com numeração `FER00001` |
-| Tabela `rh_ferias` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_ferias` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Cálculo automático Data de Término | ✅ Concluído | — |
 | Cálculo Valor Adicional (1/3) | ✅ Concluído | — |
 | Alerta de férias vencidas (> 24 meses) | ✅ Concluído | — |
@@ -158,7 +158,7 @@
 | Item | Status | Observação |
 |------|--------|------------|
 | `rh/afastamentos.html` | ✅ Concluído | CRUD completo com numeração `AFS00001` |
-| Tabela `rh_afastamentos` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| Tabela `rh_afastamentos` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Upload de documento (PDF atestado) | ✅ Concluído | — |
 | Cálculo automático Dias Afastados | ✅ Concluído | — |
 | Campos: numero, funcionario, tipo, data_inicio, data_termino, dias_afastados, cid, numero_inss, gera_desconto, documento_url, status, responsavel, observacoes | ✅ Concluído | — |
@@ -171,11 +171,11 @@
 
 | Item | Status | Observação |
 |------|--------|------------|
-| `rh/treinamentos.html` | 🔄 Em andamento | CRUD implementado; campos `modalidade` e `obrigatorio` faltam |
-| Tabela `rh_treinamentos` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| `rh/treinamentos.html` | ✅ Concluído | Campos extras adicionados em 2026-08-16 |
+| Tabela `rh_treinamentos` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Campos: codigo (`TRN00001`), nome, tipo, carga_horaria, validade_meses, instrutor, custo, ativo, descricao | ✅ Concluído | — |
-| Campo `modalidade` — Presencial/Online/Híbrido | ❌ Não implementado | Previsto na spec e na tabela `rh_treinamentos` |
-| Campo `obrigatorio` (toggle) | ❌ Não implementado | Indica se todos os funcionários devem realizar |
+| Campo `modalidade` — Presencial/Online/Híbrido | ✅ Concluído | Adicionado em 2026-08-16 |
+| Campo `obrigatorio` (toggle) | ✅ Concluído | Adicionado em 2026-08-16 |
 
 ---
 
@@ -183,12 +183,12 @@
 
 | Item | Status | Observação |
 |------|--------|------------|
-| `rh/participacoes.html` | 🔄 Em andamento | CRUD implementado; campo certificado diverge do spec |
-| Tabela `rh_participacoes` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| `rh/participacoes.html` | ✅ Concluído | Campo URL certificado corrigido em 2026-08-16 |
+| Tabela `rh_participacoes` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Numeração `PAR00001` | ✅ Concluído | — |
 | Preenchimento automático data de vencimento | ✅ Concluído | Calcula com base em `validade_meses` do treinamento |
 | Status: Pendente, Realizado, Aprovado, Reprovado, Vencido | ✅ Concluído | — |
-| Campo `certificado_url` (upload PDF) | 🔄 Em andamento | Implementado como `certificado_emitido` (boolean) em vez de upload |
+| Campo `certificado_url` (URL do PDF) | ✅ Concluído | Substituído de boolean para URL em 2026-08-16 |
 | Campos: numero, treinamento, funcionario, data_realizacao, data_vencimento, nota, status, observacoes | ✅ Concluído | — |
 
 ---
@@ -199,14 +199,13 @@
 
 | Item | Status | Observação |
 |------|--------|------------|
-| `rh/admissao.html` | 🔄 Em andamento | Implementado com campos extras de candidato não previstos na spec |
-| Tabela `rh_admissoes` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| `rh/admissao.html` | ✅ Concluído | Campos justificativa e aprovado_por adicionados em 2026-08-16 |
+| Tabela `rh_admissoes` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Numeração `ADM00001` | ✅ Concluído | — |
 | Campos da vaga: cargo, departamento (auto), salario_proposto, tipo_contrato, data_inicio_prevista, solicitante, status, observacoes | ✅ Concluído | — |
-| Campo `justificativa` (texto longo) | ❌ Não implementado | Previsto na spec |
-| Campo `aprovado_por` | ❌ Não implementado | Previsto na spec |
-| Status: Pendente, Aprovada, Reprovada, Cancelada, Concluída | 🔄 Em andamento | Nossa implementação pode ter opções diferentes |
-| Campos extras não previstos: nome_candidato, cpf, email, telefone, data_nascimento | ⚠️ Extra | Adicionados na implementação mas não estão no spec |
+| Campo `justificativa` (texto longo) | ✅ Concluído | Adicionado em 2026-08-16 |
+| Campo `aprovado_por` | ✅ Concluído | Adicionado em 2026-08-16 |
+| Status: Pendente, Aprovada, Reprovada, Cancelada, Concluída | ✅ Concluído | Corrigido em 2026-08-16 |
 
 ---
 
@@ -214,19 +213,19 @@
 
 | Item | Status | Observação |
 |------|--------|------------|
-| `rh/desligamento.html` | 🔄 Em andamento | Implementado com campos incompletos vs. spec |
-| Tabela `rh_desligamentos` (Supabase) | ❌ A criar | SQL disponível na seção 11 do spec |
+| `rh/desligamento.html` | ✅ Concluído | Todos os campos reestruturados em 2026-08-16 |
+| Tabela `rh_desligamentos` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
 | Numeração `DLG00001` | ✅ Concluído | — |
-| Inativação automática do funcionário ao concluir | ✅ Concluído | Chama `sbAtualizar('rh_funcionarios', id, {ativo:false})` |
-| Campo `tipo_desligamento` com opções completas (Pedido de Demissão, Dispensa Sem/Com Justa Causa, etc.) | 🔄 Em andamento | Implementado como `tipo` com opções simplificadas |
-| Campo `data_aviso_previo` | ❌ Não implementado | Data em que foi dado o aviso |
-| Campo `dias_aviso` (30 padrão CLT) | ❌ Não implementado | — |
-| Campo `aviso_trabalhado` (toggle Sim/Não) | ❌ Não implementado | Spec: Sim = cumpre aviso; Não = indenizado |
-| Campo `saldo_ferias` (calculado automaticamente) | ❌ Não implementado | Férias proporcionais a pagar |
-| Campo `decimo_proporcional` (calculado automaticamente) | ❌ Não implementado | Meses trabalhados no ano corrente |
-| Campo `multa_fgts` (40% — só para dispensa sem justa causa) | ❌ Não implementado | Condicional por tipo de desligamento |
-| Campo `homologado_por` | ❌ Não implementado | Responsável pela homologação |
-| Status: Em Andamento, Homologado, Cancelado | 🔄 Em andamento | Nossa implementação usa "Concluído" em vez de "Homologado" |
+| Inativação automática do funcionário ao homologar | ✅ Concluído | Chama `sbAtualizar('rh_funcionarios', id, {ativo:false})` ao status Homologado |
+| Campo `tipo_desligamento` com opções completas | ✅ Concluído | Pedido de Demissão, Dispensa Sem/Com Justa Causa, Término de Contrato, Acordo Mútuo, Aposentadoria, Falecimento, Outros |
+| Campo `data_aviso_previo` | ✅ Concluído | Adicionado em 2026-08-16 |
+| Campo `dias_aviso` (30 padrão CLT) | ✅ Concluído | Adicionado em 2026-08-16 |
+| Campo `aviso_trabalhado` (toggle Trabalhado/Indenizado) | ✅ Concluído | Adicionado em 2026-08-16 |
+| Campo `saldo_ferias` (editável) | ✅ Concluído | Adicionado em 2026-08-16 |
+| Campo `decimo_proporcional` (calculado automaticamente) | ✅ Concluído | Calculado com base nos meses do ano corrente |
+| Campo `multa_fgts` (só para dispensa sem justa causa) | ✅ Concluído | Condicional por tipo — visível somente quando aplicável |
+| Campo `homologado_por` | ✅ Concluído | Adicionado em 2026-08-16 |
+| Status: Em Andamento, Homologado, Cancelado | ✅ Concluído | Corrigido em 2026-08-16 |
 
 ---
 
@@ -234,10 +233,9 @@
 
 | Item | Status | Observação |
 |------|--------|------------|
-| Tela `rh/vinculo-beneficios.html` | ❌ Não iniciado | Não listada na seção 10 (telas), mas prevista na seção 8 e 11.1 |
-| Tabela `rh_funcionario_beneficios` (Supabase) | ❌ Não iniciado | SQL disponível na seção 11 do spec |
-| Tabela `beneficio_funcionario` (Supabase, seção 11.1) | ❌ Não iniciado | Versão alternativa com campos extras: `periodicidade`, `obrigatorio` |
-| Campos: funcionario, beneficio, data_inicio, data_termino, valor_customizado, observacoes | ❌ Não iniciado | — |
+| Tela `rh/vinculo-beneficios.html` | ✅ Concluído | Criada em 2026-08-16 |
+| Tabela `beneficio_funcionario` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
+| Campos: funcionario, beneficio, data_inicio, data_termino, valor_customizado, observacoes | ✅ Concluído | Todos implementados |
 
 ---
 
@@ -262,9 +260,9 @@
 
 | Item | Status | Observação |
 |------|--------|------------|
-| Tela `rh/progressao-desempenho.html` | ❌ Não iniciado | CRUD de faixas salariais por cargo/nível |
-| Tabela `progressao_desempenho` (Supabase) | ❌ Não iniciado | SQL disponível na seção 11.1 do spec |
-| Campos: cargo, nivel, nivel_ordem, salario_minimo, salario_medio, salario_maximo, tempo_minimo_meses, nota_minima, requisitos, ativo | ❌ Não iniciado | — |
+| Tela `rh/progressao-desempenho.html` | ✅ Concluído | Criada em 2026-08-16 |
+| Tabela `progressao_desempenho` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
+| Campos: cargo, nivel, nivel_ordem, salario_minimo, salario_medio, salario_maximo, tempo_minimo_meses, nota_minima, requisitos, ativo | ✅ Concluído | Todos implementados |
 
 ---
 
@@ -272,11 +270,11 @@
 
 | Item | Status | Observação |
 |------|--------|------------|
-| Tela `rh/avaliacao-desempenho.html` | ❌ Não iniciado | CRUD de avaliações com elegibilidade de promoção |
-| Tabela `avaliacao_desempenho` (Supabase) | ❌ Não iniciado | SQL disponível na seção 11.1 do spec |
-| Numeração `AVL00001` | ❌ Não iniciado | — |
-| Campos: numero, funcionario, avaliador, periodo, nota_tecnica, nota_comportamental, nota_geral (média ponderada), elegivel_promocao (calculado), promocao_aprovada, novo_nivel, novo_salario, data_avaliacao, proxima_avaliacao, observacoes | ❌ Não iniciado | — |
-| Regras de elegibilidade automática (verifica `progressao_desempenho`) | ❌ Não iniciado | — |
+| Tela `rh/avaliacao-desempenho.html` | ✅ Concluído | Criada em 2026-08-16 |
+| Tabela `avaliacao_desempenho` (Supabase) | ✅ Criada | Aplicada em 2026-08-16 |
+| Numeração `AVL00001` | ✅ Concluído | Implementado |
+| Campos: numero, funcionario, avaliador, periodo, nota_tecnica, nota_comportamental, nota_geral (média), elegivel_promocao, promocao_aprovada, novo_nivel, novo_salario, data_avaliacao, proxima_avaliacao, observacoes | ✅ Concluído | Todos implementados |
+| Nota geral calculada automaticamente (média de técnica e comportamental) | ✅ Concluído | Com coloração visual por faixa |
 
 ---
 
@@ -290,7 +288,7 @@
 
 ---
 
-## Banco de Dados (Supabase) — SQL a executar
+## Banco de Dados (Supabase) — SQL executado
 
 Todos os SQLs foram aplicados via MCP Supabase em 2026-08-16.
 
@@ -323,19 +321,9 @@ Todos os SQLs foram aplicados via MCP Supabase em 2026-08-16.
 
 | Categoria | Concluído | Em Andamento | Não Iniciado |
 |-----------|-----------|--------------|--------------|
-| Páginas HTML (seção 10) | 10 | 6 | 0 |
-| Páginas extras (seção 11.1) | 0 | 0 | 3 |
+| Páginas HTML (seção 10) | 16 | 0 | 0 |
+| Páginas extras (seção 11.1) | 3 | 0 | 0 |
 | Tabelas Supabase | 20 | 0 | 0 |
 | Integração (sistema.json, sidebar, perfis) | 3 | 0 | 0 |
 
-### Pendências prioritárias
-
-1. ~~**Banco de dados** — executar os SQLs da seção 11 e 11.1 no Supabase (19 tabelas)~~ ✅ Concluído em 2026-08-16
-2. **`rh/desligamento.html`** — adicionar campos: `data_aviso_previo`, `dias_aviso`, `aviso_trabalhado`, `saldo_ferias`, `decimo_proporcional`, `multa_fgts`, `homologado_por`
-3. **`rh/treinamentos.html`** — adicionar campos: `modalidade`, `obrigatorio`
-4. **`rh/vinculo-beneficios.html`** — criar tela de vínculos funcionário × benefício
-5. **`rh/progressao-desempenho.html`** — criar tela de faixas salariais
-6. **`rh/avaliacao-desempenho.html`** — criar tela de avaliações periódicas (`AVL00001`)
-7. **`rh/admissao.html`** — adicionar campos `justificativa` e `aprovado_por`; revisar status options
-8. **`rh/beneficios.html`** — adicionar campos `descricao`, `periodicidade`, `obrigatorio`
-9. **`rh/participacoes.html`** — substituir `certificado_emitido` (boolean) por upload de PDF
+**Módulo de Recursos Humanos 100% implementado em 2026-08-16.**

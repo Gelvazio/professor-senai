@@ -91,13 +91,15 @@
           <div class="form-group"><label class="form-label">Código</label><input class="form-input" type="text" id="fCodigo" readonly></div>
           <div class="form-group span-2"><label class="form-label">Nome do Treinamento <span>*</span></label><input class="form-input" type="text" id="fNome" required placeholder="Nome do treinamento"></div>
           <div class="form-group"><label class="form-label">Tipo</label><select class="form-select" id="fTipo"><option value="">— Selecione —</option><option>Interno</option><option>Externo</option><option>Online</option><option>Presencial</option></select></div>
+          <div class="form-group"><label class="form-label">Modalidade</label><select class="form-select" id="fModalidade"><option value="">— Selecione —</option><option>Presencial</option><option>Online</option><option>Híbrido</option></select></div>
           <div class="form-group"><label class="form-label">Carga Horária (horas)</label><input class="form-input" type="number" id="fCargaHoraria" min="0" step="0.5" placeholder="8"></div>
           <div class="form-group"><label class="form-label">Instrutor</label><input class="form-input" type="text" id="fInstrutor" placeholder="Nome do instrutor ou empresa"></div>
           <div class="form-group"><label class="form-label">Custo (R$)</label><input class="form-input" type="number" id="fCusto" min="0" step="0.01" placeholder="0,00"></div>
           <div class="form-group"><label class="form-label">Validade do Certificado (meses)</label><input class="form-input" type="number" id="fValidade" min="0" placeholder="Ex: 12"></div>
           <div class="form-group span-2"><label class="form-label">Descrição</label><textarea class="form-textarea" id="fDescricao" placeholder="Objetivos, conteúdo programático…"></textarea></div>
           <div class="form-group span-2"><label class="form-label">Observações</label><textarea class="form-textarea" id="fObs"></textarea></div>
-          <div class="form-group span-2"><div class="toggle-wrap"><label class="toggle"><input type="checkbox" id="fAtivo" checked><span class="toggle-slider"></span></label><span class="toggle-label">Treinamento ativo</span></div></div>
+          <div class="form-group"><div class="toggle-wrap"><label class="toggle"><input type="checkbox" id="fObrigatorio"><span class="toggle-slider"></span></label><span class="toggle-label">Obrigatório para todos</span></div></div>
+          <div class="form-group"><div class="toggle-wrap"><label class="toggle"><input type="checkbox" id="fAtivo" checked><span class="toggle-slider"></span></label><span class="toggle-label">Treinamento ativo</span></div></div>
         </div>
       </form>
     </div>
@@ -194,6 +196,8 @@
     document.getElementById('fValidade').value=r.validade_meses||'';
     document.getElementById('fDescricao').value=r.descricao||'';
     document.getElementById('fObs').value=r.observacoes||'';
+    document.getElementById('fModalidade').value=r.modalidade||'';
+    document.getElementById('fObrigatorio').checked=r.obrigatorio===true;
     document.getElementById('fAtivo').checked=r.ativo!==false;
     document.getElementById('modalFormulario').style.display='flex';
   }
@@ -209,6 +213,8 @@
       codigo:document.getElementById('fCodigo').value,
       nome,
       tipo:document.getElementById('fTipo').value||null,
+      modalidade:document.getElementById('fModalidade').value||null,
+      obrigatorio:document.getElementById('fObrigatorio').checked,
       carga_horaria:parseFloat(document.getElementById('fCargaHoraria').value)||null,
       instrutor:document.getElementById('fInstrutor').value.trim()||null,
       custo:parseFloat(document.getElementById('fCusto').value)||null,

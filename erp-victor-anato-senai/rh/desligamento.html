@@ -63,7 +63,7 @@
     <div id="msgGlobal"></div>
     <div class="toolbar">
       <input class="search-input" type="text" id="campoBusca" placeholder="🔍  Buscar por funcionário ou número..." oninput="filtrar()">
-      <select class="filter-btn" id="filtroStatus" onchange="filtrar()" style="cursor:pointer"><option value="">Todos os status</option><option>Solicitado</option><option>Em Andamento</option><option>Concluído</option><option>Cancelado</option></select>
+      <select class="filter-btn" id="filtroStatus" onchange="filtrar()" style="cursor:pointer"><option value="">Todos os status</option><option>Em Andamento</option><option>Homologado</option><option>Cancelado</option></select>
     </div>
     <div class="content-section">
       <div class="crud-table-wrap">
@@ -89,15 +89,19 @@
           <div class="form-group"><label class="form-label">Data da Solicitação</label><input class="form-input" type="date" id="fDataSolicitacao"></div>
           <div class="form-group span-2"><label class="form-label">Funcionário <span>*</span></label><select class="form-select" id="fFuncionario" required onchange="preencherFuncionario()"><option value="">— Selecione —</option></select></div>
           <div class="form-group"><label class="form-label">Data de Admissão (referência)</label><input class="form-input" type="text" id="fDataAdmissaoRef" readonly placeholder="preenchida ao selecionar"></div>
-          <div class="form-group"><label class="form-label">Data de Desligamento</label><input class="form-input" type="date" id="fDataDesligamento" oninput="calcularDias()"></div>
+          <div class="form-group"><label class="form-label">Data de Desligamento <span>*</span></label><input class="form-input" type="date" id="fDataDesligamento" oninput="calcularCampos()"></div>
           <div class="form-group"><label class="form-label">Tempo de Empresa (dias)</label><input class="form-input" type="text" id="fTempoEmpresa" readonly></div>
-          <div class="form-group"><label class="form-label">Motivo do Desligamento <span>*</span></label><select class="form-select" id="fMotivo" required><option value="">— Selecione —</option><option>Pedido de demissão</option><option>Demissão sem justa causa</option><option>Demissão por justa causa</option><option>Término de contrato</option><option>Acordo mútuo</option><option>Aposentadoria</option><option>Falecimento</option><option>Outros</option></select></div>
-          <div class="form-group"><label class="form-label">Tipo de Desligamento</label><select class="form-select" id="fTipo"><option>Voluntário</option><option>Involuntário</option><option>Acordo</option></select></div>
-          <div class="form-group"><label class="form-label">Aviso Prévio</label><select class="form-select" id="fAvisoPrevio"><option value="">— Selecione —</option><option>Trabalhado</option><option>Indenizado</option><option>Dispensado</option><option>Não se aplica</option></select></div>
-          <div class="form-group"><label class="form-label">Homologação</label><select class="form-select" id="fHomologacao"><option value="">— Selecione —</option><option>Pendente</option><option>Agendada</option><option>Realizada</option></select></div>
-          <div class="form-group"><label class="form-label">Status</label><select class="form-select" id="fStatus" onchange="verificarStatus()"><option>Solicitado</option><option>Em Andamento</option><option>Concluído</option><option>Cancelado</option></select></div>
+          <div class="form-group"><label class="form-label">Data do Aviso Prévio</label><input class="form-input" type="date" id="fDataAvisoPrevio"></div>
+          <div class="form-group"><label class="form-label">Tipo de Desligamento <span>*</span></label><select class="form-select" id="fTipoDesligamento" required onchange="calcularCampos()"><option value="">— Selecione —</option><option>Pedido de Demissão</option><option>Dispensa Sem Justa Causa</option><option>Dispensa Com Justa Causa</option><option>Término de Contrato</option><option>Acordo Mútuo</option><option>Aposentadoria</option><option>Falecimento</option><option>Outros</option></select></div>
+          <div class="form-group"><label class="form-label">Dias de Aviso Prévio</label><input class="form-input" type="number" id="fDiasAviso" min="0" value="30"></div>
+          <div class="form-group"><label class="form-label">Aviso Prévio Trabalhado</label><select class="form-select" id="fAvisoTrabalhado"><option value="true">Sim — Trabalhado</option><option value="false">Não — Indenizado</option></select></div>
+          <div class="form-group"><label class="form-label">Saldo de Férias (dias)</label><input class="form-input" type="number" id="fSaldoFerias" min="0" step="0.1" placeholder="Proporc. a receber"></div>
+          <div class="form-group"><label class="form-label">13º Proporcional (meses)</label><input class="form-input" type="text" id="fDecimoPropcional" readonly placeholder="Calculado automaticamente"></div>
+          <div class="form-group" id="grupoMultaFgts" style="display:none"><label class="form-label">Multa FGTS (40%) — R$</label><input class="form-input" type="number" id="fMultaFgts" min="0" step="0.01" placeholder="0,00"></div>
+          <div class="form-group"><label class="form-label">Homologado Por</label><input class="form-input" type="text" id="fHomologadoPor" placeholder="Nome do responsável pela homologação"></div>
+          <div class="form-group"><label class="form-label">Status</label><select class="form-select" id="fStatus" onchange="verificarStatus()"><option>Em Andamento</option><option>Homologado</option><option>Cancelado</option></select></div>
           <div class="info-box" id="infoDesligamento" style="display:none">
-            ⚠️ Ao salvar com status <strong>Concluído</strong>, o funcionário será automaticamente desativado no sistema.
+            ⚠️ Ao salvar com status <strong>Homologado</strong>, o funcionário será automaticamente desativado no sistema.
           </div>
           <div class="form-group span-2"><label class="form-label">Observações</label><textarea class="form-textarea" id="fObs"></textarea></div>
         </div>
@@ -141,10 +145,10 @@
     }else{
       document.getElementById('fDataAdmissaoRef').value='';
     }
-    calcularDias();
+    calcularCampos();
   }
 
-  function calcularDias(){
+  function calcularCampos(){
     const id=document.getElementById('fFuncionario').value;
     const f=funcionarios.find(x=>x.id===id);
     const dtDlg=document.getElementById('fDataDesligamento').value;
@@ -153,14 +157,23 @@
       const dlg=new Date(dtDlg+'T00:00:00');
       const dias=Math.round((dlg-adm)/(1000*60*60*24));
       document.getElementById('fTempoEmpresa').value=dias>=0?`${dias} dias`:'—';
+      // 13º proporcional: meses trabalhados no ano corrente / 12
+      const anoInicio=new Date(dlg.getFullYear(),0,1);
+      const mesesAno=Math.ceil((dlg-anoInicio)/(1000*60*60*24*30));
+      const mesesProp=Math.min(12,Math.max(1,mesesAno));
+      document.getElementById('fDecimoPropcional').value=`${mesesProp}/12`;
     }else{
       document.getElementById('fTempoEmpresa').value='';
+      document.getElementById('fDecimoPropcional').value='';
     }
+    // Mostrar multa FGTS só para dispensa sem justa causa
+    const tipo=document.getElementById('fTipoDesligamento').value;
+    document.getElementById('grupoMultaFgts').style.display=tipo==='Dispensa Sem Justa Causa'?'block':'none';
   }
 
   function verificarStatus(){
     const st=document.getElementById('fStatus').value;
-    document.getElementById('infoDesligamento').style.display=st==='Concluído'?'block':'none';
+    document.getElementById('infoDesligamento').style.display=st==='Homologado'?'block':'none';
   }
 
   async function carregar(){
@@ -185,7 +198,7 @@
     paginaAtual=0;renderTabela();
   }
 
-  const ST={Solicitado:'badge-azul','Em Andamento':'badge-amarelo',Concluído:'badge-vermelho',Cancelado:'badge-vermelho'};
+  const ST={'Em Andamento':'badge-amarelo',Homologado:'badge-verde',Cancelado:'badge-vermelho'};
 
   function renderTabela(){
     const tbody=document.getElementById('tbodyDesligamento');
@@ -216,7 +229,10 @@
     document.getElementById('infoDesligamento').style.display='none';
     document.getElementById('fNumero').value=await sbProximoNumero('rh_desligamentos','numero','DLG');
     document.getElementById('fDataSolicitacao').value=new Date().toISOString().split('T')[0];
-    document.getElementById('fStatus').value='Solicitado';
+    document.getElementById('fStatus').value='Em Andamento';
+    document.getElementById('fDiasAviso').value=30;
+    document.getElementById('fAvisoTrabalhado').value='true';
+    document.getElementById('grupoMultaFgts').style.display='none';
     document.getElementById('modalFormulario').style.display='flex';
   }
 
@@ -229,12 +245,15 @@
     document.getElementById('fFuncionario').value=r.funcionario_id||'';
     preencherFuncionario();
     document.getElementById('fDataDesligamento').value=r.data_desligamento||'';
-    calcularDias();
-    document.getElementById('fMotivo').value=r.motivo||'';
-    document.getElementById('fTipo').value=r.tipo||'Voluntário';
-    document.getElementById('fAvisoPrevio').value=r.aviso_previo||'';
-    document.getElementById('fHomologacao').value=r.homologacao||'';
-    document.getElementById('fStatus').value=r.status||'Solicitado';
+    document.getElementById('fDataAvisoPrevio').value=r.data_aviso_previo||'';
+    document.getElementById('fTipoDesligamento').value=r.tipo_desligamento||r.motivo||'';
+    document.getElementById('fDiasAviso').value=r.dias_aviso!=null?r.dias_aviso:30;
+    document.getElementById('fAvisoTrabalhado').value=r.aviso_trabalhado===false?'false':'true';
+    document.getElementById('fSaldoFerias').value=r.saldo_ferias||'';
+    document.getElementById('fMultaFgts').value=r.multa_fgts||'';
+    document.getElementById('fHomologadoPor').value=r.homologado_por||'';
+    document.getElementById('fStatus').value=r.status||'Em Andamento';
+    calcularCampos();
     verificarStatus();
     document.getElementById('fObs').value=r.observacoes||'';
     document.getElementById('modalFormulario').style.display='flex';
@@ -246,27 +265,30 @@
   async function salvar(e){
     e.preventDefault();
     const funcId=document.getElementById('fFuncionario').value;
-    const motivo=document.getElementById('fMotivo').value;
+    const tipoDesligamento=document.getElementById('fTipoDesligamento').value;
     if(!funcId){msgModal('Selecione o funcionário.');return;}
-    if(!motivo){msgModal('Selecione o motivo.');return;}
+    if(!tipoDesligamento){msgModal('Selecione o tipo de desligamento.');return;}
     const status=document.getElementById('fStatus').value;
     const dados={
       numero:document.getElementById('fNumero').value,
       data_solicitacao:document.getElementById('fDataSolicitacao').value||null,
       funcionario_id:funcId,
       data_desligamento:document.getElementById('fDataDesligamento').value||null,
-      motivo,
-      tipo:document.getElementById('fTipo').value||null,
-      aviso_previo:document.getElementById('fAvisoPrevio').value||null,
-      homologacao:document.getElementById('fHomologacao').value||null,
+      tipo_desligamento:tipoDesligamento,
+      data_aviso_previo:document.getElementById('fDataAvisoPrevio').value||null,
+      dias_aviso:parseInt(document.getElementById('fDiasAviso').value)||30,
+      aviso_trabalhado:document.getElementById('fAvisoTrabalhado').value==='true',
+      saldo_ferias:parseFloat(document.getElementById('fSaldoFerias').value)||null,
+      multa_fgts:parseFloat(document.getElementById('fMultaFgts').value)||null,
+      homologado_por:document.getElementById('fHomologadoPor').value.trim()||null,
       status,
       observacoes:document.getElementById('fObs').value.trim()||null
     };
     try{
       if(modoEdicao)await sbAtualizar('rh_desligamentos',idEdicao,dados);
       else          await sbInserir('rh_desligamentos',dados);
-      // desativar funcionário quando concluído
-      if(status==='Concluído'){
+      // desativar funcionário quando homologado
+      if(status==='Homologado'){
         const dtDlg=document.getElementById('fDataDesligamento').value||new Date().toISOString().split('T')[0];
         await sbAtualizar('rh_funcionarios',funcId,{ativo:false,data_desligamento:dtDlg});
       }

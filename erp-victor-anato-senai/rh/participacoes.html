@@ -90,7 +90,7 @@
           <div class="form-group span-2"><label class="form-label">Treinamento <span>*</span></label><select class="form-select" id="fTreinamento" required onchange="preencherValidade()"><option value="">— Selecione —</option></select></div>
           <div class="form-group"><label class="form-label">Data de Realização</label><input class="form-input" type="date" id="fData"></div>
           <div class="form-group"><label class="form-label">Nota / Conceito</label><input class="form-input" type="text" id="fNota" placeholder="Ex: 9.5 ou Aprovado"></div>
-          <div class="form-group"><label class="form-label">Certificado Emitido?</label><select class="form-select" id="fCertificado"><option value="false">Não</option><option value="true">Sim</option></select></div>
+          <div class="form-group"><label class="form-label">URL do Certificado (PDF)</label><input class="form-input" type="url" id="fCertificadoUrl" placeholder="https://…"></div>
           <div class="form-group"><label class="form-label">Validade do Certificado</label><input class="form-input" type="date" id="fValidadeCert"></div>
           <div class="form-group"><label class="form-label">Status</label><select class="form-select" id="fStatus"><option>Inscrito</option><option>Em Andamento</option><option>Concluído</option><option>Reprovado</option><option>Cancelado</option></select></div>
           <div class="form-group span-2"><label class="form-label">Observações</label><textarea class="form-textarea" id="fObs"></textarea></div>
@@ -178,7 +178,7 @@
       <td>${nomeTrein(r.treinamento_id)}</td>
       <td>${r.data_realizacao?new Date(r.data_realizacao+'T00:00:00').toLocaleDateString('pt-BR'):'—'}</td>
       <td>${r.nota||'—'}</td>
-      <td>${r.certificado_emitido?'✅ Sim':'—'}</td>
+      <td>${r.certificado_url?`<a href="${r.certificado_url}" target="_blank" style="color:var(--color-primary)">📄 Ver</a>`:'—'}</td>
       <td>${r.validade_certificado?new Date(r.validade_certificado+'T00:00:00').toLocaleDateString('pt-BR'):'—'}</td>
       <td><span class="${ST[r.status]||'badge-azul'}">${r.status||'Inscrito'}</span></td>
       <td class="crud-acts"><button class="btn-ed" onclick="abrirModalEditar('${r.id}')">✏️</button><button class="btn-del" onclick="confirmarExcluir('${r.id}','${(r.numero||'').replace(/'/g,"\\'")}')">🗑️</button></td>
@@ -195,7 +195,7 @@
     document.getElementById('fNumero').value=await sbProximoNumero('rh_participacoes','numero','PAR');
     document.getElementById('fData').value=new Date().toISOString().split('T')[0];
     document.getElementById('fStatus').value='Inscrito';
-    document.getElementById('fCertificado').value='false';
+    document.getElementById('fCertificadoUrl').value='';
     document.getElementById('modalFormulario').style.display='flex';
   }
 
@@ -208,7 +208,7 @@
     document.getElementById('fTreinamento').value=r.treinamento_id||'';
     document.getElementById('fData').value=r.data_realizacao||'';
     document.getElementById('fNota').value=r.nota||'';
-    document.getElementById('fCertificado').value=r.certificado_emitido?'true':'false';
+    document.getElementById('fCertificadoUrl').value=r.certificado_url||'';
     document.getElementById('fValidadeCert').value=r.validade_certificado||'';
     document.getElementById('fStatus').value=r.status||'Inscrito';
     document.getElementById('fObs').value=r.observacoes||'';
@@ -230,7 +230,7 @@
       treinamento_id:treinId,
       data_realizacao:document.getElementById('fData').value||null,
       nota:document.getElementById('fNota').value.trim()||null,
-      certificado_emitido:document.getElementById('fCertificado').value==='true',
+      certificado_url:document.getElementById('fCertificadoUrl').value.trim()||null,
       validade_certificado:document.getElementById('fValidadeCert').value||null,
       status:document.getElementById('fStatus').value,
       observacoes:document.getElementById('fObs').value.trim()||null

@@ -63,7 +63,7 @@
     <div id="msgGlobal"></div>
     <div class="toolbar">
       <input class="search-input" type="text" id="campoBusca" placeholder="🔍  Buscar por nome ou número..." oninput="filtrar()">
-      <select class="filter-btn" id="filtroStatus" onchange="filtrar()" style="cursor:pointer"><option value="">Todos os status</option><option>Solicitado</option><option>Aprovado</option><option>Em Andamento</option><option>Concluído</option><option>Cancelado</option></select>
+      <select class="filter-btn" id="filtroStatus" onchange="filtrar()" style="cursor:pointer"><option value="">Todos os status</option><option>Pendente</option><option>Aprovada</option><option>Reprovada</option><option>Cancelada</option><option>Concluída</option></select>
     </div>
     <div class="content-section">
       <div class="crud-table-wrap">
@@ -103,7 +103,9 @@
           <div class="form-group"><label class="form-label">Data Prevista de Início</label><input class="form-input" type="date" id="fDataInicio"></div>
           <div class="form-group"><label class="form-label">Solicitante / Requisitante</label><input class="form-input" type="text" id="fSolicitante" placeholder="Nome do gestor que solicitou"></div>
           <div class="form-group span-2"><label class="form-label">Origem da Vaga</label><select class="form-select" id="fOrigem"><option value="">— Selecione —</option><option>Indicação</option><option>LinkedIn</option><option>Site da empresa</option><option>Agência</option><option>Banco de talentos</option><option>Outros</option></select></div>
-          <div class="form-group"><label class="form-label">Status</label><select class="form-select" id="fStatus"><option>Solicitado</option><option>Aprovado</option><option>Em Andamento</option><option>Concluído</option><option>Cancelado</option></select></div>
+          <div class="form-group"><label class="form-label">Status</label><select class="form-select" id="fStatus"><option>Pendente</option><option>Aprovada</option><option>Reprovada</option><option>Cancelada</option><option>Concluída</option></select></div>
+          <div class="form-group"><label class="form-label">Aprovado Por</label><input class="form-input" type="text" id="fAprovadoPor" placeholder="Nome do aprovador"></div>
+          <div class="form-group span-2"><label class="form-label">Justificativa</label><textarea class="form-textarea" id="fJustificativa" placeholder="Justificativa para abertura da vaga…"></textarea></div>
           <div class="form-group span-2"><label class="form-label">Observações</label><textarea class="form-textarea" id="fObs" placeholder="Perfil desejado, habilidades, requisitos específicos…"></textarea></div>
         </div>
       </form>
@@ -174,7 +176,7 @@
     paginaAtual=0;renderTabela();
   }
 
-  const ST={Solicitado:'badge-azul',Aprovado:'badge-verde','Em Andamento':'badge-amarelo',Concluído:'badge-verde',Cancelado:'badge-vermelho'};
+  const ST={Pendente:'badge-azul',Aprovada:'badge-verde',Reprovada:'badge-vermelho',Cancelada:'badge-vermelho',Concluída:'badge-verde'};
 
   function renderTabela(){
     const tbody=document.getElementById('tbodyAdmissao');
@@ -205,7 +207,7 @@
     document.getElementById('msgModal').style.display='none';
     document.getElementById('fNumero').value=await sbProximoNumero('rh_admissoes','numero','ADM');
     document.getElementById('fDataSolicitacao').value=new Date().toISOString().split('T')[0];
-    document.getElementById('fStatus').value='Solicitado';
+    document.getElementById('fStatus').value='Pendente';
     filtrarCargos();
     document.getElementById('modalFormulario').style.display='flex';
   }
@@ -229,7 +231,9 @@
     document.getElementById('fDataInicio').value=r.data_inicio||'';
     document.getElementById('fSolicitante').value=r.solicitante||'';
     document.getElementById('fOrigem').value=r.origem_vaga||'';
-    document.getElementById('fStatus').value=r.status||'Solicitado';
+    document.getElementById('fStatus').value=r.status||'Pendente';
+    document.getElementById('fAprovadoPor').value=r.aprovado_por||'';
+    document.getElementById('fJustificativa').value=r.justificativa||'';
     document.getElementById('fObs').value=r.observacoes||'';
     document.getElementById('modalFormulario').style.display='flex';
   }
@@ -257,6 +261,8 @@
       solicitante:document.getElementById('fSolicitante').value.trim()||null,
       origem_vaga:document.getElementById('fOrigem').value||null,
       status:document.getElementById('fStatus').value,
+      aprovado_por:document.getElementById('fAprovadoPor').value.trim()||null,
+      justificativa:document.getElementById('fJustificativa').value.trim()||null,
       observacoes:document.getElementById('fObs').value.trim()||null
     };
     try{
