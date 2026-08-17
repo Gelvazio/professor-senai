@@ -1,7 +1,7 @@
-# Graph Report - erp-victor-anato-senai  (2026-08-16)
+# Graph Report - erp-victor-anato-senai  (2026-08-17)
 
 ## Corpus Check
-- 65 files · ~625,479 words
+- 65 files · ~630,131 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `beee8d13`
+- Built from commit: `0454d601`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -239,7 +239,7 @@ Nodes (6): Andamento — Módulo Compras, Banco de Dados (Supabase), Fluxo, Func
 
 ### Community 52 - "Community 52"
 Cohesion: 0.33
-Nodes (5): Andamento — Módulo Cadastros, Banco de Dados (Supabase), Integrações, Observações, Telas
+Nodes (5): Andamento — Módulo Cadastros, Banco de Dados (Supabase), Integrações, SQL das novas tabelas (aplicar no Supabase), Telas
 
 ### Community 53 - "Community 53"
 Cohesion: 0.33
@@ -294,7 +294,7 @@ Cohesion: 0.06
 Nodes (32): 10. 13º Salário (`decimo-terceiro.html`), 11. Férias (`ferias.html`), 12. Afastamentos (`afastamentos.html`), 13. Treinamentos (`treinamentos.html`), 14. Participações (`participacoes.html`), 15. Admissão (`admissao.html`), 16. Desligamento (`desligamento.html`), 1. Dashboard RH (`dashboard.html`) (+24 more)
 
 ## Knowledge Gaps
-- **957 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Tasks` (+952 more)
+- **956 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Tasks` (+951 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -302,7 +302,7 @@ Nodes (32): 10. 13º Salário (`decimo-terceiro.html`), 11. Férias (`ferias.htm
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _957 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _956 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07053140096618357 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

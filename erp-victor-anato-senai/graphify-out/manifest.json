@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786964593.3212385,
-    "ast_hash": "ad03265b35205663b04d64011e304f4f",
+    "mtime": 1786964693.8346248,
+    "ast_hash": "19a1364c06de9517635c02437f0830f6",
     "semantic_hash": ""
   },
   "DATABASE.sql": {
@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "SUPABASE.js": {
-    "mtime": 1786911514.3111694,
-    "ast_hash": "5d21ea50ec6763f939aee68976e0edd1",
+    "mtime": 1786964694.6265678,
+    "ast_hash": "85c7a67acb546c24bd5b109c007aa5be",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -65,18 +65,18 @@
     "semantic_hash": ""
   },
   "cadastros/clientes.html": {
-    "mtime": 1786911693.4894998,
-    "ast_hash": "aa7b6d5d789d9a1eedf3fe3c5c0d3419",
+    "mtime": 1786964689.294973,
+    "ast_hash": "a844bdeb87ef0327ac23887dd6650b03",
     "semantic_hash": ""
   },
   "cadastros/fornecedores.html": {
-    "mtime": 1786911693.5347023,
-    "ast_hash": "7eb187c73a3adec412ec730f5810417c",
+    "mtime": 1786964702.8169408,
+    "ast_hash": "5dbe8ba8d46ddd5ab0179a90133acd35",
     "semantic_hash": ""
   },
   "cadastros/produtos.html": {
-    "mtime": 1786911693.5370183,
-    "ast_hash": "f922aba3940aa445bdaf06318483840e",
+    "mtime": 1786964681.6463532,
+    "ast_hash": "19af2592fc4c7731481fa567c5816bc8",
     "semantic_hash": ""
   },
   "compras/conferencia.html": {
@@ -115,8 +115,8 @@
     "semantic_hash": ""
   },
   "cadastros/transportadoras.html": {
-    "mtime": 1786911693.538272,
-    "ast_hash": "ac3ccfabff345876d77b480e169f0b6b",
+    "mtime": 1786964709.570536,
+    "ast_hash": "a7a698f45d4dbfa56d99e1051a9d7e3f",
     "semantic_hash": ""
   },
   "compras/nota-fiscal.html": {
@@ -555,8 +555,8 @@
     "semantic_hash": ""
   },
   "cadastros/andamento.md": {
-    "mtime": 1786925438.482725,
-    "ast_hash": "be8dd30d08a29f1ef9080ebd5175a57e",
+    "mtime": 1786964742.0247805,
+    "ast_hash": "f816941b1145a6ce1d309d75fca967ef",
     "semantic_hash": ""
   },
   "compras/andamento.md": {
@@ -570,13 +570,13 @@
     "semantic_hash": ""
   },
   "configuracoes/andamento.md": {
-    "mtime": 1786925475.7426367,
-    "ast_hash": "e03ad3f77929739408b68818e9a9cbca",
+    "mtime": 1786964650.8249128,
+    "ast_hash": "aca0376cbb0402a6ae456b2cd10cd8f4",
     "semantic_hash": ""
   },
   "financeiro/andamento.md": {
-    "mtime": 1786925463.8468988,
-    "ast_hash": "710a5db95e0cb443f07508e4cd4f1062",
+    "mtime": 1786964649.2991579,
+    "ast_hash": "55c31bfabc383067de2281f2d3e9c339",
     "semantic_hash": ""
   },
   "marketing/andamento.md": {
