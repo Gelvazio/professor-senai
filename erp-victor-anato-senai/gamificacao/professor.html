@@ -242,6 +242,86 @@
       </div>
       <div class="panel-body" id="panelHistorico" style="max-height:280px"><div class="vazio">Selecione uma sessão</div></div>
     </div>
+
+    <!-- Agente Tele Vendas -->
+    <div class="panel" style="margin-top:16px">
+      <div class="panel-hdr">
+        📞 Agente Tele Vendas
+        <span id="agenteStatusBadge" style="font-size:11px;font-weight:600;color:var(--color-text-muted)">Parado</span>
+      </div>
+      <div style="padding:14px 16px;display:flex;flex-direction:column;gap:12px">
+
+        <!-- Linha 1: qtd / intervalo / prazo / prioridade -->
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Pedidos</label>
+            <input type="number" id="agQtd" value="10" min="1" max="50" class="crud-input" style="width:80px">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Intervalo (s)</label>
+            <input type="number" id="agIntervalo" value="5" min="1" max="60" class="crud-input" style="width:90px">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Prazo (min)</label>
+            <input type="number" id="agPrazo" value="8" min="1" max="30" class="crud-input" style="width:90px">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Prioridade</label>
+            <select id="agPrioridade" class="crud-input" style="min-width:110px">
+              <option value="normal">Normal</option>
+              <option value="alta">Alta</option>
+              <option value="urgente">Urgente</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Linha 2: faixa de valores -->
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Valor Mín (R$)</label>
+            <input type="number" id="agValMin" value="100" min="1" class="crud-input" style="width:110px">
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Valor Máx (R$)</label>
+            <input type="number" id="agValMax" value="5000" min="1" class="crud-input" style="width:110px">
+          </div>
+        </div>
+
+        <!-- Linha 3: modo produto -->
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Modo Produto</label>
+            <select id="agModoProduto" class="crud-input" style="min-width:180px" onchange="toggleProdutoEspecifico()">
+              <option value="aleatorio">🎲 Aleatório</option>
+              <option value="especifico">📦 Produto Específico</option>
+            </select>
+          </div>
+          <div id="agProdutoEspecificoWrap" style="display:none;flex-direction:column;gap:4px">
+            <label style="font-size:11px;font-weight:700;color:var(--color-text-disabled);text-transform:uppercase">Produto</label>
+            <select id="agProduto" class="crud-input" style="min-width:220px"><option value="">Selecione a sessão primeiro</option></select>
+          </div>
+        </div>
+
+        <!-- Barra de progresso -->
+        <div id="agenteProgresso" style="display:none">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px;font-size:12px;font-weight:600;color:var(--color-text-muted)">
+            <span id="agenteProgressoLabel">0 / 10 pedidos enviados</span>
+            <span id="agenteProximoLabel"></span>
+          </div>
+          <div style="height:6px;background:var(--color-border);border-radius:100px;overflow:hidden">
+            <div id="agenteProgressoBar" style="height:100%;background:#16a34a;border-radius:100px;transition:width .3s;width:0%"></div>
+          </div>
+        </div>
+
+        <!-- Botões -->
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button id="btnAgenteStart" class="btn" onclick="iniciarAgente()" style="background:#16a34a">▶ Iniciar Agente</button>
+          <button id="btnAgenteStop"  class="btn" onclick="pararAgente()"   style="background:#dc2626;display:none">⏹ Parar</button>
+          <a href="../vendas/televendas.html" target="_blank" class="btn-sm" style="padding:8px 14px;text-decoration:none;display:inline-flex;align-items:center;gap:6px">📋 Abrir Tele Vendas</a>
+        </div>
+
+      </div>
+    </div>
   </main>
 </div>
 
@@ -272,7 +352,8 @@ const TIPOS = {
   pedido_urgente:     { setor:'logistica',  pts:25, prazo:3,  prio:'urgente', titulo:(p,c)=>`⚠️ URGENTE — ${c.nome} precisa de entrega hoje` },
   campanha_lead:      { setor:'marketing',  pts:12, prazo:10, prio:'normal',  titulo:()=>`📣 Lead de Marketing — Novo cliente interessado` },
   conta_vencendo:     { setor:'financeiro', pts:15, prazo:7,  prio:'normal',  titulo:()=>`💸 Financeiro — Conta a pagar vencendo em 24h` },
-  ruptura_estoque:    { setor:'estoque',    pts:20, prazo:4,  prio:'alta',    titulo:(p)=>`🔴 Ruptura de estoque: ${p.nome}` }
+  ruptura_estoque:    { setor:'estoque',    pts:20, prazo:4,  prio:'alta',    titulo:(p)=>`🔴 Ruptura de estoque: ${p.nome}` },
+  televendas_pedido:  { setor:'vendas',     pts:10, prazo:8,  prio:'normal',  titulo:(p)=>`📞 Pedido Tele Vendas — ${p?.nome||'Produto'}` }
 };
 
 let sessao=null, equipes=[], config=null, produtos=[], clientes=[], vel=1;
@@ -311,6 +392,7 @@ async function selecionarSessao(id) {
 
   document.getElementById('kpiEquipes').textContent = equipes.length;
   document.getElementById('btnPlay').disabled = false;
+  carregarProdutosAgente();
 
   if (sessao.status === 'ativa') { setBtnPause(); iniciarRefresh(); }
   else setBtnPlay();
@@ -500,6 +582,144 @@ function toggleTema() {
   localStorage.setItem('senai_tema',t);
 }
 function sair() { pararMotor(); localStorage.clear(); window.location.replace('../index.html'); }
+
+// ── AGENTE TELE VENDAS ────────────────────────────────────────────
+let agenteInterval  = null;
+let agenteContador  = 0;
+let agenteProxTimer = null;
+
+function lerConfiguracaoAgente() {
+  return {
+    quantidade:        parseInt(document.getElementById('agQtd').value)      || 10,
+    intervaloSegundos: parseInt(document.getElementById('agIntervalo').value) || 5,
+    prazoMinutos:      parseInt(document.getElementById('agPrazo').value)     || 8,
+    prioridade:        document.getElementById('agPrioridade').value          || 'normal',
+    valorMin:          parseFloat(document.getElementById('agValMin').value)  || 100,
+    valorMax:          parseFloat(document.getElementById('agValMax').value)  || 5000,
+    modoAleatorio:     document.getElementById('agModoProduto').value !== 'especifico',
+    produtoEspecifico: document.getElementById('agProduto').value || null
+  };
+}
+
+function toggleProdutoEspecifico() {
+  const wrap = document.getElementById('agProdutoEspecificoWrap');
+  wrap.style.display = document.getElementById('agModoProduto').value === 'especifico' ? 'flex' : 'none';
+}
+
+function carregarProdutosAgente() {
+  const sel = document.getElementById('agProduto');
+  sel.innerHTML = '<option value="">— Selecionar produto —</option>' +
+    produtos.map(p => `<option value="${p.id}">${p.nome}</option>`).join('');
+}
+
+async function iniciarAgente() {
+  if (!sessao) { alert('Selecione uma sessão ativa primeiro.'); return; }
+  if (agenteInterval) return;
+  agenteContador = 0;
+  const cfg = lerConfiguracaoAgente();
+
+  atualizarBtnAgente(true);
+  document.getElementById('agenteProgresso').style.display = 'block';
+  atualizarProgressoAgente(0, cfg.quantidade, cfg.intervaloSegundos);
+
+  // Enviar o primeiro imediatamente
+  await enviarPedidoTelevendas(cfg);
+  agenteContador++;
+  atualizarProgressoAgente(agenteContador, cfg.quantidade, cfg.intervaloSegundos);
+
+  if (agenteContador >= cfg.quantidade) { pararAgente(); return; }
+
+  agenteInterval = setInterval(async () => {
+    if (agenteContador >= cfg.quantidade) { pararAgente(); return; }
+    await enviarPedidoTelevendas(cfg);
+    agenteContador++;
+    atualizarProgressoAgente(agenteContador, cfg.quantidade, cfg.intervaloSegundos);
+    if (agenteContador >= cfg.quantidade) pararAgente();
+  }, cfg.intervaloSegundos * 1000);
+}
+
+async function enviarPedidoTelevendas(cfg) {
+  try {
+    // Selecionar produto
+    let produtoObj;
+    if (cfg.modoAleatorio || !cfg.produtoEspecifico) {
+      produtoObj = rnd(produtos) || { id: null, nome: 'Produto' };
+    } else {
+      produtoObj = produtos.find(p => p.id === cfg.produtoEspecifico) || { id: cfg.produtoEspecifico, nome: 'Produto' };
+    }
+
+    // Gerar valor e dados do pedido
+    const valor  = (Math.random() * (cfg.valorMax - cfg.valorMin) + cfg.valorMin).toFixed(2);
+    const qtd    = Math.floor(Math.random() * 10) + 1;
+    const seq    = String(agenteContador + 1).padStart(3, '0');
+    const rodada = sessao.rodada_atual || 1;
+    const pedidoD = `TV-R${rodada}-${seq}`;
+    const idChave = `${sessao.id}:R${rodada}`;
+    const obs     = `Agente: ${produtoObj.nome} | Qtd: ${qtd} | Valor: R$ ${parseFloat(valor).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+
+    // Insert em televendas
+    const tvRows = await POST('televendas', {
+      pedido_d: pedidoD, datahora: new Date().toISOString(),
+      id_chave: idChave, status: 'Em Aberto', observacao: obs
+    });
+    const tvId = Array.isArray(tvRows) ? tvRows[0]?.id : tvRows?.id;
+
+    // Insert evento de gamificação
+    const ptsBase = cfg.prioridade === 'urgente' ? 25 : cfg.prioridade === 'alta' ? 15 : 10;
+    await POST('gamificacao_eventos', {
+      sessao_id: sessao.id, rodada: rodada,
+      tipo: 'televendas_pedido',
+      titulo: `📞 Pedido ${pedidoD} — ${produtoObj.nome}`,
+      descricao: obs,
+      setor_alvo: 'vendas',
+      prioridade: cfg.prioridade,
+      prazo_minutos: cfg.prazoMinutos,
+      status: 'pendente',
+      referencia_id: tvId ? String(tvId) : null,
+      pontos_base: ptsBase
+    });
+  } catch (e) { console.error('[agente]', e); }
+}
+
+function pararAgente() {
+  if (agenteInterval) { clearInterval(agenteInterval); agenteInterval = null; }
+  if (agenteProxTimer) { clearInterval(agenteProxTimer); agenteProxTimer = null; }
+  atualizarBtnAgente(false);
+}
+
+function atualizarBtnAgente(ativo) {
+  const badge = document.getElementById('agenteStatusBadge');
+  const start = document.getElementById('btnAgenteStart');
+  const stop  = document.getElementById('btnAgenteStop');
+  if (ativo) {
+    badge.textContent = '🟢 Enviando...';
+    badge.style.color = '#16a34a';
+    start.style.display = 'none';
+    stop.style.display  = '';
+  } else {
+    badge.textContent = 'Parado';
+    badge.style.color = '';
+    start.style.display = '';
+    stop.style.display  = 'none';
+    document.getElementById('agenteProximoLabel').textContent = '';
+  }
+}
+
+function atualizarProgressoAgente(atual, total, intervaloSeg) {
+  const pct = total > 0 ? Math.min(100, (atual / total) * 100) : 0;
+  document.getElementById('agenteProgressoBar').style.width  = pct + '%';
+  document.getElementById('agenteProgressoLabel').textContent = `${atual} / ${total} pedidos enviados`;
+  if (atual >= total) { document.getElementById('agenteProximoLabel').textContent = '✅ Concluído'; return; }
+  // Contador regressivo até o próximo envio
+  if (agenteProxTimer) clearInterval(agenteProxTimer);
+  let restante = intervaloSeg;
+  document.getElementById('agenteProximoLabel').textContent = `Próximo em ${restante}s`;
+  agenteProxTimer = setInterval(() => {
+    restante--;
+    if (restante <= 0) { clearInterval(agenteProxTimer); agenteProxTimer = null; return; }
+    document.getElementById('agenteProximoLabel').textContent = `Próximo em ${restante}s`;
+  }, 1000);
+}
 
 carregarSessoes();
 </script>
