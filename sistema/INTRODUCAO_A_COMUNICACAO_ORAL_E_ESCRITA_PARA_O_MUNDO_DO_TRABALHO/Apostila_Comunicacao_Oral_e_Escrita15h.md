@@ -117,7 +117,8 @@ _____________________________________________________________
 
 ### 1.2 Ruído: o inimigo silencioso
 
-Ruído é tudo aquilo que interfere na mensagem e faz com que ela chegue incompleta, distorcida ou não chegue. Nem sempre é barulho.
+Ruído é tudo aquilo que interfere na mensagem e faz com que ela chegue incompleta, distorcida ou não chegue. 
+Nem sempre é barulho.
 
 - **Ruído físico:** barulho de máquinas, conexão ruim, letra ilegível, áudio cortando.
 - **Ruído de linguagem:** termos técnicos desconhecidos, gírias, frases longas demais, ambiguidade.
@@ -130,11 +131,13 @@ Ruído é tudo aquilo que interfere na mensagem e faz com que ela chegue incompl
 
 Leia cada situação, identifique o tipo de ruído predominante e escreva o que faria para evitá-lo.
 
-1. O supervisor deixou um bilhete escrito à mão pedindo "verificar o equip. da linha 2 antes das 14h". O funcionário não entendeu a abreviação e não perguntou.
+1. O supervisor deixou um bilhete escrito à mão pedindo "verificar o equip. da linha 2 antes das 14h". 
+O funcionário não entendeu a abreviação e não perguntou.
 
 2. Uma mensagem de áudio de 6 minutos foi enviada no grupo da equipe explicando cinco tarefas diferentes.
 
-3. Durante uma explicação no galpão, o funcionário concordou com a cabeça, mas não ouviu metade das instruções por causa do barulho.
+3. Durante uma explicação no galpão, o funcionário concordou com a cabeça, 
+mas não ouviu metade das instruções por causa do barulho.
 
 4. Um e-mail com o assunto "urgente" foi enviado a 40 pessoas; ninguém soube quem deveria agir.
 
@@ -146,7 +149,8 @@ _____________________________________________________________
 ---
 
 > **SÍNTESE DO ENCONTRO 1**
-> Comunicação só existe quando há compreensão. Conhecer os elementos envolvidos e reconhecer os ruídos é o primeiro passo para reduzir erros, retrabalho e conflitos no ambiente de trabalho.
+> Comunicação só existe quando há compreensão. 
+Conhecer os elementos envolvidos e reconhecer os ruídos é o primeiro passo para reduzir erros, retrabalho e conflitos no ambiente de trabalho.
 
 ---
 
