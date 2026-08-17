@@ -495,8 +495,7 @@
     idEdicao   = null;
 
     document.getElementById('modalTitulo').textContent = 'Novo Usuário';
-    document.getElementById('labelSenha').innerHTML   = 'Senha <span class="req">*</span>';
-    document.getElementById('senhaReq').style.display = '';
+    document.getElementById('labelSenha').innerHTML   = 'Senha <span class="req" id="senhaReq">*</span>';
     document.getElementById('senhaHint').textContent  = '';
 
     // Habilitar campos readonly
@@ -519,8 +518,7 @@
     idEdicao   = id;
 
     document.getElementById('modalTitulo').textContent = 'Editar Usuário';
-    document.getElementById('labelSenha').innerHTML   = 'Nova Senha';
-    document.getElementById('senhaReq').style.display = 'none';
+    document.getElementById('labelSenha').innerHTML   = 'Nova Senha <span class="req" id="senhaReq" style="display:none">*</span>';
     document.getElementById('senhaHint').textContent  = 'Deixe em branco para manter a senha atual.';
 
     // Campos readonly em edição
@@ -814,9 +812,12 @@
     const tbody = document.getElementById('tbodyUsuarios');
     tbody.innerHTML = '<tr><td colspan="6" class="vazio">Carregando…</td></tr>';
     try {
-      const rows = await sbListar('erp_usuarios', 'order=nome.asc&select=id,nome,email,cargo,perfil_id,status,permissoes,created_at,perfil(nome,ativo)');
-      todosUsuarios = rows;
-      renderizarTabela(rows);
+      const rows = await sbListar('erp_usuarios', 'order=nome.asc&select=id,nome,email,cargo,perfil_id,status,permissoes,created_at');
+      todosUsuarios = rows.map(u => ({
+        ...u,
+        perfil: perfis.find(p => p.id === u.perfil_id) || null
+      }));
+      renderizarTabela(todosUsuarios);
     } catch (e) {
       tbody.innerHTML = '<tr><td colspan="6" class="vazio">Erro ao carregar usuários.</td></tr>';
       console.error('[usuários]', e);
