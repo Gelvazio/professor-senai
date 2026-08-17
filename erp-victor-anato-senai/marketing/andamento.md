@@ -1,15 +1,15 @@
 # Andamento — Módulo Marketing
 
-Arquivo de rastreamento de tarefas do módulo de Marketing.
+> Gestão de campanhas e análise de retornos. Atualizado em: 2026-08-16
 
 ---
 
 ## Telas
 
-| # | Tela | Status | Observação |
-|---|------|--------|------------|
-| 1 | `marketing/campanhas.html` | ✅ Concluído | CRUD completo |
-| 2 | `marketing/retornos.html` | ✅ Concluído | CRUD completo |
+| Tela | Arquivo | Status |
+|------|---------|--------|
+| Campanhas | `marketing/campanhas.html` | ✅ Concluído |
+| Retornos | `marketing/retornos.html` | ✅ Concluído |
 
 ---
 
@@ -17,13 +17,22 @@ Arquivo de rastreamento de tarefas do módulo de Marketing.
 
 | Tabela | Status |
 |--------|--------|
-| `marketing_campanhas` | ❌ A criar |
-| `marketing_retornos` | ❌ A criar |
+| `marketing_campanhas` | ✅ Concluído |
+| `marketing_retornos` | ✅ Concluído |
 
 ---
 
-## Legenda
+## Funcionalidades Especiais
 
-- ✅ Concluído
-- 🔄 Em andamento
-- ❌ Não iniciado
+| Funcionalidade | Status |
+|----------------|--------|
+| Cálculo automático de ROI | ✅ Concluído |
+| Filtro de campanhas ativas em Retornos | ✅ Concluído |
+| KPIs (total, budget, custo real, ROI por campanha) | ✅ Concluído |
+
+---
+
+## Observações
+
+- Módulo 100% funcional e integrado com Supabase.
+- Numeração de campanhas usa prefixo `CAM` (ex: `CAM00001`).
