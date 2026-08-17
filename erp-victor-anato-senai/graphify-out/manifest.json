@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786890024.5896437,
-    "ast_hash": "b0942c3a3d4a64494f4d11058e4ea4d4",
+    "mtime": 1786964593.3212385,
+    "ast_hash": "ad03265b35205663b04d64011e304f4f",
     "semantic_hash": ""
   },
   "DATABASE.sql": {
@@ -647,6 +647,16 @@
   "rh/avaliacao-desempenho.html": {
     "mtime": 1786925387.1532133,
     "ast_hash": "9fd90144b8359561fffecd75ccbba30d",
+    "semantic_hash": ""
+  },
+  "cadastros/impostos.html": {
+    "mtime": 1786925639.0395558,
+    "ast_hash": "57b48a42907a22354e3b9d0f9955200e",
+    "semantic_hash": ""
+  },
+  "cadastros/ncmsh.html": {
+    "mtime": 1786925776.1291113,
+    "ast_hash": "6d7833855afce61fd23ac1abc6df5fb7",
     "semantic_hash": ""
   }
 }

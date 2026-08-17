@@ -19,8 +19,8 @@
 
 | Tabela | Status |
 |--------|--------|
-| `fin_contas_pagar` | ❌ A criar |
-| `fin_contas_receber` | ❌ A criar |
+| `fin_contas_pagar` | ✅ Criada |
+| `fin_contas_receber` | ✅ Criada |
 
 ---
 
@@ -37,5 +37,5 @@
 
 ## Observações
 
-- Todas as 4 telas existem e renderizam corretamente.
-- O Balancete e a Análise de Crédito dependem dos dados de contas e vendas para calcular.
+- Todas as 4 telas e tabelas do banco estão criadas e funcionais.
+- Funcionalidades avançadas de alertas e relatórios pendentes.

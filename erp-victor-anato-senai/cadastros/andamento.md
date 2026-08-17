@@ -19,10 +19,10 @@
 
 | Tabela | Status |
 |--------|--------|
-| `clientes` | ❌ A criar |
-| `fornecedores` | ❌ A criar |
-| `produtos` | ❌ A criar |
-| `transportadoras` | ❌ A criar |
+| `clientes` | ✅ Criada |
+| `fornecedores` | ✅ Criada |
+| `produtos` | ✅ Criada |
+| `transportadoras` | ✅ Criada |
 
 ---
 
@@ -39,5 +39,5 @@
 
 ## Observações
 
-- Telas existem e renderizam corretamente.
-- Integração com Supabase pendente — dados estão em mock local.
+- Todas as telas e tabelas do banco estão criadas e funcionais.
+- Integrações avançadas (ViaCEP, validação, upload) pendentes.

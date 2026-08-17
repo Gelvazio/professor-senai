@@ -19,10 +19,10 @@
 
 | Tabela | Status |
 |--------|--------|
-| `erp_usuarios` | ❌ A criar |
-| `sistema` | ❌ A criar |
-| `tela` | ❌ A criar |
-| `tela_sistema` | ❌ A criar |
+| `erp_usuarios` | ✅ Criada |
+| `sistema` | ✅ Criada |
+| `tela` | ✅ Criada |
+| `tela_sistema` | ✅ Criada |
 
 ---
 
