@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1786965862.8383615,
-    "ast_hash": "c9a5d423abb3767c97c4676493a23675",
+    "mtime": 1786966070.1096857,
+    "ast_hash": "71b205ce1d3919e8b5b80ee9291634da",
     "semantic_hash": ""
   },
   "DATABASE.sql": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "configuracoes/usuarios.html": {
-    "mtime": 1786965597.4786108,
-    "ast_hash": "18d9080e2b9aa993ba57007de0e6470a",
+    "mtime": 1786966770.7026908,
+    "ast_hash": "a3ce59cbee3de27bce7cd44ad2d7a019",
     "semantic_hash": ""
   },
   "estoque/controle.html": {
