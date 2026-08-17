@@ -1,27 +1,27 @@
 # Andamento — Módulo Compras
 
-Arquivo de rastreamento de tarefas do módulo de Compras.
+> Ciclo completo de compras. Atualizado em: 2026-08-16
 
 ---
 
 ## Fluxo
 
 ```
-Planejamento → Solicitação → Pedido → Recebimento → Conferência → Nota Fiscal
+Planejamento → Solicitação → Pedido → Recebimento → Conferência → NF Entrada
 ```
 
 ---
 
 ## Telas
 
-| # | Tela | Status | Observação |
-|---|------|--------|------------|
-| 1 | `compras/planejamento.html` | ✅ Concluído | CRUD completo |
-| 2 | `compras/solicitacoes.html` | ✅ Concluído | CRUD com numeração SC00001 |
-| 3 | `compras/pedidos.html` | ✅ Concluído | CRUD com PDF e numeração PC00001 |
-| 4 | `compras/recebimento.html` | ✅ Concluído | CRUD com numeração RC00001 |
-| 5 | `compras/conferencia.html` | ✅ Concluído | CRUD completo |
-| 6 | `compras/nota-fiscal.html` | ✅ Concluído | CRUD com atualização de estoque |
+| Tela | Arquivo | Status |
+|------|---------|--------|
+| Planejamento | `compras/planejamento.html` | ✅ Concluído |
+| Solicitações de Compras | `compras/solicitacoes.html` | ✅ Concluído |
+| Pedidos de Compras | `compras/pedidos.html` | ✅ Concluído |
+| Recebimento | `compras/recebimento.html` | ✅ Concluído |
+| Conferência | `compras/conferencia.html` | ✅ Concluído |
+| Entrada de Nota Fiscal | `compras/nota-fiscal.html` | ✅ Concluído |
 
 ---
 
@@ -29,17 +29,26 @@ Planejamento → Solicitação → Pedido → Recebimento → Conferência → N
 
 | Tabela | Status |
 |--------|--------|
-| `compras_planejamento` | ❌ A criar |
-| `compras_solicitacoes` | ❌ A criar |
-| `compras_pedidos` | ❌ A criar |
-| `compras_recebimentos` | ❌ A criar |
-| `compras_conferencias` | ❌ A criar |
-| `compras_notas_fiscais` | ❌ A criar |
+| `compras_planejamento` | ✅ Criada |
+| `compras_solicitacoes` | ✅ Criada |
+| `compras_pedidos` | ✅ Criada |
+| `compras_recebimentos` | ✅ Criada |
+| `compras_conferencias` | ✅ Criada |
+| `compras_notas_fiscais` | ✅ Criada |
 
 ---
 
-## Legenda
+## Funcionalidades Especiais
 
-- ✅ Concluído
-- 🔄 Em andamento
-- ❌ Não iniciado
+| Funcionalidade | Status |
+|----------------|--------|
+| Geração de PDF do Pedido | ❌ A implementar |
+| Preenchimento automático (SC → PC) | ❌ A implementar |
+| Atualização de estoque ao lançar NF | ❌ A implementar |
+
+---
+
+## Observações
+
+- Todas as telas existem e renderizam corretamente.
+- Integração com Supabase pendente.
