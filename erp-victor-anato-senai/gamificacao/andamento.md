@@ -1,7 +1,7 @@
 # Gamificação — Andamento da Implementação
 
 > Documento de acompanhamento do módulo de Gamificação do ERP Senai.
-> Última atualização: 2026-08-16
+> Última atualização: 2026-08-16 (sessão 2)
 
 ---
 
@@ -137,7 +137,9 @@
 | Links para telas ERP nos eventos da equipe | Cada setor abre a tela correta do ERP | ✅ Concluído |
 | Gamificação no sidebar de todos os HTMLs do ERP | Links para professor, equipe, placar nas 4 novas telas | ✅ Concluído |
 | Gamificação no sidebar das telas antigas (index, ranking, admin) | Links para professor, equipe, placar | ⚠️ Iniciado — apenas as telas novas foram atualizadas |
-| SQL de registro no banco (sistema + telas) | INSERT em `sistema`, `tela`, `tela_sistema` | ❌ Não Iniciado |
+| Accordion no sidebar do `admin.html` | Todas as seções colapsam/expandem com animação `▸` | ✅ Concluído |
+| `televendas.html` registrada na tabela `tela` | INSERT em `tela` (ID 56) + `tela_sistema` (sistema_id=5) | ✅ Concluído |
+| SQL de registro no banco (sistema + telas) | INSERT em `sistema`, `tela`, `tela_sistema` para demais telas | ❌ Não Iniciado |
 | Motor criando registros reais no ERP | Evento "Pedido de Venda" cria `vendas_pedidos` no banco | ❌ Não Iniciado — motor gera evento mas não cria o registro ERP vinculado |
 | Detecção automática de resolução por status ERP | Polling verifica se o aluno alterou o status no módulo | ❌ Não Iniciado |
 
@@ -495,14 +497,60 @@ O agente usa esse tipo mas **não passa pelo motor aleatório** — é disparado
 | Item | Descrição | Status |
 |------|-----------|--------|
 | Especificação do agente | Lógica, campos, fluxo e HTML documentados | ✅ Concluído (este documento) |
-| Painel UI no `professor.html` | Bloco HTML com campos de configuração | ❌ Não Iniciado |
-| Função `iniciarAgente()` | JavaScript de envio com setInterval | ❌ Não Iniciado |
-| Função `enviarPedidoTelevendas()` | Insert em `televendas` + insert em `gamificacao_eventos` | ❌ Não Iniciado |
-| Modo aleatório de produto | Sorteia produto da lista de ativos | ❌ Não Iniciado |
-| Modo produto específico | Professor escolhe produto do select | ❌ Não Iniciado |
-| Barra de progresso do agente | Exibe X/N pedidos e próximo envio em Ys | ❌ Não Iniciado |
+| Agente TV em `admin.html` (versão admin) | Painel completo em aba "📞 Tele Vendas" com config dinâmica | ✅ Concluído |
+| Config: pedidos por minuto | Input numérico (1–60) que define o intervalo em segundos | ✅ Concluído (admin.html) |
+| Config: faixa de valores (mín/máx) | Inputs R$ configuráveis que alimentam `enviarPedidoTv()` | ✅ Concluído (admin.html) |
+| Config: modo produto (aleatório / específico / lista) | Select com subpainel dinâmico, carrega `produtos` ativos | ✅ Concluído (admin.html) |
+| Config: modo cliente (aleatório / específico / lista) | Select com subpainel dinâmico, carrega `clientes` ativos | ✅ Concluído (admin.html) |
+| `vendas/televendas.html`: botão Atualizar manual | Chama `carregarDados()` e reinicia contador de auto-refresh | ✅ Concluído |
+| `vendas/televendas.html`: auto-refresh 5 minutos | Countdown regressivo visível no toolbar | ✅ Concluído |
+| Painel UI no `professor.html` | Bloco HTML com campos de configuração (conforme spec 11.8) | ✅ Concluído |
+| Função `iniciarAgente()` em `professor.html` | JavaScript de envio com setInterval + vínculo à sessão | ✅ Concluído |
+| Função `enviarPedidoTelevendas()` em `professor.html` | Insert em `televendas` + insert em `gamificacao_eventos` | ✅ Concluído |
+| Barra de progresso do agente (X/N pedidos) | Exibe progresso da rodada com countdown | ✅ Concluído |
 | Equipe Vendas: link para televendas.html | Botão "Abrir Tele Vendas" em `equipe.html` | ❌ Não Iniciado |
-| Filtro por `id_chave` em televendas.html | Permite ver só os pedidos da sessão/rodada | ❌ Não Iniciado |
+| Filtro por `id_chave` em televendas.html | Permite ver só os pedidos da sessão/rodada atual | ❌ Não Iniciado |
+
+---
+
+---
+
+## 12. RH — Gamificação de Pendências
+
+> Permite ao professor gerar pendências de RH durante a sessão. As pendências aparecem no `rh/dashboard.html` como alertas visuais com badges por tipo. A equipe de RH resolve as pendências clicando em "Resolver".
+
+### 12.1 Banco de Dados
+
+| Item | Descrição | Status |
+|------|-----------|--------|
+| Tabela `rh_pendencias` | Armazena pendências geradas pela gamificação — campos: `tipo`, `titulo`, `funcionario_id`, `funcionario_nome`, `status`, `prioridade`, `dados_extra`, `observacao`, `resolvido_em` | ✅ Concluído — criada no Supabase com RLS permissiva |
+
+### 12.2 Painel Admin (`gamificacao/admin.html`)
+
+| Item | Descrição | Status |
+|------|-----------|--------|
+| Aba "👥 RH" na barra de abas | Nova aba no admin.html ao lado de "📞 Tele Vendas" | ✅ Concluído |
+| Seletor de ação (5 tipos) | Contratar, Demitir, Promover, Férias, Atestado — cards visuais clicáveis | ✅ Concluído |
+| Modo funcionário: Aleatório | Sorteia 1 funcionário ativo ao acaso | ✅ Concluído |
+| Modo funcionário: Específico | Select com todos os funcionários ativos carregados do Supabase | ✅ Concluído |
+| Modo funcionário: Lista (múltiplos) | Checkboxes com todos os funcionários; gera 1 pendência por selecionado | ✅ Concluído |
+| Campo Prioridade | Normal / Alta / Urgente | ✅ Concluído |
+| Campo Observação | Texto livre enviado junto à pendência | ✅ Concluído |
+| Botão "📋 Gerar Pendência no RH" | Insere 1 registro em `rh_pendencias` por funcionário selecionado | ✅ Concluído |
+| Tabela de histórico de pendências geradas | Lista as últimas 100 em tempo real com status colorido | ✅ Concluído |
+
+### 12.3 Dashboard RH (`rh/dashboard.html`)
+
+| Item | Descrição | Status |
+|------|-----------|--------|
+| Banner de pendências (topo da página) | Destaque em vermelho, visível apenas quando há pendências não resolvidas | ✅ Concluído |
+| Badges por tipo de pendência | Um badge colorido por tipo (📝 Contratação, 🚪 Demissão, ⬆️ Promoção, 🏖️ Férias, 🏥 Atestado) com contador | ✅ Concluído |
+| Filtro por badge | Clicar no badge filtra a lista para exibir só aquele tipo | ✅ Concluído |
+| Lista expansível de pendências | Abre/fecha ao clicar no header do banner; exibe nome, tipo, data, prioridade | ✅ Concluído |
+| Indicador de prioridade Urgente com animação | Badge vermelho pulsante para pendências urgentes | ✅ Concluído |
+| Botão "✅ Resolver" por item | Faz PATCH em `rh_pendencias` → `status = Resolvido`; remove o item da lista com fade | ✅ Concluído |
+| Auto-refresh a cada 30 segundos | Recarrega pendências automaticamente para manter o painel atualizado | ✅ Concluído |
+| Ocultação automática do banner | Banner some automaticamente quando todas as pendências são resolvidas | ✅ Concluído |
 
 ---
 
@@ -520,7 +568,7 @@ O agente usa esse tipo mas **não passa pelo motor aleatório** — é disparado
 | Config Sessão | 9 | 0 | 2 | 11 |
 | Integração ERP | 2 | 1 | 3 | 6 |
 | gamif.js | 3 | 1 | 0 | 4 |
-| Agente Tele Vendas | 1 | 0 | 9 | 10 |
+| Agente Tele Vendas | 5 | 0 | 5 | 10 |
 | **Total** | **68** | **3** | **18** | **89** |
 
 ---
