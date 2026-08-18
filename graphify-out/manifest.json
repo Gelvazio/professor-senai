@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1787057887.8844347,
-    "ast_hash": "b1b897e2cc3bb4012e545243cfad62ce",
+    "mtime": 1787060581.604871,
+    "ast_hash": "dd3bab96ca03d8d343043dd46279e8fb",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -1589,14 +1589,9 @@
     "ast_hash": "00688d2f01e1246859362b2ec5ab59e0",
     "semantic_hash": ""
   },
-  "sistema/ReforcoMatematicaRaciocinioLogico/Atividade-Matematica-e-Raciocinio-Logico.html": {
-    "mtime": 1786986712.5658178,
-    "ast_hash": "59b2eaf44dd84b986a4d9218a1520f36",
-    "semantic_hash": ""
-  },
   "sistema/ReforcoMatematicaRaciocinioLogico/DUVIDAS-CEPLAS-18-08-2026.txt": {
-    "mtime": 1787056777.152098,
-    "ast_hash": "bbd095972f48e09ae364bf291038008e",
+    "mtime": 1787060638.5416574,
+    "ast_hash": "58368410b7886fc21c719c71796654ab",
     "semantic_hash": ""
   },
   "sistema/ReforcoMatematicaRaciocinioLogico/EMENTA-RACIOCINIO-LOGICO-E-MATEMATICA.txt": {
@@ -1617,6 +1612,16 @@
   "sistema/ReforcoMatematicaRaciocinioLogico/SLIDE-Matematica-Racioc\u00ednio-Logico.md": {
     "mtime": 1786993613.3138392,
     "ast_hash": "888cad7c6812bd6abfafd9ebc9dc1729",
+    "semantic_hash": ""
+  },
+  "sistema/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico01.html": {
+    "mtime": 1786986712.5658178,
+    "ast_hash": "59b2eaf44dd84b986a4d9218a1520f36",
+    "semantic_hash": ""
+  },
+  "sistema/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico04.html": {
+    "mtime": 1787060356.2487564,
+    "ast_hash": "34adfe5a6f4931fe402048562a5fe719",
     "semantic_hash": ""
   }
 }

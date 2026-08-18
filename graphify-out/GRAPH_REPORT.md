@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-18)
 
 ## Corpus Check
-- 128 files · ~1,132,961 words
+- 123 files · ~1,127,479 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1658 nodes · 1601 edges · 132 communities (122 shown, 10 thin omitted)
+- 1609 nodes · 1557 edges · 127 communities (117 shown, 10 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f0c594f0`
+- Built from commit: `fc3f7750`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,7 +22,6 @@
 - [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
-- [[_COMMUNITY_Community 7|Community 7]]
 - [[_COMMUNITY_Community 8|Community 8]]
 - [[_COMMUNITY_Community 9|Community 9]]
 - [[_COMMUNITY_Community 10|Community 10]]
@@ -70,12 +69,9 @@
 - [[_COMMUNITY_Community 53|Community 53]]
 - [[_COMMUNITY_Community 54|Community 54]]
 - [[_COMMUNITY_Community 55|Community 55]]
-- [[_COMMUNITY_Community 56|Community 56]]
-- [[_COMMUNITY_Community 57|Community 57]]
 - [[_COMMUNITY_Community 58|Community 58]]
 - [[_COMMUNITY_Community 59|Community 59]]
 - [[_COMMUNITY_Community 60|Community 60]]
-- [[_COMMUNITY_Community 61|Community 61]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Community 63|Community 63]]
 - [[_COMMUNITY_Community 64|Community 64]]
@@ -133,7 +129,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (132 total, 10 thin omitted)
+## Communities (127 total, 10 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -162,10 +158,6 @@ Nodes (32): For --cluster-only, For git commit hook, For /graphify add, For /gra
 ### Community 6 - "Community 6"
 Cohesion: 0.22
 Nodes (8): Documentação Padrão, Fluxo Obrigatório, Modelo do Arquivo, Overview, Red Flags — PARE e Corrija, Regras, Regras dos Passos, Ícones de Status
-
-### Community 7 - "Community 7"
-Cohesion: 0.10
-Nodes (20): 10. Medidas e Grandezas, 11. Medidas e Grandezas, 12. Raciocínio Lógico e Resolução de Problemas, 13. Raciocínio Lógico e Resolução de Problemas, 15. Raciocínio Lógico e Resolução de Problemas, 16. Raciocínio Lógico e Resolução de Problemas, 17. Introdução à Álgebra, 18. Introdução à Álgebra (+12 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.20
@@ -351,14 +343,6 @@ Nodes (10): Arquivos Base, Passo 1 — Autenticação, Passo 2 — Dashboard (Vi
 Cohesion: 0.22
 Nodes (9): 6.1 Equipes e Setores, 6.2 Telas do Módulo, 6.3 Tabelas no Supabase (Gamificação), 6.4 Sistema e Telas no Banco, 6.5 Sidebar HTML (Gamificação), 6.6 Pontuação, 6.7 sistema.json — adicionar entrada, 6.8 perfis.html — atualizar sisOrdem (+1 more)
 
-### Community 56 - "Community 56"
-Cohesion: 0.22
-Nodes (8): 1. Operações Básicas e Cálculo Numérico, 2. Frações, Decimais e Porcentagem, 3. Proporcionalidade, 4. Medidas e Grandezas, 5. Raciocínio Lógico e Resolução de Problemas, 6. Introdução à Álgebra, 7. Tratamento da Informação, Orientação geral
-
-### Community 57 - "Community 57"
-Cohesion: 0.22
-Nodes (8): 1. Operações Básicas e Cálculo Numérico, 2. Frações, Decimais e Porcentagem, 3. Proporcionalidade, 4. Medidas e Grandezas, 5. Raciocínio Lógico e Resolução de Problemas, 6. Introdução à Álgebra, 7. Tratamento da Informação, Orientação geral
-
 ### Community 58 - "Community 58"
 Cohesion: 0.25
 Nodes (8): 7.1 Telas do Módulo, 7.2 Numeração Automática, 7.3 Tabelas no Supabase (RH), 7.4 Sistema e Telas no Banco, 7.5 Sidebar HTML (RH), 7.6 sistema.json — adicionar entrada, Fluxo do Módulo de RH, Módulo 7 — RECURSOS HUMANOS
@@ -370,10 +354,6 @@ Nodes (6): Andamento — Módulo Compras, Banco de Dados (Supabase), Fluxo, Func
 ### Community 60 - "Community 60"
 Cohesion: 0.29
 Nodes (7): Autenticação do ERP, Credenciais, Esquema de tabelas do banco (PostgreSQL), Filtros e operadores da API REST Supabase, Padrão de CRUD — funções reutilizáveis, RLS (Row Level Security), Supabase — Configuração e Uso da API
-
-### Community 61 - "Community 61"
-Cohesion: 0.22
-Nodes (8): 1. Operações Básicas e Cálculo Numérico, 2. Frações, Decimais e Porcentagem, 3. Proporcionalidade, 4. Medidas e Grandezas, 5. Raciocínio Lógico e Resolução de Problemas, 6. Introdução à Álgebra, 7. Tratamento da Informação, Síntese para o planejamento
 
 ### Community 62 - "Community 62"
 Cohesion: 0.22
@@ -492,7 +472,7 @@ Cohesion: 0.33
 Nodes (5): Atividades planejadas (ATIVIDADES-Matematica-Raciocínio-Logico.pptx), Estrutura planejada (30 slides), Log de execução, SLIDE-Matematica-Raciocínio-Logico — Progresso de Criação, Status: Em andamento
 
 ## Knowledge Gaps
-- **1285 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Overview` (+1280 more)
+- **1241 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Overview` (+1236 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -500,7 +480,7 @@ Nodes (5): Atividades planejadas (ATIVIDADES-Matematica-Raciocínio-Logico.pptx)
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _1286 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1242 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07053140096618357 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
