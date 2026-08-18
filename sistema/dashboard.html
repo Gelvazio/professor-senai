@@ -2593,7 +2593,9 @@
 
       function abrirModalIframe(url, titulo) {
         document.getElementById("modalIframeTitulo").textContent = titulo || "Conteúdo";
-        document.getElementById("modalIframeEl").src = url;
+        // Codifica apenas caminhos relativos (não URLs http/https já formatadas)
+        const src = /^https?:\/\//i.test(url) ? url : url.split('/').map(seg => encodeURIComponent(seg)).join('/');
+        document.getElementById("modalIframeEl").src = src;
         document.getElementById("modalIframe").style.display = "flex";
       }
 
