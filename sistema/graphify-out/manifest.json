@@ -405,8 +405,8 @@
     "semantic_hash": ""
   },
   "dashboard.html": {
-    "mtime": 1786626346.9529927,
-    "ast_hash": "d40592d6170b35c9a80806f2769ece6a",
+    "mtime": 1787052460.555051,
+    "ast_hash": "c1e49020c0579125622bd285824db2cb",
     "semantic_hash": ""
   },
   "ementa-slides.html": {
@@ -462,6 +462,151 @@
   "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/MATERIAL_INTRODUCAO_TIC.html": {
     "mtime": 1786820524.1017027,
     "ast_hash": "439f729ca99fedb0dff65beca36b31d8",
+    "semantic_hash": ""
+  },
+  "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md": {
+    "mtime": 1786985827.5463004,
+    "ast_hash": "794103599b3777fcb3ba9d77cd68a2cb",
+    "semantic_hash": ""
+  },
+  "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/Atividade-Matematica-e-Raciocinio-Logico.html": {
+    "mtime": 1786986712.5658178,
+    "ast_hash": "59b2eaf44dd84b986a4d9218a1520f36",
+    "semantic_hash": ""
+  },
+  "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/EMENTA-RACIOCINIO-LOGICO-E-MATEMATICA.txt": {
+    "mtime": 1786987985.9595265,
+    "ast_hash": "0c58145c5140e0d8e23c277b39857cb7",
+    "semantic_hash": ""
+  },
+  "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md": {
+    "mtime": 1786993613.3138392,
+    "ast_hash": "888cad7c6812bd6abfafd9ebc9dc1729",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade-Matematica-e-Raciocinio-Logico_36f08315.md": {
+    "mtime": 1787052227.426635,
+    "ast_hash": "bc3d8bd67594d1234ad6853f0c2c0a4b",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md": {
+    "mtime": 1787052227.68512,
+    "ast_hash": "7908f366d35245c2fb05ca47bb4f4012",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md": {
+    "mtime": 1787052228.0740747,
+    "ast_hash": "d57bc1d2a19ec66ec1e6bc443c2a7bd8",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Checklist Prova Objetiva_9406581b.md": {
+    "mtime": 1787052227.03853,
+    "ast_hash": "79495a0112bbae942c9698ab0339104e",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Checklist Prova Objetiva_bc9be889.md": {
+    "mtime": 1787052224.4426513,
+    "ast_hash": "79495a0112bbae942c9698ab0339104e",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Checklist Prova Pr\u00e1tica_dd51f180.md": {
+    "mtime": 1787052224.4945967,
+    "ast_hash": "f995c9f54d8f98a4709a0f9826708e4f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Checklist Prova Pr\u00e1tica_f3fd88bd.md": {
+    "mtime": 1787052227.085789,
+    "ast_hash": "f995c9f54d8f98a4709a0f9826708e4f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md": {
+    "mtime": 1787052228.2962303,
+    "ast_hash": "e5e4700e6a4396ac43076c483dd0a636",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Modelo Prova Pr\u00e1tica CT ELETROT\u00c9CNICA_1473c987.md": {
+    "mtime": 1787052224.5540135,
+    "ast_hash": "e9a2b90d197a5e534087f0f29349327f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Modelo Prova Pr\u00e1tica CT ELETROT\u00c9CNICA_7ca579bd.md": {
+    "mtime": 1787052227.1556149,
+    "ast_hash": "e9a2b90d197a5e534087f0f29349327f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROMPT - Rubricas Capacidades Socioemocionais_72362cf8.md": {
+    "mtime": 1787052227.2167852,
+    "ast_hash": "681239504af4357d3c9f684eef897286",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROMPT - Rubricas Capacidades Socioemocionais_d7cb4c07.md": {
+    "mtime": 1787052224.6039653,
+    "ast_hash": "681239504af4357d3c9f684eef897286",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_10eecaf3.md": {
+    "mtime": 1787052224.9832473,
+    "ast_hash": "c2bf24d1b4c8078834c1af5253440d43",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_COM_GABARITO_fbc0d653.md": {
+    "mtime": 1787052225.1679063,
+    "ast_hash": "4d7ff39b2c391b55b548d4fb3f592d57",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROVA_PRATICA_UC1_TIC_93c034fe.md": {
+    "mtime": 1787052225.245337,
+    "ast_hash": "0b611c9edace0033e2696f2dbdd03c25",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md": {
+    "mtime": 1787052228.461726,
+    "ast_hash": "9396f1a2c51c8fe06d76b5588c7912be",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Prova Objetiva _c621c6d0.md": {
+    "mtime": 1787052227.248602,
+    "ast_hash": "25e3dd35d81e960da99b00c0f6b1f69c",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Prova Objetiva _d77cf242.md": {
+    "mtime": 1787052224.6650686,
+    "ast_hash": "25e3dd35d81e960da99b00c0f6b1f69c",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Template Prova Pr\u00e1tica_657ab546.md": {
+    "mtime": 1787052224.7775247,
+    "ast_hash": "c9918aca85baf5cdb3f733b328a9d66a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Template Prova Pr\u00e1tica_8c8c4447.md": {
+    "mtime": 1787052227.3630111,
+    "ast_hash": "c9918aca85baf5cdb3f733b328a9d66a",
+    "semantic_hash": ""
+  },
+  "prof-leila/claude.md": {
+    "mtime": 1786988804.2010748,
+    "ast_hash": "4ba6f01f79f2a44dc8ad6b43b9ae6bae",
+    "semantic_hash": ""
+  },
+  "prof-leila/infografico-apresentacoes.html": {
+    "mtime": 1786989961.7615125,
+    "ast_hash": "73226ca76994634b19ac22d876e1a4da",
+    "semantic_hash": ""
+  },
+  "prof-leila/prompt.md": {
+    "mtime": 1786988323.3343735,
+    "ast_hash": "b9bd1f28274a05a8bd177b366b56536d",
+    "semantic_hash": ""
+  },
+  "prof-leila/INFOGRAFICO-APRESENTACOES.png": {
+    "mtime": 1786989560.6918976,
+    "ast_hash": "835ce32b7964f2fdf6cb07ed9e157f18",
+    "semantic_hash": ""
+  },
+  "prof-leila/INFOGRAFICO-PROF-LEILA.png": {
+    "mtime": 1786988464.2660794,
+    "ast_hash": "23dc8e70a90f817a538841455e627b26",
     "semantic_hash": ""
   }
 }

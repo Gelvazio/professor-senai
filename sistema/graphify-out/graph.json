@@ -4,6 +4,636 @@
   "graph": {},
   "nodes": [
     {
+      "label": "Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h",
+      "community": 0,
+      "norm_label": "apostila_comunicacao_oral_e_escrita15h.md"
+    },
+    {
+      "label": "RIO DO SUL MAIS TECH",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_rio_do_sul_mais_tech",
+      "community": 0,
+      "norm_label": "rio do sul mais tech"
+    },
+    {
+      "label": "INTRODU\u00c7\u00c3O \u00c0 COMUNICA\u00c7\u00c3O ORAL E ESCRITA PARA O MUNDO DO TRABALHO",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "community": 0,
+      "norm_label": "introducao a comunicacao oral e escrita para o mundo do trabalho"
+    },
+    {
+      "label": "SOBRE ESTE MATERIAL",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_sobre_este_material",
+      "community": 0,
+      "norm_label": "sobre este material"
+    },
+    {
+      "label": "Apresenta\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_apresenta\u00e7\u00e3o",
+      "community": 0,
+      "norm_label": "apresentacao"
+    },
+    {
+      "label": "Como esta apostila est\u00e1 organizada",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_como_esta_apostila_est\u00e1_organizada",
+      "community": 0,
+      "norm_label": "como esta apostila esta organizada"
+    },
+    {
+      "label": "Objetivo da Unidade Curricular",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_objetivo_da_unidade_curricular",
+      "community": 0,
+      "norm_label": "objetivo da unidade curricular"
+    },
+    {
+      "label": "Percurso das 15 horas",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_percurso_das_15_horas",
+      "community": 0,
+      "norm_label": "percurso das 15 horas"
+    },
+    {
+      "label": "Como voc\u00ea ser\u00e1 avaliado",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_como_voc\u00ea_ser\u00e1_avaliado",
+      "community": 0,
+      "norm_label": "como voce sera avaliado"
+    },
+    {
+      "label": "ENCONTRO 1 \u2014 Comunica\u00e7\u00e3o no mundo do trabalho",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_1_comunica\u00e7\u00e3o_no_mundo_do_trabalho",
+      "community": 21,
+      "norm_label": "encontro 1 \u2014 comunicacao no mundo do trabalho"
+    },
+    {
+      "label": "AO FINAL DESTE ENCONTRO, VOC\u00ca SER\u00c1 CAPAZ DE:",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de",
+      "community": 21,
+      "norm_label": "ao final deste encontro, voce sera capaz de:"
+    },
+    {
+      "label": "1.1 Comunicar \u00e9 fazer-se entender",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_1_1_comunicar_\u00e9_fazer_se_entender",
+      "community": 21,
+      "norm_label": "1.1 comunicar e fazer-se entender"
+    },
+    {
+      "label": "Os elementos da comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_os_elementos_da_comunica\u00e7\u00e3o",
+      "community": 21,
+      "norm_label": "os elementos da comunicacao"
+    },
+    {
+      "label": "ATIVIDADE 1.1 | Mapa da comunica\u00e7\u00e3o *(25 min \u00b7 individual)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_1_1_mapa_da_comunica\u00e7\u00e3o_25_min_individual",
+      "community": 21,
+      "norm_label": "atividade 1.1 | mapa da comunicacao *(25 min \u00b7 individual)*"
+    },
+    {
+      "label": "1.2 Ru\u00eddo: o inimigo silencioso",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_1_2_ru\u00eddo_o_inimigo_silencioso",
+      "community": 21,
+      "norm_label": "1.2 ruido: o inimigo silencioso"
+    },
+    {
+      "label": "ATIVIDADE 1.2 | Ca\u00e7a aos ru\u00eddos *(40 min \u00b7 em duplas)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_1_2_ca\u00e7a_aos_ru\u00eddos_40_min_em_duplas",
+      "community": 21,
+      "norm_label": "atividade 1.2 | caca aos ruidos *(40 min \u00b7 em duplas)*"
+    },
+    {
+      "label": "ENCONTRO 2 \u2014 Registro adequado e escuta ativa",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_2_registro_adequado_e_escuta_ativa",
+      "community": 23,
+      "norm_label": "encontro 2 \u2014 registro adequado e escuta ativa"
+    },
+    {
+      "label": "AO FINAL DESTE ENCONTRO, VOC\u00ca SER\u00c1 CAPAZ DE:",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_161",
+      "community": 23,
+      "norm_label": "ao final deste encontro, voce sera capaz de:"
+    },
+    {
+      "label": "2.1 Cada contexto pede um tom",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_2_1_cada_contexto_pede_um_tom",
+      "community": 23,
+      "norm_label": "2.1 cada contexto pede um tom"
+    },
+    {
+      "label": "ATIVIDADE 2.1 | Tradutor de registros *(35 min \u00b7 individual)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_2_1_tradutor_de_registros_35_min_individual",
+      "community": 23,
+      "norm_label": "atividade 2.1 | tradutor de registros *(35 min \u00b7 individual)*"
+    },
+    {
+      "label": "2.2 Escuta ativa: metade da comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_2_2_escuta_ativa_metade_da_comunica\u00e7\u00e3o",
+      "community": 23,
+      "norm_label": "2.2 escuta ativa: metade da comunicacao"
+    },
+    {
+      "label": "ATIVIDADE 2.2 | Teste da escuta *(40 min \u00b7 trios)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L212",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_2_2_teste_da_escuta_40_min_trios",
+      "community": 23,
+      "norm_label": "atividade 2.2 | teste da escuta *(40 min \u00b7 trios)*"
+    },
+    {
+      "label": "ENCONTRO 3 \u2014 Falar em p\u00fablico e retorno construtivo",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L230",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_3_falar_em_p\u00fablico_e_retorno_construtivo",
+      "community": 20,
+      "norm_label": "encontro 3 \u2014 falar em publico e retorno construtivo"
+    },
+    {
+      "label": "AO FINAL DESTE ENCONTRO, VOC\u00ca SER\u00c1 CAPAZ DE:",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L234",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_234",
+      "community": 20,
+      "norm_label": "ao final deste encontro, voce sera capaz de:"
+    },
+    {
+      "label": "3.1 Falar em p\u00fablico sem travar",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L242",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_3_1_falar_em_p\u00fablico_sem_travar",
+      "community": 20,
+      "norm_label": "3.1 falar em publico sem travar"
+    },
+    {
+      "label": "Antes de falar: os tr\u00eas Ps",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L246",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_antes_de_falar_os_tr\u00eas_ps",
+      "community": 20,
+      "norm_label": "antes de falar: os tres ps"
+    },
+    {
+      "label": "Durante a fala: os recursos do corpo e da voz",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L252",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_durante_a_fala_os_recursos_do_corpo_e_da_voz",
+      "community": 20,
+      "norm_label": "durante a fala: os recursos do corpo e da voz"
+    },
+    {
+      "label": "ATIVIDADE 3.1 | Um minuto sobre mim *(60 min \u00b7 individual)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L267",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_3_1_um_minuto_sobre_mim_60_min_individual",
+      "community": 20,
+      "norm_label": "atividade 3.1 | um minuto sobre mim *(60 min \u00b7 individual)*"
+    },
+    {
+      "label": "3.2 Dar e receber retorno",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L288",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_3_2_dar_e_receber_retorno",
+      "community": 20,
+      "norm_label": "3.2 dar e receber retorno"
+    },
+    {
+      "label": "Ficha de observa\u00e7\u00e3o do colega",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L297",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ficha_de_observa\u00e7\u00e3o_do_colega",
+      "community": 20,
+      "norm_label": "ficha de observacao do colega"
+    },
+    {
+      "label": "ATIVIDADE 3.2 | Rodada de retorno *(20 min \u00b7 em grupos)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L309",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_3_2_rodada_de_retorno_20_min_em_grupos",
+      "community": 20,
+      "norm_label": "atividade 3.2 | rodada de retorno *(20 min \u00b7 em grupos)*"
+    },
+    {
+      "label": "ENCONTRO 4 \u2014 Reuni\u00f5es, atendimento e comunica\u00e7\u00e3o assertiva",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L325",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_4_reuni\u00f5es_atendimento_e_comunica\u00e7\u00e3o_assertiva",
+      "community": 0,
+      "norm_label": "encontro 4 \u2014 reunioes, atendimento e comunicacao assertiva"
+    },
+    {
+      "label": "AO FINAL DESTE ENCONTRO, VOC\u00ca SER\u00c1 CAPAZ DE:",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L329",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_329",
+      "community": 0,
+      "norm_label": "ao final deste encontro, voce sera capaz de:"
+    },
+    {
+      "label": "4.1 Reuni\u00e3o: falar na hora certa",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L337",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_4_1_reuni\u00e3o_falar_na_hora_certa",
+      "community": 0,
+      "norm_label": "4.1 reuniao: falar na hora certa"
+    },
+    {
+      "label": "4.2 Assertividade: nem passivo, nem agressivo",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L348",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_4_2_assertividade_nem_passivo_nem_agressivo",
+      "community": 0,
+      "norm_label": "4.2 assertividade: nem passivo, nem agressivo"
+    },
+    {
+      "label": "ATIVIDADE 4.1 | Reuni\u00e3o simulada *(45 min \u00b7 grupos de 5)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L366",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_4_1_reuni\u00e3o_simulada_45_min_grupos_de_5",
+      "community": 0,
+      "norm_label": "atividade 4.1 | reuniao simulada *(45 min \u00b7 grupos de 5)*"
+    },
+    {
+      "label": "4.3 Atendimento: a voz da empresa",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L379",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_4_3_atendimento_a_voz_da_empresa",
+      "community": 0,
+      "norm_label": "4.3 atendimento: a voz da empresa"
+    },
+    {
+      "label": "ATIVIDADE 4.2 | Dramatiza\u00e7\u00e3o de atendimento *(30 min \u00b7 duplas)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L393",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_4_2_dramatiza\u00e7\u00e3o_de_atendimento_30_min_duplas",
+      "community": 0,
+      "norm_label": "atividade 4.2 | dramatizacao de atendimento *(30 min \u00b7 duplas)*"
+    },
+    {
+      "label": "ENCONTRO 5 \u2014 Reda\u00e7\u00e3o t\u00e9cnica: princ\u00edpios e estrutura",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L409",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_5_reda\u00e7\u00e3o_t\u00e9cnica_princ\u00edpios_e_estrutura",
+      "community": 0,
+      "norm_label": "encontro 5 \u2014 redacao tecnica: principios e estrutura"
+    },
+    {
+      "label": "AO FINAL DESTE ENCONTRO, VOC\u00ca SER\u00c1 CAPAZ DE:",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L413",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_413",
+      "community": 0,
+      "norm_label": "ao final deste encontro, voce sera capaz de:"
+    },
+    {
+      "label": "5.1 Escrever no trabalho \u00e9 diferente",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L421",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_5_1_escrever_no_trabalho_\u00e9_diferente",
+      "community": 0,
+      "norm_label": "5.1 escrever no trabalho e diferente"
+    },
+    {
+      "label": "5.2 A estrutura de um texto profissional",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L440",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_5_2_a_estrutura_de_um_texto_profissional",
+      "community": 0,
+      "norm_label": "5.2 a estrutura de um texto profissional"
+    },
+    {
+      "label": "ATIVIDADE 5.1 | Oficina de reescrita *(45 min \u00b7 duplas)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L451",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_5_1_oficina_de_reescrita_45_min_duplas",
+      "community": 0,
+      "norm_label": "atividade 5.1 | oficina de reescrita *(45 min \u00b7 duplas)*"
+    },
+    {
+      "label": "5.3 Revisar antes de enviar",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L464",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_5_3_revisar_antes_de_enviar",
+      "community": 0,
+      "norm_label": "5.3 revisar antes de enviar"
+    },
+    {
+      "label": "ENCONTRO 6 \u2014 G\u00eaneros profissionais: comunicado, relato e ata",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L484",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_6_g\u00eaneros_profissionais_comunicado_relato_e_ata",
+      "community": 0,
+      "norm_label": "encontro 6 \u2014 generos profissionais: comunicado, relato e ata"
+    },
+    {
+      "label": "AO FINAL DESTE ENCONTRO, VOC\u00ca SER\u00c1 CAPAZ DE:",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L488",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_488",
+      "community": 0,
+      "norm_label": "ao final deste encontro, voce sera capaz de:"
+    },
+    {
+      "label": "6.1 Comunicado",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L496",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_6_1_comunicado",
+      "community": 0,
+      "norm_label": "6.1 comunicado"
+    },
+    {
+      "label": "6.2 Relato de ocorr\u00eancia",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L502",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_6_2_relato_de_ocorr\u00eancia",
+      "community": 0,
+      "norm_label": "6.2 relato de ocorrencia"
+    },
+    {
+      "label": "6.3 Ata resumida",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L511",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_6_3_ata_resumida",
+      "community": 0,
+      "norm_label": "6.3 ata resumida"
+    },
+    {
+      "label": "ATIVIDADE 6.1 | Produ\u00e7\u00e3o de texto profissional *(60 min \u00b7 individual)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L523",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_6_1_produ\u00e7\u00e3o_de_texto_profissional_60_min_individual",
+      "community": 0,
+      "norm_label": "atividade 6.1 | producao de texto profissional *(60 min \u00b7 individual)*"
+    },
+    {
+      "label": "ENCONTRO 7 \u2014 Comunica\u00e7\u00e3o digital e seguran\u00e7a",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L545",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_7_comunica\u00e7\u00e3o_digital_e_seguran\u00e7a",
+      "community": 22,
+      "norm_label": "encontro 7 \u2014 comunicacao digital e seguranca"
+    },
+    {
+      "label": "AO FINAL DESTE ENCONTRO, VOC\u00ca SER\u00c1 CAPAZ DE:",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L549",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_549",
+      "community": 22,
+      "norm_label": "ao final deste encontro, voce sera capaz de:"
+    },
+    {
+      "label": "7.1 O e-mail profissional",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L557",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_7_1_o_e_mail_profissional",
+      "community": 22,
+      "norm_label": "7.1 o e-mail profissional"
+    },
+    {
+      "label": "ATIVIDADE 7.1 | Do erro ao acerto *(35 min \u00b7 duplas)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L574",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_7_1_do_erro_ao_acerto_35_min_duplas",
+      "community": 22,
+      "norm_label": "atividade 7.1 | do erro ao acerto *(35 min \u00b7 duplas)*"
+    },
+    {
+      "label": "7.2 Netiqueta e escolha do canal",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L596",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_7_2_netiqueta_e_escolha_do_canal",
+      "community": 22,
+      "norm_label": "7.2 netiqueta e escolha do canal"
+    },
+    {
+      "label": "7.3 Seguran\u00e7a na comunica\u00e7\u00e3o digital",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L616",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_7_3_seguran\u00e7a_na_comunica\u00e7\u00e3o_digital",
+      "community": 22,
+      "norm_label": "7.3 seguranca na comunicacao digital"
+    },
+    {
+      "label": "ATIVIDADE 7.2 | Detector de golpes e prepara\u00e7\u00e3o do desafio *(40 min \u00b7 grupos)*",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L627",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_7_2_detector_de_golpes_e_prepara\u00e7\u00e3o_do_desafio_40_min_grupos",
+      "community": 22,
+      "norm_label": "atividade 7.2 | detector de golpes e preparacao do desafio *(40 min \u00b7 grupos)*"
+    },
+    {
+      "label": "ENCONTRO 8 \u2014 Desafio integrador e avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L645",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_8_desafio_integrador_e_avalia\u00e7\u00e3o",
+      "community": 24,
+      "norm_label": "encontro 8 \u2014 desafio integrador e avaliacao"
+    },
+    {
+      "label": "AO FINAL DESTE ENCONTRO, VOC\u00ca SER\u00c1 CAPAZ DE:",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L649",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_649",
+      "community": 24,
+      "norm_label": "ao final deste encontro, voce sera capaz de:"
+    },
+    {
+      "label": "8.1 O desafio",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L657",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_8_1_o_desafio",
+      "community": 24,
+      "norm_label": "8.1 o desafio"
+    },
+    {
+      "label": "Entregas do desafio",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L665",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_entregas_do_desafio",
+      "community": 24,
+      "norm_label": "entregas do desafio"
+    },
+    {
+      "label": "8.2 Crit\u00e9rios de avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L680",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_8_2_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "community": 24,
+      "norm_label": "8.2 criterios de avaliacao"
+    },
+    {
+      "label": "8.3 Autoavalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L694",
+      "_origin": "ast",
+      "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_8_3_autoavalia\u00e7\u00e3o",
+      "community": 24,
+      "norm_label": "8.3 autoavaliacao"
+    },
+    {
       "label": "FICHA PRODUTO MAISTECH ATUALIZADA.md",
       "file_type": "document",
       "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md",
@@ -100,7 +730,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_conte\u00fado_program\u00e1tico",
-      "community": 0,
+      "community": 1,
       "norm_label": "5. conteudo programatico"
     },
     {
@@ -110,7 +740,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_1_estrutura_do_m\u00f3dulo_\u00fanico",
-      "community": 0,
+      "community": 1,
       "norm_label": "5.1 estrutura do modulo unico"
     },
     {
@@ -120,7 +750,7 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_5_2_unidade_curricular_refor\u00e7o_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico",
-      "community": 0,
+      "community": 1,
       "norm_label": "5.2 unidade curricular: reforco matematica e raciocinio logico"
     },
     {
@@ -130,7 +760,7 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_carga_hor\u00e1ria",
-      "community": 0,
+      "community": 1,
       "norm_label": "carga horaria"
     },
     {
@@ -140,7 +770,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_objetivo_da_unidade_curricular",
-      "community": 0,
+      "community": 1,
       "norm_label": "objetivo da unidade curricular"
     },
     {
@@ -150,7 +780,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_capacidades_b\u00e1sicas_e_t\u00e9cnicas_a_desenvolver",
-      "community": 0,
+      "community": 1,
       "norm_label": "capacidades basicas e tecnicas a desenvolver"
     },
     {
@@ -160,7 +790,7 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_conte\u00fados_formativos_conhecimentos",
-      "community": 0,
+      "community": 1,
       "norm_label": "conteudos formativos (conhecimentos)"
     },
     {
@@ -170,7 +800,7 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_ficha_produto_maistech_atualizada_detalhamento_dos_t\u00f3picos_para_ia",
-      "community": 0,
+      "community": 1,
       "norm_label": "detalhamento dos topicos para ia"
     },
     {
@@ -1304,6 +1934,66 @@
       "norm_label": "controle de perfil (frontend)"
     },
     {
+      "label": "SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "file_type": "document",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico",
+      "community": 25,
+      "norm_label": "slide-matematica-raciocinio-logico.md"
+    },
+    {
+      "label": "SLIDE-Matematica-Racioc\u00ednio-Logico \u2014 Progresso de Cria\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_slide_matematica_racioc\u00ednio_logico_progresso_de_cria\u00e7\u00e3o",
+      "community": 25,
+      "norm_label": "slide-matematica-raciocinio-logico \u2014 progresso de criacao"
+    },
+    {
+      "label": "Status: Em andamento",
+      "file_type": "document",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_status_em_andamento",
+      "community": 25,
+      "norm_label": "status: em andamento"
+    },
+    {
+      "label": "Estrutura planejada (30 slides)",
+      "file_type": "document",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_estrutura_planejada_30_slides",
+      "community": 25,
+      "norm_label": "estrutura planejada (30 slides)"
+    },
+    {
+      "label": "Atividades planejadas (ATIVIDADES-Matematica-Racioc\u00ednio-Logico.pptx)",
+      "file_type": "document",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_atividades_planejadas_atividades_matematica_racioc\u00ednio_logico_pptx",
+      "community": 25,
+      "norm_label": "atividades planejadas (atividades-matematica-raciocinio-logico.pptx)"
+    },
+    {
+      "label": "Log de execu\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_log_de_execu\u00e7\u00e3o",
+      "community": 25,
+      "norm_label": "log de execucao"
+    },
+    {
       "label": "ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md",
@@ -1312,6 +2002,236 @@
       "id": "converted_atividade_excel_13_08_2026_3025f8ae",
       "community": 16,
       "norm_label": "atividade-excel-13-08-2026_3025f8ae.md"
+    },
+    {
+      "label": "Atividade-Matematica-e-Raciocinio-Logico_36f08315.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade-Matematica-e-Raciocinio-Logico_36f08315.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_matematica_e_raciocinio_logico_36f08315",
+      "community": 26,
+      "norm_label": "atividade-matematica-e-raciocinio-logico_36f08315.md"
+    },
+    {
+      "label": "AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22",
+      "community": 13,
+      "norm_label": "atividadesmatematicaraciociniologicoversao2.0_25b94c22.md"
+    },
+    {
+      "label": "1. Opera\u00e7\u00f5es B\u00e1sicas e C\u00e1lculo Num\u00e9rico",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_1_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "community": 13,
+      "norm_label": "1. operacoes basicas e calculo numerico"
+    },
+    {
+      "label": "2. Fra\u00e7\u00f5es, Decimais e Porcentagem",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_2_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "community": 13,
+      "norm_label": "2. fracoes, decimais e porcentagem"
+    },
+    {
+      "label": "3. Proporcionalidade",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_3_proporcionalidade",
+      "community": 13,
+      "norm_label": "3. proporcionalidade"
+    },
+    {
+      "label": "4. Medidas e Grandezas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_4_medidas_e_grandezas",
+      "community": 13,
+      "norm_label": "4. medidas e grandezas"
+    },
+    {
+      "label": "5. Racioc\u00ednio L\u00f3gico e Resolu\u00e7\u00e3o de Problemas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_5_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "community": 13,
+      "norm_label": "5. raciocinio logico e resolucao de problemas"
+    },
+    {
+      "label": "6. Introdu\u00e7\u00e3o \u00e0 \u00c1lgebra",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_6_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "community": 13,
+      "norm_label": "6. introducao a algebra"
+    },
+    {
+      "label": "7. Tratamento da Informa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_7_tratamento_da_informa\u00e7\u00e3o",
+      "community": 13,
+      "norm_label": "7. tratamento da informacao"
+    },
+    {
+      "label": "Orienta\u00e7\u00e3o geral",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_orienta\u00e7\u00e3o_geral",
+      "community": 13,
+      "norm_label": "orientacao geral"
+    },
+    {
+      "label": "AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a",
+      "community": 18,
+      "norm_label": "atividadesmatematicaraciociniologicoversao3.0_ca09755a.md"
+    },
+    {
+      "label": "1. Opera\u00e7\u00f5es B\u00e1sicas e C\u00e1lculo Num\u00e9rico",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_1_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "community": 18,
+      "norm_label": "1. operacoes basicas e calculo numerico"
+    },
+    {
+      "label": "2. Fra\u00e7\u00f5es, Decimais e Porcentagem",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_2_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "community": 18,
+      "norm_label": "2. fracoes, decimais e porcentagem"
+    },
+    {
+      "label": "3. Proporcionalidade",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_3_proporcionalidade",
+      "community": 18,
+      "norm_label": "3. proporcionalidade"
+    },
+    {
+      "label": "4. Medidas e Grandezas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_4_medidas_e_grandezas",
+      "community": 18,
+      "norm_label": "4. medidas e grandezas"
+    },
+    {
+      "label": "5. Racioc\u00ednio L\u00f3gico e Resolu\u00e7\u00e3o de Problemas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_5_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "community": 18,
+      "norm_label": "5. raciocinio logico e resolucao de problemas"
+    },
+    {
+      "label": "6. Introdu\u00e7\u00e3o \u00e0 \u00c1lgebra",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_6_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "community": 18,
+      "norm_label": "6. introducao a algebra"
+    },
+    {
+      "label": "7. Tratamento da Informa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_7_tratamento_da_informa\u00e7\u00e3o",
+      "community": 18,
+      "norm_label": "7. tratamento da informacao"
+    },
+    {
+      "label": "Orienta\u00e7\u00e3o geral",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_orienta\u00e7\u00e3o_geral",
+      "community": 18,
+      "norm_label": "orientacao geral"
+    },
+    {
+      "label": "Checklist Prova Objetiva_9406581b.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Checklist Prova Objetiva_9406581b.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_checklist_prova_objetiva_9406581b",
+      "community": 27,
+      "norm_label": "checklist prova objetiva_9406581b.md"
+    },
+    {
+      "label": "Checklist Prova Objetiva_bc9be889.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Checklist Prova Objetiva_bc9be889.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_checklist_prova_objetiva_bc9be889",
+      "community": 28,
+      "norm_label": "checklist prova objetiva_bc9be889.md"
+    },
+    {
+      "label": "Checklist Prova Pr\u00e1tica_dd51f180.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Checklist Prova Pr\u00e1tica_dd51f180.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_checklist_prova_pr\u00e1tica_dd51f180",
+      "community": 29,
+      "norm_label": "checklist prova pratica_dd51f180.md"
+    },
+    {
+      "label": "Checklist Prova Pr\u00e1tica_f3fd88bd.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Checklist Prova Pr\u00e1tica_f3fd88bd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_checklist_prova_pr\u00e1tica_f3fd88bd",
+      "community": 30,
+      "norm_label": "checklist prova pratica_f3fd88bd.md"
     },
     {
       "label": "Controle_Abate_Pamplona_2ddd9b53.md",
@@ -1402,6 +2322,236 @@
       "id": "converted_ficha_produto_maistech_atualizada_5cbc16da",
       "community": 17,
       "norm_label": "ficha produto maistech atualizada_5cbc16da.md"
+    },
+    {
+      "label": "Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "community": 8,
+      "norm_label": "lista2_20exercicios_matematicaraciociniologico_807c61c5.md"
+    },
+    {
+      "label": "1. Opera\u00e7\u00f5es B\u00e1sicas e C\u00e1lculo Num\u00e9rico",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_1_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "community": 8,
+      "norm_label": "1. operacoes basicas e calculo numerico"
+    },
+    {
+      "label": "2. Opera\u00e7\u00f5es B\u00e1sicas e C\u00e1lculo Num\u00e9rico",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_2_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "community": 8,
+      "norm_label": "2. operacoes basicas e calculo numerico"
+    },
+    {
+      "label": "3. Opera\u00e7\u00f5es B\u00e1sicas e C\u00e1lculo Num\u00e9rico",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_3_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "community": 8,
+      "norm_label": "3. operacoes basicas e calculo numerico"
+    },
+    {
+      "label": "4. Fra\u00e7\u00f5es, Decimais e Porcentagem",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_4_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "community": 8,
+      "norm_label": "4. fracoes, decimais e porcentagem"
+    },
+    {
+      "label": "5. Fra\u00e7\u00f5es, Decimais e Porcentagem",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_5_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "community": 8,
+      "norm_label": "5. fracoes, decimais e porcentagem"
+    },
+    {
+      "label": "6. Fra\u00e7\u00f5es, Decimais e Porcentagem",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_6_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "community": 8,
+      "norm_label": "6. fracoes, decimais e porcentagem"
+    },
+    {
+      "label": "7. Proporcionalidade",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_7_proporcionalidade",
+      "community": 8,
+      "norm_label": "7. proporcionalidade"
+    },
+    {
+      "label": "8. Proporcionalidade",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_8_proporcionalidade",
+      "community": 8,
+      "norm_label": "8. proporcionalidade"
+    },
+    {
+      "label": "9. Proporcionalidade",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_9_proporcionalidade",
+      "community": 8,
+      "norm_label": "9. proporcionalidade"
+    },
+    {
+      "label": "10. Medidas e Grandezas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_10_medidas_e_grandezas",
+      "community": 8,
+      "norm_label": "10. medidas e grandezas"
+    },
+    {
+      "label": "11. Medidas e Grandezas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_11_medidas_e_grandezas",
+      "community": 8,
+      "norm_label": "11. medidas e grandezas"
+    },
+    {
+      "label": "12. Racioc\u00ednio L\u00f3gico e Resolu\u00e7\u00e3o de Problemas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_12_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "community": 8,
+      "norm_label": "12. raciocinio logico e resolucao de problemas"
+    },
+    {
+      "label": "13. Racioc\u00ednio L\u00f3gico e Resolu\u00e7\u00e3o de Problemas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_13_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "community": 8,
+      "norm_label": "13. raciocinio logico e resolucao de problemas"
+    },
+    {
+      "label": "15. Racioc\u00ednio L\u00f3gico e Resolu\u00e7\u00e3o de Problemas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_15_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "community": 8,
+      "norm_label": "15. raciocinio logico e resolucao de problemas"
+    },
+    {
+      "label": "16. Racioc\u00ednio L\u00f3gico e Resolu\u00e7\u00e3o de Problemas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_16_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "community": 8,
+      "norm_label": "16. raciocinio logico e resolucao de problemas"
+    },
+    {
+      "label": "17. Introdu\u00e7\u00e3o \u00e0 \u00c1lgebra",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_17_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "community": 8,
+      "norm_label": "17. introducao a algebra"
+    },
+    {
+      "label": "18. Introdu\u00e7\u00e3o \u00e0 \u00c1lgebra",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_18_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "community": 8,
+      "norm_label": "18. introducao a algebra"
+    },
+    {
+      "label": "19. Tratamento da Informa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_19_tratamento_da_informa\u00e7\u00e3o",
+      "community": 8,
+      "norm_label": "19. tratamento da informacao"
+    },
+    {
+      "label": "20. Tratamento da Informa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_20_tratamento_da_informa\u00e7\u00e3o",
+      "community": 8,
+      "norm_label": "20. tratamento da informacao"
+    },
+    {
+      "label": "Orienta\u00e7\u00e3o para aplica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_orienta\u00e7\u00e3o_para_aplica\u00e7\u00e3o",
+      "community": 8,
+      "norm_label": "orientacao para aplicacao"
+    },
+    {
+      "label": "Modelo Prova Pr\u00e1tica CT ELETROT\u00c9CNICA_1473c987.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Modelo Prova Pr\u00e1tica CT ELETROT\u00c9CNICA_1473c987.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_modelo_prova_pr\u00e1tica_ct_eletrot\u00e9cnica_1473c987",
+      "community": 31,
+      "norm_label": "modelo prova pratica ct eletrotecnica_1473c987.md"
+    },
+    {
+      "label": "Modelo Prova Pr\u00e1tica CT ELETROT\u00c9CNICA_7ca579bd.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Modelo Prova Pr\u00e1tica CT ELETROT\u00c9CNICA_7ca579bd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_modelo_prova_pr\u00e1tica_ct_eletrot\u00e9cnica_7ca579bd",
+      "community": 32,
+      "norm_label": "modelo prova pratica ct eletrotecnica_7ca579bd.md"
     },
     {
       "label": "Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
@@ -1564,6 +2714,146 @@
       "norm_label": "anexo ii \u2013 detalhamento da matriz curricular"
     },
     {
+      "label": "PROMPT - Rubricas Capacidades Socioemocionais_72362cf8.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PROMPT - Rubricas Capacidades Socioemocionais_72362cf8.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prompt_rubricas_capacidades_socioemocionais_72362cf8",
+      "community": 33,
+      "norm_label": "prompt - rubricas capacidades socioemocionais_72362cf8.md"
+    },
+    {
+      "label": "PROMPT - Rubricas Capacidades Socioemocionais_d7cb4c07.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PROMPT - Rubricas Capacidades Socioemocionais_d7cb4c07.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prompt_rubricas_capacidades_socioemocionais_d7cb4c07",
+      "community": 34,
+      "norm_label": "prompt - rubricas capacidades socioemocionais_d7cb4c07.md"
+    },
+    {
+      "label": "PROVA_OBJETIVA_UC1_TIC_10eecaf3.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_10eecaf3.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_objetiva_uc1_tic_10eecaf3",
+      "community": 37,
+      "norm_label": "prova_objetiva_uc1_tic_10eecaf3.md"
+    },
+    {
+      "label": "PROVA_OBJETIVA_UC1_TIC_COM_GABARITO_fbc0d653.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_COM_GABARITO_fbc0d653.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_objetiva_uc1_tic_com_gabarito_fbc0d653",
+      "community": 38,
+      "norm_label": "prova_objetiva_uc1_tic_com_gabarito_fbc0d653.md"
+    },
+    {
+      "label": "PROVA_PRATICA_UC1_TIC_93c034fe.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PROVA_PRATICA_UC1_TIC_93c034fe.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_pratica_uc1_tic_93c034fe",
+      "community": 39,
+      "norm_label": "prova_pratica_uc1_tic_93c034fe.md"
+    },
+    {
+      "label": "PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_planejamentomatematicaraciociniologico_c090b7a7",
+      "community": 19,
+      "norm_label": "planejamentomatematicaraciociniologico_c090b7a7.md"
+    },
+    {
+      "label": "1. Opera\u00e7\u00f5es B\u00e1sicas e C\u00e1lculo Num\u00e9rico",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "converted_planejamentomatematicaraciociniologico_c090b7a7_1_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "community": 19,
+      "norm_label": "1. operacoes basicas e calculo numerico"
+    },
+    {
+      "label": "2. Fra\u00e7\u00f5es, Decimais e Porcentagem",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "converted_planejamentomatematicaraciociniologico_c090b7a7_2_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "community": 19,
+      "norm_label": "2. fracoes, decimais e porcentagem"
+    },
+    {
+      "label": "3. Proporcionalidade",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "converted_planejamentomatematicaraciociniologico_c090b7a7_3_proporcionalidade",
+      "community": 19,
+      "norm_label": "3. proporcionalidade"
+    },
+    {
+      "label": "4. Medidas e Grandezas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "converted_planejamentomatematicaraciociniologico_c090b7a7_4_medidas_e_grandezas",
+      "community": 19,
+      "norm_label": "4. medidas e grandezas"
+    },
+    {
+      "label": "5. Racioc\u00ednio L\u00f3gico e Resolu\u00e7\u00e3o de Problemas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "converted_planejamentomatematicaraciociniologico_c090b7a7_5_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "community": 19,
+      "norm_label": "5. raciocinio logico e resolucao de problemas"
+    },
+    {
+      "label": "6. Introdu\u00e7\u00e3o \u00e0 \u00c1lgebra",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "converted_planejamentomatematicaraciociniologico_c090b7a7_6_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "community": 19,
+      "norm_label": "6. introducao a algebra"
+    },
+    {
+      "label": "7. Tratamento da Informa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "converted_planejamentomatematicaraciociniologico_c090b7a7_7_tratamento_da_informa\u00e7\u00e3o",
+      "community": 19,
+      "norm_label": "7. tratamento da informacao"
+    },
+    {
+      "label": "S\u00edntese para o planejamento",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "converted_planejamentomatematicaraciociniologico_c090b7a7_s\u00edntese_para_o_planejamento",
+      "community": 19,
+      "norm_label": "sintese para o planejamento"
+    },
+    {
       "label": "Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
@@ -1614,6 +2904,46 @@
       "norm_label": "sheet: exemplo-filtros-classificacao"
     },
     {
+      "label": "Prova Objetiva _c621c6d0.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Prova Objetiva _c621c6d0.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_objetiva_c621c6d0",
+      "community": 35,
+      "norm_label": "prova objetiva _c621c6d0.md"
+    },
+    {
+      "label": "Prova Objetiva _d77cf242.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Prova Objetiva _d77cf242.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_objetiva_d77cf242",
+      "community": 36,
+      "norm_label": "prova objetiva _d77cf242.md"
+    },
+    {
+      "label": "Template Prova Pr\u00e1tica_657ab546.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Template Prova Pr\u00e1tica_657ab546.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_template_prova_pr\u00e1tica_657ab546",
+      "community": 40,
+      "norm_label": "template prova pratica_657ab546.md"
+    },
+    {
+      "label": "Template Prova Pr\u00e1tica_8c8c4447.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Template Prova Pr\u00e1tica_8c8c4447.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_template_prova_pr\u00e1tica_8c8c4447",
+      "community": 41,
+      "norm_label": "template prova pratica_8c8c4447.md"
+    },
+    {
       "label": "duplas-aula-12-08-2026_26445d56.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md",
@@ -1632,9 +2962,829 @@
       "id": "converted_duplas_aula_12_08_2026_26445d56_sheet_sheet1",
       "community": 15,
       "norm_label": "sheet: sheet1"
+    },
+    {
+      "label": "claude.md",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prof_leila_claude",
+      "community": 11,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "Orienta\u00e7\u00f5es para Gera\u00e7\u00e3o de Infogr\u00e1ficos \u2014 Prof. Leila",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "community": 11,
+      "norm_label": "orientacoes para geracao de infograficos \u2014 prof. leila"
+    },
+    {
+      "label": "Refer\u00eancia visual",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "prof_leila_claude_refer\u00eancia_visual",
+      "community": 11,
+      "norm_label": "referencia visual"
+    },
+    {
+      "label": "Formato e dimens\u00f5es",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "prof_leila_claude_formato_e_dimens\u00f5es",
+      "community": 11,
+      "norm_label": "formato e dimensoes"
+    },
+    {
+      "label": "Estrutura do layout (zonas)",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "prof_leila_claude_estrutura_do_layout_zonas",
+      "community": 11,
+      "norm_label": "estrutura do layout (zonas)"
+    },
+    {
+      "label": "1. Cabe\u00e7alho (Header)",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "prof_leila_claude_1_cabe\u00e7alho_header",
+      "community": 11,
+      "norm_label": "1. cabecalho (header)"
+    },
+    {
+      "label": "2. Faixa de cards superiores (3 colunas)",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "prof_leila_claude_2_faixa_de_cards_superiores_3_colunas",
+      "community": 11,
+      "norm_label": "2. faixa de cards superiores (3 colunas)"
+    },
+    {
+      "label": "3. Grade m\u00e9dia (4 colunas \u2014 Tips 4 a 7)",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "prof_leila_claude_3_grade_m\u00e9dia_4_colunas_tips_4_a_7",
+      "community": 11,
+      "norm_label": "3. grade media (4 colunas \u2014 tips 4 a 7)"
+    },
+    {
+      "label": "4. Grade inferior (4 colunas \u2014 Tips 8 a 11)",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "prof_leila_claude_4_grade_inferior_4_colunas_tips_8_a_11",
+      "community": 11,
+      "norm_label": "4. grade inferior (4 colunas \u2014 tips 8 a 11)"
+    },
+    {
+      "label": "5. Rodap\u00e9 (4 colunas estreitas \u2014 Tips 12, 13, 14 + Regra de Ouro)",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "prof_leila_claude_5_rodap\u00e9_4_colunas_estreitas_tips_12_13_14_regra_de_ouro",
+      "community": 11,
+      "norm_label": "5. rodape (4 colunas estreitas \u2014 tips 12, 13, 14 + regra de ouro)"
+    },
+    {
+      "label": "Paleta de cores",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "prof_leila_claude_paleta_de_cores",
+      "community": 11,
+      "norm_label": "paleta de cores"
+    },
+    {
+      "label": "Tipografia",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "prof_leila_claude_tipografia",
+      "community": 11,
+      "norm_label": "tipografia"
+    },
+    {
+      "label": "Elementos visuais obrigat\u00f3rios",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "prof_leila_claude_elementos_visuais_obrigat\u00f3rios",
+      "community": 11,
+      "norm_label": "elementos visuais obrigatorios"
+    },
+    {
+      "label": "Gera\u00e7\u00e3o como imagem",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "prof_leila_claude_gera\u00e7\u00e3o_como_imagem",
+      "community": 11,
+      "norm_label": "geracao como imagem"
+    },
+    {
+      "label": "Op\u00e7\u00e3o 1 \u2014 Python + Pillow/ReportLab",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "prof_leila_claude_op\u00e7\u00e3o_1_python_pillow_reportlab",
+      "community": 11,
+      "norm_label": "opcao 1 \u2014 python + pillow/reportlab"
+    },
+    {
+      "label": "Op\u00e7\u00e3o 2 \u2014 HTML \u2192 Screenshot (recomendado)",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "prof_leila_claude_op\u00e7\u00e3o_2_html_screenshot_recomendado",
+      "community": 11,
+      "norm_label": "opcao 2 \u2014 html \u2192 screenshot (recomendado)"
+    },
+    {
+      "label": "Op\u00e7\u00e3o 3 \u2014 Python + playwright (headless)",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L117",
+      "_origin": "ast",
+      "id": "prof_leila_claude_op\u00e7\u00e3o_3_python_playwright_headless",
+      "community": 11,
+      "norm_label": "opcao 3 \u2014 python + playwright (headless)"
+    },
+    {
+      "label": "Arquivo de sa\u00edda",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "prof_leila_claude_arquivo_de_sa\u00edda",
+      "community": 11,
+      "norm_label": "arquivo de saida"
+    },
+    {
+      "label": "Observa\u00e7\u00f5es importantes",
+      "file_type": "document",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "prof_leila_claude_observa\u00e7\u00f5es_importantes",
+      "community": 11,
+      "norm_label": "observacoes importantes"
+    },
+    {
+      "label": "prompt.md",
+      "file_type": "document",
+      "source_file": "prof-leila/prompt.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "prof_leila_prompt",
+      "community": 42,
+      "norm_label": "prompt.md"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_rio_do_sul_mais_tech",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_apresenta\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_como_esta_apostila_est\u00e1_organizada",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_como_voc\u00ea_ser\u00e1_avaliado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_1_comunica\u00e7\u00e3o_no_mundo_do_trabalho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_2_registro_adequado_e_escuta_ativa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_3_falar_em_p\u00fablico_e_retorno_construtivo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L325",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_4_reuni\u00f5es_atendimento_e_comunica\u00e7\u00e3o_assertiva",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L409",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_5_reda\u00e7\u00e3o_t\u00e9cnica_princ\u00edpios_e_estrutura",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L484",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_6_g\u00eaneros_profissionais_comunicado_relato_e_ata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L545",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_7_comunica\u00e7\u00e3o_digital_e_seguran\u00e7a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L645",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_8_desafio_integrador_e_avalia\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_objetivo_da_unidade_curricular",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_percurso_das_15_horas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_introdu\u00e7\u00e3o_\u00e0_comunica\u00e7\u00e3o_oral_e_escrita_para_o_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_sobre_este_material",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_1_comunica\u00e7\u00e3o_no_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_1_1_comunicar_\u00e9_fazer_se_entender",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_1_comunica\u00e7\u00e3o_no_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_1_2_ru\u00eddo_o_inimigo_silencioso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_1_comunica\u00e7\u00e3o_no_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_1_comunica\u00e7\u00e3o_no_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_1_1_mapa_da_comunica\u00e7\u00e3o_25_min_individual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_1_comunica\u00e7\u00e3o_no_mundo_do_trabalho",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_1_2_ca\u00e7a_aos_ru\u00eddos_40_min_em_duplas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_1_1_comunicar_\u00e9_fazer_se_entender",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_os_elementos_da_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_2_registro_adequado_e_escuta_ativa",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_2_1_cada_contexto_pede_um_tom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_2_registro_adequado_e_escuta_ativa",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_2_2_escuta_ativa_metade_da_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_2_registro_adequado_e_escuta_ativa",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_161",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_2_registro_adequado_e_escuta_ativa",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_2_1_tradutor_de_registros_35_min_individual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_2_registro_adequado_e_escuta_ativa",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_2_2_teste_da_escuta_40_min_trios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L242",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_3_falar_em_p\u00fablico_e_retorno_construtivo",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_3_1_falar_em_p\u00fablico_sem_travar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L288",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_3_falar_em_p\u00fablico_e_retorno_construtivo",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_3_2_dar_e_receber_retorno",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_3_falar_em_p\u00fablico_e_retorno_construtivo",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_234",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_3_falar_em_p\u00fablico_e_retorno_construtivo",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_3_1_um_minuto_sobre_mim_60_min_individual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L309",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_3_falar_em_p\u00fablico_e_retorno_construtivo",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_3_2_rodada_de_retorno_20_min_em_grupos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L246",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_3_1_falar_em_p\u00fablico_sem_travar",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_antes_de_falar_os_tr\u00eas_ps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L252",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_3_1_falar_em_p\u00fablico_sem_travar",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_durante_a_fala_os_recursos_do_corpo_e_da_voz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L297",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_3_2_dar_e_receber_retorno",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ficha_de_observa\u00e7\u00e3o_do_colega",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L337",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_4_reuni\u00f5es_atendimento_e_comunica\u00e7\u00e3o_assertiva",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_4_1_reuni\u00e3o_falar_na_hora_certa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L348",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_4_reuni\u00f5es_atendimento_e_comunica\u00e7\u00e3o_assertiva",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_4_2_assertividade_nem_passivo_nem_agressivo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L379",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_4_reuni\u00f5es_atendimento_e_comunica\u00e7\u00e3o_assertiva",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_4_3_atendimento_a_voz_da_empresa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L329",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_4_reuni\u00f5es_atendimento_e_comunica\u00e7\u00e3o_assertiva",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_329",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L366",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_4_reuni\u00f5es_atendimento_e_comunica\u00e7\u00e3o_assertiva",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_4_1_reuni\u00e3o_simulada_45_min_grupos_de_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L393",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_4_reuni\u00f5es_atendimento_e_comunica\u00e7\u00e3o_assertiva",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_4_2_dramatiza\u00e7\u00e3o_de_atendimento_30_min_duplas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L421",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_5_reda\u00e7\u00e3o_t\u00e9cnica_princ\u00edpios_e_estrutura",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_5_1_escrever_no_trabalho_\u00e9_diferente",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L440",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_5_reda\u00e7\u00e3o_t\u00e9cnica_princ\u00edpios_e_estrutura",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_5_2_a_estrutura_de_um_texto_profissional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L464",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_5_reda\u00e7\u00e3o_t\u00e9cnica_princ\u00edpios_e_estrutura",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_5_3_revisar_antes_de_enviar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L413",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_5_reda\u00e7\u00e3o_t\u00e9cnica_princ\u00edpios_e_estrutura",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_413",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L451",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_5_reda\u00e7\u00e3o_t\u00e9cnica_princ\u00edpios_e_estrutura",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_5_1_oficina_de_reescrita_45_min_duplas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L496",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_6_g\u00eaneros_profissionais_comunicado_relato_e_ata",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_6_1_comunicado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L502",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_6_g\u00eaneros_profissionais_comunicado_relato_e_ata",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_6_2_relato_de_ocorr\u00eancia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L511",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_6_g\u00eaneros_profissionais_comunicado_relato_e_ata",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_6_3_ata_resumida",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L488",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_6_g\u00eaneros_profissionais_comunicado_relato_e_ata",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_488",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L523",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_6_g\u00eaneros_profissionais_comunicado_relato_e_ata",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_6_1_produ\u00e7\u00e3o_de_texto_profissional_60_min_individual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L557",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_7_comunica\u00e7\u00e3o_digital_e_seguran\u00e7a",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_7_1_o_e_mail_profissional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L596",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_7_comunica\u00e7\u00e3o_digital_e_seguran\u00e7a",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_7_2_netiqueta_e_escolha_do_canal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L616",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_7_comunica\u00e7\u00e3o_digital_e_seguran\u00e7a",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_7_3_seguran\u00e7a_na_comunica\u00e7\u00e3o_digital",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L549",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_7_comunica\u00e7\u00e3o_digital_e_seguran\u00e7a",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_549",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L574",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_7_comunica\u00e7\u00e3o_digital_e_seguran\u00e7a",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_7_1_do_erro_ao_acerto_35_min_duplas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L627",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_7_comunica\u00e7\u00e3o_digital_e_seguran\u00e7a",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_atividade_7_2_detector_de_golpes_e_prepara\u00e7\u00e3o_do_desafio_40_min_grupos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L657",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_8_desafio_integrador_e_avalia\u00e7\u00e3o",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_8_1_o_desafio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L680",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_8_desafio_integrador_e_avalia\u00e7\u00e3o",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_8_2_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L694",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_8_desafio_integrador_e_avalia\u00e7\u00e3o",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_8_3_autoavalia\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L649",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_encontro_8_desafio_integrador_e_avalia\u00e7\u00e3o",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_ao_final_deste_encontro_voc\u00ea_ser\u00e1_capaz_de_649",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md",
+      "source_location": "L665",
+      "weight": 1.0,
+      "source": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_8_1_o_desafio",
+      "target": "introducao_a_comunicacao_oral_e_escrita_para_o_mundo_do_trabalho_apostila_comunicacao_oral_e_escrita15h_entregas_do_desafio",
+      "confidence_score": 1.0
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -2878,6 +5028,216 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico",
+      "target": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_slide_matematica_racioc\u00ednio_logico_progresso_de_cria\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_slide_matematica_racioc\u00ednio_logico_progresso_de_cria\u00e7\u00e3o",
+      "target": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_atividades_planejadas_atividades_matematica_racioc\u00ednio_logico_pptx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_slide_matematica_racioc\u00ednio_logico_progresso_de_cria\u00e7\u00e3o",
+      "target": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_estrutura_planejada_30_slides",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_slide_matematica_racioc\u00ednio_logico_progresso_de_cria\u00e7\u00e3o",
+      "target": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_log_de_execu\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/SLIDE-Matematica-Racioc\u00ednio-Logico.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_slide_matematica_racioc\u00ednio_logico_progresso_de_cria\u00e7\u00e3o",
+      "target": "refor\u00e7o_de_matem\u00e1tica_e_racioc\u00ednio_l\u00f3gico_slide_matematica_racioc\u00ednio_logico_status_em_andamento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22",
+      "target": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_1_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22",
+      "target": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_2_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22",
+      "target": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_3_proporcionalidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22",
+      "target": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_4_medidas_e_grandezas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22",
+      "target": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_5_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22",
+      "target": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_6_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22",
+      "target": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_7_tratamento_da_informa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_25b94c22.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22",
+      "target": "converted_atividadesmatematicaraciociniologicoversao2_0_25b94c22_orienta\u00e7\u00e3o_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a",
+      "target": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_1_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a",
+      "target": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_2_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a",
+      "target": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_3_proporcionalidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a",
+      "target": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_4_medidas_e_grandezas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a",
+      "target": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_5_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a",
+      "target": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_6_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a",
+      "target": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_7_tratamento_da_informa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_ca09755a.md",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a",
+      "target": "converted_atividadesmatematicaraciociniologicoversao3_0_ca09755a_orienta\u00e7\u00e3o_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
       "source_location": "L63",
       "weight": 1.0,
@@ -2944,6 +5304,206 @@
       "confidence_score": 1.0,
       "source": "converted_controle_abate_pamplona_2ddd9b53",
       "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_relatorio_diario"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_10_medidas_e_grandezas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_11_medidas_e_grandezas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_12_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_13_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_15_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_16_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_17_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_18_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_19_tratamento_da_informa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_1_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_20_tratamento_da_informa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_2_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_3_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_4_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_5_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_6_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_7_proporcionalidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_8_proporcionalidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_9_proporcionalidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_807c61c5.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5",
+      "target": "converted_lista2_20exercicios_matematicaraciociniologico_807c61c5_orienta\u00e7\u00e3o_para_aplica\u00e7\u00e3o",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3098,6 +5658,86 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "converted_planejamentomatematicaraciociniologico_c090b7a7",
+      "target": "converted_planejamentomatematicaraciociniologico_c090b7a7_1_opera\u00e7\u00f5es_b\u00e1sicas_e_c\u00e1lculo_num\u00e9rico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "converted_planejamentomatematicaraciociniologico_c090b7a7",
+      "target": "converted_planejamentomatematicaraciociniologico_c090b7a7_2_fra\u00e7\u00f5es_decimais_e_porcentagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "converted_planejamentomatematicaraciociniologico_c090b7a7",
+      "target": "converted_planejamentomatematicaraciociniologico_c090b7a7_3_proporcionalidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "converted_planejamentomatematicaraciociniologico_c090b7a7",
+      "target": "converted_planejamentomatematicaraciociniologico_c090b7a7_4_medidas_e_grandezas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "converted_planejamentomatematicaraciociniologico_c090b7a7",
+      "target": "converted_planejamentomatematicaraciociniologico_c090b7a7_5_racioc\u00ednio_l\u00f3gico_e_resolu\u00e7\u00e3o_de_problemas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "converted_planejamentomatematicaraciociniologico_c090b7a7",
+      "target": "converted_planejamentomatematicaraciociniologico_c090b7a7_6_introdu\u00e7\u00e3o_\u00e0_\u00e1lgebra",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "converted_planejamentomatematicaraciociniologico_c090b7a7",
+      "target": "converted_planejamentomatematicaraciociniologico_c090b7a7_7_tratamento_da_informa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_c090b7a7.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "converted_planejamentomatematicaraciociniologico_c090b7a7",
+      "target": "converted_planejamentomatematicaraciociniologico_c090b7a7_s\u00edntese_para_o_planejamento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
       "source_location": "L9",
       "weight": 1.0,
@@ -3144,8 +5784,188 @@
       "confidence_score": 1.0,
       "source": "converted_duplas_aula_12_08_2026_26445d56",
       "target": "converted_duplas_aula_12_08_2026_26445d56_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "prof_leila_claude",
+      "target": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "target": "prof_leila_claude_arquivo_de_sa\u00edda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "target": "prof_leila_claude_elementos_visuais_obrigat\u00f3rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "target": "prof_leila_claude_estrutura_do_layout_zonas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "target": "prof_leila_claude_formato_e_dimens\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "target": "prof_leila_claude_gera\u00e7\u00e3o_como_imagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "target": "prof_leila_claude_observa\u00e7\u00f5es_importantes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "target": "prof_leila_claude_paleta_de_cores",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "target": "prof_leila_claude_refer\u00eancia_visual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "prof_leila_claude_orienta\u00e7\u00f5es_para_gera\u00e7\u00e3o_de_infogr\u00e1ficos_prof_leila",
+      "target": "prof_leila_claude_tipografia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "prof_leila_claude_estrutura_do_layout_zonas",
+      "target": "prof_leila_claude_1_cabe\u00e7alho_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "prof_leila_claude_estrutura_do_layout_zonas",
+      "target": "prof_leila_claude_2_faixa_de_cards_superiores_3_colunas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "prof_leila_claude_estrutura_do_layout_zonas",
+      "target": "prof_leila_claude_3_grade_m\u00e9dia_4_colunas_tips_4_a_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "prof_leila_claude_estrutura_do_layout_zonas",
+      "target": "prof_leila_claude_4_grade_inferior_4_colunas_tips_8_a_11",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "prof_leila_claude_estrutura_do_layout_zonas",
+      "target": "prof_leila_claude_5_rodap\u00e9_4_colunas_estreitas_tips_12_13_14_regra_de_ouro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "prof_leila_claude_gera\u00e7\u00e3o_como_imagem",
+      "target": "prof_leila_claude_op\u00e7\u00e3o_1_python_pillow_reportlab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "prof_leila_claude_gera\u00e7\u00e3o_como_imagem",
+      "target": "prof_leila_claude_op\u00e7\u00e3o_2_html_screenshot_recomendado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "prof-leila/claude.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "prof_leila_claude_gera\u00e7\u00e3o_como_imagem",
+      "target": "prof_leila_claude_op\u00e7\u00e3o_3_python_playwright_headless",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4eb5578c1f82f37a1565ce317b9043d5e8329dba"
+  "built_at_commit": "b404be8709e2b35d88b3806a6f8b425a3ecdcf5d"
 }

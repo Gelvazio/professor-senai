@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-17)
 
 ## Corpus Check
-- 123 files · ~1,117,893 words
+- 123 files · ~1,121,201 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1609 nodes · 1557 edges · 127 communities (117 shown, 10 thin omitted)
+- 1604 nodes · 1552 edges · 127 communities (117 shown, 10 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c46cbf3f`
+- Built from commit: `575ed40a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -109,7 +109,6 @@
 - [[_COMMUNITY_Community 93|Community 93]]
 - [[_COMMUNITY_Community 94|Community 94]]
 - [[_COMMUNITY_Community 124|Community 124]]
-- [[_COMMUNITY_Community 125|Community 125]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -467,12 +466,8 @@ Nodes (3): Arquivos modificados, O que foi feito, Observações
 Cohesion: 0.11
 Nodes (18): 1. Cabeçalho (Header), 2. Faixa de cards superiores (3 colunas), 3. Grade média (4 colunas — Tips 4 a 7), 4. Grade inferior (4 colunas — Tips 8 a 11), 5. Rodapé (4 colunas estreitas — Tips 12, 13, 14 + Regra de Ouro), Arquivo de saída, Elementos visuais obrigatórios, Estrutura do layout (zonas) (+10 more)
 
-### Community 125 - "Community 125"
-Cohesion: 0.33
-Nodes (5): Capacidades avaliadas, Critério de correção, Feedback do docente, Gabarito, Registro do resultado
-
 ## Knowledge Gaps
-- **1242 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Overview` (+1237 more)
+- **1237 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Overview` (+1232 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -482,7 +477,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `INTRODUÇÃO À COMUNICAÇÃO ORAL E ESCRITA PARA O MUNDO DO TRABALHO` connect `Community 56` to `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 57`, `Community 61`, `Community 62`, `Community 63`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _1243 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1238 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07053140096618357 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
