@@ -1858,7 +1858,7 @@
           <div
             style="
               display: grid;
-              grid-template-columns: 1fr 1fr;
+              grid-template-columns: 1fr 1fr 80px;
               gap: 12px;
               margin-bottom: 12px;
             "
@@ -1874,6 +1874,10 @@
                 <option value="questionario">Questionário</option>
                 <option value="modal">Modal</option>
               </select>
+            </div>
+            <div class="crud-field">
+              <label class="crud-label">Ordem</label
+              ><input class="crud-input" id="mOrdem" type="number" min="1" placeholder="1" />
             </div>
           </div>
           <div class="crud-field" id="mAulaNumField" style="margin-bottom: 12px; display: none">
@@ -2727,6 +2731,7 @@
         vazio.style.display = "none";
         const sorted = [..._aulaLista].sort((a, b) => a.numero - b.numero);
         acc.innerHTML = sorted.map(a => {
+          if (Array.isArray(a.materiais)) a.materiais.sort((x, y) => (x.ordem ?? 9999) - (y.ordem ?? 9999));
           const mats = Array.isArray(a.materiais) ? a.materiais : [];
           const matsHtml = mats.length
             ? mats.map((m, i) => {
@@ -2754,13 +2759,15 @@
                 const btnExcluir = isProfessor
                   ? `<button class="btn-mat-excluir" onclick="event.stopPropagation();excluirMatAula(${a.numero},${i})" title="Excluir material">🗑️</button>`
                   : '';
+                const ordemVal = m.ordem !== undefined ? m.ordem : i + 1;
                 return `<div class="aula-mat-row">
-                  <span class="aula-mat-seq">${i + 1}</span>
+                  <span class="aula-mat-seq" title="Ordem: ${ordemVal}">${ordemVal}</span>
                   <div class="aula-mat-icon">${m.icone || "📄"}</div>
                   <div class="aula-mat-info">
                     <div class="aula-mat-nome">${m.nome}</div>
                     <div class="aula-mat-tipo">${tipo}</div>
                   </div>
+                  <span style="font-size:11px;font-weight:700;color:#004384;background:#e8f0fe;border-radius:10px;padding:2px 9px;white-space:nowrap;flex-shrink:0" title="Ordem do material">Ord ${ordemVal}</span>
                   <div class="aula-mat-bar-wrap">
                     <div class="aula-mat-bar"><div class="aula-mat-bar-fill" style="width:100%"></div></div>
                     <span class="aula-mat-pct">100%</span>
@@ -3111,6 +3118,7 @@
         document.getElementById("mVisivel").value = "1";
         document.getElementById("mPermitecopiar").value = "0";
         document.getElementById("mIframe").value = "false";
+        document.getElementById("mOrdem").value = _aulaMatTemp.length + 1;
         document.getElementById("mAulaNumField").style.display = "none";
         document.getElementById("matAulaModal").style.display = "flex";
       }
@@ -3127,6 +3135,7 @@
         document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
         document.getElementById("mPermitecopiar").value = m.permitecopiar !== undefined ? String(m.permitecopiar) : "0";
         document.getElementById("mIframe").value = m.iframe ? "true" : "false";
+        document.getElementById("mOrdem").value = m.ordem !== undefined ? m.ordem : i + 1;
         const aulaAtual = parseInt(document.getElementById("aulaNum").value) || 0;
         _mostrarCheckboxesNoModal(_aulasComMaterialId(m.id, aulaAtual));
         document.getElementById("matAulaModal").style.display = "flex";
@@ -3145,6 +3154,7 @@
         document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
         document.getElementById("mPermitecopiar").value = m.permitecopiar !== undefined ? String(m.permitecopiar) : "0";
         document.getElementById("mIframe").value = m.iframe ? "true" : "false";
+        document.getElementById("mOrdem").value = m.ordem !== undefined ? m.ordem : idx + 1;
         _mostrarCheckboxesNoModal(_aulasComMaterialId(m.id, aulaNum));
         document.getElementById("matAulaModal").style.display = "flex";
       }
@@ -3168,6 +3178,7 @@
           visivel: parseInt(document.getElementById("mVisivel").value),
           permitecopiar: parseInt(document.getElementById("mPermitecopiar").value),
           iframe: document.getElementById("mIframe").value === "true",
+          ordem: parseInt(document.getElementById("mOrdem").value) || 0,
         };
         const tipo = document.getElementById("mTipo").value;
         if (tipo) m.tipo = tipo;
