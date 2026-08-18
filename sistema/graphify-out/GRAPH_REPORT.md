@@ -1,7 +1,7 @@
 # Graph Report - sistema  (2026-08-18)
 
 ## Corpus Check
-- 40 files · ~284,829 words
+- 40 files · ~285,443 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b404be87`
+- Built from commit: `635ae4d9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -31,26 +31,26 @@
 - [[_COMMUNITY_Community 13|Community 13]]
 - [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 17|Community 17]]
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
 - [[_COMMUNITY_Community 20|Community 20]]
 - [[_COMMUNITY_Community 21|Community 21]]
 - [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 23|Community 23]]
-- [[_COMMUNITY_Community 24|Community 24]]
 - [[_COMMUNITY_Community 25|Community 25]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `INTRODUÇÃO À COMUNICAÇÃO ORAL E ESCRITA PARA O MUNDO DO TRABALHO` - 15 edges
-2. `ATIVIDADE INTEGRADORA — UC1 Introdução à TIC` - 15 edges
+1. `ATIVIDADE INTEGRADORA — UC1 Introdução à TIC` - 15 edges
+2. `INTRODUÇÃO À COMUNICAÇÃO ORAL E ESCRITA PARA O MUNDO DO TRABALHO` - 15 edges
 3. `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` - 10 edges
 4. `Conhecimentos` - 10 edges
 5. `Orientações para Geração de Infográficos — Prof. Leila` - 10 edges
-6. `Ficha de Cadastro de Produto Customizado — Rio do Sul Mais Tech / SENAI` - 9 edges
-7. `Arquivos` - 9 edges
-8. `Pesquisa — Planilha Excel de Controle de Abate de Suínos` - 9 edges
+6. `Arquivos` - 9 edges
+7. `Pesquisa — Planilha Excel de Controle de Abate de Suínos` - 9 edges
+8. `Ficha de Cadastro de Produto Customizado — Rio do Sul Mais Tech / SENAI` - 9 edges
 9. `ATIVIDADE PRÁTICA — Planilha Eletrônica` - 8 edges
-10. `ENCONTRO 4 — Reuniões, atendimento e comunicação assertiva` - 7 edges
+10. `PARTE 2 — Aluno B (Planilha)` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -62,7 +62,7 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
-Nodes (27): 4.1 Reunião: falar na hora certa, 4.2 Assertividade: nem passivo, nem agressivo, 4.3 Atendimento: a voz da empresa, 5.1 Escrever no trabalho é diferente, 5.2 A estrutura de um texto profissional, 5.3 Revisar antes de enviar, 6.1 Comunicado, 6.2 Relato de ocorrência (+19 more)
+Nodes (27): 2.1 Cada contexto pede um tom, 2.2 Escuta ativa: metade da comunicação, 4.1 Reunião: falar na hora certa, 4.2 Assertividade: nem passivo, nem agressivo, 4.3 Atendimento: a voz da empresa, 5.1 Escrever no trabalho é diferente, 5.2 A estrutura de um texto profissional, 5.3 Revisar antes de enviar (+19 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.10
@@ -120,6 +120,10 @@ Nodes (8): 1. Operações Básicas e Cálculo Numérico, 2. Frações, Decimais 
 Cohesion: 0.40
 Nodes (4): Sheet: DESPESA, Sheet: EXEMPLO-FILTROS-CLASSIFICACAO, Sheet: RECEITA, Sheet: SALDO-MENSAL
 
+### Community 17 - "Community 17"
+Cohesion: 0.22
+Nodes (9): 3.1 Falar em público sem travar, 3.2 Dar e receber retorno, Antes de falar: os três Ps, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 3.1 | Um minuto sobre mim *(60 min · individual)*, ATIVIDADE 3.2 | Rodada de retorno *(20 min · em grupos)*, Durante a fala: os recursos do corpo e da voz, ENCONTRO 3 — Falar em público e retorno construtivo (+1 more)
+
 ### Community 18 - "Community 18"
 Cohesion: 0.22
 Nodes (8): 1. Operações Básicas e Cálculo Numérico, 2. Frações, Decimais e Porcentagem, 3. Proporcionalidade, 4. Medidas e Grandezas, 5. Raciocínio Lógico e Resolução de Problemas, 6. Introdução à Álgebra, 7. Tratamento da Informação, Orientação geral
@@ -129,22 +133,18 @@ Cohesion: 0.22
 Nodes (8): 1. Operações Básicas e Cálculo Numérico, 2. Frações, Decimais e Porcentagem, 3. Proporcionalidade, 4. Medidas e Grandezas, 5. Raciocínio Lógico e Resolução de Problemas, 6. Introdução à Álgebra, 7. Tratamento da Informação, Síntese para o planejamento
 
 ### Community 20 - "Community 20"
-Cohesion: 0.22
-Nodes (9): 3.1 Falar em público sem travar, 3.2 Dar e receber retorno, Antes de falar: os três Ps, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 3.1 | Um minuto sobre mim *(60 min · individual)*, ATIVIDADE 3.2 | Rodada de retorno *(20 min · em grupos)*, Durante a fala: os recursos do corpo e da voz, ENCONTRO 3 — Falar em público e retorno construtivo (+1 more)
-
-### Community 21 - "Community 21"
 Cohesion: 0.29
 Nodes (7): 1.1 Comunicar é fazer-se entender, 1.2 Ruído: o inimigo silencioso, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 1.1 | Mapa da comunicação *(25 min · individual)*, ATIVIDADE 1.2 | Caça aos ruídos *(40 min · em duplas)*, ENCONTRO 1 — Comunicação no mundo do trabalho, Os elementos da comunicação
 
-### Community 22 - "Community 22"
+### Community 21 - "Community 21"
 Cohesion: 0.29
 Nodes (7): 7.1 O e-mail profissional, 7.2 Netiqueta e escolha do canal, 7.3 Segurança na comunicação digital, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 7.1 | Do erro ao acerto *(35 min · duplas)*, ATIVIDADE 7.2 | Detector de golpes e preparação do desafio *(40 min · grupos)*, ENCONTRO 7 — Comunicação digital e segurança
 
-### Community 23 - "Community 23"
+### Community 22 - "Community 22"
 Cohesion: 0.33
-Nodes (6): 2.1 Cada contexto pede um tom, 2.2 Escuta ativa: metade da comunicação, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 2.1 | Tradutor de registros *(35 min · individual)*, ATIVIDADE 2.2 | Teste da escuta *(40 min · trios)*, ENCONTRO 2 — Registro adequado e escuta ativa
+Nodes (6): 6.1 Comunicado, 6.2 Relato de ocorrência, 6.3 Ata resumida, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 6.1 | Produção de texto profissional *(60 min · individual)*, ENCONTRO 6 — Gêneros profissionais: comunicado, relato e ata
 
-### Community 24 - "Community 24"
+### Community 23 - "Community 23"
 Cohesion: 0.33
 Nodes (6): 8.1 O desafio, 8.2 Critérios de avaliação, 8.3 Autoavaliação, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ENCONTRO 8 — Desafio integrador e avaliação, Entregas do desafio
 
@@ -153,20 +153,20 @@ Cohesion: 0.33
 Nodes (5): Atividades planejadas (ATIVIDADES-Matematica-Raciocínio-Logico.pptx), Estrutura planejada (30 slides), Log de execução, SLIDE-Matematica-Raciocínio-Logico — Progresso de Criação, Status: Em andamento
 
 ## Knowledge Gaps
-- **235 isolated node(s):** `RIO DO SUL MAIS TECH`, `SOBRE ESTE MATERIAL`, `Apresentação`, `Como esta apostila está organizada`, `Objetivo da Unidade Curricular` (+230 more)
+- **235 isolated node(s):** `UC: Introdução à Tecnologia da Informação e Comunicação`, `Contexto`, `Divisão da Dupla`, `O que fazer`, `O que criar` (+230 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `INTRODUÇÃO À COMUNICAÇÃO ORAL E ESCRITA PARA O MUNDO DO TRABALHO` connect `Community 0` to `Community 20`, `Community 21`, `Community 22`, `Community 23`, `Community 24`?**
+- **Why does `INTRODUÇÃO À COMUNICAÇÃO ORAL E ESCRITA PARA O MUNDO DO TRABALHO` connect `Community 0` to `Community 17`, `Community 20`, `Community 21`, `Community 22`, `Community 23`?**
   _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **Why does `SENAI — Projeto de Curso: Aprendizagem Industrial` connect `Community 2` to `Community 10`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Why does `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` connect `Community 2` to `Community 7`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **What connects `RIO DO SUL MAIS TECH`, `SOBRE ESTE MATERIAL`, `Apresentação` to the rest of the system?**
+- **What connects `UC: Introdução à Tecnologia da Informação e Comunicação`, `Contexto`, `Divisão da Dupla` to the rest of the system?**
   _235 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
