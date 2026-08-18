@@ -1049,6 +1049,72 @@
       [data-theme="dark"] #aulaMatList .aula-mat-row { background: #252830; }
       [data-theme="dark"] #aulasVazio { color: #8b919e; }
 
+      /* ── Modal Gerenciar Cursos ── */
+      .cl-backdrop {
+        position: fixed; inset: 0; background: rgba(0,0,0,.55);
+        display: flex; align-items: center; justify-content: center;
+        z-index: 3000;
+      }
+      .cl-modal {
+        background: #fff; border-radius: 14px;
+        box-shadow: 0 8px 48px rgba(0,0,0,.28);
+        width: 100%; max-width: 560px; max-height: 82vh;
+        display: flex; flex-direction: column; overflow: hidden;
+      }
+      .cl-head {
+        background: #004384; color: #fff;
+        padding: 16px 20px; display: flex; align-items: center; gap: 12px;
+      }
+      .cl-head h3 { flex: 1; font-size: 16px; font-weight: 700; margin: 0; }
+      .cl-btn-novo {
+        background: #f7941d; border: none; color: #fff;
+        font-size: 13px; font-weight: 700; padding: 6px 14px;
+        border-radius: 20px; cursor: pointer; white-space: nowrap;
+        transition: background .15s;
+      }
+      .cl-btn-novo:hover { background: #e07a00; }
+      .cl-body { overflow-y: auto; flex: 1; }
+      .cl-empty { padding: 32px; text-align: center; color: #999; font-size: 14px; }
+      .cl-item {
+        display: flex; align-items: center; gap: 12px;
+        padding: 12px 20px; border-bottom: 1px solid #f0f0f0;
+        transition: background .12s;
+      }
+      .cl-item:last-child { border-bottom: none; }
+      .cl-item:hover { background: #f5f8ff; }
+      .cl-icone { font-size: 28px; width: 36px; text-align: center; flex-shrink: 0; }
+      .cl-info { flex: 1; min-width: 0; }
+      .cl-nome { font-size: 14px; font-weight: 600; color: #1a1a2e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .cl-tipo { font-size: 12px; color: #777; margin-top: 2px; }
+      .cl-status {
+        font-size: 11px; font-weight: 700; padding: 2px 8px;
+        border-radius: 20px; white-space: nowrap; flex-shrink: 0;
+      }
+      .cl-status.vis { background: #e8f5e9; color: #2e7d32; }
+      .cl-status.ocu { background: #fce4ec; color: #c62828; }
+      .cl-acoes { display: flex; gap: 6px; flex-shrink: 0; }
+      .cl-btn-ed {
+        background: #e3f2fd; color: #1565c0; border: none;
+        border-radius: 6px; padding: 5px 10px; font-size: 12px;
+        cursor: pointer; transition: background .12s;
+      }
+      .cl-btn-ed:hover { background: #bbdefb; }
+      .cl-btn-del {
+        background: #fce4ec; color: #c62828; border: none;
+        border-radius: 6px; padding: 5px 10px; font-size: 12px;
+        cursor: pointer; transition: background .12s;
+      }
+      .cl-btn-del:hover { background: #f5c6c2; }
+      [data-theme="dark"] .cl-modal { background: #1c1e26; }
+      [data-theme="dark"] .cl-item:hover { background: #22252e; }
+      [data-theme="dark"] .cl-item { border-bottom-color: #2c2e38; }
+      [data-theme="dark"] .cl-nome { color: #e0e3e8; }
+      [data-theme="dark"] .cl-tipo { color: #7a8099; }
+      [data-theme="dark"] .cl-btn-ed { background: #1a2a40; color: #7ab4e8; }
+      [data-theme="dark"] .cl-btn-ed:hover { background: #1e3454; }
+      [data-theme="dark"] .cl-btn-del { background: #2a1a1a; color: #e88a8a; }
+      [data-theme="dark"] .cl-btn-del:hover { background: #3a1a1a; }
+
       /* ── Modal Plano de Ensino ── */
       .pe-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:3000; display:flex; align-items:center; justify-content:center; padding:12px; }
       .pe-modal { background:#fff; border-radius:12px; box-shadow:0 8px 40px rgba(0,0,0,.3); width:100%; max-width:860px; max-height:92vh; display:flex; flex-direction:column; overflow:hidden; }
@@ -1164,6 +1230,7 @@
       <button id="btnEmentaSlides" onclick="window.location.href='ementa-slides.html'" class="header-btn" style="display:none; margin-left:8px">📋 Ementa × Slides</button>
       <button id="btnPlanoEnsino" onclick="abrirPlanoEnsino()" class="header-btn" style="display:none; margin-left:8px">📄 Plano Ensino</button>
       <button id="btnDidatica" onclick="abrirDidatica()" class="header-btn" style="display:none; margin-left:8px">🎓 Didática</button>
+      <button id="btnCursos" onclick="abrirModalCursosLista()" class="header-btn" style="display:none; margin-left:8px">📂 Cursos</button>
       <button onclick="toggleTema()" class="header-btn" id="btnTema" style="margin-left: 8px; min-width: 96px">🌙 Escuro</button>
       <button onclick="sair()" class="header-btn" style="margin-left: 4px">
         🚪 Sair
@@ -1874,6 +1941,8 @@
         if (btnPE) btnPE.style.display = 'inline-block';
         const btnDid = document.getElementById('btnDidatica');
         if (btnDid) btnDid.style.display = 'inline-block';
+        const btnCursos = document.getElementById('btnCursos');
+        if (btnCursos) btnCursos.style.display = 'inline-block';
       }
 
       // Botão de tema — sincroniza texto com estado atual
@@ -2721,6 +2790,42 @@
         _cursoModalId = null;
       }
 
+      function abrirModalCursosLista() {
+        document.getElementById('modalCursosLista').style.display = 'flex';
+        renderizarListaCursos();
+      }
+
+      function fecharModalCursosLista() {
+        document.getElementById('modalCursosLista').style.display = 'none';
+      }
+
+      function renderizarListaCursos() {
+        const body = document.getElementById('clBody');
+        if (!dadosCursos || !dadosCursos.cursos || dadosCursos.cursos.length === 0) {
+          body.innerHTML = '<div class="cl-empty">Nenhum curso cadastrado.</div>';
+          return;
+        }
+        body.innerHTML = dadosCursos.cursos.map(c => {
+          const visivel = getVis(c.id, c.visivel);
+          const statusCls = visivel === 1 ? 'vis' : 'ocu';
+          const statusTxt = visivel === 1 ? '● Liberado' : '● Bloqueado';
+          const nomeEsc = (c.nome || '').replace(/'/g, "\\'").replace(/"/g, '\\"');
+          return `
+          <div class="cl-item">
+            <span class="cl-icone">${c.icone || '📚'}</span>
+            <div class="cl-info">
+              <div class="cl-nome">${c.nome || '—'}</div>
+              <div class="cl-tipo">${c.tipo || '—'}</div>
+            </div>
+            <span class="cl-status ${statusCls}">${statusTxt}</span>
+            <div class="cl-acoes">
+              <button class="cl-btn-ed" onclick="editarCursoCard(${c.idNum});fecharModalCursosLista()">✏️ Editar</button>
+              <button class="cl-btn-del" onclick="excluirCurso(${c.idNum},'${nomeEsc}')">🗑️</button>
+            </div>
+          </div>`;
+        }).join('');
+      }
+
       async function editarCursoCard(id) {
         _cursoModalId = id;
         const c = dadosCursos.cursos.find(x => x.idNum === id);
@@ -2736,6 +2841,7 @@
       }
 
       async function adicionarCurso() {
+        fecharModalCursosLista();
         _cursoModalId = null;
         document.getElementById('cursoFormTitulo').textContent = 'Adicionar Curso';
         document.getElementById('cfNome').value = '';
@@ -3239,6 +3345,20 @@
           <button class="crud-btn-fechar" onclick="fecharModalIframe()">✕</button>
         </div>
         <iframe id="modalIframeEl" style="flex:1; border:none; width:100%; border-radius:0 0 12px 12px" src=""></iframe>
+      </div>
+    </div>
+
+    <!-- ── Modal Gerenciar Cursos ─────────────────── -->
+    <div class="cl-backdrop" id="modalCursosLista" style="display:none" onclick="if(event.target===this)fecharModalCursosLista()">
+      <div class="cl-modal">
+        <div class="cl-head">
+          <h3>📂 Gerenciar Cursos</h3>
+          <button class="cl-btn-novo" onclick="adicionarCurso()">＋ Novo Curso</button>
+          <button class="crud-btn-fechar" onclick="fecharModalCursosLista()" style="margin-left:8px">✕</button>
+        </div>
+        <div class="cl-body" id="clBody">
+          <div class="cl-empty">⏳ Carregando…</div>
+        </div>
       </div>
     </div>
 
