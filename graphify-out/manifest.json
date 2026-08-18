@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1786821267.7842226,
-    "ast_hash": "d11f23fdde869b6f96420959e5712937",
+    "mtime": 1787057887.8844347,
+    "ast_hash": "b1b897e2cc3bb4012e545243cfad62ce",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -549,11 +549,6 @@
     "ast_hash": "9e73aaa9d835e16df9ddedf94ba70e64",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/FICHA PRODUTO MAISTECH ATUALIZADA.md": {
-    "mtime": 1786626254.8112483,
-    "ast_hash": "00688d2f01e1246859362b2ec5ab59e0",
-    "semantic_hash": ""
-  },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/ATIVIDADE-DIGITACAO-12-08-2026_OLD.txt": {
     "mtime": 1786559370.257911,
     "ast_hash": "cf950160a6c1fb794908ab566045eeb2",
@@ -750,8 +745,8 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/configuracoes/usuarios.html": {
-    "mtime": 1786986353.4012532,
-    "ast_hash": "40c44028e0c03381f222beba69efdc56",
+    "mtime": 1786993015.2728236,
+    "ast_hash": "ddee855dbb219fb4a1cf8d804e0d98fe",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/dashboard.html": {
@@ -1459,11 +1454,6 @@
     "ast_hash": "99c52992c678ecc1b5d0f61302c6b194",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO/Apostila_Comunicacao_Oral_e_Escrita15h.md": {
-    "mtime": 1786985827.5463004,
-    "ast_hash": "794103599b3777fcb3ba9d77cd68a2cb",
-    "semantic_hash": ""
-  },
   "erp-victor-anato-senai/REGRAS-NEGOCIOS/AJUSTE-HORARIOS.png": {
     "mtime": 1786715978.134686,
     "ast_hash": "21aaeeb705a3050c6fe7be9a95a80291",
@@ -1509,11 +1499,6 @@
     "ast_hash": "c9918aca85baf5cdb3f733b328a9d66a",
     "semantic_hash": ""
   },
-  "sistema/Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/Atividade-Matematica-e-Raciocinio-Logico.html": {
-    "mtime": 1786986712.5658178,
-    "ast_hash": "59b2eaf44dd84b986a4d9218a1520f36",
-    "semantic_hash": ""
-  },
   "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_10eecaf3.md": {
     "mtime": 1786987520.9841783,
     "ast_hash": "c9160729e23c1bb721a67f1247c5971b",
@@ -1527,11 +1512,6 @@
   "graphify-out/converted/Avaliacao_Objetiva_UC_Introducao_Tecnologia_Informacao_Comunicacao_19cde76e.md": {
     "mtime": 1786989657.1468692,
     "ast_hash": "2107618a5cc044aa73433228d6fcb83b",
-    "semantic_hash": ""
-  },
-  "sistema/Refor\u00e7o de Matem\u00e1tica e Racioc\u00ednio L\u00f3gico/EMENTA-RACIOCINIO-LOGICO-E-MATEMATICA.txt": {
-    "mtime": 1786987985.9595265,
-    "ast_hash": "0c58145c5140e0d8e23c277b39857cb7",
     "semantic_hash": ""
   },
   "sistema/prof-leila/claude.md": {
@@ -1562,6 +1542,81 @@
   "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_COM_GABARITO_fbc0d653.md": {
     "mtime": 1786991273.2821903,
     "ast_hash": "4d7ff39b2c391b55b548d4fb3f592d57",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade-Matematica-e-Raciocinio-Logico_fdc8672c.md": {
+    "mtime": 1787057568.636441,
+    "ast_hash": "bc3d8bd67594d1234ad6853f0c2c0a4b",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_2998145b.md": {
+    "mtime": 1787057568.7164865,
+    "ast_hash": "7908f366d35245c2fb05ca47bb4f4012",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_7b7e0245.md": {
+    "mtime": 1787057568.8342414,
+    "ast_hash": "d57bc1d2a19ec66ec1e6bc443c2a7bd8",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/FICHA PRODUTO MAISTECH ATUALIZADA_9710c567.md": {
+    "mtime": 1787057568.4199667,
+    "ast_hash": "34321cd9435a45dd5f116f298b7ac296",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_694ddfce.md": {
+    "mtime": 1787057568.9096086,
+    "ast_hash": "e5e4700e6a4396ac43076c483dd0a636",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_86a40d23.md": {
+    "mtime": 1787057568.9544752,
+    "ast_hash": "9396f1a2c51c8fe06d76b5588c7912be",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_COMUNICACAO/AULAS/AULA-18-08-2026.txt": {
+    "mtime": 1787056499.8027124,
+    "ast_hash": "286e444818e2c1ee0411ca125bb03506",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_COMUNICACAO/Apostila_Comunicacao_Oral_e_Escrita15h.md": {
+    "mtime": 1786985827.5463004,
+    "ast_hash": "794103599b3777fcb3ba9d77cd68a2cb",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_COMUNICACAO/FICHA PRODUTO MAISTECH ATUALIZADA.md": {
+    "mtime": 1786626254.8112483,
+    "ast_hash": "00688d2f01e1246859362b2ec5ab59e0",
+    "semantic_hash": ""
+  },
+  "sistema/ReforcoMatematicaRaciocinioLogico/Atividade-Matematica-e-Raciocinio-Logico.html": {
+    "mtime": 1786986712.5658178,
+    "ast_hash": "59b2eaf44dd84b986a4d9218a1520f36",
+    "semantic_hash": ""
+  },
+  "sistema/ReforcoMatematicaRaciocinioLogico/DUVIDAS-CEPLAS-18-08-2026.txt": {
+    "mtime": 1787056777.152098,
+    "ast_hash": "bbd095972f48e09ae364bf291038008e",
+    "semantic_hash": ""
+  },
+  "sistema/ReforcoMatematicaRaciocinioLogico/EMENTA-RACIOCINIO-LOGICO-E-MATEMATICA.txt": {
+    "mtime": 1786987985.9595265,
+    "ast_hash": "0c58145c5140e0d8e23c277b39857cb7",
+    "semantic_hash": ""
+  },
+  "sistema/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico02.html": {
+    "mtime": 1787056719.7324224,
+    "ast_hash": "302085422d852991a1439bde48827e2c",
+    "semantic_hash": ""
+  },
+  "sistema/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico03.html": {
+    "mtime": 1787057378.0959103,
+    "ast_hash": "cdfe9da236812f3de66ba3a920b813ae",
+    "semantic_hash": ""
+  },
+  "sistema/ReforcoMatematicaRaciocinioLogico/SLIDE-Matematica-Racioc\u00ednio-Logico.md": {
+    "mtime": 1786993613.3138392,
+    "ast_hash": "888cad7c6812bd6abfafd9ebc9dc1729",
     "semantic_hash": ""
   }
 }

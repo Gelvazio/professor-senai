@@ -1,16 +1,16 @@
-# Graph Report - professor-senai  (2026-08-17)
+# Graph Report - professor-senai  (2026-08-18)
 
 ## Corpus Check
-- 123 files · ~1,121,201 words
+- 128 files · ~1,132,961 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1604 nodes · 1552 edges · 127 communities (117 shown, 10 thin omitted)
+- 1658 nodes · 1601 edges · 132 communities (122 shown, 10 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `575ed40a`
+- Built from commit: `f0c594f0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,6 +29,7 @@
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
 - [[_COMMUNITY_Community 17|Community 17]]
@@ -108,7 +109,11 @@
 - [[_COMMUNITY_Community 92|Community 92]]
 - [[_COMMUNITY_Community 93|Community 93]]
 - [[_COMMUNITY_Community 94|Community 94]]
+- [[_COMMUNITY_Community 115|Community 115]]
 - [[_COMMUNITY_Community 124|Community 124]]
+- [[_COMMUNITY_Community 125|Community 125]]
+- [[_COMMUNITY_Community 128|Community 128]]
+- [[_COMMUNITY_Community 129|Community 129]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -128,7 +133,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (127 total, 10 thin omitted)
+## Communities (132 total, 10 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -160,7 +165,7 @@ Nodes (8): Documentação Padrão, Fluxo Obrigatório, Modelo do Arquivo, Overvi
 
 ### Community 7 - "Community 7"
 Cohesion: 0.10
-Nodes (19): 1. Identificação do Produto, 2.1 Cronograma e Carga Horária, 2.2 Turnos e Locais por Escola, 2. Informações Operacionais, 3. Requisitos de Acesso, 4. Objetivo Geral do Curso, 5.1 Estrutura do Módulo Único, 5.2 Unidade Curricular: Reforço Matemática e Raciocínio Lógico (+11 more)
+Nodes (20): 10. Medidas e Grandezas, 11. Medidas e Grandezas, 12. Raciocínio Lógico e Resolução de Problemas, 13. Raciocínio Lógico e Resolução de Problemas, 15. Raciocínio Lógico e Resolução de Problemas, 16. Raciocínio Lógico e Resolução de Problemas, 17. Introdução à Álgebra, 18. Introdução à Álgebra (+12 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.20
@@ -185,6 +190,10 @@ Nodes (13): AULA 01 — 03/08/2026, AULA 02 — 04/08/2026, AULA 03 — 05/08/20
 ### Community 13 - "Community 13"
 Cohesion: 0.25
 Nodes (8): 4.1 Pedido de Venda, 4.2 Nota Fiscal de Venda, 4.3 Romaneio, 4.4 Separação (Picking), 4.5 Expedição, 4.6 Entrega, Fluxo do Módulo de Vendas e Logística, Módulo 4 — VENDAS E LOGÍSTICA
+
+### Community 14 - "Community 14"
+Cohesion: 0.10
+Nodes (19): 1. Identificação do Produto, 2.1 Cronograma e Carga Horária, 2.2 Turnos e Locais por Escola, 2. Informações Operacionais, 3. Requisitos de Acesso, 4. Objetivo Geral do Curso, 5.1 Estrutura do Módulo Único, 5.2 Unidade Curricular: Reforço Matemática e Raciocínio Lógico (+11 more)
 
 ### Community 15 - "Community 15"
 Cohesion: 0.11
@@ -344,11 +353,11 @@ Nodes (9): 6.1 Equipes e Setores, 6.2 Telas do Módulo, 6.3 Tabelas no Supabase 
 
 ### Community 56 - "Community 56"
 Cohesion: 0.22
-Nodes (8): Apresentação, Como esta apostila está organizada, Como você será avaliado, INTRODUÇÃO À COMUNICAÇÃO ORAL E ESCRITA PARA O MUNDO DO TRABALHO, Objetivo da Unidade Curricular, Percurso das 15 horas, RIO DO SUL MAIS TECH, SOBRE ESTE MATERIAL
+Nodes (8): 1. Operações Básicas e Cálculo Numérico, 2. Frações, Decimais e Porcentagem, 3. Proporcionalidade, 4. Medidas e Grandezas, 5. Raciocínio Lógico e Resolução de Problemas, 6. Introdução à Álgebra, 7. Tratamento da Informação, Orientação geral
 
 ### Community 57 - "Community 57"
 Cohesion: 0.22
-Nodes (9): 3.1 Falar em público sem travar, 3.2 Dar e receber retorno, Antes de falar: os três Ps, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 3.1 | Um minuto sobre mim *(60 min · individual)*, ATIVIDADE 3.2 | Rodada de retorno *(20 min · em grupos)*, Durante a fala: os recursos do corpo e da voz, ENCONTRO 3 — Falar em público e retorno construtivo (+1 more)
+Nodes (8): 1. Operações Básicas e Cálculo Numérico, 2. Frações, Decimais e Porcentagem, 3. Proporcionalidade, 4. Medidas e Grandezas, 5. Raciocínio Lógico e Resolução de Problemas, 6. Introdução à Álgebra, 7. Tratamento da Informação, Orientação geral
 
 ### Community 58 - "Community 58"
 Cohesion: 0.25
@@ -363,16 +372,16 @@ Cohesion: 0.29
 Nodes (7): Autenticação do ERP, Credenciais, Esquema de tabelas do banco (PostgreSQL), Filtros e operadores da API REST Supabase, Padrão de CRUD — funções reutilizáveis, RLS (Row Level Security), Supabase — Configuração e Uso da API
 
 ### Community 61 - "Community 61"
-Cohesion: 0.29
-Nodes (7): 1.1 Comunicar é fazer-se entender, 1.2 Ruído: o inimigo silencioso, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 1.1 | Mapa da comunicação *(25 min · individual)*, ATIVIDADE 1.2 | Caça aos ruídos *(40 min · em duplas)*, ENCONTRO 1 — Comunicação no mundo do trabalho, Os elementos da comunicação
+Cohesion: 0.22
+Nodes (8): 1. Operações Básicas e Cálculo Numérico, 2. Frações, Decimais e Porcentagem, 3. Proporcionalidade, 4. Medidas e Grandezas, 5. Raciocínio Lógico e Resolução de Problemas, 6. Introdução à Álgebra, 7. Tratamento da Informação, Síntese para o planejamento
 
 ### Community 62 - "Community 62"
-Cohesion: 0.29
-Nodes (7): 4.1 Reunião: falar na hora certa, 4.2 Assertividade: nem passivo, nem agressivo, 4.3 Atendimento: a voz da empresa, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 4.1 | Reunião simulada *(45 min · grupos de 5)*, ATIVIDADE 4.2 | Dramatização de atendimento *(30 min · duplas)*, ENCONTRO 4 — Reuniões, atendimento e comunicação assertiva
+Cohesion: 0.22
+Nodes (8): Apresentação, Como esta apostila está organizada, Como você será avaliado, INTRODUÇÃO À COMUNICAÇÃO ORAL E ESCRITA PARA O MUNDO DO TRABALHO, Objetivo da Unidade Curricular, Percurso das 15 horas, RIO DO SUL MAIS TECH, SOBRE ESTE MATERIAL
 
 ### Community 63 - "Community 63"
-Cohesion: 0.29
-Nodes (7): 7.1 O e-mail profissional, 7.2 Netiqueta e escolha do canal, 7.3 Segurança na comunicação digital, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 7.1 | Do erro ao acerto *(35 min · duplas)*, ATIVIDADE 7.2 | Detector de golpes e preparação do desafio *(40 min · grupos)*, ENCONTRO 7 — Comunicação digital e segurança
+Cohesion: 0.22
+Nodes (9): 3.1 Falar em público sem travar, 3.2 Dar e receber retorno, Antes de falar: os três Ps, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 3.1 | Um minuto sobre mim *(60 min · individual)*, ATIVIDADE 3.2 | Rodada de retorno *(20 min · em grupos)*, Durante a fala: os recursos do corpo e da voz, ENCONTRO 3 — Falar em público e retorno construtivo (+1 more)
 
 ### Community 64 - "Community 64"
 Cohesion: 0.29
@@ -399,20 +408,20 @@ Cohesion: 0.33
 Nodes (5): Andamento — Módulo Financeiro, Banco de Dados (Supabase), Funcionalidades Especiais, Observações, Telas
 
 ### Community 70 - "Community 70"
-Cohesion: 0.33
-Nodes (6): 2.1 Cada contexto pede um tom, 2.2 Escuta ativa: metade da comunicação, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 2.1 | Tradutor de registros *(35 min · individual)*, ATIVIDADE 2.2 | Teste da escuta *(40 min · trios)*, ENCONTRO 2 — Registro adequado e escuta ativa
+Cohesion: 0.29
+Nodes (7): 1.1 Comunicar é fazer-se entender, 1.2 Ruído: o inimigo silencioso, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 1.1 | Mapa da comunicação *(25 min · individual)*, ATIVIDADE 1.2 | Caça aos ruídos *(40 min · em duplas)*, ENCONTRO 1 — Comunicação no mundo do trabalho, Os elementos da comunicação
 
 ### Community 71 - "Community 71"
-Cohesion: 0.33
-Nodes (6): 5.1 Escrever no trabalho é diferente, 5.2 A estrutura de um texto profissional, 5.3 Revisar antes de enviar, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 5.1 | Oficina de reescrita *(45 min · duplas)*, ENCONTRO 5 — Redação técnica: princípios e estrutura
+Cohesion: 0.29
+Nodes (7): 4.1 Reunião: falar na hora certa, 4.2 Assertividade: nem passivo, nem agressivo, 4.3 Atendimento: a voz da empresa, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 4.1 | Reunião simulada *(45 min · grupos de 5)*, ATIVIDADE 4.2 | Dramatização de atendimento *(30 min · duplas)*, ENCONTRO 4 — Reuniões, atendimento e comunicação assertiva
 
 ### Community 72 - "Community 72"
-Cohesion: 0.33
-Nodes (6): 6.1 Comunicado, 6.2 Relato de ocorrência, 6.3 Ata resumida, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 6.1 | Produção de texto profissional *(60 min · individual)*, ENCONTRO 6 — Gêneros profissionais: comunicado, relato e ata
+Cohesion: 0.29
+Nodes (7): 7.1 O e-mail profissional, 7.2 Netiqueta e escolha do canal, 7.3 Segurança na comunicação digital, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 7.1 | Do erro ao acerto *(35 min · duplas)*, ATIVIDADE 7.2 | Detector de golpes e preparação do desafio *(40 min · grupos)*, ENCONTRO 7 — Comunicação digital e segurança
 
 ### Community 73 - "Community 73"
 Cohesion: 0.33
-Nodes (6): 8.1 O desafio, 8.2 Critérios de avaliação, 8.3 Autoavaliação, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ENCONTRO 8 — Desafio integrador e avaliação, Entregas do desafio
+Nodes (6): 2.1 Cada contexto pede um tom, 2.2 Escuta ativa: metade da comunicação, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 2.1 | Tradutor de registros *(35 min · individual)*, ATIVIDADE 2.2 | Teste da escuta *(40 min · trios)*, ENCONTRO 2 — Registro adequado e escuta ativa
 
 ### Community 74 - "Community 74"
 Cohesion: 0.33
@@ -462,22 +471,36 @@ Nodes (3): Concerns, O que foi feito, Task 4 Report — ranking.html
 Cohesion: 0.50
 Nodes (3): Arquivos modificados, O que foi feito, Observações
 
+### Community 115 - "Community 115"
+Cohesion: 0.33
+Nodes (6): 5.1 Escrever no trabalho é diferente, 5.2 A estrutura de um texto profissional, 5.3 Revisar antes de enviar, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 5.1 | Oficina de reescrita *(45 min · duplas)*, ENCONTRO 5 — Redação técnica: princípios e estrutura
+
 ### Community 124 - "Community 124"
 Cohesion: 0.11
 Nodes (18): 1. Cabeçalho (Header), 2. Faixa de cards superiores (3 colunas), 3. Grade média (4 colunas — Tips 4 a 7), 4. Grade inferior (4 colunas — Tips 8 a 11), 5. Rodapé (4 colunas estreitas — Tips 12, 13, 14 + Regra de Ouro), Arquivo de saída, Elementos visuais obrigatórios, Estrutura do layout (zonas) (+10 more)
 
+### Community 125 - "Community 125"
+Cohesion: 0.33
+Nodes (6): 6.1 Comunicado, 6.2 Relato de ocorrência, 6.3 Ata resumida, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ATIVIDADE 6.1 | Produção de texto profissional *(60 min · individual)*, ENCONTRO 6 — Gêneros profissionais: comunicado, relato e ata
+
+### Community 128 - "Community 128"
+Cohesion: 0.33
+Nodes (6): 8.1 O desafio, 8.2 Critérios de avaliação, 8.3 Autoavaliação, AO FINAL DESTE ENCONTRO, VOCÊ SERÁ CAPAZ DE:, ENCONTRO 8 — Desafio integrador e avaliação, Entregas do desafio
+
+### Community 129 - "Community 129"
+Cohesion: 0.33
+Nodes (5): Atividades planejadas (ATIVIDADES-Matematica-Raciocínio-Logico.pptx), Estrutura planejada (30 slides), Log de execução, SLIDE-Matematica-Raciocínio-Logico — Progresso de Criação, Status: Em andamento
+
 ## Knowledge Gaps
-- **1237 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Overview` (+1232 more)
+- **1285 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Overview` (+1280 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `INTRODUÇÃO À COMUNICAÇÃO ORAL E ESCRITA PARA O MUNDO DO TRABALHO` connect `Community 56` to `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 57`, `Community 61`, `Community 62`, `Community 63`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _1238 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1286 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07053140096618357 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -488,3 +511,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.02531645569620253 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.02702702702702703 - nodes in this community are weakly interconnected._
+- **Should `Community 5` be split into smaller, more focused modules?**
+  _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
