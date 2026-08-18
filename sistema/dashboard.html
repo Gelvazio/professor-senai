@@ -1860,6 +1860,13 @@
               <option value="1">Permitido</option>
             </select>
           </div>
+          <div class="crud-field" style="margin-bottom: 16px">
+            <label class="crud-label">🖼️ Abrir no iFrame</label
+            ><select class="crud-input" id="mIframe">
+              <option value="false">Não (nova aba)</option>
+              <option value="true">Sim (iFrame)</option>
+            </select>
+          </div>
           <div style="display: flex; gap: 8px">
             <button class="btn-salvar" id="matAulaConfirmBtn" onclick="confirmarMatAula()">
               ＋ Adicionar
@@ -2676,15 +2683,16 @@
                   : "Leitura";
                 const temLink = m.arquivo && m.arquivo !== "#";
                 const bloqueado = !isProfessor && (a.visivel !== 1 || m.visivel === 0);
+                const _nomeEsc = (m.nome || '').replace(/'/g, "\\'").replace(/"/g, '\\"');
+                const _useIframe = m.iframe === true || m.tipo === "membros" || m.tipo === "modal"
+                  || (m.arquivo && m.arquivo.includes("ATIVIDADE_EQUIPE_06_08_2026"));
                 const btnAcessar = bloqueado
                   ? `<button class="btn-mat-acessar btn-mat-bloqueado" onclick="conteudoBloqueado()">🔒 Acessar</button>`
-                  : (m.tipo === "membros" || m.tipo === "modal")
-                    ? `<button class="btn-mat-acessar" onclick="abrirModalIframe('${m.arquivo}','${m.nome}')">Acessar</button>`
-                    : temLink
-                      ? (m.arquivo && m.arquivo.includes("ATIVIDADE_EQUIPE_06_08_2026"))
-                        ? `<button class="btn-mat-acessar" onclick="abrirModalIframe('${m.arquivo}','${m.nome}')">Acessar</button>`
-                        : `<a class="btn-mat-acessar" href="${m.arquivo}" target="_blank">Acessar ↗</a>`
-                      : `<span class="btn-mat-acessar btn-mat-em-breve">Em breve</span>`;
+                  : temLink
+                    ? _useIframe
+                      ? `<button class="btn-mat-acessar" onclick="abrirModalIframe('${m.arquivo}','${_nomeEsc}')">🖼️ Acessar</button>`
+                      : `<a class="btn-mat-acessar" href="${m.arquivo}" target="_blank">Acessar ↗</a>`
+                    : `<span class="btn-mat-acessar btn-mat-em-breve">Em breve</span>`;
                 const btnPdf = (temLink && !bloqueado)
                   ? `<button class="btn-mat-pdf" onclick="event.stopPropagation();baixarPdfMat('${m.arquivo}')" title="Baixar como PDF">⬇ PDF</button>`
                   : '';
@@ -3050,6 +3058,7 @@
         document.getElementById("mTipo").value = "";
         document.getElementById("mVisivel").value = "1";
         document.getElementById("mPermitecopiar").value = "0";
+        document.getElementById("mIframe").value = "false";
         document.getElementById("mAulaNumField").style.display = "none";
         document.getElementById("matAulaModal").style.display = "flex";
       }
@@ -3065,6 +3074,7 @@
         document.getElementById("mTipo").value = m.tipo || "";
         document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
         document.getElementById("mPermitecopiar").value = m.permitecopiar !== undefined ? String(m.permitecopiar) : "0";
+        document.getElementById("mIframe").value = m.iframe ? "true" : "false";
         const aulaAtual = parseInt(document.getElementById("aulaNum").value) || 0;
         _mostrarCheckboxesNoModal(_aulasComMaterialId(m.id, aulaAtual));
         document.getElementById("matAulaModal").style.display = "flex";
@@ -3082,6 +3092,7 @@
         document.getElementById("mTipo").value = m.tipo || "";
         document.getElementById("mVisivel").value = m.visivel !== undefined ? String(m.visivel) : "1";
         document.getElementById("mPermitecopiar").value = m.permitecopiar !== undefined ? String(m.permitecopiar) : "0";
+        document.getElementById("mIframe").value = m.iframe ? "true" : "false";
         _mostrarCheckboxesNoModal(_aulasComMaterialId(m.id, aulaNum));
         document.getElementById("matAulaModal").style.display = "flex";
       }
@@ -3104,6 +3115,7 @@
           icone: document.getElementById("mIcone").value.trim() || "📄",
           visivel: parseInt(document.getElementById("mVisivel").value),
           permitecopiar: parseInt(document.getElementById("mPermitecopiar").value),
+          iframe: document.getElementById("mIframe").value === "true",
         };
         const tipo = document.getElementById("mTipo").value;
         if (tipo) m.tipo = tipo;
@@ -3338,7 +3350,7 @@
     </script>
 
     <!-- Modal Iframe (membros, conteúdo embutido) -->
-    <div class="crud-backdrop" id="modalIframe" style="display:none; z-index:1200">
+    <div class="crud-backdrop" id="modalIframe" style="display:none; z-index:3000">
       <div class="crud-modal" style="max-width:1000px; height:90vh; display:flex; flex-direction:column">
         <div class="crud-modal-head">
           <h3 id="modalIframeTitulo">Conteúdo</h3>
