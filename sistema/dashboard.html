@@ -2040,12 +2040,12 @@
           card.dataset.id = curso.id;
 
           card.innerHTML = `
-      <div class="card-thumb" style="background:linear-gradient(135deg,${curso.corPrimaria} 0%,${curso.corSecundaria} 100%)">
-        <span class="card-thumb-icon">${curso.icone}</span>
-        <div class="card-thumb-stripe" style="background:${curso.corFaixa}"></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,${curso.corPrimaria||'#004384'} 0%,${curso.corSecundaria||'#0055b3'} 100%)">
+        <span class="card-thumb-icon">${curso.icone||'📚'}</span>
+        <div class="card-thumb-stripe" style="background:${curso.corFaixa||'#f7941d'}"></div>
       </div>
       <div class="card-body">
-        <div class="card-tipo" style="color:${curso.corSecundaria}">${curso.tipo}</div>
+        <div class="card-tipo" style="color:${curso.corSecundaria||'#0055b3'}">${curso.tipo||''}</div>
         <div class="card-titulo">${disponivel ? curso.nome : '<span style="color:#9aa0a6">' + curso.nome + "</span>"}</div>
         <div class="card-desc">${curso.descricao}</div>
         <div class="card-tags">${tagsHTML}</div>
@@ -2053,7 +2053,7 @@
       <div class="card-footer">
         <div class="progress-mini">
           <div class="progress-mini-bar">
-            <div class="progress-mini-fill" style="width:${pct}%;background:linear-gradient(90deg,${curso.corPrimaria},${curso.corSecundaria})"></div>
+            <div class="progress-mini-fill" style="width:${pct}%;background:linear-gradient(90deg,${curso.corPrimaria||'#004384'},${curso.corSecundaria||'#0055b3'})"></div>
           </div>
           <div class="progress-mini-text">${progressoTexto}</div>
         </div>
@@ -2066,7 +2066,7 @@
           </label>
         </div>
         ` : ''}
-        <button class="btn-acessar" style="background:${curso.corPrimaria};border:none;cursor:pointer" onclick="abrirAulasCurso(${curso.idNum}, '${curso.nome.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">Acessar ↗</button>
+        <button class="btn-acessar" style="background:${curso.corPrimaria||'#004384'};border:none;cursor:pointer" onclick="abrirAulasCurso(${curso.idNum}, '${curso.nome.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">Acessar ↗</button>
       </div>
       <div class="card-edit" id="edit-${curso.id}">
         <button class="btn-card-editar" onclick="editarCursoCard(${curso.idNum})">✏️ Editar</button>
