@@ -400,8 +400,8 @@
     "semantic_hash": ""
   },
   "dashboard.html": {
-    "mtime": 1787054455.8512003,
-    "ast_hash": "ff4e264cd059ada94ca1ff5f190c8871",
+    "mtime": 1787054729.0098286,
+    "ast_hash": "6cdb7d62b3ec8aff13c432573d95c144",
     "semantic_hash": ""
   },
   "ementa-slides.html": {
@@ -604,21 +604,6 @@
     "ast_hash": "ee2b896f1e4608deaee53567e71634d9",
     "semantic_hash": ""
   },
-  "ReforcoMatem\u00e1ticaRaciocinioLogico/Atividade-Matematica-e-Raciocinio-Logico.html": {
-    "mtime": 1786986712.5658178,
-    "ast_hash": "59b2eaf44dd84b986a4d9218a1520f36",
-    "semantic_hash": ""
-  },
-  "ReforcoMatem\u00e1ticaRaciocinioLogico/EMENTA-RACIOCINIO-LOGICO-E-MATEMATICA.txt": {
-    "mtime": 1786987985.9595265,
-    "ast_hash": "0c58145c5140e0d8e23c277b39857cb7",
-    "semantic_hash": ""
-  },
-  "ReforcoMatem\u00e1ticaRaciocinioLogico/SLIDE-Matematica-Racioc\u00ednio-Logico.md": {
-    "mtime": 1786993613.3138392,
-    "ast_hash": "888cad7c6812bd6abfafd9ebc9dc1729",
-    "semantic_hash": ""
-  },
   "graphify-out/converted/Atividade-Matematica-e-Raciocinio-Logico_c19610f0.md": {
     "mtime": 1787054471.1276004,
     "ast_hash": "bc3d8bd67594d1234ad6853f0c2c0a4b",
@@ -641,6 +626,46 @@
   },
   "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_a6c5299c.md": {
     "mtime": 1787054471.4651182,
+    "ast_hash": "9396f1a2c51c8fe06d76b5588c7912be",
+    "semantic_hash": ""
+  },
+  "ReforcoMatematicaRaciocinioLogico/Atividade-Matematica-e-Raciocinio-Logico.html": {
+    "mtime": 1786986712.5658178,
+    "ast_hash": "59b2eaf44dd84b986a4d9218a1520f36",
+    "semantic_hash": ""
+  },
+  "ReforcoMatematicaRaciocinioLogico/EMENTA-RACIOCINIO-LOGICO-E-MATEMATICA.txt": {
+    "mtime": 1786987985.9595265,
+    "ast_hash": "0c58145c5140e0d8e23c277b39857cb7",
+    "semantic_hash": ""
+  },
+  "ReforcoMatematicaRaciocinioLogico/SLIDE-Matematica-Racioc\u00ednio-Logico.md": {
+    "mtime": 1786993613.3138392,
+    "ast_hash": "888cad7c6812bd6abfafd9ebc9dc1729",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade-Matematica-e-Raciocinio-Logico_fdc8672c.md": {
+    "mtime": 1787054743.617703,
+    "ast_hash": "bc3d8bd67594d1234ad6853f0c2c0a4b",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao2.0_2998145b.md": {
+    "mtime": 1787054743.701356,
+    "ast_hash": "7908f366d35245c2fb05ca47bb4f4012",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AtividadesMatematicaRaciocinioLogicoVersao3.0_7b7e0245.md": {
+    "mtime": 1787054743.8026543,
+    "ast_hash": "d57bc1d2a19ec66ec1e6bc443c2a7bd8",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Lista2_20Exercicios_MatematicaRaciocinioLogico_694ddfce.md": {
+    "mtime": 1787054743.872729,
+    "ast_hash": "e5e4700e6a4396ac43076c483dd0a636",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_86a40d23.md": {
+    "mtime": 1787054743.9196005,
     "ast_hash": "9396f1a2c51c8fe06d76b5588c7912be",
     "semantic_hash": ""
   }
