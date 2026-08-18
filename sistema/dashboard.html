@@ -3037,10 +3037,12 @@
             '<p style="font-size:12px;color:#aaa;text-align:center;padding:4px 0">Nenhum material</p>';
           return;
         }
+        _aulaMatTemp.sort((a, b) => (a.ordem ?? 9999) - (b.ordem ?? 9999));
         el.innerHTML = _aulaMatTemp
           .map(
             (m, i) => `
     <div style="display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:6px 10px">
+      <span style="font-size:11px;font-weight:700;color:#004384;background:#e8f0fe;border-radius:10px;padding:2px 7px;flex-shrink:0">${m.ordem ?? i + 1}</span>
       <span style="font-size:15px">${m.icone || "📄"}</span>
       <div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600">${m.nome}</div><div style="font-size:11px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${m.arquivo}</div></div>
       <button onclick="editarMatTemp(${i})" style="background:none;border:none;color:#1565c0;font-size:15px;cursor:pointer;padding:2px 5px;border-radius:4px" title="Editar material">✏️</button>
@@ -3178,7 +3180,7 @@
           visivel: parseInt(document.getElementById("mVisivel").value),
           permitecopiar: parseInt(document.getElementById("mPermitecopiar").value),
           iframe: document.getElementById("mIframe").value === "true",
-          ordem: parseInt(document.getElementById("mOrdem").value) || 0,
+          ordem: parseInt(document.getElementById("mOrdem").value) || 1,
         };
         const tipo = document.getElementById("mTipo").value;
         if (tipo) m.tipo = tipo;
@@ -3215,7 +3217,28 @@
         } else if (_matEditContext) {
           const aulaOrigem = _aulaLista.find(a => a.numero === _matEditContext.aulaNum);
           const existing = aulaOrigem.materiais[_matEditContext.idx];
-          const matId = existing.id || _nextMatId();
+
+          if (!existing.id) {
+            // Material sem ID: atualiza diretamente no índice para evitar duplicação
+            aulaOrigem.materiais[_matEditContext.idx] = {
+              id: _nextMatId(),
+              numero_aula: _matEditContext.aulaNum,
+              ...existing,
+              ...m,
+            };
+            fecharAddMatAula();
+            setAulasMsg("⏳ Salvando…", "");
+            try {
+              await sbPatch("curso", "id", _aulaCursoId, { materias: _aulaLista });
+              renderAulasList();
+              setAulasMsg("✅ Material atualizado!", "ok");
+            } catch (e) {
+              setAulasMsg("❌ " + e.message, "err");
+            }
+            return;
+          }
+
+          const matId = existing.id;
           const aulasSelecionadas = Array.from(
             document.querySelectorAll("#mAulaCheckboxes input[type=checkbox]:checked")
           ).map(cb => parseInt(cb.value));
