@@ -76,6 +76,32 @@
         white-space: nowrap;
       }
 
+      /* ── Header mobile ── */
+      @media (max-width: 640px) {
+        .header {
+          height: auto;
+          min-height: 48px;
+          padding: 8px 12px;
+          gap: 6px;
+          flex-wrap: wrap;
+        }
+        .header-title { display: none; }
+        .header-spacer { flex: 1; min-width: 0; }
+        .header-btn { font-size: 11px; padding: 5px 8px; gap: 3px; }
+        /* Botões exclusivos do professor vão para segunda linha */
+        #btnUnidadesCurriculares,
+        #btnEmentaSlides,
+        #btnPlanoEnsino,
+        #btnDidatica,
+        #btnCursos {
+          order: 10;
+          flex: 1 1 auto;
+          justify-content: center;
+          font-size: 11px;
+          padding: 5px 6px;
+        }
+      }
+
       /* ── Hero ── */
       .hero {
         background: linear-gradient(
@@ -965,6 +991,30 @@
         padding: 10px 14px;
         color: #aaa;
         font-size: 12px;
+      }
+
+      /* ── Mobile (≤ 640px) ── */
+      @media (max-width: 640px) {
+        .section { padding: 16px 12px; }
+        .hero { padding: 20px 12px 16px; }
+        .hero h1 { font-size: 18px; }
+        .admin-section { padding: 16px 12px; }
+        /* Oculta barra de progresso no material em telas pequenas */
+        .aula-mat-bar-wrap { display: none; }
+        /* Linha de material: reduz padding lateral */
+        .aula-mat-row { padding: 10px 8px 10px 32px; gap: 8px; }
+        .aula-mat-icon { width: 32px; height: 32px; font-size: 15px; }
+        /* Modais: reduz padding lateral */
+        .crud-modal { border-radius: 8px; }
+        .crud-modal-head, .cl-head { padding: 12px 14px; }
+        /* Botões de ação no material ficam menores */
+        .btn-mat-acessar, .btn-mat-pdf, .btn-mat-editar, .btn-mat-excluir {
+          font-size: 10px; padding: 3px 6px;
+        }
+        /* Header botões professor — ajuste de quebra de linha já aplicado acima */
+        .cl-modal { border-radius: 8px; }
+        .cl-item { padding: 10px 12px; gap: 8px; }
+        .cl-icone { font-size: 22px; width: 28px; }
       }
 
       /* ── Tema Escuro ── */
