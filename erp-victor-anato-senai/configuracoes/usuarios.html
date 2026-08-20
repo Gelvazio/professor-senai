@@ -575,15 +575,10 @@
     document.getElementById('msgModal').style.display = 'none';
   }
 
-  // ── Fechar ao clicar fora ──────────────────────────────────
-  document.getElementById('modalOverlay').addEventListener('click', function (e) {
-    if (e.target === this) fecharModal();
-  });
 
   // ── ESC fecha ──────────────────────────────────────────────
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
-      fecharModal();
       fecharConfirm();
     }
   });
