@@ -24,7 +24,7 @@
 
   function link(href, icon, label) {
     const caminho = href.replace(/^\.\.\//, '').replace(/^\//, '');
-    if (!isAdmin && caminho !== 'dashboard.html' && !telasPermitidas.has(caminho)) return null;
+    if (!telasPermitidas.has(caminho)) return null;
     const active = pageFull === href || pageFull.endsWith('/' + href);
     return `<a class="sidebar-link${active ? ' ativo' : ''}" href="${base}${href}">` +
            `<span class="sidebar-icon">${icon}</span> ${label}</a>`;
