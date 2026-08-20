@@ -12,48 +12,6 @@
 
 ---
 
-## Sobre este material
-
-Esta apostila foi desenvolvida especialmente para você, aluno do programa **Rio do Sul Mais Tech**, em parceria entre o **SENAI** e a **Prefeitura Municipal de Rio do Sul**. Ela acompanha todas as aulas de Reforço de Matemática e Raciocínio Lógico, com explicações, exemplos resolvidos, exercícios e desafios.
-
-Guarde este material com cuidado — ele será seu companheiro durante toda a UC!
-
----
-
-## Uma palavra para você, aluno
-
-Você já parou para pensar quantas vezes usamos matemática no dia a dia sem nem perceber?
-
-Quando você calcula o troco no mercado, divide uma pizza com os amigos, confere o desconto numa compra online ou entende a tabela de classificação do seu campeonato favorito — você está usando matemática. Ela está em todo lugar!
-
-Neste curso, vamos revisitar e fortalecer os conceitos matemáticos que são a base para tudo que você vai aprender a seguir — na escola, no SENAI e na vida profissional. Não se preocupe se algum tema parece difícil agora. Vamos avançar juntos, com calma, muitos exemplos e bastante prática.
-
-**Matemática não é um dom. É uma habilidade — e habilidade se treina.**
-
-Vamos juntos!
-
----
-
-## Como esta apostila está organizada
-
-Esta apostila está dividida em **7 módulos**, cada um cobrindo um grande tema da matemática. Cada módulo tem:
-
-- **Apresentação do módulo** — o que você vai aprender e por que importa
-- **Conteúdo teórico** — explicações claras com exemplos resolvidos passo a passo
-- **Atividades práticas** — exercícios individuais e em grupo
-- **Desafios** — problemas contextualizados no cotidiano e no mundo do trabalho
-- **Síntese** — resumo do que foi aprendido
-
-Ao final, você encontrará o **gabarito geral** de todos os exercícios.
-
----
-
-## Objetivo da UC
-
-Fortalecer os conhecimentos matemáticos essenciais para a vida acadêmica, profissional e cotidiana, desenvolvendo o raciocínio lógico, a capacidade de resolução de problemas e a autonomia no uso de conceitos matemáticos.
-
----
-
 ## Percurso de Aprendizagem
 
 | Módulo | Tema | CH | Encontros |
@@ -76,18 +34,6 @@ Fortalecer os conhecimentos matemáticos essenciais para a vida acadêmica, prof
 # MÓDULO 1 — OPERAÇÕES BÁSICAS E CÁLCULO NUMÉRICO
 
 **Carga Horária:** 9 horas | **Encontros:** 1 ao 4 (com parte do 5º)
-
----
-
-## Apresentação do Módulo
-
-As quatro operações básicas — adição, subtração, multiplicação e divisão — são a base de toda a matemática. Neste módulo, vamos relembrar como usá-las com números inteiros e decimais, aprender a respeitar a ordem das operações e resolver problemas do cotidiano.
-
-### Você vai aprender a:
-- Somar, subtrair, multiplicar e dividir com segurança
-- Trabalhar com números negativos
-- Calcular mentalmente com agilidade
-- Resolver problemas do dia a dia usando as quatro operações
 
 ---
 
@@ -335,18 +281,6 @@ Em grupo de 3, resolvam:
 
 ---
 
-## Apresentação do Módulo
-
-Frações e porcentagens estão em todo lugar: no desconto da compra online, no rendimento da poupança, no ingrediente da receita. Neste módulo, vamos dominar esses conceitos e aplicá-los em situações reais.
-
-### Você vai aprender a:
-- Representar e operar com frações
-- Converter frações em decimais e vice-versa
-- Calcular porcentagem em situações do cotidiano
-- Calcular descontos, aumentos e juros simples
-
----
-
 ## Encontro 5 — O que são Frações (2h)
 
 ### 5.1 Representação de Frações
@@ -565,18 +499,6 @@ Um notebook de R$ 3.000,00 financiado com juros de 2% ao mês por 6 meses.
 
 ---
 
-## Apresentação do Módulo
-
-Proporcionalidade é sobre relações entre quantidades. Ela aparece quando calculamos receitas, velocidade, consumo de combustível, escala de mapas e muito mais. Dominar a regra de três é uma das habilidades matemáticas mais úteis da vida prática.
-
-### Você vai aprender a:
-- Entender razão e proporção
-- Distinguir grandezas diretamente e inversamente proporcionais
-- Aplicar a regra de três simples e composta
-- Resolver problemas de velocidade e produção
-
----
-
 ## Encontro 10 — Razão e Proporção (2h)
 
 ### 10.1 Razão
@@ -784,17 +706,6 @@ Dados trafegam a 100 Mb/s. Quanto tempo para transferir um arquivo de 2.500 Mb?
 
 ---
 
-## Apresentação do Módulo
-
-Medir é uma das ações mais humanas que existem. Medimos para construir, cozinhar, viajar, comprar e fabricar. Neste módulo, vamos dominar o sistema métrico e calcular áreas e perímetros de figuras do cotidiano.
-
-### Você vai aprender a:
-- Converter unidades de comprimento, massa, capacidade e tempo
-- Calcular perímetro e área de figuras planas
-- Resolver problemas práticos envolvendo medidas
-
----
-
 ## Encontro 15 — Sistema Métrico: Comprimento e Massa (2h)
 
 ### 15.1 Unidades de Comprimento
@@ -980,18 +891,6 @@ Um técnico vai instalar cabeamento em um prédio com 3 andares. Cada andar tem 
 # MÓDULO 5 — RACIOCÍNIO LÓGICO E RESOLUÇÃO DE PROBLEMAS
 
 **Carga Horária:** 9 horas | **Encontros:** 20 ao 24
-
----
-
-## Apresentação do Módulo
-
-Raciocínio lógico é a capacidade de pensar de forma organizada e chegar a conclusões corretas. É uma habilidade essencial para qualquer profissional de tecnologia — e para a vida. Neste módulo, vamos treinar o cérebro para pensar com mais clareza.
-
-### Você vai aprender a:
-- Reconhecer padrões e sequências
-- Usar lógica para resolver problemas
-- Aplicar estratégias de resolução de desafios
-- Trabalhar com noções básicas de lógica proposicional
 
 ---
 
@@ -1197,18 +1096,6 @@ Qual será o 10º endereço?
 
 ---
 
-## Apresentação do Módulo
-
-Álgebra é a linguagem da matemática. Ela nos permite descrever situações com letras — as variáveis — e resolve-las com regras precisas. É a base de toda a programação e da matemática avançada.
-
-### Você vai aprender a:
-- Entender o conceito de variável
-- Montar e simplificar expressões algébricas
-- Resolver equações de 1º grau
-- Traduzir situações reais em equações
-
----
-
 ## Encontro 25 — Variáveis e Expressões Algébricas (2h)
 
 ### 25.1 O que é uma Variável
@@ -1394,19 +1281,7 @@ Um servidor guarda arquivos. Já tem 200 arquivos. Cada dia chegam 15 novos arqu
 
 ---
 
-## Apresentação do Módulo
-
-Vivemos na era dos dados. Notícias, redes sociais, aplicativos e empresas dependem da análise de informações. Neste módulo, vamos aprender a ler, interpretar e organizar dados em tabelas e gráficos — uma habilidade essencial para qualquer profissional do século XXI.
-
-### Você vai aprender a:
-- Ler e interpretar tabelas de dados
-- Ler gráficos de barras, linhas e pictogramas
-- Calcular média aritmética
-- Organizar e apresentar dados
-
----
-
-## Encontro 29 — Tabelas e Gráficos de Barras (2h)
+## Encontro 29 — Tabelas de Dados (2h)
 
 ### 29.1 Leitura de Tabelas
 
@@ -1425,20 +1300,6 @@ Uma tabela organiza dados em linhas (categorias) e colunas (informações).
 - Quem teve a maior média? → Carla (8,75)
 - Qual aluno mais melhorou da P1 para a P2? → Diego (+1,0)
 
-### 29.2 Gráficos de Barras
-
-Gráficos de barras representam dados por meio de barras proporcionais.
-
-**Como interpretar:**
-- Eixo horizontal (x): categorias
-- Eixo vertical (y): valores
-- A altura da barra representa o valor
-
-**Dicas de análise:**
-- Compare as alturas das barras
-- Observe quais barras são maiores/menores
-- Calcule diferenças entre barras
-
 ### Atividade 7.1
 
 Use a tabela a seguir (aparelhos vendidos por uma loja de informática):
@@ -1455,30 +1316,7 @@ Use a tabela a seguir (aparelhos vendidos por uma loja de informática):
 
 ---
 
-## Encontro 30 — Gráficos de Linhas, Pictogramas e Média (2h)
-
-### 30.1 Gráficos de Linhas
-
-Gráficos de linhas mostram a evolução de um dado ao longo do tempo. São ideais para mostrar tendências.
-
-**Como interpretar:**
-- Linha subindo = crescimento
-- Linha descendo = queda
-- Linha estável = valor constante
-
-**Exemplo — Acessos a um site:**
-```
-Jan: 500 → Fev: 700 → Mar: 650 → Abr: 900 → Mai: 1200
-```
-> Tendência geral: crescimento (mesmo com uma queda em março)
-
-### 30.2 Pictogramas
-
-Pictogramas usam ícones/imagens para representar quantidades. Cada ícone representa um valor.
-
-**Exemplo:**
-🖥️ = 10 computadores
-Se uma escola tem 🖥️🖥️🖥️ = **30 computadores**
+## Encontro 30 — Média Aritmética (2h)
 
 ### 30.3 Média Aritmética
 
@@ -1517,16 +1355,7 @@ Um servidor registrou os seguintes tempos de resposta (ms) durante a semana:
 3. **Apresentação** — gráficos e infográficos
 4. **Análise** — interpretação e conclusões
 
-### 31.2 Escolhendo o Gráfico Certo
-
-| Tipo de gráfico | Quando usar |
-|---|---|
-| Barras | Comparar categorias |
-| Linhas | Mostrar evolução no tempo |
-| Pizza (setores) | Mostrar proporções do todo |
-| Pictograma | Dados simples de forma visual |
-
-### 31.3 Atividade Final Integradora — Em Grupo
+### 31.2 Atividade Final Integradora — Em Grupo
 
 Cada grupo vai:
 
@@ -1539,9 +1368,7 @@ Cada grupo vai:
 
 3. **Calcular** a média do grupo
 
-4. **Criar** um gráfico de barras ou de linhas à mão (papel quadriculado)
-
-5. **Apresentar** ao restante da turma com 3 conclusões sobre os dados
+4. **Apresentar** ao restante da turma com 3 conclusões sobre os dados
 
 ---
 
@@ -1550,157 +1377,7 @@ Cada grupo vai:
 | Conceito | Resumo |
 |---|---|
 | Tabela | Organiza dados em linhas e colunas |
-| Gráfico de barras | Compara categorias |
-| Gráfico de linhas | Mostra evolução no tempo |
-| Pictograma | Ícones representam quantidades |
-| Média aritmética | Soma ÷ quantidade |
+| Média aritmética | Soma dos valores ÷ quantidade |
+| Organização de dados | Coletar → Organizar → Analisar → Concluir |
 
----
-
----
-
-# GABARITO GERAL
-
-## Módulo 1 — Operações Básicas
-
-**Atividade 1.1**
-1. +5  2. -13  3. -5  4. -2  5. +5
-Desafio: 8 + 12 - 15 = **5°C**
-
-**Atividade 1.2**
-1. -28  2. +27  3. +6  4. -6  5. 240
-
-**Atividade 1.3**
-1. 20  2. 13  3. 24  4. 11  5. 14
-
-**Atividade 1.4**
-1. Dezena: 560; Centena: 600
-2. Centena: 4.800; Milhar: 5.000
-3. Estimativa: 40 × 50 = 2.000; Exato: 39 × 51 = **1.989**
-4. Estimativa: 200 × 30 = R$ 6.000,00; Exato: 198 × 31 = **R$ 6.138,00**
-5. Estimativa: 20 + 30 = R$ 50,00 > R$ 47,00 → não dá; Exato: 19,90 + 28,50 = R$ 48,40 → **não é possível comprar os dois**
-
-**Atividade 1.5**
-1. 8 setores; 1 setor com 30 computadores → R$ 75.000,00
-2. 8h × 5 dias × 4 semanas = 160h × R$ 18 = **R$ 2.880,00**
-
----
-
-## Módulo 2 — Frações, Decimais e Porcentagem
-
-**Atividade 2.1**
-1. 3/8  2. a) 2/3  b) 3/4  c) 2/3  3. 8/20 e 14/35
-
-**Atividade 2.2**
-1. 7/10  2. 5/12  3. 2/5  4. 5/2 = 2,5
-
-**Atividade 2.3**
-1. 0,6  2. 0,875  3. 2/5  4. 5/8
-
-**Atividade 2.4**
-1. R$ 1.500 - 12% = 1.500 - 180 = **R$ 1.320,00**
-2. R$ 1.800 + 5% = 1.800 + 90 = **R$ 1.890,00**
-3. 40% de 30 = 12 chegaram atrasados → **18 chegaram no horário**
-
-**Atividade 2.5**
-1. J = 5.000 × 0,015 × 8 = 600 → M = **R$ 5.600,00**
-2. J = 1.800 × 0,018 × 10 = 324 → M = **R$ 2.124,00**
-3. J = 500 × 0,15 × 2 = 150 → M = **R$ 650,00**
-
----
-
-## Módulo 3 — Proporcionalidade
-
-**Atividade 3.1**
-1. 4/11  2. a) x = 28  b) x = 5
-
-**Atividade 3.2**
-1. GDP  2. GIP  3. GIP  4. GIP
-
-**Atividade 3.3**
-1. 20 litros  2. 7,5 dias  3. 140 páginas
-
-**Atividade 3.5**
-1. 3 horas  2. 300 km  3. 60 Mb/min
-
----
-
-## Módulo 4 — Medidas e Grandezas
-
-**Atividade 4.1**
-1. 5.000 m  2. 2,5 m  3. 3,2 km  4. 4.500 g  5. 0,8 kg
-
-**Atividade 4.2**
-1. 3.500 mL  2. 2,4 L  3. 255 min  4. 3h  5. 1 hora
-
-**Atividade 4.3**
-1. 18 m  2. 84 m  3. ≈ 314 m
-
-**Atividade 4.4**
-1. 12,25 m²  2. 20 m²  3. ≈ 4,52 m²
-
----
-
-## Módulo 5 — Raciocínio Lógico
-
-**Atividade 5.1**
-1. 25, 30, 35  2. 12,5; 6,25; 3,125  3. 36, 49, 64  4. 48, 96, 192
-
-**Atividade 5.2**
-1. Vermelhas = 10, Azuis = 20
-2. Pedro tinha 24 fichas
-
-**Atividade 5.3**
-1. F  2. V  3. F (Lua É satélite, negação = F)
-
-**Atividade 5.5**
-1. 1.600 acessos (PG razão 2: 100, 200, 400, 800, 1600)
-2. 50 Mb/s → 100: +0,80/Mb; 100 → 200: +0,60/Mb. Não há proporcionalidade simples.
-
----
-
-## Módulo 6 — Álgebra
-
-**Atividade 6.1**
-1. 3x + 5y  2. 4  3. 3(n + 7)
-
-**Atividade 6.2**
-1. x = 7  2. x = 5  3. x = 6  4. x = 7
-
-**Atividade 6.3**
-1. 4n - 6 = 18 → n = 6
-2. n + n+1 + n+2 = 33 → n = 10 (10, 11, 12)
-3. Sala A = 30, Sala B = 60
-
-**Atividade 6.4**
-1. 10 + 2x = 24 → x = 7 funcionalidades
-2. 3.000 - 120d = 0 → d = 25 dias
-3. x + 2x = 60 → x = 20 (um resolve 20, outro 40 bugs)
-
----
-
-## Módulo 7 — Tratamento da Informação
-
-**Atividade 7.1**
-1. Celulares (52)  2. +8 (subiu)  3. 182 celulares
-
-**Atividade 7.2**
-1. Média = (15+18+20+17+22+19+16)/7 = 127/7 ≈ **18,14°C**
-2. Soma atual: 35. Para média 7 em 6 provas: soma = 42. Nota necessária: **7**
-3. Média = 1750/5 = **350 acessos/dia**. Maior acesso: **sexta-feira (500)**
-
----
-
-# REFERÊNCIAS
-
-- DANTE, L. R. **Matemática: contexto e aplicações**. São Paulo: Ática, 2016.
-- GIOVANNI, J. R.; BONJORNO, J. R. **Matemática completa**. São Paulo: FTD, 2015.
-- BRASIL. **Base Nacional Comum Curricular — BNCC**. MEC, 2017.
-- SENAI-SC. **Guia de boas práticas pedagógicas**. Florianópolis: SENAI, 2022.
-- POLYA, G. **A arte de resolver problemas**. Rio de Janeiro: Interciência, 1978.
-
----
-
-*Material didático desenvolvido para o Programa Rio do Sul Mais Tech.*
-*SENAI — Prefeitura Municipal de Rio do Sul*
-*Proibida a reprodução sem autorização.*
+*Material didático — Rio do Sul Mais Tech · SENAI · Prefeitura Municipal de Rio do Sul*
