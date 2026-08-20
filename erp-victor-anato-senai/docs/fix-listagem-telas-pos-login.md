@@ -17,6 +17,7 @@
 | 5 | Remover o bloqueio antecipado por permissão de módulo | ✅ Concluído |
 | 6 | Aplicar comportamento seguro quando o perfil não tiver telas | ✅ Concluído |
 | 7 | Commit e publicação do ajuste complementar | ✅ Concluído |
+| 8 | Aplicar `erp_telas` durante a montagem do menu | ✅ Concluído |
 
 ---
 
@@ -176,3 +177,31 @@ git log -1 --oneline
 ```
 
 Esperado: correção complementar publicada no branch principal.
+
+---
+
+### Passo 8: Aplicar as telas do perfil no menu
+
+**Status:** ✅ Concluído
+
+**Arquivo:** Modificar `menu.js`
+
+**Ação:** Ler `erp_telas` do LocalStorage imediatamente antes de montar o HTML e fazer `link()` retornar somente as telas vinculadas ao perfil.
+
+```javascript
+let telasDoPerfil = [];
+try {
+  telasDoPerfil = JSON.parse(localStorage.getItem('erp_telas') || '[]');
+} catch {
+  telasDoPerfil = [];
+}
+const telasPermitidas = new Set(telasDoPerfil.map((tela) => tela.nome_html));
+```
+
+**Verificação:**
+
+```powershell
+git diff -- menu.js
+```
+
+Esperado: o menu é montado diretamente a partir da lista de telas do perfil logado.

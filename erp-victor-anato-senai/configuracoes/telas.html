@@ -175,7 +175,7 @@
       const [telaDB, vinculos, sistemas] = await Promise.all([
         sbListar('tela', 'order=id.asc'),
         sbListar('tela_sistema', ''),
-        fetch('../sistema.json').then(r => r.json())
+        sbListar('sistema', 'sisativo=eq.1&order=sisordem.asc')
       ]);
 
       const sisMap = {};

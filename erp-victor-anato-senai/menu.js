@@ -23,6 +23,8 @@
   const isAdmin = role === 'Administrador';
 
   function link(href, icon, label) {
+    const caminho = href.replace(/^\.\.\//, '').replace(/^\//, '');
+    if (!isAdmin && caminho !== 'dashboard.html' && !telasPermitidas.has(caminho)) return null;
     const active = pageFull === href || pageFull.endsWith('/' + href);
     return `<a class="sidebar-link${active ? ' ativo' : ''}" href="${base}${href}">` +
            `<span class="sidebar-icon">${icon}</span> ${label}</a>`;
@@ -36,6 +38,19 @@
            `<div class="sidebar-section-links">${content}</div>` +
            `</div>`;
   }
+
+  // VALIDE A REGRA DAS TELAS DO PERFIL, SEMPRE AQUI
+  let telasDoPerfil = [];
+  try {
+    telasDoPerfil = JSON.parse(localStorage.getItem('erp_telas') || '[]');
+  } catch {
+    telasDoPerfil = [];
+  }
+  const telasPermitidas = new Set(
+    telasDoPerfil
+      .map((tela) => String(tela.nome_html || '').replace(/^\.\.\//, '').replace(/^\//, ''))
+      .filter(Boolean)
+  );
 
   const html = [
     // Dashboard — sempre visível
@@ -132,6 +147,7 @@
 
   sidebar.innerHTML = html;
 
+  // 
   // Inicializa accordion: toggle ao clicar no label
   sidebar.querySelectorAll('.sidebar-section-label').forEach(lbl => {
     lbl.addEventListener('click', () => {

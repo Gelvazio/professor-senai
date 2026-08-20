@@ -271,7 +271,7 @@
       todasTelas = telaDB.map(t => ({ ...t, sistema_id: sisMap[t.id] ?? 0 }));
 
       // Sistemas
-      const sis = await fetch('../sistema.json').then(r => r.json());
+      const sis = await sbListar('sistema', 'sisativo=eq.1&order=sisordem.asc');
       sis.forEach(s => { sistemasMap[s.siscodigo] = s.sisnome; });
 
       await carregarPerfis();
