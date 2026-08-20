@@ -1,16 +1,16 @@
-# Graph Report - erp-victor-anato-senai  (2026-08-17)
+# Graph Report - erp-victor-anato-senai  (2026-08-20)
 
 ## Corpus Check
-- 65 files · ~630,131 words
+- 66 files · ~619,358 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1201 nodes · 1198 edges · 66 communities (64 shown, 2 thin omitted)
+- 1204 nodes · 1200 edges · 67 communities (65 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0454d601`
+- Built from commit: `7a3d02da`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -87,7 +87,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (66 total, 2 thin omitted)
+## Communities (67 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
