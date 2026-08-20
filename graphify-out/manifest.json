@@ -555,8 +555,8 @@
     "semantic_hash": ""
   },
   "sistema/uc.html": {
-    "mtime": 1786626638.838227,
-    "ast_hash": "2ceb358a8c3d97aea112d28ebbe755a1",
+    "mtime": 1787151722.929818,
+    "ast_hash": "6820004168c2c5a93e73cbd7679e79a2",
     "semantic_hash": ""
   },
   "recursos-humanos/ORGANOGRAMA_SENAI.png": {
@@ -1574,64 +1574,319 @@
     "ast_hash": "9396f1a2c51c8fe06d76b5588c7912be",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_COMUNICACAO/AULAS/AULA-18-08-2026.txt": {
+  "sistema/AnaliseDadosAplicadaGestao/criar as aulas - AnaliseDadosAplicadaGestao.txt": {
+    "mtime": 1787070618.1751294,
+    "ast_hash": "9cdaee4c12e1674acb9c86a845466b8b",
+    "semantic_hash": ""
+  },
+  "sistema/PROFESSOR/HORARIOS-SENAI.txt": {
+    "mtime": 1787071287.337264,
+    "ast_hash": "2d75076ae37d8b957396b886c14013bd",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/RECUPERACAO_PROVA_OBJETIVA_448b598a.md": {
+    "mtime": 1787149893.6230278,
+    "ast_hash": "373ea947b403a593fedc0decd206193a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/RECUPERACAO_PROVA_PRATICA_8ccd162b.md": {
+    "mtime": 1787149893.6458542,
+    "ast_hash": "7af82d02aea655c58f00cd1fa40d912a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/apostila_introducao_tic_2026_2_745914ac.md": {
+    "mtime": 1787149893.7738006,
+    "ast_hash": "4650d98c2ad85466e0e5de65f3a2b8c6",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/FICHA PRODUTO MAISTECH ATUALIZADA_59fcd977.md": {
+    "mtime": 1787153954.58451,
+    "ast_hash": "1f217ba2bca10895119b154d96936069",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/FICHA PRODUTO MAISTECH ATUALIZADA.md": {
+    "mtime": 1787153875.6488318,
+    "ast_hash": "cfae6343bdcc63b06b15e8863d216586",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/AULAS/AULA-18-08-2026.txt": {
     "mtime": 1787056499.8027124,
     "ast_hash": "286e444818e2c1ee0411ca125bb03506",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_COMUNICACAO/Apostila_Comunicacao_Oral_e_Escrita15h.md": {
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Apostila_Comunicacao_Oral_e_Escrita15h.md": {
     "mtime": 1786985827.5463004,
     "ast_hash": "794103599b3777fcb3ba9d77cd68a2cb",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_COMUNICACAO/FICHA PRODUTO MAISTECH ATUALIZADA.md": {
-    "mtime": 1786626254.8112483,
-    "ast_hash": "00688d2f01e1246859362b2ec5ab59e0",
-    "semantic_hash": ""
-  },
-  "sistema/ReforcoMatematicaRaciocinioLogico/DUVIDAS-CEPLAS-18-08-2026.txt": {
-    "mtime": 1787060638.5416574,
-    "ast_hash": "58368410b7886fc21c719c71796654ab",
-    "semantic_hash": ""
-  },
-  "sistema/ReforcoMatematicaRaciocinioLogico/EMENTA-RACIOCINIO-LOGICO-E-MATEMATICA.txt": {
-    "mtime": 1786987985.9595265,
-    "ast_hash": "0c58145c5140e0d8e23c277b39857cb7",
-    "semantic_hash": ""
-  },
-  "sistema/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico02.html": {
-    "mtime": 1787056719.7324224,
-    "ast_hash": "302085422d852991a1439bde48827e2c",
-    "semantic_hash": ""
-  },
-  "sistema/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico03.html": {
-    "mtime": 1787057378.0959103,
-    "ast_hash": "cdfe9da236812f3de66ba3a920b813ae",
-    "semantic_hash": ""
-  },
-  "sistema/ReforcoMatematicaRaciocinioLogico/SLIDE-Matematica-Racioc\u00ednio-Logico.md": {
-    "mtime": 1786993613.3138392,
-    "ast_hash": "888cad7c6812bd6abfafd9ebc9dc1729",
-    "semantic_hash": ""
-  },
-  "sistema/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico01.html": {
-    "mtime": 1786986712.5658178,
-    "ast_hash": "59b2eaf44dd84b986a4d9218a1520f36",
-    "semantic_hash": ""
-  },
-  "sistema/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico04.html": {
-    "mtime": 1787060356.2487564,
-    "ast_hash": "34adfe5a6f4931fe402048562a5fe719",
-    "semantic_hash": ""
-  },
-  "sistema/ReforcoMatematicaRaciocinioLogico/AULAS/Slide-Aula02-Fracoes-Proporcao-Logica.html": {
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/AULAS/Slide-Aula02-Fracoes-Proporcao-Logica.html": {
     "mtime": 1787062666.21208,
     "ast_hash": "5cdec75c506977f79bd12c9f15365b19",
     "semantic_hash": ""
   },
-  "sistema/ReforcoMatematicaRaciocinioLogico/DADOS-AULA-18-08-2026.txt": {
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/DADOS-AULA-18-08-2026.txt": {
     "mtime": 1787061388.523617,
     "ast_hash": "02fd90342ef2840a4f71161e7d1ddfa0",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/DUVIDAS-CEPLAS-18-08-2026.txt": {
+    "mtime": 1787060638.5416574,
+    "ast_hash": "58368410b7886fc21c719c71796654ab",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/EMENTA-RACIOCINIO-LOGICO-E-MATEMATICA.txt": {
+    "mtime": 1786987985.9595265,
+    "ast_hash": "0c58145c5140e0d8e23c277b39857cb7",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico01.html": {
+    "mtime": 1786986712.5658178,
+    "ast_hash": "59b2eaf44dd84b986a4d9218a1520f36",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico02.html": {
+    "mtime": 1787056719.7324224,
+    "ast_hash": "302085422d852991a1439bde48827e2c",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico03.html": {
+    "mtime": 1787057378.0959103,
+    "ast_hash": "cdfe9da236812f3de66ba3a920b813ae",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/ReforcoMatematicaRaciocinioLogico04.html": {
+    "mtime": 1787060356.2487564,
+    "ast_hash": "34adfe5a6f4931fe402048562a5fe719",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/SLIDE-Matematica-Racioc\u00ednio-Logico.md": {
+    "mtime": 1786993613.3138392,
+    "ast_hash": "888cad7c6812bd6abfafd9ebc9dc1729",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 1- Detetives da Informa\u00e7\u00e3o_f806c07f.md": {
+    "mtime": 1787158693.3720386,
+    "ast_hash": "e57b7859c95101418956c1d6593afe6c",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 10 - Situa\u00e7\u00e3o de Aprendizagem_899d7223.md": {
+    "mtime": 1787158693.3885126,
+    "ast_hash": "3cfecfb813d07f443d98103cc6aaad05",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md": {
+    "mtime": 1787158693.4014008,
+    "ast_hash": "ce807da0cc68833d2ba3248931d17cc7",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 3 - Reda\u00e7\u00e3o T\u00e9cnica_13d574b2.md": {
+    "mtime": 1787158693.4172559,
+    "ast_hash": "fe748b98ca9c92b4b3d40bde3879c04d",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 4 - Criando Atas_d755c4a0.md": {
+    "mtime": 1787158693.4245381,
+    "ast_hash": "6908d8f2a70b483ecd6cbe9fabd53b43",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 5 - Criando memorandos_bf443415.md": {
+    "mtime": 1787158693.434599,
+    "ast_hash": "c9ee4957c64a8997f6a5daa11c1ec37f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 6 - Gabarito_d4d39721.md": {
+    "mtime": 1787158693.4429183,
+    "ast_hash": "b998bd0dab526d6dc55485c847557fff",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 6 \u2013 Tipos de Linguagem_b9f918d0.md": {
+    "mtime": 1787158693.4552069,
+    "ast_hash": "d7795c445f95bd362c1f1906b299a881",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 7 - Gabarito__2363958f.md": {
+    "mtime": 1787158693.4733405,
+    "ast_hash": "fff48d118076fdf5c303449f20670c88",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 7 - T\u00e9cnica ou Jarg\u00e3o_12115ac3.md": {
+    "mtime": 1787158693.4881485,
+    "ast_hash": "4578888fde1bd1e2fcb260a7b55f6667",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 8 - Controle de EPI_s_96e8b231.md": {
+    "mtime": 1787158693.497866,
+    "ast_hash": "6eb84ec1b344a498b5e35714cb5df852",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Atividade 9 - Gr\u00e1fico_094e76f7.md": {
+    "mtime": 1787158693.5131476,
+    "ast_hash": "2fe0cabdcf138268f3f57d8747506e69",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Avalia\u00e7\u00e3o de Comportamento_a01c2cbe.md": {
+    "mtime": 1787158693.6061788,
+    "ast_hash": "b45d80a4cae73cd0a4d7395d764c7993",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Dinamicas_1ca0b001.md": {
+    "mtime": 1787158693.5793443,
+    "ast_hash": "20e55abf5ce8ec0a3022b8fc64ad1b50",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Prova Objetiva - 1_074462a3.md": {
+    "mtime": 1787158693.670216,
+    "ast_hash": "7bd86e769cf0cd36b05cec3a945b2445",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Prova Objetiva - 2_fe0f0848.md": {
+    "mtime": 1787158693.7843807,
+    "ast_hash": "1b1671327a8dae7542277f783e438a1c",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Prova Pr\u00e1tica ITIC_8a9b4a58.md": {
+    "mtime": 1787158693.8286011,
+    "ast_hash": "ee2a9009b3ed7dc774e6d2597c10debf",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md": {
+    "mtime": 1787158620.451101,
+    "ast_hash": "241e0299284cc3cd9a5fa85f2ebd37c0",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/CompetenciasSocioemocionaisEmpreendedorismo/Apostila_Competencias_Socioemocionais_Empreendedorismo.md": {
+    "mtime": 1787159262.4643586,
+    "ast_hash": "a5986bdffe6300c848a9790d9197f739",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/CompetenciasSocioemocionaisEmpreendedorismo/ementa_Competencias_Socioemocionais_Empreendedorismo.md": {
+    "mtime": 1787158958.9576259,
+    "ast_hash": "fb53750224dcd01a59fc1c86096f74c4",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/Apostila_Exploracao_Carreiras_Industriais_Tecnologicas.md": {
+    "mtime": 1787159289.555739,
+    "ast_hash": "86cdb27275f374c8c358c7dbc0aa0557",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/ementa_Exploracao_Carreiras_Industriais_Tecnologicas.md": {
+    "mtime": 1787159051.087631,
+    "ast_hash": "4220c145cae46232a805645948f1c9fc",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/Apostila_Fundamentos_Tecnologia_Programacao.md": {
+    "mtime": 1787159275.5108244,
+    "ast_hash": "9e1491f75112b52631d266f1db5d2976",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/ementa_Fundamentos_Tecnologia_Programacao.md": {
+    "mtime": 1787158992.8253396,
+    "ast_hash": "24182677509b466a6ceba35290ccaf61",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/ementa_Introducao_Comunicacao_Oral_Escrita.md": {
+    "mtime": 1787159040.9526887,
+    "ast_hash": "850e34954b254173c62d110a9d504a7c",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/NocoesEletricidadeCircuitosBasicos/ementa_Nocoes_Eletricidade_Circuitos_Basicos.md": {
+    "mtime": 1787159010.6677134,
+    "ast_hash": "b037b7b1796e0df6da4ecbf9bd658072",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/ementa_Oficinas_Impressao_3D_Robotica.md": {
+    "mtime": 1787159007.479359,
+    "ast_hash": "66faf998db57d972f5a05738d7392aee",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md": {
+    "mtime": 1787159271.4575293,
+    "ast_hash": "d809996433b809b14ac7ab0151d70598",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/ementa_Reforco_Linguagens.md": {
+    "mtime": 1787159048.4506793,
+    "ast_hash": "de9ba25019ac4eed56c79b46b0348896",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/ementa_Reforco_Matematica_Raciocinio_Logico.md": {
+    "mtime": 1787159080.8239057,
+    "ast_hash": "b3a0e0114872f54ed90bf1c7a4097e46",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Apostila_Comunicacao_Oral_Escrita_33h.md": {
+    "mtime": 1787159310.6278217,
+    "ast_hash": "a65e4e8d0842f6c52fc5f25208569553",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/NocoesEletricidadeCircuitosBasicos/Apostila_Nocoes_Eletricidade_Circuitos_Basicos.md": {
+    "mtime": 1787159393.8333285,
+    "ast_hash": "dfde67e981ca45c5fc9e0cf4ec4f5343",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/Apostila_Oficinas_Impressao_3D_Robotica.md": {
+    "mtime": 1787159407.6005595,
+    "ast_hash": "994eeab96a932ae72f04930687de662b",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/Apostila_Reforco_Matematica_Raciocinio_Logico.md": {
+    "mtime": 1787159396.3862484,
+    "ast_hash": "fbc5641542e6adf9873e6c776f1fc046",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/gerar_slides.js": {
+    "mtime": 1787161245.9910777,
+    "ast_hash": "098abc5ec2789edc2c9549dfead257a0",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/CLAUDE.md": {
+    "mtime": 1787160700.2420006,
+    "ast_hash": "c6806fb2b16d05db002ffac2103f37e6",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/gerar_slides.js": {
+    "mtime": 1787161096.226908,
+    "ast_hash": "9be5571899d3d9be3b5a05f0a1622285",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/gerar_slides.js": {
+    "mtime": 1787161083.6100254,
+    "ast_hash": "4d4c3add245502658e2c815d4b7ca504",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/CompetenciasSocioemocionaisEmpreendedorismo/gerar_slides.js": {
+    "mtime": 1787182847.7243629,
+    "ast_hash": "cedad61175febb1ad768632d1305e35f",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/CompetenciasSocioemocionaisEmpreendedorismo/package.json": {
+    "mtime": 1787182867.3176365,
+    "ast_hash": "b778aa66da97ea0e37d59b39f34429bc",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/gerar_slides.js": {
+    "mtime": 1787182953.6624806,
+    "ast_hash": "ad9fe139cc2b40b11254e7fb183533b3",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/package.json": {
+    "mtime": 1787182941.9452772,
+    "ast_hash": "b778aa66da97ea0e37d59b39f34429bc",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/NocoesEletricidadeCircuitosBasicos/gerar_slides.js": {
+    "mtime": 1787161166.4081094,
+    "ast_hash": "507e8c2ff625a880de8d577b831fde10",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/package.json": {
+    "mtime": 1787182989.8176267,
+    "ast_hash": "598d6afafcbcfc47afeee940aa480c90",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/package.json": {
+    "mtime": 1787183151.413543,
+    "ast_hash": "b778aa66da97ea0e37d59b39f34429bc",
     "semantic_hash": ""
   }
 }
