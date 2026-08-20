@@ -8,21 +8,22 @@
 
 // ── Credenciais ─────────────────────────────────────────────
 const SUPABASE_URL = 'https://vdhahqicqlrdvcpesiwk.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkaGFocWljcWxyZHZjcGVzaXdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY3MTI3OTYsImV4cCI6MjEwMjI4ODc5Nn0.7ACHuUUv6VMyy4-BbQcdAcmabMtqhiuVgrTGUUcV7RY';
-const API         = `${SUPABASE_URL}/rest/v1`;
-const DATABASE_PASS= 'QFWIOenjgvEJlNKy';
+const SUPABASE_KEY =
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkaGFocWljcWxyZHZjcGVzaXdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY3MTI3OTYsImV4cCI6MjEwMjI4ODc5Nn0.7ACHuUUv6VMyy4-BbQcdAcmabMtqhiuVgrTGUUcV7RY';
+const API = `${SUPABASE_URL}/rest/v1`;
+const DATABASE_PASS = 'QFWIOenjgvEJlNKy';
 
 const HEADERS = {
-  'apikey':        SUPABASE_KEY,
-  'Authorization': `Bearer ${SUPABASE_KEY}`,
-  'Content-Type':  'application/json',
-  'Prefer':        'return=representation'
+  apikey: SUPABASE_KEY,
+  Authorization: `Bearer ${SUPABASE_KEY}`,
+  'Content-Type': 'application/json',
+  Prefer: 'return=representation'
 };
 
 const HEADERS_READ = {
-  'apikey':        SUPABASE_KEY,
-  'Authorization': `Bearer ${SUPABASE_KEY}`,
-  'Content-Type':  'application/json'
+  apikey: SUPABASE_KEY,
+  Authorization: `Bearer ${SUPABASE_KEY}`,
+  'Content-Type': 'application/json'
 };
 
 // ── Timeout padrão das requisições (10 segundos) ────────────
@@ -30,11 +31,9 @@ const REQUEST_TIMEOUT_MS = 10_000;
 
 function fetchComTimeout(url, options = {}) {
   const ctrl = new AbortController();
-  const tid  = setTimeout(() => ctrl.abort(), REQUEST_TIMEOUT_MS);
-  return fetch(url, { ...options, signal: ctrl.signal })
-    .finally(() => clearTimeout(tid));
+  const tid = setTimeout(() => ctrl.abort(), REQUEST_TIMEOUT_MS);
+  return fetch(url, { ...options, signal: ctrl.signal }).finally(() => clearTimeout(tid));
 }
-
 
 // ============================================================
 //  CRUD GENÉRICO
@@ -77,9 +76,9 @@ async function sbBuscar(tabela, id) {
  */
 async function sbInserir(tabela, dados) {
   const res = await fetchComTimeout(`${API}/${tabela}`, {
-    method:  'POST',
+    method: 'POST',
     headers: HEADERS,
-    body:    JSON.stringify(dados)
+    body: JSON.stringify(dados)
   });
   if (!res.ok) {
     const err = await res.text();
@@ -98,9 +97,9 @@ async function sbInserir(tabela, dados) {
  */
 async function sbAtualizar(tabela, id, dados) {
   const res = await fetchComTimeout(`${API}/${tabela}?id=eq.${encodeURIComponent(id)}`, {
-    method:  'PATCH',
+    method: 'PATCH',
     headers: HEADERS,
-    body:    JSON.stringify(dados)
+    body: JSON.stringify(dados)
   });
   if (!res.ok) {
     const err = await res.text();
@@ -118,7 +117,7 @@ async function sbAtualizar(tabela, id, dados) {
  */
 async function sbExcluir(tabela, id) {
   const res = await fetchComTimeout(`${API}/${tabela}?id=eq.${encodeURIComponent(id)}`, {
-    method:  'DELETE',
+    method: 'DELETE',
     headers: HEADERS_READ
   });
   if (!res.ok) {
@@ -136,15 +135,13 @@ async function sbExcluir(tabela, id) {
  */
 async function sbContar(tabela, query = '') {
   const sep = query ? '&' : '?';
-  const res = await fetchComTimeout(
-    `${API}/${tabela}?select=id${sep}${query}`,
-    { headers: HEADERS_READ }
-  );
+  const res = await fetchComTimeout(`${API}/${tabela}?select=id${sep}${query}`, {
+    headers: HEADERS_READ
+  });
   if (!res.ok) throw new Error(`[sbContar] ${tabela}`);
   const rows = await res.json();
   return rows.length;
 }
-
 
 // ============================================================
 //  NUMERAÇÃO AUTOMÁTICA
@@ -161,31 +158,25 @@ async function sbContar(tabela, query = '') {
  * @returns {Promise<string>}
  */
 async function sbProximoNumero(tabela, campo, prefixo, digitos = 5) {
-  const rows = await sbListar(
-    tabela,
-    `select=${campo}&order=${campo}.desc&limit=1`
-  );
-  const ultimo = rows.length
-    ? parseInt(rows[0][campo].replace(prefixo, ''), 10)
-    : 0;
+  const rows = await sbListar(tabela, `select=${campo}&order=${campo}.desc&limit=1`);
+  const ultimo = rows.length ? parseInt(rows[0][campo].replace(prefixo, ''), 10) : 0;
   return prefixo + String(ultimo + 1).padStart(digitos, '0');
 }
 
 // Atalhos por entidade
 const Numerar = {
-  produto:        () => sbProximoNumero('produtos',              'codigo', 'P'),
-  solicitacao:    () => sbProximoNumero('compras_solicitacoes',  'numero', 'SC'),
-  pedidoCompra:   () => sbProximoNumero('compras_pedidos',       'numero', 'PC'),
-  recebimento:    () => sbProximoNumero('compras_recebimentos',  'numero', 'RC'),
-  inventario:     () => sbProximoNumero('estoque_inventarios',   'numero', 'INV'),
-  movimentacao:   () => sbProximoNumero('estoque_movimentacoes', 'numero', 'MV'),
-  pedidoVenda:    () => sbProximoNumero('vendas_pedidos',        'numero', 'PV'),
-  romaneio:       () => sbProximoNumero('vendas_romaneios',      'numero', 'ROM'),
-  separacao:      () => sbProximoNumero('vendas_separacoes',     'numero', 'SEP'),
-  expedicao:      () => sbProximoNumero('vendas_expedicoes',     'numero', 'EXP'),
-  entrega:        () => sbProximoNumero('vendas_entregas',        'numero', 'ENT'),
+  produto: () => sbProximoNumero('produtos', 'codigo', 'P'),
+  solicitacao: () => sbProximoNumero('compras_solicitacoes', 'numero', 'SC'),
+  pedidoCompra: () => sbProximoNumero('compras_pedidos', 'numero', 'PC'),
+  recebimento: () => sbProximoNumero('compras_recebimentos', 'numero', 'RC'),
+  inventario: () => sbProximoNumero('estoque_inventarios', 'numero', 'INV'),
+  movimentacao: () => sbProximoNumero('estoque_movimentacoes', 'numero', 'MV'),
+  pedidoVenda: () => sbProximoNumero('vendas_pedidos', 'numero', 'PV'),
+  romaneio: () => sbProximoNumero('vendas_romaneios', 'numero', 'ROM'),
+  separacao: () => sbProximoNumero('vendas_separacoes', 'numero', 'SEP'),
+  expedicao: () => sbProximoNumero('vendas_expedicoes', 'numero', 'EXP'),
+  entrega: () => sbProximoNumero('vendas_entregas', 'numero', 'ENT')
 };
-
 
 // ============================================================
 //  AUTENTICAÇÃO
@@ -193,12 +184,9 @@ const Numerar = {
 
 /** SHA-256 de uma string (Web Crypto API). */
 async function sha256(text) {
-  const buf = await crypto.subtle.digest(
-    'SHA-256',
-    new TextEncoder().encode(text)
-  );
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
   return Array.from(new Uint8Array(buf))
-    .map(b => b.toString(16).padStart(2, '0'))
+    .map((b) => b.toString(16).padStart(2, '0'))
     .join('');
 }
 
@@ -215,7 +203,7 @@ async function sbLogin(email, senha) {
   const rows = await sbListar(
     'erp_usuarios',
     `email=eq.${encodeURIComponent(email)}&senha_hash=eq.${hash}&status=eq.true` +
-    `&select=id,nome,email,cargo,perfil_id,permissoes`
+      `&select=id,nome,email,cargo,perfil_id,permissoes`
   );
   if (!rows.length) throw new Error('E-mail ou senha incorretos.');
 
@@ -223,13 +211,21 @@ async function sbLogin(email, senha) {
 
   // Mapeamento siscodigo → chave de permissão usada no menu
   const SISTEMA_PERM = {
-    1: 'visao_geral', 2: 'cadastros', 3: 'compras',
-    4: 'estoque',     5: 'vendas',    6: 'estoque',
-    7: 'financeiro',  9: 'marketing', 10: 'gamificacao', 11: 'rh'
+    1: 'visao_geral',
+    2: 'cadastros',
+    3: 'compras',
+    4: 'estoque',
+    5: 'vendas',
+    6: 'estoque',
+    7: 'financeiro',
+    9: 'marketing',
+    10: 'gamificacao',
+    11: 'rh'
   };
 
   let nomePerfil = 'Usuário';
   let permissoes = { visao_geral: true };
+  let telasDoLogin = []; // coletado antes da limpeza, setado depois
 
   if (user.perfil_id != null) {
     try {
@@ -237,47 +233,73 @@ async function sbLogin(email, senha) {
       if (perfis.length) nomePerfil = perfis[0].nome;
 
       if (nomePerfil === 'Administrador') {
-        permissoes = { visao_geral: true, cadastros: true, compras: true, estoque: true,
-                       vendas: true, financeiro: true, marketing: true, gamificacao: true, rh: true };
-        // Admin: salvar todas as telas ativas
+        permissoes = {
+          visao_geral: true,
+          cadastros: true,
+          compras: true,
+          estoque: true,
+          vendas: true,
+          financeiro: true,
+          marketing: true,
+          gamificacao: true,
+          rh: true
+        };
         try {
-          const todasTelas = await sbListar('tela', 'ativo=eq.1&select=id,nome,nome_html&order=nome.asc');
-          localStorage.setItem('erp_telas', JSON.stringify(todasTelas));
-        } catch { localStorage.setItem('erp_telas', JSON.stringify([])); }
+          telasDoLogin = await sbListar(
+            'tela',
+            'ativo=eq.1&select=id,nome,nome_html&order=nome.asc'
+          );
+        } catch {
+          telasDoLogin = [];
+        }
       } else {
-        // Buscar telas do perfil e derivar permissões pelos sistemas
-        const perfilTelas = await sbListar('perfil_sistema', `perfil_id=eq.${user.perfil_id}&select=tela_id`);
-        const telaIds = perfilTelas.map(t => t.tela_id).join(',');
+        const perfilTelas = await sbListar(
+          'perfil_sistema',
+          `perfil_id=eq.${user.perfil_id}&select=tela_id`
+        );
+        const telaIds = perfilTelas.map((t) => t.tela_id).join(',');
         if (telaIds) {
           const [telaSistemas, telas] = await Promise.all([
             sbListar('tela_sistema', `tela_id=in.(${telaIds})&select=sistema_id`),
-            sbListar('tela', `id=in.(${telaIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`)
+            sbListar(
+              'tela',
+              `id=in.(${telaIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`
+            )
           ]);
-          const sistemasUnicos = [...new Set(telaSistemas.map(ts => ts.sistema_id))];
-          sistemasUnicos.forEach(sid => {
+          const sistemasUnicos = [...new Set(telaSistemas.map((ts) => ts.sistema_id))];
+          sistemasUnicos.forEach((sid) => {
             const chave = SISTEMA_PERM[sid];
             if (chave) permissoes[chave] = true;
           });
-          localStorage.setItem('erp_telas', JSON.stringify(telas));
-        } else {
-          localStorage.setItem('erp_telas', JSON.stringify([]));
+          telasDoLogin = telas;
         }
       }
-    } catch { /* mantém padrão */ }
+    } catch {
+      /* mantém padrão */
+    }
   }
 
-  // Limpar dados de sessão anterior antes de setar os novos
-  ['erp_role','erp_perfil_id','erp_user_id','erp_user_nome','erp_user_email',
-   'erp_permissoes','erp_telas','erp_login'].forEach(k => localStorage.removeItem(k));
+  // Limpar dados de sessão anterior e setar tudo de uma vez
+  [
+    'erp_role',
+    'erp_perfil_id',
+    'erp_user_id',
+    'erp_user_nome',
+    'erp_user_email',
+    'erp_permissoes',
+    'erp_telas',
+    'erp_login'
+  ].forEach((k) => localStorage.removeItem(k));
   sessionStorage.removeItem('_telas_cache');
 
-  localStorage.setItem('erp_role',       nomePerfil);
-  localStorage.setItem('erp_perfil_id',  String(user.perfil_id));
-  localStorage.setItem('erp_user_id',    user.id);
-  localStorage.setItem('erp_user_nome',  user.nome);
+  localStorage.setItem('erp_role', nomePerfil);
+  localStorage.setItem('erp_perfil_id', String(user.perfil_id));
+  localStorage.setItem('erp_user_id', user.id);
+  localStorage.setItem('erp_user_nome', user.nome);
   localStorage.setItem('erp_user_email', user.email);
   localStorage.setItem('erp_permissoes', JSON.stringify(permissoes));
-  localStorage.setItem('erp_login',      String(Date.now()));
+  localStorage.setItem('erp_telas', JSON.stringify(telasDoLogin));
+  localStorage.setItem('erp_login', String(Date.now()));
 
   return user;
 }
@@ -296,8 +318,8 @@ function sbLogout(paginaLogin = '/index.html') {
   window.location.href = paginaLogin;
 }
 
-/** Duração máxima da sessão: 8 horas. */
-const SESSAO_MAX_MS = 8 * 60 * 60 * 1000;
+/** Duração máxima da sessão: 60 minutos. */
+const SESSAO_MAX_MS = 60 * 60 * 1000;
 
 /**
  * Verificar se há sessão válida. Redireciona para o login se inválida.
@@ -305,7 +327,7 @@ const SESSAO_MAX_MS = 8 * 60 * 60 * 1000;
  * @param {string} [paginaLogin='../index.html']
  */
 function sbVerificarSessao(paginaLogin = '../index.html') {
-  const role  = localStorage.getItem('erp_role');
+  const role = localStorage.getItem('erp_role');
   const login = parseInt(localStorage.getItem('erp_login') || '0', 10);
   if (!role || Date.now() - login > SESSAO_MAX_MS) {
     localStorage.clear();
@@ -348,7 +370,6 @@ function sbUserNome() {
   return localStorage.getItem('erp_user_nome') ?? 'Usuário';
 }
 
-
 // ============================================================
 //  TEMA (claro / escuro)
 // ============================================================
@@ -362,7 +383,7 @@ function sbAplicarTema() {
 /** Alternar entre claro e escuro. */
 function sbToggleTema() {
   const atual = document.documentElement.getAttribute('data-theme');
-  const novo  = atual === 'dark' ? 'light' : 'dark';
+  const novo = atual === 'dark' ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', novo);
   localStorage.setItem('senai_tema', novo);
   return novo;
@@ -379,7 +400,6 @@ function sbIniciarBtnTema(btnId = 'btnTema') {
   btn.textContent = t === 'dark' ? '☀️ Claro' : '🌙 Escuro';
 }
 
-
 // ============================================================
 //  SIDEBAR ACCORDION
 // ============================================================
@@ -389,14 +409,29 @@ function sbIniciarBtnTema(btnId = 'btnTema') {
  * Chamada automaticamente quando o DOM estiver pronto e houver um .sidebar na página.
  */
 function sbInitSidebarAccordion() {
-  const ACC_KEYS = ['cadastros', 'compras', 'estoque', 'vendas', 'logística', 'log', 'financeiro', 'configurações', 'config', 'marketing', 'gamificação', 'gamif', 'recursos humanos', 'rh'];
+  const ACC_KEYS = [
+    'cadastros',
+    'compras',
+    'estoque',
+    'vendas',
+    'logística',
+    'log',
+    'financeiro',
+    'configurações',
+    'config',
+    'marketing',
+    'gamificação',
+    'gamif',
+    'recursos humanos',
+    'rh'
+  ];
 
-  document.querySelectorAll('.sidebar-section').forEach(section => {
+  document.querySelectorAll('.sidebar-section').forEach((section) => {
     const labelEl = section.querySelector('.sidebar-section-label');
     if (!labelEl) return;
 
     const labelKey = labelEl.textContent.trim().toLowerCase();
-    if (!ACC_KEYS.some(k => labelKey.startsWith(k))) return;
+    if (!ACC_KEYS.some((k) => labelKey.startsWith(k))) return;
 
     const labelText = labelEl.textContent.trim();
     const hasActive = !!section.querySelector('.sidebar-link.ativo');
@@ -417,7 +452,7 @@ function sbInitSidebarAccordion() {
     body.className = 'sidebar-acc-body' + (hasActive ? ' open' : '');
 
     // Move links para o corpo (mantém labelEl no lugar por enquanto)
-    Array.from(section.children).forEach(child => {
+    Array.from(section.children).forEach((child) => {
       if (child !== labelEl) body.appendChild(child);
     });
 
@@ -443,7 +478,6 @@ function sbInitSidebarAccordion() {
   }
 })();
 
-
 // ============================================================
 //  AUXILIARES DE UI
 // ============================================================
@@ -459,9 +493,12 @@ function sbMensagem(elId, texto, tipo = 'ok', ms = 3000) {
   const el = document.getElementById(elId);
   if (!el) return;
   el.textContent = texto;
-  el.className   = `crud-msg ${tipo}`;
+  el.className = `crud-msg ${tipo}`;
   el.style.display = 'block';
-  if (ms > 0) setTimeout(() => { el.style.display = 'none'; }, ms);
+  if (ms > 0)
+    setTimeout(() => {
+      el.style.display = 'none';
+    }, ms);
 }
 
 /**
@@ -471,7 +508,7 @@ function sbMensagem(elId, texto, tipo = 'ok', ms = 3000) {
  */
 function sbMoeda(valor) {
   return Number(valor || 0).toLocaleString('pt-BR', {
-    style:    'currency',
+    style: 'currency',
     currency: 'BRL'
   });
 }
@@ -497,8 +534,11 @@ function sbData(iso) {
  * @param {string} [placeholderTexto='Selecione...']
  */
 async function sbPopularSelect(
-  selectId, tabela, query,
-  campoValor = 'id', campoTexto = 'nome',
+  selectId,
+  tabela,
+  query,
+  campoValor = 'id',
+  campoTexto = 'nome',
   placeholderTexto = 'Selecione...'
 ) {
   const sel = document.getElementById(selectId);
@@ -506,9 +546,9 @@ async function sbPopularSelect(
   sel.innerHTML = `<option value="">— ${placeholderTexto} —</option>`;
   try {
     const rows = await sbListar(tabela, query);
-    rows.forEach(r => {
+    rows.forEach((r) => {
       const opt = document.createElement('option');
-      opt.value       = r[campoValor];
+      opt.value = r[campoValor];
       opt.textContent = r[campoTexto];
       sel.appendChild(opt);
     });
@@ -530,7 +570,7 @@ function sbViaCEP(cepInputId, campos = {}) {
     const cep = inp.value.replace(/\D/g, '');
     if (cep.length !== 8) return;
     try {
-      const res  = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+      const res = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
       const data = await res.json();
       if (data.erro) return;
       if (campos.endereco) {
@@ -552,7 +592,9 @@ function sbViaCEP(cepInputId, campos = {}) {
           }
         }
       }
-    } catch { /* silencioso */ }
+    } catch {
+      /* silencioso */
+    }
   });
 }
 
@@ -578,9 +620,9 @@ async function sbCarregarCidades(uf, cidadeSelectId, cidadeSelecionada = '') {
     );
     const municipios = await res.json();
     sel.innerHTML = '<option value="">— Cidade —</option>';
-    municipios.forEach(m => {
+    municipios.forEach((m) => {
       const opt = document.createElement('option');
-      opt.value       = m.nome;
+      opt.value = m.nome;
       opt.textContent = m.nome;
       if (m.nome === cidadeSelecionada) opt.selected = true;
       sel.appendChild(opt);
@@ -608,7 +650,6 @@ function sbBindEstadoCidade(estadoId, cidadeId, defaultUF = 'SC') {
   sbCarregarCidades(selEstado.value || defaultUF, cidadeId);
 }
 
-
 // ============================================================
 //  ESTOQUE — helpers específicos
 // ============================================================
@@ -630,13 +671,13 @@ async function sbMovimentarEstoque(tipo, produtoId, quantidade, extra = {}) {
     produto_id: produtoId,
     tipo,
     quantidade,
-    origem:      extra.origem      ?? null,
-    destino:     extra.destino     ?? null,
-    referencia:  extra.referencia  ?? null,
+    origem: extra.origem ?? null,
+    destino: extra.destino ?? null,
+    referencia: extra.referencia ?? null,
     observacoes: extra.observacoes ?? null,
-    usuario:     extra.usuario     ?? sbUserNome(),
-    data:        new Date().toISOString().split('T')[0],
-    hora:        new Date().toTimeString().slice(0, 8)
+    usuario: extra.usuario ?? sbUserNome(),
+    data: new Date().toISOString().split('T')[0],
+    hora: new Date().toTimeString().slice(0, 8)
   });
 }
 
@@ -651,7 +692,6 @@ async function sbVerificarEstoque(produtoId, qtdNecessaria) {
   if (!prod) return { ok: false, atual: 0 };
   return { ok: prod.estoque_atual >= qtdNecessaria, atual: prod.estoque_atual };
 }
-
 
 // ============================================================
 //  GERAÇÃO DE PDF — Pedido de Compras
@@ -724,7 +764,6 @@ function sbGerarPDFPedidoCompra(pedido, fornecedor, produto) {
   win.print();
 }
 
-
 // ============================================================
 //  FILTRO DE TELAS POR PERFIL
 // ============================================================
@@ -743,90 +782,60 @@ async function _sbCarregarTelasJson() {
     sbListar('tela_sistema', '')
   ]);
   const sisMap = {};
-  vinculos.forEach(v => { if (!sisMap[v.tela_id]) sisMap[v.tela_id] = v.sistema_id; });
-  const data = telas.map(t => ({ ...t, sistema_id: sisMap[t.id] ?? 0 }));
+  vinculos.forEach((v) => {
+    if (!sisMap[v.tela_id]) sisMap[v.tela_id] = v.sistema_id;
+  });
+  const data = telas.map((t) => ({ ...t, sistema_id: sisMap[t.id] ?? 0 }));
   sessionStorage.setItem('_telas_cache', JSON.stringify(data));
   return data;
 }
 
 /**
- * Filtra o sidebar conforme as telas permitidas do perfil (perfil_sistema).
- * Também bloqueia acesso direto a páginas não autorizadas.
- *
- * Estratégia:
- *   1. SÍNCRONO — oculta imediatamente todos os links não-essenciais
- *      (evita flicker: links nunca aparecem antes da checagem)
- *   2. ASYNC    — busca as permissões SEMPRE do banco (nunca de cache)
- *   3. Revela apenas os links cujas telas estão no perfil
- *   4. Em caso de falha de rede: restaura todos os links (fail-open)
+ * Filtra o sidebar usando erp_telas do localStorage (populado no login).
+ * Síncrono — sem fetch, sem risco de race condition ou falha de rede.
+ * Se erp_telas estiver vazio, fail-open (mostra tudo).
  */
-async function sbFiltrarSidebar() {
+function sbFiltrarSidebar() {
   const perfilId = localStorage.getItem('erp_perfil_id');
   if (!perfilId || perfilId === 'null' || perfilId === 'undefined') return;
 
-  // ── PASSO 1 (síncrono): ocultar tudo imediatamente ────────────
-  document.querySelectorAll('.sidebar-link').forEach(link => {
-    const filename = _sbFilenameFromHref(link.getAttribute('href'));
-    if (!filename || filename === '#' || filename === 'dashboard.html') return;
-    link.setAttribute('data-sb-filter', 'pending');
-    link.style.display = 'none';
+  const telasData = JSON.parse(localStorage.getItem('erp_telas') || '[]');
+
+  // Sem telas configuradas: fail-open
+  if (!telasData.length) return;
+
+  // Construir Set de filenames e caminhos permitidos
+  const permitidas = new Set(['dashboard.html']);
+  telasData.forEach((t) => {
+    if (!t.nome_html) return;
+    permitidas.add(t.nome_html);
+    permitidas.add(t.nome_html.split('/').pop());
   });
-
-  let permitidas = null;
-
-  // ── PASSO 2: buscar permissões no banco ────────────────────────
-  try {
-    const vinc = await sbListar('perfil_sistema',
-      `perfil_id=eq.${encodeURIComponent(perfilId)}&select=tela_id`);
-    const ids = new Set(vinc.map(v => Number(v.tela_id)));
-
-    const telaJSON = await _sbCarregarTelasJson();
-    // Adiciona o nome_html completo E só o filename para compatibilidade com
-    // hrefs em subpastas (ex: gamificacao/professor.html → também professor.html)
-    permitidas = new Set();
-    telaJSON
-      .filter(t => ids.has(Number(t.id)) && (t.ativo === 1 || t.ativo === true))
-      .forEach(t => {
-        permitidas.add(t.nome_html);
-        permitidas.add(t.nome_html.split('/').pop());
-      });
-    permitidas.add('dashboard.html');
-    // Administradores sempre têm acesso às telas de Configurações
-    if (sbIsAdmin()) {
-      permitidas.add('usuarios.html');
-      permitidas.add('telas.html');
-      permitidas.add('perfis.html');
-      permitidas.add('regras-negocios.html');
-    }
-
-  } catch {
-    // Falha de rede: restaura todos os links para não bloquear o usuário
-    document.querySelectorAll('.sidebar-link[data-sb-filter]').forEach(link => {
-      link.removeAttribute('data-sb-filter');
-      link.style.display = '';
-    });
-    return;
+  if (sbIsAdmin()) {
+    permitidas.add('usuarios.html');
+    permitidas.add('telas.html');
+    permitidas.add('perfis.html');
+    permitidas.add('regras-negocios.html');
   }
 
-  // ── PASSO 3: revelar apenas os links permitidos ────────────────
-  document.querySelectorAll('.sidebar-link[data-sb-filter]').forEach(link => {
+  // ── Ocultar links não permitidos ──────────────────────────────
+  document.querySelectorAll('.sidebar-link').forEach((link) => {
     const filename = _sbFilenameFromHref(link.getAttribute('href'));
-    if (permitidas.has(filename)) {
-      link.removeAttribute('data-sb-filter');
-      link.style.display = '';
+    if (!filename || filename === '#' || filename === 'dashboard.html') return;
+    if (!permitidas.has(filename) && !permitidas.has(link.getAttribute('href'))) {
+      link.style.display = 'none';
     }
-    // links não permitidos permanecem com display:none
   });
 
-  // ── PASSO 4: ocultar seções/accordions sem links visíveis ──────
-  document.querySelectorAll('.sidebar-section').forEach(section => {
+  // ── Ocultar seções sem nenhum link visível ─────────────────────
+  document.querySelectorAll('.sidebar-section').forEach((section) => {
     const links = section.querySelectorAll('.sidebar-link');
     if (!links.length) return;
-    const algumVisivel = Array.from(links).some(l => l.style.display !== 'none');
+    const algumVisivel = Array.from(links).some((l) => l.style.display !== 'none');
     if (!algumVisivel) section.style.display = 'none';
   });
 
-  // ── PASSO 5: bloquear acesso direto a página não autorizada ────
+  // ── Bloquear acesso direto a página não autorizada ─────────────
   const currentFile = window.location.pathname.replace(/\\/g, '/').split('/').pop() || '';
   if (!currentFile || currentFile === 'index.html' || currentFile === 'dashboard.html') return;
   if (!permitidas.has(currentFile)) {
@@ -843,7 +852,6 @@ function _sbFilenameFromHref(href) {
   return href.replace(/\\/g, '/').split('/').pop().split('?')[0];
 }
 
-
 // ============================================================
 //  MENU CONFIGURAÇÕES (dropdown no header)
 // ============================================================
@@ -852,9 +860,21 @@ function _sbFilenameFromHref(href) {
 function _sbConfigPath() {
   const p = window.location.pathname.replace(/\\/g, '/');
   const partes = p.split('/').filter(Boolean);
-  const pasta  = partes.length >= 2 ? partes[partes.length - 2].toLowerCase() : '';
+  const pasta = partes.length >= 2 ? partes[partes.length - 2].toLowerCase() : '';
   if (pasta === 'configuracoes') return './';
-  if (['cadastros', 'compras', 'estoque', 'vendas', 'financeiro', 'rh', 'marketing', 'gamificacao'].includes(pasta)) return '../configuracoes/';
+  if (
+    [
+      'cadastros',
+      'compras',
+      'estoque',
+      'vendas',
+      'financeiro',
+      'rh',
+      'marketing',
+      'gamificacao'
+    ].includes(pasta)
+  )
+    return '../configuracoes/';
   return 'configuracoes/';
 }
 
@@ -863,14 +883,15 @@ function sbInjetarMenuConfiguracoes() {
   if (!sbIsAdmin()) return;
   if (document.getElementById('sbDdConfigBtn')) return; // já injetado
 
-  const sairBtn = document.querySelector('.header-btn[onclick*="sair"]') ||
-                  document.querySelector('.header-btn[onclick*="sbLogout"]');
+  const sairBtn =
+    document.querySelector('.header-btn[onclick*="sair"]') ||
+    document.querySelector('.header-btn[onclick*="sbLogout"]');
   if (!sairBtn) return;
 
   const base = _sbConfigPath();
   const wrap = document.createElement('div');
   wrap.className = 'sb-dd';
-  wrap.id        = 'sbDdConfigWrap';
+  wrap.id = 'sbDdConfigWrap';
   wrap.innerHTML = `
     <button class="header-btn" id="sbDdConfigBtn" type="button">⚙️ Configurações ▾</button>
     <div class="sb-dd-menu" id="sbDdConfigMenu">
@@ -894,7 +915,6 @@ function sbInjetarMenuConfiguracoes() {
   });
 }
 
-
 // ============================================================
 //  ANDAMENTO DE ALTERAÇÕES (modal com tabs por módulo)
 // ============================================================
@@ -903,58 +923,117 @@ function _sbRootPath() {
   const p = (window.location.pathname || '').replace(/\\/g, '/');
   const parts = p.split('/').filter(Boolean);
   const folder = parts.length >= 2 ? parts[parts.length - 2].toLowerCase() : '';
-  const sub = ['cadastros','compras','estoque','vendas','financeiro',
-               'configuracoes','marketing','gamificacao','rh','score-credito'];
+  const sub = [
+    'cadastros',
+    'compras',
+    'estoque',
+    'vendas',
+    'financeiro',
+    'configuracoes',
+    'marketing',
+    'gamificacao',
+    'rh',
+    'score-credito'
+  ];
   return sub.includes(folder) ? '../' : '';
 }
 
 const _SB_AND_MODULOS = [
-  { key: 'geral',         label: '📊 Geral',         file: 'andamento.md' },
-  { key: 'cadastros',     label: '👥 Cadastros',      file: 'cadastros/andamento.md' },
-  { key: 'compras',       label: '🛒 Compras',        file: 'compras/andamento.md' },
-  { key: 'estoque',       label: '📦 Estoque',        file: 'estoque/andamento.md' },
-  { key: 'vendas',        label: '🛍️ Vendas',         file: 'vendas/andamento.md' },
-  { key: 'financeiro',    label: '💰 Financeiro',     file: 'financeiro/andamento.md' },
-  { key: 'marketing',     label: '📣 Marketing',      file: 'marketing/andamento.md' },
-  { key: 'configuracoes', label: '⚙️ Config',         file: 'configuracoes/andamento.md' },
-  { key: 'gamificacao',   label: '🎮 Gamificação',    file: 'gamificacao/andamento.md' },
-  { key: 'rh',            label: '👤 RH',             file: 'rh/andamento.md' },
+  { key: 'geral', label: '📊 Geral', file: 'andamento.md' },
+  { key: 'cadastros', label: '👥 Cadastros', file: 'cadastros/andamento.md' },
+  { key: 'compras', label: '🛒 Compras', file: 'compras/andamento.md' },
+  { key: 'estoque', label: '📦 Estoque', file: 'estoque/andamento.md' },
+  { key: 'vendas', label: '🛍️ Vendas', file: 'vendas/andamento.md' },
+  { key: 'financeiro', label: '💰 Financeiro', file: 'financeiro/andamento.md' },
+  { key: 'marketing', label: '📣 Marketing', file: 'marketing/andamento.md' },
+  { key: 'configuracoes', label: '⚙️ Config', file: 'configuracoes/andamento.md' },
+  { key: 'gamificacao', label: '🎮 Gamificação', file: 'gamificacao/andamento.md' },
+  { key: 'rh', label: '👤 RH', file: 'rh/andamento.md' }
 ];
 
 function _sbMdInline(t) {
   return t
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g,'<em>$1</em>')
-    .replace(/`(.+?)`/g,'<code style="background:rgba(0,0,0,.08);padding:1px 5px;border-radius:3px;font-size:.88em;font-family:monospace">$1</code>');
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(
+      /`(.+?)`/g,
+      '<code style="background:rgba(0,0,0,.08);padding:1px 5px;border-radius:3px;font-size:.88em;font-family:monospace">$1</code>'
+    );
 }
 
 function _sbMdToHtml(md) {
-  if (!md) return '<p style="color:var(--color-text-faint);font-style:italic;font-size:13px">Arquivo não encontrado.</p>';
+  if (!md)
+    return '<p style="color:var(--color-text-faint);font-style:italic;font-size:13px">Arquivo não encontrado.</p>';
   const lines = md.split('\n');
   let html = '';
   let i = 0;
   while (i < lines.length) {
     const line = lines[i];
-    if (line.startsWith('### ')) { html += `<h3 style="font-size:13px;font-weight:700;margin:14px 0 4px;color:var(--color-text)">${_sbMdInline(line.slice(4))}</h3>`; i++; continue; }
-    if (line.startsWith('## '))  { html += `<h2 style="font-size:15px;font-weight:700;margin:18px 0 6px;color:var(--color-text);border-bottom:1px solid var(--color-border-faint);padding-bottom:4px">${_sbMdInline(line.slice(3))}</h2>`; i++; continue; }
-    if (line.startsWith('# '))   { html += `<h1 style="font-size:18px;font-weight:800;margin:0 0 8px;color:var(--color-text)">${_sbMdInline(line.slice(2))}</h1>`; i++; continue; }
-    if (/^-{3,}$/.test(line.trim())) { html += '<hr style="border:none;border-top:1px solid var(--color-border-faint);margin:12px 0">'; i++; continue; }
-    if (line.startsWith('> ')) { html += `<blockquote style="border-left:3px solid var(--color-primary);margin:8px 0;padding:4px 12px;font-size:12px;color:var(--color-text-muted)">${_sbMdInline(line.slice(2))}</blockquote>`; i++; continue; }
+    if (line.startsWith('### ')) {
+      html += `<h3 style="font-size:13px;font-weight:700;margin:14px 0 4px;color:var(--color-text)">${_sbMdInline(line.slice(4))}</h3>`;
+      i++;
+      continue;
+    }
+    if (line.startsWith('## ')) {
+      html += `<h2 style="font-size:15px;font-weight:700;margin:18px 0 6px;color:var(--color-text);border-bottom:1px solid var(--color-border-faint);padding-bottom:4px">${_sbMdInline(line.slice(3))}</h2>`;
+      i++;
+      continue;
+    }
+    if (line.startsWith('# ')) {
+      html += `<h1 style="font-size:18px;font-weight:800;margin:0 0 8px;color:var(--color-text)">${_sbMdInline(line.slice(2))}</h1>`;
+      i++;
+      continue;
+    }
+    if (/^-{3,}$/.test(line.trim())) {
+      html +=
+        '<hr style="border:none;border-top:1px solid var(--color-border-faint);margin:12px 0">';
+      i++;
+      continue;
+    }
+    if (line.startsWith('> ')) {
+      html += `<blockquote style="border-left:3px solid var(--color-primary);margin:8px 0;padding:4px 12px;font-size:12px;color:var(--color-text-muted)">${_sbMdInline(line.slice(2))}</blockquote>`;
+      i++;
+      continue;
+    }
     if (line.startsWith('```')) {
-      i++; let code = '';
-      while (i < lines.length && !lines[i].startsWith('```')) { code += lines[i] + '\n'; i++; }
-      html += `<pre style="background:rgba(0,0,0,.06);border-radius:6px;padding:10px 14px;overflow-x:auto;font-size:11px;margin:8px 0;font-family:monospace"><code>${code.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</code></pre>`;
-      i++; continue;
+      i++;
+      let code = '';
+      while (i < lines.length && !lines[i].startsWith('```')) {
+        code += lines[i] + '\n';
+        i++;
+      }
+      html += `<pre style="background:rgba(0,0,0,.06);border-radius:6px;padding:10px 14px;overflow-x:auto;font-size:11px;margin:8px 0;font-family:monospace"><code>${code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code></pre>`;
+      i++;
+      continue;
     }
     if (line.startsWith('|')) {
       const rows = [];
-      while (i < lines.length && lines[i].startsWith('|')) { rows.push(lines[i]); i++; }
+      while (i < lines.length && lines[i].startsWith('|')) {
+        rows.push(lines[i]);
+        i++;
+      }
       if (rows.length === 0) continue;
-      const th = rows[0].split('|').slice(1,-1).map(c => `<th style="background:var(--color-primary);color:#fff;padding:7px 10px;text-align:left;font-size:11px;font-weight:600;white-space:nowrap">${_sbMdInline(c.trim())}</th>`).join('');
+      const th = rows[0]
+        .split('|')
+        .slice(1, -1)
+        .map(
+          (c) =>
+            `<th style="background:var(--color-primary);color:#fff;padding:7px 10px;text-align:left;font-size:11px;font-weight:600;white-space:nowrap">${_sbMdInline(c.trim())}</th>`
+        )
+        .join('');
       let tbody = '';
       for (let r = 2; r < rows.length; r++) {
-        const td = rows[r].split('|').slice(1,-1).map(c => `<td style="padding:6px 10px;font-size:12px;border-top:1px solid var(--color-border-faint);color:var(--color-text-secondary)">${_sbMdInline(c.trim())}</td>`).join('');
+        const td = rows[r]
+          .split('|')
+          .slice(1, -1)
+          .map(
+            (c) =>
+              `<td style="padding:6px 10px;font-size:12px;border-top:1px solid var(--color-border-faint);color:var(--color-text-secondary)">${_sbMdInline(c.trim())}</td>`
+          )
+          .join('');
         tbody += `<tr style="transition:background .1s" onmouseover="this.style.background='rgba(0,67,132,.04)'" onmouseout="this.style.background=''">${td}</tr>`;
       }
       html += `<div style="overflow-x:auto;margin:8px 0;border-radius:8px;border:1px solid var(--color-border-faint)"><table style="border-collapse:collapse;width:100%;min-width:320px"><thead><tr>${th}</tr></thead><tbody>${tbody}</tbody></table></div>`;
@@ -962,15 +1041,26 @@ function _sbMdToHtml(md) {
     }
     if (/^[-*]\s/.test(line)) {
       html += '<ul style="margin:6px 0 6px 20px;padding:0">';
-      while (i < lines.length && /^[-*]\s/.test(lines[i])) { html += `<li style="font-size:13px;margin:3px 0;color:var(--color-text-secondary)">${_sbMdInline(lines[i].replace(/^[-*]\s/,''))}</li>`; i++; }
-      html += '</ul>'; continue;
+      while (i < lines.length && /^[-*]\s/.test(lines[i])) {
+        html += `<li style="font-size:13px;margin:3px 0;color:var(--color-text-secondary)">${_sbMdInline(lines[i].replace(/^[-*]\s/, ''))}</li>`;
+        i++;
+      }
+      html += '</ul>';
+      continue;
     }
     if (/^\d+\.\s/.test(line)) {
       html += '<ol style="margin:6px 0 6px 20px;padding:0">';
-      while (i < lines.length && /^\d+\.\s/.test(lines[i])) { html += `<li style="font-size:13px;margin:3px 0;color:var(--color-text-secondary)">${_sbMdInline(lines[i].replace(/^\d+\.\s/,''))}</li>`; i++; }
-      html += '</ol>'; continue;
+      while (i < lines.length && /^\d+\.\s/.test(lines[i])) {
+        html += `<li style="font-size:13px;margin:3px 0;color:var(--color-text-secondary)">${_sbMdInline(lines[i].replace(/^\d+\.\s/, ''))}</li>`;
+        i++;
+      }
+      html += '</ol>';
+      continue;
     }
-    if (line.trim() === '') { i++; continue; }
+    if (line.trim() === '') {
+      i++;
+      continue;
+    }
     html += `<p style="font-size:13px;margin:4px 0;color:var(--color-text-secondary)">${_sbMdInline(line)}</p>`;
     i++;
   }
@@ -989,21 +1079,29 @@ async function sbAbrirAndamento() {
   const root = _sbRootPath();
   const modulos = _SB_AND_MODULOS;
 
-  const tabsHtml = modulos.map((m, idx) =>
-    `<button class="sb-and-tab${idx===0?' sb-and-active':''}" data-key="${m.key}"
+  const tabsHtml = modulos
+    .map(
+      (m, idx) =>
+        `<button class="sb-and-tab${idx === 0 ? ' sb-and-active' : ''}" data-key="${m.key}"
       onclick="window._sbAndTab('${m.key}')">${m.label}</button>`
-  ).join('');
+    )
+    .join('');
 
-  const panelsHtml = modulos.map((m, idx) =>
-    `<div class="sb-and-panel${idx===0?' sb-and-active':''}" id="sbAP_${m.key}">
+  const panelsHtml = modulos
+    .map(
+      (m, idx) =>
+        `<div class="sb-and-panel${idx === 0 ? ' sb-and-active' : ''}" id="sbAP_${m.key}">
       <div id="sbAC_${m.key}" style="color:var(--color-text-faint);font-style:italic;font-size:13px">Carregando...</div>
     </div>`
-  ).join('');
+    )
+    .join('');
 
   const bd = document.createElement('div');
   bd.id = 'sbAndBackdrop';
   bd.className = 'crud-backdrop';
-  bd.addEventListener('click', e => { if (e.target === bd) window.sbFecharAndamento(); });
+  bd.addEventListener('click', (e) => {
+    if (e.target === bd) window.sbFecharAndamento();
+  });
   bd.innerHTML = `
     <div class="crud-modal" style="max-width:920px">
       <div class="crud-modal-head">
@@ -1034,24 +1132,31 @@ async function sbAbrirAndamento() {
   }
   document.body.appendChild(bd);
 
-  window._sbAndTab = function(key) {
-    document.querySelectorAll('.sb-and-tab').forEach(t => t.classList.toggle('sb-and-active', t.dataset.key === key));
-    document.querySelectorAll('.sb-and-panel').forEach(p => p.classList.toggle('sb-and-active', p.id === `sbAP_${key}`));
+  window._sbAndTab = function (key) {
+    document
+      .querySelectorAll('.sb-and-tab')
+      .forEach((t) => t.classList.toggle('sb-and-active', t.dataset.key === key));
+    document
+      .querySelectorAll('.sb-and-panel')
+      .forEach((p) => p.classList.toggle('sb-and-active', p.id === `sbAP_${key}`));
   };
-  window.sbFecharAndamento = function() {
+  window.sbFecharAndamento = function () {
     const el = document.getElementById('sbAndBackdrop');
     if (el) el.style.display = 'none';
   };
 
   const results = await Promise.all(
-    modulos.map(m => fetch(root + m.file).then(r => r.ok ? r.text() : null).catch(() => null))
+    modulos.map((m) =>
+      fetch(root + m.file)
+        .then((r) => (r.ok ? r.text() : null))
+        .catch(() => null)
+    )
   );
   modulos.forEach((m, idx) => {
     const el = document.getElementById(`sbAC_${m.key}`);
     if (el) el.innerHTML = _sbMdToHtml(results[idx]);
   });
 }
-
 
 // ============================================================
 //  INICIALIZAÇÃO AUTOMÁTICA
@@ -1064,5 +1169,5 @@ sbAplicarTema();
 document.addEventListener('DOMContentLoaded', () => {
   sbIniciarBtnTema('btnTema');
   sbInjetarMenuConfiguracoes();
-  sbFiltrarSidebar().catch(() => { /* falha de rede silenciosa */ });
+  sbFiltrarSidebar();
 });
