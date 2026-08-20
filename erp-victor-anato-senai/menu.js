@@ -1,6 +1,7 @@
 /**
  * menu.js — Sidebar centralizada do ERP
- * Detecta automaticamente o caminho relativo, filtra por permissões e marca o link ativo.
+ * Detecta automaticamente o caminho relativo, filtra por permissões,
+ * gera accordion e marca o link ativo.
  */
 (function () {
   'use strict';
@@ -15,7 +16,7 @@
   const menuDir   = scriptSrc.substring(0, scriptSrc.lastIndexOf('/') + 1);
   const base      = (pageDir === menuDir) ? '' : '../';
 
-  // Página atual relativa ao root
+  // Página atual relativa ao root (ex: 'gamificacao/admin.html')
   const pageFull = pageDir.replace(menuDir, '') + pageHref.replace(pageDir, '');
 
   const role  = localStorage.getItem('erp_role') || '';
@@ -38,14 +39,21 @@
     if (!temPermissao(chave)) return '';
     const content = links.filter(Boolean).join('');
     if (!content) return '';
-    return `<div class="sidebar-section"><div class="sidebar-section-label">${label}</div>${content}</div>`;
+    // Verifica se algum link desta seção é o ativo (para abrir automaticamente)
+    const hasActive = content.includes('class="sidebar-link ativo"');
+    return `<div class="sidebar-section${hasActive ? ' open' : ''}">` +
+           `<div class="sidebar-section-label">${label}</div>` +
+           `<div class="sidebar-section-links">${content}</div>` +
+           `</div>`;
   }
 
   const html = [
-    // Dashboard — sempre visível a quem estiver logado
-    `<div class="sidebar-section"><div class="sidebar-section-label">Principal</div>` +
+    // Dashboard — sempre visível
+    `<div class="sidebar-section open">` +
+    `<div class="sidebar-section-label">Principal</div>` +
+    `<div class="sidebar-section-links">` +
     link('dashboard.html', '🏠', 'Visão Geral') +
-    `</div>`,
+    `</div></div>`,
 
     section('cadastros', 'Cadastros', [
       link('cadastros/clientes.html',       '👥', 'Clientes'),
@@ -133,4 +141,11 @@
   ].join('');
 
   sidebar.innerHTML = html;
+
+  // Inicializa accordion: toggle ao clicar no label
+  sidebar.querySelectorAll('.sidebar-section-label').forEach(lbl => {
+    lbl.addEventListener('click', () => {
+      lbl.closest('.sidebar-section').classList.toggle('open');
+    });
+  });
 })();

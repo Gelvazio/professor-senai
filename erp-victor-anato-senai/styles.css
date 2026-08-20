@@ -939,6 +939,27 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 12px 20px 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+.sidebar-section-label::after {
+  content: '▸';
+  font-size: 11px;
+  transition: transform 0.2s;
+  color: var(--color-text-disabled, #aaa);
+}
+.sidebar-section.open > .sidebar-section-label::after {
+  transform: rotate(90deg);
+}
+.sidebar-section-links {
+  display: none;
+  overflow: hidden;
+}
+.sidebar-section.open > .sidebar-section-links {
+  display: block;
 }
 
 .sidebar-link {
