@@ -10,13 +10,13 @@
     "semantic_hash": ""
   },
   "SUPABASE.js": {
-    "mtime": 1786964694.6265678,
-    "ast_hash": "85c7a67acb546c24bd5b109c007aa5be",
+    "mtime": 1787231554.0297732,
+    "ast_hash": "6590cba5a4993025ece5e0704717b37e",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1786910983.319611,
-    "ast_hash": "796b659b7f654718b902c72ff525893f",
+    "mtime": 1787231450.8164852,
+    "ast_hash": "99a342a23cbe6ff2af479ebb4b7e260e",
     "semantic_hash": ""
   },
   "dashboard.html": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "configuracoes/usuarios.html": {
-    "mtime": 1787229285.8705015,
-    "ast_hash": "9421cf8e08c3b15cef8626471567fae8",
+    "mtime": 1787231256.4000132,
+    "ast_hash": "3566b4e8e23c49f23a244aaaccfa74f0",
     "semantic_hash": ""
   },
   "estoque/controle.html": {
@@ -670,8 +670,8 @@
     "semantic_hash": ""
   },
   "menu.js": {
-    "mtime": 1787230356.320256,
-    "ast_hash": "d17a8c85b593d1ac29f1bddf843aa47a",
+    "mtime": 1787231571.8716662,
+    "ast_hash": "659f50dcf34b8fd1e784ca42c01ef62e",
     "semantic_hash": ""
   },
   "financeiro/fila-credito.html": {

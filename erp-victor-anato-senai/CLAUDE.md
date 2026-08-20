@@ -4,15 +4,13 @@
 
 ---
 
-## Graphify — Atualização obrigatória após cada tarefa
+## Commit, Push e Graphify
 
-⚠️ **APÓS QUALQUER COMMIT**, execute imediatamente e sem perguntar:
+⚠️ **Fazer commit, push e rodar `graphify update .` APENAS quando o usuário solicitar explicitamente.**
 
-```powershell
-cd "C:\fontes\professor-senai\erp-victor-anato-senai"; C:\Python314\python.exe -m graphify update .
-```
-
-⚠️ **NUNCA perguntar se deve executar o graphify — executar diretamente, sem confirmar, sem perguntar.**
+Não executar automaticamente após cada alteração de arquivo. Aguardar instrução do usuário para:
+- `git add` / `git commit` / `git push`
+- `C:\Python314\python.exe -m graphify update .`
 
 ---
 

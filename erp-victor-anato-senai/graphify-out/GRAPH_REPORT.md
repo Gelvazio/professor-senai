@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-20)
 
 ## Corpus Check
-- 66 files · ~619,472 words
+- 66 files · ~619,771 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1205 nodes · 1202 edges · 67 communities (64 shown, 3 thin omitted)
+- 1209 nodes · 1206 edges · 68 communities (65 shown, 3 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3fde645f`
+- Built from commit: `63928284`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -69,6 +69,7 @@
 - [[_COMMUNITY_Community 64|Community 64]]
 - [[_COMMUNITY_Community 65|Community 65]]
 - [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -88,7 +89,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (67 total, 3 thin omitted)
+## Communities (68 total, 3 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -294,8 +295,12 @@ Nodes (17): 1. Usuários (`usuarios.html`), 2. Perfis (`perfis.html`), 3. Telas 
 Cohesion: 0.06
 Nodes (32): 10. 13º Salário (`decimo-terceiro.html`), 11. Férias (`ferias.html`), 12. Afastamentos (`afastamentos.html`), 13. Treinamentos (`treinamentos.html`), 14. Participações (`participacoes.html`), 15. Admissão (`admissao.html`), 16. Desligamento (`desligamento.html`), 1. Dashboard RH (`dashboard.html`) (+24 more)
 
+### Community 67 - "Community 67"
+Cohesion: 0.50
+Nodes (4): Como funciona, localStorage keys de sessão, Permissões de Acesso, Tabelas envolvidas
+
 ## Knowledge Gaps
-- **956 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Tasks` (+951 more)
+- **959 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Tasks` (+954 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -303,7 +308,7 @@ Nodes (32): 10. 13º Salário (`decimo-terceiro.html`), 11. Férias (`ferias.htm
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _956 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _959 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07053140096618357 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
