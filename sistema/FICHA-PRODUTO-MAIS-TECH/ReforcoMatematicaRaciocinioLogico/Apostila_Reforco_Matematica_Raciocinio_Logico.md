@@ -241,7 +241,7 @@ Calcule, respeitando a ordem das operações:
 
 ---
 
-## Encontro 4 — Cálculo Mental e Problemas Cotidianos (2h)
+## Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
 
 ### 4.1 Estratégias de Cálculo Mental
 
@@ -249,9 +249,39 @@ Calcule, respeitando a ordem das operações:
 
 **Compensação:** 99 × 4 = (100 - 1) × 4 = 400 - 4 = 396
 
-**Estimativas:** Para verificar se o resultado faz sentido, arredonde os valores antes de calcular.
+### 4.2 Estimativas e Arredondamento
 
-### 4.2 Problemas Contextualizados
+Estimar significa obter uma resposta aproximada — rápida e suficientemente próxima para verificar se um resultado é razoável. Usamos estimativas antes de calcular para saber se o resultado final "faz sentido".
+
+**Regras de arredondamento:**
+- Identifique a casa que quer arredondar (dezena, centena, milhar...)
+- Olhe o dígito à **direita** dessa casa
+- Se for **≥ 5** → arredonde para cima
+- Se for **< 5** → mantenha (arredonde para baixo)
+
+**Exemplos resolvidos:**
+
+**Exemplo 14a:** Arredonde 347 para a dezena mais próxima.
+> Dígito das unidades = 7 ≥ 5 → sobe → **350**
+
+**Exemplo 14b:** Arredonde 2.648 para a centena mais próxima.
+> Dígito das dezenas = 4 < 5 → mantém → **2.600**
+
+**Exemplo 14c:** Arredonde 8.950 para o milhar mais próximo.
+> Dígito das centenas = 9 ≥ 5 → sobe → **9.000**
+
+**Estimativa antes de calcular:**
+
+**Exemplo 14d:** Calcule 48 × 21 — primeiro estime, depois calcule o exato.
+> Estimativa: 50 × 20 = **1.000**
+> Resultado exato: 48 × 21 = **1.008** ✓ (próximo da estimativa — faz sentido!)
+
+**Exemplo 14e — Cotidiano:**
+Uma escola tem 23 turmas com 29 alunos cada. Quantos alunos ao todo (aproximadamente)?
+> 23 ≈ 20 e 29 ≈ 30 → 20 × 30 = **600 alunos** (estimativa rápida)
+> Exato: 23 × 29 = 667 alunos ✓
+
+### 4.3 Problemas Contextualizados
 
 **Exemplo 15 — Cotidiano:**
 Lucas foi ao supermercado e comprou: refrigerante (R$ 8,50), pão (R$ 4,20), queijo (R$ 12,80) e iogurte (R$ 6,00). Pagou com R$ 50,00. Qual o troco?
@@ -264,7 +294,17 @@ Uma internet de 100 Mb/s transmite dados. Quantos segundos leva para baixar um a
 
 > 600 ÷ 100 = **6 segundos**
 
-### Atividade 1.4 — Em Grupo (Desafio)
+### Atividade 1.4 — Individual (Estimativas)
+
+Arredonde e estime:
+
+1. Arredonde 563 para a dezena → ___; para a centena → ___
+2. Arredonde 4.847 para a centena → ___; para o milhar → ___
+3. Estime 39 × 51 arredondando para a dezena mais próxima. Depois calcule o resultado exato.
+4. Uma loja vendeu 198 produtos a R$ 31,00 cada. Estime o total. Depois calcule o exato.
+5. Você tem R$ 47,00. Pode comprar um item de R$ 19,90 e outro de R$ 28,50? Estime antes de calcular para decidir rapidamente.
+
+### Atividade 1.5 — Em Grupo (Desafio)
 
 Em grupo de 3, resolvam:
 
@@ -283,6 +323,7 @@ Em grupo de 3, resolvam:
 | Multiplicação/Divisão | Sinais iguais = +; sinais diferentes = - |
 | Ordem das operações | Parênteses → × e ÷ → + e - |
 | Cálculo mental | Decomposição e compensação |
+| Estimativas | Arredondar (≥5 sobe, <5 mantém) e verificar se o resultado é razoável |
 
 ---
 
@@ -1533,6 +1574,13 @@ Desafio: 8 + 12 - 15 = **5°C**
 1. 20  2. 13  3. 24  4. 11  5. 14
 
 **Atividade 1.4**
+1. Dezena: 560; Centena: 600
+2. Centena: 4.800; Milhar: 5.000
+3. Estimativa: 40 × 50 = 2.000; Exato: 39 × 51 = **1.989**
+4. Estimativa: 200 × 30 = R$ 6.000,00; Exato: 198 × 31 = **R$ 6.138,00**
+5. Estimativa: 20 + 30 = R$ 50,00 > R$ 47,00 → não dá; Exato: 19,90 + 28,50 = R$ 48,40 → **não é possível comprar os dois**
+
+**Atividade 1.5**
 1. 8 setores; 1 setor com 30 computadores → R$ 75.000,00
 2. 8h × 5 dias × 4 semanas = 160h × R$ 18 = **R$ 2.880,00**
 
