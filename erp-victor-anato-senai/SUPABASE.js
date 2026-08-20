@@ -221,12 +221,49 @@ async function sbLogin(email, senha) {
 
   const user = rows[0];
 
+  // Mapeamento siscodigo → chave de permissão usada no menu
+  const SISTEMA_PERM = {
+    1: 'visao_geral', 2: 'cadastros', 3: 'compras',
+    4: 'estoque',     5: 'vendas',    6: 'estoque',
+    7: 'financeiro',  9: 'marketing', 10: 'gamificacao', 11: 'rh'
+  };
+
   let nomePerfil = 'Usuário';
+  let permissoes = { visao_geral: true };
+
   if (user.perfil_id != null) {
     try {
       const perfis = await sbListar('perfil', `id=eq.${user.perfil_id}&select=nome&limit=1`);
       if (perfis.length) nomePerfil = perfis[0].nome;
-    } catch { /* mantém padrão 'Usuário' */ }
+
+      if (nomePerfil === 'Administrador') {
+        permissoes = { visao_geral: true, cadastros: true, compras: true, estoque: true,
+                       vendas: true, financeiro: true, marketing: true, gamificacao: true, rh: true };
+        // Admin: salvar todas as telas ativas
+        try {
+          const todasTelas = await sbListar('tela', 'ativo=eq.1&select=id,nome,nome_html&order=nome.asc');
+          localStorage.setItem('erp_telas', JSON.stringify(todasTelas));
+        } catch { localStorage.setItem('erp_telas', JSON.stringify([])); }
+      } else {
+        // Buscar telas do perfil e derivar permissões pelos sistemas
+        const perfilTelas = await sbListar('perfil_sistema', `perfil_id=eq.${user.perfil_id}&select=tela_id`);
+        const telaIds = perfilTelas.map(t => t.tela_id).join(',');
+        if (telaIds) {
+          const [telaSistemas, telas] = await Promise.all([
+            sbListar('tela_sistema', `tela_id=in.(${telaIds})&select=sistema_id`),
+            sbListar('tela', `id=in.(${telaIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`)
+          ]);
+          const sistemasUnicos = [...new Set(telaSistemas.map(ts => ts.sistema_id))];
+          sistemasUnicos.forEach(sid => {
+            const chave = SISTEMA_PERM[sid];
+            if (chave) permissoes[chave] = true;
+          });
+          localStorage.setItem('erp_telas', JSON.stringify(telas));
+        } else {
+          localStorage.setItem('erp_telas', JSON.stringify([]));
+        }
+      }
+    } catch { /* mantém padrão */ }
   }
 
   localStorage.setItem('erp_role',       nomePerfil);
@@ -234,7 +271,7 @@ async function sbLogin(email, senha) {
   localStorage.setItem('erp_user_id',    user.id);
   localStorage.setItem('erp_user_nome',  user.nome);
   localStorage.setItem('erp_user_email', user.email);
-  localStorage.setItem('erp_permissoes', JSON.stringify(user.permissoes));
+  localStorage.setItem('erp_permissoes', JSON.stringify(permissoes));
   localStorage.setItem('erp_login',      String(Date.now()));
 
   return user;

@@ -24,12 +24,18 @@
 
   const isAdmin = role === 'Administrador';
 
+  // Telas permitidas salvas no login — null = fallback para permissões de módulo
+  const telasData = JSON.parse(localStorage.getItem('erp_telas') || '[]');
+  const telasPermitidas = telasData.length ? new Set(telasData.map(t => t.nome_html)) : null;
+
   function temPermissao(chave) {
     if (isAdmin) return true;
     return perms[chave] === true;
   }
 
   function link(href, icon, label) {
+    // Filtrar por telas do perfil (quando disponível)
+    if (href !== 'dashboard.html' && telasPermitidas !== null && !telasPermitidas.has(href)) return null;
     const active = pageFull === href || pageFull.endsWith('/' + href);
     return `<a class="sidebar-link${active ? ' ativo' : ''}" href="${base}${href}">` +
            `<span class="sidebar-icon">${icon}</span> ${label}</a>`;
