@@ -34,8 +34,8 @@
   }
 
   function link(href, icon, label) {
-    // Filtrar por telas do perfil (quando disponível)
-    if (href !== 'dashboard.html' && telasPermitidas !== null && !telasPermitidas.has(href)) return null;
+    // Admin vê tudo; outros filtram pelas telas do perfil
+    if (!isAdmin && href !== 'dashboard.html' && telasPermitidas !== null && !telasPermitidas.has(href)) return null;
     const active = pageFull === href || pageFull.endsWith('/' + href);
     return `<a class="sidebar-link${active ? ' ativo' : ''}" href="${base}${href}">` +
            `<span class="sidebar-icon">${icon}</span> ${label}</a>`;

@@ -266,6 +266,11 @@ async function sbLogin(email, senha) {
     } catch { /* mantém padrão */ }
   }
 
+  // Limpar dados de sessão anterior antes de setar os novos
+  ['erp_role','erp_perfil_id','erp_user_id','erp_user_nome','erp_user_email',
+   'erp_permissoes','erp_telas','erp_login'].forEach(k => localStorage.removeItem(k));
+  sessionStorage.removeItem('_telas_cache');
+
   localStorage.setItem('erp_role',       nomePerfil);
   localStorage.setItem('erp_perfil_id',  String(user.perfil_id));
   localStorage.setItem('erp_user_id',    user.id);
