@@ -4,15 +4,22 @@
 
 ---
 
-## Graphify
+## Commit, Push e Graphify
 
-Após commitar, executar:
+⚠️ **APÓS QUALQUER ALTERAÇÃO DE ARQUIVO, executar imediatamente e automaticamente, sem perguntar:**
+
+1. Adicionar ao Git os arquivos alterados da tarefa.
+2. Criar um commit com mensagem descritiva.
+3. Executar `git push origin main`.
+4. Atualizar o Graphify.
+
+Comando obrigatório do Graphify após cada commit:
 
 ```yaml
 C:\Python314\python.exe -m graphify update .
 ```
 
-⚠️ **NUNCA perguntar se deve executar o graphify ou dar push — executar diretamente, sem confirmar, sem perguntar.**
+⚠️ **NUNCA perguntar se deve fazer commit, executar o Graphify ou dar push — realizar todo o fluxo diretamente, sem confirmar e sem perguntar.**
 
 ---
 
