@@ -20,14 +20,7 @@
   const pageFull = pageDir.replace(menuDir, '') + pageHref.replace(pageDir, '');
 
   const role  = localStorage.getItem('erp_role') || '';
-  const perms = JSON.parse(localStorage.getItem('erp_permissoes') || '{}');
-
   const isAdmin = role === 'Administrador';
-
-  function temPermissao(chave) {
-    if (isAdmin) return true;
-    return perms[chave] === true;
-  }
 
   function link(href, icon, label) {
     const active = pageFull === href || pageFull.endsWith('/' + href);
@@ -36,7 +29,6 @@
   }
 
   function section(chave, label, links) {
-    if (!temPermissao(chave)) return '';
     const content = links.filter(Boolean).join('');
     if (!content) return '';
     return `<div class="sidebar-section open">` +

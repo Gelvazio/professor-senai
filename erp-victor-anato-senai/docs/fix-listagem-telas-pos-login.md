@@ -14,6 +14,9 @@
 | 2 | Preservar `erp_telas` ao limpar a sessão anterior | ✅ Concluído |
 | 3 | Centralizar o filtro de telas no carregamento da interface | ✅ Concluído |
 | 4 | Commit e publicação | ✅ Concluído |
+| 5 | Remover o bloqueio antecipado por permissão de módulo | ✅ Concluído |
+| 6 | Aplicar comportamento seguro quando o perfil não tiver telas | ✅ Concluído |
+| 7 | Commit e publicação do ajuste complementar | ✅ Concluído |
 
 ---
 
@@ -106,3 +109,70 @@ git log -1 --oneline
 Esperado: commit da correção presente no histórico remoto.
 
 > Testes e validações de execução não foram realizados por proibição expressa das regras do projeto.
+
+---
+
+### Passo 5: Remover o bloqueio antecipado por módulo
+
+**Status:** ✅ Concluído
+
+**Arquivo:** Modificar `menu.js`
+
+**Ação:** Montar as seções do menu antes do filtro individual, evitando que um mapeamento agregado de módulo descarte telas que estão vinculadas ao perfil.
+
+```javascript
+function section(chave, label, links) {
+  const content = links.filter(Boolean).join('');
+  if (!content) return '';
+  return `<div class="sidebar-section open">...</div>`;
+}
+```
+
+**Verificação:**
+
+```powershell
+git diff -- menu.js
+```
+
+Esperado: a visibilidade das telas passa a depender de `erp_telas`, não do agrupamento `erp_permissoes`.
+
+---
+
+### Passo 6: Tratar perfil sem telas
+
+**Status:** ✅ Concluído
+
+**Arquivo:** Modificar `SUPABASE.js`
+
+**Ação:** Para usuários comuns, ocultar todas as telas quando `erp_telas` estiver vazia; administradores continuam com acesso integral.
+
+```javascript
+if (sbIsAdmin()) return;
+const permitidas = new Set(['dashboard.html']);
+```
+
+**Verificação:**
+
+```powershell
+git diff -- SUPABASE.js
+```
+
+Esperado: a ausência de vínculos deixa visível somente o Dashboard.
+
+---
+
+### Passo 7: Commit e publicação do ajuste complementar
+
+**Status:** ✅ Concluído
+
+**Arquivos:** Versionar `SUPABASE.js`, `menu.js` e este documento.
+
+**Ação:** Criar commit descritivo e enviar para `origin/main`.
+
+**Verificação:**
+
+```powershell
+git log -1 --oneline
+```
+
+Esperado: correção complementar publicada no branch principal.

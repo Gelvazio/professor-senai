@@ -793,16 +793,20 @@ async function _sbCarregarTelasJson() {
 /**
  * Filtra o sidebar usando erp_telas do localStorage (populado no login).
  * Síncrono — sem fetch, sem risco de race condition ou falha de rede.
- * Se erp_telas estiver vazio, fail-open (mostra tudo).
+ * Administradores visualizam tudo. Para os demais perfis, somente as telas
+ * presentes em erp_telas permanecem visíveis.
  */
 function sbFiltrarSidebar() {
   const perfilId = localStorage.getItem('erp_perfil_id');
   if (!perfilId || perfilId === 'null' || perfilId === 'undefined') return;
+  if (sbIsAdmin()) return;
 
-  const telasData = JSON.parse(localStorage.getItem('erp_telas') || '[]');
-
-  // Sem telas configuradas: fail-open
-  if (!telasData.length) return;
+  let telasData = [];
+  try {
+    telasData = JSON.parse(localStorage.getItem('erp_telas') || '[]');
+  } catch {
+    telasData = [];
+  }
 
   // Construir Set de filenames e caminhos permitidos
   const permitidas = new Set(['dashboard.html']);
@@ -811,13 +815,6 @@ function sbFiltrarSidebar() {
     permitidas.add(t.nome_html);
     permitidas.add(t.nome_html.split('/').pop());
   });
-  if (sbIsAdmin()) {
-    permitidas.add('usuarios.html');
-    permitidas.add('telas.html');
-    permitidas.add('perfis.html');
-    permitidas.add('regras-negocios.html');
-  }
-
   // ── Ocultar links não permitidos ──────────────────────────────
   document.querySelectorAll('.sidebar-link').forEach((link) => {
     const filename = _sbFilenameFromHref(link.getAttribute('href'));
