@@ -75,6 +75,38 @@
     .pag-btn { padding: 4px 10px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface); color: var(--color-text-muted); font-size: 12px; cursor: pointer; font-family: inherit; }
     .pag-btn:disabled { opacity: 0.4; cursor: default; }
     .pag-btn:not(:disabled):hover { background: var(--color-surface-2); }
+    /* Botão Finanças */
+    .btn-fin { background: #1565c0; color: #fff; border: none; border-radius: 6px; padding: 4px 9px; font-size: 12px; cursor: pointer; font-family: inherit; font-weight: 600; white-space: nowrap; }
+    .btn-fin:hover { background: #0d47a1; }
+    /* Modal Finanças */
+    .fin-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 20px; }
+    @media (max-width: 600px) { .fin-cards { grid-template-columns: 1fr; } }
+    .fin-card { background: var(--color-surface-2); border-radius: 10px; padding: 16px; text-align: center; border: 1px solid var(--color-border-faint); }
+    .fin-card-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-text-muted); margin-bottom: 6px; }
+    .fin-card-valor { font-size: 22px; font-weight: 800; }
+    .fin-card-valor.azul { color: #1565c0; }
+    .fin-card-valor.verde { color: #2e7d32; }
+    .fin-card-valor.vermelho { color: #c62828; }
+    .fin-card-valor.amarelo { color: #e65100; }
+    .fin-section-titulo { font-size: 13px; font-weight: 700; color: var(--color-text); margin: 16px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--color-border-faint); }
+    .fin-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .fin-table th { text-align: left; padding: 6px 8px; background: var(--color-surface-2); color: var(--color-text-muted); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
+    .fin-table td { padding: 7px 8px; border-bottom: 1px solid var(--color-border-faint); color: var(--color-text); vertical-align: middle; }
+    .fin-table tr:last-child td { border-bottom: none; }
+    .badge-avencer { background: #fff3e0; color: #e65100; border: 1px solid #ffcc80; border-radius: 12px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+    .badge-vencida { background: #fce8e6; color: #c62828; border: 1px solid #ef9a9a; border-radius: 12px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+    .badge-emdia   { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; border-radius: 12px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+    .badge-paga    { background: #e3f2fd; color: #1565c0; border: 1px solid #90caf9; border-radius: 12px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+    .badge-contrato-ativo    { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; border-radius: 12px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+    .badge-contrato-cancelado { background: #fce8e6; color: #c62828; border: 1px solid #ef9a9a; border-radius: 12px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+    .badge-contrato-encerrado { background: #f5f5f5; color: #616161; border: 1px solid #bdbdbd; border-radius: 12px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+    .fin-vazio { text-align: center; color: var(--color-text-muted); padding: 16px; font-size: 12px; font-style: italic; }
+    .fin-limite-wrap { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; background: var(--color-surface-2); border-radius: 10px; padding: 14px 18px; border: 1px solid var(--color-border-faint); }
+    .fin-limite-label { font-size: 12px; color: var(--color-text-muted); font-weight: 600; flex: 1; }
+    .fin-limite-input { width: 160px; padding: 7px 10px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 13px; font-family: inherit; text-align: right; background: var(--color-surface); color: var(--color-text); outline: none; }
+    .fin-limite-input:focus { border-color: #1565c0; box-shadow: 0 0 0 3px rgba(21,101,192,.12); }
+    .fin-btn-salvar-limite { padding: 7px 14px; background: #1565c0; color: #fff; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .fin-btn-salvar-limite:hover { background: #0d47a1; }
   </style>
   <script>
     (function () {
@@ -220,7 +252,7 @@
               <th>Telefone</th>
               <th>Segmento</th>
               <th>Status</th>
-              <th style="width:100px">Ações</th>
+              <th style="width:140px">Ações</th>
             </tr>
           </thead>
           <tbody id="tbodyClientes">
@@ -340,6 +372,22 @@
     <div class="modal-footer">
       <button class="btn-cancelar" onclick="fecharModalExcluir()">Cancelar</button>
       <button class="btn-salvar" style="background:#c62828" onclick="excluirConfirmado()">🗑️ Excluir</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Modal Finanças ── -->
+<div class="crud-backdrop" id="modalFinancas" style="display:none">
+  <div class="crud-modal" style="max-width:720px">
+    <div class="crud-modal-head" style="background:#1565c0">
+      <h3 id="finTitulo">💰 Finanças do Cliente</h3>
+      <button class="crud-btn-fechar" onclick="fecharModalFinancas()">✕</button>
+    </div>
+    <div class="modal-body-scroll" style="padding:20px" id="finConteudo">
+      <p style="text-align:center;color:var(--color-text-muted)">Carregando…</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancelar" onclick="fecharModalFinancas()">Fechar</button>
     </div>
   </div>
 </div>
@@ -512,6 +560,7 @@
           ? '<span class="badge badge-verde">Ativo</span>'
           : '<span class="badge badge-vermelho">Inativo</span>'}</td>
         <td class="crud-acts">
+          <button class="btn-fin" title="Finanças" onclick="abrirModalFinancas('${c.id}','${(c.nome || '').replace(/'/g, "\\'")}')">💰 Finanças</button>
           <button class="btn-ed" title="Editar" onclick="abrirModalEditar('${c.id}')">✏️</button>
           <button class="btn-del" title="Excluir" onclick="confirmarExcluir('${c.id}','${(c.nome || '').replace(/'/g, "\\'")}')">🗑️</button>
         </td>
@@ -636,6 +685,144 @@
     } catch (e) {
       fecharModalExcluir();
       msg('Erro ao excluir: ' + e.message, 'err');
+    }
+  }
+
+  // ── Modal Finanças ────────────────────────────────────────────
+  let clienteFinId = null;
+
+  function fecharModalFinancas() {
+    document.getElementById('modalFinancas').style.display = 'none';
+    clienteFinId = null;
+  }
+
+  function fmtMoeda(v) {
+    return 'R$ ' + (parseFloat(v) || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function fmtData(d) {
+    if (!d) return '—';
+    const [y, m, day] = d.split('-');
+    return `${day}/${m}/${y}`;
+  }
+
+  function badgeParcela(status) {
+    const m = { 'A Vencer': 'avencer', 'Vencida': 'vencida', 'Em Dia': 'emdia', 'Paga': 'paga' };
+    return `<span class="badge-${m[status] || 'avencer'}">${status}</span>`;
+  }
+
+  function badgeContrato(status) {
+    const m = { 'Ativo': 'ativo', 'Cancelado': 'cancelado', 'Encerrado': 'encerrado' };
+    return `<span class="badge-contrato-${m[status] || 'ativo'}">${status}</span>`;
+  }
+
+  async function salvarLimite() {
+    const raw = document.getElementById('finLimiteInput').value.replace(/\./g, '').replace(',', '.');
+    const valor = parseFloat(raw) || 0;
+    try {
+      await sbAtualizar('clientes', clienteFinId, { limite_credito: valor });
+      const c = todos.find(x => x.id === clienteFinId);
+      if (c) c.limite_credito = valor;
+      document.getElementById('finLimiteExibido').textContent = fmtMoeda(valor);
+      msg('Limite de crédito atualizado!', 'ok');
+    } catch (e) {
+      msg('Erro ao salvar limite: ' + e.message, 'err');
+    }
+  }
+
+  async function abrirModalFinancas(id, nome) {
+    clienteFinId = id;
+    document.getElementById('finTitulo').textContent = '💰 Finanças — ' + nome;
+    document.getElementById('finConteudo').innerHTML = '<p style="text-align:center;color:var(--color-text-muted)">Carregando…</p>';
+    document.getElementById('modalFinancas').style.display = 'flex';
+
+    try {
+      const cliente = todos.find(x => x.id === id) || {};
+      const limite  = parseFloat(cliente.limite_credito) || 0;
+
+      const [parcelas, contratos] = await Promise.all([
+        sbListar('fin_parcelas',  `cliente_id=eq.${id}&order=vencimento.asc`),
+        sbListar('fin_contratos', `cliente_id=eq.${id}&order=created_at.desc`)
+      ]);
+
+      const total      = parcelas.length;
+      const aVencer    = parcelas.filter(p => p.status === 'A Vencer').length;
+      const vencidas   = parcelas.filter(p => p.status === 'Vencida').length;
+      const emDia      = parcelas.filter(p => p.status === 'Em Dia').length;
+      const pagas      = parcelas.filter(p => p.status === 'Paga').length;
+      const valorVencido = parcelas.filter(p => p.status === 'Vencida').reduce((s, p) => s + (parseFloat(p.valor) || 0), 0);
+
+      const conAtivos    = contratos.filter(c => c.status === 'Ativo').length;
+      const conCancelados = contratos.filter(c => c.status === 'Cancelado').length;
+      const conEncerrados = contratos.filter(c => c.status === 'Encerrado').length;
+
+      document.getElementById('finConteudo').innerHTML = `
+        <!-- Limite de Crédito -->
+        <div class="fin-limite-wrap">
+          <span class="fin-limite-label">💳 Limite de Crédito</span>
+          <input class="fin-limite-input" id="finLimiteInput" type="text" value="${limite.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}" placeholder="0,00">
+          <button class="fin-btn-salvar-limite" onclick="salvarLimite()">Salvar</button>
+          <span id="finLimiteExibido" style="font-weight:800;color:#1565c0;font-size:15px;min-width:100px;text-align:right">${fmtMoeda(limite)}</span>
+        </div>
+
+        <!-- Cards de Parcelas -->
+        <div class="fin-cards">
+          <div class="fin-card">
+            <div class="fin-card-label">A Vencer</div>
+            <div class="fin-card-valor amarelo">${aVencer}</div>
+          </div>
+          <div class="fin-card">
+            <div class="fin-card-label">Vencidas</div>
+            <div class="fin-card-valor vermelho">${vencidas}</div>
+            ${vencidas > 0 ? `<div style="font-size:11px;color:#c62828;margin-top:4px">${fmtMoeda(valorVencido)}</div>` : ''}
+          </div>
+          <div class="fin-card">
+            <div class="fin-card-label">Em Dia / Pagas</div>
+            <div class="fin-card-valor verde">${emDia + pagas}</div>
+          </div>
+        </div>
+
+        <!-- Parcelas -->
+        <div class="fin-section-titulo">📅 Parcelas (${total})</div>
+        ${parcelas.length === 0
+          ? '<div class="fin-vazio">Nenhuma parcela cadastrada.</div>'
+          : `<div style="overflow-x:auto"><table class="fin-table">
+              <thead><tr>
+                <th>#</th><th>Vencimento</th><th>Valor</th><th>Status</th><th>Pagamento</th>
+              </tr></thead>
+              <tbody>
+                ${parcelas.map(p => `<tr>
+                  <td>${p.numero_parcela}</td>
+                  <td>${fmtData(p.vencimento)}</td>
+                  <td>${fmtMoeda(p.valor)}</td>
+                  <td>${badgeParcela(p.status)}</td>
+                  <td>${fmtData(p.data_pagamento)}</td>
+                </tr>`).join('')}
+              </tbody>
+            </table></div>`}
+
+        <!-- Contratos -->
+        <div class="fin-section-titulo">📄 Contratos (${contratos.length})</div>
+        ${contratos.length === 0
+          ? '<div class="fin-vazio">Nenhum contrato cadastrado.</div>'
+          : `<div style="overflow-x:auto"><table class="fin-table">
+              <thead><tr>
+                <th>Número</th><th>Descrição</th><th>Valor Total</th><th>Início</th><th>Fim</th><th>Status</th>
+              </tr></thead>
+              <tbody>
+                ${contratos.map(c => `<tr>
+                  <td style="font-family:monospace;font-size:11px">${c.numero}</td>
+                  <td>${c.descricao || '—'}</td>
+                  <td>${fmtMoeda(c.valor_total)}</td>
+                  <td>${fmtData(c.data_inicio)}</td>
+                  <td>${fmtData(c.data_fim)}</td>
+                  <td>${badgeContrato(c.status)}</td>
+                </tr>`).join('')}
+              </tbody>
+            </table></div>`}
+      `;
+    } catch (e) {
+      document.getElementById('finConteudo').innerHTML = `<p style="color:#c62828;text-align:center">Erro ao carregar dados: ${e.message}</p>`;
     }
   }
 
