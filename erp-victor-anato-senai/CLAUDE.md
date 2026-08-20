@@ -25,18 +25,23 @@ Não executar automaticamente após cada alteração de arquivo. Aguardar instru
    - Busca as **telas permitidas** desse perfil (`perfil_sistema` → `tela` tables).
    - Salva a lista de telas em `localStorage.setItem('erp_telas', JSON.stringify(telas))`.
    - Administradores têm TODAS as telas salvas.
+   - `SUPABASE.js` **não mostra, esconde ou filtra links da sidebar**; sua responsabilidade termina ao gravar os dados da sessão.
 
 2. **Na sidebar** (`menu.js`):
    - Lê `erp_telas` do localStorage ao montar o menu.
    - **Somente mostra os links cujas telas estão na lista `erp_telas`** do perfil logado.
    - Se `erp_telas` estiver vazio ou ausente, exibe apenas o Dashboard.
    - A lógica de filtro fica na função `link()` — cada link é `null` se a tela não estiver permitida.
+   - A lista deve ser lida imediatamente antes da montagem do array `html`, no ponto marcado por `VALIDE A REGRA DAS TELAS DO PERFIL, SEMPRE AQUI`.
 
 3. **Regras inegociáveis**:
    - A sidebar **nunca** deve exibir uma tela que não esteja no perfil do usuário logado.
    - As telas exibidas vêm **exclusivamente** de `erp_telas` no localStorage, populado no login.
    - Qualquer nova tela criada no sistema precisa ser cadastrada em `tela` e vinculada ao perfil via `perfil_sistema` para aparecer no menu.
    - Nunca adicionar links hardcoded que ignorem esse filtro.
+   - **Somente `menu.js` pode decidir mostrar ou esconder telas por perfil.** Nenhum HTML de módulo, helper, `SUPABASE.js` ou outro arquivo pode repetir, complementar ou substituir essa validação visual.
+   - Não manipular `.sidebar-link` ou `.sidebar-section` depois da montagem para aplicar permissões. Links não autorizados devem nascer como `null` dentro de `link()`.
+   - A proteção contra acesso direto por URL pode permanecer em `SUPABASE.js`, desde que não mostre, esconda nem manipule links ou seções da sidebar.
 
 ### Tabelas envolvidas
 

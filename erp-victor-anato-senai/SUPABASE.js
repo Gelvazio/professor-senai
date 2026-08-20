@@ -765,90 +765,44 @@ function sbGerarPDFPedidoCompra(pedido, fornecedor, produto) {
 }
 
 // ============================================================
-//  FILTRO DE TELAS POR PERFIL
 // ============================================================
 
 /**
- * Carrega o mapeamento de telas (telas.json) com cache em sessionStorage.
  * Tenta o caminho relativo correto conforme a profundidade da página.
- * @returns {Promise<Array>} Array de objetos {id, nome_html, ativo, ...}
  */
-async function _sbCarregarTelasJson() {
-  const cached = sessionStorage.getItem('_telas_cache');
-  if (cached) return JSON.parse(cached);
-
-  const [telas, vinculos] = await Promise.all([
-    sbListar('tela', 'order=id.asc'),
-    sbListar('tela_sistema', '')
-  ]);
-  const sisMap = {};
-  vinculos.forEach((v) => {
-    if (!sisMap[v.tela_id]) sisMap[v.tela_id] = v.sistema_id;
-  });
-  const data = telas.map((t) => ({ ...t, sistema_id: sisMap[t.id] ?? 0 }));
-  sessionStorage.setItem('_telas_cache', JSON.stringify(data));
-  return data;
-}
-
 /**
- * Filtra o sidebar usando erp_telas do localStorage (populado no login).
  * Síncrono — sem fetch, sem risco de race condition ou falha de rede.
- * Administradores visualizam tudo. Para os demais perfis, somente as telas
  * presentes em erp_telas permanecem visíveis.
  */
-function sbFiltrarSidebar() {
-  const perfilId = localStorage.getItem('erp_perfil_id');
-  if (!perfilId || perfilId === 'null' || perfilId === 'undefined') return;
-  if (sbIsAdmin()) return;
-
-  let telasData = [];
-  try {
-    telasData = JSON.parse(localStorage.getItem('erp_telas') || '[]');
-  } catch {
-    telasData = [];
-  }
-
-  // Construir Set de filenames e caminhos permitidos
-  const permitidas = new Set(['dashboard.html']);
-  telasData.forEach((t) => {
-    if (!t.nome_html) return;
-    permitidas.add(t.nome_html);
-    permitidas.add(t.nome_html.split('/').pop());
-  });
   // ── Ocultar links não permitidos ──────────────────────────────
-  document.querySelectorAll('.sidebar-link').forEach((link) => {
-    const filename = _sbFilenameFromHref(link.getAttribute('href'));
-    if (!filename || filename === '#' || filename === 'dashboard.html') return;
-    if (!permitidas.has(filename) && !permitidas.has(link.getAttribute('href'))) {
-      link.style.display = 'none';
-    }
-  });
 
   // ── Ocultar seções sem nenhum link visível ─────────────────────
-  document.querySelectorAll('.sidebar-section').forEach((section) => {
-    const links = section.querySelectorAll('.sidebar-link');
-    if (!links.length) return;
-    const algumVisivel = Array.from(links).some((l) => l.style.display !== 'none');
-    if (!algumVisivel) section.style.display = 'none';
-  });
 
   // ── Bloquear acesso direto a página não autorizada ─────────────
-  const currentFile = window.location.pathname.replace(/\\/g, '/').split('/').pop() || '';
-  if (!currentFile || currentFile === 'index.html' || currentFile === 'dashboard.html') return;
-  if (!permitidas.has(currentFile)) {
+/** A visibilidade das telas é controlada exclusivamente por menu.js. */
+
+/** Impede acesso direto por URL sem manipular a visibilidade da sidebar. */
+function sbProtegerTelaAtual() {
+  if (sbIsAdmin()) return;
+  const perfilId = localStorage.getItem('erp_perfil_id');
+  if (!perfilId || perfilId === 'null' || perfilId === 'undefined') return;
+
+  let telas = [];
+  try {
+    telas = JSON.parse(localStorage.getItem('erp_telas') || '[]');
+  } catch {
+    telas = [];
+  }
+
+  const arquivoAtual = window.location.pathname.replace(/\\/g, '/').split('/').pop() || '';
+  if (!arquivoAtual || arquivoAtual === 'index.html' || arquivoAtual === 'dashboard.html') return;
+
+  const permitidas = new Set(telas.map((tela) => String(tela.nome_html || '').split('/').pop()));
+  if (!permitidas.has(arquivoAtual)) {
     const partes = window.location.pathname.replace(/\\/g, '/').split('/').filter(Boolean);
-    const dash = partes.length >= 2 ? '../dashboard.html' : 'dashboard.html';
-    alert('Você não tem permissão para acessar esta tela.');
-    window.location.replace(dash);
+    window.location.replace(partes.length >= 2 ? '../dashboard.html' : 'dashboard.html');
   }
 }
-
-/** Extrai o nome do arquivo (sem caminho) de um href. */
-function _sbFilenameFromHref(href) {
-  if (!href) return '';
-  return href.replace(/\\/g, '/').split('/').pop().split('?')[0];
-}
-
 // ============================================================
 //  MENU CONFIGURAÇÕES (dropdown no header)
 // ============================================================
@@ -1166,5 +1120,5 @@ sbAplicarTema();
 document.addEventListener('DOMContentLoaded', () => {
   sbIniciarBtnTema('btnTema');
   sbInjetarMenuConfiguracoes();
-  sbFiltrarSidebar();
+  sbProtegerTelaAtual();
 });

@@ -18,6 +18,8 @@
 | 6 | Aplicar comportamento seguro quando o perfil não tiver telas | ✅ Concluído |
 | 7 | Commit e publicação do ajuste complementar | ✅ Concluído |
 | 8 | Aplicar `erp_telas` durante a montagem do menu | ✅ Concluído |
+| 9 | Remover validação duplicada de `SUPABASE.js` | ✅ Concluído |
+| 10 | Documentar a responsabilidade exclusiva em `CLAUDE.md` | ✅ Concluído |
 
 ---
 
@@ -205,3 +207,39 @@ git diff -- menu.js
 ```
 
 Esperado: o menu é montado diretamente a partir da lista de telas do perfil logado.
+
+---
+
+### Passo 9: Centralizar a visibilidade em menu.js
+
+**Status:** ✅ Concluído
+
+**Arquivo:** Modificar `SUPABASE.js`
+
+**Ação:** Remover o filtro visual da sidebar e a manipulação de links/seções. A proteção de acesso direto por URL permanece separada e não altera o menu.
+
+**Verificação:**
+
+```powershell
+rg -n "erp_telas|sbFiltrarSidebar" SUPABASE.js menu.js
+```
+
+Esperado: a leitura de `erp_telas` para mostrar ou esconder telas existe somente em `menu.js`.
+
+---
+
+### Passo 10: Atualizar as regras do projeto
+
+**Status:** ✅ Concluído
+
+**Arquivo:** Modificar `CLAUDE.md`
+
+**Ação:** Registrar que somente `menu.js` pode validar a visibilidade das telas do perfil e que os demais componentes não podem manipular a sidebar por permissão.
+
+**Verificação:**
+
+```powershell
+rg -n "Somente `menu.js`|SUPABASE.js.*não mostra" CLAUDE.md
+```
+
+Esperado: a regra de responsabilidade exclusiva está documentada.
