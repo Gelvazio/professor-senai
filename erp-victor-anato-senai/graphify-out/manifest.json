@@ -16,9 +16,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1787233788.5893357,
-    "seen": 1787234756.3829548,
-    "ast_hash": "af7a194ed3a8f98ce196530d8e889f64",
+    "mtime": 1787235698.6125844,
+    "seen": 1787235726.4056153,
+    "ast_hash": "2c7355c2a20721d33cc44b280944cac5",
     "semantic_hash": ""
   },
   "dashboard.html": {
@@ -791,9 +791,9 @@
     "semantic_hash": ""
   },
   "menu.js": {
-    "mtime": 1787234672.5176597,
-    "seen": 1787234756.3829548,
-    "ast_hash": "9f79811ae644bcbb8ebd95776ddedb1f",
+    "mtime": 1787235664.6313708,
+    "seen": 1787235726.40463,
+    "ast_hash": "945b2317f5bb9ef4a573c53d3865d7af",
     "semantic_hash": ""
   },
   "financeiro/fila-credito.html": {
@@ -818,6 +818,24 @@
     "mtime": 1787233358.929716,
     "seen": 1787234756.3829548,
     "ast_hash": "9d7b5d03d4ba0a551c74eb4db4d24a60",
+    "semantic_hash": ""
+  },
+  "tests/menu.integration.test.js": {
+    "mtime": 1787235638.598402,
+    "seen": 1787235726.40463,
+    "ast_hash": "f071edcc84b03fcf7fda5f8b4bdff132",
+    "semantic_hash": ""
+  },
+  "tests/menu.test.js": {
+    "mtime": 1787235637.3627093,
+    "seen": 1787235726.40463,
+    "ast_hash": "1fcde72dcda91279f1c2b6c1cf4c5b51",
+    "semantic_hash": ""
+  },
+  "docs/corrigir-menu-perfil-atual.md": {
+    "mtime": 1787235738.5384727,
+    "seen": 1787235808.2865355,
+    "ast_hash": "7184cfc6879a0281158b30c29b36f7ea",
     "semantic_hash": ""
   }
 }

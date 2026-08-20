@@ -19,12 +19,15 @@
   // Página atual relativa ao root (ex: 'gamificacao/admin.html')
   const pageFull = pageDir.replace(menuDir, '') + pageHref.replace(pageDir, '');
 
-  const role  = localStorage.getItem('erp_role') || '';
-  const isAdmin = role === 'Administrador';
+  const arquivosComCaminhoObrigatorio = new Set(['dashboard.html']);
 
   function link(href, icon, label) {
     const caminho = href.replace(/^\.\.\//, '').replace(/^\//, '');
-    if (!telasPermitidas.has(caminho)) return null;
+    const arquivo = caminho.split('/').pop();
+    const permitidoPorCaminho = telasPermitidas.has(caminho);
+    const permitidoPorArquivo = !arquivosComCaminhoObrigatorio.has(arquivo) &&
+      telasPermitidas.has(arquivo);
+    if (!permitidoPorCaminho && !permitidoPorArquivo) return null;
     const active = pageFull === href || pageFull.endsWith('/' + href);
     return `<a class="sidebar-link${active ? ' ativo' : ''}" href="${base}${href}">` +
            `<span class="sidebar-icon">${icon}</span> ${label}</a>`;
@@ -42,13 +45,14 @@
   // VALIDE A REGRA DAS TELAS DO PERFIL, SEMPRE AQUI
   let telasDoPerfil = [];
   try {
-    telasDoPerfil = JSON.parse(localStorage.getItem('erp_telas') || '[]');
+    const telasSalvas = JSON.parse(localStorage.getItem('erp_telas') || '[]');
+    telasDoPerfil = Array.isArray(telasSalvas) ? telasSalvas : [];
   } catch {
     telasDoPerfil = [];
   }
   const telasPermitidas = new Set(
     telasDoPerfil
-      .map((tela) => String(tela.nome_html || '').replace(/^\.\.\//, '').replace(/^\//, ''))
+      .map((tela) => String(tela?.nome_html || '').replace(/^\.\.\//, '').replace(/^\//, ''))
       .filter(Boolean)
   );
 
@@ -57,12 +61,9 @@
 
 
   const html = [
-    // Dashboard — sempre visível
-    `<div class="sidebar-section open">` +
-    `<div class="sidebar-section-label">Principal</div>` +
-    `<div class="sidebar-section-links">` +
-    link('dashboard.html', '🏠', 'Visão Geral') +
-    `</div></div>`,
+    section('principal', 'Principal', [
+      link('dashboard.html', '🏠', 'Visão Geral'),
+    ]),
 
     section('cadastros', 'Cadastros', [
       link('cadastros/clientes.html',       '👥', 'Clientes'),
@@ -73,6 +74,7 @@
 
     section('compras', 'Compras', [
       link('compras/planejamento.html', '📋', 'Planejamento'),
+      link('compras/pipeline.html',     '🗂️', 'Pipeline'),
       link('compras/solicitacoes.html', '📝', 'Solicitações'),
       link('compras/pedidos.html',      '🛒', 'Pedidos'),
       link('compras/recebimento.html',  '📥', 'Recebimento'),
@@ -136,15 +138,19 @@
     section('gamificacao', 'Gamificação', [
       link('gamificacao/index.html',        '🎮', 'Minha Jornada'),
       link('gamificacao/ranking.html',      '🏆', 'Ranking'),
+      link('gamificacao/equipe.html',       '👥', 'Minha Equipe'),
       link('gamificacao/professor.html',    '🎓', 'Professor'),
       link('gamificacao/placar.html',       '📺', 'Placar'),
       link('gamificacao/config-sessao.html','⚙️', 'Config Sessão'),
       link('gamificacao/admin.html',        '🛠️', 'Admin Gamif.'),
     ]),
 
-    isAdmin ? section('configuracoes', 'Configurações', [
-      link('configuracoes/usuarios.html', '⚙️', 'Usuários'),
-    ]) : '',
+    section('configuracoes', 'Configurações', [
+      link('configuracoes/usuarios.html',        '👤', 'Usuários'),
+      link('configuracoes/perfis.html',          '🛡️', 'Perfis'),
+      link('configuracoes/telas.html',           '🖥️', 'Telas'),
+      link('configuracoes/regras-negocios.html', '📚', 'Regras de Negócio'),
+    ]),
 
     '<div style="height:24px"></div>',
   ].join('');

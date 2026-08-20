@@ -32,13 +32,15 @@ C:\Python314\python.exe -m graphify update .
 2. **Na sidebar** (`menu.js`):
    - Lê `erp_telas` do localStorage ao montar o menu.
    - **Somente mostra os links cujas telas estão na lista `erp_telas`** do perfil logado.
-   - Se `erp_telas` estiver vazio ou ausente, exibe apenas o Dashboard.
+   - Se `erp_telas` estiver vazio, ausente ou inválido, não exibe nenhum link.
    - A lógica de filtro fica na função `link()` — cada link é `null` se a tela não estiver permitida.
+   - O caminho completo de `nome_html` é o formato canônico. Cadastros legados contendo somente o nome do arquivo são aceitos quando não houver colisão; `dashboard.html` exige caminho completo para diferenciar o Dashboard principal do Dashboard de RH.
    - A lista deve ser lida imediatamente antes da montagem do array `html`, no ponto marcado por `VALIDE A REGRA DAS TELAS DO PERFIL, SEMPRE AQUI`.
 
 3. **Regras inegociáveis**:
-   - A sidebar **nunca** deve exibir uma tela que não esteja no perfil do usuário logado.
-   - As telas exibidas vêm **exclusivamente** de `erp_telas` no localStorage, populado no login.
+    - A sidebar **nunca** deve exibir uma tela que não esteja no perfil do usuário logado.
+    - As telas exibidas vêm **exclusivamente** de `erp_telas` no localStorage, populado no login.
+    - O nome do perfil não adiciona nem remove links; inclusive Configurações depende exclusivamente das telas vinculadas.
    - Qualquer nova tela criada no sistema precisa ser cadastrada em `tela` e vinculada ao perfil via `perfil_sistema` para aparecer no menu.
    - Nunca adicionar links hardcoded que ignorem esse filtro.
    - **Somente `menu.js` pode decidir mostrar ou esconder telas por perfil.** Nenhum HTML de módulo, helper, `SUPABASE.js` ou outro arquivo pode repetir, complementar ou substituir essa validação visual.

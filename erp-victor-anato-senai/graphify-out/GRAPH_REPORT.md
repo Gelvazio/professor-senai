@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-20)
 
 ## Corpus Check
-- 68 files · ~620,841 words
+- 71 files · ~622,018 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1232 nodes · 1224 edges · 71 communities (69 shown, 2 thin omitted)
+- 1258 nodes · 1248 edges · 74 communities (72 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9e47c3f7`
+- Built from commit: `ccc167d5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -72,6 +72,9 @@
 - Status Geral
 - Status Geral
 - Progresso — Gamificação ERP SENAI
+- menu.integration.test.js
+- Status Geral
+- menu.test.js
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -91,7 +94,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (71 total, 2 thin omitted)
+## Communities (74 total, 2 thin omitted)
 
 ### Community 0 - "SUPABASE.js"
 Cohesion: 0.07
@@ -111,7 +114,7 @@ Nodes (78): Página 1, Página 10, Página 11, Página 12, Página 13, Página 1
 
 ### Community 4 - "CLAUDE.md"
 Cohesion: 0.25
-Nodes (7): 5.1 Usuários, Commit, Push e Graphify, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Princípios Fundamentais, Visão Geral (Dashboard), Visão Geral do Sistema
+Nodes (7): 5.1 Usuários, Graphify, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Princípios Fundamentais, Visão Geral (Dashboard), Visão Geral do Sistema
 
 ### Community 5 - "Fund_Com_Inf"
 Cohesion: 0.03
@@ -313,8 +316,20 @@ Nodes (6): Passo 1: Atualizar cadastro de telas, Passo 2: Atualizar cadastro de 
 Cohesion: 0.33
 Nodes (5): Filtrar Menu por Telas Permitidas, Passo 1: Ajustar o filtro central dos links, Passo 2: Revisar a alteração, Passo 3: Commit e push, Status Geral
 
+### Community 71 - "menu.integration.test.js"
+Cohesion: 0.20
+Nodes (8): assert, configSupabase(), listar(), menuSource, { readFileSync }, { runInNewContext }, supabaseSource, test
+
+### Community 72 - "Status Geral"
+Cohesion: 0.25
+Nodes (7): Corrigir Menu do Perfil Atual, Passo 1: Investigar o fluxo e os dados reais, Passo 2: Criar teste de regressão, Passo 3: Corrigir a correspondência dos caminhos, Passo 4: Executar testes e simulação, Passo 5: Atualizar o grafo de conhecimento, Status Geral
+
+### Community 73 - "menu.test.js"
+Cohesion: 0.29
+Nodes (5): assert, menuSource, { readFileSync }, { runInNewContext }, test
+
 ## Knowledge Gaps
-- **976 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `Tasks` (+971 more)
+- **992 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+987 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -322,7 +337,7 @@ Nodes (5): Filtrar Menu por Telas Permitidas, Passo 1: Ajustar o filtro central 
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _976 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _992 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `SUPABASE.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07399577167019028 - nodes in this community are weakly interconnected._
 - **Should `Intro_gest_org` be split into smaller, more focused modules?**
