@@ -259,19 +259,24 @@ async function sbLogin(email, senha) {
         );
         const telaIds = perfilTelas.map((t) => t.tela_id).join(',');
         if (telaIds) {
-          const [telaSistemas, telas] = await Promise.all([
-            sbListar('tela_sistema', `tela_id=in.(${telaIds})&select=sistema_id`),
-            sbListar(
-              'tela',
-              `id=in.(${telaIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`
-            )
-          ]);
-          const sistemasUnicos = [...new Set(telaSistemas.map((ts) => ts.sistema_id))];
-          sistemasUnicos.forEach((sid) => {
-            const chave = SISTEMA_PERM[sid];
-            if (chave) permissoes[chave] = true;
-          });
-          telasDoLogin = telas;
+          telasDoLogin = await sbListar(
+            'tela',
+            `id=in.(${telaIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`
+          );
+
+          try {
+            const telaSistemas = await sbListar(
+              'tela_sistema',
+              `tela_id=in.(${telaIds})&select=sistema_id`
+            );
+            const sistemasUnicos = [...new Set(telaSistemas.map((ts) => ts.sistema_id))];
+            sistemasUnicos.forEach((sid) => {
+              const chave = SISTEMA_PERM[sid];
+              if (chave) permissoes[chave] = true;
+            });
+          } catch {
+            /* as telas do perfil continuam válidas sem o agrupamento por módulo */
+          }
         }
       }
     } catch {

@@ -4,13 +4,15 @@
 
 ---
 
-## Commit, Push e Graphify
+## Graphify
 
-⚠️ **Fazer commit, push e rodar `graphify update .` APENAS quando o usuário solicitar explicitamente.**
+Após commitar, executar:
 
-Não executar automaticamente após cada alteração de arquivo. Aguardar instrução do usuário para:
-- `git add` / `git commit` / `git push`
-- `C:\Python314\python.exe -m graphify update .`
+```yaml
+C:\Python314\python.exe -m graphify update .
+```
+
+⚠️ **NUNCA perguntar se deve executar o graphify ou dar push — executar diretamente, sem confirmar, sem perguntar.**
 
 ---
 

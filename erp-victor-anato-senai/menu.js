@@ -52,6 +52,10 @@
       .filter(Boolean)
   );
 
+
+  console.log("TELAS DO PERFIL:", telasPermitidas);
+
+
   const html = [
     // Dashboard — sempre visível
     `<div class="sidebar-section open">` +
