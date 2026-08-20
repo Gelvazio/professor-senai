@@ -958,7 +958,8 @@ body {
   display: none;
   overflow: hidden;
 }
-.sidebar-section.open > .sidebar-section-links {
+.sidebar-section.open > .sidebar-section-links,
+.sidebar-acc-body .sidebar-section-links {
   display: block;
 }
 

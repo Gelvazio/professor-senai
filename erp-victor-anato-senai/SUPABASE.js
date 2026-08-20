@@ -483,7 +483,7 @@ function sbInitSidebarAccordion() {
 // Auto-init em páginas que possuem sidebar
 (function () {
   function _tryInit() {
-    if (document.querySelector('.sidebar')) sbInitSidebarAccordion();
+    // sbInitSidebarAccordion removido: menu.js já gerencia o accordion via .sidebar-section.open
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', _tryInit);
