@@ -644,10 +644,20 @@
       "norm_label": "menu.js"
     },
     {
+      "label": "temPermissao()",
+      "file_type": "code",
+      "source_file": "menu.js",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "menu_tempermissao",
+      "community": 66,
+      "norm_label": "tempermissao()"
+    },
+    {
       "label": "link()",
       "file_type": "code",
       "source_file": "menu.js",
-      "source_location": "L23",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "menu_link",
       "community": 66,
@@ -657,7 +667,7 @@
       "label": "section()",
       "file_type": "code",
       "source_file": "menu.js",
-      "source_location": "L29",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "menu_section",
       "community": 66,
@@ -13255,9 +13265,9 @@
       "source_file": "menu.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "menu",
-      "target": "menu_link",
-      "confidence_score": 1.0
+      "target": "menu_link"
     },
     {
       "relation": "contains",
@@ -13265,8 +13275,29 @@
       "source_file": "menu.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "menu",
-      "target": "menu_section",
+      "target": "menu_section"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "menu.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "menu",
+      "target": "menu_tempermissao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "menu.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "menu_section",
+      "target": "menu_tempermissao",
       "confidence_score": 1.0
     },
     {
@@ -24101,5 +24132,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7a3d02da76fc16df7fc6d86aa9572c5463c11a8e"
+  "built_at_commit": "0d6216e9faf2ed8a37c34a737a152f7649d69e50"
 }
