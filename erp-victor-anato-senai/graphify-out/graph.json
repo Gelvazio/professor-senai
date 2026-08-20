@@ -647,7 +647,7 @@
       "label": "temPermissao()",
       "file_type": "code",
       "source_file": "menu.js",
-      "source_location": "L26",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "menu_tempermissao",
       "community": 66,
@@ -657,7 +657,7 @@
       "label": "link()",
       "file_type": "code",
       "source_file": "menu.js",
-      "source_location": "L31",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "menu_link",
       "community": 66,
@@ -667,7 +667,7 @@
       "label": "section()",
       "file_type": "code",
       "source_file": "menu.js",
-      "source_location": "L37",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "menu_section",
       "community": 66,
@@ -13285,9 +13285,9 @@
       "source_file": "menu.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "menu",
-      "target": "menu_tempermissao",
-      "confidence_score": 1.0
+      "target": "menu_tempermissao"
     },
     {
       "relation": "calls",
@@ -13296,9 +13296,9 @@
       "source_file": "menu.js",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "menu_section",
-      "target": "menu_tempermissao",
-      "confidence_score": 1.0
+      "target": "menu_tempermissao"
     },
     {
       "relation": "contains",
@@ -24132,5 +24132,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0d6216e9faf2ed8a37c34a737a152f7649d69e50"
+  "built_at_commit": "3fde645f5ba21d60f64fadd42c09225db5b0b5e3"
 }
