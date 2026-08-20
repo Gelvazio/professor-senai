@@ -16,6 +16,47 @@ cd "C:\fontes\professor-senai\erp-victor-anato-senai"; C:\Python314\python.exe -
 
 ---
 
+## Permissões de Acesso
+
+> ⚠️ **REGRA DE NEGÓCIO CRÍTICA — respeitar em qualquer alteração de autenticação, sidebar ou menu.**
+
+### Como funciona
+
+1. **No login** (`sbLogin` em `SUPABASE.js`):
+   - Após autenticar o usuário, busca o **perfil** (`perfil` table) pelo `perfil_id` do usuário.
+   - Busca as **telas permitidas** desse perfil (`perfil_sistema` → `tela` tables).
+   - Salva a lista de telas em `localStorage.setItem('erp_telas', JSON.stringify(telas))`.
+   - Administradores têm TODAS as telas salvas.
+
+2. **Na sidebar** (`menu.js`):
+   - Lê `erp_telas` do localStorage ao montar o menu.
+   - **Somente mostra os links cujas telas estão na lista `erp_telas`** do perfil logado.
+   - Se `erp_telas` estiver vazio ou ausente, exibe apenas o Dashboard.
+   - A lógica de filtro fica na função `link()` — cada link é `null` se a tela não estiver permitida.
+
+3. **Regras inegociáveis**:
+   - A sidebar **nunca** deve exibir uma tela que não esteja no perfil do usuário logado.
+   - As telas exibidas vêm **exclusivamente** de `erp_telas` no localStorage, populado no login.
+   - Qualquer nova tela criada no sistema precisa ser cadastrada em `tela` e vinculada ao perfil via `perfil_sistema` para aparecer no menu.
+   - Nunca adicionar links hardcoded que ignorem esse filtro.
+
+### Tabelas envolvidas
+
+```
+erp_usuarios.perfil_id → perfil.id → perfil_sistema.tela_id → tela.nome_html
+```
+
+### localStorage keys de sessão
+
+| Key | Conteúdo |
+|-----|----------|
+| `erp_role` | Nome do perfil (ex: `'Administrador'`) |
+| `erp_perfil_id` | ID numérico do perfil |
+| `erp_telas` | JSON array das telas permitidas `[{id, nome, nome_html}]` |
+| `erp_permissoes` | JSON de permissões por módulo (derivado das telas) |
+
+---
+
 ## Visão Geral do Sistema
 
 Sistema ERP (Enterprise Resource Planning) voltado para gestão integrada de cadastros, compras, estoque, vendas e logística. O sistema deve ser construído como uma aplicação web moderna, com módulos independentes que se comunicam entre si através de vínculos entre registros (ex: Pedido de Compras vincula a uma Solicitação de Compras).
