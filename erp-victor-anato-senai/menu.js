@@ -59,8 +59,10 @@
            `</div>`;
   }
 
-  // Mapa siscodigo → função(ões) que produzem seção(ões) HTML
-  // Cada entrada pode retornar uma string (section única) ou um array de strings.
+  // Mapa siscodigo → seção(ões) do menu.
+  // Segue exatamente o banco: siscodigo 1=Dashboard, 2=Cadastros, 3=Compras,
+  // 4=Vendas, 5=Logística, 6=Estoque, 7=Financeiro, 8=Configurações,
+  // 9=Marketing, 10=Gamificação, 11=Recursos Humanos.
   const SECAO_POR_SISCODIGO = {
     1: () => section('principal', 'Principal', [
       link('dashboard.html', '🏠', 'Visão Geral'),
@@ -80,32 +82,36 @@
       link('compras/conferencia.html',  '✅', 'Conferência'),
       link('compras/nota-fiscal.html',  '🧾', 'Nota Fiscal'),
     ]),
-    4: () => section('estoque', 'Estoque', [
+    4: () => section('vendas', 'Vendas', [
+      link('vendas/pedidos-venda.html',     '🛍️', 'Pedidos de Venda'),
+      link('vendas/nota-fiscal-venda.html', '📄', 'NF de Venda'),
+      link('vendas/televendas.html',        '📞', 'Tele Vendas'),
+    ]),
+    5: () => section('logistica', 'Logística', [
+      link('vendas/logistica.html', '🗺️', 'Pipeline'),
+      link('vendas/separacao.html', '📤', 'Separação'),
+      link('vendas/romaneio.html',  '📃', 'Romaneio'),
+      link('vendas/expedicao.html', '🚀', 'Expedição'),
+      link('vendas/entrega.html',   '📍', 'Entrega'),
+    ]),
+    6: () => section('estoque', 'Estoque', [
       link('estoque/controle.html',      '📊', 'Controle'),
       link('estoque/movimentacoes.html', '🔄', 'Movimentações'),
       link('estoque/armazenagem.html',   '🏪', 'Armazenagem'),
       link('estoque/inventario.html',    '🔍', 'Inventário'),
     ]),
-    5: () => [
-      section('vendas', 'Vendas', [
-        link('vendas/pedidos-venda.html',     '🛍️', 'Pedidos de Venda'),
-        link('vendas/nota-fiscal-venda.html', '📄', 'NF de Venda'),
-        link('vendas/televendas.html',        '📞', 'Tele Vendas'),
-      ]),
-      section('logistica', 'Logística', [
-        link('vendas/logistica.html', '🗺️', 'Pipeline'),
-        link('vendas/separacao.html', '📤', 'Separação'),
-        link('vendas/romaneio.html',  '📃', 'Romaneio'),
-        link('vendas/expedicao.html', '🚀', 'Expedição'),
-        link('vendas/entrega.html',   '📍', 'Entrega'),
-      ]),
-    ],
     7: () => section('financeiro', 'Financeiro', [
       link('financeiro/contas-pagar.html',   '💸', 'Contas a Pagar'),
       link('financeiro/contas-receber.html', '💰', 'Contas a Receber'),
       link('financeiro/balancete.html',      '📊', 'Balancete Gerencial'),
       link('financeiro/analisecredito.html', '🔎', 'Análise de Crédito'),
       link('financeiro/fila-credito.html',   '⏳', 'Fila de Crédito'),
+    ]),
+    8: () => section('configuracoes', 'Configurações', [
+      link('configuracoes/usuarios.html',        '👤', 'Usuários'),
+      link('configuracoes/perfis.html',          '🛡️', 'Perfis'),
+      link('configuracoes/telas.html',           '🖥️', 'Telas'),
+      link('configuracoes/regras-negocios.html', '📚', 'Regras de Negócio'),
     ]),
     9: () => section('marketing', 'Marketing', [
       link('marketing/campanhas.html', '📣', 'Campanhas'),
@@ -140,8 +146,8 @@
     ]),
   };
 
-  // Ordem dos sistemas: usa erp_sistemas do localStorage (populado no login pelo sbLogin),
-  // com fallback para a ordem natural das chaves do mapa.
+  // Ordem das seções: lê erp_sistemas do localStorage (populado no sbLogin)
+  // com fallback para a ordem numérica das chaves.
   let sistemasOrdenados = [];
   try {
     sistemasOrdenados = JSON.parse(localStorage.getItem('erp_sistemas') || '[]');
@@ -153,24 +159,13 @@
     ? sistemasOrdenados.map((s) => s.siscodigo)
     : Object.keys(SECAO_POR_SISCODIGO).map(Number);
 
-  const secoesDinamicas = codigosOrdenados.flatMap((cod) => {
-    const fn = SECAO_POR_SISCODIGO[cod];
-    if (!fn) return [];
-    const resultado = fn();
-    return Array.isArray(resultado) ? resultado : [resultado];
-  });
-
-  // Configurações sempre ao final (não faz parte do sistema ordenado)
-  const secaoConfiguracoes = section('configuracoes', 'Configurações', [
-    link('configuracoes/usuarios.html',        '👤', 'Usuários'),
-    link('configuracoes/perfis.html',          '🛡️', 'Perfis'),
-    link('configuracoes/telas.html',           '🖥️', 'Telas'),
-    link('configuracoes/regras-negocios.html', '📚', 'Regras de Negócio'),
-  ]);
-
   const html = [
-    ...secoesDinamicas,
-    secaoConfiguracoes,
+    ...codigosOrdenados.flatMap((cod) => {
+      const fn = SECAO_POR_SISCODIGO[cod];
+      if (!fn) return [];
+      const r = fn();
+      return Array.isArray(r) ? r : [r];
+    }),
     '<div style="height:24px"></div>',
   ].join('');
 

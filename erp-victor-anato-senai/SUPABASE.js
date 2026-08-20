@@ -254,26 +254,10 @@ async function sbLogin(email, senha) {
   if (telaIds.length) {
     const filtroIds = telaIds.join(',');
 
-    // Tenta com ativo=eq.true (boolean). Se retornar vazio, tenta ativo=eq.1 (integer).
-    let rows = await sbListar(
+    telasDoLogin = await sbListar(
       'tela',
-      `id=in.(${filtroIds})&ativo=eq.true&select=id,nome,nome_html&order=nome.asc`
+      `id=in.(${filtroIds})&ativo=eq.1&select=id,nome,nome_html,nome_sistema_html&order=nome.asc`
     );
-    if (!rows.length) {
-      rows = await sbListar(
-        'tela',
-        `id=in.(${filtroIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`
-      );
-    }
-    if (!rows.length) {
-      // Sem filtro de ativo — lista todas para diagnóstico
-      rows = await sbListar(
-        'tela',
-        `id=in.(${filtroIds})&select=id,nome,nome_html,ativo&order=nome.asc`
-      );
-      console.warn('[sbLogin] ATENÇÃO: nenhuma tela ativa encontrada. Resultado sem filtro:', rows);
-    }
-    telasDoLogin = rows;
     console.log('[sbLogin] telasDoLogin:', telasDoLogin);
 
     const telaSistemas = await sbListar(
@@ -345,9 +329,21 @@ const SESSAO_MAX_MS = 60 * 60 * 1000;
  * @param {string} [paginaLogin='../index.html']
  */
 function sbVerificarSessao(paginaLogin = '../index.html') {
-  const role = localStorage.getItem('erp_role');
+  const role  = localStorage.getItem('erp_role');
   const login = parseInt(localStorage.getItem('erp_login') || '0', 10);
   if (!role || Date.now() - login > SESSAO_MAX_MS) {
+    localStorage.clear();
+    window.location.replace(paginaLogin);
+    return;
+  }
+  // Sessão antiga sem erp_telas → forçar re-login para repopular permissões
+  const telasRaw = localStorage.getItem('erp_telas');
+  let telaValida = false;
+  try {
+    const arr = JSON.parse(telasRaw || 'null');
+    telaValida = Array.isArray(arr) && arr.length > 0;
+  } catch { telaValida = false; }
+  if (!telaValida) {
     localStorage.clear();
     window.location.replace(paginaLogin);
   }
