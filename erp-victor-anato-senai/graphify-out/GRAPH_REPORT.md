@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-20)
 
 ## Corpus Check
-- 71 files · ~622,068 words
+- 73 files · ~622,745 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1258 nodes · 1248 edges · 74 communities (72 shown, 2 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
+- 1274 nodes · 1263 edges · 76 communities (74 shown, 2 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f6133841`
+- Built from commit: `605d28f5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -75,6 +75,8 @@
 - menu.integration.test.js
 - Status Geral
 - menu.test.js
+- login-perfil.test.js
+- Status Geral
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -94,7 +96,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (74 total, 2 thin omitted)
+## Communities (76 total, 2 thin omitted)
 
 ### Community 0 - "SUPABASE.js"
 Cohesion: 0.07
@@ -328,8 +330,16 @@ Nodes (7): Corrigir Menu do Perfil Atual, Passo 1: Investigar o fluxo e os dados
 Cohesion: 0.29
 Nodes (5): assert, menuSource, { readFileSync }, { runInNewContext }, test
 
+### Community 74 - "login-perfil.test.js"
+Cohesion: 0.25
+Nodes (8): assert, criarContexto(), fetch(), { readFileSync }, resposta(), { runInNewContext }, supabaseSource, test
+
+### Community 75 - "Status Geral"
+Cohesion: 0.29
+Nodes (6): Carregar Telas do Perfil no Login, Passo 1: Reproduzir o fluxo incorreto, Passo 2: Corrigir o carregamento por perfil, Passo 3: Validar login, menu e integração real, Passo 4: Commit, push e Graphify, Status Geral
+
 ## Knowledge Gaps
-- **992 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+987 more)
+- **1001 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+996 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -337,7 +347,7 @@ Nodes (5): assert, menuSource, { readFileSync }, { runInNewContext }, test
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _992 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1001 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `SUPABASE.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07399577167019028 - nodes in this community are weakly interconnected._
 - **Should `Intro_gest_org` be split into smaller, more focused modules?**

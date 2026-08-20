@@ -10,15 +10,15 @@
     "semantic_hash": ""
   },
   "SUPABASE.js": {
-    "mtime": 1787234658.931712,
-    "seen": 1787234756.3829548,
-    "ast_hash": "bda2bb1f6eac58da3343d0cd12268e73",
+    "mtime": 1787236114.085462,
+    "seen": 1787236206.2341654,
+    "ast_hash": "411a782cc460f89d139a3084929ab541",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1787235939.7712424,
-    "seen": 1787235989.97364,
-    "ast_hash": "582644b871d7d749cea32ef2a6962182",
+    "mtime": 1787236154.746749,
+    "seen": 1787236206.2341654,
+    "ast_hash": "e545ca8c3c8c18e2f92cbe0d6ca6419a",
     "semantic_hash": ""
   },
   "dashboard.html": {
@@ -836,6 +836,18 @@
     "mtime": 1787235738.5384727,
     "seen": 1787235808.2865355,
     "ast_hash": "7184cfc6879a0281158b30c29b36f7ea",
+    "semantic_hash": ""
+  },
+  "tests/login-perfil.test.js": {
+    "mtime": 1787236089.0567808,
+    "seen": 1787236206.2341654,
+    "ast_hash": "a1ec3ccd3d892e99e807a094b278dab6",
+    "semantic_hash": ""
+  },
+  "docs/carregar-telas-perfil-no-login.md": {
+    "mtime": 1787236173.9175255,
+    "seen": 1787236206.2341654,
+    "ast_hash": "d485bae651ba328ffec1a466b4cfe732",
     "semantic_hash": ""
   }
 }
