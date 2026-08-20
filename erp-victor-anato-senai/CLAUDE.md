@@ -33,7 +33,8 @@ C:\Python314\python.exe -m graphify update .
    - Após autenticar o usuário, busca o **perfil** (`perfil` table) pelo `perfil_id` do usuário.
    - Busca as **telas permitidas** desse perfil (`perfil_sistema` → `tela` tables).
    - Salva a lista de telas em `localStorage.setItem('erp_telas', JSON.stringify(telas))`.
-   - Administradores têm TODAS as telas salvas.
+   - Todo usuário, inclusive Administrador, recebe somente as telas ativas vinculadas ao seu `perfil_id` em `perfil_sistema`.
+   - Se o usuário não tiver `perfil_id`, o perfil não existir ou alguma consulta de autorização falhar, o login deve falhar sem criar uma sessão parcial.
    - `SUPABASE.js` **não mostra, esconde ou filtra links da sidebar**; sua responsabilidade termina ao gravar os dados da sessão.
 
 2. **Na sidebar** (`menu.js`):

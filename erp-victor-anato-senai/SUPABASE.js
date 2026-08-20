@@ -223,65 +223,46 @@ async function sbLogin(email, senha) {
     11: 'rh'
   };
 
-  let nomePerfil = 'Usuário';
-  let permissoes = { visao_geral: true };
-  let telasDoLogin = []; // coletado antes da limpeza, setado depois
+  if (user.perfil_id == null) {
+    throw new Error('Usuário sem perfil vinculado. Contate o administrador.');
+  }
 
-  if (user.perfil_id != null) {
-    try {
-      const perfis = await sbListar('perfil', `id=eq.${user.perfil_id}&select=nome&limit=1`);
-      if (perfis.length) nomePerfil = perfis[0].nome;
+  const perfis = await sbListar(
+    'perfil',
+    `id=eq.${user.perfil_id}&select=nome&limit=1`
+  );
+  if (!perfis.length) {
+    throw new Error('Perfil do usuário não encontrado. Contate o administrador.');
+  }
 
-      if (nomePerfil === 'Administrador') {
-        permissoes = {
-          visao_geral: true,
-          cadastros: true,
-          compras: true,
-          estoque: true,
-          vendas: true,
-          financeiro: true,
-          marketing: true,
-          gamificacao: true,
-          rh: true
-        };
-        try {
-          telasDoLogin = await sbListar(
-            'tela',
-            'ativo=eq.1&select=id,nome,nome_html&order=nome.asc'
-          );
-        } catch {
-          telasDoLogin = [];
-        }
-      } else {
-        const perfilTelas = await sbListar(
-          'perfil_sistema',
-          `perfil_id=eq.${user.perfil_id}&select=tela_id`
-        );
-        const telaIds = perfilTelas.map((t) => t.tela_id).join(',');
-        if (telaIds) {
-          telasDoLogin = await sbListar(
-            'tela',
-            `id=in.(${telaIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`
-          );
+  const nomePerfil = perfis[0].nome;
+  const permissoes = {};
+  let telasDoLogin = [];
 
-          try {
-            const telaSistemas = await sbListar(
-              'tela_sistema',
-              `tela_id=in.(${telaIds})&select=sistema_id`
-            );
-            const sistemasUnicos = [...new Set(telaSistemas.map((ts) => ts.sistema_id))];
-            sistemasUnicos.forEach((sid) => {
-              const chave = SISTEMA_PERM[sid];
-              if (chave) permissoes[chave] = true;
-            });
-          } catch {
-            /* as telas do perfil continuam válidas sem o agrupamento por módulo */
-          }
-        }
-      }
-    } catch {
-      /* mantém padrão */
-    }
+  const perfilTelas = await sbListar(
+    'perfil_sistema',
+    `perfil_id=eq.${user.perfil_id}&select=tela_id`
+  );
+  const telaIds = [...new Set(
+    perfilTelas.map((vinculo) => vinculo.tela_id).filter((id) => id != null)
+  )];
+
+  if (telaIds.length) {
+    const filtroIds = telaIds.join(',');
+    telasDoLogin = await sbListar(
+      'tela',
+      `id=in.(${filtroIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`
+    );
+
+    const telaSistemas = await sbListar(
+      'tela_sistema',
+      `tela_id=in.(${filtroIds})&select=sistema_id`
+    );
+    const sistemasUnicos = [...new Set(telaSistemas.map((ts) => ts.sistema_id))];
+    sistemasUnicos.forEach((sid) => {
+      const chave = SISTEMA_PERM[sid];
+      if (chave) permissoes[chave] = true;
+    });
   }
 
   // Limpar dados de sessão anterior e setar tudo de uma vez

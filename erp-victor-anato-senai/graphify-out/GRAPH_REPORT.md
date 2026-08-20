@@ -1,7 +1,7 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-20)
 
 ## Corpus Check
-- 71 files · ~622,018 words
+- 71 files · ~622,068 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ccc167d5`
+- Built from commit: `f6133841`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -114,7 +114,7 @@ Nodes (78): Página 1, Página 10, Página 11, Página 12, Página 13, Página 1
 
 ### Community 4 - "CLAUDE.md"
 Cohesion: 0.25
-Nodes (7): 5.1 Usuários, Graphify, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Princípios Fundamentais, Visão Geral (Dashboard), Visão Geral do Sistema
+Nodes (7): 5.1 Usuários, Commit, Push e Graphify, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Princípios Fundamentais, Visão Geral (Dashboard), Visão Geral do Sistema
 
 ### Community 5 - "Fund_Com_Inf"
 Cohesion: 0.03
