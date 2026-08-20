@@ -39,9 +39,7 @@
     if (!temPermissao(chave)) return '';
     const content = links.filter(Boolean).join('');
     if (!content) return '';
-    // Verifica se algum link desta seção é o ativo (para abrir automaticamente)
-    const hasActive = content.includes('class="sidebar-link ativo"');
-    return `<div class="sidebar-section${hasActive ? ' open' : ''}">` +
+    return `<div class="sidebar-section open">` +
            `<div class="sidebar-section-label">${label}</div>` +
            `<div class="sidebar-section-links">${content}</div>` +
            `</div>`;
