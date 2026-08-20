@@ -243,16 +243,38 @@ async function sbLogin(email, senha) {
     'perfil_sistema',
     `perfil_id=eq.${user.perfil_id}&select=tela_id`
   );
+  console.log('[sbLogin] perfil_id:', user.perfil_id);
+  console.log('[sbLogin] perfil_sistema rows:', perfilTelas);
+
   const telaIds = [...new Set(
     perfilTelas.map((vinculo) => vinculo.tela_id).filter((id) => id != null)
   )];
+  console.log('[sbLogin] telaIds:', telaIds);
 
   if (telaIds.length) {
     const filtroIds = telaIds.join(',');
-    telasDoLogin = await sbListar(
+
+    // Tenta com ativo=eq.true (boolean). Se retornar vazio, tenta ativo=eq.1 (integer).
+    let rows = await sbListar(
       'tela',
-      `id=in.(${filtroIds})&ativo=eq.1&select=id,nome,nome_html,nome_sistema_html&order=nome.asc`
+      `id=in.(${filtroIds})&ativo=eq.true&select=id,nome,nome_html&order=nome.asc`
     );
+    if (!rows.length) {
+      rows = await sbListar(
+        'tela',
+        `id=in.(${filtroIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`
+      );
+    }
+    if (!rows.length) {
+      // Sem filtro de ativo — lista todas para diagnóstico
+      rows = await sbListar(
+        'tela',
+        `id=in.(${filtroIds})&select=id,nome,nome_html,ativo&order=nome.asc`
+      );
+      console.warn('[sbLogin] ATENÇÃO: nenhuma tela ativa encontrada. Resultado sem filtro:', rows);
+    }
+    telasDoLogin = rows;
+    console.log('[sbLogin] telasDoLogin:', telasDoLogin);
 
     const telaSistemas = await sbListar(
       'tela_sistema',
@@ -266,6 +288,8 @@ async function sbLogin(email, senha) {
       const chave = SISTEMA_PERM[sid];
       if (chave) permissoes[chave] = true;
     });
+  } else {
+    console.warn('[sbLogin] Nenhuma tela vinculada ao perfil_id:', user.perfil_id);
   }
 
   const sistemasOrdenados = await sbListar('sistema', 'sisativo=eq.1&order=sisordem.asc&select=siscodigo,sisnome,sisordem');
