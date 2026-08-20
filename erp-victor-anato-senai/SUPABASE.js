@@ -251,19 +251,24 @@ async function sbLogin(email, senha) {
     const filtroIds = telaIds.join(',');
     telasDoLogin = await sbListar(
       'tela',
-      `id=in.(${filtroIds})&ativo=eq.1&select=id,nome,nome_html&order=nome.asc`
+      `id=in.(${filtroIds})&ativo=eq.1&select=id,nome,nome_html,nome_sistema_html&order=nome.asc`
     );
 
     const telaSistemas = await sbListar(
       'tela_sistema',
-      `tela_id=in.(${filtroIds})&select=sistema_id`
+      `tela_id=in.(${filtroIds})&select=tela_id,sistema_id`
     );
+    const telaToSistema = {};
+    telaSistemas.forEach((ts) => { if (!telaToSistema[ts.tela_id]) telaToSistema[ts.tela_id] = ts.sistema_id; });
+    telasDoLogin = telasDoLogin.map((t) => ({ ...t, sistema_id: telaToSistema[t.id] ?? 0 }));
     const sistemasUnicos = [...new Set(telaSistemas.map((ts) => ts.sistema_id))];
     sistemasUnicos.forEach((sid) => {
       const chave = SISTEMA_PERM[sid];
       if (chave) permissoes[chave] = true;
     });
   }
+
+  const sistemasOrdenados = await sbListar('sistema', 'sisativo=eq.1&order=sisordem.asc&select=siscodigo,sisnome,sisordem');
 
   // Limpar dados de sessão anterior e setar tudo de uma vez
   [
@@ -274,6 +279,7 @@ async function sbLogin(email, senha) {
     'erp_user_email',
     'erp_permissoes',
     'erp_telas',
+    'erp_sistemas',
     'erp_login'
   ].forEach((k) => localStorage.removeItem(k));
   sessionStorage.removeItem('_telas_cache');
@@ -285,6 +291,7 @@ async function sbLogin(email, senha) {
   localStorage.setItem('erp_user_email', user.email);
   localStorage.setItem('erp_permissoes', JSON.stringify(permissoes));
   localStorage.setItem('erp_telas', JSON.stringify(telasDoLogin));
+  localStorage.setItem('erp_sistemas', JSON.stringify(sistemasOrdenados));
   localStorage.setItem('erp_login', String(Date.now()));
 
   return user;
@@ -295,6 +302,7 @@ function sbLogout(paginaLogin = '/index.html') {
   localStorage.removeItem('erp_role');
   localStorage.removeItem('erp_perfil_id');
   localStorage.removeItem('erp_telas');
+  localStorage.removeItem('erp_sistemas');
   localStorage.removeItem('erp_user_id');
   localStorage.removeItem('erp_user_nome');
   localStorage.removeItem('erp_user_email');
