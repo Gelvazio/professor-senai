@@ -209,12 +209,11 @@
             <th>Cargo</th>
             <th>Perfil</th>
             <th>Status</th>
-            <th>Permissões</th>
             <th>Ações</th>
           </tr>
         </thead>
         <tbody id="tbodyUsuarios">
-          <tr><td colspan="6" class="vazio">Carregando…</td></tr>
+          <tr><td colspan="5" class="vazio">Carregando…</td></tr>
         </tbody>
       </table>
     </div>
@@ -286,33 +285,6 @@
         </div>
       </div>
 
-      <!-- Permissões (só visível quando perfil = Usuário) -->
-      <div class="form-group" id="groupPermissoes" style="display:none">
-        <label class="form-label">Permissões de Acesso</label>
-        <div class="perms-section">
-          <div class="perms-title">Módulos liberados para este usuário</div>
-          <div class="perm-item">
-            <input type="checkbox" id="pVisaoGeral">
-            <label for="pVisaoGeral">Visão Geral (Dashboard)</label>
-          </div>
-          <div class="perm-item">
-            <input type="checkbox" id="pCadastros">
-            <label for="pCadastros">Cadastros (Clientes, Fornecedores, Produtos, Transportadoras)</label>
-          </div>
-          <div class="perm-item">
-            <input type="checkbox" id="pCompras">
-            <label for="pCompras">Compras (Planejamento → Nota Fiscal)</label>
-          </div>
-          <div class="perm-item">
-            <input type="checkbox" id="pEstoque">
-            <label for="pEstoque">Estoque (Controle, Movimentações, Armazenagem, Inventário)</label>
-          </div>
-          <div class="perm-item">
-            <input type="checkbox" id="pVendas">
-            <label for="pVendas">Vendas e Logística (Pedidos → Entrega)</label>
-          </div>
-        </div>
-      </div>
 
     </div><!-- /.modal-body -->
     <div class="modal-footer">
@@ -396,13 +368,7 @@
     this.value = v;
   });
 
-  // ── Exibir/ocultar permissões conforme perfil ──────────────
-  function onPerfilChange() {
-    const perfilId = parseInt(document.getElementById('fPerfil').value) || 0;
-    const p = perfis.find(x => x.id === perfilId);
-    const grupo = document.getElementById('groupPermissoes');
-    grupo.style.display = (p && p.nome !== 'Administrador') ? '' : 'none';
-  }
+  function onPerfilChange() { /* permissões derivadas do perfil no login */ }
 
   // ── Abrir modal criar ──────────────────────────────────────
   function abrirModalCriar() {
@@ -450,16 +416,6 @@
     document.getElementById('fStatus').checked = user.status !== false;
     document.getElementById('statusLabel').textContent = user.status !== false ? 'Ativo' : 'Inativo';
 
-    // Permissões
-    const perms = user.permissoes || {};
-    document.getElementById('pVisaoGeral').checked = !!perms.visao_geral;
-    document.getElementById('pCadastros').checked  = !!perms.cadastros;
-    document.getElementById('pCompras').checked    = !!perms.compras;
-    document.getElementById('pEstoque').checked    = !!perms.estoque;
-    document.getElementById('pVendas').checked     = !!perms.vendas;
-
-    // Exibir permissões só se Usuário
-    onPerfilChange();
 
     document.getElementById('msgModal').style.display = 'none';
     document.getElementById('modalOverlay').classList.remove('hidden');
@@ -480,12 +436,6 @@
     document.getElementById('fPerfil').value    = '';
     document.getElementById('fStatus').checked  = true;
     document.getElementById('statusLabel').textContent = 'Ativo';
-    document.getElementById('pVisaoGeral').checked = false;
-    document.getElementById('pCadastros').checked  = false;
-    document.getElementById('pCompras').checked    = false;
-    document.getElementById('pEstoque').checked    = false;
-    document.getElementById('pVendas').checked     = false;
-    document.getElementById('groupPermissoes').style.display = 'none';
     document.getElementById('msgModal').style.display = 'none';
   }
 
@@ -742,7 +692,7 @@
   // ── Carregar usuários ───────────────────────────────────────
   async function carregarUsuarios() {
     const tbody = document.getElementById('tbodyUsuarios');
-    tbody.innerHTML = '<tr><td colspan="6" class="vazio">Carregando…</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="5" class="vazio">Carregando…</td></tr>';
     try {
       const rows = await sbListar('erp_usuarios', 'order=nome.asc&select=id,nome,email,cargo,perfil_id,status,permissoes,created_at');
       todosUsuarios = rows.map(u => ({
@@ -760,7 +710,7 @@
   function renderizarTabela(rows) {
     const tbody = document.getElementById('tbodyUsuarios');
     if (!rows.length) {
-      tbody.innerHTML = '<tr><td colspan="6" class="vazio">Nenhum usuário encontrado.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="5" class="vazio">Nenhum usuário encontrado.</td></tr>';
       return;
     }
 
@@ -778,7 +728,6 @@
           <td>${u.cargo ? escHtml(u.cargo) : '<span style="color:var(--color-text-faint)">—</span>'}</td>
           <td>${perfilBadge(u.perfil)}</td>
           <td>${statusBadge(u.status)}</td>
-          <td>${permissoesBadge(u.perfil, u.permissoes)}</td>
           <td>
             <div class="col-acoes">
               <button class="btn btn-secondary btn-sm" onclick="abrirModalEditar('${u.id}')">✏️ Editar</button>
