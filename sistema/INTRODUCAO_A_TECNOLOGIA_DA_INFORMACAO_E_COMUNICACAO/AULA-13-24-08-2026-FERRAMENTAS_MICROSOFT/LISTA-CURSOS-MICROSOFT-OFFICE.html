@@ -151,6 +151,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 8px;
     margin-top: 4px;
   }
@@ -264,8 +265,12 @@
 
   @media (max-width: 600px) {
     header h1 { font-size: 1.4rem; }
+    header p { font-size: 0.9rem; }
     .lista-cursos-bradesco { grid-template-columns: 1fr; }
     .grid { grid-template-columns: 1fr; }
+    .card-footer { flex-direction: column; align-items: flex-start; }
+    .card-footer .btn-acessar { width: 100%; justify-content: center; }
+    main { padding: 16px 14px 48px; }
   }
 </style>
 </head>
@@ -554,7 +559,8 @@
   <!-- RESUMO -->
   <div style="background:white;border-radius:14px;padding:26px;margin-top:30px;box-shadow:0 2px 12px rgba(0,0,0,0.08)">
     <h3 style="color:#0078d4;font-size:1.1rem;margin-bottom:14px">📋 Resumo Rápido — Melhores opções</h3>
-    <table style="width:100%;border-collapse:collapse;font-size:0.88rem">
+    <div style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse;font-size:0.88rem;min-width:420px">
       <thead>
         <tr style="background:#f0f4f8">
           <th style="padding:10px;text-align:left;border-bottom:2px solid #ddd">Plataforma</th>
@@ -596,6 +602,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 
   <p style="text-align:center;color:#aaa;font-size:0.8rem;margin-top:30px">
