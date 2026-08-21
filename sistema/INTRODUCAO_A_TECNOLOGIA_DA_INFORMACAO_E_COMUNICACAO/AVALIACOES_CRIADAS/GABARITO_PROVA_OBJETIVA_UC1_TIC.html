@@ -150,6 +150,42 @@
       text-align: center;
     }
 
+    /* ── Wrapper para scroll horizontal da tabela ── */
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 600px) {
+      .page { margin: 0; border-radius: 0; box-shadow: none; }
+
+      .header { padding: 20px 16px 16px; }
+      .header h1 { font-size: 20px; }
+      .header .inst { font-size: 11px; }
+
+      .id-table td { padding: 8px 10px; font-size: 12px; }
+      .id-table td.label { width: 120px; }
+
+      .body { padding: 0 12px 28px; }
+
+      .section-title { font-size: 13px; padding: 8px 12px; }
+
+      /* Oculta coluna de descrição em telas pequenas */
+      .gab-table thead th.desc,
+      .gab-table tbody td.desc { display: none; }
+
+      .gab-table thead th { font-size: 12px; padding: 8px 6px; }
+      .gab-table td { padding: 8px 6px; }
+      .gab-table td.resp { font-size: 18px; }
+
+      .criterios ul { padding: 10px 14px; }
+      .criterios ul li { font-size: 12px; }
+
+      .sign-row { flex-direction: column; gap: 20px; margin-top: 24px; }
+      .sign-field { flex: unset !important; }
+    }
+
     /* ── Impressão ── */
     @media print {
       body { background: #fff; }
@@ -161,6 +197,9 @@
       }
       .gab-table tbody tr:hover { background: inherit; }
       .no-print { display: none; }
+      /* Garante que a coluna de descrição aparece na impressão */
+      .gab-table thead th.desc,
+      .gab-table tbody td.desc { display: table-cell !important; }
     }
   </style>
 </head>
@@ -205,6 +244,7 @@
 
     <div class="section-title">GABARITO</div>
 
+    <div class="table-scroll">
     <table class="gab-table">
       <thead>
         <tr>
@@ -337,6 +377,7 @@
         </tr>
       </tbody>
     </table>
+    </div><!-- /table-scroll -->
 
     <!-- Critérios -->
     <div class="section-title">CRITÉRIO DE CORREÇÃO</div>
