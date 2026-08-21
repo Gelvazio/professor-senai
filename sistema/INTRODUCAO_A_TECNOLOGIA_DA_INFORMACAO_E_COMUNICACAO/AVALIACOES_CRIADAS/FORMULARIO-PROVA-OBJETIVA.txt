@@ -15,7 +15,9 @@ Para nota 0-10: divida a pontuação por 2
 ==========================================
 
 Quantidade alunos da sala - 30
-Equipes de 
+Equipes de
+
+notas  
 
 
 

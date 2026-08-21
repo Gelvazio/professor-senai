@@ -35774,20 +35774,20 @@
       "norm_label": "regras de trabalho \u2014 claude"
     },
     {
-      "label": "\u2705 Commit e Push obrigat\u00f3rios",
+      "label": "\u2705 Commit e Push obrigat\u00f3rios \u2014 SEMPRE AO FINAL DE CADA RESPOSTA",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L317",
       "_origin": "ast",
-      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios",
+      "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios_sempre_ao_final_de_cada_resposta",
       "community": 27,
-      "norm_label": "\u2705 commit e push obrigatorios"
+      "norm_label": "\u2705 commit e push obrigatorios \u2014 sempre ao final de cada resposta"
     },
     {
       "label": "\u2705 Slides devem ter no m\u00ednimo 15 slides",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L326",
+      "source_location": "L328",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_slides_devem_ter_no_m\u00ednimo_15_slides",
       "community": 27,
@@ -35797,7 +35797,7 @@
       "label": "Configura\u00e7\u00e3o Supabase",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L336",
+      "source_location": "L338",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase",
       "community": 27,
@@ -35807,7 +35807,7 @@
       "label": "Tabela `curso`",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L344",
+      "source_location": "L346",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_tabela_curso",
       "community": 27,
@@ -35817,7 +35817,7 @@
       "label": "Estrutura `gabaritos` (coluna JSONB da tabela `curso`)",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L362",
+      "source_location": "L364",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
       "community": 27,
@@ -35827,7 +35827,7 @@
       "label": "Fun\u00e7\u00f5es RPC dispon\u00edveis",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L377",
+      "source_location": "L379",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
       "community": 27,
@@ -35837,7 +35837,7 @@
       "label": "Controle de perfil (frontend)",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L385",
+      "source_location": "L387",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_controle_de_perfil_frontend",
       "community": 27,
@@ -71292,11 +71292,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L287",
+      "source_location": "L317",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_regras_de_trabalho_claude",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios"
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios_sempre_ao_final_de_cada_resposta",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -71740,5 +71740,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c45651d73b298c95fcb42e00b0ae2c506822c512"
+  "built_at_commit": "d999ad7fbfbd320deda6527d4d9b42a927a16954"
 }
