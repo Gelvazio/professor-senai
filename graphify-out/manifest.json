@@ -465,8 +465,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md": {
-    "mtime": 1787335744.2685425,
-    "ast_hash": "77d63fbbd1a873e7d948f26ce7e291a5",
+    "mtime": 1787339183.1871772,
+    "ast_hash": "e3c561762294a08b5959dceb9df11b71",
     "semantic_hash": ""
   },
   "sistema/TECNICO DE INFORMATICA PARA INTERNET/PLANO-DE-ENSINO.txt": {
@@ -2015,8 +2015,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/CURSOS-ADICIONAIS-MICROSOFT-OFFICE.txt": {
-    "mtime": 1787338469.4311087,
-    "ast_hash": "f866c39625d915a35d8ef205bef2de35",
+    "mtime": 1787338600.479314,
+    "ast_hash": "07ab605d2514640548b082efebc31062",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/DADOS-QUESTIONARIO-MICROSOFT-OFFICE.txt": {
@@ -2025,13 +2025,18 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/LISTA-CURSOS-MICROSOFT-OFFICE.html": {
-    "mtime": 1787338443.7147622,
-    "ast_hash": "7ab2cc8ee18b74f9d48340b4829a2336",
+    "mtime": 1787339113.6861348,
+    "ast_hash": "af25958b78023532231294996a4bd584",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/NOTAS PROVA OBJETIVA - 21-08-2026.txt": {
-    "mtime": 1787337696.2930157,
-    "ast_hash": "d33271b721ee44c9944dddc9006b9cf0",
+    "mtime": 1787340117.8808928,
+    "ast_hash": "29cc6f214b860beeae5cf483b40f7348",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/GABARITO_PROVA_OBJETIVA_UC1_TIC.html": {
+    "mtime": 1787340360.3230882,
+    "ast_hash": "c515d6fe9df7353c87816a172f37feda",
     "semantic_hash": ""
   }
 }

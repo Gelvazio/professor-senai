@@ -4350,7 +4350,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_permiss\u00f5es_de_acesso",
-      "community": 16,
+      "community": 298,
       "norm_label": "permissoes de acesso"
     },
     {
@@ -4360,7 +4360,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_como_funciona",
-      "community": 16,
+      "community": 298,
       "norm_label": "como funciona"
     },
     {
@@ -4370,7 +4370,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_tabelas_envolvidas",
-      "community": 16,
+      "community": 298,
       "norm_label": "tabelas envolvidas"
     },
     {
@@ -4380,7 +4380,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "erp_victor_anato_senai_claude_localstorage_keys_de_sess\u00e3o",
-      "community": 16,
+      "community": 298,
       "norm_label": "localstorage keys de sessao"
     },
     {
@@ -32920,7 +32920,7 @@
       "source_location": "L845",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_encontro_25_26_leitura_cr\u00edtica_e_an\u00e1lise_de_discurso_4h",
-      "community": 298,
+      "community": 155,
       "norm_label": "encontro 25-26 \u2014 leitura critica e analise de discurso (4h)"
     },
     {
@@ -32930,7 +32930,7 @@
       "source_location": "L847",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_objetivos_847",
-      "community": 298,
+      "community": 155,
       "norm_label": "objetivos"
     },
     {
@@ -32940,7 +32940,7 @@
       "source_location": "L854",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_texto_base_854",
-      "community": 298,
+      "community": 155,
       "norm_label": "texto base"
     },
     {
@@ -32950,7 +32950,7 @@
       "source_location": "L863",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_explica\u00e7\u00e3o_fato_x_opini\u00e3o",
-      "community": 298,
+      "community": 155,
       "norm_label": "explicacao: fato x opiniao"
     },
     {
@@ -32960,7 +32960,7 @@
       "source_location": "L878",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_atividades_878",
-      "community": 298,
+      "community": 155,
       "norm_label": "atividades"
     },
     {
@@ -35777,7 +35777,7 @@
       "label": "\u2705 Commit e Push obrigat\u00f3rios \u2014 SEMPRE AO FINAL DE CADA RESPOSTA",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L317",
+      "source_location": "L322",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios_sempre_ao_final_de_cada_resposta",
       "community": 27,
@@ -35787,7 +35787,7 @@
       "label": "\u2705 Slides devem ter no m\u00ednimo 15 slides",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L328",
+      "source_location": "L334",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_slides_devem_ter_no_m\u00ednimo_15_slides",
       "community": 27,
@@ -35797,7 +35797,7 @@
       "label": "Configura\u00e7\u00e3o Supabase",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L338",
+      "source_location": "L344",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_configura\u00e7\u00e3o_supabase",
       "community": 27,
@@ -35807,7 +35807,7 @@
       "label": "Tabela `curso`",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L346",
+      "source_location": "L352",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_tabela_curso",
       "community": 27,
@@ -35817,7 +35817,7 @@
       "label": "Estrutura `gabaritos` (coluna JSONB da tabela `curso`)",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L364",
+      "source_location": "L370",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
       "community": 27,
@@ -35827,7 +35827,7 @@
       "label": "Fun\u00e7\u00f5es RPC dispon\u00edveis",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L379",
+      "source_location": "L385",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
       "community": 27,
@@ -35837,7 +35837,7 @@
       "label": "Controle de perfil (frontend)",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
-      "source_location": "L387",
+      "source_location": "L393",
       "_origin": "ast",
       "id": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_controle_de_perfil_frontend",
       "community": 27,
@@ -71294,9 +71294,9 @@
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md",
       "source_location": "L317",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_regras_de_trabalho_claude",
-      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios_sempre_ao_final_de_cada_resposta",
-      "confidence_score": 1.0
+      "target": "introducao_a_tecnologia_da_informacao_e_comunicacao_claude_commit_e_push_obrigat\u00f3rios_sempre_ao_final_de_cada_resposta"
     },
     {
       "relation": "contains",
@@ -71740,5 +71740,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d999ad7fbfbd320deda6527d4d9b42a927a16954"
+  "built_at_commit": "517e04c0611e93282dbae7a8674f613cbf0ca734"
 }

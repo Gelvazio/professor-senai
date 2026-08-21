@@ -1,7 +1,7 @@
 # Graph Report - professor-senai  (2026-08-21)
 
 ## Corpus Check
-- 193 files · ~1,287,989 words
+- 193 files · ~1,289,181 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d999ad7f`
+- Built from commit: `517e04c0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -399,8 +399,8 @@ Cohesion: 0.11
 Nodes (17): Abas criadas, ABATE, AGENDAMENTOS (Porcos a chegar), Arquivo Excel Gerado, Boas Práticas Operacionais, Campos Principais, COLONOS, Contexto (+9 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.17
-Nodes (11): 5.1 Usuários, Commit, Push e Graphify, Como funciona, localStorage keys de sessão, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Permissões de Acesso, Princípios Fundamentais (+3 more)
+Cohesion: 0.25
+Nodes (7): 5.1 Usuários, Commit, Push e Graphify, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Princípios Fundamentais, Visão Geral (Dashboard), Visão Geral do Sistema
 
 ### Community 17 - "Community 17"
 Cohesion: 0.04
@@ -719,8 +719,8 @@ Cohesion: 0.14
 Nodes (14): Atividade: Apresentação de 3 minutos, Atividade: Mini-debate, Atividades de simulação, Encontro 18-19 — Debate e Argumentação (4h), Encontro 20-21 — Apresentação Oral e Escuta Ativa (4h), Encontro 22 — Simulação de Situações Comunicativas (4h), Explicação: Como argumentar bem?, Explicação: Como fazer uma boa apresentação? (+6 more)
 
 ### Community 155 - "Community 155"
-Cohesion: 0.15
-Nodes (13): Atividade final, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h), Explicação: Como fazer uma síntese?, MÓDULO 5 — AUTONOMIA E ESTRATÉGIAS DE ESTUDO (+5 more)
+Cohesion: 0.11
+Nodes (18): Atividade final, Atividades, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h) (+10 more)
 
 ### Community 156 - "Community 156"
 Cohesion: 0.15
@@ -1291,8 +1291,8 @@ Cohesion: 0.50
 Nodes (4): addContentSlide(), addFooter(), pptxgen, pres
 
 ### Community 298 - "Community 298"
-Cohesion: 0.40
-Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
+Cohesion: 0.50
+Nodes (4): Como funciona, localStorage keys de sessão, Permissões de Acesso, Tabelas envolvidas
 
 ### Community 299 - "Community 299"
 Cohesion: 0.15
