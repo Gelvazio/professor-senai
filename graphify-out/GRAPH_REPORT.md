@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-21)
 
 ## Corpus Check
-- 192 files · ~1,285,375 words
+- 193 files · ~1,286,277 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3625 nodes · 3538 edges · 348 communities (327 shown, 21 thin omitted)
+- 3626 nodes · 3538 edges · 348 communities (327 shown, 21 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `915d820c`
+- Built from commit: `c45651d7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -314,7 +314,6 @@
 - [[_COMMUNITY_Community 341|Community 341]]
 - [[_COMMUNITY_Community 342|Community 342]]
 - [[_COMMUNITY_Community 343|Community 343]]
-- [[_COMMUNITY_Community 344|Community 344]]
 - [[_COMMUNITY_Community 345|Community 345]]
 - [[_COMMUNITY_Community 346|Community 346]]
 - [[_COMMUNITY_Community 347|Community 347]]
@@ -400,8 +399,8 @@ Cohesion: 0.11
 Nodes (17): Abas criadas, ABATE, AGENDAMENTOS (Porcos a chegar), Arquivo Excel Gerado, Boas Práticas Operacionais, Campos Principais, COLONOS, Contexto (+9 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.25
-Nodes (7): 5.1 Usuários, Commit, Push e Graphify, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Princípios Fundamentais, Visão Geral (Dashboard), Visão Geral do Sistema
+Cohesion: 0.17
+Nodes (11): 5.1 Usuários, Commit, Push e Graphify, Como funciona, localStorage keys de sessão, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Permissões de Acesso, Princípios Fundamentais (+3 more)
 
 ### Community 17 - "Community 17"
 Cohesion: 0.04
@@ -1455,10 +1454,6 @@ Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento
 Cohesion: 0.40
 Nodes (5): 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, Atividade 5.3, Encontro 22 — Lógica Proposicional Introdutória (2h)
 
-### Community 344 - "Community 344"
-Cohesion: 0.50
-Nodes (4): Como funciona, localStorage keys de sessão, Permissões de Acesso, Tabelas envolvidas
-
 ### Community 345 - "Community 345"
 Cohesion: 0.50
 Nodes (4): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, Atividade 4.2, Encontro 16 — Capacidade e Tempo (2h)
@@ -1477,10 +1472,8 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `PARTE 2 — ROBÓTICA` connect `Community 287` to `Community 258`, `Community 291`, `Community 271`, `Community 272`, `Community 240`, `Community 241`, `Community 242`, `Community 276`, `Community 274`, `Community 286`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `ENCONTROS` connect `Community 153` to `Community 192`, `Community 193`, `Community 194`, `Community 200`, `Community 201`, `Community 202`, `Community 203`, `Community 204`, `Community 205`, `Community 176`, `Community 177`, `Community 178`, `Community 179`, `Community 180`, `Community 189`, `Community 190`, `Community 191`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `PARTE 1 — IMPRESSÃO 3D` connect `Community 291` to `Community 256`, `Community 257`, `Community 259`, `Community 230`, `Community 273`, `Community 275`, `Community 283`, `Community 284`, `Community 255`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
   _2697 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
@@ -1489,3 +1482,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.020618556701030927 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.02531645569620253 - nodes in this community are weakly interconnected._
+- **Should `Community 4` be split into smaller, more focused modules?**
+  _Cohesion score 0.02702702702702703 - nodes in this community are weakly interconnected._
