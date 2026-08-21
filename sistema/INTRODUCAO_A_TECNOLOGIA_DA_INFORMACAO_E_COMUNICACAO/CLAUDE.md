@@ -314,6 +314,11 @@ Cada encontro tem duração de **4 horas** no total, mas há deduções operacio
 
 ## Regras de Trabalho — Claude
 
+> ⛔ **REGRA ABSOLUTA — SEM EXCEÇÃO:**
+> **AO FINAL DE TODA RESPOSTA, SEMPRE FAZER COMMIT E PUSH.**
+> Não importa se a tarefa foi pequena, se já houve commit antes, ou se só foi alterado o Supabase.
+> A resposta só está concluída DEPOIS do `git push origin main`.
+
 ### ✅ Commit e Push obrigatórios — SEMPRE AO FINAL DE CADA RESPOSTA
 ⚠️ **NUNCA finalizar uma resposta sem fazer commit e push**, mesmo que pareça que já foi feito antes.
 
@@ -322,6 +327,7 @@ Cada encontro tem duração de **4 horas** no total, mas há deduções operacio
 2. `git add` dos arquivos relevantes
 3. `git commit` com mensagem descritiva
 4. `git push origin main`
+5. Executar `C:\Python314\python.exe -m graphify update .` no diretório do projeto
 
 Isso vale mesmo que a tarefa só tenha alterado o Supabase — verificar e commitar qualquer pendência anterior.
 
