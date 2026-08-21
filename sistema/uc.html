@@ -184,6 +184,28 @@
     .conf-empty{text-align:center;padding:32px;color:#888}
     .conf-empty .e-icon{font-size:36px;margin-bottom:10px}
 
+    /* ── MOBILE ── */
+    @media(max-width:640px){
+      .header{height:auto;min-height:48px;padding:8px 12px;gap:6px;flex-wrap:wrap}
+      .header-title{display:none}
+      .btn-novo-curso{font-size:12px;padding:6px 10px}
+      .btn-conferencia{font-size:12px;padding:6px 10px}
+      .header-btn{font-size:12px;padding:5px 10px}
+      .hero{padding:18px 12px 14px}
+      .hero h1{font-size:18px}
+      .hero p{font-size:12px}
+      .container{padding:14px 10px}
+      .curso-header{padding:10px 12px;gap:8px;flex-wrap:wrap}
+      .curso-actions{width:100%;justify-content:flex-end;margin-top:4px}
+      .btn-nova-uc{font-size:11px;padding:5px 10px}
+      .uc-card-footer{gap:6px}
+      .btn-abrir,.btn-checklist{font-size:10px;padding:5px 9px}
+      .modal{max-width:calc(100vw - 24px)}
+      .form-grid-2{grid-template-columns:1fr}
+      .conf-summary{gap:8px}
+      .conf-stat{min-width:80px}
+    }
+
     /* ── DARK THEME ── */
     [data-theme="dark"] body{background:#0e1117;color:#e0e3e8}
     [data-theme="dark"] .curso-section{background:#1c1e26;box-shadow:0 2px 10px rgba(0,0,0,.4)}

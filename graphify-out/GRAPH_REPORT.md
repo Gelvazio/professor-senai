@@ -1,16 +1,16 @@
-# Graph Report - professor-senai  (2026-08-19)
+# Graph Report - professor-senai  (2026-08-21)
 
 ## Corpus Check
-- 171 files · ~1,264,585 words
+- 192 files · ~1,285,375 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3101 nodes · 3011 edges · 305 communities (285 shown, 20 thin omitted)
+- 3625 nodes · 3538 edges · 348 communities (327 shown, 21 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1f03972c`
+- Built from commit: `915d820c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -276,6 +276,48 @@
 - [[_COMMUNITY_Community 302|Community 302]]
 - [[_COMMUNITY_Community 303|Community 303]]
 - [[_COMMUNITY_Community 304|Community 304]]
+- [[_COMMUNITY_Community 305|Community 305]]
+- [[_COMMUNITY_Community 306|Community 306]]
+- [[_COMMUNITY_Community 307|Community 307]]
+- [[_COMMUNITY_Community 308|Community 308]]
+- [[_COMMUNITY_Community 309|Community 309]]
+- [[_COMMUNITY_Community 310|Community 310]]
+- [[_COMMUNITY_Community 311|Community 311]]
+- [[_COMMUNITY_Community 312|Community 312]]
+- [[_COMMUNITY_Community 313|Community 313]]
+- [[_COMMUNITY_Community 314|Community 314]]
+- [[_COMMUNITY_Community 315|Community 315]]
+- [[_COMMUNITY_Community 316|Community 316]]
+- [[_COMMUNITY_Community 317|Community 317]]
+- [[_COMMUNITY_Community 319|Community 319]]
+- [[_COMMUNITY_Community 320|Community 320]]
+- [[_COMMUNITY_Community 321|Community 321]]
+- [[_COMMUNITY_Community 322|Community 322]]
+- [[_COMMUNITY_Community 323|Community 323]]
+- [[_COMMUNITY_Community 324|Community 324]]
+- [[_COMMUNITY_Community 325|Community 325]]
+- [[_COMMUNITY_Community 326|Community 326]]
+- [[_COMMUNITY_Community 327|Community 327]]
+- [[_COMMUNITY_Community 328|Community 328]]
+- [[_COMMUNITY_Community 329|Community 329]]
+- [[_COMMUNITY_Community 330|Community 330]]
+- [[_COMMUNITY_Community 331|Community 331]]
+- [[_COMMUNITY_Community 332|Community 332]]
+- [[_COMMUNITY_Community 333|Community 333]]
+- [[_COMMUNITY_Community 334|Community 334]]
+- [[_COMMUNITY_Community 335|Community 335]]
+- [[_COMMUNITY_Community 336|Community 336]]
+- [[_COMMUNITY_Community 337|Community 337]]
+- [[_COMMUNITY_Community 338|Community 338]]
+- [[_COMMUNITY_Community 339|Community 339]]
+- [[_COMMUNITY_Community 340|Community 340]]
+- [[_COMMUNITY_Community 341|Community 341]]
+- [[_COMMUNITY_Community 342|Community 342]]
+- [[_COMMUNITY_Community 343|Community 343]]
+- [[_COMMUNITY_Community 344|Community 344]]
+- [[_COMMUNITY_Community 345|Community 345]]
+- [[_COMMUNITY_Community 346|Community 346]]
+- [[_COMMUNITY_Community 347|Community 347]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -295,11 +337,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (305 total, 20 thin omitted)
+## Communities (348 total, 21 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
-Nodes (37): fetchComTimeout(), HEADERS, HEADERS_READ, Numerar, _SB_AND_MODULOS, sbAbrirAndamento(), sbAtualizar(), sbBindEstadoCidade() (+29 more)
+Nodes (36): fetchComTimeout(), HEADERS, HEADERS_READ, Numerar, _SB_AND_MODULOS, sbAbrirAndamento(), sbAtualizar(), sbBindEstadoCidade() (+28 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.02
@@ -319,11 +361,11 @@ Nodes (73): Fund_Com_Inf, Página 1, Página 10, Página 11, Página 12, Página
 
 ### Community 5 - "Community 5"
 Cohesion: 0.06
-Nodes (32): For --cluster-only, For git commit hook, For /graphify add, For /graphify explain, For /graphify path, For /graphify query, For native CLAUDE.md integration, For --update (incremental re-extraction) (+24 more)
+Nodes (32): For --cluster-only, For git commit hook, For /graphify add, For /graphify explain, For /graphify path, For /graphify query, For --update (incremental re-extraction), For --watch (+24 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.22
-Nodes (8): Documentação Padrão, Fluxo Obrigatório, Modelo do Arquivo, Overview, Red Flags — PARE e Corrija, Regras, Regras dos Passos, Ícones de Status
+Cohesion: 0.06
+Nodes (32): For --cluster-only, For git commit hook, For /graphify add, For /graphify explain, For /graphify path, For /graphify query, For --update (incremental re-extraction), For --watch (+24 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.20
@@ -359,7 +401,7 @@ Nodes (17): Abas criadas, ABATE, AGENDAMENTOS (Porcos a chegar), Arquivo Excel G
 
 ### Community 16 - "Community 16"
 Cohesion: 0.25
-Nodes (7): 5.1 Usuários, Graphify — Atualização obrigatória após cada tarefa, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Princípios Fundamentais, Visão Geral (Dashboard), Visão Geral do Sistema
+Nodes (7): 5.1 Usuários, Commit, Push e Graphify, Módulo 5 — CONFIGURAÇÕES, Ordem de Implementação Sugerida, Princípios Fundamentais, Visão Geral (Dashboard), Visão Geral do Sistema
 
 ### Community 17 - "Community 17"
 Cohesion: 0.04
@@ -374,8 +416,8 @@ Cohesion: 0.40
 Nodes (4): Sheet: DESPESA, Sheet: EXEMPLO-FILTROS-CLASSIFICACAO, Sheet: RECEITA, Sheet: SALDO-MENSAL
 
 ### Community 20 - "Community 20"
-Cohesion: 0.19
-Nodes (13): addRodape(), outPath, path, pptx, PptxGenJS, slideApresentacao(), slideConteudo(), slideDois() (+5 more)
+Cohesion: 0.11
+Nodes (31): addRodape(), outPath, path, pptx, PptxGenJS, slideApresentacao(), slideConteudo(), slideDois() (+23 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.12
@@ -850,8 +892,8 @@ Cohesion: 0.33
 Nodes (6): Atividades, Encontro 8-9 — Paragrafação e Organização de Ideias (4h), Explicação: Como funciona um parágrafo?, Objetivos, Síntese do Encontro, Texto base
 
 ### Community 198 - "Community 198"
-Cohesion: 0.13
-Nodes (15): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples, Apresentação do Módulo, Atividade 2.1, Atividade 2.3 (+7 more)
+Cohesion: 0.09
+Nodes (23): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+15 more)
 
 ### Community 199 - "Community 199"
 Cohesion: 0.40
@@ -950,24 +992,24 @@ Cohesion: 0.40
 Nodes (5): Conteúdo, ENCONTRO 13 — Algoritmos: Sequência, Decisão e Repetição, Na Prática, O que você vai aprender, Síntese
 
 ### Community 223 - "Community 223"
-Cohesion: 0.09
-Nodes (23): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas (+15 more)
+Cohesion: 0.12
+Nodes (17): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Atividade 4.2 (+9 more)
 
 ### Community 224 - "Community 224"
-Cohesion: 0.09
-Nodes (23): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+15 more)
+Cohesion: 0.12
+Nodes (16): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Atividade 5.1, Atividade 5.2 (+8 more)
 
 ### Community 225 - "Community 225"
-Cohesion: 0.10
-Nodes (20): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Problemas Contextualizados (+12 more)
+Cohesion: 0.14
+Nodes (14): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Atividade 1.1 — Individual, Atividade 1.2 — Individual (+6 more)
 
 ### Community 226 - "Community 226"
-Cohesion: 0.11
-Nodes (18): 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental, Apresentação do Módulo, Atividade 3.2 (+10 more)
+Cohesion: 0.10
+Nodes (20): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental (+12 more)
 
 ### Community 227 - "Community 227"
-Cohesion: 0.11
-Nodes (19): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo (+11 more)
+Cohesion: 0.12
+Nodes (17): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Atividade 6.1 (+9 more)
 
 ### Community 228 - "Community 228"
 Cohesion: 0.14
@@ -982,8 +1024,8 @@ Cohesion: 0.17
 Nodes (12): Atividade Prática, Conteúdo, ENCONTRO 8 — Boas Práticas de Design para Impressão 3D, Objetivos, Por que o design para impressão 3D é especial?, Quando usar suportes?, Regra 1 — Espessura mínima de paredes, Regra 2 — Regra dos 45° (+4 more)
 
 ### Community 231 - "Community 231"
-Cohesion: 0.12
-Nodes (17): 29.1 Leitura de Tabelas, 29.2 Gráficos de Barras, 30.1 Gráficos de Linhas, 30.2 Pictogramas, 30.3 Média Aritmética, 31.1 Coleta e Organização de Dados, 31.2 Escolhendo o Gráfico Certo, 31.3 Atividade Final Integradora — Em Grupo (+9 more)
+Cohesion: 0.18
+Nodes (11): 29.1 Leitura de Tabelas, 30.3 Média Aritmética, 31.1 Coleta e Organização de Dados, 31.2 Atividade Final Integradora — Em Grupo, Atividade 7.1, Atividade 7.2, Encontro 29 — Tabelas de Dados (2h), Encontro 30 — Média Aritmética (2h) (+3 more)
 
 ### Community 232 - "Community 232"
 Cohesion: 0.18
@@ -994,8 +1036,8 @@ Cohesion: 0.18
 Nodes (11): Atividade Prática, CIPA, Conteúdo, ENCONTRO 16 — SEGURANÇA DO TRABALHO: NR 10, EPI E EPC, EPC — Equipamento de Proteção Coletiva, EPI — Equipamento de Proteção Individual, Fatores de Risco, NR 10 — Segurança em Instalações e Serviços em Eletricidade (+3 more)
 
 ### Community 234 - "Community 234"
-Cohesion: 0.29
-Nodes (7): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, Sobre este material, Uma palavra para você, aluno
+Cohesion: 0.33
+Nodes (5): APOSTILA DO ALUNO, Percurso de Aprendizagem, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, RIO DO SUL MAIS TECH, SENAI / PREFEITURA MUNICIPAL DE RIO DO SUL
 
 ### Community 235 - "Community 235"
 Cohesion: 0.20
@@ -1166,8 +1208,8 @@ Cohesion: 0.25
 Nodes (8): Atividade Prática, Conteúdo, Da leitura à ação, ENCONTRO 12 — Sensores: Como os Robôs Enxergam o Mundo, O que são sensores?, Objetivos, Síntese, Tipos de sensores
 
 ### Community 277 - "Community 277"
-Cohesion: 0.17
-Nodes (11): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação (+3 more)
+Cohesion: 0.09
+Nodes (22): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental (+14 more)
 
 ### Community 278 - "Community 278"
 Cohesion: 0.29
@@ -1242,8 +1284,8 @@ Cohesion: 0.33
 Nodes (6): Atividades, Encontro 5-6 — Intenção Comunicativa e Inferências (4h), Explicação: Intenção comunicativa e o que os textos escondem, Objetivos, Síntese do Encontro, Texto base
 
 ### Community 296 - "Community 296"
-Cohesion: 0.40
-Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
+Cohesion: 0.14
+Nodes (13): 1. Antes de começar, 2. Encontre uma demanda de Produtividade, 3. Prepare o conteúdo antes do cadastro, 4. Cadastre a solução no INTEGRA SENAI SC, 5. Checklist final, A equipe deve ter, A proposta deve demonstrar, Como escolher a melhor demanda? (+5 more)
 
 ### Community 297 - "Community 297"
 Cohesion: 0.50
@@ -1254,31 +1296,195 @@ Cohesion: 0.40
 Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
 
 ### Community 299 - "Community 299"
+Cohesion: 0.15
+Nodes (12): Correção da Listagem de Telas Após o Login, Passo 10: Atualizar as regras do projeto, Passo 1: Rastrear o fluxo de telas, Passo 2: Preservar as telas durante a troca de sessão, Passo 3: Centralizar o filtro do menu, Passo 4: Commit e publicação, Passo 5: Remover o bloqueio antecipado por módulo, Passo 6: Tratar perfil sem telas (+4 more)
+
+### Community 300 - "Community 300"
+Cohesion: 0.11
+Nodes (19): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Apresentação do Módulo (+11 more)
+
+### Community 301 - "Community 301"
+Cohesion: 0.50
+Nodes (3): dependencies, docx, pptxgenjs
+
+### Community 305 - "Community 305"
+Cohesion: 0.20
+Nodes (8): assert, configSupabase(), listar(), menuSource, { readFileSync }, { runInNewContext }, supabaseSource, test
+
+### Community 306 - "Community 306"
+Cohesion: 0.20
+Nodes (9): Commit e Push obrigatórios, Estrutura de Unidades Curriculares, Estrutura obrigatória de cada UC, Graphify, Nunca perguntar — sempre executar, Pasta PROFESSOR, professor-senai — Regras do Projeto, Slides (+1 more)
+
+### Community 307 - "Community 307"
+Cohesion: 0.20
+Nodes (9): Passo 1: Confirmar a causa no ciclo real da sessão, Passo 2: Criar regressão da sessão desatualizada, Passo 3: Centralizar a leitura de telas pelo perfil, Passo 4: Atualizar a sidebar após a sincronização, Passo 5: Cobrir todas as páginas e invalidar cache antigo, Passo 6: Simular o fluxo completo, Passo 7: Commit, push e Graphify, Sincronizar Menu com o Perfil da Sessão (+1 more)
+
+### Community 308 - "Community 308"
+Cohesion: 0.22
+Nodes (8): Documentação Padrão, Fluxo Obrigatório, Modelo do Arquivo, Overview, Red Flags — PARE e Corrija, Regras, Regras dos Passos, Ícones de Status
+
+### Community 309 - "Community 309"
+Cohesion: 0.22
+Nodes (8): Documentação Padrão, Fluxo Obrigatório, Modelo do Arquivo, Overview, Red Flags — PARE e Corrija, Regras, Regras dos Passos, Ícones de Status
+
+### Community 310 - "Community 310"
+Cohesion: 0.25
+Nodes (7): Corrigir Menu do Perfil Atual, Passo 1: Investigar o fluxo e os dados reais, Passo 2: Criar teste de regressão, Passo 3: Corrigir a correspondência dos caminhos, Passo 4: Executar testes e simulação, Passo 5: Atualizar o grafo de conhecimento, Status Geral
+
+### Community 311 - "Community 311"
+Cohesion: 0.25
+Nodes (5): assert, { readFileSync }, { runInNewContext }, supabaseSource, test
+
+### Community 312 - "Community 312"
+Cohesion: 0.29
+Nodes (6): Carregar Telas do Perfil no Login, Passo 1: Reproduzir o fluxo incorreto, Passo 2: Corrigir o carregamento por perfil, Passo 3: Validar login, menu e integração real, Passo 4: Commit, push e Graphify, Status Geral
+
+### Community 313 - "Community 313"
+Cohesion: 0.29
+Nodes (6): Passo 1: Atualizar cadastro de telas, Passo 2: Atualizar cadastro de perfis, Passo 3: Excluir a fonte local, Passo 4: Commit e publicação, Remover Sistema JSON, Status Geral
+
+### Community 314 - "Community 314"
+Cohesion: 0.29
+Nodes (5): assert, menuSource, { readFileSync }, { runInNewContext }, test
+
+### Community 315 - "Community 315"
+Cohesion: 0.33
+Nodes (5): Filtrar Menu por Telas Permitidas, Passo 1: Ajustar o filtro central dos links, Passo 2: Revisar a alteração, Passo 3: Commit e push, Status Geral
+
+### Community 316 - "Community 316"
+Cohesion: 0.25
+Nodes (7): Arquivos, Como usar o guia, Contexto do INTEGRA SENAI 2026, INTEGRA-SOLUCAO-SENAI, Links da plataforma, O que é esta pasta, Regras principais
+
+### Community 317 - "Community 317"
+Cohesion: 0.09
+Nodes (22): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental (+14 more)
+
+### Community 319 - "Community 319"
+Cohesion: 0.10
+Nodes (20): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Problemas Contextualizados (+12 more)
+
+### Community 320 - "Community 320"
+Cohesion: 0.08
+Nodes (25): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+17 more)
+
+### Community 321 - "Community 321"
+Cohesion: 0.11
+Nodes (19): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo (+11 more)
+
+### Community 322 - "Community 322"
+Cohesion: 0.09
+Nodes (23): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+15 more)
+
+### Community 323 - "Community 323"
+Cohesion: 0.12
+Nodes (17): 29.1 Leitura de Tabelas, 29.2 Gráficos de Barras, 30.1 Gráficos de Linhas, 30.2 Pictogramas, 30.3 Média Aritmética, 31.1 Coleta e Organização de Dados, 31.2 Escolhendo o Gráfico Certo, 31.3 Atividade Final Integradora — Em Grupo (+9 more)
+
+### Community 324 - "Community 324"
+Cohesion: 0.17
+Nodes (11): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação (+3 more)
+
+### Community 325 - "Community 325"
+Cohesion: 0.29
+Nodes (7): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, Sobre este material, Uma palavra para você, aluno
+
+### Community 326 - "Community 326"
+Cohesion: 0.18
+Nodes (11): 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Apresentação do Módulo, Atividade 1.2 — Individual, Atividade 1.3 — Individual, Encontro 2 — Multiplicação e Divisão (2h), Encontro 3 — Ordem das Operações e Expressões Numéricas (2h) (+3 more)
+
+### Community 327 - "Community 327"
+Cohesion: 0.13
+Nodes (15): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples, Apresentação do Módulo, Atividade 2.1, Atividade 2.3 (+7 more)
+
+### Community 328 - "Community 328"
+Cohesion: 0.09
+Nodes (23): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+15 more)
+
+### Community 329 - "Community 329"
+Cohesion: 0.14
+Nodes (14): 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo, Atividade 6.2, Atividade 6.3, Atividade 6.4 — Em Grupo (+6 more)
+
+### Community 331 - "Community 331"
+Cohesion: 0.11
+Nodes (17): Atividade 1.1 — O Escudo de Competências, Atividade 1.2 — O Dilema Ético, Atividade 2.1 — Diagnóstico de Campo, Atividade 2.2 — Análise de Barreiras, Atividade 3.1 — Esqueleto do Negócio, Atividade 3.2 — Protótipo no Papel, Atividade 4.1 — Avaliação dos Colegas, Atividade 4.2 — Autoavaliação Final (+9 more)
+
+### Community 332 - "Community 332"
+Cohesion: 0.12
+Nodes (17): 29.1 Leitura de Tabelas, 29.2 Gráficos de Barras, 30.1 Gráficos de Linhas, 30.2 Pictogramas, 30.3 Média Aritmética, 31.1 Coleta e Organização de Dados, 31.2 Escolhendo o Gráfico Certo, 31.3 Atividade Final Integradora — Em Grupo (+9 more)
+
+### Community 333 - "Community 333"
+Cohesion: 0.09
+Nodes (23): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas (+15 more)
+
+### Community 334 - "Community 334"
+Cohesion: 0.29
+Nodes (7): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, Sobre este material, Uma palavra para você, aluno
+
+### Community 335 - "Community 335"
+Cohesion: 0.17
+Nodes (11): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação (+3 more)
+
+### Community 336 - "Community 336"
+Cohesion: 0.14
+Nodes (13): Atividade 1.1 — O Escudo de Competências, Atividade 1.2 — O Dilema Ético, Atividade 2.1 — Diagnóstico de Campo, Atividade 2.2 — Análise de Barreiras, Atividade 3.1 — Esqueleto do Negócio, Atividade 3.2 — Protótipo no Papel, Atividade 4.1 — Avaliação dos Colegas, Atividade 4.2 — Autoavaliação Final (+5 more)
+
+### Community 337 - "Community 337"
+Cohesion: 0.40
+Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
+
+### Community 338 - "Community 338"
+Cohesion: 0.33
+Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
+
+### Community 339 - "Community 339"
+Cohesion: 0.40
+Nodes (5): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, Atividade 1.1 — Individual, Encontro 1 — Adição e Subtração com Inteiros e Negativos (2h)
+
+### Community 340 - "Community 340"
+Cohesion: 0.40
+Nodes (5): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, Atividade 6.1, Encontro 25 — Variáveis e Expressões Algébricas (2h)
+
+### Community 341 - "Community 341"
 Cohesion: 0.40
 Nodes (5): 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, Atividade 2.2, Encontro 6 — Operações com Frações (2h)
 
-### Community 300 - "Community 300"
+### Community 342 - "Community 342"
+Cohesion: 0.33
+Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
+
+### Community 343 - "Community 343"
+Cohesion: 0.40
+Nodes (5): 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, Atividade 5.3, Encontro 22 — Lógica Proposicional Introdutória (2h)
+
+### Community 344 - "Community 344"
 Cohesion: 0.50
-Nodes (4): 10.1 Razão, 10.2 Proporção, Atividade 3.1, Encontro 10 — Razão e Proporção (2h)
+Nodes (4): Como funciona, localStorage keys de sessão, Permissões de Acesso, Tabelas envolvidas
+
+### Community 345 - "Community 345"
+Cohesion: 0.50
+Nodes (4): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, Atividade 4.2, Encontro 16 — Capacidade e Tempo (2h)
+
+### Community 346 - "Community 346"
+Cohesion: 0.50
+Nodes (4): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, Atividade 4.1, Encontro 15 — Sistema Métrico: Comprimento e Massa (2h)
 
 ## Knowledge Gaps
-- **2343 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `pptxgen` (+2338 more)
+- **2696 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+2691 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **20 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `PARTE 2 — ROBÓTICA` connect `Community 287` to `Community 258`, `Community 291`, `Community 271`, `Community 272`, `Community 240`, `Community 241`, `Community 242`, `Community 276`, `Community 274`, `Community 286`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `PARTE 1 — IMPRESSÃO 3D` connect `Community 291` to `Community 256`, `Community 257`, `Community 259`, `Community 230`, `Community 273`, `Community 275`, `Community 283`, `Community 284`, `Community 255`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `MÓDULO 5 — RACIOCÍNIO LÓGICO E RESOLUÇÃO DE PROBLEMAS` connect `Community 224` to `Community 277`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `ENCONTROS` connect `Community 153` to `Community 192`, `Community 193`, `Community 194`, `Community 200`, `Community 201`, `Community 202`, `Community 203`, `Community 204`, `Community 205`, `Community 176`, `Community 177`, `Community 178`, `Community 179`, `Community 180`, `Community 189`, `Community 190`, `Community 191`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `PARTE 1 — IMPRESSÃO 3D` connect `Community 291` to `Community 256`, `Community 257`, `Community 259`, `Community 230`, `Community 273`, `Community 275`, `Community 283`, `Community 284`, `Community 255`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _2344 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2697 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.07053140096618357 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.020618556701030927 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**

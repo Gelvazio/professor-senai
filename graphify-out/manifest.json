@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/CLAUDE.md": {
-    "mtime": 1786910983.319611,
-    "ast_hash": "796b659b7f654718b902c72ff525893f",
+    "mtime": 1787236154.746749,
+    "ast_hash": "e545ca8c3c8c18e2f92cbe0d6ca6419a",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md": {
@@ -685,8 +685,8 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/SUPABASE.js": {
-    "mtime": 1786964694.6265678,
-    "ast_hash": "85c7a67acb546c24bd5b109c007aa5be",
+    "mtime": 1787257403.8058083,
+    "ast_hash": "29f0d3438bdd828e605e2bab28b80f35",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.html": {
@@ -705,98 +705,98 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/cadastros/clientes.html": {
-    "mtime": 1786986353.3689094,
-    "ast_hash": "e3f79b34a54150555e1c7319890ffbf6",
+    "mtime": 1787229285.8392682,
+    "ast_hash": "c131b06a86095ec2a2bbfee18bee106e",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/cadastros/fornecedores.html": {
-    "mtime": 1786986353.3721883,
-    "ast_hash": "029bf99ab8358fb6eeac368d526ae281",
+    "mtime": 1787229285.8415384,
+    "ast_hash": "e8b9d0e2b55e0c656f897c2164d4d3ea",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/cadastros/produtos.html": {
-    "mtime": 1786986353.380188,
-    "ast_hash": "f1d2023dd0bf9043d292169b40cf9cfd",
+    "mtime": 1787229285.8470273,
+    "ast_hash": "af4bd47b3a18e10a22ab236671d7fbea",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/compras/conferencia.html": {
-    "mtime": 1786986383.1971638,
-    "ast_hash": "ec0ea9c05fb235599a892d837f28bbe8",
+    "mtime": 1787229285.851264,
+    "ast_hash": "720806077f8a975179bc7be03c24741e",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/compras/pedidos.html": {
-    "mtime": 1786986383.2529066,
-    "ast_hash": "5554f79a25060bb3a63bd90d3806f99f",
+    "mtime": 1787229285.8553615,
+    "ast_hash": "8da1f1f770128b4d48834eb8d80856cf",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/compras/planejamento.html": {
-    "mtime": 1786986383.258903,
-    "ast_hash": "d46abccd2d094654a87e225528fdbcff",
+    "mtime": 1787229285.8595743,
+    "ast_hash": "349e12f4f808891551e20ff06a23752f",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/compras/recebimento.html": {
-    "mtime": 1786986383.2609203,
-    "ast_hash": "53ebd3ddef7b885978936c7bf3f22d1c",
+    "mtime": 1787229285.8616843,
+    "ast_hash": "bff170476e150695476e903297381e08",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/compras/solicitacoes.html": {
-    "mtime": 1786986383.2654297,
-    "ast_hash": "9d46816431e44dcce163aecd5cc4e582",
+    "mtime": 1787229285.8636827,
+    "ast_hash": "16d653fb3e5017580a4886ca0070275c",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/configuracoes/usuarios.html": {
-    "mtime": 1786993015.2728236,
-    "ast_hash": "ddee855dbb219fb4a1cf8d804e0d98fe",
+    "mtime": 1787231256.4000132,
+    "ast_hash": "3566b4e8e23c49f23a244aaaccfa74f0",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/dashboard.html": {
-    "mtime": 1786986353.3123314,
-    "ast_hash": "a1e31574995ae0229e8cdb61ad0c7d4a",
+    "mtime": 1787229285.837254,
+    "ast_hash": "5690d143aea0a3ec7c13a21f90b41812",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/estoque/armazenagem.html": {
-    "mtime": 1786986353.4037406,
-    "ast_hash": "d350244d71dddc8b7e6efc53ac61876f",
+    "mtime": 1787229285.873629,
+    "ast_hash": "d933ad08cf718d2ba5b6f1b18ea17d1c",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/estoque/controle.html": {
-    "mtime": 1786986353.4071965,
-    "ast_hash": "42ede6e07af5ffba02581de5406b7296",
+    "mtime": 1787229285.875143,
+    "ast_hash": "b477a1a6d475cd7d4f16861a73217276",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/estoque/inventario.html": {
-    "mtime": 1786986353.4101949,
-    "ast_hash": "b56725994e61767bbf352d78027420d4",
+    "mtime": 1787229285.8771524,
+    "ast_hash": "af4da75e67be37279ecbb7654024a4d7",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/estoque/movimentacoes.html": {
-    "mtime": 1786986353.41246,
-    "ast_hash": "d0412e268a81643bf9e47567a23758ef",
+    "mtime": 1787229285.8791552,
+    "ast_hash": "d6df6c115798051f1fe60f8a63087240",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/nota-fiscal-venda.html": {
-    "mtime": 1786986353.5376725,
-    "ast_hash": "cdf4944324fdf6720a7eb6771eb20abf",
+    "mtime": 1787229286.0001915,
+    "ast_hash": "c5efda32730d2e6064bd145a1c5e0548",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/pedidos-venda.html": {
-    "mtime": 1786986353.5402539,
-    "ast_hash": "c436cb44356cef284d0952d977bf7858",
+    "mtime": 1787229286.0025053,
+    "ast_hash": "c3fb871fe38906e93e93ab8e53eed5d0",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/separacao.html": {
-    "mtime": 1786986353.5461433,
-    "ast_hash": "bf09b4985691d05f49bf9c753d163b8a",
+    "mtime": 1787229286.0068848,
+    "ast_hash": "fb7502ae3c3ec562dc26bec7828fbbf4",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/cadastros/transportadoras.html": {
-    "mtime": 1786986353.38439,
-    "ast_hash": "23c0c98c59441ea7aabe6af9890fd791",
+    "mtime": 1787229285.8490243,
+    "ast_hash": "aa36519ddac43a4356448106d14a29e8",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/compras/nota-fiscal.html": {
-    "mtime": 1786986403.910587,
-    "ast_hash": "2a99e700d9d12f3ee7fac25fa5e01aed",
+    "mtime": 1787229285.8543537,
+    "ast_hash": "7b05c90808f0e2ec4802ccfbd7c1b6c2",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/criar-admin.html": {
@@ -805,18 +805,18 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/entrega.html": {
-    "mtime": 1786986353.5267024,
-    "ast_hash": "2a2a656338c03d2828135b4d770dcf89",
+    "mtime": 1787229285.9956782,
+    "ast_hash": "75b7713f477aa81ca84214814a8a3a6d",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/expedicao.html": {
-    "mtime": 1786986353.5301769,
-    "ast_hash": "d16a6014ef2f1d41f50ea51c2f89aaf0",
+    "mtime": 1787229285.9971912,
+    "ast_hash": "9209f8f4b643e74f0667a8f3b19f8cdb",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/romaneio.html": {
-    "mtime": 1786986353.5436518,
-    "ast_hash": "52be8c92124f6c3b93a82f83b0576d92",
+    "mtime": 1787229286.0045059,
+    "ast_hash": "5a60a5c18dc9774e1b8cda364e1b0a2b",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/FERRAMENTAS_MICROSOFT.html": {
@@ -852,11 +852,6 @@
   "erp-victor-anato-senai/gamificacao/gamif.js": {
     "mtime": 1786905247.0783286,
     "ast_hash": "ab0a7646298b92d46f2833fbe0e2dd69",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/sistema.json": {
-    "mtime": 1786907835.7727678,
-    "ast_hash": "3cf66483b90ce1e739dab3a7ab72ea02",
     "semantic_hash": ""
   },
   ".superpowers/sdd/task-1-brief.md": {
@@ -1110,13 +1105,13 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/cadastros/impostos.html": {
-    "mtime": 1786986353.3751893,
-    "ast_hash": "54b2d37f9e53bd94cdfd44d58940ca2a",
+    "mtime": 1787229285.842939,
+    "ast_hash": "bbb6f3a15b1151b0812bbd7a21f6d7ae",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/cadastros/ncmsh.html": {
-    "mtime": 1786986353.3772123,
-    "ast_hash": "998e4ac488809fd74e315988df10016c",
+    "mtime": 1787229285.845017,
+    "ast_hash": "c9db48e107aff2e6072e87ad41f9e388",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/compras/CLAUDE.md": {
@@ -1130,8 +1125,8 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/compras/pipeline.html": {
-    "mtime": 1786986425.133085,
-    "ast_hash": "f769fe0eabef1d78b7293b6d7ea17439",
+    "mtime": 1787229285.857363,
+    "ast_hash": "5af3256386f07a2a149004b8fdc8e191",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/configuracoes/CLAUDE.md": {
@@ -1145,18 +1140,18 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/configuracoes/perfis.html": {
-    "mtime": 1786986353.3904092,
-    "ast_hash": "69ca6abde400efcada2c08fadbe7b66a",
+    "mtime": 1787233201.208429,
+    "ast_hash": "f321a2c4ea376c36a75064a7579ddb68",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/configuracoes/regras-negocios.html": {
-    "mtime": 1786986353.3936472,
-    "ast_hash": "2513919f6c95f4ef55e18abf33d0edf5",
+    "mtime": 1787229285.8670392,
+    "ast_hash": "633062467c3bbf8a54af9abbb5e59adc",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/configuracoes/telas.html": {
-    "mtime": 1786986353.3966348,
-    "ast_hash": "b8be81e40794b10c9445ed06e7d129e6",
+    "mtime": 1787233199.833888,
+    "ast_hash": "96ff37c06d4110df32913ad8b72af138",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/docs/superpowers/plans/2026-08-16-gamificacao-erp.md": {
@@ -1185,8 +1180,8 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/financeiro/analisecredito.html": {
-    "mtime": 1786965598.1313772,
-    "ast_hash": "c830ad8c1f99ba7e9e3861e3ad22d6b4",
+    "mtime": 1787229285.881153,
+    "ast_hash": "f99c8062b724aeea8de7e4846130f232",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/financeiro/andamento.md": {
@@ -1195,18 +1190,18 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/financeiro/balancete.html": {
-    "mtime": 1786986353.4177365,
-    "ast_hash": "f6b2e1565f3cb401f9052ab04bd39505",
+    "mtime": 1787229285.8823264,
+    "ast_hash": "fea1e8d4ec872c8a47f619d5d22fcd35",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/financeiro/contas-pagar.html": {
-    "mtime": 1786986353.4207368,
-    "ast_hash": "e80a3e8b587eb8872fc6808f10c05052",
+    "mtime": 1787229285.885031,
+    "ast_hash": "969798fcb24de0d0b0be58eba526d98c",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/financeiro/contas-receber.html": {
-    "mtime": 1786986353.4240232,
-    "ast_hash": "65c177dc90f8223e509a70fcb285b15b",
+    "mtime": 1787229285.8860781,
+    "ast_hash": "c8225f8affbbc01034ceedb5830ef904",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/CLAUDE.md": {
@@ -1220,8 +1215,8 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/admin.html": {
-    "mtime": 1786986353.4260294,
-    "ast_hash": "30d6db9f267fb7424c656e2733889e1c",
+    "mtime": 1787229285.8887744,
+    "ast_hash": "9ff116b1b258b48bf1fcef34c1c3dad4",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/andamento.md": {
@@ -1230,13 +1225,13 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/config-sessao.html": {
-    "mtime": 1786986353.4292753,
-    "ast_hash": "84b910997e6495f8e4520906987fb4dd",
+    "mtime": 1787229285.890801,
+    "ast_hash": "120ff74a861796930336f2a5c3588a7d",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/equipe.html": {
-    "mtime": 1786986353.431986,
-    "ast_hash": "2bbbe20dfd96e78cf774f3b0e0949372",
+    "mtime": 1787229285.8928192,
+    "ast_hash": "e3466670f56e75c8f9db4f049a9d44fb",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/gamificacao.md": {
@@ -1245,8 +1240,8 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/index.html": {
-    "mtime": 1786986353.4348917,
-    "ast_hash": "52e0b6ac7436c18d67b26dceb193ff61",
+    "mtime": 1787229285.8951018,
+    "ast_hash": "b9ec09bf1eb66c05ed7a29c0f50e5a12",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/placar.html": {
@@ -1255,13 +1250,13 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/professor.html": {
-    "mtime": 1786986353.4389005,
-    "ast_hash": "a5c16c50abc211020c3d663da29b368a",
+    "mtime": 1787229285.9189494,
+    "ast_hash": "ce73a9412c2c0c7fc648be55fb251e9b",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/gamificacao/ranking.html": {
-    "mtime": 1786986353.4408977,
-    "ast_hash": "20e3c5fd05fe1c55e9ea9b1672657c49",
+    "mtime": 1787229285.9234946,
+    "ast_hash": "d272c8e97195b78c39faa84aa1964062",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/marketing/CLAUDE.md": {
@@ -1275,13 +1270,13 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/marketing/campanhas.html": {
-    "mtime": 1786986353.4619586,
-    "ast_hash": "801933554c5be7fd9818dda02ac75f45",
+    "mtime": 1787229285.9520805,
+    "ast_hash": "08c8aaa86dfaf8b21d4aee8306edc556",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/marketing/retornos.html": {
-    "mtime": 1786986353.4654322,
-    "ast_hash": "fcf37a2b758c7cce1e898ed72f6bad4e",
+    "mtime": 1787229285.9577055,
+    "ast_hash": "315968cae4633c47c083a259383f5d05",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/CLAUDE.md": {
@@ -1290,13 +1285,13 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/admissao.html": {
-    "mtime": 1786986353.4688878,
-    "ast_hash": "72a5c1b3ae89cdb6130cc1d414fae50e",
+    "mtime": 1787229285.961283,
+    "ast_hash": "f84485f7bbf20d81dab6bf5c36a29535",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/afastamentos.html": {
-    "mtime": 1786986353.4710698,
-    "ast_hash": "873960a41f7d1372ab8c7a17106a000c",
+    "mtime": 1787229285.9632843,
+    "ast_hash": "7f270db0d314e6594e2da3e114642525",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/andamento.md": {
@@ -1305,78 +1300,78 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/apuracao-ponto.html": {
-    "mtime": 1786986353.4731085,
-    "ast_hash": "45edf1fe756a16ea54a1104c84907da8",
+    "mtime": 1787229285.964616,
+    "ast_hash": "b6078e6415faf7c8db2d557125338174",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/avaliacao-desempenho.html": {
-    "mtime": 1786986353.4755454,
-    "ast_hash": "a8920eefa3bf5a0f4b6ad3ec18ee86ce",
+    "mtime": 1787229285.9667978,
+    "ast_hash": "5d47f18f3a055331d9d5cb48593c34bd",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/beneficios.html": {
-    "mtime": 1786986353.4785326,
-    "ast_hash": "aac584d8f1caa8e65d576040eb839ff9",
+    "mtime": 1787229285.9680686,
+    "ast_hash": "7a359bec34be26d8843d7b5986d7d8cd",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/cargos.html": {
-    "mtime": 1786986353.4808486,
-    "ast_hash": "d8381ccb9b109e1bb0db465ec8ccbd54",
+    "mtime": 1787229285.9700778,
+    "ast_hash": "e995856ff4c8e507117fa498a5feb853",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/dashboard.html": {
-    "mtime": 1786986353.4835513,
-    "ast_hash": "de61f2f05e170472a04b7fcf12605633",
+    "mtime": 1787229285.972226,
+    "ast_hash": "4866179aaedbce3c188d0f9144bda072",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/decimo-terceiro.html": {
-    "mtime": 1786986353.486104,
-    "ast_hash": "3edc340db158f85d80446ba9a2e1684c",
+    "mtime": 1787229285.9736402,
+    "ast_hash": "ce3f4b8df941944731b38ab25893d9f3",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/departamentos.html": {
-    "mtime": 1786986353.4881065,
-    "ast_hash": "8c7ed3c5c161cf269c5f69323acacf25",
+    "mtime": 1787229285.9756505,
+    "ast_hash": "87bf410f44a107befb37a42f4db1a605",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/desligamento.html": {
-    "mtime": 1786986353.4925914,
-    "ast_hash": "b2223374fa1777492f66612302f0918d",
+    "mtime": 1787229285.9778,
+    "ast_hash": "bbfc96a9de52a3fb109dd1b48962ec2f",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/ferias.html": {
-    "mtime": 1786986353.4955277,
-    "ast_hash": "34aecbd2165cd0c76a3bdf93e6d8a5fd",
+    "mtime": 1787229285.9791386,
+    "ast_hash": "fc64f752acee9bdafceb253998dc5994",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/folha.html": {
-    "mtime": 1786986353.5001214,
-    "ast_hash": "186fa5f51f8abc07fa86bb52ba733fb8",
+    "mtime": 1787229285.9806125,
+    "ast_hash": "7b496e8220faf6175d986e7e438417a0",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/funcionarios.html": {
-    "mtime": 1786986353.5034187,
-    "ast_hash": "0c2ed2a68e3269f0de30550dac80f91c",
+    "mtime": 1787229285.9828475,
+    "ast_hash": "0b044c285588021f8ead1926cc1d0876",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/jornadas.html": {
-    "mtime": 1786986353.5067036,
-    "ast_hash": "0310057bd338adde6fefd3bd79465db6",
+    "mtime": 1787229285.9843535,
+    "ast_hash": "fd474613c24233621c1834bc217f199a",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/participacoes.html": {
-    "mtime": 1786986353.509584,
-    "ast_hash": "729bfc3e0d03cd5902f4eb7e3d190002",
+    "mtime": 1787229285.9861073,
+    "ast_hash": "d5d75e079c45b252512fb319198b9422",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/ponto.html": {
-    "mtime": 1786986353.5120175,
-    "ast_hash": "c24a831b10fca0b5711c2bb5f51eeed2",
+    "mtime": 1787229285.987893,
+    "ast_hash": "5dba532e3c31560c98cca97c4004b4f8",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/progressao-desempenho.html": {
-    "mtime": 1786986353.516103,
-    "ast_hash": "f420319468adf5a598316559054bfccc",
+    "mtime": 1787229285.990198,
+    "ast_hash": "56385375cce56ca6f256f1ad5aa631b4",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/recursos-humanos.md": {
@@ -1385,13 +1380,13 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/treinamentos.html": {
-    "mtime": 1786986353.5197828,
-    "ast_hash": "f7280df0443af7d8831eaf36040e73c8",
+    "mtime": 1787229285.9912052,
+    "ast_hash": "f55b98d2931cdd472b9b0d17a329a9b0",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/rh/vinculo-beneficios.html": {
-    "mtime": 1786986353.5230882,
-    "ast_hash": "5ce11bcc828dc205687a430f95df5ac8",
+    "mtime": 1787229285.993204,
+    "ast_hash": "5c402cd604528cc21f1ba9d085732ed6",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/score-credito/MATERIAIS-PESQUISA-SORE-CREDITO-INDUSTRIA.txt": {
@@ -1410,13 +1405,13 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/logistica.html": {
-    "mtime": 1786986353.5338657,
-    "ast_hash": "a7db8897918f794d47bed4ae37b69bd3",
+    "mtime": 1787229285.9991934,
+    "ast_hash": "73c834b4a94842576bd4ca5b2e894e64",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/televendas.html": {
-    "mtime": 1786986353.5506566,
-    "ast_hash": "d21853bc9755f7f7169bf18be58817f2",
+    "mtime": 1787229286.0088933,
+    "ast_hash": "2b761bf34fb478d069a9ee02bc1a2e4d",
     "semantic_hash": ""
   },
   "graphify-out/converted/Checklist Prova Objetiva_9406581b.md": {
@@ -1830,8 +1825,8 @@
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/Apostila_Reforco_Matematica_Raciocinio_Logico.md": {
-    "mtime": 1787159396.3862484,
-    "ast_hash": "fbc5641542e6adf9873e6c776f1fc046",
+    "mtime": 1787261508.8633249,
+    "ast_hash": "bde604ef20c172dde39f0cadba7b4b14",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/gerar_slides.js": {
@@ -1860,8 +1855,8 @@
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/CompetenciasSocioemocionaisEmpreendedorismo/package.json": {
-    "mtime": 1787182867.3176365,
-    "ast_hash": "b778aa66da97ea0e37d59b39f34429bc",
+    "mtime": 1787313680.3503826,
+    "ast_hash": "fed4211e5325765cfd6d3ae20d6821c3",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/gerar_slides.js": {
@@ -1887,6 +1882,136 @@
   "sistema/FICHA-PRODUTO-MAIS-TECH/ReforcoMatematicaRaciocinioLogico/package.json": {
     "mtime": 1787183151.413543,
     "ast_hash": "b778aa66da97ea0e37d59b39f34429bc",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/menu.js": {
+    "mtime": 1787248867.8130665,
+    "ast_hash": "146d85c69556864a1d4579b4ba6c0aea",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/tests/login-perfil.test.js": {
+    "mtime": 1787236089.0567808,
+    "ast_hash": "a1ec3ccd3d892e99e807a094b278dab6",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/tests/menu.integration.test.js": {
+    "mtime": 1787235638.598402,
+    "ast_hash": "f071edcc84b03fcf7fda5f8b4bdff132",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/tests/menu.test.js": {
+    "mtime": 1787235637.3627093,
+    "ast_hash": "1fcde72dcda91279f1c2b6c1cf4c5b51",
+    "semantic_hash": ""
+  },
+  ".agents/skills/documentacao-padrao/SKILL.md": {
+    "mtime": 1787193005.7275102,
+    "ast_hash": "a1a963982a91726b83296ae792b747f1",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/SKILL.md": {
+    "mtime": 1787193005.7307668,
+    "ast_hash": "224a6d6e380d3cc9ae8497d866b2d096",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1787193005.7228482,
+    "ast_hash": "cf17af1834832d5fb16f476ab2c1dc86",
+    "semantic_hash": ""
+  },
+  "INTEGRA-SOLUCAO-SENAI/Guia_Cadastro_Solucao_Integra_SENAI_2026.md": {
+    "mtime": 1787241443.2371354,
+    "ast_hash": "efd3c92caf3f0cacc7e199e22210efaf",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/carregar-telas-perfil-no-login.md": {
+    "mtime": 1787236173.9175255,
+    "ast_hash": "d485bae651ba328ffec1a466b4cfe732",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/corrigir-menu-perfil-atual.md": {
+    "mtime": 1787235738.5384727,
+    "ast_hash": "7184cfc6879a0281158b30c29b36f7ea",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/filtrar-menu-por-telas-permitidas.md": {
+    "mtime": 1787234111.8671129,
+    "ast_hash": "50a1cfbc8604b18d18497bd8ce1d237f",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/fix-listagem-telas-pos-login.md": {
+    "mtime": 1787233790.96198,
+    "ast_hash": "6e5d115c90b425cfbf8986c5f759dd68",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/remover-sistema-json.md": {
+    "mtime": 1787233358.929716,
+    "ast_hash": "9d7b5d03d4ba0a551c74eb4db4d24a60",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/sincronizar-menu-sessao-perfil.md": {
+    "mtime": 1787239696.3041823,
+    "ast_hash": "100db2e98e90bb8357a6ac5a6a0f2d33",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/financeiro/fila-credito.html": {
+    "mtime": 1787229388.147187,
+    "ast_hash": "5e7f468f53c4f5cee9677083b414e855",
+    "semantic_hash": ""
+  },
+  "INTEGRA-SOLUCAO-SENAI/CLAUDE.md": {
+    "mtime": 1787241565.8598466,
+    "ast_hash": "c9bf88e7ea284381f9053ad393db5811",
+    "semantic_hash": ""
+  },
+  "scripts-geracao/gerar_apostila_matematica.js": {
+    "mtime": 1787260293.3580105,
+    "ast_hash": "c1ca8ed165ae5c93a9f7bd6d59f8a14c",
+    "semantic_hash": ""
+  },
+  "scripts-geracao/package.json": {
+    "mtime": 1787260300.9881198,
+    "ast_hash": "a0c0b0752c7b3027a301e04f72785e03",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Apostila_Reforco_Matematica_Raciocinio_Logico_a019517a.md": {
+    "mtime": 1787260372.427397,
+    "ast_hash": "64f417bab7747bc28a5d5c45b9aff962",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Apostila_Raciocinio_Logico_Professor_fcd452b5.md": {
+    "mtime": 1787261555.8248205,
+    "ast_hash": "ff12a656f987c732222922630a8b54da",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/APRESENTACAO-OFICINA-EMPREENDEDORISMO_06ba87ea.md": {
+    "mtime": 1787330434.3156478,
+    "ast_hash": "42633b0a54ceceea1a5d3ec1dfc4bda7",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/MATERIAL_OFICINA DE EMPREENDEDORISMO-CEPLAS-2026-02_ae423fd1.md": {
+    "mtime": 1787313746.5597801,
+    "ast_hash": "a058a0555513d5d5051c046d47ebc7b9",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/CHAMADA-CEPLAS.txt": {
+    "mtime": 1787309311.3832161,
+    "ast_hash": "442eb7516c7c01039307e92394b57162",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/CompetenciasSocioemocionaisEmpreendedorismo/APRESENTACAO-OFICINA-EMPREENDEDORISMO.txt": {
+    "mtime": 1787318780.1869538,
+    "ast_hash": "d3f95b618052088da1610984ae7838a6",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/CompetenciasSocioemocionaisEmpreendedorismo/GABARITO_Oficina_Empreendedorismo_CEPLAS.md": {
+    "mtime": 1787313510.8119662,
+    "ast_hash": "b618030e684b421cacc3a75e9c1dbf52",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/FORMULARIO-PROVA-OBJETIVA.txt": {
+    "mtime": 1787330444.223773,
+    "ast_hash": "3d42bc6baea40e241c3b3ccd6dad3228",
     "semantic_hash": ""
   }
 }
