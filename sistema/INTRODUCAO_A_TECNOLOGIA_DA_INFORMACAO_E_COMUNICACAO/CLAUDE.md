@@ -314,7 +314,9 @@ Cada encontro tem duração de **4 horas** no total, mas há deduções operacio
 
 ## Regras de Trabalho — Claude
 
-### ✅ Commit e Push obrigatórios
+### ✅ Commit e Push obrigatórios — SEMPRE AO FINAL DE CADA RESPOSTA
+⚠️ **NUNCA finalizar uma resposta sem fazer commit e push**, mesmo que pareça que já foi feito antes.
+
 **Após TODA tarefa concluída**, sem exceção:
 1. `git status` — verificar tudo que está pendente (modificações, novos arquivos, deleções)
 2. `git add` dos arquivos relevantes
