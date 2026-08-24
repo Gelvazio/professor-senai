@@ -204,6 +204,7 @@
         opacity: 0.65;
       }
       .card.com-pendencias {
+        border: 2px solid rgba(198, 40, 40, 0.72);
         animation: pulso-pendencias-curso 2.8s ease-in-out infinite;
       }
       .card-pendencias {
@@ -232,10 +233,12 @@
       @keyframes pulso-pendencias-curso {
         0%, 100% {
           transform: translateY(1px) scale(0.995);
+          border-color: rgba(198, 40, 40, 0.68);
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
         }
         50% {
           transform: translateY(-2px) scale(1.012);
+          border-color: rgba(211, 47, 47, 0.95);
           box-shadow: 0 3px 15px rgba(198, 40, 40, 0.3), 0 0 0 3px rgba(198, 40, 40, 0.08);
         }
       }
