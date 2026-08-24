@@ -1133,10 +1133,9 @@
       .curso-materias-filtros { padding:10px 18px; border-bottom:1px solid #e6e9ef; background:#fff; display:flex; gap:8px; flex-wrap:wrap; }
       .curso-materias-filtro { border:1px solid #b8c2cf; border-radius:18px; padding:6px 13px; background:#fff; color:#425466; font-size:11px; font-weight:700; cursor:pointer; }
       .curso-materias-filtro.ativo { border-color:#004384; background:#e7f1fb; color:#004384; }
-      .curso-materia-ensalado { display:inline-flex; align-items:center; border-radius:12px; padding:3px 8px; background:#f1f3f4; color:#666; font-size:10px; font-weight:800; }
-      .curso-materia-ensalado.sim { background:#e8f5e9; color:#2e7d32; }
-      .curso-materia-checkbox { display:flex; align-items:center; gap:9px; min-height:38px; font-size:12px; font-weight:700; color:#374151; }
-      .curso-materia-checkbox input { width:18px; height:18px; accent-color:#004384; }
+      .curso-materia-toggle-ensalado { display:flex; align-items:center; gap:8px; }
+      .curso-materia-toggle-valor { min-width:26px; color:#777; font-size:10px; font-weight:800; }
+      .curso-materia-toggle-valor.sim { color:#2e7d32; }
       .curso-materia-form { padding:16px 20px; background:#fafbfe; border-bottom:1px solid #e2e7f0; }
       .curso-materia-form-grid { display:grid; grid-template-columns:2fr 1fr; gap:12px; }
       .curso-materia-form-full { grid-column:1 / -1; }
@@ -1348,7 +1347,6 @@
       [data-theme="dark"] .curso-materias-filtros { background:#1c1e26; border-color:#343743; }
       [data-theme="dark"] .curso-materias-filtro { background:#20232c; border-color:#4a4e5c; color:#b0b6c3; }
       [data-theme="dark"] .curso-materias-filtro.ativo { background:#1a2a40; border-color:#4472b0; color:#7ab4e8; }
-      [data-theme="dark"] .curso-materia-checkbox { color:#d5d8df; }
       [data-theme="dark"] .avaliacao-card { background:#20232c; border-color:#343743; border-top-color:#f7941d; }
       [data-theme="dark"] .avaliacao-card-titulo { color:#e0e3e8; }
       [data-theme="dark"] .avaliacao-data, [data-theme="dark"] .avaliacao-etapa-label, [data-theme="dark"] .avaliacoes-estado { color:#9aa0aa; }
@@ -1962,13 +1960,6 @@
               <select class="crud-input" id="cursoMateriaAtivo">
                 <option value="1">Ativa</option><option value="0">Inativa</option>
               </select>
-            </div>
-            <div class="crud-field">
-              <label class="crud-label" for="cursoMateriaEnsalado">ENSALADO (SIM/NÃO)</label>
-              <label class="curso-materia-checkbox">
-                <input id="cursoMateriaEnsalado" type="checkbox">
-                <span>SIM, esta matéria está ensalada</span>
-              </label>
             </div>
             <div class="crud-field">
               <label class="crud-label" for="cursoMateriaStatusCriacaoAvaliacao">Criação de Avaliação</label>
@@ -4050,6 +4041,35 @@
         if (vazio) vazio.style.display = _somenteMateriasEnsaladas && !quantidadeVisivel ? "block" : "none";
       }
 
+      async function alterarEnsaladoMateria(materiaId, checkbox) {
+        if (!isProfessor) return;
+        const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
+        const card = checkbox.closest(".curso-materia-card");
+        if (!materia || !card) return;
+        const valorAnterior = materiaEstaEnsalada(materia);
+        const novoValor = checkbox.checked;
+        const textoValor = card.querySelector(".curso-materia-toggle-valor");
+        checkbox.disabled = true;
+
+        try {
+          await sbPatch("materia", "id", Number(materiaId), { ensalado: novoValor });
+          materia.ensalado = novoValor;
+          card.dataset.ensalado = novoValor ? "1" : "0";
+          if (textoValor) {
+            textoValor.textContent = novoValor ? "SIM" : "NÃO";
+            textoValor.classList.toggle("sim", novoValor);
+          }
+          filtrarMateriasEnsaladas(_somenteMateriasEnsaladas);
+          setCursoMateriasMsg(novoValor ? "✅ Matéria marcada como ensalada." : "✅ Matéria marcada como não ensalada.");
+        } catch (erro) {
+          console.error("Erro ao alterar campo ensalado:", erro);
+          checkbox.checked = valorAnterior;
+          setCursoMateriasMsg("Não foi possível alterar o campo ENSALADO. Execute o script SQL da coluna no banco.", true);
+        } finally {
+          checkbox.disabled = false;
+        }
+      }
+
       const EMENTAS_PADRAO_POR_MATERIA = {
         "introducao a tecnologia da informacao e comunicacao": "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
         "competencias socioemocionais e empreendedorismo": "FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/ementa_Competencias_Socioemocionais_Empreendedorismo.md",
@@ -4142,12 +4162,13 @@
                 ${renderEtapaAvaliacao("Criação de Avaliação", materia.status_criacao_avaliacao)}
                 ${renderEtapaAvaliacao("Plano de Aula", materia.status_plano_aula)}
                 ${renderEtapaAvaliacao("Plano de Ensino", materia.status_plano_ensino)}
+                <div class="avaliacao-etapa">
+                  <span class="avaliacao-etapa-label">ENSALADO</span>
+                  ${isProfessor ? `<span class="curso-materia-toggle-ensalado"><span class="curso-materia-toggle-valor ${ensalada ? "sim" : ""}">${ensalada ? "SIM" : "NÃO"}</span><label class="toggle"><input type="checkbox" ${ensalada ? "checked" : ""} onchange="alterarEnsaladoMateria(${Number(materia.id)}, this)"><span class="toggle-slider"></span></label></span>` : `<span class="avaliacao-etapa-status ${ensalada ? "concluido" : ""}">${ensalada ? "SIM" : "NÃO"}</span>`}
+                </div>
               </div>
               <div class="curso-materia-card-rodape">
-                <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap">
-                  <span class="curso-materia-status ${ativa ? "" : "inativa"}">${ativa ? "● Disponível" : "● Inativa"}</span>
-                  <span class="curso-materia-ensalado ${ensalada ? "sim" : ""}">ENSALADO: ${ensalada ? "SIM" : "NÃO"}</span>
-                </div>
+                <span class="curso-materia-status ${ativa ? "" : "inativa"}">${ativa ? "● Disponível" : "● Inativa"}</span>
                 <div style="display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end">
                   ${isProfessor ? `<button class="curso-materia-acessar curso-materia-editar" onclick="editarMateriaCurso(${Number(materia.id)})">Editar Matéria</button>` : ""}
                   <button class="curso-materia-acessar curso-materia-ementa" onclick="abrirEmentaMateria(${Number(materia.id)})">Ementa</button>
@@ -4176,7 +4197,6 @@
         document.getElementById("cursoMateriaId").value = "";
         document.getElementById("cursoMateriaDescricao").value = "";
         document.getElementById("cursoMateriaAtivo").value = "1";
-        document.getElementById("cursoMateriaEnsalado").checked = false;
         document.getElementById("cursoMateriaStatusCriacaoAvaliacao").value = "PENDENTE";
         document.getElementById("cursoMateriaStatusPlanoAula").value = "PENDENTE";
         document.getElementById("cursoMateriaStatusPlanoEnsino").value = "PENDENTE";
@@ -4193,7 +4213,6 @@
         document.getElementById("cursoMateriaId").value = materia.id;
         document.getElementById("cursoMateriaDescricao").value = materia.descricao || "";
         document.getElementById("cursoMateriaAtivo").value = materia.ativo == 1 ? "1" : "0";
-        document.getElementById("cursoMateriaEnsalado").checked = materiaEstaEnsalada(materia);
         document.getElementById("cursoMateriaStatusCriacaoAvaliacao").value = materia.status_criacao_avaliacao || "PENDENTE";
         document.getElementById("cursoMateriaStatusPlanoAula").value = materia.status_plano_aula || "PENDENTE";
         document.getElementById("cursoMateriaStatusPlanoEnsino").value = materia.status_plano_ensino || "PENDENTE";
@@ -4228,7 +4247,6 @@
           "status_criacao_avaliacao",
           "status_plano_aula",
           "status_plano_ensino",
-          "ensalado",
         ];
         for (let tentativa = 0; tentativa <= colunasOpcionais.length; tentativa += 1) {
           try {
@@ -4272,7 +4290,6 @@
         const dados = {
           descricao: descricao,
           ativo: Number(document.getElementById("cursoMateriaAtivo").value),
-          ensalado: document.getElementById("cursoMateriaEnsalado").checked,
           status_criacao_avaliacao: document.getElementById("cursoMateriaStatusCriacaoAvaliacao").value,
           status_plano_aula: document.getElementById("cursoMateriaStatusPlanoAula").value,
           status_plano_ensino: document.getElementById("cursoMateriaStatusPlanoEnsino").value,
