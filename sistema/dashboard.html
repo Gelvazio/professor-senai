@@ -514,6 +514,70 @@
         letter-spacing: 0.5px;
       }
 
+      /* ── Minhas Pendências ── */
+      .pendencias-resumo {
+        padding: 14px 20px;
+        background: #f7f9fd;
+        border-bottom: 1px solid #e2e7f0;
+        color: #445;
+        font-size: 13px;
+      }
+      .pendencias-lista {
+        padding: 18px 20px;
+        overflow-y: auto;
+        display: grid;
+        gap: 12px;
+      }
+      .pendencia-item {
+        border: 1px solid #dfe4ec;
+        border-left: 5px solid #f7941d;
+        border-radius: 10px;
+        padding: 14px 16px;
+        background: #fff;
+      }
+      .pendencia-topo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 14px;
+      }
+      .pendencia-descricao {
+        color: #202124;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.4;
+      }
+      .pendencia-status {
+        flex-shrink: 0;
+        border-radius: 999px;
+        padding: 4px 9px;
+        background: #fff3e0;
+        color: #a94f00;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: .4px;
+      }
+      .pendencia-materia {
+        margin-top: 8px;
+        color: #004384;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .pendencia-detalhes {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 14px;
+        color: #70757a;
+        font-size: 11px;
+      }
+      .pendencias-estado {
+        padding: 38px 20px;
+        text-align: center;
+        color: #777;
+        font-size: 13px;
+      }
+
       /* ── Modal CRUD ── */
       .crud-backdrop {
         position: fixed;
@@ -1033,6 +1097,11 @@
       [data-theme="dark"] .admin-section { background: #13151e; border-top-color: #2c3a5c; border-bottom-color: #2c3a5c; }
       [data-theme="dark"] .admin-card { background: #1c1e26; border-color: #2c2e38; }
       [data-theme="dark"] .admin-card:hover { border-color: #4472b0; box-shadow: 0 4px 16px rgba(0,80,180,.18); }
+      [data-theme="dark"] .pendencias-resumo { background:#141620; border-bottom-color:#2c2e38; color:#b0b6c3; }
+      [data-theme="dark"] .pendencia-item { background:#1c1e26; border-color:#343743; border-left-color:#f7941d; }
+      [data-theme="dark"] .pendencia-descricao { color:#e0e3e8; }
+      [data-theme="dark"] .pendencia-materia { color:#7ab4e8; }
+      [data-theme="dark"] .pendencia-detalhes, [data-theme="dark"] .pendencias-estado { color:#8b919e; }
       /* Edit banner */
       [data-theme="dark"] .edit-banner { background: #1e1c00; border-color: #4a3e00; color: #c9b46a; }
       [data-theme="dark"] .edit-banner strong { color: #f0a840; }
@@ -1652,6 +1721,24 @@
           <span class="admin-card-icon">🚀</span>
           <span class="admin-card-label">Gerar Forms</span>
         </button>
+        <button class="admin-card" onclick="abrirModalPendencias()">
+          <span class="admin-card-icon">🔔</span>
+          <span class="admin-card-label">Minhas Pendências</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ── Modal Minhas Pendências ─────────────── -->
+    <div class="crud-backdrop" id="pendenciasModal" style="display:none" onclick="if(event.target===this)fecharModalPendencias()">
+      <div class="crud-modal" style="max-width:760px">
+        <div class="crud-modal-head">
+          <h3>🔔 Minhas Pendências</h3>
+          <button class="crud-btn-fechar" onclick="fecharModalPendencias()" aria-label="Fechar">✕</button>
+        </div>
+        <div class="pendencias-resumo" id="pendenciasResumo">Carregando pendências…</div>
+        <div class="pendencias-lista" id="pendenciasLista">
+          <div class="pendencias-estado">⏳ Carregando…</div>
+        </div>
       </div>
     </div>
 
@@ -3798,6 +3885,69 @@
       document.getElementById('didBd').addEventListener('click', function(e){
         if (e.target === this) fecharDidatica();
       });
+
+      function escaparPendencia(valor) {
+        return String(valor == null ? '' : valor)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#039;');
+      }
+
+      function renderPendencias(pendencias) {
+        var lista = document.getElementById('pendenciasLista');
+        var resumo = document.getElementById('pendenciasResumo');
+        if (!Array.isArray(pendencias) || pendencias.length === 0) {
+          resumo.textContent = 'Nenhuma pendência cadastrada.';
+          lista.innerHTML = '<div class="pendencias-estado">✅ Você não possui pendências no momento.</div>';
+          return;
+        }
+
+        var abertas = pendencias.filter(function(item) {
+          return !['CONCLUIDO', 'CANCELADO'].includes(String(item.status || '').toUpperCase());
+        }).length;
+        resumo.textContent = pendencias.length + ' registro(s) encontrado(s) · ' + abertas + ' pendência(s) em aberto';
+        lista.innerHTML = pendencias.map(function(item) {
+          var horas = item.horas_ministradas && item.total_horas
+            ? '<span>⏱️ ' + escaparPendencia(item.horas_ministradas) + ' de ' + escaparPendencia(item.total_horas) + ' horas</span>'
+            : '';
+          return '<article class="pendencia-item">' +
+            '<div class="pendencia-topo">' +
+              '<div class="pendencia-descricao">' + escaparPendencia(item.descricao || 'Pendência sem descrição') + '</div>' +
+              '<span class="pendencia-status">' + escaparPendencia(item.status || 'SEM STATUS') + '</span>' +
+            '</div>' +
+            '<div class="pendencia-materia">' + escaparPendencia(item.materia_descricao || 'Matéria não informada') + '</div>' +
+            '<div class="pendencia-detalhes">' +
+              '<span>📅 Criada em ' + escaparPendencia(item.data || '—') + '</span>' +
+              '<span>⏰ Vence em ' + escaparPendencia(item.datavencimento || '—') + '</span>' +
+              horas +
+              '<span>🔖 Código ' + escaparPendencia(item.materia_id || '—') + '</span>' +
+            '</div>' +
+          '</article>';
+        }).join('');
+      }
+
+      async function abrirModalPendencias() {
+        var modal = document.getElementById('pendenciasModal');
+        document.getElementById('pendenciasResumo').textContent = 'Carregando pendências…';
+        document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⏳ Carregando…</div>';
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        try {
+          var resposta = await fetch('pendencias.json', { cache: 'no-store' });
+          if (!resposta.ok) throw new Error('HTTP ' + resposta.status);
+          renderPendencias(await resposta.json());
+        } catch (erro) {
+          document.getElementById('pendenciasResumo').textContent = 'Não foi possível carregar as pendências.';
+          document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⚠️ Verifique se o arquivo pendencias.json está disponível e válido.</div>';
+        }
+      }
+
+      function fecharModalPendencias() {
+        document.getElementById('pendenciasModal').style.display = 'none';
+        document.body.style.overflow = '';
+      }
     </script>
 
   </body>
