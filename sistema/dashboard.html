@@ -2677,8 +2677,16 @@
         const grid = document.getElementById("grid");
         grid.innerHTML = "";
         _pendenciasCursosCache = await carregarPendenciasCursos(dadosCursos.cursos);
+        const cursosOrdenados = dadosCursos.cursos
+          .map((curso, indiceOriginal) => ({ curso, indiceOriginal }))
+          .sort((a, b) => {
+            const pendenciasA = _pendenciasCursosCache[String(a.curso.idNum)] || 0;
+            const pendenciasB = _pendenciasCursosCache[String(b.curso.idNum)] || 0;
+            return pendenciasB - pendenciasA || a.indiceOriginal - b.indiceOriginal;
+          })
+          .map((item) => item.curso);
 
-        for (const curso of dadosCursos.cursos) {
+        for (const curso of cursosOrdenados) {
           const visivel = getVis(curso.id, curso.visivel);
           const liberado = visivel === 1;
           const acessivel = liberado || isProfessor;
