@@ -1904,6 +1904,12 @@
               </select>
             </div>
             <div class="crud-field">
+              <label class="crud-label" for="avaliacaoStatusAplicacao">Aplicação da Avaliação</label>
+              <select class="crud-input" id="avaliacaoStatusAplicacao">
+                <option value="PENDENTE">Pendente</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
+              </select>
+            </div>
+            <div class="crud-field">
               <label class="crud-label" for="avaliacaoStatusRevisao">Status de revisão</label>
               <select class="crud-input" id="avaliacaoStatusRevisao">
                 <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
@@ -3804,6 +3810,7 @@
             <div class="avaliacao-data">📅 Aplicação: ${escaparPendencia(formatarDataPendencia(avaliacao.data_aplicacao))}</div>
             <div class="avaliacao-etapas">
               ${renderEtapaAvaliacao("Criação da avaliação", avaliacao.status_criacao)}
+              ${renderEtapaAvaliacao("Aplicação da avaliação", avaliacao.status_aplicacao)}
               ${renderEtapaAvaliacao("Revisão da avaliação", avaliacao.status_revisao)}
               ${renderEtapaAvaliacao("Cadastro no SGN", avaliacao.status_cadastro_sgn)}
             </div>
@@ -3850,6 +3857,7 @@
         document.getElementById("avaliacaoDataAplicacao").value = new Date().toISOString().slice(0, 10);
         document.getElementById("avaliacaoStatus").value = "PENDENTE";
         document.getElementById("avaliacaoStatusCriacao").value = "PENDENTE";
+        document.getElementById("avaliacaoStatusAplicacao").value = "PENDENTE";
         document.getElementById("avaliacaoStatusRevisao").value = "PENDENTE";
         document.getElementById("avaliacaoStatusSgn").value = "PENDENTE";
         document.getElementById("avaliacaoForm").style.display = "block";
@@ -3865,6 +3873,7 @@
         document.getElementById("avaliacaoDataAplicacao").value = String(avaliacao.data_aplicacao || "").slice(0, 10);
         document.getElementById("avaliacaoStatus").value = avaliacao.status || "PENDENTE";
         document.getElementById("avaliacaoStatusCriacao").value = avaliacao.status_criacao || "PENDENTE";
+        document.getElementById("avaliacaoStatusAplicacao").value = avaliacao.status_aplicacao || "PENDENTE";
         document.getElementById("avaliacaoStatusRevisao").value = avaliacao.status_revisao || "PENDENTE";
         document.getElementById("avaliacaoStatusSgn").value = avaliacao.status_cadastro_sgn || "PENDENTE";
         document.getElementById("avaliacaoForm").style.display = "block";
@@ -3891,6 +3900,7 @@
           data_aplicacao: dataAplicacao,
           status: document.getElementById("avaliacaoStatus").value,
           status_criacao: document.getElementById("avaliacaoStatusCriacao").value,
+          status_aplicacao: document.getElementById("avaliacaoStatusAplicacao").value,
           status_revisao: document.getElementById("avaliacaoStatusRevisao").value,
           status_cadastro_sgn: document.getElementById("avaliacaoStatusSgn").value,
           updated_at: new Date().toISOString()

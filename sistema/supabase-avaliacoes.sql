@@ -9,6 +9,8 @@ create table if not exists public.avaliacao (
   data_aplicacao date not null,
   status text not null default 'PENDENTE'
     check (status in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
+  status_aplicacao text not null default 'PENDENTE'
+    check (status_aplicacao in ('PENDENTE', 'CONCLUIDO', 'CANCELADO')),
   status_criacao text not null default 'PENDENTE'
     check (status_criacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
   status_revisao text not null default 'PENDENTE'
@@ -19,6 +21,21 @@ create table if not exists public.avaliacao (
   updated_at timestamptz not null default now(),
   unique (materia_id, numero)
 );
+
+alter table public.avaliacao
+  add column if not exists status_aplicacao text not null default 'PENDENTE';
+
+do $$
+begin
+  if not exists (
+    select 1 from pg_constraint where conname = 'avaliacao_status_aplicacao_check'
+  ) then
+    alter table public.avaliacao
+      add constraint avaliacao_status_aplicacao_check
+      check (status_aplicacao in ('PENDENTE', 'CONCLUIDO', 'CANCELADO'));
+  end if;
+end;
+$$;
 
 alter table public.avaliacao enable row level security;
 
