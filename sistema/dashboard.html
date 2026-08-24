@@ -203,6 +203,9 @@
       .card.bloqueado {
         opacity: 0.65;
       }
+      .card.bloqueado.curso-bloqueado-oculto {
+        display: none;
+      }
       .card.com-pendencias {
         border: 2px solid rgba(198, 40, 40, 0.72);
         animation: pulso-pendencias-curso 2.8s ease-in-out infinite;
@@ -1303,6 +1306,9 @@
       [data-theme="dark"] .admin-section { background: #13151e; border-top-color: #2c3a5c; border-bottom-color: #2c3a5c; }
       [data-theme="dark"] .admin-card { background: #1c1e26; border-color: #2c2e38; }
       [data-theme="dark"] .admin-card:hover { border-color: #4472b0; box-shadow: 0 4px 16px rgba(0,80,180,.18); }
+      .admin-card-toggle { opacity:.62; filter:grayscale(.65); }
+      .admin-card-toggle.ativo { opacity:1; filter:none; border-color:#c62828; background:#fff5f5; }
+      [data-theme="dark"] .admin-card-toggle.ativo { background:#321b1d; border-color:#d65c57; }
       [data-theme="dark"] .pendencias-resumo { background:#141620; border-bottom-color:#2c2e38; color:#b0b6c3; }
       [data-theme="dark"] .pendencias-toolbar, [data-theme="dark"] .pendencia-form { background:#141620; border-bottom-color:#2c2e38; }
       [data-theme="dark"] .pendencia-item { background:#1c1e26; border-color:#343743; border-left-color:#f7941d; }
@@ -2094,6 +2100,10 @@
           <span class="admin-card-icon">🔔</span>
           <span class="admin-card-label">Minhas Pendências</span>
         </button>
+        <button class="admin-card admin-card-toggle" id="btnMostrarBloqueados" type="button" aria-pressed="false" onclick="alternarCursosBloqueados()">
+          <span class="admin-card-icon">👁️</span>
+          <span class="admin-card-label">Mostrar Bloqueados</span>
+        </button>
       </div>
     </div>
 
@@ -2532,6 +2542,31 @@
       let dadosCursos = null;
       let _cursosCache = {};
       let _pendenciasCursosCache = {};
+      let _mostrarCursosBloqueados = false;
+
+      function aplicarEstadoCursoBloqueado(card, bloqueado) {
+        const totalPendencias = Number(card.dataset.pendencias || 0);
+        const notificacoesAtivas = !bloqueado || _mostrarCursosBloqueados;
+        card.classList.toggle("disponivel", !bloqueado);
+        card.classList.toggle("bloqueado", bloqueado);
+        card.classList.toggle("curso-bloqueado-oculto", bloqueado && !_mostrarCursosBloqueados);
+        card.classList.toggle("com-pendencias", totalPendencias > 0 && notificacoesAtivas);
+        const indicador = card.querySelector(".card-pendencias");
+        if (indicador) indicador.style.display = totalPendencias > 0 && notificacoesAtivas ? "inline-flex" : "none";
+      }
+
+      function alternarCursosBloqueados() {
+        _mostrarCursosBloqueados = !_mostrarCursosBloqueados;
+        const botao = document.getElementById("btnMostrarBloqueados");
+        if (botao) {
+          botao.classList.toggle("ativo", _mostrarCursosBloqueados);
+          botao.setAttribute("aria-pressed", String(_mostrarCursosBloqueados));
+          botao.querySelector(".admin-card-label").textContent = _mostrarCursosBloqueados ? "Ocultar Bloqueados" : "Mostrar Bloqueados";
+        }
+        document.querySelectorAll("#grid .card[data-bloqueado='1']").forEach((card) => {
+          aplicarEstadoCursoBloqueado(card, true);
+        });
+      }
 
       const CAMPOS_PENDENTES_AVALIACAO = [
         "status",
@@ -2645,13 +2680,14 @@
 
         for (const curso of dadosCursos.cursos) {
           const visivel = getVis(curso.id, curso.visivel);
-          const disponivel = visivel === 1 || isProfessor;
-          if (!isProfessor && !disponivel) continue;
+          const liberado = visivel === 1;
+          const acessivel = liberado || isProfessor;
+          if (!acessivel) continue;
 
           // Progresso a partir do campo materias do Supabase
           let pct = 0,
             progressoTexto = "Conteúdo em preparação";
-          if (disponivel && curso._materias) {
+          if (acessivel && curso._materias) {
             const aulas = Array.isArray(curso._materias) ? curso._materias : [];
             const vis = aulas.filter((a) => a.visivel === 1).length;
             pct = aulas.length ? Math.round((vis / aulas.length) * 100) : 0;
@@ -2664,8 +2700,10 @@
 
           const card = document.createElement("div");
           const totalPendencias = _pendenciasCursosCache[String(curso.idNum)] || 0;
-          card.className = "card " + (disponivel ? "disponivel" : "bloqueado") + (totalPendencias ? " com-pendencias" : "");
+          card.className = "card";
           card.dataset.id = curso.id;
+          card.dataset.bloqueado = liberado ? "0" : "1";
+          card.dataset.pendencias = String(totalPendencias);
 
           card.innerHTML = `
       <div class="card-thumb" style="background:linear-gradient(135deg,${curso.corPrimaria||'#004384'} 0%,${curso.corSecundaria||'#0055b3'} 100%)">
@@ -2675,7 +2713,7 @@
       </div>
       <div class="card-body">
         <div class="card-tipo" style="color:${curso.corSecundaria||'#0055b3'}">${curso.tipo||''}</div>
-        <div class="card-titulo">${disponivel ? curso.nome : '<span style="color:#9aa0a6">' + curso.nome + "</span>"}</div>
+        <div class="card-titulo">${liberado ? curso.nome : '<span style="color:#9aa0a6">' + curso.nome + "</span>"}</div>
         <div class="card-desc">${curso.descricao}</div>
         <div class="card-tags">${tagsHTML}</div>
       </div>
@@ -2702,6 +2740,7 @@
         <button class="btn-card-excluir" onclick="excluirCurso(${curso.idNum}, '${curso.nome.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">🗑️ Excluir</button>
       </div>`;
 
+          aplicarEstadoCursoBloqueado(card, !liberado);
           grid.appendChild(card);
         }
 
@@ -2726,6 +2765,11 @@
         if (label) {
           label.textContent = val ? "Liberado" : "Bloqueado";
           label.style.color = val ? '#2e7d32' : '#c62828';
+        }
+        const card = document.querySelector(`#grid .card[data-id="${CSS.escape(id)}"]`);
+        if (card) {
+          card.dataset.bloqueado = val ? "0" : "1";
+          aplicarEstadoCursoBloqueado(card, !val);
         }
         try {
           await fetch(`${SUPABASE_URL}/rest/v1/curso?id=eq.${idNum}`, {
