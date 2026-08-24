@@ -359,19 +359,50 @@
 
     try {
       const id = document.getElementById('fId').value;
+      const anterior = id ? registros.find(x => x.id === id) : null;
+      let savedId = id;
       if (id) {
         await sbAtualizar('compras_recebimentos', id, dados);
       } else {
         dados.numero = await Numerar.recebimento();
-        await sbInserir('compras_recebimentos', dados);
+        const novo = await sbInserir('compras_recebimentos', dados);
+        savedId = novo?.id;
         if (window.gamif) await gamif.registrarEvento('recebimento_registrado');
       }
       fecharModal();
-      sbMensagem('msgCrud', 'Recebimento salvo com sucesso!', 'ok');
+      const efetivado = dados.status !== 'Aguardando';
+      const estavaEfetivado = anterior && anterior.status !== 'Aguardando';
+      if (efetivado && !estavaEfetivado && savedId) {
+        if (dados.pedido_id && dados.status === 'Recebido Total') {
+          await sbAtualizar('compras_pedidos', dados.pedido_id, { status: 'Recebido' });
+        }
+        await gerarConferenciaAutomatica(savedId, dados);
+        sbMensagem('msgCrud', 'Recebimento efetivado e conferência pendente gerada automaticamente!', 'ok');
+      } else {
+        sbMensagem('msgCrud', 'Recebimento salvo com sucesso!', 'ok');
+      }
       await carregar();
     } catch (e) {
       sbMensagem('msgModal', 'Erro ao salvar: ' + e.message, 'err');
     }
+  }
+
+  async function gerarConferenciaAutomatica(recebimentoId, recebimento) {
+    const existentes = await sbListar('compras_conferencias',
+      `recebimento_id=eq.${encodeURIComponent(recebimentoId)}&select=id&limit=1`);
+    if (existentes.length) return existentes[0].id;
+    const nova = await sbInserir('compras_conferencias', {
+      recebimento_id: recebimentoId,
+      fornecedor_id: recebimento.fornecedor_id,
+      produto_id: recebimento.produto_id,
+      qtd_esperada: recebimento.qtd_esperada,
+      qtd_recebida: recebimento.qtd_recebida,
+      status: 'Pendente',
+      responsavel: recebimento.responsavel,
+      data: new Date().toISOString().split('T')[0],
+      observacoes: 'Gerada automaticamente pela efetivação do recebimento',
+    });
+    return nova?.id;
   }
 
   function excluir(id) {

@@ -163,6 +163,7 @@ CREATE TABLE IF NOT EXISTS compras_planejamento (
 -- ── Solicitação de Compras ─────────────────────────────────
 CREATE TABLE IF NOT EXISTS compras_solicitacoes (
   id          uuid          DEFAULT gen_random_uuid() PRIMARY KEY,
+  planejamento_id uuid      REFERENCES compras_planejamento(id) ON DELETE SET NULL,
   numero      text          NOT NULL UNIQUE,          -- SC00001
   produto_id  uuid          NOT NULL REFERENCES produtos(id) ON DELETE RESTRICT,
   quantidade  numeric(14,3) NOT NULL CHECK (quantidade > 0),
@@ -172,7 +173,7 @@ CREATE TABLE IF NOT EXISTS compras_solicitacoes (
                             CHECK (prioridade IN ('Baixa','Média','Alta','Urgente')),
   status      text          NOT NULL DEFAULT 'Pendente'
                             CHECK (status IN (
-                              'Pendente','Em Análise','Aprovada','Reprovada','Cancelada'
+                              'Pendente','Em Análise','Aprovada','Concluída','Reprovada','Cancelada'
                             )),
   data        date          DEFAULT CURRENT_DATE,
   observacoes text,
@@ -187,14 +188,14 @@ CREATE TABLE IF NOT EXISTS compras_pedidos (
   id                uuid          DEFAULT gen_random_uuid() PRIMARY KEY,
   numero            text          NOT NULL UNIQUE,    -- PC00001
   solicitacao_id    uuid          REFERENCES compras_solicitacoes(id) ON DELETE SET NULL,
-  fornecedor_id     uuid          NOT NULL REFERENCES fornecedores(id) ON DELETE RESTRICT,
+  fornecedor_id     uuid          REFERENCES fornecedores(id) ON DELETE RESTRICT,
   produto_id        uuid          NOT NULL REFERENCES produtos(id) ON DELETE RESTRICT,
   quantidade        numeric(14,3) NOT NULL CHECK (quantidade > 0),
   preco_unitario    numeric(14,2) DEFAULT 0,
   valor_total       numeric(14,2) DEFAULT 0,          -- calculado: quantidade * preco_unitario
-  status            text          NOT NULL DEFAULT 'Rascunho'
+  status            text          NOT NULL DEFAULT 'Pendente'
                                   CHECK (status IN (
-                                    'Rascunho','Enviado','Confirmado','Cancelado','Recebido'
+                                    'Pendente','Rascunho','Enviado','Confirmado','Concluído','Cancelado','Recebido'
                                   )),
   data              date          DEFAULT CURRENT_DATE,
   data_prevista     date,
@@ -205,6 +206,25 @@ CREATE TABLE IF NOT EXISTS compras_pedidos (
 
 COMMENT ON COLUMN compras_pedidos.numero      IS 'Gerado pela aplicação: PC00001 sequencial.';
 COMMENT ON COLUMN compras_pedidos.valor_total IS 'Calculado pela aplicação: quantidade × preco_unitario.';
+
+-- Migração idempotente para bases existentes: habilita o fluxo automático.
+ALTER TABLE compras_solicitacoes
+  ADD COLUMN IF NOT EXISTS planejamento_id uuid REFERENCES compras_planejamento(id) ON DELETE SET NULL;
+
+ALTER TABLE compras_solicitacoes DROP CONSTRAINT IF EXISTS compras_solicitacoes_status_check;
+ALTER TABLE compras_solicitacoes ADD CONSTRAINT compras_solicitacoes_status_check
+  CHECK (status IN ('Pendente','Em Análise','Aprovada','Concluída','Reprovada','Cancelada'));
+
+ALTER TABLE compras_pedidos ALTER COLUMN fornecedor_id DROP NOT NULL;
+ALTER TABLE compras_pedidos ALTER COLUMN status SET DEFAULT 'Pendente';
+ALTER TABLE compras_pedidos DROP CONSTRAINT IF EXISTS compras_pedidos_status_check;
+ALTER TABLE compras_pedidos ADD CONSTRAINT compras_pedidos_status_check
+  CHECK (status IN ('Pendente','Rascunho','Enviado','Confirmado','Concluído','Cancelado','Recebido'));
+
+CREATE UNIQUE INDEX IF NOT EXISTS uq_compras_solicitacoes_planejamento
+  ON compras_solicitacoes (planejamento_id) WHERE planejamento_id IS NOT NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS uq_compras_pedidos_solicitacao
+  ON compras_pedidos (solicitacao_id) WHERE solicitacao_id IS NOT NULL;
 
 -- ── Recebimento ────────────────────────────────────────────
 CREATE TABLE IF NOT EXISTS compras_recebimentos (
@@ -244,6 +264,11 @@ CREATE TABLE IF NOT EXISTS compras_conferencias (
   created_at      timestamptz   DEFAULT now(),
   updated_at      timestamptz   DEFAULT now()
 );
+
+CREATE UNIQUE INDEX IF NOT EXISTS uq_compras_recebimentos_pedido
+  ON compras_recebimentos (pedido_id) WHERE pedido_id IS NOT NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS uq_compras_conferencias_recebimento
+  ON compras_conferencias (recebimento_id);
 
 -- ── Entrada de Nota Fiscal (Compra) ───────────────────────
 CREATE TABLE IF NOT EXISTS compras_notas_fiscais (

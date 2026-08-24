@@ -335,11 +335,15 @@
     return 'SC' + String(ultimo + 1).padStart(5, '0');
   }
 
-  async function criarSolicitacaoAutomatica(planej) {
+  async function criarSolicitacaoAutomatica(planejamentoId, planej) {
     if (!planej.produto_id) return null;
+    const existentes = await sbListar('compras_solicitacoes',
+      `planejamento_id=eq.${encodeURIComponent(planejamentoId)}&select=id,numero&limit=1`);
+    if (existentes.length) return existentes[0].numero;
     const numero = await proximoNumeroSC();
     const sc = {
       numero,
+      planejamento_id: planejamentoId,
       produto_id:  planej.produto_id,
       quantidade:  planej.qtd_planejada || 0,
       unidade:     produtosUnidadeMap[planej.produto_id] || '',
@@ -374,17 +378,19 @@
     };
 
     try {
+      let savedId = id;
       if (id) {
         await sbAtualizar('compras_planejamento', id, dados);
       } else {
-        await sbInserir('compras_planejamento', dados);
+        const novo = await sbInserir('compras_planejamento', dados);
+        savedId = novo?.id;
       }
       fecharModal();
 
       const concluindo = novoStatus === 'Concluído' && statusAnterior !== 'Concluído';
       if (concluindo) {
         try {
-          const numSC = await criarSolicitacaoAutomatica(dados);
+          const numSC = savedId ? await criarSolicitacaoAutomatica(savedId, dados) : null;
           if (numSC) {
             sbMensagem('msgCrud', `Planejamento concluído! Solicitação ${numSC} criada automaticamente.`, 'ok');
           } else {

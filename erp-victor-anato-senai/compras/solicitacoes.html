@@ -191,6 +191,7 @@
             <option>Pendente</option>
             <option>Em Análise</option>
             <option>Aprovada</option>
+            <option>Concluída</option>
             <option>Reprovada</option>
             <option>Cancelada</option>
           </select>
@@ -395,10 +396,12 @@
 
       fecharModal();
 
-      if (novoStatus === 'Aprovada' && statusAnterior !== 'Aprovada' && savedId) {
+      const finalizada = ['Aprovada', 'Concluída'].includes(novoStatus);
+      const estavaFinalizada = ['Aprovada', 'Concluída'].includes(statusAnterior);
+      if (finalizada && !estavaFinalizada && savedId) {
         const numeroPedido = await gerarPedidoAutomatico(savedId, produtoId, quantidade);
         sbMensagem('msgCrud',
-          `Solicitação aprovada! Pedido de Compra <strong>${numeroPedido}</strong> gerado automaticamente como Rascunho — adicione o fornecedor em <a href="pedidos.html" style="color:inherit;font-weight:700">Pedidos de Compra</a>.`,
+          `Solicitação concluída! Pedido de Compra <strong>${numeroPedido}</strong> gerado automaticamente como Pendente — adicione o fornecedor em <a href="pedidos.html" style="color:inherit;font-weight:700">Pedidos de Compra</a>.`,
           'ok');
       } else {
         sbMensagem('msgCrud', 'Solicitação salva com sucesso!', 'ok');
@@ -411,13 +414,16 @@
   }
 
   async function gerarPedidoAutomatico(scId, produtoId, quantidade) {
+    const existentes = await sbListar('compras_pedidos',
+      `solicitacao_id=eq.${encodeURIComponent(scId)}&select=id,numero&limit=1`);
+    if (existentes.length) return existentes[0].numero;
     const numeroPedido = await Numerar.pedidoCompra();
     await sbInserir('compras_pedidos', {
       numero:         numeroPedido,
       solicitacao_id: scId,
       produto_id:     produtoId,
       quantidade,
-      status:         'Rascunho',
+      status:         'Pendente',
       data:           new Date().toISOString().split('T')[0],
       observacoes:    'Gerado automaticamente via aprovação da Solicitação de Compra',
     });

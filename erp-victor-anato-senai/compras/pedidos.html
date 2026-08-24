@@ -179,9 +179,11 @@
         <div class="form-group">
           <label class="form-label">Status</label>
           <select id="fStatus" class="form-select">
+            <option>Pendente</option>
             <option>Rascunho</option>
             <option>Enviado</option>
             <option>Confirmado</option>
+            <option>Concluído</option>
             <option>Cancelado</option>
             <option>Recebido</option>
           </select>
@@ -338,7 +340,7 @@
     document.getElementById('fQuantidade').value = '';
     document.getElementById('fPrecoUnitario').value = '';
     document.getElementById('valorTotalBox').textContent = 'Total: R$ 0,00';
-    document.getElementById('fStatus').value = 'Rascunho';
+    document.getElementById('fStatus').value = 'Pendente';
     document.getElementById('fData').value = new Date().toISOString().split('T')[0];
     document.getElementById('fDataPrevista').value = '';
     document.getElementById('fObs').value = '';
@@ -361,7 +363,7 @@
     document.getElementById('fQuantidade').value = r.quantidade ?? '';
     document.getElementById('fPrecoUnitario').value = r.preco_unitario ?? '';
     calcularTotal();
-    document.getElementById('fStatus').value = r.status || 'Rascunho';
+    document.getElementById('fStatus').value = r.status || 'Pendente';
     document.getElementById('fData').value = r.data || '';
     document.getElementById('fDataPrevista').value = r.data_prevista || '';
     document.getElementById('fObs').value = r.observacoes || '';
@@ -374,7 +376,8 @@
     const produtoId    = document.getElementById('selProduto').value;
     const quantidade   = parseFloat(document.getElementById('fQuantidade').value);
 
-    if (!fornecedorId) { sbMensagem('msgModal', 'O fornecedor é obrigatório.', 'err'); return; }
+    const novoStatus = document.getElementById('fStatus').value;
+    if (!fornecedorId && novoStatus !== 'Pendente') { sbMensagem('msgModal', 'O fornecedor é obrigatório para avançar o pedido.', 'err'); return; }
     if (!produtoId)    { sbMensagem('msgModal', 'O produto é obrigatório.', 'err'); return; }
     if (!quantidade || quantidade <= 0) { sbMensagem('msgModal', 'A quantidade deve ser maior que zero.', 'err'); return; }
 
@@ -386,7 +389,7 @@
       produto_id:     produtoId,
       quantidade,
       preco_unitario: preco || null,
-      status:         document.getElementById('fStatus').value,
+      status:         novoStatus,
       data:           document.getElementById('fData').value || null,
       data_prevista:  document.getElementById('fDataPrevista').value || null,
       observacoes:    document.getElementById('fObs').value || null,
@@ -394,19 +397,47 @@
 
     try {
       const id = document.getElementById('fId').value;
+      const anterior = id ? registros.find(x => x.id === id) : null;
+      let savedId = id;
       if (id) {
         await sbAtualizar('compras_pedidos', id, dados);
       } else {
         dados.numero = await Numerar.pedidoCompra();
-        await sbInserir('compras_pedidos', dados);
+        const novo = await sbInserir('compras_pedidos', dados);
+        savedId = novo?.id;
         if (window.gamif) await gamif.registrarEvento('pedido_compra_criado');
       }
       fecharModal();
-      sbMensagem('msgCrud', 'Pedido salvo com sucesso!', 'ok');
+      const finalizado = ['Confirmado', 'Concluído'].includes(novoStatus);
+      const estavaFinalizado = ['Confirmado', 'Concluído'].includes(anterior?.status);
+      if (finalizado && !estavaFinalizado && savedId) {
+        const numeroRecebimento = await gerarRecebimentoAutomatico(savedId, dados);
+        sbMensagem('msgCrud', `Pedido concluído! Recebimento <strong>${numeroRecebimento}</strong> criado como Aguardando.`, 'ok');
+      } else {
+        sbMensagem('msgCrud', 'Pedido salvo com sucesso!', 'ok');
+      }
       await carregar();
     } catch (e) {
       sbMensagem('msgModal', 'Erro ao salvar: ' + e.message, 'err');
     }
+  }
+
+  async function gerarRecebimentoAutomatico(pedidoId, pedido) {
+    const existentes = await sbListar('compras_recebimentos',
+      `pedido_id=eq.${encodeURIComponent(pedidoId)}&select=id,numero&limit=1`);
+    if (existentes.length) return existentes[0].numero;
+    const numero = await Numerar.recebimento();
+    await sbInserir('compras_recebimentos', {
+      numero,
+      pedido_id: pedidoId,
+      fornecedor_id: pedido.fornecedor_id,
+      produto_id: pedido.produto_id,
+      qtd_esperada: pedido.quantidade,
+      status: 'Aguardando',
+      data: new Date().toISOString().split('T')[0],
+      observacoes: 'Gerado automaticamente pela conclusão do Pedido de Compra',
+    });
+    return numero;
   }
 
   function excluir(id) {

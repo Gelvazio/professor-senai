@@ -196,6 +196,14 @@ Controla todo o ciclo de compras: do planejamento ao recebimento e entrada de no
 Planejamento → Solicitação de Compras → Pedido de Compras → Recebimento → Conferência → Entrada de Nota Fiscal
 ```
 
+**Transições automáticas obrigatórias:**
+- Planejamento `Concluído` gera uma única Solicitação de Compras `Pendente`.
+- Solicitação `Aprovada` ou `Concluída` gera um único Pedido de Compras `Pendente`, que pode aguardar a definição do fornecedor.
+- Pedido `Confirmado` ou `Concluído` gera um único Recebimento `Aguardando`.
+- Recebimento efetivado gera uma única Conferência `Pendente`; quando total, também atualiza o Pedido para `Recebido`.
+- Somente recebimentos com Conferência `Aprovado` ficam disponíveis para lançamento da Nota Fiscal.
+- Cada transição deve consultar o vínculo de origem e reutilizar o registro existente para impedir duplicidade.
+
 ### 2.1 Planejamento
 
 Registro do planejamento de compras por período.
@@ -226,7 +234,7 @@ Registro formal de necessidade de compra de um produto.
 | Unidade | Texto | Preenchido automaticamente com base no produto selecionado |
 | Solicitante | Texto/Select | Nome ou usuário que solicitou |
 | Prioridade | Select | Baixa, Média, Alta, Urgente |
-| Status | Select | Pendente, Em Análise, Aprovada, Reprovada, Cancelada |
+| Status | Select | Pendente, Em Análise, Aprovada, Concluída, Reprovada, Cancelada |
 | Data | Data | Data da solicitação (default: hoje) |
 | Observações | Texto longo | — |
 
@@ -240,12 +248,12 @@ Formalização da compra junto ao fornecedor, vinculada a uma Solicitação.
 |-------|------|--------|
 | Número do Pedido | Texto | **Gerado automaticamente**. Formato: `PC00001` (sequencial, nunca editável) |
 | Solicitação de Compras | Select | SC vinculada (opcional — pedido pode ser criado sem SC) |
-| Fornecedor | Select | **Obrigatório**. Fornecedores ativos |
+| Fornecedor | Select | Obrigatório ao avançar o pedido; pode ficar vazio enquanto `Pendente` |
 | Produto | Select | **Obrigatório**. Produtos ativos |
 | Quantidade | Número | **Obrigatório** |
 | Preço Unitário | Número | Formato R$ 1.000,00 |
 | Valor Total | Número | **Calculado automaticamente**: Quantidade × Preço Unitário |
-| Status | Select | Rascunho, Enviado, Confirmado, Cancelado, Recebido |
+| Status | Select | Pendente, Rascunho, Enviado, Confirmado, Concluído, Cancelado, Recebido |
 | Data | Data | Data do pedido (default: hoje) |
 | Data Prevista | Data | Previsão de entrega do fornecedor |
 | Observações | Texto longo | — |

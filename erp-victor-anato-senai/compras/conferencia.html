@@ -349,13 +349,18 @@
 
     try {
       const id = document.getElementById('fId').value;
+      const anterior = id ? registros.find(x => x.id === id) : null;
       if (id) {
         await sbAtualizar('compras_conferencias', id, dados);
       } else {
         await sbInserir('compras_conferencias', dados);
       }
       fecharModal();
-      sbMensagem('msgCrud', 'Conferência salva com sucesso!', 'ok');
+      if (dados.status === 'Aprovado' && anterior?.status !== 'Aprovado') {
+        sbMensagem('msgCrud', 'Conferência aprovada! O recebimento está liberado para lançamento da Nota Fiscal.', 'ok');
+      } else {
+        sbMensagem('msgCrud', 'Conferência salva com sucesso!', 'ok');
+      }
       await carregar();
     } catch (e) {
       sbMensagem('msgModal', 'Erro ao salvar: ' + e.message, 'err');

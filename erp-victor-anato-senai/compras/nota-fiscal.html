@@ -436,13 +436,23 @@
   }
 
   async function inicializar() {
-    await Promise.all([
-      sbPopularSelect('selFornecedor', 'fornecedores', 'ativo=eq.true&order=nome.asc&select=id,nome'),
-      sbPopularSelect('selRecebimento', 'compras_recebimentos', 'select=id,numero&order=numero.desc', 'id', 'numero', 'Nenhum')
-    ]);
+    await sbPopularSelect('selFornecedor', 'fornecedores', 'ativo=eq.true&order=nome.asc&select=id,nome');
     try {
-      recebimentosCache = await sbListar('compras_recebimentos',
-        'select=id,numero,fornecedor_id,produto_id,qtd_recebida&order=numero.desc');
+      const conferencias = await sbListar('compras_conferencias',
+        'status=eq.Aprovado&select=recebimento_id');
+      const idsAprovados = [...new Set(conferencias.map(c => c.recebimento_id).filter(Boolean))];
+      recebimentosCache = idsAprovados.length
+        ? await sbListar('compras_recebimentos',
+            `id=in.(${idsAprovados.map(encodeURIComponent).join(',')})&select=id,numero,fornecedor_id,produto_id,qtd_recebida&order=numero.desc`)
+        : [];
+      const select = document.getElementById('selRecebimento');
+      select.innerHTML = '<option value="">— Nenhum —</option>';
+      recebimentosCache.forEach(rec => {
+        const option = document.createElement('option');
+        option.value = rec.id;
+        option.textContent = rec.numero;
+        select.appendChild(option);
+      });
     } catch {}
     await carregar();
   }
