@@ -3805,6 +3805,7 @@
       let _materiasCursoModal = [];
 
       const EMENTAS_PADRAO_POR_MATERIA = {
+        "introducao a tecnologia da informacao e comunicacao": "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
         "competencias socioemocionais e empreendedorismo": "FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/ementa_Competencias_Socioemocionais_Empreendedorismo.md",
         "exploracao de carreiras industriais e tecnologicas": "FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/ementa_Exploracao_Carreiras_Industriais_Tecnologicas.md",
         "fundamentos da tecnologia e programacao": "FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/ementa_Fundamentos_Tecnologia_Programacao.md",
@@ -3815,15 +3816,17 @@
         "reforco matematica e raciocinio logico": "FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/ementa_Reforco_Matematica_Raciocinio_Logico.md"
       };
 
-      function obterCaminhoEmentaMateria(materia) {
-        const caminhoConfigurado = String(materia?.ementa_caminho || "").trim();
-        if (caminhoConfigurado) return caminhoConfigurado;
+      function obterCaminhoPadraoEmentaMateria(materia) {
         const descricaoNormalizada = String(materia?.descricao || "")
           .normalize("NFD")
           .replace(/[\u0300-\u036f]/g, "")
           .trim()
           .toLowerCase();
         return EMENTAS_PADRAO_POR_MATERIA[descricaoNormalizada] || "";
+      }
+
+      function obterCaminhoEmentaMateria(materia) {
+        return String(materia?.ementa_caminho || "").trim() || obterCaminhoPadraoEmentaMateria(materia);
       }
 
       async function abrirCursoModal(id) {
@@ -4208,7 +4211,10 @@
       async function abrirEmentaMateria(materiaId) {
         const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
         if (!materia) return;
-        const caminhoEmenta = obterCaminhoEmentaMateria(materia);
+        const caminhosEmenta = [
+          String(materia.ementa_caminho || "").trim(),
+          obterCaminhoPadraoEmentaMateria(materia)
+        ].filter((caminho, indice, lista) => caminho && lista.indexOf(caminho) === indice);
 
         const modal = document.getElementById("ementaMateriaModal");
         const body = document.getElementById("ementaMateriaBody");
@@ -4217,15 +4223,21 @@
         modal.style.display = "flex";
         document.body.style.overflow = "hidden";
 
-        if (!caminhoEmenta) {
+        if (!caminhosEmenta.length) {
           body.innerHTML = '<div class="pe-loading">⚠️ Caminho da ementa não configurado. Use “Editar Matéria” para informar o arquivo.</div>';
           return;
         }
 
         try {
-          const resposta = await fetch(caminhoEmenta, { cache: "no-store" });
-          if (!resposta.ok) throw new Error("HTTP " + resposta.status);
-          body.innerHTML = mdToHtml(await resposta.text());
+          let conteudoEmenta = "";
+          for (const caminho of caminhosEmenta) {
+            const resposta = await fetch(caminho, { cache: "no-store" });
+            if (!resposta.ok) continue;
+            conteudoEmenta = await resposta.text();
+            break;
+          }
+          if (!conteudoEmenta) throw new Error("Nenhum caminho de ementa respondeu com sucesso.");
+          body.innerHTML = mdToHtml(conteudoEmenta);
         } catch (erro) {
           body.innerHTML = '<div class="pe-loading">⚠️ Não foi possível carregar a ementa. Verifique o caminho configurado.</div>';
         }
