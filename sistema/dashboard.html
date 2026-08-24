@@ -4297,6 +4297,39 @@
         document.getElementById("avaliacaoId").value = "";
       }
 
+      const COLUNAS_OPCIONAIS_AVALIACAO = [
+        "status_plano_aula",
+        "status_plano_ensino",
+        "acompanhamento_pedagogico_sgn",
+      ];
+
+      function colunaAvaliacaoAusente(erro) {
+        const mensagem = String(erro?.message || erro || "");
+        return COLUNAS_OPCIONAIS_AVALIACAO.find((coluna) => {
+          return mensagem.includes(coluna) && /column|coluna|schema cache|PGRST204/i.test(mensagem);
+        }) || null;
+      }
+
+      async function gravarAvaliacaoCompativel(id, dados) {
+        const dadosCompativeis = { ...dados };
+        const colunasIgnoradas = [];
+
+        for (let tentativa = 0; tentativa <= COLUNAS_OPCIONAIS_AVALIACAO.length; tentativa++) {
+          try {
+            if (id) await sbPatch("avaliacao", "id", id, dadosCompativeis);
+            else await sbPost("avaliacao", dadosCompativeis);
+            return colunasIgnoradas;
+          } catch (erro) {
+            const colunaAusente = colunaAvaliacaoAusente(erro);
+            if (!colunaAusente || !(colunaAusente in dadosCompativeis)) throw erro;
+            delete dadosCompativeis[colunaAusente];
+            colunasIgnoradas.push(colunaAusente);
+          }
+        }
+
+        throw new Error("Não foi possível adaptar a avaliação ao schema atual.");
+      }
+
       async function salvarAvaliacao() {
         if (!_avaliacaoMateriaAtual) return;
         const titulo = document.getElementById("avaliacaoTitulo").value.trim();
@@ -4325,13 +4358,18 @@
         }
         setAvaliacoesMsg("Salvando…");
         try {
-          if (id) await sbPatch("avaliacao", "id", id, dados);
-          else await sbPost("avaliacao", dados);
+          const colunasIgnoradas = await gravarAvaliacaoCompativel(id, dados);
           fecharFormAvaliacao();
           await carregarAvaliacoesMateria();
-          setAvaliacoesMsg(id ? "✅ Avaliação atualizada." : "✅ Avaliação cadastrada.");
+          if (colunasIgnoradas.length) {
+            setAvaliacoesMsg("⚠️ Avaliação salva. Execute supabase-avaliacoes.sql para habilitar Plano de Aula e Plano de Ensino.", true);
+          } else {
+            setAvaliacoesMsg(id ? "✅ Avaliação atualizada." : "✅ Avaliação cadastrada.");
+          }
         } catch (erro) {
-          setAvaliacoesMsg("Não foi possível salvar a avaliação.", true);
+          console.error("Erro ao salvar avaliação:", erro);
+          const detalhe = String(erro?.message || "");
+          setAvaliacoesMsg("Não foi possível salvar a avaliação." + (detalhe ? " Consulte o detalhe no console." : ""), true);
         }
       }
 
