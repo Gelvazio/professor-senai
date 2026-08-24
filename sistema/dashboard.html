@@ -2178,7 +2178,7 @@
     <div
       class="crud-backdrop"
       id="aulasModal"
-      style="display: none"
+      style="display: none; z-index: 2400"
     >
       <div class="crud-modal" style="max-width: 1100px">
         <div class="crud-modal-head">
@@ -2364,7 +2364,7 @@
     <div
       class="crud-backdrop"
       id="matAulaModal"
-      style="display: none; z-index: 1100"
+      style="display: none; z-index: 2500"
     >
       <div class="crud-modal" style="max-width: 440px">
         <div class="crud-modal-head">
@@ -3276,6 +3276,14 @@
 
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
+          if (document.getElementById("matAulaModal").style.display === "flex") {
+            fecharAddMatAula();
+            return;
+          }
+          if (document.getElementById("aulasModal").style.display === "flex") {
+            fecharAulasModal();
+            return;
+          }
           if (document.getElementById("avaliacaoFormModal").style.display === "flex") {
             fecharFormAvaliacao();
             return;
@@ -4253,7 +4261,6 @@
         const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
         const curso = _cursoMateriasAtual;
         if (!materia || !curso) return;
-        fecharCursoModal();
         await abrirAulasCurso(curso.idNum, curso.nome + " — " + materia.descricao);
       }
 
