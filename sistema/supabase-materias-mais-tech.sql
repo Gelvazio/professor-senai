@@ -8,6 +8,18 @@ alter table public.materia
 alter table public.materia
   add column if not exists apostila_caminho text;
 
+alter table public.materia
+  add column if not exists status_criacao_avaliacao text not null default 'PENDENTE'
+    check (status_criacao_avaliacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
+
+alter table public.materia
+  add column if not exists status_plano_aula text not null default 'PENDENTE'
+    check (status_plano_aula in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
+
+alter table public.materia
+  add column if not exists status_plano_ensino text not null default 'PENDENTE'
+    check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
+
 do $$
 declare
   v_curso_id bigint;

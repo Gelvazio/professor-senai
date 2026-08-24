@@ -11,12 +11,6 @@ create table if not exists public.avaliacao (
     check (status in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
   status_aplicacao text not null default 'PENDENTE'
     check (status_aplicacao in ('PENDENTE', 'CONCLUIDO', 'CANCELADO')),
-  status_criacao text not null default 'PENDENTE'
-    check (status_criacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
-  status_plano_aula text not null default 'PENDENTE'
-    check (status_plano_aula in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
-  status_plano_ensino text not null default 'PENDENTE'
-    check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
   status_revisao text not null default 'PENDENTE'
     check (status_revisao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
   status_cadastro_sgn text not null default 'PENDENTE'
@@ -34,35 +28,54 @@ alter table public.avaliacao
 alter table public.avaliacao
   add column if not exists acompanhamento_pedagogico_sgn text not null default 'PENDENTE';
 
-alter table public.avaliacao
-  add column if not exists status_plano_aula text not null default 'PENDENTE';
+alter table public.materia
+  add column if not exists status_criacao_avaliacao text not null default 'PENDENTE'
+    check (status_criacao_avaliacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
 
-alter table public.avaliacao
-  add column if not exists status_plano_ensino text not null default 'PENDENTE';
+alter table public.materia
+  add column if not exists status_plano_aula text not null default 'PENDENTE'
+    check (status_plano_aula in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
 
+alter table public.materia
+  add column if not exists status_plano_ensino text not null default 'PENDENTE'
+    check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
+
+-- Preserva o estado mais crítico de cada matéria antes de remover as colunas antigas.
 do $$
+declare
+  v_coluna text;
+  v_destino text;
 begin
-  if not exists (
-    select 1 from pg_constraint where conname = 'avaliacao_status_plano_aula_check'
-  ) then
-    alter table public.avaliacao
-      add constraint avaliacao_status_plano_aula_check
-      check (status_plano_aula in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
-  end if;
+  for v_coluna, v_destino in
+    select * from (values
+      ('status_criacao', 'status_criacao_avaliacao'),
+      ('status_plano_aula', 'status_plano_aula'),
+      ('status_plano_ensino', 'status_plano_ensino')
+    ) as campos(origem, destino)
+  loop
+    if exists (
+      select 1
+        from information_schema.columns
+       where table_schema = 'public'
+         and table_name = 'avaliacao'
+         and column_name = v_coluna
+    ) then
+      execute format(
+        'update public.materia m set %I = case '
+        || 'when exists (select 1 from public.avaliacao a where a.materia_id = m.id and a.%I = ''PENDENTE'') then ''PENDENTE'' '
+        || 'when exists (select 1 from public.avaliacao a where a.materia_id = m.id and a.%I = ''ANDAMENTO'') then ''ANDAMENTO'' '
+        || 'when exists (select 1 from public.avaliacao a where a.materia_id = m.id and a.%I = ''CONCLUIDO'') then ''CONCLUIDO'' '
+        || 'else m.%I end',
+        v_destino, v_coluna, v_coluna, v_coluna, v_destino
+      );
+    end if;
+  end loop;
 end;
 $$;
 
-do $$
-begin
-  if not exists (
-    select 1 from pg_constraint where conname = 'avaliacao_status_plano_ensino_check'
-  ) then
-    alter table public.avaliacao
-      add constraint avaliacao_status_plano_ensino_check
-      check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
-  end if;
-end;
-$$;
+alter table public.avaliacao drop column if exists status_criacao;
+alter table public.avaliacao drop column if exists status_plano_aula;
+alter table public.avaliacao drop column if exists status_plano_ensino;
 
 do $$
 begin
