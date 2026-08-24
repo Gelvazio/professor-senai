@@ -1080,6 +1080,11 @@
       .curso-materia-avaliacoes { background:#f7941d; }
       .curso-materia-avaliacoes:hover { background:#d97800; }
       .curso-materia-estado { grid-column:1 / -1; text-align:center; color:#888; padding:36px 20px; font-size:13px; }
+      .curso-materias-toolbar { display:flex; align-items:center; gap:10px; padding:12px 20px; border-bottom:1px solid #e2e7f0; }
+      .curso-materia-form { padding:16px 20px; background:#fafbfe; border-bottom:1px solid #e2e7f0; }
+      .curso-materia-form-grid { display:grid; grid-template-columns:2fr 1fr; gap:12px; }
+      .curso-materia-form-acoes { display:flex; gap:9px; margin-top:14px; }
+      .curso-materia-editar { background:#e8f0fe; color:#004384; }
       .avaliacoes-modal-backdrop {
         position: fixed;
         inset: 0;
@@ -1132,6 +1137,9 @@
         .avaliacao-form-grid { grid-template-columns:1fr; }
         .avaliacao-form-full { grid-column:auto; }
         .curso-materia-card-rodape { flex-wrap:wrap; }
+        .curso-materias-toolbar { flex-wrap:wrap; padding:10px 12px; }
+        .curso-materia-form { padding:14px 12px; }
+        .curso-materia-form-grid { grid-template-columns:1fr; }
       }
       .aula-item {
         border: 1px solid #e8eaed;
@@ -1271,6 +1279,7 @@
       [data-theme="dark"] .curso-materia-card-icone { background:#1a2a40; color:#7ab4e8; }
       [data-theme="dark"] .curso-materia-card-codigo, [data-theme="dark"] .curso-materia-estado { color:#8b919e; }
       [data-theme="dark"] .curso-materia-card-nome { color:#e0e3e8; }
+      [data-theme="dark"] .curso-materias-toolbar, [data-theme="dark"] .curso-materia-form { background:#141620; border-bottom-color:#2c2e38; }
       [data-theme="dark"] .avaliacao-card { background:#20232c; border-color:#343743; border-top-color:#f7941d; }
       [data-theme="dark"] .avaliacao-card-titulo { color:#e0e3e8; }
       [data-theme="dark"] .avaliacao-data, [data-theme="dark"] .avaliacao-etapa-label, [data-theme="dark"] .avaliacoes-estado { color:#9aa0aa; }
@@ -1863,6 +1872,29 @@
         <div class="curso-modal-head">
           <h3 id="cursoModalTitulo">Aulas do Curso</h3>
           <button class="crud-btn-fechar" onclick="fecharCursoModal()">✕</button>
+        </div>
+        <div class="curso-materias-toolbar" id="cursoMateriasToolbar" style="display:none">
+          <button class="btn-novo" onclick="novaMateriaCurso()">＋ Adicionar Matéria</button>
+          <span class="crud-msg" id="cursoMateriasMsg"></span>
+        </div>
+        <div class="curso-materia-form" id="cursoMateriaForm" style="display:none">
+          <input type="hidden" id="cursoMateriaId">
+          <div class="curso-materia-form-grid">
+            <div class="crud-field">
+              <label class="crud-label" for="cursoMateriaDescricao">Nome da matéria</label>
+              <input class="crud-input" id="cursoMateriaDescricao" type="text" required>
+            </div>
+            <div class="crud-field">
+              <label class="crud-label" for="cursoMateriaAtivo">Status</label>
+              <select class="crud-input" id="cursoMateriaAtivo">
+                <option value="1">Ativa</option><option value="0">Inativa</option>
+              </select>
+            </div>
+          </div>
+          <div class="curso-materia-form-acoes">
+            <button class="btn-salvar" onclick="salvarMateriaCurso()">💾 Salvar</button>
+            <button class="btn-cancelar" onclick="fecharFormMateriaCurso()">Cancelar</button>
+          </div>
         </div>
         <div class="curso-modal-body" id="cursoModalBody"></div>
       </div>
@@ -3717,6 +3749,9 @@
         if (!curso) return;
         _cursoMateriasAtual = curso;
         _materiasCursoModal = [];
+        fecharFormMateriaCurso();
+        document.getElementById("cursoMateriasToolbar").style.display = isProfessor ? "flex" : "none";
+        document.getElementById("cursoMateriasMsg").textContent = "";
         document.getElementById("cursoModalTitulo").textContent = "Matérias — " + curso.nome;
         const body = document.getElementById("cursoModalBody");
         body.innerHTML = '<div class="curso-materia-estado">⏳ Carregando matérias…</div>';
@@ -3750,6 +3785,7 @@
               <div class="curso-materia-card-rodape">
                 <span class="curso-materia-status ${ativa ? "" : "inativa"}">${ativa ? "● Disponível" : "● Inativa"}</span>
                 <div style="display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end">
+                  ${isProfessor ? `<button class="curso-materia-acessar curso-materia-editar" onclick="editarMateriaCurso(${Number(materia.id)})">Editar Matéria</button>` : ""}
                   <button class="curso-materia-acessar curso-materia-avaliacoes" onclick="abrirAvaliacoesMateria(${Number(materia.id)})">Avaliações</button>
                   <button class="curso-materia-acessar" onclick="abrirMateriaDoCurso(${Number(materia.id)})">Ver aulas →</button>
                 </div>
@@ -3758,6 +3794,72 @@
           }).join("");
         } catch (erro) {
           body.innerHTML = '<div class="curso-materia-estado">⚠️ Não foi possível carregar as matérias deste curso.</div>';
+        }
+      }
+
+      function setCursoMateriasMsg(texto, erro) {
+        const msg = document.getElementById("cursoMateriasMsg");
+        msg.textContent = texto || "";
+        msg.style.color = erro ? "#c62828" : "#2e7d32";
+      }
+
+      function novaMateriaCurso() {
+        if (!_cursoMateriasAtual) return;
+        document.getElementById("cursoMateriaId").value = "";
+        document.getElementById("cursoMateriaDescricao").value = "";
+        document.getElementById("cursoMateriaAtivo").value = "1";
+        document.getElementById("cursoMateriaForm").style.display = "block";
+        document.getElementById("cursoMateriaDescricao").focus();
+        setCursoMateriasMsg("");
+      }
+
+      function editarMateriaCurso(materiaId) {
+        const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
+        if (!materia) return;
+        document.getElementById("cursoMateriaId").value = materia.id;
+        document.getElementById("cursoMateriaDescricao").value = materia.descricao || "";
+        document.getElementById("cursoMateriaAtivo").value = materia.ativo == 1 ? "1" : "0";
+        document.getElementById("cursoMateriaForm").style.display = "block";
+        document.getElementById("cursoMateriaForm").scrollIntoView({ behavior: "smooth", block: "nearest" });
+        setCursoMateriasMsg("Editando matéria " + materia.id);
+      }
+
+      function fecharFormMateriaCurso() {
+        const form = document.getElementById("cursoMateriaForm");
+        if (!form) return;
+        form.style.display = "none";
+        document.getElementById("cursoMateriaId").value = "";
+      }
+
+      async function salvarMateriaCurso() {
+        if (!_cursoMateriasAtual) return;
+        const descricao = document.getElementById("cursoMateriaDescricao").value.trim();
+        if (!descricao) {
+          setCursoMateriasMsg("Informe o nome da matéria.", true);
+          document.getElementById("cursoMateriaDescricao").focus();
+          return;
+        }
+        const id = document.getElementById("cursoMateriaId").value;
+        const dados = {
+          descricao: descricao,
+          ativo: Number(document.getElementById("cursoMateriaAtivo").value)
+        };
+        const cursoId = _cursoMateriasAtual.idNum;
+        setCursoMateriasMsg("Salvando…");
+        try {
+          if (id) {
+            await sbPatch("materia", "id", id, dados);
+          } else {
+            const criada = await sbPost("materia", dados);
+            if (!criada || !criada[0]) throw new Error("Matéria não retornada pelo Supabase.");
+            await sbPost("cursomateria", { cursoid: cursoId, materiaid: criada[0].id });
+          }
+          cacheMateria = [];
+          fecharFormMateriaCurso();
+          await abrirCursoModal(cursoId);
+          setCursoMateriasMsg(id ? "✅ Matéria atualizada." : "✅ Matéria adicionada ao curso.");
+        } catch (erro) {
+          setCursoMateriasMsg("Não foi possível salvar a matéria.", true);
         }
       }
 
@@ -3949,6 +4051,7 @@
 
       function fecharCursoModal() {
         document.getElementById("cursoModalBd").style.display = "none";
+        fecharFormMateriaCurso();
         document.body.style.overflow = "";
       }
 
