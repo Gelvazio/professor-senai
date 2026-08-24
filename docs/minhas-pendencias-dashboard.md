@@ -1,5 +1,7 @@
 # Minhas Pendências no Dashboard
 
+> **Substituída:** esta implementação baseada em `pendencias.json` foi migrada para o CRUD no Supabase, documentado em `docs/crud-minhas-pendencias.md`. O arquivo JSON local foi removido.
+
 **Objetivo:** Adicionar a ferramenta “Minhas Pendências” ao dashboard do professor e exibir os dados de `sistema/pendencias.json` em um modal.
 
 **Tech Stack:** HTML, CSS, JavaScript e JSON
