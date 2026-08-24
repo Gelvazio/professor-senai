@@ -2,6 +2,9 @@
 -- e cria os vínculos com o curso Rio do Sul Mais Tech.
 -- O script é idempotente: pode ser executado novamente sem duplicar dados.
 
+alter table public.materia
+  add column if not exists ementa_caminho text;
+
 do $$
 declare
   v_curso_id bigint;
@@ -62,6 +65,29 @@ begin
        from public.cursomateria cm
       where cm.cursoid = v_curso_id
         and cm.materiaid = m.id
+   );
+
+  update public.materia
+     set ementa_caminho = case lower(trim(descricao))
+       when lower('Competências Socioemocionais e Empreendedorismo') then 'FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/ementa_Competencias_Socioemocionais_Empreendedorismo.md'
+       when lower('Exploração de Carreiras Industriais e Tecnológicas') then 'FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/ementa_Exploracao_Carreiras_Industriais_Tecnologicas.md'
+       when lower('Fundamentos da Tecnologia e Programação') then 'FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/ementa_Fundamentos_Tecnologia_Programacao.md'
+       when lower('Introdução à Comunicação Oral e Escrita para o Mundo do Trabalho') then 'FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Ementa_Introducao_Comunicacao_Oral_Escrita.md'
+       when lower('Noções de Eletricidade e Circuitos Básicos') then 'FICHA-PRODUTO-MAIS-TECH/NOCOES_ELETRICIDADE_CIRCUITOS_BASICOS/Ementa_Nocoes_Eletricidade_Circuitos_Basicos.md'
+       when lower('Oficinas de Impressão 3D e Robótica') then 'FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/Ementa_Oficinas_Impressao_3D_Robotica.md'
+       when lower('Reforço de Linguagens') then 'FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Ementa_Reforco_Linguagens.md'
+       when lower('Reforço Matemática e Raciocínio Lógico') then 'FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/ementa_Reforco_Matematica_Raciocinio_Logico.md'
+       else ementa_caminho
+     end
+   where lower(trim(descricao)) in (
+     lower('Competências Socioemocionais e Empreendedorismo'),
+     lower('Exploração de Carreiras Industriais e Tecnológicas'),
+     lower('Fundamentos da Tecnologia e Programação'),
+     lower('Introdução à Comunicação Oral e Escrita para o Mundo do Trabalho'),
+     lower('Noções de Eletricidade e Circuitos Básicos'),
+     lower('Oficinas de Impressão 3D e Robótica'),
+     lower('Reforço de Linguagens'),
+     lower('Reforço Matemática e Raciocínio Lógico')
    );
 end;
 $$;
