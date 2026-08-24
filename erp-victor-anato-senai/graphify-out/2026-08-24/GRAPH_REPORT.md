@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-24)
 
 ## Corpus Check
-- 75 files · ~623,750 words
+- 75 files · ~624,721 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1286 nodes · 1272 edges · 78 communities (76 shown, 2 thin omitted)
+- 1295 nodes · 1281 edges · 78 communities (76 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0a8dd716`
+- Built from commit: `423c9fcb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -78,6 +78,7 @@
 - login-perfil.test.js
 - Status Geral
 - Progresso — Gamificação ERP SENAI
+- Status Geral
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -343,8 +344,12 @@ Nodes (8): assert, criarContexto(), fetch(), { readFileSync }, resposta(), { run
 Cohesion: 0.29
 Nodes (6): Carregar Telas do Perfil no Login, Passo 1: Reproduzir o fluxo incorreto, Passo 2: Corrigir o carregamento por perfil, Passo 3: Validar login, menu e integração real, Passo 4: Commit, push e Graphify, Status Geral
 
+### Community 77 - "Status Geral"
+Cohesion: 0.20
+Nodes (9): Corrigir Fluxo de Compras, Passo 1: Planejamento para solicitação, Passo 2: Solicitação para pedido, Passo 3: Pedido para recebimento, Passo 4: Recebimento para conferência, Passo 5: Conferência para nota fiscal, Passo 6: Regras e esquema, Passo 7: Publicação (+1 more)
+
 ## Knowledge Gaps
-- **1008 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+1003 more)
+- **1015 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+1010 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -352,7 +357,7 @@ Nodes (6): Carregar Telas do Perfil no Login, Passo 1: Reproduzir o fluxo incorr
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _1008 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1015 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `SUPABASE.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07293868921775898 - nodes in this community are weakly interconnected._
 - **Should `Intro_gest_org` be split into smaller, more focused modules?**

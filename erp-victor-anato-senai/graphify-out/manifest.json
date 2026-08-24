@@ -16,9 +16,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1787577019.3006463,
-    "seen": 1787577077.1006477,
-    "ast_hash": "165d90af58e7616553ebc946c1d195d8",
+    "mtime": 1787578575.7668805,
+    "seen": 1787578615.0163884,
+    "ast_hash": "2452196f6355710253b754d3824a278a",
     "semantic_hash": ""
   },
   "dashboard.html": {
@@ -51,9 +51,9 @@
     "semantic_hash": ""
   },
   "compras/solicitacoes.html": {
-    "mtime": 1787576954.363376,
-    "seen": 1787577077.1149254,
-    "ast_hash": "fe3ac66ff4271be53e07e1cbab91c96e",
+    "mtime": 1787578570.1951263,
+    "seen": 1787578615.0279768,
+    "ast_hash": "0866f9c314824dd7e98c0047c82574b4",
     "semantic_hash": ""
   },
   "configuracoes/usuarios.html": {
@@ -860,6 +860,12 @@
     "mtime": 1787577085.0549846,
     "seen": 1787577108.7547357,
     "ast_hash": "2dbd28d0de85ab9bbc541b432c3d7d77",
+    "semantic_hash": ""
+  },
+  "docs/ADICIONAR-FORNECEDOR-SOLICITACAO.md": {
+    "mtime": 1787578597.0586798,
+    "seen": 1787578615.0279768,
+    "ast_hash": "de4f43c8018ece90966b4a71abb85c71",
     "semantic_hash": ""
   }
 }

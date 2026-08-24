@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-24)
 
 ## Corpus Check
-- 75 files · ~624,721 words
+- 76 files · ~625,092 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1295 nodes · 1281 edges · 78 communities (76 shown, 2 thin omitted)
+- 1304 nodes · 1289 edges · 79 communities (77 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `423c9fcb`
+- Built from commit: `2f531b05`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -79,6 +79,7 @@
 - Status Geral
 - Progresso — Gamificação ERP SENAI
 - Status Geral
+- Status Geral
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -98,7 +99,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (78 total, 2 thin omitted)
+## Communities (79 total, 2 thin omitted)
 
 ### Community 0 - "SUPABASE.js"
 Cohesion: 0.07
@@ -348,8 +349,12 @@ Nodes (6): Carregar Telas do Perfil no Login, Passo 1: Reproduzir o fluxo incorr
 Cohesion: 0.20
 Nodes (9): Corrigir Fluxo de Compras, Passo 1: Planejamento para solicitação, Passo 2: Solicitação para pedido, Passo 3: Pedido para recebimento, Passo 4: Recebimento para conferência, Passo 5: Conferência para nota fiscal, Passo 6: Regras e esquema, Passo 7: Publicação (+1 more)
 
+### Community 78 - "Status Geral"
+Cohesion: 0.22
+Nodes (8): Adicionar Fornecedor à Solicitação de Compra, Passo 1: Esquema, Passo 2: Modal, Passo 3: Aprovação, Passo 4: Pedido automático, Passo 5: Regras, Passo 6: Publicação, Status Geral
+
 ## Knowledge Gaps
-- **1015 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+1010 more)
+- **1021 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+1016 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -357,7 +362,7 @@ Nodes (9): Corrigir Fluxo de Compras, Passo 1: Planejamento para solicitação, 
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _1015 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1021 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `SUPABASE.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07293868921775898 - nodes in this community are weakly interconnected._
 - **Should `Intro_gest_org` be split into smaller, more focused modules?**
