@@ -203,6 +203,45 @@
       .card.bloqueado {
         opacity: 0.65;
       }
+      .card.com-pendencias {
+        animation: pulso-pendencias-curso 2.8s ease-in-out infinite;
+      }
+      .card-pendencias {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        min-width: 30px;
+        height: 30px;
+        padding: 0 9px;
+        border: 1px solid rgba(198, 40, 40, 0.28);
+        border-radius: 16px;
+        background: rgba(255, 245, 245, 0.96);
+        color: #b3261e;
+        box-shadow: 0 2px 7px rgba(120, 20, 20, 0.2);
+        font-size: 12px;
+        font-weight: 800;
+      }
+      .card-pendencias-sino {
+        font-size: 15px;
+        line-height: 1;
+      }
+      @keyframes pulso-pendencias-curso {
+        0%, 100% {
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+        50% {
+          box-shadow: 0 3px 15px rgba(198, 40, 40, 0.3), 0 0 0 3px rgba(198, 40, 40, 0.08);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .card.com-pendencias {
+          animation: none;
+        }
+      }
 
       .card-thumb {
         height: 100px;
@@ -1246,6 +1285,7 @@
       [data-theme="dark"] body { background: #0e1117; color: #e0e3e8; }
       [data-theme="dark"] .card { background: #1c1e26; }
       [data-theme="dark"] .card.disponivel:hover { box-shadow: 0 6px 24px rgba(0,100,255,.18); }
+      [data-theme="dark"] .card-pendencias { background:rgba(78,25,28,.96); color:#ffaaa4; border-color:rgba(255,120,115,.35); }
       [data-theme="dark"] .card-titulo { color: #e0e3e8; }
       [data-theme="dark"] .card-desc { color: #8b919e; }
       [data-theme="dark"] .tag { background: #252830; color: #b0b6c3; }
@@ -2475,6 +2515,56 @@
 
       let dadosCursos = null;
       let _cursosCache = {};
+      let _pendenciasCursosCache = {};
+
+      const CAMPOS_PENDENTES_AVALIACAO = [
+        "status",
+        "status_criacao",
+        "status_plano_aula",
+        "status_plano_ensino",
+        "status_aplicacao",
+        "status_revisao",
+        "status_cadastro_sgn",
+        "acompanhamento_pedagogico_sgn",
+      ];
+
+      async function carregarPendenciasCursos(cursos) {
+        const totais = Object.fromEntries(cursos.map((curso) => [String(curso.idNum), 0]));
+        const idsCursos = cursos.map((curso) => curso.idNum).filter(Number.isFinite);
+        if (!idsCursos.length) return totais;
+
+        try {
+          const vinculos = await sbGet(
+            "cursomateria",
+            `cursoid=in.(${idsCursos.join(",")})&select=cursoid,materiaid`,
+          );
+          const idsMaterias = [...new Set(vinculos.map((vinculo) => Number(vinculo.materiaid)).filter(Number.isFinite))];
+          if (!idsMaterias.length) return totais;
+
+          const avaliacoes = await sbGet(
+            "avaliacao",
+            `materia_id=in.(${idsMaterias.join(",")})&select=*`,
+          );
+          const totaisPorMateria = {};
+
+          avaliacoes.forEach((avaliacao) => {
+            const materiaId = String(avaliacao.materia_id);
+            const quantidade = CAMPOS_PENDENTES_AVALIACAO.reduce((total, campo) => {
+              return total + (String(avaliacao[campo] || "").toUpperCase() === "PENDENTE" ? 1 : 0);
+            }, 0);
+            totaisPorMateria[materiaId] = (totaisPorMateria[materiaId] || 0) + quantidade;
+          });
+
+          vinculos.forEach((vinculo) => {
+            const cursoId = String(vinculo.cursoid);
+            totais[cursoId] = (totais[cursoId] || 0) + (totaisPorMateria[String(vinculo.materiaid)] || 0);
+          });
+        } catch (erro) {
+          console.warn("Não foi possível carregar as pendências dos cursos.", erro);
+        }
+
+        return totais;
+      }
 
       // Visibilidade sobreposta (localStorage por curso)
       function getVis(id, padrao) {
@@ -2523,6 +2613,7 @@
 
         const grid = document.getElementById("grid");
         grid.innerHTML = "";
+        _pendenciasCursosCache = await carregarPendenciasCursos(dadosCursos.cursos);
 
         for (const curso of dadosCursos.cursos) {
           const visivel = getVis(curso.id, curso.visivel);
@@ -2544,11 +2635,13 @@
             .join("");
 
           const card = document.createElement("div");
-          card.className = "card " + (disponivel ? "disponivel" : "bloqueado");
+          const totalPendencias = _pendenciasCursosCache[String(curso.idNum)] || 0;
+          card.className = "card " + (disponivel ? "disponivel" : "bloqueado") + (totalPendencias ? " com-pendencias" : "");
           card.dataset.id = curso.id;
 
           card.innerHTML = `
       <div class="card-thumb" style="background:linear-gradient(135deg,${curso.corPrimaria||'#004384'} 0%,${curso.corSecundaria||'#0055b3'} 100%)">
+        ${totalPendencias ? `<span class="card-pendencias" title="${totalPendencias} etapa${totalPendencias === 1 ? '' : 's'} pendente${totalPendencias === 1 ? '' : 's'} nas avaliações deste curso" aria-label="${totalPendencias} pendências"><span class="card-pendencias-sino" aria-hidden="true">🔔</span>${totalPendencias}</span>` : ''}
         <span class="card-thumb-icon">${curso.icone||'📚'}</span>
         <div class="card-thumb-stripe" style="background:${curso.corFaixa||'#f7941d'}"></div>
       </div>
