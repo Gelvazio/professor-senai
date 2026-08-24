@@ -1958,6 +1958,18 @@
               </select>
             </div>
             <div class="crud-field">
+              <label class="crud-label" for="avaliacaoStatusPlanoAula">Plano de Aula</label>
+              <select class="crud-input" id="avaliacaoStatusPlanoAula">
+                <option value="PENDENTE" selected>Pendente</option><option value="ANDAMENTO">Andamento</option><option value="CONCLUIDO">Concluído</option>
+              </select>
+            </div>
+            <div class="crud-field">
+              <label class="crud-label" for="avaliacaoStatusPlanoEnsino">Plano de Ensino</label>
+              <select class="crud-input" id="avaliacaoStatusPlanoEnsino">
+                <option value="PENDENTE" selected>Pendente</option><option value="ANDAMENTO">Andamento</option><option value="CONCLUIDO">Concluído</option>
+              </select>
+            </div>
+            <div class="crud-field">
               <label class="crud-label" for="avaliacaoStatusAplicacao">Aplicação da Avaliação</label>
               <select class="crud-input" id="avaliacaoStatusAplicacao">
                 <option value="PENDENTE">Pendente</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
@@ -4044,6 +4056,8 @@
             <div class="avaliacao-data">📅 Aplicação: ${escaparPendencia(formatarDataPendencia(avaliacao.data_aplicacao))}</div>
             <div class="avaliacao-etapas">
               ${renderEtapaAvaliacao("Criação da avaliação", avaliacao.status_criacao)}
+              ${renderEtapaAvaliacao("Plano de Aula", avaliacao.status_plano_aula)}
+              ${renderEtapaAvaliacao("Plano de Ensino", avaliacao.status_plano_ensino)}
               ${renderEtapaAvaliacao("Aplicação da avaliação", avaliacao.status_aplicacao)}
               ${renderEtapaAvaliacao("Revisão da avaliação", avaliacao.status_revisao)}
               ${renderEtapaAvaliacao("Cadastro no SGN", avaliacao.status_cadastro_sgn)}
@@ -4092,6 +4106,8 @@
         document.getElementById("avaliacaoDataAplicacao").value = new Date().toISOString().slice(0, 10);
         document.getElementById("avaliacaoStatus").value = "PENDENTE";
         document.getElementById("avaliacaoStatusCriacao").value = "PENDENTE";
+        document.getElementById("avaliacaoStatusPlanoAula").value = "PENDENTE";
+        document.getElementById("avaliacaoStatusPlanoEnsino").value = "PENDENTE";
         document.getElementById("avaliacaoStatusAplicacao").value = "PENDENTE";
         document.getElementById("avaliacaoStatusRevisao").value = "PENDENTE";
         document.getElementById("avaliacaoStatusSgn").value = "PENDENTE";
@@ -4109,6 +4125,8 @@
         document.getElementById("avaliacaoDataAplicacao").value = String(avaliacao.data_aplicacao || "").slice(0, 10);
         document.getElementById("avaliacaoStatus").value = avaliacao.status || "PENDENTE";
         document.getElementById("avaliacaoStatusCriacao").value = avaliacao.status_criacao || "PENDENTE";
+        document.getElementById("avaliacaoStatusPlanoAula").value = avaliacao.status_plano_aula || "PENDENTE";
+        document.getElementById("avaliacaoStatusPlanoEnsino").value = avaliacao.status_plano_ensino || "PENDENTE";
         document.getElementById("avaliacaoStatusAplicacao").value = avaliacao.status_aplicacao || "PENDENTE";
         document.getElementById("avaliacaoStatusRevisao").value = avaliacao.status_revisao || "PENDENTE";
         document.getElementById("avaliacaoStatusSgn").value = avaliacao.status_cadastro_sgn || "PENDENTE";
@@ -4137,6 +4155,8 @@
           data_aplicacao: dataAplicacao,
           status: document.getElementById("avaliacaoStatus").value,
           status_criacao: document.getElementById("avaliacaoStatusCriacao").value,
+          status_plano_aula: document.getElementById("avaliacaoStatusPlanoAula").value,
+          status_plano_ensino: document.getElementById("avaliacaoStatusPlanoEnsino").value,
           status_aplicacao: document.getElementById("avaliacaoStatusAplicacao").value,
           status_revisao: document.getElementById("avaliacaoStatusRevisao").value,
           status_cadastro_sgn: document.getElementById("avaliacaoStatusSgn").value,

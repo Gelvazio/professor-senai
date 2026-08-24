@@ -13,6 +13,10 @@ create table if not exists public.avaliacao (
     check (status_aplicacao in ('PENDENTE', 'CONCLUIDO', 'CANCELADO')),
   status_criacao text not null default 'PENDENTE'
     check (status_criacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
+  status_plano_aula text not null default 'PENDENTE'
+    check (status_plano_aula in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
+  status_plano_ensino text not null default 'PENDENTE'
+    check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
   status_revisao text not null default 'PENDENTE'
     check (status_revisao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
   status_cadastro_sgn text not null default 'PENDENTE'
@@ -29,6 +33,36 @@ alter table public.avaliacao
 
 alter table public.avaliacao
   add column if not exists acompanhamento_pedagogico_sgn text not null default 'PENDENTE';
+
+alter table public.avaliacao
+  add column if not exists status_plano_aula text not null default 'PENDENTE';
+
+alter table public.avaliacao
+  add column if not exists status_plano_ensino text not null default 'PENDENTE';
+
+do $$
+begin
+  if not exists (
+    select 1 from pg_constraint where conname = 'avaliacao_status_plano_aula_check'
+  ) then
+    alter table public.avaliacao
+      add constraint avaliacao_status_plano_aula_check
+      check (status_plano_aula in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
+  end if;
+end;
+$$;
+
+do $$
+begin
+  if not exists (
+    select 1 from pg_constraint where conname = 'avaliacao_status_plano_ensino_check'
+  ) then
+    alter table public.avaliacao
+      add constraint avaliacao_status_plano_ensino_check
+      check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
+  end if;
+end;
+$$;
 
 do $$
 begin
