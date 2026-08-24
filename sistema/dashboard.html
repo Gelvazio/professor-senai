@@ -1130,6 +1130,13 @@
       .curso-materia-avaliacoes:hover { background:#d97800; }
       .curso-materia-estado { grid-column:1 / -1; text-align:center; color:#888; padding:36px 20px; font-size:13px; }
       .curso-materias-toolbar { display:flex; align-items:center; gap:10px; padding:12px 20px; border-bottom:1px solid #e2e7f0; }
+      .curso-materias-filtros { padding:10px 18px; border-bottom:1px solid #e6e9ef; background:#fff; display:flex; gap:8px; flex-wrap:wrap; }
+      .curso-materias-filtro { border:1px solid #b8c2cf; border-radius:18px; padding:6px 13px; background:#fff; color:#425466; font-size:11px; font-weight:700; cursor:pointer; }
+      .curso-materias-filtro.ativo { border-color:#004384; background:#e7f1fb; color:#004384; }
+      .curso-materia-ensalado { display:inline-flex; align-items:center; border-radius:12px; padding:3px 8px; background:#f1f3f4; color:#666; font-size:10px; font-weight:800; }
+      .curso-materia-ensalado.sim { background:#e8f5e9; color:#2e7d32; }
+      .curso-materia-checkbox { display:flex; align-items:center; gap:9px; min-height:38px; font-size:12px; font-weight:700; color:#374151; }
+      .curso-materia-checkbox input { width:18px; height:18px; accent-color:#004384; }
       .curso-materia-form { padding:16px 20px; background:#fafbfe; border-bottom:1px solid #e2e7f0; }
       .curso-materia-form-grid { display:grid; grid-template-columns:2fr 1fr; gap:12px; }
       .curso-materia-form-full { grid-column:1 / -1; }
@@ -1338,6 +1345,10 @@
       [data-theme="dark"] .curso-materia-card-codigo, [data-theme="dark"] .curso-materia-estado { color:#8b919e; }
       [data-theme="dark"] .curso-materia-card-nome { color:#e0e3e8; }
       [data-theme="dark"] .curso-materias-toolbar, [data-theme="dark"] .curso-materia-form { background:#141620; border-bottom-color:#2c2e38; }
+      [data-theme="dark"] .curso-materias-filtros { background:#1c1e26; border-color:#343743; }
+      [data-theme="dark"] .curso-materias-filtro { background:#20232c; border-color:#4a4e5c; color:#b0b6c3; }
+      [data-theme="dark"] .curso-materias-filtro.ativo { background:#1a2a40; border-color:#4472b0; color:#7ab4e8; }
+      [data-theme="dark"] .curso-materia-checkbox { color:#d5d8df; }
       [data-theme="dark"] .avaliacao-card { background:#20232c; border-color:#343743; border-top-color:#f7941d; }
       [data-theme="dark"] .avaliacao-card-titulo { color:#e0e3e8; }
       [data-theme="dark"] .avaliacao-data, [data-theme="dark"] .avaliacao-etapa-label, [data-theme="dark"] .avaliacoes-estado { color:#9aa0aa; }
@@ -1935,6 +1946,10 @@
           <button class="btn-novo" onclick="novaMateriaCurso()">＋ Adicionar Matéria</button>
           <span class="crud-msg" id="cursoMateriasMsg"></span>
         </div>
+        <div class="curso-materias-filtros">
+          <button class="curso-materias-filtro ativo" id="filtroMateriasTodas" type="button" onclick="filtrarMateriasEnsaladas(false)">Mostrar Todos</button>
+          <button class="curso-materias-filtro" id="filtroMateriasEnsaladas" type="button" onclick="filtrarMateriasEnsaladas(true)">Somente Ensalado</button>
+        </div>
         <div class="curso-materia-form" id="cursoMateriaForm" style="display:none">
           <input type="hidden" id="cursoMateriaId">
           <div class="curso-materia-form-grid">
@@ -1947,6 +1962,13 @@
               <select class="crud-input" id="cursoMateriaAtivo">
                 <option value="1">Ativa</option><option value="0">Inativa</option>
               </select>
+            </div>
+            <div class="crud-field">
+              <label class="crud-label" for="cursoMateriaEnsalado">ENSALADO (SIM/NÃO)</label>
+              <label class="curso-materia-checkbox">
+                <input id="cursoMateriaEnsalado" type="checkbox">
+                <span>SIM, esta matéria está ensalada</span>
+              </label>
             </div>
             <div class="crud-field">
               <label class="crud-label" for="cursoMateriaStatusCriacaoAvaliacao">Criação de Avaliação</label>
@@ -4008,6 +4030,25 @@
       // ── Modal Matérias do Curso ────────────────────────────────────
       let _cursoMateriasAtual = null;
       let _materiasCursoModal = [];
+      let _somenteMateriasEnsaladas = false;
+
+      function materiaEstaEnsalada(materia) {
+        return materia?.ensalado === true || materia?.ensalado === 1 || String(materia?.ensalado).toLowerCase() === "true";
+      }
+
+      function filtrarMateriasEnsaladas(somenteEnsaladas) {
+        _somenteMateriasEnsaladas = Boolean(somenteEnsaladas);
+        document.getElementById("filtroMateriasTodas")?.classList.toggle("ativo", !_somenteMateriasEnsaladas);
+        document.getElementById("filtroMateriasEnsaladas")?.classList.toggle("ativo", _somenteMateriasEnsaladas);
+        let quantidadeVisivel = 0;
+        document.querySelectorAll("#cursoModalBody .curso-materia-card").forEach((card) => {
+          const exibir = !_somenteMateriasEnsaladas || card.dataset.ensalado === "1";
+          card.style.display = exibir ? "flex" : "none";
+          if (exibir) quantidadeVisivel += 1;
+        });
+        const vazio = document.getElementById("cursoMateriasFiltroVazio");
+        if (vazio) vazio.style.display = _somenteMateriasEnsaladas && !quantidadeVisivel ? "block" : "none";
+      }
 
       const EMENTAS_PADRAO_POR_MATERIA = {
         "introducao a tecnologia da informacao e comunicacao": "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
@@ -4061,6 +4102,8 @@
         if (!curso) return;
         _cursoMateriasAtual = curso;
         _materiasCursoModal = [];
+        _somenteMateriasEnsaladas = false;
+        filtrarMateriasEnsaladas(false);
         fecharFormMateriaCurso();
         document.getElementById("cursoMateriasToolbar").style.display = isProfessor ? "flex" : "none";
         document.getElementById("cursoMateriasMsg").textContent = "";
@@ -4086,7 +4129,8 @@
           }
           body.innerHTML = materias.map((materia) => {
             const ativa = materia.ativo == 1;
-            return `<article class="curso-materia-card">
+            const ensalada = materiaEstaEnsalada(materia);
+            return `<article class="curso-materia-card" data-ensalado="${ensalada ? "1" : "0"}">
               <div class="curso-materia-card-topo">
                 <div class="curso-materia-card-icone">📘</div>
                 <div class="curso-materia-card-info">
@@ -4100,7 +4144,10 @@
                 ${renderEtapaAvaliacao("Plano de Ensino", materia.status_plano_ensino)}
               </div>
               <div class="curso-materia-card-rodape">
-                <span class="curso-materia-status ${ativa ? "" : "inativa"}">${ativa ? "● Disponível" : "● Inativa"}</span>
+                <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap">
+                  <span class="curso-materia-status ${ativa ? "" : "inativa"}">${ativa ? "● Disponível" : "● Inativa"}</span>
+                  <span class="curso-materia-ensalado ${ensalada ? "sim" : ""}">ENSALADO: ${ensalada ? "SIM" : "NÃO"}</span>
+                </div>
                 <div style="display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end">
                   ${isProfessor ? `<button class="curso-materia-acessar curso-materia-editar" onclick="editarMateriaCurso(${Number(materia.id)})">Editar Matéria</button>` : ""}
                   <button class="curso-materia-acessar curso-materia-ementa" onclick="abrirEmentaMateria(${Number(materia.id)})">Ementa</button>
@@ -4111,7 +4158,8 @@
                 </div>
               </div>
             </article>`;
-          }).join("");
+          }).join("") + '<div class="curso-materia-estado" id="cursoMateriasFiltroVazio" style="display:none">Nenhuma matéria ensalada neste curso.</div>';
+          filtrarMateriasEnsaladas(false);
         } catch (erro) {
           body.innerHTML = '<div class="curso-materia-estado">⚠️ Não foi possível carregar as matérias deste curso.</div>';
         }
@@ -4128,6 +4176,7 @@
         document.getElementById("cursoMateriaId").value = "";
         document.getElementById("cursoMateriaDescricao").value = "";
         document.getElementById("cursoMateriaAtivo").value = "1";
+        document.getElementById("cursoMateriaEnsalado").checked = false;
         document.getElementById("cursoMateriaStatusCriacaoAvaliacao").value = "PENDENTE";
         document.getElementById("cursoMateriaStatusPlanoAula").value = "PENDENTE";
         document.getElementById("cursoMateriaStatusPlanoEnsino").value = "PENDENTE";
@@ -4144,6 +4193,7 @@
         document.getElementById("cursoMateriaId").value = materia.id;
         document.getElementById("cursoMateriaDescricao").value = materia.descricao || "";
         document.getElementById("cursoMateriaAtivo").value = materia.ativo == 1 ? "1" : "0";
+        document.getElementById("cursoMateriaEnsalado").checked = materiaEstaEnsalada(materia);
         document.getElementById("cursoMateriaStatusCriacaoAvaliacao").value = materia.status_criacao_avaliacao || "PENDENTE";
         document.getElementById("cursoMateriaStatusPlanoAula").value = materia.status_plano_aula || "PENDENTE";
         document.getElementById("cursoMateriaStatusPlanoEnsino").value = materia.status_plano_ensino || "PENDENTE";
@@ -4178,6 +4228,7 @@
           "status_criacao_avaliacao",
           "status_plano_aula",
           "status_plano_ensino",
+          "ensalado",
         ];
         for (let tentativa = 0; tentativa <= colunasOpcionais.length; tentativa += 1) {
           try {
@@ -4221,6 +4272,7 @@
         const dados = {
           descricao: descricao,
           ativo: Number(document.getElementById("cursoMateriaAtivo").value),
+          ensalado: document.getElementById("cursoMateriaEnsalado").checked,
           status_criacao_avaliacao: document.getElementById("cursoMateriaStatusCriacaoAvaliacao").value,
           status_plano_aula: document.getElementById("cursoMateriaStatusPlanoAula").value,
           status_plano_ensino: document.getElementById("cursoMateriaStatusPlanoEnsino").value,

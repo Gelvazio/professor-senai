@@ -40,6 +40,9 @@ alter table public.materia
   add column if not exists status_plano_ensino text not null default 'PENDENTE'
     check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
 
+alter table public.materia
+  add column if not exists ensalado boolean not null default false;
+
 -- Preserva o estado mais crítico de cada matéria antes de remover as colunas antigas.
 do $$
 declare
