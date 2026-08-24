@@ -4636,7 +4636,7 @@
           }
 
           // Ordered list
-          if (m = line.match(/^\d+\. (.+)$/)) {
+          if (m = line.match(/^\s*(\d+)\.\s+(.+)$/)) {
             if (inUl) { out.push('</ul>'); inUl = false; }
             if (!inOl) { out.push('<ol>'); inOl = true; }
             out.push('<li>' + m[2] + '</li>');
