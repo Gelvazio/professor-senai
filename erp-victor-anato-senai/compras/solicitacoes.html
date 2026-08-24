@@ -175,6 +175,13 @@
         <label class="form-label">Solicitante</label>
         <input type="text" id="fSolicitante" class="form-input" placeholder="Nome do solicitante">
       </div>
+      <div class="form-group">
+        <label class="form-label">Fornecedor *</label>
+        <select id="selFornecedor" class="form-select">
+          <option value="">— Selecione o fornecedor —</option>
+        </select>
+        <small style="color:var(--color-text-secondary)">Obrigatório para aprovar ou concluir a solicitação.</small>
+      </div>
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">Prioridade</label>
@@ -327,6 +334,7 @@
     document.getElementById('fQuantidade').value = '';
     document.getElementById('fUnidade').value = '';
     document.getElementById('fSolicitante').value = sbUserNome();
+    document.getElementById('selFornecedor').value = '';
     document.getElementById('fPrioridade').value = 'Média';
     document.getElementById('fStatus').value = 'Pendente';
     document.getElementById('fData').value = new Date().toISOString().split('T')[0];
@@ -348,6 +356,7 @@
     document.getElementById('fQuantidade').value = r.quantidade ?? '';
     document.getElementById('fUnidade').value = r.unidade || r.produtos?.unidade || '';
     document.getElementById('fSolicitante').value = r.solicitante || '';
+    document.getElementById('selFornecedor').value = r.fornecedor_id || '';
     document.getElementById('fPrioridade').value = r.prioridade || 'Média';
     document.getElementById('fStatus').value = r.status || 'Pendente';
     document.getElementById('fData').value = r.data || '';
@@ -365,9 +374,17 @@
 
     const prod = produtosCache.find(p => p.id === produtoId);
     const novoStatus = document.getElementById('fStatus').value;
+    const fornecedorId = document.getElementById('selFornecedor').value;
+    const finalizada = ['Aprovada', 'Concluída'].includes(novoStatus);
+
+    if (finalizada && !fornecedorId) {
+      sbMensagem('msgModal', 'Selecione o fornecedor antes de aprovar ou concluir a solicitação.', 'err');
+      return;
+    }
 
     const dados = {
       produto_id:  produtoId,
+      fornecedor_id: fornecedorId || null,
       quantidade,
       unidade:     prod?.unidade || document.getElementById('fUnidade').value || null,
       solicitante: document.getElementById('fSolicitante').value || null,
@@ -396,12 +413,11 @@
 
       fecharModal();
 
-      const finalizada = ['Aprovada', 'Concluída'].includes(novoStatus);
       const estavaFinalizada = ['Aprovada', 'Concluída'].includes(statusAnterior);
       if (finalizada && !estavaFinalizada && savedId) {
-        const numeroPedido = await gerarPedidoAutomatico(savedId, produtoId, quantidade);
+        const numeroPedido = await gerarPedidoAutomatico(savedId, fornecedorId, produtoId, quantidade);
         sbMensagem('msgCrud',
-          `Solicitação concluída! Pedido de Compra <strong>${numeroPedido}</strong> gerado automaticamente como Pendente — adicione o fornecedor em <a href="pedidos.html" style="color:inherit;font-weight:700">Pedidos de Compra</a>.`,
+          `Solicitação concluída! Pedido de Compra <strong>${numeroPedido}</strong> gerado automaticamente como Pendente.`,
           'ok');
       } else {
         sbMensagem('msgCrud', 'Solicitação salva com sucesso!', 'ok');
@@ -413,7 +429,7 @@
     }
   }
 
-  async function gerarPedidoAutomatico(scId, produtoId, quantidade) {
+  async function gerarPedidoAutomatico(scId, fornecedorId, produtoId, quantidade) {
     const existentes = await sbListar('compras_pedidos',
       `solicitacao_id=eq.${encodeURIComponent(scId)}&select=id,numero&limit=1`);
     if (existentes.length) return existentes[0].numero;
@@ -421,6 +437,7 @@
     await sbInserir('compras_pedidos', {
       numero:         numeroPedido,
       solicitacao_id: scId,
+      fornecedor_id:  fornecedorId,
       produto_id:     produtoId,
       quantidade,
       status:         'Pendente',
@@ -456,7 +473,10 @@
 
   // ── Inicializar ────────────────────────────────
   async function inicializar() {
-    await sbPopularSelect('selProduto', 'produtos', 'ativo=eq.true&order=nome.asc&select=id,nome,unidade');
+    await Promise.all([
+      sbPopularSelect('selProduto', 'produtos', 'ativo=eq.true&order=nome.asc&select=id,nome,unidade'),
+      sbPopularSelect('selFornecedor', 'fornecedores', 'ativo=eq.true&order=nome.asc&select=id,nome')
+    ]);
     try {
       produtosCache = await sbListar('produtos', 'select=id,nome,unidade&ativo=eq.true');
     } catch {}

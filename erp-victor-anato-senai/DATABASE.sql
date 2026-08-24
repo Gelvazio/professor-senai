@@ -164,6 +164,7 @@ CREATE TABLE IF NOT EXISTS compras_planejamento (
 CREATE TABLE IF NOT EXISTS compras_solicitacoes (
   id          uuid          DEFAULT gen_random_uuid() PRIMARY KEY,
   planejamento_id uuid      REFERENCES compras_planejamento(id) ON DELETE SET NULL,
+  fornecedor_id uuid        REFERENCES fornecedores(id) ON DELETE SET NULL,
   numero      text          NOT NULL UNIQUE,          -- SC00001
   produto_id  uuid          NOT NULL REFERENCES produtos(id) ON DELETE RESTRICT,
   quantidade  numeric(14,3) NOT NULL CHECK (quantidade > 0),
@@ -210,6 +211,9 @@ COMMENT ON COLUMN compras_pedidos.valor_total IS 'Calculado pela aplicação: qu
 -- Migração idempotente para bases existentes: habilita o fluxo automático.
 ALTER TABLE compras_solicitacoes
   ADD COLUMN IF NOT EXISTS planejamento_id uuid REFERENCES compras_planejamento(id) ON DELETE SET NULL;
+
+ALTER TABLE compras_solicitacoes
+  ADD COLUMN IF NOT EXISTS fornecedor_id uuid REFERENCES fornecedores(id) ON DELETE SET NULL;
 
 ALTER TABLE compras_solicitacoes DROP CONSTRAINT IF EXISTS compras_solicitacoes_status_check;
 ALTER TABLE compras_solicitacoes ADD CONSTRAINT compras_solicitacoes_status_check

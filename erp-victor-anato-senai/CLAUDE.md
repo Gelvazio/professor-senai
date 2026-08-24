@@ -198,7 +198,7 @@ Planejamento → Solicitação de Compras → Pedido de Compras → Recebimento 
 
 **Transições automáticas obrigatórias:**
 - Planejamento `Concluído` gera uma única Solicitação de Compras `Pendente`.
-- Solicitação `Aprovada` ou `Concluída` gera um único Pedido de Compras `Pendente`, que pode aguardar a definição do fornecedor.
+- Solicitação `Aprovada` ou `Concluída` exige fornecedor e gera um único Pedido de Compras `Pendente` já vinculado a ele.
 - Pedido `Confirmado` ou `Concluído` gera um único Recebimento `Aguardando`.
 - Recebimento efetivado gera uma única Conferência `Pendente`; quando total, também atualiza o Pedido para `Recebido`.
 - Somente recebimentos com Conferência `Aprovado` ficam disponíveis para lançamento da Nota Fiscal.
@@ -233,6 +233,7 @@ Registro formal de necessidade de compra de um produto.
 | Quantidade | Número | **Obrigatório** |
 | Unidade | Texto | Preenchido automaticamente com base no produto selecionado |
 | Solicitante | Texto/Select | Nome ou usuário que solicitou |
+| Fornecedor | Select | Fornecedor ativo; obrigatório ao aprovar ou concluir a solicitação |
 | Prioridade | Select | Baixa, Média, Alta, Urgente |
 | Status | Select | Pendente, Em Análise, Aprovada, Concluída, Reprovada, Cancelada |
 | Data | Data | Data da solicitação (default: hoje) |
