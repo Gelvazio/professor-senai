@@ -3308,7 +3308,7 @@
         document.getElementById('cursoFormTitulo').textContent = 'Editar Curso';
         document.getElementById('cfNome').value = c ? c.nome : '';
         document.getElementById('cfCodigo').value = c ? c.id : '';
-        document.getElementById('cfTipo').value = c ? (c.tipo || '') : '';
+        preencherTiposCurso(c ? (c.tipo || '') : '');
         setCfIcone(c ? (c.icone || '') : '');
         document.getElementById('cfDescricao').value = c ? (c.descricao || '') : '';
         document.getElementById('cfVisivel').value = c ? String(c.visivel) : '1';
@@ -3322,12 +3322,31 @@
         document.getElementById('cursoFormTitulo').textContent = 'Adicionar Curso';
         document.getElementById('cfNome').value = '';
         document.getElementById('cfCodigo').value = '';
-        document.getElementById('cfTipo').value = '';
+        preencherTiposCurso('');
         setCfIcone('');
         document.getElementById('cfDescricao').value = '';
         document.getElementById('cfVisivel').value = '1';
         document.getElementById('cursoFormMsg').textContent = '';
         document.getElementById('modalCursoForm').style.display = 'flex';
+      }
+
+      function preencherTiposCurso(valorAtual) {
+        const tiposPadrao = [
+          'Aprendizagem Industrial',
+          'Curso Técnico',
+          'Qualificação Profissional',
+          'Aperfeiçoamento Profissional'
+        ];
+        const tiposCadastrados = dadosCursos && Array.isArray(dadosCursos.cursos)
+          ? dadosCursos.cursos.map(curso => curso.tipo).filter(Boolean)
+          : [];
+        const tipos = Array.from(new Set([valorAtual, ...tiposCadastrados, ...tiposPadrao].filter(Boolean)))
+          .sort((a, b) => a.localeCompare(b, 'pt-BR'));
+        const select = document.getElementById('cfTipo');
+        select.innerHTML = '<option value="">Selecione o tipo de curso</option>' + tipos
+          .map(tipo => `<option value="${escaparPendencia(tipo)}">${escaparPendencia(tipo)}</option>`)
+          .join('');
+        select.value = valorAtual || '';
       }
 
       async function salvarModalCurso() {
@@ -4124,7 +4143,9 @@
           </div>
           <div>
             <label class="crud-label">Tipo de Curso</label>
-            <input class="crud-input" id="cfTipo" type="text" placeholder="ex: Aprendizagem Industrial">
+            <select class="crud-input" id="cfTipo">
+              <option value="">Selecione o tipo de curso</option>
+            </select>
           </div>
           <div>
             <label class="crud-label">Ícone</label>
