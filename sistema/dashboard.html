@@ -2014,7 +2014,20 @@
           <button class="btn-cancelar" onclick="carregarAvaliacoesMateria()">↻ Atualizar</button>
           <span class="crud-msg" id="avaliacoesMsg"></span>
         </div>
-        <div class="avaliacao-form" id="avaliacaoForm" style="display:none">
+        <div class="avaliacoes-lista" id="avaliacoesLista">
+          <div class="avaliacoes-estado">⏳ Carregando avaliações…</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Modal de criação/edição da avaliação ── -->
+    <div class="avaliacoes-modal-backdrop" id="avaliacaoFormModal" style="display:none" onclick="if(event.target===this)fecharFormAvaliacao()">
+      <div class="curso-modal" style="max-width:700px">
+        <div class="curso-modal-head">
+          <h3 id="avaliacaoFormTitulo">Editar Avaliação</h3>
+          <button class="crud-btn-fechar" onclick="fecharFormAvaliacao()" aria-label="Fechar">✕</button>
+        </div>
+        <div class="avaliacao-form" id="avaliacaoForm">
           <input type="hidden" id="avaliacaoId">
           <div class="avaliacao-form-grid">
             <div class="crud-field avaliacao-form-full">
@@ -2059,10 +2072,8 @@
           <div class="avaliacao-form-acoes">
             <button class="btn-salvar" onclick="salvarAvaliacao()">💾 Salvar</button>
             <button class="btn-cancelar" onclick="fecharFormAvaliacao()">Cancelar</button>
+            <span class="crud-msg" id="avaliacaoFormMsg"></span>
           </div>
-        </div>
-        <div class="avaliacoes-lista" id="avaliacoesLista">
-          <div class="avaliacoes-estado">⏳ Carregando avaliações…</div>
         </div>
       </div>
     </div>
@@ -3211,6 +3222,10 @@
 
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
+          if (document.getElementById("avaliacaoFormModal").style.display === "flex") {
+            fecharFormAvaliacao();
+            return;
+          }
           fecharCursoModal();
           fecharCRUD();
           fecharAulasModal();
@@ -4210,6 +4225,11 @@
         const msg = document.getElementById("avaliacoesMsg");
         msg.textContent = texto || "";
         msg.style.color = erro ? "#c62828" : "#2e7d32";
+        const formMsg = document.getElementById("avaliacaoFormMsg");
+        if (formMsg) {
+          formMsg.textContent = texto || "";
+          formMsg.style.color = erro ? "#c62828" : "#2e7d32";
+        }
       }
 
       function renderAvaliacoesMateria() {
@@ -4263,8 +4283,16 @@
         document.getElementById("avaliacoesModalTitulo").textContent = "Avaliações — " + materia.descricao;
         document.getElementById("avaliacoesModal").style.display = "flex";
         document.body.style.overflow = "hidden";
-        fecharFormAvaliacao();
+        fecharFormAvaliacao(false);
         await carregarAvaliacoesMateria();
+      }
+
+      function abrirFormAvaliacao(titulo) {
+        document.getElementById("avaliacaoFormTitulo").textContent = titulo;
+        document.getElementById("avaliacaoFormMsg").textContent = "";
+        document.getElementById("avaliacoesModal").style.display = "none";
+        document.getElementById("avaliacaoFormModal").style.display = "flex";
+        document.body.style.overflow = "hidden";
       }
 
       function novaAvaliacao() {
@@ -4279,7 +4307,7 @@
         document.getElementById("avaliacaoStatusRevisao").value = "PENDENTE";
         document.getElementById("avaliacaoStatusSgn").value = "PENDENTE";
         document.getElementById("avaliacaoAcompanhamentoPedagogicoSgn").value = "PENDENTE";
-        document.getElementById("avaliacaoForm").style.display = "block";
+        abrirFormAvaliacao("Nova Avaliação — " + _avaliacaoMateriaAtual.descricao);
         document.getElementById("avaliacaoTitulo").focus();
         setAvaliacoesMsg("");
       }
@@ -4295,14 +4323,17 @@
         document.getElementById("avaliacaoStatusRevisao").value = avaliacao.status_revisao || "PENDENTE";
         document.getElementById("avaliacaoStatusSgn").value = avaliacao.status_cadastro_sgn || "PENDENTE";
         document.getElementById("avaliacaoAcompanhamentoPedagogicoSgn").value = avaliacao.acompanhamento_pedagogico_sgn || "PENDENTE";
-        document.getElementById("avaliacaoForm").style.display = "block";
-        document.getElementById("avaliacaoForm").scrollIntoView({ behavior: "smooth", block: "nearest" });
+        abrirFormAvaliacao("Editar Avaliação " + avaliacao.numero);
         setAvaliacoesMsg("Editando avaliação " + avaliacao.numero);
       }
 
-      function fecharFormAvaliacao() {
-        document.getElementById("avaliacaoForm").style.display = "none";
+      function fecharFormAvaliacao(voltarParaLista = true) {
+        document.getElementById("avaliacaoFormModal").style.display = "none";
         document.getElementById("avaliacaoId").value = "";
+        if (voltarParaLista && _avaliacaoMateriaAtual) {
+          document.getElementById("avaliacoesModal").style.display = "flex";
+          document.body.style.overflow = "hidden";
+        }
       }
 
       const COLUNAS_OPCIONAIS_AVALIACAO = ["acompanhamento_pedagogico_sgn"];
@@ -4395,7 +4426,7 @@
         const modal = document.getElementById("avaliacoesModal");
         if (!modal) return;
         modal.style.display = "none";
-        fecharFormAvaliacao();
+        fecharFormAvaliacao(false);
         const cursoAberto = document.getElementById("cursoModalBd").style.display === "flex";
         document.body.style.overflow = cursoAberto ? "hidden" : "";
       }
