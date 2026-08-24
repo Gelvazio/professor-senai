@@ -3792,6 +3792,28 @@
       let _cursoMateriasAtual = null;
       let _materiasCursoModal = [];
 
+      const EMENTAS_PADRAO_POR_MATERIA = {
+        "competencias socioemocionais e empreendedorismo": "FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/ementa_Competencias_Socioemocionais_Empreendedorismo.md",
+        "exploracao de carreiras industriais e tecnologicas": "FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/ementa_Exploracao_Carreiras_Industriais_Tecnologicas.md",
+        "fundamentos da tecnologia e programacao": "FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/ementa_Fundamentos_Tecnologia_Programacao.md",
+        "introducao a comunicacao oral e escrita para o mundo do trabalho": "FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Ementa_Introducao_Comunicacao_Oral_Escrita.md",
+        "nocoes de eletricidade e circuitos basicos": "FICHA-PRODUTO-MAIS-TECH/NOCOES_ELETRICIDADE_CIRCUITOS_BASICOS/Ementa_Nocoes_Eletricidade_Circuitos_Basicos.md",
+        "oficinas de impressao 3d e robotica": "FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/Ementa_Oficinas_Impressao_3D_Robotica.md",
+        "reforco de linguagens": "FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Ementa_Reforco_Linguagens.md",
+        "reforco matematica e raciocinio logico": "FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/ementa_Reforco_Matematica_Raciocinio_Logico.md"
+      };
+
+      function obterCaminhoEmentaMateria(materia) {
+        const caminhoConfigurado = String(materia?.ementa_caminho || "").trim();
+        if (caminhoConfigurado) return caminhoConfigurado;
+        const descricaoNormalizada = String(materia?.descricao || "")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .trim()
+          .toLowerCase();
+        return EMENTAS_PADRAO_POR_MATERIA[descricaoNormalizada] || "";
+      }
+
       async function abrirCursoModal(id) {
         const curso = _cursosCache[id];
         if (!curso) return;
@@ -3876,7 +3898,7 @@
         document.getElementById("cursoMateriaId").value = materia.id;
         document.getElementById("cursoMateriaDescricao").value = materia.descricao || "";
         document.getElementById("cursoMateriaAtivo").value = materia.ativo == 1 ? "1" : "0";
-        document.getElementById("cursoMateriaEmenta").value = materia.ementa_caminho || "";
+        document.getElementById("cursoMateriaEmenta").value = obterCaminhoEmentaMateria(materia);
         document.getElementById("cursoMateriaForm").style.display = "block";
         document.getElementById("cursoMateriaForm").scrollIntoView({ behavior: "smooth", block: "nearest" });
         setCursoMateriasMsg("Editando matéria " + materia.id);
@@ -4166,6 +4188,7 @@
       async function abrirEmentaMateria(materiaId) {
         const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
         if (!materia) return;
+        const caminhoEmenta = obterCaminhoEmentaMateria(materia);
 
         const modal = document.getElementById("ementaMateriaModal");
         const body = document.getElementById("ementaMateriaBody");
@@ -4174,13 +4197,13 @@
         modal.style.display = "flex";
         document.body.style.overflow = "hidden";
 
-        if (!materia.ementa_caminho) {
+        if (!caminhoEmenta) {
           body.innerHTML = '<div class="pe-loading">⚠️ Caminho da ementa não configurado. Use “Editar Matéria” para informar o arquivo.</div>';
           return;
         }
 
         try {
-          const resposta = await fetch(materia.ementa_caminho, { cache: "no-store" });
+          const resposta = await fetch(caminhoEmenta, { cache: "no-store" });
           if (!resposta.ok) throw new Error("HTTP " + resposta.status);
           body.innerHTML = mdToHtml(await resposta.text());
         } catch (erro) {
