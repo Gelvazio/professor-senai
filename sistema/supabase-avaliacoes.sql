@@ -59,3 +59,21 @@ $$;
 
 revoke all on function public.garantir_avaliacoes_materia(bigint) from public;
 grant execute on function public.garantir_avaliacoes_materia(bigint) to anon;
+
+create or replace function public.impedir_menos_duas_avaliacoes()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+begin
+  if (select count(*) from public.avaliacao where materia_id = old.materia_id) <= 2 then
+    raise exception 'Cada matéria deve possuir no mínimo duas avaliações.';
+  end if;
+  return old;
+end;
+$$;
+
+drop trigger if exists avaliacao_minimo_duas on public.avaliacao;
+create trigger avaliacao_minimo_duas
+before delete on public.avaliacao
+for each row execute function public.impedir_menos_duas_avaliacoes();

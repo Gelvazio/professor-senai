@@ -1097,6 +1097,11 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 14px;
       }
+      .avaliacoes-toolbar { display:flex; align-items:center; gap:10px; padding:12px 20px; border-bottom:1px solid #e2e7f0; }
+      .avaliacao-form { padding:16px 20px; background:#fafbfe; border-bottom:1px solid #e2e7f0; }
+      .avaliacao-form-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:12px; }
+      .avaliacao-form-full { grid-column:1 / -1; }
+      .avaliacao-form-acoes { display:flex; gap:9px; margin-top:14px; }
       .avaliacao-card {
         border: 1px solid #dfe4ec;
         border-top: 4px solid #f7941d;
@@ -1115,9 +1120,17 @@
       .avaliacao-etapa-status { color:#a94f00; font-size:10px; font-weight:800; }
       .avaliacao-etapa-status.concluido { color:#2e7d32; }
       .avaliacao-etapa-status.andamento { color:#1565c0; }
+      .avaliacao-card-acoes { display:flex; gap:7px; margin-top:14px; }
+      .avaliacao-card-acao { border:0; border-radius:6px; padding:6px 10px; cursor:pointer; font-family:inherit; font-size:11px; font-weight:700; }
+      .avaliacao-card-editar { background:#e8f0fe; color:#004384; }
+      .avaliacao-card-excluir { background:#fce8e6; color:#b3261e; }
       .avaliacoes-estado { grid-column:1 / -1; color:#888; text-align:center; padding:38px 20px; font-size:13px; }
       @media (max-width: 640px) {
         .avaliacoes-lista { grid-template-columns:1fr; padding:14px 12px; }
+        .avaliacoes-toolbar { flex-wrap:wrap; padding:10px 12px; }
+        .avaliacao-form { padding:14px 12px; }
+        .avaliacao-form-grid { grid-template-columns:1fr; }
+        .avaliacao-form-full { grid-column:auto; }
         .curso-materia-card-rodape { flex-wrap:wrap; }
       }
       .aula-item {
@@ -1262,6 +1275,7 @@
       [data-theme="dark"] .avaliacao-card-titulo { color:#e0e3e8; }
       [data-theme="dark"] .avaliacao-data, [data-theme="dark"] .avaliacao-etapa-label, [data-theme="dark"] .avaliacoes-estado { color:#9aa0aa; }
       [data-theme="dark"] .avaliacao-etapa { border-top-color:#343743; }
+      [data-theme="dark"] .avaliacoes-toolbar, [data-theme="dark"] .avaliacao-form { background:#141620; border-bottom-color:#2c2e38; }
       [data-theme="dark"] .crud-toolbar { background: #141620; border-bottom-color: #2c2e38; }
       [data-theme="dark"] .crud-form-area { background: #141620; border-bottom-color: #2c2e38; }
       [data-theme="dark"] .crud-label { color: #8b919e; }
@@ -1860,6 +1874,52 @@
         <div class="curso-modal-head">
           <h3 id="avaliacoesModalTitulo">Avaliações</h3>
           <button class="crud-btn-fechar" onclick="fecharAvaliacoesModal()" aria-label="Fechar">✕</button>
+        </div>
+        <div class="avaliacoes-toolbar">
+          <button class="btn-novo" onclick="novaAvaliacao()">＋ Nova Avaliação</button>
+          <button class="btn-cancelar" onclick="carregarAvaliacoesMateria()">↻ Atualizar</button>
+          <span class="crud-msg" id="avaliacoesMsg"></span>
+        </div>
+        <div class="avaliacao-form" id="avaliacaoForm" style="display:none">
+          <input type="hidden" id="avaliacaoId">
+          <div class="avaliacao-form-grid">
+            <div class="crud-field avaliacao-form-full">
+              <label class="crud-label" for="avaliacaoTitulo">Título</label>
+              <input class="crud-input" id="avaliacaoTitulo" type="text" required>
+            </div>
+            <div class="crud-field">
+              <label class="crud-label" for="avaliacaoDataAplicacao">Data de aplicação</label>
+              <input class="crud-input" id="avaliacaoDataAplicacao" type="date" required>
+            </div>
+            <div class="crud-field">
+              <label class="crud-label" for="avaliacaoStatus">Status da avaliação</label>
+              <select class="crud-input" id="avaliacaoStatus">
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
+              </select>
+            </div>
+            <div class="crud-field">
+              <label class="crud-label" for="avaliacaoStatusCriacao">Status de criação</label>
+              <select class="crud-input" id="avaliacaoStatusCriacao">
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
+              </select>
+            </div>
+            <div class="crud-field">
+              <label class="crud-label" for="avaliacaoStatusRevisao">Status de revisão</label>
+              <select class="crud-input" id="avaliacaoStatusRevisao">
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
+              </select>
+            </div>
+            <div class="crud-field avaliacao-form-full">
+              <label class="crud-label" for="avaliacaoStatusSgn">Status de cadastro no SGN</label>
+              <select class="crud-input" id="avaliacaoStatusSgn">
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
+              </select>
+            </div>
+          </div>
+          <div class="avaliacao-form-acoes">
+            <button class="btn-salvar" onclick="salvarAvaliacao()">💾 Salvar</button>
+            <button class="btn-cancelar" onclick="fecharFormAvaliacao()">Cancelar</button>
+          </div>
         </div>
         <div class="avaliacoes-lista" id="avaliacoesLista">
           <div class="avaliacoes-estado">⏳ Carregando avaliações…</div>
@@ -3718,23 +3778,22 @@
         </div>`;
       }
 
-      async function abrirAvaliacoesMateria(materiaId) {
-        const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
-        if (!materia) return;
-        const modal = document.getElementById("avaliacoesModal");
+      let _avaliacaoMateriaAtual = null;
+      let _avaliacoesRegistros = [];
+
+      function setAvaliacoesMsg(texto, erro) {
+        const msg = document.getElementById("avaliacoesMsg");
+        msg.textContent = texto || "";
+        msg.style.color = erro ? "#c62828" : "#2e7d32";
+      }
+
+      function renderAvaliacoesMateria() {
         const lista = document.getElementById("avaliacoesLista");
-        document.getElementById("avaliacoesModalTitulo").textContent = "Avaliações — " + materia.descricao;
-        lista.innerHTML = '<div class="avaliacoes-estado">⏳ Preparando avaliações…</div>';
-        modal.style.display = "flex";
-        document.body.style.overflow = "hidden";
-        try {
-          await sbRpc("garantir_avaliacoes_materia", { p_materia_id: Number(materiaId) });
-          const avaliacoes = await sbGet("avaliacao", `materia_id=eq.${Number(materiaId)}&select=*&order=numero.asc`);
-          if (!avaliacoes.length) {
-            lista.innerHTML = '<div class="avaliacoes-estado">Nenhuma avaliação cadastrada.</div>';
-            return;
-          }
-          lista.innerHTML = avaliacoes.map((avaliacao) => `<article class="avaliacao-card">
+        if (!_avaliacoesRegistros.length) {
+          lista.innerHTML = '<div class="avaliacoes-estado">Nenhuma avaliação cadastrada.</div>';
+          return;
+        }
+        lista.innerHTML = _avaliacoesRegistros.map((avaliacao) => `<article class="avaliacao-card">
             <div class="avaliacao-card-topo">
               <div>
                 <div class="avaliacao-card-numero">Avaliação ${escaparPendencia(avaliacao.numero)}</div>
@@ -3748,9 +3807,124 @@
               ${renderEtapaAvaliacao("Revisão da avaliação", avaliacao.status_revisao)}
               ${renderEtapaAvaliacao("Cadastro no SGN", avaliacao.status_cadastro_sgn)}
             </div>
+            <div class="avaliacao-card-acoes">
+              <button class="avaliacao-card-acao avaliacao-card-editar" onclick="editarAvaliacao(${Number(avaliacao.id)})">✏️ Editar</button>
+              <button class="avaliacao-card-acao avaliacao-card-excluir" onclick="excluirAvaliacao(${Number(avaliacao.id)})">🗑️ Excluir</button>
+            </div>
           </article>`).join("");
+      }
+
+      async function carregarAvaliacoesMateria() {
+        if (!_avaliacaoMateriaAtual) return;
+        const lista = document.getElementById("avaliacoesLista");
+        lista.innerHTML = '<div class="avaliacoes-estado">⏳ Carregando avaliações…</div>';
+        setAvaliacoesMsg("");
+        try {
+          await sbRpc("garantir_avaliacoes_materia", { p_materia_id: Number(_avaliacaoMateriaAtual.id) });
+          _avaliacoesRegistros = await sbGet("avaliacao", `materia_id=eq.${Number(_avaliacaoMateriaAtual.id)}&select=*&order=numero.asc`);
+          renderAvaliacoesMateria();
         } catch (erro) {
           lista.innerHTML = '<div class="avaliacoes-estado">⚠️ Execute o arquivo supabase-avaliacoes.sql no Supabase para habilitar as avaliações.</div>';
+          setAvaliacoesMsg("Erro ao acessar as avaliações.", true);
+        }
+      }
+
+      async function abrirAvaliacoesMateria(materiaId) {
+        const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
+        if (!materia) return;
+        _avaliacaoMateriaAtual = materia;
+        _avaliacoesRegistros = [];
+        document.getElementById("avaliacoesModalTitulo").textContent = "Avaliações — " + materia.descricao;
+        document.getElementById("avaliacoesModal").style.display = "flex";
+        document.body.style.overflow = "hidden";
+        fecharFormAvaliacao();
+        await carregarAvaliacoesMateria();
+      }
+
+      function novaAvaliacao() {
+        if (!_avaliacaoMateriaAtual) return;
+        const maiorNumero = _avaliacoesRegistros.reduce((maior, item) => Math.max(maior, Number(item.numero) || 0), 0);
+        const proximoNumero = maiorNumero + 1;
+        document.getElementById("avaliacaoId").value = "";
+        document.getElementById("avaliacaoTitulo").value = "Avaliação " + proximoNumero;
+        document.getElementById("avaliacaoDataAplicacao").value = new Date().toISOString().slice(0, 10);
+        document.getElementById("avaliacaoStatus").value = "PENDENTE";
+        document.getElementById("avaliacaoStatusCriacao").value = "PENDENTE";
+        document.getElementById("avaliacaoStatusRevisao").value = "PENDENTE";
+        document.getElementById("avaliacaoStatusSgn").value = "PENDENTE";
+        document.getElementById("avaliacaoForm").style.display = "block";
+        document.getElementById("avaliacaoTitulo").focus();
+        setAvaliacoesMsg("");
+      }
+
+      function editarAvaliacao(id) {
+        const avaliacao = _avaliacoesRegistros.find((item) => Number(item.id) === Number(id));
+        if (!avaliacao) return;
+        document.getElementById("avaliacaoId").value = avaliacao.id;
+        document.getElementById("avaliacaoTitulo").value = avaliacao.titulo || "";
+        document.getElementById("avaliacaoDataAplicacao").value = String(avaliacao.data_aplicacao || "").slice(0, 10);
+        document.getElementById("avaliacaoStatus").value = avaliacao.status || "PENDENTE";
+        document.getElementById("avaliacaoStatusCriacao").value = avaliacao.status_criacao || "PENDENTE";
+        document.getElementById("avaliacaoStatusRevisao").value = avaliacao.status_revisao || "PENDENTE";
+        document.getElementById("avaliacaoStatusSgn").value = avaliacao.status_cadastro_sgn || "PENDENTE";
+        document.getElementById("avaliacaoForm").style.display = "block";
+        document.getElementById("avaliacaoForm").scrollIntoView({ behavior: "smooth", block: "nearest" });
+        setAvaliacoesMsg("Editando avaliação " + avaliacao.numero);
+      }
+
+      function fecharFormAvaliacao() {
+        document.getElementById("avaliacaoForm").style.display = "none";
+        document.getElementById("avaliacaoId").value = "";
+      }
+
+      async function salvarAvaliacao() {
+        if (!_avaliacaoMateriaAtual) return;
+        const titulo = document.getElementById("avaliacaoTitulo").value.trim();
+        const dataAplicacao = document.getElementById("avaliacaoDataAplicacao").value;
+        if (!titulo || !dataAplicacao) {
+          setAvaliacoesMsg("Informe o título e a data de aplicação.", true);
+          return;
+        }
+        const id = document.getElementById("avaliacaoId").value;
+        const dados = {
+          titulo: titulo,
+          data_aplicacao: dataAplicacao,
+          status: document.getElementById("avaliacaoStatus").value,
+          status_criacao: document.getElementById("avaliacaoStatusCriacao").value,
+          status_revisao: document.getElementById("avaliacaoStatusRevisao").value,
+          status_cadastro_sgn: document.getElementById("avaliacaoStatusSgn").value,
+          updated_at: new Date().toISOString()
+        };
+        if (!id) {
+          dados.materia_id = Number(_avaliacaoMateriaAtual.id);
+          dados.numero = _avaliacoesRegistros.reduce((maior, item) => Math.max(maior, Number(item.numero) || 0), 0) + 1;
+        }
+        setAvaliacoesMsg("Salvando…");
+        try {
+          if (id) await sbPatch("avaliacao", "id", id, dados);
+          else await sbPost("avaliacao", dados);
+          fecharFormAvaliacao();
+          await carregarAvaliacoesMateria();
+          setAvaliacoesMsg(id ? "✅ Avaliação atualizada." : "✅ Avaliação cadastrada.");
+        } catch (erro) {
+          setAvaliacoesMsg("Não foi possível salvar a avaliação.", true);
+        }
+      }
+
+      async function excluirAvaliacao(id) {
+        if (_avaliacoesRegistros.length <= 2) {
+          setAvaliacoesMsg("Cada matéria deve manter no mínimo duas avaliações.", true);
+          return;
+        }
+        const avaliacao = _avaliacoesRegistros.find((item) => Number(item.id) === Number(id));
+        if (!avaliacao || !confirm('Excluir “' + avaliacao.titulo + '”?')) return;
+        setAvaliacoesMsg("Excluindo…");
+        try {
+          await sbDelete("avaliacao", "id=eq." + encodeURIComponent(id));
+          await carregarAvaliacoesMateria();
+          setAvaliacoesMsg("✅ Avaliação excluída.");
+        } catch (erro) {
+          setAvaliacoesMsg("Não foi possível excluir. Mantenha no mínimo duas avaliações.", true);
         }
       }
 
@@ -3758,6 +3932,7 @@
         const modal = document.getElementById("avaliacoesModal");
         if (!modal) return;
         modal.style.display = "none";
+        fecharFormAvaliacao();
         const cursoAberto = document.getElementById("cursoModalBd").style.display === "flex";
         document.body.style.overflow = cursoAberto ? "hidden" : "";
       }
