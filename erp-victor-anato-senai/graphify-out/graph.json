@@ -3032,7 +3032,7 @@
       "node_kind": "heading",
       "norm_label": "6.1 equipes e setores",
       "source_file": "CLAUDE.md",
-      "source_location": "L569"
+      "source_location": "L577"
     },
     {
       "id": "claude_6_2_telas_do_m\u00f3dulo",
@@ -3044,7 +3044,7 @@
       "node_kind": "heading",
       "norm_label": "6.2 telas do modulo",
       "source_file": "CLAUDE.md",
-      "source_location": "L580"
+      "source_location": "L588"
     },
     {
       "id": "claude_6_3_tabelas_no_supabase_gamifica\u00e7\u00e3o",
@@ -3056,7 +3056,7 @@
       "node_kind": "heading",
       "norm_label": "6.3 tabelas no supabase (gamificacao)",
       "source_file": "CLAUDE.md",
-      "source_location": "L593"
+      "source_location": "L601"
     },
     {
       "id": "claude_6_4_sistema_e_telas_no_banco",
@@ -3068,7 +3068,7 @@
       "node_kind": "heading",
       "norm_label": "6.4 sistema e telas no banco",
       "source_file": "CLAUDE.md",
-      "source_location": "L681"
+      "source_location": "L689"
     },
     {
       "id": "claude_6_5_sidebar_html_gamifica\u00e7\u00e3o",
@@ -3080,7 +3080,7 @@
       "node_kind": "heading",
       "norm_label": "6.5 sidebar html (gamificacao)",
       "source_file": "CLAUDE.md",
-      "source_location": "L697"
+      "source_location": "L705"
     },
     {
       "id": "claude_6_6_pontua\u00e7\u00e3o",
@@ -3092,7 +3092,7 @@
       "node_kind": "heading",
       "norm_label": "6.6 pontuacao",
       "source_file": "CLAUDE.md",
-      "source_location": "L708"
+      "source_location": "L716"
     },
     {
       "id": "claude_6_7_sistema_json_adicionar_entrada",
@@ -3104,7 +3104,7 @@
       "node_kind": "heading",
       "norm_label": "6.7 sistema.json \u2014 adicionar entrada",
       "source_file": "CLAUDE.md",
-      "source_location": "L718"
+      "source_location": "L726"
     },
     {
       "id": "claude_6_8_perfis_html_atualizar_sisordem",
@@ -3116,7 +3116,7 @@
       "node_kind": "heading",
       "norm_label": "6.8 perfis.html \u2014 atualizar sisordem",
       "source_file": "CLAUDE.md",
-      "source_location": "L724"
+      "source_location": "L732"
     },
     {
       "id": "claude_m\u00f3dulo_6_gamifica\u00e7\u00e3o",
@@ -3128,7 +3128,7 @@
       "node_kind": "heading",
       "norm_label": "modulo 6 \u2014 gamificacao",
       "source_file": "CLAUDE.md",
-      "source_location": "L565"
+      "source_location": "L573"
     },
     {
       "id": "claude_2_1_planejamento",
@@ -3140,7 +3140,7 @@
       "node_kind": "heading",
       "norm_label": "2.1 planejamento",
       "source_file": "CLAUDE.md",
-      "source_location": "L199"
+      "source_location": "L207"
     },
     {
       "id": "claude_2_2_solicita\u00e7\u00e3o_de_compras",
@@ -3152,7 +3152,7 @@
       "node_kind": "heading",
       "norm_label": "2.2 solicitacao de compras",
       "source_file": "CLAUDE.md",
-      "source_location": "L217"
+      "source_location": "L225"
     },
     {
       "id": "claude_2_3_pedido_de_compras",
@@ -3164,7 +3164,7 @@
       "node_kind": "heading",
       "norm_label": "2.3 pedido de compras",
       "source_file": "CLAUDE.md",
-      "source_location": "L235"
+      "source_location": "L243"
     },
     {
       "id": "claude_2_4_recebimento",
@@ -3176,7 +3176,7 @@
       "node_kind": "heading",
       "norm_label": "2.4 recebimento",
       "source_file": "CLAUDE.md",
-      "source_location": "L258"
+      "source_location": "L266"
     },
     {
       "id": "claude_2_5_confer\u00eancia",
@@ -3188,7 +3188,7 @@
       "node_kind": "heading",
       "norm_label": "2.5 conferencia",
       "source_file": "CLAUDE.md",
-      "source_location": "L277"
+      "source_location": "L285"
     },
     {
       "id": "claude_2_6_entrada_de_nota_fiscal",
@@ -3200,7 +3200,7 @@
       "node_kind": "heading",
       "norm_label": "2.6 entrada de nota fiscal",
       "source_file": "CLAUDE.md",
-      "source_location": "L295"
+      "source_location": "L303"
     },
     {
       "id": "claude_fluxo_do_m\u00f3dulo_de_compras",
@@ -3236,7 +3236,7 @@
       "node_kind": "heading",
       "norm_label": "4.1 pedido de venda",
       "source_file": "CLAUDE.md",
-      "source_location": "L402"
+      "source_location": "L410"
     },
     {
       "id": "claude_4_2_nota_fiscal_de_venda",
@@ -3248,7 +3248,7 @@
       "node_kind": "heading",
       "norm_label": "4.2 nota fiscal de venda",
       "source_file": "CLAUDE.md",
-      "source_location": "L425"
+      "source_location": "L433"
     },
     {
       "id": "claude_4_3_romaneio",
@@ -3260,7 +3260,7 @@
       "node_kind": "heading",
       "norm_label": "4.3 romaneio",
       "source_file": "CLAUDE.md",
-      "source_location": "L458"
+      "source_location": "L466"
     },
     {
       "id": "claude_4_4_separa\u00e7\u00e3o_picking",
@@ -3272,7 +3272,7 @@
       "node_kind": "heading",
       "norm_label": "4.4 separacao (picking)",
       "source_file": "CLAUDE.md",
-      "source_location": "L482"
+      "source_location": "L490"
     },
     {
       "id": "claude_4_5_expedi\u00e7\u00e3o",
@@ -3284,7 +3284,7 @@
       "node_kind": "heading",
       "norm_label": "4.5 expedicao",
       "source_file": "CLAUDE.md",
-      "source_location": "L499"
+      "source_location": "L507"
     },
     {
       "id": "claude_4_6_entrega",
@@ -3296,7 +3296,7 @@
       "node_kind": "heading",
       "norm_label": "4.6 entrega",
       "source_file": "CLAUDE.md",
-      "source_location": "L521"
+      "source_location": "L529"
     },
     {
       "id": "claude_fluxo_do_m\u00f3dulo_de_vendas_e_log\u00edstica",
@@ -3308,7 +3308,7 @@
       "node_kind": "heading",
       "norm_label": "fluxo do modulo de vendas e logistica",
       "source_file": "CLAUDE.md",
-      "source_location": "L396"
+      "source_location": "L404"
     },
     {
       "id": "claude_m\u00f3dulo_4_vendas_e_log\u00edstica",
@@ -3320,7 +3320,7 @@
       "node_kind": "heading",
       "norm_label": "modulo 4 \u2014 vendas e logistica",
       "source_file": "CLAUDE.md",
-      "source_location": "L392"
+      "source_location": "L400"
     },
     {
       "id": "claude_autentica\u00e7\u00e3o_do_erp",
@@ -3332,7 +3332,7 @@
       "node_kind": "heading",
       "norm_label": "autenticacao do erp",
       "source_file": "CLAUDE.md",
-      "source_location": "L1798"
+      "source_location": "L1806"
     },
     {
       "id": "claude_credenciais",
@@ -3344,7 +3344,7 @@
       "node_kind": "heading",
       "norm_label": "credenciais",
       "source_file": "CLAUDE.md",
-      "source_location": "L1391"
+      "source_location": "L1399"
     },
     {
       "id": "claude_esquema_de_tabelas_do_banco_postgresql",
@@ -3356,7 +3356,7 @@
       "node_kind": "heading",
       "norm_label": "esquema de tabelas do banco (postgresql)",
       "source_file": "CLAUDE.md",
-      "source_location": "L1479"
+      "source_location": "L1487"
     },
     {
       "id": "claude_filtros_e_operadores_da_api_rest_supabase",
@@ -3368,7 +3368,7 @@
       "node_kind": "heading",
       "norm_label": "filtros e operadores da api rest supabase",
       "source_file": "CLAUDE.md",
-      "source_location": "L1465"
+      "source_location": "L1473"
     },
     {
       "id": "claude_padr\u00e3o_de_crud_fun\u00e7\u00f5es_reutiliz\u00e1veis",
@@ -3380,7 +3380,7 @@
       "node_kind": "heading",
       "norm_label": "padrao de crud \u2014 funcoes reutilizaveis",
       "source_file": "CLAUDE.md",
-      "source_location": "L1405"
+      "source_location": "L1413"
     },
     {
       "id": "claude_rls_row_level_security",
@@ -3392,7 +3392,7 @@
       "node_kind": "heading",
       "norm_label": "rls (row level security)",
       "source_file": "CLAUDE.md",
-      "source_location": "L1787"
+      "source_location": "L1795"
     },
     {
       "id": "claude_supabase_configura\u00e7\u00e3o_e_uso_da_api",
@@ -3404,7 +3404,7 @@
       "node_kind": "heading",
       "norm_label": "supabase \u2014 configuracao e uso da api",
       "source_file": "CLAUDE.md",
-      "source_location": "L1389"
+      "source_location": "L1397"
     },
     {
       "id": "claude_1_1_clientes",
@@ -3476,7 +3476,7 @@
       "node_kind": "heading",
       "norm_label": "3.1 armazenagem",
       "source_file": "CLAUDE.md",
-      "source_location": "L319"
+      "source_location": "L327"
     },
     {
       "id": "claude_3_2_controle_de_estoque",
@@ -3488,7 +3488,7 @@
       "node_kind": "heading",
       "norm_label": "3.2 controle de estoque",
       "source_file": "CLAUDE.md",
-      "source_location": "L338"
+      "source_location": "L346"
     },
     {
       "id": "claude_3_3_movimenta\u00e7\u00f5es",
@@ -3500,7 +3500,7 @@
       "node_kind": "heading",
       "norm_label": "3.3 movimentacoes",
       "source_file": "CLAUDE.md",
-      "source_location": "L352"
+      "source_location": "L360"
     },
     {
       "id": "claude_3_4_invent\u00e1rio",
@@ -3512,7 +3512,7 @@
       "node_kind": "heading",
       "norm_label": "3.4 inventario",
       "source_file": "CLAUDE.md",
-      "source_location": "L371"
+      "source_location": "L379"
     },
     {
       "id": "claude_m\u00f3dulo_3_estoque",
@@ -3524,7 +3524,7 @@
       "node_kind": "heading",
       "norm_label": "modulo 3 \u2014 estoque",
       "source_file": "CLAUDE.md",
-      "source_location": "L315"
+      "source_location": "L323"
     },
     {
       "id": "regras_negocios_ebook_ucs_plan_org_trab",
@@ -7735,7 +7735,7 @@
       "node_kind": "heading",
       "norm_label": "backend / banco de dados",
       "source_file": "CLAUDE.md",
-      "source_location": "L1381"
+      "source_location": "L1389"
     },
     {
       "id": "claude_estrutura_de_arquivos_html_uma_por_tela_m\u00f3dulo",
@@ -7747,7 +7747,7 @@
       "node_kind": "heading",
       "norm_label": "estrutura de arquivos html (uma por tela/modulo)",
       "source_file": "CLAUDE.md",
-      "source_location": "L1288"
+      "source_location": "L1296"
     },
     {
       "id": "claude_frontend_vanilla_js_obrigat\u00f3rio",
@@ -7759,7 +7759,7 @@
       "node_kind": "heading",
       "norm_label": "frontend \u2014 vanilla js (obrigatorio)",
       "source_file": "CLAUDE.md",
-      "source_location": "L1276"
+      "source_location": "L1284"
     },
     {
       "id": "claude_padr\u00f5es_javascript_obrigat\u00f3rios",
@@ -7771,7 +7771,7 @@
       "node_kind": "heading",
       "norm_label": "padroes javascript obrigatorios",
       "source_file": "CLAUDE.md",
-      "source_location": "L1348"
+      "source_location": "L1356"
     },
     {
       "id": "claude_tecnologias",
@@ -7783,7 +7783,7 @@
       "node_kind": "heading",
       "norm_label": "tecnologias",
       "source_file": "CLAUDE.md",
-      "source_location": "L1274"
+      "source_location": "L1282"
     },
     {
       "id": "regras_negocios_assist_em_processos_administrativos_e_industriais_1636h_pr\u00e1tica_profissional_b0c8fb28",
@@ -7831,7 +7831,7 @@
       "node_kind": "heading",
       "norm_label": "5.1 usuarios",
       "source_file": "CLAUDE.md",
-      "source_location": "L542"
+      "source_location": "L550"
     },
     {
       "id": "claude_commit_push_e_graphify",
@@ -7855,7 +7855,7 @@
       "node_kind": "heading",
       "norm_label": "modulo 5 \u2014 configuracoes",
       "source_file": "CLAUDE.md",
-      "source_location": "L540"
+      "source_location": "L548"
     },
     {
       "id": "claude_ordem_de_implementa\u00e7\u00e3o_sugerida",
@@ -7867,7 +7867,7 @@
       "node_kind": "heading",
       "norm_label": "ordem de implementacao sugerida",
       "source_file": "CLAUDE.md",
-      "source_location": "L1842"
+      "source_location": "L1850"
     },
     {
       "id": "claude_princ\u00edpios_fundamentais",
@@ -7891,7 +7891,7 @@
       "node_kind": "heading",
       "norm_label": "visao geral (dashboard)",
       "source_file": "CLAUDE.md",
-      "source_location": "L1159"
+      "source_location": "L1167"
     },
     {
       "id": "claude_vis\u00e3o_geral_do_sistema",
@@ -10195,7 +10195,7 @@
       "node_kind": "heading",
       "norm_label": "7.1 telas do modulo",
       "source_file": "CLAUDE.md",
-      "source_location": "L743"
+      "source_location": "L751"
     },
     {
       "id": "claude_7_2_numera\u00e7\u00e3o_autom\u00e1tica",
@@ -10207,7 +10207,7 @@
       "node_kind": "heading",
       "norm_label": "7.2 numeracao automatica",
       "source_file": "CLAUDE.md",
-      "source_location": "L765"
+      "source_location": "L773"
     },
     {
       "id": "claude_7_3_tabelas_no_supabase_rh",
@@ -10219,7 +10219,7 @@
       "node_kind": "heading",
       "norm_label": "7.3 tabelas no supabase (rh)",
       "source_file": "CLAUDE.md",
-      "source_location": "L783"
+      "source_location": "L791"
     },
     {
       "id": "claude_7_4_sistema_e_telas_no_banco",
@@ -10231,7 +10231,7 @@
       "node_kind": "heading",
       "norm_label": "7.4 sistema e telas no banco",
       "source_file": "CLAUDE.md",
-      "source_location": "L1109"
+      "source_location": "L1117"
     },
     {
       "id": "claude_7_5_sidebar_html_rh",
@@ -10243,7 +10243,7 @@
       "node_kind": "heading",
       "norm_label": "7.5 sidebar html (rh)",
       "source_file": "CLAUDE.md",
-      "source_location": "L1136"
+      "source_location": "L1144"
     },
     {
       "id": "claude_7_6_sistema_json_adicionar_entrada",
@@ -10255,7 +10255,7 @@
       "node_kind": "heading",
       "norm_label": "7.6 sistema.json \u2014 adicionar entrada",
       "source_file": "CLAUDE.md",
-      "source_location": "L1151"
+      "source_location": "L1159"
     },
     {
       "id": "claude_fluxo_do_m\u00f3dulo_de_rh",
@@ -10267,7 +10267,7 @@
       "node_kind": "heading",
       "norm_label": "fluxo do modulo de rh",
       "source_file": "CLAUDE.md",
-      "source_location": "L736"
+      "source_location": "L744"
     },
     {
       "id": "claude_m\u00f3dulo_7_recursos_humanos",
@@ -10279,7 +10279,7 @@
       "node_kind": "heading",
       "norm_label": "modulo 7 \u2014 recursos humanos",
       "source_file": "CLAUDE.md",
-      "source_location": "L732"
+      "source_location": "L740"
     },
     {
       "id": "compras_andamento",
@@ -14658,12 +14658,120 @@
       "label": "CORRIGIR-FLUXO-COMPRAS.md",
       "_origin": "ast",
       "community": 77,
-      "community_name": "CORRIGIR-FLUXO-COMPRAS.md",
+      "community_name": "Status Geral",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "corrigir-fluxo-compras.md",
       "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
       "source_location": "L1"
+    },
+    {
+      "id": "docs_corrigir_fluxo_compras_corrigir_fluxo_de_compras",
+      "label": "Corrigir Fluxo de Compras",
+      "_origin": "ast",
+      "community": 77,
+      "community_name": "Status Geral",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "corrigir fluxo de compras",
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_corrigir_fluxo_compras_passo_1_planejamento_para_solicita\u00e7\u00e3o",
+      "label": "Passo 1: Planejamento para solicita\u00e7\u00e3o",
+      "_origin": "ast",
+      "community": 77,
+      "community_name": "Status Geral",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "passo 1: planejamento para solicitacao",
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L19"
+    },
+    {
+      "id": "docs_corrigir_fluxo_compras_passo_2_solicita\u00e7\u00e3o_para_pedido",
+      "label": "Passo 2: Solicita\u00e7\u00e3o para pedido",
+      "_origin": "ast",
+      "community": 77,
+      "community_name": "Status Geral",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "passo 2: solicitacao para pedido",
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L29"
+    },
+    {
+      "id": "docs_corrigir_fluxo_compras_passo_3_pedido_para_recebimento",
+      "label": "Passo 3: Pedido para recebimento",
+      "_origin": "ast",
+      "community": 77,
+      "community_name": "Status Geral",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "passo 3: pedido para recebimento",
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L39"
+    },
+    {
+      "id": "docs_corrigir_fluxo_compras_passo_4_recebimento_para_confer\u00eancia",
+      "label": "Passo 4: Recebimento para confer\u00eancia",
+      "_origin": "ast",
+      "community": 77,
+      "community_name": "Status Geral",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "passo 4: recebimento para conferencia",
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L49"
+    },
+    {
+      "id": "docs_corrigir_fluxo_compras_passo_5_confer\u00eancia_para_nota_fiscal",
+      "label": "Passo 5: Confer\u00eancia para nota fiscal",
+      "_origin": "ast",
+      "community": 77,
+      "community_name": "Status Geral",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "passo 5: conferencia para nota fiscal",
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L59"
+    },
+    {
+      "id": "docs_corrigir_fluxo_compras_passo_6_regras_e_esquema",
+      "label": "Passo 6: Regras e esquema",
+      "_origin": "ast",
+      "community": 77,
+      "community_name": "Status Geral",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "passo 6: regras e esquema",
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L69"
+    },
+    {
+      "id": "docs_corrigir_fluxo_compras_passo_7_publica\u00e7\u00e3o",
+      "label": "Passo 7: Publica\u00e7\u00e3o",
+      "_origin": "ast",
+      "community": 77,
+      "community_name": "Status Geral",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "passo 7: publicacao",
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L79"
+    },
+    {
+      "id": "docs_corrigir_fluxo_compras_status_geral",
+      "label": "Status Geral",
+      "_origin": "ast",
+      "community": 77,
+      "community_name": "Status Geral",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "status geral",
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L7"
     },
     {
       "id": "claude_autentica\u00e7\u00e3o",
@@ -14675,7 +14783,7 @@
       "node_kind": "heading",
       "norm_label": "autenticacao",
       "source_file": "CLAUDE.md",
-      "source_location": "L1266"
+      "source_location": "L1274"
     },
     {
       "id": "claude_breakpoints_obrigat\u00f3rios",
@@ -14687,7 +14795,7 @@
       "node_kind": "heading",
       "norm_label": "breakpoints obrigatorios",
       "source_file": "CLAUDE.md",
-      "source_location": "L1246"
+      "source_location": "L1254"
     },
     {
       "id": "claude_css_proibido_em_mobile",
@@ -14699,7 +14807,7 @@
       "node_kind": "heading",
       "norm_label": "css proibido em mobile",
       "source_file": "CLAUDE.md",
-      "source_location": "L1253"
+      "source_location": "L1261"
     },
     {
       "id": "claude_formul\u00e1rios",
@@ -14711,10 +14819,10 @@
       "node_kind": "heading",
       "norm_label": "formularios",
       "source_file": "CLAUDE.md",
-      "source_location": "L1180"
+      "source_location": "L1188"
     },
     {
-      "id": "claude_formul\u00e1rios_1224",
+      "id": "claude_formul\u00e1rios_1232",
       "label": "Formul\u00e1rios",
       "_origin": "ast",
       "community": 8,
@@ -14723,7 +14831,7 @@
       "node_kind": "heading",
       "norm_label": "formularios",
       "source_file": "CLAUDE.md",
-      "source_location": "L1224"
+      "source_location": "L1232"
     },
     {
       "id": "claude_header",
@@ -14735,7 +14843,7 @@
       "node_kind": "heading",
       "norm_label": "header",
       "source_file": "CLAUDE.md",
-      "source_location": "L1241"
+      "source_location": "L1249"
     },
     {
       "id": "claude_layout_geral",
@@ -14747,7 +14855,7 @@
       "node_kind": "heading",
       "norm_label": "layout geral",
       "source_file": "CLAUDE.md",
-      "source_location": "L1210"
+      "source_location": "L1218"
     },
     {
       "id": "claude_listagens_tabelas",
@@ -14759,7 +14867,7 @@
       "node_kind": "heading",
       "norm_label": "listagens (tabelas)",
       "source_file": "CLAUDE.md",
-      "source_location": "L1175"
+      "source_location": "L1183"
     },
     {
       "id": "claude_modais",
@@ -14771,7 +14879,7 @@
       "node_kind": "heading",
       "norm_label": "modais",
       "source_file": "CLAUDE.md",
-      "source_location": "L1235"
+      "source_location": "L1243"
     },
     {
       "id": "claude_numera\u00e7\u00e3o_autom\u00e1tica",
@@ -14783,7 +14891,7 @@
       "node_kind": "heading",
       "norm_label": "numeracao automatica",
       "source_file": "CLAUDE.md",
-      "source_location": "L1186"
+      "source_location": "L1194"
     },
     {
       "id": "claude_objetivo_mobile",
@@ -14795,7 +14903,7 @@
       "node_kind": "heading",
       "norm_label": "objetivo mobile",
       "source_file": "CLAUDE.md",
-      "source_location": "L1204"
+      "source_location": "L1212"
     },
     {
       "id": "claude_regras_gerais_de_interface",
@@ -14807,7 +14915,7 @@
       "node_kind": "heading",
       "norm_label": "regras gerais de interface",
       "source_file": "CLAUDE.md",
-      "source_location": "L1173"
+      "source_location": "L1181"
     },
     {
       "id": "claude_responsividade",
@@ -14819,7 +14927,7 @@
       "node_kind": "heading",
       "norm_label": "responsividade",
       "source_file": "CLAUDE.md",
-      "source_location": "L1200"
+      "source_location": "L1208"
     },
     {
       "id": "claude_tabelas_regra_cr\u00edtica",
@@ -14831,7 +14939,7 @@
       "node_kind": "heading",
       "norm_label": "tabelas (regra critica)",
       "source_file": "CLAUDE.md",
-      "source_location": "L1217"
+      "source_location": "L1225"
     },
     {
       "id": "claude_verifica\u00e7\u00e3o_r\u00e1pida_checklist_antes_de_cada_commit",
@@ -14843,7 +14951,7 @@
       "node_kind": "heading",
       "norm_label": "verificacao rapida (checklist antes de cada commit)",
       "source_file": "CLAUDE.md",
-      "source_location": "L1259"
+      "source_location": "L1267"
     },
     {
       "id": "regras_negocios_ebook_ucs_tec_aplic_mark",
@@ -16364,7 +16472,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1159",
+      "source_location": "L1167",
       "weight": 1.0
     },
     {
@@ -16375,7 +16483,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1173",
+      "source_location": "L1181",
       "weight": 1.0
     },
     {
@@ -16386,7 +16494,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1274",
+      "source_location": "L1282",
       "weight": 1.0
     },
     {
@@ -16397,7 +16505,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1389",
+      "source_location": "L1397",
       "weight": 1.0
     },
     {
@@ -16408,7 +16516,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1842",
+      "source_location": "L1850",
       "weight": 1.0
     },
     {
@@ -16441,7 +16549,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L315",
+      "source_location": "L323",
       "weight": 1.0
     },
     {
@@ -16452,7 +16560,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L392",
+      "source_location": "L400",
       "weight": 1.0
     },
     {
@@ -16463,7 +16571,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L540",
+      "source_location": "L548",
       "weight": 1.0
     },
     {
@@ -16474,7 +16582,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L565",
+      "source_location": "L573",
       "weight": 1.0
     },
     {
@@ -16496,7 +16604,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L732",
+      "source_location": "L740",
       "weight": 1.0
     },
     {
@@ -16584,7 +16692,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L199",
+      "source_location": "L207",
       "weight": 1.0
     },
     {
@@ -16595,7 +16703,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L217",
+      "source_location": "L225",
       "weight": 1.0
     },
     {
@@ -16606,7 +16714,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L235",
+      "source_location": "L243",
       "weight": 1.0
     },
     {
@@ -16617,7 +16725,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L258",
+      "source_location": "L266",
       "weight": 1.0
     },
     {
@@ -16628,7 +16736,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L277",
+      "source_location": "L285",
       "weight": 1.0
     },
     {
@@ -16639,7 +16747,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L295",
+      "source_location": "L303",
       "weight": 1.0
     },
     {
@@ -16650,7 +16758,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L319",
+      "source_location": "L327",
       "weight": 1.0
     },
     {
@@ -16661,7 +16769,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L338",
+      "source_location": "L346",
       "weight": 1.0
     },
     {
@@ -16672,7 +16780,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L352",
+      "source_location": "L360",
       "weight": 1.0
     },
     {
@@ -16683,7 +16791,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L371",
+      "source_location": "L379",
       "weight": 1.0
     },
     {
@@ -16694,7 +16802,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L396",
+      "source_location": "L404",
       "weight": 1.0
     },
     {
@@ -16705,7 +16813,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L402",
+      "source_location": "L410",
       "weight": 1.0
     },
     {
@@ -16716,7 +16824,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L425",
+      "source_location": "L433",
       "weight": 1.0
     },
     {
@@ -16727,7 +16835,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L458",
+      "source_location": "L466",
       "weight": 1.0
     },
     {
@@ -16738,7 +16846,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L482",
+      "source_location": "L490",
       "weight": 1.0
     },
     {
@@ -16749,7 +16857,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L499",
+      "source_location": "L507",
       "weight": 1.0
     },
     {
@@ -16760,7 +16868,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L521",
+      "source_location": "L529",
       "weight": 1.0
     },
     {
@@ -16771,7 +16879,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L542",
+      "source_location": "L550",
       "weight": 1.0
     },
     {
@@ -16782,7 +16890,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L569",
+      "source_location": "L577",
       "weight": 1.0
     },
     {
@@ -16793,7 +16901,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L580",
+      "source_location": "L588",
       "weight": 1.0
     },
     {
@@ -16804,7 +16912,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L593",
+      "source_location": "L601",
       "weight": 1.0
     },
     {
@@ -16815,7 +16923,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L681",
+      "source_location": "L689",
       "weight": 1.0
     },
     {
@@ -16826,7 +16934,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L697",
+      "source_location": "L705",
       "weight": 1.0
     },
     {
@@ -16837,7 +16945,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L708",
+      "source_location": "L716",
       "weight": 1.0
     },
     {
@@ -16848,7 +16956,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L718",
+      "source_location": "L726",
       "weight": 1.0
     },
     {
@@ -16859,7 +16967,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L724",
+      "source_location": "L732",
       "weight": 1.0
     },
     {
@@ -16870,7 +16978,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1109",
+      "source_location": "L1117",
       "weight": 1.0
     },
     {
@@ -16881,7 +16989,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1136",
+      "source_location": "L1144",
       "weight": 1.0
     },
     {
@@ -16892,7 +17000,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1151",
+      "source_location": "L1159",
       "weight": 1.0
     },
     {
@@ -16903,7 +17011,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L736",
+      "source_location": "L744",
       "weight": 1.0
     },
     {
@@ -16914,7 +17022,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L743",
+      "source_location": "L751",
       "weight": 1.0
     },
     {
@@ -16925,7 +17033,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L765",
+      "source_location": "L773",
       "weight": 1.0
     },
     {
@@ -16936,7 +17044,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L783",
+      "source_location": "L791",
       "weight": 1.0
     },
     {
@@ -16980,7 +17088,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1175",
+      "source_location": "L1183",
       "weight": 1.0
     },
     {
@@ -16991,7 +17099,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1180",
+      "source_location": "L1188",
       "weight": 1.0
     },
     {
@@ -17002,7 +17110,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1186",
+      "source_location": "L1194",
       "weight": 1.0
     },
     {
@@ -17013,7 +17121,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1200",
+      "source_location": "L1208",
       "weight": 1.0
     },
     {
@@ -17024,7 +17132,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1266",
+      "source_location": "L1274",
       "weight": 1.0
     },
     {
@@ -17035,7 +17143,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1204",
+      "source_location": "L1212",
       "weight": 1.0
     },
     {
@@ -17046,7 +17154,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1210",
+      "source_location": "L1218",
       "weight": 1.0
     },
     {
@@ -17057,18 +17165,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1217",
+      "source_location": "L1225",
       "weight": 1.0
     },
     {
       "source": "claude_responsividade",
-      "target": "claude_formul\u00e1rios_1224",
+      "target": "claude_formul\u00e1rios_1232",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1224",
+      "source_location": "L1232",
       "weight": 1.0
     },
     {
@@ -17079,7 +17187,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1235",
+      "source_location": "L1243",
       "weight": 1.0
     },
     {
@@ -17090,7 +17198,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1241",
+      "source_location": "L1249",
       "weight": 1.0
     },
     {
@@ -17101,7 +17209,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1246",
+      "source_location": "L1254",
       "weight": 1.0
     },
     {
@@ -17112,7 +17220,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1253",
+      "source_location": "L1261",
       "weight": 1.0
     },
     {
@@ -17123,7 +17231,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1259",
+      "source_location": "L1267",
       "weight": 1.0
     },
     {
@@ -17134,7 +17242,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1391",
+      "source_location": "L1399",
       "weight": 1.0
     },
     {
@@ -17145,7 +17253,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1405",
+      "source_location": "L1413",
       "weight": 1.0
     },
     {
@@ -17156,7 +17264,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1465",
+      "source_location": "L1473",
       "weight": 1.0
     },
     {
@@ -17167,7 +17275,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1479",
+      "source_location": "L1487",
       "weight": 1.0
     },
     {
@@ -17178,7 +17286,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1787",
+      "source_location": "L1795",
       "weight": 1.0
     },
     {
@@ -17189,7 +17297,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1798",
+      "source_location": "L1806",
       "weight": 1.0
     },
     {
@@ -17200,7 +17308,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1276",
+      "source_location": "L1284",
       "weight": 1.0
     },
     {
@@ -17211,7 +17319,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1288",
+      "source_location": "L1296",
       "weight": 1.0
     },
     {
@@ -17222,7 +17330,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1348",
+      "source_location": "L1356",
       "weight": 1.0
     },
     {
@@ -17233,7 +17341,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L1381",
+      "source_location": "L1389",
       "weight": 1.0
     },
     {
@@ -17872,6 +17980,105 @@
       "confidence_score": 1.0,
       "source_file": "docs/carregar-telas-perfil-no-login.md",
       "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_corrigir_fluxo_compras",
+      "target": "docs_corrigir_fluxo_compras_corrigir_fluxo_de_compras",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_corrigir_fluxo_compras_corrigir_fluxo_de_compras",
+      "target": "docs_corrigir_fluxo_compras_status_geral",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_corrigir_fluxo_compras_status_geral",
+      "target": "docs_corrigir_fluxo_compras_passo_1_planejamento_para_solicita\u00e7\u00e3o",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_corrigir_fluxo_compras_status_geral",
+      "target": "docs_corrigir_fluxo_compras_passo_2_solicita\u00e7\u00e3o_para_pedido",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_corrigir_fluxo_compras_status_geral",
+      "target": "docs_corrigir_fluxo_compras_passo_3_pedido_para_recebimento",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_corrigir_fluxo_compras_status_geral",
+      "target": "docs_corrigir_fluxo_compras_passo_4_recebimento_para_confer\u00eancia",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_corrigir_fluxo_compras_status_geral",
+      "target": "docs_corrigir_fluxo_compras_passo_5_confer\u00eancia_para_nota_fiscal",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_corrigir_fluxo_compras_status_geral",
+      "target": "docs_corrigir_fluxo_compras_passo_6_regras_e_esquema",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_corrigir_fluxo_compras_status_geral",
+      "target": "docs_corrigir_fluxo_compras_passo_7_publica\u00e7\u00e3o",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/CORRIGIR-FLUXO-COMPRAS.md",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
@@ -29460,5 +29667,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0a8dd71607a4e5ab5ff144a5e7c5eba3e8b968fe"
+  "built_at_commit": "423c9fcb77567f2d05cafefebcb6c6b75ab9fd56"
 }

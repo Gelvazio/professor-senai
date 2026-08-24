@@ -14,7 +14,7 @@
 | 4 | Recebimento efetivado atualiza pedido e gera conferência | ✅ Concluído |
 | 5 | Conferência aprovada libera o recebimento para nota fiscal | ✅ Concluído |
 | 6 | Atualizar regras e esquema do módulo | ✅ Concluído |
-| 7 | Commit, push e Graphify | 🔄 Em progresso |
+| 7 | Commit, push e Graphify | ✅ Concluído |
 
 ### Passo 1: Planejamento para solicitação
 
@@ -78,7 +78,7 @@
 
 ### Passo 7: Publicação
 
-**Status:** 🔄 Em progresso
+**Status:** ✅ Concluído
 
 **Ação:** Criar commit descritivo, enviar para `origin/main` e atualizar o Graphify.
 

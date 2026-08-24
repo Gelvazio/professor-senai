@@ -16,9 +16,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1787236154.746749,
-    "seen": 1787576750.2125297,
-    "ast_hash": "e545ca8c3c8c18e2f92cbe0d6ca6419a",
+    "mtime": 1787577019.3006463,
+    "seen": 1787577077.1006477,
+    "ast_hash": "165d90af58e7616553ebc946c1d195d8",
     "semantic_hash": ""
   },
   "dashboard.html": {
@@ -39,21 +39,21 @@
     "semantic_hash": ""
   },
   "compras/pedidos.html": {
-    "mtime": 1787229285.8553615,
-    "seen": 1787576750.2125297,
-    "ast_hash": "8da1f1f770128b4d48834eb8d80856cf",
+    "mtime": 1787577031.2536108,
+    "seen": 1787577077.1149254,
+    "ast_hash": "b863ece4e3ac933ea503b33312b580cc",
     "semantic_hash": ""
   },
   "compras/planejamento.html": {
-    "mtime": 1787229285.8595743,
-    "seen": 1787576750.2125297,
-    "ast_hash": "349e12f4f808891551e20ff06a23752f",
+    "mtime": 1787576953.5872095,
+    "seen": 1787577077.1149254,
+    "ast_hash": "c49e640999eb64d81001d3a9dd4e7575",
     "semantic_hash": ""
   },
   "compras/solicitacoes.html": {
-    "mtime": 1787229285.8636827,
-    "seen": 1787576750.2125297,
-    "ast_hash": "16d653fb3e5017580a4886ca0070275c",
+    "mtime": 1787576954.363376,
+    "seen": 1787577077.1149254,
+    "ast_hash": "fe3ac66ff4271be53e07e1cbab91c96e",
     "semantic_hash": ""
   },
   "configuracoes/usuarios.html": {
@@ -93,15 +93,15 @@
     "semantic_hash": ""
   },
   "compras/conferencia.html": {
-    "mtime": 1787229285.851264,
-    "seen": 1787576750.2125297,
-    "ast_hash": "720806077f8a975179bc7be03c24741e",
+    "mtime": 1787576982.0013964,
+    "seen": 1787577077.1149254,
+    "ast_hash": "d0be900eb33af92dfea9d28191a77504",
     "semantic_hash": ""
   },
   "compras/recebimento.html": {
-    "mtime": 1787229285.8616843,
-    "seen": 1787576750.2125297,
-    "ast_hash": "bff170476e150695476e903297381e08",
+    "mtime": 1787576981.1390698,
+    "seen": 1787577077.1149254,
+    "ast_hash": "11c56829bfae118c6c972561bac06542",
     "semantic_hash": ""
   },
   "estoque/armazenagem.html": {
@@ -141,9 +141,9 @@
     "semantic_hash": ""
   },
   "compras/nota-fiscal.html": {
-    "mtime": 1787229285.8543537,
-    "seen": 1787576750.2125297,
-    "ast_hash": "7b05c90808f0e2ec4802ccfbd7c1b6c2",
+    "mtime": 1787576982.9437175,
+    "seen": 1787577077.1149254,
+    "ast_hash": "6fe91d18ec97f872c4ab344456ee0481",
     "semantic_hash": ""
   },
   "criar-admin.html": {
@@ -857,9 +857,9 @@
     "semantic_hash": ""
   },
   "docs/CORRIGIR-FLUXO-COMPRAS.md": {
-    "mtime": 1787576723.2340264,
-    "seen": 1787576750.2125297,
-    "ast_hash": "3ef3d86491bfcceea90702c0bd316a02",
+    "mtime": 1787577052.799427,
+    "seen": 1787577077.1160402,
+    "ast_hash": "0bfd2f09120513489d96b103a414330e",
     "semantic_hash": ""
   }
 }
