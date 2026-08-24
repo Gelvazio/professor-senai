@@ -180,6 +180,10 @@ for row, labels in zip(info.rows, fields):
         p = cell.paragraphs[0]
         style_run(p.add_run(f"{label} __________________________________"), 10, True, PETROLEO)
 
+add_body(doc, "Nota final: ______ / 10,0")
+add_body(doc, "Feedback do professor:")
+add_answer_lines(doc, 3)
+
 add_heading(doc, "1. Situação-problema", 1)
 add_body(doc, "Você faz parte da equipe de atendimento da empresa fictícia EcoTech Jovem, que organiza oficinas de tecnologia para estudantes. Uma escola informou que recebeu uma mensagem confusa sobre a mudança de horário de uma oficina. Sua equipe deverá corrigir a comunicação e apresentar uma solução profissional.")
 
@@ -276,10 +280,6 @@ for idx, values in enumerate(rows):
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER if col >= 2 else WD_ALIGN_PARAGRAPH.LEFT
         style_run(p.add_run(value), 8.8, bold=(col == 0), color=PETROLEO if col == 0 else "000000")
 set_table_geometry(rubric, [2800, 4120, 1220, 1220])
-
-add_body(doc, "Nota final: ______ / 10,0")
-add_body(doc, "Feedback do professor:")
-add_answer_lines(doc, 3)
 
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 doc.core_properties.title = "Avaliação Prática — Comunicação Oral e Escrita"
