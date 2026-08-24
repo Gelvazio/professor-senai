@@ -1,16 +1,16 @@
 # Graph Report - erp-victor-anato-senai  (2026-08-24)
 
 ## Corpus Check
-- 76 files · ~625,092 words
+- 77 files · ~625,336 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1304 nodes · 1289 edges · 79 communities (77 shown, 2 thin omitted)
+- 1311 nodes · 1295 edges · 80 communities (78 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2f531b05`
+- Built from commit: `4a9e9bb2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -80,6 +80,7 @@
 - Progresso — Gamificação ERP SENAI
 - Status Geral
 - Status Geral
+- Status Geral
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -99,7 +100,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (79 total, 2 thin omitted)
+## Communities (80 total, 2 thin omitted)
 
 ### Community 0 - "SUPABASE.js"
 Cohesion: 0.07
@@ -353,8 +354,12 @@ Nodes (9): Corrigir Fluxo de Compras, Passo 1: Planejamento para solicitação, 
 Cohesion: 0.22
 Nodes (8): Adicionar Fornecedor à Solicitação de Compra, Passo 1: Esquema, Passo 2: Modal, Passo 3: Aprovação, Passo 4: Pedido automático, Passo 5: Regras, Passo 6: Publicação, Status Geral
 
+### Community 79 - "Status Geral"
+Cohesion: 0.29
+Nodes (6): Destacar Fornecedor Obrigatório, Passo 1: Estados, Passo 2: Alerta e bloqueio da gravação, Passo 3: Destaque visual, Passo 4: Publicação, Status Geral
+
 ## Knowledge Gaps
-- **1021 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+1016 more)
+- **1025 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+1020 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -362,7 +367,7 @@ Nodes (8): Adicionar Fornecedor à Solicitação de Compra, Passo 1: Esquema, Pa
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _1021 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1025 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `SUPABASE.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07293868921775898 - nodes in this community are weakly interconnected._
 - **Should `Intro_gest_org` be split into smaller, more focused modules?**
