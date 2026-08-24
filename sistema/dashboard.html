@@ -3807,7 +3807,14 @@
             body.innerHTML = '<div class="curso-materia-estado">Nenhuma matéria vinculada a este curso.</div>';
             return;
           }
-          let materias = await sbGet("materia", `id=in.(${ids.join(",")})&select=id,descricao,ativo,ementa_caminho&order=descricao`);
+          let materias;
+          try {
+            materias = await sbGet("materia", `id=in.(${ids.join(",")})&select=id,descricao,ativo,ementa_caminho&order=descricao`);
+          } catch (erro) {
+            if (!erroColunaEmentaAusente(erro)) throw erro;
+            materias = await sbGet("materia", `id=in.(${ids.join(",")})&select=id,descricao,ativo&order=descricao`);
+            materias = materias.map((materia) => ({ ...materia, ementa_caminho: null }));
+          }
           if (!isProfessor) materias = materias.filter((materia) => materia.ativo == 1);
           _materiasCursoModal = materias;
           if (!materias.length) {
@@ -3876,6 +3883,45 @@
         document.getElementById("cursoMateriaId").value = "";
       }
 
+      function erroColunaEmentaAusente(erro) {
+        const mensagem = String(erro?.message || erro || "").toLowerCase();
+        return mensagem.includes("ementa_caminho") && (
+          mensagem.includes("column") ||
+          mensagem.includes("schema cache") ||
+          mensagem.includes("pgrst204")
+        );
+      }
+
+      async function gravarMateriaCompatível(id, dados) {
+        try {
+          if (id) {
+            await sbPatch("materia", "id", id, dados);
+            return null;
+          }
+          return await sbPost("materia", dados);
+        } catch (erro) {
+          if (!erroColunaEmentaAusente(erro)) throw erro;
+          const dadosSemEmenta = { ...dados };
+          delete dadosSemEmenta.ementa_caminho;
+          if (id) {
+            await sbPatch("materia", "id", id, dadosSemEmenta);
+            return null;
+          }
+          return sbPost("materia", dadosSemEmenta);
+        }
+      }
+
+      function mensagemErroMateria(erro) {
+        const texto = String(erro?.message || "");
+        if (erroColunaEmentaAusente(erro)) {
+          return "Não foi possível salvar a matéria porque o banco ainda não possui o campo de ementa.";
+        }
+        if (/duplicate|unique|23505/i.test(texto)) {
+          return "Esta matéria já está cadastrada ou vinculada ao curso.";
+        }
+        return "Não foi possível salvar a matéria. Verifique os dados e tente novamente.";
+      }
+
       async function salvarMateriaCurso() {
         if (!_cursoMateriasAtual) return;
         const descricao = document.getElementById("cursoMateriaDescricao").value.trim();
@@ -3892,20 +3938,31 @@
         };
         const cursoId = _cursoMateriasAtual.idNum;
         setCursoMateriasMsg("Salvando…");
+        let materiaCriadaId = null;
         try {
           if (id) {
-            await sbPatch("materia", "id", id, dados);
+            await gravarMateriaCompatível(id, dados);
           } else {
-            const criada = await sbPost("materia", dados);
+            const criada = await gravarMateriaCompatível(null, dados);
             if (!criada || !criada[0]) throw new Error("Matéria não retornada pelo Supabase.");
-            await sbPost("cursomateria", { cursoid: cursoId, materiaid: criada[0].id });
+            materiaCriadaId = criada[0].id;
+            await sbPost("cursomateria", { cursoid: cursoId, materiaid: materiaCriadaId });
+            materiaCriadaId = null;
           }
           cacheMateria = [];
           fecharFormMateriaCurso();
           await abrirCursoModal(cursoId);
           setCursoMateriasMsg(id ? "✅ Matéria atualizada." : "✅ Matéria adicionada ao curso.");
         } catch (erro) {
-          setCursoMateriasMsg("Não foi possível salvar a matéria.", true);
+          if (!id && materiaCriadaId !== null) {
+            try {
+              await sbDelete("materia", `id=eq.${materiaCriadaId}`);
+            } catch (_) {
+              // Mantém o erro original; a limpeza pode ser impedida pelo banco.
+            }
+          }
+          console.error("Erro ao salvar matéria:", erro);
+          setCursoMateriasMsg(mensagemErroMateria(erro), true);
         }
       }
 
