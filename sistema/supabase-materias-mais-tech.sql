@@ -5,6 +5,9 @@
 alter table public.materia
   add column if not exists ementa_caminho text;
 
+alter table public.materia
+  add column if not exists apostila_caminho text;
+
 do $$
 declare
   v_curso_id bigint;
@@ -78,6 +81,29 @@ begin
        when lower('Reforço de Linguagens') then 'FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Ementa_Reforco_Linguagens.md'
        when lower('Reforço Matemática e Raciocínio Lógico') then 'FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/ementa_Reforco_Matematica_Raciocinio_Logico.md'
        else ementa_caminho
+     end
+   where lower(trim(descricao)) in (
+     lower('Competências Socioemocionais e Empreendedorismo'),
+     lower('Exploração de Carreiras Industriais e Tecnológicas'),
+     lower('Fundamentos da Tecnologia e Programação'),
+     lower('Introdução à Comunicação Oral e Escrita para o Mundo do Trabalho'),
+     lower('Noções de Eletricidade e Circuitos Básicos'),
+     lower('Oficinas de Impressão 3D e Robótica'),
+     lower('Reforço de Linguagens'),
+     lower('Reforço Matemática e Raciocínio Lógico')
+   );
+
+  update public.materia
+     set apostila_caminho = case lower(trim(descricao))
+       when lower('Competências Socioemocionais e Empreendedorismo') then 'FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/Apostila_Competencias_Socioemocionais_Empreendedorismo.md'
+       when lower('Exploração de Carreiras Industriais e Tecnológicas') then 'FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/Apostila_Exploracao_Carreiras_Industriais_Tecnologicas.md'
+       when lower('Fundamentos da Tecnologia e Programação') then 'FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/Apostila_Fundamentos_Tecnologia_Programacao.md'
+       when lower('Introdução à Comunicação Oral e Escrita para o Mundo do Trabalho') then 'FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Apostila_Comunicacao_Oral_Escrita_33h.md'
+       when lower('Noções de Eletricidade e Circuitos Básicos') then 'FICHA-PRODUTO-MAIS-TECH/NOCOES_ELETRICIDADE_CIRCUITOS_BASICOS/Apostila_Nocoes_Eletricidade_Circuitos_Basicos.md'
+       when lower('Oficinas de Impressão 3D e Robótica') then 'FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/Apostila_Oficinas_Impressao_3D_Robotica.md'
+       when lower('Reforço de Linguagens') then 'FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md'
+       when lower('Reforço Matemática e Raciocínio Lógico') then 'FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md'
+       else apostila_caminho
      end
    where lower(trim(descricao)) in (
      lower('Competências Socioemocionais e Empreendedorismo'),

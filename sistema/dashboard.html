@@ -1899,6 +1899,10 @@
               <label class="crud-label" for="cursoMateriaEmenta">Caminho da ementa</label>
               <input class="crud-input" id="cursoMateriaEmenta" type="text" placeholder="FICHA-PRODUTO-MAIS-TECH/NOME_MATERIA/ementa.md">
             </div>
+            <div class="crud-field curso-materia-form-full">
+              <label class="crud-label" for="cursoMateriaApostila">Caminho da apostila</label>
+              <input class="crud-input" id="cursoMateriaApostila" type="text" placeholder="FICHA-PRODUTO-MAIS-TECH/NOME_MATERIA/apostila.md">
+            </div>
           </div>
           <div class="curso-materia-form-acoes">
             <button class="btn-salvar" onclick="salvarMateriaCurso()">💾 Salvar</button>
@@ -1918,6 +1922,19 @@
         </div>
         <div class="pe-body pe-md" id="ementaMateriaBody">
           <div class="pe-loading">⏳ Carregando ementa…</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Modal Apostila da Matéria ────────────── -->
+    <div class="pe-backdrop" id="apostilaMateriaModal" style="display:none" onclick="if(event.target===this)fecharApostilaMateria()">
+      <div class="pe-modal">
+        <div class="pe-head">
+          <h3 id="apostilaMateriaTitulo">Apostila</h3>
+          <button class="crud-btn-fechar" onclick="fecharApostilaMateria()" aria-label="Fechar">✕</button>
+        </div>
+        <div class="pe-body pe-md" id="apostilaMateriaBody">
+          <div class="pe-loading">⏳ Carregando apostila…</div>
         </div>
       </div>
     </div>
@@ -3091,6 +3108,7 @@
           fecharModalIframe();
           fecharAvaliacoesModal();
           fecharEmentaMateria();
+          fecharApostilaMateria();
         }
       });
 
@@ -3816,17 +3834,39 @@
         "reforco matematica e raciocinio logico": "FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/ementa_Reforco_Matematica_Raciocinio_Logico.md"
       };
 
-      function obterCaminhoPadraoEmentaMateria(materia) {
-        const descricaoNormalizada = String(materia?.descricao || "")
+      const APOSTILAS_PADRAO_POR_MATERIA = {
+        "competencias socioemocionais e empreendedorismo": "FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/Apostila_Competencias_Socioemocionais_Empreendedorismo.md",
+        "exploracao de carreiras industriais e tecnologicas": "FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/Apostila_Exploracao_Carreiras_Industriais_Tecnologicas.md",
+        "fundamentos da tecnologia e programacao": "FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/Apostila_Fundamentos_Tecnologia_Programacao.md",
+        "introducao a comunicacao oral e escrita para o mundo do trabalho": "FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Apostila_Comunicacao_Oral_Escrita_33h.md",
+        "nocoes de eletricidade e circuitos basicos": "FICHA-PRODUTO-MAIS-TECH/NOCOES_ELETRICIDADE_CIRCUITOS_BASICOS/Apostila_Nocoes_Eletricidade_Circuitos_Basicos.md",
+        "oficinas de impressao 3d e robotica": "FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/Apostila_Oficinas_Impressao_3D_Robotica.md",
+        "reforco de linguagens": "FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
+        "reforco matematica e raciocinio logico": "FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md"
+      };
+
+      function normalizarDescricaoMateria(materia) {
+        return String(materia?.descricao || "")
           .normalize("NFD")
           .replace(/[\u0300-\u036f]/g, "")
           .trim()
           .toLowerCase();
-        return EMENTAS_PADRAO_POR_MATERIA[descricaoNormalizada] || "";
+      }
+
+      function obterCaminhoPadraoEmentaMateria(materia) {
+        return EMENTAS_PADRAO_POR_MATERIA[normalizarDescricaoMateria(materia)] || "";
       }
 
       function obterCaminhoEmentaMateria(materia) {
         return String(materia?.ementa_caminho || "").trim() || obterCaminhoPadraoEmentaMateria(materia);
+      }
+
+      function obterCaminhoPadraoApostilaMateria(materia) {
+        return APOSTILAS_PADRAO_POR_MATERIA[normalizarDescricaoMateria(materia)] || "";
+      }
+
+      function obterCaminhoApostilaMateria(materia) {
+        return String(materia?.apostila_caminho || "").trim() || obterCaminhoPadraoApostilaMateria(materia);
       }
 
       async function abrirCursoModal(id) {
@@ -3852,11 +3892,17 @@
           }
           let materias;
           try {
-            materias = await sbGet("materia", `id=in.(${ids.join(",")})&select=id,descricao,ativo,ementa_caminho&order=descricao`);
+            materias = await sbGet("materia", `id=in.(${ids.join(",")})&select=id,descricao,ativo,ementa_caminho,apostila_caminho&order=descricao`);
           } catch (erro) {
-            if (!erroColunaEmentaAusente(erro)) throw erro;
-            materias = await sbGet("materia", `id=in.(${ids.join(",")})&select=id,descricao,ativo&order=descricao`);
-            materias = materias.map((materia) => ({ ...materia, ementa_caminho: null }));
+            if (!erroColunaMateriaAusente(erro, "ementa_caminho") && !erroColunaMateriaAusente(erro, "apostila_caminho")) throw erro;
+            try {
+              materias = await sbGet("materia", `id=in.(${ids.join(",")})&select=id,descricao,ativo,ementa_caminho&order=descricao`);
+              materias = materias.map((materia) => ({ ...materia, apostila_caminho: null }));
+            } catch (erroCompatibilidade) {
+              if (!erroColunaMateriaAusente(erroCompatibilidade, "ementa_caminho")) throw erroCompatibilidade;
+              materias = await sbGet("materia", `id=in.(${ids.join(",")})&select=id,descricao,ativo&order=descricao`);
+              materias = materias.map((materia) => ({ ...materia, ementa_caminho: null, apostila_caminho: null }));
+            }
           }
           if (!isProfessor) materias = materias.filter((materia) => materia.ativo == 1);
           _materiasCursoModal = materias;
@@ -3880,6 +3926,7 @@
                   ${isProfessor ? `<button class="curso-materia-acessar curso-materia-editar" onclick="editarMateriaCurso(${Number(materia.id)})">Editar Matéria</button>` : ""}
                   <button class="curso-materia-acessar curso-materia-ementa" onclick="abrirEmentaMateria(${Number(materia.id)})">Ementa</button>
                   <button class="curso-materia-acessar curso-materia-avaliacoes" onclick="abrirAvaliacoesMateria(${Number(materia.id)})">Avaliações</button>
+                  <button class="curso-materia-acessar curso-materia-apostila" onclick="abrirApostilaMateria(${Number(materia.id)})">Apostila</button>
                   <button class="curso-materia-acessar" onclick="abrirMateriaDoCurso(${Number(materia.id)})">Ver aulas →</button>
                 </div>
               </div>
@@ -3902,6 +3949,7 @@
         document.getElementById("cursoMateriaDescricao").value = "";
         document.getElementById("cursoMateriaAtivo").value = "1";
         document.getElementById("cursoMateriaEmenta").value = "";
+        document.getElementById("cursoMateriaApostila").value = "";
         document.getElementById("cursoMateriaForm").style.display = "block";
         document.getElementById("cursoMateriaDescricao").focus();
         setCursoMateriasMsg("");
@@ -3914,6 +3962,7 @@
         document.getElementById("cursoMateriaDescricao").value = materia.descricao || "";
         document.getElementById("cursoMateriaAtivo").value = materia.ativo == 1 ? "1" : "0";
         document.getElementById("cursoMateriaEmenta").value = obterCaminhoEmentaMateria(materia);
+        document.getElementById("cursoMateriaApostila").value = obterCaminhoApostilaMateria(materia);
         document.getElementById("cursoMateriaForm").style.display = "block";
         document.getElementById("cursoMateriaForm").scrollIntoView({ behavior: "smooth", block: "nearest" });
         setCursoMateriasMsg("Editando matéria " + materia.id);
@@ -3926,9 +3975,9 @@
         document.getElementById("cursoMateriaId").value = "";
       }
 
-      function erroColunaEmentaAusente(erro) {
+      function erroColunaMateriaAusente(erro, coluna) {
         const mensagem = String(erro?.message || erro || "").toLowerCase();
-        return mensagem.includes("ementa_caminho") && (
+        return mensagem.includes(coluna) && (
           mensagem.includes("column") ||
           mensagem.includes("schema cache") ||
           mensagem.includes("pgrst204")
@@ -3936,28 +3985,33 @@
       }
 
       async function gravarMateriaCompatível(id, dados) {
-        try {
-          if (id) {
-            await sbPatch("materia", "id", id, dados);
-            return null;
+        const dadosCompativeis = { ...dados };
+        for (let tentativa = 0; tentativa < 3; tentativa += 1) {
+          try {
+            if (id) {
+              await sbPatch("materia", "id", id, dadosCompativeis);
+              return null;
+            }
+            return await sbPost("materia", dadosCompativeis);
+          } catch (erro) {
+            if (erroColunaMateriaAusente(erro, "apostila_caminho")) {
+              delete dadosCompativeis.apostila_caminho;
+              continue;
+            }
+            if (erroColunaMateriaAusente(erro, "ementa_caminho")) {
+              delete dadosCompativeis.ementa_caminho;
+              continue;
+            }
+            throw erro;
           }
-          return await sbPost("materia", dados);
-        } catch (erro) {
-          if (!erroColunaEmentaAusente(erro)) throw erro;
-          const dadosSemEmenta = { ...dados };
-          delete dadosSemEmenta.ementa_caminho;
-          if (id) {
-            await sbPatch("materia", "id", id, dadosSemEmenta);
-            return null;
-          }
-          return sbPost("materia", dadosSemEmenta);
         }
+        throw new Error("O banco ainda não possui os campos de materiais da matéria.");
       }
 
       function mensagemErroMateria(erro) {
         const texto = String(erro?.message || "");
-        if (erroColunaEmentaAusente(erro)) {
-          return "Não foi possível salvar a matéria porque o banco ainda não possui o campo de ementa.";
+        if (erroColunaMateriaAusente(erro, "ementa_caminho") || erroColunaMateriaAusente(erro, "apostila_caminho")) {
+          return "Não foi possível salvar os caminhos porque o banco ainda não possui os campos de ementa e apostila.";
         }
         if (/duplicate|unique|23505/i.test(texto)) {
           return "Esta matéria já está cadastrada ou vinculada ao curso.";
@@ -3977,7 +4031,8 @@
         const dados = {
           descricao: descricao,
           ativo: Number(document.getElementById("cursoMateriaAtivo").value),
-          ementa_caminho: document.getElementById("cursoMateriaEmenta").value.trim() || null
+          ementa_caminho: document.getElementById("cursoMateriaEmenta").value.trim() || null,
+          apostila_caminho: document.getElementById("cursoMateriaApostila").value.trim() || null
         };
         const cursoId = _cursoMateriasAtual.idNum;
         setCursoMateriasMsg("Salvando…");
@@ -4245,6 +4300,49 @@
 
       function fecharEmentaMateria() {
         const modal = document.getElementById("ementaMateriaModal");
+        if (!modal) return;
+        modal.style.display = "none";
+        const cursoAberto = document.getElementById("cursoModalBd").style.display === "flex";
+        document.body.style.overflow = cursoAberto ? "hidden" : "";
+      }
+
+      async function abrirApostilaMateria(materiaId) {
+        const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
+        if (!materia) return;
+        const caminhosApostila = [
+          String(materia.apostila_caminho || "").trim(),
+          obterCaminhoPadraoApostilaMateria(materia)
+        ].filter((caminho, indice, lista) => caminho && lista.indexOf(caminho) === indice);
+
+        const modal = document.getElementById("apostilaMateriaModal");
+        const body = document.getElementById("apostilaMateriaBody");
+        document.getElementById("apostilaMateriaTitulo").textContent = "Apostila — " + (materia.descricao || "Matéria");
+        body.innerHTML = '<div class="pe-loading">⏳ Carregando apostila…</div>';
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
+
+        if (!caminhosApostila.length) {
+          body.innerHTML = '<div class="pe-loading">⚠️ Caminho da apostila não configurado. Use “Editar Matéria” para informar o arquivo.</div>';
+          return;
+        }
+
+        try {
+          let conteudoApostila = "";
+          for (const caminho of caminhosApostila) {
+            const resposta = await fetch(caminho, { cache: "no-store" });
+            if (!resposta.ok) continue;
+            conteudoApostila = await resposta.text();
+            break;
+          }
+          if (!conteudoApostila) throw new Error("Nenhum caminho de apostila respondeu com sucesso.");
+          body.innerHTML = mdToHtml(conteudoApostila);
+        } catch (erro) {
+          body.innerHTML = '<div class="pe-loading">⚠️ Não foi possível carregar a apostila. Verifique o caminho configurado.</div>';
+        }
+      }
+
+      function fecharApostilaMateria() {
+        const modal = document.getElementById("apostilaMateriaModal");
         if (!modal) return;
         modal.style.display = "none";
         const cursoAberto = document.getElementById("cursoModalBd").style.display === "flex";
