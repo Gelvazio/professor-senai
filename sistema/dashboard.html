@@ -1975,6 +1975,12 @@
                 <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
               </select>
             </div>
+            <div class="crud-field avaliacao-form-full">
+              <label class="crud-label" for="avaliacaoAcompanhamentoPedagogicoSgn">Acompanhamentos Pedagógicos (SGN)</label>
+              <select class="crud-input" id="avaliacaoAcompanhamentoPedagogicoSgn">
+                <option value="SEM_ALUNOS">Sem alunos</option><option value="PENDENTE">Pendente</option><option value="CONCLUIDO">Concluído</option>
+              </select>
+            </div>
           </div>
           <div class="avaliacao-form-acoes">
             <button class="btn-salvar" onclick="salvarAvaliacao()">💾 Salvar</button>
@@ -3983,9 +3989,10 @@
 
       function renderEtapaAvaliacao(label, status) {
         const valor = String(status || "PENDENTE").toUpperCase();
+        const texto = valor === "SEM_ALUNOS" ? "SEM ALUNOS" : valor;
         return `<div class="avaliacao-etapa">
           <span class="avaliacao-etapa-label">${escaparPendencia(label)}</span>
-          <span class="avaliacao-etapa-status ${classeStatusAvaliacao(valor)}">${escaparPendencia(valor)}</span>
+          <span class="avaliacao-etapa-status ${classeStatusAvaliacao(valor)}">${escaparPendencia(texto)}</span>
         </div>`;
       }
 
@@ -4018,6 +4025,7 @@
               ${renderEtapaAvaliacao("Aplicação da avaliação", avaliacao.status_aplicacao)}
               ${renderEtapaAvaliacao("Revisão da avaliação", avaliacao.status_revisao)}
               ${renderEtapaAvaliacao("Cadastro no SGN", avaliacao.status_cadastro_sgn)}
+              ${renderEtapaAvaliacao("Acompanhamentos Pedagógicos (SGN)", avaliacao.acompanhamento_pedagogico_sgn)}
             </div>
             <div class="avaliacao-card-acoes">
               <button class="avaliacao-card-acao avaliacao-card-editar" onclick="editarAvaliacao(${Number(avaliacao.id)})">✏️ Editar</button>
@@ -4065,6 +4073,7 @@
         document.getElementById("avaliacaoStatusAplicacao").value = "PENDENTE";
         document.getElementById("avaliacaoStatusRevisao").value = "PENDENTE";
         document.getElementById("avaliacaoStatusSgn").value = "PENDENTE";
+        document.getElementById("avaliacaoAcompanhamentoPedagogicoSgn").value = "PENDENTE";
         document.getElementById("avaliacaoForm").style.display = "block";
         document.getElementById("avaliacaoTitulo").focus();
         setAvaliacoesMsg("");
@@ -4081,6 +4090,7 @@
         document.getElementById("avaliacaoStatusAplicacao").value = avaliacao.status_aplicacao || "PENDENTE";
         document.getElementById("avaliacaoStatusRevisao").value = avaliacao.status_revisao || "PENDENTE";
         document.getElementById("avaliacaoStatusSgn").value = avaliacao.status_cadastro_sgn || "PENDENTE";
+        document.getElementById("avaliacaoAcompanhamentoPedagogicoSgn").value = avaliacao.acompanhamento_pedagogico_sgn || "PENDENTE";
         document.getElementById("avaliacaoForm").style.display = "block";
         document.getElementById("avaliacaoForm").scrollIntoView({ behavior: "smooth", block: "nearest" });
         setAvaliacoesMsg("Editando avaliação " + avaliacao.numero);
@@ -4108,6 +4118,7 @@
           status_aplicacao: document.getElementById("avaliacaoStatusAplicacao").value,
           status_revisao: document.getElementById("avaliacaoStatusRevisao").value,
           status_cadastro_sgn: document.getElementById("avaliacaoStatusSgn").value,
+          acompanhamento_pedagogico_sgn: document.getElementById("avaliacaoAcompanhamentoPedagogicoSgn").value,
           updated_at: new Date().toISOString()
         };
         if (!id) {

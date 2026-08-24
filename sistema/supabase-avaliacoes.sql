@@ -17,6 +17,8 @@ create table if not exists public.avaliacao (
     check (status_revisao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
   status_cadastro_sgn text not null default 'PENDENTE'
     check (status_cadastro_sgn in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
+  acompanhamento_pedagogico_sgn text not null default 'PENDENTE'
+    check (acompanhamento_pedagogico_sgn in ('SEM_ALUNOS', 'PENDENTE', 'CONCLUIDO')),
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
   unique (materia_id, numero)
@@ -24,6 +26,9 @@ create table if not exists public.avaliacao (
 
 alter table public.avaliacao
   add column if not exists status_aplicacao text not null default 'PENDENTE';
+
+alter table public.avaliacao
+  add column if not exists acompanhamento_pedagogico_sgn text not null default 'PENDENTE';
 
 do $$
 begin
@@ -33,6 +38,18 @@ begin
     alter table public.avaliacao
       add constraint avaliacao_status_aplicacao_check
       check (status_aplicacao in ('PENDENTE', 'CONCLUIDO', 'CANCELADO'));
+  end if;
+end;
+$$;
+
+do $$
+begin
+  if not exists (
+    select 1 from pg_constraint where conname = 'avaliacao_acompanhamento_pedagogico_sgn_check'
+  ) then
+    alter table public.avaliacao
+      add constraint avaliacao_acompanhamento_pedagogico_sgn_check
+      check (acompanhamento_pedagogico_sgn in ('SEM_ALUNOS', 'PENDENTE', 'CONCLUIDO'));
   end if;
 end;
 $$;
