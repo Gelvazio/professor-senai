@@ -1,0 +1,3951 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "ATIVIDADE-EXCEL.md",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel",
+      "community": 2,
+      "norm_label": "atividade-excel.md"
+    },
+    {
+      "label": "ATIVIDADE PR\u00c1TICA \u2014 Planilha Eletr\u00f4nica",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "community": 2,
+      "norm_label": "atividade pratica \u2014 planilha eletronica"
+    },
+    {
+      "label": "UC: Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_uc_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "community": 2,
+      "norm_label": "uc: introducao a tecnologia da informacao e comunicacao"
+    },
+    {
+      "label": "Contexto",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_contexto",
+      "community": 2,
+      "norm_label": "contexto"
+    },
+    {
+      "label": "Divis\u00e3o da Dupla",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_divis\u00e3o_da_dupla",
+      "community": 2,
+      "norm_label": "divisao da dupla"
+    },
+    {
+      "label": "PARTE 1 \u2014 Aluno A (Word)",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_parte_1_aluno_a_word",
+      "community": 2,
+      "norm_label": "parte 1 \u2014 aluno a (word)"
+    },
+    {
+      "label": "O que fazer",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_o_que_fazer",
+      "community": 2,
+      "norm_label": "o que fazer"
+    },
+    {
+      "label": "PARTE 2 \u2014 Aluno B (Planilha)",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "community": 2,
+      "norm_label": "parte 2 \u2014 aluno b (planilha)"
+    },
+    {
+      "label": "O que criar",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_o_que_criar",
+      "community": 2,
+      "norm_label": "o que criar"
+    },
+    {
+      "label": "Colunas da planilha",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_colunas_da_planilha",
+      "community": 2,
+      "norm_label": "colunas da planilha"
+    },
+    {
+      "label": "F\u00f3rmula da coluna F \u2014 Peso M\u00e9dio",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_f\u00f3rmula_da_coluna_f_peso_m\u00e9dio",
+      "community": 2,
+      "norm_label": "formula da coluna f \u2014 peso medio"
+    },
+    {
+      "label": "Dados para digitar",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_dados_para_digitar",
+      "community": 2,
+      "norm_label": "dados para digitar"
+    },
+    {
+      "label": "Linha de TOTAL (linha 7)",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_linha_de_total_linha_7",
+      "community": 2,
+      "norm_label": "linha de total (linha 7)"
+    },
+    {
+      "label": "Formata\u00e7\u00e3o obrigat\u00f3ria",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_formata\u00e7\u00e3o_obrigat\u00f3ria",
+      "community": 2,
+      "norm_label": "formatacao obrigatoria"
+    },
+    {
+      "label": "Perguntas \u2014 Aluno A responde no Word",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_perguntas_aluno_a_responde_no_word",
+      "community": 2,
+      "norm_label": "perguntas \u2014 aluno a responde no word"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_atividade_excel_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "community": 2,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude",
+      "community": 8,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "AULA 07 \u2014 11/08/2026",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_aula_07_11_08_2026",
+      "community": 8,
+      "norm_label": "aula 07 \u2014 11/08/2026"
+    },
+    {
+      "label": "UC: Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_uc_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "community": 8,
+      "norm_label": "uc: introducao a tecnologia da informacao e comunicacao"
+    },
+    {
+      "label": "Arquivos",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_arquivos",
+      "community": 8,
+      "norm_label": "arquivos"
+    },
+    {
+      "label": "`SLIDE_AULA_07.html`",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_slide_aula_07_html",
+      "community": 8,
+      "norm_label": "`slide_aula_07.html`"
+    },
+    {
+      "label": "`SLIDE_AULA_07.pdf`",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_slide_aula_07_pdf",
+      "community": 8,
+      "norm_label": "`slide_aula_07.pdf`"
+    },
+    {
+      "label": "`Controle_Abate_Pamplona.xlsx`",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_controle_abate_pamplona_xlsx",
+      "community": 8,
+      "norm_label": "`controle_abate_pamplona.xlsx`"
+    },
+    {
+      "label": "`PESQUISA-PAMPLONA-EXCEL-PG.md`",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_pesquisa_pamplona_excel_pg_md",
+      "community": 8,
+      "norm_label": "`pesquisa-pamplona-excel-pg.md`"
+    },
+    {
+      "label": "`GASTOS-CASA.ini`",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_gastos_casa_ini",
+      "community": 8,
+      "norm_label": "`gastos-casa.ini`"
+    },
+    {
+      "label": "`Planilha-Gastos-Casa-AULA-13-08-2026.xlsx`",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_planilha_gastos_casa_aula_13_08_2026_xlsx",
+      "community": 8,
+      "norm_label": "`planilha-gastos-casa-aula-13-08-2026.xlsx`"
+    },
+    {
+      "label": "`ATIVIDADE-EXCEL.md`",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_atividade_excel_md",
+      "community": 8,
+      "norm_label": "`atividade-excel.md`"
+    },
+    {
+      "label": "`ATIVIDADE-EXCEL-13-08-2026.docx`",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_atividade_excel_13_08_2026_docx",
+      "community": 8,
+      "norm_label": "`atividade-excel-13-08-2026.docx`"
+    },
+    {
+      "label": "Rela\u00e7\u00e3o com o Plano de Ensino",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_claude_rela\u00e7\u00e3o_com_o_plano_de_ensino",
+      "community": 8,
+      "norm_label": "relacao com o plano de ensino"
+    },
+    {
+      "label": "PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg",
+      "community": 1,
+      "norm_label": "pesquisa-pamplona-excel-pg.md"
+    },
+    {
+      "label": "Pesquisa \u2014 Planilha Excel de Controle de Abate de Su\u00ednos",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "community": 1,
+      "norm_label": "pesquisa \u2014 planilha excel de controle de abate de suinos"
+    },
+    {
+      "label": "Contexto",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_contexto",
+      "community": 1,
+      "norm_label": "contexto"
+    },
+    {
+      "label": "Estrutura da Planilha Proposta",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_estrutura_da_planilha_proposta",
+      "community": 1,
+      "norm_label": "estrutura da planilha proposta"
+    },
+    {
+      "label": "Abas criadas",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_abas_criadas",
+      "community": 1,
+      "norm_label": "abas criadas"
+    },
+    {
+      "label": "Campos Principais",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "community": 1,
+      "norm_label": "campos principais"
+    },
+    {
+      "label": "COLONOS",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_colonos",
+      "community": 1,
+      "norm_label": "colonos"
+    },
+    {
+      "label": "AGENDAMENTOS (Porcos a chegar)",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_agendamentos_porcos_a_chegar",
+      "community": 1,
+      "norm_label": "agendamentos (porcos a chegar)"
+    },
+    {
+      "label": "RECEBIMENTO",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_recebimento",
+      "community": 1,
+      "norm_label": "recebimento"
+    },
+    {
+      "label": "ABATE",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_abate",
+      "community": 1,
+      "norm_label": "abate"
+    },
+    {
+      "label": "Status dos Porcos \u2014 Fluxo Completo",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_status_dos_porcos_fluxo_completo",
+      "community": 1,
+      "norm_label": "status dos porcos \u2014 fluxo completo"
+    },
+    {
+      "label": "KPIs do Dashboard",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_kpis_do_dashboard",
+      "community": 1,
+      "norm_label": "kpis do dashboard"
+    },
+    {
+      "label": "Boas Pr\u00e1ticas Operacionais",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais",
+      "community": 1,
+      "norm_label": "boas praticas operacionais"
+    },
+    {
+      "label": "Descanso pr\u00e9-abate",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_descanso_pr\u00e9_abate",
+      "community": 1,
+      "norm_label": "descanso pre-abate"
+    },
+    {
+      "label": "Rendimento de carca\u00e7a esperado",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_rendimento_de_carca\u00e7a_esperado",
+      "community": 1,
+      "norm_label": "rendimento de carcaca esperado"
+    },
+    {
+      "label": "Inspe\u00e7\u00e3o SIF",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_inspe\u00e7\u00e3o_sif",
+      "community": 1,
+      "norm_label": "inspecao sif"
+    },
+    {
+      "label": "Arquivo Excel Gerado",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_arquivo_excel_gerado",
+      "community": 1,
+      "norm_label": "arquivo excel gerado"
+    },
+    {
+      "label": "Refer\u00eancias",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_refer\u00eancias",
+      "community": 1,
+      "norm_label": "referencias"
+    },
+    {
+      "label": "ATIVIDADE-14-08-2026.md",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026",
+      "community": 3,
+      "norm_label": "atividade-14-08-2026.md"
+    },
+    {
+      "label": "ATIVIDADE INTEGRADORA \u2014 UC1 Introdu\u00e7\u00e3o \u00e0 TIC",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "community": 3,
+      "norm_label": "atividade integradora \u2014 uc1 introducao a tic"
+    },
+    {
+      "label": "SENAI \u00b7 Aprendizagem Industrial \u00b7 Turma TI01",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_senai_aprendizagem_industrial_turma_ti01",
+      "community": 3,
+      "norm_label": "senai \u00b7 aprendizagem industrial \u00b7 turma ti01"
+    },
+    {
+      "label": "Identifica\u00e7\u00e3o da Dupla",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_identifica\u00e7\u00e3o_da_dupla",
+      "community": 3,
+      "norm_label": "identificacao da dupla"
+    },
+    {
+      "label": "Orienta\u00e7\u00f5es Gerais",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_orienta\u00e7\u00f5es_gerais",
+      "community": 3,
+      "norm_label": "orientacoes gerais"
+    },
+    {
+      "label": "Distribui\u00e7\u00e3o do Tempo",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_distribui\u00e7\u00e3o_do_tempo",
+      "community": 3,
+      "norm_label": "distribuicao do tempo"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 1 \u2014 Aula 01 \u00b7 Hist\u00f3ria da Computa\u00e7\u00e3o, Hardware e Software",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_1_aula_01_hist\u00f3ria_da_computa\u00e7\u00e3o_hardware_e_software",
+      "community": 3,
+      "norm_label": "secao 1 \u2014 aula 01 \u00b7 historia da computacao, hardware e software"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 2 \u2014 Aula 02 \u00b7 Comunica\u00e7\u00e3o, Elementos e Equipes",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_2_aula_02_comunica\u00e7\u00e3o_elementos_e_equipes",
+      "community": 3,
+      "norm_label": "secao 2 \u2014 aula 02 \u00b7 comunicacao, elementos e equipes"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 3 \u2014 Aula 03 \u00b7 Seguran\u00e7a da Informa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_3_aula_03_seguran\u00e7a_da_informa\u00e7\u00e3o",
+      "community": 3,
+      "norm_label": "secao 3 \u2014 aula 03 \u00b7 seguranca da informacao"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 4 \u2014 Aula 04 \u00b7 Internet e World Wide Web",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_4_aula_04_internet_e_world_wide_web",
+      "community": 3,
+      "norm_label": "secao 4 \u2014 aula 04 \u00b7 internet e world wide web"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 5 \u2014 Aula 05 \u00b7 Google Docs \u2014 Editor de Textos",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_5_aula_05_google_docs_editor_de_textos",
+      "community": 3,
+      "norm_label": "secao 5 \u2014 aula 05 \u00b7 google docs \u2014 editor de textos"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 6 \u2014 Aula 06 \u00b7 Google Sheets \u2014 Planilhas Eletr\u00f4nicas",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L247",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_6_aula_06_google_sheets_planilhas_eletr\u00f4nicas",
+      "community": 3,
+      "norm_label": "secao 6 \u2014 aula 06 \u00b7 google sheets \u2014 planilhas eletronicas"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 7 \u2014 Aula 07 \u00b7 Google Slides \u2014 Editor de Apresenta\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_7_aula_07_google_slides_editor_de_apresenta\u00e7\u00f5es",
+      "community": 3,
+      "norm_label": "secao 7 \u2014 aula 07 \u00b7 google slides \u2014 editor de apresentacoes"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 8 \u2014 Aula 08 \u00b7 Textos T\u00e9cnicos e Linguagem Profissional",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L334",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_8_aula_08_textos_t\u00e9cnicos_e_linguagem_profissional",
+      "community": 3,
+      "norm_label": "secao 8 \u2014 aula 08 \u00b7 textos tecnicos e linguagem profissional"
+    },
+    {
+      "label": "SE\u00c7\u00c3O 9 \u2014 Projeto Final \u00b7 Integra\u00e7\u00e3o e Organiza\u00e7\u00e3o no Drive",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L376",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_9_projeto_final_integra\u00e7\u00e3o_e_organiza\u00e7\u00e3o_no_drive",
+      "community": 3,
+      "norm_label": "secao 9 \u2014 projeto final \u00b7 integracao e organizacao no drive"
+    },
+    {
+      "label": "Pontua\u00e7\u00e3o Total",
+      "file_type": "document",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L422",
+      "_origin": "ast",
+      "id": "aula_10_14_08_2026_atividade_14_08_2026_pontua\u00e7\u00e3o_total",
+      "community": 3,
+      "norm_label": "pontuacao total"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 0,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "SENAI \u2014 Projeto de Curso: Aprendizagem Industrial",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "community": 0,
+      "norm_label": "senai \u2014 projeto de curso: aprendizagem industrial"
+    },
+    {
+      "label": "M\u00f3dulo Educa\u00e7\u00e3o para o Trabalho",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
+      "community": 0,
+      "norm_label": "modulo educacao para o trabalho"
+    },
+    {
+      "label": "Unidade Curricular 1: Introdu\u00e7\u00e3o \u00e0 Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "community": 0,
+      "norm_label": "unidade curricular 1: introducao a tecnologia da informacao e comunicacao"
+    },
+    {
+      "label": "Turma",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "claude_turma",
+      "community": 0,
+      "norm_label": "turma"
+    },
+    {
+      "label": "Tempo Real de Instru\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "claude_tempo_real_de_instru\u00e7\u00e3o",
+      "community": 0,
+      "norm_label": "tempo real de instrucao"
+    },
+    {
+      "label": "Carga Hor\u00e1ria",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "claude_carga_hor\u00e1ria",
+      "community": 0,
+      "norm_label": "carga horaria"
+    },
+    {
+      "label": "Capacidades B\u00e1sicas",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "claude_capacidades_b\u00e1sicas",
+      "community": 0,
+      "norm_label": "capacidades basicas"
+    },
+    {
+      "label": "Conhecimentos",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "claude_conhecimentos",
+      "community": 5,
+      "norm_label": "conhecimentos"
+    },
+    {
+      "label": "1. Comunica\u00e7\u00e3o em Equipes de Trabalho",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
+      "community": 5,
+      "norm_label": "1. comunicacao em equipes de trabalho"
+    },
+    {
+      "label": "2. Seguran\u00e7a da Informa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
+      "community": 5,
+      "norm_label": "2. seguranca da informacao"
+    },
+    {
+      "label": "3. Internet (World Wide Web)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "claude_3_internet_world_wide_web",
+      "community": 5,
+      "norm_label": "3. internet (world wide web)"
+    },
+    {
+      "label": "4. Software de Escrit\u00f3rio",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "claude_4_software_de_escrit\u00f3rio",
+      "community": 5,
+      "norm_label": "4. software de escritorio"
+    },
+    {
+      "label": "4.1. Editor de Textos",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "claude_4_1_editor_de_textos",
+      "community": 5,
+      "norm_label": "4.1. editor de textos"
+    },
+    {
+      "label": "4.2. Editor de Planilhas Eletr\u00f4nicas",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "claude_4_2_editor_de_planilhas_eletr\u00f4nicas",
+      "community": 5,
+      "norm_label": "4.2. editor de planilhas eletronicas"
+    },
+    {
+      "label": "4.3. Editor de Apresenta\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "claude_4_3_editor_de_apresenta\u00e7\u00f5es",
+      "community": 5,
+      "norm_label": "4.3. editor de apresentacoes"
+    },
+    {
+      "label": "5. Inform\u00e1tica",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "claude_5_inform\u00e1tica",
+      "community": 5,
+      "norm_label": "5. informatica"
+    },
+    {
+      "label": "5.1. Fundamentos de Hardware",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "claude_5_1_fundamentos_de_hardware",
+      "community": 5,
+      "norm_label": "5.1. fundamentos de hardware"
+    },
+    {
+      "label": "5.2. Sistema Operacional",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "claude_5_2_sistema_operacional",
+      "community": 5,
+      "norm_label": "5.2. sistema operacional"
+    },
+    {
+      "label": "6. Textos T\u00e9cnicos",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "claude_6_textos_t\u00e9cnicos",
+      "community": 5,
+      "norm_label": "6. textos tecnicos"
+    },
+    {
+      "label": "7. Comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L163",
+      "_origin": "ast",
+      "id": "claude_7_comunica\u00e7\u00e3o",
+      "community": 5,
+      "norm_label": "7. comunicacao"
+    },
+    {
+      "label": "8. N\u00edveis de Fala",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L170",
+      "_origin": "ast",
+      "id": "claude_8_n\u00edveis_de_fala",
+      "community": 5,
+      "norm_label": "8. niveis de fala"
+    },
+    {
+      "label": "9. Elementos da Comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L176",
+      "_origin": "ast",
+      "id": "claude_9_elementos_da_comunica\u00e7\u00e3o",
+      "community": 5,
+      "norm_label": "9. elementos da comunicacao"
+    },
+    {
+      "label": "Eixo Estruturante BNCC / Compet\u00eancia Integradora",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L187",
+      "_origin": "ast",
+      "id": "claude_eixo_estruturante_bncc_compet\u00eancia_integradora",
+      "community": 0,
+      "norm_label": "eixo estruturante bncc / competencia integradora"
+    },
+    {
+      "label": "Capacidades Socioemocionais",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "claude_capacidades_socioemocionais",
+      "community": 0,
+      "norm_label": "capacidades socioemocionais"
+    },
+    {
+      "label": "Ambientes Pedag\u00f3gicos e Recursos",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "claude_ambientes_pedag\u00f3gicos_e_recursos",
+      "community": 0,
+      "norm_label": "ambientes pedagogicos e recursos"
+    },
+    {
+      "label": "Ferramentas de Ensino",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L215",
+      "_origin": "ast",
+      "id": "claude_ferramentas_de_ensino",
+      "community": 0,
+      "norm_label": "ferramentas de ensino"
+    },
+    {
+      "label": "Unidade Curricular 2: Sa\u00fade e Seguran\u00e7a no Trabalho",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L232",
+      "_origin": "ast",
+      "id": "claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "community": 9,
+      "norm_label": "unidade curricular 2: saude e seguranca no trabalho"
+    },
+    {
+      "label": "Capacidades B\u00e1sicas",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L240",
+      "_origin": "ast",
+      "id": "claude_capacidades_b\u00e1sicas_240",
+      "community": 9,
+      "norm_label": "capacidades basicas"
+    },
+    {
+      "label": "Conhecimentos",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "claude_conhecimentos_250",
+      "community": 9,
+      "norm_label": "conhecimentos"
+    },
+    {
+      "label": "1. O Impacto da Falta de \u00c9tica nos Ambientes de Trabalho",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L252",
+      "_origin": "ast",
+      "id": "claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho",
+      "community": 9,
+      "norm_label": "1. o impacto da falta de etica nos ambientes de trabalho"
+    },
+    {
+      "label": "2. C\u00f3digo de \u00c9tica Profissional",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L254",
+      "_origin": "ast",
+      "id": "claude_2_c\u00f3digo_de_\u00e9tica_profissional",
+      "community": 9,
+      "norm_label": "2. codigo de etica profissional"
+    },
+    {
+      "label": "3. Acidentes do Trabalho e Doen\u00e7as Ocupacionais",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L256",
+      "_origin": "ast",
+      "id": "claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais",
+      "community": 9,
+      "norm_label": "3. acidentes do trabalho e doencas ocupacionais"
+    },
+    {
+      "label": "4. Medidas de Controle",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L266",
+      "_origin": "ast",
+      "id": "claude_4_medidas_de_controle",
+      "community": 9,
+      "norm_label": "4. medidas de controle"
+    },
+    {
+      "label": "5. Riscos Ocupacionais",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L269",
+      "_origin": "ast",
+      "id": "claude_5_riscos_ocupacionais",
+      "community": 9,
+      "norm_label": "5. riscos ocupacionais"
+    },
+    {
+      "label": "6. Seguran\u00e7a do Trabalho",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L274",
+      "_origin": "ast",
+      "id": "claude_6_seguran\u00e7a_do_trabalho",
+      "community": 9,
+      "norm_label": "6. seguranca do trabalho"
+    },
+    {
+      "label": "Eixo Estruturante BNCC / Compet\u00eancia Integradora",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L287",
+      "_origin": "ast",
+      "id": "claude_eixo_estruturante_bncc_compet\u00eancia_integradora_287",
+      "community": 9,
+      "norm_label": "eixo estruturante bncc / competencia integradora"
+    },
+    {
+      "label": "Capacidades Socioemocionais",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L296",
+      "_origin": "ast",
+      "id": "claude_capacidades_socioemocionais_296",
+      "community": 9,
+      "norm_label": "capacidades socioemocionais"
+    },
+    {
+      "label": "Ambientes Pedag\u00f3gicos e Recursos",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L302",
+      "_origin": "ast",
+      "id": "claude_ambientes_pedag\u00f3gicos_e_recursos_302",
+      "community": 9,
+      "norm_label": "ambientes pedagogicos e recursos"
+    },
+    {
+      "label": "Regras de Trabalho \u2014 Claude",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L315",
+      "_origin": "ast",
+      "id": "claude_regras_de_trabalho_claude",
+      "community": 0,
+      "norm_label": "regras de trabalho \u2014 claude"
+    },
+    {
+      "label": "\u2705 Commit e Push obrigat\u00f3rios \u2014 SEMPRE AO FINAL DE CADA RESPOSTA",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L317",
+      "_origin": "ast",
+      "id": "claude_commit_e_push_obrigat\u00f3rios_sempre_ao_final_de_cada_resposta",
+      "community": 0,
+      "norm_label": "\u2705 commit e push obrigatorios \u2014 sempre ao final de cada resposta"
+    },
+    {
+      "label": "\u2705 Slides devem ter no m\u00ednimo 15 slides",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L328",
+      "_origin": "ast",
+      "id": "claude_slides_devem_ter_no_m\u00ednimo_15_slides",
+      "community": 0,
+      "norm_label": "\u2705 slides devem ter no minimo 15 slides"
+    },
+    {
+      "label": "Configura\u00e7\u00e3o Supabase",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L338",
+      "_origin": "ast",
+      "id": "claude_configura\u00e7\u00e3o_supabase",
+      "community": 0,
+      "norm_label": "configuracao supabase"
+    },
+    {
+      "label": "Tabela `curso`",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L346",
+      "_origin": "ast",
+      "id": "claude_tabela_curso",
+      "community": 0,
+      "norm_label": "tabela `curso`"
+    },
+    {
+      "label": "Estrutura `gabaritos` (coluna JSONB da tabela `curso`)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L364",
+      "_origin": "ast",
+      "id": "claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
+      "community": 0,
+      "norm_label": "estrutura `gabaritos` (coluna jsonb da tabela `curso`)"
+    },
+    {
+      "label": "Fun\u00e7\u00f5es RPC dispon\u00edveis",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L379",
+      "_origin": "ast",
+      "id": "claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
+      "community": 0,
+      "norm_label": "funcoes rpc disponiveis"
+    },
+    {
+      "label": "Controle de perfil (frontend)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L387",
+      "_origin": "ast",
+      "id": "claude_controle_de_perfil_frontend",
+      "community": 0,
+      "norm_label": "controle de perfil (frontend)"
+    },
+    {
+      "label": "EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao",
+      "community": 11,
+      "norm_label": "ementa-introducao-tenologia-informacao.md"
+    },
+    {
+      "label": "M\u00d3DULO EDUCA\u00c7\u00c3O PARA O TRABALHO",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
+      "community": 11,
+      "norm_label": "modulo educacao para o trabalho"
+    },
+    {
+      "label": "Conte\u00fados Formativos",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conte\u00fados_formativos",
+      "community": 11,
+      "norm_label": "conteudos formativos"
+    },
+    {
+      "label": "Capacidades B\u00e1sicas",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_capacidades_b\u00e1sicas",
+      "community": 11,
+      "norm_label": "capacidades basicas"
+    },
+    {
+      "label": "Conhecimentos",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "community": 6,
+      "norm_label": "conhecimentos"
+    },
+    {
+      "label": "1. Comunica\u00e7\u00e3o em Equipes de Trabalho",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
+      "community": 6,
+      "norm_label": "1. comunicacao em equipes de trabalho"
+    },
+    {
+      "label": "2. Seguran\u00e7a da Informa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
+      "community": 6,
+      "norm_label": "2. seguranca da informacao"
+    },
+    {
+      "label": "3. Internet (World Wide Web)",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_3_internet_world_wide_web",
+      "community": 6,
+      "norm_label": "3. internet (world wide web)"
+    },
+    {
+      "label": "4. Software de Escrit\u00f3rio",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_software_de_escrit\u00f3rio",
+      "community": 6,
+      "norm_label": "4. software de escritorio"
+    },
+    {
+      "label": "4.1. Editor de Textos",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_1_editor_de_textos",
+      "community": 6,
+      "norm_label": "4.1. editor de textos"
+    },
+    {
+      "label": "4.2. Editor de Planilhas Eletr\u00f4nicas",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_2_editor_de_planilhas_eletr\u00f4nicas",
+      "community": 6,
+      "norm_label": "4.2. editor de planilhas eletronicas"
+    },
+    {
+      "label": "4.3. Editor de Apresenta\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_3_editor_de_apresenta\u00e7\u00f5es",
+      "community": 6,
+      "norm_label": "4.3. editor de apresentacoes"
+    },
+    {
+      "label": "5. Inform\u00e1tica",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_5_inform\u00e1tica",
+      "community": 6,
+      "norm_label": "5. informatica"
+    },
+    {
+      "label": "5.1. Fundamentos de Hardware",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_5_1_fundamentos_de_hardware",
+      "community": 6,
+      "norm_label": "5.1. fundamentos de hardware"
+    },
+    {
+      "label": "5.2. Sistema Operacional",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_5_2_sistema_operacional",
+      "community": 6,
+      "norm_label": "5.2. sistema operacional"
+    },
+    {
+      "label": "6. Textos T\u00e9cnicos",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_6_textos_t\u00e9cnicos",
+      "community": 6,
+      "norm_label": "6. textos tecnicos"
+    },
+    {
+      "label": "7. Comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_7_comunica\u00e7\u00e3o",
+      "community": 6,
+      "norm_label": "7. comunicacao"
+    },
+    {
+      "label": "8. N\u00edveis de Fala",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_8_n\u00edveis_de_fala",
+      "community": 6,
+      "norm_label": "8. niveis de fala"
+    },
+    {
+      "label": "9. Elementos da Comunica\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_9_elementos_da_comunica\u00e7\u00e3o",
+      "community": 6,
+      "norm_label": "9. elementos da comunicacao"
+    },
+    {
+      "label": "Eixo Estruturante BNCC / Compet\u00eancia Integradora",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_eixo_estruturante_bncc_compet\u00eancia_integradora",
+      "community": 11,
+      "norm_label": "eixo estruturante bncc / competencia integradora"
+    },
+    {
+      "label": "Capacidades Socioemocionais",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_capacidades_socioemocionais",
+      "community": 11,
+      "norm_label": "capacidades socioemocionais"
+    },
+    {
+      "label": "Ambientes Pedag\u00f3gicos e Recursos",
+      "file_type": "document",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_ambientes_pedag\u00f3gicos_e_recursos",
+      "community": 11,
+      "norm_label": "ambientes pedagogicos e recursos"
+    },
+    {
+      "label": "ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_excel_13_08_2026_3025f8ae",
+      "community": 27,
+      "norm_label": "atividade-excel-13-08-2026_3025f8ae.md"
+    },
+    {
+      "label": "Atividade 1- Detetives da Informa\u00e7\u00e3o_f806c07f.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 1- Detetives da Informa\u00e7\u00e3o_f806c07f.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_1_detetives_da_informa\u00e7\u00e3o_f806c07f",
+      "community": 21,
+      "norm_label": "atividade 1- detetives da informacao_f806c07f.md"
+    },
+    {
+      "label": "Atividade 10 - Situa\u00e7\u00e3o de Aprendizagem_899d7223.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 10 - Situa\u00e7\u00e3o de Aprendizagem_899d7223.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_10_situa\u00e7\u00e3o_de_aprendizagem_899d7223",
+      "community": 16,
+      "norm_label": "atividade 10 - situacao de aprendizagem_899d7223.md"
+    },
+    {
+      "label": "SITUA\u00c7\u00c3O DE APRENDIZAGEM (SA)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 10 - Situa\u00e7\u00e3o de Aprendizagem_899d7223.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_atividade_10_situa\u00e7\u00e3o_de_aprendizagem_899d7223_situa\u00e7\u00e3o_de_aprendizagem_sa",
+      "community": 16,
+      "norm_label": "situacao de aprendizagem (sa)"
+    },
+    {
+      "label": "Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b",
+      "community": 12,
+      "norm_label": "atividade 2 - investigacao cibernetica_67aca02b.md"
+    },
+    {
+      "label": "Situa\u00e7\u00e3o de Aprendizagem: \u201cInvestiga\u00e7\u00e3o Cibern\u00e9tica: Protegendo uma Pequena Empresa\u201d",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b_situa\u00e7\u00e3o_de_aprendizagem_investiga\u00e7\u00e3o_cibern\u00e9tica_protegendo_uma_pequena_empresa",
+      "community": 12,
+      "norm_label": "situacao de aprendizagem: \u201cinvestigacao cibernetica: protegendo uma pequena empresa\u201d"
+    },
+    {
+      "label": "Desafio Proposto ao Estudante:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b_desafio_proposto_ao_estudante",
+      "community": 12,
+      "norm_label": "desafio proposto ao estudante:"
+    },
+    {
+      "label": "Produtos Esperados:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b_produtos_esperados",
+      "community": 12,
+      "norm_label": "produtos esperados:"
+    },
+    {
+      "label": "Compet\u00eancias Desenvolvidas:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b_compet\u00eancias_desenvolvidas",
+      "community": 12,
+      "norm_label": "competencias desenvolvidas:"
+    },
+    {
+      "label": "Atividade 3 - Reda\u00e7\u00e3o T\u00e9cnica_13d574b2.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 3 - Reda\u00e7\u00e3o T\u00e9cnica_13d574b2.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_3_reda\u00e7\u00e3o_t\u00e9cnica_13d574b2",
+      "community": 22,
+      "norm_label": "atividade 3 - redacao tecnica_13d574b2.md"
+    },
+    {
+      "label": "Atividade 4 - Criando Atas_d755c4a0.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 4 - Criando Atas_d755c4a0.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_4_criando_atas_d755c4a0",
+      "community": 23,
+      "norm_label": "atividade 4 - criando atas_d755c4a0.md"
+    },
+    {
+      "label": "Atividade 5 - Criando memorandos_bf443415.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 5 - Criando memorandos_bf443415.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_5_criando_memorandos_bf443415",
+      "community": 24,
+      "norm_label": "atividade 5 - criando memorandos_bf443415.md"
+    },
+    {
+      "label": "Atividade 6 - Gabarito_d4d39721.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 6 - Gabarito_d4d39721.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_6_gabarito_d4d39721",
+      "community": 17,
+      "norm_label": "atividade 6 - gabarito_d4d39721.md"
+    },
+    {
+      "label": "Gabarito para o professor",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 6 - Gabarito_d4d39721.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_atividade_6_gabarito_d4d39721_gabarito_para_o_professor",
+      "community": 17,
+      "norm_label": "gabarito para o professor"
+    },
+    {
+      "label": "Atividade 6 \u2013 Tipos de Linguagem_b9f918d0.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 6 \u2013 Tipos de Linguagem_b9f918d0.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_6_tipos_de_linguagem_b9f918d0",
+      "community": 18,
+      "norm_label": "atividade 6 \u2013 tipos de linguagem_b9f918d0.md"
+    },
+    {
+      "label": "Atividade \u2013 Tipos de Linguagem",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 6 \u2013 Tipos de Linguagem_b9f918d0.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_atividade_6_tipos_de_linguagem_b9f918d0_atividade_tipos_de_linguagem",
+      "community": 18,
+      "norm_label": "atividade \u2013 tipos de linguagem"
+    },
+    {
+      "label": "Atividade 7 - Gabarito__2363958f.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 7 - Gabarito__2363958f.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_7_gabarito_2363958f",
+      "community": 19,
+      "norm_label": "atividade 7 - gabarito__2363958f.md"
+    },
+    {
+      "label": "Gabarito com coment\u00e1rios",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 7 - Gabarito__2363958f.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_atividade_7_gabarito_2363958f_gabarito_com_coment\u00e1rios",
+      "community": 19,
+      "norm_label": "gabarito com comentarios"
+    },
+    {
+      "label": "Atividade 7 - T\u00e9cnica ou Jarg\u00e3o_12115ac3.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 7 - T\u00e9cnica ou Jarg\u00e3o_12115ac3.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_7_t\u00e9cnica_ou_jarg\u00e3o_12115ac3",
+      "community": 14,
+      "norm_label": "atividade 7 - tecnica ou jargao_12115ac3.md"
+    },
+    {
+      "label": "Atividade: T\u00e9cnica ou Jarg\u00e3o?",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 7 - T\u00e9cnica ou Jarg\u00e3o_12115ac3.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_atividade_7_t\u00e9cnica_ou_jarg\u00e3o_12115ac3_atividade_t\u00e9cnica_ou_jarg\u00e3o",
+      "community": 14,
+      "norm_label": "atividade: tecnica ou jargao?"
+    },
+    {
+      "label": "Instru\u00e7\u00f5es ao aluno:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 7 - T\u00e9cnica ou Jarg\u00e3o_12115ac3.md",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "converted_atividade_7_t\u00e9cnica_ou_jarg\u00e3o_12115ac3_instru\u00e7\u00f5es_ao_aluno",
+      "community": 14,
+      "norm_label": "instrucoes ao aluno:"
+    },
+    {
+      "label": "Atividade 8 - Controle de EPI_s_96e8b231.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 8 - Controle de EPI_s_96e8b231.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_8_controle_de_epi_s_96e8b231",
+      "community": 25,
+      "norm_label": "atividade 8 - controle de epi_s_96e8b231.md"
+    },
+    {
+      "label": "Atividade 9 - Gr\u00e1fico_094e76f7.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Atividade 9 - Gr\u00e1fico_094e76f7.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_9_gr\u00e1fico_094e76f7",
+      "community": 26,
+      "norm_label": "atividade 9 - grafico_094e76f7.md"
+    },
+    {
+      "label": "Avalia\u00e7\u00e3o de Comportamento_a01c2cbe.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Avalia\u00e7\u00e3o de Comportamento_a01c2cbe.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_avalia\u00e7\u00e3o_de_comportamento_a01c2cbe",
+      "community": 15,
+      "norm_label": "avaliacao de comportamento_a01c2cbe.md"
+    },
+    {
+      "label": "Sheet: Turmas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Avalia\u00e7\u00e3o de Comportamento_a01c2cbe.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_avalia\u00e7\u00e3o_de_comportamento_a01c2cbe_sheet_turmas",
+      "community": 15,
+      "norm_label": "sheet: turmas"
+    },
+    {
+      "label": "Sheet: P\u00e1gina1",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Avalia\u00e7\u00e3o de Comportamento_a01c2cbe.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "converted_avalia\u00e7\u00e3o_de_comportamento_a01c2cbe_sheet_p\u00e1gina1",
+      "community": 15,
+      "norm_label": "sheet: pagina1"
+    },
+    {
+      "label": "Checklist Prova Objetiva_bc9be889.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Checklist Prova Objetiva_bc9be889.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_checklist_prova_objetiva_bc9be889",
+      "community": 28,
+      "norm_label": "checklist prova objetiva_bc9be889.md"
+    },
+    {
+      "label": "Checklist Prova Pr\u00e1tica_dd51f180.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Checklist Prova Pr\u00e1tica_dd51f180.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_checklist_prova_pr\u00e1tica_dd51f180",
+      "community": 29,
+      "norm_label": "checklist prova pratica_dd51f180.md"
+    },
+    {
+      "label": "Controle_Abate_Pamplona_2ddd9b53.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53",
+      "community": 10,
+      "norm_label": "controle_abate_pamplona_2ddd9b53.md"
+    },
+    {
+      "label": "Sheet: DASHBOARD",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_dashboard",
+      "community": 10,
+      "norm_label": "sheet: dashboard"
+    },
+    {
+      "label": "Sheet: COLONOS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_colonos",
+      "community": 10,
+      "norm_label": "sheet: colonos"
+    },
+    {
+      "label": "Sheet: AGENDAMENTOS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_agendamentos",
+      "community": 10,
+      "norm_label": "sheet: agendamentos"
+    },
+    {
+      "label": "Sheet: RECEBIMENTO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_recebimento",
+      "community": 10,
+      "norm_label": "sheet: recebimento"
+    },
+    {
+      "label": "Sheet: ABATE",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_abate",
+      "community": 10,
+      "norm_label": "sheet: abate"
+    },
+    {
+      "label": "Sheet: RELATORIO_DIARIO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_relatorio_diario",
+      "community": 10,
+      "norm_label": "sheet: relatorio_diario"
+    },
+    {
+      "label": "Sheet: LEGENDA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "converted_controle_abate_pamplona_2ddd9b53_sheet_legenda",
+      "community": 10,
+      "norm_label": "sheet: legenda"
+    },
+    {
+      "label": "Dinamicas_1ca0b001.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001",
+      "community": 7,
+      "norm_label": "dinamicas_1ca0b001.md"
+    },
+    {
+      "label": "Din\u00e2mica: \"A TORRE DA COLABORA\u00c7\u00c3O\"",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_din\u00e2mica_a_torre_da_colabora\u00e7\u00e3o",
+      "community": 7,
+      "norm_label": "dinamica: \"a torre da colaboracao\""
+    },
+    {
+      "label": "Etapas da Din\u00e2mica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_etapas_da_din\u00e2mica",
+      "community": 7,
+      "norm_label": "etapas da dinamica"
+    },
+    {
+      "label": "Resultados Esperados",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_resultados_esperados",
+      "community": 7,
+      "norm_label": "resultados esperados"
+    },
+    {
+      "label": "Din\u00e2mica: \"Telefone sem Fio Profissional\" \ud83d\udcde (30 a 40 min)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_din\u00e2mica_telefone_sem_fio_profissional_30_a_40_min",
+      "community": 7,
+      "norm_label": "dinamica: \"telefone sem fio profissional\" \ud83d\udcde (30 a 40 min)"
+    },
+    {
+      "label": "Din\u00e2mica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_din\u00e2mica",
+      "community": 7,
+      "norm_label": "dinamica"
+    },
+    {
+      "label": "Contexto: \"O Evento da Empresa\" \u2013 Organiza\u00e7\u00e3o do Or\u00e7amento \ud83d\udcb0\ud83c\udf89",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_contexto_o_evento_da_empresa_organiza\u00e7\u00e3o_do_or\u00e7amento",
+      "community": 7,
+      "norm_label": "contexto: \"o evento da empresa\" \u2013 organizacao do orcamento \ud83d\udcb0\ud83c\udf89"
+    },
+    {
+      "label": "\ud83d\udd39 Categorias de Gastos & Op\u00e7\u00f5es Dispon\u00edveis",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_categorias_de_gastos_op\u00e7\u00f5es_dispon\u00edveis",
+      "community": 7,
+      "norm_label": "\ud83d\udd39 categorias de gastos & opcoes disponiveis"
+    },
+    {
+      "label": "\ud83d\udccd Como Funciona a Din\u00e2mica?",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_como_funciona_a_din\u00e2mica",
+      "community": 7,
+      "norm_label": "\ud83d\udccd como funciona a dinamica?"
+    },
+    {
+      "label": "\ud83d\udca1 Dica Extra:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_dica_extra",
+      "community": 7,
+      "norm_label": "\ud83d\udca1 dica extra:"
+    },
+    {
+      "label": "Din\u00e2mica: \"O Desafio da Comunica\u00e7\u00e3o N\u00e3o-Verbal\" \ud83e\udd10\ud83d\udc50",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_din\u00e2mica_o_desafio_da_comunica\u00e7\u00e3o_n\u00e3o_verbal",
+      "community": 7,
+      "norm_label": "dinamica: \"o desafio da comunicacao nao-verbal\" \ud83e\udd10\ud83d\udc50"
+    },
+    {
+      "label": "\ud83d\udd39 Passo a Passo:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_passo_a_passo",
+      "community": 7,
+      "norm_label": "\ud83d\udd39 passo a passo:"
+    },
+    {
+      "label": "\ud83d\udcdc Exemplos de Palavras/Frases para Comunica\u00e7\u00e3o N\u00e3o-Verbal:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_exemplos_de_palavras_frases_para_comunica\u00e7\u00e3o_n\u00e3o_verbal",
+      "community": 7,
+      "norm_label": "\ud83d\udcdc exemplos de palavras/frases para comunicacao nao-verbal:"
+    },
+    {
+      "label": "\ud83d\udccd Reflex\u00e3o Final:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "converted_dinamicas_1ca0b001_reflex\u00e3o_final",
+      "community": 7,
+      "norm_label": "\ud83d\udccd reflexao final:"
+    },
+    {
+      "label": "GABARITO_PROVA_OBJETIVA_UC1_TIC_0bf7eb36.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/GABARITO_PROVA_OBJETIVA_UC1_TIC_0bf7eb36.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_gabarito_prova_objetiva_uc1_tic_0bf7eb36",
+      "community": 30,
+      "norm_label": "gabarito_prova_objetiva_uc1_tic_0bf7eb36.md"
+    },
+    {
+      "label": "Modelo Prova Pr\u00e1tica CT ELETROT\u00c9CNICA_1473c987.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Modelo Prova Pr\u00e1tica CT ELETROT\u00c9CNICA_1473c987.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_modelo_prova_pr\u00e1tica_ct_eletrot\u00e9cnica_1473c987",
+      "community": 31,
+      "norm_label": "modelo prova pratica ct eletrotecnica_1473c987.md"
+    },
+    {
+      "label": "Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "community": 4,
+      "norm_label": "operador de producao industrial_ 860h_3e7bbae4.md"
+    },
+    {
+      "label": "DEMANDA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_demanda",
+      "community": 4,
+      "norm_label": "demanda"
+    },
+    {
+      "label": "Justificativa para Oferta",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_justificativa_para_oferta",
+      "community": 4,
+      "norm_label": "justificativa para oferta"
+    },
+    {
+      "label": "DADOS DO CURSO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "community": 4,
+      "norm_label": "dados do curso"
+    },
+    {
+      "label": "Objetivo Geral",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_objetivo_geral",
+      "community": 4,
+      "norm_label": "objetivo geral"
+    },
+    {
+      "label": "Objetivos Espec\u00edficos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_objetivos_espec\u00edficos",
+      "community": 4,
+      "norm_label": "objetivos especificos"
+    },
+    {
+      "label": "Perfil Profissional de Conclus\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_perfil_profissional_de_conclus\u00e3o",
+      "community": 4,
+      "norm_label": "perfil profissional de conclusao"
+    },
+    {
+      "label": "Matriz Curricular",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_matriz_curricular",
+      "community": 4,
+      "norm_label": "matriz curricular"
+    },
+    {
+      "label": "PROCEDIMENTOS METODOL\u00d3GICOS E AVALIA\u00c7\u00c3O",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_procedimentos_metodol\u00f3gicos_e_avalia\u00e7\u00e3o",
+      "community": 4,
+      "norm_label": "procedimentos metodologicos e avaliacao"
+    },
+    {
+      "label": "METODOLOGIA DE ENSINO INTEGRADA A BNCC",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_metodologia_de_ensino_integrada_a_bncc",
+      "community": 4,
+      "norm_label": "metodologia de ensino integrada a bncc"
+    },
+    {
+      "label": "ORIENTA\u00c7\u00d5ES METODOL\u00d3GICAS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_orienta\u00e7\u00f5es_metodol\u00f3gicas",
+      "community": 4,
+      "norm_label": "orientacoes metodologicas"
+    },
+    {
+      "label": "CRIT\u00c9RIOS DE AVALIA\u00c7\u00c3O DA APRENDIZAGEM",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_crit\u00e9rios_de_avalia\u00e7\u00e3o_da_aprendizagem",
+      "community": 4,
+      "norm_label": "criterios de avaliacao da aprendizagem"
+    },
+    {
+      "label": "APROVEITAMENTO DE ESTUDOS PARA HABILITA\u00c7\u00c3O T\u00c9CNICA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_aproveitamento_de_estudos_para_habilita\u00e7\u00e3o_t\u00e9cnica",
+      "community": 4,
+      "norm_label": "aproveitamento de estudos para habilitacao tecnica"
+    },
+    {
+      "label": "6\tEXECU\u00c7\u00c3O DAS TURMAS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_6_execu\u00e7\u00e3o_das_turmas",
+      "community": 4,
+      "norm_label": "6\texecucao das turmas"
+    },
+    {
+      "label": "Anexo I \u2013 Detalhamento do Perfil Profissional de Conclus\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_anexo_i_detalhamento_do_perfil_profissional_de_conclus\u00e3o",
+      "community": 4,
+      "norm_label": "anexo i \u2013 detalhamento do perfil profissional de conclusao"
+    },
+    {
+      "label": "Anexo II \u2013 Detalhamento da Matriz Curricular",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_anexo_ii_detalhamento_da_matriz_curricular",
+      "community": 4,
+      "norm_label": "anexo ii \u2013 detalhamento da matriz curricular"
+    },
+    {
+      "label": "PROMPT - Rubricas Capacidades Socioemocionais_d7cb4c07.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PROMPT - Rubricas Capacidades Socioemocionais_d7cb4c07.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prompt_rubricas_capacidades_socioemocionais_d7cb4c07",
+      "community": 32,
+      "norm_label": "prompt - rubricas capacidades socioemocionais_d7cb4c07.md"
+    },
+    {
+      "label": "PROVA_OBJETIVA_UC1_TIC_10eecaf3.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_10eecaf3.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_objetiva_uc1_tic_10eecaf3",
+      "community": 36,
+      "norm_label": "prova_objetiva_uc1_tic_10eecaf3.md"
+    },
+    {
+      "label": "PROVA_OBJETIVA_UC1_TIC_COM_GABARITO_fbc0d653.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_COM_GABARITO_fbc0d653.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_objetiva_uc1_tic_com_gabarito_fbc0d653",
+      "community": 37,
+      "norm_label": "prova_objetiva_uc1_tic_com_gabarito_fbc0d653.md"
+    },
+    {
+      "label": "PROVA_PRATICA_UC1_TIC_93c034fe.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/PROVA_PRATICA_UC1_TIC_93c034fe.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_pratica_uc1_tic_93c034fe",
+      "community": 38,
+      "norm_label": "prova_pratica_uc1_tic_93c034fe.md"
+    },
+    {
+      "label": "Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "community": 13,
+      "norm_label": "planilha-gastos-casa-aula-13-08-2026_5a5f37d8.md"
+    },
+    {
+      "label": "Sheet: RECEITA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_receita",
+      "community": 13,
+      "norm_label": "sheet: receita"
+    },
+    {
+      "label": "Sheet: DESPESA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_despesa",
+      "community": 13,
+      "norm_label": "sheet: despesa"
+    },
+    {
+      "label": "Sheet: SALDO-MENSAL",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_saldo_mensal",
+      "community": 13,
+      "norm_label": "sheet: saldo-mensal"
+    },
+    {
+      "label": "Sheet: EXEMPLO-FILTROS-CLASSIFICACAO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_exemplo_filtros_classificacao",
+      "community": 13,
+      "norm_label": "sheet: exemplo-filtros-classificacao"
+    },
+    {
+      "label": "Prova Objetiva - 1_074462a3.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Prova Objetiva - 1_074462a3.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_objetiva_1_074462a3",
+      "community": 33,
+      "norm_label": "prova objetiva - 1_074462a3.md"
+    },
+    {
+      "label": "Prova Objetiva - 2_fe0f0848.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Prova Objetiva - 2_fe0f0848.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_objetiva_2_fe0f0848",
+      "community": 34,
+      "norm_label": "prova objetiva - 2_fe0f0848.md"
+    },
+    {
+      "label": "Prova Objetiva _d77cf242.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Prova Objetiva _d77cf242.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_objetiva_d77cf242",
+      "community": 35,
+      "norm_label": "prova objetiva _d77cf242.md"
+    },
+    {
+      "label": "Prova Pr\u00e1tica ITIC_8a9b4a58.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Prova Pr\u00e1tica ITIC_8a9b4a58.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_prova_pr\u00e1tica_itic_8a9b4a58",
+      "community": 39,
+      "norm_label": "prova pratica itic_8a9b4a58.md"
+    },
+    {
+      "label": "RECUPERACAO_PROVA_OBJETIVA_448b598a.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/RECUPERACAO_PROVA_OBJETIVA_448b598a.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_recuperacao_prova_objetiva_448b598a",
+      "community": 40,
+      "norm_label": "recuperacao_prova_objetiva_448b598a.md"
+    },
+    {
+      "label": "RECUPERACAO_PROVA_PRATICA_8ccd162b.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/RECUPERACAO_PROVA_PRATICA_8ccd162b.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_recuperacao_prova_pratica_8ccd162b",
+      "community": 41,
+      "norm_label": "recuperacao_prova_pratica_8ccd162b.md"
+    },
+    {
+      "label": "Template Prova Pr\u00e1tica_657ab546.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Template Prova Pr\u00e1tica_657ab546.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_template_prova_pr\u00e1tica_657ab546",
+      "community": 42,
+      "norm_label": "template prova pratica_657ab546.md"
+    },
+    {
+      "label": "apostila_introducao_tic_2026_2_745914ac.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/apostila_introducao_tic_2026_2_745914ac.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_apostila_introducao_tic_2026_2_745914ac",
+      "community": 20,
+      "norm_label": "apostila_introducao_tic_2026_2_745914ac.md"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel",
+      "target": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_contexto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_divis\u00e3o_da_dupla",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_parte_1_aluno_a_word",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_perguntas_aluno_a_responde_no_word",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_atividade_pr\u00e1tica_planilha_eletr\u00f4nica",
+      "target": "aula_07_11_08_2026_atividade_excel_uc_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_1_aluno_a_word",
+      "target": "aula_07_11_08_2026_atividade_excel_o_que_fazer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_colunas_da_planilha",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_dados_para_digitar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_formata\u00e7\u00e3o_obrigat\u00f3ria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_f\u00f3rmula_da_coluna_f_peso_m\u00e9dio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_linha_de_total_linha_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_atividade_excel_parte_2_aluno_b_planilha",
+      "target": "aula_07_11_08_2026_atividade_excel_o_que_criar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude",
+      "target": "aula_07_11_08_2026_claude_aula_07_11_08_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_aula_07_11_08_2026",
+      "target": "aula_07_11_08_2026_claude_arquivos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_aula_07_11_08_2026",
+      "target": "aula_07_11_08_2026_claude_rela\u00e7\u00e3o_com_o_plano_de_ensino",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_aula_07_11_08_2026",
+      "target": "aula_07_11_08_2026_claude_uc_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_atividade_excel_13_08_2026_docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_atividade_excel_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_controle_abate_pamplona_xlsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_gastos_casa_ini",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_pesquisa_pamplona_excel_pg_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_planilha_gastos_casa_aula_13_08_2026_xlsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_slide_aula_07_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/CLAUDE.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_claude_arquivos",
+      "target": "aula_07_11_08_2026_claude_slide_aula_07_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_arquivo_excel_gerado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_contexto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_estrutura_da_planilha_proposta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_kpis_do_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_refer\u00eancias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_pesquisa_planilha_excel_de_controle_de_abate_de_su\u00ednos",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_status_dos_porcos_fluxo_completo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_estrutura_da_planilha_proposta",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_abas_criadas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_abate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_agendamentos_porcos_a_chegar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_colonos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_campos_principais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_recebimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_descanso_pr\u00e9_abate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_inspe\u00e7\u00e3o_sif",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_boas_pr\u00e1ticas_operacionais",
+      "target": "aula_07_11_08_2026_pesquisa_pamplona_excel_pg_rendimento_de_carca\u00e7a_esperado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_distribui\u00e7\u00e3o_do_tempo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_identifica\u00e7\u00e3o_da_dupla",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_orienta\u00e7\u00f5es_gerais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L422",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_pontua\u00e7\u00e3o_total",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_senai_aprendizagem_industrial_turma_ti01",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_1_aula_01_hist\u00f3ria_da_computa\u00e7\u00e3o_hardware_e_software",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_2_aula_02_comunica\u00e7\u00e3o_elementos_e_equipes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_3_aula_03_seguran\u00e7a_da_informa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_4_aula_04_internet_e_world_wide_web",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_5_aula_05_google_docs_editor_de_textos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L247",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_6_aula_06_google_sheets_planilhas_eletr\u00f4nicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_7_aula_07_google_slides_editor_de_apresenta\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L334",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_8_aula_08_textos_t\u00e9cnicos_e_linguagem_profissional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md",
+      "source_location": "L376",
+      "weight": 1.0,
+      "source": "aula_10_14_08_2026_atividade_14_08_2026_atividade_integradora_uc1_introdu\u00e7\u00e3o_\u00e0_tic",
+      "target": "aula_10_14_08_2026_atividade_14_08_2026_se\u00e7\u00e3o_9_projeto_final_integra\u00e7\u00e3o_e_organiza\u00e7\u00e3o_no_drive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L338",
+      "weight": 1.0,
+      "source": "claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "claude_configura\u00e7\u00e3o_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L315",
+      "weight": 1.0,
+      "source": "claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "claude_regras_de_trabalho_claude",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "claude_senai_projeto_de_curso_aprendizagem_industrial",
+      "target": "claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "claude_ambientes_pedag\u00f3gicos_e_recursos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "claude_capacidades_b\u00e1sicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "claude_capacidades_socioemocionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "claude_carga_hor\u00e1ria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "claude_conhecimentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "claude_eixo_estruturante_bncc_compet\u00eancia_integradora",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "claude_ferramentas_de_ensino",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "claude_tempo_real_de_instru\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
+      "target": "claude_turma",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "claude_conhecimentos",
+      "target": "claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "claude_conhecimentos",
+      "target": "claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "claude_conhecimentos",
+      "target": "claude_3_internet_world_wide_web",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "claude_conhecimentos",
+      "target": "claude_4_software_de_escrit\u00f3rio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "claude_conhecimentos",
+      "target": "claude_5_inform\u00e1tica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "claude_conhecimentos",
+      "target": "claude_6_textos_t\u00e9cnicos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "claude_conhecimentos",
+      "target": "claude_7_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "claude_conhecimentos",
+      "target": "claude_8_n\u00edveis_de_fala",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "claude_conhecimentos",
+      "target": "claude_9_elementos_da_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "claude_4_software_de_escrit\u00f3rio",
+      "target": "claude_4_1_editor_de_textos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "claude_4_software_de_escrit\u00f3rio",
+      "target": "claude_4_2_editor_de_planilhas_eletr\u00f4nicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "claude_4_software_de_escrit\u00f3rio",
+      "target": "claude_4_3_editor_de_apresenta\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "claude_5_inform\u00e1tica",
+      "target": "claude_5_1_fundamentos_de_hardware",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "claude_5_inform\u00e1tica",
+      "target": "claude_5_2_sistema_operacional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "claude_ambientes_pedag\u00f3gicos_e_recursos_302",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L240",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "claude_capacidades_b\u00e1sicas_240",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L296",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "claude_capacidades_socioemocionais_296",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "claude_conhecimentos_250",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
+      "target": "claude_eixo_estruturante_bncc_compet\u00eancia_integradora_287",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L252",
+      "weight": 1.0,
+      "source": "claude_conhecimentos_250",
+      "target": "claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "claude_conhecimentos_250",
+      "target": "claude_2_c\u00f3digo_de_\u00e9tica_profissional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L256",
+      "weight": 1.0,
+      "source": "claude_conhecimentos_250",
+      "target": "claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "claude_conhecimentos_250",
+      "target": "claude_4_medidas_de_controle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L269",
+      "weight": 1.0,
+      "source": "claude_conhecimentos_250",
+      "target": "claude_5_riscos_ocupacionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L274",
+      "weight": 1.0,
+      "source": "claude_conhecimentos_250",
+      "target": "claude_6_seguran\u00e7a_do_trabalho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L317",
+      "weight": 1.0,
+      "source": "claude_regras_de_trabalho_claude",
+      "target": "claude_commit_e_push_obrigat\u00f3rios_sempre_ao_final_de_cada_resposta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L328",
+      "weight": 1.0,
+      "source": "claude_regras_de_trabalho_claude",
+      "target": "claude_slides_devem_ter_no_m\u00ednimo_15_slides",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L387",
+      "weight": 1.0,
+      "source": "claude_configura\u00e7\u00e3o_supabase",
+      "target": "claude_controle_de_perfil_frontend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L364",
+      "weight": 1.0,
+      "source": "claude_configura\u00e7\u00e3o_supabase",
+      "target": "claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L379",
+      "weight": 1.0,
+      "source": "claude_configura\u00e7\u00e3o_supabase",
+      "target": "claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L346",
+      "weight": 1.0,
+      "source": "claude_configura\u00e7\u00e3o_supabase",
+      "target": "claude_tabela_curso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_ambientes_pedag\u00f3gicos_e_recursos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_capacidades_socioemocionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conte\u00fados_formativos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_eixo_estruturante_bncc_compet\u00eancia_integradora",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conte\u00fados_formativos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_capacidades_b\u00e1sicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conte\u00fados_formativos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_3_internet_world_wide_web",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_software_de_escrit\u00f3rio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_5_inform\u00e1tica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_6_textos_t\u00e9cnicos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_7_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_8_n\u00edveis_de_fala",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_conhecimentos",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_9_elementos_da_comunica\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_software_de_escrit\u00f3rio",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_1_editor_de_textos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_software_de_escrit\u00f3rio",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_2_editor_de_planilhas_eletr\u00f4nicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_software_de_escrit\u00f3rio",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_4_3_editor_de_apresenta\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_5_inform\u00e1tica",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_5_1_fundamentos_de_hardware",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_5_inform\u00e1tica",
+      "target": "introdu\u00e7\u00e3o_a_tic_victor_anato_ementa_introducao_tenologia_informacao_5_2_sistema_operacional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 10 - Situa\u00e7\u00e3o de Aprendizagem_899d7223.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_atividade_10_situa\u00e7\u00e3o_de_aprendizagem_899d7223",
+      "target": "converted_atividade_10_situa\u00e7\u00e3o_de_aprendizagem_899d7223_situa\u00e7\u00e3o_de_aprendizagem_sa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b",
+      "target": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b_compet\u00eancias_desenvolvidas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b",
+      "target": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b_desafio_proposto_ao_estudante",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b",
+      "target": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b_produtos_esperados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 2 - Investiga\u00e7\u00e3o Cibern\u00e9tica_67aca02b.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b",
+      "target": "converted_atividade_2_investiga\u00e7\u00e3o_cibern\u00e9tica_67aca02b_situa\u00e7\u00e3o_de_aprendizagem_investiga\u00e7\u00e3o_cibern\u00e9tica_protegendo_uma_pequena_empresa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 6 - Gabarito_d4d39721.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_atividade_6_gabarito_d4d39721",
+      "target": "converted_atividade_6_gabarito_d4d39721_gabarito_para_o_professor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 6 \u2013 Tipos de Linguagem_b9f918d0.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_atividade_6_tipos_de_linguagem_b9f918d0",
+      "target": "converted_atividade_6_tipos_de_linguagem_b9f918d0_atividade_tipos_de_linguagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 7 - Gabarito__2363958f.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_atividade_7_gabarito_2363958f",
+      "target": "converted_atividade_7_gabarito_2363958f_gabarito_com_coment\u00e1rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 7 - T\u00e9cnica ou Jarg\u00e3o_12115ac3.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_atividade_7_t\u00e9cnica_ou_jarg\u00e3o_12115ac3",
+      "target": "converted_atividade_7_t\u00e9cnica_ou_jarg\u00e3o_12115ac3_atividade_t\u00e9cnica_ou_jarg\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Atividade 7 - T\u00e9cnica ou Jarg\u00e3o_12115ac3.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "converted_atividade_7_t\u00e9cnica_ou_jarg\u00e3o_12115ac3_atividade_t\u00e9cnica_ou_jarg\u00e3o",
+      "target": "converted_atividade_7_t\u00e9cnica_ou_jarg\u00e3o_12115ac3_instru\u00e7\u00f5es_ao_aluno",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Avalia\u00e7\u00e3o de Comportamento_a01c2cbe.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "converted_avalia\u00e7\u00e3o_de_comportamento_a01c2cbe",
+      "target": "converted_avalia\u00e7\u00e3o_de_comportamento_a01c2cbe_sheet_p\u00e1gina1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Avalia\u00e7\u00e3o de Comportamento_a01c2cbe.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_avalia\u00e7\u00e3o_de_comportamento_a01c2cbe",
+      "target": "converted_avalia\u00e7\u00e3o_de_comportamento_a01c2cbe_sheet_turmas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_abate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_agendamentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_colonos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_legenda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_recebimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Controle_Abate_Pamplona_2ddd9b53.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "converted_controle_abate_pamplona_2ddd9b53",
+      "target": "converted_controle_abate_pamplona_2ddd9b53_sheet_relatorio_diario",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001",
+      "target": "converted_dinamicas_1ca0b001_como_funciona_a_din\u00e2mica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001",
+      "target": "converted_dinamicas_1ca0b001_contexto_o_evento_da_empresa_organiza\u00e7\u00e3o_do_or\u00e7amento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001",
+      "target": "converted_dinamicas_1ca0b001_din\u00e2mica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001",
+      "target": "converted_dinamicas_1ca0b001_din\u00e2mica_a_torre_da_colabora\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001",
+      "target": "converted_dinamicas_1ca0b001_din\u00e2mica_telefone_sem_fio_profissional_30_a_40_min",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001",
+      "target": "converted_dinamicas_1ca0b001_etapas_da_din\u00e2mica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001",
+      "target": "converted_dinamicas_1ca0b001_resultados_esperados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001_contexto_o_evento_da_empresa_organiza\u00e7\u00e3o_do_or\u00e7amento",
+      "target": "converted_dinamicas_1ca0b001_categorias_de_gastos_op\u00e7\u00f5es_dispon\u00edveis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001_como_funciona_a_din\u00e2mica",
+      "target": "converted_dinamicas_1ca0b001_dica_extra",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001_como_funciona_a_din\u00e2mica",
+      "target": "converted_dinamicas_1ca0b001_din\u00e2mica_o_desafio_da_comunica\u00e7\u00e3o_n\u00e3o_verbal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001_como_funciona_a_din\u00e2mica",
+      "target": "converted_dinamicas_1ca0b001_exemplos_de_palavras_frases_para_comunica\u00e7\u00e3o_n\u00e3o_verbal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001_como_funciona_a_din\u00e2mica",
+      "target": "converted_dinamicas_1ca0b001_passo_a_passo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Dinamicas_1ca0b001.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "converted_dinamicas_1ca0b001_como_funciona_a_din\u00e2mica",
+      "target": "converted_dinamicas_1ca0b001_reflex\u00e3o_final",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_6_execu\u00e7\u00e3o_das_turmas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_aproveitamento_de_estudos_para_habilita\u00e7\u00e3o_t\u00e9cnica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_crit\u00e9rios_de_avalia\u00e7\u00e3o_da_aprendizagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_demanda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_metodologia_de_ensino_integrada_a_bncc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_orienta\u00e7\u00f5es_metodol\u00f3gicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_procedimentos_metodol\u00f3gicos_e_avalia\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_demanda",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_justificativa_para_oferta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_matriz_curricular",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_objetivo_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_objetivos_espec\u00edficos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_dados_do_curso",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_perfil_profissional_de_conclus\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_6_execu\u00e7\u00e3o_das_turmas",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_anexo_i_detalhamento_do_perfil_profissional_de_conclus\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_6_execu\u00e7\u00e3o_das_turmas",
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_3e7bbae4_anexo_ii_detalhamento_da_matriz_curricular",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "target": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_despesa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "target": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_exemplo_filtros_classificacao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "target": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_receita",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8",
+      "target": "converted_planilha_gastos_casa_aula_13_08_2026_5a5f37d8_sheet_saldo_mensal",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "36b79f0bd36596b4585e6e38b013f6b82e2c34cb"
+}
