@@ -229,7 +229,16 @@ for prompt in prompts:
     add_body(doc, prompt)
     add_answer_lines(doc, 2)
 
-add_heading(doc, "3. Critérios de avaliação", 1)
+add_heading(doc, "3. Autoavaliação do estudante", 1)
+add_body(doc, "Marque uma opção em cada frase:")
+for text in (
+    "Consegui transformar uma mensagem confusa em comunicação profissional.  ☐ Sim  ☐ Parcialmente  ☐ Ainda não",
+    "Falei com clareza, respeito e postura adequada.  ☐ Sim  ☐ Parcialmente  ☐ Ainda não",
+    "Pratiquei escuta ativa durante a simulação.  ☐ Sim  ☐ Parcialmente  ☐ Ainda não",
+):
+    add_bullet(doc, text)
+
+add_heading(doc, "4. Critérios de avaliação", 1)
 rubric = doc.add_table(rows=1, cols=4)
 rubric.style = "Table Grid"
 set_table_geometry(rubric, [2800, 4120, 1220, 1220])
@@ -262,15 +271,6 @@ set_table_geometry(rubric, [2800, 4120, 1220, 1220])
 add_body(doc, "Nota final: ______ / 10,0")
 add_body(doc, "Feedback do professor:")
 add_answer_lines(doc, 3)
-
-add_heading(doc, "4. Autoavaliação do estudante", 1)
-add_body(doc, "Marque uma opção em cada frase:")
-for text in (
-    "Consegui transformar uma mensagem confusa em comunicação profissional.  ☐ Sim  ☐ Parcialmente  ☐ Ainda não",
-    "Falei com clareza, respeito e postura adequada.  ☐ Sim  ☐ Parcialmente  ☐ Ainda não",
-    "Pratiquei escuta ativa durante a simulação.  ☐ Sim  ☐ Parcialmente  ☐ Ainda não",
-):
-    add_bullet(doc, text)
 
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 doc.core_properties.title = "Avaliação Prática — Comunicação Oral e Escrita"
