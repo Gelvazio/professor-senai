@@ -1030,6 +1030,54 @@
           grid-template-columns: 1fr;
         }
       }
+      .curso-materia-card {
+        border: 1px solid #dfe4ec;
+        border-radius: 12px;
+        background: #fff;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 0 2px 8px rgba(0, 67, 132, .07);
+        transition: transform .15s, box-shadow .15s, border-color .15s;
+      }
+      .curso-materia-card:hover {
+        transform: translateY(-2px);
+        border-color: #8caed2;
+        box-shadow: 0 6px 18px rgba(0, 67, 132, .14);
+      }
+      .curso-materia-card-topo { display:flex; align-items:flex-start; gap:12px; }
+      .curso-materia-card-icone {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        background: #e8f0fe;
+        color: #004384;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        flex-shrink: 0;
+      }
+      .curso-materia-card-info { flex:1; min-width:0; }
+      .curso-materia-card-codigo { color:#777; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; }
+      .curso-materia-card-nome { margin-top:3px; color:#202124; font-size:14px; font-weight:700; line-height:1.35; }
+      .curso-materia-card-rodape { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:auto; }
+      .curso-materia-status { color:#2e7d32; font-size:11px; font-weight:700; }
+      .curso-materia-status.inativa { color:#9aa0a6; }
+      .curso-materia-acessar {
+        border:0;
+        border-radius:7px;
+        background:#004384;
+        color:#fff;
+        padding:7px 12px;
+        cursor:pointer;
+        font-family: inherit;
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .curso-materia-acessar:hover { background:#003369; }
+      .curso-materia-estado { grid-column:1 / -1; text-align:center; color:#888; padding:36px 20px; font-size:13px; }
       .aula-item {
         border: 1px solid #e8eaed;
         border-radius: 8px;
@@ -1163,6 +1211,11 @@
       /* CRUD / curso modais */
       [data-theme="dark"] .crud-modal,
       [data-theme="dark"] .curso-modal { background: #1c1e26; }
+      [data-theme="dark"] .curso-materia-card { background:#20232c; border-color:#343743; box-shadow:none; }
+      [data-theme="dark"] .curso-materia-card:hover { border-color:#4472b0; }
+      [data-theme="dark"] .curso-materia-card-icone { background:#1a2a40; color:#7ab4e8; }
+      [data-theme="dark"] .curso-materia-card-codigo, [data-theme="dark"] .curso-materia-estado { color:#8b919e; }
+      [data-theme="dark"] .curso-materia-card-nome { color:#e0e3e8; }
       [data-theme="dark"] .crud-toolbar { background: #141620; border-bottom-color: #2c2e38; }
       [data-theme="dark"] .crud-form-area { background: #141620; border-bottom-color: #2c2e38; }
       [data-theme="dark"] .crud-label { color: #8b919e; }
@@ -2244,7 +2297,10 @@
             })),
           };
           // cacheia cursos para o modal
-          dadosCursos.cursos.forEach((c) => { _cursosCache[c.id] = c; });
+          dadosCursos.cursos.forEach((c) => {
+            _cursosCache[c.id] = c;
+            _cursosCache[c.idNum] = c;
+          });
         } catch {
           document.getElementById("grid").innerHTML =
             '<p style="color:#d32f2f;font-size:14px">Erro ao carregar dados do Supabase</p>';
@@ -2304,7 +2360,7 @@
           </label>
         </div>
         ` : ''}
-        <button class="btn-acessar" style="background:${curso.corPrimaria||'#004384'};border:none;cursor:pointer" onclick="abrirAulasCurso(${curso.idNum}, '${curso.nome.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">Acessar ↗</button>
+        <button class="btn-acessar" style="background:${curso.corPrimaria||'#004384'};border:none;cursor:pointer" onclick="abrirCursoModal(${curso.idNum})">Acessar ↗</button>
       </div>
       <div class="card-edit" id="edit-${curso.id}">
         <button class="btn-card-editar" onclick="editarCursoCard(${curso.idNum})">✏️ Editar</button>
@@ -3517,81 +3573,66 @@
       }
 
       // ── Modal Matérias do Curso ────────────────────────────────────
-      function abrirCursoModal(id) {
+      let _cursoMateriasAtual = null;
+      let _materiasCursoModal = [];
+
+      async function abrirCursoModal(id) {
         const curso = _cursosCache[id];
         if (!curso) return;
-        document.getElementById("cursoModalTitulo").textContent = curso.nome;
+        _cursoMateriasAtual = curso;
+        _materiasCursoModal = [];
+        document.getElementById("cursoModalTitulo").textContent = "Matérias — " + curso.nome;
         const body = document.getElementById("cursoModalBody");
-        const aulas = Array.isArray(curso._materias) ? curso._materias : [];
-
-        if (!aulas.length) {
-          body.innerHTML =
-            '<p style="text-align:center;color:#888;padding:24px 0">Nenhuma aula cadastrada ainda.</p>';
-          document.getElementById("cursoModalBd").style.display = "flex";
-          return;
-        }
-
-        body.innerHTML = aulas
-          .map((aula) => {
-            const disponivel = aula.visivel === 1 || isProfessor;
-            if (!disponivel) {
-              return `<div class="aula-item">
-                <div class="aula-item-head">
-                  <span class="aula-item-icon">🔒</span>
-                  <div class="aula-item-meta">
-                    <div class="aula-item-num">Aula ${String(aula.numero).padStart(2, "0")}</div>
-                    <div class="aula-item-titulo" style="color:#aaa">${aula.titulo}</div>
-                  </div>
-                  ${aula.data ? `<span class="aula-item-data">📅 ${aula.data}</span>` : ""}
-                </div>
-                <div class="aula-locked">🔒 Conteúdo indisponível</div>
-              </div>`;
-            }
-
-            const mats = (aula.materiais || []).filter((m) => m.visivel !== 0);
-            const matsHTML = mats
-              .map((m) => {
-                if (m.tipo === "questionario") {
-                  if (m.arquivo === "#") {
-                    return `<div class="aula-mat-row">
-                      <span style="color:#aaa;font-size:13px">${m.icone || "📝"} ${m.nome} — em breve</span>
-                    </div>`;
-                  }
-                  return `<div class="aula-mat-row">
-                    <a class="aula-mat-link" href="${m.arquivo}" target="_blank">
-                      <span>${m.icone || "📝"}</span><span>${m.nome}</span>
-                      <span class="aula-mat-arrow">↗</span>
-                    </a>
-                  </div>`;
-                }
-                return `<div class="aula-mat-row">
-                  <a class="aula-mat-link" href="${m.arquivo}" target="_blank">
-                    <span>${m.icone || "📄"}</span><span>${m.nome}</span>
-                    <span class="aula-mat-arrow">↗</span>
-                  </a>
-                </div>`;
-              })
-              .join("");
-
-            return `<div class="aula-item">
-              <div class="aula-item-head" style="border-left:3px solid ${curso.corPrimaria || "#004384"}">
-                <span class="aula-item-icon">${aula.icone || "📚"}</span>
-                <div class="aula-item-meta">
-                  <div class="aula-item-num">Aula ${String(aula.numero).padStart(2, "0")}</div>
-                  <div class="aula-item-titulo">${aula.titulo}</div>
-                </div>
-                ${aula.data ? `<span class="aula-item-data">📅 ${aula.data}</span>` : ""}
-              </div>
-              <div class="aula-mat-list">${matsHTML || '<p style="font-size:12px;color:#aaa;padding:4px 0">Sem materiais ainda</p>'}</div>
-            </div>`;
-          })
-          .join("");
-
+        body.innerHTML = '<div class="curso-materia-estado">⏳ Carregando matérias…</div>';
         document.getElementById("cursoModalBd").style.display = "flex";
+        document.body.style.overflow = "hidden";
+
+        try {
+          const vinculos = await sbGet("cursomateria", `cursoid=eq.${curso.idNum}&select=materiaid`);
+          const ids = vinculos.map((vinculo) => vinculo.materiaid);
+          if (!ids.length) {
+            body.innerHTML = '<div class="curso-materia-estado">Nenhuma matéria vinculada a este curso.</div>';
+            return;
+          }
+          let materias = await sbGet("materia", `id=in.(${ids.join(",")})&select=id,descricao,ativo&order=descricao`);
+          if (!isProfessor) materias = materias.filter((materia) => materia.ativo == 1);
+          _materiasCursoModal = materias;
+          if (!materias.length) {
+            body.innerHTML = '<div class="curso-materia-estado">Nenhuma matéria disponível neste curso.</div>';
+            return;
+          }
+          body.innerHTML = materias.map((materia) => {
+            const ativa = materia.ativo == 1;
+            return `<article class="curso-materia-card">
+              <div class="curso-materia-card-topo">
+                <div class="curso-materia-card-icone">📘</div>
+                <div class="curso-materia-card-info">
+                  <div class="curso-materia-card-codigo">Matéria ${escaparPendencia(materia.id)}</div>
+                  <div class="curso-materia-card-nome">${escaparPendencia(materia.descricao || "Matéria sem nome")}</div>
+                </div>
+              </div>
+              <div class="curso-materia-card-rodape">
+                <span class="curso-materia-status ${ativa ? "" : "inativa"}">${ativa ? "● Disponível" : "● Inativa"}</span>
+                <button class="curso-materia-acessar" onclick="abrirMateriaDoCurso(${Number(materia.id)})">Ver aulas →</button>
+              </div>
+            </article>`;
+          }).join("");
+        } catch (erro) {
+          body.innerHTML = '<div class="curso-materia-estado">⚠️ Não foi possível carregar as matérias deste curso.</div>';
+        }
+      }
+
+      async function abrirMateriaDoCurso(materiaId) {
+        const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
+        const curso = _cursoMateriasAtual;
+        if (!materia || !curso) return;
+        fecharCursoModal();
+        await abrirAulasCurso(curso.idNum, curso.nome + " — " + materia.descricao);
       }
 
       function fecharCursoModal() {
         document.getElementById("cursoModalBd").style.display = "none";
+        document.body.style.overflow = "";
       }
 
       async function patchAulasMaterias(lista) {
