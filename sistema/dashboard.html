@@ -1124,6 +1124,8 @@
         font-weight: 700;
       }
       .curso-materia-acessar:hover { background:#003369; }
+      .curso-materia-excluir { background:#c62828; }
+      .curso-materia-excluir:hover { background:#9f1f1f; }
       .curso-materia-avaliacoes { background:#f7941d; }
       .curso-materia-avaliacoes:hover { background:#d97800; }
       .curso-materia-estado { grid-column:1 / -1; text-align:center; color:#888; padding:36px 20px; font-size:13px; }
@@ -4097,6 +4099,7 @@
                   <button class="curso-materia-acessar curso-materia-avaliacoes" onclick="abrirAvaliacoesMateria(${Number(materia.id)})">Avaliações</button>
                   <button class="curso-materia-acessar curso-materia-apostila" onclick="abrirApostilaMateria(${Number(materia.id)})">Apostila</button>
                   <button class="curso-materia-acessar" onclick="abrirMateriaDoCurso(${Number(materia.id)})">Ver aulas →</button>
+                  ${isProfessor ? `<button class="curso-materia-acessar curso-materia-excluir" onclick="excluirMateriaCurso(${Number(materia.id)})">Excluir</button>` : ""}
                 </div>
               </div>
             </article>`;
@@ -4252,6 +4255,30 @@
         if (!materia || !curso) return;
         fecharCursoModal();
         await abrirAulasCurso(curso.idNum, curso.nome + " — " + materia.descricao);
+      }
+
+      async function excluirMateriaCurso(materiaId) {
+        if (!isProfessor || !_cursoMateriasAtual) return;
+        const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
+        if (!materia) return;
+        const confirmado = confirm(`Excluir a matéria “${materia.descricao || "Matéria"}” deste curso?`);
+        if (!confirmado) return;
+
+        const cursoId = Number(_cursoMateriasAtual.idNum);
+        setCursoMateriasMsg("Excluindo…");
+        try {
+          await sbDelete("cursomateria", `cursoid=eq.${cursoId}&materiaid=eq.${Number(materiaId)}`);
+          const outrosVinculos = await sbGet("cursomateria", `materiaid=eq.${Number(materiaId)}&select=cursoid`);
+          if (!outrosVinculos.length) {
+            await sbDelete("materia", `id=eq.${Number(materiaId)}`);
+          }
+          cacheMateria = [];
+          await abrirCursoModal(cursoId);
+          setCursoMateriasMsg(outrosVinculos.length ? "✅ Matéria removida deste curso." : "✅ Matéria excluída.");
+        } catch (erro) {
+          console.error("Erro ao excluir matéria:", erro);
+          setCursoMateriasMsg("Não foi possível excluir a matéria.", true);
+        }
       }
 
       function classeStatusAvaliacao(status) {
