@@ -1128,6 +1128,8 @@
       .curso-materia-excluir:hover { background:#9f1f1f; }
       .curso-materia-avaliacoes { background:#f7941d; }
       .curso-materia-avaliacoes:hover { background:#d97800; }
+      .curso-materia-comportamentos { background:#6a1b9a; }
+      .curso-materia-comportamentos:hover { background:#4a126c; }
       .curso-materia-estado { grid-column:1 / -1; text-align:center; color:#888; padding:36px 20px; font-size:13px; }
       .curso-materias-toolbar { display:flex; align-items:center; gap:10px; padding:12px 20px; border-bottom:1px solid #e2e7f0; }
       .curso-materias-filtros { padding:10px 18px; border-bottom:1px solid #e6e9ef; background:#fff; display:flex; gap:8px; flex-wrap:wrap; }
@@ -1189,12 +1191,29 @@
       .avaliacao-card-editar { background:#e8f0fe; color:#004384; }
       .avaliacao-card-excluir { background:#fce8e6; color:#b3261e; }
       .avaliacoes-estado { grid-column:1 / -1; color:#888; text-align:center; padding:38px 20px; font-size:13px; }
+      .comportamentos-toolbar { display:flex; align-items:end; gap:10px; padding:12px 16px; border-bottom:1px solid #e2e7f0; flex-wrap:wrap; }
+      .comportamentos-toolbar .crud-field { min-width:210px; flex:1; }
+      .comportamentos-conteudo { padding:14px 16px 18px; overflow:auto; }
+      .comportamentos-tabela { border-collapse:collapse; width:100%; min-width:1500px; font-size:11px; }
+      .comportamentos-tabela th { background:#004384; color:#fff; padding:9px 7px; position:sticky; top:0; z-index:1; text-align:center; vertical-align:middle; }
+      .comportamentos-tabela th:first-child { min-width:230px; text-align:left; }
+      .comportamentos-tabela th:nth-last-child(2) { min-width:250px; }
+      .comportamentos-tabela td { border-bottom:1px solid #e3e7ed; padding:6px; vertical-align:middle; }
+      .comportamentos-tabela input { width:100%; min-width:58px; box-sizing:border-box; border:1px solid #c9d1dc; border-radius:5px; padding:6px; font:inherit; }
+      .comportamentos-tabela input[type="number"] { text-align:center; }
+      .comportamentos-nota { min-width:62px; text-align:center; font-weight:800; color:#004384; }
+      .comportamentos-peso { display:block; margin-top:3px; color:#ffdca8; font-size:9px; }
+      .comportamentos-acoes { display:flex; gap:9px; align-items:center; padding-top:14px; }
+      .comportamentos-remover { border:0; border-radius:5px; background:#fce8e6; color:#b3261e; cursor:pointer; padding:5px 7px; }
+      .comportamentos-vazio { padding:30px; color:#777; text-align:center; }
       @media (max-width: 640px) {
         .avaliacoes-lista { grid-template-columns:1fr; padding:14px 12px; }
         .avaliacoes-toolbar { flex-wrap:wrap; padding:10px 12px; }
         .avaliacao-form { padding:14px 12px; }
         .avaliacao-form-grid { grid-template-columns:1fr; }
         .avaliacao-form-full { grid-column:auto; }
+        .comportamentos-toolbar { align-items:stretch; }
+        .comportamentos-toolbar .crud-field { min-width:100%; }
         .curso-materia-card-rodape { flex-wrap:wrap; }
         .curso-materias-toolbar { flex-wrap:wrap; padding:10px 12px; }
         .curso-materia-form { padding:14px 12px; }
@@ -2094,6 +2113,39 @@
             <button class="btn-salvar" onclick="salvarAvaliacao()">💾 Salvar</button>
             <button class="btn-cancelar" onclick="fecharFormAvaliacao()">Cancelar</button>
             <span class="crud-msg" id="avaliacaoFormMsg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Modal Avaliação de Comportamentos ───── -->
+    <div class="avaliacoes-modal-backdrop" id="comportamentosModal" style="display:none" onclick="if(event.target===this)fecharAvaliacaoComportamentos()">
+      <div class="curso-modal" style="max-width:96vw;width:1500px">
+        <div class="curso-modal-head">
+          <h3 id="comportamentosModalTitulo">Avaliação Comportamentos</h3>
+          <button class="crud-btn-fechar" onclick="fecharAvaliacaoComportamentos()" aria-label="Fechar">✕</button>
+        </div>
+        <div class="comportamentos-toolbar">
+          <div class="crud-field">
+            <label class="crud-label" for="comportamentosHistorico">Histórico da aula</label>
+            <select class="crud-input" id="comportamentosHistorico" onchange="carregarHistoricoComportamentos(this.value)"></select>
+          </div>
+          <div class="crud-field">
+            <label class="crud-label" for="comportamentosDataAula">Data e horário da aula</label>
+            <input class="crud-input" id="comportamentosDataAula" type="datetime-local">
+          </div>
+          <button class="btn-novo" onclick="novaAvaliacaoComportamentos()">＋ Nova aula</button>
+          <button class="btn-cancelar" onclick="adicionarAlunoComportamentos()">＋ Aluno</button>
+        </div>
+        <div class="comportamentos-conteudo">
+          <table class="comportamentos-tabela">
+            <thead><tr id="comportamentosCabecalho"></tr></thead>
+            <tbody id="comportamentosLinhas"></tbody>
+          </table>
+          <div class="comportamentos-acoes">
+            <button class="btn-salvar" onclick="salvarAvaliacaoComportamentos()">💾 Salvar no histórico</button>
+            <button class="btn-cancelar" onclick="fecharAvaliacaoComportamentos()">Fechar</button>
+            <span class="crud-msg" id="comportamentosMsg"></span>
           </div>
         </div>
       </div>
@@ -3307,6 +3359,7 @@
           fecharAddMatAula();
           fecharModalIframe();
           fecharAvaliacoesModal();
+          fecharAvaliacaoComportamentos();
           fecharEmentaMateria();
           fecharApostilaMateria();
         }
@@ -4173,6 +4226,7 @@
                   ${isProfessor ? `<button class="curso-materia-acessar curso-materia-editar" onclick="editarMateriaCurso(${Number(materia.id)})">Editar Matéria</button>` : ""}
                   <button class="curso-materia-acessar curso-materia-ementa" onclick="abrirEmentaMateria(${Number(materia.id)})">Ementa</button>
                   <button class="curso-materia-acessar curso-materia-avaliacoes" onclick="abrirAvaliacoesMateria(${Number(materia.id)})">Avaliações</button>
+                  <button class="curso-materia-acessar curso-materia-comportamentos" onclick="abrirAvaliacaoComportamentos(${Number(materia.id)})">Avaliação Comportamentos</button>
                   <button class="curso-materia-acessar curso-materia-apostila" onclick="abrirApostilaMateria(${Number(materia.id)})">Apostila</button>
                   <button class="curso-materia-acessar" onclick="abrirMateriaDoCurso(${Number(materia.id)})">Ver aulas →</button>
                   ${isProfessor ? `<button class="curso-materia-acessar curso-materia-excluir" onclick="excluirMateriaCurso(${Number(materia.id)})">Excluir</button>` : ""}
@@ -4582,6 +4636,281 @@
         if (!modal) return;
         modal.style.display = "none";
         fecharFormAvaliacao(false);
+        const cursoAberto = document.getElementById("cursoModalBd").style.display === "flex";
+        document.body.style.overflow = cursoAberto ? "hidden" : "";
+      }
+
+      const COMPORTAMENTOS_STORAGE_KEY = "avaliacao_comportamentos_v1";
+      const COMPORTAMENTOS_CRITERIOS = [
+        { titulo: "Uso autorizado de celular e dispositivos", peso: 2 },
+        { titulo: "Respeito ao docente, colaboradores e colegas", peso: 2 },
+        { titulo: "Pontualidade e retorno dos intervalos", peso: 0.5 },
+        { titulo: "Interesse, participação e colaboração", peso: 1 },
+        { titulo: "Comportamento e apresentação profissional", peso: 0.5 },
+        { titulo: "Colaboração, empatia e resolução de conflitos", peso: 0.5 },
+        { titulo: "Controle emocional", peso: 0.5 },
+        { titulo: "Ética e cumprimento das responsabilidades", peso: 1 },
+        { titulo: "Linguagem adequada", peso: 1 },
+        { titulo: "Comunicação clara e objetiva", peso: 1 }
+      ];
+      let _comportamentosMateriaAtual = null;
+      let _comportamentosRegistroAtual = null;
+
+      function lerHistoricoComportamentos() {
+        try {
+          const dados = JSON.parse(localStorage.getItem(COMPORTAMENTOS_STORAGE_KEY) || "{}");
+          return dados && typeof dados === "object" ? dados : {};
+        } catch (_) {
+          return {};
+        }
+      }
+
+      function gravarHistoricoComportamentos(historico) {
+        localStorage.setItem(COMPORTAMENTOS_STORAGE_KEY, JSON.stringify(historico));
+      }
+
+      function dataHoraLocalComportamentos(data) {
+        const valor = data instanceof Date ? data : new Date(data);
+        const local = new Date(valor.getTime() - valor.getTimezoneOffset() * 60000);
+        return local.toISOString().slice(0, 16);
+      }
+
+      function formatarDataHoraComportamentos(valor) {
+        const data = new Date(valor);
+        return Number.isNaN(data.getTime()) ? "Data não informada" : data.toLocaleString("pt-BR", {
+          dateStyle: "short",
+          timeStyle: "short"
+        });
+      }
+
+      function setComportamentosMsg(texto, erro = false) {
+        const msg = document.getElementById("comportamentosMsg");
+        msg.textContent = texto || "";
+        msg.style.color = erro ? "#c62828" : "#2e7d32";
+      }
+
+      function historicoMateriaComportamentos() {
+        if (!_comportamentosMateriaAtual) return [];
+        const historico = lerHistoricoComportamentos();
+        const registros = historico[String(_comportamentosMateriaAtual.id)];
+        return Array.isArray(registros) ? registros : [];
+      }
+
+      function atualizarComboboxComportamentos(selecionarId = "") {
+        const select = document.getElementById("comportamentosHistorico");
+        const registros = historicoMateriaComportamentos()
+          .slice()
+          .sort((a, b) => String(b.aulaEm).localeCompare(String(a.aulaEm)));
+        select.innerHTML = '<option value="">Nova avaliação</option>';
+        registros.forEach((registro) => {
+          const option = document.createElement("option");
+          option.value = registro.id;
+          option.textContent = formatarDataHoraComportamentos(registro.aulaEm);
+          select.appendChild(option);
+        });
+        select.value = selecionarId || "";
+      }
+
+      function criarCampoNotaComportamentos(valor, indice) {
+        const input = document.createElement("input");
+        input.type = "number";
+        input.min = "0";
+        input.max = "10";
+        input.step = "0.1";
+        input.dataset.criterio = String(indice);
+        input.value = valor === null || valor === undefined ? "" : String(valor);
+        input.addEventListener("input", (event) => atualizarNotaLinhaComportamentos(event.target.closest("tr")));
+        return input;
+      }
+
+      function calcularNotaComportamentos(linha) {
+        let soma = 0;
+        let preenchidos = 0;
+        linha.querySelectorAll('input[data-criterio]').forEach((input, indice) => {
+          if (input.value === "") return;
+          const nota = Math.max(0, Math.min(10, Number(input.value) || 0));
+          soma += nota * COMPORTAMENTOS_CRITERIOS[indice].peso;
+          preenchidos += 1;
+        });
+        return preenchidos ? soma / 10 : null;
+      }
+
+      function atualizarNotaLinhaComportamentos(linha) {
+        if (!linha) return;
+        const nota = calcularNotaComportamentos(linha);
+        linha.querySelector(".comportamentos-nota").textContent = nota === null ? "—" : nota.toFixed(1);
+      }
+
+      function criarLinhaComportamentos(dados = {}) {
+        const tr = document.createElement("tr");
+        const tdAluno = document.createElement("td");
+        const aluno = document.createElement("input");
+        aluno.type = "text";
+        aluno.className = "comportamentos-aluno";
+        aluno.placeholder = "Nome do aluno";
+        aluno.value = dados.aluno || "";
+        tdAluno.appendChild(aluno);
+        tr.appendChild(tdAluno);
+
+        COMPORTAMENTOS_CRITERIOS.forEach((_, indice) => {
+          const td = document.createElement("td");
+          td.appendChild(criarCampoNotaComportamentos((dados.notas || [])[indice], indice));
+          tr.appendChild(td);
+        });
+
+        const tdNota = document.createElement("td");
+        tdNota.className = "comportamentos-nota";
+        tdNota.textContent = "—";
+        tr.appendChild(tdNota);
+
+        const tdComentario = document.createElement("td");
+        const comentario = document.createElement("input");
+        comentario.type = "text";
+        comentario.className = "comportamentos-comentario";
+        comentario.placeholder = "Comentários";
+        comentario.value = dados.comentario || "";
+        tdComentario.appendChild(comentario);
+        tr.appendChild(tdComentario);
+
+        const tdAcao = document.createElement("td");
+        const remover = document.createElement("button");
+        remover.type = "button";
+        remover.className = "comportamentos-remover";
+        remover.textContent = "✕";
+        remover.title = "Remover aluno";
+        remover.addEventListener("click", () => tr.remove());
+        tdAcao.appendChild(remover);
+        tr.appendChild(tdAcao);
+        atualizarNotaLinhaComportamentos(tr);
+        return tr;
+      }
+
+      function renderCabecalhoComportamentos() {
+        const cabecalho = document.getElementById("comportamentosCabecalho");
+        cabecalho.innerHTML = "";
+        const aluno = document.createElement("th");
+        aluno.textContent = "Aluno";
+        cabecalho.appendChild(aluno);
+        COMPORTAMENTOS_CRITERIOS.forEach((criterio) => {
+          const th = document.createElement("th");
+          th.textContent = criterio.titulo;
+          const peso = document.createElement("span");
+          peso.className = "comportamentos-peso";
+          peso.textContent = "Peso " + String(criterio.peso).replace(".", ",");
+          th.appendChild(peso);
+          cabecalho.appendChild(th);
+        });
+        ["Nota final", "Comentários", ""].forEach((texto) => {
+          const th = document.createElement("th");
+          th.textContent = texto;
+          cabecalho.appendChild(th);
+        });
+      }
+
+      function renderLinhasComportamentos(alunos = []) {
+        const tbody = document.getElementById("comportamentosLinhas");
+        tbody.innerHTML = "";
+        const lista = alunos.length ? alunos : [{}];
+        lista.forEach((dados) => tbody.appendChild(criarLinhaComportamentos(dados)));
+      }
+
+      function adicionarAlunoComportamentos() {
+        document.getElementById("comportamentosLinhas").appendChild(criarLinhaComportamentos());
+      }
+
+      function novaAvaliacaoComportamentos() {
+        _comportamentosRegistroAtual = null;
+        document.getElementById("comportamentosDataAula").value = dataHoraLocalComportamentos(new Date());
+        atualizarComboboxComportamentos("");
+        renderLinhasComportamentos([]);
+        setComportamentosMsg("Nova avaliação pronta para preenchimento.");
+      }
+
+      function carregarHistoricoComportamentos(id) {
+        if (!id) {
+          novaAvaliacaoComportamentos();
+          return;
+        }
+        const registro = historicoMateriaComportamentos().find((item) => item.id === id);
+        if (!registro) {
+          setComportamentosMsg("Registro do histórico não encontrado.", true);
+          return;
+        }
+        _comportamentosRegistroAtual = registro.id;
+        document.getElementById("comportamentosDataAula").value = dataHoraLocalComportamentos(registro.aulaEm);
+        renderLinhasComportamentos(Array.isArray(registro.alunos) ? registro.alunos : []);
+        setComportamentosMsg("Histórico carregado: " + formatarDataHoraComportamentos(registro.aulaEm));
+      }
+
+      function coletarAlunosComportamentos() {
+        return Array.from(document.querySelectorAll("#comportamentosLinhas tr")).map((linha) => {
+          const aluno = linha.querySelector(".comportamentos-aluno").value.trim();
+          const comentario = linha.querySelector(".comportamentos-comentario").value.trim();
+          const notas = Array.from(linha.querySelectorAll('input[data-criterio]')).map((input) => {
+            if (input.value === "") return null;
+            return Math.max(0, Math.min(10, Number(input.value) || 0));
+          });
+          return { aluno, notas, notaFinal: calcularNotaComportamentos(linha), comentario };
+        }).filter((item) => item.aluno || item.notas.some((nota) => nota !== null) || item.comentario);
+      }
+
+      function salvarAvaliacaoComportamentos() {
+        if (!_comportamentosMateriaAtual) return;
+        const dataAula = document.getElementById("comportamentosDataAula").value;
+        const alunos = coletarAlunosComportamentos();
+        if (!dataAula) {
+          setComportamentosMsg("Informe a data e o horário da aula.", true);
+          return;
+        }
+        if (!alunos.length) {
+          setComportamentosMsg("Adicione ao menos um aluno antes de salvar.", true);
+          return;
+        }
+        const historico = lerHistoricoComportamentos();
+        const chaveMateria = String(_comportamentosMateriaAtual.id);
+        const registros = Array.isArray(historico[chaveMateria]) ? historico[chaveMateria] : [];
+        const agora = new Date().toISOString();
+        const id = _comportamentosRegistroAtual || (crypto.randomUUID ? crypto.randomUUID() : chaveMateria + "-" + Date.now());
+        const registro = {
+          id,
+          materiaId: Number(_comportamentosMateriaAtual.id),
+          materia: _comportamentosMateriaAtual.descricao,
+          aulaEm: new Date(dataAula).toISOString(),
+          alunos,
+          atualizadoEm: agora
+        };
+        const indice = registros.findIndex((item) => item.id === id);
+        if (indice >= 0) registros[indice] = registro;
+        else registros.push(registro);
+        historico[chaveMateria] = registros;
+        try {
+          gravarHistoricoComportamentos(historico);
+          _comportamentosRegistroAtual = id;
+          atualizarComboboxComportamentos(id);
+          setComportamentosMsg("✅ Avaliação salva no histórico da matéria.");
+        } catch (erro) {
+          console.error("Erro ao salvar avaliação de comportamentos:", erro);
+          setComportamentosMsg("Não foi possível salvar o histórico neste navegador.", true);
+        }
+      }
+
+      function abrirAvaliacaoComportamentos(materiaId) {
+        const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
+        if (!materia) return;
+        _comportamentosMateriaAtual = materia;
+        _comportamentosRegistroAtual = null;
+        document.getElementById("comportamentosModalTitulo").textContent = "Avaliação Comportamentos — " + materia.descricao;
+        renderCabecalhoComportamentos();
+        atualizarComboboxComportamentos();
+        novaAvaliacaoComportamentos();
+        document.getElementById("comportamentosModal").style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      function fecharAvaliacaoComportamentos() {
+        const modal = document.getElementById("comportamentosModal");
+        if (!modal) return;
+        modal.style.display = "none";
         const cursoAberto = document.getElementById("cursoModalBd").style.display === "flex";
         document.body.style.overflow = cursoAberto ? "hidden" : "";
       }
