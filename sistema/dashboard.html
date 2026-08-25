@@ -2794,6 +2794,7 @@
       <div class="card-body">
         <div class="card-tipo" style="color:${curso.corSecundaria||'#0055b3'}">${curso.tipo||''}</div>
         <div class="card-titulo">${liberado ? curso.nome : '<span style="color:#9aa0a6">' + curso.nome + "</span>"}</div>
+        <div class="card-unidade" style="font-size:12px;color:#666;margin-bottom:4px">Unidade: ${curso.unidade || '—'}</div>
         <div class="card-desc">${curso.descricao}</div>
         <div class="card-tags">${tagsHTML}</div>
       </div>
