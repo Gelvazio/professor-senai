@@ -14,8 +14,8 @@ Carregar automaticamente a turma CEPLAS Barragem ao iniciar uma nova Avaliação
 
 ## Compatibilidade da fonte
 
-- ✅ Formato atual: array JSON direto contendo os nomes dos alunos.
-- ✅ Formato alternativo: objeto com os campos `unidade`, `turma` e `alunos`.
+- ✅ Formato atual: objeto com os campos `unidade`, `turma` e `alunos`.
+- ✅ Formato compatível: array JSON direto contendo os nomes dos alunos.
 
 ## Verificação prevista
 
