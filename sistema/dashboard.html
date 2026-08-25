@@ -2673,9 +2673,11 @@
             "materia",
             `id=in.(${idsMaterias.join(",")})&select=*`,
           );
+          const materiasEnsaladas = materias.filter(m => m.ensalado === true || m.ensalado === 1 || String(m.ensalado).toLowerCase() === "true");
+          const idsMateriasEnsaladas = new Set(materiasEnsaladas.map(m => String(m.id)));
           const totaisPorMateria = {};
 
-          materias.forEach((materia) => {
+          materiasEnsaladas.forEach((materia) => {
             totaisPorMateria[String(materia.id)] = CAMPOS_PENDENTES_MATERIA.reduce((total, campo) => {
               return total + (String(materia[campo] || "PENDENTE").toUpperCase() === "PENDENTE" ? 1 : 0);
             }, 0);
@@ -2683,6 +2685,7 @@
 
           avaliacoes.forEach((avaliacao) => {
             const materiaId = String(avaliacao.materia_id);
+            if (!idsMateriasEnsaladas.has(materiaId)) return;
             const quantidade = CAMPOS_PENDENTES_AVALIACAO.reduce((total, campo) => {
               return total + (String(avaliacao[campo] || "").toUpperCase() === "PENDENTE" ? 1 : 0);
             }, 0);
@@ -4396,8 +4399,8 @@
         if (!curso) return;
         _cursoMateriasAtual = curso;
         _materiasCursoModal = [];
-        _somenteMateriasEnsaladas = false;
-        filtrarMateriasEnsaladas(false);
+        _somenteMateriasEnsaladas = true;
+        filtrarMateriasEnsaladas(true);
         fecharFormMateriaCurso();
         document.getElementById("cursoMateriasToolbar").style.display = isProfessor ? "flex" : "none";
         document.getElementById("cursoMateriasMsg").textContent = "";
@@ -4455,7 +4458,7 @@
               </div>
             </article>`;
           }).join("") + '<div class="curso-materia-estado" id="cursoMateriasFiltroVazio" style="display:none">Nenhuma matéria ensalada neste curso.</div>';
-          filtrarMateriasEnsaladas(false);
+          filtrarMateriasEnsaladas(true);
         } catch (erro) {
           body.innerHTML = '<div class="curso-materia-estado">⚠️ Não foi possível carregar as matérias deste curso.</div>';
         }
