@@ -2708,7 +2708,7 @@
       (async function () {
         try {
           const r = await fetch(
-            `${SUPABASE_URL}/rest/v1/curso?select=id,codigo,nome_completo,tipo_curso,icone,descricao_card,cor_primaria,cor_secundaria,cor_faixa,tags,link_aulas,visivel,materias&order=id`,
+            `${SUPABASE_URL}/rest/v1/curso?select=id,codigo,nome_completo,tipo_curso,unidade,icone,descricao_card,cor_primaria,cor_secundaria,cor_faixa,tags,link_aulas,visivel,materias&order=id`,
             { headers: { apikey: SUPABASE_KEY } },
           );
           const rows = await r.json();
@@ -2719,6 +2719,7 @@
               idNum: row.id,
               nome: row.nome_completo,
               tipo: row.tipo_curso,
+              unidade: row.unidade,
               icone: row.icone,
               descricao: row.descricao_card,
               corPrimaria: row.cor_primaria,
@@ -2899,8 +2900,8 @@
           label: "Cursos",
           table: "curso",
           pk: "id",
-          listHeaders: ["ID", "Descrição", "Código", "Tipo", "Visível"],
-          listCols: ["id", "nome_completo", "codigo", "tipo_curso", "visivel"],
+          listHeaders: ["ID", "Descrição", "Código", "Tipo", "Unidade", "Visível"],
+          listCols: ["id", "nome_completo", "codigo", "tipo_curso", "unidade", "visivel"],
           fields: [
             {
               key: "nome_completo",
@@ -2910,6 +2911,7 @@
             },
             { key: "codigo", label: "Código", type: "text" },
             { key: "tipo_curso", label: "Tipo", type: "text" },
+            { key: "unidade", label: "Unidade", type: "text" },
             {
               key: "visivel",
               label: "Visível",
@@ -3603,6 +3605,7 @@
             <div class="cl-info">
               <div class="cl-nome">${c.nome || '—'}</div>
               <div class="cl-tipo">${c.tipo || '—'}</div>
+              <div class="cl-tipo">Unidade: ${c.unidade || '—'}</div>
             </div>
             <span class="cl-status ${statusCls}">${statusTxt}</span>
             <div class="cl-acoes">
@@ -3620,6 +3623,7 @@
         document.getElementById('cfNome').value = c ? c.nome : '';
         document.getElementById('cfCodigo').value = c ? c.id : '';
         preencherTiposCurso(c ? (c.tipo || '') : '');
+        document.getElementById('cfUnidade').value = c ? (c.unidade || '') : '';
         setCfIcone(c ? (c.icone || '') : '');
         document.getElementById('cfDescricao').value = c ? (c.descricao || '') : '';
         document.getElementById('cfVisivel').value = c ? String(c.visivel) : '1';
@@ -3634,6 +3638,7 @@
         document.getElementById('cfNome').value = '';
         document.getElementById('cfCodigo').value = '';
         preencherTiposCurso('');
+        document.getElementById('cfUnidade').value = '';
         setCfIcone('');
         document.getElementById('cfDescricao').value = '';
         document.getElementById('cfVisivel').value = '1';
@@ -3665,6 +3670,7 @@
           nome_completo: document.getElementById('cfNome').value.trim(),
           codigo: document.getElementById('cfCodigo').value.trim(),
           tipo_curso: document.getElementById('cfTipo').value.trim(),
+          unidade: document.getElementById('cfUnidade').value.trim(),
           icone: document.getElementById('cfIcone').value.trim(),
           descricao_card: document.getElementById('cfDescricao').value.trim(),
           visivel: parseInt(document.getElementById('cfVisivel').value),
@@ -5115,6 +5121,10 @@
             <select class="crud-input" id="cfTipo">
               <option value="">Selecione o tipo de curso</option>
             </select>
+          </div>
+          <div>
+            <label class="crud-label">Unidade</label>
+            <input class="crud-input" id="cfUnidade" type="text" placeholder="Nome da unidade do curso">
           </div>
           <div>
             <label class="crud-label">Ícone</label>
