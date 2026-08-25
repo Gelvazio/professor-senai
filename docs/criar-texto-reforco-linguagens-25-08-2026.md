@@ -13,7 +13,7 @@
 | 1 | Ler a ementa e definir os conteúdos do texto | ✅ Concluído |
 | 2 | Redigir o texto em linguagem adequada ao público | ✅ Concluído |
 | 3 | Gerar o documento Word solicitado | ✅ Concluído |
-| 4 | Commit e push dos arquivos criados | 🔄 Em progresso |
+| 4 | Commit e push dos arquivos criados | ✅ Concluído |
 
 ---
 
@@ -59,7 +59,7 @@
 
 ### Passo 4: Commit e push
 
-**Status:** 🔄 Em progresso
+**Status:** ✅ Concluído
 
 **Arquivo:** Versionar somente os arquivos desta tarefa.
 
