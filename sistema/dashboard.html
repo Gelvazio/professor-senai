@@ -3625,8 +3625,8 @@
             </div>
             <span class="cl-status ${statusCls}">${statusTxt}</span>
             <div class="cl-acoes">
-              <button class="cl-btn-ed" onclick="editarCursoCard(${c.idNum});fecharModalCursosLista()">✏️ Editar</button>
               <button class="cl-btn-dup" onclick="abrirModalDuplicarCurso(${c.idNum})" title="Duplicar curso">📋 Duplicar</button>
+              <button class="cl-btn-ed" onclick="editarCursoCard(${c.idNum});fecharModalCursosLista()">✏️ Editar</button>
               <button class="cl-btn-del" onclick="excluirCurso(${c.idNum},'${nomeEsc}')">🗑️</button>
             </div>
           </div>`;
@@ -3713,13 +3713,12 @@
         const c = dadosCursos.cursos.find(x => x.idNum === cursoId);
         if (!c) return;
         document.getElementById('dupCursoOriginal').value = c.nome || '';
-        document.getElementById('dupNovoNome').value = '';
-        document.getElementById('dupNovaUnidade').value = c.unidade || '';
+        document.getElementById('dupNovaUnidade').value = '';
         document.getElementById('dupCursoMsg').textContent = '';
         document.getElementById('btnConfirmarDuplicar').disabled = false;
         document.getElementById('modalDuplicarCurso').style.display = 'flex';
         fecharModalCursosLista();
-        setTimeout(() => document.getElementById('dupNovoNome').focus(), 100);
+        setTimeout(() => document.getElementById('dupNovaUnidade').focus(), 100);
       }
 
       function fecharModalDuplicarCurso() {
@@ -3728,12 +3727,11 @@
       }
 
       async function confirmarDuplicarCurso() {
-        const novoNome = document.getElementById('dupNovoNome').value.trim();
-        const novaUnidade = document.getElementById('dupNovaUnidade').value.trim() || null;
+        const novaUnidade = document.getElementById('dupNovaUnidade').value.trim();
         const msgEl = document.getElementById('dupCursoMsg');
 
-        if (!novoNome) {
-          msgEl.textContent = '⚠️ Informe o nome do novo curso.';
+        if (!novaUnidade) {
+          msgEl.textContent = '⚠️ Informe o nome da nova unidade.';
           msgEl.style.color = '#e65100';
           return;
         }
@@ -3749,9 +3747,9 @@
           if (!origRows.length) throw new Error('Curso original não encontrado.');
           const orig = origRows[0];
 
-          // 2. Criar novo curso (sem id para auto-incrementar)
+          // 2. Criar novo curso (mesmo nome, nova unidade)
           const novoCurso = {
-            nome_completo: novoNome,
+            nome_completo: orig.nome_completo,
             codigo: orig.codigo ? orig.codigo + '_copia' : null,
             tipo_curso: orig.tipo_curso,
             unidade: novaUnidade,
@@ -5258,26 +5256,22 @@
 
     <!-- ── Modal Duplicar Curso ─────────────────── -->
     <div class="crud-backdrop" id="modalDuplicarCurso" style="display:none">
-      <div class="crud-modal" style="max-width:460px">
+      <div class="crud-modal" style="max-width:420px">
         <div class="crud-modal-head">
           <h3>📋 Duplicar Curso</h3>
           <button class="crud-btn-fechar" onclick="fecharModalDuplicarCurso()">✕</button>
         </div>
         <div style="padding:20px 24px;display:flex;flex-direction:column;gap:14px">
           <div style="background:#e8f5e9;border:1px solid #a5d6a7;border-radius:8px;padding:12px 14px;font-size:13px;color:#2e7d32">
-            Será criado um novo curso com todos os dados do original: aulas, materiais e configurações.
+            Será criado uma cópia deste curso com todos os dados (aulas, materiais e configurações).
           </div>
           <div>
             <label class="crud-label">Curso original</label>
             <input class="crud-input" id="dupCursoOriginal" type="text" readonly style="background:#f5f5f5">
           </div>
           <div>
-            <label class="crud-label">Novo nome do curso <span style="color:#c62828">*</span></label>
-            <input class="crud-input" id="dupNovoNome" type="text" placeholder="Digite o nome do novo curso">
-          </div>
-          <div>
-            <label class="crud-label">Nova unidade</label>
-            <input class="crud-input" id="dupNovaUnidade" type="text" placeholder="Nome da unidade (opcional)">
+            <label class="crud-label">Nova Unidade <span style="color:#c62828">*</span></label>
+            <input class="crud-input" id="dupNovaUnidade" type="text" placeholder="Nome da nova unidade">
           </div>
           <div style="display:flex;gap:10px;margin-top:4px">
             <button class="btn-salvar" id="btnConfirmarDuplicar" onclick="confirmarDuplicarCurso()">📋 Duplicar</button>
