@@ -2175,6 +2175,10 @@
           <span class="admin-card-icon">🔔</span>
           <span class="admin-card-label">Minhas Pendências</span>
         </button>
+        <button class="admin-card" onclick="abrirModalUnidades()">
+          <span class="admin-card-icon">🏢</span>
+          <span class="admin-card-label">Unidades</span>
+        </button>
         <button class="admin-card admin-card-toggle" id="btnMostrarBloqueados" type="button" aria-pressed="false" onclick="alternarCursosBloqueados()">
           <span class="admin-card-icon">👁️</span>
           <span class="admin-card-label">Mostrar Bloqueados</span>
@@ -3032,7 +3036,8 @@
         crudRegistros = [],
         crudEditandoId = null;
       let cacheMateria = [],
-        cacheCurso = [];
+        cacheCurso = [],
+        cacheUnidade = [];
 
       function sbH() {
         return {
@@ -3589,6 +3594,18 @@
         _cursoModalId = null;
       }
 
+      async function carregarUnidades() {
+        if (!cacheUnidade.length) {
+          cacheUnidade = await sbGet('unidade', 'select=*&order=descricao');
+        }
+        const opts = '<option value="">Selecione a unidade</option>' +
+          cacheUnidade.map(u => `<option value="${u.descricao}">${u.descricao} — ${u.cidade || ''}</option>`).join('');
+        const cfSel = document.getElementById('cfUnidade');
+        const dupSel = document.getElementById('dupNovaUnidade');
+        if (cfSel) cfSel.innerHTML = opts;
+        if (dupSel) dupSel.innerHTML = opts;
+      }
+
       function abrirModalCursosLista() {
         document.getElementById('modalCursosLista').style.display = 'flex';
         renderizarListaCursos();
@@ -3596,6 +3613,112 @@
 
       function fecharModalCursosLista() {
         document.getElementById('modalCursosLista').style.display = 'none';
+      }
+
+      // ── Modal Unidades ──────────────────────────────────────
+      async function abrirModalUnidades() {
+        document.getElementById('modalUnidades').style.display = 'flex';
+        fecharFormUnidade();
+        await listarUnidades();
+      }
+
+      function fecharModalUnidades() {
+        document.getElementById('modalUnidades').style.display = 'none';
+      }
+
+      async function listarUnidades() {
+        cacheUnidade = await sbGet('unidade', 'select=*&order=descricao');
+        const tbody = document.getElementById('unidadeTbody');
+        const vazio = document.getElementById('unidadeVazio');
+        if (!cacheUnidade.length) {
+          tbody.innerHTML = '';
+          vazio.style.display = 'block';
+          return;
+        }
+        vazio.style.display = 'none';
+        tbody.innerHTML = cacheUnidade.map(u => `
+          <tr style="border-bottom:1px solid #eee">
+            <td style="padding:8px 10px">${u.id}</td>
+            <td style="padding:8px 10px;font-weight:600">${u.descricao}</td>
+            <td style="padding:8px 10px">${u.cidade || '—'}</td>
+            <td style="padding:8px 10px">${u.bairro || '—'}</td>
+            <td style="padding:8px 10px">${u.endereco || '—'}</td>
+            <td style="padding:8px 10px;white-space:nowrap">
+              <button class="btn-ed" onclick="editarUnidade(${u.id})" style="background:#e3f2fd;color:#1565c0;border:none;border-radius:5px;padding:4px 8px;font-size:12px;cursor:pointer">✏️</button>
+              <button class="btn-del" onclick="excluirUnidade(${u.id},'${(u.descricao||'').replace(/'/g,"\\'")}')" style="background:#fce4ec;color:#c62828;border:none;border-radius:5px;padding:4px 8px;font-size:12px;cursor:pointer;margin-left:4px">🗑️</button>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      function novaUnidade() {
+        document.getElementById('unidadeEditId').value = '';
+        document.getElementById('unidadeDescricao').value = '';
+        document.getElementById('unidadeCidade').value = '';
+        document.getElementById('unidadeBairro').value = '';
+        document.getElementById('unidadeEndereco').value = '';
+        document.getElementById('unidadeFormMsg').textContent = '';
+        document.getElementById('unidadeFormArea').style.display = 'block';
+        document.getElementById('unidadeDescricao').focus();
+      }
+
+      function editarUnidade(id) {
+        const u = cacheUnidade.find(x => x.id === id);
+        if (!u) return;
+        document.getElementById('unidadeEditId').value = u.id;
+        document.getElementById('unidadeDescricao').value = u.descricao || '';
+        document.getElementById('unidadeCidade').value = u.cidade || '';
+        document.getElementById('unidadeBairro').value = u.bairro || '';
+        document.getElementById('unidadeEndereco').value = u.endereco || '';
+        document.getElementById('unidadeFormMsg').textContent = '';
+        document.getElementById('unidadeFormArea').style.display = 'block';
+        document.getElementById('unidadeDescricao').focus();
+      }
+
+      function fecharFormUnidade() {
+        document.getElementById('unidadeFormArea').style.display = 'none';
+      }
+
+      async function salvarUnidade() {
+        const msgEl = document.getElementById('unidadeFormMsg');
+        const desc = document.getElementById('unidadeDescricao').value.trim();
+        if (!desc) {
+          msgEl.textContent = '⚠️ Informe a descrição da unidade.';
+          msgEl.style.color = '#e65100';
+          return;
+        }
+        const body = {
+          descricao: desc,
+          cidade: document.getElementById('unidadeCidade').value.trim() || null,
+          bairro: document.getElementById('unidadeBairro').value.trim() || null,
+          endereco: document.getElementById('unidadeEndereco').value.trim() || null,
+        };
+        const editId = document.getElementById('unidadeEditId').value;
+        try {
+          if (editId) {
+            await sbPatch('unidade', 'id', editId, body);
+            msgEl.textContent = '✅ Atualizado!';
+          } else {
+            await sbPost('unidade', body);
+            msgEl.textContent = '✅ Cadastrado!';
+          }
+          msgEl.style.color = '#2e7d32';
+          await listarUnidades();
+          fecharFormUnidade();
+        } catch (e) {
+          msgEl.textContent = '❌ Erro: ' + e.message;
+          msgEl.style.color = '#c62828';
+        }
+      }
+
+      async function excluirUnidade(id, nome) {
+        if (!confirm(`Excluir a unidade "${nome}"?`)) return;
+        try {
+          await sbDelete('unidade', `id=eq.${id}`);
+          await listarUnidades();
+        } catch (e) {
+          alert('❌ Erro: ' + e.message);
+        }
       }
 
       function renderizarListaCursos() {
@@ -3630,6 +3753,7 @@
       async function editarCursoCard(id) {
         _cursoModalId = id;
         const c = dadosCursos.cursos.find(x => x.idNum === id);
+        await carregarUnidades();
         document.getElementById('cursoFormTitulo').textContent = 'Editar Curso';
         document.getElementById('cfNome').value = c ? c.nome : '';
         document.getElementById('cfCodigo').value = c ? c.id : '';
@@ -3645,6 +3769,7 @@
       async function adicionarCurso() {
         fecharModalCursosLista();
         _cursoModalId = null;
+        await carregarUnidades();
         document.getElementById('cursoFormTitulo').textContent = 'Adicionar Curso';
         document.getElementById('cfNome').value = '';
         document.getElementById('cfCodigo').value = '';
@@ -5176,6 +5301,66 @@
       </div>
     </div>
 
+    <!-- ── Modal Unidades ─────────────────── -->
+    <div class="crud-backdrop" id="modalUnidades" style="display:none" onclick="if(event.target===this)fecharModalUnidades()">
+      <div class="crud-modal" style="max-width:700px">
+        <div class="crud-modal-head">
+          <h3>🏢 Unidades</h3>
+          <button class="crud-btn-fechar" onclick="fecharModalUnidades()">✕</button>
+        </div>
+        <div style="padding:16px 20px">
+          <div style="display:flex;gap:8px;margin-bottom:14px">
+            <button class="btn-salvar" onclick="novaUnidade()">＋ Nova Unidade</button>
+            <button class="btn-cancelar" onclick="listarUnidades()">↻ Atualizar</button>
+          </div>
+          <div id="unidadeFormArea" style="display:none;background:#f8f9fa;border:1px solid #e0e0e0;border-radius:8px;padding:14px;margin-bottom:14px">
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <input type="hidden" id="unidadeEditId">
+              <div>
+                <label class="crud-label">Descrição <span style="color:#c62828">*</span></label>
+                <input class="crud-input" id="unidadeDescricao" type="text" placeholder="Nome da unidade">
+              </div>
+              <div style="display:flex;gap:10px">
+                <div style="flex:1">
+                  <label class="crud-label">Cidade</label>
+                  <input class="crud-input" id="unidadeCidade" type="text" placeholder="Cidade">
+                </div>
+                <div style="flex:1">
+                  <label class="crud-label">Bairro</label>
+                  <input class="crud-input" id="unidadeBairro" type="text" placeholder="Bairro">
+                </div>
+              </div>
+              <div>
+                <label class="crud-label">Endereço</label>
+                <input class="crud-input" id="unidadeEndereco" type="text" placeholder="Endereço completo">
+              </div>
+              <div style="display:flex;gap:8px">
+                <button class="btn-salvar" onclick="salvarUnidade()">💾 Salvar</button>
+                <button class="btn-cancelar" onclick="fecharFormUnidade()">Cancelar</button>
+              </div>
+              <span id="unidadeFormMsg" style="font-size:13px;min-height:18px"></span>
+            </div>
+          </div>
+          <div style="max-height:400px;overflow-y:auto">
+            <table style="width:100%;border-collapse:collapse;font-size:13px">
+              <thead>
+                <tr style="background:#e3f2fd;text-align:left">
+                  <th style="padding:8px 10px;border-radius:6px 0 0 0">ID</th>
+                  <th style="padding:8px 10px">Descrição</th>
+                  <th style="padding:8px 10px">Cidade</th>
+                  <th style="padding:8px 10px">Bairro</th>
+                  <th style="padding:8px 10px">Endereço</th>
+                  <th style="padding:8px 10px;border-radius:0 6px 0 0">Ações</th>
+                </tr>
+              </thead>
+              <tbody id="unidadeTbody"></tbody>
+            </table>
+            <div id="unidadeVazio" style="text-align:center;color:#888;padding:20px;display:none">Nenhuma unidade cadastrada.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ── Modal Gerenciar Cursos ─────────────────── -->
     <div class="cl-backdrop" id="modalCursosLista" style="display:none" onclick="if(event.target===this)fecharModalCursosLista()">
       <div class="cl-modal">
@@ -5214,7 +5399,9 @@
           </div>
           <div>
             <label class="crud-label">Unidade</label>
-            <input class="crud-input" id="cfUnidade" type="text" placeholder="Nome da unidade do curso">
+            <select class="crud-input" id="cfUnidade">
+              <option value="">Selecione a unidade</option>
+            </select>
           </div>
           <div>
             <label class="crud-label">Ícone</label>
@@ -5265,7 +5452,9 @@
           </div>
           <div>
             <label class="crud-label">Nova Unidade <span style="color:#c62828">*</span></label>
-            <input class="crud-input" id="dupNovaUnidade" type="text" placeholder="Nome da nova unidade">
+            <select class="crud-input" id="dupNovaUnidade">
+              <option value="">Selecione a unidade</option>
+            </select>
           </div>
           <div style="display:flex;gap:10px;margin-top:4px">
             <button class="btn-salvar" id="btnConfirmarDuplicar" onclick="confirmarDuplicarCurso()">📋 Duplicar</button>
