@@ -7,9 +7,10 @@ Carregar automaticamente a turma CEPLAS Barragem ao iniciar uma nova Avaliação
 ## Etapas
 
 1. ✅ Identificar a turma pela identificação do curso ou da matéria aberta.
-2. ✅ Cadastrar no sistema os alunos existentes na lista de presença CEPLAS Barragem.
-3. ✅ Preencher automaticamente uma nova avaliação, sem alterar históricos já salvos.
-4. ✅ Revisar as alterações e publicar no repositório.
+2. ✅ Estruturar a fonte `LISTA-ALUNOS-NOME-UNIDADE.json` com unidade, turma e nomes.
+3. ✅ Buscar os alunos dessa fonte ao abrir uma nova avaliação, sem manter nomes fixos no código.
+4. ✅ Preservar os históricos já salvos e tratar indisponibilidade da fonte.
+5. ✅ Revisar as alterações e publicar no repositório.
 
 ## Verificação prevista
 

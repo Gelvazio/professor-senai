@@ -4641,6 +4641,7 @@
       }
 
       const COMPORTAMENTOS_STORAGE_KEY = "avaliacao_comportamentos_v1";
+      const COMPORTAMENTOS_ALUNOS_URL = "FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/LISTA-ALUNOS-NOME-UNIDADE.json";
       const COMPORTAMENTOS_CRITERIOS = [
         { titulo: "Uso autorizado de celular e dispositivos", peso: 2 },
         { titulo: "Respeito ao docente, colaboradores e colegas", peso: 2 },
@@ -4653,25 +4654,9 @@
         { titulo: "Linguagem adequada", peso: 1 },
         { titulo: "Comunicação clara e objetiva", peso: 1 }
       ];
-      const ALUNOS_CEPLAS_BARRAGEM = [
-        "Bianca Laiza Prado dos Santos",
-        "Bianca Pamela Coa Diaz",
-        "Cesar David Perez Gutierrez",
-        "Christell Alexandra Salazar Ortiz",
-        "Heloise Felipe Laurentino",
-        "Israel Gelzleichter Pimentel",
-        "Izabelly Cristinne dos Santos Lima",
-        "Jesus David Paraguan Velasquez",
-        "Jhomar de Jesus Alexander Leon Penaloza",
-        "Kamilly Iasmim Ribeiro de Oliveira",
-        "Kauan Victor da Cunha Costa",
-        "Leandro Jorel Rodrigues Borges",
-        "Leticia Lehnert Rodrigues",
-        "Lohan Steinbach da Cruz",
-        "Yeismir Abraham Munoz Vina"
-      ];
       let _comportamentosMateriaAtual = null;
       let _comportamentosRegistroAtual = null;
+      let _comportamentosCarregamentoId = 0;
 
       function normalizarTextoComportamentos(texto) {
         return String(texto || "")
@@ -4688,13 +4673,19 @@
         return contexto.includes("ceplas") || contexto.includes("barragem");
       }
 
-      function alunosIniciaisComportamentos() {
+      async function alunosIniciaisComportamentos() {
         if (!ehTurmaCeplasBarragemComportamentos()) return [];
-        return ALUNOS_CEPLAS_BARRAGEM.map((aluno) => ({
-          aluno,
+        const resposta = await fetch(COMPORTAMENTOS_ALUNOS_URL, { cache: "no-store" });
+        if (!resposta.ok) throw new Error("Não foi possível carregar a lista de alunos.");
+        const dados = await resposta.json();
+        const unidade = normalizarTextoComportamentos(dados?.unidade);
+        if (!unidade.includes("ceplas") && !unidade.includes("barragem")) return [];
+        const alunos = Array.isArray(dados?.alunos) ? dados.alunos : [];
+        return alunos.map((item) => ({
+          aluno: typeof item === "string" ? item : String(item?.nome || ""),
           notas: COMPORTAMENTOS_CRITERIOS.map(() => null),
           comentario: ""
-        }));
+        })).filter((item) => item.aluno.trim());
       }
 
       function lerHistoricoComportamentos() {
@@ -4859,15 +4850,29 @@
         document.getElementById("comportamentosLinhas").appendChild(criarLinhaComportamentos());
       }
 
-      function novaAvaliacaoComportamentos() {
+      async function novaAvaliacaoComportamentos() {
+        const carregamentoId = ++_comportamentosCarregamentoId;
         _comportamentosRegistroAtual = null;
         document.getElementById("comportamentosDataAula").value = dataHoraLocalComportamentos(new Date());
         atualizarComboboxComportamentos("");
-        const alunosIniciais = alunosIniciaisComportamentos();
-        renderLinhasComportamentos(alunosIniciais);
-        setComportamentosMsg(alunosIniciais.length
-          ? "Lista CEPLAS — Barragem carregada automaticamente."
-          : "Nova avaliação pronta para preenchimento.");
+        renderLinhasComportamentos([]);
+        if (!ehTurmaCeplasBarragemComportamentos()) {
+          setComportamentosMsg("Nova avaliação pronta para preenchimento.");
+          return;
+        }
+        setComportamentosMsg("Carregando lista CEPLAS — Barragem...");
+        try {
+          const alunosIniciais = await alunosIniciaisComportamentos();
+          if (carregamentoId !== _comportamentosCarregamentoId || _comportamentosRegistroAtual) return;
+          renderLinhasComportamentos(alunosIniciais);
+          setComportamentosMsg(alunosIniciais.length
+            ? "Lista CEPLAS — Barragem carregada de LISTA-ALUNOS-NOME-UNIDADE.json."
+            : "Nenhum aluno foi encontrado para a unidade CEPLAS — Barragem.", !alunosIniciais.length);
+        } catch (erro) {
+          if (carregamentoId !== _comportamentosCarregamentoId) return;
+          console.error("Erro ao carregar lista de alunos:", erro);
+          setComportamentosMsg("Não foi possível carregar LISTA-ALUNOS-NOME-UNIDADE.json.", true);
+        }
       }
 
       function carregarHistoricoComportamentos(id) {
@@ -4875,6 +4880,7 @@
           novaAvaliacaoComportamentos();
           return;
         }
+        _comportamentosCarregamentoId += 1;
         const registro = historicoMateriaComportamentos().find((item) => item.id === id);
         if (!registro) {
           setComportamentosMsg("Registro do histórico não encontrado.", true);
