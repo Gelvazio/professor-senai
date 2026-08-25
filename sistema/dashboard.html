@@ -4678,9 +4678,9 @@
         const resposta = await fetch(COMPORTAMENTOS_ALUNOS_URL, { cache: "no-store" });
         if (!resposta.ok) throw new Error("Não foi possível carregar a lista de alunos.");
         const dados = await resposta.json();
-        const unidade = normalizarTextoComportamentos(dados?.unidade);
-        if (!unidade.includes("ceplas") && !unidade.includes("barragem")) return [];
-        const alunos = Array.isArray(dados?.alunos) ? dados.alunos : [];
+        const unidade = normalizarTextoComportamentos(Array.isArray(dados) ? "" : dados?.unidade);
+        if (unidade && !unidade.includes("ceplas") && !unidade.includes("barragem")) return [];
+        const alunos = Array.isArray(dados) ? dados : (Array.isArray(dados?.alunos) ? dados.alunos : []);
         return alunos.map((item) => ({
           aluno: typeof item === "string" ? item : String(item?.nome || ""),
           notas: COMPORTAMENTOS_CRITERIOS.map(() => null),

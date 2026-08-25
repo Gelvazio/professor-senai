@@ -12,6 +12,11 @@ Carregar automaticamente a turma CEPLAS Barragem ao iniciar uma nova Avaliação
 4. ✅ Preservar os históricos já salvos e tratar indisponibilidade da fonte.
 5. ✅ Revisar as alterações e publicar no repositório.
 
+## Compatibilidade da fonte
+
+- ✅ Formato atual: array JSON direto contendo os nomes dos alunos.
+- ✅ Formato alternativo: objeto com os campos `unidade`, `turma` e `alunos`.
+
 ## Verificação prevista
 
 ```powershell
