@@ -322,6 +322,12 @@
         transition: background .15s;
       }
       .btn-card-editar:hover { background: #bbdefb; }
+      .btn-card-dup {
+        font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 7px;
+        background: #e8f5e9; color: #2e7d32; border: none; cursor: pointer;
+        transition: background .15s;
+      }
+      .btn-card-dup:hover { background: #c8e6c9; }
       .btn-card-excluir {
         font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 7px;
         background: #fdecea; color: #c62828; border: none; cursor: pointer;
@@ -1347,6 +1353,8 @@
       [data-theme="dark"] .toggle-label { color: #8b919e; }
       [data-theme="dark"] .btn-card-editar { background: #1a2a40; color: #7ab4e8; }
       [data-theme="dark"] .btn-card-editar:hover { background: #1e3454; }
+      [data-theme="dark"] .btn-card-dup { background: #1a2a1a; color: #7ab4e8; }
+      [data-theme="dark"] .btn-card-dup:hover { background: #1e3454; }
       /* Card add */
       [data-theme="dark"] .card-add { background: #1c1e26; border-color: #2c4a2c; }
       [data-theme="dark"] .card-add:hover { border-color: #2e7d32; background: #1a2e1a; }
@@ -2808,6 +2816,7 @@
         <button class="btn-acessar" style="background:${curso.corPrimaria||'#004384'};border:none;cursor:pointer" onclick="abrirCursoModal(${curso.idNum})">Acessar ↗</button>
       </div>
       <div class="card-edit" id="edit-${curso.id}">
+        <button class="btn-card-dup" onclick="abrirModalDuplicarCurso(${curso.idNum})">📋 Duplicar</button>
         <button class="btn-card-editar" onclick="editarCursoCard(${curso.idNum})">✏️ Editar</button>
         <button class="btn-card-excluir" onclick="excluirCurso(${curso.idNum}, '${curso.nome.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">🗑️ Excluir</button>
       </div>`;
