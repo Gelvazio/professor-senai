@@ -17,6 +17,13 @@ Carregar automaticamente a turma CEPLAS Barragem ao iniciar uma nova Avaliação
 - ✅ Formato atual: objeto com os campos `unidade`, `turma` e `alunos`.
 - ✅ Formato compatível: array JSON direto contendo os nomes dos alunos.
 
+## Correção do carregamento
+
+1. ✅ Identificar que a validação pelo nome do curso/matéria interrompia o fluxo antes da leitura do JSON.
+2. ✅ Remover a dependência dessa identificação externa.
+3. ✅ Usar o campo `unidade` do próprio JSON como referência e carregar seus alunos.
+4. ✅ Publicar a correção.
+
 ## Verificação prevista
 
 ```powershell

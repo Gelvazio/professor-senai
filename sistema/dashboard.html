@@ -4665,16 +4665,7 @@
           .toLowerCase();
       }
 
-      function ehTurmaCeplasBarragemComportamentos() {
-        const contexto = normalizarTextoComportamentos([
-          JSON.stringify(_cursoMateriasAtual || {}),
-          JSON.stringify(_comportamentosMateriaAtual || {})
-        ].join(" "));
-        return contexto.includes("ceplas") || contexto.includes("barragem");
-      }
-
       async function alunosIniciaisComportamentos() {
-        if (!ehTurmaCeplasBarragemComportamentos()) return [];
         const resposta = await fetch(COMPORTAMENTOS_ALUNOS_URL, { cache: "no-store" });
         if (!resposta.ok) throw new Error("Não foi possível carregar a lista de alunos.");
         const dados = await resposta.json();
@@ -4856,10 +4847,6 @@
         document.getElementById("comportamentosDataAula").value = dataHoraLocalComportamentos(new Date());
         atualizarComboboxComportamentos("");
         renderLinhasComportamentos([]);
-        if (!ehTurmaCeplasBarragemComportamentos()) {
-          setComportamentosMsg("Nova avaliação pronta para preenchimento.");
-          return;
-        }
         setComportamentosMsg("Carregando lista CEPLAS — Barragem...");
         try {
           const alunosIniciais = await alunosIniciaisComportamentos();
