@@ -4653,8 +4653,49 @@
         { titulo: "Linguagem adequada", peso: 1 },
         { titulo: "Comunicação clara e objetiva", peso: 1 }
       ];
+      const ALUNOS_CEPLAS_BARRAGEM = [
+        "Bianca Laiza Prado dos Santos",
+        "Bianca Pamela Coa Diaz",
+        "Cesar David Perez Gutierrez",
+        "Christell Alexandra Salazar Ortiz",
+        "Heloise Felipe Laurentino",
+        "Israel Gelzleichter Pimentel",
+        "Izabelly Cristinne dos Santos Lima",
+        "Jesus David Paraguan Velasquez",
+        "Jhomar de Jesus Alexander Leon Penaloza",
+        "Kamilly Iasmim Ribeiro de Oliveira",
+        "Kauan Victor da Cunha Costa",
+        "Leandro Jorel Rodrigues Borges",
+        "Leticia Lehnert Rodrigues",
+        "Lohan Steinbach da Cruz",
+        "Yeismir Abraham Munoz Vina"
+      ];
       let _comportamentosMateriaAtual = null;
       let _comportamentosRegistroAtual = null;
+
+      function normalizarTextoComportamentos(texto) {
+        return String(texto || "")
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase();
+      }
+
+      function ehTurmaCeplasBarragemComportamentos() {
+        const contexto = normalizarTextoComportamentos([
+          JSON.stringify(_cursoMateriasAtual || {}),
+          JSON.stringify(_comportamentosMateriaAtual || {})
+        ].join(" "));
+        return contexto.includes("ceplas") || contexto.includes("barragem");
+      }
+
+      function alunosIniciaisComportamentos() {
+        if (!ehTurmaCeplasBarragemComportamentos()) return [];
+        return ALUNOS_CEPLAS_BARRAGEM.map((aluno) => ({
+          aluno,
+          notas: COMPORTAMENTOS_CRITERIOS.map(() => null),
+          comentario: ""
+        }));
+      }
 
       function lerHistoricoComportamentos() {
         try {
@@ -4822,8 +4863,11 @@
         _comportamentosRegistroAtual = null;
         document.getElementById("comportamentosDataAula").value = dataHoraLocalComportamentos(new Date());
         atualizarComboboxComportamentos("");
-        renderLinhasComportamentos([]);
-        setComportamentosMsg("Nova avaliação pronta para preenchimento.");
+        const alunosIniciais = alunosIniciaisComportamentos();
+        renderLinhasComportamentos(alunosIniciais);
+        setComportamentosMsg(alunosIniciais.length
+          ? "Lista CEPLAS — Barragem carregada automaticamente."
+          : "Nova avaliação pronta para preenchimento.");
       }
 
       function carregarHistoricoComportamentos(id) {
