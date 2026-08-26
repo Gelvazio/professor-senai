@@ -10,7 +10,7 @@ from docx.shared import Inches, Pt, RGBColor
 
 
 ROOT = Path(r"C:\fontes\professor-senai")
-OUTPUT = ROOT / "sistema" / "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO" / "AVALIACOES_CRIADAS" / "PROVA_SIMPLES_UC1_TIC_DUPLAS_2H.docx"
+OUTPUT = ROOT / "sistema" / "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO" / "AVALIACOES_CRIADAS" / "PROVA_SIMPLES_UC1_TIC_EQUIPES_2H.docx"
 
 BLUE = "1F4E78"
 LIGHT_BLUE = "D9EAF7"
@@ -111,7 +111,7 @@ def add_info_table(doc, rows):
 
 def add_rubric(doc):
     rows = [
-        ("Organização e entrega — automática", "Links acessíveis, arquivos Google nativos, nomes padronizados e identificação da dupla.", "1,0"),
+        ("Organização e entrega — automática", "Links acessíveis, arquivos Google nativos, nomes padronizados e identificação da equipe.", "1,0"),
         ("Google Docs — automática", "Estrutura, conteúdos obrigatórios, termos técnicos, práticas de segurança e fonte.", "2,0"),
         ("Google Sheets — automática", "Cabeçalhos, seis registros, fórmula, filtro e formatação básica.", "2,0"),
         ("Google Slides — automática", "Quatro slides, identificação, conteúdos, imagem e quantidade adequada de texto.", "1,5"),
@@ -167,7 +167,7 @@ style_run(header.add_run("SENAI — Introdução à Tecnologia da Informação e
 
 footer = section.footer.paragraphs[0]
 footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
-style_run(footer.add_run("Avaliação prática em dupla • duração máxima: 2 horas"), size=8, color=RGBColor(90, 100, 115))
+style_run(footer.add_run("Avaliação prática em equipe • duração máxima: 2 horas"), size=8, color=RGBColor(90, 100, 115))
 
 p = doc.add_paragraph()
 p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -180,14 +180,14 @@ style_run(p.add_run("Missão: organizar e proteger o computador do setor"), size
 
 add_info_table(doc, [
     ("Unidade curricular", "Introdução à Tecnologia da Informação e Comunicação"),
-    ("Modalidade", "Trabalho em dupla, realizado em sala de aula"),
+    ("Modalidade", "Trabalho em equipe, realizado em sala de aula"),
     ("Duração", "2 horas"),
-    ("Dupla", "1. __________________________________  2. __________________________________"),
+    ("Equipe", "1. __________________________________  2. __________________________________"),
     ("Data / Turma", "Data: ____/____/________    Turma: ______________________________"),
 ])
 
 add_heading(doc, "Situação-problema", 1)
-add_paragraph(doc, "O computador de um pequeno setor da empresa está desorganizado. Os arquivos estão espalhados, não existe rotina de backup, alguns funcionários recebem mensagens suspeitas e ninguém sabe explicar com clareza quais equipamentos e programas são utilizados. A dupla foi escolhida para preparar uma solução simples e orientar a equipe.")
+add_paragraph(doc, "O computador de um pequeno setor da empresa está desorganizado. Os arquivos estão espalhados, não existe rotina de backup, alguns funcionários recebem mensagens suspeitas e ninguém sabe explicar com clareza quais equipamentos e programas são utilizados. A equipe foi escolhida para preparar uma solução simples e orientar o setor.")
 
 add_heading(doc, "Organização do tempo", 1)
 time_table = doc.add_table(rows=1, cols=3)
@@ -199,7 +199,7 @@ for idx, value in enumerate(("Etapa", "Atividade", "Tempo")):
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     style_run(p.add_run(value), bold=True, color=RGBColor(255, 255, 255))
 for row in [
-    ("1", "Ler, dividir funções e criar a pasta da dupla", "10 min"),
+    ("1", "Ler, dividir funções e criar a pasta da equipe", "10 min"),
     ("2", "Produzir as três entregas", "85 min"),
     ("3", "Apresentar e entregar os arquivos", "15 min"),
     ("4", "Margem para revisão e imprevistos", "10 min"),
@@ -214,9 +214,9 @@ for row in [
 
 add_heading(doc, "Regras simples", 1)
 for item in [
-    "A dupla deve dividir as tarefas, mas os dois integrantes precisam conhecer todas as entregas.",
+    "A equipe deve dividir as tarefas, mas os dois integrantes precisam conhecer todas as entregas.",
     "Produzam os três arquivos nos formatos nativos Google Docs, Google Sheets e Google Slides.",
-    "Criem uma pasta com o nome DUPLA_NOME1_NOME2 e salvem nela os três arquivos.",
+    "Criem uma pasta com o nome EQUIPE_NOME1_NOME2 e salvem nela os três arquivos.",
     "É permitido consultar a ementa, as anotações de aula e fontes confiáveis na Web.",
     "Toda informação pesquisada deve ter o nome do site ou o link registrado no documento.",
     "Compartilhem os três arquivos com o docente; sem acesso, o corretor não conseguirá avaliá-los.",
@@ -238,7 +238,7 @@ for item in [
     "formatação organizada: título, subtítulos, parágrafos, marcadores e correção ortográfica.",
 ]:
     add_bullet(doc, item)
-add_paragraph(doc, "Nome obrigatório do arquivo: GUIA_DA_DUPLA (Google Docs)", bold_prefix="Nome obrigatório do arquivo:")
+add_paragraph(doc, "Nome obrigatório do arquivo: GUIA_DA_EQUIPE (Google Docs)", bold_prefix="Nome obrigatório do arquivo:")
 
 add_heading(doc, "Entrega 2 — Inventário básico", 1)
 add_paragraph(doc, "Criem uma planilha com pelo menos 6 itens do setor. Usem as colunas abaixo:")
@@ -257,19 +257,19 @@ for idx, value in enumerate(examples):
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     style_run(p.add_run(value), size=9)
 add_paragraph(doc, "Use a linha 1 para os cabeçalhos e as linhas 2 a 7 para os seis primeiros registros. Em G2, escreva TOTAL DE ITENS. Em H2, insira uma fórmula que some as quantidades da coluna D. Aplique filtro na linha 1 e destaque os cabeçalhos com uma cor de fundo.")
-add_paragraph(doc, "Nome obrigatório do arquivo: INVENTARIO_DA_DUPLA (Google Sheets)", bold_prefix="Nome obrigatório do arquivo:")
+add_paragraph(doc, "Nome obrigatório do arquivo: INVENTARIO_DA_EQUIPE (Google Sheets)", bold_prefix="Nome obrigatório do arquivo:")
 
 add_heading(doc, "Entrega 3 — Apresentação-relâmpago", 1)
 add_paragraph(doc, "Criem uma apresentação com exatamente 4 slides:")
 for item in [
-    "Slide 1 — título da missão e nomes da dupla;",
+    "Slide 1 — título da missão e nomes da equipe;",
     "Slide 2 — hardware e software encontrados no setor;",
     "Slide 3 — três riscos digitais e como evitá-los;",
-    "Slide 4 — organização de arquivos, backup e conclusão da dupla.",
+    "Slide 4 — organização de arquivos, backup e conclusão da equipe.",
 ]:
     add_bullet(doc, item)
 add_paragraph(doc, "Usem pouco texto, letras legíveis e pelo menos uma imagem ou ícone adequado. Os dois integrantes devem participar da apresentação.")
-add_paragraph(doc, "Nome obrigatório do arquivo: APRESENTACAO_DA_DUPLA (Google Slides)", bold_prefix="Nome obrigatório do arquivo:")
+add_paragraph(doc, "Nome obrigatório do arquivo: APRESENTACAO_DA_EQUIPE (Google Slides)", bold_prefix="Nome obrigatório do arquivo:")
 
 doc.add_page_break()
 add_heading(doc, "Anexo I — Mensagem técnica", 1)
@@ -306,7 +306,7 @@ add_paragraph(doc, "A nota é composta por 7,0 pontos de verificação automáti
 add_rubric(doc)
 
 add_paragraph(doc, "Observação do docente: __________________________________________________________________________________", after=8)
-add_paragraph(doc, "Nota: ______ / 10,0     Assinatura da dupla: ______________________________________________", after=0)
+add_paragraph(doc, "Nota: ______ / 10,0     Assinatura da equipe: _____________________________________________", after=0)
 
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 doc.save(OUTPUT)

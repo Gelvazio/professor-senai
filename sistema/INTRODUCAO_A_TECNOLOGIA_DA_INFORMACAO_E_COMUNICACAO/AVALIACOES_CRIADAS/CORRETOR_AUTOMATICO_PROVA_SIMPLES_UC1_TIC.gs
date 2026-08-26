@@ -1,5 +1,5 @@
 /**
- * CORRETOR HÍBRIDO — PROVA SIMPLES UC1 TIC EM DUPLAS
+ * CORRETOR HÍBRIDO — PROVA SIMPLES UC1 TIC EM EQUIPES
  *
  * Executar uma única vez: criarSistemaCorrecaoProvaTIC()
  * O script cria:
@@ -11,10 +11,10 @@
  */
 
 var CONFIG_TIC = {
-  tituloFormulario: 'Entrega — Prova Prática Simples UC1 TIC — Duplas',
-  nomeGuia: 'GUIA_DA_DUPLA',
-  nomeInventario: 'INVENTARIO_DA_DUPLA',
-  nomeApresentacao: 'APRESENTACAO_DA_DUPLA',
+  tituloFormulario: 'Entrega — Prova Prática Simples UC1 TIC — Equipes',
+  nomeGuia: 'GUIA_DA_EQUIPE',
+  nomeInventario: 'INVENTARIO_DA_EQUIPE',
+  nomeApresentacao: 'APRESENTACAO_DA_EQUIPE',
   abaAutomatica: 'CORRECAO_AUTOMATICA',
   abaDocente: 'RUBRICA_DOCENTE',
   abaConfiguracao: 'CONFIGURACAO',
@@ -26,10 +26,10 @@ var CONFIG_TIC = {
     estudante1: 'Nome completo do estudante 1',
     estudante2: 'Nome completo do estudante 2',
     turma: 'Turma',
-    docs: 'Link do GUIA_DA_DUPLA no Google Docs',
-    sheets: 'Link do INVENTARIO_DA_DUPLA no Google Sheets',
-    slides: 'Link da APRESENTACAO_DA_DUPLA no Google Slides',
-    confirmacao: 'Confirmação da dupla'
+    docs: 'Link do GUIA_DA_EQUIPE no Google Docs',
+    sheets: 'Link do INVENTARIO_DA_EQUIPE no Google Sheets',
+    slides: 'Link da APRESENTACAO_DA_EQUIPE no Google Slides',
+    confirmacao: 'Confirmação da equipe'
   }
 };
 
@@ -45,11 +45,11 @@ function criarSistemaCorrecaoProvaTIC() {
   form.setProgressBar(true);
   form.setConfirmationMessage(
     'Entrega recebida. A correção automática será registrada na planilha do docente. ' +
-    'A nota final será concluída após a avaliação qualitativa e a apresentação da dupla.'
+    'A nota final será concluída após a avaliação qualitativa e a apresentação da equipe.'
   );
 
   form.addSectionHeaderItem()
-    .setTitle('Identificação da dupla')
+    .setTitle('Identificação da equipe')
     .setHelpText('Informe os nomes completos dos dois integrantes.');
 
   form.addTextItem().setTitle(CONFIG_TIC.campos.estudante1).setRequired(true);
@@ -87,7 +87,7 @@ function criarSistemaCorrecaoProvaTIC() {
     .onFormSubmit()
     .create();
 
-  Logger.log('FORMULÁRIO PARA AS DUPLAS: ' + form.getPublishedUrl());
+  Logger.log('FORMULÁRIO PARA AS EQUIPES: ' + form.getPublishedUrl());
   Logger.log('EDIÇÃO DO FORMULÁRIO: ' + form.getEditUrl());
   Logger.log('PLANILHA DE RESULTADOS: ' + planilha.getUrl());
 }
@@ -110,7 +110,7 @@ function prepararPlanilhaResultados_(planilha) {
   inicial.setName(CONFIG_TIC.abaAutomatica);
 
   var cabecalhoAuto = [
-    'Data e hora', 'Dupla', 'Estudante 1', 'Estudante 2', 'Turma', 'E-mail',
+    'Data e hora', 'Equipe', 'Estudante 1', 'Estudante 2', 'Turma', 'E-mail',
     'Organização (1,0)', 'Google Docs (2,0)', 'Google Sheets (2,0)',
     'Google Slides (1,5)', 'Segurança e interpretação (0,5)',
     'Nota automática (7,0)', 'Status', 'Feedback automático',
@@ -122,7 +122,7 @@ function prepararPlanilhaResultados_(planilha) {
 
   var docente = planilha.insertSheet(CONFIG_TIC.abaDocente);
   var cabecalhoDocente = [
-    'Data e hora', 'Dupla', 'Clareza e linguagem (1,0)',
+    'Data e hora', 'Equipe', 'Clareza e linguagem (1,0)',
     'Correção técnica (1,0)', 'Apresentação e cooperação (1,0)',
     'Total docente (3,0)', 'Nota automática (7,0)', 'Nota final (10,0)',
     'Observações do docente'
@@ -172,7 +172,7 @@ function corrigirEnvioProvaTIC(e) {
   var estudante1 = respostas[CONFIG_TIC.campos.estudante1] || '';
   var estudante2 = respostas[CONFIG_TIC.campos.estudante2] || '';
   var turma = respostas[CONFIG_TIC.campos.turma] || '';
-  var dupla = estudante1 + ' e ' + estudante2;
+  var equipe = estudante1 + ' e ' + estudante2;
   var email = e.response.getRespondentEmail() || '';
 
   var guia = inspecionarArquivo_(respostas[CONFIG_TIC.campos.docs], MimeType.GOOGLE_DOCS, CONFIG_TIC.nomeGuia);
@@ -200,7 +200,7 @@ function corrigirEnvioProvaTIC(e) {
 
   var status = notaAutomatica >= 5.6 ? 'REQUISITOS OBJETIVOS ATENDIDOS' : 'REVISAR REQUISITOS';
   registrarResultado_(
-    e.response.getTimestamp(), dupla, estudante1, estudante2, turma, email,
+    e.response.getTimestamp(), equipe, estudante1, estudante2, turma, email,
     organizacao.nota, resultadoDocs.nota, resultadoSheets.nota,
     resultadoSlides.nota, seguranca.nota, notaAutomatica, status, feedback,
     respostas[CONFIG_TIC.campos.docs],
@@ -255,7 +255,7 @@ function corrigirOrganizacao_(estudante1, estudante2, guia, inventario, apresent
     nota += 0.10;
     detalhes.push('✅ Dois estudantes identificados.');
   } else {
-    detalhes.push('❌ Identificação incompleta da dupla.');
+    detalhes.push('❌ Identificação incompleta da equipe.');
   }
 
   [guia, inventario, apresentacao].forEach(function(item) {
@@ -449,7 +449,7 @@ function registrarCriterio_(detalhes, atende, valor, descricao) {
 }
 
 
-function registrarResultado_(data, dupla, estudante1, estudante2, turma, email,
+function registrarResultado_(data, equipe, estudante1, estudante2, turma, email,
   organizacao, docs, sheets, slides, seguranca, notaAutomatica, status, feedback,
   linkDocs, linkSheets, linkSlides) {
 
@@ -458,7 +458,7 @@ function registrarResultado_(data, dupla, estudante1, estudante2, turma, email,
   var planilha = SpreadsheetApp.openById(idPlanilha);
   var automatica = planilha.getSheetByName(CONFIG_TIC.abaAutomatica);
   automatica.appendRow([
-    data, dupla, estudante1, estudante2, turma, email,
+    data, equipe, estudante1, estudante2, turma, email,
     organizacao, docs, sheets, slides, seguranca, notaAutomatica,
     status, feedback, linkDocs, linkSheets, linkSlides
   ]);
@@ -467,7 +467,7 @@ function registrarResultado_(data, dupla, estudante1, estudante2, turma, email,
   automatica.getRange(linhaAuto, 14).setWrap(true);
 
   var docente = planilha.getSheetByName(CONFIG_TIC.abaDocente);
-  docente.appendRow([data, dupla, '', '', '', '', notaAutomatica, '', '']);
+  docente.appendRow([data, equipe, '', '', '', '', notaAutomatica, '', '']);
   var linha = docente.getLastRow();
   docente.getRange(linha, 6).setFormula('=SUM(C' + linha + ':E' + linha + ')');
   docente.getRange(linha, 8).setFormula('=MIN(10,F' + linha + '+G' + linha + ')');
@@ -514,4 +514,3 @@ function normalizar_(valor) {
 function arredondar_(valor) {
   return Math.round((valor + Number.EPSILON) * 100) / 100;
 }
-

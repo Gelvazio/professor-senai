@@ -1,6 +1,6 @@
-# Criar Prova Simples UC1 TIC em Duplas
+# Criar Prova Simples UC1 TIC em Equipes
 
-**Objetivo:** Criar uma avaliação prática simples, cobrindo a ementa de Introdução à TIC e realizável em duplas durante 2 horas.
+**Objetivo:** Criar uma avaliação prática simples, cobrindo a ementa de Introdução à TIC e realizável em equipes durante 2 horas.
 
 **Tech Stack:** Python, python-docx, DOCX
 
@@ -31,11 +31,11 @@
 
 **Status:** ✅ Concluído
 
-**Arquivo:** Criar `C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AVALIACOES_CRIADAS\PROVA_SIMPLES_UC1_TIC_DUPLAS_2H.docx`
+**Arquivo:** Criar `C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AVALIACOES_CRIADAS\PROVA_SIMPLES_UC1_TIC_EQUIPES_2H.docx`
 
 **Ação:** Gerar a prova em formato Word com orientações claras, tarefas objetivas e critérios de avaliação.
 
-**Código:** `C:\fontes\professor-senai\scripts\criar_prova_simples_uc1_tic_duplas.py`
+**Código:** `C:\fontes\professor-senai\scripts\criar_prova_simples_uc1_tic_equipes.py`
 
 **Verificação:** Não executar, conforme proibição absoluta de testes e validações no projeto.
 

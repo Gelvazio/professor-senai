@@ -1,6 +1,6 @@
 # Adicionar Correção Automática à Prova Simples de TIC
 
-**Objetivo:** Implementar correção híbrida para a prova prática em duplas, com 7 pontos automáticos e 3 pontos atribuídos pelo docente.
+**Objetivo:** Implementar correção híbrida para a prova prática em equipes, com 7 pontos automáticos e 3 pontos atribuídos pelo docente.
 
 **Tech Stack:** Google Apps Script, Google Forms, Google Drive, Google Docs, Google Sheets, Google Slides, Python, python-docx
 
@@ -22,7 +22,7 @@
 
 **Status:** ✅ Concluído
 
-**Arquivos:** Modificar `C:\fontes\professor-senai\scripts\criar_prova_simples_uc1_tic_duplas.py` e gerar novamente `C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AVALIACOES_CRIADAS\PROVA_SIMPLES_UC1_TIC_DUPLAS_2H.docx`.
+**Arquivos:** Modificar `C:\fontes\professor-senai\scripts\criar_prova_simples_uc1_tic_equipes.py` e gerar novamente `C:\fontes\professor-senai\sistema\INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO\AVALIACOES_CRIADAS\PROVA_SIMPLES_UC1_TIC_EQUIPES_2H.docx`.
 
 **Ação:** Exigir Google Docs, Sheets e Slides nativos, padronizar a planilha e explicar a divisão da nota.
 

@@ -1,4 +1,4 @@
-# Gabarito técnico — Prova Simples UC1 TIC em duplas
+# Gabarito técnico — Prova Simples UC1 TIC em equipes
 
 ## Composição da nota
 
@@ -44,7 +44,7 @@
 | Evidência | Valor |
 |---|---:|
 | Exatamente quatro slides | 0,30 |
-| Nomes da dupla na capa | 0,20 |
+| Nomes da equipe na capa | 0,20 |
 | Hardware, software, riscos, backup e organização de arquivos | 0,60 |
 | Pelo menos uma imagem | 0,20 |
 | Até 700 caracteres de texto por slide | 0,20 |
@@ -82,4 +82,3 @@ O conjunto formado pelo guia e pela apresentação recebe `0,10` por conceito en
 ## Observação pedagógica
 
 A correção automática registra evidências objetivas. Ela não declara que uma explicação está correta apenas porque uma palavra foi encontrada. Em caso de divergência, o professor deve registrar a justificativa na coluna `Observações do docente`.
-

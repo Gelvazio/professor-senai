@@ -4,7 +4,7 @@
 
 Ao executar a função `criarSistemaCorrecaoProvaTIC()`, o Google Apps Script cria automaticamente:
 
-1. um Google Form para as duplas entregarem os links;
+1. um Google Form para as equipes entregarem os links;
 2. uma planilha de resultados;
 3. a aba `CORRECAO_AUTOMATICA`, com os 7 pontos objetivos;
 4. a aba `RUBRICA_DOCENTE`, com os 3 pontos qualitativos;
@@ -22,7 +22,7 @@ Ao executar a função `criarSistemaCorrecaoProvaTIC()`, o Google Apps Script cr
 7. Clique em **Executar**.
 8. Autorize o acesso solicitado ao Forms, Drive, Docs, Sheets e Slides.
 9. Abra o registro de execução para copiar:
-   - o link do formulário para as duplas;
+   - o link do formulário para as equipes;
    - o link de edição do formulário;
    - o link da planilha de resultados.
 
@@ -30,9 +30,9 @@ Não execute a função de criação novamente para a mesma turma, pois ela prod
 
 ## Aplicação com os estudantes
 
-- As duplas devem utilizar arquivos nativos do Google Docs, Google Sheets e Google Slides.
+- As equipes devem utilizar arquivos nativos do Google Docs, Google Sheets e Google Slides.
 - Os arquivos precisam ser compartilhados com a conta que executou o script.
-- Cada dupla deve enviar o formulário somente depois de concluir os três arquivos.
+- Cada equipe deve enviar o formulário somente depois de concluir os três arquivos.
 - Se o script não conseguir abrir um arquivo, o relatório registrará que o docente não possui acesso.
 
 ## Como a nota é calculada
@@ -83,4 +83,3 @@ As verificações de palavras e estrutura não substituem o julgamento pedagógi
 - Imagens são contadas, mas sua qualidade ou pertinência é avaliada pelo docente.
 - A clareza do texto, a exatidão conceitual e a apresentação oral não são decididas automaticamente.
 - Alterar os títulos das perguntas do formulário exige atualizar também `CONFIG_TIC.campos` no script.
-
