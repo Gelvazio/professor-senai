@@ -25,6 +25,8 @@ var CONFIG_TIC = {
   campos: {
     estudante1: 'Nome completo do estudante 1',
     estudante2: 'Nome completo do estudante 2',
+    estudante3: 'Nome completo do estudante 3',
+    estudante4: 'Nome completo do estudante 4',
     turma: 'Turma',
     docs: 'Link do GUIA_DA_EQUIPE no Google Docs',
     sheets: 'Link do INVENTARIO_DA_EQUIPE no Google Sheets',
@@ -50,10 +52,12 @@ function criarSistemaCorrecaoProvaTIC() {
 
   form.addSectionHeaderItem()
     .setTitle('Identificação da equipe')
-    .setHelpText('Informe os nomes completos dos dois integrantes.');
+    .setHelpText('Informe os nomes completos dos integrantes (mínimo 2, máximo 4).');
 
   form.addTextItem().setTitle(CONFIG_TIC.campos.estudante1).setRequired(true);
   form.addTextItem().setTitle(CONFIG_TIC.campos.estudante2).setRequired(true);
+  form.addTextItem().setTitle(CONFIG_TIC.campos.estudante3).setRequired(false);
+  form.addTextItem().setTitle(CONFIG_TIC.campos.estudante4).setRequired(false);
   form.addTextItem().setTitle(CONFIG_TIC.campos.turma).setRequired(true);
 
   form.addSectionHeaderItem()
@@ -110,7 +114,7 @@ function prepararPlanilhaResultados_(planilha) {
   inicial.setName(CONFIG_TIC.abaAutomatica);
 
   var cabecalhoAuto = [
-    'Data e hora', 'Equipe', 'Estudante 1', 'Estudante 2', 'Turma', 'E-mail',
+    'Data e hora', 'Equipe', 'Estudante 1', 'Estudante 2', 'Estudante 3', 'Estudante 4', 'Turma', 'E-mail',
     'Organização (1,0)', 'Google Docs (2,0)', 'Google Sheets (2,0)',
     'Google Slides (1,5)', 'Segurança e interpretação (0,5)',
     'Nota automática (7,0)', 'Status', 'Feedback automático',
@@ -171,18 +175,21 @@ function corrigirEnvioProvaTIC(e) {
   var respostas = mapearRespostas_(e.response);
   var estudante1 = respostas[CONFIG_TIC.campos.estudante1] || '';
   var estudante2 = respostas[CONFIG_TIC.campos.estudante2] || '';
+  var estudante3 = respostas[CONFIG_TIC.campos.estudante3] || '';
+  var estudante4 = respostas[CONFIG_TIC.campos.estudante4] || '';
   var turma = respostas[CONFIG_TIC.campos.turma] || '';
-  var equipe = estudante1 + ' e ' + estudante2;
+  var nomes = [estudante1, estudante2, estudante3, estudante4].filter(function(n) { return n.trim(); });
+  var equipe = nomes.join(' e ');
   var email = e.response.getRespondentEmail() || '';
 
   var guia = inspecionarArquivo_(respostas[CONFIG_TIC.campos.docs], MimeType.GOOGLE_DOCS, CONFIG_TIC.nomeGuia);
   var inventario = inspecionarArquivo_(respostas[CONFIG_TIC.campos.sheets], MimeType.GOOGLE_SHEETS, CONFIG_TIC.nomeInventario);
   var apresentacao = inspecionarArquivo_(respostas[CONFIG_TIC.campos.slides], MimeType.GOOGLE_SLIDES, CONFIG_TIC.nomeApresentacao);
 
-  var organizacao = corrigirOrganizacao_(estudante1, estudante2, guia, inventario, apresentacao);
+  var organizacao = corrigirOrganizacao_(nomes, guia, inventario, apresentacao);
   var resultadoDocs = corrigirGoogleDocs_(guia);
   var resultadoSheets = corrigirGoogleSheets_(inventario);
-  var resultadoSlides = corrigirGoogleSlides_(apresentacao, estudante1, estudante2);
+  var resultadoSlides = corrigirGoogleSlides_(apresentacao, nomes);
   var seguranca = corrigirSegurancaInterpretacao_(resultadoDocs.texto, resultadoSlides.texto);
 
   var notaAutomatica = arredondar_(
@@ -200,7 +207,7 @@ function corrigirEnvioProvaTIC(e) {
 
   var status = notaAutomatica >= 5.6 ? 'REQUISITOS OBJETIVOS ATENDIDOS' : 'REVISAR REQUISITOS';
   registrarResultado_(
-    e.response.getTimestamp(), equipe, estudante1, estudante2, turma, email,
+    e.response.getTimestamp(), equipe, estudante1, estudante2, estudante3, estudante4, turma, email,
     organizacao.nota, resultadoDocs.nota, resultadoSheets.nota,
     resultadoSlides.nota, seguranca.nota, notaAutomatica, status, feedback,
     respostas[CONFIG_TIC.campos.docs],
@@ -248,14 +255,14 @@ function extrairId_(url) {
 }
 
 
-function corrigirOrganizacao_(estudante1, estudante2, guia, inventario, apresentacao) {
+function corrigirOrganizacao_(nomes, guia, inventario, apresentacao) {
   var nota = 0;
   var detalhes = ['ORGANIZAÇÃO E ENTREGA:'];
-  if (estudante1.trim() && estudante2.trim()) {
+  if (nomes.length >= 2) {
     nota += 0.10;
-    detalhes.push('✅ Dois estudantes identificados.');
+    detalhes.push('✅ ' + nomes.length + ' estudantes identificados.');
   } else {
-    detalhes.push('❌ Identificação incompleta da equipe.');
+    detalhes.push('❌ Identificação incompleta da equipe (mínimo 2).');
   }
 
   [guia, inventario, apresentacao].forEach(function(item) {
@@ -366,7 +373,7 @@ function corrigirGoogleSheets_(arquivo) {
 }
 
 
-function corrigirGoogleSlides_(arquivo, estudante1, estudante2) {
+function corrigirGoogleSlides_(arquivo, nomes) {
   var detalhes = ['GOOGLE SLIDES:'];
   if (!arquivo.acessivel || !arquivo.nativo) {
     detalhes.push('❌ Não foi possível analisar um Google Slides nativo.');
@@ -380,7 +387,10 @@ function corrigirGoogleSlides_(arquivo, estudante1, estudante2) {
     var textoCompleto = textos.join('\n');
     var normalizado = normalizar_(textoCompleto);
     var capa = normalizar_(textos[0] || '');
-    var nomesNaCapa = nomePresente_(capa, estudante1) && nomePresente_(capa, estudante2);
+    var nomesNaCapa = nomes.filter(function(nome) {
+      return nomePresente_(capa, nome);
+    }).length;
+    var nomesValidos = nomesNaCapa >= Math.min(2, nomes.length);
     var imagens = 0;
     slides.forEach(function(slide) {
       slide.getPageElements().forEach(function(elemento) {
@@ -395,7 +405,7 @@ function corrigirGoogleSlides_(arquivo, estudante1, estudante2) {
     var nota = 0;
 
     nota += registrarCriterio_(detalhes, slides.length === 4, 0.30, 'Exatamente quatro slides');
-    nota += registrarCriterio_(detalhes, nomesNaCapa, 0.20, 'Nomes dos dois integrantes na capa');
+    nota += registrarCriterio_(detalhes, nomesValidos, 0.20, 'Nomes dos integrantes na capa');
     nota += registrarCriterio_(detalhes, conteudos >= 5, 0.60, 'Conteúdos obrigatórios distribuídos nos slides');
     nota += registrarCriterio_(detalhes, imagens >= 1, 0.20, 'Pelo menos uma imagem');
     nota += registrarCriterio_(detalhes, textoAdequado, 0.20, 'Quantidade de texto dentro do limite automático');
@@ -449,7 +459,7 @@ function registrarCriterio_(detalhes, atende, valor, descricao) {
 }
 
 
-function registrarResultado_(data, equipe, estudante1, estudante2, turma, email,
+function registrarResultado_(data, equipe, estudante1, estudante2, estudante3, estudante4, turma, email,
   organizacao, docs, sheets, slides, seguranca, notaAutomatica, status, feedback,
   linkDocs, linkSheets, linkSlides) {
 
@@ -458,7 +468,7 @@ function registrarResultado_(data, equipe, estudante1, estudante2, turma, email,
   var planilha = SpreadsheetApp.openById(idPlanilha);
   var automatica = planilha.getSheetByName(CONFIG_TIC.abaAutomatica);
   automatica.appendRow([
-    data, equipe, estudante1, estudante2, turma, email,
+    data, equipe, estudante1, estudante2, estudante3 || '', estudante4 || '', turma, email,
     organizacao, docs, sheets, slides, seguranca, notaAutomatica,
     status, feedback, linkDocs, linkSheets, linkSlides
   ]);
