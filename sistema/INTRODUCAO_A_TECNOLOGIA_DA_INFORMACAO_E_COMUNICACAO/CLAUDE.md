@@ -9,6 +9,23 @@
 
 **Objetivo Geral:** Proporcionar o desenvolvimento de capacidades básicas e socioemocionais relativas à comunicação e ao uso de ferramentas de TIC na interpretação de normas e ou textos técnicos e uso seguro de recursos informatizados nos processos de comunicação no trabalho.
 
+### Organização das provas práticas
+
+Todos os dados e artefatos de prova prática desta UC ficam obrigatoriamente em:
+
+`AVALIACOES_CRIADAS/PROVA_PRATICA/`
+
+Incluem-se nessa pasta:
+
+- provas práticas e recuperações;
+- corretores automáticos e scripts de apoio;
+- gabaritos e rubricas;
+- formulários e links de entrega/correção;
+- notas e registros de resultados;
+- instruções e demais arquivos auxiliares.
+
+Ao criar, editar, regenerar ou referenciar uma prova prática, usar sempre `AVALIACOES_CRIADAS/PROVA_PRATICA/` e nunca salvar o artefato diretamente na raiz de `AVALIACOES_CRIADAS/`.
+
 ---
 
 ### Turma
