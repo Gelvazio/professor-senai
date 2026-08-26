@@ -111,11 +111,14 @@ def add_info_table(doc, rows):
 
 def add_rubric(doc):
     rows = [
-        ("Comunicação profissional", "Texto claro, formal, organizado e adequado ao ambiente de trabalho.", "2,0"),
-        ("Segurança da informação", "Reconhece riscos e apresenta medidas corretas de senha, backup e navegação segura.", "2,0"),
-        ("Interpretação técnica", "Compreende o anexo, explica termos técnicos e adapta a linguagem ao público.", "2,0"),
-        ("Hardware e software", "Identifica componentes, funções, programas e organização de arquivos.", "2,0"),
-        ("Recursos Web e colaboração", "Pesquisa/cita fonte, organiza os arquivos, compartilha corretamente e coopera em dupla.", "2,0"),
+        ("Organização e entrega — automática", "Links acessíveis, arquivos Google nativos, nomes padronizados e identificação da dupla.", "1,0"),
+        ("Google Docs — automática", "Estrutura, conteúdos obrigatórios, termos técnicos, práticas de segurança e fonte.", "2,0"),
+        ("Google Sheets — automática", "Cabeçalhos, seis registros, fórmula, filtro e formatação básica.", "2,0"),
+        ("Google Slides — automática", "Quatro slides, identificação, conteúdos, imagem e quantidade adequada de texto.", "1,5"),
+        ("Segurança e interpretação — automática", "Presença dos conceitos mínimos definidos no Anexo I.", "0,5"),
+        ("Clareza e linguagem — docente", "Texto claro, formal, organizado e adequado ao ambiente profissional.", "1,0"),
+        ("Correção técnica — docente", "Explicações corretas, coerentes e adaptadas ao público.", "1,0"),
+        ("Apresentação e cooperação — docente", "Participação dos dois integrantes, domínio e colaboração.", "1,0"),
     ]
     table = doc.add_table(rows=1, cols=3)
     table.style = "Table Grid"
@@ -212,9 +215,12 @@ for row in [
 add_heading(doc, "Regras simples", 1)
 for item in [
     "A dupla deve dividir as tarefas, mas os dois integrantes precisam conhecer todas as entregas.",
-    "Criem uma pasta com o nome DUPLA_NOME1_NOME2 e salvem nela todos os arquivos.",
+    "Produzam os três arquivos nos formatos nativos Google Docs, Google Sheets e Google Slides.",
+    "Criem uma pasta com o nome DUPLA_NOME1_NOME2 e salvem nela os três arquivos.",
     "É permitido consultar a ementa, as anotações de aula e fontes confiáveis na Web.",
     "Toda informação pesquisada deve ter o nome do site ou o link registrado no documento.",
+    "Compartilhem os três arquivos com o docente; sem acesso, o corretor não conseguirá avaliá-los.",
+    "Ao final, enviem os três links no Formulário de Entrega fornecido pelo docente.",
     "A apresentação final deve durar no máximo 3 minutos.",
 ]:
     add_bullet(doc, item)
@@ -232,7 +238,7 @@ for item in [
     "formatação organizada: título, subtítulos, parágrafos, marcadores e correção ortográfica.",
 ]:
     add_bullet(doc, item)
-add_paragraph(doc, "Nome sugerido do arquivo: GUIA_DA_DUPLA.docx", bold_prefix="Nome sugerido do arquivo:")
+add_paragraph(doc, "Nome obrigatório do arquivo: GUIA_DA_DUPLA (Google Docs)", bold_prefix="Nome obrigatório do arquivo:")
 
 add_heading(doc, "Entrega 2 — Inventário básico", 1)
 add_paragraph(doc, "Criem uma planilha com pelo menos 6 itens do setor. Usem as colunas abaixo:")
@@ -250,8 +256,8 @@ for idx, value in enumerate(examples):
     p = inventory.cell(1, idx).paragraphs[0]
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     style_run(p.add_run(value), size=9)
-add_paragraph(doc, "A planilha também deve ter: um título, cabeçalhos destacados, filtro nos cabeçalhos e uma fórmula que calcule o total de itens cadastrados.")
-add_paragraph(doc, "Nome sugerido do arquivo: INVENTARIO_DA_DUPLA.xlsx", bold_prefix="Nome sugerido do arquivo:")
+add_paragraph(doc, "Use a linha 1 para os cabeçalhos e as linhas 2 a 7 para os seis primeiros registros. Em G2, escreva TOTAL DE ITENS. Em H2, insira uma fórmula que some as quantidades da coluna D. Aplique filtro na linha 1 e destaque os cabeçalhos com uma cor de fundo.")
+add_paragraph(doc, "Nome obrigatório do arquivo: INVENTARIO_DA_DUPLA (Google Sheets)", bold_prefix="Nome obrigatório do arquivo:")
 
 add_heading(doc, "Entrega 3 — Apresentação-relâmpago", 1)
 add_paragraph(doc, "Criem uma apresentação com exatamente 4 slides:")
@@ -263,7 +269,7 @@ for item in [
 ]:
     add_bullet(doc, item)
 add_paragraph(doc, "Usem pouco texto, letras legíveis e pelo menos uma imagem ou ícone adequado. Os dois integrantes devem participar da apresentação.")
-add_paragraph(doc, "Nome sugerido do arquivo: APRESENTACAO_DA_DUPLA.pptx", bold_prefix="Nome sugerido do arquivo:")
+add_paragraph(doc, "Nome obrigatório do arquivo: APRESENTACAO_DA_DUPLA (Google Slides)", bold_prefix="Nome obrigatório do arquivo:")
 
 doc.add_page_break()
 add_heading(doc, "Anexo I — Mensagem técnica", 1)
@@ -286,15 +292,17 @@ for item in [
 add_heading(doc, "Checklist antes de entregar", 1)
 for item in [
     "A pasta está com o nome correto e contém os três arquivos.",
+    "Os arquivos estão nos formatos nativos Google Docs, Google Sheets e Google Slides.",
     "O guia tem os itens pedidos e registra uma fonte consultada.",
-    "A planilha tem 6 ou mais registros, filtro e fórmula.",
+    "A planilha tem 6 ou mais registros, filtro, cabeçalhos na linha 1 e fórmula em H2.",
     "A apresentação tem exatamente 4 slides e está legível.",
-    "Os arquivos abrem e foram compartilhados conforme orientação do docente.",
+    "Os três arquivos foram compartilhados com o docente e seus links foram enviados no formulário.",
     "Os dois integrantes conseguem explicar o trabalho realizado.",
 ]:
     add_bullet(doc, "☐ " + item)
 
 add_heading(doc, "Critérios de avaliação — 10 pontos", 1)
+add_paragraph(doc, "A nota é composta por 7,0 pontos de verificação automática e 3,0 pontos de avaliação do docente. A correção automática confirma requisitos objetivos; a qualidade e a correção das explicações continuam sob responsabilidade do professor.")
 add_rubric(doc)
 
 add_paragraph(doc, "Observação do docente: __________________________________________________________________________________", after=8)
