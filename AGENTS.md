@@ -59,3 +59,7 @@ Toda UC **deve conter** as subpastas:
 Se uma dessas pastas não existir ao tentar acessar a UC no sistema (`uc.html`), deve ser exibido um **alerta visual** informando quais pastas estão faltando.
 
 Ao criar ou mencionar arquivos de uma UC, use sempre o caminho `sistema/<NOME_DA_PASTA_UC>/AULAS/` ou `sistema/<NOME_DA_PASTA_UC>/MATERIAIS/`.
+
+## Tarefas Concluídas
+
+- ✅ SQL executados no Supabase: `supabase-unidade.sql`, `supabase-curso-duplicar.sql`
