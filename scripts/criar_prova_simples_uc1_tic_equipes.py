@@ -10,7 +10,7 @@ from docx.shared import Inches, Pt, RGBColor
 
 
 ROOT = Path(r"C:\fontes\professor-senai")
-OUTPUT = ROOT / "sistema" / "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO" / "AVALIACOES_CRIADAS" / "PROVA_SIMPLES_UC1_TIC_EQUIPES_2H.docx"
+OUTPUT = ROOT / "sistema" / "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO" / "AVALIACOES_CRIADAS" / "PROVA_PRATICA" / "PROVA_SIMPLES_UC1_TIC_EQUIPES_2H.docx"
 
 BLUE = "1F4E78"
 LIGHT_BLUE = "D9EAF7"
@@ -47,11 +47,39 @@ def set_cell_margins(cell, top=80, start=120, bottom=80, end=120):
 def set_table_widths(table, widths):
     table.autofit = False
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    widths_dxa = [round(width * 1440) for width in widths]
+    total_dxa = sum(widths_dxa)
+    tbl_pr = table._tbl.tblPr
+    tbl_w = tbl_pr.find(qn("w:tblW"))
+    if tbl_w is None:
+        tbl_w = OxmlElement("w:tblW")
+        tbl_pr.append(tbl_w)
+    tbl_w.set(qn("w:w"), str(total_dxa))
+    tbl_w.set(qn("w:type"), "dxa")
+    tbl_layout = tbl_pr.find(qn("w:tblLayout"))
+    if tbl_layout is None:
+        tbl_layout = OxmlElement("w:tblLayout")
+        tbl_pr.append(tbl_layout)
+    tbl_layout.set(qn("w:type"), "fixed")
+    grid = table._tbl.tblGrid
+    for child in list(grid):
+        grid.remove(child)
+    for width_dxa in widths_dxa:
+        grid_col = OxmlElement("w:gridCol")
+        grid_col.set(qn("w:w"), str(width_dxa))
+        grid.append(grid_col)
     for row in table.rows:
-        for idx, width in enumerate(widths):
-            row.cells[idx].width = Inches(width)
-            set_cell_margins(row.cells[idx])
-            row.cells[idx].vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+        for idx, width_dxa in enumerate(widths_dxa):
+            cell = row.cells[idx]
+            tc_pr = cell._tc.get_or_add_tcPr()
+            tc_w = tc_pr.find(qn("w:tcW"))
+            if tc_w is None:
+                tc_w = OxmlElement("w:tcW")
+                tc_pr.append(tc_w)
+            tc_w.set(qn("w:w"), str(width_dxa))
+            tc_w.set(qn("w:type"), "dxa")
+            set_cell_margins(cell)
+            cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
 
 
 def style_run(run, size=10.5, bold=False, color=INK, font="Calibri"):
@@ -182,9 +210,33 @@ add_info_table(doc, [
     ("Unidade curricular", "Introdução à Tecnologia da Informação e Comunicação"),
     ("Modalidade", "Trabalho em equipe, realizado em sala de aula"),
     ("Duração", "2 horas"),
-    ("Equipe", "1. __________________________________  2. __________________________________"),
+    ("Estudante 1", "________________________________________________________________"),
+    ("Estudante 2", "________________________________________________________________"),
     ("Data / Turma", "Data: ____/____/________    Turma: ______________________________"),
 ])
+
+add_heading(doc, "Divisão de responsabilidades", 1)
+add_paragraph(doc, "Cada integrante terá um foco principal, mas ambos devem revisar, conhecer e saber explicar todas as entregas.")
+responsibilities = doc.add_table(rows=1, cols=4)
+responsibilities.style = "Table Grid"
+set_table_widths(responsibilities, [1.00, 1.60, 1.70, 2.20])
+for idx, value in enumerate(("Integrante", "Nome", "Foco principal", "Responsabilidade")):
+    set_cell_fill(responsibilities.cell(0, idx), BLUE)
+    p = responsibilities.cell(0, idx).paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    style_run(p.add_run(value), size=9, bold=True, color=RGBColor(255, 255, 255))
+for row in [
+    ("Estudante 1", "________________", "Desafio 1 — Guia", "Liderar o Google Docs e a interpretação do Anexo I."),
+    ("Estudante 2", "________________", "Desafio 2 — Inventário", "Liderar o Google Sheets, os registros e a fórmula."),
+    ("Toda a equipe", "Ambos", "Desafio 3 — Apresentação", "Produzir os slides, revisar tudo, apresentar e entregar."),
+]:
+    cells = responsibilities.add_row().cells
+    for idx, value in enumerate(row):
+        p = cells[idx].paragraphs[0]
+        if idx < 3:
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        style_run(p.add_run(value), size=8.8, bold=(idx == 0))
+        set_cell_margins(cells[idx])
 
 add_heading(doc, "Situação-problema", 1)
 add_paragraph(doc, "O computador de um pequeno setor da empresa está desorganizado. Os arquivos estão espalhados, não existe rotina de backup, alguns funcionários recebem mensagens suspeitas e ninguém sabe explicar com clareza quais equipamentos e programas são utilizados. A equipe foi escolhida para preparar uma solução simples e orientar o setor.")
@@ -214,7 +266,8 @@ for row in [
 
 add_heading(doc, "Regras simples", 1)
 for item in [
-    "A equipe deve dividir as tarefas, mas os dois integrantes precisam conhecer todas as entregas.",
+    "O Estudante 1 lidera o Desafio 1; o Estudante 2 lidera o Desafio 2; os dois realizam o Desafio 3.",
+    "O foco principal organiza o trabalho, mas os dois integrantes precisam conhecer e revisar todas as entregas.",
     "Produzam os três arquivos nos formatos nativos Google Docs, Google Sheets e Google Slides.",
     "Criem uma pasta com o nome EQUIPE_NOME1_NOME2 e salvem nela os três arquivos.",
     "É permitido consultar a ementa, as anotações de aula e fontes confiáveis na Web.",
