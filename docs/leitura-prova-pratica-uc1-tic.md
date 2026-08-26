@@ -13,7 +13,7 @@
 | 1 | Localizar e identificar o documento | ✅ Concluído |
 | 2 | Extrair parágrafos e tabelas na ordem do documento | ✅ Concluído |
 | 3 | Confirmar a leitura ao usuário | ✅ Concluído |
-| 4 | Commit e publicação | 🔄 Em progresso |
+| 4 | Commit e publicação | ✅ Concluído |
 
 ---
 
@@ -49,7 +49,7 @@
 
 ### Passo 4: Commit e publicação
 
-**Status:** 🔄 Em progresso
+**Status:** ✅ Concluído
 
 **Arquivo:** Modificar `C:\fontes\professor-senai\docs\leitura-prova-pratica-uc1-tic.md`
 
