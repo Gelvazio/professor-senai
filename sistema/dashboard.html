@@ -608,6 +608,23 @@
         filter: brightness(1.04);
       }
       .btn-atualizar-pendencias:active { transform: translateY(0); }
+      .btn-excluir-todas {
+        background: #ffebee;
+        color: #b3261e;
+        border: 1px solid #f8bbd0;
+        border-radius: 6px;
+        padding: 8px 14px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .btn-excluir-todas:hover {
+        background: #ffcdd2;
+        border-color: #ef5350;
+        filter: brightness(0.98);
+      }
+      .btn-excluir-todas:active { transform: translateY(1px); }
       .pendencias-atualizando-modal {
         max-width: 390px;
         padding: 34px 30px;
@@ -2262,6 +2279,7 @@
         <div class="pendencias-toolbar">
           <button class="btn-novo" onclick="novaPendencia()">＋ Nova Pendência</button>
           <button class="btn-atualizar-pendencias" onclick="atualizarPendencias()">↻ Atualizar Pendências</button>
+          <button class="btn-excluir-todas" onclick="excluirTodasPendencias()" title="Excluir TODAS as pendências do banco de dados">🗑️ Excluir Todas</button>
           <span class="crud-msg" id="pendenciasMsg"></span>
         </div>
         <div class="pendencia-form" id="pendenciaForm" style="display:none">
@@ -6328,6 +6346,25 @@
           setPendenciasMsg(mensagem);
         } catch (erro) {
           setPendenciasMsg('Não foi possível alterar o status da pendência.', true);
+        }
+      }
+
+      async function excluirTodasPendencias() {
+        if (!confirm('⚠️ AVISO: Você está prestes a EXCLUIR TODAS as pendências do banco de dados!\n\nEsta ação é IRREVERSÍVEL.\n\nDeseja continuar?')) {
+          return;
+        }
+
+        if (!confirm('Tem certeza? Esta ação NÃO pode ser desfeita!')) {
+          return;
+        }
+
+        setPendenciasMsg('Excluindo todas as pendências…');
+        try {
+          await sbDelete('pendencias', '');
+          await listarPendenciasSupabase();
+          setPendenciasMsg('✅ Todas as pendências foram excluídas com sucesso!');
+        } catch (erro) {
+          setPendenciasMsg('❌ Erro ao excluir pendências: ' + (erro.message || erro), true);
         }
       }
 
