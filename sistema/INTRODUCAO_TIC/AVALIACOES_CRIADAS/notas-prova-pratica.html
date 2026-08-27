@@ -396,50 +396,110 @@
             color: #1f4e78;
         }
 
-        .aluno-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px;
-            border-bottom: 1px solid #eee;
-            background: #f9f9f9;
-            border-radius: 5px;
-            margin-bottom: 8px;
+        .tabela-alunos {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
         }
 
-        .aluno-nome {
+        .tabela-alunos thead {
+            background: #667eea;
+            color: white;
+        }
+
+        .tabela-alunos th {
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .tabela-alunos td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tabela-alunos tbody tr:hover {
+            background: #f5f5f5;
+        }
+
+        .tabela-alunos tbody tr:nth-child(even) {
+            background: #fafafa;
+        }
+
+        .aluno-nome-cell {
             font-weight: 500;
             color: #1f4e78;
-            flex: 1;
+        }
+
+        .aluno-equipe {
+            color: #999;
+            font-size: 12px;
         }
 
         .aluno-nota {
-            background: #667eea;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 15px;
             font-weight: bold;
-            font-size: 13px;
-            min-width: 50px;
             text-align: center;
+            font-size: 14px;
         }
 
         .aluno-nota.nota-alta {
-            background: #28a745;
+            background: #d4edda;
+            color: #155724;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
         .aluno-nota.nota-media {
-            background: #ffc107;
-            color: #333;
+            background: #fff3cd;
+            color: #856404;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
         .aluno-nota.nota-baixa {
-            background: #dc3545;
+            background: #f8d7da;
+            color: #721c24;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
         .aluno-nota.vazio {
-            background: #ccc;
+            background: #e9ecef;
+            color: #6c757d;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .resumo-alunos {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            font-size: 13px;
+        }
+
+        .resumo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .resumo-label {
             color: #666;
+            font-size: 11px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .resumo-valor {
+            font-weight: bold;
+            font-size: 18px;
+            color: #1f4e78;
         }
 
         .busca-alunos {
@@ -525,13 +585,25 @@
     <div id="modalAlunos" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Notas por Aluno</h2>
+                <h2>Notas por Aluno — Ordem Alfabética</h2>
                 <button class="close-modal" onclick="fecharModalAlunos()">&times;</button>
             </div>
             <div class="busca-alunos">
                 <input type="text" id="buscaAluno" placeholder="Buscar aluno..." onkeyup="filtrarAlunos()">
             </div>
-            <div id="listaAlunos"></div>
+            <div class="resumo-alunos" id="resumoAlunos"></div>
+            <table class="tabela-alunos">
+                <thead>
+                    <tr>
+                        <th style="width: 40px;">#</th>
+                        <th>Aluno</th>
+                        <th>Equipe</th>
+                        <th style="width: 100px;">Nota Automática</th>
+                    </tr>
+                </thead>
+                <tbody id="listaAlunos">
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -723,22 +795,54 @@
             // Ordenar alfabeticamente
             alunos.sort((a, b) => a.nome.localeCompare(b.nome));
 
-            // Renderizar lista
+            // Calcular estatísticas
+            const notasValidas = alunos.filter(a => a.nota !== null).map(a => a.nota);
+            const media = notasValidas.length > 0 ?
+                (notasValidas.reduce((a, b) => a + b, 0) / notasValidas.length).toFixed(2) : '—';
+            const alunosComNota = alunos.filter(a => a.nota !== null).length;
+
+            // Renderizar resumo
+            const resumo = document.getElementById('resumoAlunos');
+            resumo.innerHTML = `
+                <div class="resumo-item">
+                    <div class="resumo-label">Total de Alunos</div>
+                    <div class="resumo-valor">${alunos.length}</div>
+                </div>
+                <div class="resumo-item">
+                    <div class="resumo-label">Com Nota</div>
+                    <div class="resumo-valor">${alunosComNota}</div>
+                </div>
+                <div class="resumo-item">
+                    <div class="resumo-label">Média</div>
+                    <div class="resumo-valor">${media}</div>
+                </div>
+                <div class="resumo-item">
+                    <div class="resumo-label">Máximo</div>
+                    <div class="resumo-valor">${notasValidas.length > 0 ? Math.max(...notasValidas).toFixed(2) : '—'}</div>
+                </div>
+            `;
+
+            // Renderizar lista em tabela
             const lista = document.getElementById('listaAlunos');
             lista.innerHTML = '';
 
-            alunos.forEach(aluno => {
+            alunos.forEach((aluno, index) => {
                 const notaClass = obterClasseNota(aluno.nota);
                 const notaText = aluno.nota !== null ? aluno.nota.toFixed(2) : '—';
 
-                const item = document.createElement('div');
-                item.className = 'aluno-item';
-                item.innerHTML = `
-                    <div class="aluno-nome">${aluno.nome} <span style="color: #999;">(Eq. ${aluno.equipe})</span></div>
-                    <div class="aluno-nota ${notaClass}">${notaText}</div>
+                const tr = document.createElement('tr');
+                tr.className = 'aluno-row';
+                tr.innerHTML = `
+                    <td style="text-align: center; color: #999;">${index + 1}</td>
+                    <td><span class="aluno-nome-cell">${aluno.nome}</span></td>
+                    <td><span class="aluno-equipe">Equipe ${aluno.equipe}</span></td>
+                    <td><span class="aluno-nota ${notaClass}">${notaText}</span></td>
                 `;
-                lista.appendChild(item);
+                lista.appendChild(tr);
             });
+
+            // Armazenar alunos para filtro
+            window.alunosData = alunos;
         }
 
         function obterClasseNota(nota) {
@@ -750,14 +854,16 @@
 
         function filtrarAlunos() {
             const busca = document.getElementById('buscaAluno').value.toLowerCase();
-            const itens = document.querySelectorAll('.aluno-item');
+            const linhas = document.querySelectorAll('.aluno-row');
 
-            itens.forEach(item => {
-                const nome = item.querySelector('.aluno-nome').textContent.toLowerCase();
-                if (nome.includes(busca)) {
-                    item.style.display = 'flex';
+            linhas.forEach(linha => {
+                const nome = linha.querySelector('.aluno-nome-cell').textContent.toLowerCase();
+                const equipe = linha.querySelector('.aluno-equipe').textContent.toLowerCase();
+
+                if (nome.includes(busca) || equipe.includes(busca)) {
+                    linha.style.display = 'table-row';
                 } else {
-                    item.style.display = 'none';
+                    linha.style.display = 'none';
                 }
             });
         }
