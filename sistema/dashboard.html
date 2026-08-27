@@ -6064,6 +6064,68 @@
           console.log('  → ' + totalInseridasMateria + ' inseridas de matérias');
           console.log('  → ' + totalInseridasAvaliacao + ' inseridas de avaliações');
 
+          // 3️⃣ SINCRONIZA: Se pendência está CONCLUIDA, marca como CONCLUIDA na tabela de origem
+          try {
+            const pendenciasAttuais = await sbGet('pendencias', 'select=*&status=eq.CONCLUIDA');
+            console.log('🔄 Sincronizando pendências CONCLUIDAS com tabelas de origem...');
+            console.log('📊 Total de pendências CONCLUIDAS para sincronizar:', pendenciasAttuais.length);
+
+            let totalSincronizadasMateria = 0;
+            let totalSincronizadasAvaliacao = 0;
+
+            for (const pend of pendenciasAttuais) {
+              // 📝 Pendência de AVALIAÇÃO
+              if (pend.avaliacao_id) {
+                const aval = await sbGet('avaliacao', 'select=*&id=eq.' + pend.avaliacao_id);
+                if (aval && aval.length > 0) {
+                  const updateData = {};
+                  if (pend.status_avaliacao === 'PENDENTE') updateData.status_avaliacao = 'CONCLUIDO';
+                  if (pend.status_gabarito === 'PENDENTE') updateData.status_gabarito = 'CONCLUIDO';
+                  if (pend.status_revisao === 'PENDENTE') updateData.status_revisao = 'CONCLUIDO';
+                  if (pend.status_cadastro_sgn === 'PENDENTE') updateData.status_cadastro_sgn = 'CONCLUIDO';
+                  if (pend.acompanhamento_pedagogico_sgn === 'PENDENTE') updateData.acompanhamento_pedagogico_sgn = 'CONCLUIDO';
+
+                  if (Object.keys(updateData).length > 0) {
+                    console.log(`📋 Sincronizando avaliação ${pend.avaliacao_id}:`, updateData);
+                    try {
+                      await sbPatch('avaliacao', 'id', pend.avaliacao_id, updateData);
+                      console.log(`✅ Avaliação ${pend.avaliacao_id} sincronizada`);
+                      totalSincronizadasAvaliacao++;
+                    } catch (e) {
+                      console.warn(`⚠️ Erro ao sincronizar avaliação ${pend.avaliacao_id}:`, e.message);
+                    }
+                  }
+                }
+              }
+              // 📝 Pendência de MATÉRIA (sem avaliação)
+              else if (pend.materia_id && !pend.avaliacao_id) {
+                const mat = await sbGet('materia', 'select=*&id=eq.' + pend.materia_id);
+                if (mat && mat.length > 0) {
+                  const updateData = {};
+                  if (pend.status_criacao_avaliacao === 'PENDENTE') updateData.status_criacao_avaliacao = 'CONCLUIDO';
+                  if (pend.status_plano_aula === 'PENDENTE') updateData.status_plano_aula = 'CONCLUIDO';
+                  if (pend.status_plano_ensino === 'PENDENTE') updateData.status_plano_ensino = 'CONCLUIDO';
+
+                  if (Object.keys(updateData).length > 0) {
+                    console.log(`📄 Sincronizando matéria ${pend.materia_id}:`, updateData);
+                    try {
+                      await sbPatch('materia', 'id', pend.materia_id, updateData);
+                      console.log(`✅ Matéria ${pend.materia_id} sincronizada`);
+                      totalSincronizadasMateria++;
+                    } catch (e) {
+                      console.warn(`⚠️ Erro ao sincronizar matéria ${pend.materia_id}:`, e.message);
+                    }
+                  }
+                }
+              }
+            }
+            console.log('✅ SINCRONIZAÇÃO CONCLUÍDA:');
+            console.log('  → ' + totalSincronizadasMateria + ' matérias atualizadas');
+            console.log('  → ' + totalSincronizadasAvaliacao + ' avaliações atualizadas');
+          } catch (e) {
+            console.error('⚠️ Erro ao sincronizar pendências CONCLUIDAS:', e);
+          }
+
           // 4️⃣ LISTA: Carrega e exibe a tabela "pendencias"
           console.log('📋 Carregando lista final de pendências...');
           await listarPendenciasSupabase();
