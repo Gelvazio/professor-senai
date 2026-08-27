@@ -5874,12 +5874,105 @@
         document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⏳ Carregando…</div>';
         setPendenciasMsg('');
         try {
-          pendenciasRegistros = await sbGet('pendencias', 'select=*&order=datavencimento.asc,id.asc');
-          renderPendencias(pendenciasRegistros);
+          // ⚠️ BUSCA SEMPRE DO SUPABASE: tabela pendencias + matérias + avaliações com status PENDENTE
+          let pendenciasComGeradas = [];
+
+          // 1️⃣ Busca registros da tabela "pendencias"
+          try {
+            pendenciasRegistros = await sbGet('pendencias', 'select=*&order=datavencimento.asc,id.asc');
+            pendenciasComGeradas = [...pendenciasRegistros];
+          } catch (e) {
+            console.warn('Tabela pendencias não acessível:', e);
+          }
+
+          // 2️⃣ Busca pendências de MATÉRIAS com status PENDENTE
+          try {
+            const materias = await sbGet('materia', 'select=id,nome,ensalado&ensalado=eq.true');
+            const camposPendentes = [
+              'status_criacao_avaliacao',
+              'status_plano_aula',
+              'status_plano_ensino'
+            ];
+
+            const materiasComStatus = await sbGet(
+              'materia',
+              `select=id,nome,ensalado&ensalado=eq.true`
+            );
+
+            materiasComStatus.forEach(materia => {
+              camposPendentes.forEach(campo => {
+                if (String(materia[campo] || '').toUpperCase() === 'PENDENTE') {
+                  pendenciasComGeradas.push({
+                    id: `mat_${materia.id}_${campo}`,
+                    descricao: `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — ${materia.nome}`,
+                    materia_id: materia.id,
+                    materia: materia.nome,
+                    status: 'PENDENTE',
+                    datavencimento: null,
+                    dataCriacao: new Date().toISOString(),
+                    tipo: 'GERADO_MATERIA'
+                  });
+                }
+              });
+            });
+          } catch (e) {
+            console.warn('Erro ao buscar pendências de matérias:', e);
+          }
+
+          // 3️⃣ Busca pendências de AVALIAÇÕES com status PENDENTE
+          try {
+            const avaliacao_campos = [
+              'status_avaliacao',
+              'status_gabarito',
+              'status_revisao',
+              'status_cadastro_sgn',
+              'acompanhamento_pedagogico_sgn'
+            ];
+
+            const avaliacoes = await sbGet(
+              'avaliacao',
+              'select=id,materia_id,nome'
+            );
+
+            const avaliacoesCompletas = await sbGet(
+              'avaliacao',
+              'select=*'
+            );
+
+            avaliacoesCompletas.forEach(aval => {
+              avaliacao_campos.forEach(campo => {
+                if (String(aval[campo] || '').toUpperCase() === 'PENDENTE') {
+                  const materiaInfo = avaliacoes.find(a => a.id === aval.id);
+                  pendenciasComGeradas.push({
+                    id: `aval_${aval.id}_${campo}`,
+                    descricao: `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — Avaliação: ${aval.nome || 'sem nome'}`,
+                    materia_id: aval.materia_id,
+                    materia: materiaInfo?.nome || 'Matéria desconhecida',
+                    status: 'PENDENTE',
+                    datavencimento: null,
+                    dataCriacao: new Date().toISOString(),
+                    tipo: 'GERADO_AVALIACAO'
+                  });
+                }
+              });
+            });
+          } catch (e) {
+            console.warn('Erro ao buscar pendências de avaliações:', e);
+          }
+
+          // Ordena por data de vencimento (nulls último)
+          pendenciasComGeradas.sort((a, b) => {
+            if (!a.datavencimento && !b.datavencimento) return 0;
+            if (!a.datavencimento) return 1;
+            if (!b.datavencimento) return -1;
+            return new Date(a.datavencimento) - new Date(b.datavencimento);
+          });
+
+          renderPendencias(pendenciasComGeradas);
         } catch (erro) {
           document.getElementById('pendenciasResumo').textContent = 'Não foi possível carregar as pendências.';
-          document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⚠️ Execute o arquivo supabase-pendencias.sql no Supabase para habilitar o CRUD.</div>';
-          setPendenciasMsg('Erro ao acessar a tabela pendencias.', true);
+          document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⚠️ Erro ao carregar pendências do Supabase.</div>';
+          setPendenciasMsg('Erro: ' + (erro.message || erro), true);
         }
       }
 
