@@ -183,9 +183,10 @@
 
         .notas-section h4 {
             color: #1f4e78;
-            font-size: 14px;
+            font-size: 13px;
             margin-bottom: 10px;
             text-transform: uppercase;
+            font-weight: bold;
         }
 
         .nota-item {
@@ -201,15 +202,52 @@
             border-bottom: none;
         }
 
+        .nota-label {
+            color: #555;
+            flex: 1;
+        }
+
         .nota-valor {
             font-weight: bold;
             color: #667eea;
-            min-width: 40px;
+            min-width: 50px;
             text-align: right;
+            background: #f0f4ff;
+            padding: 2px 8px;
+            border-radius: 3px;
         }
 
         .nota-valor.vazio {
             color: #ccc;
+        }
+
+        .nota-valor.completo {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .nota-valor.incompleto {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .nota-automatica-total {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .nota-automatica-valor {
+            font-size: 18px;
+            min-width: 60px;
+            text-align: right;
         }
 
         .input-nota {
@@ -641,42 +679,70 @@
             container.innerHTML = '';
 
             dados.equipes.forEach(equipe => {
+                const notas = equipe.notas || {};
+                const notaAuto = notas.notaAutomatica || 0;
+                const arquivos = equipe.arquivos || {};
+
+                // Determinar classe da nota automática
+                let classNota = '';
+                if (notaAuto >= 6.0) classNota = 'completo';
+                else if (notaAuto > 0) classNota = 'incompleto';
+
                 const card = document.createElement('div');
                 card.className = 'card-equipe';
                 card.innerHTML = `
                     <div class="card-header">
                         <div class="card-titulo">Equipe ${equipe.numero}</div>
-                        <div class="status-badge">${equipe.status}</div>
+                        <div class="status-badge">${notas.status || 'Pendente'}</div>
                     </div>
                     <div class="membros">
                         <strong>Integrantes (${equipe.nomes.length}):</strong><br>
                         ${equipe.nomes.map(nome => `• ${nome}`).join('<br>')}
                     </div>
                     <div class="notas-section">
-                        <h4>Correção Automática</h4>
+                        <h4>Entregas</h4>
                         <div class="nota-item">
-                            <span>Organização e Entrega</span>
-                            <input type="number" class="input-nota" min="0" max="1.0" step="0.05" placeholder="—">
+                            <span class="nota-label">Google Docs</span>
+                            <span class="nota-valor">${arquivos.docs || '❌'}</span>
                         </div>
                         <div class="nota-item">
-                            <span>Google Docs</span>
-                            <input type="number" class="input-nota" min="0" max="2.0" step="0.05" placeholder="—">
+                            <span class="nota-label">Google Sheets</span>
+                            <span class="nota-valor">${arquivos.sheets || '❌'}</span>
                         </div>
                         <div class="nota-item">
-                            <span>Google Sheets</span>
-                            <input type="number" class="input-nota" min="0" max="2.0" step="0.05" placeholder="—">
+                            <span class="nota-label">Google Slides</span>
+                            <span class="nota-valor">${arquivos.slides || '❌'}</span>
+                        </div>
+                    </div>
+                    <div class="notas-section">
+                        <h4>Notas Calculadas (7,0 pontos)</h4>
+                        <div class="nota-item">
+                            <span class="nota-label">Organização (1,0)</span>
+                            <span class="nota-valor">${(notas.organizacao || 0).toFixed(2)}</span>
                         </div>
                         <div class="nota-item">
-                            <span>Google Slides</span>
-                            <input type="number" class="input-nota" min="0" max="1.5" step="0.05" placeholder="—">
+                            <span class="nota-label">Docs (2,0)</span>
+                            <span class="nota-valor">${(notas.docs || 0).toFixed(2)}</span>
                         </div>
                         <div class="nota-item">
-                            <span>Segurança e Interpretação</span>
-                            <input type="number" class="input-nota" min="0" max="0.5" step="0.05" placeholder="—">
+                            <span class="nota-label">Sheets (2,0)</span>
+                            <span class="nota-valor">${(notas.sheets || 0).toFixed(2)}</span>
+                        </div>
+                        <div class="nota-item">
+                            <span class="nota-label">Slides (1,5)</span>
+                            <span class="nota-valor">${(notas.slides || 0).toFixed(2)}</span>
+                        </div>
+                        <div class="nota-item">
+                            <span class="nota-label">Segurança (0,5)</span>
+                            <span class="nota-valor">${(notas.seguranca || 0).toFixed(2)}</span>
+                        </div>
+                        <div class="nota-automatica-total">
+                            <span>Nota Automática</span>
+                            <span class="nota-automatica-valor ${classNota}">${notaAuto.toFixed(2)}/7,0</span>
                         </div>
                     </div>
                     <div class="feedback">
-                        <strong>📝 Status:</strong> Arquivos recebidos e validados. Análise automática em andamento.
+                        ${notas.feedback ? notas.feedback.replace(/\n/g, '<br>') : 'Análise em andamento...'}
                     </div>
                 `;
                 container.appendChild(card);
