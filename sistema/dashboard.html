@@ -2297,6 +2297,36 @@
       </div>
     </div>
 
+    <!-- ── Modal de Visualizar Pendências da Matéria ──────────────────────── -->
+    <div class="crud-backdrop" id="pendenciasVisualizarModal" style="display:none;z-index:2800" onclick="if(event.target===this)fecharModalVisualizarPendencia()">
+      <div class="crud-modal" style="max-width:700px">
+        <div class="crud-modal-head">
+          <h3 id="visualizarPendenciaTitulo">Detalhes da Matéria</h3>
+          <button class="crud-btn-fechar" onclick="fecharModalVisualizarPendencia()" aria-label="Fechar">✕</button>
+        </div>
+        <div style="padding:20px">
+          <div style="margin-bottom:20px">
+            <h4 style="margin:0 0 8px 0">📚 Matéria</h4>
+            <p id="visualizarPendenciaMateria" style="margin:0; font-weight:500; color:#333"></p>
+          </div>
+
+          <div style="margin-bottom:20px">
+            <h4 style="margin:0 0 8px 0">📋 Avaliações</h4>
+            <div id="visualizarPendenciaAvaliacoes" style="border-left:3px solid #ddd; padding-left:12px; color:#666; font-size:14px">
+              ⏳ Carregando avaliações…
+            </div>
+          </div>
+
+          <div>
+            <h4 style="margin:0 0 8px 0">⚠️ Pendências desta Matéria</h4>
+            <div id="visualizarPendenciasLista" style="border-left:3px solid #ddd; padding-left:12px; color:#666; font-size:14px">
+              ⏳ Carregando pendências…
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ── Modal de Editar Pendência ──────────────────────── -->
     <div class="crud-backdrop" id="pendenciasEditarModal" style="display:none;z-index:2800" onclick="if(event.target===this)fecharModalEditarPendencia()">
       <div class="crud-modal" style="max-width:600px">
@@ -5940,6 +5970,7 @@
             '</div>' +
             '<div class="pendencia-item-acoes">' +
               '<button class="pendencia-acao pendencia-toggle ' + (String(item.status || '').toUpperCase() === 'CONCLUIDO' || String(item.status || '').toUpperCase() === 'CONCLUIDA' ? 'ativo' : '') + '" onclick="alternarStatusPendencia(' + Number(item.id) + ', \'' + (item.status || 'PENDENTE') + '\')" title="Marcar como ' + (String(item.status || '').toUpperCase() === 'CONCLUIDO' || String(item.status || '').toUpperCase() === 'CONCLUIDA' ? 'pendente' : 'concluído') + '">✓</button>' +
+              '<button class="pendencia-acao" onclick="abrirVisualizarPendencia(' + Number(item.materia_id || 0) + ')">👁️ Visualizar</button>' +
               '<button class="pendencia-acao pendencia-editar" onclick="editarPendencia(' + Number(item.id) + ')">✏️ Editar</button>' +
               '<button class="pendencia-acao pendencia-excluir" onclick="excluirPendencia(' + Number(item.id) + ')">🗑️ Excluir</button>' +
             '</div>' +
@@ -6353,6 +6384,63 @@
           setPendenciasMsg('✅ Pendência excluída.');
         } catch (erro) {
           setPendenciasMsg('Não foi possível excluir a pendência.', true);
+        }
+      }
+
+      async function abrirVisualizarPendencia(materiaId) {
+        if (!materiaId) {
+          alert('Esta pendência não possui matéria associada.');
+          return;
+        }
+        document.getElementById('pendenciasVisualizarModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        await carregarDetalhesVisualizarPendencia(materiaId);
+      }
+
+      function fecharModalVisualizarPendencia() {
+        document.getElementById('pendenciasVisualizarModal').style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+      async function carregarDetalhesVisualizarPendencia(materiaId) {
+        try {
+          var materia = await sbGet('materia', 'id=eq.' + encodeURIComponent(materiaId) + '&select=descricao,id');
+          if (!materia || materia.length === 0) {
+            document.getElementById('visualizarPendenciaMateria').textContent = 'Matéria não encontrada';
+            document.getElementById('visualizarPendenciaAvaliacoes').innerHTML = '—';
+            document.getElementById('visualizarPendenciasLista').innerHTML = '—';
+            return;
+          }
+
+          var materiaDados = materia[0];
+          document.getElementById('visualizarPendenciaTitulo').textContent = 'Detalhes: ' + escaparPendencia(materiaDados.descricao || 'Matéria');
+          document.getElementById('visualizarPendenciaMateria').textContent = escaparPendencia(materiaDados.descricao || '—');
+
+          var avaliacoes = await sbGet('avaliacao', 'materia_id=eq.' + encodeURIComponent(materiaId) + '&select=titulo,status_avaliacao');
+          if (!avaliacoes || avaliacoes.length === 0) {
+            document.getElementById('visualizarPendenciaAvaliacoes').innerHTML = '<em>Nenhuma avaliação cadastrada</em>';
+          } else {
+            document.getElementById('visualizarPendenciaAvaliacoes').innerHTML = avaliacoes.map(function(av) {
+              return '<div style=”margin-bottom:6px”>• ' + escaparPendencia(av.titulo || 'Sem título') + ' <span style=”color:' + (av.status_avaliacao === 'PENDENTE' ? '#d32f2f' : '#388e3c') + '”>' + (av.status_avaliacao === 'PENDENTE' ? '⚠️ Pendente' : '✓ Pronto') + '</span></div>';
+            }).join('');
+          }
+
+          var pendencias = pendenciasRegistros.filter(function(p) { return Number(p.materia_id) === Number(materiaId); });
+          if (!pendencias || pendencias.length === 0) {
+            document.getElementById('visualizarPendenciasLista').innerHTML = '<em>Nenhuma pendência para esta matéria</em>';
+          } else {
+            document.getElementById('visualizarPendenciasLista').innerHTML = pendencias.map(function(pend) {
+              return '<div style=”margin-bottom:8px; padding:8px; background:#f5f5f5; border-radius:4px”>' +
+                '<div style=”font-weight:500”>' + escaparPendencia(pend.descricao || '—') + '</div>' +
+                '<div style=”font-size:13px; color:#666; margin-top:4px”>Status: ' + escaparPendencia(pend.status || 'PENDENTE') + '</div>' +
+              '</div>';
+            }).join('');
+          }
+        } catch (erro) {
+          console.error('Erro ao carregar detalhes:', erro);
+          document.getElementById('visualizarPendenciaMateria').textContent = 'Erro ao carregar';
+          document.getElementById('visualizarPendenciaAvaliacoes').innerHTML = 'Erro ao carregar avaliações';
+          document.getElementById('visualizarPendenciasLista').innerHTML = 'Erro ao carregar pendências';
         }
       }
 
