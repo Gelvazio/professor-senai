@@ -6028,13 +6028,24 @@
               console.log(`   status_cadastro_sgn: "${aval.status_cadastro_sgn}"`);
               console.log(`   acompanhamento_pedagogico_sgn: "${aval.acompanhamento_pedagogico_sgn}"`);
 
+              // Busca nome da matéria
+              let nomeMateriaAvaliacao = null;
+              try {
+                const matAval = await sbGet('materia', 'select=nome&id=eq.' + aval.materia_id);
+                if (matAval && matAval.length > 0) {
+                  nomeMateriaAvaliacao = matAval[0].nome;
+                }
+              } catch (e) {
+                console.warn('⚠️ Erro ao buscar matéria para avaliação:', e.message);
+              }
+
               // Cria 1 registro de pendência com os 5 campos
               let temPendencia = false;
               const descricoesPendentes = [];
               const regPendencia = {
                 materia_id: aval.materia_id,
                 avaliacao_id: aval.id,
-                materia_descricao: null,
+                materia_descricao: nomeMateriaAvaliacao,
                 status_avaliacao: null,
                 status_gabarito: null,
                 status_revisao: null,
