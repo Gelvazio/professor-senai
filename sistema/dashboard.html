@@ -5933,21 +5933,18 @@
             for (const materia of todasMaterias) {
               for (const campo of camposPendentes) {
                 if (String(materia[campo] || '').toUpperCase() === 'PENDENTE') {
-                  // Gera chave única: materia_{id}_{campo}
-                  const chavePendencia = `materia_${materia.id}_${campo}`;
                   const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — ${materia.nome}`;
 
-                  // Verifica se já existe na tabela
+                  // Verifica se já existe na tabela por descricao + tipo_origem + materia_id
                   const existente = await sbGet(
                     'pendencias',
-                    `select=id&chave_unica=eq.${chavePendencia}`
+                    `select=id&descricao=eq.${encodeURIComponent(descricao)}&tipo_origem=eq.MATERIA&materia_id=eq.${materia.id}&status=neq.CANCELADO`
                   );
 
                   if (!Array.isArray(existente) || existente.length === 0) {
                     // Não existe, insere novo
                     try {
                       await sbPost('pendencias', {
-                        chave_unica: chavePendencia,
                         descricao: descricao,
                         materia_id: materia.id,
                         status: 'PENDENTE',
@@ -5982,21 +5979,18 @@
             for (const aval of todasAvaliacoes) {
               for (const campo of camposAvaliacao) {
                 if (String(aval[campo] || '').toUpperCase() === 'PENDENTE') {
-                  // Gera chave única: avaliacao_{id}_{campo}
-                  const chavePendencia = `avaliacao_${aval.id}_${campo}`;
                   const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — Avaliação: ${aval.nome || 'sem nome'}`;
 
-                  // Verifica se já existe na tabela
+                  // Verifica se já existe na tabela por descricao + tipo_origem + materia_id
                   const existente = await sbGet(
                     'pendencias',
-                    `select=id&chave_unica=eq.${chavePendencia}`
+                    `select=id&descricao=eq.${encodeURIComponent(descricao)}&tipo_origem=eq.AVALIACAO&materia_id=eq.${aval.materia_id}&status=neq.CANCELADO`
                   );
 
                   if (!Array.isArray(existente) || existente.length === 0) {
                     // Não existe, insere novo
                     try {
                       await sbPost('pendencias', {
-                        chave_unica: chavePendencia,
                         descricao: descricao,
                         materia_id: aval.materia_id,
                         status: 'PENDENTE',
