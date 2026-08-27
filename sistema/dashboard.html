@@ -5964,8 +5964,10 @@
 
               // Cria 1 registro de pendência com os 3 campos
               let temPendencia = false;
+              const descricoesPendentes = [];
               const regPendencia = {
                 materia_id: materia.id,
+                materia_descricao: materia.nome || null,
                 status_criacao_avaliacao: null,
                 status_plano_aula: null,
                 status_plano_ensino: null
@@ -5979,11 +5981,17 @@
                   totalEncontradas++;
                   regPendencia[campo] = 'PENDENTE';
                   temPendencia = true;
+
+                  // Gera descrição automática
+                  if (campo === 'status_criacao_avaliacao') descricoesPendentes.push('Criar avaliação');
+                  if (campo === 'status_plano_aula') descricoesPendentes.push('Criar plano de aula');
+                  if (campo === 'status_plano_ensino') descricoesPendentes.push('Criar plano de ensino');
                 }
               }
 
               // Se tem pelo menos 1 campo PENDENTE, insere o registro
               if (temPendencia) {
+                regPendencia.descricao = descricoesPendentes.join(' | ') + ' — ' + materia.nome;
                 console.log('✋ Pendência encontrada em matéria:', materia.nome);
                 try {
                   await sbPost('pendencias', regPendencia);
@@ -6022,9 +6030,11 @@
 
               // Cria 1 registro de pendência com os 5 campos
               let temPendencia = false;
+              const descricoesPendentes = [];
               const regPendencia = {
                 materia_id: aval.materia_id,
                 avaliacao_id: aval.id,
+                materia_descricao: null,
                 status_avaliacao: null,
                 status_gabarito: null,
                 status_revisao: null,
@@ -6040,11 +6050,19 @@
                   totalEncontradas++;
                   regPendencia[campo] = 'PENDENTE';
                   temPendencia = true;
+
+                  // Gera descrição automática
+                  if (campo === 'status_avaliacao') descricoesPendentes.push('Completar avaliação');
+                  if (campo === 'status_gabarito') descricoesPendentes.push('Criar gabarito');
+                  if (campo === 'status_revisao') descricoesPendentes.push('Revisar avaliação');
+                  if (campo === 'status_cadastro_sgn') descricoesPendentes.push('Cadastrar no SGN');
+                  if (campo === 'acompanhamento_pedagogico_sgn') descricoesPendentes.push('Acompanhamento pedagógico');
                 }
               }
 
               // Se tem pelo menos 1 campo PENDENTE, insere o registro
               if (temPendencia) {
+                regPendencia.descricao = descricoesPendentes.join(' | ') + ' — ' + (aval.nome || 'Avaliação sem nome');
                 console.log('✋ Pendência encontrada em avaliação:', aval.nome);
                 try {
                   await sbPost('pendencias', regPendencia);
