@@ -6425,14 +6425,45 @@
             }).join('');
           }
 
-          var pendencias = pendenciasRegistros.filter(function(p) { return Number(p.materia_id) === Number(materiaId); });
-          if (!pendencias || pendencias.length === 0) {
+          var pendenciasMateria = pendenciasRegistros.filter(function(p) { return Number(p.materia_id) === Number(materiaId); });
+          var pendenciasAvaliacoes = [];
+          avaliacoes.forEach(function(av) {
+            if (av.status_revisao === 'PENDENTE') {
+              pendenciasAvaliacoes.push({
+                tipo: 'Revisar avaliação',
+                avaliacao: av.titulo,
+                data: av.created_at,
+                status: 'PENDENTE'
+              });
+            }
+            if (av.status_cadastro_sgn === 'PENDENTE') {
+              pendenciasAvaliacoes.push({
+                tipo: 'Cadastrar no SGN',
+                avaliacao: av.titulo,
+                data: av.created_at,
+                status: 'PENDENTE'
+              });
+            }
+            if (av.acompanhamento_pedagogico_sgn === 'PENDENTE') {
+              pendenciasAvaliacoes.push({
+                tipo: 'Acompanhamento pedagógico',
+                avaliacao: av.titulo,
+                data: av.created_at,
+                status: 'PENDENTE'
+              });
+            }
+          });
+
+          var todasAsPendencias = pendenciasMateria.concat(pendenciasAvaliacoes);
+          if (!todasAsPendencias || todasAsPendencias.length === 0) {
             document.getElementById('visualizarPendenciasLista').innerHTML = '<em>Nenhuma pendência para esta matéria</em>';
           } else {
-            document.getElementById('visualizarPendenciasLista').innerHTML = pendencias.map(function(pend) {
+            document.getElementById('visualizarPendenciasLista').innerHTML = todasAsPendencias.map(function(pend) {
+              var dataFormatada = pend.data ? ' · ' + formatarDataPendencia(pend.data) : '';
+              var avaliacao = pend.avaliacao ? ' (' + escaparPendencia(pend.avaliacao) + ')' : '';
               return '<div style=”margin-bottom:8px; padding:8px; background:#f5f5f5; border-radius:4px”>' +
-                '<div style=”font-weight:500”>' + escaparPendencia(pend.descricao || '—') + '</div>' +
-                '<div style=”font-size:13px; color:#666; margin-top:4px”>Status: ' + escaparPendencia(pend.status || 'PENDENTE') + '</div>' +
+                '<div style=”font-weight:500”>' + escaparPendencia(pend.descricao || pend.tipo || '—') + avaliacao + '</div>' +
+                '<div style=”font-size:13px; color:#666; margin-top:4px”>Status: ' + escaparPendencia(pend.status || 'PENDENTE') + dataFormatada + '</div>' +
               '</div>';
             }).join('');
           }
