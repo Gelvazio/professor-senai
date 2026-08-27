@@ -6404,7 +6404,7 @@
 
       async function carregarDetalhesVisualizarPendencia(materiaId) {
         try {
-          var materia = await sbGet('materia', 'id=eq.' + encodeURIComponent(materiaId) + '&select=descricao,id');
+          var materia = await sbGet('materia', 'id=eq.' + Number(materiaId));
           if (!materia || materia.length === 0) {
             document.getElementById('visualizarPendenciaMateria').textContent = 'Matéria não encontrada';
             document.getElementById('visualizarPendenciaAvaliacoes').innerHTML = '—';
@@ -6416,7 +6416,7 @@
           document.getElementById('visualizarPendenciaTitulo').textContent = 'Detalhes: ' + escaparPendencia(materiaDados.descricao || 'Matéria');
           document.getElementById('visualizarPendenciaMateria').textContent = escaparPendencia(materiaDados.descricao || '—');
 
-          var avaliacoes = await sbGet('avaliacao', 'materia_id=eq.' + encodeURIComponent(materiaId) + '&select=titulo,status_avaliacao');
+          var avaliacoes = await sbGet('avaliacao', 'materia_id=eq.' + Number(materiaId));
           if (!avaliacoes || avaliacoes.length === 0) {
             document.getElementById('visualizarPendenciaAvaliacoes').innerHTML = '<em>Nenhuma avaliação cadastrada</em>';
           } else {
@@ -6438,9 +6438,9 @@
           }
         } catch (erro) {
           console.error('Erro ao carregar detalhes:', erro);
-          document.getElementById('visualizarPendenciaMateria').textContent = 'Erro ao carregar';
-          document.getElementById('visualizarPendenciaAvaliacoes').innerHTML = 'Erro ao carregar avaliações';
-          document.getElementById('visualizarPendenciasLista').innerHTML = 'Erro ao carregar pendências';
+          document.getElementById('visualizarPendenciaMateria').textContent = 'Erro ao carregar dados';
+          document.getElementById('visualizarPendenciaAvaliacoes').innerHTML = '<em>Erro ao carregar avaliações</em>';
+          document.getElementById('visualizarPendenciasLista').innerHTML = '<em>Erro ao carregar pendências</em>';
         }
       }
 
