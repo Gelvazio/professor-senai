@@ -5913,12 +5913,16 @@
         document.getElementById('pendenciasResumo').textContent = 'Atualizando pendências…';
         document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⏳ Processando matérias e avaliações…</div>';
         setPendenciasMsg('');
+
+        console.log('🚀 Iniciando atualização de pendências...');
+
         try {
           // ⚠️ FLUXO: 1. PERCORRE TODAS AS MATÉRIAS → 2. PERCORRE TODAS AS AVALIAÇÕES
           //           3. INSERE NA TABELA PENDENCIAS (sem duplicatas) → 4. LISTA NA TELA
 
           let totalInseridasMateria = 0;
           let totalInseridasAvaliacao = 0;
+          let totalEncontradas = 0;
 
           // 🔍 1️⃣ PERCORRE: TODAS as matérias e verifica status PENDENTE
           try {
@@ -5935,6 +5939,7 @@
               for (const campo of camposPendentes) {
                 const statusCampo = String(materia[campo] || '').toUpperCase();
                 if (statusCampo === 'PENDENTE') {
+                  totalEncontradas++;
                   const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — ${materia.nome}`;
                   console.log('✋ Pendência encontrada em matéria:', descricao);
 
@@ -5979,6 +5984,7 @@
               for (const campo of camposAvaliacao) {
                 const statusCampo = String(aval[campo] || '').toUpperCase();
                 if (statusCampo === 'PENDENTE') {
+                  totalEncontradas++;
                   const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — Avaliação: ${aval.nome || 'sem nome'}`;
                   console.log('✋ Pendência encontrada em avaliação:', descricao);
 
@@ -6006,19 +6012,29 @@
             console.error('❌ Erro ao processar avaliações:', e);
           }
 
+          console.log('📊 RESUMO: ' + totalEncontradas + ' pendências encontradas');
+          console.log('  → ' + totalInseridasMateria + ' inseridas de matérias');
+          console.log('  → ' + totalInseridasAvaliacao + ' inseridas de avaliações');
+
           // 4️⃣ LISTA: Carrega e exibe a tabela "pendencias"
+          console.log('📋 Carregando lista final de pendências...');
           await listarPendenciasSupabase();
 
           // Mensagem de sucesso
           const totalInseridas = totalInseridasMateria + totalInseridasAvaliacao;
           if (totalInseridas > 0) {
-            setPendenciasMsg(`✅ ${totalInseridas} pendência(s) adicionada(s) (${totalInseridasMateria} matérias + ${totalInseridasAvaliacao} avaliações)`);
+            const msg = `✅ ${totalInseridas} pendência(s) adicionada(s) (${totalInseridasMateria} matérias + ${totalInseridasAvaliacao} avaliações)`;
+            setPendenciasMsg(msg);
+            console.log(msg);
           } else {
-            setPendenciasMsg('✅ Atualização concluída. Nenhuma pendência nova encontrada.');
+            const msg = '✅ Atualização concluída. Nenhuma pendência nova encontrada. (Total encontradas: ' + totalEncontradas + ')';
+            setPendenciasMsg(msg);
+            console.log(msg);
           }
         } catch (erro) {
+          console.error('❌ ERRO GERAL:', erro);
           document.getElementById('pendenciasResumo').textContent = 'Erro na atualização.';
-          document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⚠️ Erro ao atualizar pendências.</div>';
+          document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⚠️ Erro ao atualizar pendências. Abra o console (F12) para ver detalhes.</div>';
           setPendenciasMsg('Erro: ' + (erro.message || erro), true);
         }
       }
