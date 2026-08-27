@@ -6031,12 +6031,16 @@
               // Busca nome da matéria
               let nomeMateriaAvaliacao = null;
               try {
-                const matAval = await sbGet('materia', 'select=nome&id=eq.' + aval.materia_id);
+                const matAval = await sbGet('materia', 'select=*&id=eq.' + aval.materia_id);
+                console.log(`   🔍 Buscando matéria ID ${aval.materia_id}: resultado =`, matAval);
                 if (matAval && matAval.length > 0) {
                   nomeMateriaAvaliacao = matAval[0].nome;
+                  console.log(`   ✅ Nome da matéria encontrado: "${nomeMateriaAvaliacao}"`);
+                } else {
+                  console.warn(`   ⚠️ Nenhuma matéria encontrada para ID ${aval.materia_id}`);
                 }
               } catch (e) {
-                console.warn('⚠️ Erro ao buscar matéria para avaliação:', e.message);
+                console.error('❌ Erro ao buscar matéria para avaliação ID ' + aval.materia_id + ':', e.message);
               }
 
               // Cria 1 registro de pendência com os 5 campos
