@@ -57,10 +57,12 @@
   }
 
   function section(chave, label, links) {
-    const content = links.filter(Boolean).join('');
+    const linksVisiveis = links.filter(Boolean);
+    const content = linksVisiveis.join('');
     if (!content) return '';
+    const aberta = linksVisiveis.some((item) => item.includes('sidebar-link ativo'));
     return (
-      `<div class="sidebar-section open">` +
+      `<div class="sidebar-section${aberta ? ' open' : ''}" data-section="${chave}">` +
       `<div class="sidebar-section-label">${label}</div>` +
       `<div class="sidebar-section-links">${content}</div>` +
       `</div>`
