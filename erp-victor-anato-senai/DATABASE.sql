@@ -368,6 +368,14 @@ CREATE TABLE IF NOT EXISTS vendas_pedidos (
   updated_at      timestamptz   DEFAULT now()
 );
 
+ALTER TABLE vendas_pedidos DROP CONSTRAINT IF EXISTS vendas_pedidos_status_check;
+ALTER TABLE vendas_pedidos ADD CONSTRAINT vendas_pedidos_status_check
+  CHECK (status IN (
+    'Rascunho','Confirmado','GERAR_NOTA_FISCAL','EM_ANALISE_CREDITO',
+    'Em Separação','Em Expedição','Entregue','Cancelado',
+    'Aguardando Análise Financeira','Limite Insuficiente'
+  ));
+
 -- ── Nota Fiscal de Venda ───────────────────────────────────
 CREATE TABLE IF NOT EXISTS vendas_notas_fiscais (
   id                        uuid          DEFAULT gen_random_uuid() PRIMARY KEY,

@@ -96,6 +96,8 @@
         <option value="">Todos os status</option>
         <option>Rascunho</option>
         <option>Confirmado</option>
+        <option>GERAR_NOTA_FISCAL</option>
+        <option>EM_ANALISE_CREDITO</option>
         <option>Em Separação</option>
         <option>Em Expedição</option>
         <option>Entregue</option>
@@ -191,6 +193,8 @@
             <select class="crud-input" id="fStatus">
               <option>Rascunho</option>
               <option>Confirmado</option>
+              <option>GERAR_NOTA_FISCAL</option>
+              <option>EM_ANALISE_CREDITO</option>
               <option>Em Separação</option>
               <option>Em Expedição</option>
               <option>Entregue</option>
@@ -293,6 +297,7 @@
   function statusBadge(s) {
     const m = {
       'Rascunho': 'badge-cinza', 'Confirmado': 'badge-azul',
+      'GERAR_NOTA_FISCAL': 'badge-azul', 'EM_ANALISE_CREDITO': 'badge-laranja',
       'Em Separação': 'badge-laranja', 'Em Expedição': 'badge-laranja',
       'Entregue': 'badge-verde', 'Cancelado': 'badge-vermelho'
     };
@@ -423,7 +428,7 @@
         </div>
       `;
       document.getElementById('creditoMensagem').innerHTML = temCredito
-        ? `<span style="color:#2e7d32;font-weight:600">✅ Crédito disponível para este pedido (${fmt(valorPedido)}).</span> O pedido será confirmado normalmente.`
+        ? `<span style="color:#2e7d32;font-weight:600">✅ Crédito disponível para este pedido (${fmt(valorPedido)}).</span> A Nota Fiscal poderá ser gerada normalmente.`
         : `<span style="color:#c62828;font-weight:600">⛔ Crédito insuficiente.</span> O pedido de ${fmt(valorPedido)} excede o limite disponível de ${fmt(limiteDisp)}. Ele será enviado para <strong>fila de análise financeira</strong> e só será liberado após aprovação do Financeiro.`;
       alertaEl.style.display = 'block';
     } catch (e) {
@@ -509,8 +514,10 @@
 
     const valorTotal = (preco_unitario || 0) * quantidade;
 
-    // ── Lógica de Crediário ─────────────────────
-    if (forma_pagamento === 'Crediário') {
+    const solicitouGerarNota = status === 'GERAR_NOTA_FISCAL';
+
+    // ── Lógica de Crediário antes da Nota Fiscal ─
+    if (solicitouGerarNota && forma_pagamento === 'Crediário') {
       const [clientes, parcelas] = await Promise.all([
         sbListar('clientes', `id=eq.${cliente_id}&select=limite_credito`),
         sbListar('fin_parcelas', `cliente_id=eq.${cliente_id}&status=in.(A Vencer,Vencida)&select=valor`)
@@ -520,7 +527,7 @@
       const limiteDisp     = Math.max(0, limiteTotal - limiteUtilizado);
 
       if (valorTotal > limiteDisp) {
-        status = 'Aguardando Análise Financeira';
+        status = 'EM_ANALISE_CREDITO';
       }
     }
 
@@ -538,7 +545,6 @@
     if (!editId) dados.numero = numero;
 
     try {
-      const anterior = editId ? registros.find(r => r.id === editId) : null;
       let pedidoId = editId;
       if (editId) {
         await sbAtualizar('vendas_pedidos', editId, dados);
@@ -548,20 +554,30 @@
         if (window.gamif) await gamif.registrarEvento('pedido_venda_criado');
       }
 
-      const pedidoConfirmado = status === 'Confirmado';
+      const deveGerarNota = status === 'GERAR_NOTA_FISCAL';
       let numeroNotaFiscal = null;
-      if (pedidoConfirmado && pedidoId) {
+      if (deveGerarNota && pedidoId) {
         numeroNotaFiscal = await gerarNotaFiscalAutomatica(pedidoId, { ...dados, numero });
       }
 
       fecharModal();
-      const msgFin = status === 'Aguardando Análise Financeira'
-        ? '⚠️ Crédito insuficiente — pedido enviado para fila de análise financeira.'
+      const msgFin = status === 'EM_ANALISE_CREDITO'
+        ? '⚠️ Crédito insuficiente — pedido enviado para a fila de análise de crédito.'
         : (numeroNotaFiscal
-          ? `Pedido confirmado! Nota Fiscal <strong>${numeroNotaFiscal}</strong> criada em rascunho.`
+          ? `Nota Fiscal <strong>${numeroNotaFiscal}</strong> criada em rascunho. Abrindo a Nota Fiscal...`
           : (editId ? 'Pedido atualizado com sucesso!' : 'Pedido criado com sucesso!'));
-      sbMensagem('msgGlobal', msgFin, status === 'Aguardando Análise Financeira' ? 'warn' : 'ok');
+      sbMensagem('msgGlobal', msgFin, status === 'EM_ANALISE_CREDITO' ? 'warn' : 'ok');
       document.getElementById('msgGlobal').style.display = 'block';
+
+      if (status === 'EM_ANALISE_CREDITO') {
+        window.location.href = '../financeiro/analisecredito.html';
+        return;
+      }
+      if (numeroNotaFiscal) {
+        window.location.href = 'nota-fiscal-venda.html';
+        return;
+      }
+
       await carregarDados();
     } catch (e) {
       mostrarMsgModal('Erro ao salvar: ' + e.message, 'err');
