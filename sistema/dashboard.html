@@ -5957,7 +5957,7 @@
             console.log('📊 Total de matérias encontradas:', todasMaterias.length);
 
             for (const materia of todasMaterias) {
-              console.log(`📄 Matéria: ${materia.nome} (ID: ${materia.id})`);
+              console.log(`📄 Matéria: ${materia.descricao} (ID: ${materia.id})`);
               console.log(`   status_criacao_avaliacao: "${materia.status_criacao_avaliacao}"`);
               console.log(`   status_plano_aula: "${materia.status_plano_aula}"`);
               console.log(`   status_plano_ensino: "${materia.status_plano_ensino}"`);
@@ -5967,7 +5967,7 @@
               const descricoesPendentes = [];
               const regPendencia = {
                 materia_id: materia.id,
-                materia_descricao: materia.nome
+                materia_descricao: materia.descricao
               };
 
               for (const campo of camposPendentes) {
@@ -5988,14 +5988,14 @@
 
               // Se tem pelo menos 1 campo PENDENTE, insere o registro
               if (temPendencia) {
-                regPendencia.descricao = descricoesPendentes.join(' | ') + ' — ' + materia.nome;
-                console.log('✋ Pendência encontrada em matéria:', materia.nome);
+                regPendencia.descricao = descricoesPendentes.join(' | ') + ' — ' + materia.descricao;
+                console.log('✋ Pendência encontrada em matéria:', materia.descricao);
                 try {
                   await sbPost('pendencias', regPendencia);
-                  console.log('✅ Inserida pendência de matéria:', materia.nome);
+                  console.log('✅ Inserida pendência de matéria:', materia.descricao);
                   totalInseridasMateria++;
                 } catch (e) {
-                  console.log('⚠️ Pendência de matéria não inserida (pode já existir):', materia.nome, e.message);
+                  console.log('⚠️ Pendência de matéria não inserida (pode já existir):', materia.descricao, e.message);
                 }
               }
             }
@@ -6031,7 +6031,7 @@
                 const matAval = await sbGet('materia', 'select=*&id=eq.' + aval.materia_id);
                 console.log(`   🔍 Buscando matéria ID ${aval.materia_id}: resultado =`, matAval);
                 if (matAval && matAval.length > 0) {
-                  nomeMateriaAvaliacao = matAval[0].nome;
+                  nomeMateriaAvaliacao = matAval[0].descricao;
                   console.log(`   ✅ Nome da matéria encontrado: "${nomeMateriaAvaliacao}"`);
                 } else {
                   console.warn(`   ⚠️ Nenhuma matéria encontrada para ID ${aval.materia_id}`);
@@ -6098,10 +6098,10 @@
             for (const pend of pendenciasVazias) {
               if (!pend.materia_descricao && pend.materia_id) {
                 try {
-                  const mat = await sbGet('materia', 'select=nome&id=eq.' + pend.materia_id);
+                  const mat = await sbGet('materia', 'select=descricao&id=eq.' + pend.materia_id);
                   if (mat && mat.length > 0) {
-                    await sbPatch('pendencias', 'id', pend.id, { materia_descricao: mat[0].nome });
-                    console.log(`✅ Pendência ${pend.id} atualizada com matéria: "${mat[0].nome}"`);
+                    await sbPatch('pendencias', 'id', pend.id, { materia_descricao: mat[0].descricao });
+                    console.log(`✅ Pendência ${pend.id} atualizada com matéria: "${mat[0].descricao}"`);
                     totalAtualizadas++;
                   }
                 } catch (e) {
