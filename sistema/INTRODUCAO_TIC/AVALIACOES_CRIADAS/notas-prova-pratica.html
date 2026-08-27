@@ -344,6 +344,115 @@
         .exportar-btn:hover {
             background: #218838;
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .modal-header h2 {
+            color: #1f4e78;
+            margin: 0;
+        }
+
+        .close-modal {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .close-modal:hover {
+            color: #1f4e78;
+        }
+
+        .aluno-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            background: #f9f9f9;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        }
+
+        .aluno-nome {
+            font-weight: 500;
+            color: #1f4e78;
+            flex: 1;
+        }
+
+        .aluno-nota {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 13px;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .aluno-nota.nota-alta {
+            background: #28a745;
+        }
+
+        .aluno-nota.nota-media {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .aluno-nota.nota-baixa {
+            background: #dc3545;
+        }
+
+        .aluno-nota.vazio {
+            background: #ccc;
+            color: #666;
+        }
+
+        .busca-alunos {
+            margin-bottom: 15px;
+        }
+
+        .busca-alunos input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -377,8 +486,9 @@
                 <label><input type="radio" name="visualizacao" value="cards" checked> Visualização em Cards</label>
                 <label><input type="radio" name="visualizacao" value="tabela"> Visualização em Tabela</label>
             </div>
-            <button class="secundario" onclick="atualizarCalculos()">🔄 Recalcular Médias</button>
-            <button class="exportar-btn" onclick="exportarCSV()">📥 Exportar CSV</button>
+            <button class="secundario" onclick="abrirModalAlunos()">📋 Notas por Aluno</button>
+            <button class="secundario" onclick="atualizarCalculos()">Recalcular Medias</button>
+            <button class="exportar-btn" onclick="exportarCSV()">Exportar CSV</button>
         </div>
 
         <div class="content">
@@ -411,9 +521,23 @@
         </div>
     </div>
 
+    <!-- Modal Notas por Aluno -->
+    <div id="modalAlunos" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Notas por Aluno</h2>
+                <button class="close-modal" onclick="fecharModalAlunos()">&times;</button>
+            </div>
+            <div class="busca-alunos">
+                <input type="text" id="buscaAluno" placeholder="Buscar aluno..." onkeyup="filtrarAlunos()">
+            </div>
+            <div id="listaAlunos"></div>
+        </div>
+    </div>
+
     <script>
-        // Dados das equipes (importado de NOTAS-PRATICA-FINAL.js)
-        const dados = {
+        // Dados das equipes - será populado do arquivo JS ou usado como fallback
+        let dados = {
             prova: {
                 titulo: 'Avaliação Prática — Prova Simples UC1 TIC',
                 data: '26-08-2026',
@@ -423,25 +547,34 @@
                 notaMaximaDocente: 3.0,
                 notaMaximaTotal: 10.0
             },
-            equipes: [
-                { numero: 1, nomes: ['Heloísa', 'Emily Sofia', 'Kleiton'], status: 'Entregue' },
-                { numero: 2, nomes: ['Helisa', 'Mariana', 'Wagner', 'Maria Clara'], status: 'Entregue' },
-                { numero: 3, nomes: ['Caio Cabral', 'Guilherme Francisco', 'Eduardo Cristiano'], status: 'Entregue' },
-                { numero: 4, nomes: ['Pablo', 'Kauã Henrique Ambos', 'Eduardo Kramer'], status: 'Entregue' },
-                { numero: 5, nomes: ['Flávia', 'Yorbelis', 'Ana Lívia'], status: 'Entregue' },
-                { numero: 6, nomes: ['Andriew', 'Luan Rocha', 'Victor Johancin Perez'], status: 'Entregue' },
-                { numero: 7, nomes: ['João Pedro', 'João Lucas', 'Anna Maria'], status: 'Entregue' },
-                { numero: 8, nomes: ['Antonio Vicente', 'Kaike Menegelli', 'Kauan Lucas', 'Isaque Cândido'], status: 'Entregue' },
-                { numero: 9, nomes: ['Gabriel Vitor', 'Emily Raissa', 'Mirela Kaele'], status: 'Entregue' },
-                { numero: 10, nomes: ['Jhiogo', 'André Henrique', 'Lucas Nascimento'], status: 'Entregue' }
-            ]
+            equipes: []
         };
+
+        // Tenta carregar dados do arquivo JS se disponível
+        let notasProvaPratica = null;
+
+        // Carrega dados do arquivo JS
+        function carregarDadosJS() {
+            // Criar script tag para carregar NOTAS-PRATICA-FINAL.js
+            const script = document.createElement('script');
+            script.src = './NOTAS-PRATICA-FINAL.js';
+            script.onload = function() {
+                if (typeof notasProvaPratica !== 'undefined') {
+                    dados = notasProvaPratica;
+                }
+            };
+            document.head.appendChild(script);
+        }
 
         // Inicializar página
         function inicializar() {
-            renderizarCards();
-            renderizarTabela();
-            atualizarData();
+            carregarDadosJS();
+
+            setTimeout(() => {
+                renderizarCards();
+                renderizarTabela();
+                atualizarData();
+            }, 100);
 
             // Event listeners para mudança de visualização
             document.querySelectorAll('input[name="visualizacao"]').forEach(radio => {
@@ -452,6 +585,14 @@
                         e.target.value === 'tabela' ? 'block' : 'none';
                 });
             });
+
+            // Fechar modal ao clicar fora
+            window.onclick = function(event) {
+                const modal = document.getElementById('modalAlunos');
+                if (event.target === modal) {
+                    fecharModalAlunos();
+                }
+            };
         }
 
         function renderizarCards() {
@@ -550,6 +691,75 @@
                     hour: '2-digit',
                     minute: '2-digit'
                 });
+        }
+
+        // Funções do Modal de Alunos
+        function abrirModalAlunos() {
+            const modal = document.getElementById('modalAlunos');
+            modal.style.display = 'block';
+            preencherListaAlunos();
+        }
+
+        function fecharModalAlunos() {
+            const modal = document.getElementById('modalAlunos');
+            modal.style.display = 'none';
+        }
+
+        function preencherListaAlunos() {
+            // Coletar todos os alunos com suas notas
+            const alunos = [];
+
+            dados.equipes.forEach(equipe => {
+                equipe.nomes.forEach(nome => {
+                    const nota = equipe.notas ? equipe.notas.notaAutomatica : null;
+                    alunos.push({
+                        nome: nome,
+                        equipe: equipe.numero,
+                        nota: nota
+                    });
+                });
+            });
+
+            // Ordenar alfabeticamente
+            alunos.sort((a, b) => a.nome.localeCompare(b.nome));
+
+            // Renderizar lista
+            const lista = document.getElementById('listaAlunos');
+            lista.innerHTML = '';
+
+            alunos.forEach(aluno => {
+                const notaClass = obterClasseNota(aluno.nota);
+                const notaText = aluno.nota !== null ? aluno.nota.toFixed(2) : '—';
+
+                const item = document.createElement('div');
+                item.className = 'aluno-item';
+                item.innerHTML = `
+                    <div class="aluno-nome">${aluno.nome} <span style="color: #999;">(Eq. ${aluno.equipe})</span></div>
+                    <div class="aluno-nota ${notaClass}">${notaText}</div>
+                `;
+                lista.appendChild(item);
+            });
+        }
+
+        function obterClasseNota(nota) {
+            if (nota === null || nota === undefined) return 'vazio';
+            if (nota >= 6.0) return 'nota-alta';
+            if (nota >= 4.0) return 'nota-media';
+            return 'nota-baixa';
+        }
+
+        function filtrarAlunos() {
+            const busca = document.getElementById('buscaAluno').value.toLowerCase();
+            const itens = document.querySelectorAll('.aluno-item');
+
+            itens.forEach(item => {
+                const nome = item.querySelector('.aluno-nome').textContent.toLowerCase();
+                if (nome.includes(busca)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
         }
 
         // Inicializar ao carregar
