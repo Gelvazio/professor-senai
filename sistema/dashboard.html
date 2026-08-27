@@ -660,6 +660,26 @@
       }
       .pendencia-editar { background:#e8f0fe; color:#004384; }
       .pendencia-excluir { background:#fce8e6; color:#b3261e; }
+      .pendencia-toggle {
+        background: #f3f3f3;
+        color: #9aa0a6;
+        border: 1px solid #dfe4ec;
+        font-size: 14px;
+        font-weight: 700;
+        transition: all 0.2s ease;
+      }
+      .pendencia-toggle:hover {
+        background: #e8eaed;
+        color: #5f6368;
+      }
+      .pendencia-toggle.ativo {
+        background: #c6e7c1;
+        color: #0d652d;
+        border-color: #0d652d;
+      }
+      .pendencia-toggle.ativo:hover {
+        background: #a8d5a8;
+      }
       .pendencia-item {
         border: 1px solid #dfe4ec;
         border-left: 5px solid #f7941d;
@@ -5890,6 +5910,7 @@
               '<span>🔖 Código ' + escaparPendencia(item.materia_id || '—') + '</span>' +
             '</div>' +
             '<div class="pendencia-item-acoes">' +
+              '<button class="pendencia-acao pendencia-toggle ' + (String(item.status || '').toUpperCase() === 'CONCLUIDO' || String(item.status || '').toUpperCase() === 'CONCLUIDA' ? 'ativo' : '') + '" onclick="alternarStatusPendencia(' + Number(item.id) + ', \'' + (item.status || 'PENDENTE') + '\')" title="Marcar como ' + (String(item.status || '').toUpperCase() === 'CONCLUIDO' || String(item.status || '').toUpperCase() === 'CONCLUIDA' ? 'pendente' : 'concluído') + '">✓</button>' +
               '<button class="pendencia-acao pendencia-editar" onclick="editarPendencia(' + Number(item.id) + ')">✏️ Editar</button>' +
               '<button class="pendencia-acao pendencia-excluir" onclick="excluirPendencia(' + Number(item.id) + ')">🗑️ Excluir</button>' +
             '</div>' +
@@ -6173,6 +6194,28 @@
           setPendenciasMsg('✅ Pendência excluída.');
         } catch (erro) {
           setPendenciasMsg('Não foi possível excluir a pendência.', true);
+        }
+      }
+
+      async function alternarStatusPendencia(id, statusAtual) {
+        var item = pendenciasRegistros.find(function(registro) { return Number(registro.id) === Number(id); });
+        if (!item) return;
+
+        var novoStatus = String(statusAtual || 'PENDENTE').toUpperCase() === 'CONCLUIDO' || String(statusAtual || 'PENDENTE').toUpperCase() === 'CONCLUIDA'
+          ? 'PENDENTE'
+          : 'CONCLUIDO';
+
+        var dados = { status: novoStatus, updated_at: new Date().toISOString() };
+
+        try {
+          await sbPatch('pendencias', 'id', id, dados);
+          await listarPendenciasSupabase();
+          var mensagem = novoStatus === 'CONCLUIDO'
+            ? '✅ Pendência marcada como concluída.'
+            : '🔄 Pendência marcada como pendente.';
+          setPendenciasMsg(mensagem);
+        } catch (erro) {
+          setPendenciasMsg('Não foi possível alterar o status da pendência.', true);
         }
       }
 
