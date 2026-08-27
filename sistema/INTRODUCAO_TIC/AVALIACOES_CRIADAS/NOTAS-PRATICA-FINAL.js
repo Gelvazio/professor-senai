@@ -1,7 +1,7 @@
 /**
  * NOTAS DA PROVA PRÁTICA UC1 TIC - 26-08-2026
  * Estrutura de dados com notas automáticas calculadas das entregas
- * Gerado automaticamente em: 27-08-2026 15:37:35
+ * Gerado automaticamente em: 27-08-2026 15:45:04
  */
 
 const notasProvaPratica = {
@@ -13,7 +13,7 @@ const notasProvaPratica = {
     notaMaximaAutomatica: 10.0,
     notaMaximaDocente: 0.0,
     notaMaximaTotal: 10.0,
-    dataAtualizacao: '27-08-2026 15:37:35'
+    dataAtualizacao: '27-08-2026 15:45:04'
   },
   criterios: {
     automaticos: [
@@ -32,18 +32,16 @@ const notasProvaPratica = {
         ],
         "notas": {
             "docs": 3.33,
-            "sheets": 0.0,
+            "sheets": 3.33,
             "slides": 3.33,
-            "notaAutomatica": 6.66,
-            "status": "⚠️ Entrega incompleta (Sheets faltando)",
-            "feedback": "Arquivos entregues: 3/3\n✅ Google Docs entregue (+3,33 pontos)\n❌ Google Sheets faltando\n✅ Google Slides entregue (+3,33 pontos)\n\nNota automática: 6.66/10,0\n\nOBSERVAÇÕES:\n• Google Sheets (Inventário) não foi entregue - faltam 3,33 pontos\n",
-            "observacoes": [
-                "Google Sheets (Inventário) não foi entregue - faltam 3,33 pontos"
-            ]
+            "notaAutomatica": 9.99,
+            "status": "✅ Entrega completa",
+            "feedback": "Arquivos entregues: 3/3\n✅ Google Docs entregue (+3,33 pontos)\n✅ Google Sheets entregue (+3,33 pontos)\n✅ Google Slides entregue (+3,33 pontos)\n\nNota automática: 9.99/10,0",
+            "observacoes": []
         },
         "arquivos": {
             "docs": "✅",
-            "sheets": "❌",
+            "sheets": "✅",
             "slides": "✅"
         }
     },
@@ -255,9 +253,9 @@ const notasProvaPratica = {
   resumo: {
     equipesEntregues: 10,
     equipesPendentes: 0,
-    mediaNotaAutomatica: 8.99,
+    mediaNotaAutomatica: 9.32,
     mediaNotaFinal: null,
-    ultimaAtualizacao: '27-08-2026 15:37:35'
+    ultimaAtualizacao: '27-08-2026 15:45:04'
   }
 };
 

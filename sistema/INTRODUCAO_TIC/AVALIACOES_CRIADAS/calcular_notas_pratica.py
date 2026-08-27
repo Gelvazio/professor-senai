@@ -54,11 +54,13 @@ def analisar_entregas():
             for arquivo in item.rglob("*"):
                 if arquivo.is_file():
                     nome_arq = arquivo.name.lower()
+                    extensao = arquivo.suffix.lower()
                     entregas[equipe_num]['arquivos'].append(arquivo.name)
 
                     if 'guia' in nome_arq:
                         entregas[equipe_num]['docs'] = True
                     elif 'inventario' in nome_arq:
+                        # Google Sheets: pode ser arquivo do Google Drive ou .xlsx local
                         entregas[equipe_num]['sheets'] = True
                     elif 'apresenta' in nome_arq:
                         entregas[equipe_num]['slides'] = True
