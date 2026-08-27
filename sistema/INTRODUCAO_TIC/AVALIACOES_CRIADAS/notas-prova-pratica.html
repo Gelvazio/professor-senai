@@ -768,18 +768,21 @@
                     </div>
 
                     <div class="notas-section nota-docente-section">
-                        <h4>Notas do Docente (3,0 pontos)</h4>
-                        <div class="nota-item">
-                            <span class="nota-label">Clareza e Linguagem (1,0)</span>
-                            <input type="number" class="input-clareza" min="0" max="1" step="0.05" placeholder="0" value="${notas.clareza || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
-                        </div>
-                        <div class="nota-item">
-                            <span class="nota-label">Correção Técnica (1,0)</span>
-                            <input type="number" class="input-tecnica" min="0" max="1" step="0.05" placeholder="0" value="${notas.correcaoTecnica || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
-                        </div>
-                        <div class="nota-item">
-                            <span class="nota-label">Apresentação (1,0)</span>
-                            <input type="number" class="input-apresentacao" min="0" max="1" step="0.05" placeholder="0" value="${notas.apresentacao || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
+                        <h4>Notas do Docente (até 3,0 pontos) *</h4>
+                        ${arquivos.docs === '✅' ? `<div class="nota-item">
+                            <span class="nota-label">Google Docs (1,0)</span>
+                            <input type="number" class="input-docs-docente" min="0" max="1" step="0.05" placeholder="0" value="${notas.docsDOCENTE || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
+                        </div>` : ''}
+                        ${arquivos.sheets === '✅' ? `<div class="nota-item">
+                            <span class="nota-label">Google Sheets (1,0)</span>
+                            <input type="number" class="input-sheets-docente" min="0" max="1" step="0.05" placeholder="0" value="${notas.sheetsDOCENTE || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
+                        </div>` : ''}
+                        ${arquivos.slides === '✅' ? `<div class="nota-item">
+                            <span class="nota-label">Google Slides (1,0)</span>
+                            <input type="number" class="input-slides-docente" min="0" max="1" step="0.05" placeholder="0" value="${notas.slidesDOCENTE || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
+                        </div>` : ''}
+                        <div style="font-size: 11px; color: #666; margin-top: 8px; padding-top: 8px; border-top: 1px solid #ddd;">
+                            * 1,0 ponto por tarefa entregue (Docs, Sheets, Slides)
                         </div>
                     </div>
 
@@ -939,21 +942,26 @@
         function recalcularNotaFinal(equipeNum) {
             // Encontrar os inputs da equipe
             const cards = document.querySelectorAll('.card-equipe');
-            let cardEncontrado = false;
 
             cards.forEach((card, index) => {
                 if (index + 1 === equipeNum) {
-                    cardEncontrado = true;
-                    const clareza = parseFloat(card.querySelector('.input-clareza').value) || 0;
-                    const tecnica = parseFloat(card.querySelector('.input-tecnica').value) || 0;
-                    const apresentacao = parseFloat(card.querySelector('.input-apresentacao').value) || 0;
+                    // Coletar notas do docente conforme as entregas
+                    let notaDocente = 0;
+
+                    const inputDocs = card.querySelector('.input-docs-docente');
+                    const inputSheets = card.querySelector('.input-sheets-docente');
+                    const inputSlides = card.querySelector('.input-slides-docente');
+
+                    if (inputDocs) notaDocente += parseFloat(inputDocs.value) || 0;
+                    if (inputSheets) notaDocente += parseFloat(inputSheets.value) || 0;
+                    if (inputSlides) notaDocente += parseFloat(inputSlides.value) || 0;
 
                     // Encontrar a nota automática
                     const notaAutoText = card.querySelector('.nota-automatica-valor').textContent;
                     const notaAuto = parseFloat(notaAutoText.split('/')[0]) || 0;
 
                     // Calcular nota final (máximo 10,0)
-                    const notaFinal = Math.min(10, notaAuto + clareza + tecnica + apresentacao);
+                    const notaFinal = Math.min(10, notaAuto + notaDocente);
 
                     // Atualizar o elemento da nota final
                     const notaFinalEl = card.querySelector(`#nota-final-${equipeNum}`);
