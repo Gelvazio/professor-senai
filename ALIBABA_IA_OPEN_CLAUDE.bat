@@ -18,20 +18,8 @@ if "!DASHSCOPE_API_KEY!"=="" (
   exit /b 1
 )
 
-if "!DASHSCOPE_WORKSPACE_ID!"=="" set /p "DASHSCOPE_WORKSPACE_ID=Informe o WorkspaceId da Alibaba Cloud: "
-if "!DASHSCOPE_WORKSPACE_ID!"=="" (
-  echo ERRO: O WorkspaceId e obrigatorio.
-  pause
-  exit /b 1
-)
-
-set "CLAUDE_CODE_USE_OPENAI=1"
-set "OPENAI_API_KEY=!DASHSCOPE_API_KEY!"
-set "OPENAI_MODEL=qwen3.8-max"
-set "OPENAI_BASE_URL=https://!DASHSCOPE_WORKSPACE_ID!.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1"
-
 echo Iniciando OpenClaude com Alibaba Qwen...
-openclaude %*
+openclaude --provider dashscope-intl --model qwen3.6-plus %*
 set "OPENCLAUDE_EXIT_CODE=!ERRORLEVEL!"
 
 if not "!OPENCLAUDE_EXIT_CODE!"=="0" (

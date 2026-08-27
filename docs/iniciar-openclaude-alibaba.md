@@ -8,15 +8,14 @@
 
 - Confirmar que o comando `openclaude` está disponível.
 - Confirmar que `DASHSCOPE_API_KEY` está configurada.
-- Solicitar o `WorkspaceId` quando `DASHSCOPE_WORKSPACE_ID` não existir.
 
 ## 2. Configurar a sessão
 
 **Status:** ✅ Concluído
 
-- Usar a chave apenas em memória por meio de `OPENAI_API_KEY`.
-- Configurar o endpoint regional de Singapura.
-- Selecionar o modelo `qwen3.8-max`.
+- Usar exclusivamente `DASHSCOPE_API_KEY` para a autenticação.
+- Selecionar diretamente o provedor nativo `dashscope-intl`.
+- Selecionar o modelo `qwen3.6-plus` disponibilizado pelo provedor no OpenClaude.
 
 ## 3. Iniciar o agente
 

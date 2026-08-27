@@ -13,17 +13,17 @@
 
 **Status:** ✅ Concluído
 
-- Reutilizar a chave persistente `DASHSCOPE_API_KEY` como `OPENAI_API_KEY`.
-- Ativar o provedor compatível com OpenAI.
-- Selecionar o modelo `qwen3.8-max`.
+- Usar exclusivamente a chave persistente `DASHSCOPE_API_KEY`.
+- Ativar o provedor nativo `dashscope-intl`.
+- Selecionar o modelo `qwen3.6-plus`.
 - Não armazenar a chave em arquivos versionados.
 
-## 3. Configurar endpoint do workspace
+## 3. Configurar endpoint do provedor
 
-**Status:** ⬜ Pendente
+**Status:** ✅ Concluído
 
-- Obter o ID do workspace Alibaba Cloud.
-- Formar o endpoint regional compatível com OpenAI e salvá-lo em `OPENAI_BASE_URL`.
+- Usar o endpoint internacional definido internamente pelo provedor `dashscope-intl` do OpenClaude.
+- Não criar aliases da chave em outras variáveis de ambiente.
 
 ## Verificação permitida
 
