@@ -548,9 +548,9 @@
         if (window.gamif) await gamif.registrarEvento('pedido_venda_criado');
       }
 
-      const confirmadoAgora = status === 'Confirmado' && anterior?.status !== 'Confirmado';
+      const pedidoConfirmado = status === 'Confirmado';
       let numeroNotaFiscal = null;
-      if (confirmadoAgora && pedidoId) {
+      if (pedidoConfirmado && pedidoId) {
         numeroNotaFiscal = await gerarNotaFiscalAutomatica(pedidoId, { ...dados, numero });
       }
 
