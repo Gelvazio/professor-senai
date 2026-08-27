@@ -5929,39 +5929,37 @@
             ];
 
             const todasMaterias = await sbGet('materia', 'select=*'); // TODAS, sem filtro
+            console.log('📊 Total de matérias encontradas:', todasMaterias.length);
 
             for (const materia of todasMaterias) {
               for (const campo of camposPendentes) {
-                if (String(materia[campo] || '').toUpperCase() === 'PENDENTE') {
+                const statusCampo = String(materia[campo] || '').toUpperCase();
+                if (statusCampo === 'PENDENTE') {
                   const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — ${materia.nome}`;
+                  console.log('✋ Pendência encontrada em matéria:', descricao);
 
-                  // Verifica se já existe na tabela por descricao + tipo_origem + materia_id
-                  const existente = await sbGet(
-                    'pendencias',
-                    `select=id&descricao=eq.${encodeURIComponent(descricao)}&tipo_origem=eq.MATERIA&materia_id=eq.${materia.id}&status=neq.CANCELADO`
-                  );
-
-                  if (!Array.isArray(existente) || existente.length === 0) {
-                    // Não existe, insere novo
-                    try {
-                      await sbPost('pendencias', {
-                        descricao: descricao,
-                        materia_id: materia.id,
-                        status: 'PENDENTE',
-                        tipo_origem: 'MATERIA',
-                        datavencimento: null,
-                        created_at: new Date().toISOString()
-                      });
-                      totalInseridasMateria++;
-                    } catch (e) {
-                      console.warn('Erro ao inserir pendência de matéria:', e);
-                    }
+                  // Simples: apenas tenta inserir, deixa o Supabase lidar com duplicatas
+                  try {
+                    const resultado = await sbPost('pendencias', {
+                      descricao: descricao,
+                      materia_id: materia.id,
+                      status: 'PENDENTE',
+                      tipo_origem: 'MATERIA',
+                      datavencimento: null,
+                      created_at: new Date().toISOString()
+                    });
+                    console.log('✅ Inserida pendência de matéria:', descricao);
+                    totalInseridasMateria++;
+                  } catch (e) {
+                    // Pode ser duplicata (unique constraint), o que é ok
+                    console.log('⚠️ Pendência de matéria não inserida (pode já existir):', descricao, e.message);
                   }
                 }
               }
             }
+            console.log('📊 Total de matérias com pendências inseridas:', totalInseridasMateria);
           } catch (e) {
-            console.warn('Erro ao processar matérias:', e);
+            console.error('❌ Erro ao processar matérias:', e);
           }
 
           // 🔍 2️⃣ PERCORRE: TODAS as avaliações e verifica status PENDENTE
@@ -5975,39 +5973,37 @@
             ];
 
             const todasAvaliacoes = await sbGet('avaliacao', 'select=*'); // TODAS, sem filtro
+            console.log('📊 Total de avaliações encontradas:', todasAvaliacoes.length);
 
             for (const aval of todasAvaliacoes) {
               for (const campo of camposAvaliacao) {
-                if (String(aval[campo] || '').toUpperCase() === 'PENDENTE') {
+                const statusCampo = String(aval[campo] || '').toUpperCase();
+                if (statusCampo === 'PENDENTE') {
                   const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — Avaliação: ${aval.nome || 'sem nome'}`;
+                  console.log('✋ Pendência encontrada em avaliação:', descricao);
 
-                  // Verifica se já existe na tabela por descricao + tipo_origem + materia_id
-                  const existente = await sbGet(
-                    'pendencias',
-                    `select=id&descricao=eq.${encodeURIComponent(descricao)}&tipo_origem=eq.AVALIACAO&materia_id=eq.${aval.materia_id}&status=neq.CANCELADO`
-                  );
-
-                  if (!Array.isArray(existente) || existente.length === 0) {
-                    // Não existe, insere novo
-                    try {
-                      await sbPost('pendencias', {
-                        descricao: descricao,
-                        materia_id: aval.materia_id,
-                        status: 'PENDENTE',
-                        tipo_origem: 'AVALIACAO',
-                        datavencimento: null,
-                        created_at: new Date().toISOString()
-                      });
-                      totalInseridasAvaliacao++;
-                    } catch (e) {
-                      console.warn('Erro ao inserir pendência de avaliação:', e);
-                    }
+                  // Simples: apenas tenta inserir, deixa o Supabase lidar com duplicatas
+                  try {
+                    const resultado = await sbPost('pendencias', {
+                      descricao: descricao,
+                      materia_id: aval.materia_id,
+                      status: 'PENDENTE',
+                      tipo_origem: 'AVALIACAO',
+                      datavencimento: null,
+                      created_at: new Date().toISOString()
+                    });
+                    console.log('✅ Inserida pendência de avaliação:', descricao);
+                    totalInseridasAvaliacao++;
+                  } catch (e) {
+                    // Pode ser duplicata (unique constraint), o que é ok
+                    console.log('⚠️ Pendência de avaliação não inserida (pode já existir):', descricao, e.message);
                   }
                 }
               }
             }
+            console.log('📊 Total de avaliações com pendências inseridas:', totalInseridasAvaliacao);
           } catch (e) {
-            console.warn('Erro ao processar avaliações:', e);
+            console.error('❌ Erro ao processar avaliações:', e);
           }
 
           // 4️⃣ LISTA: Carrega e exibe a tabela "pendencias"
