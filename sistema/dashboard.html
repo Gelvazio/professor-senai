@@ -5893,9 +5893,11 @@
 
       async function atualizarPendencias() {
         abrirModalAtualizandoPendencias();
+        const tempoMinimoExibicao = new Promise(resolve => setTimeout(resolve, 3000));
         try {
           await carregarPendenciasSupabase();
         } finally {
+          await tempoMinimoExibicao;
           fecharModalAtualizandoPendencias();
         }
       }
