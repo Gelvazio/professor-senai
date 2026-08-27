@@ -6079,11 +6079,11 @@
                 const aval = await sbGet('avaliacao', 'select=*&id=eq.' + pend.avaliacao_id);
                 if (aval && aval.length > 0) {
                   const updateData = {};
-                  if (pend.status_avaliacao) updateData.status_avaliacao = 'CONCLUIDO';
-                  if (pend.status_gabarito) updateData.status_gabarito = 'CONCLUIDO';
-                  if (pend.status_revisao) updateData.status_revisao = 'CONCLUIDO';
-                  if (pend.status_cadastro_sgn) updateData.status_cadastro_sgn = 'CONCLUIDO';
-                  if (pend.acompanhamento_pedagogico_sgn) updateData.acompanhamento_pedagogico_sgn = 'CONCLUIDO';
+                  if (pend.status_avaliacao === 'CONCLUIDO') updateData.status_avaliacao = 'CONCLUIDO';
+                  if (pend.status_gabarito === 'CONCLUIDO') updateData.status_gabarito = 'CONCLUIDO';
+                  if (pend.status_revisao === 'CONCLUIDO') updateData.status_revisao = 'CONCLUIDO';
+                  if (pend.status_cadastro_sgn === 'CONCLUIDO') updateData.status_cadastro_sgn = 'CONCLUIDO';
+                  if (pend.acompanhamento_pedagogico_sgn === 'CONCLUIDO') updateData.acompanhamento_pedagogico_sgn = 'CONCLUIDO';
 
                   if (Object.keys(updateData).length > 0) {
                     console.log(`📋 Sincronizando avaliação ${pend.avaliacao_id}:`, updateData);
@@ -6102,9 +6102,9 @@
                 const mat = await sbGet('materia', 'select=*&id=eq.' + pend.materia_id);
                 if (mat && mat.length > 0) {
                   const updateData = {};
-                  if (pend.status_criacao_avaliacao) updateData.status_criacao_avaliacao = 'CONCLUIDO';
-                  if (pend.status_plano_aula) updateData.status_plano_aula = 'CONCLUIDO';
-                  if (pend.status_plano_ensino) updateData.status_plano_ensino = 'CONCLUIDO';
+                  if (pend.status_criacao_avaliacao === 'CONCLUIDO') updateData.status_criacao_avaliacao = 'CONCLUIDO';
+                  if (pend.status_plano_aula === 'CONCLUIDO') updateData.status_plano_aula = 'CONCLUIDO';
+                  if (pend.status_plano_ensino === 'CONCLUIDO') updateData.status_plano_ensino = 'CONCLUIDO';
 
                   if (Object.keys(updateData).length > 0) {
                     console.log(`📄 Sincronizando matéria ${pend.materia_id}:`, updateData);
