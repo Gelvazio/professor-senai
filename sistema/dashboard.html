@@ -2290,7 +2290,15 @@
             <button class="btn-cancelar" onclick="fecharFormPendencia()">Cancelar</button>
           </div>
         </div>
-        <div class="pendencias-resumo" id="pendenciasResumo">Carregando pendências…</div>
+        <div class="pendencias-resumo">
+          <div style="display:flex; align-items:center; gap:12px; justify-content:space-between;">
+            <span id="pendenciasResumo">Carregando pendências…</span>
+            <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#666; cursor:pointer;">
+              <input type="checkbox" id="togglePendenciasConc" onchange="refiltrarPendencias()">
+              Mostrar concluídas
+            </label>
+          </div>
+        </div>
         <div class="pendencias-lista" id="pendenciasLista">
           <div class="pendencias-estado">⏳ Carregando…</div>
         </div>
@@ -5832,9 +5840,22 @@
         msg.style.color = erro ? '#c62828' : '#2e7d32';
       }
 
+      let _todasPendencias = []; // Armazena todas para filtrar
+
+      function refiltrarPendencias() {
+        const mostraConc = document.getElementById('togglePendenciasConc')?.checked || false;
+        const filtradas = mostraConc
+          ? _todasPendencias
+          : _todasPendencias.filter(p => !['CONCLUIDO', 'CONCLUIDA', 'CANCELADO'].includes(String(p.status || '').toUpperCase()));
+        renderPendencias(filtradas);
+      }
+
       function renderPendencias(pendencias) {
         var lista = document.getElementById('pendenciasLista');
         var resumo = document.getElementById('pendenciasResumo');
+
+        _todasPendencias = pendencias; // Armazena todas
+
         if (!Array.isArray(pendencias) || pendencias.length === 0) {
           resumo.textContent = 'Nenhuma pendência cadastrada.';
           lista.innerHTML = '<div class="pendencias-estado">✅ Você não possui pendências no momento.</div>';
@@ -5844,8 +5865,15 @@
         var abertas = pendencias.filter(function(item) {
           return !['CONCLUIDO', 'CANCELADO'].includes(String(item.status || '').toUpperCase());
         }).length;
-        resumo.textContent = pendencias.length + ' registro(s) encontrado(s) · ' + abertas + ' pendência(s) em aberto';
-        lista.innerHTML = pendencias.map(function(item) {
+        var concluidas = pendencias.filter(function(item) {
+          return ['CONCLUIDO', 'CONCLUIDA'].includes(String(item.status || '').toUpperCase());
+        }).length;
+
+        const mostraConc = document.getElementById('togglePendenciasConc')?.checked || false;
+        const pendenciasExibidas = mostraConc ? pendencias : pendencias.filter(p => !['CONCLUIDO', 'CONCLUIDA', 'CANCELADO'].includes(String(p.status || '').toUpperCase()));
+
+        resumo.textContent = abertas + ' pendência(s) em aberto · ' + concluidas + ' concluída(s)';
+        lista.innerHTML = pendenciasExibidas.map(function(item) {
           var horas = item.horas_ministradas && item.total_horas
             ? '<span>⏱️ ' + escaparPendencia(item.horas_ministradas) + ' de ' + escaparPendencia(item.total_horas) + ' horas</span>'
             : '';
