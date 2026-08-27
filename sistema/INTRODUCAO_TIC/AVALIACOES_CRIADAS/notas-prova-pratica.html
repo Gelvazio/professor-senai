@@ -832,17 +832,19 @@
             tbody.innerHTML = '';
 
             dados.equipes.forEach(equipe => {
+                const notas = equipe.notas || {};
+                const notaAuto = notas.notaAutomatica || 0;
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
                     <td><span class="equipe-num">${equipe.numero}</span></td>
                     <td>${equipe.nomes.join(', ')}</td>
-                    <td>—</td>
-                    <td>—</td>
-                    <td>—</td>
-                    <td>—</td>
-                    <td>—</td>
-                    <td>—</td>
-                    <td><span class="status-badge">${equipe.status}</span></td>
+                    <td>${(notas.organizacao || 0).toFixed(2)}</td>
+                    <td>${(notas.docs || 0).toFixed(2)}</td>
+                    <td>${(notas.sheets || 0).toFixed(2)}</td>
+                    <td>${(notas.slides || 0).toFixed(2)}</td>
+                    <td>${(notas.seguranca || 0).toFixed(2)}</td>
+                    <td><strong>${notaAuto.toFixed(2)}</strong></td>
+                    <td><span class="status-badge">${notas.status || 'Pendente'}</span></td>
                 `;
                 tbody.appendChild(tr);
             });
