@@ -6097,6 +6097,31 @@
           console.log('  → ' + totalInseridasMateria + ' inseridas de matérias');
           console.log('  → ' + totalInseridasAvaliacao + ' inseridas de avaliações');
 
+          // 2️⃣.5 PREENCHE: Atualiza materia_descricao nas pendências existentes
+          try {
+            console.log('📝 Preenchendo materia_descricao nas pendências existentes...');
+            const pendenciasVazias = await sbGet('pendencias', 'select=*');
+            let totalAtualizadas = 0;
+
+            for (const pend of pendenciasVazias) {
+              if (!pend.materia_descricao && pend.materia_id) {
+                try {
+                  const mat = await sbGet('materia', 'select=nome&id=eq.' + pend.materia_id);
+                  if (mat && mat.length > 0) {
+                    await sbPatch('pendencias', 'id', pend.id, { materia_descricao: mat[0].nome });
+                    console.log(`✅ Pendência ${pend.id} atualizada com matéria: "${mat[0].nome}"`);
+                    totalAtualizadas++;
+                  }
+                } catch (e) {
+                  console.warn(`⚠️ Erro ao atualizar pendência ${pend.id}:`, e.message);
+                }
+              }
+            }
+            console.log(`📊 Total de pendências atualizadas com materia_descricao: ${totalAtualizadas}`);
+          } catch (e) {
+            console.error('⚠️ Erro ao preencher materia_descricao:', e);
+          }
+
           // 3️⃣ SINCRONIZA: Se pendência está CONCLUIDA, marca como CONCLUIDA na tabela de origem
           try {
             const pendenciasAttuais = await sbGet('pendencias', 'select=*&status=eq.CONCLUIDA');
