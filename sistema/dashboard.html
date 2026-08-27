@@ -5910,14 +5910,17 @@
       }
 
       async function carregarPendenciasSupabase() {
-        document.getElementById('pendenciasResumo').textContent = 'Carregando pendências…';
-        document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⏳ Carregando…</div>';
+        document.getElementById('pendenciasResumo').textContent = 'Atualizando pendências…';
+        document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⏳ Processando matérias e avaliações…</div>';
         setPendenciasMsg('');
         try {
-          // ⚠️ FLUXO: 1. BUSCA DO SUPABASE → 2. INSERE NA TABELA PENDENCIAS → 3. LISTA NA TELA
-          let pendenciasParaInserir = [];
+          // ⚠️ FLUXO: 1. PERCORRE TODAS AS MATÉRIAS → 2. PERCORRE TODAS AS AVALIAÇÕES
+          //           3. INSERE NA TABELA PENDENCIAS (sem duplicatas) → 4. LISTA NA TELA
 
-          // 1️⃣ BUSCA: Pendências de MATÉRIAS com status PENDENTE
+          let totalInseridasMateria = 0;
+          let totalInseridasAvaliacao = 0;
+
+          // 🔍 1️⃣ PERCORRE: TODAS as matérias e verifica status PENDENTE
           try {
             const camposPendentes = [
               'status_criacao_avaliacao',
@@ -5925,27 +5928,48 @@
               'status_plano_ensino'
             ];
 
-            const materiasComStatus = await sbGet('materia', 'select=id,nome,ensalado&ensalado=eq.true');
+            const todasMaterias = await sbGet('materia', 'select=*'); // TODAS, sem filtro
 
-            materiasComStatus.forEach(materia => {
-              camposPendentes.forEach(campo => {
+            for (const materia of todasMaterias) {
+              for (const campo of camposPendentes) {
                 if (String(materia[campo] || '').toUpperCase() === 'PENDENTE') {
-                  pendenciasParaInserir.push({
-                    descricao: `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — ${materia.nome}`,
-                    materia_id: materia.id,
-                    status: 'PENDENTE',
-                    tipo_origem: 'MATERIA'
-                  });
+                  // Gera chave única: materia_{id}_{campo}
+                  const chavePendencia = `materia_${materia.id}_${campo}`;
+                  const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — ${materia.nome}`;
+
+                  // Verifica se já existe na tabela
+                  const existente = await sbGet(
+                    'pendencias',
+                    `select=id&chave_unica=eq.${chavePendencia}`
+                  );
+
+                  if (!Array.isArray(existente) || existente.length === 0) {
+                    // Não existe, insere novo
+                    try {
+                      await sbPost('pendencias', {
+                        chave_unica: chavePendencia,
+                        descricao: descricao,
+                        materia_id: materia.id,
+                        status: 'PENDENTE',
+                        tipo_origem: 'MATERIA',
+                        datavencimento: null,
+                        created_at: new Date().toISOString()
+                      });
+                      totalInseridasMateria++;
+                    } catch (e) {
+                      console.warn('Erro ao inserir pendência de matéria:', e);
+                    }
+                  }
                 }
-              });
-            });
+              }
+            }
           } catch (e) {
-            console.warn('Erro ao buscar pendências de matérias:', e);
+            console.warn('Erro ao processar matérias:', e);
           }
 
-          // 1️⃣ BUSCA: Pendências de AVALIAÇÕES com status PENDENTE
+          // 🔍 2️⃣ PERCORRE: TODAS as avaliações e verifica status PENDENTE
           try {
-            const avaliacao_campos = [
+            const camposAvaliacao = [
               'status_avaliacao',
               'status_gabarito',
               'status_revisao',
@@ -5953,122 +5977,58 @@
               'acompanhamento_pedagogico_sgn'
             ];
 
-            const avaliacoesCompletas = await sbGet('avaliacao', 'select=*');
+            const todasAvaliacoes = await sbGet('avaliacao', 'select=*'); // TODAS, sem filtro
 
-            avaliacoesCompletas.forEach(aval => {
-              avaliacao_campos.forEach(campo => {
+            for (const aval of todasAvaliacoes) {
+              for (const campo of camposAvaliacao) {
                 if (String(aval[campo] || '').toUpperCase() === 'PENDENTE') {
-                  pendenciasParaInserir.push({
-                    descricao: `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — Avaliação: ${aval.nome || 'sem nome'}`,
-                    materia_id: aval.materia_id,
-                    status: 'PENDENTE',
-                    tipo_origem: 'AVALIACAO'
-                  });
-                }
-              });
-            });
-          } catch (e) {
-            console.warn('Erro ao buscar pendências de avaliações:', e);
-          }
+                  // Gera chave única: avaliacao_{id}_{campo}
+                  const chavePendencia = `avaliacao_${aval.id}_${campo}`;
+                  const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — Avaliação: ${aval.nome || 'sem nome'}`;
 
-          // 2️⃣ INSERE: Adiciona pendências encontradas na tabela "pendencias"
-          for (const pend of pendenciasParaInserir) {
-            try {
-              await sbPost('pendencias', {
-                descricao: pend.descricao,
-                materia_id: pend.materia_id,
-                status: pend.status,
-                tipo_origem: pend.tipo_origem,
-                datavencimento: null,
-                dataCriacao: new Date().toISOString()
-              });
-            } catch (e) {
-              // Pode falhar por constraint de duplicação, o que é ok
-              console.warn('Pendência pode já existir:', pend.descricao);
-            }
-          }
+                  // Verifica se já existe na tabela
+                  const existente = await sbGet(
+                    'pendencias',
+                    `select=id&chave_unica=eq.${chavePendencia}`
+                  );
 
-          // 3️⃣ CONCLUI AUTOMATICAMENTE: Marca como CONCLUIDA se matéria/avaliação não tem mais status PENDENTE
-          try {
-            const pendenciasExistentes = await sbGet('pendencias', 'select=*');
-            let pendênciasConcluidasAutomaticamente = 0;
-
-            for (const pend of pendenciasExistentes) {
-              if (pend.status === 'CONCLUIDA') continue; // Já concluída, pula
-              if (!pend.tipo_origem) continue; // Sem tipo_origem, ignora
-
-              let deveConcluir = false;
-
-              if (pend.tipo_origem === 'MATERIA' && pend.materia_id) {
-                try {
-                  const materia = await sbGet('materia', `select=*&id=eq.${pend.materia_id}`);
-                  if (Array.isArray(materia) && materia.length > 0) {
-                    const m = materia[0];
-                    const camposPendentes = [
-                      'status_criacao_avaliacao',
-                      'status_plano_aula',
-                      'status_plano_ensino'
-                    ];
-                    // Se nenhum campo está mais PENDENTE, conclui
-                    deveConcluir = !camposPendentes.some(
-                      campo => String(m[campo] || '').toUpperCase() === 'PENDENTE'
-                    );
-                  }
-                } catch (e) {
-                  console.warn('Erro ao verificar matéria:', e);
-                }
-              } else if (pend.tipo_origem === 'AVALIACAO' && pend.materia_id) {
-                try {
-                  // Busca pelo nome na descrição (ex: "Avaliação: Teste")
-                  const nomeAvaliacao = pend.descricao.match(/Avaliação: (.+?)$/)?.[1];
-                  if (nomeAvaliacao) {
-                    const avaliacoes = await sbGet('avaliacao', `select=*&nome=ilike.%${nomeAvaliacao}%`);
-                    if (Array.isArray(avaliacoes) && avaliacoes.length > 0) {
-                      const aval = avaliacoes[0];
-                      const camposAvaliacao = [
-                        'status_avaliacao',
-                        'status_gabarito',
-                        'status_revisao',
-                        'status_cadastro_sgn',
-                        'acompanhamento_pedagogico_sgn'
-                      ];
-                      // Se nenhum campo está mais PENDENTE, conclui
-                      deveConcluir = !camposAvaliacao.some(
-                        campo => String(aval[campo] || '').toUpperCase() === 'PENDENTE'
-                      );
+                  if (!Array.isArray(existente) || existente.length === 0) {
+                    // Não existe, insere novo
+                    try {
+                      await sbPost('pendencias', {
+                        chave_unica: chavePendencia,
+                        descricao: descricao,
+                        materia_id: aval.materia_id,
+                        status: 'PENDENTE',
+                        tipo_origem: 'AVALIACAO',
+                        datavencimento: null,
+                        created_at: new Date().toISOString()
+                      });
+                      totalInseridasAvaliacao++;
+                    } catch (e) {
+                      console.warn('Erro ao inserir pendência de avaliação:', e);
                     }
                   }
-                } catch (e) {
-                  console.warn('Erro ao verificar avaliação:', e);
-                }
-              }
-
-              if (deveConcluir) {
-                try {
-                  await sbPatch('pendencias', 'id', pend.id, {
-                    status: 'CONCLUIDA',
-                    dataConclusao: new Date().toISOString()
-                  });
-                  pendênciasConcluidasAutomaticamente++;
-                } catch (e) {
-                  console.warn('Erro ao concluir pendência:', e);
                 }
               }
             }
           } catch (e) {
-            console.warn('Erro ao processar conclusões automáticas:', e);
+            console.warn('Erro ao processar avaliações:', e);
           }
 
-          // 4️⃣ LISTA: Carrega todos os registros da tabela "pendencias"
-          pendenciasRegistros = await sbGet('pendencias', 'select=*&order=datavencimento.asc,id.asc');
-          renderPendencias(pendenciasRegistros);
+          // 4️⃣ LISTA: Carrega e exibe a tabela "pendencias"
+          await listarPendenciasSupabase();
 
-          if (pendenciasParaInserir.length > 0) {
-            setPendenciasMsg(`✅ ${pendenciasParaInserir.length} pendência(s) de matérias/avaliações encontrada(s) e adicionada(s).`);
+          // Mensagem de sucesso
+          const totalInseridas = totalInseridasMateria + totalInseridasAvaliacao;
+          if (totalInseridas > 0) {
+            setPendenciasMsg(`✅ ${totalInseridas} pendência(s) adicionada(s) (${totalInseridasMateria} matérias + ${totalInseridasAvaliacao} avaliações)`);
+          } else {
+            setPendenciasMsg('✅ Atualização concluída. Nenhuma pendência nova encontrada.');
           }
         } catch (erro) {
-          document.getElementById('pendenciasResumo').textContent = 'Não foi possível carregar as pendências.';
-          document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⚠️ Erro ao carregar pendências do Supabase.</div>';
+          document.getElementById('pendenciasResumo').textContent = 'Erro na atualização.';
+          document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⚠️ Erro ao atualizar pendências.</div>';
           setPendenciasMsg('Erro: ' + (erro.message || erro), true);
         }
       }
