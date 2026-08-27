@@ -92,69 +92,35 @@ def analisar_entregas():
 
     return entregas
 
-def calcular_nota_organizacao(equipe_num, entregas_equipe):
-    """
-    Calcula nota de organização (1,0 ponto)
-    - Identificação: 0,10
-    - Acessibilidade de cada arquivo: 0,20 cada (máx 0,60)
-    - Formato nativo: 0,05 cada (máx 0,15)
-    - Nome correto: 0,05 cada (máx 0,15)
-    """
-    nota = 0.10  # Identificação automática
-
-    # Acessibilidade
-    arquivos_count = 0
-    if entregas_equipe['docs']:
-        nota += 0.20
-        arquivos_count += 1
-    if entregas_equipe['sheets']:
-        nota += 0.20
-        arquivos_count += 1
-    if entregas_equipe['slides']:
-        nota += 0.20
-        arquivos_count += 1
-
-    # Formato e nome (assumindo corretos se entregues)
-    nota += arquivos_count * 0.10  # 0,05 formato + 0,05 nome
-
-    return min(1.0, nota)
-
 def calcular_nota_docs(equipe_num, entregas_equipe):
     """
-    Calcula nota do Google Docs (2,0 pontos)
-    Se entregue: 1,0 (arquivo presente)
+    Calcula nota do Google Docs (3,33 pontos por tarefa entregue)
+    Se entregue: 3,33
     Se não entregue: 0,0
     """
     if entregas_equipe['docs']:
-        return 1.0  # Será analisado manualmente ou por OCR
+        return 3.33
     return 0.0
 
 def calcular_nota_sheets(equipe_num, entregas_equipe):
     """
-    Calcula nota do Google Sheets (2,0 pontos)
-    Se entregue: 1,0 (arquivo presente)
+    Calcula nota do Google Sheets (3,33 pontos por tarefa entregue)
+    Se entregue: 3,33
     Se não entregue: 0,0
     """
     if entregas_equipe['sheets']:
-        return 1.0  # Será analisado manualmente ou por OCR
+        return 3.33
     return 0.0
 
 def calcular_nota_slides(equipe_num, entregas_equipe):
     """
-    Calcula nota do Google Slides (1,5 pontos)
-    Se entregue: 0,75 (arquivo presente)
+    Calcula nota do Google Slides (3,33 pontos por tarefa entregue)
+    Se entregue: 3,33
     Se não entregue: 0,0
     """
     if entregas_equipe['slides']:
-        return 0.75  # Será analisado manualmente ou por OCR
+        return 3.33
     return 0.0
-
-def calcular_nota_seguranca():
-    """
-    Calcula nota de Segurança e Interpretação (0,5 pontos)
-    Será completada após análise manual
-    """
-    return 0.0  # Pendente análise manual
 
 def calcular_notas_automaticas(entregas):
     """Calcula notas automáticas para cada equipe"""
@@ -164,21 +130,17 @@ def calcular_notas_automaticas(entregas):
         if equipe_num in entregas:
             e = entregas[equipe_num]
             notas[equipe_num] = {
-                'organizacao': calcular_nota_organizacao(equipe_num, e),
                 'docs': calcular_nota_docs(equipe_num, e),
                 'sheets': calcular_nota_sheets(equipe_num, e),
                 'slides': calcular_nota_slides(equipe_num, e),
-                'seguranca': calcular_nota_seguranca(),
                 'arquivos_entregues': e['arquivos'],
                 'completa': e['docs'] and e['sheets'] and e['slides']
             }
         else:
             notas[equipe_num] = {
-                'organizacao': 0.0,
                 'docs': 0.0,
                 'sheets': 0.0,
                 'slides': 0.0,
-                'seguranca': 0.0,
                 'arquivos_entregues': [],
                 'completa': False
             }
@@ -186,19 +148,11 @@ def calcular_notas_automaticas(entregas):
     return notas
 
 def calcular_nota_automatica_total(nota_eq):
-    """Calcula nota automática total (até 7,0)"""
-    # Reajustar notas para os pesos corretos
-    total = (
-        nota_eq['organizacao'] * 1.0 +  # 1,0
-        nota_eq['docs'] * 2.0 +          # 2,0
-        nota_eq['sheets'] * 2.0 +        # 2,0
-        nota_eq['slides'] * 1.5 +        # 1,5
-        nota_eq['seguranca'] * 0.5       # 0,5
-    )
-
-    # Normalizar para 7,0
-    total_normalizado = min(7.0, total * (7.0 / 7.0))
-    return round(total_normalizado, 2)
+    """Calcula nota automática total (até 10,0)
+    3,33 pontos por tarefa entregue (Docs, Sheets, Slides)
+    """
+    total = nota_eq['docs'] + nota_eq['sheets'] + nota_eq['slides']
+    return round(total, 2)
 
 def gerar_status(nota_eq, nota_auto):
     """Gera status baseado na entrega e notas"""
@@ -216,31 +170,51 @@ def gerar_status(nota_eq, nota_auto):
         if arquivos:
             return f'⚠️ Entrega incompleta ({", ".join(arquivos)} faltando)'
 
-    if nota_auto >= 5.6:
-        return '✅ Requisitos objetivos atendidos'
+    if nota_auto >= 7.0:
+        return '✅ Entrega completa'
     else:
-        return '⚠️ Revisar requisitos'
+        return '⚠️ Revisar arquivos'
+
+def gerar_observacoes_faltantes(nota_eq):
+    """Gera observações sobre tarefas não entregues"""
+    observacoes = []
+
+    if not nota_eq['docs']:
+        observacoes.append("Google Docs (Guia da Equipe) não foi entregue - faltam 3,33 pontos")
+    if not nota_eq['sheets']:
+        observacoes.append("Google Sheets (Inventário) não foi entregue - faltam 3,33 pontos")
+    if not nota_eq['slides']:
+        observacoes.append("Google Slides (Apresentação) não foi entregue - faltam 3,33 pontos")
+
+    return observacoes
 
 def gerar_feedback(nota_eq, nota_auto):
     """Gera feedback automático"""
     feedback = f"Arquivos entregues: {len(nota_eq['arquivos_entregues'])}/3\n"
 
     if nota_eq['docs']:
-        feedback += "✅ Google Docs entregue\n"
+        feedback += "✅ Google Docs entregue (+3,33 pontos)\n"
     else:
         feedback += "❌ Google Docs faltando\n"
 
     if nota_eq['sheets']:
-        feedback += "✅ Google Sheets entregue\n"
+        feedback += "✅ Google Sheets entregue (+3,33 pontos)\n"
     else:
         feedback += "❌ Google Sheets faltando\n"
 
     if nota_eq['slides']:
-        feedback += "✅ Google Slides entregue\n"
+        feedback += "✅ Google Slides entregue (+3,33 pontos)\n"
     else:
         feedback += "❌ Google Slides faltando\n"
 
-    feedback += f"\nNota automática provisória: {nota_auto}/7,0"
+    feedback += f"\nNota automática: {nota_auto}/10,0"
+
+    # Adicionar observações sobre faltantes
+    obs = gerar_observacoes_faltantes(nota_eq)
+    if obs:
+        feedback += "\n\nOBSERVAÇÕES:\n"
+        for o in obs:
+            feedback += f"• {o}\n"
 
     return feedback
 
@@ -257,24 +231,19 @@ def gerar_js_file(entregas, notas):
 
         status = gerar_status(nota_eq, nota_auto)
         feedback = gerar_feedback(nota_eq, nota_auto)
+        observacoes = gerar_observacoes_faltantes(nota_eq)
 
         equipes_data.append({
             'numero': equipe_num,
             'nomes': EQUIPES_TEMPLATE[equipe_num]['nomes'],
             'notas': {
-                'organizacao': round(nota_eq['organizacao'], 2),
                 'docs': round(nota_eq['docs'], 2),
                 'sheets': round(nota_eq['sheets'], 2),
                 'slides': round(nota_eq['slides'], 2),
-                'seguranca': round(nota_eq['seguranca'], 2),
                 'notaAutomatica': nota_auto,
                 'status': status,
-                'clareza': None,
-                'correcaoTecnica': None,
-                'apresentacao': None,
-                'notaDocente': None,
-                'notaFinal': None,
-                'feedback': feedback
+                'feedback': feedback,
+                'observacoes': observacoes
             },
             'arquivos': {
                 'docs': '✅' if nota_eq['docs'] else '❌',
@@ -297,23 +266,16 @@ const notasProvaPratica = {{
     data: '26-08-2026',
     turma: 'Turma PG',
     totalAlunos: 32,
-    notaMaximaAutomatica: 7.0,
-    notaMaximaDocente: 3.0,
+    notaMaximaAutomatica: 10.0,
+    notaMaximaDocente: 0.0,
     notaMaximaTotal: 10.0,
     dataAtualizacao: '{datetime.now().strftime('%d-%m-%Y %H:%M:%S')}'
   }},
   criterios: {{
     automaticos: [
-      {{ nome: 'Organização e Entrega', peso: 1.0, descricao: 'Identificação da equipe, acessibilidade e formato dos arquivos' }},
-      {{ nome: 'Google Docs (Guia)', peso: 2.0, descricao: 'Conteúdo, estrutura, termos técnicos e fontes' }},
-      {{ nome: 'Google Sheets (Inventário)', peso: 2.0, descricao: 'Cabeçalhos, registros, fórmulas e formatação' }},
-      {{ nome: 'Google Slides (Apresentação)', peso: 1.5, descricao: 'Estrutura de slides, conteúdo e apresentação' }},
-      {{ nome: 'Segurança e Interpretação', peso: 0.5, descricao: 'Termos de segurança encontrados nos documentos' }}
-    ],
-    docente: [
-      {{ nome: 'Clareza e Linguagem', peso: 1.0, descricao: 'Clareza na comunicação escrita e oral' }},
-      {{ nome: 'Correção Técnica', peso: 1.0, descricao: 'Precisão dos conteúdos técnicos' }},
-      {{ nome: 'Apresentação e Cooperação', peso: 1.0, descricao: 'Qualidade da apresentação e trabalho em equipe' }}
+      {{ nome: 'Google Docs (Guia da Equipe)', peso: 3.33, descricao: 'Conteúdo, estrutura, termos técnicos e fontes' }},
+      {{ nome: 'Google Sheets (Inventário)', peso: 3.33, descricao: 'Cabeçalhos, registros, fórmulas e formatação' }},
+      {{ nome: 'Google Slides (Apresentação)', peso: 3.34, descricao: 'Estrutura de slides, conteúdo e apresentação' }}
     ]
   }},
   equipes: {json.dumps(equipes_data, ensure_ascii=False, indent=4)},

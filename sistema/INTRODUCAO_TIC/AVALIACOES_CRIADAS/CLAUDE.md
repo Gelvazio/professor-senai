@@ -34,11 +34,9 @@ AVALIACOES_CRIADAS/
 
 ### 2. **NOTAS-EQUIPE-PROVA-PRATICA.js**
 - **Conteúdo**: Dados das 10 equipes da prova prática (26-08-2026)
-- **Nota automática**: até 7,0 pontos
-- **Nota docente**: até 3,0 pontos
-- **Nota final**: até 10,0 pontos
-- **Parâmetros**: Organização, Docs, Sheets, Slides, Segurança
-- **Status**: Entregas e retroalimentação por equipe
+- **Nota automática**: até 10,0 pontos (3,33 por tarefa entregue)
+- **Parâmetros**: Docs, Sheets, Slides
+- **Status**: Entregas e retroalimentação automática com observações
 - **Uso**: Carregado no HTML para exibir cards das equipes
 
 ### 3. **NOTAS-PRATICA-FINAL.js**
@@ -62,17 +60,13 @@ Analisa automaticamente as entregas de prova prática da pasta `PROVA_PRATICA/EN
 
 1. **Lê as pastas** de entrega (EQUIPE_01 a EQUIPE_10)
 2. **Verifica os arquivos** entregues:
-   - `GUIA_DA_EQUIPE` → Google Docs (2,0 pontos)
-   - `INVENTARIO_DA_EQUIPE` → Google Sheets (2,0 pontos)
-   - `APRESENTACAO_DA_EQUIPE` → Google Slides (1,5 pontos)
-3. **Calcula notas automáticas**:
-   - Organização e Entrega: 1,0
-   - Docs: 2,0
-   - Sheets: 2,0
-   - Slides: 1,5
-   - Segurança: 0,5
-   - **Total**: até 7,0 pontos
-4. **Gera arquivo JS** com todos os dados estruturados
+   - `GUIA_DA_EQUIPE` → Google Docs (3,33 pontos)
+   - `INVENTARIO_DA_EQUIPE` → Google Sheets (3,33 pontos)
+   - `APRESENTACAO_DA_EQUIPE` → Google Slides (3,34 pontos)
+3. **Calcula notas automáticas**: 3,33 pontos por tarefa entregue
+   - **Total**: até 10,0 pontos (3 tarefas completas)
+4. **Gera observações automáticas** justificando faltantes
+5. **Gera arquivo JS** com todos os dados estruturados
 
 ### Execução
 ```bash
@@ -94,11 +88,10 @@ C:\Python314\python.exe calcular_notas_pratica.py
 - **Cards**: Exibe cada equipe com:
   - Integrantes
   - Status das entregas (✅/❌)
-  - Notas calculadas por parâmetro
-  - Nota automática total (7,0)
-  - Campos para notas do docente (até 3,0)
-  - Nota final calculada (até 10,0)
+  - Notas calculadas por tarefa (3,33 cada)
+  - Nota automática total (até 10,0)
   - Feedback automático
+  - Observações sobre tarefas não entregues (se houver)
 
 - **Tabela**: Visualização alternativa com resumo
 
@@ -123,31 +116,36 @@ C:\Python314\python.exe calcular_notas_pratica.py
 
 ## 🎯 Cálculo de Notas
 
-### Nota Automática (até 7,0)
+### Nota Automática (até 10,0)
+
+**Sistema simplificado: 3,33 pontos por tarefa entregue**
+
 ```
-Total = Organização(1,0) + Docs(2,0) + Sheets(2,0) + Slides(1,5) + Segurança(0,5)
+Google Docs (Guia)     = 3,33 pontos
+Google Sheets (Inventário) = 3,33 pontos
+Google Slides (Apresentação) = 3,34 pontos
+─────────────────────────────────────────
+Total                  = até 10,0 pontos
 ```
 
 **Pontuação por arquivo entregue**:
-- Se entregue: recebe pontos proporcionais
-- Se faltando: recebe 0
+- Se entregue: recebe 3,33 pontos (ou 3,34 para Slides)
+- Se faltando: recebe 0,0 pontos
 
-### Nota do Docente (até 3,0)
-Distribuída entre os arquivos entregues:
-- Google Docs (se entregue): até 1,0
-- Google Sheets (se entregue): até 1,0
-- Google Slides (se entregue): até 1,0
+**Exemplos**:
+- 0 arquivos: 0,0 pontos
+- 1 arquivo (Docs): 3,33 pontos
+- 2 arquivos (Docs + Sheets): 6,66 pontos
+- 3 arquivos (completo): 10,0 pontos
 
-**Exemplo**:
-- Equipe entregou 3 arquivos: pode receber até 3,0 (1,0 + 1,0 + 1,0)
-- Equipe entregou 2 arquivos: pode receber até 2,0
+### Observações Automáticas
 
-### Nota Final (até 10,0)
-```
-Nota Final = Nota Automática + Notas do Docente
-```
-
-Máximo de 10,0 pontos.
+Quando a equipe não entrega a nota cheia (< 10,0):
+- Sistema gera observação justificando qual(is) tarefa(s) faltou(aram)
+- Exemplos:
+  - "Google Sheets não foi entregue - faltam 3,33 pontos"
+  - "Google Slides não foi entregue - faltam 3,34 pontos"
+- As observações aparecem no feedback automático do card da equipe
 
 ---
 
@@ -161,14 +159,14 @@ Máximo de 10,0 pontos.
 ### Prova Prática
 - **Data**: 26-08-2026
 - **Status**: ✅ Todas as 10 equipes entregaram
-- **Nota Automática Média**: 5,52/7,0
-- **Nota Docente**: Pendente preenchimento
-- **Nota Final**: Aguardando notas do docente
+- **Nota Automática Média**: 8,99/10,0
+- **Sistema**: 3,33 pontos por tarefa entregue
+- **Atualização**: 27-08-2026
 
 ### Equipes com Falta de Entregas
-1. **Equipe 1**: Falta Google Sheets (nota: 3,83)
-2. **Equipe 6**: Falta Google Slides (nota: 4,70)
-3. **Equipe 7**: Falta Google Sheets (nota: 3,83)
+1. **Equipe 1**: Falta Google Sheets (nota: 6,66)
+2. **Equipe 6**: Falta Google Slides (nota: 6,66)
+3. **Equipe 7**: Falta Google Sheets (nota: 6,66)
 
 ---
 
@@ -218,11 +216,12 @@ Se houver novas entregas depois de 26-08-2026:
 
 - ✅ Todas as 10 equipes entregaram prova prática
 - ✅ Prova objetiva completa (32 alunos)
-- ⏳ Notas do docente pendentes de preenchimento
-- 📊 Média automática: 5,52/7,0 (prática)
+- 📊 Média automática: 8,99/10,0 (prática)
 - 📊 Média objetiva: 9,59/10,0
+- ℹ️ Sistema simples: 3,33 pontos por tarefa entregue
+- ℹ️ Observações automáticas explicam faltantes
 
 ---
 
 **Última atualização**: 27-08-2026  
-**Versão**: 1.0
+**Versão**: 2.0 (Nova metodologia de cálculo)
