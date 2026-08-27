@@ -565,6 +565,60 @@
             color: #1f4e78;
         }
 
+        .obs-icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: #ff9800;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: background 0.3s;
+        }
+
+        .obs-icon:hover {
+            background: #f57c00;
+            transform: scale(1.1);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .card-titulo-com-obs {
+            display: flex;
+            align-items: center;
+        }
+
+        .observacoes-lista {
+            background: #fff3cd;
+            border-left: 4px solid #ff9800;
+            padding: 12px;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .observacoes-lista ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .observacoes-lista li {
+            margin-bottom: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -629,7 +683,7 @@
 
         <div class="rodape">
             <p>Sistema de Correção Automática de Provas Práticas UC1 TIC</p>
-            <p>Nota Automática: 7,0 pontos | Nota Docente: 3,0 pontos | Total: 10,0 pontos</p>
+            <p>Nota Automática: 3,33 pontos por tarefa entregue | Máximo: 10,0 pontos</p>
             <p id="ultima-atualizacao">Última atualização: <span id="data-atualizacao">—</span></p>
         </div>
     </div>
@@ -679,6 +733,19 @@
         </div>
     </div>
 
+    <!-- Modal de Observações -->
+    <div id="modalObs" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Observações — <span id="obsEquipeNum">Equipe X</span></h2>
+                <button class="close-modal" onclick="fecharModalObs()">&times;</button>
+            </div>
+            <div id="obsConteudo" style="font-size: 14px; line-height: 1.6;">
+                <!-- Preenchido dinamicamente -->
+            </div>
+        </div>
+    </div>
+
     <!-- Carregar dados das notas PRIMEIRO -->
     <!-- Prova Prática: dados calculados automaticamente -->
     <script src="./NOTAS-PRATICA-FINAL.js"></script>
@@ -693,8 +760,8 @@
                 data: '26-08-2026',
                 turma: 'Turma PG',
                 totalAlunos: 32,
-                notaMaximaAutomatica: 7.0,
-                notaMaximaDocente: 3.0,
+                notaMaximaAutomatica: 10.0,
+                notaMaximaDocente: 0.0,
                 notaMaximaTotal: 10.0
             },
             equipes: []
@@ -718,9 +785,18 @@
 
             // Fechar modal ao clicar fora
             window.onclick = function(event) {
-                const modal = document.getElementById('modalAlunos');
-                if (event.target === modal) {
+                const modalAlunos = document.getElementById('modalAlunos');
+                const modalObs = document.getElementById('modalObs');
+                const modalObjetiva = document.getElementById('modalObjetiva');
+
+                if (event.target === modalAlunos) {
                     fecharModalAlunos();
+                }
+                if (event.target === modalObs) {
+                    fecharModalObs();
+                }
+                if (event.target === modalObjetiva) {
+                    fecharModalObjetiva();
                 }
             };
         }
@@ -741,9 +817,17 @@
 
                 const card = document.createElement('div');
                 card.className = 'card-equipe';
+
+                // Verificar se há observações
+                const temObs = notas.observacoes && notas.observacoes.length > 0;
+                const obsIconHtml = temObs ? `<span class="obs-icon" onclick="abrirModalObs(${equipe.numero})">OBS</span>` : '';
+
                 card.innerHTML = `
                     <div class="card-header">
-                        <div class="card-titulo">Equipe ${equipe.numero}</div>
+                        <div class="card-titulo-com-obs">
+                            <span>Equipe ${equipe.numero}</span>
+                            ${obsIconHtml}
+                        </div>
                         <div class="status-badge">${notas.status || 'Pendente'}</div>
                     </div>
                     <div class="membros">
@@ -766,30 +850,22 @@
                         </div>
                     </div>
                     <div class="notas-section">
-                        <h4>Notas Automáticas (7,0 pontos)</h4>
+                        <h4>Notas Automáticas (10,0 pontos)</h4>
                         <div class="nota-item">
-                            <span class="nota-label">Organização (1,0)</span>
-                            <span class="nota-valor">${(notas.organizacao || 0).toFixed(2)}</span>
-                        </div>
-                        <div class="nota-item">
-                            <span class="nota-label">Docs (2,0)</span>
+                            <span class="nota-label">Google Docs (3,33)</span>
                             <span class="nota-valor">${(notas.docs || 0).toFixed(2)}</span>
                         </div>
                         <div class="nota-item">
-                            <span class="nota-label">Sheets (2,0)</span>
+                            <span class="nota-label">Google Sheets (3,33)</span>
                             <span class="nota-valor">${(notas.sheets || 0).toFixed(2)}</span>
                         </div>
                         <div class="nota-item">
-                            <span class="nota-label">Slides (1,5)</span>
+                            <span class="nota-label">Google Slides (3,34)</span>
                             <span class="nota-valor">${(notas.slides || 0).toFixed(2)}</span>
-                        </div>
-                        <div class="nota-item">
-                            <span class="nota-label">Segurança (0,5)</span>
-                            <span class="nota-valor">${(notas.seguranca || 0).toFixed(2)}</span>
                         </div>
                         <div class="nota-automatica-total">
                             <span>Nota Automática</span>
-                            <span class="nota-automatica-valor ${classNota}">${notaAuto.toFixed(2)}/7,0</span>
+                            <span class="nota-automatica-valor ${classNota}">${notaAuto.toFixed(2)}/10,0</span>
                         </div>
                     </div>
 
@@ -889,6 +965,37 @@
 
         function fecharModalObjetiva() {
             const modal = document.getElementById('modalObjetiva');
+            modal.style.display = 'none';
+        }
+
+        // Funções do Modal de Observações
+        function abrirModalObs(equipoNum) {
+            const equipe = dados.equipes.find(e => e.numero === equipoNum);
+            if (!equipe || !equipe.notas || !equipe.notas.observacoes) return;
+
+            const modal = document.getElementById('modalObs');
+            document.getElementById('obsEquipeNum').textContent = `Equipe ${equipoNum}`;
+
+            const obsConteudo = document.getElementById('obsConteudo');
+            obsConteudo.innerHTML = '';
+
+            if (equipe.notas.observacoes && equipe.notas.observacoes.length > 0) {
+                obsConteudo.innerHTML = '<ul style="list-style: none; padding: 0;">';
+                equipe.notas.observacoes.forEach(obs => {
+                    obsConteudo.innerHTML += `<li style="padding: 8px; background: #fff3cd; margin-bottom: 8px; border-radius: 3px; border-left: 3px solid #ff9800;">
+                        • ${obs}
+                    </li>`;
+                });
+                obsConteudo.innerHTML += '</ul>';
+            } else {
+                obsConteudo.innerHTML = '<p style="color: #999;">Nenhuma observação registrada.</p>';
+            }
+
+            modal.style.display = 'block';
+        }
+
+        function fecharModalObs() {
+            const modal = document.getElementById('modalObs');
             modal.style.display = 'none';
         }
 
