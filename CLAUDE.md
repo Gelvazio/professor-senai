@@ -104,12 +104,27 @@ Pendências são contadas a partir de **3 fontes** no Supabase:
 - ❌ Ignorar campos de avaliação e matérias do Supabase
 - ❌ Criar sistema de pendências sem buscar do banco
 
+### Fluxo Automático de Pendências
+
+Quando usuário clica "Atualizar Pendências" no dashboard:
+
+1. **BUSCA**: Procura por campos PENDENTE em matérias e avaliações
+2. **INSERE**: Adiciona automaticamente registros na tabela `pendencias`
+3. **CONCLUI**: Marca como "CONCLUIDA" se o status da matéria/avaliação não for mais PENDENTE
+4. **LISTA**: Exibe todas as pendências na tela
+
+Exemplo:
+- Matéria tem `status_criacao_avaliacao = "PENDENTE"` → Cria pendência automaticamente
+- Usuário muda para `status_criacao_avaliacao = "CONCLUIDO"` → Ao clicar "Atualizar", pendência é marcada como CONCLUIDA automaticamente
+
 ### ✅ Checklist de implementação
 
 Ao implementar pendências em qualquer página:
 1. ✅ Buscar tabelas `cursomateria`, `materia`, `avaliacao` do Supabase
 2. ✅ Filtrar **apenas matérias ensaladas** (`ensalado === true`)
 3. ✅ Contar campos com status "PENDENTE" em todos os 3 locais
-4. ✅ Agregar pendências por curso/matéria
-5. ✅ Cachear resultados com timeout (ex: 5 minutos)
-6. ✅ Mostrar badge com total de pendências nos cards
+4. ✅ INSERIR automaticamente pendências encontradas na tabela `pendencias`
+5. ✅ CONCLUIR automaticamente pendências quando matérias/avaliações não forem mais PENDENTE
+6. ✅ Agregar pendências por curso/matéria
+7. ✅ Cachear resultados com timeout (ex: 5 minutos)
+8. ✅ Mostrar badge com total de pendências nos cards
