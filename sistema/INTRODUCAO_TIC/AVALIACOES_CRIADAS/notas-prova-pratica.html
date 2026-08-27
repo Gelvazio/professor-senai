@@ -502,17 +502,6 @@
             color: #1f4e78;
         }
 
-        .busca-alunos {
-            margin-bottom: 15px;
-        }
-
-        .busca-alunos input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 14px;
-        }
     </style>
 </head>
 <body>
@@ -587,9 +576,6 @@
             <div class="modal-header">
                 <h2>Notas por Aluno — Ordem Alfabética</h2>
                 <button class="close-modal" onclick="fecharModalAlunos()">&times;</button>
-            </div>
-            <div class="busca-alunos">
-                <input type="text" id="buscaAluno" placeholder="Buscar aluno..." onkeyup="filtrarAlunos()">
             </div>
             <div class="resumo-alunos" id="resumoAlunos"></div>
             <table class="tabela-alunos">
@@ -850,22 +836,6 @@
             if (nota >= 6.0) return 'nota-alta';
             if (nota >= 4.0) return 'nota-media';
             return 'nota-baixa';
-        }
-
-        function filtrarAlunos() {
-            const busca = document.getElementById('buscaAluno').value.toLowerCase();
-            const linhas = document.querySelectorAll('.aluno-row');
-
-            linhas.forEach(linha => {
-                const nome = linha.querySelector('.aluno-nome-cell').textContent.toLowerCase();
-                const equipe = linha.querySelector('.aluno-equipe').textContent.toLowerCase();
-
-                if (nome.includes(busca) || equipe.includes(busca)) {
-                    linha.style.display = 'table-row';
-                } else {
-                    linha.style.display = 'none';
-                }
-            });
         }
 
         // Inicializar ao carregar
