@@ -5948,7 +5948,78 @@
             }
           }
 
-          // 3️⃣ LISTA: Carrega todos os registros da tabela "pendencias"
+          // 3️⃣ CONCLUI AUTOMATICAMENTE: Marca como CONCLUIDA se matéria/avaliação não tem mais status PENDENTE
+          try {
+            const pendenciasExistentes = await sbGet('pendencias', 'select=*');
+            let pendênciasConcluidasAutomaticamente = 0;
+
+            for (const pend of pendenciasExistentes) {
+              if (pend.status === 'CONCLUIDA') continue; // Já concluída, pula
+              if (!pend.tipo_origem) continue; // Sem tipo_origem, ignora
+
+              let deveConcluir = false;
+
+              if (pend.tipo_origem === 'MATERIA' && pend.materia_id) {
+                try {
+                  const materia = await sbGet('materia', `select=*&id=eq.${pend.materia_id}`);
+                  if (Array.isArray(materia) && materia.length > 0) {
+                    const m = materia[0];
+                    const camposPendentes = [
+                      'status_criacao_avaliacao',
+                      'status_plano_aula',
+                      'status_plano_ensino'
+                    ];
+                    // Se nenhum campo está mais PENDENTE, conclui
+                    deveConcluir = !camposPendentes.some(
+                      campo => String(m[campo] || '').toUpperCase() === 'PENDENTE'
+                    );
+                  }
+                } catch (e) {
+                  console.warn('Erro ao verificar matéria:', e);
+                }
+              } else if (pend.tipo_origem === 'AVALIACAO' && pend.materia_id) {
+                try {
+                  // Busca pelo nome na descrição (ex: "Avaliação: Teste")
+                  const nomeAvaliacao = pend.descricao.match(/Avaliação: (.+?)$/)?.[1];
+                  if (nomeAvaliacao) {
+                    const avaliacoes = await sbGet('avaliacao', `select=*&nome=ilike.%${nomeAvaliacao}%`);
+                    if (Array.isArray(avaliacoes) && avaliacoes.length > 0) {
+                      const aval = avaliacoes[0];
+                      const camposAvaliacao = [
+                        'status_avaliacao',
+                        'status_gabarito',
+                        'status_revisao',
+                        'status_cadastro_sgn',
+                        'acompanhamento_pedagogico_sgn'
+                      ];
+                      // Se nenhum campo está mais PENDENTE, conclui
+                      deveConcluir = !camposAvaliacao.some(
+                        campo => String(aval[campo] || '').toUpperCase() === 'PENDENTE'
+                      );
+                    }
+                  }
+                } catch (e) {
+                  console.warn('Erro ao verificar avaliação:', e);
+                }
+              }
+
+              if (deveConcluir) {
+                try {
+                  await sbPatch('pendencias', 'id', pend.id, {
+                    status: 'CONCLUIDA',
+                    dataConclusao: new Date().toISOString()
+                  });
+                  pendênciasConcluidasAutomaticamente++;
+                } catch (e) {
+                  console.warn('Erro ao concluir pendência:', e);
+                }
+              }
+            }
+          } catch (e) {
+            console.warn('Erro ao processar conclusões automáticas:', e);
+          }
+
+          // 4️⃣ LISTA: Carrega todos os registros da tabela "pendencias"
           pendenciasRegistros = await sbGet('pendencias', 'select=*&order=datavencimento.asc,id.asc');
           renderPendencias(pendenciasRegistros);
 
