@@ -680,12 +680,14 @@
     </div>
 
     <!-- Carregar dados das notas PRIMEIRO -->
-    <script src="./NOTAS-EQUIPE-PROVA-PRATICA.js"></script>
+    <!-- Prova Prática: dados calculados automaticamente -->
+    <script src="./NOTAS-PRATICA-FINAL.js"></script>
+    <!-- Prova Objetiva: dados do arquivo texto convertidos para JS -->
     <script src="./NOTAS-OBJETIVA.js"></script>
 
     <script>
-        // Dados das equipes - carregado do arquivo NOTAS-EQUIPE-PROVA-PRATICA.js
-        let dados = notasEquipePratica || {
+        // Dados da prova prática - carregado de NOTAS-PRATICA-FINAL.js (atualizado automaticamente pelo script Python)
+        let dados = notasProvaPratica || {
             prova: {
                 titulo: 'Avaliação Prática — Prova Simples UC1 TIC',
                 data: '26-08-2026',
