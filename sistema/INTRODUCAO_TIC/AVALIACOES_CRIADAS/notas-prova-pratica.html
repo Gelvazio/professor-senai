@@ -598,7 +598,8 @@
                 <label><input type="radio" name="visualizacao" value="cards" checked> Visualização em Cards</label>
                 <label><input type="radio" name="visualizacao" value="tabela"> Visualização em Tabela</label>
             </div>
-            <button class="secundario" onclick="abrirModalAlunos()">📋 Notas por Aluno</button>
+            <button class="secundario" onclick="abrirModalObjetiva()">📝 Notas Prova Objetiva</button>
+            <button class="secundario" onclick="abrirModalAlunos()">📋 Notas por Aluno (Prática)</button>
             <button class="secundario" onclick="atualizarCalculos()">Recalcular Medias</button>
             <button class="exportar-btn" onclick="exportarCSV()">Exportar CSV</button>
         </div>
@@ -633,11 +634,33 @@
         </div>
     </div>
 
-    <!-- Modal Notas por Aluno -->
+    <!-- Modal Notas Prova Objetiva -->
+    <div id="modalObjetiva" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Notas Prova Objetiva — 21-08-2026</h2>
+                <button class="close-modal" onclick="fecharModalObjetiva()">&times;</button>
+            </div>
+            <div class="resumo-alunos" id="resumoObjetiva"></div>
+            <table class="tabela-alunos">
+                <thead>
+                    <tr>
+                        <th style="width: 40px;">#</th>
+                        <th>Aluno</th>
+                        <th style="width: 100px;">Nota (10,0)</th>
+                    </tr>
+                </thead>
+                <tbody id="listaObjetiva">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Notas por Aluno (Prova Prática) -->
     <div id="modalAlunos" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Notas por Aluno — Ordem Alfabética</h2>
+                <h2>Notas por Aluno — Prova Prática</h2>
                 <button class="close-modal" onclick="fecharModalAlunos()">&times;</button>
             </div>
             <div class="resumo-alunos" id="resumoAlunos"></div>
@@ -658,6 +681,7 @@
 
     <!-- Carregar dados das notas PRIMEIRO -->
     <script src="./NOTAS-PRATICA-FINAL.js"></script>
+    <script src="./NOTAS-OBJETIVA.js"></script>
 
     <script>
         // Dados das equipes - será carregado do arquivo NOTAS-PRATICA-FINAL.js
@@ -852,7 +876,72 @@
                 });
         }
 
-        // Funções do Modal de Alunos
+        // Funções do Modal de Prova Objetiva
+        function abrirModalObjetiva() {
+            const modal = document.getElementById('modalObjetiva');
+            modal.style.display = 'block';
+            preencherListaObjetiva();
+        }
+
+        function fecharModalObjetiva() {
+            const modal = document.getElementById('modalObjetiva');
+            modal.style.display = 'none';
+        }
+
+        function preencherListaObjetiva() {
+            if (!notasObjetiva || !notasObjetiva.alunos) {
+                document.getElementById('listaObjetiva').innerHTML = '<tr><td colspan="3" style="text-align: center; color: #999;">Dados da prova objetiva não carregados</td></tr>';
+                return;
+            }
+
+            // Alunos já vêm em ordem alfabética
+            const alunos = notasObjetiva.alunos;
+
+            // Calcular estatísticas
+            const notas = alunos.map(a => a.nota);
+            const media = (notas.reduce((a, b) => a + b, 0) / notas.length).toFixed(2);
+            const maximo = Math.max(...notas).toFixed(2);
+            const minimo = Math.min(...notas).toFixed(2);
+            const alunosNotaAlta = alunos.filter(a => a.nota >= 9.0).length;
+
+            // Renderizar resumo
+            const resumo = document.getElementById('resumoObjetiva');
+            resumo.innerHTML = `
+                <div class="resumo-item">
+                    <div class="resumo-label">Total de Alunos</div>
+                    <div class="resumo-valor">${alunos.length}</div>
+                </div>
+                <div class="resumo-item">
+                    <div class="resumo-label">Média Geral</div>
+                    <div class="resumo-valor">${media}</div>
+                </div>
+                <div class="resumo-item">
+                    <div class="resumo-label">Máximo</div>
+                    <div class="resumo-valor">${maximo}</div>
+                </div>
+                <div class="resumo-item">
+                    <div class="resumo-label">Mínimo</div>
+                    <div class="resumo-valor">${minimo}</div>
+                </div>
+            `;
+
+            // Renderizar lista
+            const lista = document.getElementById('listaObjetiva');
+            lista.innerHTML = '';
+
+            alunos.forEach((aluno, index) => {
+                const notaClass = obterClasseNota(aluno.nota);
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td style="text-align: center; color: #999;">${index + 1}</td>
+                    <td><span class="aluno-nome-cell">${aluno.nome}</span></td>
+                    <td><span class="aluno-nota ${notaClass}">${aluno.nota.toFixed(2)}</span></td>
+                `;
+                lista.appendChild(tr);
+            });
+        }
+
+        // Funções do Modal de Alunos (Prova Prática)
         function abrirModalAlunos() {
             const modal = document.getElementById('modalAlunos');
             modal.style.display = 'block';
