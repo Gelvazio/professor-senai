@@ -11,14 +11,18 @@ if errorlevel 1 (
   exit /b 1
 )
 
-if "!GEMINI_API_KEY!"=="" if "!GOOGLE_API_KEY!"=="" (
-  echo Nenhuma chave Gemini foi encontrada nas variaveis de ambiente.
-  echo O Gemini CLI usara o login da conta Google salvo ou solicitara autenticacao.
-  echo.
+if "!GEMINI_API_KEY!"=="" (
+  echo ERRO: A variavel GEMINI_API_KEY nao esta configurada.
+  echo Crie uma chave no Google AI Studio e configure essa variavel de ambiente.
+  pause
+  exit /b 1
 )
 
+set "GOOGLE_API_KEY="
+set "GOOGLE_GENAI_USE_VERTEXAI=false"
+
 pushd "%~dp0"
-echo Iniciando o Gemini CLI como agente de IA...
+echo Iniciando o Gemini CLI com Google AI Studio...
 gemini --approval-mode default %*
 set "GEMINI_EXIT_CODE=!ERRORLEVEL!"
 popd
