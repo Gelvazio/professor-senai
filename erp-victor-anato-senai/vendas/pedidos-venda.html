@@ -538,22 +538,60 @@
     if (!editId) dados.numero = numero;
 
     try {
+      const anterior = editId ? registros.find(r => r.id === editId) : null;
+      let pedidoId = editId;
       if (editId) {
         await sbAtualizar('vendas_pedidos', editId, dados);
       } else {
-        await sbInserir('vendas_pedidos', dados);
+        const novoPedido = await sbInserir('vendas_pedidos', dados);
+        pedidoId = novoPedido?.id;
         if (window.gamif) await gamif.registrarEvento('pedido_venda_criado');
       }
+
+      const confirmadoAgora = status === 'Confirmado' && anterior?.status !== 'Confirmado';
+      let numeroNotaFiscal = null;
+      if (confirmadoAgora && pedidoId) {
+        numeroNotaFiscal = await gerarNotaFiscalAutomatica(pedidoId, { ...dados, numero });
+      }
+
       fecharModal();
       const msgFin = status === 'Aguardando Análise Financeira'
         ? '⚠️ Crédito insuficiente — pedido enviado para fila de análise financeira.'
-        : (editId ? 'Pedido atualizado com sucesso!' : 'Pedido criado com sucesso!');
+        : (numeroNotaFiscal
+          ? `Pedido confirmado! Nota Fiscal <strong>${numeroNotaFiscal}</strong> criada em rascunho.`
+          : (editId ? 'Pedido atualizado com sucesso!' : 'Pedido criado com sucesso!'));
       sbMensagem('msgGlobal', msgFin, status === 'Aguardando Análise Financeira' ? 'warn' : 'ok');
       document.getElementById('msgGlobal').style.display = 'block';
       await carregarDados();
     } catch (e) {
       mostrarMsgModal('Erro ao salvar: ' + e.message, 'err');
     }
+  }
+
+  async function gerarNotaFiscalAutomatica(pedidoId, pedido) {
+    const existentes = await sbListar(
+      'vendas_notas_fiscais',
+      `pedido_id=eq.${encodeURIComponent(pedidoId)}&select=id,numero_nf&limit=1`
+    );
+    if (existentes.length) return existentes[0].numero_nf;
+
+    const numero_nf = await sbProximoNumero('vendas_notas_fiscais', 'numero_nf', 'NF');
+    await sbInserir('vendas_notas_fiscais', {
+      numero_nf,
+      serie: '001',
+      data_emissao: new Date().toISOString().split('T')[0],
+      natureza_operacao: 'Venda de Mercadoria',
+      cliente_id: pedido.cliente_id,
+      pedido_id: pedidoId,
+      produto_id: pedido.produto_id,
+      quantidade: pedido.quantidade,
+      valor_unitario: pedido.preco_unitario,
+      valor_produtos: (pedido.preco_unitario || 0) * pedido.quantidade,
+      valor_total: (pedido.preco_unitario || 0) * pedido.quantidade,
+      status: 'Rascunho',
+      informacoes_complementares: `Gerada automaticamente pela confirmação do Pedido de Venda ${pedido.numero}`
+    });
+    return numero_nf;
   }
 
   function mostrarMsgModal(texto, tipo) {
