@@ -5936,8 +5936,15 @@
             console.log('📊 Total de matérias encontradas:', todasMaterias.length);
 
             for (const materia of todasMaterias) {
+              console.log(`📄 Matéria: ${materia.nome} (ID: ${materia.id})`);
+              console.log(`   status_criacao_avaliacao: "${materia.status_criacao_avaliacao}"`);
+              console.log(`   status_plano_aula: "${materia.status_plano_aula}"`);
+              console.log(`   status_plano_ensino: "${materia.status_plano_ensino}"`);
+
               for (const campo of camposPendentes) {
-                const statusCampo = String(materia[campo] || '').toUpperCase();
+                const statusCampo = String(materia[campo] || '').trim().toUpperCase();
+                console.log(`   Verificando ${campo}: "${materia[campo]}" → normalizado: "${statusCampo}"`);
+
                 if (statusCampo === 'PENDENTE') {
                   totalEncontradas++;
                   const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — ${materia.nome}`;
@@ -5981,8 +5988,17 @@
             console.log('📊 Total de avaliações encontradas:', todasAvaliacoes.length);
 
             for (const aval of todasAvaliacoes) {
+              console.log(`📋 Avaliação: ${aval.nome || 'sem nome'} (ID: ${aval.id}, Matéria: ${aval.materia_id})`);
+              console.log(`   status_avaliacao: "${aval.status_avaliacao}"`);
+              console.log(`   status_gabarito: "${aval.status_gabarito}"`);
+              console.log(`   status_revisao: "${aval.status_revisao}"`);
+              console.log(`   status_cadastro_sgn: "${aval.status_cadastro_sgn}"`);
+              console.log(`   acompanhamento_pedagogico_sgn: "${aval.acompanhamento_pedagogico_sgn}"`);
+
               for (const campo of camposAvaliacao) {
-                const statusCampo = String(aval[campo] || '').toUpperCase();
+                const statusCampo = String(aval[campo] || '').trim().toUpperCase();
+                console.log(`   Verificando ${campo}: "${aval[campo]}" → normalizado: "${statusCampo}"`);
+
                 if (statusCampo === 'PENDENTE') {
                   totalEncontradas++;
                   const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — Avaliação: ${aval.nome || 'sem nome'}`;
