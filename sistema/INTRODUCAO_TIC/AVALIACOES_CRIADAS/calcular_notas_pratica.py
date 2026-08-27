@@ -36,24 +36,15 @@ def analisar_entregas():
     print("=" * 70)
 
     for item in ENTREGAS_PATH.iterdir():
-        pasta_nome = item.name.lower()
+        pasta_nome = item.name.upper()
 
-        # Mapear pastas para números de equipe
+        # Mapear pastas EQUIPE_XX para números de equipe
         equipe_num = None
-        if "equipe 01" in pasta_nome or "01_h" in pasta_nome:
-            equipe_num = 1
-        elif "equipe 03" in pasta_nome:
-            equipe_num = 3
-        elif "equipe 08" in pasta_nome:
-            equipe_num = 8
-        elif "equipe 10" in pasta_nome or "10-a" in pasta_nome:
-            equipe_num = 10
-        elif "equipe 5" in pasta_nome:
-            equipe_num = 5
-        elif "equipe-04" in pasta_nome:
-            equipe_num = 4
-        elif "equipe-09" in pasta_nome:
-            equipe_num = 9
+        if pasta_nome.startswith('EQUIPE_'):
+            try:
+                equipe_num = int(pasta_nome.split('_')[1])
+            except (IndexError, ValueError):
+                equipe_num = None
 
         if equipe_num and item.is_dir():
             if equipe_num not in entregas:
