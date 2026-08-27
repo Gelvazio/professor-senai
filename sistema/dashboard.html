@@ -5962,15 +5962,12 @@
               console.log(`   status_plano_aula: "${materia.status_plano_aula}"`);
               console.log(`   status_plano_ensino: "${materia.status_plano_ensino}"`);
 
-              // Cria 1 registro de pendência com os 3 campos
+              // Cria 1 registro de pendência com APENAS os campos necessários
               let temPendencia = false;
               const descricoesPendentes = [];
               const regPendencia = {
                 materia_id: materia.id,
-                materia_descricao: materia.nome || null,
-                status_criacao_avaliacao: null,
-                status_plano_aula: null,
-                status_plano_ensino: null
+                materia_descricao: materia.nome
               };
 
               for (const campo of camposPendentes) {
@@ -6043,18 +6040,13 @@
                 console.error('❌ Erro ao buscar matéria para avaliação ID ' + aval.materia_id + ':', e.message);
               }
 
-              // Cria 1 registro de pendência com os 5 campos
+              // Cria 1 registro de pendência com APENAS os campos necessários
               let temPendencia = false;
               const descricoesPendentes = [];
               const regPendencia = {
                 materia_id: aval.materia_id,
                 avaliacao_id: aval.id,
-                materia_descricao: nomeMateriaAvaliacao,
-                status_avaliacao: null,
-                status_gabarito: null,
-                status_revisao: null,
-                status_cadastro_sgn: null,
-                acompanhamento_pedagogico_sgn: null
+                materia_descricao: nomeMateriaAvaliacao
               };
 
               for (const campo of camposAvaliacao) {
@@ -6079,11 +6071,9 @@
               if (temPendencia) {
                 regPendencia.descricao = descricoesPendentes.join(' | ') + ' — ' + (aval.nome || 'Avaliação sem nome');
                 console.log('✋ Pendência encontrada em avaliação:', aval.nome);
-                console.log('📋 Dados da pendência a inserir:', JSON.stringify(regPendencia, null, 2));
                 try {
                   await sbPost('pendencias', regPendencia);
                   console.log('✅ Inserida pendência de avaliação:', aval.nome);
-                  console.log('   materia_descricao inserida como:', regPendencia.materia_descricao);
                   totalInseridasAvaliacao++;
                 } catch (e) {
                   console.log('⚠️ Pendência de avaliação não inserida (pode já existir):', aval.nome, e.message);
