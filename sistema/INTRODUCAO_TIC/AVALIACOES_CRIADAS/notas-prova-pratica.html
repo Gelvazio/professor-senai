@@ -593,9 +593,12 @@
         </div>
     </div>
 
+    <!-- Carregar dados das notas PRIMEIRO -->
+    <script src="./NOTAS-PRATICA-FINAL.js"></script>
+
     <script>
-        // Dados das equipes - será populado do arquivo JS ou usado como fallback
-        let dados = {
+        // Dados das equipes - será carregado do arquivo NOTAS-PRATICA-FINAL.js
+        let dados = notasProvaPratica || {
             prova: {
                 titulo: 'Avaliação Prática — Prova Simples UC1 TIC',
                 data: '26-08-2026',
@@ -608,31 +611,11 @@
             equipes: []
         };
 
-        // Tenta carregar dados do arquivo JS se disponível
-        let notasProvaPratica = null;
-
-        // Carrega dados do arquivo JS
-        function carregarDadosJS() {
-            // Criar script tag para carregar NOTAS-PRATICA-FINAL.js
-            const script = document.createElement('script');
-            script.src = './NOTAS-PRATICA-FINAL.js';
-            script.onload = function() {
-                if (typeof notasProvaPratica !== 'undefined') {
-                    dados = notasProvaPratica;
-                }
-            };
-            document.head.appendChild(script);
-        }
-
         // Inicializar página
         function inicializar() {
-            carregarDadosJS();
-
-            setTimeout(() => {
-                renderizarCards();
-                renderizarTabela();
-                atualizarData();
-            }, 100);
+            renderizarCards();
+            renderizarTabela();
+            atualizarData();
 
             // Event listeners para mudança de visualização
             document.querySelectorAll('input[name="visualizacao"]').forEach(radio => {
