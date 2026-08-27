@@ -869,32 +869,6 @@
                         </div>
                     </div>
 
-                    <div class="notas-section nota-docente-section">
-                        <h4>Notas do Docente (até 3,0 pontos) *</h4>
-                        ${arquivos.docs === '✅' ? `<div class="nota-item">
-                            <span class="nota-label">Google Docs (1,0)</span>
-                            <input type="number" class="input-docs-docente" min="0" max="1" step="0.05" placeholder="0" value="${notas.docsDOCENTE || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
-                        </div>` : ''}
-                        ${arquivos.sheets === '✅' ? `<div class="nota-item">
-                            <span class="nota-label">Google Sheets (1,0)</span>
-                            <input type="number" class="input-sheets-docente" min="0" max="1" step="0.05" placeholder="0" value="${notas.sheetsDOCENTE || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
-                        </div>` : ''}
-                        ${arquivos.slides === '✅' ? `<div class="nota-item">
-                            <span class="nota-label">Google Slides (1,0)</span>
-                            <input type="number" class="input-slides-docente" min="0" max="1" step="0.05" placeholder="0" value="${notas.slidesDOCENTE || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
-                        </div>` : ''}
-                        <div style="font-size: 11px; color: #666; margin-top: 8px; padding-top: 8px; border-top: 1px solid #ddd;">
-                            * 1,0 ponto por tarefa entregue (Docs, Sheets, Slides)
-                        </div>
-                    </div>
-
-                    <div class="notas-section nota-final-section">
-                        <h4>Nota Final (10,0 pontos)</h4>
-                        <div class="nota-automatica-total" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); margin-top: 0;">
-                            <span>Nota Automática + Docente</span>
-                            <span class="nota-automatica-valor" id="nota-final-${equipe.numero}">${Math.min(10, notaAuto + (notas.clareza || 0) + (notas.correcaoTecnica || 0) + (notas.apresentacao || 0)).toFixed(2)}/10,0</span>
-                        </div>
-                    </div>
                     <div class="feedback">
                         ${notas.feedback ? notas.feedback.replace(/\n/g, '<br>') : 'Análise em andamento...'}
                     </div>

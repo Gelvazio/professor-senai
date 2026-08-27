@@ -91,9 +91,14 @@ C:\Python314\python.exe calcular_notas_pratica.py
   - Notas calculadas por tarefa (3,33 cada)
   - Nota automática total (até 10,0)
   - Feedback automático
-  - Observações sobre tarefas não entregues (se houver)
+  - Ícone **OBS** para visualizar observações em modal (se houver tarefas faltando)
 
 - **Tabela**: Visualização alternativa com resumo
+
+#### 2. **Ícone OBS (Observações)**
+- Aparece quando a equipe não alcança a nota cheia (10,0)
+- Ao clicar, abre modal com justificativa das tarefas não entregues
+- Exemplo: "Google Sheets não foi entregue - faltam 3,33 pontos"
 
 #### 2. **Menu "Notas Prova Objetiva"**
 - Abre modal com lista de 32 alunos
@@ -205,10 +210,13 @@ Se houver novas entregas depois de 26-08-2026:
 2. Execute o script Python
 3. Recarregue o HTML no navegador (Ctrl+F5)
 
-### Adicionar Notas do Docente
-- Edite os campos "Clareza e Linguagem", "Correção Técnica", "Apresentação"
-- A nota final é calculada automaticamente
-- Dados são armazenados localmente (necessário salvar manualmente se desejar persistência)
+### ⚠️ Notas do Docente — REMOVIDAS
+
+A partir de 27-08-2026, o sistema utiliza **apenas a nota automática** de 10,0 pontos.
+- Cada tarefa entregue vale 3,33 pontos (Docs, Sheets, Slides)
+- Não há mais campos para adicionar notas do docente
+- A nota final equivale à nota automática
+- Observações justificam tarefas não entregues
 
 ---
 
