@@ -173,9 +173,16 @@
     sistemasOrdenados = [];
   }
 
-  const codigosOrdenados = sistemasOrdenados.length
-    ? sistemasOrdenados.map((s) => s.siscodigo)
-    : Object.keys(SECAO_POR_SISCODIGO).map(Number);
+  const codigosDisponiveis = Object.keys(SECAO_POR_SISCODIGO).map(Number);
+  const codigosDoCache = sistemasOrdenados
+    .map((s) => Number(s.siscodigo))
+    .filter((codigo) => codigosDisponiveis.includes(codigo));
+  const codigosOrdenados = [
+    ...new Set([
+      ...codigosDoCache,
+      ...codigosDisponiveis.filter((codigo) => !codigosDoCache.includes(codigo))
+    ])
+  ];
 
   function buildMenu(codigos) {
     const sections = codigos.flatMap((cod) => {

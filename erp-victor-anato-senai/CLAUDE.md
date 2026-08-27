@@ -41,6 +41,7 @@ C:\Python314\python.exe -m graphify update .
    - Lê `erp_telas` do localStorage ao montar o menu.
    - **Somente mostra os links cujas telas estão na lista `erp_telas`** do perfil logado.
    - Se `erp_telas` estiver vazio, ausente ou inválido, não exibe nenhum link.
+   - `erp_sistemas` define apenas a ordem preferencial das seções. Códigos ausentes nesse cache devem ser acrescentados à composição para que ele nunca oculte uma tela autorizada por `erp_telas`.
    - A lógica de filtro fica na função `link()` — cada link é `null` se a tela não estiver permitida.
    - O caminho completo de `nome_html` é o formato canônico. Cadastros legados contendo somente o nome do arquivo são aceitos quando não houver colisão; `dashboard.html` exige caminho completo para diferenciar o Dashboard principal do Dashboard de RH.
    - A lista deve ser lida imediatamente antes da montagem do array `html`, no ponto marcado por `VALIDE A REGRA DAS TELAS DO PERFIL, SEMPRE AQUI`.
@@ -69,6 +70,16 @@ erp_usuarios.perfil_id → perfil.id → perfil_sistema.tela_id → tela.nome_ht
 | `erp_perfil_id` | ID numérico do perfil |
 | `erp_telas` | JSON array das telas permitidas `[{id, nome, nome_html}]` |
 | `erp_permissoes` | JSON de permissões por módulo (derivado das telas) |
+
+---
+
+## Administração da senha do usuário padrão
+
+- O arquivo `criar-admin.html` foi removido definitivamente e **não deve ser recriado, utilizado nem referenciado** em novos fluxos.
+- A criação inicial dos usuários permanece definida em `REGRAS-NEGOCIOS/seed.sql`.
+- Para atualizar a senha do usuário `admin@erp.com` em uma base já existente, execute `UPDATE_SENHA_ADMIN.sql` diretamente no SQL Editor do Supabase.
+- Nunca criar uma página pública ou um endpoint no frontend para cadastrar ou redefinir o administrador padrão.
+- Nunca armazenar senhas em texto puro no banco de dados; o campo `erp_usuarios.senha_hash` recebe somente o hash SHA-256.
 
 ---
 

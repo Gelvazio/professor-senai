@@ -585,6 +585,51 @@
         border-bottom: 1px solid #e2e7f0;
       }
       .pendencias-toolbar .btn-cancelar { margin-left: auto; }
+      .btn-atualizar-pendencias {
+        margin-left: auto;
+        min-width: 176px;
+        min-height: 46px;
+        padding: 11px 22px;
+        border: 0;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #f7941d, #e66f00);
+        color: #fff;
+        box-shadow: 0 5px 14px rgba(230, 111, 0, 0.3);
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+      }
+      .btn-atualizar-pendencias:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(230, 111, 0, 0.4);
+        filter: brightness(1.04);
+      }
+      .btn-atualizar-pendencias:active { transform: translateY(0); }
+      .pendencias-atualizando-modal {
+        max-width: 390px;
+        padding: 34px 30px;
+        align-items: center;
+        gap: 18px;
+        text-align: center;
+      }
+      .pendencias-atualizando-spinner {
+        width: 48px;
+        height: 48px;
+        border: 5px solid #ffe1bd;
+        border-top-color: #f7941d;
+        border-radius: 50%;
+        animation: girar-pendencias 0.8s linear infinite;
+      }
+      .pendencias-atualizando-titulo {
+        color: #202124;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.4;
+      }
+      @keyframes girar-pendencias { to { transform: rotate(360deg); } }
       .pendencia-form {
         padding: 16px 20px;
         background: #fafbfe;
@@ -1295,6 +1340,7 @@
         .admin-section { padding: 16px 12px; }
         .pendencias-toolbar { flex-wrap: wrap; padding: 10px 12px; }
         .pendencias-toolbar .btn-cancelar { margin-left: 0; }
+        .btn-atualizar-pendencias { width: 100%; margin-left: 0; }
         .pendencia-form { padding: 14px 12px; }
         .pendencia-form-grid { grid-template-columns: 1fr; }
         .pendencia-form-full { grid-column: auto; }
@@ -1991,19 +2037,19 @@
             <div class="crud-field">
               <label class="crud-label" for="cursoMateriaStatusCriacaoAvaliacao">Criação de Avaliação</label>
               <select class="crud-input" id="cursoMateriaStatusCriacaoAvaliacao">
-                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
               </select>
             </div>
             <div class="crud-field">
               <label class="crud-label" for="cursoMateriaStatusPlanoAula">Plano de Aula</label>
               <select class="crud-input" id="cursoMateriaStatusPlanoAula">
-                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
               </select>
             </div>
             <div class="crud-field">
               <label class="crud-label" for="cursoMateriaStatusPlanoEnsino">Plano de Ensino</label>
               <select class="crud-input" id="cursoMateriaStatusPlanoEnsino">
-                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
               </select>
             </div>
             <div class="crud-field curso-materia-form-full">
@@ -2095,25 +2141,25 @@
             <div class="crud-field">
               <label class="crud-label" for="avaliacaoStatusAplicacao">Aplicação da Avaliação</label>
               <select class="crud-input" id="avaliacaoStatusAplicacao">
-                <option value="PENDENTE">Pendente</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
               </select>
             </div>
             <div class="crud-field">
               <label class="crud-label" for="avaliacaoStatusRevisao">Status de revisão</label>
               <select class="crud-input" id="avaliacaoStatusRevisao">
-                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
               </select>
             </div>
             <div class="crud-field avaliacao-form-full">
               <label class="crud-label" for="avaliacaoStatusSgn">Status de cadastro no SGN</label>
               <select class="crud-input" id="avaliacaoStatusSgn">
-                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option>
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
               </select>
             </div>
             <div class="crud-field avaliacao-form-full">
               <label class="crud-label" for="avaliacaoAcompanhamentoPedagogicoSgn">Acompanhamentos Pedagógicos (SGN)</label>
               <select class="crud-input" id="avaliacaoAcompanhamentoPedagogicoSgn">
-                <option value="SEM_ALUNOS">Sem alunos</option><option value="PENDENTE">Pendente</option><option value="CONCLUIDO">Concluído</option>
+                <option value="PENDENTE">Pendente</option><option value="ANDAMENTO">Em andamento</option><option value="CONCLUIDO">Concluído</option><option value="CANCELADO">Cancelado</option>
               </select>
             </div>
           </div>
@@ -2195,7 +2241,7 @@
         </div>
         <div class="pendencias-toolbar">
           <button class="btn-novo" onclick="novaPendencia()">＋ Nova Pendência</button>
-          <button class="btn-cancelar" onclick="carregarPendenciasSupabase()">↻ Atualizar</button>
+          <button class="btn-atualizar-pendencias" onclick="atualizarPendencias()">↻ Atualizar Pendências</button>
           <span class="crud-msg" id="pendenciasMsg"></span>
         </div>
         <div class="pendencia-form" id="pendenciaForm" style="display:none">
@@ -2248,6 +2294,13 @@
         <div class="pendencias-lista" id="pendenciasLista">
           <div class="pendencias-estado">⏳ Carregando…</div>
         </div>
+      </div>
+    </div>
+
+    <div class="crud-backdrop" id="pendenciasAtualizandoModal" style="display:none;z-index:2700" role="status" aria-live="assertive" aria-busy="true">
+      <div class="crud-modal pendencias-atualizando-modal">
+        <div class="pendencias-atualizando-spinner" aria-hidden="true"></div>
+        <div class="pendencias-atualizando-titulo">Atualizando Pendências, aguarde...</div>
       </div>
     </div>
 
@@ -5827,6 +5880,23 @@
           document.getElementById('pendenciasResumo').textContent = 'Não foi possível carregar as pendências.';
           document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⚠️ Execute o arquivo supabase-pendencias.sql no Supabase para habilitar o CRUD.</div>';
           setPendenciasMsg('Erro ao acessar a tabela pendencias.', true);
+        }
+      }
+
+      function abrirModalAtualizandoPendencias() {
+        document.getElementById('pendenciasAtualizandoModal').style.display = 'flex';
+      }
+
+      function fecharModalAtualizandoPendencias() {
+        document.getElementById('pendenciasAtualizandoModal').style.display = 'none';
+      }
+
+      async function atualizarPendencias() {
+        abrirModalAtualizandoPendencias();
+        try {
+          await carregarPendenciasSupabase();
+        } finally {
+          fecharModalAtualizandoPendencias();
         }
       }
 

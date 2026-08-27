@@ -3,7 +3,7 @@
 --  Dados de teste: Cadastros, Compras, Estoque, Vendas e Logística
 --  Execute no Supabase SQL Editor
 --
---  Usuários criados (todos com senha "admin"):
+--  Usuários criados:
 --    admin@erp.com   — Administrador (acesso total)
 --    joao@erp.com    — Usuário (Compras + Estoque)
 --    maria@erp.com   — Usuário (Estoque + Vendas)
@@ -39,7 +39,9 @@ CASCADE;
 
 -- ============================================================
 --  CONFIGURAÇÕES — Usuários
---  Senha "admin" → SHA-256:
+--  Hash SHA-256 da senha administrativa:
+--  166da0daa25c3edb40d87c1634bbee0eda8b50ccd82f93c36c54c35a004e5561
+--  Senha dos demais usuários "admin" → SHA-256:
 --  8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
 -- ============================================================
 
@@ -53,7 +55,7 @@ VALUES
   'Administrador do Sistema',
   '(11) 99999-0001',
   'Administrador',
-  '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918',
+  '166da0daa25c3edb40d87c1634bbee0eda8b50ccd82f93c36c54c35a004e5561',
   true,
   '{"visao_geral":true,"cadastros":true,"compras":true,"estoque":true,"vendas":true}'
 ),
@@ -958,7 +960,7 @@ VALUES
 -- ============================================================
 --  FIM DO SEED
 --  Resumo do que foi inserido:
---    Usuários      : 3 (admin / joao / maria — senha: admin)
+--    Usuários      : 3 (administrador, joao e maria)
 --    Clientes      : 5
 --    Fornecedores  : 4
 --    Produtos      : 7 (P00001 a P00007)

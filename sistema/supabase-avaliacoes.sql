@@ -10,13 +10,13 @@ create table if not exists public.avaliacao (
   status text not null default 'PENDENTE'
     check (status in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
   status_aplicacao text not null default 'PENDENTE'
-    check (status_aplicacao in ('PENDENTE', 'CONCLUIDO', 'CANCELADO')),
+    check (status_aplicacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
   status_revisao text not null default 'PENDENTE'
-    check (status_revisao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
+    check (status_revisao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
   status_cadastro_sgn text not null default 'PENDENTE'
-    check (status_cadastro_sgn in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO')),
+    check (status_cadastro_sgn in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
   acompanhamento_pedagogico_sgn text not null default 'PENDENTE'
-    check (acompanhamento_pedagogico_sgn in ('SEM_ALUNOS', 'PENDENTE', 'CONCLUIDO')),
+    check (acompanhamento_pedagogico_sgn in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
   unique (materia_id, numero)
@@ -30,15 +30,15 @@ alter table public.avaliacao
 
 alter table public.materia
   add column if not exists status_criacao_avaliacao text not null default 'PENDENTE'
-    check (status_criacao_avaliacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
+    check (status_criacao_avaliacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO'));
 
 alter table public.materia
   add column if not exists status_plano_aula text not null default 'PENDENTE'
-    check (status_plano_aula in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
+    check (status_plano_aula in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO'));
 
 alter table public.materia
   add column if not exists status_plano_ensino text not null default 'PENDENTE'
-    check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO'));
+    check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO'));
 
 alter table public.materia
   add column if not exists ensalado boolean not null default false;
@@ -80,29 +80,41 @@ alter table public.avaliacao drop column if exists status_criacao;
 alter table public.avaliacao drop column if exists status_plano_aula;
 alter table public.avaliacao drop column if exists status_plano_ensino;
 
-do $$
-begin
-  if not exists (
-    select 1 from pg_constraint where conname = 'avaliacao_status_aplicacao_check'
-  ) then
-    alter table public.avaliacao
-      add constraint avaliacao_status_aplicacao_check
-      check (status_aplicacao in ('PENDENTE', 'CONCLUIDO', 'CANCELADO'));
-  end if;
-end;
-$$;
+update public.avaliacao
+set acompanhamento_pedagogico_sgn = 'CONCLUIDO'
+where acompanhamento_pedagogico_sgn = 'SEM_ALUNOS';
 
-do $$
-begin
-  if not exists (
-    select 1 from pg_constraint where conname = 'avaliacao_acompanhamento_pedagogico_sgn_check'
-  ) then
-    alter table public.avaliacao
-      add constraint avaliacao_acompanhamento_pedagogico_sgn_check
-      check (acompanhamento_pedagogico_sgn in ('SEM_ALUNOS', 'PENDENTE', 'CONCLUIDO'));
-  end if;
-end;
-$$;
+alter table public.avaliacao
+  drop constraint if exists avaliacao_status_check,
+  drop constraint if exists avaliacao_status_aplicacao_check,
+  drop constraint if exists avaliacao_status_revisao_check,
+  drop constraint if exists avaliacao_status_cadastro_sgn_check,
+  drop constraint if exists avaliacao_acompanhamento_pedagogico_sgn_check;
+
+alter table public.avaliacao
+  add constraint avaliacao_status_check
+    check (status in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
+  add constraint avaliacao_status_aplicacao_check
+    check (status_aplicacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
+  add constraint avaliacao_status_revisao_check
+    check (status_revisao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
+  add constraint avaliacao_status_cadastro_sgn_check
+    check (status_cadastro_sgn in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
+  add constraint avaliacao_acompanhamento_pedagogico_sgn_check
+    check (acompanhamento_pedagogico_sgn in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO'));
+
+alter table public.materia
+  drop constraint if exists materia_status_criacao_avaliacao_check,
+  drop constraint if exists materia_status_plano_aula_check,
+  drop constraint if exists materia_status_plano_ensino_check;
+
+alter table public.materia
+  add constraint materia_status_criacao_avaliacao_check
+    check (status_criacao_avaliacao in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
+  add constraint materia_status_plano_aula_check
+    check (status_plano_aula in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO')),
+  add constraint materia_status_plano_ensino_check
+    check (status_plano_ensino in ('PENDENTE', 'ANDAMENTO', 'CONCLUIDO', 'CANCELADO'));
 
 alter table public.avaliacao enable row level security;
 
