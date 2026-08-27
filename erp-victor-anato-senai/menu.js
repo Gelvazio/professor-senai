@@ -84,8 +84,8 @@
       ]),
     3: () =>
       section('compras', 'Compras', [
-        link('compras/planejamento.html', '📋', 'Planejamento'),
         link('compras/pipeline.html', '🗂️', 'Pipeline'),
+        link('compras/planejamento.html', '📋', 'Planejamento'),
         link('compras/solicitacoes.html', '📝', 'Solicitações'),
         link('compras/pedidos.html', '🛒', 'Pedidos'),
         link('compras/recebimento.html', '📥', 'Recebimento'),
