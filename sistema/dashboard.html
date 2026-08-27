@@ -5897,6 +5897,18 @@
         }).join('');
       }
 
+      async function listarPendenciasSupabase() {
+        try {
+          // ✅ APENAS LISTA da tabela "pendencias" — sem buscar nem inserir
+          pendenciasRegistros = await sbGet('pendencias', 'select=*&order=datavencimento.asc,id.asc');
+          renderPendencias(pendenciasRegistros);
+        } catch (erro) {
+          document.getElementById('pendenciasResumo').textContent = 'Erro ao carregar.';
+          document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⚠️ Erro ao carregar pendências.</div>';
+          setPendenciasMsg('Erro: ' + (erro.message || erro), true);
+        }
+      }
+
       async function carregarPendenciasSupabase() {
         document.getElementById('pendenciasResumo').textContent = 'Carregando pendências…';
         document.getElementById('pendenciasLista').innerHTML = '<div class="pendencias-estado">⏳ Carregando…</div>';
@@ -6073,7 +6085,7 @@
         abrirModalAtualizandoPendencias();
         const tempoMinimoExibicao = new Promise(resolve => setTimeout(resolve, 3000));
         try {
-          await carregarPendenciasSupabase();
+          await listarPendenciasSupabase();
         } finally {
           await tempoMinimoExibicao;
           fecharModalAtualizandoPendencias();
@@ -6085,7 +6097,7 @@
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
         fecharFormPendencia();
-        await carregarPendenciasSupabase();
+        await listarPendenciasSupabase();
       }
 
       function novaPendencia() {
@@ -6151,7 +6163,7 @@
           if (id) await sbPatch('pendencias', 'id', id, dados);
           else await sbPost('pendencias', dados);
           fecharFormPendencia();
-          await carregarPendenciasSupabase();
+          await listarPendenciasSupabase();
           setPendenciasMsg(id ? '✅ Pendência atualizada.' : '✅ Pendência cadastrada.');
         } catch (erro) {
           setPendenciasMsg('Não foi possível salvar a pendência.', true);
@@ -6164,7 +6176,7 @@
         setPendenciasMsg('Excluindo…');
         try {
           await sbDelete('pendencias', 'id=eq.' + encodeURIComponent(id));
-          await carregarPendenciasSupabase();
+          await listarPendenciasSupabase();
           setPendenciasMsg('✅ Pendência excluída.');
         } catch (erro) {
           setPendenciasMsg('Não foi possível excluir a pendência.', true);
