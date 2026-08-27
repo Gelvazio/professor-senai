@@ -6079,9 +6079,11 @@
               if (temPendencia) {
                 regPendencia.descricao = descricoesPendentes.join(' | ') + ' — ' + (aval.nome || 'Avaliação sem nome');
                 console.log('✋ Pendência encontrada em avaliação:', aval.nome);
+                console.log('📋 Dados da pendência a inserir:', JSON.stringify(regPendencia, null, 2));
                 try {
                   await sbPost('pendencias', regPendencia);
                   console.log('✅ Inserida pendência de avaliação:', aval.nome);
+                  console.log('   materia_descricao inserida como:', regPendencia.materia_descricao);
                   totalInseridasAvaliacao++;
                 } catch (e) {
                   console.log('⚠️ Pendência de avaliação não inserida (pode já existir):', aval.nome, e.message);
