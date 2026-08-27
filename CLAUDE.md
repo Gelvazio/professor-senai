@@ -117,14 +117,55 @@ Exemplo:
 - Matéria tem `status_criacao_avaliacao = "PENDENTE"` → Cria pendência automaticamente
 - Usuário muda para `status_criacao_avaliacao = "CONCLUIDO"` → Ao clicar "Atualizar", pendência é marcada como CONCLUIDA automaticamente
 
+### 📊 Estrutura da Tabela "pendencias"
+
+⚠️ **CRÍTICO**: A tabela `pendencias` deve ter SEMPRE as seguintes colunas:
+
+**Para registros de MATÉRIAS:**
+```
+materia_id         (FK para tabela materia)
+status_criacao_avaliacao  (VARCHAR: "PENDENTE" ou NULL)
+status_plano_aula         (VARCHAR: "PENDENTE" ou NULL)
+status_plano_ensino       (VARCHAR: "PENDENTE" ou NULL)
+```
+
+**Para registros de AVALIAÇÕES:**
+```
+materia_id                        (FK para tabela materia)
+avaliacao_id                      (FK para tabela avaliacao)
+status_avaliacao                  (VARCHAR: "PENDENTE" ou NULL)
+status_gabarito                   (VARCHAR: "PENDENTE" ou NULL)
+status_revisao                    (VARCHAR: "PENDENTE" ou NULL)
+status_cadastro_sgn               (VARCHAR: "PENDENTE" ou NULL)
+acompanhamento_pedagogico_sgn     (VARCHAR: "PENDENTE" ou NULL)
+```
+
+### 🔄 Fluxo de Inserção de Pendências
+
+1. **UM registro por matéria** — não múltiplos registros
+   - Se matéria tem 3 campos PENDENTE → 1 registro com os 3 campos marcados como "PENDENTE"
+   - Campos não PENDENTE → NULL
+
+2. **UM registro por avaliação** — não múltiplos registros
+   - Se avaliação tem 5 campos PENDENTE → 1 registro com os 5 campos marcados como "PENDENTE"
+   - Campos não PENDENTE → NULL
+
+3. **Nenhuma duplicata**
+   - Verificar se já existe registro antes de inserir
+   - Se existe e tem campos não PENDENTE agora, pode ser atualizado
+
 ### ✅ Checklist de implementação
 
 Ao implementar pendências em qualquer página:
-1. ✅ Buscar tabelas `cursomateria`, `materia`, `avaliacao` do Supabase
-2. ✅ Filtrar **apenas matérias ensaladas** (`ensalado === true`)
-3. ✅ Contar campos com status "PENDENTE" em todos os 3 locais
-4. ✅ INSERIR automaticamente pendências encontradas na tabela `pendencias`
-5. ✅ CONCLUIR automaticamente pendências quando matérias/avaliações não forem mais PENDENTE
-6. ✅ Agregar pendências por curso/matéria
-7. ✅ Cachear resultados com timeout (ex: 5 minutos)
+1. ✅ Percorrer TODAS as matérias (sem filtro)
+2. ✅ Percorrer TODAS as avaliações (sem filtro)
+3. ✅ Para cada matéria com pelo menos 1 campo PENDENTE → inserir 1 registro em `pendencias`
+4. ✅ Para cada avaliação com pelo menos 1 campo PENDENTE → inserir 1 registro em `pendencias`
+5. ✅ Manter TODAS as colunas de status no registro (PENDENTE ou NULL)
+6. ✅ Verificar por `materia_id` ou `avaliacao_id` para evitar duplicatas
+7. ✅ CONCLUIR automaticamente pendências quando matérias/avaliações não forem mais PENDENTE
 8. ✅ Mostrar badge com total de pendências nos cards
+
+### ⚡ Após SEMPRE atualizar graphify
+
+⚠️ **REGRA CRÍTICA**: Após executar `graphify update .`, **SEMPRE** atualizar este arquivo `CLAUDE.md` com as novas regras implementadas. Isso garante que futuras interações saibam das mudanças feitas.
