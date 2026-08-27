@@ -166,6 +166,79 @@ Ao implementar pendências em qualquer página:
 7. ✅ CONCLUIR automaticamente pendências quando matérias/avaliações não forem mais PENDENTE
 8. ✅ Mostrar badge com total de pendências nos cards
 
+## 🎯 Implementação Completa do Sistema de Pendências (26-08-2026)
+
+### ✅ Funcionalidades Implementadas
+
+#### 1. **Criação Automática de Pendências**
+- Função `carregarPendenciasSupabase()` busca TODAS as matérias e avaliações
+- Cria automaticamente registros na tabela `pendencias` para cada campo PENDENTE
+- APENAS campos com valor são inseridos (sem NULLs desnecessários)
+- Campo `materia_descricao` preenchido automaticamente com `materia.descricao` (não `nome`)
+
+#### 2. **Descrições Automáticas**
+Pendências são criadas com descrições claras:
+
+**MATÉRIAS:**
+- `status_criacao_avaliacao` → "Criar avaliação"
+- `status_plano_aula` → "Criar plano de aula"
+- `status_plano_ensino` → "Criar plano de ensino"
+- Formato final: `"Descrição — Nome da Matéria"`
+
+**AVALIAÇÕES:**
+- `status_avaliacao` → "Completar avaliação"
+- `status_gabarito` → "Criar gabarito"
+- `status_revisao` → "Revisar avaliação"
+- `status_cadastro_sgn` → "Cadastrar no SGN"
+- `acompanhamento_pedagogico_sgn` → "Acompanhamento pedagógico"
+- Formato final: `"Descrição — Nome da Avaliação"`
+
+#### 3. **Sincronização Bidirecional**
+Quando pendência está com status = 'CONCLUIDO':
+- Busca o campo correspondente na tabela de origem (materia ou avaliacao)
+- **APENAS marca como CONCLUIDO o campo específico que estava PENDENTE**
+- Não toca em campos NULL ou com outros valores
+
+#### 4. **Interface de Pendências**
+- **Botão Toggle (✓)**: Marcar pendência como CONCLUIDO/PENDENTE
+  - Cinza quando PENDENTE
+  - Verde quando CONCLUIDO
+  - Primeiro botão em cada linha
+- **Botão Editar (✏️)**: Editar descrição, datas, horas
+- **Botão Excluir (🗑️)**: Remover pendência individual
+- **Botão Excluir Todas (🗑️)**: Deleta TODAS as pendências com confirmação dupla
+
+#### 5. **Campos da Tabela `pendencias`**
+```sql
+id (PK)
+materia_id (FK não-nulo)
+avaliacao_id (FK nulo se apenas matéria)
+materia_descricao (VARCHAR)
+descricao (TEXT)
+status (VARCHAR: PENDENTE, CONCLUIDA, CANCELADA)
+data (DATE)
+datavencimento (DATE)
+total_horas (NUMERIC)
+horas_ministradas (NUMERIC)
+status_criacao_avaliacao (VARCHAR: PENDENTE ou NULL)
+status_plano_aula (VARCHAR: PENDENTE ou NULL)
+status_plano_ensino (VARCHAR: PENDENTE ou NULL)
+status_avaliacao (VARCHAR: PENDENTE ou NULL)
+status_gabarito (VARCHAR: PENDENTE ou NULL)
+status_revisao (VARCHAR: PENDENTE ou NULL)
+status_cadastro_sgn (VARCHAR: PENDENTE ou NULL)
+acompanhamento_pedagogico_sgn (VARCHAR: PENDENTE ou NULL)
+created_at (TIMESTAMP)
+updated_at (TIMESTAMP)
+```
+
+### 📋 Scripts SQL Necessários
+
+1. **Criar tabela**: `sistema/scripts/001_criar_tabela_pendencias.sql`
+2. **Adicionar colunas faltantes**: `sistema/scripts/003_add_columns_pendencias.sql`
+
+Certifique-se de executar os scripts no Supabase SQL Editor!
+
 ### ⚡ Após SEMPRE atualizar graphify
 
 ⚠️ **REGRA CRÍTICA**: Após executar `graphify update .`, **SEMPRE** atualizar este arquivo `CLAUDE.md` com as novas regras implementadas. Isso garante que futuras interações saibam das mudanças feitas.
