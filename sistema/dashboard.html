@@ -6360,7 +6360,7 @@
 
         setPendenciasMsg('Excluindo todas as pendências…');
         try {
-          await sbDelete('pendencias', '');
+          await sbDelete('pendencias', 'id=gte.0');
           await listarPendenciasSupabase();
           setPendenciasMsg('✅ Todas as pendências foram excluídas com sucesso!');
         } catch (erro) {
