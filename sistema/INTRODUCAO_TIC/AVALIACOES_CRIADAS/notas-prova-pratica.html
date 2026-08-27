@@ -258,6 +258,31 @@
             font-size: 12px;
         }
 
+        .nota-docente-section {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+        }
+
+        .nota-final-section {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            border-left: 4px solid #28a745;
+        }
+
+        .nota-item input {
+            width: 60px;
+            padding: 4px 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .nota-item input:focus {
+            outline: none;
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
         .feedback {
             margin-top: 10px;
             padding: 10px;
@@ -715,7 +740,7 @@
                         </div>
                     </div>
                     <div class="notas-section">
-                        <h4>Notas Calculadas (7,0 pontos)</h4>
+                        <h4>Notas Automáticas (7,0 pontos)</h4>
                         <div class="nota-item">
                             <span class="nota-label">Organização (1,0)</span>
                             <span class="nota-valor">${(notas.organizacao || 0).toFixed(2)}</span>
@@ -739,6 +764,30 @@
                         <div class="nota-automatica-total">
                             <span>Nota Automática</span>
                             <span class="nota-automatica-valor ${classNota}">${notaAuto.toFixed(2)}/7,0</span>
+                        </div>
+                    </div>
+
+                    <div class="notas-section nota-docente-section">
+                        <h4>Notas do Docente (3,0 pontos)</h4>
+                        <div class="nota-item">
+                            <span class="nota-label">Clareza e Linguagem (1,0)</span>
+                            <input type="number" class="input-clareza" min="0" max="1" step="0.05" placeholder="0" value="${notas.clareza || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
+                        </div>
+                        <div class="nota-item">
+                            <span class="nota-label">Correção Técnica (1,0)</span>
+                            <input type="number" class="input-tecnica" min="0" max="1" step="0.05" placeholder="0" value="${notas.correcaoTecnica || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
+                        </div>
+                        <div class="nota-item">
+                            <span class="nota-label">Apresentação (1,0)</span>
+                            <input type="number" class="input-apresentacao" min="0" max="1" step="0.05" placeholder="0" value="${notas.apresentacao || ''}" onchange="recalcularNotaFinal(${equipe.numero})">
+                        </div>
+                    </div>
+
+                    <div class="notas-section nota-final-section">
+                        <h4>Nota Final (10,0 pontos)</h4>
+                        <div class="nota-automatica-total" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); margin-top: 0;">
+                            <span>Nota Automática + Docente</span>
+                            <span class="nota-automatica-valor" id="nota-final-${equipe.numero}">${Math.min(10, notaAuto + (notas.clareza || 0) + (notas.correcaoTecnica || 0) + (notas.apresentacao || 0)).toFixed(2)}/10,0</span>
                         </div>
                     </div>
                     <div class="feedback">
@@ -885,6 +934,34 @@
             if (nota >= 6.0) return 'nota-alta';
             if (nota >= 4.0) return 'nota-media';
             return 'nota-baixa';
+        }
+
+        function recalcularNotaFinal(equipeNum) {
+            // Encontrar os inputs da equipe
+            const cards = document.querySelectorAll('.card-equipe');
+            let cardEncontrado = false;
+
+            cards.forEach((card, index) => {
+                if (index + 1 === equipeNum) {
+                    cardEncontrado = true;
+                    const clareza = parseFloat(card.querySelector('.input-clareza').value) || 0;
+                    const tecnica = parseFloat(card.querySelector('.input-tecnica').value) || 0;
+                    const apresentacao = parseFloat(card.querySelector('.input-apresentacao').value) || 0;
+
+                    // Encontrar a nota automática
+                    const notaAutoText = card.querySelector('.nota-automatica-valor').textContent;
+                    const notaAuto = parseFloat(notaAutoText.split('/')[0]) || 0;
+
+                    // Calcular nota final (máximo 10,0)
+                    const notaFinal = Math.min(10, notaAuto + clareza + tecnica + apresentacao);
+
+                    // Atualizar o elemento da nota final
+                    const notaFinalEl = card.querySelector(`#nota-final-${equipeNum}`);
+                    if (notaFinalEl) {
+                        notaFinalEl.textContent = notaFinal.toFixed(2) + '/10,0';
+                    }
+                }
+            });
         }
 
         // Inicializar ao carregar
