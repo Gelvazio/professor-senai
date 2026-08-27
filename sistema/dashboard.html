@@ -2282,7 +2282,29 @@
           <button class="btn-excluir-todas" onclick="excluirTodasPendencias()" title="Excluir TODAS as pendências do banco de dados">🗑️ Excluir Todas</button>
           <span class="crud-msg" id="pendenciasMsg"></span>
         </div>
-        <div class="pendencia-form" id="pendenciaForm" style="display:none">
+        <div class="pendencias-resumo">
+          <div style="display:flex; align-items:center; gap:12px; justify-content:space-between;">
+            <span id="pendenciasResumo">Carregando pendências…</span>
+            <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#666; cursor:pointer;">
+              <input type="checkbox" id="togglePendenciasConc" onchange="refiltrarPendencias()">
+              Mostrar concluídas
+            </label>
+          </div>
+        </div>
+        <div class="pendencias-lista" id="pendenciasLista">
+          <div class="pendencias-estado">⏳ Carregando…</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Modal de Editar Pendência ──────────────────────── -->
+    <div class="crud-backdrop" id="pendenciasEditarModal" style="display:none;z-index:2800" onclick="if(event.target===this)fecharModalEditarPendencia()">
+      <div class="crud-modal" style="max-width:600px">
+        <div class="crud-modal-head">
+          <h3>Editar Pendência</h3>
+          <button class="crud-btn-fechar" onclick="fecharModalEditarPendencia()" aria-label="Fechar">✕</button>
+        </div>
+        <div class="pendencia-form">
           <input type="hidden" id="pendenciaId">
           <div class="pendencia-form-grid">
             <div class="crud-field pendencia-form-full">
@@ -2325,21 +2347,10 @@
           </div>
           <div class="pendencia-acoes">
             <button class="btn-salvar" onclick="salvarPendencia()">💾 Salvar</button>
-            <button class="btn-cancelar" onclick="fecharFormPendencia()">Cancelar</button>
+            <button class="btn-cancelar" onclick="fecharModalEditarPendencia()">Cancelar</button>
           </div>
         </div>
-        <div class="pendencias-resumo">
-          <div style="display:flex; align-items:center; gap:12px; justify-content:space-between;">
-            <span id="pendenciasResumo">Carregando pendências…</span>
-            <label style="display:flex; align-items:center; gap:6px; font-size:12px; color:#666; cursor:pointer;">
-              <input type="checkbox" id="togglePendenciasConc" onchange="refiltrarPendencias()">
-              Mostrar concluídas
-            </label>
-          </div>
-        </div>
-        <div class="pendencias-lista" id="pendenciasLista">
-          <div class="pendencias-estado">⏳ Carregando…</div>
-        </div>
+        <span class="crud-msg" id="pendenciasEditarMsg"></span>
       </div>
     </div>
 
@@ -6254,9 +6265,9 @@
         document.getElementById('pendenciaVencimento').value = '';
         document.getElementById('pendenciaTotalHoras').value = '';
         document.getElementById('pendenciaHorasMinistradas').value = '';
-        document.getElementById('pendenciaForm').style.display = 'block';
+        abrirModalEditarPendencia('Nova Pendência');
         document.getElementById('pendenciaDescricao').focus();
-        setPendenciasMsg('');
+        setPendenciasEditarMsg('');
       }
 
       function editarPendencia(id) {
@@ -6271,20 +6282,38 @@
         document.getElementById('pendenciaVencimento').value = String(item.datavencimento || '').slice(0, 10);
         document.getElementById('pendenciaTotalHoras').value = item.total_horas == null ? '' : item.total_horas;
         document.getElementById('pendenciaHorasMinistradas').value = item.horas_ministradas == null ? '' : item.horas_ministradas;
-        document.getElementById('pendenciaForm').style.display = 'block';
-        document.getElementById('pendenciaForm').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        setPendenciasMsg('Editando pendência #' + item.id);
+        abrirModalEditarPendencia('Editar Pendência #' + item.id);
+        document.getElementById('pendenciaDescricao').focus();
+        setPendenciasEditarMsg('');
+      }
+
+      function abrirModalEditarPendencia(titulo) {
+        document.querySelector('#pendenciasEditarModal .crud-modal-head h3').textContent = titulo;
+        document.getElementById('pendenciasEditarModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function fecharModalEditarPendencia() {
+        document.getElementById('pendenciasEditarModal').style.display = 'none';
+        document.body.style.overflow = '';
+        document.getElementById('pendenciaId').value = '';
+        setPendenciasEditarMsg('');
+      }
+
+      function setPendenciasEditarMsg(msg, isError) {
+        var el = document.getElementById('pendenciasEditarMsg');
+        el.textContent = msg;
+        el.style.color = isError ? '#c62828' : '#2e7d32';
       }
 
       function fecharFormPendencia() {
-        document.getElementById('pendenciaForm').style.display = 'none';
-        document.getElementById('pendenciaId').value = '';
+        fecharModalEditarPendencia();
       }
 
       async function salvarPendencia() {
         var descricao = document.getElementById('pendenciaDescricao').value.trim();
         if (!descricao) {
-          setPendenciasMsg('Informe a descrição da pendência.', true);
+          setPendenciasEditarMsg('Informe a descrição da pendência.', true);
           document.getElementById('pendenciaDescricao').focus();
           return;
         }
@@ -6302,15 +6331,15 @@
           horas_ministradas: horasMinistradas === '' ? null : Number(horasMinistradas),
           updated_at: new Date().toISOString()
         };
-        setPendenciasMsg('Salvando…');
+        setPendenciasEditarMsg('Salvando…');
         try {
           if (id) await sbPatch('pendencias', 'id', id, dados);
           else await sbPost('pendencias', dados);
-          fecharFormPendencia();
+          fecharModalEditarPendencia();
           await listarPendenciasSupabase();
           setPendenciasMsg(id ? '✅ Pendência atualizada.' : '✅ Pendência cadastrada.');
         } catch (erro) {
-          setPendenciasMsg('Não foi possível salvar a pendência.', true);
+          setPendenciasEditarMsg('Não foi possível salvar a pendência.', true);
         }
       }
 
