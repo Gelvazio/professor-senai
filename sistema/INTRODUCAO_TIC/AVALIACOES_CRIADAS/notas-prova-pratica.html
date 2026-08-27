@@ -843,7 +843,7 @@
                     <td>${(notas.sheets || 0).toFixed(2)}</td>
                     <td>${(notas.slides || 0).toFixed(2)}</td>
                     <td>${(notas.seguranca || 0).toFixed(2)}</td>
-                    <td><strong>${notaAuto.toFixed(2)}</strong></td>
+                    <td><strong>${notaAuto.toFixed(2)}/10,0</strong></td>
                     <td><span class="status-badge">${notas.status || 'Pendente'}</span></td>
                 `;
                 tbody.appendChild(tr);
