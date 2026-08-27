@@ -414,6 +414,26 @@
 
   <script>
     /* ══════════════════════════════════════════
+       SUPABASE CONFIG — Busca de Pendências
+    ══════════════════════════════════════════ */
+    const SUPABASE_URL = 'https://hdowwjkbpgmgsdbgxbsw.supabase.co';
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhkb3d3amtiY2dmc2dkYmdzeHdzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzAzNDU2NjcsImV4cCI6MTc2MTg4MTY2N30.s5b8XW8_7Q3Vj1O0k_L3h3XW_9L6h7Y5c8z7H6j7K8m';
+
+    const CAMPOS_PENDENTES_MATERIA = [
+      'status_criacao_avaliacao',
+      'status_plano_aula',
+      'status_plano_ensino',
+    ];
+
+    const CAMPOS_PENDENTES_AVALIACAO = [
+      'status_avaliacao',
+      'status_gabarito',
+      'status_revisao',
+      'status_cadastro_sgn',
+      'acompanhamento_pedagogico_sgn',
+    ];
+
+    /* ══════════════════════════════════════════
        CHECKLIST TEMPLATE — baseado nos documentos
        "Checklist Atribuições do Docente Presencial"
        e "Como se planejar para as aulas presenciais"
@@ -510,13 +530,58 @@
 
     let CURSOS = [];
     let CL_DATA = {}; // { ucId: { itemId: bool } }
+    let _pendenciasSupabaseCache = {}; // Cache de pendências do Supabase
 
-    function loadAll() {
+    async function sbGet(tabela, filtro) {
+      const url = `${SUPABASE_URL}/rest/v1/${tabela}?${filtro}`;
+      const r = await fetch(url, { headers: { apikey: SUPABASE_KEY } });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return await r.json();
+    }
+
+    async function carregarPendenciasSupabase() {
+      _pendenciasSupabaseCache = {};
+      try {
+        const materias = await sbGet('materia', 'select=*&ensalado=eq.true');
+        const idsMaterias = materias.map(m => m.id).filter(Number.isFinite);
+
+        if (idsMaterias.length === 0) return _pendenciasSupabaseCache;
+
+        const avaliacoes = await sbGet('avaliacao', `materia_id=in.(${idsMaterias.join(',')})&select=*`);
+
+        const totaisPorMateria = {};
+        materias.forEach(materia => {
+          totaisPorMateria[String(materia.id)] = CAMPOS_PENDENTES_MATERIA.reduce((total, campo) => {
+            return total + (String(materia[campo] || 'PENDENTE').toUpperCase() === 'PENDENTE' ? 1 : 0);
+          }, 0);
+        });
+
+        avaliacoes.forEach(avaliacao => {
+          const materiaId = String(avaliacao.materia_id);
+          const quantidade = CAMPOS_PENDENTES_AVALIACAO.reduce((total, campo) => {
+            return total + (String(avaliacao[campo] || '').toUpperCase() === 'PENDENTE' ? 1 : 0);
+          }, 0);
+          totaisPorMateria[materiaId] = (totaisPorMateria[materiaId] || 0) + quantidade;
+        });
+
+        materias.forEach(materia => {
+          _pendenciasSupabaseCache[String(materia.id)] = totaisPorMateria[String(materia.id)] || 0;
+        });
+      } catch (erro) {
+        console.warn('Erro ao carregar pendências do Supabase:', erro);
+      }
+      return _pendenciasSupabaseCache;
+    }
+
+    async function loadAll() {
       const rawC = localStorage.getItem(CURSOS_KEY);
       CURSOS = rawC ? JSON.parse(rawC) : JSON.parse(JSON.stringify(DEFAULTS));
       const rawCL = localStorage.getItem(CL_KEY);
       CL_DATA = rawCL ? JSON.parse(rawCL) : {};
-      // Recalcular pendências de todas as UCs a partir do CL_DATA
+
+      // ⚠️ CARREGA PENDÊNCIAS DO SUPABASE — NÃO apenas do checklist
+      await carregarPendenciasSupabase();
+
       CURSOS.forEach(c => c.ucs.forEach(uc => {
         uc.pendencias = calcPendencias(uc.id);
       }));
@@ -531,9 +596,27 @@
     }
 
     function calcPendencias(ucId) {
-      const state = CL_DATA[ucId] || {};
+      // ⚠️ REGRA CRÍTICA: Pendências vêm do Supabase, NÃO apenas do checklist
+      // Busca o ID numérico da matéria correspondente à UC
+      let materiasIds = [];
+      CURSOS.forEach(curso => {
+        const uc = curso.ucs.find(u => u.id === ucId);
+        if (uc) {
+          // Se houver dados do Supabase para essa matéria, usa aqueles
+          for (let mid in _pendenciasSupabaseCache) {
+            if (_pendenciasSupabaseCache[mid] > 0) {
+              materiasIds.push(mid);
+            }
+          }
+        }
+      });
+
+      // Soma pendências de todas as matérias vinculadas
       let pend = 0;
-      CHECKLIST.forEach(f => f.items.forEach(it => { if (!state[it.id]) pend++; }));
+      materiasIds.forEach(mid => {
+        pend += (_pendenciasSupabaseCache[mid] || 0);
+      });
+
       return pend;
     }
 
@@ -948,8 +1031,10 @@
     /* ══════════════════════════════════════════
        INIT
     ══════════════════════════════════════════ */
-    loadAll();
-    renderCursos();
+    (async () => {
+      await loadAll();
+      renderCursos();
+    })();
   </script>
 </body>
 </html>

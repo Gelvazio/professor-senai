@@ -67,3 +67,49 @@ Todos os dados e artefatos de **prova prática** da UC `INTRODUCAO_A_TECNOLOGIA_
 `sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/PROVA_PRATICA/`
 
 Essa regra abrange provas, recuperações, corretores automáticos, gabaritos, formulários, notas, instruções e arquivos auxiliares relacionados à prova prática. Ao criar, editar, regenerar ou mencionar qualquer desses artefatos, usar sempre esse caminho e não a raiz de `AVALIACOES_CRIADAS/`.
+
+## 🔔 Sistema de Pendências — Regra Crítica
+
+⚠️ **EXTREMAMENTE IMPORTANTE**: O sistema de pendências **SEMPRE** deve buscar dados do **Supabase**, NUNCA apenas de localStorage ou dados locais.
+
+### Definição de Pendências
+
+Pendências são contadas a partir de **3 fontes** no Supabase:
+
+1. **Campos de status nas matérias** (`materia` table):
+   - `status_criacao_avaliacao` = "PENDENTE"
+   - `status_plano_aula` = "PENDENTE"
+   - `status_plano_ensino` = "PENDENTE"
+
+2. **Campos de status nas avaliações** (`avaliacao` table):
+   - `status_avaliacao` = "PENDENTE"
+   - `status_gabarito` = "PENDENTE"
+   - `status_revisao` = "PENDENTE"
+   - `status_cadastro_sgn` = "PENDENTE"
+   - `acompanhamento_pedagogico_sgn` = "PENDENTE"
+
+3. **Tabela de pendências** (`pendencias` table):
+   - Registros com `status` = "PENDENTE" e associados a matérias/cursos
+
+### Implementação Obrigatória
+
+- **uc.html**: Deve chamar função `carregarPendenciasCursos()` (ou equivalente) que busca do Supabase
+- **dashboard.html**: Já implementa corretamente com `carregarPendenciasCursos()`
+- **Novos componentes**: SEMPRE integrar com Supabase para pendências
+
+### ❌ O que NÃO fazer
+
+- ❌ Contar apenas itens de checklist local (localStorage)
+- ❌ Usar dados hardcoded ou em memória
+- ❌ Ignorar campos de avaliação e matérias do Supabase
+- ❌ Criar sistema de pendências sem buscar do banco
+
+### ✅ Checklist de implementação
+
+Ao implementar pendências em qualquer página:
+1. ✅ Buscar tabelas `cursomateria`, `materia`, `avaliacao` do Supabase
+2. ✅ Filtrar **apenas matérias ensaladas** (`ensalado === true`)
+3. ✅ Contar campos com status "PENDENTE" em todos os 3 locais
+4. ✅ Agregar pendências por curso/matéria
+5. ✅ Cachear resultados com timeout (ex: 5 minutos)
+6. ✅ Mostrar badge com total de pendências nos cards
