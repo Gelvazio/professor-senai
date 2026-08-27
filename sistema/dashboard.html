@@ -5941,31 +5941,35 @@
               console.log(`   status_plano_aula: "${materia.status_plano_aula}"`);
               console.log(`   status_plano_ensino: "${materia.status_plano_ensino}"`);
 
+              // Cria 1 registro de pendência com os 3 campos
+              let temPendencia = false;
+              const regPendencia = {
+                materia_id: materia.id,
+                status_criacao_avaliacao: null,
+                status_plano_aula: null,
+                status_plano_ensino: null
+              };
+
               for (const campo of camposPendentes) {
                 const statusCampo = String(materia[campo] || '').trim().toUpperCase();
                 console.log(`   Verificando ${campo}: "${materia[campo]}" → normalizado: "${statusCampo}"`);
 
                 if (statusCampo === 'PENDENTE') {
                   totalEncontradas++;
-                  const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — ${materia.nome}`;
-                  console.log('✋ Pendência encontrada em matéria:', descricao);
+                  regPendencia[campo] = 'PENDENTE';
+                  temPendencia = true;
+                }
+              }
 
-                  // Simples: apenas tenta inserir, deixa o Supabase lidar com duplicatas
-                  try {
-                    const resultado = await sbPost('pendencias', {
-                      descricao: descricao,
-                      materia_id: materia.id,
-                      status: 'PENDENTE',
-                      tipo_origem: 'MATERIA',
-                      datavencimento: null,
-                      created_at: new Date().toISOString()
-                    });
-                    console.log('✅ Inserida pendência de matéria:', descricao);
-                    totalInseridasMateria++;
-                  } catch (e) {
-                    // Pode ser duplicata (unique constraint), o que é ok
-                    console.log('⚠️ Pendência de matéria não inserida (pode já existir):', descricao, e.message);
-                  }
+              // Se tem pelo menos 1 campo PENDENTE, insere o registro
+              if (temPendencia) {
+                console.log('✋ Pendência encontrada em matéria:', materia.nome);
+                try {
+                  await sbPost('pendencias', regPendencia);
+                  console.log('✅ Inserida pendência de matéria:', materia.nome);
+                  totalInseridasMateria++;
+                } catch (e) {
+                  console.log('⚠️ Pendência de matéria não inserida (pode já existir):', materia.nome, e.message);
                 }
               }
             }
@@ -5995,31 +5999,38 @@
               console.log(`   status_cadastro_sgn: "${aval.status_cadastro_sgn}"`);
               console.log(`   acompanhamento_pedagogico_sgn: "${aval.acompanhamento_pedagogico_sgn}"`);
 
+              // Cria 1 registro de pendência com os 5 campos
+              let temPendencia = false;
+              const regPendencia = {
+                materia_id: aval.materia_id,
+                avaliacao_id: aval.id,
+                status_avaliacao: null,
+                status_gabarito: null,
+                status_revisao: null,
+                status_cadastro_sgn: null,
+                acompanhamento_pedagogico_sgn: null
+              };
+
               for (const campo of camposAvaliacao) {
                 const statusCampo = String(aval[campo] || '').trim().toUpperCase();
                 console.log(`   Verificando ${campo}: "${aval[campo]}" → normalizado: "${statusCampo}"`);
 
                 if (statusCampo === 'PENDENTE') {
                   totalEncontradas++;
-                  const descricao = `${campo.replace('status_', '').replace(/_/g, ' ').toUpperCase()} — Avaliação: ${aval.nome || 'sem nome'}`;
-                  console.log('✋ Pendência encontrada em avaliação:', descricao);
+                  regPendencia[campo] = 'PENDENTE';
+                  temPendencia = true;
+                }
+              }
 
-                  // Simples: apenas tenta inserir, deixa o Supabase lidar com duplicatas
-                  try {
-                    const resultado = await sbPost('pendencias', {
-                      descricao: descricao,
-                      materia_id: aval.materia_id,
-                      status: 'PENDENTE',
-                      tipo_origem: 'AVALIACAO',
-                      datavencimento: null,
-                      created_at: new Date().toISOString()
-                    });
-                    console.log('✅ Inserida pendência de avaliação:', descricao);
-                    totalInseridasAvaliacao++;
-                  } catch (e) {
-                    // Pode ser duplicata (unique constraint), o que é ok
-                    console.log('⚠️ Pendência de avaliação não inserida (pode já existir):', descricao, e.message);
-                  }
+              // Se tem pelo menos 1 campo PENDENTE, insere o registro
+              if (temPendencia) {
+                console.log('✋ Pendência encontrada em avaliação:', aval.nome);
+                try {
+                  await sbPost('pendencias', regPendencia);
+                  console.log('✅ Inserida pendência de avaliação:', aval.nome);
+                  totalInseridasAvaliacao++;
+                } catch (e) {
+                  console.log('⚠️ Pendência de avaliação não inserida (pode já existir):', aval.nome, e.message);
                 }
               }
             }
