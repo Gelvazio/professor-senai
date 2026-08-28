@@ -81,6 +81,7 @@ const PASTAS_IGNORADAS = [
   '.vscode',
   '.idea',
   'ATIVIDADES',       // REGRA 04 — Pasta de atividades (não é uma aula)
+  'SUBSTITUICOES',    // REGRA 05 — Pasta de substituições (não é uma aula)
   '.tmp'              // Pasta temporária
 ];
 
@@ -154,6 +155,20 @@ const PADROES_ATIVIDADES = {
   ATIVIDADE_PDF: /^ATIVIDADE_(\d+)_VERSAO_IMPRESSA\.pdf$/i  // ATIVIDADE_01_VERSAO_IMPRESSA.pdf, etc
 };
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// ── PASTA DE SUBSTITUIÇÕES (REGRA 05) ──
+// ═══════════════════════════════════════════════════════════════════════════════
+// Pasta obrigatória: SUBSTITUICOES/
+// Contém: instruções sobre como montar aulas de substituição usando o SGN
+const SUBSTITUICOES_PASTA = 'SUBSTITUICOES';
+const SUBSTITUICOES_CLAUDE_ARQUIVO = 'CLAUDE.md';
+
+// Padrões regex para substituições
+const PADROES_SUBSTITUICOES = {
+  PASTA: /^SUBSTITUICOES$/i,              // Pasta SUBSTITUICOES (exata)
+  CLAUDE: /^CLAUDE\.md$/i                 // Arquivo CLAUDE.md (exato)
+};
+
 // Configurações de processamento
 const CONFIG = {
   TIMEOUT_ARQUIVO: 5000, // ms
@@ -207,6 +222,10 @@ module.exports = {
   ATIVIDADES_PASTA,
   GERAR_ATIVIDADES_ARQUIVO,
   PADROES_ATIVIDADES,
+  // Substituições (REGRA 05)
+  SUBSTITUICOES_PASTA,
+  SUBSTITUICOES_CLAUDE_ARQUIVO,
+  PADROES_SUBSTITUICOES,
   // Configuração
   CONFIG,
   EMOJIS

@@ -7,7 +7,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES, PADROES_ATIVIDADES } = require('./constants');
+const { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES, PADROES_ATIVIDADES, PADROES_SUBSTITUICOES } = require('./constants');
 
 /**
  * Extrai a quantidade de horas do arquivo EMENTA
@@ -74,9 +74,11 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
       EMENTA: false,
       PLANO_ENSINO: false,
       APOSTILA: false,
-      GERAR_SLIDES: false,       // REGRA 03
-      ATIVIDADES: false,         // REGRA 04
-      GERAR_ATIVIDADES: false    // REGRA 04
+      GERAR_SLIDES: false,            // REGRA 03
+      ATIVIDADES: false,              // REGRA 04
+      GERAR_ATIVIDADES: false,        // REGRA 04
+      SUBSTITUICOES: false,           // REGRA 05
+      SUBSTITUICOES_CLAUDE: false     // REGRA 05
     },
     arquivos_encontrados: {
       AULAS: null,
@@ -84,11 +86,13 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
       EMENTA: null,
       PLANO_ENSINO: null,
       APOSTILA: null,
-      GERAR_SLIDES: null,        // REGRA 03
-      ATIVIDADES: null,          // REGRA 04
-      GERAR_ATIVIDADES: null,    // REGRA 04
-      ATIVIDADES_MD: [],         // Lista de ATIVIDADE_NN.md encontrados
-      ATIVIDADES_PDF: []         // Lista de ATIVIDADE_NN_VERSAO_IMPRESSA.pdf encontrados
+      GERAR_SLIDES: null,             // REGRA 03
+      ATIVIDADES: null,               // REGRA 04
+      GERAR_ATIVIDADES: null,         // REGRA 04
+      ATIVIDADES_MD: [],              // Lista de ATIVIDADE_NN.md encontrados
+      ATIVIDADES_PDF: [],             // Lista de ATIVIDADE_NN_VERSAO_IMPRESSA.pdf encontrados
+      SUBSTITUICOES: null,            // REGRA 05
+      SUBSTITUICOES_CLAUDE: null      // REGRA 05
     },
     horas_aula: null,
     atividades_esperadas: 0,
@@ -137,6 +141,22 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
             }
           } catch (e) {
             console.warn(`⚠️  Erro ao ler pasta ATIVIDADES de ${nomeUC}:`, e.message);
+          }
+        } else if (item.name === 'SUBSTITUICOES') {
+          resultado.estrutura.SUBSTITUICOES = true;
+          resultado.arquivos_encontrados.SUBSTITUICOES = caminhoCompleto;
+
+          // Procurar por arquivo CLAUDE.md dentro da pasta SUBSTITUICOES
+          try {
+            const substituicoeItens = await fs.readdir(caminhoCompleto, { withFileTypes: true });
+            for (const subItem of substituicoeItens) {
+              if (subItem.isFile() && PADROES_SUBSTITUICOES.CLAUDE.test(subItem.name)) {
+                resultado.estrutura.SUBSTITUICOES_CLAUDE = true;
+                resultado.arquivos_encontrados.SUBSTITUICOES_CLAUDE = subItem.name;
+              }
+            }
+          } catch (e) {
+            console.warn(`⚠️  Erro ao ler pasta SUBSTITUICOES de ${nomeUC}:`, e.message);
           }
         }
       }
@@ -287,6 +307,25 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
           });
         }
       }
+    }
+
+    // REGRA 05 — Verificações de substituições
+    if (!resultado.estrutura.SUBSTITUICOES) {
+      resultado.pendencias.push({
+        tipo: 'PASTA',
+        item: 'SUBSTITUICOES',
+        mensagem: 'Pasta SUBSTITUICOES não encontrada (REGRA 05)',
+        prioridade: 'BAIXA'
+      });
+    }
+
+    if (resultado.estrutura.SUBSTITUICOES && !resultado.estrutura.SUBSTITUICOES_CLAUDE) {
+      resultado.pendencias.push({
+        tipo: 'ARQUIVO',
+        item: 'CLAUDE.md',
+        mensagem: 'Arquivo SUBSTITUICOES/CLAUDE.md não encontrado (REGRA 05)',
+        prioridade: 'BAIXA'
+      });
     }
 
     return resultado;

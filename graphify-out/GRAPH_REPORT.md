@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-28)
 
 ## Corpus Check
-- 326 files · ~1,295,536 words
+- 326 files · ~1,296,451 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4903 nodes · 4906 edges · 502 communities (463 shown, 39 thin omitted)
+- 4916 nodes · 4922 edges · 502 communities (463 shown, 39 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6c6e28d5`
+- Built from commit: `5ac72559`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -846,8 +846,8 @@ Cohesion: 0.39
 Nodes (10): add_activity(), add_bullets(), add_callout(), add_lesson(), add_module_intro(), add_para(), font(), set_cell_margins() (+2 more)
 
 ### Community 96 - "Community 96"
-Cohesion: 0.33
-Nodes (4): formatarPendenciasParaJS(), gerarPendencias(), path, salvarPendencias()
+Cohesion: 0.22
+Nodes (6): carregarJSON(), escreverLog(), formatarTimestamp(), garantirDiretorio(), path, salvarJSON()
 
 ### Community 97 - "Community 97"
 Cohesion: 0.18
@@ -1982,8 +1982,8 @@ Cohesion: 0.29
 Nodes (6): Padronizar status de matérias e avaliações, Passo 1: Padronizar os selects, Passo 2: Padronizar as restrições SQL, Passo 3: Tratar valores legados, Passo 4: Commit e push, Status Geral
 
 ### Community 423 - "Community 423"
-Cohesion: 0.05
-Nodes (36): APOSTILA_<NOME_DA_UC>.md, 📝 Arquivo Obrigatório, 📄 Arquivos Obrigatórios com Nomenclatura Específica, Características, ❌ Consequências de Não Conformidade, 📦 Containers de UCs (Exceção à REGRA 01), 📝 Convenções de Código, Dependência (+28 more)
+Cohesion: 0.04
+Nodes (46): APOSTILA_<NOME_DA_UC>.md, Arquivo Gerador (obrigatório), 📝 Arquivo Obrigatório, Arquivos de Atividade (quantidade calculada), 📝 Arquivos de Atividades, 📄 Arquivos Obrigatórios com Nomenclatura Específica, Características, ✅ Checklist de Conformidade (+38 more)
 
 ### Community 424 - "Community 424"
 Cohesion: 0.33
@@ -2122,23 +2122,23 @@ Cohesion: 0.19
 Nodes (11): PASTAS_IGNORADAS, UC_CONTAINERS, ehAula(), EXTENSOES_AULA, extrairDataAula(), extrairNumeroAula(), PADROES_AULA, { PASTAS_IGNORADAS, UC_CONTAINERS, SISTEMA_DIR } (+3 more)
 
 ### Community 526 - "Community 526"
-Cohesion: 0.11
-Nodes (19): CONFIG, DATA_DIR, EMOJIS, ESTRUTURA_UC_OBRIGATORIA, EXTENSOES_VALIDAS, LOGS_DIR, PADROES_ARQUIVOS_UC, PADROES_BUSCA (+11 more)
+Cohesion: 0.10
+Nodes (22): CONFIG, DATA_DIR, EMOJIS, ESTRUTURA_UC_OBRIGATORIA, EXTENSOES_VALIDAS, LOGS_DIR, PADROES_ARQUIVOS_UC, PADROES_ATIVIDADES (+14 more)
 
 ### Community 527 - "Community 527"
 Cohesion: 0.31
 Nodes (8): addRodape(), outPath, path, pptx, PptxGenJS, slideApresentacao(), slideConteudo(), slideDois()
 
 ### Community 528 - "Community 528"
-Cohesion: 0.10
-Nodes (18): carregarJSON(), escreverLog(), formatarTimestamp(), garantirDiretorio(), path, salvarJSON(), app, cache (+10 more)
+Cohesion: 0.11
+Nodes (16): formatarPendenciasParaJS(), gerarPendencias(), path, salvarPendencias(), app, cache, cors, DATA_DIR (+8 more)
 
 ### Community 529 - "Community 529"
 Cohesion: 0.53
 Nodes (5): Path, converter(), main(), preparar_html(), Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com     to
 
 ## Knowledge Gaps
-- **3495 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3490 more)
+- **3503 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3498 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2152,7 +2152,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `MÓDULO 4 — MEDIDAS E GRANDEZAS` connect `Community 56` to `Community 267`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _3516 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3524 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

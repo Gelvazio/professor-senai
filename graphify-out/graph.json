@@ -3447,7 +3447,7 @@
       "label": "UC_CONTAINERS",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L88",
+      "source_location": "L90",
       "_origin": "ast",
       "id": "src_constants_uc_containers",
       "community": 524,
@@ -3457,7 +3457,7 @@
       "label": "UNIDADES_CURRICULARESCONHECIDAS",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L93",
+      "source_location": "L95",
       "_origin": "ast",
       "id": "src_constants_unidades_curricularesconhecidas",
       "community": 526,
@@ -3467,7 +3467,7 @@
       "label": "ESTRUTURA_UC_OBRIGATORIA",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L107",
+      "source_location": "L109",
       "_origin": "ast",
       "id": "src_constants_estrutura_uc_obrigatoria",
       "community": 526,
@@ -3477,17 +3477,27 @@
       "label": "PADROES_ARQUIVOS_UC",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L126",
+      "source_location": "L128",
       "_origin": "ast",
       "id": "src_constants_padroes_arquivos_uc",
       "community": 526,
       "norm_label": "padroes_arquivos_uc"
     },
     {
+      "label": "PADROES_ATIVIDADES",
+      "file_type": "code",
+      "source_file": "syncdata/src/constants.js",
+      "source_location": "L150",
+      "_origin": "ast",
+      "id": "src_constants_padroes_atividades",
+      "community": 526,
+      "norm_label": "padroes_atividades"
+    },
+    {
       "label": "CONFIG",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L140",
+      "source_location": "L158",
       "_origin": "ast",
       "id": "src_constants_config",
       "community": 526,
@@ -3497,7 +3507,7 @@
       "label": "EMOJIS",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L148",
+      "source_location": "L166",
       "_origin": "ast",
       "id": "src_constants_emojis",
       "community": 526,
@@ -3510,7 +3520,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_generate_pendencias",
-      "community": 96,
+      "community": 528,
       "norm_label": "generate-pendencias.js"
     },
     {
@@ -3520,7 +3530,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_generate_pendencias_path",
-      "community": 96,
+      "community": 528,
       "norm_label": "path"
     },
     {
@@ -3530,7 +3540,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_generate_pendencias_analisaraula",
-      "community": 96,
+      "community": 528,
       "norm_label": "analisaraula()"
     },
     {
@@ -3540,7 +3550,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "src_generate_pendencias_gerarpendencias",
-      "community": 96,
+      "community": 528,
       "norm_label": "gerarpendencias()"
     },
     {
@@ -3550,7 +3560,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "src_generate_pendencias_formatarpendenciasparajs",
-      "community": 96,
+      "community": 528,
       "norm_label": "formatarpendenciasparajs()"
     },
     {
@@ -3560,7 +3570,7 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "src_generate_pendencias_salvarpendencias",
-      "community": 96,
+      "community": 528,
       "norm_label": "salvarpendencias()"
     },
     {
@@ -3570,7 +3580,7 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "src_generate_pendencias_gerarrelatoriopendencias",
-      "community": 96,
+      "community": 528,
       "norm_label": "gerarrelatoriopendencias()"
     },
     {
@@ -3700,7 +3710,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_utils",
-      "community": 528,
+      "community": 96,
       "norm_label": "utils.js"
     },
     {
@@ -3710,7 +3720,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_utils_path",
-      "community": 528,
+      "community": 96,
       "norm_label": "path"
     },
     {
@@ -3720,7 +3730,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_utils_garantirdiretorio",
-      "community": 528,
+      "community": 96,
       "norm_label": "garantirdiretorio()"
     },
     {
@@ -3730,7 +3740,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "src_utils_salvarjson",
-      "community": 528,
+      "community": 96,
       "norm_label": "salvarjson()"
     },
     {
@@ -3740,7 +3750,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "src_utils_carregarjson",
-      "community": 528,
+      "community": 96,
       "norm_label": "carregarjson()"
     },
     {
@@ -3750,7 +3760,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_utils_formatartimestamp",
-      "community": 528,
+      "community": 96,
       "norm_label": "formatartimestamp()"
     },
     {
@@ -3760,7 +3770,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "src_utils_escreverlog",
-      "community": 528,
+      "community": 96,
       "norm_label": "escreverlog()"
     },
     {
@@ -3770,7 +3780,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "src_utils_contarporextensao",
-      "community": 528,
+      "community": 96,
       "norm_label": "contarporextensao()"
     },
     {
@@ -3780,7 +3790,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "src_utils_encontrararquivos",
-      "community": 528,
+      "community": 96,
       "norm_label": "encontrararquivos()"
     },
     {
@@ -3790,7 +3800,7 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "src_utils_limparobjeto",
-      "community": 528,
+      "community": 96,
       "norm_label": "limparobjeto()"
     },
     {
@@ -3800,7 +3810,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "src_utils_ordenarpor",
-      "community": 528,
+      "community": 96,
       "norm_label": "ordenarpor()"
     },
     {
@@ -3824,20 +3834,40 @@
       "norm_label": "path"
     },
     {
-      "label": "{ ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES }",
+      "label": "{ ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES, PADROES_ATIVIDADES }",
       "file_type": "code",
       "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides",
+      "id": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides_padroes_atividades",
       "community": 526,
-      "norm_label": "{ estrutura_uc_obrigatoria, padroes_arquivos_uc, padroes_gerar_slides }"
+      "norm_label": "{ estrutura_uc_obrigatoria, padroes_arquivos_uc, padroes_gerar_slides, padroes_atividades }"
+    },
+    {
+      "label": "extrairHorasEmenta()",
+      "file_type": "code",
+      "source_file": "syncdata/src/verify-uc.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_verify_uc_extrairhorasementa",
+      "community": 526,
+      "norm_label": "extrairhorasementa()"
+    },
+    {
+      "label": "calcularAtividadesEsperadas()",
+      "file_type": "code",
+      "source_file": "syncdata/src/verify-uc.js",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "src_verify_uc_calcularatividadesesperadas",
+      "community": 526,
+      "norm_label": "calcularatividadesesperadas()"
     },
     {
       "label": "verificarEstrutuaUC()",
       "file_type": "code",
       "source_file": "syncdata/src/verify-uc.js",
-      "source_location": "L21",
+      "source_location": "L65",
       "_origin": "ast",
       "id": "src_verify_uc_verificarestrutuauc",
       "community": 526,
@@ -3847,7 +3877,7 @@
       "label": "verificarTodasUCs()",
       "file_type": "code",
       "source_file": "syncdata/src/verify-uc.js",
-      "source_location": "L171",
+      "source_location": "L309",
       "_origin": "ast",
       "id": "src_verify_uc_verificartodasucs",
       "community": 526,
@@ -3857,7 +3887,7 @@
       "label": "gerarRelatorioVerificacao()",
       "file_type": "code",
       "source_file": "syncdata/src/verify-uc.js",
-      "source_location": "L214",
+      "source_location": "L352",
       "_origin": "ast",
       "id": "src_verify_uc_gerarrelatorioverificacao",
       "community": 526,
@@ -48624,10 +48654,110 @@
       "norm_label": "dependencia"
     },
     {
+      "label": "\ud83d\udd34 REGRA 04 \u2014 Pasta de Atividades e Exerc\u00edcios",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L198",
+      "_origin": "ast",
+      "id": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
+      "community": 423,
+      "norm_label": "\ud83d\udd34 regra 04 \u2014 pasta de atividades e exercicios"
+    },
+    {
+      "label": "\ud83d\udcc1 Pasta Obrigat\u00f3ria",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L202",
+      "_origin": "ast",
+      "id": "syncdata_claude_pasta_obrigat\u00f3ria",
+      "community": 423,
+      "norm_label": "\ud83d\udcc1 pasta obrigatoria"
+    },
+    {
+      "label": "\ud83d\udcd0 C\u00e1lculo de Atividades",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "syncdata_claude_c\u00e1lculo_de_atividades",
+      "community": 423,
+      "norm_label": "\ud83d\udcd0 calculo de atividades"
+    },
+    {
+      "label": "\ud83d\udcdd Arquivos de Atividades",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L216",
+      "_origin": "ast",
+      "id": "syncdata_claude_arquivos_de_atividades",
+      "community": 423,
+      "norm_label": "\ud83d\udcdd arquivos de atividades"
+    },
+    {
+      "label": "Arquivo Gerador (obrigat\u00f3rio)",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L220",
+      "_origin": "ast",
+      "id": "syncdata_claude_arquivo_gerador_obrigat\u00f3rio",
+      "community": 423,
+      "norm_label": "arquivo gerador (obrigatorio)"
+    },
+    {
+      "label": "Arquivos de Atividade (quantidade calculada)",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L227",
+      "_origin": "ast",
+      "id": "syncdata_claude_arquivos_de_atividade_quantidade_calculada",
+      "community": 423,
+      "norm_label": "arquivos de atividade (quantidade calculada)"
+    },
+    {
+      "label": "Vers\u00f5es Impressas (PDF)",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L234",
+      "_origin": "ast",
+      "id": "syncdata_claude_vers\u00f5es_impressas_pdf",
+      "community": 423,
+      "norm_label": "versoes impressas (pdf)"
+    },
+    {
+      "label": "\ud83c\udf10 Formato Online",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L241",
+      "_origin": "ast",
+      "id": "syncdata_claude_formato_online",
+      "community": 423,
+      "norm_label": "\ud83c\udf10 formato online"
+    },
+    {
+      "label": "\u2705 Checklist de Conformidade",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L246",
+      "_origin": "ast",
+      "id": "syncdata_claude_checklist_de_conformidade",
+      "community": 423,
+      "norm_label": "\u2705 checklist de conformidade"
+    },
+    {
+      "label": "\ud83d\udd34 Prioridade",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "syncdata_claude_prioridade_253",
+      "community": 423,
+      "norm_label": "\ud83d\udd34 prioridade"
+    },
+    {
       "label": "\ud83c\udfaf Regras Cr\u00edticas",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L200",
+      "source_location": "L258",
       "_origin": "ast",
       "id": "syncdata_claude_regras_cr\u00edticas",
       "community": 423,
@@ -48637,7 +48767,7 @@
       "label": "\u2705 Obrigat\u00f3rio",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L202",
+      "source_location": "L260",
       "_origin": "ast",
       "id": "syncdata_claude_obrigat\u00f3rio",
       "community": 423,
@@ -48647,7 +48777,7 @@
       "label": "\u274c Proibido",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L210",
+      "source_location": "L268",
       "_origin": "ast",
       "id": "syncdata_claude_proibido",
       "community": 423,
@@ -48657,7 +48787,7 @@
       "label": "\ud83d\udcc2 Padr\u00e3o de Leitura de Arquivos",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L218",
+      "source_location": "L276",
       "_origin": "ast",
       "id": "syncdata_claude_padr\u00e3o_de_leitura_de_arquivos",
       "community": 423,
@@ -48667,7 +48797,7 @@
       "label": "\ud83d\udd04 Integra\u00e7\u00e3o com pendencias.js",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L253",
+      "source_location": "L311",
       "_origin": "ast",
       "id": "syncdata_claude_integra\u00e7\u00e3o_com_pendencias_js",
       "community": 423,
@@ -48677,7 +48807,7 @@
       "label": "\ud83d\udcca Tipos de Aula Reconhecidas",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L273",
+      "source_location": "L331",
       "_origin": "ast",
       "id": "syncdata_claude_tipos_de_aula_reconhecidas",
       "community": 423,
@@ -48687,7 +48817,7 @@
       "label": "\ud83d\ude80 Scripts Dispon\u00edveis",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L282",
+      "source_location": "L340",
       "_origin": "ast",
       "id": "syncdata_claude_scripts_dispon\u00edveis",
       "community": 423,
@@ -48697,7 +48827,7 @@
       "label": "\ud83d\udcdd Exemplos de Uso",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L291",
+      "source_location": "L349",
       "_origin": "ast",
       "id": "syncdata_claude_exemplos_de_uso",
       "community": 423,
@@ -48707,7 +48837,7 @@
       "label": "Importar em outro arquivo",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L293",
+      "source_location": "L351",
       "_origin": "ast",
       "id": "syncdata_claude_importar_em_outro_arquivo",
       "community": 423,
@@ -48717,7 +48847,7 @@
       "label": "Executar como CLI",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L304",
+      "source_location": "L362",
       "_origin": "ast",
       "id": "syncdata_claude_executar_como_cli",
       "community": 423,
@@ -48727,7 +48857,7 @@
       "label": "\u26a0\ufe0f Notas Importantes",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L310",
+      "source_location": "L368",
       "_origin": "ast",
       "id": "syncdata_claude_notas_importantes",
       "community": 423,
@@ -48737,7 +48867,7 @@
       "label": "\ud83d\udd10 Seguran\u00e7a",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L318",
+      "source_location": "L376",
       "_origin": "ast",
       "id": "syncdata_claude_seguran\u00e7a",
       "community": 423,
@@ -48747,7 +48877,7 @@
       "label": "\ud83d\udcda Recursos Externos",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L325",
+      "source_location": "L383",
       "_origin": "ast",
       "id": "syncdata_claude_recursos_externos",
       "community": 423,
@@ -55344,6 +55474,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "syncdata/src/constants.js",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "src_constants",
+      "target": "src_constants_padroes_atividades",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "sistema/syncdata/src/constants.js",
       "source_location": "L35",
       "weight": 1.0,
@@ -55528,6 +55668,17 @@
       "confidence_score": 1.0,
       "source": "src_verify_uc",
       "target": "src_constants_padroes_arquivos_uc"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/src/verify-uc.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_verify_uc",
+      "target": "src_constants_padroes_atividades",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -55880,11 +56031,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "syncdata/src/verify-uc.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "src_verify_uc",
+      "target": "src_verify_uc_calcularatividadesesperadas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "src_verify_uc",
-      "target": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides"
+      "target": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides_padroes_atividades",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/src/verify-uc.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_verify_uc",
+      "target": "src_verify_uc_extrairhorasementa",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -55925,6 +56096,28 @@
       "confidence_score": 1.0,
       "source": "src_verify_uc",
       "target": "src_verify_uc_verificartodasucs"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/src/verify-uc.js",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "src_verify_uc_verificarestrutuauc",
+      "target": "src_verify_uc_extrairhorasementa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/src/verify-uc.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "src_verify_uc_verificarestrutuauc",
+      "target": "src_verify_uc_calcularatividadesesperadas",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -90983,9 +91176,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica"
     },
     {
       "relation": "contains",
@@ -90993,9 +91186,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d"
     },
     {
       "relation": "contains",
@@ -91003,9 +91196,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L711",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica"
     },
     {
       "relation": "contains",
@@ -91013,9 +91206,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_rio_do_sul_mais_tech",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_rio_do_sul_mais_tech"
     },
     {
       "relation": "contains",
@@ -91023,9 +91216,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_rio_do_sul_mais_tech",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_senai_prefeitura_municipal_de_rio_do_sul",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_senai_prefeitura_municipal_de_rio_do_sul"
     },
     {
       "relation": "contains",
@@ -91033,9 +91226,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_apostila_do_aluno",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_apostila_do_aluno"
     },
     {
       "relation": "contains",
@@ -91043,9 +91236,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_apresenta\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_apresenta\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -91053,9 +91246,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_como_esta_apostila_est\u00e1_organizada",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_como_esta_apostila_est\u00e1_organizada"
     },
     {
       "relation": "contains",
@@ -91063,9 +91256,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivo_da_uc",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivo_da_uc"
     },
     {
       "relation": "contains",
@@ -91073,9 +91266,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_sobre_este_material",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_sobre_este_material"
     },
     {
       "relation": "contains",
@@ -91083,9 +91276,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_tabela_de_percurso",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_tabela_de_percurso"
     },
     {
       "relation": "contains",
@@ -91093,9 +91286,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_1_do_passado_ao_futuro_hist\u00f3ria_e_impacto_da_impress\u00e3o_3d",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_1_do_passado_ao_futuro_hist\u00f3ria_e_impacto_da_impress\u00e3o_3d"
     },
     {
       "relation": "contains",
@@ -91103,9 +91296,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L143",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_2_como_funciona_uma_impressora_3d_fdm_sla_e_sls",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_2_como_funciona_uma_impressora_3d_fdm_sla_e_sls"
     },
     {
       "relation": "contains",
@@ -91113,9 +91306,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L225",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_3_materiais_para_impress\u00e3o_3d_filamentos_e_resinas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_3_materiais_para_impress\u00e3o_3d_filamentos_e_resinas"
     },
     {
       "relation": "contains",
@@ -91123,9 +91316,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L302",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_4_primeiros_passos_no_tinkercad_interface_e_ferramentas_b\u00e1sicas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_4_primeiros_passos_no_tinkercad_interface_e_ferramentas_b\u00e1sicas"
     },
     {
       "relation": "contains",
@@ -91133,9 +91326,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L371",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_5_criando_s\u00f3lidos_no_tinkercad_formas_furos_e_combina\u00e7\u00f5es",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_5_criando_s\u00f3lidos_no_tinkercad_formas_furos_e_combina\u00e7\u00f5es"
     },
     {
       "relation": "contains",
@@ -91143,9 +91336,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L448",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_6_projeto_1_no_tinkercad_modelando_um_objeto_funcional",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_6_projeto_1_no_tinkercad_modelando_um_objeto_funcional"
     },
     {
       "relation": "contains",
@@ -91153,9 +91346,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L504",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_7_do_modelo_ao_arquivo_exportando_stl_e_configurando_o_fatiamento",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_7_do_modelo_ao_arquivo_exportando_stl_e_configurando_o_fatiamento"
     },
     {
       "relation": "contains",
@@ -91163,9 +91356,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L576",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_8_boas_pr\u00e1ticas_de_design_para_impress\u00e3o_3d",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_8_boas_pr\u00e1ticas_de_design_para_impress\u00e3o_3d"
     },
     {
       "relation": "contains",
@@ -91173,9 +91366,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L651",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_1_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_9_impress\u00e3o_do_projeto_1_e_an\u00e1lise_dos_resultados",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_9_impress\u00e3o_do_projeto_1_e_an\u00e1lise_dos_resultados"
     },
     {
       "relation": "contains",
@@ -91183,9 +91376,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_1_do_passado_ao_futuro_hist\u00f3ria_e_impacto_da_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica"
     },
     {
       "relation": "contains",
@@ -91193,9 +91386,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_1_do_passado_ao_futuro_hist\u00f3ria_e_impacto_da_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado"
     },
     {
       "relation": "contains",
@@ -91203,9 +91396,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_1_do_passado_ao_futuro_hist\u00f3ria_e_impacto_da_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos"
     },
     {
       "relation": "contains",
@@ -91213,9 +91406,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_1_do_passado_ao_futuro_hist\u00f3ria_e_impacto_da_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese"
     },
     {
       "relation": "contains",
@@ -91223,9 +91416,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_\u00e9_impress\u00e3o_3d",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_\u00e9_impress\u00e3o_3d"
     },
     {
       "relation": "contains",
@@ -91233,9 +91426,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_para_que_serve_a_impress\u00e3o_3d_hoje",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_para_que_serve_a_impress\u00e3o_3d_hoje"
     },
     {
       "relation": "contains",
@@ -91243,9 +91436,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_por_que_aprender_impress\u00e3o_3d",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_por_que_aprender_impress\u00e3o_3d"
     },
     {
       "relation": "contains",
@@ -91253,9 +91446,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_uma_breve_hist\u00f3ria",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_uma_breve_hist\u00f3ria"
     },
     {
       "relation": "contains",
@@ -91263,9 +91456,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L212",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_2_como_funciona_uma_impressora_3d_fdm_sla_e_sls",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_212",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_212"
     },
     {
       "relation": "contains",
@@ -91273,9 +91466,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_2_como_funciona_uma_impressora_3d_fdm_sla_e_sls",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_150",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_150"
     },
     {
       "relation": "contains",
@@ -91283,9 +91476,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_2_como_funciona_uma_impressora_3d_fdm_sla_e_sls",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_145",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_145"
     },
     {
       "relation": "contains",
@@ -91293,9 +91486,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L219",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_2_como_funciona_uma_impressora_3d_fdm_sla_e_sls",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_219",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_219"
     },
     {
       "relation": "contains",
@@ -91303,9 +91496,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_150",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_as_tr\u00eas_tecnologias_principais",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_as_tr\u00eas_tecnologias_principais"
     },
     {
       "relation": "contains",
@@ -91313,9 +91506,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_150",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_comparativo",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_comparativo"
     },
     {
       "relation": "contains",
@@ -91323,9 +91516,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_150",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_processo_geral",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_processo_geral"
     },
     {
       "relation": "contains",
@@ -91333,9 +91526,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L288",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_3_materiais_para_impress\u00e3o_3d_filamentos_e_resinas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_288",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_288"
     },
     {
       "relation": "contains",
@@ -91343,9 +91536,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_3_materiais_para_impress\u00e3o_3d_filamentos_e_resinas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_232",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_232"
     },
     {
       "relation": "contains",
@@ -91353,9 +91546,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L227",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_3_materiais_para_impress\u00e3o_3d_filamentos_e_resinas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_227",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_227"
     },
     {
       "relation": "contains",
@@ -91363,9 +91556,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L296",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_3_materiais_para_impress\u00e3o_3d_filamentos_e_resinas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_296",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_296"
     },
     {
       "relation": "contains",
@@ -91373,9 +91566,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L234",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_232",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_filamentos_para_fdm",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_filamentos_para_fdm"
     },
     {
       "relation": "contains",
@@ -91383,9 +91576,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L275",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_232",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_resinas_para_sla",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_resinas_para_sla"
     },
     {
       "relation": "contains",
@@ -91393,9 +91586,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L355",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_4_primeiros_passos_no_tinkercad_interface_e_ferramentas_b\u00e1sicas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_355",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_355"
     },
     {
       "relation": "contains",
@@ -91403,9 +91596,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L309",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_4_primeiros_passos_no_tinkercad_interface_e_ferramentas_b\u00e1sicas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_309",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_309"
     },
     {
       "relation": "contains",
@@ -91413,9 +91606,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L304",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_4_primeiros_passos_no_tinkercad_interface_e_ferramentas_b\u00e1sicas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_304",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_304"
     },
     {
       "relation": "contains",
@@ -91423,9 +91616,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L365",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_4_primeiros_passos_no_tinkercad_interface_e_ferramentas_b\u00e1sicas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_365",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_365"
     },
     {
       "relation": "contains",
@@ -91433,9 +91626,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L322",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_309",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_interface_do_tinkercad",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_interface_do_tinkercad"
     },
     {
       "relation": "contains",
@@ -91443,9 +91636,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L346",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_309",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_adicionando_e_manipulando_formas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_adicionando_e_manipulando_formas"
     },
     {
       "relation": "contains",
@@ -91453,9 +91646,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L334",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_309",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_navegando_no_espa\u00e7o_3d",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_navegando_no_espa\u00e7o_3d"
     },
     {
       "relation": "contains",
@@ -91463,9 +91656,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L311",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_309",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_\u00e9_o_tinkercad",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_\u00e9_o_tinkercad"
     },
     {
       "relation": "contains",
@@ -91473,9 +91666,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L430",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_5_criando_s\u00f3lidos_no_tinkercad_formas_furos_e_combina\u00e7\u00f5es",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_430",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_430"
     },
     {
       "relation": "contains",
@@ -91483,9 +91676,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L378",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_5_criando_s\u00f3lidos_no_tinkercad_formas_furos_e_combina\u00e7\u00f5es",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_378",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_378"
     },
     {
       "relation": "contains",
@@ -91493,9 +91686,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L373",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_5_criando_s\u00f3lidos_no_tinkercad_formas_furos_e_combina\u00e7\u00f5es",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_373",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_373"
     },
     {
       "relation": "contains",
@@ -91503,9 +91696,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L442",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_5_criando_s\u00f3lidos_no_tinkercad_formas_furos_e_combina\u00e7\u00f5es",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_442",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_442"
     },
     {
       "relation": "contains",
@@ -91513,9 +91706,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L409",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_378",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_m\u00e1gica_dos_furos",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_m\u00e1gica_dos_furos"
     },
     {
       "relation": "contains",
@@ -91523,9 +91716,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L419",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_378",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_combinando_formas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_combinando_formas"
     },
     {
       "relation": "contains",
@@ -91533,9 +91726,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L388",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_378",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_opera\u00e7\u00f5es_b\u00e1sicas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_opera\u00e7\u00f5es_b\u00e1sicas"
     },
     {
       "relation": "contains",
@@ -91543,9 +91736,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L380",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_378",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_tipos_de_formas_no_tinkercad",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_tipos_de_formas_no_tinkercad"
     },
     {
       "relation": "contains",
@@ -91553,9 +91746,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L489",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_6_projeto_1_no_tinkercad_modelando_um_objeto_funcional",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_489",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_489"
     },
     {
       "relation": "contains",
@@ -91563,9 +91756,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L455",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_6_projeto_1_no_tinkercad_modelando_um_objeto_funcional",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_455",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_455"
     },
     {
       "relation": "contains",
@@ -91573,9 +91766,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L450",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_6_projeto_1_no_tinkercad_modelando_um_objeto_funcional",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_450",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_450"
     },
     {
       "relation": "contains",
@@ -91583,9 +91776,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L498",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_6_projeto_1_no_tinkercad_modelando_um_objeto_funcional",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_498",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_498"
     },
     {
       "relation": "contains",
@@ -91593,9 +91786,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L477",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_455",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_op\u00e7\u00f5es_de_objetos_funcionais_para_o_projeto_1",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_op\u00e7\u00f5es_de_objetos_funcionais_para_o_projeto_1"
     },
     {
       "relation": "contains",
@@ -91603,9 +91796,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L457",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_455",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_planejamento_a_etapa_mais_importante",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_planejamento_a_etapa_mais_importante"
     },
     {
       "relation": "contains",
@@ -91613,9 +91806,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L469",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_455",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_processo_de_modelagem",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_processo_de_modelagem"
     },
     {
       "relation": "contains",
@@ -91623,9 +91816,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L560",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_7_do_modelo_ao_arquivo_exportando_stl_e_configurando_o_fatiamento",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_560",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_560"
     },
     {
       "relation": "contains",
@@ -91633,9 +91826,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L511",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_7_do_modelo_ao_arquivo_exportando_stl_e_configurando_o_fatiamento",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_511",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_511"
     },
     {
       "relation": "contains",
@@ -91643,9 +91836,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L506",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_7_do_modelo_ao_arquivo_exportando_stl_e_configurando_o_fatiamento",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_506",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_506"
     },
     {
       "relation": "contains",
@@ -91653,9 +91846,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L570",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_7_do_modelo_ao_arquivo_exportando_stl_e_configurando_o_fatiamento",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_570",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_570"
     },
     {
       "relation": "contains",
@@ -91663,9 +91856,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L533",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_511",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_configura\u00e7\u00f5es_principais_do_slicer",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_configura\u00e7\u00f5es_principais_do_slicer"
     },
     {
       "relation": "contains",
@@ -91673,9 +91866,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L547",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_511",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_entendendo_o_infill",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_entendendo_o_infill"
     },
     {
       "relation": "contains",
@@ -91683,9 +91876,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L513",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_511",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_arquivo_stl",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_arquivo_stl"
     },
     {
       "relation": "contains",
@@ -91693,9 +91886,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L525",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_511",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_software_de_fatiamento_slicer",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_software_de_fatiamento_slicer"
     },
     {
       "relation": "contains",
@@ -91703,9 +91896,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L637",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_8_boas_pr\u00e1ticas_de_design_para_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_637",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_637"
     },
     {
       "relation": "contains",
@@ -91713,9 +91906,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L583",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_8_boas_pr\u00e1ticas_de_design_para_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_583",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_583"
     },
     {
       "relation": "contains",
@@ -91723,9 +91916,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L578",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_8_boas_pr\u00e1ticas_de_design_para_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_578",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_578"
     },
     {
       "relation": "contains",
@@ -91733,9 +91926,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L645",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_8_boas_pr\u00e1ticas_de_design_para_impress\u00e3o_3d",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_645",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_645"
     },
     {
       "relation": "contains",
@@ -91743,9 +91936,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L585",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_583",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_por_que_o_design_para_impress\u00e3o_3d_\u00e9_especial",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_por_que_o_design_para_impress\u00e3o_3d_\u00e9_especial"
     },
     {
       "relation": "contains",
@@ -91753,9 +91946,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L624",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_583",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_quando_usar_suportes",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_quando_usar_suportes"
     },
     {
       "relation": "contains",
@@ -91763,9 +91956,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L589",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_583",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_1_espessura_m\u00ednima_de_paredes",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_1_espessura_m\u00ednima_de_paredes"
     },
     {
       "relation": "contains",
@@ -91773,9 +91966,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L597",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_583",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_2_regra_dos_45",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_2_regra_dos_45"
     },
     {
       "relation": "contains",
@@ -91783,9 +91976,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L604",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_583",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_3_orienta\u00e7\u00e3o_estrat\u00e9gica_da_pe\u00e7a",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_3_orienta\u00e7\u00e3o_estrat\u00e9gica_da_pe\u00e7a"
     },
     {
       "relation": "contains",
@@ -91793,9 +91986,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L614",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_583",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_4_toler\u00e2ncia_para_encaixes",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_4_toler\u00e2ncia_para_encaixes"
     },
     {
       "relation": "contains",
@@ -91803,9 +91996,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L620",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_583",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_5_evite_volan\u00e7as_overhangs_grandes",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_regra_5_evite_volan\u00e7as_overhangs_grandes"
     },
     {
       "relation": "contains",
@@ -91813,9 +92006,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L691",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_9_impress\u00e3o_do_projeto_1_e_an\u00e1lise_dos_resultados",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_691",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_691"
     },
     {
       "relation": "contains",
@@ -91823,9 +92016,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L658",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_9_impress\u00e3o_do_projeto_1_e_an\u00e1lise_dos_resultados",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_658",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_658"
     },
     {
       "relation": "contains",
@@ -91833,9 +92026,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L653",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_9_impress\u00e3o_do_projeto_1_e_an\u00e1lise_dos_resultados",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_653",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_653"
     },
     {
       "relation": "contains",
@@ -91843,9 +92036,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L705",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_9_impress\u00e3o_do_projeto_1_e_an\u00e1lise_dos_resultados",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_705",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_705"
     },
     {
       "relation": "contains",
@@ -91853,9 +92046,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L660",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_658",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_processo_de_impress\u00e3o_na_pr\u00e1tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_processo_de_impress\u00e3o_na_pr\u00e1tica"
     },
     {
       "relation": "contains",
@@ -91863,9 +92056,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L683",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_658",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_p\u00f3s_processamento",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_p\u00f3s_processamento"
     },
     {
       "relation": "contains",
@@ -91873,9 +92066,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L715",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_10_era_dos_rob\u00f4s_hist\u00f3ria_e_evolu\u00e7\u00e3o_da_rob\u00f3tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_10_era_dos_rob\u00f4s_hist\u00f3ria_e_evolu\u00e7\u00e3o_da_rob\u00f3tica"
     },
     {
       "relation": "contains",
@@ -91883,9 +92076,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L781",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_11_classifica\u00e7\u00e3o_dos_rob\u00f4s_industriais_de_servi\u00e7o_e_m\u00f3veis",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_11_classifica\u00e7\u00e3o_dos_rob\u00f4s_industriais_de_servi\u00e7o_e_m\u00f3veis"
     },
     {
       "relation": "contains",
@@ -91893,9 +92086,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L860",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_12_sensores_como_os_rob\u00f4s_enxergam_o_mundo",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_12_sensores_como_os_rob\u00f4s_enxergam_o_mundo"
     },
     {
       "relation": "contains",
@@ -91903,9 +92096,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L936",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_13_atuadores_e_motores_como_os_rob\u00f4s_agem",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_13_atuadores_e_motores_como_os_rob\u00f4s_agem"
     },
     {
       "relation": "contains",
@@ -91913,9 +92106,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1021",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_14_controladores_e_microcontroladores_o_c\u00e9rebro_do_rob\u00f4",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_14_controladores_e_microcontroladores_o_c\u00e9rebro_do_rob\u00f4"
     },
     {
       "relation": "contains",
@@ -91923,9 +92116,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_15_programa\u00e7\u00e3o_b\u00e1sica_trajet\u00f3rias_e_sequ\u00eancias_de_movimento",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_15_programa\u00e7\u00e3o_b\u00e1sica_trajet\u00f3rias_e_sequ\u00eancias_de_movimento"
     },
     {
       "relation": "contains",
@@ -91933,9 +92126,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1215",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_16_integra\u00e7\u00e3o_imprimindo_pe\u00e7as_para_o_rob\u00f4",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_16_integra\u00e7\u00e3o_imprimindo_pe\u00e7as_para_o_rob\u00f4"
     },
     {
       "relation": "contains",
@@ -91943,9 +92136,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1283",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_17_projeto_final_montagem_do_prot\u00f3tipo_rob\u00f3tico",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_17_projeto_final_montagem_do_prot\u00f3tipo_rob\u00f3tico"
     },
     {
       "relation": "contains",
@@ -91953,9 +92146,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1343",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_18_apresenta\u00e7\u00e3o_dos_projetos_e_avalia\u00e7\u00e3o_final",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_18_apresenta\u00e7\u00e3o_dos_projetos_e_avalia\u00e7\u00e3o_final"
     },
     {
       "relation": "contains",
@@ -91963,9 +92156,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1392",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_gloss\u00e1rio",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_gloss\u00e1rio"
     },
     {
       "relation": "contains",
@@ -91973,9 +92166,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1442",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_parte_2_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_refer\u00eancias_sugeridas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_refer\u00eancias_sugeridas"
     },
     {
       "relation": "contains",
@@ -91983,9 +92176,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L767",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_10_era_dos_rob\u00f4s_hist\u00f3ria_e_evolu\u00e7\u00e3o_da_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_767",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_767"
     },
     {
       "relation": "contains",
@@ -91993,9 +92186,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L722",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_10_era_dos_rob\u00f4s_hist\u00f3ria_e_evolu\u00e7\u00e3o_da_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_722",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_722"
     },
     {
       "relation": "contains",
@@ -92003,9 +92196,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L717",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_10_era_dos_rob\u00f4s_hist\u00f3ria_e_evolu\u00e7\u00e3o_da_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_717",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_717"
     },
     {
       "relation": "contains",
@@ -92013,9 +92206,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L775",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_10_era_dos_rob\u00f4s_hist\u00f3ria_e_evolu\u00e7\u00e3o_da_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_775",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_775"
     },
     {
       "relation": "contains",
@@ -92023,9 +92216,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L730",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_722",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_linha_do_tempo_da_rob\u00f3tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_linha_do_tempo_da_rob\u00f3tica"
     },
     {
       "relation": "contains",
@@ -92033,9 +92226,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L756",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_722",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_as_3_leis_da_rob\u00f3tica_de_asimov",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_as_3_leis_da_rob\u00f3tica_de_asimov"
     },
     {
       "relation": "contains",
@@ -92043,9 +92236,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L724",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_722",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_\u00e9_um_rob\u00f4",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_\u00e9_um_rob\u00f4"
     },
     {
       "relation": "contains",
@@ -92053,9 +92246,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L847",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_11_classifica\u00e7\u00e3o_dos_rob\u00f4s_industriais_de_servi\u00e7o_e_m\u00f3veis",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_847",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_847"
     },
     {
       "relation": "contains",
@@ -92063,9 +92256,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L788",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_11_classifica\u00e7\u00e3o_dos_rob\u00f4s_industriais_de_servi\u00e7o_e_m\u00f3veis",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_788",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_788"
     },
     {
       "relation": "contains",
@@ -92073,9 +92266,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L783",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_11_classifica\u00e7\u00e3o_dos_rob\u00f4s_industriais_de_servi\u00e7o_e_m\u00f3veis",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_783",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_783"
     },
     {
       "relation": "contains",
@@ -92083,9 +92276,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L854",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_11_classifica\u00e7\u00e3o_dos_rob\u00f4s_industriais_de_servi\u00e7o_e_m\u00f3veis",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_854",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_854"
     },
     {
       "relation": "contains",
@@ -92093,9 +92286,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L794",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_788",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_1_rob\u00f4s_industriais",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_1_rob\u00f4s_industriais"
     },
     {
       "relation": "contains",
@@ -92103,9 +92296,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L814",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_788",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_2_rob\u00f4s_de_servi\u00e7o",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_2_rob\u00f4s_de_servi\u00e7o"
     },
     {
       "relation": "contains",
@@ -92113,9 +92306,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L825",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_788",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_3_rob\u00f4s_m\u00f3veis",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_3_rob\u00f4s_m\u00f3veis"
     },
     {
       "relation": "contains",
@@ -92123,9 +92316,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L790",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_788",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_por_que_classificar_rob\u00f4s",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_por_que_classificar_rob\u00f4s"
     },
     {
       "relation": "contains",
@@ -92133,9 +92326,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L836",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_788",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_rob\u00f4s_humanoides_uma_categoria_especial",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_rob\u00f4s_humanoides_uma_categoria_especial"
     },
     {
       "relation": "contains",
@@ -92143,9 +92336,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L920",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_12_sensores_como_os_rob\u00f4s_enxergam_o_mundo",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_920",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_920"
     },
     {
       "relation": "contains",
@@ -92153,9 +92346,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L867",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_12_sensores_como_os_rob\u00f4s_enxergam_o_mundo",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_867",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_867"
     },
     {
       "relation": "contains",
@@ -92163,9 +92356,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L862",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_12_sensores_como_os_rob\u00f4s_enxergam_o_mundo",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_862",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_862"
     },
     {
       "relation": "contains",
@@ -92173,9 +92366,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L930",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_12_sensores_como_os_rob\u00f4s_enxergam_o_mundo",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_930",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_930"
     },
     {
       "relation": "contains",
@@ -92183,9 +92376,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L906",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_867",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_da_leitura_\u00e0_a\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_da_leitura_\u00e0_a\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -92193,9 +92386,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L869",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_867",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_s\u00e3o_sensores",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_s\u00e3o_sensores"
     },
     {
       "relation": "contains",
@@ -92203,9 +92396,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L875",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_867",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_tipos_de_sensores",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_tipos_de_sensores"
     },
     {
       "relation": "contains",
@@ -92213,9 +92406,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1007",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_13_atuadores_e_motores_como_os_rob\u00f4s_agem",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1007",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1007"
     },
     {
       "relation": "contains",
@@ -92223,9 +92416,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L943",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_13_atuadores_e_motores_como_os_rob\u00f4s_agem",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_943",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_943"
     },
     {
       "relation": "contains",
@@ -92233,9 +92426,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L938",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_13_atuadores_e_motores_como_os_rob\u00f4s_agem",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_938",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_938"
     },
     {
       "relation": "contains",
@@ -92243,9 +92436,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1015",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_13_atuadores_e_motores_como_os_rob\u00f4s_agem",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1015",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1015"
     },
     {
       "relation": "contains",
@@ -92253,9 +92446,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1000",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_943",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_motor_de_passo_na_impressora_3d",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_motor_de_passo_na_impressora_3d"
     },
     {
       "relation": "contains",
@@ -92263,9 +92456,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L945",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_943",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_s\u00e3o_atuadores",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_s\u00e3o_atuadores"
     },
     {
       "relation": "contains",
@@ -92273,9 +92466,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L982",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_943",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_outros_tipos_de_atuadores",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_outros_tipos_de_atuadores"
     },
     {
       "relation": "contains",
@@ -92283,9 +92476,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L949",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_943",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_tipos_de_atuadores",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_tipos_de_atuadores"
     },
     {
       "relation": "contains",
@@ -92293,9 +92486,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_14_controladores_e_microcontroladores_o_c\u00e9rebro_do_rob\u00f4",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1101",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1101"
     },
     {
       "relation": "contains",
@@ -92303,9 +92496,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1028",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_14_controladores_e_microcontroladores_o_c\u00e9rebro_do_rob\u00f4",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1028",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1028"
     },
     {
       "relation": "contains",
@@ -92313,9 +92506,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1023",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_14_controladores_e_microcontroladores_o_c\u00e9rebro_do_rob\u00f4",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1023",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1023"
     },
     {
       "relation": "contains",
@@ -92323,9 +92516,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_14_controladores_e_microcontroladores_o_c\u00e9rebro_do_rob\u00f4",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1113",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1113"
     },
     {
       "relation": "contains",
@@ -92333,9 +92526,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1055",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1028",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_anatomia_do_arduino_uno",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_anatomia_do_arduino_uno"
     },
     {
       "relation": "contains",
@@ -92343,9 +92536,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1066",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1028",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_estrutura_de_um_programa_arduino",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_estrutura_de_um_programa_arduino"
     },
     {
       "relation": "contains",
@@ -92353,9 +92546,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1036",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1028",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_arduino_o_microcontrolador_mais_popular_do_mundo",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_arduino_o_microcontrolador_mais_popular_do_mundo"
     },
     {
       "relation": "contains",
@@ -92363,9 +92556,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1030",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1028",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_\u00e9_um_controlador",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_que_\u00e9_um_controlador"
     },
     {
       "relation": "contains",
@@ -92373,9 +92566,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1089",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1028",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_outros_microcontroladores",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_outros_microcontroladores"
     },
     {
       "relation": "contains",
@@ -92383,9 +92576,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1200",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_15_programa\u00e7\u00e3o_b\u00e1sica_trajet\u00f3rias_e_sequ\u00eancias_de_movimento",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1200",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1200"
     },
     {
       "relation": "contains",
@@ -92393,9 +92586,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_15_programa\u00e7\u00e3o_b\u00e1sica_trajet\u00f3rias_e_sequ\u00eancias_de_movimento",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1126",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1126"
     },
     {
       "relation": "contains",
@@ -92403,9 +92596,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_15_programa\u00e7\u00e3o_b\u00e1sica_trajet\u00f3rias_e_sequ\u00eancias_de_movimento",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1121",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1121"
     },
     {
       "relation": "contains",
@@ -92413,9 +92606,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1209",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_15_programa\u00e7\u00e3o_b\u00e1sica_trajet\u00f3rias_e_sequ\u00eancias_de_movimento",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1209",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1209"
     },
     {
       "relation": "contains",
@@ -92423,9 +92616,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1126",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_controlando_dire\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_controlando_dire\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -92433,9 +92626,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1126",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_controlando_motores_com_arduino",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_controlando_motores_com_arduino"
     },
     {
       "relation": "contains",
@@ -92443,9 +92636,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1126",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_controlando_velocidade_pwm",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_controlando_velocidade_pwm"
     },
     {
       "relation": "contains",
@@ -92453,9 +92646,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1126",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_programando_trajet\u00f3rias",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_programando_trajet\u00f3rias"
     },
     {
       "relation": "contains",
@@ -92463,9 +92656,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1126",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_trajet\u00f3rias_mais_sofisticadas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_trajet\u00f3rias_mais_sofisticadas"
     },
     {
       "relation": "contains",
@@ -92473,9 +92666,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1260",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_16_integra\u00e7\u00e3o_imprimindo_pe\u00e7as_para_o_rob\u00f4",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1260",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1260"
     },
     {
       "relation": "contains",
@@ -92483,9 +92676,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1222",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_16_integra\u00e7\u00e3o_imprimindo_pe\u00e7as_para_o_rob\u00f4",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1222",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1222"
     },
     {
       "relation": "contains",
@@ -92493,9 +92686,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1217",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_16_integra\u00e7\u00e3o_imprimindo_pe\u00e7as_para_o_rob\u00f4",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1217",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1217"
     },
     {
       "relation": "contains",
@@ -92503,9 +92696,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1277",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_16_integra\u00e7\u00e3o_imprimindo_pe\u00e7as_para_o_rob\u00f4",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1277",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1277"
     },
     {
       "relation": "contains",
@@ -92513,9 +92706,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1224",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1222",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_impress\u00e3o_3d_na_rob\u00f3tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_a_impress\u00e3o_3d_na_rob\u00f3tica"
     },
     {
       "relation": "contains",
@@ -92523,9 +92716,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1252",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1222",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_integrando_sensores_em_pe\u00e7as_impressas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_integrando_sensores_em_pe\u00e7as_impressas"
     },
     {
       "relation": "contains",
@@ -92533,9 +92726,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1233",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1222",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_princ\u00edpios_de_design_de_pe\u00e7as_rob\u00f3ticas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_princ\u00edpios_de_design_de_pe\u00e7as_rob\u00f3ticas"
     },
     {
       "relation": "contains",
@@ -92543,9 +92736,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1326",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_17_projeto_final_montagem_do_prot\u00f3tipo_rob\u00f3tico",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1326",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_pr\u00e1tica_1326"
     },
     {
       "relation": "contains",
@@ -92553,9 +92746,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1290",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_17_projeto_final_montagem_do_prot\u00f3tipo_rob\u00f3tico",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1290",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1290"
     },
     {
       "relation": "contains",
@@ -92563,9 +92756,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1285",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_17_projeto_final_montagem_do_prot\u00f3tipo_rob\u00f3tico",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1285",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1285"
     },
     {
       "relation": "contains",
@@ -92573,9 +92766,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1337",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_17_projeto_final_montagem_do_prot\u00f3tipo_rob\u00f3tico",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1337",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_s\u00edntese_1337"
     },
     {
       "relation": "contains",
@@ -92583,9 +92776,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1304",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1290",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_checklist_antes_de_ligar",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_checklist_antes_de_ligar"
     },
     {
       "relation": "contains",
@@ -92593,9 +92786,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1313",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1290",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_depura\u00e7\u00e3o_debugging_de_problemas_comuns",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_depura\u00e7\u00e3o_debugging_de_problemas_comuns"
     },
     {
       "relation": "contains",
@@ -92603,9 +92796,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1292",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1290",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_processo_de_integra\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_o_processo_de_integra\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -92613,9 +92806,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1379",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_18_apresenta\u00e7\u00e3o_dos_projetos_e_avalia\u00e7\u00e3o_final",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_final",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_atividade_final"
     },
     {
       "relation": "contains",
@@ -92623,9 +92816,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1350",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_18_apresenta\u00e7\u00e3o_dos_projetos_e_avalia\u00e7\u00e3o_final",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1350",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1350"
     },
     {
       "relation": "contains",
@@ -92633,9 +92826,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1345",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_encontro_18_apresenta\u00e7\u00e3o_dos_projetos_e_avalia\u00e7\u00e3o_final",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1345",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_objetivos_1345"
     },
     {
       "relation": "contains",
@@ -92643,9 +92836,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1352",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1350",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_como_fazer_uma_boa_apresenta\u00e7\u00e3o_t\u00e9cnica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_como_fazer_uma_boa_apresenta\u00e7\u00e3o_t\u00e9cnica"
     },
     {
       "relation": "contains",
@@ -92653,9 +92846,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1369",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_conte\u00fado_1350",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_rubrica_de_avalia\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_rubrica_de_avalia\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -92663,9 +92856,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1451",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_refer\u00eancias_sugeridas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_canais_no_youtube_em_portugu\u00eas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_canais_no_youtube_em_portugu\u00eas"
     },
     {
       "relation": "contains",
@@ -92673,9 +92866,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1456",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_refer\u00eancias_sugeridas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_livros",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_livros"
     },
     {
       "relation": "contains",
@@ -92683,9 +92876,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md",
       "source_location": "L1444",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_apostila_da_materia_refer\u00eancias_sugeridas",
-      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_sites",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_apostila_da_materia_sites"
     },
     {
       "relation": "contains",
@@ -92693,9 +92886,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_ementa_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_ementa_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica"
     },
     {
       "relation": "contains",
@@ -92703,9 +92896,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_ementa_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_1_identifica\u00e7\u00e3o_da_unidade_curricular",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_1_identifica\u00e7\u00e3o_da_unidade_curricular"
     },
     {
       "relation": "contains",
@@ -92713,9 +92906,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_ementa_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_2_objetivo",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_2_objetivo"
     },
     {
       "relation": "contains",
@@ -92723,9 +92916,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_ementa_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_3_capacidades_b\u00e1sicas_e_t\u00e9cnicas",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_3_capacidades_b\u00e1sicas_e_t\u00e9cnicas"
     },
     {
       "relation": "contains",
@@ -92733,9 +92926,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_ementa_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_4_conhecimentos",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_4_conhecimentos"
     },
     {
       "relation": "contains",
@@ -92743,9 +92936,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_ementa_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_5_organiza\u00e7\u00e3o_curricular",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_5_organiza\u00e7\u00e3o_curricular"
     },
     {
       "relation": "contains",
@@ -92753,9 +92946,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_ementa_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_6_metodologia",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_6_metodologia"
     },
     {
       "relation": "contains",
@@ -92763,9 +92956,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_ementa_oficinas_de_impress\u00e3o_3d_e_rob\u00f3tica",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_7_avalia\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_7_avalia\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -92773,9 +92966,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_3_capacidades_b\u00e1sicas_e_t\u00e9cnicas",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_3_1_impress\u00e3o_3d",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_3_1_impress\u00e3o_3d"
     },
     {
       "relation": "contains",
@@ -92783,9 +92976,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_3_capacidades_b\u00e1sicas_e_t\u00e9cnicas",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_3_2_rob\u00f3tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_3_2_rob\u00f3tica"
     },
     {
       "relation": "contains",
@@ -92793,9 +92986,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_4_conhecimentos",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_4_1_modelagem_e_impress\u00e3o_3d",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_4_1_modelagem_e_impress\u00e3o_3d"
     },
     {
       "relation": "contains",
@@ -92803,9 +92996,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "oficinas_impressao_3d_robotica_ementa_da_materia_4_conhecimentos",
-      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_4_2_rob\u00f3tica",
-      "confidence_score": 1.0
+      "target": "oficinas_impressao_3d_robotica_ementa_da_materia_4_2_rob\u00f3tica"
     },
     {
       "relation": "contains",
@@ -97900,6 +98093,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "syncdata_claude_syncdata_regras_do_projeto",
+      "target": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "sistema/syncdata/CLAUDE.md",
       "source_location": "L66",
       "weight": 1.0,
@@ -97983,9 +98186,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_regra_02_estrutura_obrigat\u00f3ria_de_unidades_curriculares",
-      "target": "syncdata_claude_arquivos_obrigat\u00f3rios_com_nomenclatura_espec\u00edfica",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_arquivos_obrigat\u00f3rios_com_nomenclatura_espec\u00edfica"
     },
     {
       "relation": "contains",
@@ -98023,9 +98226,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_arquivos_obrigat\u00f3rios_com_nomenclatura_espec\u00edfica",
-      "target": "syncdata_claude_apostila_nome_da_uc_md",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_apostila_nome_da_uc_md"
     },
     {
       "relation": "contains",
@@ -98033,9 +98236,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_arquivos_obrigat\u00f3rios_com_nomenclatura_espec\u00edfica",
-      "target": "syncdata_claude_ementa_nome_da_uc_md",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_ementa_nome_da_uc_md"
     },
     {
       "relation": "contains",
@@ -98043,9 +98246,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L131",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_arquivos_obrigat\u00f3rios_com_nomenclatura_espec\u00edfica",
-      "target": "syncdata_claude_plano_ensino_md",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_plano_ensino_md"
     },
     {
       "relation": "contains",
@@ -98096,6 +98299,96 @@
       "confidence_score": 1.0,
       "source": "syncdata_claude_arquivo_obrigat\u00f3rio",
       "target": "syncdata_claude_prioridade"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
+      "target": "syncdata_claude_arquivos_de_atividades",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L246",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
+      "target": "syncdata_claude_checklist_de_conformidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
+      "target": "syncdata_claude_c\u00e1lculo_de_atividades",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
+      "target": "syncdata_claude_formato_online",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
+      "target": "syncdata_claude_pasta_obrigat\u00f3ria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
+      "target": "syncdata_claude_prioridade_253",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "syncdata_claude_arquivos_de_atividades",
+      "target": "syncdata_claude_arquivo_gerador_obrigat\u00f3rio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "syncdata_claude_arquivos_de_atividades",
+      "target": "syncdata_claude_arquivos_de_atividade_quantidade_calculada",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "syncdata_claude_arquivos_de_atividades",
+      "target": "syncdata_claude_vers\u00f5es_impressas_pdf",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -98409,5 +98702,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6c6e28d57d33cede9655aabedc330761f3e0db16"
+  "built_at_commit": "5ac72559878dfb7c426e6476f99febf36c1849c4"
 }

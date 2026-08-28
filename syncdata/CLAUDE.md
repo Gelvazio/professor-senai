@@ -253,6 +253,68 @@ Nomenclatura: **ATIVIDADE_NN.md** onde NN = número zero-preenchido (01, 02, ...
 ### 🔴 Prioridade
 - **MEDIA** — Complementar (pode ser gerado automaticamente)
 
+## 🔴 REGRA 05 — Pasta de Substituições
+
+⚠️ **CRÍTICO** — Toda UC deve conter:
+
+### 📁 Pasta Obrigatória
+- `SUBSTITUICOES/` — Pasta contendo instruções e materiais para aulas de substituição
+
+### 📄 Arquivo Obrigatório
+- `SUBSTITUICOES/CLAUDE.md` — Documentação sobre como montar aulas de substituição
+
+#### Conteúdo do Arquivo CLAUDE.md
+
+O arquivo deve descrever o processo de:
+
+1. **Acessar o SGN (Sistema de Gestão de Notação)**
+   - URL: https://sgn.sesisenai.org.br/pages/diarioClasse/diario-classe.html?idDiario=XXXXX
+   - Cada matéria tem um `idDiario` único
+   - Exemplo: `idDiario=509634` para uma UC específica
+
+2. **Coletar Aulas Já Lecionadas**
+   - Ir em **Aulas/Avaliações** dentro do diário
+   - Salvar a lista de aulas já lecionadas
+   - Avaliar quais aulas foram completadas
+
+3. **Preparar Aulas de Substituição**
+   - Selecionar aulas não lecionadas
+   - Montar sequência para substituição
+   - Documentar duração e conteúdo
+
+#### Exemplo de Estrutura
+
+```markdown
+# Substituições — [NOME DA UC]
+
+## 🔗 Acesso ao Diário de Classe
+
+1. Acesse o link do diário de classe:
+   https://sgn.sesisenai.org.br/pages/diarioClasse/diario-classe.html?idDiario=509634
+
+2. Navegue até a seção **Aulas/Avaliações**
+
+3. Copie a lista de aulas já lecionadas
+
+## 📋 Aulas Disponíveis para Substituição
+
+[Lista de aulas NÃO lecionadas]
+
+## ⏱️ Cronograma Recomendado
+
+[Sugestões de sequência e duração]
+```
+
+### ✅ Checklist de Conformidade
+1. ✅ Pasta `SUBSTITUICOES/` existe
+2. ✅ Arquivo `SUBSTITUICOES/CLAUDE.md` existe
+3. ✅ Arquivo contém referência ao SGN
+4. ✅ Arquivo contém instruções sobre Aulas/Avaliações
+5. ✅ Arquivo contém processo de seleção de aulas
+
+### 🔴 Prioridade
+- **BAIXA** — Complementar (informativo)
+
 ---
 
 ## 🎯 Regras Críticas
