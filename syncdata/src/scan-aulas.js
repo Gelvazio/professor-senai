@@ -6,7 +6,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { PASTAS_IGNORADAS, SISTEMA_DIR } = require('./constants');
+const { PASTAS_IGNORADAS, UC_CONTAINERS, SISTEMA_DIR } = require('./constants');
 
 // Padrões de nomes de aulas
 const PADROES_AULA = [
@@ -104,8 +104,14 @@ async function processarPasta(diretorio, uc = null) {
           }
 
           aulas.push(aula);
+        } else if (UC_CONTAINERS.includes(item.name)) {
+          // UC_CONTAINER: suas SUBPASTAS são UCs
+          // Não processar a própria pasta como UC
+          console.log(`📦 Container de UCs encontrado: ${item.name}`);
+          const subAulas = await processarPasta(caminhoCompleto, null);
+          aulas.push(...subAulas);
         } else {
-          // Recursivamente processar subpastas
+          // Recursivamente processar subpastas normais
           const uc_novo = item.name.toUpperCase().replace(/_/g, ' ');
           const subAulas = await processarPasta(caminhoCompleto, uc_novo);
           aulas.push(...subAulas);

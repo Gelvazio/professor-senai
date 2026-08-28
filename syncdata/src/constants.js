@@ -82,6 +82,13 @@ const PASTAS_IGNORADAS = [
   '.idea'
 ];
 
+// ── CONTAINERS DE UCs (REGRA 01 ESTENDIDA) ──
+// Pastas que contêm UCs dentro delas (não são UCs em si)
+// Suas SUBPASTAS são tratadas como UCs
+const UC_CONTAINERS = [
+  'FICHA-PRODUTO-MAIS-TECH'  // Container com UCs de produtos
+];
+
 // Nomes de unidades curriculares conhecidas
 const UNIDADES_CURRICULARESCONHECIDAS = [
   'INTRODUÇÃO À TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO',
@@ -157,6 +164,7 @@ module.exports = {
   PADROES_BUSCA,
   EXTENSOES_VALIDAS,
   PASTAS_IGNORADAS,
+  UC_CONTAINERS,
   UNIDADES_CURRICULARESCONHECIDAS,
   // Estrutura obrigatória de UC (REGRA 02)
   ESTRUTURA_UC_OBRIGATORIA,

@@ -75,6 +75,16 @@ com **EXCEÇÃO** para:
 
 Qualquer outra pasta em `sistema/` é considerada uma **Unidade Curricular (UC)** válida.
 
+### 📦 Containers de UCs (Exceção à REGRA 01)
+
+Algumas pastas são **containers** que contêm múltiplas UCs dentro delas:
+- `FICHA-PRODUTO-MAIS-TECH` — Container de UCs de produtos MAIS TECH
+
+Para containers:
+- ❌ A pasta em si NÃO é uma UC
+- ✅ Suas **SUBPASTAS** são tratadas como UCs individuais
+- ✅ Aplicar REGRA 02 a cada subpasta do container
+
 ## 🔴 REGRA 02 — Estrutura Obrigatória de Unidades Curriculares
 
 ⚠️ **CRÍTICO** — Toda UC deve conter:
