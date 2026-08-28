@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1787687690.6158092,
-    "ast_hash": "4f909fc466d4a4e0907bc7609a7d980e",
+    "mtime": 1787917725.9375072,
+    "ast_hash": "28472b1ffadc43b51e44c92e41e3cf7a",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -210,103 +210,103 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/BANCO_QUESTOES_HISTORIA_COMPUTACAO.gift.txt": {
-    "mtime": 1785869870.9703064,
-    "ast_hash": "7f2c5dc58ced47a24029439b1b8a2bde",
+    "mtime": 1787856586.3902898,
+    "ast_hash": "495ee4f2e6fd6057cfcc83514abf8888",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/BANCO_QUESTOES_INICIANDO_CHROMEBOOK.gift.txt": {
-    "mtime": 1785869925.791005,
-    "ast_hash": "9b07419d222228f3287e0ce8002891e9",
+    "mtime": 1787856586.392896,
+    "ast_hash": "af0bee47f3ca19aed55f3df7cb4dd30c",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/HISTORIA_COMPUTACAO_AULA_01.html": {
-    "mtime": 1787335568.693437,
-    "ast_hash": "35b7ebf27c09041d5f67e01b837123a0",
+    "mtime": 1787856586.392896,
+    "ast_hash": "9c29d3221979b681517f041a5579ff1b",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/INICIANDO_CHROMEBOOK_AULA_01.html": {
-    "mtime": 1787335568.696293,
-    "ast_hash": "ae8fa3ad37bdb0941a46939034cf796a",
+    "mtime": 1787856586.409017,
+    "ast_hash": "1c10fcf6cb8ebd2acd5fca048ecc6b8c",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_AULA_01.html": {
-    "mtime": 1786064384.8133814,
-    "ast_hash": "9818250c2c303bb7855b6914fc5d9a49",
+    "mtime": 1787856586.4579263,
+    "ast_hash": "0668ef4f2146362f72fe25d932945fee",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-02-04-08-2026/SLIDE_AULA_02.html": {
-    "mtime": 1787335568.6978178,
-    "ast_hash": "2c1da8da8541145509cef08cd17c5976",
+    "mtime": 1787856586.46394,
+    "ast_hash": "bbd9dfcc0eb9791841176abbc10dcbf7",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-03-05-08-2026/SLIDE_INTERNET_WWW.html": {
-    "mtime": 1786312173.8955052,
-    "ast_hash": "c38951f3d73a6a1a50af924e1a4629b5",
+    "mtime": 1787856586.4676096,
+    "ast_hash": "3c1401254ba43a28858668a287215fa5",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-03-05-08-2026/SLIDE_SEGURANCA_INFORMACAO.html": {
-    "mtime": 1787335568.6978178,
-    "ast_hash": "fde497cbe40a0e2df988b1add23b9a17",
+    "mtime": 1787856586.4805322,
+    "ast_hash": "6799ba4fe56537e3ea618352a466dcf2",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.html": {
-    "mtime": 1786127899.9095495,
-    "ast_hash": "4b4586875e3b80f1887d29f228a0e9f1",
+    "mtime": 1787856586.4845426,
+    "ast_hash": "5b236f33633bb359de342b35fa89acd0",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/ATIVIDADE_EQUIPE_06_08_2026.txt": {
-    "mtime": 1786053992.094654,
-    "ast_hash": "1a9936e925f0f07a6d6a937c16e9fc11",
+    "mtime": 1787856586.4899714,
+    "ast_hash": "73031ea86b48b98287e8b41a64f79b15",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/SLIDE_AULA_04.html": {
-    "mtime": 1787335568.6978178,
-    "ast_hash": "f251df935a83414547835c912a9232a3",
+    "mtime": 1787856586.4947798,
+    "ast_hash": "3abe208b71f307f1a55851d905afe134",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-05-07-08-2026/SLIDE_AULA_05.html": {
-    "mtime": 1787335568.7041345,
-    "ast_hash": "ba1666b3e9ef8e6ad3b0e0bcef8cd388",
+    "mtime": 1787856586.4984949,
+    "ast_hash": "b4a40d73f4f5a81bb84c063b6d24383d",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-06-10-08-2026/SLIDE_AULA_06.html": {
-    "mtime": 1787335568.705288,
-    "ast_hash": "08215d0ea62d3ea76a796e54057416eb",
+    "mtime": 1787856586.501986,
+    "ast_hash": "a151f40d28ab5030353b511a8b774af9",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/SLIDE_AULA_07.html": {
-    "mtime": 1787335568.7072947,
-    "ast_hash": "d270264dc64f255b2987b7c4284a2771",
+    "mtime": 1787856586.5115032,
+    "ast_hash": "6d6052a5cbf15264ba25d3cb25e49c40",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/SLIDE_AULA_08.html": {
-    "mtime": 1787335568.7083585,
-    "ast_hash": "98b89a7bc319d2ab4aeede1f9628fc29",
+    "mtime": 1787856586.516192,
+    "ast_hash": "3affd06da478c2bc3c2b16d94216271c",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-09-13-08-2026/SLIDE_AULA_09.html": {
-    "mtime": 1787335568.712162,
-    "ast_hash": "e4a2c3d1bbf4d0e8855def58bb4a2f5a",
+    "mtime": 1787856586.5450854,
+    "ast_hash": "532edadb67bb78e96d1f453b5c9310e0",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/SLIDE_AULA_10.html": {
-    "mtime": 1787335568.714169,
-    "ast_hash": "0a5b099964aea33a6b18b124c00e57e5",
+    "mtime": 1787856586.552664,
+    "ast_hash": "f294caf4c52a39b065c3fa9fbbf3c8a5",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-09-13-08-2026/RECUPERACAO_AVALIACAO_PRATICA.html": {
-    "mtime": 1787335568.7083585,
-    "ast_hash": "dbd4295aad9f66b8ba9746f764e83d66",
+    "mtime": 1787856586.5400162,
+    "ast_hash": "e65989293d8cffaa3c6d0a7649460d6c",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/RECUPERACAO_AVALIACAO_OBJETIVA.html": {
-    "mtime": 1787335568.714169,
-    "ast_hash": "cf5899151fd61a64f2aa186ecd6ac90b",
+    "mtime": 1787856586.552664,
+    "ast_hash": "8d36b6bd6357ef9d30da58a2cac05706",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/MEMBROS-EQUIPE-06-08-2026.html": {
-    "mtime": 1786224006.227447,
-    "ast_hash": "7590d2976cbe79e3343642d63aa100fd",
+    "mtime": 1787856586.4905488,
+    "ast_hash": "7a003d56c20411bfb4426456fb5bac77",
     "semantic_hash": ""
   },
   "docs/superpowers/plans/2026-08-07-analise-ementas.md": {
@@ -325,8 +325,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1786725754.2460716,
-    "ast_hash": "cf17af1834832d5fb16f476ab2c1dc86",
+    "mtime": 1787843133.972813,
+    "ast_hash": "79fe9d8afbf5c4bc5acb4ff58d5b0673",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -337,11 +337,6 @@
   "sistema/backfill-ids.html": {
     "mtime": 1786146425.599338,
     "ast_hash": "b6174a9cf4b65615007d27c5aa37fe54",
-    "semantic_hash": ""
-  },
-  "sistema/backfill-material-ids.sql": {
-    "mtime": 1786146514.3364618,
-    "ast_hash": "d85860063a8e4c1f10da139e481438fd",
     "semantic_hash": ""
   },
   "sistema/ementa-slides.html": {
@@ -360,7 +355,7 @@
     "semantic_hash": ""
   },
   "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/HORARIO.txt": {
-    "mtime": 1786300758.4423022,
+    "mtime": 1787856587.7408042,
     "ast_hash": "56c8eb84663f76fdcaabc21efdffdb85",
     "semantic_hash": ""
   },
@@ -450,8 +445,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/SLIDE_APRESENTACAO_PROFESSOR.html": {
-    "mtime": 1786315308.8259513,
-    "ast_hash": "45e185dce8caefb66b67f921d639d87a",
+    "mtime": 1787856586.4517584,
+    "ast_hash": "205cde987c0047d07bde5d2dd8962d91",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-04-06-08-2026/SLIDE_AULA_04_Hardware e Sistema Operacional.pdf": {
@@ -465,12 +460,12 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md": {
-    "mtime": 1787339183.1871772,
-    "ast_hash": "e3c561762294a08b5959dceb9df11b71",
+    "mtime": 1787856586.621932,
+    "ast_hash": "ce83a6f6fb73fea29bf0c55d1e641528",
     "semantic_hash": ""
   },
   "sistema/TECNICO DE INFORMATICA PARA INTERNET/PLANO-DE-ENSINO.txt": {
-    "mtime": 1786317782.0517519,
+    "mtime": 1787856587.739793,
     "ast_hash": "47f0a4240c34ab8de5f95c621dfd3789",
     "semantic_hash": ""
   },
@@ -480,8 +475,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/ATIVIDADE_DIGITACAO_12-08-2026.txt": {
-    "mtime": 1786559129.5230236,
-    "ast_hash": "1b7fccafde8b0898202eeeac7272b1a5",
+    "mtime": 1787856586.3902898,
+    "ast_hash": "eb571b793c357ab9b19af03cdf7ccbc6",
     "semantic_hash": ""
   },
   "sistema/LISTA-AULAS-PLANEJAMENTO.txt": {
@@ -545,13 +540,13 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/ATIVIDADE-DIGITACAO-12-08-2026_OLD.txt": {
-    "mtime": 1786559370.257911,
+    "mtime": 1787856586.5151415,
     "ast_hash": "cf950160a6c1fb794908ab566045eeb2",
     "semantic_hash": ""
   },
   "sistema/uc.html": {
-    "mtime": 1787335076.198551,
-    "ast_hash": "9436bd9263a1d088ec829b0c160ce64b",
+    "mtime": 1787837854.151211,
+    "ast_hash": "ed8d713464b10113f63b5902d3e8c907",
     "semantic_hash": ""
   },
   "recursos-humanos/ORGANOGRAMA_SENAI.png": {
@@ -585,27 +580,27 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-01.png": {
-    "mtime": 1786560779.8502584,
+    "mtime": 1787856586.5267625,
     "ast_hash": "b15e9584b1591fbd0a0cb2af677b66da",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-02.png": {
-    "mtime": 1786560799.372459,
+    "mtime": 1787856586.53168,
     "ast_hash": "cf3073c9b0401d268d54276373bdbcfd",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-03.png": {
-    "mtime": 1786560819.6442127,
+    "mtime": 1787856586.5331929,
     "ast_hash": "66cffff960378f0be14e00fbfa5590af",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-04.png": {
-    "mtime": 1786560853.1291258,
+    "mtime": 1787856586.5356157,
     "ast_hash": "fc9ffec2dd0c9a73492a88dfbbdf57cf",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-05.png": {
-    "mtime": 1786560870.5825434,
+    "mtime": 1787856586.5389233,
     "ast_hash": "dfa5b6afac0d0144c9f64ac36659700d",
     "semantic_hash": ""
   },
@@ -620,13 +615,8 @@
     "semantic_hash": ""
   },
   "sistema/.claude/settings.local.json": {
-    "mtime": 1786820747.5911179,
-    "ast_hash": "c6c5f3c5ffa6b143c3d3780430f2f6a7",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/.claude/settings.local.json": {
-    "mtime": 1786661451.0429592,
-    "ast_hash": "c48574f65eb48e020db675734019f9c3",
+    "mtime": 1787917847.4291584,
+    "ast_hash": "5ab68681cad0b80808d5a387b3449965",
     "semantic_hash": ""
   },
   "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md": {
@@ -640,28 +630,28 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md": {
-    "mtime": 1786646609.8502848,
-    "ast_hash": "281379f064d1894317feeb93a5688312",
+    "mtime": 1787856586.5068343,
+    "ast_hash": "62362f2d7f04964b3420ff2739fb3d9d",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/CLAUDE.md": {
-    "mtime": 1786647052.6606941,
-    "ast_hash": "f0e59716f82689abfa69e21e038bc473",
+    "mtime": 1787856586.5075867,
+    "ast_hash": "389c853e60bcae63fc1035e5a58b1ad6",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/PESQUISA-PAMPLONA-EXCEL-PG.md": {
-    "mtime": 1786645853.3471835,
-    "ast_hash": "d19a33f704aa7d03c6699443302149a7",
+    "mtime": 1787856586.5099397,
+    "ast_hash": "9c2ea287ff888e37f024b34cfd39ad11",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/CLAUDE.md": {
-    "mtime": 1787578575.7668805,
-    "ast_hash": "2452196f6355710253b754d3824a278a",
+    "mtime": 1787830216.2659822,
+    "ast_hash": "4886ef31aa04855a3b3ecb68ff9a6c11",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md": {
-    "mtime": 1786714267.6310265,
-    "ast_hash": "05a90a24153c9cd744efa3a460d7a82f",
+    "mtime": 1787856586.552664,
+    "ast_hash": "43cda7bd56f6e878ca4b6c8a40a6f1ca",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/.claude/settings.local.json": {
@@ -670,22 +660,22 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/DATABASE.sql": {
-    "mtime": 1787578569.010531,
-    "ast_hash": "21c559865cc84711b4900dd76d7d599f",
+    "mtime": 1787827716.5345004,
+    "ast_hash": "0ba6d053e871fb8cabe1149317135130",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/SUPABASE.js": {
-    "mtime": 1787257403.8058083,
+    "mtime": 1787825778.5438132,
     "ast_hash": "29f0d3438bdd828e605e2bab28b80f35",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.html": {
-    "mtime": 1786716828.9725573,
-    "ast_hash": "f66ac84d7a65153760187b32f6444a1c",
+    "mtime": 1787856586.5494728,
+    "ast_hash": "37ddf1fd25fd11bc4f8be8f14582e2f3",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/index.html": {
-    "mtime": 1786965594.0966601,
+    "mtime": 1787830266.1643922,
     "ast_hash": "1d6f8aff2837fae3c628b1e745c6b1c2",
     "semantic_hash": ""
   },
@@ -770,8 +760,8 @@
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/pedidos-venda.html": {
-    "mtime": 1787229286.0025053,
-    "ast_hash": "c3fb871fe38906e93e93ab8e53eed5d0",
+    "mtime": 1787827748.0369518,
+    "ast_hash": "c474600ab4d1814e8e37d1b958bf41c3",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/separacao.html": {
@@ -787,11 +777,6 @@
   "erp-victor-anato-senai/compras/nota-fiscal.html": {
     "mtime": 1787576982.9437175,
     "ast_hash": "6fe91d18ec97f872c4ab344456ee0481",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/criar-admin.html": {
-    "mtime": 1786965594.4622433,
-    "ast_hash": "817719b212cb28fe788789fb672fac84",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/vendas/entrega.html": {
@@ -810,18 +795,18 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/FERRAMENTAS_MICROSOFT.html": {
-    "mtime": 1787335568.6470425,
-    "ast_hash": "bd8d2dbfbb81f39c46a82a1ebfd71e6e",
+    "mtime": 1787856586.388479,
+    "ast_hash": "f43ec45edb49d2a5415380130877f429",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/MATERIAL_INTRODUCAO_TIC.html": {
-    "mtime": 1786820524.1017027,
-    "ast_hash": "439f729ca99fedb0dff65beca36b31d8",
+    "mtime": 1787856587.6240773,
+    "ast_hash": "4fab44feb9515412dac3133d59590c19",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/REGRAS-NEGOCIOS/seed.sql": {
-    "mtime": 1786820995.5904431,
-    "ast_hash": "0c28d6a26ff7e14cd08bfb0bdf496cab",
+    "mtime": 1787830218.2666886,
+    "ast_hash": "1e20cd08869843520c0b49c179fa4683",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/financeiro/creditscore.json": {
@@ -1499,31 +1484,6 @@
     "ast_hash": "2107618a5cc044aa73433228d6fcb83b",
     "semantic_hash": ""
   },
-  "sistema/prof-leila/claude.md": {
-    "mtime": 1786988804.2010748,
-    "ast_hash": "4ba6f01f79f2a44dc8ad6b43b9ae6bae",
-    "semantic_hash": ""
-  },
-  "sistema/prof-leila/prompt.md": {
-    "mtime": 1786988323.3343735,
-    "ast_hash": "b9bd1f28274a05a8bd177b366b56536d",
-    "semantic_hash": ""
-  },
-  "sistema/prof-leila/INFOGRAFICO-APRESENTACOES.png": {
-    "mtime": 1786989560.6918976,
-    "ast_hash": "835ce32b7964f2fdf6cb07ed9e157f18",
-    "semantic_hash": ""
-  },
-  "sistema/prof-leila/INFOGRAFICO-PROF-LEILA.png": {
-    "mtime": 1786988464.2660794,
-    "ast_hash": "23dc8e70a90f817a538841455e627b26",
-    "semantic_hash": ""
-  },
-  "sistema/prof-leila/infografico-apresentacoes.html": {
-    "mtime": 1786989961.7615125,
-    "ast_hash": "73226ca76994634b19ac22d876e1a4da",
-    "semantic_hash": ""
-  },
   "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_COM_GABARITO_fbc0d653.md": {
     "mtime": 1786991273.2821903,
     "ast_hash": "4d7ff39b2c391b55b548d4fb3f592d57",
@@ -1557,11 +1517,6 @@
   "graphify-out/converted/PlanejamentoMatematicaRaciocinioLogico_86a40d23.md": {
     "mtime": 1787057568.9544752,
     "ast_hash": "9396f1a2c51c8fe06d76b5588c7912be",
-    "semantic_hash": ""
-  },
-  "sistema/AnaliseDadosAplicadaGestao/criar as aulas - AnaliseDadosAplicadaGestao.txt": {
-    "mtime": 1787070618.1751294,
-    "ast_hash": "9cdaee4c12e1674acb9c86a845466b8b",
     "semantic_hash": ""
   },
   "sistema/PROFESSOR/HORARIOS-SENAI.txt": {
@@ -1685,8 +1640,8 @@
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/Introdu\u00e7\u00e3o a TIC-VICTOR-ANATO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md": {
-    "mtime": 1787158620.451101,
-    "ast_hash": "241e0299284cc3cd9a5fa85f2ebd37c0",
+    "mtime": 1787856586.6316462,
+    "ast_hash": "cd11324f4473d02bdc0d938d5b410988",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/Apostila_Exploracao_Carreiras_Industriais_Tecnologicas.md": {
@@ -1764,19 +1719,14 @@
     "ast_hash": "ad9fe139cc2b40b11254e7fb183533b3",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/package.json": {
-    "mtime": 1787182941.9452772,
-    "ast_hash": "b778aa66da97ea0e37d59b39f34429bc",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/package.json": {
     "mtime": 1787182989.8176267,
     "ast_hash": "598d6afafcbcfc47afeee940aa480c90",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/menu.js": {
-    "mtime": 1787248867.8130665,
-    "ast_hash": "146d85c69556864a1d4579b4ba6c0aea",
+    "mtime": 1787828851.3963025,
+    "ast_hash": "34bdf10b180766df478d239c590db839",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/tests/login-perfil.test.js": {
@@ -1805,8 +1755,8 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1787193005.7228482,
-    "ast_hash": "cf17af1834832d5fb16f476ab2c1dc86",
+    "mtime": 1787752372.4502585,
+    "ast_hash": "41d544e30db31ef28aca7c91ac469382",
     "semantic_hash": ""
   },
   "INTEGRA-SOLUCAO-SENAI/Guia_Cadastro_Solucao_Integra_SENAI_2026.md": {
@@ -1884,44 +1834,29 @@
     "ast_hash": "a058a0555513d5d5051c046d47ebc7b9",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/FORMULARIO-PROVA-OBJETIVA.txt": {
-    "mtime": 1787336243.8712683,
-    "ast_hash": "a2d96fe5cad3fd5a8239e752358ddd32",
-    "semantic_hash": ""
-  },
   "graphify-out/converted/GABARITO_PROVA_OBJETIVA_UC1_TIC_0bf7eb36.md": {
     "mtime": 1787335389.6263385,
     "ast_hash": "34efa5f9c70e8222c7ab85c05eca473a",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ASSUNTO-ADICIONAL.txt": {
-    "mtime": 1786099783.7362757,
+    "mtime": 1787856586.3843923,
     "ast_hash": "60205259722255b498f1f5cd9de84c40",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/CURSOS-ADICIONAIS-MICROSOFT-OFFICE.txt": {
-    "mtime": 1787338600.479314,
+    "mtime": 1787856586.3869696,
     "ast_hash": "07ab605d2514640548b082efebc31062",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/DADOS-QUESTIONARIO-MICROSOFT-OFFICE.txt": {
-    "mtime": 1787336697.0141335,
+    "mtime": 1787856586.387744,
     "ast_hash": "03e71e6900a4d288ebe90245c8e83468",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/LISTA-CURSOS-MICROSOFT-OFFICE.html": {
-    "mtime": 1787339113.6861348,
-    "ast_hash": "af25958b78023532231294996a4bd584",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/NOTAS PROVA OBJETIVA - 21-08-2026.txt": {
-    "mtime": 1787340117.8808928,
-    "ast_hash": "29cc6f214b860beeae5cf483b40f7348",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/GABARITO_PROVA_OBJETIVA_UC1_TIC.html": {
-    "mtime": 1787340509.6809063,
-    "ast_hash": "76de5621d1a95e5186baf6972f9f9b8c",
+    "mtime": 1787856586.388479,
+    "ast_hash": "6ff6cbd1a15ae03aaca3f19c07f3de4b",
     "semantic_hash": ""
   },
   "docs/gerar_texto_reforco_25_08_2026.py": {
@@ -1964,16 +1899,6 @@
     "ast_hash": "cc0b1ed6c5bdaf190bc39d7e2d0b38ea",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/gerar_slides.js": {
-    "mtime": 1787182847.7243629,
-    "ast_hash": "cedad61175febb1ad768632d1305e35f",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/package.json": {
-    "mtime": 1787313680.3503826,
-    "ast_hash": "fed4211e5325765cfd6d3ae20d6821c3",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/NOCOES_ELETRICIDADE_CIRCUITOS_BASICOS/gerar_slides.js": {
     "mtime": 1787161166.4081094,
     "ast_hash": "507e8c2ff625a880de8d577b831fde10",
@@ -1982,31 +1907,6 @@
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/package.json": {
     "mtime": 1787183151.413543,
     "ast_hash": "b778aa66da97ea0e37d59b39f34429bc",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/scripts/gerar_avaliacao_pratica_comunicacao.py": {
-    "mtime": 1787579608.3317232,
-    "ast_hash": "c520f11ef5e261d2a4552e648332be87",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/scripts/gerar_recuperacao_comunicacao.py": {
-    "mtime": 1787579014.6281314,
-    "ast_hash": "ea3a145ccec3d5ea70655427c50c4760",
-    "semantic_hash": ""
-  },
-  "sistema/supabase-avaliacoes.sql": {
-    "mtime": 1787591958.976398,
-    "ast_hash": "9b0ed9fb98dd0012d8cd9fff614d389c",
-    "semantic_hash": ""
-  },
-  "sistema/supabase-materias-mais-tech.sql": {
-    "mtime": 1787591959.7964504,
-    "ast_hash": "1ffece2944e7be68f3893a0a006086fb",
-    "semantic_hash": ""
-  },
-  "sistema/supabase-pendencias.sql": {
-    "mtime": 1787571423.0150664,
-    "ast_hash": "a64c6b033e90770ceeddf3c9cfb6e47a",
     "semantic_hash": ""
   },
   "docs/adicionar-apostila-por-materia.md": {
@@ -2224,24 +2124,9 @@
     "ast_hash": "4a4e3f50faaad6489585031c7be3869e",
     "semantic_hash": ""
   },
-  "minha-agenda/index.html": {
-    "mtime": 1786717070.8023517,
-    "ast_hash": "55fec6f1124b45119c6b96a952a7a345",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/APRESENTACAO-OFICINA-EMPREENDEDORISMO.txt": {
-    "mtime": 1787318780.1869538,
-    "ast_hash": "d3f95b618052088da1610984ae7838a6",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/Apostila_Competencias_Socioemocionais_Empreendedorismo.md": {
     "mtime": 1787159262.4643586,
     "ast_hash": "a5986bdffe6300c848a9790d9197f739",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/GABARITO_Oficina_Empreendedorismo_CEPLAS.md": {
-    "mtime": 1787313510.8119662,
-    "ast_hash": "b618030e684b421cacc3a75e9c1dbf52",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/ementa_Competencias_Socioemocionais_Empreendedorismo.md": {
@@ -2344,49 +2229,9 @@
     "ast_hash": "b3a0e0114872f54ed90bf1c7a4097e46",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/acompanhamentos-pedagogicos-sgn-avaliacoes.md": {
-    "mtime": 1787581102.7964377,
-    "ast_hash": "fc1858ec721f41e331dee155337a0312",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/ajustar-autoavaliacao-estudante.md": {
-    "mtime": 1787579484.9943163,
-    "ast_hash": "0220dde04cd820a925cec5074e377ffe",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/avaliacao-pratica-introducao-comunicacao-oral-escrita.md": {
-    "mtime": 1787578867.4277174,
-    "ast_hash": "9ca9898a2430f3b3204f208a33d5ae5e",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/corrigir-salvamento-materia.md": {
-    "mtime": 1787580279.6355171,
-    "ast_hash": "27fd0c2a6d9b1025de37df88c1dde88e",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/mover-criterios-avaliacao-para-final.md": {
-    "mtime": 1787579356.378492,
-    "ast_hash": "c05172522d0f7c45466dc6d71f606f9b",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/mover-nota-feedback-antes-situacao.md": {
-    "mtime": 1787579621.3064964,
-    "ast_hash": "cc6cb4005258cff5a41dc6a58554075c",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/recuperacao-comunicacao-oral-escrita.md": {
-    "mtime": 1787579025.4558039,
-    "ast_hash": "50d05b12d2c158c0de11e6050616b003",
-    "semantic_hash": ""
-  },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md": {
-    "mtime": 1787583650.8968744,
-    "ast_hash": "c3ddada380d941bc55977ffb9b6e3280",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/.tmp/diario-reforco-linguagem/builder.mjs": {
-    "mtime": 1787681870.9867334,
-    "ast_hash": "39e226151b7b28cab09a87d417c01515",
+    "mtime": 1787856586.621932,
+    "ast_hash": "50eba9325b78a9571675334f440bc940",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/LISTA-ALUNOS-NOME-UNIDADE.json": {
@@ -2394,54 +2239,584 @@
     "ast_hash": "174ed4fb5755f8b7c60512b2cc17f26c",
     "semantic_hash": ""
   },
-  "sistema/supabase-curso-unidade.sql": {
-    "mtime": 1787683711.9725158,
-    "ast_hash": "e798398e489d482e49f1302721733a76",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/PLANO-ENSINO-V0.md": {
     "mtime": 1787680363.5492313,
     "ast_hash": "33136b0232e02721098724ce65bb692f",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/adicionar-unidade-curso.md": {
-    "mtime": 1787683717.4731746,
-    "ast_hash": "4c482092db1172ab29fa4bb71238c6ac",
+  "erp-victor-anato-senai/INSERT_PENDENCIAS.sql": {
+    "mtime": 1787829428.5071044,
+    "ast_hash": "ce24c14e833f7941915c9beb2f276282",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/avaliacao-comportamentos-por-materia.md": {
-    "mtime": 1787683060.3247614,
-    "ast_hash": "828937f66d27e795e480e6820081cbe0",
+  "erp-victor-anato-senai/UPDATE_SENHA_ADMIN.sql": {
+    "mtime": 1787828397.0336428,
+    "ast_hash": "85d6e7377bccfe28ee22e2bbcd94c310",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/carregar-alunos-ceplas-barragem.md": {
-    "mtime": 1787683622.878858,
-    "ast_hash": "d7a6a7218eb816bca508ed7c4d1d4084",
+  "scripts/criar_prova_simples_uc1_tic_equipes.py": {
+    "mtime": 1787751561.3034627,
+    "ast_hash": "b89ddcc54d06a10575e1cbda8a26c45e",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/completar-blocos-plano-ensino-fundamentos.md": {
-    "mtime": 1787680377.8177848,
-    "ast_hash": "9cdc3e055926661dd359a09356234abe",
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/CORRECAO-PROVA-PRATICA.js": {
+    "mtime": 1787858314.0898614,
+    "ast_hash": "c3b974a4949efca3bd4125e45fad0471",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/converter-diario-reforco-linguagem-excel.md": {
-    "mtime": 1787681908.748904,
-    "ast_hash": "aa96cee99c8cdce8bb09397c47be68ef",
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/corretor_prova_pratica.py": {
+    "mtime": 1787858306.1387556,
+    "ast_hash": "3bca4c47c511cca4edadb2545365a0a3",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/docs/extrair-plano-ensino-v0.md": {
-    "mtime": 1787680261.9648452,
-    "ast_hash": "315997d4fe72d7fb214e3fb7d17dffca",
+  "sistema/INTRODUCAO_TIC/AULAS/AULA-07-11-08-2026/.claude/settings.local.json": {
+    "mtime": 1786661451.0429592,
+    "ast_hash": "c48574f65eb48e020db675734019f9c3",
     "semantic_hash": ""
   },
-  "sistema/supabase-curso-duplicar.sql": {
-    "mtime": 1787685348.563668,
-    "ast_hash": "17b3bde4053d16a7970d550097ebb206",
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/.claude/settings.local.json": {
+    "mtime": 1787857848.2819939,
+    "ast_hash": "0b4d1b3351e5e44e0d2f8f5b725b03a8",
     "semantic_hash": ""
   },
-  "sistema/supabase-unidade.sql": {
-    "mtime": 1787686469.0553567,
-    "ast_hash": "48f023d46e895e1728fbde3741314829",
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/NOTAS-EQUIPE-PROVA-PRATICA.js": {
+    "mtime": 1787854401.3096635,
+    "ast_hash": "a95d40e594db4dc637532d813095e9a9",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/NOTAS-OBJETIVA.js": {
+    "mtime": 1787853396.141643,
+    "ast_hash": "184e57653d23651e788e7416ce3c6c02",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/NOTAS-PRATICA-FINAL.js": {
+    "mtime": 1787856304.078772,
+    "ast_hash": "4ffbca5f5be19a99e2e5d5f5ee2dd3bd",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/calcular_notas_pratica.py": {
+    "mtime": 1787856628.9545097,
+    "ast_hash": "7a7257db5e36011025988f54ce66c2c4",
+    "semantic_hash": ""
+  },
+  "sistema/database.sql": {
+    "mtime": 1787838639.9328911,
+    "ast_hash": "16f54b6e392767156d5f31c8ea6fe072",
+    "semantic_hash": ""
+  },
+  "sistema/scripts/003_add_columns_pendencias.sql": {
+    "mtime": 1787841300.0695918,
+    "ast_hash": "960b615a1494e6c32a494ea08f525cf3",
+    "semantic_hash": ""
+  },
+  "PLATAFORMA_DE_IA.md": {
+    "mtime": 1787856586.3104453,
+    "ast_hash": "a554d020273300204ed5c1b9e057f77c",
+    "semantic_hash": ""
+  },
+  "docs/adicionar-correcao-automatica-prova-simples-tic.md": {
+    "mtime": 1787751120.042245,
+    "ast_hash": "23035ca4c06e4c7e46543cfd755d6703",
+    "semantic_hash": ""
+  },
+  "docs/ajustar-botao-atualizar-pendencias.md": {
+    "mtime": 1787829951.4188676,
+    "ast_hash": "351e600e3eda7b994e83a972fe93a52d",
+    "semantic_hash": ""
+  },
+  "docs/configurar-gemini-bat-agente.md": {
+    "mtime": 1787834877.901395,
+    "ast_hash": "17dae034dc5c17686a9c3456503f7c3e",
+    "semantic_hash": ""
+  },
+  "docs/configurar-openclaude-alibaba.md": {
+    "mtime": 1787834539.751434,
+    "ast_hash": "f5bf8d85c41ef849a4460de107108e15",
+    "semantic_hash": ""
+  },
+  "docs/corrigir-tabelas-prova-tic-margens.md": {
+    "mtime": 1787751231.5494998,
+    "ast_hash": "b3d24dae42f9f2af00571c5e5ffd9b3a",
+    "semantic_hash": ""
+  },
+  "docs/criar-prova-simples-uc1-tic-equipes.md": {
+    "mtime": 1787751160.4868696,
+    "ast_hash": "8bbc964e5f322f9825aa1de5c43931d4",
+    "semantic_hash": ""
+  },
+  "docs/criar-tabela-pendencias.md": {
+    "mtime": 1787827659.7280939,
+    "ast_hash": "9fdb0aeb659bb599df1d02c99011b7a8",
+    "semantic_hash": ""
+  },
+  "docs/definir-foco-alunos-prova-pratica-tic.md": {
+    "mtime": 1787751529.0980334,
+    "ast_hash": "4caef0d1645077dbc8db4edefe81e636",
+    "semantic_hash": ""
+  },
+  "docs/ignorar-arquivo-alibaba-ia.md": {
+    "mtime": 1787832325.9023588,
+    "ast_hash": "3a7f146dd479f218270a6b8cc4f0362e",
+    "semantic_hash": ""
+  },
+  "docs/iniciar-openclaude-alibaba.md": {
+    "mtime": 1787834538.4026134,
+    "ast_hash": "a303729a45f1736f424616d46b9f35dc",
+    "semantic_hash": ""
+  },
+  "docs/leitura-ementa-introducao-tic.md": {
+    "mtime": 1787748309.4067662,
+    "ast_hash": "7917ae692339602d40a333f047c57699",
+    "semantic_hash": ""
+  },
+  "docs/leitura-prova-pratica-uc1-tic.md": {
+    "mtime": 1787748265.5395532,
+    "ast_hash": "81707e07b9cec4620c894d539b5a7d6e",
+    "semantic_hash": ""
+  },
+  "docs/padronizar-status-materias-avaliacoes.md": {
+    "mtime": 1787830051.9066389,
+    "ast_hash": "72cc5ac9b5f0010d5c4d4b29450e8eb9",
+    "semantic_hash": ""
+  },
+  "docs/registrar-pasta-prova-pratica-claude.md": {
+    "mtime": 1787751482.6046953,
+    "ast_hash": "c24908285799a5ba6d321cace45b08e8",
+    "semantic_hash": ""
+  },
+  "docs/renomear-dupla-para-equipe-prova-tic.md": {
+    "mtime": 1787751178.79257,
+    "ast_hash": "9ea09c45cae9588dac9d4479362827a6",
+    "semantic_hash": ""
+  },
+  "docs/tempo-minimo-modal-atualizar-pendencias.md": {
+    "mtime": 1787830337.819461,
+    "ast_hash": "ba2546b7848fa9f94e73c7b57fcb1a2c",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/atualizar-claude-remocao-criar-admin.md": {
+    "mtime": 1787828436.6624012,
+    "ast_hash": "e9aaa3419db285309faaccfdaa6a02d8",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/colocar-pipeline-primeiro-em-compras.md": {
+    "mtime": 1787828032.5011775,
+    "ast_hash": "c771513de35c588c4a492a1acd896406",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/corrigir-expansao-accordions-menu.md": {
+    "mtime": 1787827832.4412699,
+    "ast_hash": "bcddae8263785a7b634abb5379671760",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/corrigir-geracao-nota-fiscal-ao-finalizar-pedido.md": {
+    "mtime": 1787827324.6051676,
+    "ast_hash": "3a809c09f1f472c3b92a10a52c93dfdd",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/corrigir-menu-separacao.md": {
+    "mtime": 1787828849.8482873,
+    "ast_hash": "f211fb32eb03bb45b5951b08537d3e15",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/criar-inserts-pendencias.md": {
+    "mtime": 1787829429.9700532,
+    "ast_hash": "d97f234594f834813b3d2412b2ea1d52",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/criar-script-update-senha-admin.md": {
+    "mtime": 1787828398.3243608,
+    "ast_hash": "0e2ac9525ff78ced771aa988db36dc16",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/fluxo-gerar-nota-fiscal-analise-credito.md": {
+    "mtime": 1787827758.048455,
+    "ast_hash": "1172bb04d62874074f715cea0b27cdaf",
+    "semantic_hash": ""
+  },
+  "erp-victor-anato-senai/docs/remover-credencial-administrativa.md": {
+    "mtime": 1787830244.7246604,
+    "ast_hash": "bf61f31f1c234a8feadb5b1eb3064b18",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/APOSTILA_Introducao_Comunicacao_Oral_Escrita_Versao_Codex_1b54a92b.md": {
+    "mtime": 1787916446.338041,
+    "ast_hash": "de2964ec95bd15d33964ce845612fbf0",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/APOSTILA_Reforco_Linguagens_0331f8c0.md": {
+    "mtime": 1787916447.2036834,
+    "ast_hash": "8c8f37a6c3679d67c8c6f0680bcf8941",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/APRESENTACAO-OFICINA-EMPREENDEDORISMO_3bb5ca27.md": {
+    "mtime": 1787916445.279526,
+    "ast_hash": "42633b0a54ceceea1a5d3ec1dfc4bda7",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AVALIACAO_PRATICA_COMUNICACAO_ORAL_ESCRITA_463d7698.md": {
+    "mtime": 1787916446.400933,
+    "ast_hash": "29d8701626b9378d86358732372dcf11",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AVALIA\u00c7\u00c3O PR\u00c1TICA SIMPLES_887ed75c.md": {
+    "mtime": 1787916448.30117,
+    "ast_hash": "89496512d2051d3d04cc20850b7f4e0f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Apostila_Padrao_SENAI_SC_Comunicacao_Oral_Escrita_Versao_Gemini_8a785ed7.md": {
+    "mtime": 1787916446.818226,
+    "ast_hash": "8660e4c6985bc778c348f7aa2dcc211f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Apostila_Raciocinio_Logico_Professor_88dbc319.md": {
+    "mtime": 1787916447.4179144,
+    "ast_hash": "ff12a656f987c732222922630a8b54da",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Apostila_Reforco_Matematica_Raciocinio_Logico_6a5f0aba.md": {
+    "mtime": 1787916447.535908,
+    "ast_hash": "19812f5bb39b60064d1aa87c0104826a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AtividadesFerramentasDigitaisFacil_345901cd.md": {
+    "mtime": 1787916445.8591275,
+    "ast_hash": "a3f8d7ad1bdadf91a9ec5016c343fe91",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AtividadesFerramentasDigitais_95ca8d88.md": {
+    "mtime": 1787916445.7703054,
+    "ast_hash": "bd9dba709cd180057fd746398ae8ed63",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/AvaliacaoComportamentoIntroducaoComunicacaoOralEscrita_48832718.md": {
+    "mtime": 1787916446.849882,
+    "ast_hash": "fca357ae47e947f105f88a240dac5d3f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Avalia\u00e7\u00e3o Pr\u00e1tica - Google Workspace_52410a98.md": {
+    "mtime": 1787916448.2173958,
+    "ast_hash": "e3f9e25b97e43a10364aa2516a6e7c40",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/DIARIO_CLASSE_REFORCO_LINGUAGEM_abaaea86.md": {
+    "mtime": 1787916447.2182734,
+    "ast_hash": "e187e7b756e188f41b933fb15bdfdef3",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Ferramentas Digitais para Comunica\u00e7\u00e3o_d223089d.md": {
+    "mtime": 1787916445.9841735,
+    "ast_hash": "8b968caf8a22ec8a77d352e042c34135",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GABARITO_PROVA_OBJETIVA_UC1_TIC_2951aa1d.md": {
+    "mtime": 1787916448.5007305,
+    "ast_hash": "34efa5f9c70e8222c7ab85c05eca473a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE 7__4baa6157.md": {
+    "mtime": 1787916448.2680323,
+    "ast_hash": "58611b4e03b4aa36b4c3986c61853096",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE-06_fd72c22a.md": {
+    "mtime": 1787916448.2513661,
+    "ast_hash": "54b5a5b2fcb59c7443ee2b7ec19cb3e1",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE_02_7067b024.md": {
+    "mtime": 1787916448.1514335,
+    "ast_hash": "fb88808390e4ce351d4544615b0394bf",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE_16d9593a.md": {
+    "mtime": 1787916448.423026,
+    "ast_hash": "662fc0dd1f94c75618cb1f97f292a2d3",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE_2b651500.md": {
+    "mtime": 1787916448.3118382,
+    "ast_hash": "e9fd5545004bdcee8905099a0af288eb",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE_3459870d.md": {
+    "mtime": 1787916448.1851156,
+    "ast_hash": "1bfed032438ba4536637578ea43179ae",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE_3f7e517a.md": {
+    "mtime": 1787916448.2392771,
+    "ast_hash": "5d56cb0adb196482364b28d44e9dfa51",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE__1d16ce2d.md": {
+    "mtime": 1787916448.1685588,
+    "ast_hash": "d81bf66a0ca73b6c6b370ad336bb3b41",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE_ba9df233.md": {
+    "mtime": 1787916448.400705,
+    "ast_hash": "700f308758058e78adcf2df1193f6ff4",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GUIA_DA_EQUIPE_c66cca84.md": {
+    "mtime": 1787916448.1165035,
+    "ast_hash": "e8a76b8b31e675b0f5d9cca9fd1e0e2b",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/INVENTARIO_DA_EQUIPE-06_a838f259.md": {
+    "mtime": 1787916448.2513661,
+    "ast_hash": "0aa9df213ee0f3874a4b6252d47ccd3a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/INVENTARIO_DA_EQUIPE_01788db2.md": {
+    "mtime": 1787916448.2488453,
+    "ast_hash": "f682d354f3f224a657296e8fd845feb2",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/INVENTARIO_DA_EQUIPE_02_9fd612c6.md": {
+    "mtime": 1787916448.1514335,
+    "ast_hash": "7994fe21826d05bbdd8d57273c334d63",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/INVENTARIO_DA_EQUIPE_2224ab25.md": {
+    "mtime": 1787916448.1685588,
+    "ast_hash": "aefc3a89bf334f345f3050aab9ef5295",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/INVENTARIO_DA_EQUIPE_24db05a6.md": {
+    "mtime": 1787916448.4538097,
+    "ast_hash": "7e0e3d8e8c0e4f84d536e529f19026b5",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/INVENTARIO_DA_EQUIPE_96bf9f30.md": {
+    "mtime": 1787916448.3189516,
+    "ast_hash": "c4b7456c0657e2f7a4b4a4a6476e41eb",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/INVENTARIO_DA_EQUIPE_baab3ba0.md": {
+    "mtime": 1787916448.201602,
+    "ast_hash": "c8ef0f8cdad95e1a31fc249c4c3bee79",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/INVENT\u00c1RIO_DA_EQUIPE_b5f04d3f.md": {
+    "mtime": 1787916448.1188886,
+    "ast_hash": "1d223d98307688d76c7133d2a5be749a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Inventario_da_equipe_a9f338f8.md": {
+    "mtime": 1787916448.418081,
+    "ast_hash": "bb973804d3524e212ad1c04c7ed2bc5e",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/LISTA-PRESENCA-CEPLAS-BARRAGEM-2026_068802f9.md": {
+    "mtime": 1787916446.8557765,
+    "ast_hash": "9670ca1c3239eeff27cc8ab24457446d",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/MATERIAL_OFICINA DE EMPREENDEDORISMO-CEPLAS-2026-02_119702f5.md": {
+    "mtime": 1787916445.4613273,
+    "ast_hash": "daca1001157bd98033f1b67d907af3e8",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/NOTAS-GELVAZIO-27-08-2026_495dfb7a.md": {
+    "mtime": 1787916448.4697008,
+    "ast_hash": "45cb54b4d428397ede92ecab57a02a69",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/NOTAS-GELVAZIO-V2-27-08-2026_cf56bf04.md": {
+    "mtime": 1787916448.4849994,
+    "ast_hash": "945578cc0469b9beae5dc1860a64e340",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PEI - Caio Matheus Junglos Cabral_d175014b.md": {
+    "mtime": 1787916447.6347747,
+    "ast_hash": "ea751508b30bfeddbce3410dd4f3cf56",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PEI - Jhiogo Hennyck Pereira Custodio_500aa103.md": {
+    "mtime": 1787916447.6847517,
+    "ast_hash": "bb9537e8754494b6ed476dbbbaf598cb",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_2a22b0d7.md": {
+    "mtime": 1787916448.550509,
+    "ast_hash": "2cc509beb990c9a5be79cc33b860a7b6",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROVA_OBJETIVA_UC1_TIC_COM_GABARITO_d123febc.md": {
+    "mtime": 1787916448.5893397,
+    "ast_hash": "4d7ff39b2c391b55b548d4fb3f592d57",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROVA_PRATICA_UC1_TIC_ORIGINAL_de17f5e7.md": {
+    "mtime": 1787916448.7670803,
+    "ast_hash": "c3b70b7675e8bbd4c21f84eef812fa02",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROVA_SIMPLES_UC1_TIC_EQUIPES_2H_df02a1b5.md": {
+    "mtime": 1787916448.8253493,
+    "ast_hash": "f594dbfea87208d50fb317b12a94d46c",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/RECUPERACAO-COMUNICACAO_ORAL_ESCRITA_31436bd8.md": {
+    "mtime": 1787916446.47776,
+    "ast_hash": "0a89f6420ecbb306e92b9fa96901ab46",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/RECUPERACAO_PROVA_OBJETIVA_470cd97b.md": {
+    "mtime": 1787916448.6161444,
+    "ast_hash": "abbb8a2fed316dfbc1bd4bcd4677d3a1",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/RECUPERACAO_PROVA_PRATICA_4916d15e.md": {
+    "mtime": 1787916448.836697,
+    "ast_hash": "9de7315484e9dfae6d274550115842b0",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/TEXTO-REFORCO-25-08-2026_65ce340b.md": {
+    "mtime": 1787916447.2464058,
+    "ast_hash": "495f69eede6b28cdc419e115840c85d4",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/apostila_introducao_tic_2026_2_492eeb83.md": {
+    "mtime": 1787916448.7368138,
+    "ast_hash": "6a1db114761e23cee7ebd26f8ab3a6ef",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/PROVA_OBJETIVA/FORMULARIO-PROVA-OBJETIVA.txt": {
+    "mtime": 1787856586.6012664,
+    "ast_hash": "a2d96fe5cad3fd5a8239e752358ddd32",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/PROVA_OBJETIVA/GABARITO_PROVA_OBJETIVA_UC1_TIC.html": {
+    "mtime": 1787856586.606197,
+    "ast_hash": "baf7ff0eee722ae42fdd8a5254903237",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/PROVA_PRATICA/ANALISE_TEMPO_PROVA_SIMPLES.md": {
+    "mtime": 1787856586.6126556,
+    "ast_hash": "ef9d9d1e086ef28a36c58145458d04ab",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/PROVA_PRATICA/DISTRIBUICAO_ALUNOS_POR_DESAFIO.md": {
+    "mtime": 1787856586.6136155,
+    "ast_hash": "eac775acb8915da30c43d04594f501c6",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/PROVA_PRATICA/FORMULARIO-CORRECAO-PROVA-PRATICA.txt": {
+    "mtime": 1787856586.6136155,
+    "ast_hash": "b62ba79d92eadaf43eb5a660401e1ed8",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/PROVA_PRATICA/GABARITO_CORRECAO_PROVA_SIMPLES_UC1_TIC.md": {
+    "mtime": 1787856586.6136155,
+    "ast_hash": "7d17d27eaddecc9f1e695f26f935d184",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/PROVA_PRATICA/INSTRUCOES_CORRETOR_AUTOMATICO_PROVA_SIMPLES_UC1_TIC.md": {
+    "mtime": 1787856586.6170437,
+    "ast_hash": "3b7caf735285bc513a80068c59a48994",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/PROVA_PRATICA/NOTAS PROVA PRATICA - 26-08-2026.txt": {
+    "mtime": 1787856586.6174524,
+    "ast_hash": "927a97fe0c43f9d462eddd53d2b04673",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AVALIACOES_CRIADAS/dashboard-correcao-prova-pratica.html": {
+    "mtime": 1787858568.3238516,
+    "ast_hash": "d5ec75fcc0bfccc74f36959d357acc3d",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/CLAUDE.md": {
+    "mtime": 1787856595.584496,
+    "ast_hash": "072eedb0df2b0fbfd177a5f7f27eeba4",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/NOTAS-OBJETIVA-FINAL.txt": {
+    "mtime": 1787852324.8585105,
+    "ast_hash": "ba03f946175c43b53348b20b366d6fcb",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/NOTAS-PRATICA-FINAL.txt": {
+    "mtime": 1787852575.320042,
+    "ast_hash": "4d13d5384cf30da981e45fb8cf1a9970",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/PROVA_OBJETIVA/NOTAS PROVA OBJETIVA - 21-08-2026.txt": {
+    "mtime": 1787770087.9372904,
+    "ast_hash": "49077342102cbc28170bccf0eb956205",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/PROVA_PRATICA/NOTAS PROVA OBJETIVA - 21-08-2026.txt": {
+    "mtime": 1787770087.9372904,
+    "ast_hash": "49077342102cbc28170bccf0eb956205",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AVALIACOES_CRIADAS/notas-prova-pratica.html": {
+    "mtime": 1787856001.988385,
+    "ast_hash": "938052ab15db178347c9336099f1093a",
+    "semantic_hash": ""
+  },
+  "sistema/validacao.html": {
+    "mtime": 1787843884.178963,
+    "ast_hash": "ffdc2788629c29f21fccec64d08c0f14",
+    "semantic_hash": ""
+  },
+  "sistema/pendencias.js": {
+    "mtime": 1787916490.9639676,
+    "ast_hash": "72c5086ca9f629944e80a06ecb562530",
+    "semantic_hash": ""
+  },
+  "sistema/ANALISE_DADOS_APLICADA_GESTAO/criar as aulas - AnaliseDadosAplicadaGestao.txt": {
+    "mtime": 1787856586.3517506,
+    "ast_hash": "9cdaee4c12e1674acb9c86a845466b8b",
+    "semantic_hash": ""
+  },
+  "syncdata/package.json": {
+    "mtime": 1787917656.3674357,
+    "ast_hash": "e72c910aa2bf5cd058dc5ff1910f458c",
+    "semantic_hash": ""
+  },
+  "syncdata/server.js": {
+    "mtime": 1787916960.4663773,
+    "ast_hash": "8960c6dc5d45614db0920c5412df1e7f",
+    "semantic_hash": ""
+  },
+  "syncdata/src/constants.js": {
+    "mtime": 1787918367.368397,
+    "ast_hash": "9bf6ce24fff59d4a5e836a5faa140a3a",
+    "semantic_hash": ""
+  },
+  "syncdata/src/generate-pendencias.js": {
+    "mtime": 1787916874.4528928,
+    "ast_hash": "e6a2cb06877d9f5794e68c8ea7949104",
+    "semantic_hash": ""
+  },
+  "syncdata/src/scan-aulas.js": {
+    "mtime": 1787917881.140399,
+    "ast_hash": "1193766797f3cbcd7702939162165dca",
+    "semantic_hash": ""
+  },
+  "syncdata/src/utils.js": {
+    "mtime": 1787916886.2203507,
+    "ast_hash": "1171f74ecca145dd4e86d02a55d72a76",
+    "semantic_hash": ""
+  },
+  "syncdata/CLAUDE.md": {
+    "mtime": 1787918414.3148632,
+    "ast_hash": "5a23b22ecaba2c736b2e0d6d47a24e6a",
+    "semantic_hash": ""
+  },
+  "syncdata/README.md": {
+    "mtime": 1787917019.95296,
+    "ast_hash": "4fdaebd48745d63c44343e90e41672d2",
+    "semantic_hash": ""
+  },
+  "syncdata/src/verify-uc.js": {
+    "mtime": 1787918393.2416937,
+    "ast_hash": "9514fef28c18c2b2bf9b94ee91858997",
     "semantic_hash": ""
   }
 }

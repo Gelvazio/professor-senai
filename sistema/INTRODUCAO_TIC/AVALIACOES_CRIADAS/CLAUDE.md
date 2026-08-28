@@ -1,5 +1,22 @@
 # AVALIACOES_CRIADAS — Sistema de Gerenciamento de Notas
 
+⚠️ **REGRA CRÍTICA: NUNCA COMMITAR OU FAZER PUSH DESSA PASTA**
+
+Esta pasta contém dados sensíveis de avaliações e notas dos alunos.
+
+✅ **O que fazer:**
+- Trabalhar normalmente na pasta (editar arquivos, rodar scripts Python)
+- Gerar notas, atualizar dados, tudo local
+
+❌ **NUNCA:**
+- `git add` arquivos dessa pasta
+- `git commit` com arquivos daqui
+- `git push` com dados de notas/entregas
+
+Os dados devem permanecer **100% locais** e nunca serem versionados no Git.
+
+---
+
 Documentação do funcionamento da pasta de avaliações e notas da UC1 - Introdução à Tecnologia da Informação e Comunicação.
 
 ---

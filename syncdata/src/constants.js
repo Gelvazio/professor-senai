@@ -117,10 +117,16 @@ const ESTRUTURA_UC_OBRIGATORIA = {
 };
 
 // Padrões regex para arquivos obrigatórios
+// IMPORTANTE: Arquivos EMENTA e APOSTILA devem ter nomes descritivos
+// Exemplos válidos:
+//   - EMENTA_TECNOLOGIA.md
+//   - EMENTA_INTRODUCAO_COMUNICACAO.md
+//   - APOSTILA_PYTHON_BASICO.md
+//   - APOSTILA_FUNDAMENTOS.md
 const PADROES_ARQUIVOS_UC = {
-  EMENTA: /^EMENTA.*\.(md|txt)$/i,           // Ementa com qualquer sufixo
-  PLANO_ENSINO: /^PLANO_ENSINO\.(md|txt)$/i, // Plano de ensino
-  APOSTILA: /^APOSTILA.*\.(md|txt)$/i        // Apostila com qualquer sufixo
+  EMENTA: /^EMENTA[_\-\s].*\.(md|txt)$/i,           // EMENTA_<NOME>.<ext>
+  PLANO_ENSINO: /^PLANO_ENSINO\.(md|txt)$/i,       // PLANO_ENSINO.md (exato)
+  APOSTILA: /^APOSTILA[_\-\s].*\.(md|txt|docx)$/i  // APOSTILA_<NOME>.<ext> (permite docx também)
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════

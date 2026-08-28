@@ -75,6 +75,24 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
           resultado.estrutura.GERAR_SLIDES = true;
           resultado.arquivos_encontrados.GERAR_SLIDES = item.name;
         }
+
+        // Avisos: nomenclatura genérica ou incorreta
+        if (item.name.match(/^EMENTA\.(md|txt)$/i)) {
+          resultado.pendencias.push({
+            tipo: 'AVISO',
+            item: item.name,
+            mensagem: 'EMENTA.md é muito genérico — renomear para EMENTA_<NOME_DA_UC>.md',
+            prioridade: 'MEDIA'
+          });
+        }
+        if (item.name.match(/^APOSTILA\.(md|txt|docx)$/i)) {
+          resultado.pendencias.push({
+            tipo: 'AVISO',
+            item: item.name,
+            mensagem: 'APOSTILA.md é muito genérico — renomear para APOSTILA_<NOME_DA_UC>.md',
+            prioridade: 'MEDIA'
+          });
+        }
       }
     }
 
@@ -163,6 +181,7 @@ async function verificarTodasUCs(ucsArray) {
       PASTA: 0,
       ARQUIVO: 0,
       SCRIPT: 0,
+      AVISO: 0,
       ERRO: 0
     }
   };
@@ -206,6 +225,7 @@ function gerarRelatorioVerificacao(verificacao) {
   relatorio += `  Pastas: ${verificacao.resumo.pendencias_por_tipo.PASTA}\n`;
   relatorio += `  Arquivos: ${verificacao.resumo.pendencias_por_tipo.ARQUIVO}\n`;
   relatorio += `  Scripts: ${verificacao.resumo.pendencias_por_tipo.SCRIPT}\n`;
+  relatorio += `  Avisos: ${verificacao.resumo.pendencias_por_tipo.AVISO}\n`;
   relatorio += `  Erros: ${verificacao.resumo.pendencias_por_tipo.ERRO}\n\n`;
 
   relatorio += '🔍 DETALHES POR UC:\n';

@@ -93,12 +93,44 @@ Para containers:
 - `AULAS/` — Pasta contendo as aulas da UC
 - `AVALIACOES/` ou `AVALIACOES_CRIADAS/` — Pasta contendo as avaliações
 
-### 📄 Arquivos Obrigatórios
-- `EMENTA_*.md` — Ementa da UC (aceita qualquer sufixo após "EMENTA_")
-  - Exemplos válidos: `EMENTA_UC1.md`, `EMENTA_NOME_COMPLETO.md`, `EMENTA.md`
-- `PLANO_ENSINO.md` — Plano de ensino oficial da UC
-- `APOSTILA_*.md` — Material de apostila (aceita qualquer sufixo após "APOSTILA_")
-  - Exemplos válidos: `APOSTILA_COMPLETA.md`, `APOSTILA_UC1.md`, `APOSTILA.md`
+### 📄 Arquivos Obrigatórios com Nomenclatura Específica
+
+⚠️ **CRÍTICO**: Arquivo EMENTA e APOSTILA DEVEM ter nomes descritivos (não podem ser genéricos)
+
+#### EMENTA_<NOME_DA_UC>.md
+- ✅ Deve começar com `EMENTA_` ou `EMENTA-` ou `EMENTA `
+- ✅ Deve ter nome descritivo após o prefixo
+- ✅ Extensão: `.md` ou `.txt`
+
+Exemplos **VÁLIDOS**:
+- `EMENTA_TECNOLOGIA.md`
+- `EMENTA_INTRODUCAO_COMUNICACAO.md`
+- `EMENTA_REFORCO_MATEMATICA.md`
+- `EMENTA-ELETRICIDADE-CIRCUITOS.txt`
+
+Exemplos **INVÁLIDOS**:
+- ❌ `EMENTA.md` (sem nome descritivo)
+- ❌ `ementa_UC1.md` (muito genérico)
+
+#### APOSTILA_<NOME_DA_UC>.md
+- ✅ Deve começar com `APOSTILA_` ou `APOSTILA-` ou `APOSTILA `
+- ✅ Deve ter nome descritivo após o prefixo
+- ✅ Extensão: `.md`, `.txt`, ou `.docx`
+
+Exemplos **VÁLIDOS**:
+- `APOSTILA_PYTHON_BASICO.md`
+- `APOSTILA_FUNDAMENTOS_TECNOLOGIA.md`
+- `APOSTILA_REFORCO_MATEMATICA_RACIOCINIO_LOGICO.md`
+- `APOSTILA-OFICINAS-ROBOTICA.md`
+- `APOSTILA_COMPLETA_EMPREENDEDORISMO.docx`
+
+Exemplos **INVÁLIDOS**:
+- ❌ `APOSTILA.md` (sem nome descritivo)
+- ❌ `apostila_v1.md` (muito genérico)
+
+#### PLANO_ENSINO.md
+- ✅ Nome exato: `PLANO_ENSINO.md` (sem variações)
+- ✅ Extensão: `.md` ou `.txt`
 
 ### ❌ Consequências de Não Conformidade
 Itens faltantes geram **pendências automáticas** com prioridades:

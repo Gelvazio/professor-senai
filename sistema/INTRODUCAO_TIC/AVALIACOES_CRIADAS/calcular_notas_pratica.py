@@ -59,7 +59,7 @@ def analisar_entregas():
 
                     if 'guia' in nome_arq:
                         entregas[equipe_num]['docs'] = True
-                    elif 'inventario' in nome_arq:
+                    elif 'inventario' in nome_arq or (extensao == '.xlsx' and 'equipe' in nome_arq):
                         # Google Sheets: pode ser arquivo do Google Drive ou .xlsx local
                         entregas[equipe_num]['sheets'] = True
                     elif 'apresenta' in nome_arq:
