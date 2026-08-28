@@ -198,7 +198,92 @@ node gerar_slides.js
 
 ---
 
-## 13. Checklist de Conformidade
+## 13. Textos de Reforço — Regra Obrigatória
+
+### 📝 Definição
+
+Textos de reforço são materiais complementares em **PDF**, baseados nos temas da **ementa**, com linguagem adaptada para adolescentes de **12–16 anos** (máximo 14 anos). Servem para:
+- Reforçar aprendizagem entre encontros
+- Oferecer leitura independente com compreensão assegurada
+- Diversificar contextos de aplicação dos conhecimentos
+
+### ✅ Quantidade Obrigatória
+
+Mínimo **5 textos de reforço**, um para cada módulo da UC:
+
+| Arquivo | Módulo | Tema | CH Estimada |
+|---|---|---|---|
+| `TEXTO-REFORCO-MODELO-01.pdf` | 1 | Leitura e Compreensão Textual | 2–3h |
+| `TEXTO-REFORCO-MODELO-02.pdf` | 2 | Produção Textual | 2–3h |
+| `TEXTO-REFORCO-MODELO-03.pdf` | 3 | Gramática Aplicada | 2–3h |
+| `TEXTO-REFORCO-MODELO-04.pdf` | 4 | Comunicação Oral | 2–3h |
+| `TEXTO-REFORCO-MODELO-05.pdf` | 5 | Autonomia e Estratégias de Estudo | 2–3h |
+
+### 🎯 Critérios de Conformidade
+
+Cada texto deve atender:
+
+1. **Formato:** PDF (gerado de Markdown → DOCX → PDF ou direto)
+2. **Estrutura:**
+   - Cabeçalho com identidade do programa (RIO DO SUL MAIS TECH · SENAI)
+   - Título do texto e módulo associado
+   - Identificação do aluno (seção para preenchimento: nome, turma, data)
+   - Texto principal (600–1000 palavras)
+   - Glossário de termos desconhecidos
+   - 3–5 atividades de compreensão (resposta breve, múltipla escolha, verdadeiro/falso)
+   - Gabarito (com comentários pedagógicos)
+
+3. **Linguagem:**
+   - Simples e clara, sem jargão técnico desnecessário
+   - Conectada à realidade de adolescentes (12–16 anos)
+   - Exemplos cotidianos e relevantes
+   - Parágrafos curtos (máx. 4–5 linhas)
+
+4. **Conteúdo:**
+   - Alinhado aos conhecimentos de seu módulo
+   - Diferentes temas em cada texto (não repetir contextos)
+   - Possibilidade de uso independente (aluno estuda sozinho)
+
+### 📋 Temas Sugeridos por Módulo
+
+#### Módulo 1 — Leitura e Compreensão Textual
+- **Tema:** "Redes Sociais e Leitura Crítica" ou "Notícias Falsas: Como Identificar"
+- **Objetivo:** Ler com crítica, entender intenção comunicativa
+
+#### Módulo 2 — Produção Textual
+- **Tema:** "Escrevendo um Email Profissional" ou "Como Escrever um Resumo"
+- **Objetivo:** Estruturar ideias, produzir texto coerente
+
+#### Módulo 3 — Gramática Aplicada
+- **Tema:** "Erros Comuns que Até YouTubers Cometem" ou "Pontuação que Muda o Significado"
+- **Objetivo:** Entender uso prático de regras gramaticais
+
+#### Módulo 4 — Comunicação Oral
+- **Tema:** "Apresentações e Nervosismo" ou "Ouvir com Atenção: A Arte de Entender"
+- **Objetivo:** Desenvolver segurança e clareza ao falar
+
+#### Módulo 5 — Autonomia e Estratégias de Estudo
+- **Tema:** "Organizando Seu Tempo de Estudo" ou "Técnicas de Memorização que Funcionam"
+- **Objetivo:** Empoderar autonomia de aprendizagem
+
+### 🔄 Fluxo de Criação
+
+1. **Escrever em Markdown** (`TEXTO-REFORCO-MODELO-0X.md`)
+2. **Converter para DOCX** (usando `python-docx` ou manualmente)
+3. **Exportar para PDF** (do Word ou via script Python/LibreOffice)
+4. **Validar:** ✓ Estrutura | ✓ Linguagem | ✓ Conformidade | ✓ Arquivo PDF válido
+
+### ⚠️ Status de Implementação
+
+- [ ] `TEXTO-REFORCO-MODELO-01.pdf` — Módulo 1
+- [ ] `TEXTO-REFORCO-MODELO-02.pdf` — Módulo 2
+- [ ] `TEXTO-REFORCO-MODELO-03.pdf` — Módulo 3
+- [ ] `TEXTO-REFORCO-MODELO-04.pdf` — Módulo 4
+- [ ] `TEXTO-REFORCO-MODELO-05.pdf` — Módulo 5
+
+---
+
+## 14. Checklist de Conformidade
 
 ### ✅ Obrigatório
 - [x] Ementa em Markdown (`Ementa_Reforco_Linguagens.md`)
@@ -206,6 +291,7 @@ node gerar_slides.js
 - [x] Slides PPTX (`Slides_Reforco_Linguagens.pptx`) — 15+ slides
 - [x] Script de geração (`gerar_slides.js`)
 - [x] Mínimo 15 slides no PPTX
+- [ ] Mínimo 5 Textos de Reforço em PDF (um por módulo) — `TEXTO-REFORCO-MODELO-0X.pdf`
 
 ### ⚠️ Para Validação
 - [ ] Material Word recente (`TEXTO-REFORCO-25-08-2026.docx`) — usar ou remover?
