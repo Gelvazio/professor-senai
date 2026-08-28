@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-28)
 
 ## Corpus Check
-- 326 files · ~1,296,899 words
+- 332 files · ~1,303,996 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4924 nodes · 4931 edges · 505 communities (466 shown, 39 thin omitted)
+- 5112 nodes · 5120 edges · 515 communities (476 shown, 39 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e2d804b8`
+- Built from commit: `e01f6587`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -288,9 +288,11 @@
 - [[_COMMUNITY_Community 284|Community 284]]
 - [[_COMMUNITY_Community 285|Community 285]]
 - [[_COMMUNITY_Community 286|Community 286]]
+- [[_COMMUNITY_Community 287|Community 287]]
 - [[_COMMUNITY_Community 288|Community 288]]
 - [[_COMMUNITY_Community 289|Community 289]]
 - [[_COMMUNITY_Community 290|Community 290]]
+- [[_COMMUNITY_Community 291|Community 291]]
 - [[_COMMUNITY_Community 292|Community 292]]
 - [[_COMMUNITY_Community 293|Community 293]]
 - [[_COMMUNITY_Community 294|Community 294]]
@@ -301,6 +303,8 @@
 - [[_COMMUNITY_Community 299|Community 299]]
 - [[_COMMUNITY_Community 300|Community 300]]
 - [[_COMMUNITY_Community 301|Community 301]]
+- [[_COMMUNITY_Community 302|Community 302]]
+- [[_COMMUNITY_Community 303|Community 303]]
 - [[_COMMUNITY_Community 304|Community 304]]
 - [[_COMMUNITY_Community 305|Community 305]]
 - [[_COMMUNITY_Community 306|Community 306]]
@@ -317,7 +321,9 @@
 - [[_COMMUNITY_Community 317|Community 317]]
 - [[_COMMUNITY_Community 319|Community 319]]
 - [[_COMMUNITY_Community 320|Community 320]]
+- [[_COMMUNITY_Community 321|Community 321]]
 - [[_COMMUNITY_Community 322|Community 322]]
+- [[_COMMUNITY_Community 323|Community 323]]
 - [[_COMMUNITY_Community 324|Community 324]]
 - [[_COMMUNITY_Community 325|Community 325]]
 - [[_COMMUNITY_Community 326|Community 326]]
@@ -326,11 +332,15 @@
 - [[_COMMUNITY_Community 329|Community 329]]
 - [[_COMMUNITY_Community 330|Community 330]]
 - [[_COMMUNITY_Community 332|Community 332]]
+- [[_COMMUNITY_Community 333|Community 333]]
+- [[_COMMUNITY_Community 334|Community 334]]
 - [[_COMMUNITY_Community 335|Community 335]]
 - [[_COMMUNITY_Community 336|Community 336]]
 - [[_COMMUNITY_Community 337|Community 337]]
 - [[_COMMUNITY_Community 338|Community 338]]
 - [[_COMMUNITY_Community 339|Community 339]]
+- [[_COMMUNITY_Community 340|Community 340]]
+- [[_COMMUNITY_Community 341|Community 341]]
 - [[_COMMUNITY_Community 345|Community 345]]
 - [[_COMMUNITY_Community 346|Community 346]]
 - [[_COMMUNITY_Community 347|Community 347]]
@@ -495,7 +505,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (505 total, 39 thin omitted)
+## Communities (515 total, 39 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -849,8 +859,8 @@ Cohesion: 0.39
 Nodes (10): add_activity(), add_bullets(), add_callout(), add_lesson(), add_module_intro(), add_para(), font(), set_cell_margins() (+2 more)
 
 ### Community 96 - "Community 96"
-Cohesion: 0.22
-Nodes (6): carregarJSON(), escreverLog(), formatarTimestamp(), garantirDiretorio(), path, salvarJSON()
+Cohesion: 0.21
+Nodes (7): carregarJSON(), escreverLog(), formatarTimestamp(), garantirDiretorio(), path, salvarJSON(), gerarRelatorioSincronizacao()
 
 ### Community 97 - "Community 97"
 Cohesion: 0.18
@@ -1029,8 +1039,8 @@ Cohesion: 0.14
 Nodes (14): Atividade: Apresentação de 3 minutos, Atividade: Mini-debate, Atividades de simulação, Encontro 18-19 — Debate e Argumentação (4h), Encontro 20-21 — Apresentação Oral e Escuta Ativa (4h), Encontro 22 — Simulação de Situações Comunicativas (4h), Explicação: Como argumentar bem?, Explicação: Como fazer uma boa apresentação? (+6 more)
 
 ### Community 155 - "Community 155"
-Cohesion: 0.11
-Nodes (18): Atividade final, Atividades, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h) (+10 more)
+Cohesion: 0.15
+Nodes (13): Atividade final, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h), Explicação: Como fazer uma síntese?, MÓDULO 5 — AUTONOMIA E ESTRATÉGIAS DE ESTUDO (+5 more)
 
 ### Community 156 - "Community 156"
 Cohesion: 0.29
@@ -1465,8 +1475,8 @@ Cohesion: 0.33
 Nodes (5): Efeito de profundidade nos cards pendentes, Passo 1: Ajustar a animação, Passo 2: Revisar o diff, Passo 3: Commit e push, Status Geral
 
 ### Community 264 - "Community 264"
-Cohesion: 0.33
-Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
+Cohesion: 0.04
+Nodes (46): 10. Arquivo Word (`TEXTO-REFORCO-25-08-2026.docx`), 11. Script de Geração (`gerar_slides.js`), 12. Como trabalhar com esta pasta, 13. Textos de Reforço — Regra Obrigatória, 14. Checklist de Conformidade, 14. Informações do Programa, 15. Referências Rápidas, 1. O que é esta pasta (+38 more)
 
 ### Community 265 - "Community 265"
 Cohesion: 0.33
@@ -1509,8 +1519,8 @@ Cohesion: 0.29
 Nodes (7): 📄 Arquivo Obrigatório, ✅ Checklist de Conformidade, Conteúdo do Arquivo CLAUDE.md, Exemplo de Estrutura, 📁 Pasta Obrigatória, 🔴 Prioridade, 🔴 REGRA 05 — Pasta de Substituições
 
 ### Community 275 - "Community 275"
-Cohesion: 0.50
-Nodes (4): 10.1 Razão, 10.2 Proporção, Atividade 3.1, Encontro 10 — Razão e Proporção (2h)
+Cohesion: 0.06
+Nodes (31): 1. PONTO (.), 2. VÍRGULA (,), 3. PONTO DE INTERROGAÇÃO (?), 4. PONTO DE EXCLAMAÇÃO (!), 5. RETICÊNCIAS (...), 6. TRAVESSÃO (—), A Vírgula, As Regras Básicas (+23 more)
 
 ### Community 276 - "Community 276"
 Cohesion: 0.33
@@ -1556,6 +1566,10 @@ Nodes (4): Excluir matérias do curso, Regra de exclusão, Status Geral, Verific
 Cohesion: 0.67
 Nodes (3): ✅ Obrigatório, ❌ Proibido, 🎯 Regras Críticas
 
+### Community 287 - "Community 287"
+Cohesion: 0.07
+Nodes (26): 1. SILÊNCIO ATENCIOSO, 2. CONTATO VISUAL, 3. LINGUAGEM CORPORAL, 4. PARAFRASEIO, 5. PERGUNTAS PERTINENTES, Atividade 1, Atividade 1 — Verdadeiro ou Falso, Atividade 2 (+18 more)
+
 ### Community 288 - "Community 288"
 Cohesion: 0.40
 Nodes (4): Causa, Manter modal do curso ao ver aulas, Status Geral, Verificação
@@ -1567,6 +1581,10 @@ Nodes (6): Atividades, Encontro 3-4 — Tema e Ideia Principal (4h), Explicaçã
 ### Community 290 - "Community 290"
 Cohesion: 0.22
 Nodes (3): COR, pptxgen, pres
+
+### Community 291 - "Community 291"
+Cohesion: 0.33
+Nodes (4): formatarPendenciasParaJS(), gerarPendencias(), path, salvarPendencias()
 
 ### Community 292 - "Community 292"
 Cohesion: 0.08
@@ -1607,6 +1625,14 @@ Nodes (4): Fluxo, Modal de edição de avaliação, Status Geral, Verificação
 ### Community 301 - "Community 301"
 Cohesion: 0.40
 Nodes (4): Etapas, Notificação de pendências nos cursos, Objetivo, Verificação prevista
+
+### Community 302 - "Community 302"
+Cohesion: 0.08
+Nodes (25): 1. ASSUNTO, 2. SAUDAÇÃO, 3. ABERTURA (1º parágrafo), 4. CORPO (2º parágrafo), 5. ENCERRAMENTO, 6. ASSINATURA, Atividade 1, Atividade 1 — Verdadeiro ou Falso (+17 more)
+
+### Community 303 - "Community 303"
+Cohesion: 0.33
+Nodes (6): 📄 Arquivo Obrigatório, Checklist de Conformidade, Conteúdo Esperado, Exemplo de Estrutura, 🔴 Prioridade, 🔴 REGRA 06 — Arquivo CLAUDE.md em Cada UC
 
 ### Community 304 - "Community 304"
 Cohesion: 0.40
@@ -1672,9 +1698,17 @@ Nodes (4): Comportamento, Status Geral, Toggle para cursos bloqueados, Verifica�
 Cohesion: 0.40
 Nodes (4): Comportamento, Status Geral, Toggle Ensalado no card da matéria, Verificação
 
+### Community 321 - "Community 321"
+Cohesion: 0.08
+Nodes (25): A Verdade sobre Memorização, Atividade 1, Atividade 1 — Verdadeiro ou Falso, Atividade 2, Atividade 2 — Múltipla Escolha, Atividade 3, Atividade 3 — Resposta Breve, Atividades de Compreensão (+17 more)
+
 ### Community 322 - "Community 322"
 Cohesion: 0.80
 Nodes (4): all_paragraphs(), edit_document(), replace_paragraph(), replace_text()
+
+### Community 323 - "Community 323"
+Cohesion: 0.40
+Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
 
 ### Community 324 - "Community 324"
 Cohesion: 0.50
@@ -1696,6 +1730,14 @@ Nodes (3): participantes, sheet, workbook
 Cohesion: 0.25
 Nodes (7): 1. Identificação do Plano de Ensino, 4.1 Contextualização, 4.2 Desafio, 4.3 Resultados Esperados, 4. Estratégia de Aprendizagem Desafiadora, 6. Observações da Extração, Plano de Ensino — Situação de Aprendizagem / Plano de Aulas
 
+### Community 333 - "Community 333"
+Cohesion: 0.10
+Nodes (19): Atividade 1, Atividade 1 — Verdadeiro ou Falso, Atividade 2, Atividade 2 — Múltipla Escolha, Atividade 3, Atividade 3 — Resposta Breve, Atividades de Compreensão, Como Ler com Crítica nas Redes Sociais (+11 more)
+
+### Community 334 - "Community 334"
+Cohesion: 0.40
+Nodes (5): 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, Atividade 2.2, Encontro 6 — Operações com Frações (2h)
+
 ### Community 335 - "Community 335"
 Cohesion: 0.29
 Nodes (7): 5.1 Bloco 01 — Tecnologia e Mundo Digital, Capacidades a serem trabalhadas, Conhecimentos relacionados, Critérios de avaliação, Estratégias de ensino, Instrumentos de avaliação da aprendizagem, Recursos e ambientes pedagógicos
@@ -1716,6 +1758,14 @@ Nodes (7): 5.5 Bloco 05 — Pensamento Computacional e Algoritmos, Capacidades a
 Cohesion: 0.29
 Nodes (7): 5.6 Bloco 06 — Programação em Blocos com Scratch, Capacidades a serem trabalhadas, Conhecimentos relacionados, Critérios de avaliação, Estratégias de ensino, Instrumentos de avaliação da aprendizagem, Recursos e ambientes pedagógicos
 
+### Community 340 - "Community 340"
+Cohesion: 0.50
+Nodes (4): 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, Atividade 3.3, Encontro 12 — Regra de Três Simples (2h)
+
+### Community 341 - "Community 341"
+Cohesion: 0.50
+Nodes (4): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, Atividade 4.2, Encontro 16 — Capacidade e Tempo (2h)
+
 ### Community 345 - "Community 345"
 Cohesion: 0.05
 Nodes (36): 1. **NOTAS-OBJETIVA.js**, 1. **Recebimento de Entregas**, 1. **Visualização de Notas por Equipe**, 2. **Cálculo Automático**, 2. **Menu "Notas Prova Objetiva"**, 2. **NOTAS-EQUIPE-PROVA-PRATICA.js**, 2. **Ícone OBS (Observações)**, 3. **Menu "Notas por Aluno (Prática)"** (+28 more)
@@ -1733,12 +1783,12 @@ Cohesion: 0.06
 Nodes (32): 1. Diagnóstico da mensagem, 1. Estrutura da pasta compartilhada, 2. Padrão de nomes, 2. Planejamento, 3. Primeira versão do e-mail, 3. Quadro de tarefas, 4. Cartão de bloqueio, 4. Checklist de revisão em dupla (+24 more)
 
 ### Community 349 - "Community 349"
-Cohesion: 0.08
-Nodes (25): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+17 more)
+Cohesion: 0.10
+Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, 9.1 Fórmula dos Juros Simples (+12 more)
 
 ### Community 350 - "Community 350"
-Cohesion: 0.09
-Nodes (23): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas (+15 more)
+Cohesion: 0.11
+Nodes (19): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Apresentação do Módulo (+11 more)
 
 ### Community 351 - "Community 351"
 Cohesion: 0.09
@@ -1754,7 +1804,7 @@ Nodes (21): analisar_arquivo(), corrigir_google_docs(), corrigir_google_sheets()
 
 ### Community 354 - "Community 354"
 Cohesion: 0.11
-Nodes (18): 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental, Apresentação do Módulo, Atividade 3.2 (+10 more)
+Nodes (18): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental, Apresentação do Módulo, Atividade 3.1 (+10 more)
 
 ### Community 355 - "Community 355"
 Cohesion: 0.10
@@ -1789,8 +1839,8 @@ Cohesion: 0.12
 Nodes (17): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Atividade 6.1 (+9 more)
 
 ### Community 363 - "Community 363"
-Cohesion: 0.12
-Nodes (16): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Apresentação do Módulo, Atividade 1.1 — Individual (+8 more)
+Cohesion: 0.09
+Nodes (22): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+14 more)
 
 ### Community 364 - "Community 364"
 Cohesion: 0.12
@@ -2138,22 +2188,22 @@ Nodes (11): PASTAS_IGNORADAS, UC_CONTAINERS, ehAula(), EXTENSOES_AULA, extrairDa
 
 ### Community 526 - "Community 526"
 Cohesion: 0.10
-Nodes (23): CONFIG, DATA_DIR, EMOJIS, ESTRUTURA_UC_OBRIGATORIA, EXTENSOES_VALIDAS, LOGS_DIR, PADROES_ARQUIVOS_UC, PADROES_ATIVIDADES (+15 more)
+Nodes (24): CONFIG, DATA_DIR, EMOJIS, ESTRUTURA_UC_OBRIGATORIA, EXTENSOES_VALIDAS, LOGS_DIR, PADROES_ARQUIVOS_UC, PADROES_ATIVIDADES (+16 more)
 
 ### Community 527 - "Community 527"
 Cohesion: 0.31
 Nodes (8): addRodape(), outPath, path, pptx, PptxGenJS, slideApresentacao(), slideConteudo(), slideDois()
 
 ### Community 528 - "Community 528"
-Cohesion: 0.11
-Nodes (16): formatarPendenciasParaJS(), gerarPendencias(), path, salvarPendencias(), app, cache, cors, DATA_DIR (+8 more)
+Cohesion: 0.12
+Nodes (14): app, cache, cors, DATA_DIR, { EMOJIS, SISTEMA_DIR: SISTEMA_DIR_CONST }, express, fsSync, { garantirDiretorio, salvarJSON, carregarJSON } (+6 more)
 
 ### Community 529 - "Community 529"
 Cohesion: 0.53
 Nodes (5): Path, converter(), main(), preparar_html(), Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com     to
 
 ## Knowledge Gaps
-- **3508 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3503 more)
+- **3645 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3640 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2162,12 +2212,12 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ENCONTROS` connect `Community 153` to `Community 192`, `Community 193`, `Community 194`, `Community 200`, `Community 201`, `Community 202`, `Community 203`, `Community 204`, `Community 205`, `Community 176`, `Community 177`, `Community 178`, `Community 179`, `Community 180`, `Community 189`, `Community 190`, `Community 191`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `ENCONTRO 15 — Netiqueta e segurança digital` connect `Community 380` to `Community 393`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `MÓDULO 4 — MEDIDAS E GRANDEZAS` connect `Community 56` to `Community 267`?**
+- **Why does `MÓDULO 2 — FRAÇÕES, DECIMAIS E PORCENTAGEM` connect `Community 349` to `Community 397`, `Community 334`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
+- **Why does `FUNDAMENTOS DA TECNOLOGIA E PROGRAMAÇÃO` connect `Community 159` to `Community 196`, `Community 206`, `Community 207`, `Community 208`, `Community 209`, `Community 210`, `Community 211`, `Community 212`, `Community 213`, `Community 214`, `Community 215`, `Community 216`, `Community 217`, `Community 218`, `Community 219`, `Community 220`, `Community 221`, `Community 222`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _3529 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3666 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

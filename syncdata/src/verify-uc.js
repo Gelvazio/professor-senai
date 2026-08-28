@@ -7,7 +7,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES, PADROES_ATIVIDADES, PADROES_SUBSTITUICOES } = require('./constants');
+const { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES, PADROES_ATIVIDADES, PADROES_SUBSTITUICOES, PADROES_UC_CLAUDE } = require('./constants');
 
 /**
  * Extrai a quantidade de horas do arquivo EMENTA
@@ -78,7 +78,8 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
       ATIVIDADES: false,              // REGRA 04
       GERAR_ATIVIDADES: false,        // REGRA 04
       SUBSTITUICOES: false,           // REGRA 05
-      SUBSTITUICOES_CLAUDE: false     // REGRA 05
+      SUBSTITUICOES_CLAUDE: false,    // REGRA 05
+      UC_CLAUDE: false                // REGRA 06
     },
     arquivos_encontrados: {
       AULAS: null,
@@ -92,7 +93,8 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
       ATIVIDADES_MD: [],              // Lista de ATIVIDADE_NN.md encontrados
       ATIVIDADES_PDF: [],             // Lista de ATIVIDADE_NN_VERSAO_IMPRESSA.pdf encontrados
       SUBSTITUICOES: null,            // REGRA 05
-      SUBSTITUICOES_CLAUDE: null      // REGRA 05
+      SUBSTITUICOES_CLAUDE: null,     // REGRA 05
+      UC_CLAUDE: null                 // REGRA 06
     },
     horas_aula: null,
     atividades_esperadas: 0,
@@ -178,6 +180,9 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
         } else if (PADROES_ATIVIDADES.GERAR.test(item.name)) {
           resultado.estrutura.GERAR_ATIVIDADES = true;
           resultado.arquivos_encontrados.GERAR_ATIVIDADES = item.name;
+        } else if (PADROES_UC_CLAUDE.ARQUIVO.test(item.name)) {
+          resultado.estrutura.UC_CLAUDE = true;
+          resultado.arquivos_encontrados.UC_CLAUDE = item.name;
         }
 
         // Avisos: nomenclatura genérica ou incorreta
@@ -325,6 +330,16 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
         item: 'CLAUDE.md',
         mensagem: 'Arquivo SUBSTITUICOES/CLAUDE.md não encontrado (REGRA 05)',
         prioridade: 'BAIXA'
+      });
+    }
+
+    // REGRA 06 — Verificação de CLAUDE.md na UC
+    if (!resultado.estrutura.UC_CLAUDE) {
+      resultado.pendencias.push({
+        tipo: 'ARQUIVO',
+        item: 'CLAUDE.md',
+        mensagem: 'Arquivo CLAUDE.md não encontrado na raiz da UC (REGRA 06)',
+        prioridade: 'MEDIA'
       });
     }
 

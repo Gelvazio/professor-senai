@@ -315,6 +315,97 @@ O arquivo deve descrever o processo de:
 ### 🔴 Prioridade
 - **BAIXA** — Complementar (informativo)
 
+## 🔴 REGRA 06 — Arquivo CLAUDE.md em Cada UC
+
+⚠️ **CRÍTICO** — Toda UC deve conter:
+
+### 📄 Arquivo Obrigatório
+- `CLAUDE.md` — Documentação explicativa sobre os conteúdos e estrutura da UC
+
+#### Conteúdo Esperado
+
+O arquivo deve descrever:
+
+1. **Visão Geral da UC**
+   - Nome completo da unidade curricular
+   - Objetivo geral
+   - Público-alvo
+
+2. **Estrutura de Pastas**
+   - Descrição de cada pasta (AULAS/, AVALIACOES/, ATIVIDADES/, SUBSTITUICOES/, etc)
+   - Conteúdo esperado em cada uma
+
+3. **Como Usar os Materiais**
+   - Pré-requisitos de conhecimento
+   - Sequência recomendada de conteúdo
+   - Ligações entre tópicos
+
+4. **Geração de Slides**
+   - Como executar `gerar_slides.js`
+   - Dependências necessárias
+   - Como personalizar cores e conteúdo
+
+5. **Dados do SGN**
+   - Links para acessar o diário de classe
+   - Como sincronizar informações com o SGN
+   - Estrutura de dados esperada
+
+#### Exemplo de Estrutura
+
+```markdown
+# UC: [NOME DA UNIDADE CURRICULAR]
+
+## 📋 Objetivo Geral
+[Breve descrição do objetivo]
+
+## 📁 Estrutura de Pastas
+
+### /AULAS
+Contém aulas numeradas e organizadas. Cada aula é uma pasta com:
+- Slides HTML
+- Material de apoio
+- Atividades práticas
+
+### /AVALIACOES
+[Descrição]
+
+### /ATIVIDADES
+[Descrição]
+
+... (outras pastas)
+
+## 🚀 Como Usar Esta UC
+
+1. **Preparação**: [Passos]
+2. **Execução**: [Passos]
+3. **Avaliação**: [Passos]
+
+## 🔗 Links Úteis
+
+- Diário de Classe: [URL SGN]
+- Ementa: EMENTA_*.md
+- Plano de Ensino: PLANO_ENSINO.md
+
+## ⚙️ Geração de Slides
+
+```bash
+npm install pptxgenjs
+node gerar_slides.js
+```
+
+```
+
+#### Checklist de Conformidade
+1. ✅ Arquivo `CLAUDE.md` existe na raiz da UC
+2. ✅ Arquivo descreve objetivo e público-alvo
+3. ✅ Arquivo documenta estrutura de pastas
+4. ✅ Arquivo explica como usar os materiais
+5. ✅ Arquivo inclui informações sobre geração de slides
+6. ✅ Arquivo contém referências úteis
+
+### 🔴 Prioridade
+- **MEDIA** — Informativo (melhora significativamente a usabilidade)
+
 ---
 
 ## 🎯 Regras Críticas

@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1787917725.9375072,
-    "ast_hash": "28472b1ffadc43b51e44c92e41e3cf7a",
+    "mtime": 1787919352.4180958,
+    "ast_hash": "0fd702161eb0973e155e93e3504e2520",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -2760,13 +2760,13 @@
     "semantic_hash": ""
   },
   "syncdata/server.js": {
-    "mtime": 1787916960.4663773,
-    "ast_hash": "8960c6dc5d45614db0920c5412df1e7f",
+    "mtime": 1787919289.6230347,
+    "ast_hash": "4d666bc984afa3d78711885adb7de3f4",
     "semantic_hash": ""
   },
   "syncdata/src/constants.js": {
-    "mtime": 1787919150.1888084,
-    "ast_hash": "042fde081fc725de920eaa7d337caec1",
+    "mtime": 1787919395.1055899,
+    "ast_hash": "1232e078eea73defdc07cce40039e845",
     "semantic_hash": ""
   },
   "syncdata/src/generate-pendencias.js": {
@@ -2785,8 +2785,8 @@
     "semantic_hash": ""
   },
   "syncdata/CLAUDE.md": {
-    "mtime": 1787919128.8046799,
-    "ast_hash": "67266ec966278645510f6ce8915a232a",
+    "mtime": 1787919386.5481088,
+    "ast_hash": "dbd2df66a3f03aa93193d851a2b550fb",
     "semantic_hash": ""
   },
   "syncdata/README.md": {
@@ -2795,8 +2795,8 @@
     "semantic_hash": ""
   },
   "syncdata/src/verify-uc.js": {
-    "mtime": 1787919182.3661222,
-    "ast_hash": "220b5e07de6eea8658c992caa27526e4",
+    "mtime": 1787919423.770276,
+    "ast_hash": "fd4e4ed4697ae2afbab53ff740a9f8e5",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md": {
@@ -2807,6 +2807,36 @@
   "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md": {
     "mtime": 1787159007.479359,
     "ast_hash": "66faf998db57d972f5a05738d7392aee",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md": {
+    "mtime": 1787919558.4859242,
+    "ast_hash": "a7fe0e387e8f714c2499839d47b3062d",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md": {
+    "mtime": 1787919579.9239237,
+    "ast_hash": "0ff5d2fa82d754ce2a433982513bf2bc",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md": {
+    "mtime": 1787919600.1146312,
+    "ast_hash": "455265f1ae48e50dcbfc846ca14dadbe",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md": {
+    "mtime": 1787919619.7718644,
+    "ast_hash": "8ec9b5ab7272008263c1f5c2249c4226",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md": {
+    "mtime": 1787919640.9249108,
+    "ast_hash": "ca2784efd387a715769a66ad28ed64b4",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md": {
+    "mtime": 1787919665.7638428,
+    "ast_hash": "a3e15a62e3a5d2b2afc2487d65fa5ef4",
     "semantic_hash": ""
   }
 }

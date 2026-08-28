@@ -169,6 +169,15 @@ const PADROES_SUBSTITUICOES = {
   CLAUDE: /^CLAUDE\.md$/i                 // Arquivo CLAUDE.md (exato)
 };
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// ── ARQUIVO CLAUDE.MD NA UC (REGRA 06) ──
+// ═══════════════════════════════════════════════════════════════════════════════
+// Arquivo obrigatório: CLAUDE.md na raiz de cada UC
+// Documenta objetivo, estrutura e como usar a UC
+const PADROES_UC_CLAUDE = {
+  ARQUIVO: /^CLAUDE\.md$/i  // Arquivo CLAUDE.md na raiz da UC (exato)
+};
+
 // Configurações de processamento
 const CONFIG = {
   TIMEOUT_ARQUIVO: 5000, // ms
@@ -226,6 +235,8 @@ module.exports = {
   SUBSTITUICOES_PASTA,
   SUBSTITUICOES_CLAUDE_ARQUIVO,
   PADROES_SUBSTITUICOES,
+  // CLAUDE.md da UC (REGRA 06)
+  PADROES_UC_CLAUDE,
   // Configuração
   CONFIG,
   EMOJIS
