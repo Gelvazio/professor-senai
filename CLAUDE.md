@@ -1,6 +1,45 @@
 # update branch
 # professor-senai — Regras do Projeto
 
+## 🎯 CONTEXTO-PROJETO
+
+⚠️ **ATUALIZAR ESTE CONTEXTO A CADA INTERAÇÃO COM O CHAT** — Este documento deve refletir sempre o estado mais recente do projeto.
+
+**Data Última Atualização:** 28-08-2026  
+**Objetivo Principal:** Implementar sistema de validação e sincronização de UCs (Unidades Curriculares) com dashboard interativo
+
+### ✅ Implementações Realizadas
+
+1. **REGRA 01**: Identificação de UCs e containers (FICHA-PRODUTO-MAIS-TECH)
+2. **REGRA 02**: Verificação de estrutura obrigatória (AULAS, AVALIACOES, EMENTA, PLANO_ENSINO, APOSTILA)
+3. **REGRA 03**: Script de geração de slides (gerar_slides.js com PptxGenJS)
+4. **REGRA 04**: Pasta ATIVIDADES com validação automática (2 horas = 1 atividade de 15 min)
+5. **REGRA 05**: Pasta SUBSTITUICOES com guia de SGN para substituição de aulas
+6. **REGRA 06**: Arquivo CLAUDE.md obrigatório em cada UC para documentação
+
+### 🔧 Ferramentas Criadas
+
+- **syncdata/server.js**: API REST com endpoints para sincronização
+- **syncdata/verify-uc.js**: Verificador de estrutura de UCs com relatório detalhado
+- **syncdata/constants.js**: Padrões e configurações centralizadas
+- **Dashboard Modal**: "Relatório SYNC" para visualizar status de sincronização
+
+### 📊 API Endpoints
+
+- `POST /api/sync` - Sincroniza e gera relatório-pastas.json
+- `GET /api/relatorio` - Retorna relatório de sincronização
+- `GET /api/status` - Status do servidor
+- `GET /api/aulas` - Lista de aulas escaneadas
+- `GET /api/pendencias` - Lista de pendências
+
+### 🚀 Como Usar
+
+1. Servidor: `npm run dev` em `syncdata/` (porta 3333)
+2. Dashboard: Clique em "📊 Relatório SYNC" para visualizar
+3. Botão de atualizar no modal sincroniza tudo automaticamente
+
+---
+
 ## Commit e Push obrigatórios
 
 ⚠️ **APÓS QUALQUER INTERAÇÃO NO CHAT que resulte em alteração de arquivo, faça commit e push IMEDIATAMENTE, sem perguntar e sem pedir confirmação.**
