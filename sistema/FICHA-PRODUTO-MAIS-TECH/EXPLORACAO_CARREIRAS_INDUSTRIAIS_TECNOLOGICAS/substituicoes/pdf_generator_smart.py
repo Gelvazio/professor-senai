@@ -39,63 +39,58 @@ def determine_lines_needed(text, previous_text=""):
 
     text_lower = text.lower()
 
+    # ===== NUNCA COLOCA LINHAS =====
+
     # Perguntas de múltipla escolha (apenas marca opção)
     if "resposta:" in text_lower and "(" in text and ")" in text:
-        return 0  # Não precisa de linhas
-
-    # Identificação simples (Aluno, Turma, Data)
-    if any(x in text_lower for x in ["aluno:", "turma:", "data:", "nome:"]):
-        return 2  # 2 linhas para nome/identificação
-
-    # Questões de Verdadeiro/Falso
-    if "verdadeiro" in text_lower or "falso" in text_lower:
         return 0
 
-    # Análise e reflexão (indicador explícito)
+    # Questões de Verdadeiro/Falso
+    if ("marque (v)" in text_lower or "marque (f)" in text_lower or
+        "verdadeiro" in text_lower or "falso" in text_lower):
+        return 0
+
+    # Títulos e seções
+    if text.isupper() or "seção" in text_lower:
+        return 0
+
+    # Instruções
+    if any(x in text_lower for x in ["baseado", "ordene", "observe", "conforme"]):
+        return 0
+
+    # ===== COLOCA LINHAS APENAS PARA PERGUNTAS DISCURSIVAS =====
+
+    # Análise e reflexão (indicador explícito com mínimo de linhas)
     if "mínimo" in text_lower and "linha" in text_lower:
         match = re.search(r'mínimo\s+(\d+)\s+linha', text_lower)
         if match:
             num = int(match.group(1))
-            return num + 2  # Adiciona 2 linhas extras para segurança
+            return num  # Retorna exatamente o mínimo solicitado
 
-    # Questão complexa (Como, Por quê, Explique, Analise, Descreva, etc)
-    complex_keywords = ["como", "por quê", "porque", "explique", "analise", "descreva",
-                       "discuta", "compare", "contraste", "qual é a importância", "qual foi"]
-    if any(x in text_lower for x in complex_keywords):
-        # Verifica o tamanho da pergunta
-        if len(text) > 100:  # Pergunta longa/complexa
-            return 8  # 8 linhas para respostas complexas
-        elif len(text) > 60:  # Pergunta média
-            return 6  # 6 linhas
-        else:  # Pergunta curta
-            return 3  # 3 linhas
+    # Perguntas que REALMENTE pedem respostas discursivas
+    discursive_keywords = ["como você pensa", "como", "por quê", "porque",
+                          "explique", "analise", "descreva", "qual foi a inovação",
+                          "discuta", "qual é a razão"]
 
-    # Perguntas simples (Qual é, Quem foi, Quando, O que é, Cite)
-    simple_keywords = ["qual", "quem", "quando", "o que", "cite", "liste", "nome"]
-    if any(x in text_lower for x in simple_keywords):
-        if len(text) > 80:
-            return 5
-        else:
-            return 3
+    if any(x in text_lower for x in discursive_keywords):
+        # Apenas se for uma pergunta (termina com ?)
+        if text.strip().endswith("?"):
+            if "como você pensa" in text_lower or "inovação" in text_lower:
+                return 8  # Perguntas complexas = 8 linhas
+            elif len(text) > 100:
+                return 6  # Pergunta longa = 6 linhas
+            else:
+                return 4  # Pergunta normal = 4 linhas
 
-    # Padrão: se termina com "?" é pergunta
-    if text.strip().endswith("?"):
-        if len(text) > 120:
-            return 8
-        elif len(text) > 80:
-            return 6
-        else:
-            return 4
+    # Questões simples com "Resposta:" explícito (sem estar em múltipla escolha)
+    if "resposta:" in text_lower and "(" not in text:
+        return 3  # 3 linhas para respostas simples
 
-    # Padrão: "Resposta:" é campo de resposta
-    if "resposta:" in text_lower:
-        return 4
-
-    # Padrão: linhas com muitos underscores
+    # Padrão: linhas com muitos underscores (campos em branco)
     if "_" * 10 in text:
-        return 4
+        return 3
 
-    return 0  # Sem linhas
+    return 0  # Sem linhas por padrão
 
 
 def markdown_to_pdf(md_file, pdf_file):
