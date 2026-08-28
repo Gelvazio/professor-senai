@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1787920155.7997057,
-    "ast_hash": "37c5aec8d8bdda78fb2463b93e2570c6",
+    "mtime": 1787920405.805662,
+    "ast_hash": "f59ca6d309b8e3a9cafd53d9e8560674",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -325,8 +325,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1787843133.972813,
-    "ast_hash": "79fe9d8afbf5c4bc5acb4ff58d5b0673",
+    "mtime": 1787920433.4597569,
+    "ast_hash": "f919d86e3943c5ab33755d2bb463c8f9",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -615,8 +615,8 @@
     "semantic_hash": ""
   },
   "sistema/.claude/settings.local.json": {
-    "mtime": 1787917847.4291584,
-    "ast_hash": "5ab68681cad0b80808d5a387b3449965",
+    "mtime": 1787921412.0504284,
+    "ast_hash": "1fe896c5a1a2abbce994f0e1448d33b5",
     "semantic_hash": ""
   },
   "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md": {
@@ -2760,8 +2760,8 @@
     "semantic_hash": ""
   },
   "syncdata/server.js": {
-    "mtime": 1787919289.6230347,
-    "ast_hash": "4d666bc984afa3d78711885adb7de3f4",
+    "mtime": 1787921428.4565537,
+    "ast_hash": "87e99de57b9b852eb1e361a91be07d3c",
     "semantic_hash": ""
   },
   "syncdata/src/constants.js": {
@@ -2842,6 +2842,121 @@
   "syncdata/index.js": {
     "mtime": 1787920270.294793,
     "ast_hash": "b9afb1326f3aa0ab9dfc84aa230e8a5c",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/.claude/settings.local.json": {
+    "mtime": 1787922995.6811645,
+    "ast_hash": "a52c06062b0643c1f528391658cb0050",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/ATIVIDADE-EPISODIO-01.md": {
+    "mtime": 1787922253.6754456,
+    "ast_hash": "0aea3cf154fe01157123ceaee06cfee8",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/ATIVIDADE-EPISODIO-02.md": {
+    "mtime": 1787922284.2706294,
+    "ast_hash": "8971a8492a08efa48737792174501adb",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/SUBSTITUICOES/CLAUDE.md": {
+    "mtime": 1787922227.4222567,
+    "ast_hash": "c796a5d01fd17b9483aa10aa7cae7e1a",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/ATIVIDADE-EPISODIO-01.md": {
+    "mtime": 1787922743.3426616,
+    "ast_hash": "c303811e46b9fb19f276256f8db41e3a",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/ATIVIDADE-EPISODIO-02.md": {
+    "mtime": 1787922761.6852357,
+    "ast_hash": "f59af90a549d2ced02401b54adaabe97",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/converter_md_para_pdf.py": {
+    "mtime": 1787922964.2995977,
+    "ast_hash": "2c28deaebe2f1bd69dec63fc2dcfa69b",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/criar_pdf_reportlab.py": {
+    "mtime": 1787923045.0900276,
+    "ast_hash": "c5e4565e885984633f6addf0d8d7f4ec",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/pdf_generator.py": {
+    "mtime": 1787925595.13851,
+    "ast_hash": "c9e0af0b41c17a0ce792fc3eacfc7d07",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/ATIVIDADE-EPISODIO-01_f6023751.md": {
+    "mtime": 1787923459.1831331,
+    "ast_hash": "09f82b71bae7034173b2e1c66fdc8057",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/ATIVIDADE-EPISODIO-02_60f90644.md": {
+    "mtime": 1787923459.3509698,
+    "ast_hash": "5bdc0804b482442d0b8475d01c532d39",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/pdf_generator_smart.py": {
+    "mtime": 1787925942.336421,
+    "ast_hash": "f8ad97ad68594b972bf5fc9e5bb2d79b",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/generator_docx.py": {
+    "mtime": 1787926119.6789768,
+    "ast_hash": "629f6b96273352c0df0229a723161518",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/ATIVIDADE-EPISODIO-01_afca10ea.md": {
+    "mtime": 1787927642.580533,
+    "ast_hash": "e87e236b4b481045e54beb9fcea339a0",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/ATIVIDADE-EPISODIO-02_6606c522.md": {
+    "mtime": 1787927642.630754,
+    "ast_hash": "7e2967a53995268318613d2248a7ebfc",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Checklist Prova Objetiva (1)_562d9353.md": {
+    "mtime": 1787927646.558832,
+    "ast_hash": "b576c99e27038d46152cfa644867b722",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Checklist Prova Pr\u00e1tica (2)_9b6dc206.md": {
+    "mtime": 1787927646.5799544,
+    "ast_hash": "e58b245c615516b1eb284c0fe1d1a5d4",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_d42bab3f.md": {
+    "mtime": 1787927642.6490405,
+    "ast_hash": "800ea3726d88228c27c5b1d7048a4632",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_dd640649.md": {
+    "mtime": 1787927642.5141964,
+    "ast_hash": "800ea3726d88228c27c5b1d7048a4632",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_15289f48.md": {
+    "mtime": 1787927642.6650057,
+    "ast_hash": "01641f3c1dff81e2542e1ad12fddf6e4",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_1c7d8ab3.md": {
+    "mtime": 1787927642.5372357,
+    "ast_hash": "01641f3c1dff81e2542e1ad12fddf6e4",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Modelo Prova Objetiva CT ELETROMEC\u00c2NICA (1) (2)_cccacb5b.md": {
+    "mtime": 1787927646.6128807,
+    "ast_hash": "a3cb9c048c753e3de9701fc9c74c25c0",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Prova Pr\u00e1tica (3)_c7fde94d.md": {
+    "mtime": 1787927646.630343,
+    "ast_hash": "40a1cd841d0a3eb6096a36ccc550190a",
     "semantic_hash": ""
   }
 }
