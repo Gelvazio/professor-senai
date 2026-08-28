@@ -6,6 +6,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
+const { PASTAS_IGNORADAS } = require('./constants');
 
 // Padrões de nomes de aulas
 const PADROES_AULA = [
@@ -15,7 +16,6 @@ const PADROES_AULA = [
 ];
 
 const EXTENSOES_AULA = ['.html', '.md', '.pdf'];
-const PASTAS_IGNORADAS = ['.git', 'node_modules', '.DS_Store', 'graphify-out', 'syncdata'];
 
 /**
  * Verifica se uma pasta é uma aula baseado em seu nome

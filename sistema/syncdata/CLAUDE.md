@@ -63,6 +63,18 @@ async function minhafuncao(parametro) {
 - 📊 Relatório
 - 🔄 Sincronizando
 
+## 🔴 REGRA 01 — Pastas Permitidas
+
+⚠️ **CRÍTICO**
+Ler **TODAS** as pastas dentro de `C:\fontes\professor-senai\sistema`
+com **EXCEÇÃO** para:
+- `PROFESSOR` — Pasta exclusiva do professor (não é UC)
+- `.claude` — Configurações Claude Code
+- `graphify-out` — Output do graphify
+- `scripts` — Scripts auxiliares
+
+Qualquer outra pasta em `sistema/` é considerada uma **Unidade Curricular (UC)** válida.
+
 ## 🎯 Regras Críticas
 
 ### ✅ Obrigatório

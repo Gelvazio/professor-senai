@@ -51,15 +51,21 @@ const EXTENSOES_VALIDAS = [
   '.txt'
 ];
 
+// ── REGRA 01 ──
+// Ler TODAS as pastas dentro de C:\fontes\professor-senai\sistema
+// com EXCEÇÃO para: PROFESSOR, .claude, graphify-out, scripts
 // Pastas ignoradas
 const PASTAS_IGNORADAS = [
+  'PROFESSOR',        // Pasta do professor (não é UC)
+  '.claude',          // Configurações Claude Code
+  'graphify-out',     // Output do graphify
+  'scripts',          // Scripts auxiliares
+  'syncdata',         // Próprio projeto syncdata
   '.git',
   '.gitignore',
   'node_modules',
   '.DS_Store',
   'Thumbs.db',
-  'graphify-out',
-  'syncdata',
   '.vscode',
   '.idea'
 ];
