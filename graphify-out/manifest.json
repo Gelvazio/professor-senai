@@ -1669,11 +1669,6 @@
     "ast_hash": "850e34954b254173c62d110a9d504a7c",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/ementa_Oficinas_Impressao_3D_Robotica.md": {
-    "mtime": 1787159007.479359,
-    "ast_hash": "66faf998db57d972f5a05738d7392aee",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md": {
     "mtime": 1787159271.4575293,
     "ast_hash": "d809996433b809b14ac7ab0151d70598",
@@ -1687,11 +1682,6 @@
   "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Apostila_Comunicacao_Oral_Escrita_33h.md": {
     "mtime": 1787159310.6278217,
     "ast_hash": "a65e4e8d0842f6c52fc5f25208569553",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/Apostila_Oficinas_Impressao_3D_Robotica.md": {
-    "mtime": 1787159407.6005595,
-    "ast_hash": "994eeab96a932ae72f04930687de662b",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/gerar_slides.js": {
@@ -1717,11 +1707,6 @@
   "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/gerar_slides.js": {
     "mtime": 1787182953.6624806,
     "ast_hash": "ad9fe139cc2b40b11254e7fb183533b3",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/package.json": {
-    "mtime": 1787182989.8176267,
-    "ast_hash": "598d6afafcbcfc47afeee940aa480c90",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/menu.js": {
@@ -2162,11 +2147,6 @@
   "sistema/FICHA-PRODUTO-MAIS-TECH/NOCOES_ELETRICIDADE_CIRCUITOS_BASICOS/Ementa_Nocoes_Eletricidade_Circuitos_Basicos.md": {
     "mtime": 1787159010.6677134,
     "ast_hash": "b037b7b1796e0df6da4ecbf9bd658072",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/Ementa_Oficinas_Impressao_3D_Robotica.md": {
-    "mtime": 1787159007.479359,
-    "ast_hash": "66faf998db57d972f5a05738d7392aee",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Ementa_Reforco_Linguagens.md": {
@@ -2785,8 +2765,8 @@
     "semantic_hash": ""
   },
   "syncdata/src/constants.js": {
-    "mtime": 1787918367.368397,
-    "ast_hash": "9bf6ce24fff59d4a5e836a5faa140a3a",
+    "mtime": 1787918526.1272328,
+    "ast_hash": "e430b05e8675ff35377e040d15819ee8",
     "semantic_hash": ""
   },
   "syncdata/src/generate-pendencias.js": {
@@ -2805,8 +2785,8 @@
     "semantic_hash": ""
   },
   "syncdata/CLAUDE.md": {
-    "mtime": 1787918414.3148632,
-    "ast_hash": "5a23b22ecaba2c736b2e0d6d47a24e6a",
+    "mtime": 1787918535.1890867,
+    "ast_hash": "443a61ca3daf6b9724ee8164ce89c0a7",
     "semantic_hash": ""
   },
   "syncdata/README.md": {
@@ -2815,8 +2795,18 @@
     "semantic_hash": ""
   },
   "syncdata/src/verify-uc.js": {
-    "mtime": 1787918393.2416937,
-    "ast_hash": "9514fef28c18c2b2bf9b94ee91858997",
+    "mtime": 1787918552.0603096,
+    "ast_hash": "9007cffbc94347e67a2779b2d579f022",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md": {
+    "mtime": 1787159407.6005595,
+    "ast_hash": "994eeab96a932ae72f04930687de662b",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/EMENTA_DA_MATERIA.md": {
+    "mtime": 1787159007.479359,
+    "ast_hash": "66faf998db57d972f5a05738d7392aee",
     "semantic_hash": ""
   }
 }

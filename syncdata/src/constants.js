@@ -79,7 +79,9 @@ const PASTAS_IGNORADAS = [
   '.DS_Store',
   'Thumbs.db',
   '.vscode',
-  '.idea'
+  '.idea',
+  'ATIVIDADES',       // REGRA 04 — Pasta de atividades (não é uma aula)
+  '.tmp'              // Pasta temporária
 ];
 
 // ── CONTAINERS DE UCs (REGRA 01 ESTENDIDA) ──
@@ -136,6 +138,22 @@ const PADROES_ARQUIVOS_UC = {
 const GERAR_SLIDES_ARQUIVO = 'gerar_slides.js';
 const PADROES_GERAR_SLIDES = /^gerar_slides\.js$/i;  // Nome exato do arquivo
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// ── PASTA E ARQUIVOS DE ATIVIDADES (REGRA 04) ──
+// ═══════════════════════════════════════════════════════════════════════════════
+// Pasta obrigatória: ATIVIDADES/
+// Contém: atividades em .md + versões impressas em .pdf + script gerador
+const ATIVIDADES_PASTA = 'ATIVIDADES';
+const GERAR_ATIVIDADES_ARQUIVO = 'GERAR_ATIVIDADES.js';
+
+// Padrões regex para arquivos de atividade
+const PADROES_ATIVIDADES = {
+  PASTA: /^ATIVIDADES$/i,                                    // Pasta ATIVIDADES (exata)
+  GERAR: /^GERAR_ATIVIDADES\.js$/i,                         // Script gerador (exato)
+  ATIVIDADE_MD: /^ATIVIDADE_(\d+)\.md$/i,                   // ATIVIDADE_01.md, ATIVIDADE_02.md, etc
+  ATIVIDADE_PDF: /^ATIVIDADE_(\d+)_VERSAO_IMPRESSA\.pdf$/i  // ATIVIDADE_01_VERSAO_IMPRESSA.pdf, etc
+};
+
 // Configurações de processamento
 const CONFIG = {
   TIMEOUT_ARQUIVO: 5000, // ms
@@ -185,6 +203,10 @@ module.exports = {
   // Gerador de Slides (REGRA 03)
   GERAR_SLIDES_ARQUIVO,
   PADROES_GERAR_SLIDES,
+  // Atividades (REGRA 04)
+  ATIVIDADES_PASTA,
+  GERAR_ATIVIDADES_ARQUIVO,
+  PADROES_ATIVIDADES,
   // Configuração
   CONFIG,
   EMOJIS

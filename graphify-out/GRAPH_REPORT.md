@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-28)
 
 ## Corpus Check
-- 329 files · ~1,301,302 words
+- 326 files · ~1,295,536 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4963 nodes · 4963 edges · 510 communities (469 shown, 41 thin omitted)
+- 4903 nodes · 4906 edges · 502 communities (463 shown, 39 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ddae5e32`
+- Built from commit: `6c6e28d5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -138,6 +138,7 @@
 - [[_COMMUNITY_Community 134|Community 134]]
 - [[_COMMUNITY_Community 135|Community 135]]
 - [[_COMMUNITY_Community 136|Community 136]]
+- [[_COMMUNITY_Community 137|Community 137]]
 - [[_COMMUNITY_Community 138|Community 138]]
 - [[_COMMUNITY_Community 139|Community 139]]
 - [[_COMMUNITY_Community 140|Community 140]]
@@ -168,12 +169,14 @@
 - [[_COMMUNITY_Community 165|Community 165]]
 - [[_COMMUNITY_Community 166|Community 166]]
 - [[_COMMUNITY_Community 167|Community 167]]
+- [[_COMMUNITY_Community 168|Community 168]]
 - [[_COMMUNITY_Community 169|Community 169]]
 - [[_COMMUNITY_Community 170|Community 170]]
 - [[_COMMUNITY_Community 171|Community 171]]
 - [[_COMMUNITY_Community 172|Community 172]]
 - [[_COMMUNITY_Community 173|Community 173]]
 - [[_COMMUNITY_Community 174|Community 174]]
+- [[_COMMUNITY_Community 175|Community 175]]
 - [[_COMMUNITY_Community 176|Community 176]]
 - [[_COMMUNITY_Community 177|Community 177]]
 - [[_COMMUNITY_Community 178|Community 178]]
@@ -223,6 +226,8 @@
 - [[_COMMUNITY_Community 222|Community 222]]
 - [[_COMMUNITY_Community 223|Community 223]]
 - [[_COMMUNITY_Community 224|Community 224]]
+- [[_COMMUNITY_Community 225|Community 225]]
+- [[_COMMUNITY_Community 226|Community 226]]
 - [[_COMMUNITY_Community 227|Community 227]]
 - [[_COMMUNITY_Community 228|Community 228]]
 - [[_COMMUNITY_Community 229|Community 229]]
@@ -247,6 +252,7 @@
 - [[_COMMUNITY_Community 248|Community 248]]
 - [[_COMMUNITY_Community 249|Community 249]]
 - [[_COMMUNITY_Community 250|Community 250]]
+- [[_COMMUNITY_Community 251|Community 251]]
 - [[_COMMUNITY_Community 252|Community 252]]
 - [[_COMMUNITY_Community 253|Community 253]]
 - [[_COMMUNITY_Community 254|Community 254]]
@@ -259,6 +265,7 @@
 - [[_COMMUNITY_Community 261|Community 261]]
 - [[_COMMUNITY_Community 262|Community 262]]
 - [[_COMMUNITY_Community 263|Community 263]]
+- [[_COMMUNITY_Community 264|Community 264]]
 - [[_COMMUNITY_Community 265|Community 265]]
 - [[_COMMUNITY_Community 266|Community 266]]
 - [[_COMMUNITY_Community 267|Community 267]]
@@ -277,15 +284,10 @@
 - [[_COMMUNITY_Community 280|Community 280]]
 - [[_COMMUNITY_Community 281|Community 281]]
 - [[_COMMUNITY_Community 282|Community 282]]
-- [[_COMMUNITY_Community 283|Community 283]]
-- [[_COMMUNITY_Community 284|Community 284]]
 - [[_COMMUNITY_Community 285|Community 285]]
-- [[_COMMUNITY_Community 286|Community 286]]
-- [[_COMMUNITY_Community 287|Community 287]]
 - [[_COMMUNITY_Community 288|Community 288]]
 - [[_COMMUNITY_Community 289|Community 289]]
 - [[_COMMUNITY_Community 290|Community 290]]
-- [[_COMMUNITY_Community 291|Community 291]]
 - [[_COMMUNITY_Community 292|Community 292]]
 - [[_COMMUNITY_Community 293|Community 293]]
 - [[_COMMUNITY_Community 294|Community 294]]
@@ -296,7 +298,6 @@
 - [[_COMMUNITY_Community 299|Community 299]]
 - [[_COMMUNITY_Community 300|Community 300]]
 - [[_COMMUNITY_Community 301|Community 301]]
-- [[_COMMUNITY_Community 303|Community 303]]
 - [[_COMMUNITY_Community 304|Community 304]]
 - [[_COMMUNITY_Community 305|Community 305]]
 - [[_COMMUNITY_Community 306|Community 306]]
@@ -355,7 +356,6 @@
 - [[_COMMUNITY_Community 371|Community 371]]
 - [[_COMMUNITY_Community 372|Community 372]]
 - [[_COMMUNITY_Community 373|Community 373]]
-- [[_COMMUNITY_Community 374|Community 374]]
 - [[_COMMUNITY_Community 375|Community 375]]
 - [[_COMMUNITY_Community 376|Community 376]]
 - [[_COMMUNITY_Community 377|Community 377]]
@@ -379,7 +379,6 @@
 - [[_COMMUNITY_Community 395|Community 395]]
 - [[_COMMUNITY_Community 396|Community 396]]
 - [[_COMMUNITY_Community 397|Community 397]]
-- [[_COMMUNITY_Community 398|Community 398]]
 - [[_COMMUNITY_Community 399|Community 399]]
 - [[_COMMUNITY_Community 400|Community 400]]
 - [[_COMMUNITY_Community 401|Community 401]]
@@ -387,11 +386,6 @@
 - [[_COMMUNITY_Community 403|Community 403]]
 - [[_COMMUNITY_Community 404|Community 404]]
 - [[_COMMUNITY_Community 405|Community 405]]
-- [[_COMMUNITY_Community 406|Community 406]]
-- [[_COMMUNITY_Community 407|Community 407]]
-- [[_COMMUNITY_Community 408|Community 408]]
-- [[_COMMUNITY_Community 409|Community 409]]
-- [[_COMMUNITY_Community 410|Community 410]]
 - [[_COMMUNITY_Community 411|Community 411]]
 - [[_COMMUNITY_Community 412|Community 412]]
 - [[_COMMUNITY_Community 413|Community 413]]
@@ -432,7 +426,6 @@
 - [[_COMMUNITY_Community 448|Community 448]]
 - [[_COMMUNITY_Community 449|Community 449]]
 - [[_COMMUNITY_Community 450|Community 450]]
-- [[_COMMUNITY_Community 451|Community 451]]
 - [[_COMMUNITY_Community 452|Community 452]]
 - [[_COMMUNITY_Community 453|Community 453]]
 - [[_COMMUNITY_Community 454|Community 454]]
@@ -453,7 +446,6 @@
 - [[_COMMUNITY_Community 470|Community 470]]
 - [[_COMMUNITY_Community 471|Community 471]]
 - [[_COMMUNITY_Community 472|Community 472]]
-- [[_COMMUNITY_Community 473|Community 473]]
 - [[_COMMUNITY_Community 474|Community 474]]
 - [[_COMMUNITY_Community 475|Community 475]]
 - [[_COMMUNITY_Community 476|Community 476]]
@@ -500,7 +492,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (510 total, 41 thin omitted)
+## Communities (502 total, 39 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -531,8 +523,8 @@ Cohesion: 0.06
 Nodes (32): For --cluster-only, For git commit hook, For /graphify add, For /graphify explain, For /graphify path, For /graphify query, For --update (incremental re-extraction), For --watch (+24 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.40
-Nodes (5): 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, Atividade 2.2, Encontro 6 — Operações com Frações (2h)
+Cohesion: 0.15
+Nodes (12): 1. IDENTIFICAÇÃO DA UNIDADE CURRICULAR, 2. OBJETIVO, 3.1 Impressão 3D, 3.2 Robótica, 3. CAPACIDADES BÁSICAS E TÉCNICAS, 4.1 Modelagem e Impressão 3D, 4.2 Robótica, 4. CONHECIMENTOS (+4 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.20
@@ -606,8 +598,8 @@ Cohesion: 0.10
 Nodes (21): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+13 more)
 
 ### Community 25 - "Community 25"
-Cohesion: 0.50
-Nodes (4): 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, Atividade 3.3, Encontro 12 — Regra de Três Simples (2h)
+Cohesion: 0.17
+Nodes (12): Atividade Prática, Conteúdo, ENCONTRO 8 — Boas Práticas de Design para Impressão 3D, Objetivos, Por que o design para impressão 3D é especial?, Quando usar suportes?, Regra 1 — Espessura mínima de paredes, Regra 2 — Regra dos 45° (+4 more)
 
 ### Community 26 - "Community 26"
 Cohesion: 0.12
@@ -878,8 +870,8 @@ Cohesion: 0.20
 Nodes (9): Avaliação, Capacidades Básicas / Técnicas, Conhecimentos, Conteúdos Formativos, EMENTA — REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, Identificação da Unidade Curricular, Metodologia, Objetivo (+1 more)
 
 ### Community 116 - "Community 116"
-Cohesion: 0.50
-Nodes (4): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, Atividade 4.2, Encontro 16 — Capacidade e Tempo (2h)
+Cohesion: 0.20
+Nodes (10): 1. Robôs Industriais, 2. Robôs de Serviço, 3. Robôs Móveis, Atividade Prática, Conteúdo, ENCONTRO 11 — Classificação dos Robôs: Industriais, de Serviço e Móveis, Objetivos, Por que classificar robôs? (+2 more)
 
 ### Community 117 - "Community 117"
 Cohesion: 0.22
@@ -961,6 +953,10 @@ Nodes (8): Atividade Prática, Coleta seletiva, Conteúdo, ENCONTRO 5 — Susten
 Cohesion: 0.25
 Nodes (8): Atividade Prática, Canvas do Modelo de Negócios (Business Model Canvas), Conteúdo, ENCONTRO 12 — Planejamento e Estratégia Empreendedora, Metas SMART, Objetivos, Por que planejar?, Síntese
 
+### Community 137 - "Community 137"
+Cohesion: 0.20
+Nodes (10): A anatomia do Arduino Uno, A estrutura de um programa Arduino, Arduino — o microcontrolador mais popular do mundo, Atividade Prática, Conteúdo, ENCONTRO 14 — Controladores e Microcontroladores: O Cérebro do Robô, O que é um controlador?, Objetivos (+2 more)
+
 ### Community 138 - "Community 138"
 Cohesion: 0.25
 Nodes (7): Converter Lista de Presença CEPLAS Barragem 2026, Passo 1: Extrair o PDF, Passo 2: Estruturar os dados, Passo 3: Criar a planilha, Passo 4: Commit, Passos, Status Geral
@@ -1038,8 +1034,8 @@ Cohesion: 0.29
 Nodes (7): As 5 dimensões da inteligência emocional, Atividade Prática, Conteúdo, ENCONTRO 3 — Inteligência Emocional, O que é inteligência emocional?, Objetivos, Síntese
 
 ### Community 157 - "Community 157"
-Cohesion: 0.15
-Nodes (12): 1. IDENTIFICAÇÃO DA UNIDADE CURRICULAR, 2. OBJETIVO, 3.1 Impressão 3D, 3.2 Robótica, 3. CAPACIDADES BÁSICAS E TÉCNICAS, 4.1 Modelagem e Impressão 3D, 4.2 Robótica, 4. CONHECIMENTOS (+4 more)
+Cohesion: 0.20
+Nodes (10): Atividade Prática, Conteúdo, Controlando direção, Controlando motores com Arduino, Controlando velocidade (PWM), ENCONTRO 15 — Programação Básica: Trajetórias e Sequências de Movimento, Objetivos, Programando trajetórias (+2 more)
 
 ### Community 158 - "Community 158"
 Cohesion: 0.17
@@ -1081,6 +1077,10 @@ Nodes (6): Adicionar Status de Plano de Aula e Plano de Ensino, Passo 1: Adicion
 Cohesion: 0.29
 Nodes (6): Ajuste das Ementas, Passo 1: Mapear caminhos-padrão, Passo 2: Aplicar fallback, Passo 3: Revisar alterações, Passo 4: Commit e publicação, Status Geral
 
+### Community 168 - "Community 168"
+Cohesion: 0.22
+Nodes (9): A interface do Tinkercad, Adicionando e manipulando formas, Atividade Prática, Conteúdo, ENCONTRO 4 — Primeiros Passos no Tinkercad: Interface e Ferramentas Básicas, Navegando no espaço 3D, O que é o Tinkercad?, Objetivos (+1 more)
+
 ### Community 169 - "Community 169"
 Cohesion: 0.22
 Nodes (8): GABARITO — EXERCÍCIOS SELECIONADOS, GLOSSÁRIO, Módulo 1 — Encontro 3-4, Módulo 2 — Encontro 10-11, Módulo 3 — Encontro 15-16, Módulo 5 — Encontro 25-26, REFERÊNCIAS, RIO DO SUL MAIS TECH — SENAI / PREFEITURA MUNICIPAL DE RIO DO SUL
@@ -1104,6 +1104,10 @@ Nodes (6): Corrigir Carregamento da Ementa de TIC, Passo 1: Identificar a causa,
 ### Community 174 - "Community 174"
 Cohesion: 0.29
 Nodes (6): Corrigir Listas Numeradas da Apostila, Passo 1: Identificar a causa, Passo 2: Corrigir a captura, Passo 3: Revisar os blocos afetados, Passo 4: Commit e publicação, Status Geral
+
+### Community 175 - "Community 175"
+Cohesion: 0.22
+Nodes (9): A mágica dos furos, Atividade Prática, Combinando formas, Conteúdo, ENCONTRO 5 — Criando Sólidos no Tinkercad: Formas, Furos e Combinações, Objetivos, Operações básicas, Síntese (+1 more)
 
 ### Community 176 - "Community 176"
 Cohesion: 0.25
@@ -1301,6 +1305,14 @@ Nodes (6): Minhas Pendências no Dashboard, Passo 1: Corrigir o arquivo JSON, Pa
 Cohesion: 0.29
 Nodes (6): Modal de Matérias por Curso, Passo 1: Redirecionar o botão Acessar, Passo 2: Criar cards de matérias, Passo 3: Integrar com Supabase, Passo 4: Commit e publicação, Status Geral
 
+### Community 225 - "Community 225"
+Cohesion: 0.22
+Nodes (9): Atividade Prática, Conteúdo, ENCONTRO 1 — Do Passado ao Futuro: História e Impacto da Impressão 3D, O que é impressão 3D?, Objetivos, Para que serve a impressão 3D hoje?, Por que aprender impressão 3D?, Síntese (+1 more)
+
+### Community 226 - "Community 226"
+Cohesion: 0.22
+Nodes (9): Atividade Prática, Conteúdo, ENCONTRO 13 — Atuadores e Motores: Como os Robôs Agem, O motor de passo na impressora 3D, O que são atuadores?, Objetivos, Outros tipos de atuadores, Síntese (+1 more)
+
 ### Community 227 - "Community 227"
 Cohesion: 0.29
 Nodes (6): Passo 1: Adicionar coluna, Passo 2: Adicionar ao formulário, Passo 3: Exibir e persistir, Passo 4: Commit e publicação, Status de Aplicação da Avaliação, Status Geral
@@ -1314,8 +1326,8 @@ Cohesion: 0.29
 Nodes (7): Atividade Prática, Conteúdo, ENCONTRO 17 — PRIMEIROS SOCORROS E PREVENÇÃO DE INCÊNDIOS, Objetivos, Prevenção e Combate a Incêndios, Primeiros Socorros em Acidente Elétrico, Síntese
 
 ### Community 230 - "Community 230"
-Cohesion: 0.17
-Nodes (12): Atividade Prática, Conteúdo, ENCONTRO 8 — Boas Práticas de Design para Impressão 3D, Objetivos, Por que o design para impressão 3D é especial?, Quando usar suportes?, Regra 1 — Espessura mínima de paredes, Regra 2 — Regra dos 45° (+4 more)
+Cohesion: 0.22
+Nodes (9): Atividade Prática, Configurações principais do slicer, Conteúdo, ENCONTRO 7 — Do Modelo ao Arquivo: Exportando STL e Configurando o Fatiamento, Entendendo o infill, O arquivo STL, O software de fatiamento (Slicer), Objetivos (+1 more)
 
 ### Community 231 - "Community 231"
 Cohesion: 0.29
@@ -1354,16 +1366,16 @@ Cohesion: 0.20
 Nodes (10): Atividade 1.1 — Diagnóstico (individual), Atividade 1.2 — Roda de conversa (grupo), Conteúdo, ENCONTRO 1 — O que é comunicação? Por que ela importa?, Exemplos práticos, O que é comunicação?, Objetivo, Por que a comunicação importa no trabalho? (+2 more)
 
 ### Community 240 - "Community 240"
-Cohesion: 0.20
-Nodes (10): 1. Robôs Industriais, 2. Robôs de Serviço, 3. Robôs Móveis, Atividade Prática, Conteúdo, ENCONTRO 11 — Classificação dos Robôs: Industriais, de Serviço e Móveis, Objetivos, Por que classificar robôs? (+2 more)
+Cohesion: 0.25
+Nodes (8): A impressão 3D na robótica, Atividade Prática, Conteúdo, ENCONTRO 16 — Integração: Imprimindo Peças para o Robô, Integrando sensores em peças impressas, Objetivos, Princípios de design de peças robóticas, Síntese
 
 ### Community 241 - "Community 241"
-Cohesion: 0.20
-Nodes (10): A anatomia do Arduino Uno, A estrutura de um programa Arduino, Arduino — o microcontrolador mais popular do mundo, Atividade Prática, Conteúdo, ENCONTRO 14 — Controladores e Microcontroladores: O Cérebro do Robô, O que é um controlador?, Objetivos (+2 more)
+Cohesion: 0.25
+Nodes (8): A linha do tempo da robótica, As 3 Leis da Robótica de Asimov, Atividade Prática, Conteúdo, ENCONTRO 10 — Era dos Robôs: História e Evolução da Robótica, O que é um robô?, Objetivos, Síntese
 
 ### Community 242 - "Community 242"
-Cohesion: 0.20
-Nodes (10): Atividade Prática, Conteúdo, Controlando direção, Controlando motores com Arduino, Controlando velocidade (PWM), ENCONTRO 15 — Programação Básica: Trajetórias e Sequências de Movimento, Objetivos, Programando trajetórias (+2 more)
+Cohesion: 0.25
+Nodes (8): As três tecnologias principais, Atividade Prática, Comparativo, Conteúdo, ENCONTRO 2 — Como Funciona uma Impressora 3D: FDM, SLA e SLS, O processo geral, Objetivos, Síntese
 
 ### Community 243 - "Community 243"
 Cohesion: 0.22
@@ -1397,6 +1409,10 @@ Nodes (9): Atividade 6.1 — Autoavaliação de oratória (individual), Atividad
 Cohesion: 0.22
 Nodes (9): Atividade 9.1 — Role-play de atendimento (duplas), Conteúdo, ENCONTRO 9 — Atendimento ao cliente, Linguagem no atendimento, O cliente no centro, Objetivo, Princípios do bom atendimento, Situações difíceis no atendimento (+1 more)
 
+### Community 251 - "Community 251"
+Cohesion: 0.25
+Nodes (8): Atividade Prática, Checklist antes de ligar, Conteúdo, Depuração (debugging) de problemas comuns, ENCONTRO 17 — Projeto Final: Montagem do Protótipo Robótico, O processo de integração, Objetivos, Síntese
+
 ### Community 252 - "Community 252"
 Cohesion: 0.33
 Nodes (5): Borda vermelha nos cards pendentes, Passo 1: Aplicar a borda, Passo 2: Revisar o diff, Passo 3: Commit e push, Status Geral
@@ -1410,24 +1426,24 @@ Cohesion: 0.33
 Nodes (5): Corrigir Hover de Editar Matéria, Passo 1: Identificar conflito, Passo 2: Corrigir hover, Passo 3: Commit e publicação, Status Geral
 
 ### Community 255 - "Community 255"
-Cohesion: 0.22
-Nodes (9): A interface do Tinkercad, Adicionando e manipulando formas, Atividade Prática, Conteúdo, ENCONTRO 4 — Primeiros Passos no Tinkercad: Interface e Ferramentas Básicas, Navegando no espaço 3D, O que é o Tinkercad?, Objetivos (+1 more)
+Cohesion: 0.25
+Nodes (8): Atividade Prática, Conteúdo, ENCONTRO 6 — Projeto 1 no Tinkercad: Modelando um Objeto Funcional, Objetivos, Opções de objetos funcionais para o Projeto 1, Planejamento: a etapa mais importante, Processo de modelagem, Síntese
 
 ### Community 256 - "Community 256"
-Cohesion: 0.22
-Nodes (9): A mágica dos furos, Atividade Prática, Combinando formas, Conteúdo, ENCONTRO 5 — Criando Sólidos no Tinkercad: Formas, Furos e Combinações, Objetivos, Operações básicas, Síntese (+1 more)
+Cohesion: 0.25
+Nodes (8): Atividade Prática, Conteúdo, Da leitura à ação, ENCONTRO 12 — Sensores: Como os Robôs Enxergam o Mundo, O que são sensores?, Objetivos, Síntese, Tipos de sensores
 
 ### Community 257 - "Community 257"
-Cohesion: 0.22
-Nodes (9): Atividade Prática, Conteúdo, ENCONTRO 1 — Do Passado ao Futuro: História e Impacto da Impressão 3D, O que é impressão 3D?, Objetivos, Para que serve a impressão 3D hoje?, Por que aprender impressão 3D?, Síntese (+1 more)
+Cohesion: 0.29
+Nodes (7): APOSTILA DO ALUNO, APRESENTAÇÃO, COMO ESTA APOSTILA ESTÁ ORGANIZADA, OBJETIVO DA UC, OFICINAS DE IMPRESSÃO 3D E ROBÓTICA, SOBRE ESTE MATERIAL, TABELA DE PERCURSO
 
 ### Community 258 - "Community 258"
-Cohesion: 0.22
-Nodes (9): Atividade Prática, Conteúdo, ENCONTRO 13 — Atuadores e Motores: Como os Robôs Agem, O motor de passo na impressora 3D, O que são atuadores?, Objetivos, Outros tipos de atuadores, Síntese (+1 more)
+Cohesion: 0.29
+Nodes (7): Atividade Prática, Conteúdo, ENCONTRO 3 — Materiais para Impressão 3D: Filamentos e Resinas, Filamentos para FDM, Objetivos, Resinas para SLA, Síntese
 
 ### Community 259 - "Community 259"
-Cohesion: 0.22
-Nodes (9): Atividade Prática, Configurações principais do slicer, Conteúdo, ENCONTRO 7 — Do Modelo ao Arquivo: Exportando STL e Configurando o Fatiamento, Entendendo o infill, O arquivo STL, O software de fatiamento (Slicer), Objetivos (+1 more)
+Cohesion: 0.29
+Nodes (7): Atividade Prática, Conteúdo, ENCONTRO 9 — Impressão do Projeto 1 e Análise dos Resultados, O processo de impressão na prática, Objetivos, Pós-processamento, Síntese
 
 ### Community 260 - "Community 260"
 Cohesion: 0.25
@@ -1444,6 +1460,10 @@ Nodes (8): Atividade 8.1 — Simulação de reunião (grupo), Atividade 8.2 — 
 ### Community 263 - "Community 263"
 Cohesion: 0.33
 Nodes (5): Efeito de profundidade nos cards pendentes, Passo 1: Ajustar a animação, Passo 2: Revisar o diff, Passo 3: Commit e push, Status Geral
+
+### Community 264 - "Community 264"
+Cohesion: 0.33
+Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
 
 ### Community 265 - "Community 265"
 Cohesion: 0.33
@@ -1470,28 +1490,28 @@ Cohesion: 0.67
 Nodes (5): compact_document(), compact_paragraph(), compact_table(), remove_manual_page_breaks(), remove_paragraph()
 
 ### Community 271 - "Community 271"
-Cohesion: 0.25
-Nodes (8): A impressão 3D na robótica, Atividade Prática, Conteúdo, ENCONTRO 16 — Integração: Imprimindo Peças para o Robô, Integrando sensores em peças impressas, Objetivos, Princípios de design de peças robóticas, Síntese
+Cohesion: 0.33
+Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
 
 ### Community 272 - "Community 272"
-Cohesion: 0.25
-Nodes (8): A linha do tempo da robótica, As 3 Leis da Robótica de Asimov, Atividade Prática, Conteúdo, ENCONTRO 10 — Era dos Robôs: História e Evolução da Robótica, O que é um robô?, Objetivos, Síntese
+Cohesion: 0.33
+Nodes (6): Atividade Final, Como fazer uma boa apresentação técnica, Conteúdo, ENCONTRO 18 — Apresentação dos Projetos e Avaliação Final, Objetivos, Rubrica de avaliação
 
 ### Community 273 - "Community 273"
-Cohesion: 0.25
-Nodes (8): As três tecnologias principais, Atividade Prática, Comparativo, Conteúdo, ENCONTRO 2 — Como Funciona uma Impressora 3D: FDM, SLA e SLS, O processo geral, Objetivos, Síntese
+Cohesion: 0.33
+Nodes (6): Canais no YouTube (em português), GLOSSÁRIO, Livros, PARTE 2 — ROBÓTICA, REFERÊNCIAS SUGERIDAS, Sites
 
 ### Community 274 - "Community 274"
-Cohesion: 0.25
-Nodes (8): Atividade Prática, Checklist antes de ligar, Conteúdo, Depuração (debugging) de problemas comuns, ENCONTRO 17 — Projeto Final: Montagem do Protótipo Robótico, O processo de integração, Objetivos, Síntese
+Cohesion: 0.40
+Nodes (5): 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, Atividade 5.3, Encontro 22 — Lógica Proposicional Introdutória (2h)
 
 ### Community 275 - "Community 275"
-Cohesion: 0.25
-Nodes (8): Atividade Prática, Conteúdo, ENCONTRO 6 — Projeto 1 no Tinkercad: Modelando um Objeto Funcional, Objetivos, Opções de objetos funcionais para o Projeto 1, Planejamento: a etapa mais importante, Processo de modelagem, Síntese
+Cohesion: 0.50
+Nodes (4): 10.1 Razão, 10.2 Proporção, Atividade 3.1, Encontro 10 — Razão e Proporção (2h)
 
 ### Community 276 - "Community 276"
-Cohesion: 0.25
-Nodes (8): Atividade Prática, Conteúdo, Da leitura à ação, ENCONTRO 12 — Sensores: Como os Robôs Enxergam o Mundo, O que são sensores?, Objetivos, Síntese, Tipos de sensores
+Cohesion: 0.50
+Nodes (4): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, Atividade 4.1, Encontro 15 — Sistema Métrico: Comprimento e Massa (2h)
 
 ### Community 277 - "Community 277"
 Cohesion: 0.40
@@ -1514,28 +1534,12 @@ Cohesion: 0.40
 Nodes (4): Ajustes, Compactar atividade fácil de Ferramentas Digitais, Restrição de verificação, Status Geral
 
 ### Community 282 - "Community 282"
-Cohesion: 0.29
-Nodes (7): APOSTILA DO ALUNO, APRESENTAÇÃO, COMO ESTA APOSTILA ESTÁ ORGANIZADA, OBJETIVO DA UC, OFICINAS DE IMPRESSÃO 3D E ROBÓTICA, SOBRE ESTE MATERIAL, TABELA DE PERCURSO
-
-### Community 283 - "Community 283"
-Cohesion: 0.29
-Nodes (7): Atividade Prática, Conteúdo, ENCONTRO 3 — Materiais para Impressão 3D: Filamentos e Resinas, Filamentos para FDM, Objetivos, Resinas para SLA, Síntese
-
-### Community 284 - "Community 284"
-Cohesion: 0.29
-Nodes (7): Atividade Prática, Conteúdo, ENCONTRO 9 — Impressão do Projeto 1 e Análise dos Resultados, O processo de impressão na prática, Objetivos, Pós-processamento, Síntese
+Cohesion: 0.50
+Nodes (3): PARTE 1 — IMPRESSÃO 3D, RIO DO SUL MAIS TECH, SENAI | PREFEITURA MUNICIPAL DE RIO DO SUL
 
 ### Community 285 - "Community 285"
 Cohesion: 0.40
 Nodes (4): Excluir matérias do curso, Regra de exclusão, Status Geral, Verificação
-
-### Community 286 - "Community 286"
-Cohesion: 0.33
-Nodes (6): Atividade Final, Como fazer uma boa apresentação técnica, Conteúdo, ENCONTRO 18 — Apresentação dos Projetos e Avaliação Final, Objetivos, Rubrica de avaliação
-
-### Community 287 - "Community 287"
-Cohesion: 0.33
-Nodes (6): Canais no YouTube (em português), GLOSSÁRIO, Livros, PARTE 2 — ROBÓTICA, REFERÊNCIAS SUGERIDAS, Sites
 
 ### Community 288 - "Community 288"
 Cohesion: 0.40
@@ -1548,10 +1552,6 @@ Nodes (6): Atividades, Encontro 3-4 — Tema e Ideia Principal (4h), Explicaçã
 ### Community 290 - "Community 290"
 Cohesion: 0.22
 Nodes (3): COR, pptxgen, pres
-
-### Community 291 - "Community 291"
-Cohesion: 0.50
-Nodes (3): PARTE 1 — IMPRESSÃO 3D, RIO DO SUL MAIS TECH, SENAI | PREFEITURA MUNICIPAL DE RIO DO SUL
 
 ### Community 292 - "Community 292"
 Cohesion: 0.08
@@ -1718,12 +1718,12 @@ Cohesion: 0.06
 Nodes (32): 1. Diagnóstico da mensagem, 1. Estrutura da pasta compartilhada, 2. Padrão de nomes, 2. Planejamento, 3. Primeira versão do e-mail, 3. Quadro de tarefas, 4. Cartão de bloqueio, 4. Checklist de revisão em dupla (+24 more)
 
 ### Community 349 - "Community 349"
-Cohesion: 0.10
-Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, 9.1 Fórmula dos Juros Simples (+12 more)
+Cohesion: 0.08
+Nodes (25): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+17 more)
 
 ### Community 350 - "Community 350"
-Cohesion: 0.11
-Nodes (19): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Apresentação do Módulo (+11 more)
+Cohesion: 0.09
+Nodes (23): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas (+15 more)
 
 ### Community 351 - "Community 351"
 Cohesion: 0.09
@@ -1739,23 +1739,23 @@ Nodes (21): analisar_arquivo(), corrigir_google_docs(), corrigir_google_sheets()
 
 ### Community 354 - "Community 354"
 Cohesion: 0.11
-Nodes (18): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental, Apresentação do Módulo, Atividade 3.1 (+10 more)
+Nodes (18): 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental, Apresentação do Módulo, Atividade 3.2 (+10 more)
 
 ### Community 355 - "Community 355"
-Cohesion: 0.10
-Nodes (21): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas (+13 more)
+Cohesion: 0.12
+Nodes (17): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Atividade 4.2 (+9 more)
 
 ### Community 356 - "Community 356"
-Cohesion: 0.10
-Nodes (21): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+13 more)
+Cohesion: 0.12
+Nodes (16): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Atividade 5.1, Atividade 5.2 (+8 more)
 
 ### Community 357 - "Community 357"
 Cohesion: 0.10
 Nodes (20): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental (+12 more)
 
 ### Community 358 - "Community 358"
-Cohesion: 0.10
-Nodes (20): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+12 more)
+Cohesion: 0.14
+Nodes (14): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Atividade 1.1 — Individual, Atividade 1.2 — Individual (+6 more)
 
 ### Community 359 - "Community 359"
 Cohesion: 0.11
@@ -1774,8 +1774,8 @@ Cohesion: 0.12
 Nodes (17): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Atividade 6.1 (+9 more)
 
 ### Community 363 - "Community 363"
-Cohesion: 0.09
-Nodes (22): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+14 more)
+Cohesion: 0.12
+Nodes (16): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Apresentação do Módulo, Atividade 1.1 — Individual (+8 more)
 
 ### Community 364 - "Community 364"
 Cohesion: 0.12
@@ -1812,10 +1812,6 @@ Nodes (11): Anexo I — Mensagem técnica, Checklist antes de entregar, Critéri
 ### Community 373 - "Community 373"
 Cohesion: 0.29
 Nodes (7): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, Sobre este material, Uma palavra para você, aluno
-
-### Community 374 - "Community 374"
-Cohesion: 0.18
-Nodes (11): Apresentação, Assertividade, Coesão, Concordância, Fato, opinião e argumento, Gabarito orientativo, Inferência, Leitura ativa (+3 more)
 
 ### Community 375 - "Community 375"
 Cohesion: 0.18
@@ -1909,10 +1905,6 @@ Nodes (8): Atividade 8.1 — Simulação de reunião (grupo), Atividade 8.2 — 
 Cohesion: 0.17
 Nodes (11): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação (+3 more)
 
-### Community 398 - "Community 398"
-Cohesion: 0.25
-Nodes (7): Apresentação, Autoavaliação final, Competências que você desenvolverá, Glossário, Objetivo da unidade curricular, Projeto integrador final, Referências pedagógicas sugeridas
-
 ### Community 399 - "Community 399"
 Cohesion: 0.25
 Nodes (7): 1. Situação-problema, 2. Entregas da avaliação, 3. Autoavaliação do estudante, 4. Critérios de avaliação, PARTE A — E-mail corporativo (5,0 pontos), PARTE B — Apresentação e simulação oral (5,0 pontos), Planejamento da dupla
@@ -1940,26 +1932,6 @@ Nodes (7): Fluxo GERAR_NOTA_FISCAL e análise de crédito, Passo 1: Novos status
 ### Community 405 - "Community 405"
 Cohesion: 0.25
 Nodes (7): Passo 1: Renomear arquivos, Passo 2: Atualizar prova e gerador, Passo 3: Atualizar o corretor, Passo 4: Respeitar a restrição de validação, Passo 5: Commit e publicação, Renomear Dupla para Equipe na Prova de TIC, Status Geral
-
-### Community 406 - "Community 406"
-Cohesion: 0.29
-Nodes (7): 1.1 Leitura ativa: antes, durante e depois, 1.2 Tema, assunto e ideia principal, 1.3 Informações explícitas e inferências, 1.4 Intenção comunicativa e gênero textual, 1.5 Fato, opinião e argumento, 1.6 Fontes confiáveis e leitura digital, Percurso de aprendizagem
-
-### Community 407 - "Community 407"
-Cohesion: 0.29
-Nodes (7): 2.1 Planejamento: escrever começa antes do texto, 2.2 Parágrafo e organização das ideias, 2.3 Coesão: conectando partes do texto, 2.4 Coerência e progressão temática, 2.5 Gêneros do cotidiano e do mundo do trabalho, 2.6 Revisão e reescrita, Desafio integrador do Módulo 1
-
-### Community 408 - "Community 408"
-Cohesion: 0.29
-Nodes (7): 3.1 Pontuação e construção de sentido, 3.2 Usos essenciais da vírgula, 3.3 Concordância verbal, 3.4 Concordância nominal, 3.5 Classes de palavras em uso, 3.6 Clareza, ambiguidade e escolha vocabular, Projeto de escrita do Módulo 2
-
-### Community 409 - "Community 409"
-Cohesion: 0.29
-Nodes (7): 4.1 Comunicação verbal, não verbal e paraverbal, 4.2 Escuta ativa e empatia, 4.3 Assertividade e respeito, 4.4 Argumentação em debates, 4.5 Planejamento de apresentações, 4.6 Voz, postura e controle do nervosismo, Oficina do Módulo 3
-
-### Community 410 - "Community 410"
-Cohesion: 0.29
-Nodes (7): 5.1 Metas e planejamento semanal, 5.2 Gestão do tempo e foco, 5.3 Anotações, resumos e mapas mentais, 5.4 Pesquisa e uso ético das informações, 5.5 Aprender com erros e feedback, 5.6 Colaboração, responsabilidades e prazos, Apresentação final do Módulo 4
 
 ### Community 411 - "Community 411"
 Cohesion: 0.29
@@ -2010,8 +1982,8 @@ Cohesion: 0.29
 Nodes (6): Padronizar status de matérias e avaliações, Passo 1: Padronizar os selects, Passo 2: Padronizar as restrições SQL, Passo 3: Tratar valores legados, Passo 4: Commit e push, Status Geral
 
 ### Community 423 - "Community 423"
-Cohesion: 0.06
-Nodes (33): 📝 Arquivo Obrigatório, 📄 Arquivos Obrigatórios, Características, ❌ Consequências de Não Conformidade, 📦 Containers de UCs (Exceção à REGRA 01), 📝 Convenções de Código, Dependência, Emojis Padrão (+25 more)
+Cohesion: 0.05
+Nodes (36): APOSTILA_<NOME_DA_UC>.md, 📝 Arquivo Obrigatório, 📄 Arquivos Obrigatórios com Nomenclatura Específica, Características, ❌ Consequências de Não Conformidade, 📦 Containers de UCs (Exceção à REGRA 01), 📝 Convenções de Código, Dependência (+28 more)
 
 ### Community 424 - "Community 424"
 Cohesion: 0.33
@@ -2121,10 +2093,6 @@ Nodes (4): Conteúdo, O que é empatia?, O que é escuta ativa?, Por que a escut
 Cohesion: 0.50
 Nodes (4): Conteúdo, O nervosismo é normal!, Por que falar em público é importante?, Técnicas de apresentação oral
 
-### Community 451 - "Community 451"
-Cohesion: 0.50
-Nodes (4): Checklist de apresentação oral, Checklist de escrita, Checklist de leitura, Checklists de apoio
-
 ### Community 452 - "Community 452"
 Cohesion: 0.50
 Nodes (3): Boas práticas de segurança, Função dos principais compo, Interpretação do Anexo I
@@ -2170,21 +2138,21 @@ Cohesion: 0.53
 Nodes (5): Path, converter(), main(), preparar_html(), Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com     to
 
 ## Knowledge Gaps
-- **3544 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3539 more)
+- **3495 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3490 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **41 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `FUNDAMENTOS DA TECNOLOGIA E PROGRAMAÇÃO` connect `Community 159` to `Community 196`, `Community 206`, `Community 207`, `Community 208`, `Community 209`, `Community 210`, `Community 211`, `Community 212`, `Community 213`, `Community 214`, `Community 215`, `Community 216`, `Community 217`, `Community 218`, `Community 219`, `Community 220`, `Community 221`, `Community 222`?**
+- **Why does `ENCONTROS` connect `Community 153` to `Community 192`, `Community 193`, `Community 194`, `Community 200`, `Community 201`, `Community 202`, `Community 203`, `Community 204`, `Community 205`, `Community 176`, `Community 177`, `Community 178`, `Community 179`, `Community 180`, `Community 189`, `Community 190`, `Community 191`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `ENCONTRO 18 — Projeto Final: Pitch de Negócio` connect `Community 63` to `Community 117`?**
+- **Why does `MÓDULO 2 — FRAÇÕES, DECIMAIS E PORCENTAGEM` connect `Community 23` to `Community 267`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `MÓDULO 5 — RACIOCÍNIO LÓGICO E RESOLUÇÃO DE PROBLEMAS` connect `Community 24` to `Community 267`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `MÓDULO 4 — MEDIDAS E GRANDEZAS` connect `Community 56` to `Community 267`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _3565 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3516 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

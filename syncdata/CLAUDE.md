@@ -195,6 +195,64 @@ pptx.save({ path: './SLIDES_UC.pptx' });
 #### Dependência
 - `npm install pptxgenjs` deve ser executado na pasta UC antes de rodar o script
 
+## 🔴 REGRA 04 — Pasta de Atividades e Exercícios
+
+⚠️ **CRÍTICO** — Toda UC deve conter:
+
+### 📁 Pasta Obrigatória
+- `ATIVIDADES/` — Pasta contendo as atividades sugeridas para a UC
+
+### 📐 Cálculo de Atividades
+
+**Fórmula**: Para cada **2 horas de aula** = **1 atividade** (15 minutos)
+
+Exemplos:
+- 20 horas de aula → 10 atividades
+- 40 horas de aula → 20 atividades
+- 60 horas de aula → 30 atividades
+
+O número de horas deve ser obtido do `PLANO_ENSINO.md` ou `EMENTA_*.md` da UC.
+
+### 📝 Arquivos de Atividades
+
+Dentro de `ATIVIDADES/`:
+
+#### Arquivo Gerador (obrigatório)
+- `GERAR_ATIVIDADES.js` — Script Node.js que gera as atividades
+  - ✅ Lê a EMENTA da matéria
+  - ✅ Gera atividades baseadas no conteúdo da ementa
+  - ✅ Cria versões online (Google Forms links) e versões impressas (PDF)
+  - ✅ Exporta arquivos de atividade
+
+#### Arquivos de Atividade (quantidade calculada)
+- `ATIVIDADE_01.md` — Descrição/conteúdo da atividade 1
+- `ATIVIDADE_02.md` — Descrição/conteúdo da atividade 2
+- ... até `ATIVIDADE_NN.md`
+
+Nomenclatura: **ATIVIDADE_NN.md** onde NN = número zero-preenchido (01, 02, ..., 30)
+
+#### Versões Impressas (PDF)
+- `ATIVIDADE_01_VERSAO_IMPRESSA.pdf` — PDF pronto para imprimir
+- `ATIVIDADE_02_VERSAO_IMPRESSA.pdf` — PDF pronto para imprimir
+- ... até `ATIVIDADE_NN_VERSAO_IMPRESSA.pdf`
+
+**Conteúdo**: Cada PDF deve conter o conteúdo completo da atividade, pronto para impressão.
+
+### 🌐 Formato Online
+- **Plataforma**: Google Forms (link externo)
+- **Funcionalidade**: Mostrar nota ao final da atividade ao aluno
+- **Link**: Pode ser armazenado no arquivo ATIVIDADE_NN.md ou em arquivo separado
+
+### ✅ Checklist de Conformidade
+1. ✅ Pasta `ATIVIDADES/` existe
+2. ✅ Arquivo `GERAR_ATIVIDADES.js` existe
+3. ✅ Número de arquivos `ATIVIDADE_NN.md` ≥ (horas_aula / 2)
+4. ✅ Para cada `ATIVIDADE_NN.md`, existe correspondente `ATIVIDADE_NN_VERSAO_IMPRESSA.pdf`
+5. ✅ Nomes seguem padrão exato (ATIVIDADE_01, ATIVIDADE_02, etc)
+
+### 🔴 Prioridade
+- **MEDIA** — Complementar (pode ser gerado automaticamente)
+
 ---
 
 ## 🎯 Regras Críticas

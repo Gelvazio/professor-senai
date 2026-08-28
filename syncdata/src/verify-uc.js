@@ -7,7 +7,47 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES } = require('./constants');
+const { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES, PADROES_ATIVIDADES } = require('./constants');
+
+/**
+ * Extrai a quantidade de horas do arquivo EMENTA
+ * Procura por padrões como "40 horas", "Carga horária: 40h", etc
+ */
+async function extrairHorasEmenta(caminhoUC) {
+  try {
+    const itens = await fs.readdir(caminhoUC, { withFileTypes: true });
+
+    for (const item of itens) {
+      if (item.isFile() && PADROES_ARQUIVOS_UC.EMENTA.test(item.name)) {
+        const caminhoEmenta = path.join(caminhoUC, item.name);
+        const conteudo = await fs.readFile(caminhoEmenta, 'utf-8');
+
+        // Procurar por padrões de horas:
+        // "40 horas", "40h", "40 h", "Carga horária: 40", "Total: 40 horas", etc
+        const regexHoras = /(\d+)\s*(?:horas|h|hora)/i;
+        const match = conteudo.match(regexHoras);
+
+        if (match) {
+          return parseInt(match[1], 10);
+        }
+      }
+    }
+  } catch (erro) {
+    // Se houver erro ao ler ementa, retorna null
+    return null;
+  }
+
+  return null;
+}
+
+/**
+ * Calcula número esperado de atividades baseado em horas de aula
+ * Fórmula: Para cada 2 horas = 1 atividade
+ */
+function calcularAtividadesEsperadas(horas) {
+  if (!horas || horas <= 0) return 0;
+  return Math.ceil(horas / 2);
+}
 
 /**
  * Verifica se uma pasta de UC tem a estrutura esperada
@@ -17,6 +57,10 @@ const { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES } = 
  *   - Arquivo EMENTA_*.md (com qualquer sufixo)
  *   - Arquivo PLANO_ENSINO.md
  *   - Arquivo APOSTILA_*.md (com qualquer sufixo)
+ * REGRA 04: Uma UC deve ter:
+ *   - Pasta ATIVIDADES
+ *   - Arquivo GERAR_ATIVIDADES.js
+ *   - Número mínimo de ATIVIDADE_NN.md baseado em horas de aula
  */
 async function verificarEstrutuaUC(caminhoUC, nomeUC) {
   console.log(`📋 Verificando UC: ${nomeUC}`);
@@ -30,7 +74,9 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
       EMENTA: false,
       PLANO_ENSINO: false,
       APOSTILA: false,
-      GERAR_SLIDES: false  // REGRA 03
+      GERAR_SLIDES: false,       // REGRA 03
+      ATIVIDADES: false,         // REGRA 04
+      GERAR_ATIVIDADES: false    // REGRA 04
     },
     arquivos_encontrados: {
       AULAS: null,
@@ -38,12 +84,23 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
       EMENTA: null,
       PLANO_ENSINO: null,
       APOSTILA: null,
-      GERAR_SLIDES: null  // REGRA 03
+      GERAR_SLIDES: null,        // REGRA 03
+      ATIVIDADES: null,          // REGRA 04
+      GERAR_ATIVIDADES: null,    // REGRA 04
+      ATIVIDADES_MD: [],         // Lista de ATIVIDADE_NN.md encontrados
+      ATIVIDADES_PDF: []         // Lista de ATIVIDADE_NN_VERSAO_IMPRESSA.pdf encontrados
     },
+    horas_aula: null,
+    atividades_esperadas: 0,
+    atividades_encontradas: 0,
     pendencias: []
   };
 
   try {
+    // Extrair horas da EMENTA
+    resultado.horas_aula = await extrairHorasEmenta(caminhoUC);
+    resultado.atividades_esperadas = calcularAtividadesEsperadas(resultado.horas_aula);
+
     const itens = await fs.readdir(caminhoUC, { withFileTypes: true });
 
     for (const item of itens) {
@@ -57,6 +114,30 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
         } else if (item.name === 'AVALIACOES' || item.name === 'AVALIACOES_CRIADAS') {
           resultado.estrutura.AVALIACOES = true;
           resultado.arquivos_encontrados.AVALIACOES = caminhoCompleto;
+        } else if (item.name === 'ATIVIDADES') {
+          resultado.estrutura.ATIVIDADES = true;
+          resultado.arquivos_encontrados.ATIVIDADES = caminhoCompleto;
+
+          // Procurar por atividades dentro da pasta ATIVIDADES
+          try {
+            const atividadesItens = await fs.readdir(caminhoCompleto, { withFileTypes: true });
+            for (const atividadeItem of atividadesItens) {
+              if (atividadeItem.isFile()) {
+                const matchMD = atividadeItem.name.match(PADROES_ATIVIDADES.ATIVIDADE_MD);
+                const matchPDF = atividadeItem.name.match(PADROES_ATIVIDADES.ATIVIDADE_PDF);
+
+                if (matchMD) {
+                  resultado.arquivos_encontrados.ATIVIDADES_MD.push(atividadeItem.name);
+                  resultado.atividades_encontradas++;
+                }
+                if (matchPDF) {
+                  resultado.arquivos_encontrados.ATIVIDADES_PDF.push(atividadeItem.name);
+                }
+              }
+            }
+          } catch (e) {
+            console.warn(`⚠️  Erro ao ler pasta ATIVIDADES de ${nomeUC}:`, e.message);
+          }
         }
       }
 
@@ -74,6 +155,9 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
         } else if (PADROES_GERAR_SLIDES.test(item.name)) {
           resultado.estrutura.GERAR_SLIDES = true;
           resultado.arquivos_encontrados.GERAR_SLIDES = item.name;
+        } else if (PADROES_ATIVIDADES.GERAR.test(item.name)) {
+          resultado.estrutura.GERAR_ATIVIDADES = true;
+          resultado.arquivos_encontrados.GERAR_ATIVIDADES = item.name;
         }
 
         // Avisos: nomenclatura genérica ou incorreta
@@ -149,6 +233,60 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
         mensagem: 'Script de geração de slides não encontrado (REGRA 03)',
         prioridade: 'MEDIA'
       });
+    }
+
+    // REGRA 04 — Verificações de atividades
+    if (!resultado.estrutura.ATIVIDADES) {
+      resultado.pendencias.push({
+        tipo: 'PASTA',
+        item: 'ATIVIDADES',
+        mensagem: 'Pasta ATIVIDADES não encontrada (REGRA 04)',
+        prioridade: 'MEDIA'
+      });
+    }
+
+    if (!resultado.estrutura.GERAR_ATIVIDADES) {
+      resultado.pendencias.push({
+        tipo: 'SCRIPT',
+        item: 'GERAR_ATIVIDADES.js',
+        mensagem: 'Script de geração de atividades não encontrado (REGRA 04)',
+        prioridade: 'MEDIA'
+      });
+    }
+
+    if (resultado.estrutura.ATIVIDADES && resultado.horas_aula) {
+      // Verificar número de atividades
+      if (resultado.atividades_encontradas < resultado.atividades_esperadas) {
+        resultado.pendencias.push({
+          tipo: 'ARQUIVO',
+          item: 'ATIVIDADE_NN.md',
+          mensagem: `Faltam atividades: ${resultado.atividades_encontradas} encontradas, ${resultado.atividades_esperadas} esperadas (${resultado.horas_aula}h ÷ 2 = ${resultado.atividades_esperadas}) (REGRA 04)`,
+          prioridade: 'MEDIA'
+        });
+      }
+
+      // Verificar correspondência entre MD e PDF
+      const mdSet = new Set(resultado.arquivos_encontrados.ATIVIDADES_MD.map(f => {
+        const match = f.match(/ATIVIDADE_(\d+)\.md/);
+        return match ? match[1] : null;
+      }));
+
+      const pdfSet = new Set(resultado.arquivos_encontrados.ATIVIDADES_PDF.map(f => {
+        const match = f.match(/ATIVIDADE_(\d+)_VERSAO_IMPRESSA\.pdf/);
+        return match ? match[1] : null;
+      }));
+
+      // Verificar PDFs faltantes
+      for (const num of mdSet) {
+        if (num && !pdfSet.has(num)) {
+          resultado.pendencias.push({
+            tipo: 'ARQUIVO',
+            item: `ATIVIDADE_${num}_VERSAO_IMPRESSA.pdf`,
+            mensagem: `Versão impressa não encontrada para ATIVIDADE_${num}.md (REGRA 04)`,
+            prioridade: 'MEDIA'
+          });
+        }
+      }
     }
 
     return resultado;
@@ -234,13 +372,20 @@ function gerarRelatorioVerificacao(verificacao) {
   verificacao.resultados.forEach(resultado => {
     relatorio += `📚 ${resultado.uc}\n`;
 
+    // Informações de horas de aula e atividades (se disponível)
+    if (resultado.horas_aula) {
+      relatorio += `  ⏱️  Horas de aula: ${resultado.horas_aula}h\n`;
+      relatorio += `  📋 Atividades: ${resultado.atividades_encontradas}/${resultado.atividades_esperadas}\n`;
+    }
+
     if (resultado.pendencias.length === 0) {
       relatorio += '  ✅ Estrutura completa\n\n';
       return;
     }
 
+    relatorio += '\n';
     resultado.pendencias.forEach(p => {
-      const emoji = p.tipo === 'PASTA' ? '📂' : p.tipo === 'ARQUIVO' ? '📄' : '❌';
+      const emoji = p.tipo === 'PASTA' ? '📂' : p.tipo === 'ARQUIVO' ? '📄' : p.tipo === 'AVISO' ? '⚠️' : '❌';
       const prioridade = p.prioridade === 'ALTA' ? '🔴' : '🟡';
       relatorio += `  ${emoji} ${prioridade} [${p.item}] ${p.mensagem}\n`;
     });
@@ -253,7 +398,9 @@ function gerarRelatorioVerificacao(verificacao) {
 module.exports = {
   verificarEstrutuaUC,
   verificarTodasUCs,
-  gerarRelatorioVerificacao
+  gerarRelatorioVerificacao,
+  extrairHorasEmenta,
+  calcularAtividadesEsperadas
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
