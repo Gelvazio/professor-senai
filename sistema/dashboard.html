@@ -2126,6 +2126,16 @@
       .sync-log-emoji { min-width:20px; }
       .sync-log-text { color:#333; word-break:break-word; }
       .sync-footer { padding:12px 20px; border-top:1px solid #e0e0e0; text-align:right; }
+      .relatorio-container { padding:12px; }
+      .relatorio-info { background:#f5f5f5; padding:12px; border-radius:8px; margin-bottom:16px; font-size:13px; }
+      .relatorio-info p { margin:6px 0; }
+      .relatorio-info strong { color:#004384; }
+      .relatorio-detalhes h4 { margin:0 0 12px; color:#004384; font-size:14px; }
+      .relatorio-uc { background:#fafafa; padding:12px; border-left:3px solid #004384; margin-bottom:8px; border-radius:4px; }
+      .uc-nome { font-weight:600; font-size:13px; margin-bottom:4px; }
+      .uc-pendencias { font-size:12px; color:#dc3545; }
+      .uc-ok { font-size:12px; color:#28a745; }
+
       @media (prefers-color-scheme: dark) {
         .sync-modal { background:#1e1e1e; }
         .sync-head { border-bottom-color:#333; }
@@ -2135,6 +2145,10 @@
         .sync-log { background:#2a2a2a; color:#e0e0e0; }
         .sync-log-text { color:#e0e0e0; }
         .sync-footer { border-top-color:#333; }
+        .relatorio-info { background:#2a2a2a; color:#e0e0e0; }
+        .relatorio-info strong { color:#64b5f6; }
+        .relatorio-detalhes h4 { color:#64b5f6; }
+        .relatorio-uc { background:#1f1f1f; border-left-color:#64b5f6; color:#e0e0e0; }
       }
     </style>
 
@@ -6218,24 +6232,6 @@
           }, 2000);
         }
       }
-
-      <style>
-        .relatorio-container { padding:12px; }
-        .relatorio-info { background:#f5f5f5; padding:12px; border-radius:8px; margin-bottom:16px; font-size:13px; }
-        .relatorio-info p { margin:6px 0; }
-        .relatorio-info strong { color:#004384; }
-        .relatorio-detalhes h4 { margin:0 0 12px; color:#004384; font-size:14px; }
-        .relatorio-uc { background:#fafafa; padding:12px; border-left:3px solid #004384; margin-bottom:8px; border-radius:4px; }
-        .uc-nome { font-weight:600; font-size:13px; margin-bottom:4px; }
-        .uc-pendencias { font-size:12px; color:#dc3545; }
-        .uc-ok { font-size:12px; color:#28a745; }
-        @media (prefers-color-scheme: dark) {
-          .relatorio-info { background:#2a2a2a; color:#e0e0e0; }
-          .relatorio-info strong { color:#64b5f6; }
-          .relatorio-detalhes h4 { color:#64b5f6; }
-          .relatorio-uc { background:#1f1f1f; border-left-color:#64b5f6; color:#e0e0e0; }
-        }
-      </style>
 
       function didMudarTab(id, btn) {
         document.querySelectorAll('.did-tab').forEach(function(t){ t.classList.remove('ativo'); });
