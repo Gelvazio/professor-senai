@@ -351,6 +351,9 @@ async function iniciar() {
     console.log(`
 ╔═══════════════════════════════════════════════════════════════════╗
 ║              SYNCDATA SERVER INICIADO v1.0.0                    ║
+║                                                                   ║
+║  🚀 SERVIDOR ESCUTANDO NA PORTA: ${PORT}                             ║
+║                                                                   ║
 ╚═══════════════════════════════════════════════════════════════════╝
 🌐 Servidor: http://localhost:${PORT}
 📊 Status: http://localhost:${PORT}/api/status
