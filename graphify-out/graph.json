@@ -3447,7 +3447,7 @@
       "label": "UC_CONTAINERS",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L90",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "src_constants_uc_containers",
       "community": 524,
@@ -3457,7 +3457,7 @@
       "label": "UNIDADES_CURRICULARESCONHECIDAS",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L95",
+      "source_location": "L96",
       "_origin": "ast",
       "id": "src_constants_unidades_curricularesconhecidas",
       "community": 526,
@@ -3467,7 +3467,7 @@
       "label": "ESTRUTURA_UC_OBRIGATORIA",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L109",
+      "source_location": "L110",
       "_origin": "ast",
       "id": "src_constants_estrutura_uc_obrigatoria",
       "community": 526,
@@ -3477,7 +3477,7 @@
       "label": "PADROES_ARQUIVOS_UC",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L128",
+      "source_location": "L129",
       "_origin": "ast",
       "id": "src_constants_padroes_arquivos_uc",
       "community": 526,
@@ -3487,17 +3487,27 @@
       "label": "PADROES_ATIVIDADES",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L150",
+      "source_location": "L151",
       "_origin": "ast",
       "id": "src_constants_padroes_atividades",
       "community": 526,
       "norm_label": "padroes_atividades"
     },
     {
+      "label": "PADROES_SUBSTITUICOES",
+      "file_type": "code",
+      "source_file": "syncdata/src/constants.js",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "src_constants_padroes_substituicoes",
+      "community": 526,
+      "norm_label": "padroes_substituicoes"
+    },
+    {
       "label": "CONFIG",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L158",
+      "source_location": "L173",
       "_origin": "ast",
       "id": "src_constants_config",
       "community": 526,
@@ -3507,7 +3517,7 @@
       "label": "EMOJIS",
       "file_type": "code",
       "source_file": "syncdata/src/constants.js",
-      "source_location": "L166",
+      "source_location": "L181",
       "_origin": "ast",
       "id": "src_constants_emojis",
       "community": 526,
@@ -3834,14 +3844,14 @@
       "norm_label": "path"
     },
     {
-      "label": "{ ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES, PADROES_ATIVIDADES }",
+      "label": "{ ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES, PADROES_ATIVIDADES, PADROES_SUBSTITUICOES }",
       "file_type": "code",
       "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides_padroes_atividades",
+      "id": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides_padroes_atividades_padroes_substituicoes",
       "community": 526,
-      "norm_label": "{ estrutura_uc_obrigatoria, padroes_arquivos_uc, padroes_gerar_slides, padroes_atividades }"
+      "norm_label": "{ estrutura_uc_obrigatoria, padroes_arquivos_uc, padroes_gerar_slides, padroes_atividades, padroes_substituicoes }"
     },
     {
       "label": "extrairHorasEmenta()",
@@ -3877,7 +3887,7 @@
       "label": "verificarTodasUCs()",
       "file_type": "code",
       "source_file": "syncdata/src/verify-uc.js",
-      "source_location": "L309",
+      "source_location": "L348",
       "_origin": "ast",
       "id": "src_verify_uc_verificartodasucs",
       "community": 526,
@@ -3887,7 +3897,7 @@
       "label": "gerarRelatorioVerificacao()",
       "file_type": "code",
       "source_file": "syncdata/src/verify-uc.js",
-      "source_location": "L352",
+      "source_location": "L391",
       "_origin": "ast",
       "id": "src_verify_uc_gerarrelatorioverificacao",
       "community": 526,
@@ -27850,7 +27860,7 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_encontro_4_c\u00e1lculo_mental_estimativas_e_problemas_cotidianos_2h",
-      "community": 271,
+      "community": 358,
       "norm_label": "encontro 4 \u2014 calculo mental, estimativas e problemas cotidianos (2h)"
     },
     {
@@ -27860,7 +27870,7 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_4_1_estrat\u00e9gias_de_c\u00e1lculo_mental",
-      "community": 271,
+      "community": 358,
       "norm_label": "4.1 estrategias de calculo mental"
     },
     {
@@ -27870,7 +27880,7 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_4_2_estimativas_e_arredondamento",
-      "community": 271,
+      "community": 358,
       "norm_label": "4.2 estimativas e arredondamento"
     },
     {
@@ -27880,7 +27890,7 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_4_3_problemas_contextualizados",
-      "community": 271,
+      "community": 358,
       "norm_label": "4.3 problemas contextualizados"
     },
     {
@@ -27890,7 +27900,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_atividade_1_4_individual_estimativas",
-      "community": 271,
+      "community": 358,
       "norm_label": "atividade 1.4 \u2014 individual (estimativas)"
     },
     {
@@ -27900,7 +27910,7 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_atividade_1_5_em_grupo_desafio",
-      "community": 271,
+      "community": 358,
       "norm_label": "atividade 1.5 \u2014 em grupo (desafio)"
     },
     {
@@ -28360,7 +28370,7 @@
       "source_location": "L466",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_encontro_15_sistema_m\u00e9trico_comprimento_e_massa_2h",
-      "community": 276,
+      "community": 355,
       "norm_label": "encontro 15 \u2014 sistema metrico: comprimento e massa (2h)"
     },
     {
@@ -28370,7 +28380,7 @@
       "source_location": "L467",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_15_1_unidades_de_comprimento",
-      "community": 276,
+      "community": 355,
       "norm_label": "15.1 unidades de comprimento"
     },
     {
@@ -28380,7 +28390,7 @@
       "source_location": "L477",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_15_2_unidades_de_massa",
-      "community": 276,
+      "community": 355,
       "norm_label": "15.2 unidades de massa"
     },
     {
@@ -28390,7 +28400,7 @@
       "source_location": "L480",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_atividade_4_1",
-      "community": 276,
+      "community": 355,
       "norm_label": "atividade 4.1"
     },
     {
@@ -28650,7 +28660,7 @@
       "source_location": "L640",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_encontro_22_l\u00f3gica_proposicional_introdut\u00f3ria_2h",
-      "community": 274,
+      "community": 356,
       "norm_label": "encontro 22 \u2014 logica proposicional introdutoria (2h)"
     },
     {
@@ -28660,7 +28670,7 @@
       "source_location": "L641",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_22_1_proposi\u00e7\u00f5es",
-      "community": 274,
+      "community": 356,
       "norm_label": "22.1 proposicoes"
     },
     {
@@ -28670,7 +28680,7 @@
       "source_location": "L647",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_22_2_conectivos_l\u00f3gicos",
-      "community": 274,
+      "community": 356,
       "norm_label": "22.2 conectivos logicos"
     },
     {
@@ -28680,7 +28690,7 @@
       "source_location": "L662",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_22_3_tabelas_verdade",
-      "community": 274,
+      "community": 356,
       "norm_label": "22.3 tabelas-verdade"
     },
     {
@@ -28690,7 +28700,7 @@
       "source_location": "L670",
       "_origin": "ast",
       "id": "converted_apostila_reforco_matematica_raciocinio_logico_6a5f0aba_atividade_5_3",
-      "community": 274,
+      "community": 356,
       "norm_label": "atividade 5.3"
     },
     {
@@ -44100,7 +44110,7 @@
       "source_location": "L845",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_encontro_25_26_leitura_cr\u00edtica_e_an\u00e1lise_de_discurso_4h",
-      "community": 126,
+      "community": 155,
       "norm_label": "encontro 25-26 \u2014 leitura critica e analise de discurso (4h)"
     },
     {
@@ -44110,7 +44120,7 @@
       "source_location": "L847",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_objetivos_847",
-      "community": 126,
+      "community": 155,
       "norm_label": "objetivos"
     },
     {
@@ -44120,7 +44130,7 @@
       "source_location": "L854",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_texto_base_854",
-      "community": 126,
+      "community": 155,
       "norm_label": "texto base"
     },
     {
@@ -44130,7 +44140,7 @@
       "source_location": "L863",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_explica\u00e7\u00e3o_fato_x_opini\u00e3o",
-      "community": 126,
+      "community": 155,
       "norm_label": "explicacao: fato x opiniao"
     },
     {
@@ -44140,7 +44150,7 @@
       "source_location": "L878",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_atividades_878",
-      "community": 126,
+      "community": 155,
       "norm_label": "atividades"
     },
     {
@@ -48460,7 +48470,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "syncdata_claude_conven\u00e7\u00f5es_de_c\u00f3digo",
-      "community": 423,
+      "community": 283,
       "norm_label": "\ud83d\udcdd convencoes de codigo"
     },
     {
@@ -48470,7 +48480,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "syncdata_claude_nomea\u00e7\u00e3o",
-      "community": 423,
+      "community": 283,
       "norm_label": "nomeacao"
     },
     {
@@ -48480,7 +48490,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "syncdata_claude_estrutura_de_fun\u00e7\u00f5es",
-      "community": 423,
+      "community": 283,
       "norm_label": "estrutura de funcoes"
     },
     {
@@ -48490,7 +48500,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "syncdata_claude_emojis_padr\u00e3o",
-      "community": 423,
+      "community": 283,
       "norm_label": "emojis padrao"
     },
     {
@@ -48520,7 +48530,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "syncdata_claude_regra_02_estrutura_obrigat\u00f3ria_de_unidades_curriculares",
-      "community": 423,
+      "community": 271,
       "norm_label": "\ud83d\udd34 regra 02 \u2014 estrutura obrigatoria de unidades curriculares"
     },
     {
@@ -48530,7 +48540,7 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "syncdata_claude_pastas_obrigat\u00f3rias",
-      "community": 423,
+      "community": 271,
       "norm_label": "\ud83d\udcc1 pastas obrigatorias"
     },
     {
@@ -48540,7 +48550,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "syncdata_claude_arquivos_obrigat\u00f3rios_com_nomenclatura_espec\u00edfica",
-      "community": 423,
+      "community": 271,
       "norm_label": "\ud83d\udcc4 arquivos obrigatorios com nomenclatura especifica"
     },
     {
@@ -48550,7 +48560,7 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "syncdata_claude_ementa_nome_da_uc_md",
-      "community": 423,
+      "community": 271,
       "norm_label": "ementa_<nome_da_uc>.md"
     },
     {
@@ -48560,7 +48570,7 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "syncdata_claude_apostila_nome_da_uc_md",
-      "community": 423,
+      "community": 271,
       "norm_label": "apostila_<nome_da_uc>.md"
     },
     {
@@ -48570,7 +48580,7 @@
       "source_location": "L131",
       "_origin": "ast",
       "id": "syncdata_claude_plano_ensino_md",
-      "community": 423,
+      "community": 271,
       "norm_label": "plano_ensino.md"
     },
     {
@@ -48580,7 +48590,7 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "syncdata_claude_consequ\u00eancias_de_n\u00e3o_conformidade",
-      "community": 423,
+      "community": 271,
       "norm_label": "\u274c consequencias de nao conformidade"
     },
     {
@@ -48590,7 +48600,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "syncdata_claude_verifica\u00e7\u00e3o_autom\u00e1tica",
-      "community": 423,
+      "community": 271,
       "norm_label": "\ud83d\udcca verificacao automatica"
     },
     {
@@ -48600,7 +48610,7 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "syncdata_claude_regra_03_script_de_gera\u00e7\u00e3o_de_slides",
-      "community": 423,
+      "community": 276,
       "norm_label": "\ud83d\udd34 regra 03 \u2014 script de geracao de slides"
     },
     {
@@ -48610,7 +48620,7 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "syncdata_claude_arquivo_obrigat\u00f3rio",
-      "community": 423,
+      "community": 276,
       "norm_label": "\ud83d\udcdd arquivo obrigatorio"
     },
     {
@@ -48620,7 +48630,7 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "syncdata_claude_caracter\u00edsticas",
-      "community": 423,
+      "community": 276,
       "norm_label": "caracteristicas"
     },
     {
@@ -48630,7 +48640,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "syncdata_claude_exemplo_m\u00ednimo",
-      "community": 423,
+      "community": 276,
       "norm_label": "exemplo minimo"
     },
     {
@@ -48640,7 +48650,7 @@
       "source_location": "L192",
       "_origin": "ast",
       "id": "syncdata_claude_prioridade",
-      "community": 423,
+      "community": 276,
       "norm_label": "prioridade"
     },
     {
@@ -48650,7 +48660,7 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "syncdata_claude_depend\u00eancia",
-      "community": 423,
+      "community": 276,
       "norm_label": "dependencia"
     },
     {
@@ -48660,7 +48670,7 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
-      "community": 423,
+      "community": 126,
       "norm_label": "\ud83d\udd34 regra 04 \u2014 pasta de atividades e exercicios"
     },
     {
@@ -48670,7 +48680,7 @@
       "source_location": "L202",
       "_origin": "ast",
       "id": "syncdata_claude_pasta_obrigat\u00f3ria",
-      "community": 423,
+      "community": 126,
       "norm_label": "\ud83d\udcc1 pasta obrigatoria"
     },
     {
@@ -48680,7 +48690,7 @@
       "source_location": "L205",
       "_origin": "ast",
       "id": "syncdata_claude_c\u00e1lculo_de_atividades",
-      "community": 423,
+      "community": 126,
       "norm_label": "\ud83d\udcd0 calculo de atividades"
     },
     {
@@ -48690,7 +48700,7 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "syncdata_claude_arquivos_de_atividades",
-      "community": 423,
+      "community": 126,
       "norm_label": "\ud83d\udcdd arquivos de atividades"
     },
     {
@@ -48700,7 +48710,7 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "syncdata_claude_arquivo_gerador_obrigat\u00f3rio",
-      "community": 423,
+      "community": 126,
       "norm_label": "arquivo gerador (obrigatorio)"
     },
     {
@@ -48710,7 +48720,7 @@
       "source_location": "L227",
       "_origin": "ast",
       "id": "syncdata_claude_arquivos_de_atividade_quantidade_calculada",
-      "community": 423,
+      "community": 126,
       "norm_label": "arquivos de atividade (quantidade calculada)"
     },
     {
@@ -48720,7 +48730,7 @@
       "source_location": "L234",
       "_origin": "ast",
       "id": "syncdata_claude_vers\u00f5es_impressas_pdf",
-      "community": 423,
+      "community": 126,
       "norm_label": "versoes impressas (pdf)"
     },
     {
@@ -48730,7 +48740,7 @@
       "source_location": "L241",
       "_origin": "ast",
       "id": "syncdata_claude_formato_online",
-      "community": 423,
+      "community": 126,
       "norm_label": "\ud83c\udf10 formato online"
     },
     {
@@ -48740,7 +48750,7 @@
       "source_location": "L246",
       "_origin": "ast",
       "id": "syncdata_claude_checklist_de_conformidade",
-      "community": 423,
+      "community": 126,
       "norm_label": "\u2705 checklist de conformidade"
     },
     {
@@ -48750,44 +48760,114 @@
       "source_location": "L253",
       "_origin": "ast",
       "id": "syncdata_claude_prioridade_253",
-      "community": 423,
+      "community": 126,
+      "norm_label": "\ud83d\udd34 prioridade"
+    },
+    {
+      "label": "\ud83d\udd34 REGRA 05 \u2014 Pasta de Substitui\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L256",
+      "_origin": "ast",
+      "id": "syncdata_claude_regra_05_pasta_de_substitui\u00e7\u00f5es",
+      "community": 274,
+      "norm_label": "\ud83d\udd34 regra 05 \u2014 pasta de substituicoes"
+    },
+    {
+      "label": "\ud83d\udcc1 Pasta Obrigat\u00f3ria",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "syncdata_claude_pasta_obrigat\u00f3ria_260",
+      "community": 274,
+      "norm_label": "\ud83d\udcc1 pasta obrigatoria"
+    },
+    {
+      "label": "\ud83d\udcc4 Arquivo Obrigat\u00f3rio",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L263",
+      "_origin": "ast",
+      "id": "syncdata_claude_arquivo_obrigat\u00f3rio_263",
+      "community": 274,
+      "norm_label": "\ud83d\udcc4 arquivo obrigatorio"
+    },
+    {
+      "label": "Conte\u00fado do Arquivo CLAUDE.md",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L266",
+      "_origin": "ast",
+      "id": "syncdata_claude_conte\u00fado_do_arquivo_claude_md",
+      "community": 274,
+      "norm_label": "conteudo do arquivo claude.md"
+    },
+    {
+      "label": "Exemplo de Estrutura",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L285",
+      "_origin": "ast",
+      "id": "syncdata_claude_exemplo_de_estrutura",
+      "community": 274,
+      "norm_label": "exemplo de estrutura"
+    },
+    {
+      "label": "\u2705 Checklist de Conformidade",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L308",
+      "_origin": "ast",
+      "id": "syncdata_claude_checklist_de_conformidade_308",
+      "community": 274,
+      "norm_label": "\u2705 checklist de conformidade"
+    },
+    {
+      "label": "\ud83d\udd34 Prioridade",
+      "file_type": "document",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L315",
+      "_origin": "ast",
+      "id": "syncdata_claude_prioridade_315",
+      "community": 274,
       "norm_label": "\ud83d\udd34 prioridade"
     },
     {
       "label": "\ud83c\udfaf Regras Cr\u00edticas",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L258",
+      "source_location": "L320",
       "_origin": "ast",
       "id": "syncdata_claude_regras_cr\u00edticas",
-      "community": 423,
+      "community": 286,
       "norm_label": "\ud83c\udfaf regras criticas"
     },
     {
       "label": "\u2705 Obrigat\u00f3rio",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L260",
+      "source_location": "L322",
       "_origin": "ast",
       "id": "syncdata_claude_obrigat\u00f3rio",
-      "community": 423,
+      "community": 286,
       "norm_label": "\u2705 obrigatorio"
     },
     {
       "label": "\u274c Proibido",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L268",
+      "source_location": "L330",
       "_origin": "ast",
       "id": "syncdata_claude_proibido",
-      "community": 423,
+      "community": 286,
       "norm_label": "\u274c proibido"
     },
     {
       "label": "\ud83d\udcc2 Padr\u00e3o de Leitura de Arquivos",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L276",
+      "source_location": "L338",
       "_origin": "ast",
       "id": "syncdata_claude_padr\u00e3o_de_leitura_de_arquivos",
       "community": 423,
@@ -48797,7 +48877,7 @@
       "label": "\ud83d\udd04 Integra\u00e7\u00e3o com pendencias.js",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L311",
+      "source_location": "L373",
       "_origin": "ast",
       "id": "syncdata_claude_integra\u00e7\u00e3o_com_pendencias_js",
       "community": 423,
@@ -48807,7 +48887,7 @@
       "label": "\ud83d\udcca Tipos de Aula Reconhecidas",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L331",
+      "source_location": "L393",
       "_origin": "ast",
       "id": "syncdata_claude_tipos_de_aula_reconhecidas",
       "community": 423,
@@ -48817,7 +48897,7 @@
       "label": "\ud83d\ude80 Scripts Dispon\u00edveis",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L340",
+      "source_location": "L402",
       "_origin": "ast",
       "id": "syncdata_claude_scripts_dispon\u00edveis",
       "community": 423,
@@ -48827,37 +48907,37 @@
       "label": "\ud83d\udcdd Exemplos de Uso",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L349",
+      "source_location": "L411",
       "_origin": "ast",
       "id": "syncdata_claude_exemplos_de_uso",
-      "community": 423,
+      "community": 284,
       "norm_label": "\ud83d\udcdd exemplos de uso"
     },
     {
       "label": "Importar em outro arquivo",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L351",
+      "source_location": "L413",
       "_origin": "ast",
       "id": "syncdata_claude_importar_em_outro_arquivo",
-      "community": 423,
+      "community": 284,
       "norm_label": "importar em outro arquivo"
     },
     {
       "label": "Executar como CLI",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L362",
+      "source_location": "L424",
       "_origin": "ast",
       "id": "syncdata_claude_executar_como_cli",
-      "community": 423,
+      "community": 284,
       "norm_label": "executar como cli"
     },
     {
       "label": "\u26a0\ufe0f Notas Importantes",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L368",
+      "source_location": "L430",
       "_origin": "ast",
       "id": "syncdata_claude_notas_importantes",
       "community": 423,
@@ -48867,7 +48947,7 @@
       "label": "\ud83d\udd10 Seguran\u00e7a",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L376",
+      "source_location": "L438",
       "_origin": "ast",
       "id": "syncdata_claude_seguran\u00e7a",
       "community": 423,
@@ -48877,7 +48957,7 @@
       "label": "\ud83d\udcda Recursos Externos",
       "file_type": "document",
       "source_file": "syncdata/CLAUDE.md",
-      "source_location": "L383",
+      "source_location": "L445",
       "_origin": "ast",
       "id": "syncdata_claude_recursos_externos",
       "community": 423,
@@ -55477,9 +55557,9 @@
       "source_file": "syncdata/src/constants.js",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_constants",
-      "target": "src_constants_padroes_atividades",
-      "confidence_score": 1.0
+      "target": "src_constants_padroes_atividades"
     },
     {
       "relation": "contains",
@@ -55490,6 +55570,16 @@
       "confidence_score": 1.0,
       "source": "src_constants",
       "target": "src_constants_padroes_busca"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/src/constants.js",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "src_constants",
+      "target": "src_constants_padroes_substituicoes",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -55676,8 +55766,19 @@
       "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_verify_uc",
-      "target": "src_constants_padroes_atividades",
+      "target": "src_constants_padroes_atividades"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/src/verify-uc.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_verify_uc",
+      "target": "src_constants_padroes_substituicoes",
       "confidence_score": 1.0
     },
     {
@@ -56033,9 +56134,9 @@
       "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_verify_uc",
-      "target": "src_verify_uc_calcularatividadesesperadas",
-      "confidence_score": 1.0
+      "target": "src_verify_uc_calcularatividadesesperadas"
     },
     {
       "relation": "contains",
@@ -56044,7 +56145,7 @@
       "source_location": "L10",
       "weight": 1.0,
       "source": "src_verify_uc",
-      "target": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides_padroes_atividades",
+      "target": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides_padroes_atividades_padroes_substituicoes",
       "confidence_score": 1.0
     },
     {
@@ -56053,9 +56154,9 @@
       "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_verify_uc",
-      "target": "src_verify_uc_extrairhorasementa",
-      "confidence_score": 1.0
+      "target": "src_verify_uc_extrairhorasementa"
     },
     {
       "relation": "contains",
@@ -56104,9 +56205,9 @@
       "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_verify_uc_verificarestrutuauc",
-      "target": "src_verify_uc_extrairhorasementa",
-      "confidence_score": 1.0
+      "target": "src_verify_uc_extrairhorasementa"
     },
     {
       "relation": "calls",
@@ -56115,9 +56216,9 @@
       "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_verify_uc_verificarestrutuauc",
-      "target": "src_verify_uc_calcularatividadesesperadas",
-      "confidence_score": 1.0
+      "target": "src_verify_uc_calcularatividadesesperadas"
     },
     {
       "relation": "calls",
@@ -98096,8 +98197,18 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_syncdata_regras_do_projeto",
-      "target": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
+      "target": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L256",
+      "weight": 1.0,
+      "source": "syncdata_claude_syncdata_regras_do_projeto",
+      "target": "syncdata_claude_regra_05_pasta_de_substitui\u00e7\u00f5es",
       "confidence_score": 1.0
     },
     {
@@ -98306,9 +98417,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L216",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
-      "target": "syncdata_claude_arquivos_de_atividades",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_arquivos_de_atividades"
     },
     {
       "relation": "contains",
@@ -98316,9 +98427,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L246",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
-      "target": "syncdata_claude_checklist_de_conformidade",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_checklist_de_conformidade"
     },
     {
       "relation": "contains",
@@ -98326,9 +98437,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L205",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
-      "target": "syncdata_claude_c\u00e1lculo_de_atividades",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_c\u00e1lculo_de_atividades"
     },
     {
       "relation": "contains",
@@ -98336,9 +98447,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
-      "target": "syncdata_claude_formato_online",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_formato_online"
     },
     {
       "relation": "contains",
@@ -98346,9 +98457,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
-      "target": "syncdata_claude_pasta_obrigat\u00f3ria",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_pasta_obrigat\u00f3ria"
     },
     {
       "relation": "contains",
@@ -98356,9 +98467,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L253",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_regra_04_pasta_de_atividades_e_exerc\u00edcios",
-      "target": "syncdata_claude_prioridade_253",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_prioridade_253"
     },
     {
       "relation": "contains",
@@ -98366,9 +98477,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L220",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_arquivos_de_atividades",
-      "target": "syncdata_claude_arquivo_gerador_obrigat\u00f3rio",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_arquivo_gerador_obrigat\u00f3rio"
     },
     {
       "relation": "contains",
@@ -98376,9 +98487,9 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L227",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_arquivos_de_atividades",
-      "target": "syncdata_claude_arquivos_de_atividade_quantidade_calculada",
-      "confidence_score": 1.0
+      "target": "syncdata_claude_arquivos_de_atividade_quantidade_calculada"
     },
     {
       "relation": "contains",
@@ -98386,8 +98497,68 @@
       "source_file": "syncdata/CLAUDE.md",
       "source_location": "L234",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "syncdata_claude_arquivos_de_atividades",
-      "target": "syncdata_claude_vers\u00f5es_impressas_pdf",
+      "target": "syncdata_claude_vers\u00f5es_impressas_pdf"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_05_pasta_de_substitui\u00e7\u00f5es",
+      "target": "syncdata_claude_arquivo_obrigat\u00f3rio_263",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L308",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_05_pasta_de_substitui\u00e7\u00f5es",
+      "target": "syncdata_claude_checklist_de_conformidade_308",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_05_pasta_de_substitui\u00e7\u00f5es",
+      "target": "syncdata_claude_pasta_obrigat\u00f3ria_260",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L315",
+      "weight": 1.0,
+      "source": "syncdata_claude_regra_05_pasta_de_substitui\u00e7\u00f5es",
+      "target": "syncdata_claude_prioridade_315",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "syncdata_claude_arquivo_obrigat\u00f3rio_263",
+      "target": "syncdata_claude_conte\u00fado_do_arquivo_claude_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "syncdata/CLAUDE.md",
+      "source_location": "L285",
+      "weight": 1.0,
+      "source": "syncdata_claude_arquivo_obrigat\u00f3rio_263",
+      "target": "syncdata_claude_exemplo_de_estrutura",
       "confidence_score": 1.0
     },
     {
@@ -98702,5 +98873,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5ac72559878dfb7c426e6476f99febf36c1849c4"
+  "built_at_commit": "e2d804b8c810216faa3d6ac34869ab3ef75bcfc3"
 }

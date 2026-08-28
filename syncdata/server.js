@@ -20,7 +20,9 @@ const fs = require('fs').promises;
 const { scanearAulas } = require('./src/scan-aulas');
 const { gerarPendencias, salvarPendencias } = require('./src/generate-pendencias');
 const { garantirDiretorio, salvarJSON, carregarJSON } = require('./src/utils');
-const { EMOJIS } = require('./src/constants');
+const { EMOJIS, SISTEMA_DIR: SISTEMA_DIR_CONST } = require('./src/constants');
+const { verificarTodasUCs } = require('./src/verify-uc');
+const fsSync = require('fs');
 
 // Configuração
 const PROJETO_ROOT = path.resolve(__dirname, '../..');
@@ -32,8 +34,72 @@ const PORT = process.env.PORT || 3333;
 let cache = {
   aulas: null,
   pendencias: null,
+  relatorio: null,
   ultimaAtualizacao: null
 };
+
+/**
+ * Gera relatório de verificação de pastas/UCs
+ */
+async function gerarRelatorioSincronizacao() {
+  try {
+    console.log(`${EMOJIS.RELATORIO} Gerando relatório de sincronização...`);
+
+    // Ler diretório sistema
+    const itens = await fs.readdir(SISTEMA_DIR, { withFileTypes: true });
+    const ucsArray = itens
+      .filter(item => item.isDirectory() && !['PROFESSOR', '.claude', 'graphify-out', 'scripts', 'syncdata'].includes(item.name))
+      .map(item => ({
+        nome: item.name.toUpperCase().replace(/_/g, ' '),
+        caminho: path.join(SISTEMA_DIR, item.name)
+      }));
+
+    // Verificar todas as UCs
+    const verificacao = await verificarTodasUCs(ucsArray);
+
+    // Preparar dados para o relatório
+    const relatorio = {
+      timestamp: new Date().toISOString(),
+      resumo: verificacao.resumo,
+      ucs: verificacao.resultados.map(resultado => ({
+        nome: resultado.uc,
+        caminho: resultado.caminho,
+        estrutura: resultado.estrutura,
+        horas_aula: resultado.horas_aula,
+        atividades_esperadas: resultado.atividades_esperadas,
+        atividades_encontradas: resultado.atividades_encontradas,
+        pendencias: resultado.pendencias.length,
+        detalhes_pendencias: resultado.pendencias
+      }))
+    };
+
+    // Salvar como JSON
+    const caminhoRelatorio = path.join(DATA_DIR, 'relatorio-pastas.json');
+    await garantirDiretorio(DATA_DIR);
+    await salvarJSON(caminhoRelatorio, relatorio);
+
+    // Salvar como arquivo .js exportável
+    const caminhoRelatorioJS = path.join(DATA_DIR, 'relatorio-pastas.js');
+    const conteudoJS = `// Relatório de sincronização - Gerado em ${new Date().toLocaleString('pt-BR')}
+// Arquivo gerado automaticamente pela API SYNCDATA
+
+const RELATORIO_SINCRONIZACAO = ${JSON.stringify(relatorio, null, 2)};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = RELATORIO_SINCRONIZACAO;
+}
+`;
+    await fs.writeFile(caminhoRelatorioJS, conteudoJS, 'utf-8');
+
+    cache.relatorio = relatorio;
+
+    console.log(`${EMOJIS.SUCESSO} Relatório gerado com sucesso`);
+    return relatorio;
+  } catch (erro) {
+    console.error(`${EMOJIS.ERRO} Erro ao gerar relatório:`, erro.message);
+    throw erro;
+  }
+}
 
 // Criar aplicação Express
 const app = express();
@@ -91,6 +157,9 @@ app.post('/api/sync', async (req, res) => {
     cache.pendencias = pendencias;
 
     console.log(`${EMOJIS.SUCESSO} ${pendencias.length} pendências identificadas`);
+
+    // Gerar relatório de sincronização
+    const relatorio = await gerarRelatorioSincronizacao();
 
     // Salvar cache
     await garantirDiretorio(DATA_DIR);
@@ -217,6 +286,37 @@ app.get('/api/resumo', async (req, res) => {
 });
 
 /**
+ * GET /api/relatorio
+ * Retorna relatório completo de sincronização de pastas/UCs
+ */
+app.get('/api/relatorio', async (req, res) => {
+  try {
+    if (!cache.relatorio) {
+      const relatorio = await carregarJSON(path.join(DATA_DIR, 'relatorio-pastas.json'));
+      cache.relatorio = relatorio || null;
+    }
+
+    if (!cache.relatorio) {
+      return res.status(404).json({
+        sucesso: false,
+        erro: 'Relatório não encontrado. Execute /api/sync primeiro.'
+      });
+    }
+
+    res.json({
+      sucesso: true,
+      relatorio: cache.relatorio
+    });
+  } catch (erro) {
+    console.error(`${EMOJIS.ERRO} Erro ao carregar relatório:`, erro.message);
+    res.status(500).json({
+      sucesso: false,
+      erro: erro.message
+    });
+  }
+});
+
+/**
  * Health check
  */
 app.get('/health', (req, res) => {
@@ -258,6 +358,7 @@ async function iniciar() {
 📋 Aulas: http://localhost:${PORT}/api/aulas
 📋 Pendências: http://localhost:${PORT}/api/pendencias
 📊 Resumo: http://localhost:${PORT}/api/resumo
+📄 Relatório: http://localhost:${PORT}/api/relatorio
 
 ⏹️  Para parar: CTRL+C
 `);

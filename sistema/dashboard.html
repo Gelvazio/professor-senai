@@ -1696,6 +1696,7 @@
       <span class="role-badge" id="roleBadge"></span>
       <button id="btnDidatica" onclick="abrirDidatica()" class="header-btn" style="display:none; margin-left:8px">🎓 Didática</button>
       <button id="btnAtualizar" onclick="atualizarArquivos()" class="header-btn" style="display:none; margin-left:8px" title="Sincronizar aulas e pendências">🔄 Atualizar Arquivos</button>
+      <button id="btnRelatorioSync" onclick="abrirRelatorioSync()" class="header-btn" style="display:none; margin-left:8px" title="Visualizar relatório de sincronização">📊 Relatório SYNC</button>
       <button onclick="toggleTema()" class="header-btn" id="btnTema" style="margin-left: 8px; min-width: 96px">🌙 Escuro</button>
       <button onclick="sair()" class="header-btn" style="margin-left: 4px">
         🚪 Sair
@@ -2070,12 +2071,52 @@
       </div>
     </div>
 
+    <!-- ── Modal Relatório SYNC ──────────────────── -->
+    <div class="relatorio-backdrop" id="relatorioBd" style="display:none">
+      <div class="relatorio-modal">
+        <div class="relatorio-head">
+          <h3>📊 Relatório SYNC — Sincronização de Pastas</h3>
+          <button class="crud-btn-fechar" onclick="fecharRelatorioSync()">✕</button>
+        </div>
+
+        <div class="relatorio-body" id="relatorioBody">
+          <div style="padding:20px; text-align:center; color:#999;">
+            ⏳ Carregando relatório...
+          </div>
+        </div>
+
+        <div class="relatorio-footer">
+          <button class="header-btn" onclick="atualizarRelatorioSync()" style="margin-right:8px">
+            🔄 Atualizar Pastas
+          </button>
+          <button class="header-btn" onclick="fecharRelatorioSync()">
+            ✕ Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+
     <style>
       .sync-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.7); z-index:3100; display:flex; align-items:center; justify-content:center; padding:12px; }
       .sync-modal { background:#fff; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.3); max-width:500px; width:100%; max-height:600px; display:flex; flex-direction:column; }
       .sync-head { padding:20px; border-bottom:1px solid #e0e0e0; }
       .sync-head h3 { font-size:18px; font-weight:700; margin:0; color:#004384; }
       .sync-subtitle { font-size:12px; color:#999; margin:4px 0 0; }
+
+      .relatorio-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.7); z-index:3100; display:flex; align-items:center; justify-content:center; padding:12px; }
+      .relatorio-modal { background:#fff; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.3); max-width:800px; width:100%; max-height:80vh; display:flex; flex-direction:column; }
+      .relatorio-head { padding:20px; border-bottom:1px solid #e0e0e0; }
+      .relatorio-head h3 { font-size:18px; font-weight:700; margin:0; color:#004384; }
+      .relatorio-body { flex:1; overflow-y:auto; padding:20px; }
+      .relatorio-footer { padding:12px 20px; border-top:1px solid #e0e0e0; text-align:right; display:flex; gap:8px; justify-content:flex-end; }
+
+      @media (prefers-color-scheme: dark) {
+        .relatorio-modal { background:#1e1e1e; }
+        .relatorio-head { border-bottom-color:#333; }
+        .relatorio-head h3 { color:#64b5f6; }
+        .relatorio-body { color:#e0e0e0; }
+        .relatorio-footer { border-top-color:#333; }
+      }
       .sync-progress-container { padding:20px; border-bottom:1px solid #e0e0e0; }
       .sync-progress-bar { height:8px; background:#e0e0e0; border-radius:4px; overflow:hidden; margin-bottom:8px; }
       .sync-progress-fill { height:100%; background:linear-gradient(90deg, #0055b3, #004384); transition:width 0.3s ease; border-radius:4px; }
@@ -2792,6 +2833,8 @@
         if (btnDid) btnDid.style.display = 'inline-block';
         const btnAtualizarArquivos = document.getElementById('btnAtualizar');
         if (btnAtualizarArquivos) btnAtualizarArquivos.style.display = 'inline-block';
+        const btnRelatorioSync = document.getElementById('btnRelatorioSync');
+        if (btnRelatorioSync) btnRelatorioSync.style.display = 'inline-block';
       }
 
       // Botão de tema — sincroniza texto com estado atual
@@ -6047,7 +6090,152 @@
             if (e.target === this) fecharSyncModal();
           });
         }
+        const relatorioBd = document.getElementById('relatorioBd');
+        if (relatorioBd) {
+          relatorioBd.addEventListener('click', function(e) {
+            if (e.target === this) fecharRelatorioSync();
+          });
+        }
       });
+
+      // ── Relatório SYNC ──
+      async function abrirRelatorioSync() {
+        const modal = document.getElementById('relatorioBd');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        await carregarRelatorioSync();
+      }
+
+      function fecharRelatorioSync() {
+        const modal = document.getElementById('relatorioBd');
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+
+      async function carregarRelatorioSync() {
+        const body = document.getElementById('relatorioBody');
+        body.innerHTML = '<div style="padding:20px; text-align:center; color:#999;">⏳ Carregando relatório...</div>';
+
+        try {
+          const response = await fetch('http://localhost:3333/api/relatorio', {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'omit'
+          });
+
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const resultado = await response.json();
+
+          if (resultado.sucesso && resultado.relatorio) {
+            const rel = resultado.relatorio;
+            const dataAtual = new Date(rel.timestamp).toLocaleString('pt-BR');
+
+            let html = `
+              <div class="relatorio-container">
+                <div class="relatorio-info">
+                  <p><strong>Gerado em:</strong> ${dataAtual}</p>
+                  <p><strong>Total de UCs:</strong> ${rel.resumo.total_ucs}</p>
+                  <p><strong>UCs Completas:</strong> ${rel.resumo.ucs_completas} ✅</p>
+                  <p><strong>UCs Incompletas:</strong> ${rel.resumo.ucs_incompletas} ⚠️</p>
+                  <p><strong>Total de Pendências:</strong> ${rel.resumo.total_pendencias}</p>
+                </div>
+
+                <div class="relatorio-detalhes">
+                  <h4>📚 Detalhes por UC</h4>
+            `;
+
+            rel.ucs.forEach(uc => {
+              const status = uc.pendencias === 0 ? '✅' : '⚠️';
+              const horasInfo = uc.horas_aula ? ` (${uc.horas_aula}h)` : '';
+              const ativInfo = uc.atividades_esperadas > 0 ? ` - Atividades: ${uc.atividades_encontradas}/${uc.atividades_esperadas}` : '';
+
+              html += `
+                <div class="relatorio-uc">
+                  <div class="uc-nome">${status} ${uc.nome}${horasInfo}${ativInfo}</div>
+                  ${uc.pendencias > 0 ? `<div class="uc-pendencias">${uc.pendencias} pendência(s)</div>` : '<div class="uc-ok">Estrutura completa</div>'}
+                </div>
+              `;
+            });
+
+            html += `
+                </div>
+              </div>
+            `;
+
+            body.innerHTML = html;
+          } else {
+            throw new Error(resultado.erro || 'Relatório não disponível');
+          }
+        } catch (erro) {
+          console.error('❌ Erro ao carregar relatório:', erro.message);
+          body.innerHTML = `
+            <div style="padding:20px;">
+              <p style="color:#dc3545;"><strong>❌ Erro ao carregar relatório</strong></p>
+              <p style="color:#999; font-size:12px;">${erro.message}</p>
+              <p style="color:#999; font-size:12px;">Verifique se o servidor SYNCDATA está rodando em http://localhost:3333</p>
+            </div>
+          `;
+        }
+      }
+
+      async function atualizarRelatorioSync() {
+        const btn = event.target;
+        btn.disabled = true;
+        btn.textContent = '⏳ Atualizando...';
+
+        try {
+          const response = await fetch('http://localhost:3333/api/sync', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'omit'
+          });
+
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const resultado = await response.json();
+
+          if (resultado.sucesso) {
+            btn.textContent = '✅ Atualizado!';
+            setTimeout(() => {
+              btn.textContent = '🔄 Atualizar Pastas';
+              btn.disabled = false;
+              carregarRelatorioSync();
+            }, 1000);
+          } else {
+            throw new Error(resultado.erro || 'Erro na sincronização');
+          }
+        } catch (erro) {
+          console.error('❌ Erro na atualização:', erro.message);
+          btn.textContent = '❌ Erro';
+          setTimeout(() => {
+            btn.textContent = '🔄 Atualizar Pastas';
+            btn.disabled = false;
+          }, 2000);
+        }
+      }
+
+      <style>
+        .relatorio-container { padding:12px; }
+        .relatorio-info { background:#f5f5f5; padding:12px; border-radius:8px; margin-bottom:16px; font-size:13px; }
+        .relatorio-info p { margin:6px 0; }
+        .relatorio-info strong { color:#004384; }
+        .relatorio-detalhes h4 { margin:0 0 12px; color:#004384; font-size:14px; }
+        .relatorio-uc { background:#fafafa; padding:12px; border-left:3px solid #004384; margin-bottom:8px; border-radius:4px; }
+        .uc-nome { font-weight:600; font-size:13px; margin-bottom:4px; }
+        .uc-pendencias { font-size:12px; color:#dc3545; }
+        .uc-ok { font-size:12px; color:#28a745; }
+        @media (prefers-color-scheme: dark) {
+          .relatorio-info { background:#2a2a2a; color:#e0e0e0; }
+          .relatorio-info strong { color:#64b5f6; }
+          .relatorio-detalhes h4 { color:#64b5f6; }
+          .relatorio-uc { background:#1f1f1f; border-left-color:#64b5f6; color:#e0e0e0; }
+        }
+      </style>
 
       function didMudarTab(id, btn) {
         document.querySelectorAll('.did-tab').forEach(function(t){ t.classList.remove('ativo'); });
