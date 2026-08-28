@@ -1695,6 +1695,7 @@
       <span class="header-spacer"></span>
       <span class="role-badge" id="roleBadge"></span>
       <button id="btnDidatica" onclick="abrirDidatica()" class="header-btn" style="display:none; margin-left:8px">🎓 Didática</button>
+      <button id="btnAtualizar" onclick="atualizarArquivos()" class="header-btn" style="display:none; margin-left:8px" title="Sincronizar aulas e pendências">🔄 Atualizar Arquivos</button>
       <button onclick="toggleTema()" class="header-btn" id="btnTema" style="margin-left: 8px; min-width: 96px">🌙 Escuro</button>
       <button onclick="sair()" class="header-btn" style="margin-left: 4px">
         🚪 Sair
@@ -2732,6 +2733,8 @@
       if (isProfessor) {
         const btnDid = document.getElementById('btnDidatica');
         if (btnDid) btnDid.style.display = 'inline-block';
+        const btnAtualizarArquivos = document.getElementById('btnAtualizar');
+        if (btnAtualizarArquivos) btnAtualizarArquivos.style.display = 'inline-block';
       }
 
       // Botão de tema — sincroniza texto com estado atual
@@ -5883,6 +5886,50 @@
       function fecharDidatica() {
         document.getElementById('didBd').style.display = 'none';
         document.body.style.overflow = '';
+      }
+
+      // ── Atualizar Arquivos via SYNCDATA ──
+      async function atualizarArquivos() {
+        const btn = document.getElementById('btnAtualizar');
+        const textOriginal = btn.innerHTML;
+
+        try {
+          btn.disabled = true;
+          btn.innerHTML = '⏳ Sincronizando...';
+
+          const response = await fetch('http://localhost:3333/api/sync', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'omit'
+          });
+
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const resultado = await response.json();
+
+          if (resultado.sucesso) {
+            btn.innerHTML = '✅ Sincronizado!';
+            console.log(`📊 Sincronização concluída: ${resultado.dados.totalAulas} aulas, ${resultado.dados.totalPendencias} pendências`);
+
+            // Recarregar página após 2 segundos
+            setTimeout(() => {
+              location.reload();
+            }, 2000);
+          } else {
+            throw new Error(resultado.erro || 'Erro desconhecido');
+          }
+        } catch (erro) {
+          console.error('❌ Erro na sincronização:', erro.message);
+          btn.innerHTML = '❌ Erro!';
+          alert(`Erro ao atualizar arquivos:\n${erro.message}\n\nCertifique-se que o servidor SYNCDATA está rodando em http://localhost:3333`);
+        } finally {
+          btn.disabled = false;
+          setTimeout(() => {
+            btn.innerHTML = textOriginal;
+          }, 3000);
+        }
       }
 
       function didMudarTab(id, btn) {
