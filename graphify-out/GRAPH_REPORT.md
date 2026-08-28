@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-28)
 
 ## Corpus Check
-- 332 files · ~1,303,996 words
+- 333 files · ~1,304,061 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5112 nodes · 5120 edges · 515 communities (476 shown, 39 thin omitted)
+- 5113 nodes · 5120 edges · 516 communities (477 shown, 39 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e01f6587`
+- Built from commit: `884c46e0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -505,7 +505,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (515 total, 39 thin omitted)
+## Communities (516 total, 39 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -2212,9 +2212,9 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ENCONTROS` connect `Community 153` to `Community 192`, `Community 193`, `Community 194`, `Community 200`, `Community 201`, `Community 202`, `Community 203`, `Community 204`, `Community 205`, `Community 176`, `Community 177`, `Community 178`, `Community 179`, `Community 180`, `Community 189`, `Community 190`, `Community 191`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `MÓDULO 2 — FRAÇÕES, DECIMAIS E PORCENTAGEM` connect `Community 349` to `Community 397`, `Community 334`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **Why does `FUNDAMENTOS DA TECNOLOGIA E PROGRAMAÇÃO` connect `Community 159` to `Community 196`, `Community 206`, `Community 207`, `Community 208`, `Community 209`, `Community 210`, `Community 211`, `Community 212`, `Community 213`, `Community 214`, `Community 215`, `Community 216`, `Community 217`, `Community 218`, `Community 219`, `Community 220`, `Community 221`, `Community 222`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
+- **Why does `MÓDULO 2 — FRAÇÕES, DECIMAIS E PORCENTAGEM` connect `Community 349` to `Community 397`, `Community 334`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
   _3666 weakly-connected nodes found - possible documentation gaps or missing edges._

@@ -6170,11 +6170,14 @@
               const status = uc.pendencias === 0 ? '✅' : '⚠️';
               const horasInfo = uc.horas_aula ? ` (${uc.horas_aula}h)` : '';
               const ativInfo = uc.atividades_esperadas > 0 ? ` - Atividades: ${uc.atividades_encontradas}/${uc.atividades_esperadas}` : '';
+              const pendenciaDiv = uc.pendencias > 0
+                ? `<div class="uc-pendencias">${uc.pendencias} pendência(s)</div>`
+                : '<div class="uc-ok">Estrutura completa</div>';
 
               html += `
                 <div class="relatorio-uc">
                   <div class="uc-nome">${status} ${uc.nome}${horasInfo}${ativInfo}</div>
-                  ${uc.pendencias > 0 ? `<div class="uc-pendencias">${uc.pendencias} pendência(s)</div>` : '<div class="uc-ok">Estrutura completa</div>'}
+                  ${pendenciaDiv}
                 </div>
               `;
             });

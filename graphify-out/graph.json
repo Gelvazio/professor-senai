@@ -3004,6 +3004,16 @@
       "norm_label": "exibirresumopendencias()"
     },
     {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "syncdata/index.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "syncdata_index",
+      "community": 342,
+      "norm_label": "index.js"
+    },
+    {
       "label": "package.json",
       "file_type": "code",
       "source_file": "syncdata/package.json",
@@ -57774,9 +57784,9 @@
       "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_verify_uc",
-      "target": "src_constants_padroes_uc_claude",
-      "confidence_score": 1.0
+      "target": "src_constants_padroes_uc_claude"
     },
     {
       "relation": "contains",
@@ -58141,9 +58151,9 @@
       "source_file": "syncdata/src/verify-uc.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_verify_uc",
-      "target": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides_padroes_atividades_padroes_substituicoes_padroes_uc_claude",
-      "confidence_score": 1.0
+      "target": "src_verify_uc_estrutura_uc_obrigatoria_padroes_arquivos_uc_padroes_gerar_slides_padroes_atividades_padroes_substituicoes_padroes_uc_claude"
     },
     {
       "relation": "contains",
@@ -96114,9 +96124,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude",
-      "target": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens"
     },
     {
       "relation": "contains",
@@ -96124,9 +96134,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_10_arquivo_word_texto_reforco_25_08_2026_docx",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_10_arquivo_word_texto_reforco_25_08_2026_docx"
     },
     {
       "relation": "contains",
@@ -96134,9 +96144,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_11_script_de_gera\u00e7\u00e3o_gerar_slides_js",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_11_script_de_gera\u00e7\u00e3o_gerar_slides_js"
     },
     {
       "relation": "contains",
@@ -96144,9 +96154,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_12_como_trabalhar_com_esta_pasta",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_12_como_trabalhar_com_esta_pasta"
     },
     {
       "relation": "contains",
@@ -96154,9 +96164,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_13_textos_de_refor\u00e7o_regra_obrigat\u00f3ria",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_13_textos_de_refor\u00e7o_regra_obrigat\u00f3ria"
     },
     {
       "relation": "contains",
@@ -96164,9 +96174,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L286",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_14_checklist_de_conformidade",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_14_checklist_de_conformidade"
     },
     {
       "relation": "contains",
@@ -96174,9 +96184,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L302",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_14_informa\u00e7\u00f5es_do_programa",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_14_informa\u00e7\u00f5es_do_programa"
     },
     {
       "relation": "contains",
@@ -96184,9 +96194,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L317",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_15_refer\u00eancias_r\u00e1pidas",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_15_refer\u00eancias_r\u00e1pidas"
     },
     {
       "relation": "contains",
@@ -96194,9 +96204,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_1_o_que_\u00e9_esta_pasta",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_1_o_que_\u00e9_esta_pasta"
     },
     {
       "relation": "contains",
@@ -96204,9 +96214,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_2_arquivos_na_pasta",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_2_arquivos_na_pasta"
     },
     {
       "relation": "contains",
@@ -96214,9 +96224,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_3_identifica\u00e7\u00e3o_da_uc",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_3_identifica\u00e7\u00e3o_da_uc"
     },
     {
       "relation": "contains",
@@ -96224,9 +96234,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_4_objetivo_da_uc",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_4_objetivo_da_uc"
     },
     {
       "relation": "contains",
@@ -96234,9 +96244,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_5_estrutura_de_m\u00f3dulos",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_5_estrutura_de_m\u00f3dulos"
     },
     {
       "relation": "contains",
@@ -96244,9 +96254,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_6_capacidades",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_6_capacidades"
     },
     {
       "relation": "contains",
@@ -96254,9 +96264,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_7_conhecimentos",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_7_conhecimentos"
     },
     {
       "relation": "contains",
@@ -96264,9 +96274,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_8_sobre_a_apostila_apostila_reforco_linguagens_md",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_8_sobre_a_apostila_apostila_reforco_linguagens_md"
     },
     {
       "relation": "contains",
@@ -96274,9 +96284,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_claude_md_pasta_reforco_linguagens",
-      "target": "reforco_linguagens_claude_9_sobre_os_slides_slides_reforco_linguagens_pptx",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_9_sobre_os_slides_slides_reforco_linguagens_pptx"
     },
     {
       "relation": "contains",
@@ -96284,9 +96294,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_6_capacidades",
-      "target": "reforco_linguagens_claude_b\u00e1sicas",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_b\u00e1sicas"
     },
     {
       "relation": "contains",
@@ -96294,9 +96304,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_8_sobre_a_apostila_apostila_reforco_linguagens_md",
-      "target": "reforco_linguagens_claude_estrutura",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_estrutura"
     },
     {
       "relation": "contains",
@@ -96304,9 +96314,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_8_sobre_a_apostila_apostila_reforco_linguagens_md",
-      "target": "reforco_linguagens_claude_p\u00fablico_alvo",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_p\u00fablico_alvo"
     },
     {
       "relation": "contains",
@@ -96314,9 +96324,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_9_sobre_os_slides_slides_reforco_linguagens_pptx",
-      "target": "reforco_linguagens_claude_estrutura_de_slides",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_estrutura_de_slides"
     },
     {
       "relation": "contains",
@@ -96324,9 +96334,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_9_sobre_os_slides_slides_reforco_linguagens_pptx",
-      "target": "reforco_linguagens_claude_gera\u00e7\u00e3o_autom\u00e1tica",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_gera\u00e7\u00e3o_autom\u00e1tica"
     },
     {
       "relation": "contains",
@@ -96334,9 +96344,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_9_sobre_os_slides_slides_reforco_linguagens_pptx",
-      "target": "reforco_linguagens_claude_paleta_de_cores",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_paleta_de_cores"
     },
     {
       "relation": "contains",
@@ -96344,9 +96354,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_11_script_de_gera\u00e7\u00e3o_gerar_slides_js",
-      "target": "reforco_linguagens_claude_depend\u00eancias",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_depend\u00eancias"
     },
     {
       "relation": "contains",
@@ -96354,9 +96364,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_11_script_de_gera\u00e7\u00e3o_gerar_slides_js",
-      "target": "reforco_linguagens_claude_funcionalidades_principais",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_funcionalidades_principais"
     },
     {
       "relation": "contains",
@@ -96364,9 +96374,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_11_script_de_gera\u00e7\u00e3o_gerar_slides_js",
-      "target": "reforco_linguagens_claude_objetivo",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_objetivo"
     },
     {
       "relation": "contains",
@@ -96374,9 +96384,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_11_script_de_gera\u00e7\u00e3o_gerar_slides_js",
-      "target": "reforco_linguagens_claude_uso",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_uso"
     },
     {
       "relation": "contains",
@@ -96384,9 +96394,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L194",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_12_como_trabalhar_com_esta_pasta",
-      "target": "reforco_linguagens_claude_adicionar_material_complementar",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_adicionar_material_complementar"
     },
     {
       "relation": "contains",
@@ -96394,9 +96404,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_12_como_trabalhar_com_esta_pasta",
-      "target": "reforco_linguagens_claude_adicionar_um_novo_encontro_\u00e0_apostila",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_adicionar_um_novo_encontro_\u00e0_apostila"
     },
     {
       "relation": "contains",
@@ -96404,9 +96414,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_12_como_trabalhar_com_esta_pasta",
-      "target": "reforco_linguagens_claude_atualizar_a_ementa",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_atualizar_a_ementa"
     },
     {
       "relation": "contains",
@@ -96414,9 +96424,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_12_como_trabalhar_com_esta_pasta",
-      "target": "reforco_linguagens_claude_regenerar_os_slides",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_regenerar_os_slides"
     },
     {
       "relation": "contains",
@@ -96424,9 +96434,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L222",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_13_textos_de_refor\u00e7o_regra_obrigat\u00f3ria",
-      "target": "reforco_linguagens_claude_crit\u00e9rios_de_conformidade",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_crit\u00e9rios_de_conformidade"
     },
     {
       "relation": "contains",
@@ -96434,9 +96444,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_13_textos_de_refor\u00e7o_regra_obrigat\u00f3ria",
-      "target": "reforco_linguagens_claude_defini\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_defini\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -96444,9 +96454,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L269",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_13_textos_de_refor\u00e7o_regra_obrigat\u00f3ria",
-      "target": "reforco_linguagens_claude_fluxo_de_cria\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_fluxo_de_cria\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -96454,9 +96464,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L210",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_13_textos_de_refor\u00e7o_regra_obrigat\u00f3ria",
-      "target": "reforco_linguagens_claude_quantidade_obrigat\u00f3ria",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_quantidade_obrigat\u00f3ria"
     },
     {
       "relation": "contains",
@@ -96464,9 +96474,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L276",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_13_textos_de_refor\u00e7o_regra_obrigat\u00f3ria",
-      "target": "reforco_linguagens_claude_status_de_implementa\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_status_de_implementa\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -96474,9 +96484,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L247",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_13_textos_de_refor\u00e7o_regra_obrigat\u00f3ria",
-      "target": "reforco_linguagens_claude_temas_sugeridos_por_m\u00f3dulo",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_temas_sugeridos_por_m\u00f3dulo"
     },
     {
       "relation": "contains",
@@ -96484,9 +96494,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L249",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_temas_sugeridos_por_m\u00f3dulo",
-      "target": "reforco_linguagens_claude_m\u00f3dulo_1_leitura_e_compreens\u00e3o_textual",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_m\u00f3dulo_1_leitura_e_compreens\u00e3o_textual"
     },
     {
       "relation": "contains",
@@ -96494,9 +96504,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L253",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_temas_sugeridos_por_m\u00f3dulo",
-      "target": "reforco_linguagens_claude_m\u00f3dulo_2_produ\u00e7\u00e3o_textual",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_m\u00f3dulo_2_produ\u00e7\u00e3o_textual"
     },
     {
       "relation": "contains",
@@ -96504,9 +96514,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_temas_sugeridos_por_m\u00f3dulo",
-      "target": "reforco_linguagens_claude_m\u00f3dulo_3_gram\u00e1tica_aplicada",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_m\u00f3dulo_3_gram\u00e1tica_aplicada"
     },
     {
       "relation": "contains",
@@ -96514,9 +96524,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L261",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_temas_sugeridos_por_m\u00f3dulo",
-      "target": "reforco_linguagens_claude_m\u00f3dulo_4_comunica\u00e7\u00e3o_oral",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_m\u00f3dulo_4_comunica\u00e7\u00e3o_oral"
     },
     {
       "relation": "contains",
@@ -96524,9 +96534,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L265",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_temas_sugeridos_por_m\u00f3dulo",
-      "target": "reforco_linguagens_claude_m\u00f3dulo_5_autonomia_e_estrat\u00e9gias_de_estudo",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_m\u00f3dulo_5_autonomia_e_estrat\u00e9gias_de_estudo"
     },
     {
       "relation": "contains",
@@ -96534,9 +96544,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L288",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_14_checklist_de_conformidade",
-      "target": "reforco_linguagens_claude_obrigat\u00f3rio",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_obrigat\u00f3rio"
     },
     {
       "relation": "contains",
@@ -96544,9 +96554,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L296",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_14_checklist_de_conformidade",
-      "target": "reforco_linguagens_claude_para_valida\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_para_valida\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -96554,9 +96564,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L319",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_15_refer\u00eancias_r\u00e1pidas",
-      "target": "reforco_linguagens_claude_arquivos_relacionados_fora_desta_pasta",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_arquivos_relacionados_fora_desta_pasta"
     },
     {
       "relation": "contains",
@@ -96564,9 +96574,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/CLAUDE.md",
       "source_location": "L324",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_claude_15_refer\u00eancias_r\u00e1pidas",
-      "target": "reforco_linguagens_claude_contato_suporte",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_claude_contato_suporte"
     },
     {
       "relation": "contains",
@@ -96644,9 +96654,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul"
     },
     {
       "relation": "contains",
@@ -96654,9 +96664,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1"
     },
     {
       "relation": "contains",
@@ -96664,9 +96674,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_atividades_de_compreens\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_atividades_de_compreens\u00e3o"
     },
     {
       "relation": "contains",
@@ -96674,9 +96684,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_como_ler_com_cr\u00edtica_nas_redes_sociais",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_como_ler_com_cr\u00edtica_nas_redes_sociais"
     },
     {
       "relation": "contains",
@@ -96684,9 +96694,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_exemplo_dois_textos_uma_not\u00edcia",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_exemplo_dois_textos_uma_not\u00edcia"
     },
     {
       "relation": "contains",
@@ -96694,9 +96704,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_gabarito",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_gabarito"
     },
     {
       "relation": "contains",
@@ -96704,9 +96714,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_gloss\u00e1rio",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_gloss\u00e1rio"
     },
     {
       "relation": "contains",
@@ -96714,9 +96724,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_leitura_e_compreens\u00e3o_textual",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_leitura_e_compreens\u00e3o_textual"
     },
     {
       "relation": "contains",
@@ -96724,9 +96734,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_o_que_\u00e9_leitura_cr\u00edtica",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_o_que_\u00e9_leitura_cr\u00edtica"
     },
     {
       "relation": "contains",
@@ -96734,9 +96744,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_para_pensar_ainda_mais",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_para_pensar_ainda_mais"
     },
     {
       "relation": "contains",
@@ -96744,9 +96754,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_de_refor\u00e7o_m\u00f3dulo_1",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_texto_principal",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_texto_principal"
     },
     {
       "relation": "contains",
@@ -96754,9 +96764,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_leitura_e_compreens\u00e3o_textual",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_redes_sociais_e_leitura_cr\u00edtica",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_redes_sociais_e_leitura_cr\u00edtica"
     },
     {
       "relation": "contains",
@@ -96764,9 +96774,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_texto_principal",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_o_texto_que_conquistou_minha_amiga",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_o_texto_que_conquistou_minha_amiga"
     },
     {
       "relation": "contains",
@@ -96774,9 +96784,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_1_verdadeiro_ou_falso",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_1_verdadeiro_ou_falso"
     },
     {
       "relation": "contains",
@@ -96784,9 +96794,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_2_m\u00faltipla_escolha",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_2_m\u00faltipla_escolha"
     },
     {
       "relation": "contains",
@@ -96794,9 +96804,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_3_resposta_breve",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_3_resposta_breve"
     },
     {
       "relation": "contains",
@@ -96804,9 +96814,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_1",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_1"
     },
     {
       "relation": "contains",
@@ -96814,9 +96824,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_2",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_2"
     },
     {
       "relation": "contains",
@@ -96824,9 +96834,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-01.md",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_01_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_3",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_01_atividade_3"
     },
     {
       "relation": "contains",
@@ -96834,9 +96844,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul"
     },
     {
       "relation": "contains",
@@ -96844,9 +96854,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2"
     },
     {
       "relation": "contains",
@@ -96854,9 +96864,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_atividades_de_compreens\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_atividades_de_compreens\u00e3o"
     },
     {
       "relation": "contains",
@@ -96864,9 +96874,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_desafio_extra",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_desafio_extra"
     },
     {
       "relation": "contains",
@@ -96874,9 +96884,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_dica_final",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_dica_final"
     },
     {
       "relation": "contains",
@@ -96884,9 +96894,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_estrutura_de_um_email_profissional",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_estrutura_de_um_email_profissional"
     },
     {
       "relation": "contains",
@@ -96894,9 +96904,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_gabarito",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_gabarito"
     },
     {
       "relation": "contains",
@@ -96904,9 +96914,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_gloss\u00e1rio",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_gloss\u00e1rio"
     },
     {
       "relation": "contains",
@@ -96914,9 +96924,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_o_que_nunca_fazer_em_email_profissional",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_o_que_nunca_fazer_em_email_profissional"
     },
     {
       "relation": "contains",
@@ -96924,9 +96934,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_produ\u00e7\u00e3o_textual",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_produ\u00e7\u00e3o_textual"
     },
     {
       "relation": "contains",
@@ -96934,9 +96944,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_de_refor\u00e7o_m\u00f3dulo_2",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_texto_principal",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_texto_principal"
     },
     {
       "relation": "contains",
@@ -96944,9 +96954,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_produ\u00e7\u00e3o_textual",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_como_escrever_um_email_profissional",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_como_escrever_um_email_profissional"
     },
     {
       "relation": "contains",
@@ -96954,9 +96964,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_texto_principal",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_o_email_que_conquistou_a_oportunidade",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_o_email_que_conquistou_a_oportunidade"
     },
     {
       "relation": "contains",
@@ -96964,9 +96974,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_estrutura_de_um_email_profissional",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_1_assunto",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_1_assunto"
     },
     {
       "relation": "contains",
@@ -96974,9 +96984,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_estrutura_de_um_email_profissional",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_2_sauda\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_2_sauda\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -96984,9 +96994,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_estrutura_de_um_email_profissional",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_3_abertura_1o_par\u00e1grafo",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_3_abertura_1o_par\u00e1grafo"
     },
     {
       "relation": "contains",
@@ -96994,9 +97004,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_estrutura_de_um_email_profissional",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_4_corpo_2o_par\u00e1grafo",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_4_corpo_2o_par\u00e1grafo"
     },
     {
       "relation": "contains",
@@ -97004,9 +97014,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_estrutura_de_um_email_profissional",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_5_encerramento",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_5_encerramento"
     },
     {
       "relation": "contains",
@@ -97014,9 +97024,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_estrutura_de_um_email_profissional",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_6_assinatura",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_6_assinatura"
     },
     {
       "relation": "contains",
@@ -97024,9 +97034,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_1_verdadeiro_ou_falso",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_1_verdadeiro_ou_falso"
     },
     {
       "relation": "contains",
@@ -97034,9 +97044,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_2_m\u00faltipla_escolha",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_2_m\u00faltipla_escolha"
     },
     {
       "relation": "contains",
@@ -97044,9 +97054,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_3_resposta_breve",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_3_resposta_breve"
     },
     {
       "relation": "contains",
@@ -97054,9 +97064,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_1",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_1"
     },
     {
       "relation": "contains",
@@ -97064,9 +97074,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_2",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_2"
     },
     {
       "relation": "contains",
@@ -97074,9 +97084,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-02.md",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_02_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_3",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_02_atividade_3"
     },
     {
       "relation": "contains",
@@ -97084,9 +97094,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul"
     },
     {
       "relation": "contains",
@@ -97094,9 +97104,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3"
     },
     {
       "relation": "contains",
@@ -97104,9 +97114,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_as_regras_b\u00e1sicas",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_as_regras_b\u00e1sicas"
     },
     {
       "relation": "contains",
@@ -97114,9 +97124,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_atividades_de_compreens\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_atividades_de_compreens\u00e3o"
     },
     {
       "relation": "contains",
@@ -97124,9 +97134,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_desafio_extra",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_desafio_extra"
     },
     {
       "relation": "contains",
@@ -97134,9 +97144,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_dica_final",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_dica_final"
     },
     {
       "relation": "contains",
@@ -97144,9 +97154,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_erros_comuns_at\u00e9_em_youtubers",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_erros_comuns_at\u00e9_em_youtubers"
     },
     {
       "relation": "contains",
@@ -97154,9 +97164,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_exemplos_legais_de_pontua\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_exemplos_legais_de_pontua\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -97164,9 +97174,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_gabarito",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_gabarito"
     },
     {
       "relation": "contains",
@@ -97174,9 +97184,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_gloss\u00e1rio",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_gloss\u00e1rio"
     },
     {
       "relation": "contains",
@@ -97184,9 +97194,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_gram\u00e1tica_aplicada",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_gram\u00e1tica_aplicada"
     },
     {
       "relation": "contains",
@@ -97194,9 +97204,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_de_refor\u00e7o_m\u00f3dulo_3",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_texto_principal",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_texto_principal"
     },
     {
       "relation": "contains",
@@ -97204,9 +97214,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_gram\u00e1tica_aplicada",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_pontua\u00e7\u00e3o_que_muda_o_significado",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_pontua\u00e7\u00e3o_que_muda_o_significado"
     },
     {
       "relation": "contains",
@@ -97214,9 +97224,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_texto_principal",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_um_ponto_que_faz_toda_a_diferen\u00e7a",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_um_ponto_que_faz_toda_a_diferen\u00e7a"
     },
     {
       "relation": "contains",
@@ -97224,9 +97234,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_exemplos_legais_de_pontua\u00e7\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_a_v\u00edrgula",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_a_v\u00edrgula"
     },
     {
       "relation": "contains",
@@ -97234,9 +97244,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_exemplos_legais_de_pontua\u00e7\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_as_retic\u00eancias",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_as_retic\u00eancias"
     },
     {
       "relation": "contains",
@@ -97244,9 +97254,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_exemplos_legais_de_pontua\u00e7\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_o_ponto_de_exclama\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_o_ponto_de_exclama\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -97254,9 +97264,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_as_regras_b\u00e1sicas",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_1_ponto",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_1_ponto"
     },
     {
       "relation": "contains",
@@ -97264,9 +97274,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_as_regras_b\u00e1sicas",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_2_v\u00edrgula",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_2_v\u00edrgula"
     },
     {
       "relation": "contains",
@@ -97274,9 +97284,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_as_regras_b\u00e1sicas",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_3_ponto_de_interroga\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_3_ponto_de_interroga\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -97284,9 +97294,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_as_regras_b\u00e1sicas",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_4_ponto_de_exclama\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_4_ponto_de_exclama\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -97294,9 +97304,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_as_regras_b\u00e1sicas",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_5_retic\u00eancias",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_5_retic\u00eancias"
     },
     {
       "relation": "contains",
@@ -97304,9 +97314,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_as_regras_b\u00e1sicas",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_6_travess\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_6_travess\u00e3o"
     },
     {
       "relation": "contains",
@@ -97314,9 +97324,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_erros_comuns_at\u00e9_em_youtubers",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_correto_com_pontua\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_correto_com_pontua\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -97324,9 +97334,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_erros_comuns_at\u00e9_em_youtubers",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_errado_sem_pontua\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_errado_sem_pontua\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -97334,9 +97344,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_1_escolha_o_sinal_correto",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_1_escolha_o_sinal_correto"
     },
     {
       "relation": "contains",
@@ -97344,9 +97354,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_2_verdadeiro_ou_falso",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_2_verdadeiro_ou_falso"
     },
     {
       "relation": "contains",
@@ -97354,9 +97364,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_3_resposta_breve",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_3_resposta_breve"
     },
     {
       "relation": "contains",
@@ -97364,9 +97374,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_1",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_1"
     },
     {
       "relation": "contains",
@@ -97374,9 +97384,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_2",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_2"
     },
     {
       "relation": "contains",
@@ -97384,9 +97394,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-03.md",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_03_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_3",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_03_atividade_3"
     },
     {
       "relation": "contains",
@@ -97394,9 +97404,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul"
     },
     {
       "relation": "contains",
@@ -97404,9 +97414,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4"
     },
     {
       "relation": "contains",
@@ -97414,9 +97424,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_atividades_de_compreens\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_atividades_de_compreens\u00e3o"
     },
     {
       "relation": "contains",
@@ -97424,9 +97434,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_comunica\u00e7\u00e3o_oral",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_comunica\u00e7\u00e3o_oral"
     },
     {
       "relation": "contains",
@@ -97434,9 +97444,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_desafio_extra",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_desafio_extra"
     },
     {
       "relation": "contains",
@@ -97444,9 +97454,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_dica_final",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_dica_final"
     },
     {
       "relation": "contains",
@@ -97454,9 +97464,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_gabarito",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_gabarito"
     },
     {
       "relation": "contains",
@@ -97464,9 +97474,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_gloss\u00e1rio",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_gloss\u00e1rio"
     },
     {
       "relation": "contains",
@@ -97474,9 +97484,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_o_caso_real_bruno_e_sofia",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_o_caso_real_bruno_e_sofia"
     },
     {
       "relation": "contains",
@@ -97484,9 +97494,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_o_que_\u00e9_escuta_ativa",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_o_que_\u00e9_escuta_ativa"
     },
     {
       "relation": "contains",
@@ -97494,9 +97504,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_os_inimigos_da_escuta_ativa",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_os_inimigos_da_escuta_ativa"
     },
     {
       "relation": "contains",
@@ -97504,9 +97514,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_texto_principal",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_texto_principal"
     },
     {
       "relation": "contains",
@@ -97514,9 +97524,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_de_refor\u00e7o_m\u00f3dulo_4",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_t\u00e9cnicas_de_escuta_ativa",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_t\u00e9cnicas_de_escuta_ativa"
     },
     {
       "relation": "contains",
@@ -97524,9 +97534,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_comunica\u00e7\u00e3o_oral",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_ouvir_com_aten\u00e7\u00e3o_a_arte_de_entender",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_ouvir_com_aten\u00e7\u00e3o_a_arte_de_entender"
     },
     {
       "relation": "contains",
@@ -97534,9 +97544,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_texto_principal",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_por_que_todos_interrompem_na_conversa",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_por_que_todos_interrompem_na_conversa"
     },
     {
       "relation": "contains",
@@ -97544,9 +97554,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_t\u00e9cnicas_de_escuta_ativa",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_1_sil\u00eancio_atencioso",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_1_sil\u00eancio_atencioso"
     },
     {
       "relation": "contains",
@@ -97554,9 +97564,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_t\u00e9cnicas_de_escuta_ativa",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_2_contato_visual",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_2_contato_visual"
     },
     {
       "relation": "contains",
@@ -97564,9 +97574,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_t\u00e9cnicas_de_escuta_ativa",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_3_linguagem_corporal",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_3_linguagem_corporal"
     },
     {
       "relation": "contains",
@@ -97574,9 +97584,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_t\u00e9cnicas_de_escuta_ativa",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_4_parafraseio",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_4_parafraseio"
     },
     {
       "relation": "contains",
@@ -97584,9 +97594,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_t\u00e9cnicas_de_escuta_ativa",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_5_perguntas_pertinentes",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_5_perguntas_pertinentes"
     },
     {
       "relation": "contains",
@@ -97594,9 +97604,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_1_verdadeiro_ou_falso",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_1_verdadeiro_ou_falso"
     },
     {
       "relation": "contains",
@@ -97604,9 +97614,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_2_escolha_a_atitude_correta",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_2_escolha_a_atitude_correta"
     },
     {
       "relation": "contains",
@@ -97614,9 +97624,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_3_resposta_breve",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_3_resposta_breve"
     },
     {
       "relation": "contains",
@@ -97624,9 +97634,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_1",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_1"
     },
     {
       "relation": "contains",
@@ -97634,9 +97644,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_2",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_2"
     },
     {
       "relation": "contains",
@@ -97644,9 +97654,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-04.md",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_04_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_3",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_04_atividade_3"
     },
     {
       "relation": "contains",
@@ -97654,9 +97664,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_rio_do_sul_mais_tech_senai_prefeitura_municipal_de_rio_do_sul"
     },
     {
       "relation": "contains",
@@ -97664,9 +97674,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5"
     },
     {
       "relation": "contains",
@@ -97674,9 +97684,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_a_verdade_sobre_memoriza\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_a_verdade_sobre_memoriza\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -97684,9 +97694,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_atividades_de_compreens\u00e3o",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_atividades_de_compreens\u00e3o"
     },
     {
       "relation": "contains",
@@ -97694,9 +97704,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_autonomia_e_estrat\u00e9gias_de_estudo",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_autonomia_e_estrat\u00e9gias_de_estudo"
     },
     {
       "relation": "contains",
@@ -97704,9 +97714,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_desafio_extra",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_desafio_extra"
     },
     {
       "relation": "contains",
@@ -97714,9 +97724,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L205",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_dica_final_voc\u00ea_consegue",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_dica_final_voc\u00ea_consegue"
     },
     {
       "relation": "contains",
@@ -97724,9 +97734,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_gabarito",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_gabarito"
     },
     {
       "relation": "contains",
@@ -97734,9 +97744,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_gloss\u00e1rio",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_gloss\u00e1rio"
     },
     {
       "relation": "contains",
@@ -97744,9 +97754,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_texto_principal",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_texto_principal"
     },
     {
       "relation": "contains",
@@ -97754,9 +97764,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_1_o_mapa_mental",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_1_o_mapa_mental"
     },
     {
       "relation": "contains",
@@ -97764,9 +97774,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_2_resumo_inteligente",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_2_resumo_inteligente"
     },
     {
       "relation": "contains",
@@ -97774,9 +97784,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_3_ensine_algu\u00e9m",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_3_ensine_algu\u00e9m"
     },
     {
       "relation": "contains",
@@ -97784,9 +97794,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_4_teste_se_com_perguntas",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_4_teste_se_com_perguntas"
     },
     {
       "relation": "contains",
@@ -97794,9 +97804,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_de_refor\u00e7o_m\u00f3dulo_5",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_5_espa\u00e7amento_spaced_repetition",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnica_5_espa\u00e7amento_spaced_repetition"
     },
     {
       "relation": "contains",
@@ -97804,9 +97814,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_autonomia_e_estrat\u00e9gias_de_estudo",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnicas_de_memoriza\u00e7\u00e3o_que_funcionam",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_t\u00e9cnicas_de_memoriza\u00e7\u00e3o_que_funcionam"
     },
     {
       "relation": "contains",
@@ -97814,9 +97824,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_texto_principal",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_por_que_voc\u00ea_n\u00e3o_lembra_de_nada",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_por_que_voc\u00ea_n\u00e3o_lembra_de_nada"
     },
     {
       "relation": "contains",
@@ -97824,9 +97834,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_a_verdade_sobre_memoriza\u00e7\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_o_que_funciona_comprovado_cientificamente",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_o_que_funciona_comprovado_cientificamente"
     },
     {
       "relation": "contains",
@@ -97834,9 +97844,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_a_verdade_sobre_memoriza\u00e7\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_o_que_n\u00e3o_funciona_mas_muita_gente_faz",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_o_que_n\u00e3o_funciona_mas_muita_gente_faz"
     },
     {
       "relation": "contains",
@@ -97844,9 +97854,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_1_verdadeiro_ou_falso",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_1_verdadeiro_ou_falso"
     },
     {
       "relation": "contains",
@@ -97854,9 +97864,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_2_m\u00faltipla_escolha",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_2_m\u00faltipla_escolha"
     },
     {
       "relation": "contains",
@@ -97864,9 +97874,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_atividades_de_compreens\u00e3o",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_3_resposta_breve",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_3_resposta_breve"
     },
     {
       "relation": "contains",
@@ -97874,9 +97884,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_1",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_1"
     },
     {
       "relation": "contains",
@@ -97884,9 +97894,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_2",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_2"
     },
     {
       "relation": "contains",
@@ -97894,9 +97904,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reforco_linguagens_texto_reforco_modelo_05_gabarito",
-      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_3",
-      "confidence_score": 1.0
+      "target": "reforco_linguagens_texto_reforco_modelo_05_atividade_3"
     },
     {
       "relation": "contains",
@@ -102650,5 +102660,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e01f658759aa2e14d228ff0f56d2396de91cbe1b"
+  "built_at_commit": "884c46e048ac6d064cc7261c30cf6f861a669504"
 }

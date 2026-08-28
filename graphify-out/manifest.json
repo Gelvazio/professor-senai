@@ -2838,5 +2838,10 @@
     "mtime": 1787919665.7638428,
     "ast_hash": "a3e15a62e3a5d2b2afc2487d65fa5ef4",
     "semantic_hash": ""
+  },
+  "syncdata/index.js": {
+    "mtime": 1787920270.294793,
+    "ast_hash": "b9afb1326f3aa0ab9dfc84aa230e8a5c",
+    "semantic_hash": ""
   }
 }
