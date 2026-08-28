@@ -112,6 +112,59 @@ cd syncdata
 npm run verify  # Gera relatório de estrutura
 ```
 
+## 🔴 REGRA 03 — Script de Geração de Slides
+
+⚠️ **CRÍTICO** — Toda UC deve conter:
+
+### 📝 Arquivo Obrigatório
+- `gerar_slides.js` — Script Node.js que gera apresentações PPTX automaticamente
+
+#### Características
+- ✅ Usa biblioteca `PptxGenJS` para gerar PowerPoint
+- ✅ Define paleta de cores da UC (BORDO, AMBAR, FUNDO, CINZA, etc.)
+- ✅ Implementa funções padrão:
+  - `titleSlide(title, subtitle)` — Slide de capa com rodapé
+  - `sectionSlide(title)` — Slide de seção
+  - `contentSlide(title, bullets)` — Slide de conteúdo com bullets
+  - `twoColSlide(title, col1title, col1bullets, col2title, col2bullets)` — Slide com duas colunas
+  - `addFooter(slide)` — Adiciona rodapé padrão "Rio do Sul Mais Tech · SENAI"
+- ✅ Exporta arquivo `.pptx` ao final
+- ✅ Inclui `.gitignore` na pasta UC
+
+#### Exemplo Mínimo
+```javascript
+const PptxGenJS = require('pptxgenjs');
+const pptx = new PptxGenJS();
+pptx.layout = 'LAYOUT_16x9';
+
+// Definir cores da UC
+const BORDO = '#004384';
+const AMBAR = '#FFB300';
+const FUNDO = '#F5F5F5';
+const FOOTER_TEXT = 'Rio do Sul Mais Tech · SENAI';
+
+function titleSlide(title) {
+  const s = pptx.addSlide();
+  s.background = { color: BORDO };
+  s.addText(title, {
+    x: 0.8, y: 2, w: 8.4, h: 2,
+    fontSize: 36, bold: true, color: '#FFFFFF', align: 'center'
+  });
+  return s;
+}
+
+// Adicionar slides...
+pptx.save({ path: './SLIDES_UC.pptx' });
+```
+
+#### Prioridade
+- 🟡 **MEDIA** — Complementar (pode ser gerado automaticamente)
+
+#### Dependência
+- `npm install pptxgenjs` deve ser executado na pasta UC antes de rodar o script
+
+---
+
 ## 🎯 Regras Críticas
 
 ### ✅ Obrigatório

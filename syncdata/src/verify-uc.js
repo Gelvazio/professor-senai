@@ -7,7 +7,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC } = require('./constants');
+const { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES } = require('./constants');
 
 /**
  * Verifica se uma pasta de UC tem a estrutura esperada
@@ -29,14 +29,16 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
       AVALIACOES: false,
       EMENTA: false,
       PLANO_ENSINO: false,
-      APOSTILA: false
+      APOSTILA: false,
+      GERAR_SLIDES: false  // REGRA 03
     },
     arquivos_encontrados: {
       AULAS: null,
       AVALIACOES: null,
       EMENTA: null,
       PLANO_ENSINO: null,
-      APOSTILA: null
+      APOSTILA: null,
+      GERAR_SLIDES: null  // REGRA 03
     },
     pendencias: []
   };
@@ -69,6 +71,9 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
         } else if (PADROES_ARQUIVOS_UC.APOSTILA.test(item.name)) {
           resultado.estrutura.APOSTILA = true;
           resultado.arquivos_encontrados.APOSTILA = item.name;
+        } else if (PADROES_GERAR_SLIDES.test(item.name)) {
+          resultado.estrutura.GERAR_SLIDES = true;
+          resultado.arquivos_encontrados.GERAR_SLIDES = item.name;
         }
       }
     }
@@ -119,6 +124,15 @@ async function verificarEstrutuaUC(caminhoUC, nomeUC) {
       });
     }
 
+    if (!resultado.estrutura.GERAR_SLIDES) {
+      resultado.pendencias.push({
+        tipo: 'SCRIPT',
+        item: 'gerar_slides.js',
+        mensagem: 'Script de geração de slides não encontrado (REGRA 03)',
+        prioridade: 'MEDIA'
+      });
+    }
+
     return resultado;
 
   } catch (erro) {
@@ -148,6 +162,7 @@ async function verificarTodasUCs(ucsArray) {
     pendencias_por_tipo: {
       PASTA: 0,
       ARQUIVO: 0,
+      SCRIPT: 0,
       ERRO: 0
     }
   };
@@ -190,6 +205,7 @@ function gerarRelatorioVerificacao(verificacao) {
   relatorio += '📈 PENDÊNCIAS POR TIPO:\n';
   relatorio += `  Pastas: ${verificacao.resumo.pendencias_por_tipo.PASTA}\n`;
   relatorio += `  Arquivos: ${verificacao.resumo.pendencias_por_tipo.ARQUIVO}\n`;
+  relatorio += `  Scripts: ${verificacao.resumo.pendencias_por_tipo.SCRIPT}\n`;
   relatorio += `  Erros: ${verificacao.resumo.pendencias_por_tipo.ERRO}\n\n`;
 
   relatorio += '🔍 DETALHES POR UC:\n';

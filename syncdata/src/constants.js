@@ -123,6 +123,13 @@ const PADROES_ARQUIVOS_UC = {
   APOSTILA: /^APOSTILA.*\.(md|txt)$/i        // Apostila com qualquer sufixo
 };
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// ── SCRIPT DE GERAÇÃO DE SLIDES (REGRA 03) ──
+// ═══════════════════════════════════════════════════════════════════════════════
+// Arquivo JavaScript que gera apresentações PPTX usando PptxGenJS
+const GERAR_SLIDES_ARQUIVO = 'gerar_slides.js';
+const PADROES_GERAR_SLIDES = /^gerar_slides\.js$/i;  // Nome exato do arquivo
+
 // Configurações de processamento
 const CONFIG = {
   TIMEOUT_ARQUIVO: 5000, // ms
@@ -169,6 +176,9 @@ module.exports = {
   // Estrutura obrigatória de UC (REGRA 02)
   ESTRUTURA_UC_OBRIGATORIA,
   PADROES_ARQUIVOS_UC,
+  // Gerador de Slides (REGRA 03)
+  GERAR_SLIDES_ARQUIVO,
+  PADROES_GERAR_SLIDES,
   // Configuração
   CONFIG,
   EMOJIS
