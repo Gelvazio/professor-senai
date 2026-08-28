@@ -368,9 +368,7 @@ async function iniciar() {
   });
 }
 
-// Iniciar servidor se chamado diretamente
-if (require.main === module) {
-  iniciar();
-}
+// Iniciar servidor
+iniciar();
 
 module.exports = { app, cache };
