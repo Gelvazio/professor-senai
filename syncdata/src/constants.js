@@ -93,6 +93,29 @@ const UNIDADES_CURRICULARESCONHECIDAS = [
   'REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO'
 ];
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// ── ARQUIVOS E PASTAS OBRIGATÓRIOS DE UMA UC (REGRA 02) ──
+// ═══════════════════════════════════════════════════════════════════════════════
+// Estrutura que TODA UC deve ter
+const ESTRUTURA_UC_OBRIGATORIA = {
+  pastas: {
+    AULAS: 'AULAS',         // Pasta onde ficam as aulas
+    AVALIACOES: 'AVALIACOES_CRIADAS'  // Pasta de avaliações (pode variar)
+  },
+  arquivos: {
+    EMENTA: 'EMENTA_*.md',           // Ementa da UC (curinga com nome)
+    PLANO_ENSINO: 'PLANO_ENSINO.md', // Plano de ensino
+    APOSTILA: 'APOSTILA_*.md'        // Apostila (curinga com nome)
+  }
+};
+
+// Padrões regex para arquivos obrigatórios
+const PADROES_ARQUIVOS_UC = {
+  EMENTA: /^EMENTA.*\.(md|txt)$/i,           // Ementa com qualquer sufixo
+  PLANO_ENSINO: /^PLANO_ENSINO\.(md|txt)$/i, // Plano de ensino
+  APOSTILA: /^APOSTILA.*\.(md|txt)$/i        // Apostila com qualquer sufixo
+};
+
 // Configurações de processamento
 const CONFIG = {
   TIMEOUT_ARQUIVO: 5000, // ms
@@ -135,6 +158,9 @@ module.exports = {
   EXTENSOES_VALIDAS,
   PASTAS_IGNORADAS,
   UNIDADES_CURRICULARESCONHECIDAS,
+  // Estrutura obrigatória de UC (REGRA 02)
+  ESTRUTURA_UC_OBRIGATORIA,
+  PADROES_ARQUIVOS_UC,
   // Configuração
   CONFIG,
   EMOJIS
