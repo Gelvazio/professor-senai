@@ -9,10 +9,30 @@ from pathlib import Path
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, Flowable
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
+from reportlab.pdfgen import canvas
 import re
+
+
+class LineForWriting(Flowable):
+    """Cria linhas para os alunos escreverem respostas"""
+
+    def __init__(self, width=7*inch, num_lines=4, line_color=colors.HexColor('#2D6A4F')):
+        Flowable.__init__(self)
+        self.width = width
+        self.num_lines = num_lines
+        self.line_color = line_color
+        self.height = num_lines * 0.35 * inch
+
+    def draw(self):
+        """Desenha as linhas"""
+        for i in range(self.num_lines):
+            y = self.height - (i + 1) * 0.35 * inch
+            self.canv.setStrokeColor(self.line_color)
+            self.canv.setLineWidth(0.5)
+            self.canv.line(0, y, self.width, y)
 
 
 def markdown_to_pdf(md_file, pdf_file):
@@ -137,17 +157,20 @@ def markdown_to_pdf(md_file, pdf_file):
                 if line.strip():
                     # Detectar campos de resposta (linhas com muitos underscores)
                     if '_' * 10 in line:
-                        # Campo de resposta em branco
-                        elements.append(Spacer(1, 1.2*inch))  # Espaço grande para resposta
+                        # Campo de resposta com linhas pautadas (mínimo 6 linhas)
+                        elements.append(LineForWriting(width=6.5*inch, num_lines=6))
+                        elements.append(Spacer(1, 0.1*inch))
                     else:
                         # Remover formatação perigosa mas manter o texto
                         text = line.replace('**', '').replace('__', '').replace('_', '')
                         text = text.replace('*', '')
                         elements.append(Paragraph(text, body_style))
 
-                        # Se é uma pergunta (termina com ?), adicionar espaço para resposta
+                        # Se é uma pergunta (termina com ?), adicionar linhas de resposta
                         if text.strip().endswith('?'):
-                            elements.append(Spacer(1, 1.0*inch))  # Espaço grande para resposta
+                            elements.append(Spacer(1, 0.1*inch))
+                            elements.append(LineForWriting(width=6.5*inch, num_lines=5))
+                            elements.append(Spacer(1, 0.15*inch))
 
         # Build PDF
         doc.build(elements)
