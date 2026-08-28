@@ -135,10 +135,19 @@ def markdown_to_pdf(md_file, pdf_file):
             # Parágrafos normais
             else:
                 if line.strip():
-                    # Remover formatação perigosa mas manter o texto
-                    text = line.replace('**', '').replace('__', '').replace('_', '')
-                    text = text.replace('*', '')
-                    elements.append(Paragraph(text, body_style))
+                    # Detectar campos de resposta (linhas com muitos underscores)
+                    if '_' * 10 in line:
+                        # Campo de resposta em branco
+                        elements.append(Spacer(1, 1.2*inch))  # Espaço grande para resposta
+                    else:
+                        # Remover formatação perigosa mas manter o texto
+                        text = line.replace('**', '').replace('__', '').replace('_', '')
+                        text = text.replace('*', '')
+                        elements.append(Paragraph(text, body_style))
+
+                        # Se é uma pergunta (termina com ?), adicionar espaço para resposta
+                        if text.strip().endswith('?'):
+                            elements.append(Spacer(1, 1.0*inch))  # Espaço grande para resposta
 
         # Build PDF
         doc.build(elements)
