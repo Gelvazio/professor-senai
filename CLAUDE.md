@@ -5,7 +5,7 @@
 
 ⚠️ **ATUALIZAR ESTE CONTEXTO A CADA INTERAÇÃO COM O CHAT** — Este documento deve refletir sempre o estado mais recente do projeto.
 
-**Data Última Atualização:** 28-08-2026  
+**Data Última Atualização:** 29-08-2026  
 **Objetivo Principal:** Implementar sistema de validação e sincronização de UCs (Unidades Curriculares) com dashboard interativo
 
 ### ✅ Implementações Realizadas
@@ -16,6 +16,8 @@
 4. **REGRA 04**: Pasta ATIVIDADES com validação automática (2 horas = 1 atividade de 15 min)
 5. **REGRA 05**: Pasta SUBSTITUICOES com guia de SGN para substituição de aulas
 6. **REGRA 06**: Arquivo CLAUDE.md obrigatório em cada UC para documentação
+7. **REGRA 07**: Filtro de pendências — busca apenas matérias ATIVAS (ativo=1)
+8. **REGRA 08**: Campo de status de matérias aceita 3 valores: 1 (Ativa), 0 (Inativa), 2 (Concluída)
 
 ### 🔧 Ferramentas Criadas
 
