@@ -6372,9 +6372,11 @@
               'status_plano_ensino'
             ];
 
-            // Buscar APENAS matérias ATIVAS (ativo=1 ou ativo=true)
-            const todasMaterias = await sbGet('materia', 'select=*&ativo=eq.1'); // Apenas matérias ativas
+            // Buscar APENAS matérias ATIVAS (ativo=1)
+            // ⚠️ EXCLUEM: Inativas (0) e Concluídas (2)
+            const todasMaterias = await sbGet('materia', 'select=*&ativo=eq.1');
             console.log('📊 Total de matérias ATIVAS encontradas:', todasMaterias.length);
+            console.log('⚠️ Matérias Inativas (0) e Concluídas (2) NÃO serão processadas para pendências');
 
             for (const materia of todasMaterias) {
               console.log(`📄 Matéria: ${materia.descricao} (ID: ${materia.id})`);
