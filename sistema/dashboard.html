@@ -6339,8 +6339,27 @@
 
       async function listarPendenciasSupabase() {
         try {
-          // ✅ APENAS LISTA da tabela "pendencias" — sem buscar nem inserir
+          // ✅ LISTA pendências e verifica se matérias estão concluídas
           pendenciasRegistros = await sbGet('pendencias', 'select=*&order=datavencimento.asc,id.asc');
+
+          // 🔍 Verifica se matérias estão concluídas (ativo=2) e marca pendências automaticamente
+          console.log('🔄 Verificando se matérias concluídas têm pendências...');
+          for (const pendencia of pendenciasRegistros) {
+            if (pendencia.materia_id && pendencia.status !== 'CONCLUIDA') {
+              try {
+                const materia = await sbGet('materia', 'select=ativo&id=eq.' + pendencia.materia_id);
+                if (materia && materia.length > 0 && materia[0].ativo === 2) {
+                  // Matéria está concluída, marca pendência como CONCLUIDA
+                  console.log(`✅ Matéria ID ${pendencia.materia_id} está concluída. Marcando pendência ID ${pendencia.id} como CONCLUIDA`);
+                  await sbPatch('pendencias', 'id', pendencia.id, { status: 'CONCLUIDA' });
+                  pendencia.status = 'CONCLUIDA'; // Atualiza no local para renderização
+                }
+              } catch (e) {
+                console.warn(`⚠️ Erro ao verificar matéria ID ${pendencia.materia_id}:`, e.message);
+              }
+            }
+          }
+
           renderPendencias(pendenciasRegistros);
         } catch (erro) {
           document.getElementById('pendenciasResumo').textContent = 'Erro ao carregar.';
