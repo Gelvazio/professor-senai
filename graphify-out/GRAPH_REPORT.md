@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-31)
 
 ## Corpus Check
-- 397 files · ~1,423,561 words
+- 419 files · ~1,453,591 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5832 nodes · 5826 edges · 599 communities (548 shown, 51 thin omitted)
+- 6178 nodes · 6157 edges · 635 communities (584 shown, 51 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5b7ff48a`
+- Built from commit: `6cf26c5a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -544,6 +544,42 @@
 - [[_COMMUNITY_Community 596|Community 596]]
 - [[_COMMUNITY_Community 597|Community 597]]
 - [[_COMMUNITY_Community 598|Community 598]]
+- [[_COMMUNITY_Community 599|Community 599]]
+- [[_COMMUNITY_Community 600|Community 600]]
+- [[_COMMUNITY_Community 601|Community 601]]
+- [[_COMMUNITY_Community 602|Community 602]]
+- [[_COMMUNITY_Community 603|Community 603]]
+- [[_COMMUNITY_Community 604|Community 604]]
+- [[_COMMUNITY_Community 605|Community 605]]
+- [[_COMMUNITY_Community 606|Community 606]]
+- [[_COMMUNITY_Community 607|Community 607]]
+- [[_COMMUNITY_Community 608|Community 608]]
+- [[_COMMUNITY_Community 609|Community 609]]
+- [[_COMMUNITY_Community 610|Community 610]]
+- [[_COMMUNITY_Community 611|Community 611]]
+- [[_COMMUNITY_Community 612|Community 612]]
+- [[_COMMUNITY_Community 613|Community 613]]
+- [[_COMMUNITY_Community 614|Community 614]]
+- [[_COMMUNITY_Community 615|Community 615]]
+- [[_COMMUNITY_Community 616|Community 616]]
+- [[_COMMUNITY_Community 617|Community 617]]
+- [[_COMMUNITY_Community 618|Community 618]]
+- [[_COMMUNITY_Community 619|Community 619]]
+- [[_COMMUNITY_Community 620|Community 620]]
+- [[_COMMUNITY_Community 621|Community 621]]
+- [[_COMMUNITY_Community 622|Community 622]]
+- [[_COMMUNITY_Community 623|Community 623]]
+- [[_COMMUNITY_Community 624|Community 624]]
+- [[_COMMUNITY_Community 625|Community 625]]
+- [[_COMMUNITY_Community 626|Community 626]]
+- [[_COMMUNITY_Community 627|Community 627]]
+- [[_COMMUNITY_Community 628|Community 628]]
+- [[_COMMUNITY_Community 629|Community 629]]
+- [[_COMMUNITY_Community 630|Community 630]]
+- [[_COMMUNITY_Community 631|Community 631]]
+- [[_COMMUNITY_Community 632|Community 632]]
+- [[_COMMUNITY_Community 633|Community 633]]
+- [[_COMMUNITY_Community 634|Community 634]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -572,7 +608,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (599 total, 51 thin omitted)
+## Communities (635 total, 51 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -655,11 +691,8 @@ Cohesion: 0.04
 Nodes (47): 1. Comunicação em Equipes de Trabalho, 1. O Impacto da Falta de Ética nos Ambientes de Trabalho, 2. Código de Ética Profissional, 2. Segurança da Informação, 3. Acidentes do Trabalho e Doenças Ocupacionais, 3. Internet (World Wide Web), 4.1. Editor de Textos, 4.2. Editor de Planilhas Eletrônicas (+39 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.24
-Nodes (18): blockquote(), bullet(), codeBlock(), {
-  Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell,
-  WidthType, AlignmentType, ShadingType, BorderStyle, PageBreak, LevelFormat,
-}, empty(), fs, h1(), h2() (+10 more)
+Cohesion: 0.14
+Nodes (26): addRodape(), outPath, path, pptx, PptxGenJS, slideApresentacao(), slideConteudo(), slideDois() (+18 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.12
@@ -1106,8 +1139,8 @@ Cohesion: 0.14
 Nodes (14): Atividade: Apresentação de 3 minutos, Atividade: Mini-debate, Atividades de simulação, Encontro 18-19 — Debate e Argumentação (4h), Encontro 20-21 — Apresentação Oral e Escuta Ativa (4h), Encontro 22 — Simulação de Situações Comunicativas (4h), Explicação: Como argumentar bem?, Explicação: Como fazer uma boa apresentação? (+6 more)
 
 ### Community 155 - "Community 155"
-Cohesion: 0.11
-Nodes (18): Atividade final, Atividades, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h) (+10 more)
+Cohesion: 0.15
+Nodes (13): Atividade final, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h), Explicação: Como fazer uma síntese?, MÓDULO 5 — AUTONOMIA E ESTRATÉGIAS DE ESTUDO (+5 more)
 
 ### Community 156 - "Community 156"
 Cohesion: 0.29
@@ -1858,8 +1891,8 @@ Cohesion: 0.06
 Nodes (32): 1. Diagnóstico da mensagem, 1. Estrutura da pasta compartilhada, 2. Padrão de nomes, 2. Planejamento, 3. Primeira versão do e-mail, 3. Quadro de tarefas, 4. Cartão de bloqueio, 4. Checklist de revisão em dupla (+24 more)
 
 ### Community 349 - "Community 349"
-Cohesion: 0.10
-Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples (+12 more)
+Cohesion: 0.08
+Nodes (25): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+17 more)
 
 ### Community 350 - "Community 350"
 Cohesion: 0.09
@@ -1902,8 +1935,8 @@ Cohesion: 0.11
 Nodes (19): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo (+11 more)
 
 ### Community 360 - "Community 360"
-Cohesion: 0.09
-Nodes (23): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+15 more)
+Cohesion: 0.11
+Nodes (18): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Apresentação do Módulo, Atividade 5.1 (+10 more)
 
 ### Community 361 - "Community 361"
 Cohesion: 0.12
@@ -1914,8 +1947,8 @@ Cohesion: 0.12
 Nodes (17): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Atividade 6.1 (+9 more)
 
 ### Community 363 - "Community 363"
-Cohesion: 0.09
-Nodes (22): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+14 more)
+Cohesion: 0.12
+Nodes (16): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Apresentação do Módulo, Atividade 1.1 — Individual (+8 more)
 
 ### Community 365 - "Community 365"
 Cohesion: 0.12
@@ -2306,16 +2339,16 @@ Cohesion: 0.09
 Nodes (21): Adicionar Matérias Iniciais, Build para Produção, 📋 Campos de Uma Pendência, Cards de Pendência, 🚀 Como Usar, Cores (variáveis CSS), 💾 Dados Persistentes, Dashboard de Controle de Pendências (+13 more)
 
 ### Community 524 - "Community 524"
-Cohesion: 0.19
-Nodes (11): PASTAS_IGNORADAS, UC_CONTAINERS, ehAula(), EXTENSOES_AULA, extrairDataAula(), extrairNumeroAula(), PADROES_AULA, { PASTAS_IGNORADAS, UC_CONTAINERS, SISTEMA_DIR } (+3 more)
+Cohesion: 0.17
+Nodes (12): PASTAS_IGNORADAS, SISTEMA_DIR, UC_CONTAINERS, ehAula(), EXTENSOES_AULA, extrairDataAula(), extrairNumeroAula(), PADROES_AULA (+4 more)
 
 ### Community 526 - "Community 526"
-Cohesion: 0.10
-Nodes (24): CONFIG, DATA_DIR, EMOJIS, ESTRUTURA_UC_OBRIGATORIA, EXTENSOES_VALIDAS, LOGS_DIR, PADROES_ARQUIVOS_UC, PADROES_ATIVIDADES (+16 more)
+Cohesion: 0.15
+Nodes (12): CONFIG, DATA_DIR, EMOJIS, EXTENSOES_VALIDAS, LOGS_DIR, PADROES_BUSCA, path, PRIORIDADES (+4 more)
 
 ### Community 527 - "Community 527"
-Cohesion: 0.31
-Nodes (8): addRodape(), outPath, path, pptx, PptxGenJS, slideApresentacao(), slideConteudo(), slideDois()
+Cohesion: 0.05
+Nodes (39): 1.1.1 Banco de Dados Relacional, 1.1.2 Banco de Dados Não-Relacional (NoSQL), 1.1 Conceitos Fundamentais, 1.2 Análise para Sistema de Delivery de Comida, 1. IDENTIFICAÇÃO DE TIPOS E CARACTERÍSTICAS DE BANCO DE DADOS, 2.1 Arquitetura Cliente-Servidor, 2.2.1 Arquitetura Centralizada (Single Server), 2.2.2 Arquitetura com Replicação (+31 more)
 
 ### Community 528 - "Community 528"
 Cohesion: 0.12
@@ -2486,11 +2519,155 @@ Cohesion: 0.11
 Nodes (17): 10. BIBLIOGRAFIA BÁSICA, 1. INFORMAÇÕES GERAIS, 2. FUNÇÃO, 3. OBJETIVO GERAL, 4.1 Capacidades Básicas, 4.2 Conhecimentos, 4. CONTEÚDOS FORMATIVOS, 5. EIXO ESTRUTURANTE BNCC (+9 more)
 
 ### Community 598 - "Community 598"
+Cohesion: 0.06
+Nodes (33): 1.1 Levantamento de Requisitos, 1.2 Identificação Detalhada de Atributos, 1. ENTIDADES, ATRIBUTOS E RELACIONAMENTOS, 2.1 Matriz de Relacionamentos, 2.2 Descrição Detalhada dos Relacionamentos, 2. RELACIONAMENTOS E CARDINALIDADES, 3. DIAGRAMA ENTIDADE-RELACIONAMENTO (Notação UML), 4.1 Verificação de 1ª Forma Normal (1FN) (+25 more)
+
+### Community 599 - "Community 599"
+Cohesion: 0.09
+Nodes (21): Aplicação funcional documentada, composta por:, Apresentação à banca técnica (Próxima semana), ATIVIDADE 01: Levantamento conceitual e justificativa para escolha do SGBD, ATIVIDADE 02: Diagrama Entidade-Relacionamento (DER) revisado e validado, ATIVIDADE 03: Script SQL de criação e manipulação de dados (DDL e DML), ATIVIDADE 04: Consultas SQL (relatórios e operações), ATIVIDADE 05: Aplicação de normalização até a 3ª forma normal, ATIVIDADE 06: Entrega final da Situação de Aprendizagem - Documento técnico (+13 more)
+
+### Community 600 - "Community 600"
+Cohesion: 0.12
+Nodes (16): 1.1 Projeto Proposto, 1.2 Sua Tarefa — Criar Suite Completa de Testes, 1.3 Rubrica Avaliação Prática, 2.1 Prova Objetiva, 2.2 Formato das Questões, 2.3 Critério de Aprovação, 2.4 Rubrica Teórica, Aprovação (+8 more)
+
+### Community 601 - "Community 601"
+Cohesion: 0.12
+Nodes (15): 1.1 Objetivos da Atividade, 1.2 Instruções Passo-a-Passo, 1. Tarefa Principal — Setup Completo de Projeto, 2. Checklist de Configuração, 3. Tarefa Complementar — Troubleshooting, 4. Critério de Avaliação, 5. Recursos Fornecidos, 6. Próximos Passos (+7 more)
+
+### Community 602 - "Community 602"
+Cohesion: 0.13
+Nodes (14): 1.1 Contexto, 1.2 Arquivo a Testar: `src/User.js`, 1.3 Instruções — Escrever Testes, 1.4 Seu Trabalho, 1.5 Matchers Permitidos, 1. Tarefa Principal — Suite de Testes Unitários Completa, 2. Tarefa Complementar — Code Review, 3. Executar Testes (+6 more)
+
+### Community 603 - "Community 603"
+Cohesion: 0.14
+Nodes (13): 1.1 Arquivo a Testar: `src/UserService.js`, 1.2 Instruções — Criar Suite de Testes, 1.3 Seu Trabalho — Completar a Suite, 1.4 Dicas de Implementação, 1. Tarefa Principal — Testes Assíncronos com Mocks, 2. Tarefa Complementar — Refactoring, 3. Executar Testes, 4. Critério de Avaliação (+5 more)
+
+### Community 604 - "Community 604"
+Cohesion: 0.15
+Nodes (13): 2.1 Definição de 1FN, 2.2 Análise por Entidade, 2.3 Conclusão sobre 1FN, 2. VERIFICAÇÃO DE 1ª FORMA NORMAL (1FN), AVALIACAO - Verificação 1FN, CARDAPIO - Verificação 1FN, ENDERECO - Verificação 1FN, ENTREGADOR - Verificação 1FN (+5 more)
+
+### Community 605 - "Community 605"
+Cohesion: 0.19
+Nodes (11): ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_ATIVIDADES, PADROES_SUBSTITUICOES, PADROES_UC_CLAUDE, calcularAtividadesEsperadas(), { ESTRUTURA_UC_OBRIGATORIA, PADROES_ARQUIVOS_UC, PADROES_GERAR_SLIDES, PADROES_ATIVIDADES, PADROES_SUBSTITUICOES, PADROES_UC_CLAUDE }, extrairHorasEmenta() (+3 more)
+
+### Community 606 - "Community 606"
+Cohesion: 0.17
+Nodes (11): 1.1 Contexto, 1.2 Instruções Passo-a-Passo, 1. Tarefa Principal — Análise de Projeto Real, 2. Tarefa Complementar — Quiz Interativo, 3. Critério de Avaliação, 4. Recursos Fornecidos, 5. Dúvidas Frequentes, 6. Próximos Passos (+3 more)
+
+### Community 607 - "Community 607"
+Cohesion: 0.17
+Nodes (11): 1.1 Arquivo HTML a Testar: `src/LoginForm.html`, 1.2 Seu Trabalho — Criar Testes de Integração, 1.3 Requisitos de Testes, 1.4 Dicas Técnicas, 1. Tarefa Principal — Testar Componente de Formulário, 2. Tarefa Complementar — Adicionar Novo Teste, 3. Executar Testes, 4. Critério de Avaliação (+3 more)
+
+### Community 608 - "Community 608"
+Cohesion: 0.20
+Nodes (9): 1.1 Arquivo: `src/UserList.js`, 1.2 HTML Fixture: `tests/fixtures/userlist.html`, 1.3 Seu Trabalho — Criar Testes, 1.4 Requisitos, 1. Tarefa Principal — Testar Componente com Fetch, 2. Tarefa Complementar — Tratamento de Erros, 3. Executar Testes, 4. Critério de Avaliação (+1 more)
+
+### Community 609 - "Community 609"
+Cohesion: 0.20
+Nodes (9): 1.1 Setup Inicial, 1.2 Página de Teste: `examples/dashboard.html`, 1.3 Seu Trabalho — Implementar POM + E2E Tests, 1.4 Requisitos de Testes, 1. Tarefa Principal — Suite E2E com Page Object Model, 2. Tarefa Complementar — Verificações Visuais, 3. Executar Testes, 4. Critério de Avaliação (+1 more)
+
+### Community 610 - "Community 610"
+Cohesion: 0.20
+Nodes (9): 1.1 Arquivo: `tests/e2e/features.spec.js`, 1.2 Testes de Performance, 1.3 Testes de Acessibilidade, 1.4 Requisitos, 1. Tarefa Principal — Suite E2E Expandida, 2. Tarefa Complementar — Screenshots e Vídeos, 3. Executar Testes, 4. Critério de Avaliação (+1 more)
+
+### Community 611 - "Community 611"
+Cohesion: 0.20
+Nodes (10): 3.2 Análise de Dependências Parciais, AVALIACAO - Verificação 2FN, CARDAPIO - Verificação 2FN, ENDERECO - Verificação 2FN, ENTREGADOR - Verificação 2FN, ITEM_PEDIDO - Verificação 2FN (Potencial Problema), PAGAMENTO - Verificação 2FN, PEDIDO - Verificação 2FN (+2 more)
+
+### Community 612 - "Community 612"
+Cohesion: 0.20
+Nodes (9): 10. APLICAÇÃO DE NORMALIZAÇÃO - RESUMO, 6.1 Consultas Implementadas, 6.2 Exemplo: Relatório de Faturamento Diário, 6. CONSULTAS SQL - RELATÓRIOS E OPERAÇÕES, ANEXOS, APROVAÇÃO, DOCUMENTO TÉCNICO COMPLETO, Sistema de Delivery de Comida - Projeto Integrador (+1 more)
+
+### Community 613 - "Community 613"
+Cohesion: 0.22
+Nodes (8): 1.1 Arquivo: `.github/workflows/test.yml`, 1.2 Seu Trabalho — Completar o Pipeline, 1.3 Arquivo: `docs/TESTING-STRATEGY.md`, 1. Tarefa Principal — Configurar Pipeline CI/CD, 2. Tarefa Complementar — Badge de Status, 3. Verificação, 4. Critério de Avaliação, ATIVIDADE AULA 09 — CI/CD e Boas Práticas
+
+### Community 614 - "Community 614"
+Cohesion: 0.22
+Nodes (8): 1.1 Definição, 1.2 Progressão das Formas Normais, 1. CONCEITO DE FORMAS NORMAIS, 3.1 Definição de 2FN, 3.3 Conclusão sobre 2FN, 3. VERIFICAÇÃO DE 2ª FORMA NORMAL (2FN), ATIVIDADE 05: Aplicação de Normalização até 3ª Forma Normal, CONCLUSÃO
+
+### Community 615 - "Community 615"
+Cohesion: 0.25
+Nodes (8): 4.1 Definição de 3FN, 4.2 Identificação de Dependências Transitivas, 4.3 Conclusão sobre 3FN, 4. VERIFICAÇÃO DE 3ª FORMA NORMAL (3FN), ENTREGADOR - Análise Similar, Outras Entidades - Verificação 3FN, RESTAURANTE - Análise Crítica, SQL: Criar Trigger para Manter avaliacao_media Sincronizada
+
+### Community 616 - "Community 616"
+Cohesion: 0.29
+Nodes (7): 6.1 Implementação de Backup, 6.2 Recuperação de Desastres, 6.3 Teste de Restauração, 6. PROCEDIMENTOS DE SEGURANÇA E BACKUP, Backup Completo Semanal, Backup Incremental (Binary Log), Procedimento de Recuperação
+
+### Community 617 - "Community 617"
+Cohesion: 0.29
+Nodes (7): 11. CHECKLIST DE IMPLEMENTAÇÃO, Consultas e Operações, Documentação, Modelagem de Dados, Normalização, Scripts SQL, Segurança e Backup
+
+### Community 618 - "Community 618"
+Cohesion: 0.33
+Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
+
+### Community 619 - "Community 619"
+Cohesion: 0.33
+Nodes (6): 1.1 Definição de Banco de Dados, 1.2.1 Banco de Dados Relacional, 1.2.2 Banco de Dados Não-Relacional (NoSQL), 1.2 Tipos de Banco de Dados Aplicáveis ao Projeto, 1.3 Características de Armazenamento, 1. CONCEITOS E TIPOS DE BANCO DE DADOS
+
+### Community 620 - "Community 620"
 Cohesion: 0.40
-Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
+Nodes (5): 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, Atividade 5.3, Encontro 22 — Lógica Proposicional Introdutória (2h)
+
+### Community 621 - "Community 621"
+Cohesion: 0.40
+Nodes (5): 8. CHECKLIST DE NORMALIZAÇÃO, Qualidade de Implementação, Verificação de 1FN, Verificação de 2FN, Verificação de 3FN
+
+### Community 622 - "Community 622"
+Cohesion: 0.40
+Nodes (5): 13.1 Validação do Projeto, 13.2 Pontos Fortes da Solução, 13.3 Recomendações Futuras, 13.4 Métricas Esperadas, 13. CONCLUSÕES E RECOMENDAÇÕES
+
+### Community 623 - "Community 623"
+Cohesion: 0.40
+Nodes (5): 4.1 Entidades Identificadas, 4.2 Diagrama Entidade-Relacionamento, 4.3 Atributos-Chave, 4.4 Regras de Integridade, 4. MODELAGEM DE DADOS
+
+### Community 624 - "Community 624"
+Cohesion: 0.40
+Nodes (5): 8.1 Plano de Backup, 8.2 Scripts de Backup, 8.3 Procedimento de Recuperação, 8.4 Teste de Restauração, 8. PROCEDIMENTOS DE SEGURANÇA E BACKUP
+
+### Community 625 - "Community 625"
+Cohesion: 0.40
+Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
+
+### Community 626 - "Community 626"
+Cohesion: 0.50
+Nodes (4): 5.1 Anomalia de Inserção, 5.2 Anomalia de Atualização, 5.3 Anomalia de Exclusão, 5. ANOMALIAS ELIMINADAS PELA NORMALIZAÇÃO
+
+### Community 627 - "Community 627"
+Cohesion: 0.50
+Nodes (4): 7.1 DDL - Data Definition Language, 7.2 DML - Data Manipulation Language, 7.3 DCL - Data Control Language, 7. NORMALIZAÇÃO DE LINGUAGENS DE BANCO DE DADOS
+
+### Community 628 - "Community 628"
+Cohesion: 0.50
+Nodes (4): 12.1 Instalação do Banco, 12.2 Operação Diária, 12.3 Escalabilidade Futura, 12. DEPLOYMENT E OPERAÇÃO
+
+### Community 629 - "Community 629"
+Cohesion: 0.50
+Nodes (4): 2.1 Componentes da Arquitetura Cliente-Servidor, 2.2 Arquitetura Escolhida: Centralizada com Replicação Futura, 2.3 Justificativa da Escolha, 2. ARQUITETURA DE BANCO DE DADOS
+
+### Community 630 - "Community 630"
+Cohesion: 0.50
+Nodes (4): 3.1 Critérios de Seleção, 3.2 Matriz de Avaliação, 3.3 Justificativa Final: MySQL 8.0, 3. ANÁLISE COMPARATIVA DE SGBDs
+
+### Community 631 - "Community 631"
+Cohesion: 0.50
+Nodes (4): 7.1 Processo de Normalização, 7.2 Desnormalizações Controladas, 7.3 Anomalias Eliminadas, 7. NORMALIZAÇÃO ATÉ 3ª FORMA NORMAL
+
+### Community 632 - "Community 632"
+Cohesion: 0.50
+Nodes (4): 9.1 Ambientes Disponíveis, 9.2 Ferramentas Instaladas, 9.3 Configuração do Ambiente, 9. FERRAMENTAS DE MANIPULAÇÃO E EXECUÇÃO
+
+### Community 633 - "Community 633"
+Cohesion: 0.50
+Nodes (4): Documentação Oficial, Ferramentas Utilizadas, Padrões de Projeto, REFERÊNCIAS E RECURSOS
+
+### Community 634 - "Community 634"
+Cohesion: 0.67
+Nodes (3): 5.1 Scripts DDL (Data Definition Language), 5.2 Scripts DML (Data Manipulation Language), 5. SCRIPTS SQL - DDL E DML
 
 ## Knowledge Gaps
-- **4102 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+4097 more)
+- **4351 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+4346 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **51 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2499,15 +2676,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `MÓDULO 2 — FRAÇÕES, DECIMAIS E PORCENTAGEM` connect `Community 351` to `Community 424`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `PARTE 2 — ROBÓTICA` connect `Community 273` to `Community 256`, `Community 226`, `Community 137`, `Community 240`, `Community 241`, `Community 272`, `Community 116`, `Community 282`, `Community 251`, `Community 157`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `PARTE 1 — IMPRESSÃO 3D` connect `Community 282` to `Community 225`, `Community 258`, `Community 259`, `Community 230`, `Community 168`, `Community 175`, `Community 242`, `Community 25`, `Community 255`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _4143 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _4392 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.020618556701030927 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.02531645569620253 - nodes in this community are weakly interconnected._
-- **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.02702702702702703 - nodes in this community are weakly interconnected._
-- **Should `Community 5` be split into smaller, more focused modules?**
-  _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._

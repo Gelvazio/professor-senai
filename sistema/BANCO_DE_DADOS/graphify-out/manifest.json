@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1788196837.5068326,
-    "ast_hash": "f744548dbee4fe6957d749d7784dd3fe",
+    "mtime": 1788196952.0525308,
+    "ast_hash": "28a4980ed25edf04f74ecc44f7eee2e3",
     "semantic_hash": ""
   },
   "Avalia\u00e7\u00e3o pr\u00e1tica banco de dados.md": {
@@ -54,7 +54,22 @@
     "ast_hash": "2303b11e79d25b5837186994ceae1557",
     "semantic_hash": ""
   },
-  "exemplo/biblioteca_sistema.sql": {
+  "exemplo-biblioteca/MODELO-CONCEITUAL.sql": {
+    "mtime": 1788196977.6144783,
+    "ast_hash": "8f80755ddea6a6d6ec4946218d9f553d",
+    "semantic_hash": ""
+  },
+  "exemplo-biblioteca/MODELO-FISICO.sql": {
+    "mtime": 1788197053.5137258,
+    "ast_hash": "acc17bcebf1b5f9b06f3f4b172c6a6af",
+    "semantic_hash": ""
+  },
+  "exemplo-biblioteca/MODELO-LOGICO.sql": {
+    "mtime": 1788197011.0878084,
+    "ast_hash": "714966570aeec8c9726024986e4e8ca4",
+    "semantic_hash": ""
+  },
+  "exemplo-biblioteca/biblioteca_sistema.sql": {
     "mtime": 1788196884.1796122,
     "ast_hash": "1bb5ee89c97d6f1219d8000f008e57d8",
     "semantic_hash": ""
