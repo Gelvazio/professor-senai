@@ -19,6 +19,7 @@
 7. **REGRA 07**: Filtro de pendências — busca apenas matérias ATIVAS (ativo=1)
 8. **REGRA 08**: Campo de status de matérias aceita 3 valores: 1 (Ativa), 0 (Inativa), 2 (Concluída)
 9. **VERIFICAÇÃO 01**: Apostila "Fundamentos da Tecnologia e Programação" atende 100% à ementa (31-08-2026)
+10. **REGRA 09**: Plano de aulas para UC "Testes de Frontend" (40 horas, 8 blocos temáticos + 2 avaliações) — Arquivo: `sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md`
 
 ### 🔧 Ferramentas Criadas
 
