@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788191765.6881332,
-    "ast_hash": "b30407506a39935ee7fff4877a4a0666",
+    "mtime": 1788203810.2139225,
+    "ast_hash": "71ae114599fd9c722e1a014106675743",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -575,8 +575,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1786646108.207878,
-    "ast_hash": "f0b106ca7e1d514ee7f9dff683d9f516",
+    "mtime": 1788203852.9192069,
+    "ast_hash": "8954193f1ab3d2a92dbfd769ba629320",
     "semantic_hash": ""
   },
   "graphify-out/converted/Planilha-Gastos-Casa-AULA-13-08-2026_5a5f37d8.md": {
@@ -2685,48 +2685,48 @@
     "semantic_hash": ""
   },
   "syncdata/package.json": {
-    "mtime": 1787917656.3674357,
-    "ast_hash": "e72c910aa2bf5cd058dc5ff1910f458c",
+    "mtime": 1788203827.32297,
+    "ast_hash": "b313e16c7654d6d4fbb4075b9ff8c772",
     "semantic_hash": ""
   },
   "syncdata/server.js": {
-    "mtime": 1787921428.4565537,
-    "ast_hash": "87e99de57b9b852eb1e361a91be07d3c",
+    "mtime": 1788203827.32297,
+    "ast_hash": "158d4b54f94b7786bfb99c3795a9d6f9",
     "semantic_hash": ""
   },
   "syncdata/src/constants.js": {
-    "mtime": 1787919395.1055899,
-    "ast_hash": "1232e078eea73defdc07cce40039e845",
+    "mtime": 1788203827.32297,
+    "ast_hash": "fffadcae2d8aab2a041684a902052ca9",
     "semantic_hash": ""
   },
   "syncdata/src/generate-pendencias.js": {
-    "mtime": 1787916874.4528928,
-    "ast_hash": "e6a2cb06877d9f5794e68c8ea7949104",
+    "mtime": 1788203827.32297,
+    "ast_hash": "20341c4656abeddc8c5eb8c4be11d9d7",
     "semantic_hash": ""
   },
   "syncdata/src/scan-aulas.js": {
-    "mtime": 1787917881.140399,
-    "ast_hash": "1193766797f3cbcd7702939162165dca",
+    "mtime": 1788203827.32297,
+    "ast_hash": "9a11bb8106d86f340e344eb73b0e5350",
     "semantic_hash": ""
   },
   "syncdata/src/utils.js": {
-    "mtime": 1787916886.2203507,
-    "ast_hash": "1171f74ecca145dd4e86d02a55d72a76",
+    "mtime": 1788203827.3284361,
+    "ast_hash": "541777cbf8b32a8d7d0995a992792bf8",
     "semantic_hash": ""
   },
   "syncdata/CLAUDE.md": {
-    "mtime": 1787919386.5481088,
-    "ast_hash": "dbd2df66a3f03aa93193d851a2b550fb",
+    "mtime": 1788203827.32297,
+    "ast_hash": "3c3760932419a93f540050b34dcf6ab9",
     "semantic_hash": ""
   },
   "syncdata/README.md": {
-    "mtime": 1787917019.95296,
-    "ast_hash": "4fdaebd48745d63c44343e90e41672d2",
+    "mtime": 1788203827.32297,
+    "ast_hash": "c316f0451c0512aae463ef2f47570eb6",
     "semantic_hash": ""
   },
   "syncdata/src/verify-uc.js": {
-    "mtime": 1787919423.770276,
-    "ast_hash": "fd4e4ed4697ae2afbab53ff740a9f8e5",
+    "mtime": 1788203827.3284361,
+    "ast_hash": "11fce74fb9cf55dbfb722340e333bb92",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md": {
@@ -2770,8 +2770,8 @@
     "semantic_hash": ""
   },
   "syncdata/index.js": {
-    "mtime": 1787920270.294793,
-    "ast_hash": "b9afb1326f3aa0ab9dfc84aa230e8a5c",
+    "mtime": 1788203827.32297,
+    "ast_hash": "d87eb45ca2e70891c6f6988038d87687",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/.claude/settings.local.json": {
@@ -2890,28 +2890,23 @@
     "semantic_hash": ""
   },
   "transcrever-video-youtube/transcrever.ps1": {
-    "mtime": 1787935588.738338,
-    "ast_hash": "7908202dc9b5d2e46db49b5619f0b5c6",
+    "mtime": 1788203823.5244048,
+    "ast_hash": "811b987732c00323e2088244c3dcc32f",
     "semantic_hash": ""
   },
   "transcrever-video-youtube/transcrever.py": {
-    "mtime": 1787935567.2847302,
-    "ast_hash": "04b9f9ce3a42259892daec8eed7e0c44",
+    "mtime": 1788203823.5244048,
+    "ast_hash": "41806b063fb98057124da20d8eeb5bc9",
     "semantic_hash": ""
   },
   "transcrever-video-youtube/QUICKSTART.md": {
-    "mtime": 1787935604.4619954,
-    "ast_hash": "fbfbba651f1006901b1ed271d1796fc1",
+    "mtime": 1788203823.5244048,
+    "ast_hash": "341cc89aab1464bf7529673fe272321b",
     "semantic_hash": ""
   },
   "transcrever-video-youtube/README.md": {
-    "mtime": 1787935537.6322098,
-    "ast_hash": "6d9148b6eb506e3d34ec3ebc940be424",
-    "semantic_hash": ""
-  },
-  "transcrever-video-youtube/requirements.txt": {
-    "mtime": 1787935540.2966492,
-    "ast_hash": "653f885eb84c144575e7d655c1e2abac",
+    "mtime": 1788203823.5244048,
+    "ast_hash": "ca5a1b32e00f4d5e2691c551563fecb7",
     "semantic_hash": ""
   },
   ".vscode/settings.json": {
@@ -3200,18 +3195,13 @@
     "semantic_hash": ""
   },
   "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/.claude/settings.local.json": {
-    "mtime": 1788190943.5602324,
-    "ast_hash": "636effc5a2d245d7412db9391939ddc0",
+    "mtime": 1788200964.2309332,
+    "ast_hash": "9a9ed7e576e226cf3db2a11c474773c3",
     "semantic_hash": ""
   },
   "sistema/GESTAO_E_CONTROLE_MATERIAIS/GestaoControleMateriais_456h.md": {
     "mtime": 1788190933.1503496,
     "ast_hash": "a65833ade1bd61ad2eb763393f994634",
-    "semantic_hash": ""
-  },
-  "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md": {
-    "mtime": 1788191680.4948335,
-    "ast_hash": "b85b17f58d7f460dcd83b25dee722836",
     "semantic_hash": ""
   },
   "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md": {
@@ -3225,8 +3215,8 @@
     "semantic_hash": ""
   },
   "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md": {
-    "mtime": 1788192035.835896,
-    "ast_hash": "d8a86067282ff0cb6f9468d54814b4c2",
+    "mtime": 1788203578.8390744,
+    "ast_hash": "d6209663f0e6526a63df7a7659a72ca8",
     "semantic_hash": ""
   },
   "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/criar as aulas - AnaliseDadosAplicadaGestao.txt": {
@@ -3347,6 +3337,31 @@
   "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/ATIVIDADES/ATIVIDADE-AULA-10.md": {
     "mtime": 1788199329.820422,
     "ast_hash": "9ba2f406d6f85baaab2cc5858a32ea78",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/CT-Informatica-Internet-1000-SENAI-SED-2026.md": {
+    "mtime": 1788200978.669648,
+    "ast_hash": "87f98680bb1f9a1efb9ed89993cc3abe",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/MATERIAS-TEC-INFORMATICA.md": {
+    "mtime": 1788202571.4388905,
+    "ast_hash": "e5e91d7c711655357e96f5e9cc038ed5",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/EMENTA-TESTES-FRONT-END.md": {
+    "mtime": 1788202923.5778363,
+    "ast_hash": "57342f178cbf2a3e487bf91d34fe050c",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS-TESTES-FRONT-END.md": {
+    "mtime": 1788203177.1782384,
+    "ast_hash": "01ab0443636ad3fc3cdeebaeca38a008",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md": {
+    "mtime": 1788203823.5244048,
+    "ast_hash": "77a30a4d1842565015e66aba7702b7de",
     "semantic_hash": ""
   }
 }
