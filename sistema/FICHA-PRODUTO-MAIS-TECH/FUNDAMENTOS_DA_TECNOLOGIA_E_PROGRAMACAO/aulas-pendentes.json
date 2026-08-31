@@ -1,0 +1,58 @@
+[
+  {
+    "ordem": 1,
+    "aula": "O que é Tecnologia? Dispositivos Digitais no Cotidiano",
+    "ementa_bloco": "Bloco 1 — Tecnologia e Mundo Digital",
+    "encontro": 1,
+    "ch": 2,
+    "status": "PENDENTE",
+    "conteudos": [
+      "Conceito de tecnologia e sua presença no cotidiano",
+      "Principais dispositivos digitais e suas funções",
+      "Diferença entre tecnologias digitais e analógicas",
+      "Estatísticas sobre dispositivos conectados à internet"
+    ],
+    "atividades": [
+      "Mapeamento de dispositivos tecnológicos usados em 24h",
+      "Discussão em grupo sobre impacto da tecnologia"
+    ]
+  },
+  {
+    "ordem": 2,
+    "aula": "Evolução dos Computadores e História da Tecnologia",
+    "ementa_bloco": "Bloco 1 — Tecnologia e Mundo Digital",
+    "encontro": 2,
+    "ch": 2,
+    "status": "PENDENTE",
+    "conteudos": [
+      "História dos computadores (5 gerações)",
+      "Evolução de tamanho, custo e poder de processamento",
+      "Marcos importantes: ARPANET, PC, WWW, iPhone, IA",
+      "Comparação entre tecnologia antiga e moderna"
+    ],
+    "atividades": [
+      "Criação de linha do tempo ilustrada",
+      "Pesquisa sobre marcos da tecnologia"
+    ]
+  },
+  {
+    "ordem": 3,
+    "aula": "Cidadania Digital: Fake News, Cyberbullying e Pegada Digital",
+    "ementa_bloco": "Bloco 1 — Tecnologia e Mundo Digital",
+    "encontro": 3,
+    "ch": 2,
+    "status": "PENDENTE",
+    "conteudos": [
+      "Conceito de cidadania digital",
+      "Identificação e combate a fake news",
+      "Cyberbullying: definição, exemplos e proteção",
+      "Pegada digital e privacidade online",
+      "Boas práticas de ética digital"
+    ],
+    "atividades": [
+      "Caça às fake news com verificação de fontes",
+      "Análise de pegada digital pessoal",
+      "Discussão sobre direitos e deveres online"
+    ]
+  }
+]
