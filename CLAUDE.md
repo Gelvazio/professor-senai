@@ -39,6 +39,7 @@ As seguintes UCs existem no projeto:
 ### 🔧 Ferramentas Criadas
 
 - **syncdata/server.js**: ✅ API REST com endpoints para sincronização
+- **dashboard.html**: ✅ Dashboard interativo com resumo de UCs, pendências e progresso
 - **Dashboard Modal**: "Relatório SYNC" para visualizar status de sincronização
 
 ### ⏳ Ferramentas Planejadas (Não Implementadas)
