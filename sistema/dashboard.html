@@ -1696,6 +1696,7 @@
       <span class="role-badge" id="roleBadge"></span>
       <button id="btnDidatica" onclick="abrirDidatica()" class="header-btn" style="display:none; margin-left:8px">🎓 Didática</button>
       <button id="btnRelatorioSync" onclick="abrirRelatorioSync()" class="header-btn" style="display:none; margin-left:8px" title="Visualizar relatório de sincronização">📊 Relatório SYNC</button>
+      <button id="btnAulasPendentes" onclick="abrirVisualizadorAulasPendentes()" class="header-btn" style="display:none; margin-left:8px" title="Visualizar plano de aulas pendentes">📚 Aulas Pendentes</button>
       <button onclick="toggleTema()" class="header-btn" id="btnTema" style="margin-left: 8px; min-width: 96px">🌙 Escuro</button>
       <button onclick="sair()" class="header-btn" style="margin-left: 4px">
         🚪 Sair
@@ -6129,6 +6130,11 @@
         const modal = document.getElementById('relatorioBd');
         modal.style.display = 'none';
         document.body.style.overflow = '';
+      }
+
+      // ── Visualizador de Aulas Pendentes ──
+      function abrirVisualizadorAulasPendentes() {
+        window.open('FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/visualizador-aulas-pendentes.html', 'aulasPendentes', 'width=1200,height=800');
       }
 
       async function carregarRelatorioSync() {
