@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador - Aulas Pendentes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            color: #0B3D91;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #0B3D91 0%, #00E5FF 100%);
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-card .label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .aulas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .aula-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .aula-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .aula-header {
+            background: linear-gradient(135deg, #0B3D91 0%, #00E5FF 100%);
+            padding: 20px;
+            color: white;
+        }
+
+        .aula-numero {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .aula-titulo {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .aula-meta {
+            font-size: 13px;
+            opacity: 0.9;
+            display: flex;
+            gap: 15px;
+        }
+
+        .aula-content {
+            padding: 20px;
+        }
+
+        .secao {
+            margin-bottom: 20px;
+        }
+
+        .secao-titulo {
+            font-size: 14px;
+            font-weight: bold;
+            color: #0B3D91;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .conteudos-list, .atividades-list {
+            list-style: none;
+        }
+
+        .conteudos-list li, .atividades-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            font-size: 13px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .conteudos-list li:before, .atividades-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00E5FF;
+            font-weight: bold;
+        }
+
+        .resumo-topicos {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .topico {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .topico:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .topico-titulo {
+            font-weight: bold;
+            color: #0B3D91;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .topico-resumo {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .avaliacao-box {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .avaliacao-titulo {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 12px;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .questao {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ffe69c;
+        }
+
+        .questao:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .questao-numero {
+            font-weight: bold;
+            color: #0B3D91;
+            font-size: 12px;
+        }
+
+        .questao-texto {
+            font-size: 13px;
+            margin: 8px 0;
+            color: #333;
+        }
+
+        .opcoes {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .opcoes li {
+            padding: 6px 0;
+            font-size: 12px;
+            color: #666;
+            cursor: pointer;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .opcoes li:before {
+            content: "○";
+            position: absolute;
+            left: 0;
+        }
+
+        .resposta-correta {
+            background: #d4edda;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #155724;
+            border-left: 3px solid #28a745;
+        }
+
+        .toggle-btn {
+            background: #0B3D91;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 15px;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .toggle-btn:hover {
+            background: #00E5FF;
+            color: #0B3D91;
+        }
+
+        .toggle-btn.expanded {
+            background: #00E5FF;
+            color: #0B3D91;
+        }
+
+        .expandable {
+            display: none;
+            animation: slideDown 0.3s ease;
+        }
+
+        .expandable.show {
+            display: block;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: white;
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            .aulas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Aulas Pendentes — Fundamentos da Tecnologia e Programação</h1>
+            <p>Plano de 6 horas/aula baseado na ementa</p>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="number">3</div>
+                    <div class="label">Aulas Pendentes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">6h</div>
+                    <div class="label">Carga Horária</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">9</div>
+                    <div class="label">Questões de Avaliação</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">9</div>
+                    <div class="label">Tópicos Principais</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aulas-grid" id="aulasContainer"></div>
+
+        <div class="footer">
+            <p>Rio do Sul Mais Tech · SENAI · Prefeitura Municipal de Rio do Sul</p>
+        </div>
+    </div>
+
+    <script>
+        const dados = [
+            {
+                "ordem": 1,
+                "aula": "O que é Tecnologia? Dispositivos Digitais no Cotidiano",
+                "ementa_bloco": "Bloco 1 — Tecnologia e Mundo Digital",
+                "encontro": 1,
+                "ch": 2,
+                "status": "PENDENTE",
+                "conteudos": [
+                    "Conceito de tecnologia e sua presença no cotidiano",
+                    "Principais dispositivos digitais e suas funções",
+                    "Diferença entre tecnologias digitais e analógicas",
+                    "Estatísticas sobre dispositivos conectados à internet"
+                ],
+                "atividades": [
+                    "Mapeamento de dispositivos tecnológicos usados em 24h",
+                    "Discussão em grupo sobre impacto da tecnologia"
+                ],
+                "resumo_topicos": {
+                    "topico_1": {
+                        "titulo": "Tecnologia é Ferramenta Humana",
+                        "resumo": "Tecnologia é qualquer ferramenta, técnica ou processo criado pelo ser humano para resolver um problema ou facilitar uma tarefa. Desde a roda até computadores, tudo é tecnologia. Vivemos na era da tecnologia DIGITAL, onde dispositivos processam informações em bits (0s e 1s)."
+                    },
+                    "topico_2": {
+                        "titulo": "Dispositivos Digitais no Dia a Dia",
+                        "resumo": "Smartphones, computadores, tablets, smartwatches, smart TVs e consoles de games são exemplos de dispositivos digitais. Cada um tem uma função específica na nossa vida: comunicação, entretenimento, estudos e produtividade. Em 2024, existem mais de 15 bilhões de dispositivos conectados à internet."
+                    },
+                    "topico_3": {
+                        "titulo": "Digital vs Analógico",
+                        "resumo": "Tecnologia ANALÓGICA trabalha com valores contínuos (relógio de ponteiros, rádio AM/FM). Tecnologia DIGITAL trabalha com valores discretos (0 e 1 - ligado e desligado). Dispositivos digitais são mais precisos, rápidos e fáceis de programar que os analógicos."
+                    }
+                },
+                "avaliacao_objetiva": [
+                    {
+                        "numero": 1,
+                        "pergunta": "O que é tecnologia?",
+                        "opcoes": {
+                            "a": "Apenas computadores e celulares",
+                            "b": "Qualquer ferramenta ou técnica criada para resolver um problema",
+                            "c": "Um invento recente do século XX",
+                            "d": "Algo que só existe em laboratórios"
+                        },
+                        "resposta_correta": "b"
+                    },
+                    {
+                        "numero": 2,
+                        "pergunta": "Qual é a diferença fundamental entre tecnologia digital e analógica?",
+                        "opcoes": {
+                            "a": "Digital é mais cara",
+                            "b": "Digital processa informações em 0s e 1s, analógico usa valores contínuos",
+                            "c": "Analógico é mais moderno",
+                            "d": "Não há diferença, são a mesma coisa"
+                        },
+                        "resposta_correta": "b"
+                    },
+                    {
+                        "numero": 3,
+                        "pergunta": "Qual destes NÃO é um dispositivo digital?",
+                        "opcoes": {
+                            "a": "Smartphone",
+                            "b": "Relógio de ponteiros mecânico",
+                            "c": "Computador",
+                            "d": "Smartwatch"
+                        },
+                        "resposta_correta": "b"
+                    }
+                ]
+            },
+            {
+                "ordem": 2,
+                "aula": "Evolução dos Computadores e História da Tecnologia",
+                "ementa_bloco": "Bloco 1 — Tecnologia e Mundo Digital",
+                "encontro": 2,
+                "ch": 2,
+                "status": "PENDENTE",
+                "conteudos": [
+                    "História dos computadores (5 gerações)",
+                    "Evolução de tamanho, custo e poder de processamento",
+                    "Marcos importantes: ARPANET, PC, WWW, iPhone, IA",
+                    "Comparação entre tecnologia antiga e moderna"
+                ],
+                "atividades": [
+                    "Criação de linha do tempo ilustrada",
+                    "Pesquisa sobre marcos da tecnologia"
+                ],
+                "resumo_topicos": {
+                    "topico_1": {
+                        "titulo": "As 5 Gerações dos Computadores",
+                        "resumo": "1ª geração (1940-56): Válvulas eletrônicas, enormes e caras. 2ª geração (1956-63): Transistores, menores. 3ª geração (1964-71): Circuitos integrados, mais rápidos. 4ª geração (1971-hoje): Microprocessadores, computadores pessoais. 5ª geração (hoje-futuro): IA e computação quântica."
+                    },
+                    "topico_2": {
+                        "titulo": "De uma Sala para o Bolso",
+                        "resumo": "O ENIAC (1945) ocupava 167 m² e pesava 27 toneladas. Seu celular é MILHÕES DE VEZES mais poderoso! A miniaturização e barateamento dos componentes tornaram a tecnologia acessível. Hoje, processadores ultramodernos têm bilhões de transistores em um chip microscópico."
+                    },
+                    "topico_3": {
+                        "titulo": "Marcos que Mudaram o Mundo",
+                        "resumo": "1969: ARPANET (ancestral da internet). 1981: IBM PC revoluciona computadores pessoais. 1991: Tim Berners-Lee cria a WWW. 2007: iPhone lança era dos smartphones. 2020s: IA (ChatGPT, Copilot) entra no cotidiano. Cada marco expandiu o acesso e poder da tecnologia."
+                    }
+                },
+                "avaliacao_objetiva": [
+                    {
+                        "numero": 1,
+                        "pergunta": "Qual geração de computadores usava válvulas eletrônicas?",
+                        "opcoes": {
+                            "a": "1ª geração",
+                            "b": "2ª geração",
+                            "c": "3ª geração",
+                            "d": "5ª geração"
+                        },
+                        "resposta_correta": "a"
+                    },
+                    {
+                        "numero": 2,
+                        "pergunta": "Quantas vezes aproximadamente um celular moderno é mais poderoso que o ENIAC?",
+                        "opcoes": {
+                            "a": "10 vezes",
+                            "b": "1 mil vezes",
+                            "c": "Milhões de vezes",
+                            "d": "Exatamente igual"
+                        },
+                        "resposta_correta": "c"
+                    },
+                    {
+                        "numero": 3,
+                        "pergunta": "Qual marcos marca o início da era dos smartphones?",
+                        "opcoes": {
+                            "a": "Criação da ARPANET (1969)",
+                            "b": "Lançamento do IBM PC (1981)",
+                            "c": "Criação da WWW (1991)",
+                            "d": "Apresentação do iPhone (2007)"
+                        },
+                        "resposta_correta": "d"
+                    }
+                ]
+            },
+            {
+                "ordem": 3,
+                "aula": "Cidadania Digital: Fake News, Cyberbullying e Pegada Digital",
+                "ementa_bloco": "Bloco 1 — Tecnologia e Mundo Digital",
+                "encontro": 3,
+                "ch": 2,
+                "status": "PENDENTE",
+                "conteudos": [
+                    "Conceito de cidadania digital",
+                    "Identificação e combate a fake news",
+                    "Cyberbullying: definição, exemplos e proteção",
+                    "Pegada digital e privacidade online",
+                    "Boas práticas de ética digital"
+                ],
+                "atividades": [
+                    "Caça às fake news com verificação de fontes",
+                    "Análise de pegada digital pessoal",
+                    "Discussão sobre direitos e deveres online"
+                ],
+                "resumo_topicos": {
+                    "topico_1": {
+                        "titulo": "Fake News — A Mentira que Viaja Rápido",
+                        "resumo": "Fake news são informações falsas ou distorcidas criadas para enganar pessoas. Para identificar: 1) Verifique a fonte, 2) Pesquise em sites confiáveis (G1, UOL, BBC), 3) Observe a data, 4) Desconfie de manchetes exageradas, 5) Use verificadores (Lupa, Aos Fatos). Regra de ouro: Antes de compartilhar, VERIFIQUE!"
+                    },
+                    "topico_2": {
+                        "titulo": "Cyberbullying — Violência Também Acontece Online",
+                        "resumo": "Cyberbullying é agressão, humilhação ou perseguição por meios digitais (redes sociais, WhatsApp, jogos). Exemplos: espalhar boatos, excluir de grupos, mensagens ofensivas. O que fazer: 1) Não responda, 2) Guarde prints, 3) Bloqueie o perfil, 4) Conte para um adulto de confiança, 5) Procure ajuda (CVV: 188)."
+                    },
+                    "topico_3": {
+                        "titulo": "Pegada Digital — O Rastro que Você Deixa Online",
+                        "resumo": "Tudo que você faz na internet deixa um rastro: buscas, curtidas, comentários, fotos, localizações. Empresas e algoritmos usam isso para mostrar anúncios e influenciar opiniões. Boas práticas: 1) Revise privacidade, 2) Pense antes de postar, 3) Use senhas fortes e únicas, 4) Nunca compartilhe dados pessoais."
+                    }
+                },
+                "avaliacao_objetiva": [
+                    {
+                        "numero": 1,
+                        "pergunta": "Qual é o PRIMEIRO passo para identificar uma fake news?",
+                        "opcoes": {
+                            "a": "Compartilhar para amigos",
+                            "b": "Verificar a fonte",
+                            "c": "Ignorar completamente",
+                            "d": "Escrever um comentário de protesto"
+                        },
+                        "resposta_correta": "b"
+                    },
+                    {
+                        "numero": 2,
+                        "pergunta": "O que NÃO é um exemplo de cyberbullying?",
+                        "opcoes": {
+                            "a": "Espalhar boatos sobre alguém",
+                            "b": "Criar perfil falso para humilhar",
+                            "c": "Enviar mensagem de cumprimento a um amigo",
+                            "d": "Excluir alguém de grupos de forma intencional"
+                        },
+                        "resposta_correta": "c"
+                    },
+                    {
+                        "numero": 3,
+                        "pergunta": "O que é pegada digital?",
+                        "opcoes": {
+                            "a": "Pegada deixada no chão ao usar computador",
+                            "b": "O rastro de dados que você deixa ao usar internet",
+                            "c": "Um programa antivírus",
+                            "d": "Uma rede social"
+                        },
+                        "resposta_correta": "b"
+                    }
+                ]
+            }
+        ];
+
+        function renderAulas() {
+            const container = document.getElementById('aulasContainer');
+            container.innerHTML = '';
+
+            dados.forEach((aula, index) => {
+                const card = document.createElement('div');
+                card.className = 'aula-card';
+                card.innerHTML = `
+                    <div class="aula-header">
+                        <div class="aula-numero">ENCONTRO ${aula.encontro}</div>
+                        <div class="aula-titulo">${aula.aula}</div>
+                        <div class="aula-meta">
+                            <span>⏱️ ${aula.ch}h</span>
+                            <span>📌 ${aula.ementa_bloco.split('—')[1].trim()}</span>
+                        </div>
+                    </div>
+                    <div class="aula-content">
+                        <div class="secao">
+                            <div class="secao-titulo">📋 Conteúdos</div>
+                            <ul class="conteudos-list">
+                                ${aula.conteudos.map(c => `<li>${c}</li>`).join('')}
+                            </ul>
+                        </div>
+
+                        <div class="secao">
+                            <div class="secao-titulo">✏️ Atividades</div>
+                            <ul class="atividades-list">
+                                ${aula.atividades.map(a => `<li>${a}</li>`).join('')}
+                            </ul>
+                        </div>
+
+                        <div class="expandable" id="expand-${index}">
+                            <div class="secao">
+                                <div class="secao-titulo">📖 Resumo dos Tópicos</div>
+                                <div class="resumo-topicos">
+                                    ${Object.values(aula.resumo_topicos).map(topico => `
+                                        <div class="topico">
+                                            <div class="topico-titulo">${topico.titulo}</div>
+                                            <div class="topico-resumo">${topico.resumo}</div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+
+                            <div class="secao">
+                                <div class="avaliacao-box">
+                                    <div class="avaliacao-titulo">✔️ Avaliação Objetiva</div>
+                                    ${aula.avaliacao_objetiva.map(q => `
+                                        <div class="questao">
+                                            <div class="questao-numero">Questão ${q.numero}</div>
+                                            <div class="questao-texto"><strong>${q.pergunta}</strong></div>
+                                            <ul class="opcoes">
+                                                ${Object.entries(q.opcoes).map(([letra, texto]) => `
+                                                    <li><strong>${letra.toUpperCase()})</strong> ${texto}</li>
+                                                `).join('')}
+                                            </ul>
+                                            <div class="resposta-correta">
+                                                ✓ Resposta correta: <strong>${q.resposta_correta.toUpperCase()}</strong>
+                                            </div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="toggle-btn" onclick="toggleExpand(${index})">
+                            <span id="toggle-text-${index}">+ EXPANDIR DETALHES</span>
+                        </button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function toggleExpand(index) {
+            const expandable = document.getElementById(`expand-${index}`);
+            const btn = event.target.closest('.toggle-btn');
+            const toggleText = document.getElementById(`toggle-text-${index}`);
+
+            expandable.classList.toggle('show');
+            btn.classList.toggle('expanded');
+
+            if (expandable.classList.contains('show')) {
+                toggleText.textContent = '- OCULTAR DETALHES';
+            } else {
+                toggleText.textContent = '+ EXPANDIR DETALHES';
+            }
+        }
+
+        renderAulas();
+    </script>
+</body>
+</html>
