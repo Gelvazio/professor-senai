@@ -1,112 +1,80 @@
-// Classe para gerenciar pendências
-class PendenciaManager {
+const API_URL = 'http://localhost:3001/materias';
+
+class MateriasManager {
   constructor() {
-    this.pendencias = this.carregarDoDados();
-    this.pendenciaEmEdicao = null;
-    this.pendenciaParaDelecao = null;
+    this.materias = [];
+    this.materiaEmEdicao = null;
+    this.materiaParaDelecao = null;
+    this.filtrosAtivos = {
+      status: ['ANDAMENTO', 'PENDENTE'],
+      campos: ['ementaCriada', 'apostilaCriada', 'planoAulasCriado', 'planoensinoCriado', 'avaliacoesCriadas'],
+    };
     this.init();
   }
 
-  init() {
+  async init() {
+    await this.carregarMaterias();
     this.vincularEventos();
-    this.renderizarPendencias();
+    this.renderizarMaterias();
   }
 
-  carregarDoDados() {
-    const dados = localStorage.getItem('pendencias');
-    if (dados) {
-      return JSON.parse(dados);
+  async carregarMaterias() {
+    try {
+      const response = await fetch(API_URL);
+      if (!response.ok) throw new Error('Erro ao carregar materias');
+      this.materias = await response.json();
+    } catch (error) {
+      console.error('Erro ao carregar do JSON Server:', error);
+      this.materias = [];
     }
-
-    // Dados iniciais - matérias padrão
-    return [
-      {
-        id: Date.now().toString() + '1',
-        descricao: 'BANCO DE DADOS - Preparar aulas e materiais',
-        status: 'PENDENTE',
-        prioridade: 'ALTA',
-        categoria: 'Matéria',
-        data: new Date().toISOString().split('T')[0],
-        datavencimento: '',
-        total_horas: 0,
-        horas_ministradas: 0,
-        criado_em: new Date().toISOString(),
-        atualizado_em: new Date().toISOString(),
-      },
-      {
-        id: Date.now().toString() + '2',
-        descricao: 'Fundamentos da Tecnologia e Programação - Estruturar conteúdo',
-        status: 'PENDENTE',
-        prioridade: 'ALTA',
-        categoria: 'Matéria',
-        data: new Date().toISOString().split('T')[0],
-        datavencimento: '',
-        total_horas: 0,
-        horas_ministradas: 0,
-        criado_em: new Date().toISOString(),
-        atualizado_em: new Date().toISOString(),
-      },
-      {
-        id: Date.now().toString() + '3',
-        descricao: 'REFORÇO MATEMATICA E RACIOCINIO LOGICO - Preparar exercícios',
-        status: 'PENDENTE',
-        prioridade: 'ALTA',
-        categoria: 'Matéria',
-        data: new Date().toISOString().split('T')[0],
-        datavencimento: '',
-        total_horas: 0,
-        horas_ministradas: 0,
-        criado_em: new Date().toISOString(),
-        atualizado_em: new Date().toISOString(),
-      },
-      {
-        id: Date.now().toString() + '4',
-        descricao: 'INTRODUCAO A COMUNICACAO ORAL E ESCRITA - Definir plano de aulas',
-        status: 'PENDENTE',
-        prioridade: 'NORMAL',
-        categoria: 'Matéria',
-        data: new Date().toISOString().split('T')[0],
-        datavencimento: '',
-        total_horas: 0,
-        horas_ministradas: 0,
-        criado_em: new Date().toISOString(),
-        atualizado_em: new Date().toISOString(),
-      },
-      {
-        id: Date.now().toString() + '5',
-        descricao: 'ANALISE DE DADOS APLICADA A GESTAO - Preparar bases de dados',
-        status: 'PENDENTE',
-        prioridade: 'NORMAL',
-        categoria: 'Matéria',
-        data: new Date().toISOString().split('T')[0],
-        datavencimento: '',
-        total_horas: 0,
-        horas_ministradas: 0,
-        criado_em: new Date().toISOString(),
-        atualizado_em: new Date().toISOString(),
-      },
-      {
-        id: Date.now().toString() + '6',
-        descricao: 'TESTES DE FRONTEND - Documentar estratégia de testes',
-        status: 'PENDENTE',
-        prioridade: 'NORMAL',
-        categoria: 'Matéria',
-        data: new Date().toISOString().split('T')[0],
-        datavencimento: '',
-        total_horas: 0,
-        horas_ministradas: 0,
-        criado_em: new Date().toISOString(),
-        atualizado_em: new Date().toISOString(),
-      },
-    ];
   }
 
-  salvarNoDados() {
-    localStorage.setItem('pendencias', JSON.stringify(this.pendencias));
+  async salvarMateria(dados) {
+    try {
+      let response;
+      if (this.materiaEmEdicao) {
+        response = await fetch(`${API_URL}/${this.materiaEmEdicao}`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...dados,
+            atualizado_em: new Date().toISOString(),
+          }),
+        });
+      } else {
+        response = await fetch(API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...dados,
+            criado_em: new Date().toISOString(),
+            atualizado_em: new Date().toISOString(),
+          }),
+        });
+      }
+      if (!response.ok) throw new Error('Erro ao salvar materia');
+      await this.carregarMaterias();
+      this.renderizarMaterias();
+    } catch (error) {
+      console.error('Erro ao salvar:', error);
+      alert('Erro ao salvar matéria');
+    }
+  }
+
+  async deletarMateria(id) {
+    try {
+      const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+      if (!response.ok) throw new Error('Erro ao deletar');
+      await this.carregarMaterias();
+      this.renderizarMaterias();
+    } catch (error) {
+      console.error('Erro ao deletar:', error);
+      alert('Erro ao deletar matéria');
+    }
   }
 
   vincularEventos() {
-    // Botão nova pendência
+    // Botão nova matéria
     document.getElementById('btnNewPendencia').addEventListener('click', () => {
       this.abrirFormularioNova();
     });
@@ -123,17 +91,24 @@ class PendenciaManager {
     // Enviar formulário
     document.getElementById('pendenciaForm').addEventListener('submit', (e) => {
       e.preventDefault();
-      this.salvarPendencia();
+      this.coletarFormulario();
     });
 
     // Busca
-    document.getElementById('searchInput').addEventListener('input', (e) => {
+    document.getElementById('searchInput').addEventListener('input', () => {
       this.aplicarFiltros();
     });
 
-    // Filtro de status
-    document.getElementById('filterStatus').addEventListener('change', () => {
-      this.aplicarFiltros();
+    // Filtros de status
+    document.querySelectorAll('.status-filter').forEach((checkbox) => {
+      checkbox.addEventListener('change', () => {
+        this.atualizarFiltrosStatus();
+      });
+    });
+
+    // Reset filtros
+    document.getElementById('btnResetFilters').addEventListener('click', () => {
+      this.resetarFiltros();
     });
 
     // Modal de exclusão
@@ -159,29 +134,50 @@ class PendenciaManager {
     });
   }
 
+  atualizarFiltrosStatus() {
+    this.filtrosAtivos.status = Array.from(document.querySelectorAll('.status-filter:checked')).map(
+      (cb) => cb.value
+    );
+    this.aplicarFiltros();
+  }
+
+  resetarFiltros() {
+    // Redefine filtros para padrão (ANDAMENTO e PENDENTE)
+    document.querySelectorAll('.status-filter').forEach((cb) => {
+      cb.checked = cb.value === 'ANDAMENTO' || cb.value === 'PENDENTE';
+    });
+    this.filtrosAtivos.status = ['ANDAMENTO', 'PENDENTE'];
+    this.aplicarFiltros();
+  }
+
   abrirFormularioNova() {
-    this.pendenciaEmEdicao = null;
-    document.getElementById('modalTitle').textContent = 'Nova Pendência';
+    this.materiaEmEdicao = null;
+    document.getElementById('modalTitle').textContent = 'Nova Matéria';
     document.getElementById('pendenciaForm').reset();
     this.abrirFormulario();
   }
 
   abrirFormularioEdicao(id) {
-    const pendencia = this.pendencias.find((p) => p.id === id);
-    if (!pendencia) return;
+    const materia = this.materias.find((m) => m.id === id);
+    if (!materia) return;
 
-    this.pendenciaEmEdicao = id;
-    document.getElementById('modalTitle').textContent = 'Editar Pendência';
+    this.materiaEmEdicao = id;
+    document.getElementById('modalTitle').textContent = 'Editar Matéria';
 
-    // Preencher formulário
-    document.getElementById('descricao').value = pendencia.descricao;
-    document.getElementById('status').value = pendencia.status;
-    document.getElementById('prioridade').value = pendencia.prioridade;
-    document.getElementById('data').value = pendencia.data || '';
-    document.getElementById('datavencimento').value = pendencia.datavencimento || '';
-    document.getElementById('total_horas').value = pendencia.total_horas || '';
-    document.getElementById('horas_ministradas').value = pendencia.horas_ministradas || '';
-    document.getElementById('categoria').value = pendencia.categoria || '';
+    document.getElementById('nome').value = materia.nome;
+    document.getElementById('status').value = materia.status;
+    document.getElementById('prioridade').value = materia.prioridade;
+    document.getElementById('data').value = materia.data || '';
+    document.getElementById('datavencimento').value = materia.datavencimento || '';
+    document.getElementById('total_horas').value = materia.total_horas || '';
+    document.getElementById('horas_ministradas').value = materia.horas_ministradas || '';
+    document.getElementById('categoria').value = materia.categoria || '';
+
+    document.getElementById('ementaCriada').checked = materia.ementaCriada || false;
+    document.getElementById('apostilaCriada').checked = materia.apostilaCriada || false;
+    document.getElementById('planoAulasCriado').checked = materia.planoAulasCriado || false;
+    document.getElementById('planoensinoCriado').checked = materia.planoensinoCriado || false;
+    document.getElementById('avaliacoesCriadas').checked = materia.avaliacoesCriadas || false;
 
     this.abrirFormulario();
   }
@@ -192,11 +188,11 @@ class PendenciaManager {
 
   fecharFormulario() {
     document.getElementById('formModal').classList.add('hidden');
-    this.pendenciaEmEdicao = null;
+    this.materiaEmEdicao = null;
   }
 
-  salvarPendencia() {
-    const descricao = document.getElementById('descricao').value;
+  coletarFormulario() {
+    const nome = document.getElementById('nome').value;
     const status = document.getElementById('status').value;
     const prioridade = document.getElementById('prioridade').value;
     const data = document.getElementById('data').value;
@@ -205,199 +201,160 @@ class PendenciaManager {
     const horas_ministradas = parseFloat(document.getElementById('horas_ministradas').value) || 0;
     const categoria = document.getElementById('categoria').value;
 
-    if (!descricao.trim()) {
-      alert('Descrição é obrigatória!');
+    if (!nome.trim()) {
+      alert('Nome da matéria é obrigatório!');
       return;
     }
 
-    if (this.pendenciaEmEdicao) {
-      // Editar existente
-      const index = this.pendencias.findIndex((p) => p.id === this.pendenciaEmEdicao);
-      if (index !== -1) {
-        this.pendencias[index] = {
-          ...this.pendencias[index],
-          descricao: descricao.trim(),
-          status,
-          prioridade,
-          data,
-          datavencimento,
-          total_horas,
-          horas_ministradas,
-          categoria,
-          atualizado_em: new Date().toISOString(),
-        };
-      }
-    } else {
-      // Criar nova
-      const novaPendencia = {
-        id: Date.now().toString(),
-        descricao: descricao.trim(),
-        status,
-        prioridade,
-        data,
-        datavencimento,
-        total_horas,
-        horas_ministradas,
-        categoria,
-        criado_em: new Date().toISOString(),
-        atualizado_em: new Date().toISOString(),
-      };
-      this.pendencias.push(novaPendencia);
-    }
+    const dados = {
+      nome: nome.trim(),
+      status,
+      prioridade,
+      data: data || new Date().toISOString().split('T')[0],
+      datavencimento,
+      total_horas,
+      horas_ministradas,
+      categoria,
+      ementaCriada: document.getElementById('ementaCriada').checked,
+      apostilaCriada: document.getElementById('apostilaCriada').checked,
+      planoAulasCriado: document.getElementById('planoAulasCriado').checked,
+      planoensinoCriado: document.getElementById('planoensinoCriado').checked,
+      avaliacoesCriadas: document.getElementById('avaliacoesCriadas').checked,
+    };
 
-    this.salvarNoDados();
-    this.renderizarPendencias();
+    this.salvarMateria(dados);
     this.fecharFormulario();
   }
 
   abrirModalDelecao(id) {
-    this.pendenciaParaDelecao = id;
-    const pendencia = this.pendencias.find((p) => p.id === id);
-    if (pendencia) {
-      document.getElementById('deleteMessage').textContent =
-        `Tem certeza que deseja excluir: "${pendencia.descricao}"?`;
+    this.materiaParaDelecao = id;
+    const materia = this.materias.find((m) => m.id === id);
+    if (materia) {
+      document.getElementById('deleteMessage').textContent = `Tem certeza que deseja excluir: "${materia.nome}"?`;
     }
     document.getElementById('deleteConfirmModal').classList.remove('hidden');
   }
 
   fecharModalDelecao() {
     document.getElementById('deleteConfirmModal').classList.add('hidden');
-    this.pendenciaParaDelecao = null;
+    this.materiaParaDelecao = null;
   }
 
   confirmarDelecao() {
-    if (this.pendenciaParaDelecao) {
-      this.pendencias = this.pendencias.filter((p) => p.id !== this.pendenciaParaDelecao);
-      this.salvarNoDados();
-      this.renderizarPendencias();
+    if (this.materiaParaDelecao) {
+      this.deletarMateria(this.materiaParaDelecao);
       this.fecharModalDelecao();
-    }
-  }
-
-  togglePendencia(id) {
-    const pendencia = this.pendencias.find((p) => p.id === id);
-    if (pendencia) {
-      pendencia.status = pendencia.status === 'PENDENTE' ? 'CONCLUIDA' : 'PENDENTE';
-      pendencia.atualizado_em = new Date().toISOString();
-      this.salvarNoDados();
-      this.renderizarPendencias();
     }
   }
 
   aplicarFiltros() {
     const busca = document.getElementById('searchInput').value.toLowerCase();
-    const statusFiltro = document.getElementById('filterStatus').value;
+    const statusAtivos = this.filtrosAtivos.status;
 
-    const pendenciasFiltradas = this.pendencias.filter((p) => {
-      const matchBusca =
-        p.descricao.toLowerCase().includes(busca) ||
-        p.categoria.toLowerCase().includes(busca);
-      const matchStatus = !statusFiltro || p.status === statusFiltro;
+    const filtradas = this.materias.filter((m) => {
+      const matchBusca = m.nome.toLowerCase().includes(busca);
+      const matchStatus = statusAtivos.includes(m.status);
       return matchBusca && matchStatus;
     });
 
-    this.renderizarPendenciasCustomizadas(pendenciasFiltradas);
+    this.renderizarMateriasFiltradas(filtradas);
   }
 
-  renderizarPendencias() {
+  renderizarMaterias() {
     this.atualizarEstatisticas();
-    this.renderizarPendenciasCustomizadas(this.pendencias);
+    this.aplicarFiltros();
   }
 
   atualizarEstatisticas() {
-    const total = this.pendencias.length;
-    const pendentes = this.pendencias.filter((p) => p.status === 'PENDENTE').length;
-    const concluidas = this.pendencias.filter((p) => p.status === 'CONCLUIDA').length;
+    const total = this.materias.length;
+    const pendentes = this.materias.filter((m) => m.status === 'PENDENTE' || m.status === 'ANDAMENTO').length;
+    const concluidas = this.materias.filter((m) => m.status === 'CONCLUIDO').length;
 
     document.getElementById('totalCount').textContent = total;
     document.getElementById('pendingCount').textContent = pendentes;
     document.getElementById('completedCount').textContent = concluidas;
   }
 
-  renderizarPendenciasCustomizadas(pendencias) {
+  renderizarMateriasFiltradas(materias) {
     const lista = document.getElementById('pendenciasList');
 
-    if (pendencias.length === 0) {
+    if (materias.length === 0) {
       lista.innerHTML = `
         <div class="empty-state">
-          <p>📭 Nenhuma pendência encontrada</p>
-          <p class="empty-hint">Clique em "Nova Pendência" para começar</p>
+          <p>📭 Nenhuma matéria encontrada</p>
+          <p class="empty-hint">Clique em "Nova Matéria" para começar</p>
         </div>
       `;
       return;
     }
 
-    // Ordenar por data de vencimento e prioridade
-    const ordenadas = [...pendencias].sort((a, b) => {
+    // Ordenar por status e prioridade
+    const ordenadas = [...materias].sort((a, b) => {
       const prioridades = { ALTA: 0, NORMAL: 1, BAIXA: 2 };
-      if (a.status !== b.status) {
-        return a.status === 'PENDENTE' ? -1 : 1;
-      }
-      if ((a.datavencimento || '') !== (b.datavencimento || '')) {
-        return (a.datavencimento || '').localeCompare(b.datavencimento || '');
+      const statusOrder = { ANDAMENTO: 0, PENDENTE: 1, CONCLUIDO: 2, CANCELADO: 3, EXCLUIDO: 4 };
+      if (statusOrder[a.status] !== statusOrder[b.status]) {
+        return statusOrder[a.status] - statusOrder[b.status];
       }
       return (prioridades[a.prioridade] || 1) - (prioridades[b.prioridade] || 1);
     });
 
-    lista.innerHTML = ordenadas
-      .map((p) => this.criarCardPendencia(p))
-      .join('');
+    lista.innerHTML = ordenadas.map((m) => this.criarCardMateria(m)).join('');
 
-    // Vincular eventos dos checkboxes
-    ordenadas.forEach((p) => {
-      const checkbox = lista.querySelector(`[data-id="${p.id}"] .pendencia-checkbox`);
-      if (checkbox) {
-        checkbox.addEventListener('change', () => this.togglePendencia(p.id));
-      }
-
-      const btnEditar = lista.querySelector(`[data-id="${p.id}"] .btn-edit`);
+    // Vincular eventos
+    ordenadas.forEach((m) => {
+      const btnEditar = lista.querySelector(`[data-id="${m.id}"] .btn-edit`);
       if (btnEditar) {
-        btnEditar.addEventListener('click', () => this.abrirFormularioEdicao(p.id));
+        btnEditar.addEventListener('click', () => this.abrirFormularioEdicao(m.id));
       }
 
-      const btnDeleta = lista.querySelector(`[data-id="${p.id}"] .btn-delete`);
+      const btnDeleta = lista.querySelector(`[data-id="${m.id}"] .btn-delete`);
       if (btnDeleta) {
-        btnDeleta.addEventListener('click', () => this.abrirModalDelecao(p.id));
+        btnDeleta.addEventListener('click', () => this.abrirModalDelecao(m.id));
       }
     });
   }
 
-  criarCardPendencia(p) {
-    const statusClass = p.status === 'CONCLUIDA' ? 'completed' : '';
-    const dataFormatada = p.data ? new Date(p.data).toLocaleDateString('pt-BR') : '';
-    const dataVencimentoFormatada = p.datavencimento
-      ? new Date(p.datavencimento).toLocaleDateString('pt-BR')
-      : '';
+  criarCardMateria(m) {
+    const statusClass = m.status === 'CONCLUIDO' ? 'completed' : '';
+    const dataFormatada = m.data ? new Date(m.data).toLocaleDateString('pt-BR') : '';
+    const dataVencimentoFormatada = m.datavencimento ? new Date(m.datavencimento).toLocaleDateString('pt-BR') : '';
 
-    const percentualHoras =
-      p.total_horas > 0 ? Math.round((p.horas_ministradas / p.total_horas) * 100) : 0;
+    const percentualHoras = m.total_horas > 0 ? Math.round((m.horas_ministradas / m.total_horas) * 100) : 0;
+
+    const checkboxes = [
+      { label: 'Ementa', valor: m.ementaCriada },
+      { label: 'Apostila', valor: m.apostilaCriada },
+      { label: 'Plano Aulas', valor: m.planoAulasCriado },
+      { label: 'Plano Ensino', valor: m.planoensinoCriado },
+      { label: 'Avaliações', valor: m.avaliacoesCriadas },
+    ]
+      .map((c) => `<span class="badge ${c.valor ? 'completed' : 'pending'}">${c.label}: ${c.valor ? '✅' : '❌'}</span>`)
+      .join('');
 
     return `
-      <div class="pendencia-card ${statusClass}" data-id="${p.id}">
-        <input
-          type="checkbox"
-          class="pendencia-checkbox"
-          ${p.status === 'CONCLUIDA' ? 'checked' : ''}
-        />
+      <div class="pendencia-card ${statusClass}" data-id="${m.id}">
         <div class="pendencia-content">
           <div class="pendencia-header">
-            <div class="pendencia-title">${this.escaparHtml(p.descricao)}</div>
+            <div class="pendencia-title">${this.escaparHtml(m.nome)}</div>
           </div>
           <div class="pendencia-badges">
-            <span class="badge badge-status ${p.status}">${p.status}</span>
-            <span class="badge badge-prioridade ${p.prioridade}">${p.prioridade}</span>
-            ${p.categoria ? `<span class="badge">${this.escaparHtml(p.categoria)}</span>` : ''}
+            <span class="badge badge-status ${m.status}">${m.status}</span>
+            <span class="badge badge-prioridade ${m.prioridade}">${m.prioridade}</span>
+            ${m.categoria ? `<span class="badge">${this.escaparHtml(m.categoria)}</span>` : ''}
+          </div>
+          <div class="pendencia-checkboxes">
+            ${checkboxes}
           </div>
           <div class="pendencia-meta">
-            ${p.data ? `<div class="meta-item">📅 ${dataFormatada}</div>` : ''}
+            ${m.data ? `<div class="meta-item">📅 ${dataFormatada}</div>` : ''}
             ${
-              p.datavencimento
+              m.datavencimento
                 ? `<div class="meta-item">⏰ Vence: ${dataVencimentoFormatada}</div>`
                 : ''
             }
             ${
-              p.total_horas > 0
-                ? `<div class="meta-item">⏱️ ${p.horas_ministradas}/${p.total_horas}h (${percentualHoras}%)</div>`
+              m.total_horas > 0
+                ? `<div class="meta-item">⏱️ ${m.horas_ministradas}/${m.total_horas}h (${percentualHoras}%)</div>`
                 : ''
             }
           </div>
@@ -417,5 +374,4 @@ class PendenciaManager {
   }
 }
 
-// Iniciar aplicação
-const app = new PendenciaManager();
+const app = new MateriasManager();

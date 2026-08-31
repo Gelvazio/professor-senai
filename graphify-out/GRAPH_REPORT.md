@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-31)
 
 ## Corpus Check
-- 370 files · ~1,336,516 words
+- 371 files · ~1,337,157 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5578 nodes · 5595 edges · 562 communities (522 shown, 40 thin omitted)
+- 5600 nodes · 5616 edges · 564 communities (524 shown, 40 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `224d47bb`
+- Built from commit: `be2c2b9a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -496,6 +496,7 @@
 - [[_COMMUNITY_Community 535|Community 535]]
 - [[_COMMUNITY_Community 536|Community 536]]
 - [[_COMMUNITY_Community 537|Community 537]]
+- [[_COMMUNITY_Community 539|Community 539]]
 - [[_COMMUNITY_Community 541|Community 541]]
 - [[_COMMUNITY_Community 542|Community 542]]
 - [[_COMMUNITY_Community 543|Community 543]]
@@ -514,6 +515,7 @@
 - [[_COMMUNITY_Community 556|Community 556]]
 - [[_COMMUNITY_Community 557|Community 557]]
 - [[_COMMUNITY_Community 558|Community 558]]
+- [[_COMMUNITY_Community 563|Community 563]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -542,7 +544,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (562 total, 40 thin omitted)
+## Communities (564 total, 40 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -1076,8 +1078,8 @@ Cohesion: 0.14
 Nodes (14): Atividade: Apresentação de 3 minutos, Atividade: Mini-debate, Atividades de simulação, Encontro 18-19 — Debate e Argumentação (4h), Encontro 20-21 — Apresentação Oral e Escuta Ativa (4h), Encontro 22 — Simulação de Situações Comunicativas (4h), Explicação: Como argumentar bem?, Explicação: Como fazer uma boa apresentação? (+6 more)
 
 ### Community 155 - "Community 155"
-Cohesion: 0.11
-Nodes (18): Atividade final, Atividades, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h) (+10 more)
+Cohesion: 0.15
+Nodes (13): Atividade final, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h), Explicação: Como fazer uma síntese?, MÓDULO 5 — AUTONOMIA E ESTRATÉGIAS DE ESTUDO (+5 more)
 
 ### Community 156 - "Community 156"
 Cohesion: 0.29
@@ -1829,7 +1831,7 @@ Nodes (32): 1. Diagnóstico da mensagem, 1. Estrutura da pasta compartilhada, 2.
 
 ### Community 349 - "Community 349"
 Cohesion: 0.10
-Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, 9.1 Fórmula dos Juros Simples (+12 more)
+Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples (+12 more)
 
 ### Community 350 - "Community 350"
 Cohesion: 0.09
@@ -2272,8 +2274,8 @@ Cohesion: 0.18
 Nodes (10): devDependencies, vite, name, private, scripts, build, dev, preview (+2 more)
 
 ### Community 503 - "Community 503"
-Cohesion: 0.40
-Nodes (5): 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, Atividade 2.2, Encontro 6 — Operações com Frações (2h)
+Cohesion: 0.09
+Nodes (21): Adicionar Matérias Iniciais, Build para Produção, 📋 Campos de Uma Pendência, Cards de Pendência, 🚀 Como Usar, Cores (variáveis CSS), 💾 Dados Persistentes, Dashboard de Controle de Pendências (+13 more)
 
 ### Community 524 - "Community 524"
 Cohesion: 0.19
@@ -2310,6 +2312,10 @@ Nodes (11): Bloco 1 — Tecnologia e Mundo Digital, Bloco 2 — Hardware, Softwa
 ### Community 537 - "Community 537"
 Cohesion: 0.18
 Nodes (10): APOSTILA DO ALUNO, Apresentação, Como Esta Apostila Está Organizada, FUNDAMENTOS DA TECNOLOGIA E PROGRAMAÇÃO, Glossário, Objetivo da UC, Percurso de Aprendizagem, RIO DO SUL MAIS TECH (+2 more)
+
+### Community 539 - "Community 539"
+Cohesion: 0.40
+Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
 
 ### Community 541 - "Community 541"
 Cohesion: 0.33
@@ -2383,8 +2389,12 @@ Nodes (5): Conteúdo, ENCONTRO 14 — Fluxogramas: Desenhando Soluções, Na Pr�
 Cohesion: 0.40
 Nodes (5): Conteúdo, ENCONTRO 15 — Scratch: Primeiros Passos na Programação em Blocos, Na Prática, O que você vai aprender, Síntese
 
+### Community 563 - "Community 563"
+Cohesion: 0.40
+Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
+
 ## Knowledge Gaps
-- **3919 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3914 more)
+- **3936 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3931 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **40 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2396,7 +2406,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `PARTE 1 — IMPRESSÃO 3D` connect `Community 282` to `Community 225`, `Community 258`, `Community 259`, `Community 230`, `Community 168`, `Community 175`, `Community 242`, `Community 25`, `Community 255`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _3960 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3977 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

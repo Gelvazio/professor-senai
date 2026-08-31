@@ -29,19 +29,68 @@
     <main>
       <section class="controls">
         <button class="btn btn-primary" id="btnNewPendencia">
-          <span>➕</span> Nova Pendência
+          <span>➕</span> Nova Matéria
         </button>
         <input
           type="text"
           id="searchInput"
           class="search-input"
-          placeholder="🔍 Buscar pendências..."
+          placeholder="🔍 Buscar matérias..."
         >
-        <select id="filterStatus" class="filter-select">
-          <option value="">Todas as pendências</option>
-          <option value="PENDENTE">Apenas Pendentes</option>
-          <option value="CONCLUIDA">Apenas Concluídas</option>
-        </select>
+      </section>
+
+      <section class="filters">
+        <h3>Filtros de Status</h3>
+        <div class="filter-checkboxes">
+          <label class="filter-checkbox">
+            <input type="checkbox" value="ANDAMENTO" class="status-filter" checked>
+            <span>Em Andamento</span>
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" value="PENDENTE" class="status-filter" checked>
+            <span>Pendente</span>
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" value="CONCLUIDO" class="status-filter">
+            <span>Concluído</span>
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" value="CANCELADO" class="status-filter">
+            <span>Cancelado</span>
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" value="EXCLUIDO" class="status-filter">
+            <span>Excluído</span>
+          </label>
+        </div>
+
+        <h3>Filtros de Campos</h3>
+        <div class="filter-checkboxes">
+          <label class="filter-checkbox">
+            <input type="checkbox" value="ementaCriada" class="field-filter" checked>
+            <span>Ementa Criada</span>
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" value="apostilaCriada" class="field-filter" checked>
+            <span>Apostila Criada</span>
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" value="planoAulasCriado" class="field-filter" checked>
+            <span>Plano de Aulas Criado</span>
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" value="planoensinoCriado" class="field-filter" checked>
+            <span>Plano de Ensino Criado</span>
+          </label>
+          <label class="filter-checkbox">
+            <input type="checkbox" value="avaliacoesCriadas" class="field-filter" checked>
+            <span>Avaliações Criadas</span>
+          </label>
+        </div>
+
+        <button class="btn btn-secondary" id="btnResetFilters">
+          <span>🔄</span> Resetar Filtros
+        </button>
       </section>
 
       <section class="pendencias-list" id="pendenciasList">
@@ -57,28 +106,30 @@
   <div id="formModal" class="modal hidden">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 id="modalTitle">Nova Pendência</h2>
+        <h2 id="modalTitle">Nova Matéria</h2>
         <button class="close-btn" id="closeModal">&times;</button>
       </div>
       <form id="pendenciaForm" class="form-group">
         <div class="form-field">
-          <label for="descricao">Descrição *</label>
-          <textarea
-            id="descricao"
-            name="descricao"
-            rows="3"
-            placeholder="Descreva a pendência..."
+          <label for="nome">Nome da Matéria *</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Ex: Banco de Dados"
             required
-          ></textarea>
+          >
         </div>
 
         <div class="form-row">
           <div class="form-field">
             <label for="status">Status *</label>
             <select id="status" name="status" required>
+              <option value="ANDAMENTO">Em Andamento</option>
               <option value="PENDENTE">Pendente</option>
-              <option value="CONCLUIDA">Concluída</option>
-              <option value="CANCELADA">Cancelada</option>
+              <option value="CONCLUIDO">Concluído</option>
+              <option value="CANCELADO">Cancelado</option>
+              <option value="EXCLUIDO">Excluído</option>
             </select>
           </div>
 
@@ -89,6 +140,32 @@
               <option value="ALTA">Alta</option>
               <option value="BAIXA">Baixa</option>
             </select>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h4>Itens de Trabalho</h4>
+          <div class="checkbox-grid">
+            <label class="checkbox-field">
+              <input type="checkbox" id="ementaCriada" name="ementaCriada">
+              <span>Ementa Criada</span>
+            </label>
+            <label class="checkbox-field">
+              <input type="checkbox" id="apostilaCriada" name="apostilaCriada">
+              <span>Apostila Criada</span>
+            </label>
+            <label class="checkbox-field">
+              <input type="checkbox" id="planoAulasCriado" name="planoAulasCriado">
+              <span>Plano de Aulas</span>
+            </label>
+            <label class="checkbox-field">
+              <input type="checkbox" id="planoensinoCriado" name="planoensinoCriado">
+              <span>Plano de Ensino</span>
+            </label>
+            <label class="checkbox-field">
+              <input type="checkbox" id="avaliacoesCriadas" name="avaliacoesCriadas">
+              <span>Avaliações</span>
+            </label>
           </div>
         </div>
 

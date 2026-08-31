@@ -29070,7 +29070,7 @@
       "source_location": "L250",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_6_opera\u00e7\u00f5es_com_fra\u00e7\u00f5es_2h",
-      "community": 503,
+      "community": 349,
       "norm_label": "encontro 6 \u2014 operacoes com fracoes (2h)"
     },
     {
@@ -29080,7 +29080,7 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_6_1_adi\u00e7\u00e3o_e_subtra\u00e7\u00e3o",
-      "community": 503,
+      "community": 349,
       "norm_label": "6.1 adicao e subtracao"
     },
     {
@@ -29090,7 +29090,7 @@
       "source_location": "L259",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_6_2_multiplica\u00e7\u00e3o",
-      "community": 503,
+      "community": 349,
       "norm_label": "6.2 multiplicacao"
     },
     {
@@ -29100,7 +29100,7 @@
       "source_location": "L263",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_6_3_divis\u00e3o",
-      "community": 503,
+      "community": 349,
       "norm_label": "6.3 divisao"
     },
     {
@@ -29110,7 +29110,7 @@
       "source_location": "L267",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_2_2",
-      "community": 503,
+      "community": 349,
       "norm_label": "atividade 2.2"
     },
     {
@@ -29160,7 +29160,7 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_8_porcentagem_2h",
-      "community": 349,
+      "community": 539,
       "norm_label": "encontro 8 \u2014 porcentagem (2h)"
     },
     {
@@ -29170,7 +29170,7 @@
       "source_location": "L300",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_1_o_que_\u00e9_porcentagem",
-      "community": 349,
+      "community": 539,
       "norm_label": "8.1 o que e porcentagem"
     },
     {
@@ -29180,7 +29180,7 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_2_calcular_a_porcentagem_de_um_valor",
-      "community": 349,
+      "community": 539,
       "norm_label": "8.2 calcular a porcentagem de um valor"
     },
     {
@@ -29190,7 +29190,7 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_3_aumento_percentual",
-      "community": 349,
+      "community": 539,
       "norm_label": "8.3 aumento percentual"
     },
     {
@@ -29200,7 +29200,7 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_2_4_situa\u00e7\u00f5es_reais",
-      "community": 349,
+      "community": 539,
       "norm_label": "atividade 2.4 \u2014 situacoes reais"
     },
     {
@@ -48140,7 +48140,7 @@
       "source_location": "L845",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_encontro_25_26_leitura_cr\u00edtica_e_an\u00e1lise_de_discurso_4h",
-      "community": 155,
+      "community": 563,
       "norm_label": "encontro 25-26 \u2014 leitura critica e analise de discurso (4h)"
     },
     {
@@ -48150,7 +48150,7 @@
       "source_location": "L847",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_objetivos_847",
-      "community": 155,
+      "community": 563,
       "norm_label": "objetivos"
     },
     {
@@ -48160,7 +48160,7 @@
       "source_location": "L854",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_texto_base_854",
-      "community": 155,
+      "community": 563,
       "norm_label": "texto base"
     },
     {
@@ -48170,7 +48170,7 @@
       "source_location": "L863",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_explica\u00e7\u00e3o_fato_x_opini\u00e3o",
-      "community": 155,
+      "community": 563,
       "norm_label": "explicacao: fato x opiniao"
     },
     {
@@ -48180,7 +48180,7 @@
       "source_location": "L878",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_atividades_878",
-      "community": 155,
+      "community": 563,
       "norm_label": "atividades"
     },
     {
@@ -54502,6 +54502,226 @@
       "id": "introducao_tic_ementa_introducao_tenologia_informacao_11_proveni\u00eancia",
       "community": 27,
       "norm_label": "11. proveniencia"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme",
+      "community": 503,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Dashboard de Controle de Pend\u00eancias",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "community": 503,
+      "norm_label": "dashboard de controle de pendencias"
+    },
+    {
+      "label": "\ud83c\udfaf Funcionalidades",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_funcionalidades",
+      "community": 503,
+      "norm_label": "\ud83c\udfaf funcionalidades"
+    },
+    {
+      "label": "\ud83d\udccb Campos de Uma Pend\u00eancia",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_campos_de_uma_pend\u00eancia",
+      "community": 503,
+      "norm_label": "\ud83d\udccb campos de uma pendencia"
+    },
+    {
+      "label": "\ud83d\ude80 Como Usar",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_como_usar",
+      "community": 503,
+      "norm_label": "\ud83d\ude80 como usar"
+    },
+    {
+      "label": "Instala\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_instala\u00e7\u00e3o",
+      "community": 503,
+      "norm_label": "instalacao"
+    },
+    {
+      "label": "Desenvolvimento",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_desenvolvimento",
+      "community": 503,
+      "norm_label": "desenvolvimento"
+    },
+    {
+      "label": "Build para Produ\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_build_para_produ\u00e7\u00e3o",
+      "community": 503,
+      "norm_label": "build para producao"
+    },
+    {
+      "label": "\ud83d\udcbe Dados Persistentes",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_dados_persistentes",
+      "community": 503,
+      "norm_label": "\ud83d\udcbe dados persistentes"
+    },
+    {
+      "label": "\ud83c\udfa8 Interface",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_interface",
+      "community": 503,
+      "norm_label": "\ud83c\udfa8 interface"
+    },
+    {
+      "label": "Se\u00e7\u00e3o de Controles",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_se\u00e7\u00e3o_de_controles",
+      "community": 503,
+      "norm_label": "secao de controles"
+    },
+    {
+      "label": "Cards de Pend\u00eancia",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_cards_de_pend\u00eancia",
+      "community": 503,
+      "norm_label": "cards de pendencia"
+    },
+    {
+      "label": "Estat\u00edsticas no Header",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_estat\u00edsticas_no_header",
+      "community": 503,
+      "norm_label": "estatisticas no header"
+    },
+    {
+      "label": "\ud83c\udf93 Mat\u00e9rias Iniciais",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_mat\u00e9rias_iniciais",
+      "community": 503,
+      "norm_label": "\ud83c\udf93 materias iniciais"
+    },
+    {
+      "label": "\ud83d\udcf1 Responsividade",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_responsividade",
+      "community": 503,
+      "norm_label": "\ud83d\udcf1 responsividade"
+    },
+    {
+      "label": "\ud83d\udd27 Personaliza\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_personaliza\u00e7\u00e3o",
+      "community": 503,
+      "norm_label": "\ud83d\udd27 personalizacao"
+    },
+    {
+      "label": "Cores (vari\u00e1veis CSS)",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_cores_vari\u00e1veis_css",
+      "community": 503,
+      "norm_label": "cores (variaveis css)"
+    },
+    {
+      "label": "Adicionar Mat\u00e9rias Iniciais",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_adicionar_mat\u00e9rias_iniciais",
+      "community": 503,
+      "norm_label": "adicionar materias iniciais"
+    },
+    {
+      "label": "\ud83d\udce6 Estrutura de Arquivos",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_estrutura_de_arquivos",
+      "community": 503,
+      "norm_label": "\ud83d\udce6 estrutura de arquivos"
+    },
+    {
+      "label": "\ud83d\udee0\ufe0f Tecnologias",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_tecnologias",
+      "community": 503,
+      "norm_label": "\ud83d\udee0\ufe0f tecnologias"
+    },
+    {
+      "label": "\ud83d\udcdd Notas",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_notas",
+      "community": 503,
+      "norm_label": "\ud83d\udcdd notas"
+    },
+    {
+      "label": "\ud83c\udfaf Vers\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "pendencias_professor_readme_vers\u00e3o",
+      "community": 503,
+      "norm_label": "\ud83c\udfaf versao"
     },
     {
       "label": "CLAUDE.md",
@@ -110862,6 +111082,216 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme",
+      "target": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_campos_de_uma_pend\u00eancia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_como_usar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_dados_persistentes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_estrutura_de_arquivos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_funcionalidades",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_interface",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_mat\u00e9rias_iniciais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_notas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_personaliza\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_responsividade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_tecnologias",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
+      "target": "pendencias_professor_readme_vers\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_como_usar",
+      "target": "pendencias_professor_readme_build_para_produ\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_como_usar",
+      "target": "pendencias_professor_readme_desenvolvimento",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_como_usar",
+      "target": "pendencias_professor_readme_instala\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_interface",
+      "target": "pendencias_professor_readme_cards_de_pend\u00eancia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_interface",
+      "target": "pendencias_professor_readme_estat\u00edsticas_no_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_interface",
+      "target": "pendencias_professor_readme_se\u00e7\u00e3o_de_controles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_personaliza\u00e7\u00e3o",
+      "target": "pendencias_professor_readme_adicionar_mat\u00e9rias_iniciais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "pendencias_professor_readme_personaliza\u00e7\u00e3o",
+      "target": "pendencias_professor_readme_cores_vari\u00e1veis_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "sistema/syncdata/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -112101,5 +112531,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "224d47bb41238ebfd633e16d77a6e0e816bc461f"
+  "built_at_commit": "be2c2b9af9e1f31d67d8cfdaf53a630b5955a34c"
 }

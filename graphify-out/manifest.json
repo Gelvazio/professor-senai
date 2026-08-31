@@ -3088,5 +3088,10 @@
     "mtime": 1788185812.2662947,
     "ast_hash": "9960a24288958394ac50e57ff638b036",
     "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/README.md": {
+    "mtime": 1788186038.4944882,
+    "ast_hash": "64897f3af1df9473feab843263de67c2",
+    "semantic_hash": ""
   }
 }
