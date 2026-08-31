@@ -12,21 +12,40 @@
 
 1. **REGRA 01**: Identificação de UCs e containers (FICHA-PRODUTO-MAIS-TECH)
 2. **REGRA 02**: Verificação de estrutura obrigatória (AULAS, AVALIACOES, EMENTA, PLANO_ENSINO, APOSTILA)
-3. **REGRA 03**: Script de geração de slides (gerar_slides.js com PptxGenJS)
-4. **REGRA 04**: Pasta ATIVIDADES com validação automática (2 horas = 1 atividade de 15 min)
-5. **REGRA 05**: Pasta SUBSTITUICOES com guia de SGN para substituição de aulas
-6. **REGRA 06**: Arquivo CLAUDE.md obrigatório em cada UC para documentação
-7. **REGRA 07**: Filtro de pendências — busca apenas matérias ATIVAS (ativo=1)
-8. **REGRA 08**: Campo de status de matérias aceita 3 valores: 1 (Ativa), 0 (Inativa), 2 (Concluída)
-9. **VERIFICAÇÃO 01**: Apostila "Fundamentos da Tecnologia e Programação" atende 100% à ementa (31-08-2026)
-10. **REGRA 09**: Plano de aulas para UC "Testes de Frontend" (40 horas, 8 blocos temáticos + 2 avaliações) — Arquivo: `sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md`
+3. **REGRA 04**: Pasta ATIVIDADES com validação automática (2 horas = 1 atividade de 15 min)
+4. **REGRA 05**: Pasta SUBSTITUICOES com guia de SGN para substituição de aulas
+5. **REGRA 06**: Arquivo CLAUDE.md obrigatório em cada UC para documentação
+6. **REGRA 07**: Filtro de pendências — busca apenas matérias ATIVAS (ativo=1)
+7. **REGRA 08**: Campo de status de matérias aceita 3 valores: 1 (Ativa), 0 (Inativa), 2 (Concluída)
+
+### 📋 Estrutura de UCs Existentes
+
+As seguintes UCs existem no projeto:
+
+- `BANCO_DE_DADOS`
+- `FICHA-PRODUTO-MAIS-TECH`
+- `GESTAO_E_CONTROLE_MATERIAIS`
+- `INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO`
+- `INTRODUCAO_TIC`
+- `LOGICA-PROGRAMACAO`
+- `PENDENCIAS-PROFESSOR`
+- `TECNICO DE INFORMATICA PARA INTERNET`
+
+⚠️ **Status da Estrutura Obrigatória:**
+- **INTRODUCAO_TIC**: ✅ Completa (AULAS + MATERIAIS)
+- **INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO**: ⚠️ Incompleta (tem AULAS, falta MATERIAIS)
+- Demais UCs: ❌ Sem estrutura obrigatória (faltam AULAS e/ou MATERIAIS)
 
 ### 🔧 Ferramentas Criadas
 
-- **syncdata/server.js**: API REST com endpoints para sincronização
-- **syncdata/verify-uc.js**: Verificador de estrutura de UCs com relatório detalhado
-- **syncdata/constants.js**: Padrões e configurações centralizadas
+- **syncdata/server.js**: ✅ API REST com endpoints para sincronização
 - **Dashboard Modal**: "Relatório SYNC" para visualizar status de sincronização
+
+### ⏳ Ferramentas Planejadas (Não Implementadas)
+
+- **syncdata/verify-uc.js**: Verificador de estrutura de UCs (pendente)
+- **scripts/gerar_slides.js**: Script de geração de slides (pendente)
+- **PLANO-AULAS.md**: Plano de aulas para "Testes de Frontend" (pendente)
 
 ### 📊 API Endpoints
 
@@ -282,6 +301,15 @@ updated_at (TIMESTAMP)
 
 Certifique-se de executar os scripts no Supabase SQL Editor!
 
-### ⚡ Após SEMPRE atualizar graphify
+### ⚡ Fluxo de Atualização Obrigatório
 
-⚠️ **REGRA CRÍTICA**: Após executar `graphify update .`, **SEMPRE** atualizar este arquivo `CLAUDE.md` com as novas regras implementadas. Isso garante que futuras interações saibam das mudanças feitas.
+⚠️ **REGRA CRÍTICA**: A cada interação com o usuário, SEMPRE:
+1. Executar `C:\Python314\python.exe -m graphify update .`
+2. Atualizar este arquivo `CLAUDE.md` com:
+   - Novas regras implementadas
+   - Mudanças no estado do projeto
+   - Estrutura de UCs
+   - Status de ferramentas
+3. Fazer commit de todas as alterações
+
+Isso garante que futuras interações saibam das mudanças feitas e o projeto sempre esteja documentado corretamente.
