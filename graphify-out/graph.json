@@ -6507,7 +6507,7 @@
       "label": "\ud83d\udd27 Ferramentas Criadas",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "claude_ferramentas_criadas",
       "community": 10,
@@ -6517,7 +6517,7 @@
       "label": "\ud83d\udcca API Endpoints",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L30",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "claude_api_endpoints",
       "community": 10,
@@ -6527,7 +6527,7 @@
       "label": "\ud83d\ude80 Como Usar",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L38",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "claude_como_usar",
       "community": 10,
@@ -6537,7 +6537,7 @@
       "label": "Commit e Push obrigat\u00f3rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L46",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "claude_commit_e_push_obrigat\u00f3rios",
       "community": 10,
@@ -6547,7 +6547,7 @@
       "label": "Graphify",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L56",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "claude_graphify",
       "community": 10,
@@ -6557,7 +6557,7 @@
       "label": "Nunca perguntar \u2014 sempre executar",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L66",
+      "source_location": "L67",
       "_origin": "ast",
       "id": "claude_nunca_perguntar_sempre_executar",
       "community": 10,
@@ -6567,7 +6567,7 @@
       "label": "Slides",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L72",
+      "source_location": "L73",
       "_origin": "ast",
       "id": "claude_slides",
       "community": 10,
@@ -6577,7 +6577,7 @@
       "label": "Estrutura de Unidades Curriculares",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L76",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "claude_estrutura_de_unidades_curriculares",
       "community": 10,
@@ -6587,7 +6587,7 @@
       "label": "Pasta PROFESSOR",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L87",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "claude_pasta_professor",
       "community": 10,
@@ -6597,7 +6597,7 @@
       "label": "Estrutura obrigat\u00f3ria de cada UC",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L95",
+      "source_location": "L96",
       "_origin": "ast",
       "id": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
       "community": 10,
@@ -6607,7 +6607,7 @@
       "label": "Organiza\u00e7\u00e3o das provas pr\u00e1ticas de Introdu\u00e7\u00e3o \u00e0 TIC",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L105",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "claude_organiza\u00e7\u00e3o_das_provas_pr\u00e1ticas_de_introdu\u00e7\u00e3o_\u00e0_tic",
       "community": 10,
@@ -6617,7 +6617,7 @@
       "label": "\ud83d\udd14 Sistema de Pend\u00eancias \u2014 Regra Cr\u00edtica",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L113",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "claude_sistema_de_pend\u00eancias_regra_cr\u00edtica",
       "community": 10,
@@ -6627,7 +6627,7 @@
       "label": "Defini\u00e7\u00e3o de Pend\u00eancias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L117",
+      "source_location": "L118",
       "_origin": "ast",
       "id": "claude_defini\u00e7\u00e3o_de_pend\u00eancias",
       "community": 10,
@@ -6637,7 +6637,7 @@
       "label": "Implementa\u00e7\u00e3o Obrigat\u00f3ria",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L136",
+      "source_location": "L137",
       "_origin": "ast",
       "id": "claude_implementa\u00e7\u00e3o_obrigat\u00f3ria",
       "community": 10,
@@ -6647,7 +6647,7 @@
       "label": "\u274c O que N\u00c3O fazer",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L142",
+      "source_location": "L143",
       "_origin": "ast",
       "id": "claude_o_que_n\u00e3o_fazer",
       "community": 10,
@@ -6657,7 +6657,7 @@
       "label": "Fluxo Autom\u00e1tico de Pend\u00eancias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L149",
+      "source_location": "L150",
       "_origin": "ast",
       "id": "claude_fluxo_autom\u00e1tico_de_pend\u00eancias",
       "community": 10,
@@ -6667,7 +6667,7 @@
       "label": "\ud83d\udcca Estrutura da Tabela \"pendencias\"",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L162",
+      "source_location": "L163",
       "_origin": "ast",
       "id": "claude_estrutura_da_tabela_pendencias",
       "community": 10,
@@ -6677,7 +6677,7 @@
       "label": "\ud83d\udd04 Fluxo de Inser\u00e7\u00e3o de Pend\u00eancias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L185",
+      "source_location": "L186",
       "_origin": "ast",
       "id": "claude_fluxo_de_inser\u00e7\u00e3o_de_pend\u00eancias",
       "community": 10,
@@ -6687,7 +6687,7 @@
       "label": "\u2705 Checklist de implementa\u00e7\u00e3o",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L199",
+      "source_location": "L200",
       "_origin": "ast",
       "id": "claude_checklist_de_implementa\u00e7\u00e3o",
       "community": 10,
@@ -6697,7 +6697,7 @@
       "label": "\ud83c\udfaf Implementa\u00e7\u00e3o Completa do Sistema de Pend\u00eancias (26-08-2026)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L211",
+      "source_location": "L212",
       "_origin": "ast",
       "id": "claude_implementa\u00e7\u00e3o_completa_do_sistema_de_pend\u00eancias_26_08_2026",
       "community": 10,
@@ -6707,7 +6707,7 @@
       "label": "\u2705 Funcionalidades Implementadas",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L213",
+      "source_location": "L214",
       "_origin": "ast",
       "id": "claude_funcionalidades_implementadas",
       "community": 10,
@@ -6717,7 +6717,7 @@
       "label": "1. **Cria\u00e7\u00e3o Autom\u00e1tica de Pend\u00eancias**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L215",
+      "source_location": "L216",
       "_origin": "ast",
       "id": "claude_1_cria\u00e7\u00e3o_autom\u00e1tica_de_pend\u00eancias",
       "community": 10,
@@ -6727,7 +6727,7 @@
       "label": "2. **Descri\u00e7\u00f5es Autom\u00e1ticas**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L221",
+      "source_location": "L222",
       "_origin": "ast",
       "id": "claude_2_descri\u00e7\u00f5es_autom\u00e1ticas",
       "community": 10,
@@ -6737,7 +6737,7 @@
       "label": "3. **Sincroniza\u00e7\u00e3o Bidirecional**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L238",
+      "source_location": "L239",
       "_origin": "ast",
       "id": "claude_3_sincroniza\u00e7\u00e3o_bidirecional",
       "community": 10,
@@ -6747,7 +6747,7 @@
       "label": "4. **Interface de Pend\u00eancias**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L244",
+      "source_location": "L245",
       "_origin": "ast",
       "id": "claude_4_interface_de_pend\u00eancias",
       "community": 10,
@@ -6757,7 +6757,7 @@
       "label": "5. **Campos da Tabela `pendencias`**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L253",
+      "source_location": "L254",
       "_origin": "ast",
       "id": "claude_5_campos_da_tabela_pendencias",
       "community": 10,
@@ -6767,7 +6767,7 @@
       "label": "\ud83d\udccb Scripts SQL Necess\u00e1rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L277",
+      "source_location": "L278",
       "_origin": "ast",
       "id": "claude_scripts_sql_necess\u00e1rios",
       "community": 10,
@@ -6777,7 +6777,7 @@
       "label": "\u26a1 Ap\u00f3s SEMPRE atualizar graphify",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L284",
+      "source_location": "L285",
       "_origin": "ast",
       "id": "claude_ap\u00f3s_sempre_atualizar_graphify",
       "community": 10,
@@ -26214,6 +26214,186 @@
       "norm_label": "avaliacao pratica simples_887ed75c.md"
     },
     {
+      "label": "Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "community": 597,
+      "norm_label": "apostila-analise-dados-aplicada-gestao_87a4b633.md"
+    },
+    {
+      "label": "1. INFORMA\u00c7\u00d5ES GERAIS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_1_informa\u00e7\u00f5es_gerais",
+      "community": 597,
+      "norm_label": "1. informacoes gerais"
+    },
+    {
+      "label": "2. FUN\u00c7\u00c3O",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_2_fun\u00e7\u00e3o",
+      "community": 597,
+      "norm_label": "2. funcao"
+    },
+    {
+      "label": "3. OBJETIVO GERAL",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_3_objetivo_geral",
+      "community": 597,
+      "norm_label": "3. objetivo geral"
+    },
+    {
+      "label": "4. CONTE\u00daDOS FORMATIVOS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_conte\u00fados_formativos",
+      "community": 597,
+      "norm_label": "4. conteudos formativos"
+    },
+    {
+      "label": "4.1 Capacidades B\u00e1sicas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_1_capacidades_b\u00e1sicas",
+      "community": 597,
+      "norm_label": "4.1 capacidades basicas"
+    },
+    {
+      "label": "4.2 Conhecimentos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_2_conhecimentos",
+      "community": 597,
+      "norm_label": "4.2 conhecimentos"
+    },
+    {
+      "label": "M\u00f3dulo 1: Opera\u00e7\u00f5es Matem\u00e1ticas Aplicadas aos Processos Organizacionais",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_m\u00f3dulo_1_opera\u00e7\u00f5es_matem\u00e1ticas_aplicadas_aos_processos_organizacionais",
+      "community": 597,
+      "norm_label": "modulo 1: operacoes matematicas aplicadas aos processos organizacionais"
+    },
+    {
+      "label": "M\u00f3dulo 2: Excel Aplicado \u00e0 Gest\u00e3o Organizacional",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_m\u00f3dulo_2_excel_aplicado_\u00e0_gest\u00e3o_organizacional",
+      "community": 597,
+      "norm_label": "modulo 2: excel aplicado a gestao organizacional"
+    },
+    {
+      "label": "5. EIXO ESTRUTURANTE BNCC",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_5_eixo_estruturante_bncc",
+      "community": 597,
+      "norm_label": "5. eixo estruturante bncc"
+    },
+    {
+      "label": "Investiga\u00e7\u00e3o Cient\u00edfica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_investiga\u00e7\u00e3o_cient\u00edfica",
+      "community": 597,
+      "norm_label": "investigacao cientifica"
+    },
+    {
+      "label": "6. CAPACIDADES SOCIOEMOCIONAIS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_6_capacidades_socioemocionais",
+      "community": 597,
+      "norm_label": "6. capacidades socioemocionais"
+    },
+    {
+      "label": "7. RECURSOS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_7_recursos",
+      "community": 597,
+      "norm_label": "7. recursos"
+    },
+    {
+      "label": "7.1 Ambientes Pedag\u00f3gicos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_7_1_ambientes_pedag\u00f3gicos",
+      "community": 597,
+      "norm_label": "7.1 ambientes pedagogicos"
+    },
+    {
+      "label": "7.2 Equipamentos e Ferramentas",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_7_2_equipamentos_e_ferramentas",
+      "community": 597,
+      "norm_label": "7.2 equipamentos e ferramentas"
+    },
+    {
+      "label": "8. METODOLOGIA DE ENSINO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_8_metodologia_de_ensino",
+      "community": 597,
+      "norm_label": "8. metodologia de ensino"
+    },
+    {
+      "label": "9. CRIT\u00c9RIOS DE AVALIA\u00c7\u00c3O",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_9_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "community": 597,
+      "norm_label": "9. criterios de avaliacao"
+    },
+    {
+      "label": "10. BIBLIOGRAFIA B\u00c1SICA",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_10_bibliografia_b\u00e1sica",
+      "community": 597,
+      "norm_label": "10. bibliografia basica"
+    },
+    {
       "label": "Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
@@ -28780,7 +28960,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319",
-      "community": 397,
+      "community": 373,
       "norm_label": "apostila_raciocinio_logico_professor_88dbc319.md"
     },
     {
@@ -28790,7 +28970,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_rio_do_sul_mais_tech",
-      "community": 397,
+      "community": 373,
       "norm_label": "rio do sul mais tech"
     },
     {
@@ -28800,7 +28980,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_senai_prefeitura_municipal_de_rio_do_sul",
-      "community": 397,
+      "community": 373,
       "norm_label": "senai / prefeitura municipal de rio do sul"
     },
     {
@@ -29030,7 +29210,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_4_c\u00e1lculo_mental_estimativas_e_problemas_cotidianos_2h",
-      "community": 564,
+      "community": 363,
       "norm_label": "encontro 4 \u2014 calculo mental, estimativas e problemas cotidianos (2h)"
     },
     {
@@ -29040,7 +29220,7 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_1_estrat\u00e9gias_de_c\u00e1lculo_mental",
-      "community": 564,
+      "community": 363,
       "norm_label": "4.1 estrategias de calculo mental"
     },
     {
@@ -29050,7 +29230,7 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_2_estimativas_e_arredondamento",
-      "community": 564,
+      "community": 363,
       "norm_label": "4.2 estimativas e arredondamento"
     },
     {
@@ -29060,7 +29240,7 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_3_problemas_contextualizados",
-      "community": 564,
+      "community": 363,
       "norm_label": "4.3 problemas contextualizados"
     },
     {
@@ -29070,7 +29250,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_1_4_individual_estimativas",
-      "community": 564,
+      "community": 363,
       "norm_label": "atividade 1.4 \u2014 individual (estimativas)"
     },
     {
@@ -29080,7 +29260,7 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_1_5_em_grupo_desafio",
-      "community": 564,
+      "community": 363,
       "norm_label": "atividade 1.5 \u2014 em grupo (desafio)"
     },
     {
@@ -29260,7 +29440,7 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_8_porcentagem_2h",
-      "community": 349,
+      "community": 598,
       "norm_label": "encontro 8 \u2014 porcentagem (2h)"
     },
     {
@@ -29270,7 +29450,7 @@
       "source_location": "L300",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_1_o_que_\u00e9_porcentagem",
-      "community": 349,
+      "community": 598,
       "norm_label": "8.1 o que e porcentagem"
     },
     {
@@ -29280,7 +29460,7 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_2_calcular_a_porcentagem_de_um_valor",
-      "community": 349,
+      "community": 598,
       "norm_label": "8.2 calcular a porcentagem de um valor"
     },
     {
@@ -29290,7 +29470,7 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_3_aumento_percentual",
-      "community": 349,
+      "community": 598,
       "norm_label": "8.3 aumento percentual"
     },
     {
@@ -29300,7 +29480,7 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_2_4_situa\u00e7\u00f5es_reais",
-      "community": 349,
+      "community": 598,
       "norm_label": "atividade 2.4 \u2014 situacoes reais"
     },
     {
@@ -30470,7 +30650,7 @@
       "source_location": "L1124",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_refer\u00eancias",
-      "community": 397,
+      "community": 373,
       "norm_label": "referencias"
     },
     {
@@ -48550,7 +48730,7 @@
       "source_location": "L845",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_encontro_25_26_leitura_cr\u00edtica_e_an\u00e1lise_de_discurso_4h",
-      "community": 563,
+      "community": 155,
       "norm_label": "encontro 25-26 \u2014 leitura critica e analise de discurso (4h)"
     },
     {
@@ -48560,7 +48740,7 @@
       "source_location": "L847",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_objetivos_847",
-      "community": 563,
+      "community": 155,
       "norm_label": "objetivos"
     },
     {
@@ -48570,7 +48750,7 @@
       "source_location": "L854",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_texto_base_854",
-      "community": 563,
+      "community": 155,
       "norm_label": "texto base"
     },
     {
@@ -48580,7 +48760,7 @@
       "source_location": "L863",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_explica\u00e7\u00e3o_fato_x_opini\u00e3o",
-      "community": 563,
+      "community": 155,
       "norm_label": "explicacao: fato x opiniao"
     },
     {
@@ -48590,7 +48770,7 @@
       "source_location": "L878",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_atividades_878",
-      "community": 563,
+      "community": 155,
       "norm_label": "atividades"
     },
     {
@@ -52444,6 +52624,536 @@
       "norm_label": "conteudos referidos na portaria mte 3.872/23:"
     },
     {
+      "label": "EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao",
+      "community": 564,
+      "norm_label": "ementa-analise-dados-aplicada-gestao.md"
+    },
+    {
+      "label": "EMENTA: An\u00e1lise de Dados Aplicada \u00e0 Gest\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "community": 564,
+      "norm_label": "ementa: analise de dados aplicada a gestao"
+    },
+    {
+      "label": "Informa\u00e7\u00f5es Gerais",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_informa\u00e7\u00f5es_gerais",
+      "community": 564,
+      "norm_label": "informacoes gerais"
+    },
+    {
+      "label": "Fun\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_fun\u00e7\u00e3o",
+      "community": 564,
+      "norm_label": "funcao"
+    },
+    {
+      "label": "Objetivo Geral",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_objetivo_geral",
+      "community": 564,
+      "norm_label": "objetivo geral"
+    },
+    {
+      "label": "Conte\u00fados Formativos",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_conte\u00fados_formativos",
+      "community": 564,
+      "norm_label": "conteudos formativos"
+    },
+    {
+      "label": "Capacidades B\u00e1sicas",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_capacidades_b\u00e1sicas",
+      "community": 564,
+      "norm_label": "capacidades basicas"
+    },
+    {
+      "label": "Conhecimentos",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_conhecimentos",
+      "community": 564,
+      "norm_label": "conhecimentos"
+    },
+    {
+      "label": "1. Opera\u00e7\u00f5es Matem\u00e1ticas Aplicadas aos Processos Organizacionais",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_1_opera\u00e7\u00f5es_matem\u00e1ticas_aplicadas_aos_processos_organizacionais",
+      "community": 564,
+      "norm_label": "1. operacoes matematicas aplicadas aos processos organizacionais"
+    },
+    {
+      "label": "2. Excel Aplicado \u00e0 Gest\u00e3o Organizacional",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_2_excel_aplicado_\u00e0_gest\u00e3o_organizacional",
+      "community": 564,
+      "norm_label": "2. excel aplicado a gestao organizacional"
+    },
+    {
+      "label": "Eixo Estruturante BNCC / Compet\u00eancia Integradora",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_eixo_estruturante_bncc_compet\u00eancia_integradora",
+      "community": 564,
+      "norm_label": "eixo estruturante bncc / competencia integradora"
+    },
+    {
+      "label": "Investiga\u00e7\u00e3o Cient\u00edfica",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_investiga\u00e7\u00e3o_cient\u00edfica",
+      "community": 564,
+      "norm_label": "investigacao cientifica"
+    },
+    {
+      "label": "Capacidades Socioemocionais",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_capacidades_socioemocionais",
+      "community": 564,
+      "norm_label": "capacidades socioemocionais"
+    },
+    {
+      "label": "Recursos",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_recursos",
+      "community": 564,
+      "norm_label": "recursos"
+    },
+    {
+      "label": "Ambientes Pedag\u00f3gicos",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ambientes_pedag\u00f3gicos",
+      "community": 564,
+      "norm_label": "ambientes pedagogicos"
+    },
+    {
+      "label": "M\u00e1quinas, Equipamentos, Instrumentos e Ferramentas/Insumos",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_m\u00e1quinas_equipamentos_instrumentos_e_ferramentas_insumos",
+      "community": 564,
+      "norm_label": "maquinas, equipamentos, instrumentos e ferramentas/insumos"
+    },
+    {
+      "label": "Material Did\u00e1tico",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_material_did\u00e1tico",
+      "community": 564,
+      "norm_label": "material didatico"
+    },
+    {
+      "label": "Perfil do Docente",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_perfil_do_docente",
+      "community": 564,
+      "norm_label": "perfil do docente"
+    },
+    {
+      "label": "Bibliografia B\u00e1sica",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_bibliografia_b\u00e1sica",
+      "community": 564,
+      "norm_label": "bibliografia basica"
+    },
+    {
+      "label": "PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao",
+      "community": 563,
+      "norm_label": "plano-aulas-analise-dados-aplicada-gestao.md"
+    },
+    {
+      "label": "PLANO DE AULAS: An\u00e1lise de Dados Aplicada \u00e0 Gest\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "community": 563,
+      "norm_label": "plano de aulas: analise de dados aplicada a gestao"
+    },
+    {
+      "label": "1. OBJETIVOS DE APRENDIZAGEM",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_1_objetivos_de_aprendizagem",
+      "community": 563,
+      "norm_label": "1. objetivos de aprendizagem"
+    },
+    {
+      "label": "2. ESTRUTURA DO PLANO (28 horas de aulas)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_2_estrutura_do_plano_28_horas_de_aulas",
+      "community": 563,
+      "norm_label": "2. estrutura do plano (28 horas de aulas)"
+    },
+    {
+      "label": "**M\u00d3DULO 1: FUNDAMENTOS MATEM\u00c1TICOS (8 horas)**",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_1_fundamentos_matem\u00e1ticos_8_horas",
+      "community": 563,
+      "norm_label": "**modulo 1: fundamentos matematicos (8 horas)**"
+    },
+    {
+      "label": "Aula 1: Introdu\u00e7\u00e3o e Conjuntos Num\u00e9ricos (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_1_introdu\u00e7\u00e3o_e_conjuntos_num\u00e9ricos_2h",
+      "community": 563,
+      "norm_label": "aula 1: introducao e conjuntos numericos (2h)"
+    },
+    {
+      "label": "Aula 2: Raz\u00e3o, Propor\u00e7\u00e3o e Regra de Tr\u00eas (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_2_raz\u00e3o_propor\u00e7\u00e3o_e_regra_de_tr\u00eas_2h",
+      "community": 563,
+      "norm_label": "aula 2: razao, proporcao e regra de tres (2h)"
+    },
+    {
+      "label": "Aula 3: Porcentagem e Convers\u00e3o de Unidades (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_3_porcentagem_e_convers\u00e3o_de_unidades_2h",
+      "community": 563,
+      "norm_label": "aula 3: porcentagem e conversao de unidades (2h)"
+    },
+    {
+      "label": "Aula 4: Introdu\u00e7\u00e3o \u00e0 Estat\u00edstica B\u00e1sica (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_4_introdu\u00e7\u00e3o_\u00e0_estat\u00edstica_b\u00e1sica_2h",
+      "community": 563,
+      "norm_label": "aula 4: introducao a estatistica basica (2h)"
+    },
+    {
+      "label": "**M\u00d3DULO 2: EXCEL B\u00c1SICO (6 horas)**",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_2_excel_b\u00e1sico_6_horas",
+      "community": 563,
+      "norm_label": "**modulo 2: excel basico (6 horas)**"
+    },
+    {
+      "label": "Aula 5: Introdu\u00e7\u00e3o ao Excel e Navega\u00e7\u00e3o B\u00e1sica (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_5_introdu\u00e7\u00e3o_ao_excel_e_navega\u00e7\u00e3o_b\u00e1sica_2h",
+      "community": 563,
+      "norm_label": "aula 5: introducao ao excel e navegacao basica (2h)"
+    },
+    {
+      "label": "Aula 6: F\u00f3rmulas e Fun\u00e7\u00f5es Essenciais (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_6_f\u00f3rmulas_e_fun\u00e7\u00f5es_essenciais_2h",
+      "community": 563,
+      "norm_label": "aula 6: formulas e funcoes essenciais (2h)"
+    },
+    {
+      "label": "Aula 7: Formata\u00e7\u00e3o e Apresenta\u00e7\u00e3o de Dados (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_7_formata\u00e7\u00e3o_e_apresenta\u00e7\u00e3o_de_dados_2h",
+      "community": 563,
+      "norm_label": "aula 7: formatacao e apresentacao de dados (2h)"
+    },
+    {
+      "label": "**M\u00d3DULO 3: EXCEL AVAN\u00c7ADO (10 horas)**",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_3_excel_avan\u00e7ado_10_horas",
+      "community": 563,
+      "norm_label": "**modulo 3: excel avancado (10 horas)**"
+    },
+    {
+      "label": "Aula 8: Fun\u00e7\u00f5es de Busca e Consulta (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_8_fun\u00e7\u00f5es_de_busca_e_consulta_2h",
+      "community": 563,
+      "norm_label": "aula 8: funcoes de busca e consulta (2h)"
+    },
+    {
+      "label": "Aula 9: Fun\u00e7\u00e3o SE Avan\u00e7ada e Cont SE (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_9_fun\u00e7\u00e3o_se_avan\u00e7ada_e_cont_se_2h",
+      "community": 563,
+      "norm_label": "aula 9: funcao se avancada e cont se (2h)"
+    },
+    {
+      "label": "Aula 10: Tabelas Din\u00e2micas (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_10_tabelas_din\u00e2micas_2h",
+      "community": 563,
+      "norm_label": "aula 10: tabelas dinamicas (2h)"
+    },
+    {
+      "label": "Aula 11: Filtros e Valida\u00e7\u00e3o de Dados (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_11_filtros_e_valida\u00e7\u00e3o_de_dados_2h",
+      "community": 563,
+      "norm_label": "aula 11: filtros e validacao de dados (2h)"
+    },
+    {
+      "label": "Aula 12: Gr\u00e1ficos e Visualiza\u00e7\u00e3o de Dados (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_12_gr\u00e1ficos_e_visualiza\u00e7\u00e3o_de_dados_2h",
+      "community": 563,
+      "norm_label": "aula 12: graficos e visualizacao de dados (2h)"
+    },
+    {
+      "label": "**M\u00d3DULO 4: DASHBOARDS E AN\u00c1LISE (4 horas)**",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_4_dashboards_e_an\u00e1lise_4_horas",
+      "community": 563,
+      "norm_label": "**modulo 4: dashboards e analise (4 horas)**"
+    },
+    {
+      "label": "Aula 13: Introdu\u00e7\u00e3o a Dashboards (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_13_introdu\u00e7\u00e3o_a_dashboards_2h",
+      "community": 563,
+      "norm_label": "aula 13: introducao a dashboards (2h)"
+    },
+    {
+      "label": "Aula 14: Cria\u00e7\u00e3o de Dashboard Pr\u00e1tico (2h)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L172",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_14_cria\u00e7\u00e3o_de_dashboard_pr\u00e1tico_2h",
+      "community": 563,
+      "norm_label": "aula 14: criacao de dashboard pratico (2h)"
+    },
+    {
+      "label": "3. AVALIA\u00c7\u00d5ES (4 horas)",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_3_avalia\u00e7\u00f5es_4_horas",
+      "community": 563,
+      "norm_label": "3. avaliacoes (4 horas)"
+    },
+    {
+      "label": "**Avalia\u00e7\u00e3o Objetiva (2 horas)**",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L186",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_avalia\u00e7\u00e3o_objetiva_2_horas",
+      "community": 563,
+      "norm_label": "**avaliacao objetiva (2 horas)**"
+    },
+    {
+      "label": "**Avalia\u00e7\u00e3o Pr\u00e1tica (2 horas)**",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_avalia\u00e7\u00e3o_pr\u00e1tica_2_horas",
+      "community": 563,
+      "norm_label": "**avaliacao pratica (2 horas)**"
+    },
+    {
+      "label": "4. CRIT\u00c9RIOS DE AVALIA\u00c7\u00c3O",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L230",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_4_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "community": 563,
+      "norm_label": "4. criterios de avaliacao"
+    },
+    {
+      "label": "5. METODOLOGIA PEDAG\u00d3GICA",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L243",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_5_metodologia_pedag\u00f3gica",
+      "community": 563,
+      "norm_label": "5. metodologia pedagogica"
+    },
+    {
+      "label": "6. RECURSOS NECESS\u00c1RIOS",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_6_recursos_necess\u00e1rios",
+      "community": 563,
+      "norm_label": "6. recursos necessarios"
+    },
+    {
+      "label": "Ambientes",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L255",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_ambientes",
+      "community": 563,
+      "norm_label": "ambientes"
+    },
+    {
+      "label": "Equipamentos e Software",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_equipamentos_e_software",
+      "community": 563,
+      "norm_label": "equipamentos e software"
+    },
+    {
+      "label": "Materiais Did\u00e1ticos",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L266",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_materiais_did\u00e1ticos",
+      "community": 563,
+      "norm_label": "materiais didaticos"
+    },
+    {
+      "label": "7. CRONOGRAMA",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L274",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_7_cronograma",
+      "community": 563,
+      "norm_label": "7. cronograma"
+    },
+    {
+      "label": "8. REFER\u00caNCIAS BIBLIOGR\u00c1FICAS",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L286",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_8_refer\u00eancias_bibliogr\u00e1ficas",
+      "community": 563,
+      "norm_label": "8. referencias bibliograficas"
+    },
+    {
+      "label": "9. OBSERVA\u00c7\u00d5ES IMPORTANTES",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_9_observa\u00e7\u00f5es_importantes",
+      "community": 563,
+      "norm_label": "9. observacoes importantes"
+    },
+    {
       "label": "ATIVIDADE-EXCEL.md",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
@@ -55422,6 +56132,916 @@
       "id": "pendencias_professor_readme_vers\u00e3o",
       "community": 503,
       "norm_label": "\ud83c\udfaf versao"
+    },
+    {
+      "label": "PLANO-AULAS.md",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas",
+      "community": 584,
+      "norm_label": "plano-aulas.md"
+    },
+    {
+      "label": "Plano de Aulas \u2014 Testes de Frontend",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "community": 584,
+      "norm_label": "plano de aulas \u2014 testes de frontend"
+    },
+    {
+      "label": "1. Identifica\u00e7\u00e3o do Plano de Aulas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_1_identifica\u00e7\u00e3o_do_plano_de_aulas",
+      "community": 584,
+      "norm_label": "1. identificacao do plano de aulas"
+    },
+    {
+      "label": "2. Objetivo Geral da Unidade Curricular",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_2_objetivo_geral_da_unidade_curricular",
+      "community": 584,
+      "norm_label": "2. objetivo geral da unidade curricular"
+    },
+    {
+      "label": "3. Compet\u00eancias a Serem Desenvolvidas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_3_compet\u00eancias_a_serem_desenvolvidas",
+      "community": 584,
+      "norm_label": "3. competencias a serem desenvolvidas"
+    },
+    {
+      "label": "3.1 Capacidades T\u00e9cnicas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_3_1_capacidades_t\u00e9cnicas",
+      "community": 584,
+      "norm_label": "3.1 capacidades tecnicas"
+    },
+    {
+      "label": "3.2 Capacidades B\u00e1sicas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_3_2_capacidades_b\u00e1sicas",
+      "community": 584,
+      "norm_label": "3.2 capacidades basicas"
+    },
+    {
+      "label": "3.3 Capacidades Socioemocionais",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_3_3_capacidades_socioemocionais",
+      "community": 584,
+      "norm_label": "3.3 capacidades socioemocionais"
+    },
+    {
+      "label": "4. Situa\u00e7\u00e3o de Aprendizagem \u2014 Desafio Central",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_4_situa\u00e7\u00e3o_de_aprendizagem_desafio_central",
+      "community": 595,
+      "norm_label": "4. situacao de aprendizagem \u2014 desafio central"
+    },
+    {
+      "label": "4.1 Contexto",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_4_1_contexto",
+      "community": 595,
+      "norm_label": "4.1 contexto"
+    },
+    {
+      "label": "4.2 Desafio Principal",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_4_2_desafio_principal",
+      "community": 595,
+      "norm_label": "4.2 desafio principal"
+    },
+    {
+      "label": "4.3 Resultados Esperados",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_4_3_resultados_esperados",
+      "community": 595,
+      "norm_label": "4.3 resultados esperados"
+    },
+    {
+      "label": "5. Estrutura de Blocos Tem\u00e1ticos e Plano de Aulas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas",
+      "community": 585,
+      "norm_label": "5. estrutura de blocos tematicos e plano de aulas"
+    },
+    {
+      "label": "5.1 Bloco 01 \u2014 Fundamentos de Testes de Software",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_5_1_bloco_01_fundamentos_de_testes_de_software",
+      "community": 586,
+      "norm_label": "5.1 bloco 01 \u2014 fundamentos de testes de software"
+    },
+    {
+      "label": "Capacidades a Serem Trabalhadas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas",
+      "community": 586,
+      "norm_label": "capacidades a serem trabalhadas"
+    },
+    {
+      "label": "Conhecimentos Relacionados",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_conhecimentos_relacionados",
+      "community": 586,
+      "norm_label": "conhecimentos relacionados"
+    },
+    {
+      "label": "Estrat\u00e9gias de Ensino",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino",
+      "community": 586,
+      "norm_label": "estrategias de ensino"
+    },
+    {
+      "label": "Recursos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_recursos",
+      "community": 586,
+      "norm_label": "recursos"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "community": 586,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "Instrumentos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_instrumentos",
+      "community": 586,
+      "norm_label": "instrumentos"
+    },
+    {
+      "label": "5.2 Bloco 02 \u2014 Configura\u00e7\u00e3o de Ambiente e Ferramentas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_5_2_bloco_02_configura\u00e7\u00e3o_de_ambiente_e_ferramentas",
+      "community": 587,
+      "norm_label": "5.2 bloco 02 \u2014 configuracao de ambiente e ferramentas"
+    },
+    {
+      "label": "Capacidades a Serem Trabalhadas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L125",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_125",
+      "community": 587,
+      "norm_label": "capacidades a serem trabalhadas"
+    },
+    {
+      "label": "Conhecimentos Relacionados",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_132",
+      "community": 587,
+      "norm_label": "conhecimentos relacionados"
+    },
+    {
+      "label": "Estrat\u00e9gias de Ensino",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L140",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_140",
+      "community": 587,
+      "norm_label": "estrategias de ensino"
+    },
+    {
+      "label": "Recursos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_recursos_147",
+      "community": 587,
+      "norm_label": "recursos"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L153",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_153",
+      "community": 587,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "Instrumentos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_instrumentos_159",
+      "community": 587,
+      "norm_label": "instrumentos"
+    },
+    {
+      "label": "5.3 Bloco 03 \u2014 Testes Unit\u00e1rios em JavaScript",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_5_3_bloco_03_testes_unit\u00e1rios_em_javascript",
+      "community": 588,
+      "norm_label": "5.3 bloco 03 \u2014 testes unitarios em javascript"
+    },
+    {
+      "label": "Capacidades a Serem Trabalhadas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L170",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_170",
+      "community": 588,
+      "norm_label": "capacidades a serem trabalhadas"
+    },
+    {
+      "label": "Conhecimentos Relacionados",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_178",
+      "community": 588,
+      "norm_label": "conhecimentos relacionados"
+    },
+    {
+      "label": "Estrat\u00e9gias de Ensino",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L187",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_187",
+      "community": 588,
+      "norm_label": "estrategias de ensino"
+    },
+    {
+      "label": "Recursos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L195",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_recursos_195",
+      "community": 588,
+      "norm_label": "recursos"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L202",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_202",
+      "community": 588,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "Instrumentos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L209",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_instrumentos_209",
+      "community": 588,
+      "norm_label": "instrumentos"
+    },
+    {
+      "label": "5.4 Bloco 04 \u2014 Testes de Integra\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L217",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_5_4_bloco_04_testes_de_integra\u00e7\u00e3o",
+      "community": 589,
+      "norm_label": "5.4 bloco 04 \u2014 testes de integracao"
+    },
+    {
+      "label": "Capacidades a Serem Trabalhadas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L221",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_221",
+      "community": 589,
+      "norm_label": "capacidades a serem trabalhadas"
+    },
+    {
+      "label": "Conhecimentos Relacionados",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L229",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_229",
+      "community": 589,
+      "norm_label": "conhecimentos relacionados"
+    },
+    {
+      "label": "Estrat\u00e9gias de Ensino",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L238",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_238",
+      "community": 589,
+      "norm_label": "estrategias de ensino"
+    },
+    {
+      "label": "Recursos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L246",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_recursos_246",
+      "community": 589,
+      "norm_label": "recursos"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_253",
+      "community": 589,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "Instrumentos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_instrumentos_260",
+      "community": 589,
+      "norm_label": "instrumentos"
+    },
+    {
+      "label": "5.5 Bloco 05 \u2014 Testes End-to-End (E2E)",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L268",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_5_5_bloco_05_testes_end_to_end_e2e",
+      "community": 590,
+      "norm_label": "5.5 bloco 05 \u2014 testes end-to-end (e2e)"
+    },
+    {
+      "label": "Capacidades a Serem Trabalhadas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L272",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_272",
+      "community": 590,
+      "norm_label": "capacidades a serem trabalhadas"
+    },
+    {
+      "label": "Conhecimentos Relacionados",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L281",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_281",
+      "community": 590,
+      "norm_label": "conhecimentos relacionados"
+    },
+    {
+      "label": "Estrat\u00e9gias de Ensino",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L290",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_290",
+      "community": 590,
+      "norm_label": "estrategias de ensino"
+    },
+    {
+      "label": "Recursos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_recursos_298",
+      "community": 590,
+      "norm_label": "recursos"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L305",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_305",
+      "community": 590,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "Instrumentos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L312",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_instrumentos_312",
+      "community": 590,
+      "norm_label": "instrumentos"
+    },
+    {
+      "label": "5.6 Bloco 06 \u2014 Testes de Performance e Acessibilidade",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L320",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_5_6_bloco_06_testes_de_performance_e_acessibilidade",
+      "community": 591,
+      "norm_label": "5.6 bloco 06 \u2014 testes de performance e acessibilidade"
+    },
+    {
+      "label": "Capacidades a Serem Trabalhadas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L324",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_324",
+      "community": 591,
+      "norm_label": "capacidades a serem trabalhadas"
+    },
+    {
+      "label": "Conhecimentos Relacionados",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L332",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_332",
+      "community": 591,
+      "norm_label": "conhecimentos relacionados"
+    },
+    {
+      "label": "Estrat\u00e9gias de Ensino",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L340",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_340",
+      "community": 591,
+      "norm_label": "estrategias de ensino"
+    },
+    {
+      "label": "Recursos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L347",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_recursos_347",
+      "community": 591,
+      "norm_label": "recursos"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L354",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_354",
+      "community": 591,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "Instrumentos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L360",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_instrumentos_360",
+      "community": 591,
+      "norm_label": "instrumentos"
+    },
+    {
+      "label": "5.7 Bloco 07 \u2014 Integra\u00e7\u00e3o Cont\u00ednua (CI/CD) e Automa\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L367",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_5_7_bloco_07_integra\u00e7\u00e3o_cont\u00ednua_ci_cd_e_automa\u00e7\u00e3o",
+      "community": 592,
+      "norm_label": "5.7 bloco 07 \u2014 integracao continua (ci/cd) e automacao"
+    },
+    {
+      "label": "Capacidades a Serem Trabalhadas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L371",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_371",
+      "community": 592,
+      "norm_label": "capacidades a serem trabalhadas"
+    },
+    {
+      "label": "Conhecimentos Relacionados",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L379",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_379",
+      "community": 592,
+      "norm_label": "conhecimentos relacionados"
+    },
+    {
+      "label": "Estrat\u00e9gias de Ensino",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L388",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_388",
+      "community": 592,
+      "norm_label": "estrategias de ensino"
+    },
+    {
+      "label": "Recursos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L395",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_recursos_395",
+      "community": 592,
+      "norm_label": "recursos"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L401",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_401",
+      "community": 592,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "Instrumentos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L408",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_instrumentos_408",
+      "community": 592,
+      "norm_label": "instrumentos"
+    },
+    {
+      "label": "5.8 Bloco 08 \u2014 Boas Pr\u00e1ticas e Projeto Integrador",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L416",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_5_8_bloco_08_boas_pr\u00e1ticas_e_projeto_integrador",
+      "community": 585,
+      "norm_label": "5.8 bloco 08 \u2014 boas praticas e projeto integrador"
+    },
+    {
+      "label": "Capacidades a Serem Trabalhadas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L420",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_420",
+      "community": 585,
+      "norm_label": "capacidades a serem trabalhadas"
+    },
+    {
+      "label": "Conhecimentos Relacionados",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L428",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_428",
+      "community": 585,
+      "norm_label": "conhecimentos relacionados"
+    },
+    {
+      "label": "Estrat\u00e9gias de Ensino",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L437",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_437",
+      "community": 585,
+      "norm_label": "estrategias de ensino"
+    },
+    {
+      "label": "Recursos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L445",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_recursos_445",
+      "community": 585,
+      "norm_label": "recursos"
+    },
+    {
+      "label": "Crit\u00e9rios de Avalia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L451",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_451",
+      "community": 585,
+      "norm_label": "criterios de avaliacao"
+    },
+    {
+      "label": "Instrumentos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L458",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_instrumentos_458",
+      "community": 585,
+      "norm_label": "instrumentos"
+    },
+    {
+      "label": "6. Avalia\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L465",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_6_avalia\u00e7\u00f5es",
+      "community": 584,
+      "norm_label": "6. avaliacoes"
+    },
+    {
+      "label": "6.1 Avalia\u00e7\u00e3o Pr\u00e1tica \u2014 4 horas (Aula 09 final + Aula 10 final)",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L467",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_6_1_avalia\u00e7\u00e3o_pr\u00e1tica_4_horas_aula_09_final_aula_10_final",
+      "community": 584,
+      "norm_label": "6.1 avaliacao pratica \u2014 4 horas (aula 09 final + aula 10 final)"
+    },
+    {
+      "label": "6.2 Avalia\u00e7\u00e3o Te\u00f3rica Objetiva \u2014 4 horas (Aula 10)",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L492",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_6_2_avalia\u00e7\u00e3o_te\u00f3rica_objetiva_4_horas_aula_10",
+      "community": 584,
+      "norm_label": "6.2 avaliacao teorica objetiva \u2014 4 horas (aula 10)"
+    },
+    {
+      "label": "7. Quadro Resumo de Carga Hor\u00e1ria",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L522",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_7_quadro_resumo_de_carga_hor\u00e1ria",
+      "community": 584,
+      "norm_label": "7. quadro resumo de carga horaria"
+    },
+    {
+      "label": "8. Metodologia e Estrat\u00e9gias Transversais",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L540",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_8_metodologia_e_estrat\u00e9gias_transversais",
+      "community": 596,
+      "norm_label": "8. metodologia e estrategias transversais"
+    },
+    {
+      "label": "8.1 Abordagem Pedag\u00f3gica",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L542",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_8_1_abordagem_pedag\u00f3gica",
+      "community": 596,
+      "norm_label": "8.1 abordagem pedagogica"
+    },
+    {
+      "label": "8.2 Diferencia\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L548",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_8_2_diferencia\u00e7\u00e3o",
+      "community": 596,
+      "norm_label": "8.2 diferenciacao"
+    },
+    {
+      "label": "8.3 Avalia\u00e7\u00e3o Cont\u00ednua",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L553",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_8_3_avalia\u00e7\u00e3o_cont\u00ednua",
+      "community": 596,
+      "norm_label": "8.3 avaliacao continua"
+    },
+    {
+      "label": "9. Recursos Necess\u00e1rios",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L561",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_9_recursos_necess\u00e1rios",
+      "community": 593,
+      "norm_label": "9. recursos necessarios"
+    },
+    {
+      "label": "9.1 Ambiente F\u00edsico",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L563",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_9_1_ambiente_f\u00edsico",
+      "community": 593,
+      "norm_label": "9.1 ambiente fisico"
+    },
+    {
+      "label": "9.2 Softwares e Ferramentas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L569",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_9_2_softwares_e_ferramentas",
+      "community": 593,
+      "norm_label": "9.2 softwares e ferramentas"
+    },
+    {
+      "label": "9.3 Material Did\u00e1tico",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L578",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_9_3_material_did\u00e1tico",
+      "community": 593,
+      "norm_label": "9.3 material didatico"
+    },
+    {
+      "label": "9.4 Documenta\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L585",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_9_4_documenta\u00e7\u00e3o",
+      "community": 593,
+      "norm_label": "9.4 documentacao"
+    },
+    {
+      "label": "10. Observa\u00e7\u00f5es e Pr\u00f3ximos Passos",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L593",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_10_observa\u00e7\u00f5es_e_pr\u00f3ximos_passos",
+      "community": 584,
+      "norm_label": "10. observacoes e proximos passos"
+    },
+    {
+      "label": "10.1 Estrutura Proposta",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L595",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_10_1_estrutura_proposta",
+      "community": 584,
+      "norm_label": "10.1 estrutura proposta"
+    },
+    {
+      "label": "10.2 Ajustes Pendentes",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L598",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_10_2_ajustes_pendentes",
+      "community": 584,
+      "norm_label": "10.2 ajustes pendentes"
+    },
+    {
+      "label": "10.3 Cronograma",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L604",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_10_3_cronograma",
+      "community": 584,
+      "norm_label": "10.3 cronograma"
+    },
+    {
+      "label": "10.4 M\u00e9tricas de Sucesso",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L612",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_10_4_m\u00e9tricas_de_sucesso",
+      "community": 584,
+      "norm_label": "10.4 metricas de sucesso"
+    },
+    {
+      "label": "11. Refer\u00eancias",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L620",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_11_refer\u00eancias",
+      "community": 594,
+      "norm_label": "11. referencias"
+    },
+    {
+      "label": "11.1 Ferramentas",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L622",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_11_1_ferramentas",
+      "community": 594,
+      "norm_label": "11.1 ferramentas"
+    },
+    {
+      "label": "11.2 Recursos Educacionais",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L628",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_11_2_recursos_educacionais",
+      "community": 594,
+      "norm_label": "11.2 recursos educacionais"
+    },
+    {
+      "label": "11.3 Comunidades",
+      "file_type": "document",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L634",
+      "_origin": "ast",
+      "id": "testes_de_frontend_plano_aulas_11_3_comunidades",
+      "community": 594,
+      "norm_label": "11.3 comunidades"
     },
     {
       "label": "CLAUDE.md",
@@ -84794,6 +86414,176 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_10_bibliografia_b\u00e1sica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_1_informa\u00e7\u00f5es_gerais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_2_fun\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_3_objetivo_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_conte\u00fados_formativos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_5_eixo_estruturante_bncc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_6_capacidades_socioemocionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_7_recursos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_8_metodologia_de_ensino",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_9_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_conte\u00fados_formativos",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_1_capacidades_b\u00e1sicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_conte\u00fados_formativos",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_2_conhecimentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_2_conhecimentos",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_m\u00f3dulo_1_opera\u00e7\u00f5es_matem\u00e1ticas_aplicadas_aos_processos_organizacionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_4_2_conhecimentos",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_m\u00f3dulo_2_excel_aplicado_\u00e0_gest\u00e3o_organizacional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_5_eixo_estruturante_bncc",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_investiga\u00e7\u00e3o_cient\u00edfica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_7_recursos",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_7_1_ambientes_pedag\u00f3gicos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_7_recursos",
+      "target": "converted_apostila_analise_dados_aplicada_gestao_87a4b633_7_2_equipamentos_e_ferramentas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
       "source_location": "L8",
       "weight": 1.0,
@@ -109667,8 +111457,518 @@
       "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/GestaoControleMateriais_456h.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "gestao_e_controle_materiais_gestaocontrolemateriais_456h",
-      "target": "gestao_e_controle_materiais_gestaocontrolemateriais_456h_conte\u00fados_referidos_na_portaria_mte_3_872_23",
+      "target": "gestao_e_controle_materiais_gestaocontrolemateriais_456h_conte\u00fados_referidos_na_portaria_mte_3_872_23"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_bibliografia_b\u00e1sica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_capacidades_socioemocionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_conte\u00fados_formativos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_eixo_estruturante_bncc_compet\u00eancia_integradora",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_fun\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_informa\u00e7\u00f5es_gerais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_objetivo_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_perfil_do_docente",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ementa_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_recursos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_conte\u00fados_formativos",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_capacidades_b\u00e1sicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_conte\u00fados_formativos",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_conhecimentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_conhecimentos",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_1_opera\u00e7\u00f5es_matem\u00e1ticas_aplicadas_aos_processos_organizacionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_conhecimentos",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_2_excel_aplicado_\u00e0_gest\u00e3o_organizacional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_eixo_estruturante_bncc_compet\u00eancia_integradora",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_investiga\u00e7\u00e3o_cient\u00edfica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_recursos",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_ambientes_pedag\u00f3gicos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_recursos",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_material_did\u00e1tico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_recursos",
+      "target": "analise_dados_aplicada_gestao_ementa_analise_dados_aplicada_gestao_m\u00e1quinas_equipamentos_instrumentos_e_ferramentas_insumos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_1_objetivos_de_aprendizagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_2_estrutura_do_plano_28_horas_de_aulas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_3_avalia\u00e7\u00f5es_4_horas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_4_crit\u00e9rios_de_avalia\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_5_metodologia_pedag\u00f3gica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_6_recursos_necess\u00e1rios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L274",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_7_cronograma",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L286",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_8_refer\u00eancias_bibliogr\u00e1ficas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_plano_de_aulas_an\u00e1lise_de_dados_aplicada_\u00e0_gest\u00e3o",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_9_observa\u00e7\u00f5es_importantes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_2_estrutura_do_plano_28_horas_de_aulas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_1_fundamentos_matem\u00e1ticos_8_horas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_2_estrutura_do_plano_28_horas_de_aulas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_2_excel_b\u00e1sico_6_horas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_2_estrutura_do_plano_28_horas_de_aulas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_3_excel_avan\u00e7ado_10_horas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_2_estrutura_do_plano_28_horas_de_aulas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_4_dashboards_e_an\u00e1lise_4_horas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_1_fundamentos_matem\u00e1ticos_8_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_1_introdu\u00e7\u00e3o_e_conjuntos_num\u00e9ricos_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_1_fundamentos_matem\u00e1ticos_8_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_2_raz\u00e3o_propor\u00e7\u00e3o_e_regra_de_tr\u00eas_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_1_fundamentos_matem\u00e1ticos_8_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_3_porcentagem_e_convers\u00e3o_de_unidades_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_1_fundamentos_matem\u00e1ticos_8_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_4_introdu\u00e7\u00e3o_\u00e0_estat\u00edstica_b\u00e1sica_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_2_excel_b\u00e1sico_6_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_5_introdu\u00e7\u00e3o_ao_excel_e_navega\u00e7\u00e3o_b\u00e1sica_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_2_excel_b\u00e1sico_6_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_6_f\u00f3rmulas_e_fun\u00e7\u00f5es_essenciais_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_2_excel_b\u00e1sico_6_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_7_formata\u00e7\u00e3o_e_apresenta\u00e7\u00e3o_de_dados_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_3_excel_avan\u00e7ado_10_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_10_tabelas_din\u00e2micas_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_3_excel_avan\u00e7ado_10_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_11_filtros_e_valida\u00e7\u00e3o_de_dados_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_3_excel_avan\u00e7ado_10_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_12_gr\u00e1ficos_e_visualiza\u00e7\u00e3o_de_dados_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_3_excel_avan\u00e7ado_10_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_8_fun\u00e7\u00f5es_de_busca_e_consulta_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_3_excel_avan\u00e7ado_10_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_9_fun\u00e7\u00e3o_se_avan\u00e7ada_e_cont_se_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_4_dashboards_e_an\u00e1lise_4_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_13_introdu\u00e7\u00e3o_a_dashboards_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L172",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_m\u00f3dulo_4_dashboards_e_an\u00e1lise_4_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_aula_14_cria\u00e7\u00e3o_de_dashboard_pr\u00e1tico_2h",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_3_avalia\u00e7\u00f5es_4_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_avalia\u00e7\u00e3o_objetiva_2_horas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_3_avalia\u00e7\u00f5es_4_horas",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_avalia\u00e7\u00e3o_pr\u00e1tica_2_horas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L255",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_6_recursos_necess\u00e1rios",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_ambientes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_6_recursos_necess\u00e1rios",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_equipamentos_e_software",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_6_recursos_necess\u00e1rios",
+      "target": "analise_dados_aplicada_gestao_plano_aulas_analise_dados_aplicada_gestao_materiais_did\u00e1ticos",
       "confidence_score": 1.0
     },
     {
@@ -112514,6 +114814,906 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas",
+      "target": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L593",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_10_observa\u00e7\u00f5es_e_pr\u00f3ximos_passos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L620",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_11_refer\u00eancias"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_1_identifica\u00e7\u00e3o_do_plano_de_aulas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_2_objetivo_geral_da_unidade_curricular"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_3_compet\u00eancias_a_serem_desenvolvidas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_4_situa\u00e7\u00e3o_de_aprendizagem_desafio_central"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L465",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_6_avalia\u00e7\u00f5es"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L522",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_7_quadro_resumo_de_carga_hor\u00e1ria"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L540",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_8_metodologia_e_estrat\u00e9gias_transversais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L561",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_plano_de_aulas_testes_de_frontend",
+      "target": "testes_de_frontend_plano_aulas_9_recursos_necess\u00e1rios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_3_compet\u00eancias_a_serem_desenvolvidas",
+      "target": "testes_de_frontend_plano_aulas_3_1_capacidades_t\u00e9cnicas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_3_compet\u00eancias_a_serem_desenvolvidas",
+      "target": "testes_de_frontend_plano_aulas_3_2_capacidades_b\u00e1sicas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_3_compet\u00eancias_a_serem_desenvolvidas",
+      "target": "testes_de_frontend_plano_aulas_3_3_capacidades_socioemocionais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_4_situa\u00e7\u00e3o_de_aprendizagem_desafio_central",
+      "target": "testes_de_frontend_plano_aulas_4_1_contexto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_4_situa\u00e7\u00e3o_de_aprendizagem_desafio_central",
+      "target": "testes_de_frontend_plano_aulas_4_2_desafio_principal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_4_situa\u00e7\u00e3o_de_aprendizagem_desafio_central",
+      "target": "testes_de_frontend_plano_aulas_4_3_resultados_esperados"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas",
+      "target": "testes_de_frontend_plano_aulas_5_1_bloco_01_fundamentos_de_testes_de_software"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas",
+      "target": "testes_de_frontend_plano_aulas_5_2_bloco_02_configura\u00e7\u00e3o_de_ambiente_e_ferramentas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L166",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas",
+      "target": "testes_de_frontend_plano_aulas_5_3_bloco_03_testes_unit\u00e1rios_em_javascript"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L217",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas",
+      "target": "testes_de_frontend_plano_aulas_5_4_bloco_04_testes_de_integra\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L268",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas",
+      "target": "testes_de_frontend_plano_aulas_5_5_bloco_05_testes_end_to_end_e2e"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L320",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas",
+      "target": "testes_de_frontend_plano_aulas_5_6_bloco_06_testes_de_performance_e_acessibilidade"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L367",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas",
+      "target": "testes_de_frontend_plano_aulas_5_7_bloco_07_integra\u00e7\u00e3o_cont\u00ednua_ci_cd_e_automa\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L416",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_estrutura_de_blocos_tem\u00e1ticos_e_plano_de_aulas",
+      "target": "testes_de_frontend_plano_aulas_5_8_bloco_08_boas_pr\u00e1ticas_e_projeto_integrador"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_1_bloco_01_fundamentos_de_testes_de_software",
+      "target": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_1_bloco_01_fundamentos_de_testes_de_software",
+      "target": "testes_de_frontend_plano_aulas_conhecimentos_relacionados"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_1_bloco_01_fundamentos_de_testes_de_software",
+      "target": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_1_bloco_01_fundamentos_de_testes_de_software",
+      "target": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L114",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_1_bloco_01_fundamentos_de_testes_de_software",
+      "target": "testes_de_frontend_plano_aulas_instrumentos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_1_bloco_01_fundamentos_de_testes_de_software",
+      "target": "testes_de_frontend_plano_aulas_recursos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_2_bloco_02_configura\u00e7\u00e3o_de_ambiente_e_ferramentas",
+      "target": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_125"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_2_bloco_02_configura\u00e7\u00e3o_de_ambiente_e_ferramentas",
+      "target": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_132"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L153",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_2_bloco_02_configura\u00e7\u00e3o_de_ambiente_e_ferramentas",
+      "target": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_153"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_2_bloco_02_configura\u00e7\u00e3o_de_ambiente_e_ferramentas",
+      "target": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_140"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_2_bloco_02_configura\u00e7\u00e3o_de_ambiente_e_ferramentas",
+      "target": "testes_de_frontend_plano_aulas_instrumentos_159"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_2_bloco_02_configura\u00e7\u00e3o_de_ambiente_e_ferramentas",
+      "target": "testes_de_frontend_plano_aulas_recursos_147"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_3_bloco_03_testes_unit\u00e1rios_em_javascript",
+      "target": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_170"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_3_bloco_03_testes_unit\u00e1rios_em_javascript",
+      "target": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_178"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L202",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_3_bloco_03_testes_unit\u00e1rios_em_javascript",
+      "target": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_202"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L187",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_3_bloco_03_testes_unit\u00e1rios_em_javascript",
+      "target": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_187"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L209",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_3_bloco_03_testes_unit\u00e1rios_em_javascript",
+      "target": "testes_de_frontend_plano_aulas_instrumentos_209"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L195",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_3_bloco_03_testes_unit\u00e1rios_em_javascript",
+      "target": "testes_de_frontend_plano_aulas_recursos_195"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L221",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_4_bloco_04_testes_de_integra\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_221"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L229",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_4_bloco_04_testes_de_integra\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_229"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_4_bloco_04_testes_de_integra\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_253"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L238",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_4_bloco_04_testes_de_integra\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_238"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L260",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_4_bloco_04_testes_de_integra\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_instrumentos_260"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L246",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_4_bloco_04_testes_de_integra\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_recursos_246"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L272",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_5_bloco_05_testes_end_to_end_e2e",
+      "target": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_272"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L281",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_5_bloco_05_testes_end_to_end_e2e",
+      "target": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_281"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L305",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_5_bloco_05_testes_end_to_end_e2e",
+      "target": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_305"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L290",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_5_bloco_05_testes_end_to_end_e2e",
+      "target": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_290"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L312",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_5_bloco_05_testes_end_to_end_e2e",
+      "target": "testes_de_frontend_plano_aulas_instrumentos_312"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_5_bloco_05_testes_end_to_end_e2e",
+      "target": "testes_de_frontend_plano_aulas_recursos_298"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L324",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_6_bloco_06_testes_de_performance_e_acessibilidade",
+      "target": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_324"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L332",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_6_bloco_06_testes_de_performance_e_acessibilidade",
+      "target": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_332"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L354",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_6_bloco_06_testes_de_performance_e_acessibilidade",
+      "target": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_354"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L340",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_6_bloco_06_testes_de_performance_e_acessibilidade",
+      "target": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_340"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L360",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_6_bloco_06_testes_de_performance_e_acessibilidade",
+      "target": "testes_de_frontend_plano_aulas_instrumentos_360"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L347",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_6_bloco_06_testes_de_performance_e_acessibilidade",
+      "target": "testes_de_frontend_plano_aulas_recursos_347"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L371",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_7_bloco_07_integra\u00e7\u00e3o_cont\u00ednua_ci_cd_e_automa\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_371"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L379",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_7_bloco_07_integra\u00e7\u00e3o_cont\u00ednua_ci_cd_e_automa\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_379"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L401",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_7_bloco_07_integra\u00e7\u00e3o_cont\u00ednua_ci_cd_e_automa\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_401"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L388",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_7_bloco_07_integra\u00e7\u00e3o_cont\u00ednua_ci_cd_e_automa\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_388"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L408",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_7_bloco_07_integra\u00e7\u00e3o_cont\u00ednua_ci_cd_e_automa\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_instrumentos_408"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L395",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_7_bloco_07_integra\u00e7\u00e3o_cont\u00ednua_ci_cd_e_automa\u00e7\u00e3o",
+      "target": "testes_de_frontend_plano_aulas_recursos_395"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L420",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_8_bloco_08_boas_pr\u00e1ticas_e_projeto_integrador",
+      "target": "testes_de_frontend_plano_aulas_capacidades_a_serem_trabalhadas_420"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L428",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_8_bloco_08_boas_pr\u00e1ticas_e_projeto_integrador",
+      "target": "testes_de_frontend_plano_aulas_conhecimentos_relacionados_428"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L451",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_8_bloco_08_boas_pr\u00e1ticas_e_projeto_integrador",
+      "target": "testes_de_frontend_plano_aulas_crit\u00e9rios_de_avalia\u00e7\u00e3o_451"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L437",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_8_bloco_08_boas_pr\u00e1ticas_e_projeto_integrador",
+      "target": "testes_de_frontend_plano_aulas_estrat\u00e9gias_de_ensino_437"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L458",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_8_bloco_08_boas_pr\u00e1ticas_e_projeto_integrador",
+      "target": "testes_de_frontend_plano_aulas_instrumentos_458"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L445",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_5_8_bloco_08_boas_pr\u00e1ticas_e_projeto_integrador",
+      "target": "testes_de_frontend_plano_aulas_recursos_445"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L467",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_6_avalia\u00e7\u00f5es",
+      "target": "testes_de_frontend_plano_aulas_6_1_avalia\u00e7\u00e3o_pr\u00e1tica_4_horas_aula_09_final_aula_10_final"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L492",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_6_avalia\u00e7\u00f5es",
+      "target": "testes_de_frontend_plano_aulas_6_2_avalia\u00e7\u00e3o_te\u00f3rica_objetiva_4_horas_aula_10"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L542",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_8_metodologia_e_estrat\u00e9gias_transversais",
+      "target": "testes_de_frontend_plano_aulas_8_1_abordagem_pedag\u00f3gica"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L548",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_8_metodologia_e_estrat\u00e9gias_transversais",
+      "target": "testes_de_frontend_plano_aulas_8_2_diferencia\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L553",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_8_metodologia_e_estrat\u00e9gias_transversais",
+      "target": "testes_de_frontend_plano_aulas_8_3_avalia\u00e7\u00e3o_cont\u00ednua"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L563",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_9_recursos_necess\u00e1rios",
+      "target": "testes_de_frontend_plano_aulas_9_1_ambiente_f\u00edsico"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L569",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_9_recursos_necess\u00e1rios",
+      "target": "testes_de_frontend_plano_aulas_9_2_softwares_e_ferramentas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L578",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_9_recursos_necess\u00e1rios",
+      "target": "testes_de_frontend_plano_aulas_9_3_material_did\u00e1tico"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L585",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_9_recursos_necess\u00e1rios",
+      "target": "testes_de_frontend_plano_aulas_9_4_documenta\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L595",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_10_observa\u00e7\u00f5es_e_pr\u00f3ximos_passos",
+      "target": "testes_de_frontend_plano_aulas_10_1_estrutura_proposta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L598",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_10_observa\u00e7\u00f5es_e_pr\u00f3ximos_passos",
+      "target": "testes_de_frontend_plano_aulas_10_2_ajustes_pendentes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L604",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_10_observa\u00e7\u00f5es_e_pr\u00f3ximos_passos",
+      "target": "testes_de_frontend_plano_aulas_10_3_cronograma"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L612",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_10_observa\u00e7\u00f5es_e_pr\u00f3ximos_passos",
+      "target": "testes_de_frontend_plano_aulas_10_4_m\u00e9tricas_de_sucesso"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L622",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_11_refer\u00eancias",
+      "target": "testes_de_frontend_plano_aulas_11_1_ferramentas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L628",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_11_refer\u00eancias",
+      "target": "testes_de_frontend_plano_aulas_11_2_recursos_educacionais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md",
+      "source_location": "L634",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "testes_de_frontend_plano_aulas_11_refer\u00eancias",
+      "target": "testes_de_frontend_plano_aulas_11_3_comunidades"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "sistema/syncdata/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -113753,5 +116953,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f2d8479e1ed10b5bcaa7bca74aa7811fc33d066b"
+  "built_at_commit": "5b7ff48afeb18549ff7dc9ee3c98ecc41433b8c8"
 }

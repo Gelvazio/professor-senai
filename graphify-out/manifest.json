@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788184278.272085,
-    "ast_hash": "c50fe4990b1867f66f0cbc9682ab9db2",
+    "mtime": 1788191765.6881332,
+    "ast_hash": "b30407506a39935ee7fff4877a4a0666",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -2684,11 +2684,6 @@
     "ast_hash": "72c5086ca9f629944e80a06ecb562530",
     "semantic_hash": ""
   },
-  "sistema/ANALISE_DADOS_APLICADA_GESTAO/criar as aulas - AnaliseDadosAplicadaGestao.txt": {
-    "mtime": 1787856586.3517506,
-    "ast_hash": "9cdaee4c12e1674acb9c86a845466b8b",
-    "semantic_hash": ""
-  },
   "syncdata/package.json": {
     "mtime": 1787917656.3674357,
     "ast_hash": "e72c910aa2bf5cd058dc5ff1910f458c",
@@ -3212,6 +3207,31 @@
   "sistema/GESTAO_E_CONTROLE_MATERIAIS/GestaoControleMateriais_456h.md": {
     "mtime": 1788190933.1503496,
     "ast_hash": "a65833ade1bd61ad2eb763393f994634",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md": {
+    "mtime": 1788191680.4948335,
+    "ast_hash": "b85b17f58d7f460dcd83b25dee722836",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Apostila-ANALISE-DADOS-APLICADA-GESTAO_87a4b633.md": {
+    "mtime": 1788194499.0792305,
+    "ast_hash": "a9063b99d64d44ff695d12ffe09634f1",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md": {
+    "mtime": 1788191836.477764,
+    "ast_hash": "f808bccfa11fbc340d18db86aefac9d5",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/PLANO-AULAS-ANALISE-DADOS-APLICADA-GESTAO.md": {
+    "mtime": 1788192035.835896,
+    "ast_hash": "d8a86067282ff0cb6f9468d54814b4c2",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/TURMA_SALETE_2026_02/ANALISE_DADOS_APLICADA_GESTAO/criar as aulas - AnaliseDadosAplicadaGestao.txt": {
+    "mtime": 1787856586.3517506,
+    "ast_hash": "9cdaee4c12e1674acb9c86a845466b8b",
     "semantic_hash": ""
   }
 }

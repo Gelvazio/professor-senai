@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-31)
 
 ## Corpus Check
-- 393 files · ~1,417,549 words
+- 397 files · ~1,423,561 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5670 nodes · 5668 edges · 584 communities (533 shown, 51 thin omitted)
+- 5832 nodes · 5826 edges · 599 communities (548 shown, 51 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f2d8479e`
+- Built from commit: `5b7ff48a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -529,6 +529,21 @@
 - [[_COMMUNITY_Community 574|Community 574]]
 - [[_COMMUNITY_Community 575|Community 575]]
 - [[_COMMUNITY_Community 583|Community 583]]
+- [[_COMMUNITY_Community 584|Community 584]]
+- [[_COMMUNITY_Community 585|Community 585]]
+- [[_COMMUNITY_Community 586|Community 586]]
+- [[_COMMUNITY_Community 587|Community 587]]
+- [[_COMMUNITY_Community 588|Community 588]]
+- [[_COMMUNITY_Community 589|Community 589]]
+- [[_COMMUNITY_Community 590|Community 590]]
+- [[_COMMUNITY_Community 591|Community 591]]
+- [[_COMMUNITY_Community 592|Community 592]]
+- [[_COMMUNITY_Community 593|Community 593]]
+- [[_COMMUNITY_Community 594|Community 594]]
+- [[_COMMUNITY_Community 595|Community 595]]
+- [[_COMMUNITY_Community 596|Community 596]]
+- [[_COMMUNITY_Community 597|Community 597]]
+- [[_COMMUNITY_Community 598|Community 598]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -557,7 +572,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (584 total, 51 thin omitted)
+## Communities (599 total, 51 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -1091,8 +1106,8 @@ Cohesion: 0.14
 Nodes (14): Atividade: Apresentação de 3 minutos, Atividade: Mini-debate, Atividades de simulação, Encontro 18-19 — Debate e Argumentação (4h), Encontro 20-21 — Apresentação Oral e Escuta Ativa (4h), Encontro 22 — Simulação de Situações Comunicativas (4h), Explicação: Como argumentar bem?, Explicação: Como fazer uma boa apresentação? (+6 more)
 
 ### Community 155 - "Community 155"
-Cohesion: 0.15
-Nodes (13): Atividade final, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h), Explicação: Como fazer uma síntese?, MÓDULO 5 — AUTONOMIA E ESTRATÉGIAS DE ESTUDO (+5 more)
+Cohesion: 0.11
+Nodes (18): Atividade final, Atividades, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h) (+10 more)
 
 ### Community 156 - "Community 156"
 Cohesion: 0.29
@@ -1843,8 +1858,8 @@ Cohesion: 0.06
 Nodes (32): 1. Diagnóstico da mensagem, 1. Estrutura da pasta compartilhada, 2. Padrão de nomes, 2. Planejamento, 3. Primeira versão do e-mail, 3. Quadro de tarefas, 4. Cartão de bloqueio, 4. Checklist de revisão em dupla (+24 more)
 
 ### Community 349 - "Community 349"
-Cohesion: 0.08
-Nodes (25): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+17 more)
+Cohesion: 0.10
+Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples (+12 more)
 
 ### Community 350 - "Community 350"
 Cohesion: 0.09
@@ -1899,8 +1914,8 @@ Cohesion: 0.12
 Nodes (17): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Atividade 6.1 (+9 more)
 
 ### Community 363 - "Community 363"
-Cohesion: 0.12
-Nodes (16): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Apresentação do Módulo, Atividade 1.1 — Individual (+8 more)
+Cohesion: 0.09
+Nodes (22): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+14 more)
 
 ### Community 365 - "Community 365"
 Cohesion: 0.12
@@ -1935,8 +1950,8 @@ Cohesion: 0.17
 Nodes (11): Anexo I — Mensagem técnica, Checklist antes de entregar, Critérios de avaliação — 10 pontos, Divisão de responsabilidades, Entrega 1 — Guia rápido para a equipe, Entrega 2 — Inventário básico, Entrega 3 — Apresentação-relâmpago, O que explicar no guia (+3 more)
 
 ### Community 373 - "Community 373"
-Cohesion: 0.29
-Nodes (7): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, Sobre este material, Uma palavra para você, aluno
+Cohesion: 0.18
+Nodes (10): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFERÊNCIAS, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, RIO DO SUL MAIS TECH, SENAI / PREFEITURA MUNICIPAL DE RIO DO SUL (+2 more)
 
 ### Community 374 - "Community 374"
 Cohesion: 0.10
@@ -2031,8 +2046,8 @@ Cohesion: 0.25
 Nodes (8): Atividade 8.1 — Simulação de reunião (grupo), Atividade 8.2 — Avaliação da reunião (individual), Comunicação em equipe, Conteúdo, ENCONTRO 8 — Reuniões e trabalho em equipe, Objetivo, Reuniões no ambiente de trabalho, Síntese do Encontro 8
 
 ### Community 397 - "Community 397"
-Cohesion: 0.17
-Nodes (11): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação (+3 more)
+Cohesion: 0.25
+Nodes (8): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação
 
 ### Community 398 - "Community 398"
 Cohesion: 0.47
@@ -2403,31 +2418,89 @@ Cohesion: 0.40
 Nodes (5): Conteúdo, ENCONTRO 15 — Scratch: Primeiros Passos na Programação em Blocos, Na Prática, O que você vai aprender, Síntese
 
 ### Community 563 - "Community 563"
-Cohesion: 0.40
-Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
+Cohesion: 0.06
+Nodes (33): 1. OBJETIVOS DE APRENDIZAGEM, 2. ESTRUTURA DO PLANO (28 horas de aulas), 3. AVALIAÇÕES (4 horas), 4. CRITÉRIOS DE AVALIAÇÃO, 5. METODOLOGIA PEDAGÓGICA, 6. RECURSOS NECESSÁRIOS, 7. CRONOGRAMA, 8. REFERÊNCIAS BIBLIOGRÁFICAS (+25 more)
 
 ### Community 564 - "Community 564"
-Cohesion: 0.33
-Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
+Cohesion: 0.11
+Nodes (18): 1. Operações Matemáticas Aplicadas aos Processos Organizacionais, 2. Excel Aplicado à Gestão Organizacional, Ambientes Pedagógicos, Bibliografia Básica, Capacidades Básicas, Capacidades Socioemocionais, Conhecimentos, Conteúdos Formativos (+10 more)
 
 ### Community 565 - "Community 565"
 Cohesion: 0.40
 Nodes (4): A Atividade: "War Room - Caça aos Bugs", O Contexto: O Programa de "Bug Bounty", O Pseudocódigo: Módulo de Precificação Dinâmica, Sistema de Pontuação (Bug Bounty)
 
+### Community 584 - "Community 584"
+Cohesion: 0.12
+Nodes (16): 10.1 Estrutura Proposta, 10.2 Ajustes Pendentes, 10.3 Cronograma, 10.4 Métricas de Sucesso, 10. Observações e Próximos Passos, 1. Identificação do Plano de Aulas, 2. Objetivo Geral da Unidade Curricular, 3.1 Capacidades Técnicas (+8 more)
+
+### Community 585 - "Community 585"
+Cohesion: 0.25
+Nodes (8): 5.8 Bloco 08 — Boas Práticas e Projeto Integrador, 5. Estrutura de Blocos Temáticos e Plano de Aulas, Capacidades a Serem Trabalhadas, Conhecimentos Relacionados, Critérios de Avaliação, Estratégias de Ensino, Instrumentos, Recursos
+
+### Community 586 - "Community 586"
+Cohesion: 0.29
+Nodes (7): 5.1 Bloco 01 — Fundamentos de Testes de Software, Capacidades a Serem Trabalhadas, Conhecimentos Relacionados, Critérios de Avaliação, Estratégias de Ensino, Instrumentos, Recursos
+
+### Community 587 - "Community 587"
+Cohesion: 0.29
+Nodes (7): 5.2 Bloco 02 — Configuração de Ambiente e Ferramentas, Capacidades a Serem Trabalhadas, Conhecimentos Relacionados, Critérios de Avaliação, Estratégias de Ensino, Instrumentos, Recursos
+
+### Community 588 - "Community 588"
+Cohesion: 0.29
+Nodes (7): 5.3 Bloco 03 — Testes Unitários em JavaScript, Capacidades a Serem Trabalhadas, Conhecimentos Relacionados, Critérios de Avaliação, Estratégias de Ensino, Instrumentos, Recursos
+
+### Community 589 - "Community 589"
+Cohesion: 0.29
+Nodes (7): 5.4 Bloco 04 — Testes de Integração, Capacidades a Serem Trabalhadas, Conhecimentos Relacionados, Critérios de Avaliação, Estratégias de Ensino, Instrumentos, Recursos
+
+### Community 590 - "Community 590"
+Cohesion: 0.29
+Nodes (7): 5.5 Bloco 05 — Testes End-to-End (E2E), Capacidades a Serem Trabalhadas, Conhecimentos Relacionados, Critérios de Avaliação, Estratégias de Ensino, Instrumentos, Recursos
+
+### Community 591 - "Community 591"
+Cohesion: 0.29
+Nodes (7): 5.6 Bloco 06 — Testes de Performance e Acessibilidade, Capacidades a Serem Trabalhadas, Conhecimentos Relacionados, Critérios de Avaliação, Estratégias de Ensino, Instrumentos, Recursos
+
+### Community 592 - "Community 592"
+Cohesion: 0.29
+Nodes (7): 5.7 Bloco 07 — Integração Contínua (CI/CD) e Automação, Capacidades a Serem Trabalhadas, Conhecimentos Relacionados, Critérios de Avaliação, Estratégias de Ensino, Instrumentos, Recursos
+
+### Community 593 - "Community 593"
+Cohesion: 0.40
+Nodes (5): 9.1 Ambiente Físico, 9.2 Softwares e Ferramentas, 9.3 Material Didático, 9.4 Documentação, 9. Recursos Necessários
+
+### Community 594 - "Community 594"
+Cohesion: 0.50
+Nodes (4): 11.1 Ferramentas, 11.2 Recursos Educacionais, 11.3 Comunidades, 11. Referências
+
+### Community 595 - "Community 595"
+Cohesion: 0.50
+Nodes (4): 4.1 Contexto, 4.2 Desafio Principal, 4.3 Resultados Esperados, 4. Situação de Aprendizagem — Desafio Central
+
+### Community 596 - "Community 596"
+Cohesion: 0.50
+Nodes (4): 8.1 Abordagem Pedagógica, 8.2 Diferenciação, 8.3 Avaliação Contínua, 8. Metodologia e Estratégias Transversais
+
+### Community 597 - "Community 597"
+Cohesion: 0.11
+Nodes (17): 10. BIBLIOGRAFIA BÁSICA, 1. INFORMAÇÕES GERAIS, 2. FUNÇÃO, 3. OBJETIVO GERAL, 4.1 Capacidades Básicas, 4.2 Conhecimentos, 4. CONTEÚDOS FORMATIVOS, 5. EIXO ESTRUTURANTE BNCC (+9 more)
+
+### Community 598 - "Community 598"
+Cohesion: 0.40
+Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
+
 ## Knowledge Gaps
-- **3978 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3973 more)
+- **4102 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+4097 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **51 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `MÓDULO 3 — PROPORCIONALIDADE` connect `Community 357` to `Community 424`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `ENCONTRO 13 — PROTEÇÃO ELÉTRICA: DISJUNTORES E DR` connect `Community 147` to `Community 127`?**
+- **Why does `MÓDULO 2 — FRAÇÕES, DECIMAIS E PORCENTAGEM` connect `Community 351` to `Community 424`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _4019 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _4143 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -2436,3 +2509,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.02531645569620253 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.02702702702702703 - nodes in this community are weakly interconnected._
+- **Should `Community 5` be split into smaller, more focused modules?**
+  _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
