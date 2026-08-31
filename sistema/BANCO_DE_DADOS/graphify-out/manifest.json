@@ -53,5 +53,10 @@
     "mtime": 1788196280.486533,
     "ast_hash": "2303b11e79d25b5837186994ceae1557",
     "semantic_hash": ""
+  },
+  "exemplo/biblioteca_sistema.sql": {
+    "mtime": 1788196884.1796122,
+    "ast_hash": "1bb5ee89c97d6f1219d8000f008e57d8",
+    "semantic_hash": ""
   }
 }
