@@ -3507,7 +3507,7 @@
       "label": ".salvarNoDados()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L20",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_salvarnodados",
       "community": 364,
@@ -3517,7 +3517,7 @@
       "label": ".vincularEventos()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L24",
+      "source_location": "L108",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_vinculareventos",
       "community": 364,
@@ -3527,7 +3527,7 @@
       "label": ".abrirFormularioNova()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L78",
+      "source_location": "L162",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_abrirformularionova",
       "community": 364,
@@ -3537,7 +3537,7 @@
       "label": ".abrirFormularioEdicao()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L85",
+      "source_location": "L169",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_abrirformularioedicao",
       "community": 364,
@@ -3547,7 +3547,7 @@
       "label": ".abrirFormulario()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L105",
+      "source_location": "L189",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_abrirformulario",
       "community": 364,
@@ -3557,7 +3557,7 @@
       "label": ".fecharFormulario()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L109",
+      "source_location": "L193",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_fecharformulario",
       "community": 364,
@@ -3567,7 +3567,7 @@
       "label": ".salvarPendencia()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L114",
+      "source_location": "L198",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_salvarpendencia",
       "community": 364,
@@ -3577,7 +3577,7 @@
       "label": ".abrirModalDelecao()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L169",
+      "source_location": "L253",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_abrirmodaldelecao",
       "community": 364,
@@ -3587,7 +3587,7 @@
       "label": ".fecharModalDelecao()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L179",
+      "source_location": "L263",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_fecharmodaldelecao",
       "community": 364,
@@ -3597,7 +3597,7 @@
       "label": ".confirmarDelecao()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L184",
+      "source_location": "L268",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_confirmardelecao",
       "community": 364,
@@ -3607,7 +3607,7 @@
       "label": ".togglePendencia()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L193",
+      "source_location": "L277",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_togglependencia",
       "community": 364,
@@ -3617,7 +3617,7 @@
       "label": ".aplicarFiltros()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L203",
+      "source_location": "L287",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_aplicarfiltros",
       "community": 364,
@@ -3627,7 +3627,7 @@
       "label": ".renderizarPendencias()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L218",
+      "source_location": "L302",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_renderizarpendencias",
       "community": 364,
@@ -3637,7 +3637,7 @@
       "label": ".atualizarEstatisticas()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L223",
+      "source_location": "L307",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_atualizarestatisticas",
       "community": 364,
@@ -3647,7 +3647,7 @@
       "label": ".renderizarPendenciasCustomizadas()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L233",
+      "source_location": "L317",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_renderizarpendenciascustomizadas",
       "community": 364,
@@ -3657,7 +3657,7 @@
       "label": ".criarCardPendencia()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L281",
+      "source_location": "L365",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_criarcardpendencia",
       "community": 364,
@@ -3667,7 +3667,7 @@
       "label": ".escaparHtml()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L329",
+      "source_location": "L413",
       "_origin": "ast",
       "id": "src_main_pendenciamanager_escaparhtml",
       "community": 364,
@@ -3677,7 +3677,7 @@
       "label": "app",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L337",
+      "source_location": "L421",
       "_origin": "ast",
       "id": "src_main_app",
       "community": 364,
@@ -48140,7 +48140,7 @@
       "source_location": "L845",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_encontro_25_26_leitura_cr\u00edtica_e_an\u00e1lise_de_discurso_4h",
-      "community": 539,
+      "community": 155,
       "norm_label": "encontro 25-26 \u2014 leitura critica e analise de discurso (4h)"
     },
     {
@@ -48150,7 +48150,7 @@
       "source_location": "L847",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_objetivos_847",
-      "community": 539,
+      "community": 155,
       "norm_label": "objetivos"
     },
     {
@@ -48160,7 +48160,7 @@
       "source_location": "L854",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_texto_base_854",
-      "community": 539,
+      "community": 155,
       "norm_label": "texto base"
     },
     {
@@ -48170,7 +48170,7 @@
       "source_location": "L863",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_explica\u00e7\u00e3o_fato_x_opini\u00e3o",
-      "community": 539,
+      "community": 155,
       "norm_label": "explicacao: fato x opiniao"
     },
     {
@@ -48180,7 +48180,7 @@
       "source_location": "L878",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_atividades_878",
-      "community": 539,
+      "community": 155,
       "norm_label": "atividades"
     },
     {
@@ -62006,9 +62006,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package",
-      "target": "pendencias_professor_package_devdependencies",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_devdependencies"
     },
     {
       "relation": "contains",
@@ -62016,9 +62016,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package",
-      "target": "pendencias_professor_package_name",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_name"
     },
     {
       "relation": "contains",
@@ -62026,9 +62026,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package",
-      "target": "pendencias_professor_package_private",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_private"
     },
     {
       "relation": "contains",
@@ -62036,9 +62036,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package",
-      "target": "pendencias_professor_package_scripts",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_scripts"
     },
     {
       "relation": "contains",
@@ -62046,9 +62046,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package",
-      "target": "pendencias_professor_package_type",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_type"
     },
     {
       "relation": "contains",
@@ -62056,9 +62056,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package",
-      "target": "pendencias_professor_package_version",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_version"
     },
     {
       "relation": "contains",
@@ -62066,9 +62066,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package_scripts",
-      "target": "pendencias_professor_package_scripts_build",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_scripts_build"
     },
     {
       "relation": "contains",
@@ -62076,9 +62076,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package_scripts",
-      "target": "pendencias_professor_package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -62086,9 +62086,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package_scripts",
-      "target": "pendencias_professor_package_scripts_preview",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_scripts_preview"
     },
     {
       "relation": "contains",
@@ -62096,9 +62096,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_package_devdependencies",
-      "target": "pendencias_professor_package_devdependencies_vite",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_package_devdependencies_vite"
     },
     {
       "relation": "contains",
@@ -62106,9 +62106,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/counter.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_counter",
-      "target": "src_counter_setupcounter",
-      "confidence_score": 1.0
+      "target": "src_counter_setupcounter"
     },
     {
       "relation": "contains",
@@ -62116,9 +62116,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L337",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_main_app",
-      "confidence_score": 1.0
+      "target": "src_main_app"
     },
     {
       "relation": "contains",
@@ -62126,9 +62126,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_main_pendenciamanager",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager"
     },
     {
       "relation": "method",
@@ -62136,9 +62136,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_abrirformulario",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_abrirformulario"
     },
     {
       "relation": "method",
@@ -62146,9 +62146,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_abrirformularioedicao",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_abrirformularioedicao"
     },
     {
       "relation": "method",
@@ -62156,9 +62156,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_abrirformularionova",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_abrirformularionova"
     },
     {
       "relation": "method",
@@ -62166,9 +62166,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_abrirmodaldelecao",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_abrirmodaldelecao"
     },
     {
       "relation": "method",
@@ -62176,9 +62176,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_aplicarfiltros",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_aplicarfiltros"
     },
     {
       "relation": "method",
@@ -62186,9 +62186,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L223",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_atualizarestatisticas",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_atualizarestatisticas"
     },
     {
       "relation": "method",
@@ -62196,9 +62196,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_carregardodados",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_carregardodados"
     },
     {
       "relation": "method",
@@ -62206,9 +62206,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_confirmardelecao",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_confirmardelecao"
     },
     {
       "relation": "method",
@@ -62216,9 +62216,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_constructor",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_constructor"
     },
     {
       "relation": "method",
@@ -62226,9 +62226,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L281",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_criarcardpendencia",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_criarcardpendencia"
     },
     {
       "relation": "method",
@@ -62236,9 +62236,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L329",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_escaparhtml",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_escaparhtml"
     },
     {
       "relation": "method",
@@ -62246,9 +62246,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_fecharformulario",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_fecharformulario"
     },
     {
       "relation": "method",
@@ -62256,9 +62256,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_fecharmodaldelecao",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_fecharmodaldelecao"
     },
     {
       "relation": "method",
@@ -62266,9 +62266,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_init",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_init"
     },
     {
       "relation": "method",
@@ -62276,9 +62276,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L218",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_renderizarpendencias",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_renderizarpendencias"
     },
     {
       "relation": "method",
@@ -62286,9 +62286,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L233",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_renderizarpendenciascustomizadas",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_renderizarpendenciascustomizadas"
     },
     {
       "relation": "method",
@@ -62296,9 +62296,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_salvarnodados",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_salvarnodados"
     },
     {
       "relation": "method",
@@ -62306,9 +62306,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_salvarpendencia",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_salvarpendencia"
     },
     {
       "relation": "method",
@@ -62316,9 +62316,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_togglependencia",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_togglependencia"
     },
     {
       "relation": "method",
@@ -62326,9 +62326,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_vinculareventos",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_vinculareventos"
     },
     {
       "relation": "calls",
@@ -62337,9 +62337,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_constructor",
-      "target": "src_main_pendenciamanager_carregardodados",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_carregardodados"
     },
     {
       "relation": "calls",
@@ -62348,9 +62348,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_constructor",
-      "target": "src_main_pendenciamanager_init",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_init"
     },
     {
       "relation": "calls",
@@ -62359,9 +62359,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_init",
-      "target": "src_main_pendenciamanager_renderizarpendencias",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_renderizarpendencias"
     },
     {
       "relation": "calls",
@@ -62370,9 +62370,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_init",
-      "target": "src_main_pendenciamanager_vinculareventos",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_vinculareventos"
     },
     {
       "relation": "calls",
@@ -62381,9 +62381,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_confirmardelecao",
-      "target": "src_main_pendenciamanager_salvarnodados",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_salvarnodados"
     },
     {
       "relation": "calls",
@@ -62392,9 +62392,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_salvarpendencia",
-      "target": "src_main_pendenciamanager_salvarnodados",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_salvarnodados"
     },
     {
       "relation": "calls",
@@ -62403,9 +62403,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_togglependencia",
-      "target": "src_main_pendenciamanager_salvarnodados",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_salvarnodados"
     },
     {
       "relation": "calls",
@@ -62414,9 +62414,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_abrirformularionova",
-      "target": "src_main_pendenciamanager_abrirformulario",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_abrirformulario"
     },
     {
       "relation": "calls",
@@ -62425,9 +62425,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_abrirformularioedicao",
-      "target": "src_main_pendenciamanager_abrirformulario",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_abrirformulario"
     },
     {
       "relation": "calls",
@@ -62436,9 +62436,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_salvarpendencia",
-      "target": "src_main_pendenciamanager_fecharformulario",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_fecharformulario"
     },
     {
       "relation": "calls",
@@ -62447,9 +62447,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_salvarpendencia",
-      "target": "src_main_pendenciamanager_renderizarpendencias",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_renderizarpendencias"
     },
     {
       "relation": "calls",
@@ -62458,9 +62458,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_confirmardelecao",
-      "target": "src_main_pendenciamanager_fecharmodaldelecao",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_fecharmodaldelecao"
     },
     {
       "relation": "calls",
@@ -62469,9 +62469,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_confirmardelecao",
-      "target": "src_main_pendenciamanager_renderizarpendencias",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_renderizarpendencias"
     },
     {
       "relation": "calls",
@@ -62480,9 +62480,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L199",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_togglependencia",
-      "target": "src_main_pendenciamanager_renderizarpendencias",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_renderizarpendencias"
     },
     {
       "relation": "calls",
@@ -62491,9 +62491,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L215",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_aplicarfiltros",
-      "target": "src_main_pendenciamanager_renderizarpendenciascustomizadas",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_renderizarpendenciascustomizadas"
     },
     {
       "relation": "calls",
@@ -62502,9 +62502,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L219",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_renderizarpendencias",
-      "target": "src_main_pendenciamanager_atualizarestatisticas",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_atualizarestatisticas"
     },
     {
       "relation": "calls",
@@ -62513,9 +62513,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L220",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_renderizarpendencias",
-      "target": "src_main_pendenciamanager_renderizarpendenciascustomizadas",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_renderizarpendenciascustomizadas"
     },
     {
       "relation": "calls",
@@ -62524,9 +62524,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L300",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_pendenciamanager_criarcardpendencia",
-      "target": "src_main_pendenciamanager_escaparhtml",
-      "confidence_score": 1.0
+      "target": "src_main_pendenciamanager_escaparhtml"
     },
     {
       "relation": "contains",
@@ -91485,9 +91485,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_6_execu\u00e7\u00e3o_das_turmas",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_6_execu\u00e7\u00e3o_das_turmas"
     },
     {
       "relation": "contains",
@@ -91495,9 +91495,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_aproveitamento_de_estudos_para_habilita\u00e7\u00e3o_t\u00e9cnica",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_aproveitamento_de_estudos_para_habilita\u00e7\u00e3o_t\u00e9cnica"
     },
     {
       "relation": "contains",
@@ -91505,9 +91505,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_crit\u00e9rios_de_avalia\u00e7\u00e3o_da_aprendizagem",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_crit\u00e9rios_de_avalia\u00e7\u00e3o_da_aprendizagem"
     },
     {
       "relation": "contains",
@@ -91515,9 +91515,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_dados_do_curso",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_dados_do_curso"
     },
     {
       "relation": "contains",
@@ -91525,9 +91525,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_demanda",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_demanda"
     },
     {
       "relation": "contains",
@@ -91535,9 +91535,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_metodologia_de_ensino_integrada_a_bncc",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_metodologia_de_ensino_integrada_a_bncc"
     },
     {
       "relation": "contains",
@@ -91545,9 +91545,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_orienta\u00e7\u00f5es_metodol\u00f3gicas",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_orienta\u00e7\u00f5es_metodol\u00f3gicas"
     },
     {
       "relation": "contains",
@@ -91555,9 +91555,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_procedimentos_metodol\u00f3gicos_e_avalia\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_procedimentos_metodol\u00f3gicos_e_avalia\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -91565,9 +91565,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_demanda",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_justificativa_para_oferta",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_justificativa_para_oferta"
     },
     {
       "relation": "contains",
@@ -91575,9 +91575,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_dados_do_curso",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_matriz_curricular",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_matriz_curricular"
     },
     {
       "relation": "contains",
@@ -91585,9 +91585,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_dados_do_curso",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_objetivo_geral",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_objetivo_geral"
     },
     {
       "relation": "contains",
@@ -91595,9 +91595,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_dados_do_curso",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_objetivos_espec\u00edficos",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_objetivos_espec\u00edficos"
     },
     {
       "relation": "contains",
@@ -91605,9 +91605,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_dados_do_curso",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_perfil_profissional_de_conclus\u00e3o",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_perfil_profissional_de_conclus\u00e3o"
     },
     {
       "relation": "contains",
@@ -91615,9 +91615,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_6_execu\u00e7\u00e3o_das_turmas",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_anexo_i_detalhamento_do_perfil_profissional_de_conclus\u00e3o",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_anexo_i_detalhamento_do_perfil_profissional_de_conclus\u00e3o"
     },
     {
       "relation": "contains",
@@ -91625,9 +91625,9 @@
       "source_file": "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_6_execu\u00e7\u00e3o_das_turmas",
-      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_anexo_ii_detalhamento_da_matriz_curricular",
-      "confidence_score": 1.0
+      "target": "converted_operador_de_produ\u00e7\u00e3o_industrial_860h_b13bbb17_anexo_ii_detalhamento_da_matriz_curricular"
     },
     {
       "relation": "contains",
@@ -110095,9 +110095,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude",
-      "target": "introducao_tic_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_senai_projeto_de_curso_aprendizagem_industrial"
     },
     {
       "relation": "contains",
@@ -110105,9 +110105,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L361",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "introducao_tic_claude_configura\u00e7\u00e3o_supabase",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_configura\u00e7\u00e3o_supabase"
     },
     {
       "relation": "contains",
@@ -110115,9 +110115,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "introducao_tic_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_m\u00f3dulo_educa\u00e7\u00e3o_para_o_trabalho"
     },
     {
       "relation": "contains",
@@ -110125,9 +110125,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L332",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "introducao_tic_claude_regras_de_trabalho_claude",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_regras_de_trabalho_claude"
     },
     {
       "relation": "contains",
@@ -110135,9 +110135,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -110145,9 +110145,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L249",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_senai_projeto_de_curso_aprendizagem_industrial",
-      "target": "introducao_tic_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho"
     },
     {
       "relation": "contains",
@@ -110155,9 +110155,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L222",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_ambientes_pedag\u00f3gicos_e_recursos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_ambientes_pedag\u00f3gicos_e_recursos"
     },
     {
       "relation": "contains",
@@ -110165,9 +110165,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_capacidades_b\u00e1sicas",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_capacidades_b\u00e1sicas"
     },
     {
       "relation": "contains",
@@ -110175,9 +110175,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L213",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_capacidades_socioemocionais",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_capacidades_socioemocionais"
     },
     {
       "relation": "contains",
@@ -110185,9 +110185,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_carga_hor\u00e1ria",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_carga_hor\u00e1ria"
     },
     {
       "relation": "contains",
@@ -110195,9 +110195,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_conhecimentos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_conhecimentos"
     },
     {
       "relation": "contains",
@@ -110205,9 +110205,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L204",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_eixo_estruturante_bncc_compet\u00eancia_integradora",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_eixo_estruturante_bncc_compet\u00eancia_integradora"
     },
     {
       "relation": "contains",
@@ -110215,9 +110215,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_ferramentas_de_ensino",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_ferramentas_de_ensino"
     },
     {
       "relation": "contains",
@@ -110225,9 +110225,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_organiza\u00e7\u00e3o_das_provas_pr\u00e1ticas",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_organiza\u00e7\u00e3o_das_provas_pr\u00e1ticas"
     },
     {
       "relation": "contains",
@@ -110235,9 +110235,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_tempo_real_de_instru\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_tempo_real_de_instru\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -110245,9 +110245,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_1_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_claude_turma",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_turma"
     },
     {
       "relation": "contains",
@@ -110255,9 +110255,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos",
-      "target": "introducao_tic_claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho"
     },
     {
       "relation": "contains",
@@ -110265,9 +110265,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos",
-      "target": "introducao_tic_claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_2_seguran\u00e7a_da_informa\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -110275,9 +110275,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos",
-      "target": "introducao_tic_claude_3_internet_world_wide_web",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_3_internet_world_wide_web"
     },
     {
       "relation": "contains",
@@ -110285,9 +110285,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos",
-      "target": "introducao_tic_claude_4_software_de_escrit\u00f3rio",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_4_software_de_escrit\u00f3rio"
     },
     {
       "relation": "contains",
@@ -110295,9 +110295,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos",
-      "target": "introducao_tic_claude_5_inform\u00e1tica",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_5_inform\u00e1tica"
     },
     {
       "relation": "contains",
@@ -110305,9 +110305,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos",
-      "target": "introducao_tic_claude_6_textos_t\u00e9cnicos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_6_textos_t\u00e9cnicos"
     },
     {
       "relation": "contains",
@@ -110315,9 +110315,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos",
-      "target": "introducao_tic_claude_7_comunica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_7_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -110325,9 +110325,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos",
-      "target": "introducao_tic_claude_8_n\u00edveis_de_fala",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_8_n\u00edveis_de_fala"
     },
     {
       "relation": "contains",
@@ -110335,9 +110335,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos",
-      "target": "introducao_tic_claude_9_elementos_da_comunica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_9_elementos_da_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -110345,9 +110345,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_4_software_de_escrit\u00f3rio",
-      "target": "introducao_tic_claude_4_1_editor_de_textos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_4_1_editor_de_textos"
     },
     {
       "relation": "contains",
@@ -110355,9 +110355,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_4_software_de_escrit\u00f3rio",
-      "target": "introducao_tic_claude_4_2_editor_de_planilhas_eletr\u00f4nicas",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_4_2_editor_de_planilhas_eletr\u00f4nicas"
     },
     {
       "relation": "contains",
@@ -110365,9 +110365,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_4_software_de_escrit\u00f3rio",
-      "target": "introducao_tic_claude_4_3_editor_de_apresenta\u00e7\u00f5es",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_4_3_editor_de_apresenta\u00e7\u00f5es"
     },
     {
       "relation": "contains",
@@ -110375,9 +110375,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_5_inform\u00e1tica",
-      "target": "introducao_tic_claude_5_1_fundamentos_de_hardware",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_5_1_fundamentos_de_hardware"
     },
     {
       "relation": "contains",
@@ -110385,9 +110385,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_5_inform\u00e1tica",
-      "target": "introducao_tic_claude_5_2_sistema_operacional",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_5_2_sistema_operacional"
     },
     {
       "relation": "contains",
@@ -110395,9 +110395,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L319",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "introducao_tic_claude_ambientes_pedag\u00f3gicos_e_recursos_319",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_ambientes_pedag\u00f3gicos_e_recursos_319"
     },
     {
       "relation": "contains",
@@ -110405,9 +110405,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "introducao_tic_claude_capacidades_b\u00e1sicas_257",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_capacidades_b\u00e1sicas_257"
     },
     {
       "relation": "contains",
@@ -110415,9 +110415,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L313",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "introducao_tic_claude_capacidades_socioemocionais_313",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_capacidades_socioemocionais_313"
     },
     {
       "relation": "contains",
@@ -110425,9 +110425,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L267",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "introducao_tic_claude_conhecimentos_267",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_conhecimentos_267"
     },
     {
       "relation": "contains",
@@ -110435,9 +110435,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L304",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_unidade_curricular_2_sa\u00fade_e_seguran\u00e7a_no_trabalho",
-      "target": "introducao_tic_claude_eixo_estruturante_bncc_compet\u00eancia_integradora_304",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_eixo_estruturante_bncc_compet\u00eancia_integradora_304"
     },
     {
       "relation": "contains",
@@ -110445,9 +110445,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L269",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos_267",
-      "target": "introducao_tic_claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_1_o_impacto_da_falta_de_\u00e9tica_nos_ambientes_de_trabalho"
     },
     {
       "relation": "contains",
@@ -110455,9 +110455,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L271",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos_267",
-      "target": "introducao_tic_claude_2_c\u00f3digo_de_\u00e9tica_profissional",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_2_c\u00f3digo_de_\u00e9tica_profissional"
     },
     {
       "relation": "contains",
@@ -110465,9 +110465,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L273",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos_267",
-      "target": "introducao_tic_claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_3_acidentes_do_trabalho_e_doen\u00e7as_ocupacionais"
     },
     {
       "relation": "contains",
@@ -110475,9 +110475,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L283",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos_267",
-      "target": "introducao_tic_claude_4_medidas_de_controle",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_4_medidas_de_controle"
     },
     {
       "relation": "contains",
@@ -110485,9 +110485,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L286",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos_267",
-      "target": "introducao_tic_claude_5_riscos_ocupacionais",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_5_riscos_ocupacionais"
     },
     {
       "relation": "contains",
@@ -110495,9 +110495,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L291",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_conhecimentos_267",
-      "target": "introducao_tic_claude_6_seguran\u00e7a_do_trabalho",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_6_seguran\u00e7a_do_trabalho"
     },
     {
       "relation": "contains",
@@ -110505,9 +110505,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L339",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_regras_de_trabalho_claude",
-      "target": "introducao_tic_claude_commit_e_push_obrigat\u00f3rios_sempre_ao_final_de_cada_resposta",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_commit_e_push_obrigat\u00f3rios_sempre_ao_final_de_cada_resposta"
     },
     {
       "relation": "contains",
@@ -110515,9 +110515,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L351",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_regras_de_trabalho_claude",
-      "target": "introducao_tic_claude_slides_devem_ter_no_m\u00ednimo_15_slides",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_slides_devem_ter_no_m\u00ednimo_15_slides"
     },
     {
       "relation": "contains",
@@ -110525,9 +110525,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L410",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_configura\u00e7\u00e3o_supabase",
-      "target": "introducao_tic_claude_controle_de_perfil_frontend",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_controle_de_perfil_frontend"
     },
     {
       "relation": "contains",
@@ -110535,9 +110535,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L387",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_configura\u00e7\u00e3o_supabase",
-      "target": "introducao_tic_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_estrutura_gabaritos_coluna_jsonb_da_tabela_curso"
     },
     {
       "relation": "contains",
@@ -110545,9 +110545,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L402",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_configura\u00e7\u00e3o_supabase",
-      "target": "introducao_tic_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_fun\u00e7\u00f5es_rpc_dispon\u00edveis"
     },
     {
       "relation": "contains",
@@ -110555,9 +110555,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/CLAUDE.md",
       "source_location": "L369",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_claude_configura\u00e7\u00e3o_supabase",
-      "target": "introducao_tic_claude_tabela_curso",
-      "confidence_score": 1.0
+      "target": "introducao_tic_claude_tabela_curso"
     },
     {
       "relation": "contains",
@@ -110565,9 +110565,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -110575,9 +110575,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L290",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_10_s\u00edntese_sem\u00e2ntica",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_10_s\u00edntese_sem\u00e2ntica"
     },
     {
       "relation": "contains",
@@ -110585,9 +110585,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L294",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_11_proveni\u00eancia",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_11_proveni\u00eancia"
     },
     {
       "relation": "contains",
@@ -110595,9 +110595,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_1_identifica\u00e7\u00e3o_da_unidade_curricular",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_1_identifica\u00e7\u00e3o_da_unidade_curricular"
     },
     {
       "relation": "contains",
@@ -110605,9 +110605,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_2_objetivo_geral",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_2_objetivo_geral"
     },
     {
       "relation": "contains",
@@ -110615,9 +110615,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_capacidades_b\u00e1sicas",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_capacidades_b\u00e1sicas"
     },
     {
       "relation": "contains",
@@ -110625,9 +110625,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos"
     },
     {
       "relation": "contains",
@@ -110635,9 +110635,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L215",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_5_compet\u00eancia_integradora_e_eixo_estruturante_da_bncc",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_5_compet\u00eancia_integradora_e_eixo_estruturante_da_bncc"
     },
     {
       "relation": "contains",
@@ -110645,9 +110645,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L228",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_6_capacidades_socioemocionais",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_6_capacidades_socioemocionais"
     },
     {
       "relation": "contains",
@@ -110655,9 +110655,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_7_ambientes_pedag\u00f3gicos_e_recursos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_7_ambientes_pedag\u00f3gicos_e_recursos"
     },
     {
       "relation": "contains",
@@ -110665,9 +110665,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L263",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_8_rela\u00e7\u00f5es_entre_capacidades_e_conhecimentos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_8_rela\u00e7\u00f5es_entre_capacidades_e_conhecimentos"
     },
     {
       "relation": "contains",
@@ -110675,9 +110675,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L275",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_ementa_explicada_introdu\u00e7\u00e3o_\u00e0_tecnologia_da_informa\u00e7\u00e3o_e_comunica\u00e7\u00e3o",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_9_orienta\u00e7\u00f5es_de_interpreta\u00e7\u00e3o_para_sistemas_de_ia",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_9_orienta\u00e7\u00f5es_de_interpreta\u00e7\u00e3o_para_sistemas_de_ia"
     },
     {
       "relation": "contains",
@@ -110685,9 +110685,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_3_capacidades_b\u00e1sicas",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_1_comunica\u00e7\u00e3o_oral_e_escrita_no_trabalho",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_1_comunica\u00e7\u00e3o_oral_e_escrita_no_trabalho"
     },
     {
       "relation": "contains",
@@ -110695,9 +110695,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_3_capacidades_b\u00e1sicas",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_2_seguran\u00e7a_da_informa\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -110705,9 +110705,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_3_capacidades_b\u00e1sicas",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_3_interpreta\u00e7\u00e3o_de_informa\u00e7\u00f5es_e_textos_t\u00e9cnicos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_3_interpreta\u00e7\u00e3o_de_informa\u00e7\u00f5es_e_textos_t\u00e9cnicos"
     },
     {
       "relation": "contains",
@@ -110715,9 +110715,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_3_capacidades_b\u00e1sicas",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_4_hardware_e_software",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_4_hardware_e_software"
     },
     {
       "relation": "contains",
@@ -110725,9 +110725,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_3_capacidades_b\u00e1sicas",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_5_recursos_da_web",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_3_5_recursos_da_web"
     },
     {
       "relation": "contains",
@@ -110735,9 +110735,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_10_elementos_da_comunica\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_10_elementos_da_comunica\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -110745,9 +110745,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_1_comunica\u00e7\u00e3o_em_equipes_de_trabalho"
     },
     {
       "relation": "contains",
@@ -110755,9 +110755,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_2_seguran\u00e7a_da_informa\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_2_seguran\u00e7a_da_informa\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -110765,9 +110765,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_3_internet_e_world_wide_web",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_3_internet_e_world_wide_web"
     },
     {
       "relation": "contains",
@@ -110775,9 +110775,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_4_software_de_escrit\u00f3rio_editor_de_textos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_4_software_de_escrit\u00f3rio_editor_de_textos"
     },
     {
       "relation": "contains",
@@ -110785,9 +110785,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_5_software_de_escrit\u00f3rio_editor_de_planilhas_eletr\u00f4nicas",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_5_software_de_escrit\u00f3rio_editor_de_planilhas_eletr\u00f4nicas"
     },
     {
       "relation": "contains",
@@ -110795,9 +110795,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_6_software_de_escrit\u00f3rio_editor_de_apresenta\u00e7\u00f5es",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_6_software_de_escrit\u00f3rio_editor_de_apresenta\u00e7\u00f5es"
     },
     {
       "relation": "contains",
@@ -110805,9 +110805,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_7_inform\u00e1tica_hardware_e_sistema_operacional",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_7_inform\u00e1tica_hardware_e_sistema_operacional"
     },
     {
       "relation": "contains",
@@ -110815,9 +110815,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_8_textos_t\u00e9cnicos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_8_textos_t\u00e9cnicos"
     },
     {
       "relation": "contains",
@@ -110825,9 +110825,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_4_conhecimentos_e_conte\u00fados_formativos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_9_n\u00edveis_de_fala_e_linguagem_profissional",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_4_9_n\u00edveis_de_fala_e_linguagem_profissional"
     },
     {
       "relation": "contains",
@@ -110835,9 +110835,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_7_ambientes_pedag\u00f3gicos_e_recursos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_7_1_ambientes_pedag\u00f3gicos_previstos",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_7_1_ambientes_pedag\u00f3gicos_previstos"
     },
     {
       "relation": "contains",
@@ -110845,9 +110845,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L248",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_7_ambientes_pedag\u00f3gicos_e_recursos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_7_2_m\u00e1quinas_equipamentos_instrumentos_e_ferramentas",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_7_2_m\u00e1quinas_equipamentos_instrumentos_e_ferramentas"
     },
     {
       "relation": "contains",
@@ -110855,9 +110855,9 @@
       "source_file": "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
       "source_location": "L257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "introducao_tic_ementa_introducao_tenologia_informacao_7_ambientes_pedag\u00f3gicos_e_recursos",
-      "target": "introducao_tic_ementa_introducao_tenologia_informacao_7_3_recurso_did\u00e1tico_indicado",
-      "confidence_score": 1.0
+      "target": "introducao_tic_ementa_introducao_tenologia_informacao_7_3_recurso_did\u00e1tico_indicado"
     },
     {
       "relation": "contains",
@@ -112101,5 +112101,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1bd2c747e4862c85145780d26c44659c134690fd"
+  "built_at_commit": "224d47bb41238ebfd633e16d77a6e0e816bc461f"
 }
