@@ -915,10 +915,10 @@
         }
 
         function handleEditorChange() {
+            updatePreview();
             if (state.currentFile) {
                 state.currentFile.content = editor.value;
                 saveFiles();
-                updatePreview();
             }
         }
 
