@@ -445,8 +445,8 @@
     "semantic_hash": ""
   },
   "LEITOR-MARKDOWN/index.html": {
-    "mtime": 1788185071.8667283,
-    "ast_hash": "ff9dc82aa3397be6720a154bbdd4e7a7",
+    "mtime": 1788185187.8864362,
+    "ast_hash": "219897ee1827249561c39d921749c76f",
     "semantic_hash": ""
   },
   "PLATAFORMA_DE_IA.md": {
@@ -2757,6 +2757,11 @@
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/TEXTO-AULA-PARTE-05.png": {
     "mtime": 1787856586.5389233,
     "ast_hash": "dfa5b6afac0d0144c9f64ac36659700d",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/aulas-lecionadas.json": {
+    "mtime": 1788185240.878093,
+    "ast_hash": "71962ab78ba5736581952ba25cb45ab4",
     "semantic_hash": ""
   }
 }

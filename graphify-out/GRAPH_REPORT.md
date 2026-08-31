@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-08-31)
 
 ## Corpus Check
-- 363 files · ~1,323,574 words
+- 365 files · ~1,331,626 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5428 nodes · 5432 edges · 541 communities (502 shown, 39 thin omitted)
+- 5542 nodes · 5544 edges · 560 communities (521 shown, 39 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c1a9e547`
+- Built from commit: `b82f0fd8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -494,6 +494,25 @@
 - [[_COMMUNITY_Community 536|Community 536]]
 - [[_COMMUNITY_Community 537|Community 537]]
 - [[_COMMUNITY_Community 539|Community 539]]
+- [[_COMMUNITY_Community 541|Community 541]]
+- [[_COMMUNITY_Community 542|Community 542]]
+- [[_COMMUNITY_Community 543|Community 543]]
+- [[_COMMUNITY_Community 544|Community 544]]
+- [[_COMMUNITY_Community 545|Community 545]]
+- [[_COMMUNITY_Community 546|Community 546]]
+- [[_COMMUNITY_Community 547|Community 547]]
+- [[_COMMUNITY_Community 548|Community 548]]
+- [[_COMMUNITY_Community 549|Community 549]]
+- [[_COMMUNITY_Community 550|Community 550]]
+- [[_COMMUNITY_Community 551|Community 551]]
+- [[_COMMUNITY_Community 552|Community 552]]
+- [[_COMMUNITY_Community 553|Community 553]]
+- [[_COMMUNITY_Community 554|Community 554]]
+- [[_COMMUNITY_Community 555|Community 555]]
+- [[_COMMUNITY_Community 556|Community 556]]
+- [[_COMMUNITY_Community 557|Community 557]]
+- [[_COMMUNITY_Community 558|Community 558]]
+- [[_COMMUNITY_Community 559|Community 559]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Intro_gest_org` - 96 edges
@@ -522,7 +541,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (541 total, 39 thin omitted)
+## Communities (560 total, 39 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -1808,8 +1827,8 @@ Cohesion: 0.06
 Nodes (32): 1. Diagnóstico da mensagem, 1. Estrutura da pasta compartilhada, 2. Padrão de nomes, 2. Planejamento, 3. Primeira versão do e-mail, 3. Quadro de tarefas, 4. Cartão de bloqueio, 4. Checklist de revisão em dupla (+24 more)
 
 ### Community 349 - "Community 349"
-Cohesion: 0.08
-Nodes (25): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+17 more)
+Cohesion: 0.10
+Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples (+12 more)
 
 ### Community 350 - "Community 350"
 Cohesion: 0.09
@@ -1852,8 +1871,8 @@ Cohesion: 0.11
 Nodes (19): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo (+11 more)
 
 ### Community 360 - "Community 360"
-Cohesion: 0.11
-Nodes (18): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Apresentação do Módulo, Atividade 5.1 (+10 more)
+Cohesion: 0.09
+Nodes (23): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+15 more)
 
 ### Community 361 - "Community 361"
 Cohesion: 0.12
@@ -1864,8 +1883,8 @@ Cohesion: 0.12
 Nodes (17): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Atividade 6.1 (+9 more)
 
 ### Community 363 - "Community 363"
-Cohesion: 0.12
-Nodes (16): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Apresentação do Módulo, Atividade 1.1 — Individual (+8 more)
+Cohesion: 0.09
+Nodes (22): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+14 more)
 
 ### Community 364 - "Community 364"
 Cohesion: 0.12
@@ -2276,19 +2295,95 @@ Cohesion: 0.21
 Nodes (7): carregarJSON(), escreverLog(), formatarTimestamp(), garantirDiretorio(), path, salvarJSON(), gerarRelatorioSincronizacao()
 
 ### Community 536 - "Community 536"
-Cohesion: 0.33
-Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
+Cohesion: 0.17
+Nodes (11): Bloco 1 — Tecnologia e Mundo Digital, Bloco 2 — Hardware, Software e Sistema Operacional, Bloco 3 — Produtividade Digital, Bloco 4 — Internet e Uso Seguro, Bloco 5 — Pensamento Computacional e Algoritmos, Bloco 6 — Programação em Blocos (Scratch), Capacidades Básicas e Técnicas, Conhecimentos (+3 more)
 
 ### Community 537 - "Community 537"
-Cohesion: 0.40
-Nodes (5): 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, Atividade 5.3, Encontro 22 — Lógica Proposicional Introdutória (2h)
+Cohesion: 0.18
+Nodes (10): APOSTILA DO ALUNO, Apresentação, Como Esta Apostila Está Organizada, FUNDAMENTOS DA TECNOLOGIA E PROGRAMAÇÃO, Glossário, Objetivo da UC, Percurso de Aprendizagem, RIO DO SUL MAIS TECH (+2 more)
 
 ### Community 539 - "Community 539"
 Cohesion: 0.40
 Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
 
+### Community 541 - "Community 541"
+Cohesion: 0.33
+Nodes (6): Canais no YouTube (em português), Livros Sugeridos, Plataformas de Programação e Tecnologia, Referências e Para Continuar Aprendendo, Segurança Digital, Verificação de Fake News
+
+### Community 542 - "Community 542"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 1 — O Que É Tecnologia? Dispositivos Digitais no Cotidiano, Na Prática, O que você vai aprender, Síntese
+
+### Community 543 - "Community 543"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 16 — Scratch: Condições, Repetições e Variáveis, Na Prática, O que você vai aprender, Síntese
+
+### Community 544 - "Community 544"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 17 — Scratch: Mini Projeto Final, Na Prática, O que você vai aprender, Síntese do Encontro e da UC
+
+### Community 545 - "Community 545"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 2 — Evolução dos Computadores e História da Tecnologia, Na Prática, O que você vai aprender, Síntese
+
+### Community 546 - "Community 546"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 3 — Cidadania Digital: Fake News, Cyberbullying e Pegada Digital, Na Prática, O que você vai aprender, Síntese
+
+### Community 547 - "Community 547"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 4 — Hardware e Software: O Que Tem Dentro de um Computador?, Na Prática, O que você vai aprender, Síntese
+
+### Community 548 - "Community 548"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 5 — Sistemas Operacionais: Windows, Linux e ChromeOS, Na Prática, O que você vai aprender, Síntese
+
+### Community 549 - "Community 549"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 6 — Organização do Computador: Arquivos, Pastas e Atalhos, Na Prática, O que você vai aprender, Síntese
+
+### Community 550 - "Community 550"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 7 — Produtividade: Editor de Texto, Na Prática, O que você vai aprender, Síntese
+
+### Community 551 - "Community 551"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 8 — Apresentações Digitais (Google Slides / PowerPoint), Na Prática, O que você vai aprender, Síntese
+
+### Community 552 - "Community 552"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 9 — Planilhas Simples (Google Sheets / Excel Básico), Na Prática, O que você vai aprender, Síntese
+
+### Community 553 - "Community 553"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 10 — Internet Segura: Vírus, Senhas, Privacidade e Navegadores, Na Prática, O que você vai aprender, Síntese
+
+### Community 554 - "Community 554"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 11 — Pensamento Computacional: Decomposição e Padrões, Na Prática, O que você vai aprender, Síntese
+
+### Community 555 - "Community 555"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 12 — Pensamento Computacional: Abstração e Algoritmos Desplugados, Na Prática, O que você vai aprender, Síntese
+
+### Community 556 - "Community 556"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 13 — Algoritmos: Sequência, Decisão e Repetição, Na Prática, O que você vai aprender, Síntese
+
+### Community 557 - "Community 557"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 14 — Fluxogramas: Desenhando Soluções, Na Prática, O que você vai aprender, Síntese
+
+### Community 558 - "Community 558"
+Cohesion: 0.40
+Nodes (5): Conteúdo, ENCONTRO 15 — Scratch: Primeiros Passos na Programação em Blocos, Na Prática, O que você vai aprender, Síntese
+
+### Community 559 - "Community 559"
+Cohesion: 0.40
+Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
+
 ## Knowledge Gaps
-- **3820 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3815 more)
+- **3910 isolated node(s):** `HEADERS`, `HEADERS_READ`, `Numerar`, `_SB_AND_MODULOS`, `{ readFileSync }` (+3905 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2299,10 +2394,10 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `PARTE 1 — IMPRESSÃO 3D` connect `Community 282` to `Community 225`, `Community 258`, `Community 259`, `Community 230`, `Community 168`, `Community 175`, `Community 242`, `Community 25`, `Community 255`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `ENCONTRO 13 — Atuadores e Motores: Como os Robôs Agem` connect `Community 226` to `Community 273`?**
+- **Why does `ENCONTROS` connect `Community 153` to `Community 192`, `Community 193`, `Community 194`, `Community 200`, `Community 201`, `Community 202`, `Community 203`, `Community 204`, `Community 205`, `Community 176`, `Community 177`, `Community 178`, `Community 179`, `Community 180`, `Community 189`, `Community 190`, `Community 191`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `HEADERS`, `HEADERS_READ`, `Numerar` to the rest of the system?**
-  _3861 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3951 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07188160676532769 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

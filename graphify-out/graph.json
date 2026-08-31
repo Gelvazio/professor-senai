@@ -6077,7 +6077,7 @@
       "label": "\ud83d\udd27 Ferramentas Criadas",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "claude_ferramentas_criadas",
       "community": 10,
@@ -6087,7 +6087,7 @@
       "label": "\ud83d\udcca API Endpoints",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L29",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "claude_api_endpoints",
       "community": 10,
@@ -6097,7 +6097,7 @@
       "label": "\ud83d\ude80 Como Usar",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L37",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "claude_como_usar",
       "community": 10,
@@ -6107,7 +6107,7 @@
       "label": "Commit e Push obrigat\u00f3rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L45",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "claude_commit_e_push_obrigat\u00f3rios",
       "community": 10,
@@ -6117,7 +6117,7 @@
       "label": "Graphify",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L55",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "claude_graphify",
       "community": 10,
@@ -6127,7 +6127,7 @@
       "label": "Nunca perguntar \u2014 sempre executar",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L65",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "claude_nunca_perguntar_sempre_executar",
       "community": 10,
@@ -6137,7 +6137,7 @@
       "label": "Slides",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L71",
+      "source_location": "L72",
       "_origin": "ast",
       "id": "claude_slides",
       "community": 10,
@@ -6147,7 +6147,7 @@
       "label": "Estrutura de Unidades Curriculares",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L75",
+      "source_location": "L76",
       "_origin": "ast",
       "id": "claude_estrutura_de_unidades_curriculares",
       "community": 10,
@@ -6157,7 +6157,7 @@
       "label": "Pasta PROFESSOR",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L86",
+      "source_location": "L87",
       "_origin": "ast",
       "id": "claude_pasta_professor",
       "community": 10,
@@ -6167,7 +6167,7 @@
       "label": "Estrutura obrigat\u00f3ria de cada UC",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L94",
+      "source_location": "L95",
       "_origin": "ast",
       "id": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
       "community": 10,
@@ -6177,7 +6177,7 @@
       "label": "Organiza\u00e7\u00e3o das provas pr\u00e1ticas de Introdu\u00e7\u00e3o \u00e0 TIC",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L104",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "claude_organiza\u00e7\u00e3o_das_provas_pr\u00e1ticas_de_introdu\u00e7\u00e3o_\u00e0_tic",
       "community": 10,
@@ -6187,7 +6187,7 @@
       "label": "\ud83d\udd14 Sistema de Pend\u00eancias \u2014 Regra Cr\u00edtica",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L112",
+      "source_location": "L113",
       "_origin": "ast",
       "id": "claude_sistema_de_pend\u00eancias_regra_cr\u00edtica",
       "community": 10,
@@ -6197,7 +6197,7 @@
       "label": "Defini\u00e7\u00e3o de Pend\u00eancias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L116",
+      "source_location": "L117",
       "_origin": "ast",
       "id": "claude_defini\u00e7\u00e3o_de_pend\u00eancias",
       "community": 10,
@@ -6207,7 +6207,7 @@
       "label": "Implementa\u00e7\u00e3o Obrigat\u00f3ria",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L135",
+      "source_location": "L136",
       "_origin": "ast",
       "id": "claude_implementa\u00e7\u00e3o_obrigat\u00f3ria",
       "community": 10,
@@ -6217,7 +6217,7 @@
       "label": "\u274c O que N\u00c3O fazer",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L141",
+      "source_location": "L142",
       "_origin": "ast",
       "id": "claude_o_que_n\u00e3o_fazer",
       "community": 10,
@@ -6227,7 +6227,7 @@
       "label": "Fluxo Autom\u00e1tico de Pend\u00eancias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L148",
+      "source_location": "L149",
       "_origin": "ast",
       "id": "claude_fluxo_autom\u00e1tico_de_pend\u00eancias",
       "community": 10,
@@ -6237,7 +6237,7 @@
       "label": "\ud83d\udcca Estrutura da Tabela \"pendencias\"",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L161",
+      "source_location": "L162",
       "_origin": "ast",
       "id": "claude_estrutura_da_tabela_pendencias",
       "community": 10,
@@ -6247,7 +6247,7 @@
       "label": "\ud83d\udd04 Fluxo de Inser\u00e7\u00e3o de Pend\u00eancias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L184",
+      "source_location": "L185",
       "_origin": "ast",
       "id": "claude_fluxo_de_inser\u00e7\u00e3o_de_pend\u00eancias",
       "community": 10,
@@ -6257,7 +6257,7 @@
       "label": "\u2705 Checklist de implementa\u00e7\u00e3o",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L198",
+      "source_location": "L199",
       "_origin": "ast",
       "id": "claude_checklist_de_implementa\u00e7\u00e3o",
       "community": 10,
@@ -6267,7 +6267,7 @@
       "label": "\ud83c\udfaf Implementa\u00e7\u00e3o Completa do Sistema de Pend\u00eancias (26-08-2026)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L210",
+      "source_location": "L211",
       "_origin": "ast",
       "id": "claude_implementa\u00e7\u00e3o_completa_do_sistema_de_pend\u00eancias_26_08_2026",
       "community": 10,
@@ -6277,7 +6277,7 @@
       "label": "\u2705 Funcionalidades Implementadas",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L212",
+      "source_location": "L213",
       "_origin": "ast",
       "id": "claude_funcionalidades_implementadas",
       "community": 10,
@@ -6287,7 +6287,7 @@
       "label": "1. **Cria\u00e7\u00e3o Autom\u00e1tica de Pend\u00eancias**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L214",
+      "source_location": "L215",
       "_origin": "ast",
       "id": "claude_1_cria\u00e7\u00e3o_autom\u00e1tica_de_pend\u00eancias",
       "community": 10,
@@ -6297,7 +6297,7 @@
       "label": "2. **Descri\u00e7\u00f5es Autom\u00e1ticas**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L220",
+      "source_location": "L221",
       "_origin": "ast",
       "id": "claude_2_descri\u00e7\u00f5es_autom\u00e1ticas",
       "community": 10,
@@ -6307,7 +6307,7 @@
       "label": "3. **Sincroniza\u00e7\u00e3o Bidirecional**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L237",
+      "source_location": "L238",
       "_origin": "ast",
       "id": "claude_3_sincroniza\u00e7\u00e3o_bidirecional",
       "community": 10,
@@ -6317,7 +6317,7 @@
       "label": "4. **Interface de Pend\u00eancias**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L243",
+      "source_location": "L244",
       "_origin": "ast",
       "id": "claude_4_interface_de_pend\u00eancias",
       "community": 10,
@@ -6327,7 +6327,7 @@
       "label": "5. **Campos da Tabela `pendencias`**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L252",
+      "source_location": "L253",
       "_origin": "ast",
       "id": "claude_5_campos_da_tabela_pendencias",
       "community": 10,
@@ -6337,7 +6337,7 @@
       "label": "\ud83d\udccb Scripts SQL Necess\u00e1rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L276",
+      "source_location": "L277",
       "_origin": "ast",
       "id": "claude_scripts_sql_necess\u00e1rios",
       "community": 10,
@@ -6347,7 +6347,7 @@
       "label": "\u26a1 Ap\u00f3s SEMPRE atualizar graphify",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L283",
+      "source_location": "L284",
       "_origin": "ast",
       "id": "claude_ap\u00f3s_sempre_atualizar_graphify",
       "community": 10,
@@ -6572,6 +6572,126 @@
       "id": "integra_solucao_senai_guia_cadastro_solucao_integra_senai_2026_links_\u00fateis",
       "community": 296,
       "norm_label": "links uteis"
+    },
+    {
+      "label": "ementa_Fundamentos_Tecnologia_Programacao.md",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao",
+      "community": 536,
+      "norm_label": "ementa_fundamentos_tecnologia_programacao.md"
+    },
+    {
+      "label": "EMENTA \u2014 FUNDAMENTOS DA TECNOLOGIA E PROGRAMA\u00c7\u00c3O",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_ementa_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "community": 536,
+      "norm_label": "ementa \u2014 fundamentos da tecnologia e programacao"
+    },
+    {
+      "label": "Identifica\u00e7\u00e3o da Unidade Curricular",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_identifica\u00e7\u00e3o_da_unidade_curricular",
+      "community": 536,
+      "norm_label": "identificacao da unidade curricular"
+    },
+    {
+      "label": "Objetivo Geral",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_objetivo_geral",
+      "community": 536,
+      "norm_label": "objetivo geral"
+    },
+    {
+      "label": "Capacidades B\u00e1sicas e T\u00e9cnicas",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_capacidades_b\u00e1sicas_e_t\u00e9cnicas",
+      "community": 536,
+      "norm_label": "capacidades basicas e tecnicas"
+    },
+    {
+      "label": "Conhecimentos",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_conhecimentos",
+      "community": 536,
+      "norm_label": "conhecimentos"
+    },
+    {
+      "label": "Bloco 1 \u2014 Tecnologia e Mundo Digital",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_1_tecnologia_e_mundo_digital",
+      "community": 536,
+      "norm_label": "bloco 1 \u2014 tecnologia e mundo digital"
+    },
+    {
+      "label": "Bloco 2 \u2014 Hardware, Software e Sistema Operacional",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_2_hardware_software_e_sistema_operacional",
+      "community": 536,
+      "norm_label": "bloco 2 \u2014 hardware, software e sistema operacional"
+    },
+    {
+      "label": "Bloco 3 \u2014 Produtividade Digital",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_3_produtividade_digital",
+      "community": 536,
+      "norm_label": "bloco 3 \u2014 produtividade digital"
+    },
+    {
+      "label": "Bloco 4 \u2014 Internet e Uso Seguro",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_4_internet_e_uso_seguro",
+      "community": 536,
+      "norm_label": "bloco 4 \u2014 internet e uso seguro"
+    },
+    {
+      "label": "Bloco 5 \u2014 Pensamento Computacional e Algoritmos",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_5_pensamento_computacional_e_algoritmos",
+      "community": 536,
+      "norm_label": "bloco 5 \u2014 pensamento computacional e algoritmos"
+    },
+    {
+      "label": "Bloco 6 \u2014 Programa\u00e7\u00e3o em Blocos (Scratch)",
+      "file_type": "document",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_6_programa\u00e7\u00e3o_em_blocos_scratch",
+      "community": 536,
+      "norm_label": "bloco 6 \u2014 programacao em blocos (scratch)"
     },
     {
       "label": "PLATAFORMA_DE_IA.md",
@@ -25634,6 +25754,1026 @@
       "norm_label": "avaliacao pratica simples_887ed75c.md"
     },
     {
+      "label": "Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70",
+      "community": 537,
+      "norm_label": "apostila_fundamentos_tecnologia_programacao_b2a91e70.md"
+    },
+    {
+      "label": "RIO DO SUL MAIS TECH",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_rio_do_sul_mais_tech",
+      "community": 537,
+      "norm_label": "rio do sul mais tech"
+    },
+    {
+      "label": "SENAI | PREFEITURA MUNICIPAL DE RIO DO SUL",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_senai_prefeitura_municipal_de_rio_do_sul",
+      "community": 537,
+      "norm_label": "senai | prefeitura municipal de rio do sul"
+    },
+    {
+      "label": "FUNDAMENTOS DA TECNOLOGIA E PROGRAMA\u00c7\u00c3O",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "community": 537,
+      "norm_label": "fundamentos da tecnologia e programacao"
+    },
+    {
+      "label": "APOSTILA DO ALUNO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_apostila_do_aluno",
+      "community": 537,
+      "norm_label": "apostila do aluno"
+    },
+    {
+      "label": "Sobre este Material",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_sobre_este_material",
+      "community": 537,
+      "norm_label": "sobre este material"
+    },
+    {
+      "label": "Apresenta\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_apresenta\u00e7\u00e3o",
+      "community": 537,
+      "norm_label": "apresentacao"
+    },
+    {
+      "label": "Como Esta Apostila Est\u00e1 Organizada",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_como_esta_apostila_est\u00e1_organizada",
+      "community": 537,
+      "norm_label": "como esta apostila esta organizada"
+    },
+    {
+      "label": "Objetivo da UC",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_objetivo_da_uc",
+      "community": 537,
+      "norm_label": "objetivo da uc"
+    },
+    {
+      "label": "Percurso de Aprendizagem",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_percurso_de_aprendizagem",
+      "community": 537,
+      "norm_label": "percurso de aprendizagem"
+    },
+    {
+      "label": "ENCONTRO 1 \u2014 O Que \u00c9 Tecnologia? Dispositivos Digitais no Cotidiano",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_1_o_que_\u00e9_tecnologia_dispositivos_digitais_no_cotidiano",
+      "community": 542,
+      "norm_label": "encontro 1 \u2014 o que e tecnologia? dispositivos digitais no cotidiano"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender",
+      "community": 542,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado",
+      "community": 542,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica",
+      "community": 542,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese",
+      "community": 542,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 2 \u2014 Evolu\u00e7\u00e3o dos Computadores e Hist\u00f3ria da Tecnologia",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_2_evolu\u00e7\u00e3o_dos_computadores_e_hist\u00f3ria_da_tecnologia",
+      "community": 545,
+      "norm_label": "encontro 2 \u2014 evolucao dos computadores e historia da tecnologia"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_111",
+      "community": 545,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_119",
+      "community": 545,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L140",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_140",
+      "community": 545,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_148",
+      "community": 545,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 3 \u2014 Cidadania Digital: Fake News, Cyberbullying e Pegada Digital",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L156",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_3_cidadania_digital_fake_news_cyberbullying_e_pegada_digital",
+      "community": 546,
+      "norm_label": "encontro 3 \u2014 cidadania digital: fake news, cyberbullying e pegada digital"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_158",
+      "community": 546,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_167",
+      "community": 546,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L224",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_224",
+      "community": 546,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L236",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_236",
+      "community": 546,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 4 \u2014 Hardware e Software: O Que Tem Dentro de um Computador?",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L245",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_4_hardware_e_software_o_que_tem_dentro_de_um_computador",
+      "community": 547,
+      "norm_label": "encontro 4 \u2014 hardware e software: o que tem dentro de um computador?"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L247",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_247",
+      "community": 547,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L255",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_255",
+      "community": 547,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L283",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_283",
+      "community": 547,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L295",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_295",
+      "community": 547,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 5 \u2014 Sistemas Operacionais: Windows, Linux e ChromeOS",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L304",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_5_sistemas_operacionais_windows_linux_e_chromeos",
+      "community": 548,
+      "norm_label": "encontro 5 \u2014 sistemas operacionais: windows, linux e chromeos"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L306",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_306",
+      "community": 548,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L314",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_314",
+      "community": 548,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L339",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_339",
+      "community": 548,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L347",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_347",
+      "community": 548,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 6 \u2014 Organiza\u00e7\u00e3o do Computador: Arquivos, Pastas e Atalhos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L357",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_6_organiza\u00e7\u00e3o_do_computador_arquivos_pastas_e_atalhos",
+      "community": 549,
+      "norm_label": "encontro 6 \u2014 organizacao do computador: arquivos, pastas e atalhos"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L359",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_359",
+      "community": 549,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L367",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_367",
+      "community": 549,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L399",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_399",
+      "community": 549,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L411",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_411",
+      "community": 549,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 7 \u2014 Produtividade: Editor de Texto",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L420",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_7_produtividade_editor_de_texto",
+      "community": 550,
+      "norm_label": "encontro 7 \u2014 produtividade: editor de texto"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L422",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_422",
+      "community": 550,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L430",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_430",
+      "community": 550,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L444",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_444",
+      "community": 550,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L452",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_452",
+      "community": 550,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 8 \u2014 Apresenta\u00e7\u00f5es Digitais (Google Slides / PowerPoint)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L461",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_8_apresenta\u00e7\u00f5es_digitais_google_slides_powerpoint",
+      "community": 551,
+      "norm_label": "encontro 8 \u2014 apresentacoes digitais (google slides / powerpoint)"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L463",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_463",
+      "community": 551,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L471",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_471",
+      "community": 551,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L498",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_498",
+      "community": 551,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L506",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_506",
+      "community": 551,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 9 \u2014 Planilhas Simples (Google Sheets / Excel B\u00e1sico)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L515",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_9_planilhas_simples_google_sheets_excel_b\u00e1sico",
+      "community": 552,
+      "norm_label": "encontro 9 \u2014 planilhas simples (google sheets / excel basico)"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L517",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_517",
+      "community": 552,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L525",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_525",
+      "community": 552,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L539",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_539",
+      "community": 552,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L547",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_547",
+      "community": 552,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 10 \u2014 Internet Segura: V\u00edrus, Senhas, Privacidade e Navegadores",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L556",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_10_internet_segura_v\u00edrus_senhas_privacidade_e_navegadores",
+      "community": 553,
+      "norm_label": "encontro 10 \u2014 internet segura: virus, senhas, privacidade e navegadores"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L558",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_558",
+      "community": 553,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L567",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_567",
+      "community": 553,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L601",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_601",
+      "community": 553,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L613",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_613",
+      "community": 553,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 11 \u2014 Pensamento Computacional: Decomposi\u00e7\u00e3o e Padr\u00f5es",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L622",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_11_pensamento_computacional_decomposi\u00e7\u00e3o_e_padr\u00f5es",
+      "community": 554,
+      "norm_label": "encontro 11 \u2014 pensamento computacional: decomposicao e padroes"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L624",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_624",
+      "community": 554,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L632",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_632",
+      "community": 554,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L682",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_682",
+      "community": 554,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L694",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_694",
+      "community": 554,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 12 \u2014 Pensamento Computacional: Abstra\u00e7\u00e3o e Algoritmos Desplugados",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L703",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_12_pensamento_computacional_abstra\u00e7\u00e3o_e_algoritmos_desplugados",
+      "community": 555,
+      "norm_label": "encontro 12 \u2014 pensamento computacional: abstracao e algoritmos desplugados"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L705",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_705",
+      "community": 555,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L713",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_713",
+      "community": 555,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L748",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_748",
+      "community": 555,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L760",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_760",
+      "community": 555,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 13 \u2014 Algoritmos: Sequ\u00eancia, Decis\u00e3o e Repeti\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L769",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_13_algoritmos_sequ\u00eancia_decis\u00e3o_e_repeti\u00e7\u00e3o",
+      "community": 556,
+      "norm_label": "encontro 13 \u2014 algoritmos: sequencia, decisao e repeticao"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L771",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_771",
+      "community": 556,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L779",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_779",
+      "community": 556,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L856",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_856",
+      "community": 556,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L873",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_873",
+      "community": 556,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 14 \u2014 Fluxogramas: Desenhando Solu\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L882",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_14_fluxogramas_desenhando_solu\u00e7\u00f5es",
+      "community": 557,
+      "norm_label": "encontro 14 \u2014 fluxogramas: desenhando solucoes"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L884",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_884",
+      "community": 557,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L892",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_892",
+      "community": 557,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L924",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_924",
+      "community": 557,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L941",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_941",
+      "community": 557,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 15 \u2014 Scratch: Primeiros Passos na Programa\u00e7\u00e3o em Blocos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L950",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_15_scratch_primeiros_passos_na_programa\u00e7\u00e3o_em_blocos",
+      "community": 558,
+      "norm_label": "encontro 15 \u2014 scratch: primeiros passos na programacao em blocos"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L952",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_952",
+      "community": 558,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L961",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_961",
+      "community": 558,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L982",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_982",
+      "community": 558,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1003",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_1003",
+      "community": 558,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 16 \u2014 Scratch: Condi\u00e7\u00f5es, Repeti\u00e7\u00f5es e Vari\u00e1veis",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1012",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_16_scratch_condi\u00e7\u00f5es_repeti\u00e7\u00f5es_e_vari\u00e1veis",
+      "community": 543,
+      "norm_label": "encontro 16 \u2014 scratch: condicoes, repeticoes e variaveis"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1014",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_1014",
+      "community": 543,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1022",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_1022",
+      "community": 543,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1074",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_1074",
+      "community": 543,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1087",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_1087",
+      "community": 543,
+      "norm_label": "sintese"
+    },
+    {
+      "label": "ENCONTRO 17 \u2014 Scratch: Mini Projeto Final",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1096",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_17_scratch_mini_projeto_final",
+      "community": 544,
+      "norm_label": "encontro 17 \u2014 scratch: mini projeto final"
+    },
+    {
+      "label": "O que voc\u00ea vai aprender",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1098",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_1098",
+      "community": 544,
+      "norm_label": "o que voce vai aprender"
+    },
+    {
+      "label": "Conte\u00fado",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1106",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_1106",
+      "community": 544,
+      "norm_label": "conteudo"
+    },
+    {
+      "label": "Na Pr\u00e1tica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1143",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_1143",
+      "community": 544,
+      "norm_label": "na pratica"
+    },
+    {
+      "label": "S\u00edntese do Encontro e da UC",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1155",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_do_encontro_e_da_uc",
+      "community": 544,
+      "norm_label": "sintese do encontro e da uc"
+    },
+    {
+      "label": "Gloss\u00e1rio",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1172",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_gloss\u00e1rio",
+      "community": 537,
+      "norm_label": "glossario"
+    },
+    {
+      "label": "Refer\u00eancias e Para Continuar Aprendendo",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1176",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_refer\u00eancias_e_para_continuar_aprendendo",
+      "community": 541,
+      "norm_label": "referencias e para continuar aprendendo"
+    },
+    {
+      "label": "Plataformas de Programa\u00e7\u00e3o e Tecnologia",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1178",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_plataformas_de_programa\u00e7\u00e3o_e_tecnologia",
+      "community": 541,
+      "norm_label": "plataformas de programacao e tecnologia"
+    },
+    {
+      "label": "Verifica\u00e7\u00e3o de Fake News",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1185",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_verifica\u00e7\u00e3o_de_fake_news",
+      "community": 541,
+      "norm_label": "verificacao de fake news"
+    },
+    {
+      "label": "Seguran\u00e7a Digital",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1191",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_seguran\u00e7a_digital",
+      "community": 541,
+      "norm_label": "seguranca digital"
+    },
+    {
+      "label": "Canais no YouTube (em portugu\u00eas)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1196",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_canais_no_youtube_em_portugu\u00eas",
+      "community": 541,
+      "norm_label": "canais no youtube (em portugues)"
+    },
+    {
+      "label": "Livros Sugeridos",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1202",
+      "_origin": "ast",
+      "id": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_livros_sugeridos",
+      "community": 541,
+      "norm_label": "livros sugeridos"
+    },
+    {
       "label": "Apostila_Padrao_SENAI_SC_Comunicacao_Oral_Escrita_Versao_Gemini_8a785ed7.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Apostila_Padrao_SENAI_SC_Comunicacao_Oral_Escrita_Versao_Gemini_8a785ed7.md",
@@ -27430,7 +28570,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_4_c\u00e1lculo_mental_estimativas_e_problemas_cotidianos_2h",
-      "community": 536,
+      "community": 363,
       "norm_label": "encontro 4 \u2014 calculo mental, estimativas e problemas cotidianos (2h)"
     },
     {
@@ -27440,7 +28580,7 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_1_estrat\u00e9gias_de_c\u00e1lculo_mental",
-      "community": 536,
+      "community": 363,
       "norm_label": "4.1 estrategias de calculo mental"
     },
     {
@@ -27450,7 +28590,7 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_2_estimativas_e_arredondamento",
-      "community": 536,
+      "community": 363,
       "norm_label": "4.2 estimativas e arredondamento"
     },
     {
@@ -27460,7 +28600,7 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_3_problemas_contextualizados",
-      "community": 536,
+      "community": 363,
       "norm_label": "4.3 problemas contextualizados"
     },
     {
@@ -27470,7 +28610,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_1_4_individual_estimativas",
-      "community": 536,
+      "community": 363,
       "norm_label": "atividade 1.4 \u2014 individual (estimativas)"
     },
     {
@@ -27480,7 +28620,7 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_1_5_em_grupo_desafio",
-      "community": 536,
+      "community": 363,
       "norm_label": "atividade 1.5 \u2014 em grupo (desafio)"
     },
     {
@@ -27660,7 +28800,7 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_8_porcentagem_2h",
-      "community": 349,
+      "community": 559,
       "norm_label": "encontro 8 \u2014 porcentagem (2h)"
     },
     {
@@ -27670,7 +28810,7 @@
       "source_location": "L300",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_1_o_que_\u00e9_porcentagem",
-      "community": 349,
+      "community": 559,
       "norm_label": "8.1 o que e porcentagem"
     },
     {
@@ -27680,7 +28820,7 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_2_calcular_a_porcentagem_de_um_valor",
-      "community": 349,
+      "community": 559,
       "norm_label": "8.2 calcular a porcentagem de um valor"
     },
     {
@@ -27690,7 +28830,7 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_3_aumento_percentual",
-      "community": 349,
+      "community": 559,
       "norm_label": "8.3 aumento percentual"
     },
     {
@@ -27700,7 +28840,7 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_2_4_situa\u00e7\u00f5es_reais",
-      "community": 349,
+      "community": 559,
       "norm_label": "atividade 2.4 \u2014 situacoes reais"
     },
     {
@@ -28310,7 +29450,7 @@
       "source_location": "L702",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_22_l\u00f3gica_proposicional_introdut\u00f3ria_2h",
-      "community": 537,
+      "community": 360,
       "norm_label": "encontro 22 \u2014 logica proposicional introdutoria (2h)"
     },
     {
@@ -28320,7 +29460,7 @@
       "source_location": "L703",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_22_1_proposi\u00e7\u00f5es",
-      "community": 537,
+      "community": 360,
       "norm_label": "22.1 proposicoes"
     },
     {
@@ -28330,7 +29470,7 @@
       "source_location": "L709",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_22_2_conectivos_l\u00f3gicos",
-      "community": 537,
+      "community": 360,
       "norm_label": "22.2 conectivos logicos"
     },
     {
@@ -28340,7 +29480,7 @@
       "source_location": "L724",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_22_3_tabelas_verdade",
-      "community": 537,
+      "community": 360,
       "norm_label": "22.3 tabelas-verdade"
     },
     {
@@ -28350,7 +29490,7 @@
       "source_location": "L732",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_5_3",
-      "community": 537,
+      "community": 360,
       "norm_label": "atividade 5.3"
     },
     {
@@ -63994,6 +65134,116 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_ementa_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_ementa_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_capacidades_b\u00e1sicas_e_t\u00e9cnicas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_ementa_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_conhecimentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_ementa_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_identifica\u00e7\u00e3o_da_unidade_curricular",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_ementa_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_objetivo_geral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_conhecimentos",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_1_tecnologia_e_mundo_digital",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_conhecimentos",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_2_hardware_software_e_sistema_operacional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_conhecimentos",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_3_produtividade_digital",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_conhecimentos",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_4_internet_e_uso_seguro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_conhecimentos",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_5_pensamento_computacional_e_algoritmos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_conhecimentos",
+      "target": "leitor_markdown_ementa_fundamentos_tecnologia_programacao_bloco_6_programa\u00e7\u00e3o_em_blocos_scratch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "PLATAFORMA_DE_IA.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -81640,6 +82890,1016 @@
       "confidence_score": 1.0,
       "source": "converted_avaliacao_pratica_comunicacao_oral_escrita_463d7698_parte_b_apresenta\u00e7\u00e3o_e_simula\u00e7\u00e3o_oral_5_0_pontos",
       "target": "converted_avaliacao_pratica_comunicacao_oral_escrita_463d7698_planejamento_da_dupla"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_rio_do_sul_mais_tech",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_rio_do_sul_mais_tech",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_senai_prefeitura_municipal_de_rio_do_sul",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_apostila_do_aluno",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_apresenta\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_como_esta_apostila_est\u00e1_organizada",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L556",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_10_internet_segura_v\u00edrus_senhas_privacidade_e_navegadores",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L622",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_11_pensamento_computacional_decomposi\u00e7\u00e3o_e_padr\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L703",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_12_pensamento_computacional_abstra\u00e7\u00e3o_e_algoritmos_desplugados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L769",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_13_algoritmos_sequ\u00eancia_decis\u00e3o_e_repeti\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L882",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_14_fluxogramas_desenhando_solu\u00e7\u00f5es",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L950",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_15_scratch_primeiros_passos_na_programa\u00e7\u00e3o_em_blocos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1012",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_16_scratch_condi\u00e7\u00f5es_repeti\u00e7\u00f5es_e_vari\u00e1veis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1096",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_17_scratch_mini_projeto_final",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_1_o_que_\u00e9_tecnologia_dispositivos_digitais_no_cotidiano",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_2_evolu\u00e7\u00e3o_dos_computadores_e_hist\u00f3ria_da_tecnologia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_3_cidadania_digital_fake_news_cyberbullying_e_pegada_digital",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_4_hardware_e_software_o_que_tem_dentro_de_um_computador",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L304",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_5_sistemas_operacionais_windows_linux_e_chromeos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L357",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_6_organiza\u00e7\u00e3o_do_computador_arquivos_pastas_e_atalhos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L420",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_7_produtividade_editor_de_texto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L461",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_8_apresenta\u00e7\u00f5es_digitais_google_slides_powerpoint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L515",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_9_planilhas_simples_google_sheets_excel_b\u00e1sico",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1172",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_gloss\u00e1rio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_objetivo_da_uc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_percurso_de_aprendizagem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1176",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_refer\u00eancias_e_para_continuar_aprendendo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_fundamentos_da_tecnologia_e_programa\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_sobre_este_material",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_1_o_que_\u00e9_tecnologia_dispositivos_digitais_no_cotidiano",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_1_o_que_\u00e9_tecnologia_dispositivos_digitais_no_cotidiano",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_1_o_que_\u00e9_tecnologia_dispositivos_digitais_no_cotidiano",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_1_o_que_\u00e9_tecnologia_dispositivos_digitais_no_cotidiano",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_2_evolu\u00e7\u00e3o_dos_computadores_e_hist\u00f3ria_da_tecnologia",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_119",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_2_evolu\u00e7\u00e3o_dos_computadores_e_hist\u00f3ria_da_tecnologia",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_140",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_2_evolu\u00e7\u00e3o_dos_computadores_e_hist\u00f3ria_da_tecnologia",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_111",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_2_evolu\u00e7\u00e3o_dos_computadores_e_hist\u00f3ria_da_tecnologia",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_148",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_3_cidadania_digital_fake_news_cyberbullying_e_pegada_digital",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_167",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L224",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_3_cidadania_digital_fake_news_cyberbullying_e_pegada_digital",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_224",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_3_cidadania_digital_fake_news_cyberbullying_e_pegada_digital",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_158",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_3_cidadania_digital_fake_news_cyberbullying_e_pegada_digital",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_236",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L255",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_4_hardware_e_software_o_que_tem_dentro_de_um_computador",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_255",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L283",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_4_hardware_e_software_o_que_tem_dentro_de_um_computador",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_283",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L247",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_4_hardware_e_software_o_que_tem_dentro_de_um_computador",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_247",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L295",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_4_hardware_e_software_o_que_tem_dentro_de_um_computador",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_295",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L314",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_5_sistemas_operacionais_windows_linux_e_chromeos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_314",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L339",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_5_sistemas_operacionais_windows_linux_e_chromeos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_339",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L306",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_5_sistemas_operacionais_windows_linux_e_chromeos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_306",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L347",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_5_sistemas_operacionais_windows_linux_e_chromeos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_347",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L367",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_6_organiza\u00e7\u00e3o_do_computador_arquivos_pastas_e_atalhos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_367",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L399",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_6_organiza\u00e7\u00e3o_do_computador_arquivos_pastas_e_atalhos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_399",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L359",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_6_organiza\u00e7\u00e3o_do_computador_arquivos_pastas_e_atalhos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_359",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L411",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_6_organiza\u00e7\u00e3o_do_computador_arquivos_pastas_e_atalhos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_411",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L430",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_7_produtividade_editor_de_texto",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_430",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L444",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_7_produtividade_editor_de_texto",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_444",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L422",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_7_produtividade_editor_de_texto",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_422",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L452",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_7_produtividade_editor_de_texto",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_452",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L471",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_8_apresenta\u00e7\u00f5es_digitais_google_slides_powerpoint",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_471",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L498",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_8_apresenta\u00e7\u00f5es_digitais_google_slides_powerpoint",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_498",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L463",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_8_apresenta\u00e7\u00f5es_digitais_google_slides_powerpoint",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_463",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L506",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_8_apresenta\u00e7\u00f5es_digitais_google_slides_powerpoint",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_506",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L525",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_9_planilhas_simples_google_sheets_excel_b\u00e1sico",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_525",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L539",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_9_planilhas_simples_google_sheets_excel_b\u00e1sico",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_539",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L517",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_9_planilhas_simples_google_sheets_excel_b\u00e1sico",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_517",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L547",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_9_planilhas_simples_google_sheets_excel_b\u00e1sico",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_547",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L567",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_10_internet_segura_v\u00edrus_senhas_privacidade_e_navegadores",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_567",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L601",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_10_internet_segura_v\u00edrus_senhas_privacidade_e_navegadores",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_601",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L558",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_10_internet_segura_v\u00edrus_senhas_privacidade_e_navegadores",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_558",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L613",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_10_internet_segura_v\u00edrus_senhas_privacidade_e_navegadores",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_613",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L632",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_11_pensamento_computacional_decomposi\u00e7\u00e3o_e_padr\u00f5es",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_632",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L682",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_11_pensamento_computacional_decomposi\u00e7\u00e3o_e_padr\u00f5es",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_682",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L624",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_11_pensamento_computacional_decomposi\u00e7\u00e3o_e_padr\u00f5es",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_624",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L694",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_11_pensamento_computacional_decomposi\u00e7\u00e3o_e_padr\u00f5es",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_694",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L713",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_12_pensamento_computacional_abstra\u00e7\u00e3o_e_algoritmos_desplugados",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_713",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L748",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_12_pensamento_computacional_abstra\u00e7\u00e3o_e_algoritmos_desplugados",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_748",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L705",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_12_pensamento_computacional_abstra\u00e7\u00e3o_e_algoritmos_desplugados",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_705",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L760",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_12_pensamento_computacional_abstra\u00e7\u00e3o_e_algoritmos_desplugados",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_760",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L779",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_13_algoritmos_sequ\u00eancia_decis\u00e3o_e_repeti\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_779",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L856",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_13_algoritmos_sequ\u00eancia_decis\u00e3o_e_repeti\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_856",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L771",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_13_algoritmos_sequ\u00eancia_decis\u00e3o_e_repeti\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_771",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L873",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_13_algoritmos_sequ\u00eancia_decis\u00e3o_e_repeti\u00e7\u00e3o",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_873",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L892",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_14_fluxogramas_desenhando_solu\u00e7\u00f5es",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_892",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L924",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_14_fluxogramas_desenhando_solu\u00e7\u00f5es",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_924",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L884",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_14_fluxogramas_desenhando_solu\u00e7\u00f5es",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_884",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L941",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_14_fluxogramas_desenhando_solu\u00e7\u00f5es",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_941",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L961",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_15_scratch_primeiros_passos_na_programa\u00e7\u00e3o_em_blocos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_961",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L982",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_15_scratch_primeiros_passos_na_programa\u00e7\u00e3o_em_blocos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_982",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L952",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_15_scratch_primeiros_passos_na_programa\u00e7\u00e3o_em_blocos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_952",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1003",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_15_scratch_primeiros_passos_na_programa\u00e7\u00e3o_em_blocos",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_1003",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1022",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_16_scratch_condi\u00e7\u00f5es_repeti\u00e7\u00f5es_e_vari\u00e1veis",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_1022",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1074",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_16_scratch_condi\u00e7\u00f5es_repeti\u00e7\u00f5es_e_vari\u00e1veis",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_1074",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1014",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_16_scratch_condi\u00e7\u00f5es_repeti\u00e7\u00f5es_e_vari\u00e1veis",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_1014",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1087",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_16_scratch_condi\u00e7\u00f5es_repeti\u00e7\u00f5es_e_vari\u00e1veis",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_1087",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1106",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_17_scratch_mini_projeto_final",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_conte\u00fado_1106",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1143",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_17_scratch_mini_projeto_final",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_na_pr\u00e1tica_1143",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1098",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_17_scratch_mini_projeto_final",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_o_que_voc\u00ea_vai_aprender_1098",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1155",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_encontro_17_scratch_mini_projeto_final",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_s\u00edntese_do_encontro_e_da_uc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1196",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_refer\u00eancias_e_para_continuar_aprendendo",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_canais_no_youtube_em_portugu\u00eas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1202",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_refer\u00eancias_e_para_continuar_aprendendo",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_livros_sugeridos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1178",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_refer\u00eancias_e_para_continuar_aprendendo",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_plataformas_de_programa\u00e7\u00e3o_e_tecnologia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1191",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_refer\u00eancias_e_para_continuar_aprendendo",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_seguran\u00e7a_digital",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md",
+      "source_location": "L1185",
+      "weight": 1.0,
+      "source": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_refer\u00eancias_e_para_continuar_aprendendo",
+      "target": "converted_apostila_fundamentos_tecnologia_programacao_b2a91e70_verifica\u00e7\u00e3o_de_fake_news",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -108953,5 +111213,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c1a9e5478300553e3a7bd421f9e80ade48071d65"
+  "built_at_commit": "b82f0fd80418c4d8440c7579e529401fb3227569"
 }

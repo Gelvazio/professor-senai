@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Pendências</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>📋 Dashboard de Pendências</h1>
+      <div class="header-stats">
+        <div class="stat">
+          <span class="stat-label">Total</span>
+          <span class="stat-value" id="totalCount">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Pendentes</span>
+          <span class="stat-value pending" id="pendingCount">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Concluídas</span>
+          <span class="stat-value completed" id="completedCount">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls">
+        <button class="btn btn-primary" id="btnNewPendencia">
+          <span>➕</span> Nova Pendência
+        </button>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="🔍 Buscar pendências..."
+        >
+        <select id="filterStatus" class="filter-select">
+          <option value="">Todas as pendências</option>
+          <option value="PENDENTE">Apenas Pendentes</option>
+          <option value="CONCLUIDA">Apenas Concluídas</option>
+        </select>
+      </section>
+
+      <section class="pendencias-list" id="pendenciasList">
+        <div class="empty-state">
+          <p>📭 Nenhuma pendência registrada</p>
+          <p class="empty-hint">Clique em "Nova Pendência" para começar</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal de Formulário -->
+  <div id="formModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Nova Pendência</h2>
+        <button class="close-btn" id="closeModal">&times;</button>
+      </div>
+      <form id="pendenciaForm" class="form-group">
+        <div class="form-field">
+          <label for="descricao">Descrição *</label>
+          <textarea
+            id="descricao"
+            name="descricao"
+            rows="3"
+            placeholder="Descreva a pendência..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="status">Status *</label>
+            <select id="status" name="status" required>
+              <option value="PENDENTE">Pendente</option>
+              <option value="CONCLUIDA">Concluída</option>
+              <option value="CANCELADA">Cancelada</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="prioridade">Prioridade</label>
+            <select id="prioridade" name="prioridade">
+              <option value="NORMAL">Normal</option>
+              <option value="ALTA">Alta</option>
+              <option value="BAIXA">Baixa</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data">
+          </div>
+
+          <div class="form-field">
+            <label for="datavencimento">Data de Vencimento</label>
+            <input type="date" id="datavencimento" name="datavencimento">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="total_horas">Total de Horas</label>
+            <input type="number" id="total_horas" name="total_horas" min="0" step="0.5">
+          </div>
+
+          <div class="form-field">
+            <label for="horas_ministradas">Horas Ministradas</label>
+            <input type="number" id="horas_ministradas" name="horas_ministradas" min="0" step="0.5">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="categoria">Categoria</label>
+          <input
+            type="text"
+            id="categoria"
+            name="categoria"
+            placeholder="Ex: Avaliação, Aula, Material..."
+          >
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary" id="cancelBtn">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar Pendência</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de Confirmação de Exclusão -->
+  <div id="deleteConfirmModal" class="modal hidden">
+    <div class="modal-content modal-small">
+      <div class="modal-header">
+        <h2>Confirmar Exclusão</h2>
+      </div>
+      <p id="deleteMessage">Tem certeza que deseja excluir esta pendência?</p>
+      <div class="form-actions">
+        <button type="button" class="btn btn-secondary" id="cancelDeleteBtn">Cancelar</button>
+        <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Excluir</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

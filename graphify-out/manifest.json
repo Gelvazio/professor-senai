@@ -325,8 +325,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788011057.0835128,
-    "ast_hash": "01074eb5636e8b553f0238d0b3728bea",
+    "mtime": 1788184278.272085,
+    "ast_hash": "c50fe4990b1867f66f0cbc9682ab9db2",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -2997,6 +2997,31 @@
   "graphify-out/converted/Avalia\u00e7\u00e3o pr\u00e1tica banco de dados_2f108be0.md": {
     "mtime": 1788184169.936752,
     "ast_hash": "3f6a5372e8ce1e9ff7216a58a560fd7c",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/aulas-lecionadas.json": {
+    "mtime": 1788185335.6274543,
+    "ast_hash": "4c86222f7a9cfa8dba1928eafd0d60ee",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/aulas-pendentes.json": {
+    "mtime": 1788185474.588261,
+    "ast_hash": "8e1266888dbe138db5834a1effdc47e7",
+    "semantic_hash": ""
+  },
+  "LEITOR-MARKDOWN/ementa_Fundamentos_Tecnologia_Programacao.md": {
+    "mtime": 1787158992.8253396,
+    "ast_hash": "24182677509b466a6ceba35290ccaf61",
+    "semantic_hash": ""
+  },
+  "LEITOR-MARKDOWN/index.html": {
+    "mtime": 1788185187.8864362,
+    "ast_hash": "219897ee1827249561c39d921749c76f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md": {
+    "mtime": 1788184853.2476838,
+    "ast_hash": "f9766ee9b077e1b08cf48037152e3154",
     "semantic_hash": ""
   }
 }
