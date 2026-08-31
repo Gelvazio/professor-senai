@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor Markdown - SENAI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --bg-tertiary: #ececec;
+            --text-primary: #1a1a1a;
+            --text-secondary: #555555;
+            --border: #e0e0e0;
+            --accent: #0066cc;
+            --accent-hover: #0052a3;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --danger: #f44336;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1e1e1e;
+            --bg-secondary: #2d2d2d;
+            --bg-tertiary: #3a3a3a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #b0b0b0;
+            --border: #444444;
+            --accent: #4a9eff;
+            --accent-hover: #5bb3ff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            transition: background-color 0.3s, color 0.3s;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            height: 100vh;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: var(--accent);
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-secondary {
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-tertiary);
+        }
+
+        .btn-danger {
+            background-color: var(--danger);
+            color: white;
+        }
+
+        .btn-danger:hover {
+            opacity: 0.9;
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .btn-success:hover {
+            opacity: 0.9;
+        }
+
+        .theme-toggle {
+            width: 50px;
+            height: 28px;
+            background-color: var(--bg-secondary);
+            border: 2px solid var(--border);
+            border-radius: 14px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .theme-toggle::after {
+            content: '☀️';
+            position: absolute;
+            left: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        [data-theme="dark"] .theme-toggle::after {
+            content: '🌙';
+            left: auto;
+            right: 4px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: var(--shadow);
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .sidebar h2 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .upload-zone {
+            border: 2px dashed var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 20px;
+            background-color: var(--bg-tertiary);
+        }
+
+        .upload-zone:hover {
+            border-color: var(--accent);
+            background-color: var(--bg-primary);
+        }
+
+        .upload-zone.dragover {
+            border-color: var(--accent);
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .upload-zone input {
+            display: none;
+        }
+
+        .file-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .file-item {
+            background-color: var(--bg-primary);
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .file-item:hover {
+            background-color: var(--bg-tertiary);
+            border-color: var(--accent);
+        }
+
+        .file-item.active {
+            background-color: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .file-name {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px;
+        }
+
+        .file-delete {
+            background: none;
+            border: none;
+            color: var(--danger);
+            cursor: pointer;
+            font-size: 16px;
+            padding: 4px;
+        }
+
+        /* Editor */
+        .editor-section {
+            grid-column: 2;
+            grid-row: 2;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .editor-pane,
+        .preview-pane {
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .pane-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        textarea {
+            flex: 1;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            resize: none;
+            outline: none;
+        }
+
+        textarea:focus {
+            border-color: var(--accent);
+        }
+
+        .preview {
+            flex: 1;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            overflow-y: auto;
+            line-height: 1.6;
+        }
+
+        /* Markdown Styles */
+        .preview h1 {
+            font-size: 32px;
+            margin: 20px 0 10px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+        }
+
+        .preview h2 {
+            font-size: 24px;
+            margin: 16px 0 8px;
+            color: var(--accent);
+        }
+
+        .preview h3 {
+            font-size: 20px;
+            margin: 12px 0 6px;
+        }
+
+        .preview h4 {
+            font-size: 16px;
+            margin: 10px 0 4px;
+        }
+
+        .preview p {
+            margin: 10px 0;
+            color: var(--text-secondary);
+        }
+
+        .preview ul,
+        .preview ol {
+            margin: 10px 0 10px 20px;
+        }
+
+        .preview li {
+            margin: 5px 0;
+            color: var(--text-secondary);
+        }
+
+        .preview code {
+            background-color: var(--bg-secondary);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: var(--accent);
+        }
+
+        .preview pre {
+            background-color: var(--bg-secondary);
+            border-radius: 6px;
+            padding: 15px;
+            overflow-x: auto;
+            margin: 10px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .preview pre code {
+            background-color: transparent;
+            color: var(--text-primary);
+            padding: 0;
+        }
+
+        .preview blockquote {
+            border-left: 4px solid var(--accent);
+            margin: 10px 0;
+            padding-left: 15px;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .preview a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .preview a:hover {
+            text-decoration: underline;
+        }
+
+        .preview table {
+            border-collapse: collapse;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .preview th,
+        .preview td {
+            border: 1px solid var(--border);
+            padding: 10px;
+            text-align: left;
+        }
+
+        .preview th {
+            background-color: var(--bg-secondary);
+            font-weight: 600;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+
+            .sidebar {
+                grid-column: 1;
+            }
+
+            .editor-section {
+                grid-column: 1;
+                grid-template-rows: auto auto;
+            }
+
+            header {
+                grid-column: 1;
+            }
+        }
+
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        .empty-state-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: var(--bg-primary);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .modal-content h2 {
+            margin-bottom: 15px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📄 Leitor Markdown</h1>
+            <div class="header-controls">
+                <button class="btn btn-secondary" id="exportBtn" title="Exportar">
+                    ⬇️ Exportar
+                </button>
+                <button class="btn btn-secondary" id="clearBtn" title="Limpar Tudo">
+                    🗑️ Limpar
+                </button>
+                <div class="theme-toggle" id="themeToggle" title="Alternar Tema"></div>
+            </div>
+        </header>
+
+        <div class="sidebar">
+            <h2>Arquivos</h2>
+            <div class="upload-zone" id="uploadZone">
+                <div style="font-size: 24px; margin-bottom: 8px;">📁</div>
+                <div>Clique ou arraste arquivos .md</div>
+                <input type="file" id="fileInput" accept=".md,.markdown,.txt" multiple>
+            </div>
+            <div class="file-list" id="fileList"></div>
+        </div>
+
+        <div class="editor-section">
+            <div class="editor-pane">
+                <div class="pane-title">Editor</div>
+                <textarea id="editor" placeholder="Carregue um arquivo ou comece a digitar..."></textarea>
+            </div>
+
+            <div class="preview-pane">
+                <div class="pane-title">Visualização</div>
+                <div class="preview" id="preview">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">👀</div>
+                        <div>A visualização aparecerá aqui</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="confirmModal">
+        <div class="modal-content">
+            <h2>⚠️ Confirmar Ação</h2>
+            <p id="confirmText"></p>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" id="cancelBtn">Cancelar</button>
+                <button class="btn btn-danger" id="confirmBtn">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Estado da Aplicação
+        const state = {
+            files: [],
+            currentFile: null,
+            theme: localStorage.getItem('theme') || 'light'
+        };
+
+        // Elementos do DOM
+        const uploadZone = document.getElementById('uploadZone');
+        const fileInput = document.getElementById('fileInput');
+        const fileList = document.getElementById('fileList');
+        const editor = document.getElementById('editor');
+        const preview = document.getElementById('preview');
+        const themeToggle = document.getElementById('themeToggle');
+        const exportBtn = document.getElementById('exportBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const confirmModal = document.getElementById('confirmModal');
+
+        // Inicialização
+        function init() {
+            loadTheme();
+            loadFiles();
+            setupEventListeners();
+        }
+
+        function setupEventListeners() {
+            uploadZone.addEventListener('click', () => fileInput.click());
+            uploadZone.addEventListener('dragover', handleDragOver);
+            uploadZone.addEventListener('dragleave', handleDragLeave);
+            uploadZone.addEventListener('drop', handleDrop);
+            fileInput.addEventListener('change', handleFileSelect);
+            editor.addEventListener('input', handleEditorChange);
+            themeToggle.addEventListener('click', toggleTheme);
+            exportBtn.addEventListener('click', exportFiles);
+            clearBtn.addEventListener('click', showClearConfirm);
+            document.getElementById('confirmBtn').addEventListener('click', clearAll);
+            document.getElementById('cancelBtn').addEventListener('click', closeModal);
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            uploadZone.classList.add('dragover');
+        }
+
+        function handleDragLeave() {
+            uploadZone.classList.remove('dragover');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            uploadZone.classList.remove('dragover');
+            const files = Array.from(e.dataTransfer.files);
+            processFiles(files);
+        }
+
+        function handleFileSelect(e) {
+            const files = Array.from(e.target.files);
+            processFiles(files);
+        }
+
+        function processFiles(files) {
+            files.forEach(file => {
+                if (file.type === 'text/plain' || file.name.endsWith('.md') || file.name.endsWith('.markdown')) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        const fileObj = {
+                            id: Date.now() + Math.random(),
+                            name: file.name,
+                            content: e.target.result,
+                            date: new Date().toLocaleString('pt-BR')
+                        };
+                        state.files.push(fileObj);
+                        saveFiles();
+                        renderFileList();
+                        selectFile(fileObj.id);
+                    };
+                    reader.readAsText(file);
+                }
+            });
+            fileInput.value = '';
+        }
+
+        function renderFileList() {
+            fileList.innerHTML = '';
+            state.files.forEach(file => {
+                const fileItem = document.createElement('div');
+                fileItem.className = `file-item ${state.currentFile?.id === file.id ? 'active' : ''}`;
+                fileItem.innerHTML = `
+                    <div class="file-name" title="${file.name}">${file.name}</div>
+                    <button class="file-delete" onclick="event.stopPropagation()">✕</button>
+                `;
+                fileItem.onclick = () => selectFile(file.id);
+                fileItem.querySelector('.file-delete').onclick = () => deleteFile(file.id);
+                fileList.appendChild(fileItem);
+            });
+        }
+
+        function selectFile(id) {
+            const file = state.files.find(f => f.id === id);
+            if (file) {
+                state.currentFile = file;
+                editor.value = file.content;
+                updatePreview();
+                renderFileList();
+            }
+        }
+
+        function deleteFile(id) {
+            state.files = state.files.filter(f => f.id !== id);
+            if (state.currentFile?.id === id) {
+                state.currentFile = state.files[0] || null;
+                editor.value = state.currentFile?.content || '';
+                updatePreview();
+            }
+            saveFiles();
+            renderFileList();
+        }
+
+        function handleEditorChange() {
+            if (state.currentFile) {
+                state.currentFile.content = editor.value;
+                saveFiles();
+                updatePreview();
+            }
+        }
+
+        function updatePreview() {
+            const markdown = editor.value;
+            const html = markdownToHtml(markdown);
+            preview.innerHTML = html || '<div class="empty-state"><div class="empty-state-icon">👀</div><div>A visualização aparecerá aqui</div></div>';
+        }
+
+        function markdownToHtml(markdown) {
+            let html = markdown;
+
+            // Títulos
+            html = html.replace(/^### (.*?)$/gm, '<h3>$1</h3>');
+            html = html.replace(/^## (.*?)$/gm, '<h2>$1</h2>');
+            html = html.replace(/^# (.*?)$/gm, '<h1>$1</h1>');
+
+            // Negrito
+            html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            html = html.replace(/__(.*?)__/g, '<strong>$1</strong>');
+
+            // Itálico
+            html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            html = html.replace(/_(.*?)_/g, '<em>$1</em>');
+
+            // Links
+            html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
+
+            // Listas não ordenadas
+            html = html.replace(/^\* (.*?)$/gm, '<li>$1</li>');
+            html = html.replace(/^\- (.*?)$/gm, '<li>$1</li>');
+            html = html.replace(/(<li>.*?<\/li>)/s, '<ul>$1</ul>');
+            html = html.replace(/<\/ul>\s*<ul>/g, '');
+
+            // Listas ordenadas
+            html = html.replace(/^\d+\. (.*?)$/gm, '<li>$1</li>');
+
+            // Código inline
+            html = html.replace(/`(.*?)`/g, '<code>$1</code>');
+
+            // Blocos de código
+            html = html.replace(/```(.*?)```/gs, '<pre><code>$1</code></pre>');
+
+            // Citações
+            html = html.replace(/^> (.*?)$/gm, '<blockquote>$1</blockquote>');
+
+            // Parágrafos
+            html = html.split('\n\n').map(para => {
+                if (!para.match(/^<[^>]+>/)) {
+                    return `<p>${para}</p>`;
+                }
+                return para;
+            }).join('');
+
+            // Quebras de linha
+            html = html.replace(/\n/g, '<br>');
+
+            return html;
+        }
+
+        function saveFiles() {
+            localStorage.setItem('markdown_files', JSON.stringify(state.files));
+        }
+
+        function loadFiles() {
+            const saved = localStorage.getItem('markdown_files');
+            if (saved) {
+                state.files = JSON.parse(saved);
+                renderFileList();
+                if (state.files.length > 0) {
+                    selectFile(state.files[0].id);
+                }
+            }
+        }
+
+        function toggleTheme() {
+            state.theme = state.theme === 'light' ? 'dark' : 'light';
+            localStorage.setItem('theme', state.theme);
+            document.documentElement.setAttribute('data-theme', state.theme);
+        }
+
+        function loadTheme() {
+            document.documentElement.setAttribute('data-theme', state.theme);
+        }
+
+        function exportFiles() {
+            if (state.files.length === 0) {
+                alert('Nenhum arquivo para exportar!');
+                return;
+            }
+
+            state.files.forEach(file => {
+                const element = document.createElement('a');
+                element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(file.content));
+                element.setAttribute('download', file.name);
+                element.style.display = 'none';
+                document.body.appendChild(element);
+                element.click();
+                document.body.removeChild(element);
+            });
+        }
+
+        function showClearConfirm() {
+            document.getElementById('confirmText').textContent = 'Tem certeza que deseja limpar todos os arquivos? Esta ação não pode ser desfeita.';
+            confirmModal.classList.add('active');
+        }
+
+        function clearAll() {
+            state.files = [];
+            state.currentFile = null;
+            editor.value = '';
+            updatePreview();
+            saveFiles();
+            renderFileList();
+            closeModal();
+        }
+
+        function closeModal() {
+            confirmModal.classList.remove('active');
+        }
+
+        // Iniciar
+        init();
+    </script>
+</body>
+</html>
