@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1787920405.805662,
-    "ast_hash": "f59ca6d309b8e3a9cafd53d9e8560674",
+    "mtime": 1788011338.4563656,
+    "ast_hash": "33c49b9da36f25a28711d17bdbb31109",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -325,8 +325,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1787920433.4597569,
-    "ast_hash": "f919d86e3943c5ab33755d2bb463c8f9",
+    "mtime": 1788011057.0835128,
+    "ast_hash": "01074eb5636e8b553f0238d0b3728bea",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "sistema/BANCO_DE_DADOS/ORIENTACAO_UC.txt": {
-    "mtime": 1786631003.1559472,
-    "ast_hash": "9e73aaa9d835e16df9ddedf94ba70e64",
+    "mtime": 1788179515.5421455,
+    "ast_hash": "5020558b4e139e8170f8d8d1fb2e7d91",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/ATIVIDADE-DIGITACAO-12-08-2026_OLD.txt": {
@@ -2957,6 +2957,46 @@
   "graphify-out/converted/Prova Pr\u00e1tica (3)_c7fde94d.md": {
     "mtime": 1787927646.630343,
     "ast_hash": "40a1cd841d0a3eb6096a36ccc550190a",
+    "semantic_hash": ""
+  },
+  "transcrever-video-youtube/transcrever.ps1": {
+    "mtime": 1787935588.738338,
+    "ast_hash": "7908202dc9b5d2e46db49b5619f0b5c6",
+    "semantic_hash": ""
+  },
+  "transcrever-video-youtube/transcrever.py": {
+    "mtime": 1787935567.2847302,
+    "ast_hash": "04b9f9ce3a42259892daec8eed7e0c44",
+    "semantic_hash": ""
+  },
+  "transcrever-video-youtube/QUICKSTART.md": {
+    "mtime": 1787935604.4619954,
+    "ast_hash": "fbfbba651f1006901b1ed271d1796fc1",
+    "semantic_hash": ""
+  },
+  "transcrever-video-youtube/README.md": {
+    "mtime": 1787935537.6322098,
+    "ast_hash": "6d9148b6eb506e3d34ec3ebc940be424",
+    "semantic_hash": ""
+  },
+  "transcrever-video-youtube/requirements.txt": {
+    "mtime": 1787935540.2966492,
+    "ast_hash": "653f885eb84c144575e7d655c1e2abac",
+    "semantic_hash": ""
+  },
+  ".vscode/settings.json": {
+    "mtime": 1788010609.7453947,
+    "ast_hash": "19751b2a32e46d1ba1477f357123a898",
+    "semantic_hash": ""
+  },
+  "sistema/scripts/007_add_status_concluida_materias.sql": {
+    "mtime": 1788011037.24437,
+    "ast_hash": "83187b110ad565712fe4e692aabab69e",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Avalia\u00e7\u00e3o pr\u00e1tica banco de dados_2f108be0.md": {
+    "mtime": 1788184169.936752,
+    "ast_hash": "3f6a5372e8ce1e9ff7216a58a560fd7c",
     "semantic_hash": ""
   }
 }

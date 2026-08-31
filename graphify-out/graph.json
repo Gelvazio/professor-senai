@@ -3690,7 +3690,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "syncdata_server_gerarrelatoriosincronizacao",
-      "community": 528,
+      "community": 535,
       "norm_label": "gerarrelatoriosincronizacao()"
     },
     {
@@ -3840,7 +3840,7 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "src_constants_uc_containers",
-      "community": 526,
+      "community": 524,
       "norm_label": "uc_containers"
     },
     {
@@ -4120,7 +4120,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_utils",
-      "community": 528,
+      "community": 535,
       "norm_label": "utils.js"
     },
     {
@@ -4130,7 +4130,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_utils_path",
-      "community": 528,
+      "community": 535,
       "norm_label": "path"
     },
     {
@@ -4140,7 +4140,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_utils_garantirdiretorio",
-      "community": 528,
+      "community": 535,
       "norm_label": "garantirdiretorio()"
     },
     {
@@ -4150,7 +4150,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "src_utils_salvarjson",
-      "community": 528,
+      "community": 535,
       "norm_label": "salvarjson()"
     },
     {
@@ -4160,7 +4160,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "src_utils_carregarjson",
-      "community": 528,
+      "community": 535,
       "norm_label": "carregarjson()"
     },
     {
@@ -4170,7 +4170,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_utils_formatartimestamp",
-      "community": 528,
+      "community": 535,
       "norm_label": "formatartimestamp()"
     },
     {
@@ -4180,7 +4180,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "src_utils_escreverlog",
-      "community": 528,
+      "community": 535,
       "norm_label": "escreverlog()"
     },
     {
@@ -4190,7 +4190,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "src_utils_contarporextensao",
-      "community": 528,
+      "community": 535,
       "norm_label": "contarporextensao()"
     },
     {
@@ -4200,7 +4200,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "src_utils_encontrararquivos",
-      "community": 528,
+      "community": 535,
       "norm_label": "encontrararquivos()"
     },
     {
@@ -4210,7 +4210,7 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "src_utils_limparobjeto",
-      "community": 528,
+      "community": 535,
       "norm_label": "limparobjeto()"
     },
     {
@@ -4220,7 +4220,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "src_utils_ordenarpor",
-      "community": 528,
+      "community": 535,
       "norm_label": "ordenarpor()"
     },
     {
@@ -4302,6 +4302,276 @@
       "id": "src_verify_uc_gerarrelatorioverificacao",
       "community": 526,
       "norm_label": "gerarrelatorioverificacao()"
+    },
+    {
+      "label": "transcrever.ps1",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.ps1",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_ps1_transcrever_video_youtube_transcrever",
+      "community": 538,
+      "norm_label": "transcrever.ps1"
+    },
+    {
+      "label": "Show-Help()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.ps1",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_show_help",
+      "community": 538,
+      "norm_label": "show-help()"
+    },
+    {
+      "label": "transcrever.py",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_py_transcrever_video_youtube_transcrever",
+      "community": 323,
+      "norm_label": "transcrever.py"
+    },
+    {
+      "label": "TranscriptorYouTube",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "community": 323,
+      "norm_label": "transcriptoryoutube"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_init",
+      "community": 323,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": "._setup_dirs()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_setup_dirs",
+      "community": 323,
+      "norm_label": "._setup_dirs()"
+    },
+    {
+      "label": ".baixar_video()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_baixar_video",
+      "community": 323,
+      "norm_label": ".baixar_video()"
+    },
+    {
+      "label": ".extrair_audio()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio",
+      "community": 323,
+      "norm_label": ".extrair_audio()"
+    },
+    {
+      "label": "._extrair_audio_pydub()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio_pydub",
+      "community": 323,
+      "norm_label": "._extrair_audio_pydub()"
+    },
+    {
+      "label": ".transcrever_google()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever_google",
+      "community": 323,
+      "norm_label": ".transcrever_google()"
+    },
+    {
+      "label": ".transcrever_whisper()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever_whisper",
+      "community": 323,
+      "norm_label": ".transcrever_whisper()"
+    },
+    {
+      "label": ".transcrever()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L198",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever",
+      "community": 323,
+      "norm_label": ".transcrever()"
+    },
+    {
+      "label": ".salvar_resultados()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_salvar_resultados",
+      "community": 323,
+      "norm_label": ".salvar_resultados()"
+    },
+    {
+      "label": ".limpar_temporarios()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L236",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_limpar_temporarios",
+      "community": 323,
+      "norm_label": ".limpar_temporarios()"
+    },
+    {
+      "label": "._sanitize_filename()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L246",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_sanitize_filename",
+      "community": 323,
+      "norm_label": "._sanitize_filename()"
+    },
+    {
+      "label": "._format_timestamp()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_transcriptoryoutube_format_timestamp",
+      "community": 323,
+      "norm_label": "._format_timestamp()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L258",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_main",
+      "community": 323,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Criar diret\u00f3rios de sa\u00edda",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_38",
+      "community": 323,
+      "norm_label": "criar diretorios de saida"
+    },
+    {
+      "label": "Baixar v\u00eddeo do YouTube",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_43",
+      "community": 323,
+      "norm_label": "baixar video do youtube"
+    },
+    {
+      "label": "Extrair \u00e1udio do v\u00eddeo",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_64",
+      "community": 323,
+      "norm_label": "extrair audio do video"
+    },
+    {
+      "label": "Fallback: extrair \u00e1udio com pydub",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_91",
+      "community": 323,
+      "norm_label": "fallback: extrair audio com pydub"
+    },
+    {
+      "label": "Transcrever usando Google Speech Recognition",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_102",
+      "community": 323,
+      "norm_label": "transcrever usando google speech recognition"
+    },
+    {
+      "label": "Transcrever usando OpenAI Whisper",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_158",
+      "community": 323,
+      "norm_label": "transcrever usando openai whisper"
+    },
+    {
+      "label": "Transcrever \u00e1udio usando engine configurado",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L199",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_199",
+      "community": 323,
+      "norm_label": "transcrever audio usando engine configurado"
+    },
+    {
+      "label": "Salvar transcri\u00e7\u00e3o em TXT e JSON",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L206",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_206",
+      "community": 323,
+      "norm_label": "salvar transcricao em txt e json"
+    },
+    {
+      "label": "Limpar arquivos tempor\u00e1rios",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L237",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_237",
+      "community": 323,
+      "norm_label": "limpar arquivos temporarios"
+    },
+    {
+      "label": "Sanitizar nome de arquivo",
+      "file_type": "rationale",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L247",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_transcrever_rationale_247",
+      "community": 323,
+      "norm_label": "sanitizar nome de arquivo"
     },
     {
       "label": "SKILL.md",
@@ -5807,7 +6077,7 @@
       "label": "\ud83d\udd27 Ferramentas Criadas",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L20",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "claude_ferramentas_criadas",
       "community": 10,
@@ -5817,7 +6087,7 @@
       "label": "\ud83d\udcca API Endpoints",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L27",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "claude_api_endpoints",
       "community": 10,
@@ -5827,7 +6097,7 @@
       "label": "\ud83d\ude80 Como Usar",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L35",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "claude_como_usar",
       "community": 10,
@@ -5837,7 +6107,7 @@
       "label": "Commit e Push obrigat\u00f3rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L43",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "claude_commit_e_push_obrigat\u00f3rios",
       "community": 10,
@@ -5847,7 +6117,7 @@
       "label": "Graphify",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L53",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "claude_graphify",
       "community": 10,
@@ -5857,7 +6127,7 @@
       "label": "Nunca perguntar \u2014 sempre executar",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L63",
+      "source_location": "L65",
       "_origin": "ast",
       "id": "claude_nunca_perguntar_sempre_executar",
       "community": 10,
@@ -5867,7 +6137,7 @@
       "label": "Slides",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L69",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "claude_slides",
       "community": 10,
@@ -5877,7 +6147,7 @@
       "label": "Estrutura de Unidades Curriculares",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L73",
+      "source_location": "L75",
       "_origin": "ast",
       "id": "claude_estrutura_de_unidades_curriculares",
       "community": 10,
@@ -5887,7 +6157,7 @@
       "label": "Pasta PROFESSOR",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L84",
+      "source_location": "L86",
       "_origin": "ast",
       "id": "claude_pasta_professor",
       "community": 10,
@@ -5897,7 +6167,7 @@
       "label": "Estrutura obrigat\u00f3ria de cada UC",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L92",
+      "source_location": "L94",
       "_origin": "ast",
       "id": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
       "community": 10,
@@ -5907,7 +6177,7 @@
       "label": "Organiza\u00e7\u00e3o das provas pr\u00e1ticas de Introdu\u00e7\u00e3o \u00e0 TIC",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L102",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "claude_organiza\u00e7\u00e3o_das_provas_pr\u00e1ticas_de_introdu\u00e7\u00e3o_\u00e0_tic",
       "community": 10,
@@ -5917,7 +6187,7 @@
       "label": "\ud83d\udd14 Sistema de Pend\u00eancias \u2014 Regra Cr\u00edtica",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L110",
+      "source_location": "L112",
       "_origin": "ast",
       "id": "claude_sistema_de_pend\u00eancias_regra_cr\u00edtica",
       "community": 10,
@@ -5927,7 +6197,7 @@
       "label": "Defini\u00e7\u00e3o de Pend\u00eancias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L114",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "claude_defini\u00e7\u00e3o_de_pend\u00eancias",
       "community": 10,
@@ -5937,7 +6207,7 @@
       "label": "Implementa\u00e7\u00e3o Obrigat\u00f3ria",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L133",
+      "source_location": "L135",
       "_origin": "ast",
       "id": "claude_implementa\u00e7\u00e3o_obrigat\u00f3ria",
       "community": 10,
@@ -5947,7 +6217,7 @@
       "label": "\u274c O que N\u00c3O fazer",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L139",
+      "source_location": "L141",
       "_origin": "ast",
       "id": "claude_o_que_n\u00e3o_fazer",
       "community": 10,
@@ -5957,7 +6227,7 @@
       "label": "Fluxo Autom\u00e1tico de Pend\u00eancias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L146",
+      "source_location": "L148",
       "_origin": "ast",
       "id": "claude_fluxo_autom\u00e1tico_de_pend\u00eancias",
       "community": 10,
@@ -5967,7 +6237,7 @@
       "label": "\ud83d\udcca Estrutura da Tabela \"pendencias\"",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L159",
+      "source_location": "L161",
       "_origin": "ast",
       "id": "claude_estrutura_da_tabela_pendencias",
       "community": 10,
@@ -5977,7 +6247,7 @@
       "label": "\ud83d\udd04 Fluxo de Inser\u00e7\u00e3o de Pend\u00eancias",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L182",
+      "source_location": "L184",
       "_origin": "ast",
       "id": "claude_fluxo_de_inser\u00e7\u00e3o_de_pend\u00eancias",
       "community": 10,
@@ -5987,7 +6257,7 @@
       "label": "\u2705 Checklist de implementa\u00e7\u00e3o",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L196",
+      "source_location": "L198",
       "_origin": "ast",
       "id": "claude_checklist_de_implementa\u00e7\u00e3o",
       "community": 10,
@@ -5997,7 +6267,7 @@
       "label": "\ud83c\udfaf Implementa\u00e7\u00e3o Completa do Sistema de Pend\u00eancias (26-08-2026)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L208",
+      "source_location": "L210",
       "_origin": "ast",
       "id": "claude_implementa\u00e7\u00e3o_completa_do_sistema_de_pend\u00eancias_26_08_2026",
       "community": 10,
@@ -6007,7 +6277,7 @@
       "label": "\u2705 Funcionalidades Implementadas",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L210",
+      "source_location": "L212",
       "_origin": "ast",
       "id": "claude_funcionalidades_implementadas",
       "community": 10,
@@ -6017,7 +6287,7 @@
       "label": "1. **Cria\u00e7\u00e3o Autom\u00e1tica de Pend\u00eancias**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L212",
+      "source_location": "L214",
       "_origin": "ast",
       "id": "claude_1_cria\u00e7\u00e3o_autom\u00e1tica_de_pend\u00eancias",
       "community": 10,
@@ -6027,7 +6297,7 @@
       "label": "2. **Descri\u00e7\u00f5es Autom\u00e1ticas**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L218",
+      "source_location": "L220",
       "_origin": "ast",
       "id": "claude_2_descri\u00e7\u00f5es_autom\u00e1ticas",
       "community": 10,
@@ -6037,7 +6307,7 @@
       "label": "3. **Sincroniza\u00e7\u00e3o Bidirecional**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L235",
+      "source_location": "L237",
       "_origin": "ast",
       "id": "claude_3_sincroniza\u00e7\u00e3o_bidirecional",
       "community": 10,
@@ -6047,7 +6317,7 @@
       "label": "4. **Interface de Pend\u00eancias**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L241",
+      "source_location": "L243",
       "_origin": "ast",
       "id": "claude_4_interface_de_pend\u00eancias",
       "community": 10,
@@ -6057,7 +6327,7 @@
       "label": "5. **Campos da Tabela `pendencias`**",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L250",
+      "source_location": "L252",
       "_origin": "ast",
       "id": "claude_5_campos_da_tabela_pendencias",
       "community": 10,
@@ -6067,7 +6337,7 @@
       "label": "\ud83d\udccb Scripts SQL Necess\u00e1rios",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L274",
+      "source_location": "L276",
       "_origin": "ast",
       "id": "claude_scripts_sql_necess\u00e1rios",
       "community": 10,
@@ -6077,7 +6347,7 @@
       "label": "\u26a1 Ap\u00f3s SEMPRE atualizar graphify",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L281",
+      "source_location": "L283",
       "_origin": "ast",
       "id": "claude_ap\u00f3s_sempre_atualizar_graphify",
       "community": 10,
@@ -27160,7 +27430,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_4_c\u00e1lculo_mental_estimativas_e_problemas_cotidianos_2h",
-      "community": 363,
+      "community": 536,
       "norm_label": "encontro 4 \u2014 calculo mental, estimativas e problemas cotidianos (2h)"
     },
     {
@@ -27170,7 +27440,7 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_1_estrat\u00e9gias_de_c\u00e1lculo_mental",
-      "community": 363,
+      "community": 536,
       "norm_label": "4.1 estrategias de calculo mental"
     },
     {
@@ -27180,7 +27450,7 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_2_estimativas_e_arredondamento",
-      "community": 363,
+      "community": 536,
       "norm_label": "4.2 estimativas e arredondamento"
     },
     {
@@ -27190,7 +27460,7 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_3_problemas_contextualizados",
-      "community": 363,
+      "community": 536,
       "norm_label": "4.3 problemas contextualizados"
     },
     {
@@ -27200,7 +27470,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_1_4_individual_estimativas",
-      "community": 363,
+      "community": 536,
       "norm_label": "atividade 1.4 \u2014 individual (estimativas)"
     },
     {
@@ -27210,7 +27480,7 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_1_5_em_grupo_desafio",
-      "community": 363,
+      "community": 536,
       "norm_label": "atividade 1.5 \u2014 em grupo (desafio)"
     },
     {
@@ -27390,7 +27660,7 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_8_porcentagem_2h",
-      "community": 369,
+      "community": 349,
       "norm_label": "encontro 8 \u2014 porcentagem (2h)"
     },
     {
@@ -27400,7 +27670,7 @@
       "source_location": "L300",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_1_o_que_\u00e9_porcentagem",
-      "community": 369,
+      "community": 349,
       "norm_label": "8.1 o que e porcentagem"
     },
     {
@@ -27410,7 +27680,7 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_2_calcular_a_porcentagem_de_um_valor",
-      "community": 369,
+      "community": 349,
       "norm_label": "8.2 calcular a porcentagem de um valor"
     },
     {
@@ -27420,7 +27690,7 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_3_aumento_percentual",
-      "community": 369,
+      "community": 349,
       "norm_label": "8.3 aumento percentual"
     },
     {
@@ -27430,7 +27700,7 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_2_4_situa\u00e7\u00f5es_reais",
-      "community": 369,
+      "community": 349,
       "norm_label": "atividade 2.4 \u2014 situacoes reais"
     },
     {
@@ -28040,7 +28310,7 @@
       "source_location": "L702",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_22_l\u00f3gica_proposicional_introdut\u00f3ria_2h",
-      "community": 360,
+      "community": 537,
       "norm_label": "encontro 22 \u2014 logica proposicional introdutoria (2h)"
     },
     {
@@ -28050,7 +28320,7 @@
       "source_location": "L703",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_22_1_proposi\u00e7\u00f5es",
-      "community": 360,
+      "community": 537,
       "norm_label": "22.1 proposicoes"
     },
     {
@@ -28060,7 +28330,7 @@
       "source_location": "L709",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_22_2_conectivos_l\u00f3gicos",
-      "community": 360,
+      "community": 537,
       "norm_label": "22.2 conectivos logicos"
     },
     {
@@ -28070,7 +28340,7 @@
       "source_location": "L724",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_22_3_tabelas_verdade",
-      "community": 360,
+      "community": 537,
       "norm_label": "22.3 tabelas-verdade"
     },
     {
@@ -28080,7 +28350,7 @@
       "source_location": "L732",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_5_3",
-      "community": 360,
+      "community": 537,
       "norm_label": "atividade 5.3"
     },
     {
@@ -30872,6 +31142,16 @@
       "id": "converted_avalia\u00e7\u00e3o_de_comportamento_a01c2cbe_sheet_p\u00e1gina1",
       "community": 460,
       "norm_label": "sheet: pagina1"
+    },
+    {
+      "label": "Avalia\u00e7\u00e3o pr\u00e1tica banco de dados_2f108be0.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Avalia\u00e7\u00e3o pr\u00e1tica banco de dados_2f108be0.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_avalia\u00e7\u00e3o_pr\u00e1tica_banco_de_dados_2f108be0",
+      "community": 540,
+      "norm_label": "avaliacao pratica banco de dados_2f108be0.md"
     },
     {
       "label": "Checklist Prova Objetiva (1)_562d9353.md",
@@ -46360,7 +46640,7 @@
       "source_location": "L845",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_encontro_25_26_leitura_cr\u00edtica_e_an\u00e1lise_de_discurso_4h",
-      "community": 323,
+      "community": 539,
       "norm_label": "encontro 25-26 \u2014 leitura critica e analise de discurso (4h)"
     },
     {
@@ -46370,7 +46650,7 @@
       "source_location": "L847",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_objetivos_847",
-      "community": 323,
+      "community": 539,
       "norm_label": "objetivos"
     },
     {
@@ -46380,7 +46660,7 @@
       "source_location": "L854",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_texto_base_854",
-      "community": 323,
+      "community": 539,
       "norm_label": "texto base"
     },
     {
@@ -46390,7 +46670,7 @@
       "source_location": "L863",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_explica\u00e7\u00e3o_fato_x_opini\u00e3o",
-      "community": 323,
+      "community": 539,
       "norm_label": "explicacao: fato x opiniao"
     },
     {
@@ -46400,7 +46680,7 @@
       "source_location": "L878",
       "_origin": "ast",
       "id": "reforco_linguagens_apostila_reforco_linguagens_atividades_878",
-      "community": 323,
+      "community": 539,
       "norm_label": "atividades"
     },
     {
@@ -53602,6 +53882,406 @@
       "id": "syncdata_readme_autor",
       "community": 124,
       "norm_label": "\ud83d\udc64 autor"
+    },
+    {
+      "label": "QUICKSTART.md",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart",
+      "community": 369,
+      "norm_label": "quickstart.md"
+    },
+    {
+      "label": "Quick Start - Transcrever YouTube em 3 Passos",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_quick_start_transcrever_youtube_em_3_passos",
+      "community": 369,
+      "norm_label": "quick start - transcrever youtube em 3 passos"
+    },
+    {
+      "label": "1\ufe0f\u20e3 Instalar Depend\u00eancias",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_1_instalar_depend\u00eancias",
+      "community": 369,
+      "norm_label": "1\ufe0f\u20e3 instalar dependencias"
+    },
+    {
+      "label": "Windows (PowerShell)",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_windows_powershell",
+      "community": 369,
+      "norm_label": "windows (powershell)"
+    },
+    {
+      "label": "Windows (CMD)",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_windows_cmd",
+      "community": 369,
+      "norm_label": "windows (cmd)"
+    },
+    {
+      "label": "macOS / Linux",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_macos_linux",
+      "community": 369,
+      "norm_label": "macos / linux"
+    },
+    {
+      "label": "2\ufe0f\u20e3 Transcrever um V\u00eddeo",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_2_transcrever_um_v\u00eddeo",
+      "community": 369,
+      "norm_label": "2\ufe0f\u20e3 transcrever um video"
+    },
+    {
+      "label": "Op\u00e7\u00e3o A: Usar o Script Batch (Windows)",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_op\u00e7\u00e3o_a_usar_o_script_batch_windows",
+      "community": 369,
+      "norm_label": "opcao a: usar o script batch (windows)"
+    },
+    {
+      "label": "Op\u00e7\u00e3o B: Usar PowerShell (Windows)",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_op\u00e7\u00e3o_b_usar_powershell_windows",
+      "community": 369,
+      "norm_label": "opcao b: usar powershell (windows)"
+    },
+    {
+      "label": "Op\u00e7\u00e3o C: Usar Python Diretamente",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_op\u00e7\u00e3o_c_usar_python_diretamente",
+      "community": 369,
+      "norm_label": "opcao c: usar python diretamente"
+    },
+    {
+      "label": "3\ufe0f\u20e3 Encontrar os Resultados",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_3_encontrar_os_resultados",
+      "community": 369,
+      "norm_label": "3\ufe0f\u20e3 encontrar os resultados"
+    },
+    {
+      "label": "Exemplos Reais",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_exemplos_reais",
+      "community": 369,
+      "norm_label": "exemplos reais"
+    },
+    {
+      "label": "YouTube Aula SENAI",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_youtube_aula_senai",
+      "community": 369,
+      "norm_label": "youtube aula senai"
+    },
+    {
+      "label": "Usando OpenAI Whisper (melhor qualidade)",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_usando_openai_whisper_melhor_qualidade",
+      "community": 369,
+      "norm_label": "usando openai whisper (melhor qualidade)"
+    },
+    {
+      "label": "Salvar com nome customizado",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_salvar_com_nome_customizado",
+      "community": 369,
+      "norm_label": "salvar com nome customizado"
+    },
+    {
+      "label": "D\u00favidas Comuns",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_d\u00favidas_comuns",
+      "community": 369,
+      "norm_label": "duvidas comuns"
+    },
+    {
+      "label": "\u2753 Qual motor \u00e9 melhor?",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_qual_motor_\u00e9_melhor",
+      "community": 369,
+      "norm_label": "\u2753 qual motor e melhor?"
+    },
+    {
+      "label": "\u2753 Quanto tempo leva?",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_quanto_tempo_leva",
+      "community": 369,
+      "norm_label": "\u2753 quanto tempo leva?"
+    },
+    {
+      "label": "\u2753 Posso transcrever v\u00eddeos privados?",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_posso_transcrever_v\u00eddeos_privados",
+      "community": 369,
+      "norm_label": "\u2753 posso transcrever videos privados?"
+    },
+    {
+      "label": "\u2753 Qual \u00e9 o limite de tamanho?",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_qual_\u00e9_o_limite_de_tamanho",
+      "community": 369,
+      "norm_label": "\u2753 qual e o limite de tamanho?"
+    },
+    {
+      "label": "\u2753 Preciso de FFmpeg?",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_preciso_de_ffmpeg",
+      "community": 369,
+      "norm_label": "\u2753 preciso de ffmpeg?"
+    },
+    {
+      "label": "Configura\u00e7\u00e3o Avan\u00e7ada",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_configura\u00e7\u00e3o_avan\u00e7ada",
+      "community": 369,
+      "norm_label": "configuracao avancada"
+    },
+    {
+      "label": "Suporte",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_quickstart_suporte",
+      "community": 369,
+      "norm_label": "suporte"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme",
+      "community": 534,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Transcrever V\u00eddeos do YouTube",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube",
+      "community": 534,
+      "norm_label": "transcrever videos do youtube"
+    },
+    {
+      "label": "Funcionalidades",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_funcionalidades",
+      "community": 534,
+      "norm_label": "funcionalidades"
+    },
+    {
+      "label": "Instala\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_instala\u00e7\u00e3o",
+      "community": 534,
+      "norm_label": "instalacao"
+    },
+    {
+      "label": "Uso",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_uso",
+      "community": 534,
+      "norm_label": "uso"
+    },
+    {
+      "label": "Transcrever um v\u00eddeo",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_transcrever_um_v\u00eddeo",
+      "community": 534,
+      "norm_label": "transcrever um video"
+    },
+    {
+      "label": "Op\u00e7\u00f5es adicionais",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_op\u00e7\u00f5es_adicionais",
+      "community": 534,
+      "norm_label": "opcoes adicionais"
+    },
+    {
+      "label": "Configura\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_configura\u00e7\u00e3o",
+      "community": 534,
+      "norm_label": "configuracao"
+    },
+    {
+      "label": "Usando Google Speech Recognition (Gratuito)",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_usando_google_speech_recognition_gratuito",
+      "community": 534,
+      "norm_label": "usando google speech recognition (gratuito)"
+    },
+    {
+      "label": "Usando OpenAI Whisper (Recomendado)",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_usando_openai_whisper_recomendado",
+      "community": 534,
+      "norm_label": "usando openai whisper (recomendado)"
+    },
+    {
+      "label": "Estrutura de Arquivos",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_estrutura_de_arquivos",
+      "community": 534,
+      "norm_label": "estrutura de arquivos"
+    },
+    {
+      "label": "Troubleshooting",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_troubleshooting",
+      "community": 534,
+      "norm_label": "troubleshooting"
+    },
+    {
+      "label": "\"ModuleNotFoundError\"",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_modulenotfounderror",
+      "community": 534,
+      "norm_label": "\"modulenotfounderror\""
+    },
+    {
+      "label": "\"V\u00eddeo n\u00e3o encontrado\"",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_v\u00eddeo_n\u00e3o_encontrado",
+      "community": 534,
+      "norm_label": "\"video nao encontrado\""
+    },
+    {
+      "label": "\"Transcri\u00e7\u00e3o lenta\"",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_transcri\u00e7\u00e3o_lenta",
+      "community": 534,
+      "norm_label": "\"transcricao lenta\""
+    },
+    {
+      "label": "Limita\u00e7\u00f5es",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_limita\u00e7\u00f5es",
+      "community": 534,
+      "norm_label": "limitacoes"
+    },
+    {
+      "label": "Autor",
+      "file_type": "document",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "transcrever_video_youtube_readme_autor",
+      "community": 534,
+      "norm_label": "autor"
     }
   ],
   "links": [
@@ -58438,9 +59118,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/generator_docx.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "substituicoes_generator_docx",
-      "target": "substituicoes_generator_docx_determine_lines_needed",
-      "confidence_score": 1.0
+      "target": "substituicoes_generator_docx_determine_lines_needed"
     },
     {
       "relation": "contains",
@@ -58448,9 +59128,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/generator_docx.py",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "substituicoes_generator_docx",
-      "target": "substituicoes_generator_docx_main",
-      "confidence_score": 1.0
+      "target": "substituicoes_generator_docx_main"
     },
     {
       "relation": "contains",
@@ -58458,9 +59138,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/generator_docx.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "substituicoes_generator_docx",
-      "target": "substituicoes_generator_docx_markdown_to_docx",
-      "confidence_score": 1.0
+      "target": "substituicoes_generator_docx_markdown_to_docx"
     },
     {
       "relation": "calls",
@@ -58469,9 +59149,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/generator_docx.py",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "substituicoes_generator_docx_markdown_to_docx",
-      "target": "substituicoes_generator_docx_determine_lines_needed",
-      "confidence_score": 1.0
+      "target": "substituicoes_generator_docx_determine_lines_needed"
     },
     {
       "relation": "rationale_for",
@@ -58479,9 +59159,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/generator_docx.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "substituicoes_generator_docx_rationale_22",
-      "target": "substituicoes_generator_docx_determine_lines_needed",
-      "confidence_score": 1.0
+      "target": "substituicoes_generator_docx_determine_lines_needed"
     },
     {
       "relation": "calls",
@@ -58490,9 +59170,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/generator_docx.py",
       "source_location": "L200",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "substituicoes_generator_docx_main",
-      "target": "substituicoes_generator_docx_markdown_to_docx",
-      "confidence_score": 1.0
+      "target": "substituicoes_generator_docx_markdown_to_docx"
     },
     {
       "relation": "rationale_for",
@@ -58500,9 +59180,9 @@
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/substituicoes/generator_docx.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "substituicoes_generator_docx_rationale_58",
-      "target": "substituicoes_generator_docx_markdown_to_docx",
-      "confidence_score": 1.0
+      "target": "substituicoes_generator_docx_markdown_to_docx"
     },
     {
       "relation": "contains",
@@ -61127,6 +61807,399 @@
       "confidence_score": 1.0,
       "source": "src_verify_uc_verificartodasucs",
       "target": "src_verify_uc_verificarestrutuauc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.ps1",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_ps1_transcrever_video_youtube_transcrever",
+      "target": "transcrever_video_youtube_transcrever_show_help"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L258",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_py_transcrever_video_youtube_transcrever",
+      "target": "transcrever_video_youtube_transcrever_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_py_transcrever_video_youtube_transcrever",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L275",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_main",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_baixar_video"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio_pydub"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L251",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_format_timestamp"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_init"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L236",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_limpar_temporarios"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L205",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_salvar_resultados"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L246",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_sanitize_filename"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_setup_dirs"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L198",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever_google"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever_whisper"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube_init",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_setup_dirs"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_38",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_setup_dirs"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L281",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_main",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_baixar_video"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_43",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_baixar_video"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L284",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_main",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_64",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio_pydub"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_sanitize_filename"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_91",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_extrair_audio_pydub"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_102",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever_google"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L203",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever_google"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_158",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever_whisper"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L201",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever_whisper"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L183",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever_whisper",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_format_timestamp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L287",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_main",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_199",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_transcrever"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L290",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_main",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_salvar_resultados"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L206",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_206",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_salvar_resultados"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_transcriptoryoutube_salvar_resultados",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_sanitize_filename"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L294",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_main",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_limpar_temporarios"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L237",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_237",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_limpar_temporarios"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/transcrever.py",
+      "source_location": "L247",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_transcrever_rationale_247",
+      "target": "transcrever_video_youtube_transcrever_transcriptoryoutube_sanitize_filename"
     },
     {
       "relation": "contains",
@@ -86474,9 +87547,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_d42bab3f.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_d42bab3f",
-      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_atividade_epis\u00f3dio_01",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_atividade_epis\u00f3dio_01"
     },
     {
       "relation": "contains",
@@ -86484,9 +87557,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_d42bab3f.md",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_d42bab3f_atividade_epis\u00f3dio_01",
-      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_gabarito_para_professor",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_gabarito_para_professor"
     },
     {
       "relation": "contains",
@@ -86494,9 +87567,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_d42bab3f.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_d42bab3f_atividade_epis\u00f3dio_01",
-      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_pontua\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_pontua\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -86504,9 +87577,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_d42bab3f.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_d42bab3f_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_se\u00e7\u00e3o_b_verdadeiro_ou_falso",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_se\u00e7\u00e3o_b_verdadeiro_ou_falso"
     },
     {
       "relation": "contains",
@@ -86514,9 +87587,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_d42bab3f.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_d42bab3f_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_se\u00e7\u00e3o_c_m\u00faltipla_escolha",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_d42bab3f_se\u00e7\u00e3o_c_m\u00faltipla_escolha"
     },
     {
       "relation": "contains",
@@ -86524,9 +87597,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_dd640649.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_dd640649",
-      "target": "converted_gabarito_atividade_episodio_01_dd640649_atividade_epis\u00f3dio_01",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_dd640649_atividade_epis\u00f3dio_01"
     },
     {
       "relation": "contains",
@@ -86534,9 +87607,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_dd640649.md",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_dd640649_atividade_epis\u00f3dio_01",
-      "target": "converted_gabarito_atividade_episodio_01_dd640649_gabarito_para_professor",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_dd640649_gabarito_para_professor"
     },
     {
       "relation": "contains",
@@ -86544,9 +87617,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_dd640649.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_dd640649_atividade_epis\u00f3dio_01",
-      "target": "converted_gabarito_atividade_episodio_01_dd640649_pontua\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_dd640649_pontua\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -86554,9 +87627,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_dd640649.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_dd640649_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_01_dd640649_se\u00e7\u00e3o_b_verdadeiro_ou_falso",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_dd640649_se\u00e7\u00e3o_b_verdadeiro_ou_falso"
     },
     {
       "relation": "contains",
@@ -86564,9 +87637,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-01_dd640649.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_01_dd640649_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_01_dd640649_se\u00e7\u00e3o_c_m\u00faltipla_escolha",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_01_dd640649_se\u00e7\u00e3o_c_m\u00faltipla_escolha"
     },
     {
       "relation": "contains",
@@ -86574,9 +87647,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_15289f48.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_15289f48",
-      "target": "converted_gabarito_atividade_episodio_02_15289f48_atividade_epis\u00f3dio_02",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_15289f48_atividade_epis\u00f3dio_02"
     },
     {
       "relation": "contains",
@@ -86584,9 +87657,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_15289f48.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_15289f48_atividade_epis\u00f3dio_02",
-      "target": "converted_gabarito_atividade_episodio_02_15289f48_desafio_extra_b\u00f4nus_10_pontos",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_15289f48_desafio_extra_b\u00f4nus_10_pontos"
     },
     {
       "relation": "contains",
@@ -86594,9 +87667,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_15289f48.md",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_15289f48_atividade_epis\u00f3dio_02",
-      "target": "converted_gabarito_atividade_episodio_02_15289f48_gabarito_para_professor",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_15289f48_gabarito_para_professor"
     },
     {
       "relation": "contains",
@@ -86604,9 +87677,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_15289f48.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_15289f48_atividade_epis\u00f3dio_02",
-      "target": "converted_gabarito_atividade_episodio_02_15289f48_pontua\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_15289f48_pontua\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -86614,9 +87687,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_15289f48.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_15289f48_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_02_15289f48_se\u00e7\u00e3o_b_associar_conceitos",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_15289f48_se\u00e7\u00e3o_b_associar_conceitos"
     },
     {
       "relation": "contains",
@@ -86624,9 +87697,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_15289f48.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_15289f48_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_02_15289f48_se\u00e7\u00e3o_c_m\u00faltipla_escolha",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_15289f48_se\u00e7\u00e3o_c_m\u00faltipla_escolha"
     },
     {
       "relation": "contains",
@@ -86634,9 +87707,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_15289f48.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_15289f48_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_02_15289f48_se\u00e7\u00e3o_f_pensamento_computacional",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_15289f48_se\u00e7\u00e3o_f_pensamento_computacional"
     },
     {
       "relation": "contains",
@@ -86644,9 +87717,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_1c7d8ab3.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_1c7d8ab3",
-      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_atividade_epis\u00f3dio_02",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_atividade_epis\u00f3dio_02"
     },
     {
       "relation": "contains",
@@ -86654,9 +87727,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_1c7d8ab3.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_1c7d8ab3_atividade_epis\u00f3dio_02",
-      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_desafio_extra_b\u00f4nus_10_pontos",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_desafio_extra_b\u00f4nus_10_pontos"
     },
     {
       "relation": "contains",
@@ -86664,9 +87737,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_1c7d8ab3.md",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_1c7d8ab3_atividade_epis\u00f3dio_02",
-      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_gabarito_para_professor",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_gabarito_para_professor"
     },
     {
       "relation": "contains",
@@ -86674,9 +87747,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_1c7d8ab3.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_1c7d8ab3_atividade_epis\u00f3dio_02",
-      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_pontua\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_pontua\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -86684,9 +87757,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_1c7d8ab3.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_1c7d8ab3_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_se\u00e7\u00e3o_b_associar_conceitos",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_se\u00e7\u00e3o_b_associar_conceitos"
     },
     {
       "relation": "contains",
@@ -86694,9 +87767,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_1c7d8ab3.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_1c7d8ab3_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_se\u00e7\u00e3o_c_m\u00faltipla_escolha",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_se\u00e7\u00e3o_c_m\u00faltipla_escolha"
     },
     {
       "relation": "contains",
@@ -86704,9 +87777,9 @@
       "source_file": "graphify-out/converted/GABARITO-ATIVIDADE-EPISODIO-02_1c7d8ab3.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "converted_gabarito_atividade_episodio_02_1c7d8ab3_gabarito_para_professor",
-      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_se\u00e7\u00e3o_f_pensamento_computacional",
-      "confidence_score": 1.0
+      "target": "converted_gabarito_atividade_episodio_02_1c7d8ab3_se\u00e7\u00e3o_f_pensamento_computacional"
     },
     {
       "relation": "contains",
@@ -107497,8 +108570,388 @@
       "confidence_score": 1.0,
       "source": "syncdata_readme_troubleshooting",
       "target": "syncdata_readme_servidor_n\u00e3o_conecta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart",
+      "target": "transcrever_video_youtube_quickstart_quick_start_transcrever_youtube_em_3_passos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_quick_start_transcrever_youtube_em_3_passos",
+      "target": "transcrever_video_youtube_quickstart_1_instalar_depend\u00eancias"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_quick_start_transcrever_youtube_em_3_passos",
+      "target": "transcrever_video_youtube_quickstart_2_transcrever_um_v\u00eddeo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_quick_start_transcrever_youtube_em_3_passos",
+      "target": "transcrever_video_youtube_quickstart_3_encontrar_os_resultados"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_quick_start_transcrever_youtube_em_3_passos",
+      "target": "transcrever_video_youtube_quickstart_configura\u00e7\u00e3o_avan\u00e7ada"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_quick_start_transcrever_youtube_em_3_passos",
+      "target": "transcrever_video_youtube_quickstart_d\u00favidas_comuns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_quick_start_transcrever_youtube_em_3_passos",
+      "target": "transcrever_video_youtube_quickstart_exemplos_reais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_quick_start_transcrever_youtube_em_3_passos",
+      "target": "transcrever_video_youtube_quickstart_suporte"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_1_instalar_depend\u00eancias",
+      "target": "transcrever_video_youtube_quickstart_macos_linux"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_1_instalar_depend\u00eancias",
+      "target": "transcrever_video_youtube_quickstart_windows_cmd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_1_instalar_depend\u00eancias",
+      "target": "transcrever_video_youtube_quickstart_windows_powershell"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_2_transcrever_um_v\u00eddeo",
+      "target": "transcrever_video_youtube_quickstart_op\u00e7\u00e3o_a_usar_o_script_batch_windows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_2_transcrever_um_v\u00eddeo",
+      "target": "transcrever_video_youtube_quickstart_op\u00e7\u00e3o_b_usar_powershell_windows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_2_transcrever_um_v\u00eddeo",
+      "target": "transcrever_video_youtube_quickstart_op\u00e7\u00e3o_c_usar_python_diretamente"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_exemplos_reais",
+      "target": "transcrever_video_youtube_quickstart_salvar_com_nome_customizado"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_exemplos_reais",
+      "target": "transcrever_video_youtube_quickstart_usando_openai_whisper_melhor_qualidade"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_exemplos_reais",
+      "target": "transcrever_video_youtube_quickstart_youtube_aula_senai"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_d\u00favidas_comuns",
+      "target": "transcrever_video_youtube_quickstart_posso_transcrever_v\u00eddeos_privados"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_d\u00favidas_comuns",
+      "target": "transcrever_video_youtube_quickstart_preciso_de_ffmpeg"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_d\u00favidas_comuns",
+      "target": "transcrever_video_youtube_quickstart_qual_motor_\u00e9_melhor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_d\u00favidas_comuns",
+      "target": "transcrever_video_youtube_quickstart_qual_\u00e9_o_limite_de_tamanho"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/QUICKSTART.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_quickstart_d\u00favidas_comuns",
+      "target": "transcrever_video_youtube_quickstart_quanto_tempo_leva"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme",
+      "target": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube",
+      "target": "transcrever_video_youtube_readme_autor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube",
+      "target": "transcrever_video_youtube_readme_configura\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube",
+      "target": "transcrever_video_youtube_readme_estrutura_de_arquivos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube",
+      "target": "transcrever_video_youtube_readme_funcionalidades"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube",
+      "target": "transcrever_video_youtube_readme_instala\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube",
+      "target": "transcrever_video_youtube_readme_limita\u00e7\u00f5es"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube",
+      "target": "transcrever_video_youtube_readme_troubleshooting"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_transcrever_v\u00eddeos_do_youtube",
+      "target": "transcrever_video_youtube_readme_uso"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_uso",
+      "target": "transcrever_video_youtube_readme_op\u00e7\u00f5es_adicionais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_uso",
+      "target": "transcrever_video_youtube_readme_transcrever_um_v\u00eddeo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_configura\u00e7\u00e3o",
+      "target": "transcrever_video_youtube_readme_usando_google_speech_recognition_gratuito"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_configura\u00e7\u00e3o",
+      "target": "transcrever_video_youtube_readme_usando_openai_whisper_recomendado"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_troubleshooting",
+      "target": "transcrever_video_youtube_readme_modulenotfounderror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_troubleshooting",
+      "target": "transcrever_video_youtube_readme_transcri\u00e7\u00e3o_lenta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "transcrever-video-youtube/README.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "transcrever_video_youtube_readme_troubleshooting",
+      "target": "transcrever_video_youtube_readme_v\u00eddeo_n\u00e3o_encontrado"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "88a411f1e4980963da073573fbf1f6ea7f0245dd"
+  "built_at_commit": "c1a9e5478300553e3a7bd421f9e80ade48071d65"
 }
