@@ -3414,10 +3414,30 @@
       "norm_label": "preview"
     },
     {
-      "label": "devDependencies",
+      "label": "server",
+      "file_type": "code",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "pendencias_professor_package_scripts_server",
+      "community": 497,
+      "norm_label": "server"
+    },
+    {
+      "label": "start",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L11",
+      "_origin": "ast",
+      "id": "pendencias_professor_package_scripts_start",
+      "community": 497,
+      "norm_label": "start"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "pendencias_professor_package_devdependencies",
       "community": 497,
@@ -3427,11 +3447,41 @@
       "label": "vite",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
-      "source_location": "L12",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "pendencias_professor_package_devdependencies_vite",
       "community": 497,
       "norm_label": "vite"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "pendencias_professor_package_dependencies",
+      "community": 497,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "concurrently",
+      "file_type": "code",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "pendencias_professor_package_dependencies_concurrently",
+      "community": 497,
+      "norm_label": "concurrently"
+    },
+    {
+      "label": "json-server",
+      "file_type": "code",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "pendencias_professor_package_dependencies_json_server",
+      "community": 497,
+      "norm_label": "json-server"
     },
     {
       "label": "counter.js",
@@ -3464,22 +3514,22 @@
       "norm_label": "main.js"
     },
     {
-      "label": "PendenciaManager",
+      "label": "MateriasManager",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L2",
+      "source_location": "L3",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager",
+      "id": "src_main_materiasmanager",
       "community": 364,
-      "norm_label": "pendenciamanager"
+      "norm_label": "materiasmanager"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L3",
+      "source_location": "L4",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_constructor",
+      "id": "src_main_materiasmanager_constructor",
       "community": 364,
       "norm_label": ".constructor()"
     },
@@ -3487,49 +3537,79 @@
       "label": ".init()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L10",
+      "source_location": "L15",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_init",
+      "id": "src_main_materiasmanager_init",
       "community": 364,
       "norm_label": ".init()"
     },
     {
-      "label": ".carregarDoDados()",
+      "label": ".carregarMaterias()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L15",
+      "source_location": "L21",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_carregardodados",
+      "id": "src_main_materiasmanager_carregarmaterias",
       "community": 364,
-      "norm_label": ".carregardodados()"
+      "norm_label": ".carregarmaterias()"
     },
     {
-      "label": ".salvarNoDados()",
+      "label": ".salvarMateria()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L104",
+      "source_location": "L32",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_salvarnodados",
+      "id": "src_main_materiasmanager_salvarmateria",
       "community": 364,
-      "norm_label": ".salvarnodados()"
+      "norm_label": ".salvarmateria()"
+    },
+    {
+      "label": ".deletarMateria()",
+      "file_type": "code",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "src_main_materiasmanager_deletarmateria",
+      "community": 364,
+      "norm_label": ".deletarmateria()"
     },
     {
       "label": ".vincularEventos()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L108",
+      "source_location": "L76",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_vinculareventos",
+      "id": "src_main_materiasmanager_vinculareventos",
       "community": 364,
       "norm_label": ".vinculareventos()"
+    },
+    {
+      "label": ".atualizarFiltrosStatus()",
+      "file_type": "code",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "src_main_materiasmanager_atualizarfiltrosstatus",
+      "community": 364,
+      "norm_label": ".atualizarfiltrosstatus()"
+    },
+    {
+      "label": ".resetarFiltros()",
+      "file_type": "code",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "src_main_materiasmanager_resetarfiltros",
+      "community": 364,
+      "norm_label": ".resetarfiltros()"
     },
     {
       "label": ".abrirFormularioNova()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L162",
+      "source_location": "L153",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_abrirformularionova",
+      "id": "src_main_materiasmanager_abrirformularionova",
       "community": 364,
       "norm_label": ".abrirformularionova()"
     },
@@ -3537,9 +3617,9 @@
       "label": ".abrirFormularioEdicao()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L169",
+      "source_location": "L160",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_abrirformularioedicao",
+      "id": "src_main_materiasmanager_abrirformularioedicao",
       "community": 364,
       "norm_label": ".abrirformularioedicao()"
     },
@@ -3547,9 +3627,9 @@
       "label": ".abrirFormulario()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L189",
+      "source_location": "L185",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_abrirformulario",
+      "id": "src_main_materiasmanager_abrirformulario",
       "community": 364,
       "norm_label": ".abrirformulario()"
     },
@@ -3557,29 +3637,29 @@
       "label": ".fecharFormulario()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L193",
+      "source_location": "L189",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_fecharformulario",
+      "id": "src_main_materiasmanager_fecharformulario",
       "community": 364,
       "norm_label": ".fecharformulario()"
     },
     {
-      "label": ".salvarPendencia()",
+      "label": ".coletarFormulario()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L198",
+      "source_location": "L194",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_salvarpendencia",
+      "id": "src_main_materiasmanager_coletarformulario",
       "community": 364,
-      "norm_label": ".salvarpendencia()"
+      "norm_label": ".coletarformulario()"
     },
     {
       "label": ".abrirModalDelecao()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L253",
+      "source_location": "L229",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_abrirmodaldelecao",
+      "id": "src_main_materiasmanager_abrirmodaldelecao",
       "community": 364,
       "norm_label": ".abrirmodaldelecao()"
     },
@@ -3587,9 +3667,9 @@
       "label": ".fecharModalDelecao()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L263",
+      "source_location": "L238",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_fecharmodaldelecao",
+      "id": "src_main_materiasmanager_fecharmodaldelecao",
       "community": 364,
       "norm_label": ".fecharmodaldelecao()"
     },
@@ -3597,79 +3677,69 @@
       "label": ".confirmarDelecao()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L268",
+      "source_location": "L243",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_confirmardelecao",
+      "id": "src_main_materiasmanager_confirmardelecao",
       "community": 364,
       "norm_label": ".confirmardelecao()"
-    },
-    {
-      "label": ".togglePendencia()",
-      "file_type": "code",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L277",
-      "_origin": "ast",
-      "id": "src_main_pendenciamanager_togglependencia",
-      "community": 364,
-      "norm_label": ".togglependencia()"
     },
     {
       "label": ".aplicarFiltros()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L287",
+      "source_location": "L250",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_aplicarfiltros",
+      "id": "src_main_materiasmanager_aplicarfiltros",
       "community": 364,
       "norm_label": ".aplicarfiltros()"
     },
     {
-      "label": ".renderizarPendencias()",
+      "label": ".renderizarMaterias()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L302",
+      "source_location": "L263",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_renderizarpendencias",
+      "id": "src_main_materiasmanager_renderizarmaterias",
       "community": 364,
-      "norm_label": ".renderizarpendencias()"
+      "norm_label": ".renderizarmaterias()"
     },
     {
       "label": ".atualizarEstatisticas()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L307",
+      "source_location": "L268",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_atualizarestatisticas",
+      "id": "src_main_materiasmanager_atualizarestatisticas",
       "community": 364,
       "norm_label": ".atualizarestatisticas()"
     },
     {
-      "label": ".renderizarPendenciasCustomizadas()",
+      "label": ".renderizarMateriasFiltradas()",
+      "file_type": "code",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L278",
+      "_origin": "ast",
+      "id": "src_main_materiasmanager_renderizarmateriasfiltradas",
+      "community": 364,
+      "norm_label": ".renderizarmateriasfiltradas()"
+    },
+    {
+      "label": ".criarCardMateria()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
       "source_location": "L317",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_renderizarpendenciascustomizadas",
+      "id": "src_main_materiasmanager_criarcardmateria",
       "community": 364,
-      "norm_label": ".renderizarpendenciascustomizadas()"
-    },
-    {
-      "label": ".criarCardPendencia()",
-      "file_type": "code",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L365",
-      "_origin": "ast",
-      "id": "src_main_pendenciamanager_criarcardpendencia",
-      "community": 364,
-      "norm_label": ".criarcardpendencia()"
+      "norm_label": ".criarcardmateria()"
     },
     {
       "label": ".escaparHtml()",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L413",
+      "source_location": "L370",
       "_origin": "ast",
-      "id": "src_main_pendenciamanager_escaparhtml",
+      "id": "src_main_materiasmanager_escaparhtml",
       "community": 364,
       "norm_label": ".escaparhtml()"
     },
@@ -3677,7 +3747,7 @@
       "label": "app",
       "file_type": "code",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L421",
+      "source_location": "L377",
       "_origin": "ast",
       "id": "src_main_app",
       "community": 364,
@@ -23954,6 +24024,36 @@
       "norm_label": "observacoes"
     },
     {
+      "label": "1. CT Desenvolvimento de Sistemas_Aula Presencial_Testes de Sistemas_3fcfe335.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/1. CT Desenvolvimento de Sistemas_Aula Presencial_Testes de Sistemas_3fcfe335.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_1_ct_desenvolvimento_de_sistemas_aula_presencial_testes_de_sistemas_3fcfe335",
+      "community": 576,
+      "norm_label": "1. ct desenvolvimento de sistemas_aula presencial_testes de sistemas_3fcfe335.md"
+    },
+    {
+      "label": "2. Exame final [ALUNO]_UC Testes de Sistemas_be2e6d3f.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/2. Exame final [ALUNO]_UC Testes de Sistemas_be2e6d3f.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_2_exame_final_aluno_uc_testes_de_sistemas_be2e6d3f",
+      "community": 577,
+      "norm_label": "2. exame final [aluno]_uc testes de sistemas_be2e6d3f.md"
+    },
+    {
+      "label": "3. Exame final [GABARITO]_UC Testes de Sistemas_58f87bd0.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/3. Exame final [GABARITO]_UC Testes de Sistemas_58f87bd0.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_3_exame_final_gabarito_uc_testes_de_sistemas_58f87bd0",
+      "community": 578,
+      "norm_label": "3. exame final [gabarito]_uc testes de sistemas_58f87bd0.md"
+    },
+    {
       "label": "APOSTILA_Introducao_Comunicacao_Oral_Escrita_Versao_Codex_1b54a92b.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/APOSTILA_Introducao_Comunicacao_Oral_Escrita_Versao_Codex_1b54a92b.md",
@@ -28680,7 +28780,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319",
-      "community": 373,
+      "community": 397,
       "norm_label": "apostila_raciocinio_logico_professor_88dbc319.md"
     },
     {
@@ -28690,7 +28790,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_rio_do_sul_mais_tech",
-      "community": 373,
+      "community": 397,
       "norm_label": "rio do sul mais tech"
     },
     {
@@ -28700,7 +28800,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_senai_prefeitura_municipal_de_rio_do_sul",
-      "community": 373,
+      "community": 397,
       "norm_label": "senai / prefeitura municipal de rio do sul"
     },
     {
@@ -28930,7 +29030,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_4_c\u00e1lculo_mental_estimativas_e_problemas_cotidianos_2h",
-      "community": 363,
+      "community": 564,
       "norm_label": "encontro 4 \u2014 calculo mental, estimativas e problemas cotidianos (2h)"
     },
     {
@@ -28940,7 +29040,7 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_1_estrat\u00e9gias_de_c\u00e1lculo_mental",
-      "community": 363,
+      "community": 564,
       "norm_label": "4.1 estrategias de calculo mental"
     },
     {
@@ -28950,7 +29050,7 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_2_estimativas_e_arredondamento",
-      "community": 363,
+      "community": 564,
       "norm_label": "4.2 estimativas e arredondamento"
     },
     {
@@ -28960,7 +29060,7 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_4_3_problemas_contextualizados",
-      "community": 363,
+      "community": 564,
       "norm_label": "4.3 problemas contextualizados"
     },
     {
@@ -28970,7 +29070,7 @@
       "source_location": "L189",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_1_4_individual_estimativas",
-      "community": 363,
+      "community": 564,
       "norm_label": "atividade 1.4 \u2014 individual (estimativas)"
     },
     {
@@ -28980,7 +29080,7 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_1_5_em_grupo_desafio",
-      "community": 363,
+      "community": 564,
       "norm_label": "atividade 1.5 \u2014 em grupo (desafio)"
     },
     {
@@ -29160,7 +29260,7 @@
       "source_location": "L299",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_encontro_8_porcentagem_2h",
-      "community": 539,
+      "community": 349,
       "norm_label": "encontro 8 \u2014 porcentagem (2h)"
     },
     {
@@ -29170,7 +29270,7 @@
       "source_location": "L300",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_1_o_que_\u00e9_porcentagem",
-      "community": 539,
+      "community": 349,
       "norm_label": "8.1 o que e porcentagem"
     },
     {
@@ -29180,7 +29280,7 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_2_calcular_a_porcentagem_de_um_valor",
-      "community": 539,
+      "community": 349,
       "norm_label": "8.2 calcular a porcentagem de um valor"
     },
     {
@@ -29190,7 +29290,7 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_8_3_aumento_percentual",
-      "community": 539,
+      "community": 349,
       "norm_label": "8.3 aumento percentual"
     },
     {
@@ -29200,7 +29300,7 @@
       "source_location": "L326",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_atividade_2_4_situa\u00e7\u00f5es_reais",
-      "community": 539,
+      "community": 349,
       "norm_label": "atividade 2.4 \u2014 situacoes reais"
     },
     {
@@ -30370,7 +30470,7 @@
       "source_location": "L1124",
       "_origin": "ast",
       "id": "converted_apostila_raciocinio_logico_professor_88dbc319_refer\u00eancias",
-      "community": 373,
+      "community": 397,
       "norm_label": "referencias"
     },
     {
@@ -32494,6 +32594,16 @@
       "norm_label": "sheet: pagina1"
     },
     {
+      "label": "Avaliacao_Pr\u00e1tica_1_ TESI_a8155d99.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Avaliacao_Pr\u00e1tica_1_ TESI_a8155d99.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_avaliacao_pr\u00e1tica_1_tesi_a8155d99",
+      "community": 580,
+      "norm_label": "avaliacao_pratica_1_ tesi_a8155d99.md"
+    },
+    {
       "label": "Avalia\u00e7\u00e3o Pr\u00e1tica - Google Workspace_52410a98.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Avalia\u00e7\u00e3o Pr\u00e1tica - Google Workspace_52410a98.md",
@@ -34164,6 +34274,26 @@
       "norm_label": "conclusao"
     },
     {
+      "label": "GestaoControleMateriais_456h_85450192.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/GestaoControleMateriais_456h_85450192.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_gestaocontrolemateriais_456h_85450192",
+      "community": 573,
+      "norm_label": "gestaocontrolemateriais_456h_85450192.md"
+    },
+    {
+      "label": "CONTE\u00daDOS REFERIDOS NA PORTARIA MTE 3.872/23:",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/GestaoControleMateriais_456h_85450192.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "converted_gestaocontrolemateriais_456h_85450192_conte\u00fados_referidos_na_portaria_mte_3_872_23",
+      "community": 573,
+      "norm_label": "conteudos referidos na portaria mte 3.872/23:"
+    },
+    {
       "label": "INVENTARIO_DA_EQUIPE-06_a838f259.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/INVENTARIO_DA_EQUIPE-06_a838f259.md",
@@ -35074,6 +35204,16 @@
       "norm_label": "recuperacao_prova_pratica_4916d15e.md"
     },
     {
+      "label": "SA e PLANO DE AULA_TESTE DE SISTEMAS_DESENVOLVIMENTO DE SISTEMAS_96a0a770.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/SA e PLANO DE AULA_TESTE DE SISTEMAS_DESENVOLVIMENTO DE SISTEMAS_96a0a770.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_sa_e_plano_de_aula_teste_de_sistemas_desenvolvimento_de_sistemas_96a0a770",
+      "community": 582,
+      "norm_label": "sa e plano de aula_teste de sistemas_desenvolvimento de sistemas_96a0a770.md"
+    },
+    {
       "label": "TEXTO-REFORCO-25-08-2026_65ce340b.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/TEXTO-REFORCO-25-08-2026_65ce340b.md",
@@ -35114,6 +35254,206 @@
       "norm_label": "apostila_introducao_tic_2026_2_492eeb83.md"
     },
     {
+      "label": "atividade_caca_aos_bugs_ee16b742.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_caca_aos_bugs_ee16b742",
+      "community": 565,
+      "norm_label": "atividade_caca_aos_bugs_ee16b742.md"
+    },
+    {
+      "label": "O Contexto: O Programa de \"Bug Bounty\"",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "converted_atividade_caca_aos_bugs_ee16b742_o_contexto_o_programa_de_bug_bounty",
+      "community": 565,
+      "norm_label": "o contexto: o programa de \"bug bounty\""
+    },
+    {
+      "label": "A Atividade: \"War Room - Ca\u00e7a aos Bugs\"",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "converted_atividade_caca_aos_bugs_ee16b742_a_atividade_war_room_ca\u00e7a_aos_bugs",
+      "community": 565,
+      "norm_label": "a atividade: \"war room - caca aos bugs\""
+    },
+    {
+      "label": "Sistema de Pontua\u00e7\u00e3o (Bug Bounty)",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "converted_atividade_caca_aos_bugs_ee16b742_sistema_de_pontua\u00e7\u00e3o_bug_bounty",
+      "community": 565,
+      "norm_label": "sistema de pontuacao (bug bounty)"
+    },
+    {
+      "label": "O Pseudoc\u00f3digo: M\u00f3dulo de Precifica\u00e7\u00e3o Din\u00e2mica",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "converted_atividade_caca_aos_bugs_ee16b742_o_pseudoc\u00f3digo_m\u00f3dulo_de_precifica\u00e7\u00e3o_din\u00e2mica",
+      "community": 565,
+      "norm_label": "o pseudocodigo: modulo de precificacao dinamica"
+    },
+    {
+      "label": "atividade_erro_invisivel_78c8756a.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_erro_invisivel_78c8756a.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_erro_invisivel_78c8756a",
+      "community": 568,
+      "norm_label": "atividade_erro_invisivel_78c8756a.md"
+    },
+    {
+      "label": "CONTEXTO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_erro_invisivel_78c8756a.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "converted_atividade_erro_invisivel_78c8756a_contexto",
+      "community": 568,
+      "norm_label": "contexto"
+    },
+    {
+      "label": "atividade_evolucao_testes_ac4dc70b.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_evolucao_testes_ac4dc70b.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_evolucao_testes_ac4dc70b",
+      "community": 569,
+      "norm_label": "atividade_evolucao_testes_ac4dc70b.md"
+    },
+    {
+      "label": "ATIVIDADE PR\u00c1TICA 1: DE VOLTA PARA O FUTURO DOS TESTES",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_evolucao_testes_ac4dc70b.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "converted_atividade_evolucao_testes_ac4dc70b_atividade_pr\u00e1tica_1_de_volta_para_o_futuro_dos_testes",
+      "community": 569,
+      "norm_label": "atividade pratica 1: de volta para o futuro dos testes"
+    },
+    {
+      "label": "atividade_perguntas_individuais_9ea7f0a2.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_perguntas_individuais_9ea7f0a2.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_perguntas_individuais_9ea7f0a2",
+      "community": 566,
+      "norm_label": "atividade_perguntas_individuais_9ea7f0a2.md"
+    },
+    {
+      "label": "ATIVIDADE PR\u00c1TICA 2: REGISTRO INDIVIDUAL",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_perguntas_individuais_9ea7f0a2.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "converted_atividade_perguntas_individuais_9ea7f0a2_atividade_pr\u00e1tica_2_registro_individual",
+      "community": 566,
+      "norm_label": "atividade pratica 2: registro individual"
+    },
+    {
+      "label": "Modelo para Registro Individual Reflexivo",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_perguntas_individuais_9ea7f0a2.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "converted_atividade_perguntas_individuais_9ea7f0a2_modelo_para_registro_individual_reflexivo",
+      "community": 566,
+      "norm_label": "modelo para registro individual reflexivo"
+    },
+    {
+      "label": "atividade_pratica_atividade_2_2896b024.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_pratica_atividade_2_2896b024.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_pratica_atividade_2_2896b024",
+      "community": 570,
+      "norm_label": "atividade_pratica_atividade_2_2896b024.md"
+    },
+    {
+      "label": "Modelo de Estrutura para a \"An\u00e1lise Documental dos Resultados\"",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_pratica_atividade_2_2896b024.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "converted_atividade_pratica_atividade_2_2896b024_modelo_de_estrutura_para_a_an\u00e1lise_documental_dos_resultados",
+      "community": 570,
+      "norm_label": "modelo de estrutura para a \"analise documental dos resultados\""
+    },
+    {
+      "label": "atividade_tipos_ferramentas_08473014.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_tipos_ferramentas_08473014.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_tipos_ferramentas_08473014",
+      "community": 571,
+      "norm_label": "atividade_tipos_ferramentas_08473014.md"
+    },
+    {
+      "label": "CONTEXTO",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_tipos_ferramentas_08473014.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "converted_atividade_tipos_ferramentas_08473014_contexto",
+      "community": 571,
+      "norm_label": "contexto"
+    },
+    {
+      "label": "atividade_tribunal_de_bug_22244bbb.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_tribunal_de_bug_22244bbb.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_atividade_tribunal_de_bug_22244bbb",
+      "community": 572,
+      "norm_label": "atividade_tribunal_de_bug_22244bbb.md"
+    },
+    {
+      "label": "Roteiro da Atividade: Din\u00e2mica \"Tribunal de Bugs\"",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/atividade_tribunal_de_bug_22244bbb.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "converted_atividade_tribunal_de_bug_22244bbb_roteiro_da_atividade_din\u00e2mica_tribunal_de_bugs",
+      "community": 572,
+      "norm_label": "roteiro da atividade: dinamica \"tribunal de bugs\""
+    },
+    {
+      "label": "autoavaliacao_0f2b849f.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/autoavaliacao_0f2b849f.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_autoavaliacao_0f2b849f",
+      "community": 579,
+      "norm_label": "autoavaliacao_0f2b849f.md"
+    },
+    {
+      "label": "doc_modelo_falhas_82042c27.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/doc_modelo_falhas_82042c27.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_doc_modelo_falhas_82042c27",
+      "community": 581,
+      "norm_label": "doc_modelo_falhas_82042c27.md"
+    },
+    {
       "label": "duplas-aula-12-08-2026_26445d56.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md",
@@ -35132,6 +35472,76 @@
       "id": "converted_duplas_aula_12_08_2026_26445d56_sheet_sheet1",
       "community": 474,
       "norm_label": "sheet: sheet1"
+    },
+    {
+      "label": "modelo_cronograma_testes_bcf77f94.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/modelo_cronograma_testes_bcf77f94.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_modelo_cronograma_testes_bcf77f94",
+      "community": 574,
+      "norm_label": "modelo_cronograma_testes_bcf77f94.md"
+    },
+    {
+      "label": "Sheet: Considerando que voc\u00ea \u00e9 um doce",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/modelo_cronograma_testes_bcf77f94.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "converted_modelo_cronograma_testes_bcf77f94_sheet_considerando_que_voc\u00ea_\u00e9_um_doce",
+      "community": 574,
+      "norm_label": "sheet: considerando que voce e um doce"
+    },
+    {
+      "label": "oficina_pratica_relatorio_parcial_63442cf7.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/oficina_pratica_relatorio_parcial_63442cf7.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_oficina_pratica_relatorio_parcial_63442cf7",
+      "community": 567,
+      "norm_label": "oficina_pratica_relatorio_parcial_63442cf7.md"
+    },
+    {
+      "label": "Contextualiza\u00e7\u00e3o da Aula 10: \"Da Ca\u00e7a \u00e0 Evid\u00eancia\"",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/oficina_pratica_relatorio_parcial_63442cf7.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "converted_oficina_pratica_relatorio_parcial_63442cf7_contextualiza\u00e7\u00e3o_da_aula_10_da_ca\u00e7a_\u00e0_evid\u00eancia",
+      "community": 567,
+      "norm_label": "contextualizacao da aula 10: \"da caca a evidencia\""
+    },
+    {
+      "label": "Como Montar a \"Oficina Pr\u00e1tica de Registro de Resultados\"",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/oficina_pratica_relatorio_parcial_63442cf7.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "converted_oficina_pratica_relatorio_parcial_63442cf7_como_montar_a_oficina_pr\u00e1tica_de_registro_de_resultados",
+      "community": 567,
+      "norm_label": "como montar a \"oficina pratica de registro de resultados\""
+    },
+    {
+      "label": "workshop_Causa_Raiz_70f40ff5.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/workshop_Causa_Raiz_70f40ff5.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "converted_workshop_causa_raiz_70f40ff5",
+      "community": 575,
+      "norm_label": "workshop_causa_raiz_70f40ff5.md"
+    },
+    {
+      "label": "Estrutura do Workshop: An\u00e1lise de Causa Raiz (RCA) com Diagrama de Ishikawa",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/workshop_Causa_Raiz_70f40ff5.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "converted_workshop_causa_raiz_70f40ff5_estrutura_do_workshop_an\u00e1lise_de_causa_raiz_rca_com_diagrama_de_ishikawa",
+      "community": 575,
+      "norm_label": "estrutura do workshop: analise de causa raiz (rca) com diagrama de ishikawa"
     },
     {
       "label": "AULAS-TIC.md",
@@ -52014,6 +52424,26 @@
       "norm_label": "avaliacao"
     },
     {
+      "label": "GestaoControleMateriais_456h.md",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/GestaoControleMateriais_456h.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "gestao_e_controle_materiais_gestaocontrolemateriais_456h",
+      "community": 583,
+      "norm_label": "gestaocontrolemateriais_456h.md"
+    },
+    {
+      "label": "CONTE\u00daDOS REFERIDOS NA PORTARIA MTE 3.872/23:",
+      "file_type": "document",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/GestaoControleMateriais_456h.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "gestao_e_controle_materiais_gestaocontrolemateriais_456h_conte\u00fados_referidos_na_portaria_mte_3_872_23",
+      "community": 583,
+      "norm_label": "conteudos referidos na portaria mte 3.872/23:"
+    },
+    {
       "label": "ATIVIDADE-EXCEL.md",
       "file_type": "document",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
@@ -54502,6 +54932,276 @@
       "id": "introducao_tic_ementa_introducao_tenologia_informacao_11_proveni\u00eancia",
       "community": 27,
       "norm_label": "11. proveniencia"
+    },
+    {
+      "label": "INSTRU\u00c7\u00d5ES.md",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es",
+      "community": 539,
+      "norm_label": "instrucoes.md"
+    },
+    {
+      "label": "\ud83d\udccb Instru\u00e7\u00f5es de Uso - Dashboard de Controle de Mat\u00e9rias",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "community": 539,
+      "norm_label": "\ud83d\udccb instrucoes de uso - dashboard de controle de materias"
+    },
+    {
+      "label": "\ud83d\ude80 Como Executar",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_como_executar",
+      "community": 539,
+      "norm_label": "\ud83d\ude80 como executar"
+    },
+    {
+      "label": "Op\u00e7\u00e3o 1: Iniciar Ambos os Servidores (Recomendado)",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_op\u00e7\u00e3o_1_iniciar_ambos_os_servidores_recomendado",
+      "community": 539,
+      "norm_label": "opcao 1: iniciar ambos os servidores (recomendado)"
+    },
+    {
+      "label": "Op\u00e7\u00e3o 2: Rodar Servidores Separadamente",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_op\u00e7\u00e3o_2_rodar_servidores_separadamente",
+      "community": 539,
+      "norm_label": "opcao 2: rodar servidores separadamente"
+    },
+    {
+      "label": "\ud83d\udcca Campos de Cada Mat\u00e9ria",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_campos_de_cada_mat\u00e9ria",
+      "community": 539,
+      "norm_label": "\ud83d\udcca campos de cada materia"
+    },
+    {
+      "label": "\ud83c\udfaf Funcionalidades",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_funcionalidades",
+      "community": 539,
+      "norm_label": "\ud83c\udfaf funcionalidades"
+    },
+    {
+      "label": "\u2705 Criar Nova Mat\u00e9ria",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_criar_nova_mat\u00e9ria",
+      "community": 539,
+      "norm_label": "\u2705 criar nova materia"
+    },
+    {
+      "label": "\u270f\ufe0f Editar Mat\u00e9ria",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_editar_mat\u00e9ria",
+      "community": 539,
+      "norm_label": "\u270f\ufe0f editar materia"
+    },
+    {
+      "label": "\ud83d\uddd1\ufe0f Deletar Mat\u00e9ria",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_deletar_mat\u00e9ria",
+      "community": 539,
+      "norm_label": "\ud83d\uddd1\ufe0f deletar materia"
+    },
+    {
+      "label": "\ud83d\udd0d Buscar Mat\u00e9rias",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_buscar_mat\u00e9rias",
+      "community": 539,
+      "norm_label": "\ud83d\udd0d buscar materias"
+    },
+    {
+      "label": "\ud83d\udd00 Filtrar por Status",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_filtrar_por_status",
+      "community": 539,
+      "norm_label": "\ud83d\udd00 filtrar por status"
+    },
+    {
+      "label": "\ud83d\udd04 Resetar Filtros",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_resetar_filtros",
+      "community": 539,
+      "norm_label": "\ud83d\udd04 resetar filtros"
+    },
+    {
+      "label": "\ud83d\udcc2 Estrutura do Banco de Dados",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_estrutura_do_banco_de_dados",
+      "community": 539,
+      "norm_label": "\ud83d\udcc2 estrutura do banco de dados"
+    },
+    {
+      "label": "\ud83d\udee0\ufe0f API REST (JSON Server)",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_api_rest_json_server",
+      "community": 539,
+      "norm_label": "\ud83d\udee0\ufe0f api rest (json server)"
+    },
+    {
+      "label": "Endpoints Dispon\u00edveis",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_endpoints_dispon\u00edveis",
+      "community": 539,
+      "norm_label": "endpoints disponiveis"
+    },
+    {
+      "label": "\ud83d\udcca Verificar Dados do Banco",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_verificar_dados_do_banco",
+      "community": 539,
+      "norm_label": "\ud83d\udcca verificar dados do banco"
+    },
+    {
+      "label": "\ud83c\udfa8 Visualiza\u00e7\u00e3o dos Dados",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L173",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_visualiza\u00e7\u00e3o_dos_dados",
+      "community": 539,
+      "norm_label": "\ud83c\udfa8 visualizacao dos dados"
+    },
+    {
+      "label": "\ud83d\udc1b Troubleshooting",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_troubleshooting",
+      "community": 539,
+      "norm_label": "\ud83d\udc1b troubleshooting"
+    },
+    {
+      "label": "Erro: \"Cannot GET /materias\"",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L192",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_erro_cannot_get_materias",
+      "community": 539,
+      "norm_label": "erro: \"cannot get /materias\""
+    },
+    {
+      "label": "Erro: \"Failed to fetch\"",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_erro_failed_to_fetch",
+      "community": 539,
+      "norm_label": "erro: \"failed to fetch\""
+    },
+    {
+      "label": "Dados n\u00e3o aparecem",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L201",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_dados_n\u00e3o_aparecem",
+      "community": 539,
+      "norm_label": "dados nao aparecem"
+    },
+    {
+      "label": "Filtros n\u00e3o funcionam",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_filtros_n\u00e3o_funcionam",
+      "community": 539,
+      "norm_label": "filtros nao funcionam"
+    },
+    {
+      "label": "\ud83d\udcdd Exemplo de Workflow",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L211",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_exemplo_de_workflow",
+      "community": 539,
+      "norm_label": "\ud83d\udcdd exemplo de workflow"
+    },
+    {
+      "label": "\ud83c\udfaf Filtros Padr\u00e3o",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L225",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_filtros_padr\u00e3o",
+      "community": 539,
+      "norm_label": "\ud83c\udfaf filtros padrao"
+    },
+    {
+      "label": "\ud83d\udcbe Dados Persistem",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L240",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_dados_persistem",
+      "community": 539,
+      "norm_label": "\ud83d\udcbe dados persistem"
+    },
+    {
+      "label": "\ud83c\udf93 Mat\u00e9rias Iniciais",
+      "file_type": "document",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L249",
+      "_origin": "ast",
+      "id": "pendencias_professor_instru\u00e7\u00f5es_mat\u00e9rias_iniciais",
+      "community": 539,
+      "norm_label": "\ud83c\udf93 materias iniciais"
     },
     {
       "label": "README.md",
@@ -62224,6 +62924,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_package",
+      "target": "pendencias_professor_package_dependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -62314,11 +63024,51 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_package_scripts",
+      "target": "pendencias_professor_package_scripts_server"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_package_scripts",
+      "target": "pendencias_professor_package_scripts_start"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pendencias_professor_package_devdependencies",
       "target": "pendencias_professor_package_devdependencies_vite"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_package_dependencies",
+      "target": "pendencias_professor_package_dependencies_concurrently"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_package_dependencies",
+      "target": "pendencias_professor_package_dependencies_json_server"
     },
     {
       "relation": "contains",
@@ -62344,71 +63094,171 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_main_pendenciamanager"
+      "target": "src_main_materiasmanager"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L105",
+      "source_location": "L185",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_abrirformulario"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_abrirformulario"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L85",
+      "source_location": "L160",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_abrirformularioedicao"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_abrirformularioedicao"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L78",
+      "source_location": "L153",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_abrirformularionova"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_abrirformularionova"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L169",
+      "source_location": "L229",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_abrirmodaldelecao"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_abrirmodaldelecao"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L203",
+      "source_location": "L250",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_aplicarfiltros"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_aplicarfiltros"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L223",
+      "source_location": "L268",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_atualizarestatisticas"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_atualizarestatisticas"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L137",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_atualizarfiltrosstatus"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_carregarmaterias"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_coletarformulario"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L243",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_confirmardelecao"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_constructor"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L317",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_criarcardmateria"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_deletarmateria"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L370",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_escaparhtml"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L189",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_fecharformulario"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L238",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_fecharmodaldelecao"
     },
     {
       "relation": "method",
@@ -62417,160 +63267,58 @@
       "source_location": "L15",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_carregardodados"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_init"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L184",
+      "source_location": "L263",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_confirmardelecao"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_renderizarmaterias"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L3",
+      "source_location": "L278",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_constructor"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_renderizarmateriasfiltradas"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L281",
+      "source_location": "L144",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_criarcardpendencia"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_resetarfiltros"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L329",
+      "source_location": "L32",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_escaparhtml"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_salvarmateria"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L109",
+      "source_location": "L76",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_fecharformulario"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L179",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_fecharmodaldelecao"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_init"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L218",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_renderizarpendencias"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L233",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_renderizarpendenciascustomizadas"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_salvarnodados"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L114",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_salvarpendencia"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L193",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_togglependencia"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager",
-      "target": "src_main_pendenciamanager_vinculareventos"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_constructor",
-      "target": "src_main_pendenciamanager_carregardodados"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_constructor",
-      "target": "src_main_pendenciamanager_init"
+      "source": "src_main_materiasmanager",
+      "target": "src_main_materiasmanager_vinculareventos"
     },
     {
       "relation": "calls",
@@ -62580,173 +63328,217 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_init",
-      "target": "src_main_pendenciamanager_renderizarpendencias"
+      "source": "src_main_materiasmanager_constructor",
+      "target": "src_main_materiasmanager_init"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L11",
+      "source_location": "L16",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_init",
-      "target": "src_main_pendenciamanager_vinculareventos"
+      "source": "src_main_materiasmanager_init",
+      "target": "src_main_materiasmanager_carregarmaterias"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L187",
+      "source_location": "L18",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_confirmardelecao",
-      "target": "src_main_pendenciamanager_salvarnodados"
+      "source": "src_main_materiasmanager_init",
+      "target": "src_main_materiasmanager_renderizarmaterias"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L164",
+      "source_location": "L17",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_salvarpendencia",
-      "target": "src_main_pendenciamanager_salvarnodados"
+      "source": "src_main_materiasmanager_init",
+      "target": "src_main_materiasmanager_vinculareventos"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L198",
+      "source_location": "L68",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_togglependencia",
-      "target": "src_main_pendenciamanager_salvarnodados"
+      "source": "src_main_materiasmanager_deletarmateria",
+      "target": "src_main_materiasmanager_carregarmaterias"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L82",
+      "source_location": "L56",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_abrirformularionova",
-      "target": "src_main_pendenciamanager_abrirformulario"
+      "source": "src_main_materiasmanager_salvarmateria",
+      "target": "src_main_materiasmanager_carregarmaterias"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L102",
+      "source_location": "L225",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_abrirformularioedicao",
-      "target": "src_main_pendenciamanager_abrirformulario"
+      "source": "src_main_materiasmanager_coletarformulario",
+      "target": "src_main_materiasmanager_salvarmateria"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L166",
+      "source_location": "L57",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_salvarpendencia",
-      "target": "src_main_pendenciamanager_fecharformulario"
+      "source": "src_main_materiasmanager_salvarmateria",
+      "target": "src_main_materiasmanager_renderizarmaterias"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L165",
+      "source_location": "L245",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_salvarpendencia",
-      "target": "src_main_pendenciamanager_renderizarpendencias"
+      "source": "src_main_materiasmanager_confirmardelecao",
+      "target": "src_main_materiasmanager_deletarmateria"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L189",
+      "source_location": "L69",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_confirmardelecao",
-      "target": "src_main_pendenciamanager_fecharmodaldelecao"
+      "source": "src_main_materiasmanager_deletarmateria",
+      "target": "src_main_materiasmanager_renderizarmaterias"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L188",
+      "source_location": "L141",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_confirmardelecao",
-      "target": "src_main_pendenciamanager_renderizarpendencias"
+      "source": "src_main_materiasmanager_atualizarfiltrosstatus",
+      "target": "src_main_materiasmanager_aplicarfiltros"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L199",
+      "source_location": "L150",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_togglependencia",
-      "target": "src_main_pendenciamanager_renderizarpendencias"
+      "source": "src_main_materiasmanager_resetarfiltros",
+      "target": "src_main_materiasmanager_aplicarfiltros"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L215",
+      "source_location": "L157",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_aplicarfiltros",
-      "target": "src_main_pendenciamanager_renderizarpendenciascustomizadas"
+      "source": "src_main_materiasmanager_abrirformularionova",
+      "target": "src_main_materiasmanager_abrirformulario"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L219",
+      "source_location": "L182",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_renderizarpendencias",
-      "target": "src_main_pendenciamanager_atualizarestatisticas"
+      "source": "src_main_materiasmanager_abrirformularioedicao",
+      "target": "src_main_materiasmanager_abrirformulario"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L220",
+      "source_location": "L226",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_renderizarpendencias",
-      "target": "src_main_pendenciamanager_renderizarpendenciascustomizadas"
+      "source": "src_main_materiasmanager_coletarformulario",
+      "target": "src_main_materiasmanager_fecharformulario"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
-      "source_location": "L300",
+      "source_location": "L246",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_pendenciamanager_criarcardpendencia",
-      "target": "src_main_pendenciamanager_escaparhtml"
+      "source": "src_main_materiasmanager_confirmardelecao",
+      "target": "src_main_materiasmanager_fecharmodaldelecao"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager_aplicarfiltros",
+      "target": "src_main_materiasmanager_renderizarmateriasfiltradas"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L265",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager_renderizarmaterias",
+      "target": "src_main_materiasmanager_aplicarfiltros"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L264",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager_renderizarmaterias",
+      "target": "src_main_materiasmanager_atualizarestatisticas"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/src/main.js",
+      "source_location": "L338",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main_materiasmanager_criarcardmateria",
+      "target": "src_main_materiasmanager_escaparhtml"
     },
     {
       "relation": "contains",
@@ -91582,6 +92374,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/GestaoControleMateriais_456h_85450192.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_gestaocontrolemateriais_456h_85450192",
+      "target": "converted_gestaocontrolemateriais_456h_85450192_conte\u00fados_referidos_na_portaria_mte_3_872_23"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "graphify-out/converted/INVENTARIO_DA_EQUIPE-06_a838f259.md",
       "source_location": "L3",
       "weight": 1.0,
@@ -92152,12 +92954,162 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_caca_aos_bugs_ee16b742",
+      "target": "converted_atividade_caca_aos_bugs_ee16b742_a_atividade_war_room_ca\u00e7a_aos_bugs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_caca_aos_bugs_ee16b742",
+      "target": "converted_atividade_caca_aos_bugs_ee16b742_o_contexto_o_programa_de_bug_bounty"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_caca_aos_bugs_ee16b742",
+      "target": "converted_atividade_caca_aos_bugs_ee16b742_o_pseudoc\u00f3digo_m\u00f3dulo_de_precifica\u00e7\u00e3o_din\u00e2mica"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_caca_aos_bugs_ee16b742",
+      "target": "converted_atividade_caca_aos_bugs_ee16b742_sistema_de_pontua\u00e7\u00e3o_bug_bounty"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_erro_invisivel_78c8756a.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_erro_invisivel_78c8756a",
+      "target": "converted_atividade_erro_invisivel_78c8756a_contexto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_evolucao_testes_ac4dc70b.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_evolucao_testes_ac4dc70b",
+      "target": "converted_atividade_evolucao_testes_ac4dc70b_atividade_pr\u00e1tica_1_de_volta_para_o_futuro_dos_testes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_perguntas_individuais_9ea7f0a2.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_perguntas_individuais_9ea7f0a2",
+      "target": "converted_atividade_perguntas_individuais_9ea7f0a2_atividade_pr\u00e1tica_2_registro_individual"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_perguntas_individuais_9ea7f0a2.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_perguntas_individuais_9ea7f0a2",
+      "target": "converted_atividade_perguntas_individuais_9ea7f0a2_modelo_para_registro_individual_reflexivo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_pratica_atividade_2_2896b024.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_pratica_atividade_2_2896b024",
+      "target": "converted_atividade_pratica_atividade_2_2896b024_modelo_de_estrutura_para_a_an\u00e1lise_documental_dos_resultados"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_tipos_ferramentas_08473014.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_tipos_ferramentas_08473014",
+      "target": "converted_atividade_tipos_ferramentas_08473014_contexto"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/atividade_tribunal_de_bug_22244bbb.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_atividade_tribunal_de_bug_22244bbb",
+      "target": "converted_atividade_tribunal_de_bug_22244bbb_roteiro_da_atividade_din\u00e2mica_tribunal_de_bugs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "graphify-out/converted/duplas-aula-12-08-2026_26445d56.md",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "converted_duplas_aula_12_08_2026_26445d56",
       "target": "converted_duplas_aula_12_08_2026_26445d56_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/modelo_cronograma_testes_bcf77f94.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_modelo_cronograma_testes_bcf77f94",
+      "target": "converted_modelo_cronograma_testes_bcf77f94_sheet_considerando_que_voc\u00ea_\u00e9_um_doce"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/oficina_pratica_relatorio_parcial_63442cf7.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_oficina_pratica_relatorio_parcial_63442cf7",
+      "target": "converted_oficina_pratica_relatorio_parcial_63442cf7_como_montar_a_oficina_pr\u00e1tica_de_registro_de_resultados"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/oficina_pratica_relatorio_parcial_63442cf7.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_oficina_pratica_relatorio_parcial_63442cf7",
+      "target": "converted_oficina_pratica_relatorio_parcial_63442cf7_contextualiza\u00e7\u00e3o_da_aula_10_da_ca\u00e7a_\u00e0_evid\u00eancia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/workshop_Causa_Raiz_70f40ff5.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "converted_workshop_causa_raiz_70f40ff5",
+      "target": "converted_workshop_causa_raiz_70f40ff5_estrutura_do_workshop_an\u00e1lise_de_causa_raiz_rca_com_diagrama_de_ishikawa"
     },
     {
       "relation": "contains",
@@ -108712,6 +109664,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "sistema/GESTAO_E_CONTROLE_MATERIAIS/GestaoControleMateriais_456h.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "gestao_e_controle_materiais_gestaocontrolemateriais_456h",
+      "target": "gestao_e_controle_materiais_gestaocontrolemateriais_456h_conte\u00fados_referidos_na_portaria_mte_3_872_23",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-07-11-08-2026/ATIVIDADE-EXCEL.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -111082,12 +112044,272 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_api_rest_json_server"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_campos_de_cada_mat\u00e9ria"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_como_executar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L240",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_dados_persistem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_estrutura_do_banco_de_dados"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L211",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_exemplo_de_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L225",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_filtros_padr\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_funcionalidades"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L249",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_mat\u00e9rias_iniciais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L190",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_troubleshooting"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_verificar_dados_do_banco"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_instru\u00e7\u00f5es_de_uso_dashboard_de_controle_de_mat\u00e9rias",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_visualiza\u00e7\u00e3o_dos_dados"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_como_executar",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_op\u00e7\u00e3o_1_iniciar_ambos_os_servidores_recomendado"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_como_executar",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_op\u00e7\u00e3o_2_rodar_servidores_separadamente"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_funcionalidades",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_buscar_mat\u00e9rias"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_funcionalidades",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_criar_nova_mat\u00e9ria"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_funcionalidades",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_deletar_mat\u00e9ria"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_funcionalidades",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_editar_mat\u00e9ria"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_funcionalidades",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_filtrar_por_status"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_funcionalidades",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_resetar_filtros"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_api_rest_json_server",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_endpoints_dispon\u00edveis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L201",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_troubleshooting",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_dados_n\u00e3o_aparecem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L192",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_troubleshooting",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_erro_cannot_get_materias"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_troubleshooting",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_erro_failed_to_fetch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md",
+      "source_location": "L205",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pendencias_professor_instru\u00e7\u00f5es_troubleshooting",
+      "target": "pendencias_professor_instru\u00e7\u00f5es_filtros_n\u00e3o_funcionam"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme",
-      "target": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias"
     },
     {
       "relation": "contains",
@@ -111095,9 +112317,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_campos_de_uma_pend\u00eancia",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_campos_de_uma_pend\u00eancia"
     },
     {
       "relation": "contains",
@@ -111105,9 +112327,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_como_usar",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_como_usar"
     },
     {
       "relation": "contains",
@@ -111115,9 +112337,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_dados_persistentes",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_dados_persistentes"
     },
     {
       "relation": "contains",
@@ -111125,9 +112347,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_estrutura_de_arquivos",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_estrutura_de_arquivos"
     },
     {
       "relation": "contains",
@@ -111135,9 +112357,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_funcionalidades",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_funcionalidades"
     },
     {
       "relation": "contains",
@@ -111145,9 +112367,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_interface",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_interface"
     },
     {
       "relation": "contains",
@@ -111155,9 +112377,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_mat\u00e9rias_iniciais",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_mat\u00e9rias_iniciais"
     },
     {
       "relation": "contains",
@@ -111165,9 +112387,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_notas",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_notas"
     },
     {
       "relation": "contains",
@@ -111175,9 +112397,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_personaliza\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_personaliza\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -111185,9 +112407,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_responsividade",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_responsividade"
     },
     {
       "relation": "contains",
@@ -111195,9 +112417,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L130",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_tecnologias",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_tecnologias"
     },
     {
       "relation": "contains",
@@ -111205,9 +112427,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_dashboard_de_controle_de_pend\u00eancias",
-      "target": "pendencias_professor_readme_vers\u00e3o",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_vers\u00e3o"
     },
     {
       "relation": "contains",
@@ -111215,9 +112437,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_como_usar",
-      "target": "pendencias_professor_readme_build_para_produ\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_build_para_produ\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -111225,9 +112447,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_como_usar",
-      "target": "pendencias_professor_readme_desenvolvimento",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_desenvolvimento"
     },
     {
       "relation": "contains",
@@ -111235,9 +112457,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_como_usar",
-      "target": "pendencias_professor_readme_instala\u00e7\u00e3o",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_instala\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -111245,9 +112467,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_interface",
-      "target": "pendencias_professor_readme_cards_de_pend\u00eancia",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_cards_de_pend\u00eancia"
     },
     {
       "relation": "contains",
@@ -111255,9 +112477,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_interface",
-      "target": "pendencias_professor_readme_estat\u00edsticas_no_header",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_estat\u00edsticas_no_header"
     },
     {
       "relation": "contains",
@@ -111265,9 +112487,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_interface",
-      "target": "pendencias_professor_readme_se\u00e7\u00e3o_de_controles",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_se\u00e7\u00e3o_de_controles"
     },
     {
       "relation": "contains",
@@ -111275,9 +112497,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_personaliza\u00e7\u00e3o",
-      "target": "pendencias_professor_readme_adicionar_mat\u00e9rias_iniciais",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_adicionar_mat\u00e9rias_iniciais"
     },
     {
       "relation": "contains",
@@ -111285,9 +112507,9 @@
       "source_file": "sistema/PENDENCIAS-PROFESSOR/README.md",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pendencias_professor_readme_personaliza\u00e7\u00e3o",
-      "target": "pendencias_professor_readme_cores_vari\u00e1veis_css",
-      "confidence_score": 1.0
+      "target": "pendencias_professor_readme_cores_vari\u00e1veis_css"
     },
     {
       "relation": "contains",
@@ -112531,5 +113753,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "be2c2b9af9e1f31d67d8cfdaf53a630b5955a34c"
+  "built_at_commit": "f2d8479e1ed10b5bcaa7bca74aa7811fc33d066b"
 }

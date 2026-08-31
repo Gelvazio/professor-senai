@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1788011338.4563656,
-    "ast_hash": "33c49b9da36f25a28711d17bdbb31109",
+    "mtime": 1788187870.055397,
+    "ast_hash": "ad4b8d9124d0113290b4784ed072cdf7",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -2960,8 +2960,8 @@
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/package.json": {
-    "mtime": 1788185812.500726,
-    "ast_hash": "e5e2d92a472e4884c24517fe92e20b49",
+    "mtime": 1788187040.9357896,
+    "ast_hash": "3900aaeb886682322fecf646c9a64031",
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/src/counter.js": {
@@ -2970,8 +2970,8 @@
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/src/main.js": {
-    "mtime": 1788185994.8538854,
-    "ast_hash": "7f3f0e1a06284fa1c8b517392f28a433",
+    "mtime": 1788186258.0164764,
+    "ast_hash": "76c20ca392c4debcb9c6144799f5eb98",
     "semantic_hash": ""
   },
   "graphify-out/converted/Checklist Prova Objetiva_2eba911c.md": {
@@ -3060,8 +3060,8 @@
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/index.html": {
-    "mtime": 1788185873.083456,
-    "ast_hash": "0d75cc7e5482c6b48cd4c6ef8955765b",
+    "mtime": 1788186209.1209445,
+    "ast_hash": "1096b7c2778237eda478b81b7e9e5567",
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/public/favicon.svg": {
@@ -3092,6 +3092,126 @@
   "sistema/PENDENCIAS-PROFESSOR/README.md": {
     "mtime": 1788186038.4944882,
     "ast_hash": "64897f3af1df9473feab843263de67c2",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/database.json": {
+    "mtime": 1788186187.5565124,
+    "ast_hash": "b72b3922dd00efef40ac0770ce2e8648",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md": {
+    "mtime": 1788187075.250215,
+    "ast_hash": "88a4c9d01aceed0300141e502271c89c",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/1. CT Desenvolvimento de Sistemas_Aula Presencial_Testes de Sistemas_3fcfe335.md": {
+    "mtime": 1788190896.0247245,
+    "ast_hash": "f8dc81ecf126aa4318258fec978e1f30",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/2. Exame final [ALUNO]_UC Testes de Sistemas_be2e6d3f.md": {
+    "mtime": 1788190896.0441918,
+    "ast_hash": "13c391e77362090bb977ceba0058928c",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/3. Exame final [GABARITO]_UC Testes de Sistemas_58f87bd0.md": {
+    "mtime": 1788190896.061093,
+    "ast_hash": "9cf7a067ab1c182a76bb656651cabad2",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Avaliacao_Pr\u00e1tica_1_ TESI_a8155d99.md": {
+    "mtime": 1788190895.2424252,
+    "ast_hash": "70267b9b1bfcf6e59703f71921783bcf",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/GestaoControleMateriais_456h_85450192.md": {
+    "mtime": 1788190891.7952244,
+    "ast_hash": "e014984124e405c604dae8ebb0f1cf07",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/SA e PLANO DE AULA_TESTE DE SISTEMAS_DESENVOLVIMENTO DE SISTEMAS_96a0a770.md": {
+    "mtime": 1788190895.953261,
+    "ast_hash": "e4f850c8ec205dd0477614957684704f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/atividade_caca_aos_bugs_ee16b742.md": {
+    "mtime": 1788190895.3744082,
+    "ast_hash": "34375c8e0cf3d1bdc1d5efbffc2ebdf4",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/atividade_erro_invisivel_78c8756a.md": {
+    "mtime": 1788190895.4062123,
+    "ast_hash": "0efa27aafd9c6da5869b11f2b5e5fc99",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/atividade_evolucao_testes_ac4dc70b.md": {
+    "mtime": 1788190895.4460566,
+    "ast_hash": "e1f1624ccf6ee65529ec7d2a45c25c90",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/atividade_perguntas_individuais_9ea7f0a2.md": {
+    "mtime": 1788190895.4853294,
+    "ast_hash": "ced389086e6dd8eb1bc70692c9696dcc",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/atividade_pratica_atividade_2_2896b024.md": {
+    "mtime": 1788190895.576788,
+    "ast_hash": "82abe977c66b153f33fb118760b629da",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/atividade_tipos_ferramentas_08473014.md": {
+    "mtime": 1788190895.6333785,
+    "ast_hash": "f7b41728a76d3d10ef4642f029d6368d",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/atividade_tribunal_de_bug_22244bbb.md": {
+    "mtime": 1788190895.7056324,
+    "ast_hash": "319bf437bb77ab4eca30508706ed97cb",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/autoavaliacao_0f2b849f.md": {
+    "mtime": 1788190895.3175707,
+    "ast_hash": "67398c0fe5439d2b121d929b49ac8656",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/doc_modelo_falhas_82042c27.md": {
+    "mtime": 1788190895.7418597,
+    "ast_hash": "7060424854f59c363373c31abf61383a",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/modelo_cronograma_testes_bcf77f94.md": {
+    "mtime": 1788190895.7569933,
+    "ast_hash": "06e90246b152995fc05ef845ab500968",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/oficina_pratica_relatorio_parcial_63442cf7.md": {
+    "mtime": 1788190895.8119097,
+    "ast_hash": "84408f192148fa1ee4c5b9e4e59a724b",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/workshop_Causa_Raiz_70f40ff5.md": {
+    "mtime": 1788190895.8643537,
+    "ast_hash": "84a539de6f359cd7b2c4b6796c09d1af",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/visualizador-aulas-pendentes.html": {
+    "mtime": 1788187349.8227966,
+    "ast_hash": "f49d432702c6822c08741ecb2f481792",
+    "semantic_hash": ""
+  },
+  "sistema/visualizador-central-aulas-pendentes.html": {
+    "mtime": 1788187443.9386828,
+    "ast_hash": "8f26b835dab70128f44ebfd0bb154537",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/.claude/settings.local.json": {
+    "mtime": 1788190943.5602324,
+    "ast_hash": "636effc5a2d245d7412db9391939ddc0",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/GestaoControleMateriais_456h.md": {
+    "mtime": 1788190933.1503496,
+    "ast_hash": "a65833ade1bd61ad2eb763393f994634",
     "semantic_hash": ""
   }
 }
