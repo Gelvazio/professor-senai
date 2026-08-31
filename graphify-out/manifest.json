@@ -184,11 +184,6 @@
     "ast_hash": "2af505d2cfc97c1b758792e3083fbe32",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.pdf": {
-    "mtime": 1785711290.3209853,
-    "ast_hash": "343496c1c06ff564884c09e82f12e36d",
-    "semantic_hash": ""
-  },
   "sistema/LOGICA-PROGRAMACAO/LISTA DE 30 EXERC\u00cdCIOS INTEGRADOS \u2013 PORTUGOL STUDIO.pdf": {
     "mtime": 1786015030.3463182,
     "ast_hash": "c69e6e4be0e51dd201182e67601383e2",
@@ -344,11 +339,6 @@
     "ast_hash": "0354b95c9423524ab634690cf7220542",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/PlanoEnsinoIntroducaoTICV2.pdf": {
-    "mtime": 1786198859.408931,
-    "ast_hash": "0fbf0b3ad0cfb8448d23725bee2a962c",
-    "semantic_hash": ""
-  },
   "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_3e7bbae4.md": {
     "mtime": 1786985458.539313,
     "ast_hash": "6c15a68d091b0bd75a43b90d32fa511b",
@@ -357,16 +347,6 @@
   "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/HORARIO.txt": {
     "mtime": 1787856587.7408042,
     "ast_hash": "56c8eb84663f76fdcaabc21efdffdb85",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/MATERIAIS/HORARIO_OPERADOR_PRODUCAO_INDUSTRIAL.pdf": {
-    "mtime": 1786299476.754632,
-    "ast_hash": "c9df7b04cabd841f0927d0ae999a8c6a",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/MATERIAIS/PlanoEnsinoIntroducaoTICV2.pdf": {
-    "mtime": 1786198859.408931,
-    "ast_hash": "0fbf0b3ad0cfb8448d23725bee2a962c",
     "semantic_hash": ""
   },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-01-03-08-2026/HISTORIA_COMPUTACAO_AULA_01.pdf": {
@@ -459,11 +439,6 @@
     "ast_hash": "fe61c829ba4643e36e5e6cc684019400",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/CLAUDE.md": {
-    "mtime": 1787856586.621932,
-    "ast_hash": "ce83a6f6fb73fea29bf0c55d1e641528",
-    "semantic_hash": ""
-  },
   "sistema/TECNICO DE INFORMATICA PARA INTERNET/PLANO-DE-ENSINO.txt": {
     "mtime": 1787856587.739793,
     "ast_hash": "47f0a4240c34ab8de5f95c621dfd3789",
@@ -482,11 +457,6 @@
   "sistema/LISTA-AULAS-PLANEJAMENTO.txt": {
     "mtime": 1786481789.6191473,
     "ast_hash": "0f610f38e1521bf9503e6866823e8ce8",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/acessos-turma-estudante-impressao.pdf": {
-    "mtime": 1786560267.938773,
-    "ast_hash": "7a56bfbd4746ec59d3bd24dd330e937f",
     "semantic_hash": ""
   },
   "recursos-humanos/converter_slides_pdf.py": {
@@ -792,16 +762,6 @@
   "erp-victor-anato-senai/vendas/romaneio.html": {
     "mtime": 1787229286.0045059,
     "ast_hash": "5a60a5c18dc9774e1b8cda364e1b0a2b",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/FERRAMENTAS_MICROSOFT.html": {
-    "mtime": 1787856586.388479,
-    "ast_hash": "f43ec45edb49d2a5415380130877f429",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/MATERIAL_INTRODUCAO_TIC.html": {
-    "mtime": 1787856587.6240773,
-    "ast_hash": "4fab44feb9515412dac3133d59590c19",
     "semantic_hash": ""
   },
   "erp-victor-anato-senai/REGRAS-NEGOCIOS/seed.sql": {
@@ -1824,26 +1784,6 @@
     "ast_hash": "34efa5f9c70e8222c7ab85c05eca473a",
     "semantic_hash": ""
   },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/ASSUNTO-ADICIONAL.txt": {
-    "mtime": 1787856586.3843923,
-    "ast_hash": "60205259722255b498f1f5cd9de84c40",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/CURSOS-ADICIONAIS-MICROSOFT-OFFICE.txt": {
-    "mtime": 1787856586.3869696,
-    "ast_hash": "07ab605d2514640548b082efebc31062",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/DADOS-QUESTIONARIO-MICROSOFT-OFFICE.txt": {
-    "mtime": 1787856586.387744,
-    "ast_hash": "03e71e6900a4d288ebe90245c8e83468",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/LISTA-CURSOS-MICROSOFT-OFFICE.html": {
-    "mtime": 1787856586.388479,
-    "ast_hash": "6ff6cbd1a15ae03aaca3f19c07f3de4b",
-    "semantic_hash": ""
-  },
   "docs/gerar_texto_reforco_25_08_2026.py": {
     "mtime": 1787665459.0259879,
     "ast_hash": "5fe1fa076847b82db249614df470a064",
@@ -2207,11 +2147,6 @@
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/ementa_Reforco_Matematica_Raciocinio_Logico.md": {
     "mtime": 1787159080.8239057,
     "ast_hash": "b3a0e0114872f54ed90bf1c7a4097e46",
-    "semantic_hash": ""
-  },
-  "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md": {
-    "mtime": 1787856586.621932,
-    "ast_hash": "50eba9325b78a9571675334f440bc940",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/LISTA-ALUNOS-NOME-UNIDADE.json": {
@@ -3022,6 +2957,136 @@
   "graphify-out/converted/Apostila_Fundamentos_Tecnologia_Programacao_b2a91e70.md": {
     "mtime": 1788184853.2476838,
     "ast_hash": "f9766ee9b077e1b08cf48037152e3154",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/package.json": {
+    "mtime": 1788185812.500726,
+    "ast_hash": "e5e2d92a472e4884c24517fe92e20b49",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/src/counter.js": {
+    "mtime": 1788185812.0174055,
+    "ast_hash": "e912f4cce4554f6e6f95dd1029347f06",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/src/main.js": {
+    "mtime": 1788185941.0725007,
+    "ast_hash": "217b84665edff6e1c17be924b5c14edc",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Checklist Prova Objetiva_2eba911c.md": {
+    "mtime": 1788185973.109889,
+    "ast_hash": "79495a0112bbae942c9698ab0339104e",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Checklist Prova Pr\u00e1tica_72437174.md": {
+    "mtime": 1788185973.14908,
+    "ast_hash": "f995c9f54d8f98a4709a0f9826708e4f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Modelo Prova Pr\u00e1tica CT ELETROT\u00c9CNICA_574e11ca.md": {
+    "mtime": 1788185973.1971505,
+    "ast_hash": "e9a2b90d197a5e534087f0f29349327f",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Operador de Produ\u00e7\u00e3o Industrial_ 860h_b13bbb17.md": {
+    "mtime": 1788185974.468027,
+    "ast_hash": "6c15a68d091b0bd75a43b90d32fa511b",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PEI - Caio Matheus Junglos Cabral_8ef56f03.md": {
+    "mtime": 1788185972.943951,
+    "ast_hash": "ea751508b30bfeddbce3410dd4f3cf56",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PEI - Jhiogo Hennyck Pereira Custodio_74788ace.md": {
+    "mtime": 1788185973.0351863,
+    "ast_hash": "bb9537e8754494b6ed476dbbbaf598cb",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/PROMPT - Rubricas Capacidades Socioemocionais_b8806cbf.md": {
+    "mtime": 1788185973.2935855,
+    "ast_hash": "681239504af4357d3c9f684eef897286",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Prova Objetiva _6995cebb.md": {
+    "mtime": 1788185973.354198,
+    "ast_hash": "25e3dd35d81e960da99b00c0f6b1f69c",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/Template Prova Pr\u00e1tica_ca9c6594.md": {
+    "mtime": 1788185973.4101474,
+    "ast_hash": "c9918aca85baf5cdb3f733b328a9d66a",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/ASSUNTO-ADICIONAL.txt": {
+    "mtime": 1787856586.3843923,
+    "ast_hash": "60205259722255b498f1f5cd9de84c40",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/CURSOS-ADICIONAIS-MICROSOFT-OFFICE.txt": {
+    "mtime": 1787856586.3869696,
+    "ast_hash": "07ab605d2514640548b082efebc31062",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/DADOS-QUESTIONARIO-MICROSOFT-OFFICE.txt": {
+    "mtime": 1787856586.387744,
+    "ast_hash": "03e71e6900a4d288ebe90245c8e83468",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/FERRAMENTAS_MICROSOFT.html": {
+    "mtime": 1787856586.388479,
+    "ast_hash": "f43ec45edb49d2a5415380130877f429",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/AULA-13-24-08-2026-FERRAMENTAS_MICROSOFT/LISTA-CURSOS-MICROSOFT-OFFICE.html": {
+    "mtime": 1787856586.388479,
+    "ast_hash": "6ff6cbd1a15ae03aaca3f19c07f3de4b",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/CLAUDE.md": {
+    "mtime": 1787856586.621932,
+    "ast_hash": "ce83a6f6fb73fea29bf0c55d1e641528",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md": {
+    "mtime": 1787856586.621932,
+    "ast_hash": "50eba9325b78a9571675334f440bc940",
+    "semantic_hash": ""
+  },
+  "sistema/INTRODUCAO_TIC/MATERIAL_INTRODUCAO_TIC.html": {
+    "mtime": 1787856587.6240773,
+    "ast_hash": "4fab44feb9515412dac3133d59590c19",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/index.html": {
+    "mtime": 1788185873.083456,
+    "ast_hash": "0d75cc7e5482c6b48cd4c6ef8955765b",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/public/favicon.svg": {
+    "mtime": 1788185812.1913936,
+    "ast_hash": "098c888910dd3b64d291f1f0dc9e7033",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/public/icons.svg": {
+    "mtime": 1788185812.2177188,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/src/assets/hero.png": {
+    "mtime": 1788185812.1542377,
+    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/src/assets/javascript.svg": {
+    "mtime": 1788185812.220325,
+    "ast_hash": "067c459716da80af65db120e6c0404b9",
+    "semantic_hash": ""
+  },
+  "sistema/PENDENCIAS-PROFESSOR/src/assets/vite.svg": {
+    "mtime": 1788185812.2662947,
+    "ast_hash": "9960a24288958394ac50e57ff638b036",
     "semantic_hash": ""
   }
 }

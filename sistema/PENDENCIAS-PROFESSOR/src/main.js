@@ -14,7 +14,91 @@ class PendenciaManager {
 
   carregarDoDados() {
     const dados = localStorage.getItem('pendencias');
-    return dados ? JSON.parse(dados) : [];
+    if (dados) {
+      return JSON.parse(dados);
+    }
+
+    // Dados iniciais - matérias padrão
+    return [
+      {
+        id: Date.now().toString() + '1',
+        descricao: 'BANCO DE DADOS - Preparar aulas e materiais',
+        status: 'PENDENTE',
+        prioridade: 'ALTA',
+        categoria: 'Matéria',
+        data: new Date().toISOString().split('T')[0],
+        datavencimento: '',
+        total_horas: 0,
+        horas_ministradas: 0,
+        criado_em: new Date().toISOString(),
+        atualizado_em: new Date().toISOString(),
+      },
+      {
+        id: Date.now().toString() + '2',
+        descricao: 'Fundamentos da Tecnologia e Programação - Estruturar conteúdo',
+        status: 'PENDENTE',
+        prioridade: 'ALTA',
+        categoria: 'Matéria',
+        data: new Date().toISOString().split('T')[0],
+        datavencimento: '',
+        total_horas: 0,
+        horas_ministradas: 0,
+        criado_em: new Date().toISOString(),
+        atualizado_em: new Date().toISOString(),
+      },
+      {
+        id: Date.now().toString() + '3',
+        descricao: 'REFORÇO MATEMATICA E RACIOCINIO LOGICO - Preparar exercícios',
+        status: 'PENDENTE',
+        prioridade: 'ALTA',
+        categoria: 'Matéria',
+        data: new Date().toISOString().split('T')[0],
+        datavencimento: '',
+        total_horas: 0,
+        horas_ministradas: 0,
+        criado_em: new Date().toISOString(),
+        atualizado_em: new Date().toISOString(),
+      },
+      {
+        id: Date.now().toString() + '4',
+        descricao: 'INTRODUCAO A COMUNICACAO ORAL E ESCRITA - Definir plano de aulas',
+        status: 'PENDENTE',
+        prioridade: 'NORMAL',
+        categoria: 'Matéria',
+        data: new Date().toISOString().split('T')[0],
+        datavencimento: '',
+        total_horas: 0,
+        horas_ministradas: 0,
+        criado_em: new Date().toISOString(),
+        atualizado_em: new Date().toISOString(),
+      },
+      {
+        id: Date.now().toString() + '5',
+        descricao: 'ANALISE DE DADOS APLICADA A GESTAO - Preparar bases de dados',
+        status: 'PENDENTE',
+        prioridade: 'NORMAL',
+        categoria: 'Matéria',
+        data: new Date().toISOString().split('T')[0],
+        datavencimento: '',
+        total_horas: 0,
+        horas_ministradas: 0,
+        criado_em: new Date().toISOString(),
+        atualizado_em: new Date().toISOString(),
+      },
+      {
+        id: Date.now().toString() + '6',
+        descricao: 'TESTES DE FRONTEND - Documentar estratégia de testes',
+        status: 'PENDENTE',
+        prioridade: 'NORMAL',
+        categoria: 'Matéria',
+        data: new Date().toISOString().split('T')[0],
+        datavencimento: '',
+        total_horas: 0,
+        horas_ministradas: 0,
+        criado_em: new Date().toISOString(),
+        atualizado_em: new Date().toISOString(),
+      },
+    ];
   }
 
   salvarNoDados() {
