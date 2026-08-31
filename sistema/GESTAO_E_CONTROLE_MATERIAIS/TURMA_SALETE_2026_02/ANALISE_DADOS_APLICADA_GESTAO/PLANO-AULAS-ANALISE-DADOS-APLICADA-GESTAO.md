@@ -4,9 +4,9 @@
 **Módulo:** Específico da Ocupação  
 **Carga Horária Total:** 32 horas  
 **Distribuição:**
-- Aulas teóricas e práticas: 28 horas
-- Avaliação Objetiva: 2 horas
-- Avaliação Prática: 2 horas
+- Aulas teóricas e práticas: 30 horas
+- Avaliação Objetiva: 1 hora
+- Avaliação Prática: 1 hora
 
 **Turma:** Salete 2026/02  
 **Período:** Semestral
@@ -25,9 +25,9 @@ Ao final da unidade curricular, os alunos serão capazes de:
 
 ---
 
-## 2. ESTRUTURA DO PLANO (28 horas de aulas)
+## 2. ESTRUTURA DO PLANO (30 horas de aulas)
 
-### **MÓDULO 1: FUNDAMENTOS MATEMÁTICOS (8 horas)**
+### **MÓDULO 1: FUNDAMENTOS MATEMÁTICOS (10 horas)**
 
 #### Aula 1: Introdução e Conjuntos Numéricos (2h)
 - **Objetivo:** Revisar e consolidar conhecimentos de conjuntos numéricos
@@ -66,11 +66,31 @@ Ao final da unidade curricular, os alunos serão capazes de:
 - **Atividade Prática:** Análise de dados com cálculo de medidas estatísticas
 - **Recursos:** Dados reais, planilha eletrônica
 
+#### Aula 5: Área, Volume e Peso (1h)
+- **Objetivo:** Aplicar conceitos de medidas de espaço e massa
+- **Conteúdo:**
+  - Cálculo de área (figuras planas)
+  - Cálculo de volume (sólidos)
+  - Conceitos de peso e massa
+  - Aplicações em gestão de materiais e armazenamento
+- **Atividade Prática:** Exercícios de cálculo para problemas de armazenagem
+- **Recursos:** Calculadora, planilha eletrônica
+
+#### Aula 6: Sequência Lógica (1h)
+- **Objetivo:** Desenvolver raciocínio lógico para resolução de problemas
+- **Conteúdo:**
+  - Progressões aritméticas e geométricas
+  - Sequências numéricas
+  - Lógica de causa e efeito
+  - Aplicações em previsões e tendências empresariais
+- **Atividade Prática:** Exercícios de identificação de padrões e previsões
+- **Recursos:** Dados em planilha, problemas contextualizados
+
 ---
 
 ### **MÓDULO 2: EXCEL BÁSICO (6 horas)**
 
-#### Aula 5: Introdução ao Excel e Navegação Básica (2h)
+#### Aula 7: Introdução ao Excel e Navegação Básica (2h)
 - **Objetivo:** Familiarizar-se com a interface e funcionalidades básicas
 - **Conteúdo:**
   - Interface do Excel
@@ -81,7 +101,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 - **Atividade Prática:** Criar uma planilha com dados de exemplo
 - **Recursos:** Computador com Excel, dados de exemplo
 
-#### Aula 6: Fórmulas e Funções Essenciais (2h)
+#### Aula 8: Fórmulas e Funções Essenciais (2h)
 - **Objetivo:** Automatizar cálculos com fórmulas e funções
 - **Conteúdo:**
   - Funções SUM, AVERAGE, COUNT
@@ -91,7 +111,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 - **Atividade Prática:** Criar planilha de folha de pagamento com fórmulas
 - **Recursos:** Excel, dados de RH como exemplo
 
-#### Aula 7: Formatação e Apresentação de Dados (2h)
+#### Aula 9: Formatação e Apresentação de Dados (2h)
 - **Objetivo:** Apresentar dados de forma clara e profissional
 - **Conteúdo:**
   - Formatação de células (números, moedas, percentuais)
@@ -105,7 +125,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 
 ### **MÓDULO 3: EXCEL AVANÇADO (10 horas)**
 
-#### Aula 8: Funções de Busca e Consulta (2h)
+#### Aula 10: Funções de Busca e Consulta (2h)
 - **Objetivo:** Dominar funções de busca e consulta de dados
 - **Conteúdo:**
   - Função PROCV (VLOOKUP)
@@ -115,7 +135,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 - **Atividade Prática:** Criar consultas entre tabelas
 - **Recursos:** Excel, base de dados de exemplo (produtos e preços)
 
-#### Aula 9: Função SE Avançada e Cont SE (2h)
+#### Aula 11: Função SE Avançada e Cont SE (2h)
 - **Objetivo:** Criar lógicas condicionais complexas
 - **Conteúdo:**
   - Função SE aninhada
@@ -125,7 +145,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 - **Atividade Prática:** Análise de vendas com condições múltiplas
 - **Recursos:** Excel, dados de vendas
 
-#### Aula 10: Tabelas Dinâmicas (2h)
+#### Aula 12: Tabelas Dinâmicas (2h)
 - **Objetivo:** Criar resumos automáticos de grandes volumes de dados
 - **Conteúdo:**
   - Criação de tabelas dinâmicas
@@ -135,7 +155,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 - **Atividade Prática:** Criar tabela dinâmica de dados de vendas
 - **Recursos:** Excel, base de dados de transações
 
-#### Aula 11: Filtros e Validação de Dados (2h)
+#### Aula 13: Filtros e Validação de Dados (2h)
 - **Objetivo:** Filtrar e validar dados para qualidade de informação
 - **Conteúdo:**
   - Filtro automático
@@ -145,7 +165,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 - **Atividade Prática:** Criar planilha com filtros e validações
 - **Recursos:** Excel, dados estruturados
 
-#### Aula 12: Gráficos e Visualização de Dados (2h)
+#### Aula 14: Gráficos e Visualização de Dados (2h)
 - **Objetivo:** Visualizar dados através de gráficos dinâmicos
 - **Conteúdo:**
   - Tipos de gráficos (colunas, linhas, setores)
@@ -159,7 +179,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 
 ### **MÓDULO 4: DASHBOARDS E ANÁLISE (4 horas)**
 
-#### Aula 13: Introdução a Dashboards (2h)
+#### Aula 15: Introdução a Dashboards (2h)
 - **Objetivo:** Criar painéis executivos de visualização
 - **Conteúdo:**
   - Conceitos de dashboard
@@ -169,7 +189,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 - **Atividade Prática:** Planejar um dashboard executivo
 - **Recursos:** Exemplos de dashboards, Excel
 
-#### Aula 14: Criação de Dashboard Prático (2h)
+#### Aula 16: Criação de Dashboard Prático (2h)
 - **Objetivo:** Desenvolver um dashboard funcional
 - **Conteúdo:**
   - Estrutura de dados para dashboard
@@ -181,9 +201,9 @@ Ao final da unidade curricular, os alunos serão capazes de:
 
 ---
 
-## 3. AVALIAÇÕES (4 horas)
+## 3. AVALIAÇÕES (2 horas)
 
-### **Avaliação Objetiva (2 horas)**
+### **Avaliação Objetiva (1 hora)**
 
 **Data:** A definir (conforme calendário da instituição)  
 **Formato:** Prova escrita com questões de múltipla escolha e dissertativas
@@ -202,7 +222,7 @@ Ao final da unidade curricular, os alunos serão capazes de:
 
 ---
 
-### **Avaliação Prática (2 horas)**
+### **Avaliação Prática (1 hora)**
 
 **Data:** A definir (na semana seguinte à avaliação objetiva)  
 **Formato:** Desenvolvimento prático de um projeto integrado
@@ -275,11 +295,11 @@ Os alunos deverão:
 
 | Aula | Módulo | Tema | Duração | Semana |
 |------|--------|------|---------|--------|
-| 1-4 | 1 | Fundamentos Matemáticos | 8h | Semanas 1-2 |
-| 5-7 | 2 | Excel Básico | 6h | Semanas 3 |
-| 8-12 | 3 | Excel Avançado | 10h | Semanas 4-5 |
-| 13-14 | 4 | Dashboards | 4h | Semana 6 |
-| - | Avaliação | Objetiva e Prática | 4h | Semana 7 |
+| 1-6 | 1 | Fundamentos Matemáticos | 10h | Semanas 1-2 |
+| 7-9 | 2 | Excel Básico | 6h | Semana 3 |
+| 10-14 | 3 | Excel Avançado | 10h | Semanas 4-5 |
+| 15-16 | 4 | Dashboards | 4h | Semana 6 |
+| - | Avaliação | Objetiva e Prática | 2h | Semana 7 |
 
 ---
 
