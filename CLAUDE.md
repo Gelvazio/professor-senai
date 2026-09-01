@@ -5,7 +5,7 @@
 
 ⚠️ **ATUALIZAR ESTE CONTEXTO A CADA INTERAÇÃO COM O CHAT** — Este documento deve refletir sempre o estado mais recente do projeto.
 
-**Data Última Atualização:** 01-09-2026 (Atualizado: Apostila completa com 3 fases e 8 atividades)  
+**Data Última Atualização:** 01-09-2026 (Atualizado: Campo visivel_alunos implementado)  
 **Objetivo Principal:** Implementar sistema de validação e sincronização de UCs (Unidades Curriculares) com dashboard interativo
 
 ### ✅ Implementações Realizadas
@@ -17,6 +17,7 @@
 5. **REGRA 06**: Arquivo CLAUDE.md obrigatório em cada UC para documentação
 6. **REGRA 07**: Filtro de pendências — busca apenas matérias ATIVAS (ativo=1)
 7. **REGRA 08**: Campo de status de matérias aceita 3 valores: 1 (Ativa), 0 (Inativa), 2 (Concluída)
+8. **REGRA 09**: Campo visivel_alunos em tabela materia — Controla visibilidade (SIM=mostra para alunos | NAO=oculta) — Professor sempre vê tudo
 
 ### 📋 Estrutura de UCs Existentes
 
