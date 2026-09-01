@@ -8,6 +8,7 @@ class MateriasManager {
     this.filtrosAtivos = {
       status: ['ANDAMENTO', 'PENDENTE'],
       campos: ['ementaCriada', 'apostilaCriada', 'planoAulasCriado', 'planoensinoCriado', 'avaliacoesCriadas'],
+      substituto: [false], // Por padrão, mostra apenas Não (false)
     };
     this.init();
   }
@@ -116,6 +117,13 @@ class MateriasManager {
       });
     });
 
+    // Filtros de substituto
+    document.querySelectorAll('.substituto-filter').forEach((checkbox) => {
+      checkbox.addEventListener('change', () => {
+        this.atualizarFiltrosSubstituto();
+      });
+    });
+
     // Reset filtros
     document.getElementById('btnResetFilters').addEventListener('click', () => {
       this.resetarFiltros();
@@ -151,12 +159,27 @@ class MateriasManager {
     this.aplicarFiltros();
   }
 
+  atualizarFiltrosSubstituto() {
+    this.filtrosAtivos.substituto = Array.from(document.querySelectorAll('.substituto-filter:checked')).map(
+      (cb) => cb.value === 'true'
+    );
+    this.aplicarFiltros();
+  }
+
   resetarFiltros() {
-    // Redefine filtros para padrão (ANDAMENTO e PENDENTE)
+    // Redefine filtros para padrão
+    // Status: ANDAMENTO e PENDENTE
     document.querySelectorAll('.status-filter').forEach((cb) => {
       cb.checked = cb.value === 'ANDAMENTO' || cb.value === 'PENDENTE';
     });
     this.filtrosAtivos.status = ['ANDAMENTO', 'PENDENTE'];
+
+    // Substituto: Apenas Não (false)
+    document.querySelectorAll('.substituto-filter').forEach((cb) => {
+      cb.checked = cb.value === 'false';
+    });
+    this.filtrosAtivos.substituto = [false];
+
     this.aplicarFiltros();
   }
 
@@ -262,11 +285,13 @@ class MateriasManager {
   aplicarFiltros() {
     const busca = document.getElementById('searchInput').value.toLowerCase();
     const statusAtivos = this.filtrosAtivos.status;
+    const substitutoAtivos = this.filtrosAtivos.substituto;
 
     const filtradas = this.materias.filter((m) => {
       const matchBusca = m.nome.toLowerCase().includes(busca);
       const matchStatus = statusAtivos.includes(m.status);
-      return matchBusca && matchStatus;
+      const matchSubstituto = substitutoAtivos.includes(m.substituto);
+      return matchBusca && matchStatus && matchSubstituto;
     });
 
     this.renderizarMateriasFiltradas(filtradas);
