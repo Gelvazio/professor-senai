@@ -364,18 +364,25 @@ class MateriasManager {
 
     const filtradas = this.materias.filter((m) => {
       const matchBusca = m.nome.toLowerCase().includes(busca);
-      const matchStatus = statusAtivos.includes(m.status);
+
+      // Se nenhum status está selecionado, considere todos os status
+      const matchStatus = statusAtivos.length === 0 ? true : statusAtivos.includes(m.status);
+
+      // Substituto é sempre obrigatório
       const matchSubstituto = substitutoAtivos.includes(m.substituto);
 
-      // Verificar filtro de campos:
-      // Campos marcados devem ser true, campos desmarcados devem ser false
-      const matchCampos = todosCampos.every((campo) => {
-        if (camposAtivos.includes(campo)) {
-          return m[campo] === true; // Marcado: deve ser true
-        } else {
-          return m[campo] === false; // Desmarcado: deve ser false
-        }
-      });
+      // Se nenhum campo está selecionado, ignore o filtro de campos (mostre todos)
+      let matchCampos = true;
+      if (camposAtivos.length > 0) {
+        // Campos marcados devem ser true, campos desmarcados devem ser false
+        matchCampos = todosCampos.every((campo) => {
+          if (camposAtivos.includes(campo)) {
+            return m[campo] === true; // Marcado: deve ser true
+          } else {
+            return m[campo] === false; // Desmarcado: deve ser false
+          }
+        });
+      }
 
       return matchBusca && matchStatus && matchSubstituto && matchCampos;
     });
