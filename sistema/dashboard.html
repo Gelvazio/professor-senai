@@ -4610,6 +4610,33 @@
         }
       }
 
+      async function alterarVisivelAlunosMateria(materiaId, checkbox) {
+        if (!isProfessor) return;
+        const materia = _materiasCursoModal.find((item) => Number(item.id) === Number(materiaId));
+        const card = checkbox.closest(".curso-materia-card");
+        if (!materia || !card) return;
+        const valorAnterior = materia.visivel_alunos;
+        const novoValor = checkbox.checked ? "SIM" : "NAO";
+        const textoValor = card.querySelector(".curso-materia-toggle-visivel-valor");
+        checkbox.disabled = true;
+
+        try {
+          await sbPatch("materia", "id", Number(materiaId), { visivel_alunos: novoValor });
+          materia.visivel_alunos = novoValor;
+          if (textoValor) {
+            textoValor.textContent = novoValor === "SIM" ? "SIM" : "NÃO";
+            textoValor.classList.toggle("sim", novoValor === "SIM");
+          }
+          setCursoMateriasMsg(novoValor === "SIM" ? "✅ Matéria agora é visível para alunos." : "✅ Matéria ocultada para alunos.");
+        } catch (erro) {
+          console.error("Erro ao alterar campo visivel_alunos:", erro);
+          checkbox.checked = valorAnterior === "SIM";
+          setCursoMateriasMsg("Não foi possível alterar o campo VISÍVEL ALUNOS. Execute o script SQL da coluna no banco.", true);
+        } finally {
+          checkbox.disabled = false;
+        }
+      }
+
       const EMENTAS_PADRAO_POR_MATERIA = {
         "introducao a tecnologia da informacao e comunicacao": "INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/EMENTA-INTRODUCAO-TENOLOGIA-INFORMACAO.md",
         "competencias socioemocionais e empreendedorismo": "FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/ementa_Competencias_Socioemocionais_Empreendedorismo.md",
@@ -4705,6 +4732,10 @@
                 <div class="avaliacao-etapa">
                   <span class="avaliacao-etapa-label">ENSALADO</span>
                   ${isProfessor ? `<span class="curso-materia-toggle-ensalado"><span class="curso-materia-toggle-valor ${ensalada ? "sim" : ""}">${ensalada ? "SIM" : "NÃO"}</span><label class="toggle"><input type="checkbox" ${ensalada ? "checked" : ""} onchange="alterarEnsaladoMateria(${Number(materia.id)}, this)"><span class="toggle-slider"></span></label></span>` : `<span class="avaliacao-etapa-status ${ensalada ? "concluido" : ""}">${ensalada ? "SIM" : "NÃO"}</span>`}
+                </div>
+                <div class="avaliacao-etapa">
+                  <span class="avaliacao-etapa-label">VISÍVEL ALUNOS</span>
+                  ${isProfessor ? `<span class="curso-materia-toggle-visivel"><span class="curso-materia-toggle-visivel-valor ${materia.visivel_alunos === 'SIM' ? "sim" : ""}">${materia.visivel_alunos === 'SIM' ? "SIM" : "NÃO"}</span><label class="toggle"><input type="checkbox" ${materia.visivel_alunos === 'SIM' ? "checked" : ""} onchange="alterarVisivelAlunosMateria(${Number(materia.id)}, this)"><span class="toggle-slider"></span></label></span>` : `<span class="avaliacao-etapa-status ${materia.visivel_alunos === 'SIM' ? "concluido" : ""}">${materia.visivel_alunos === 'SIM' ? "SIM" : "NÃO"}</span>`}
                 </div>
               </div>
               <div class="curso-materia-card-rodape">
