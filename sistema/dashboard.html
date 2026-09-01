@@ -4755,10 +4755,10 @@
                 <span class="curso-materia-status ${ativa ? "" : "inativa"}">${ativa ? "● Disponível" : "● Inativa"}</span>
                 <div style="display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end">
                   ${isProfessor ? `<button class="curso-materia-acessar curso-materia-editar" onclick="editarMateriaCurso(${Number(materia.id)})">Editar</button>` : ""}
-                  <button class="curso-materia-acessar curso-materia-ementa" onclick="abrirEmentaMateria(${Number(materia.id)})">Ementa</button>
-                  <button class="curso-materia-acessar curso-materia-avaliacoes" onclick="abrirAvaliacoesMateria(${Number(materia.id)})">Avaliações</button>
-                  <button class="curso-materia-acessar curso-materia-comportamentos" onclick="abrirAvaliacaoComportamentos(${Number(materia.id)})">Avaliação Comportamentos</button>
-                  <button class="curso-materia-acessar curso-materia-apostila" onclick="abrirApostilaMateria(${Number(materia.id)})">Apostila</button>
+                  ${isProfessor ? `<button class="curso-materia-acessar curso-materia-ementa" onclick="abrirEmentaMateria(${Number(materia.id)})">Ementa</button>` : ""}
+                  ${isProfessor ? `<button class="curso-materia-acessar curso-materia-avaliacoes" onclick="abrirAvaliacoesMateria(${Number(materia.id)})">Avaliações</button>` : ""}
+                  ${isProfessor ? `<button class="curso-materia-acessar curso-materia-comportamentos" onclick="abrirAvaliacaoComportamentos(${Number(materia.id)})">Avaliação Comportamentos</button>` : ""}
+                  ${isProfessor ? `<button class="curso-materia-acessar curso-materia-apostila" onclick="abrirApostilaMateria(${Number(materia.id)})">Apostila</button>` : ""}
                   <button class="curso-materia-acessar" onclick="abrirMateriaDoCurso(${Number(materia.id)})">Ver aulas →</button>
                   ${isProfessor ? `<button class="curso-materia-acessar curso-materia-excluir" onclick="excluirMateriaCurso(${Number(materia.id)})">Excluir</button>` : ""}
                 </div>
