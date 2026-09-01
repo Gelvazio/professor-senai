@@ -4726,9 +4726,9 @@
                 </div>
               </div>
               <div class="avaliacao-etapas">
-                ${renderEtapaAvaliacao("Criação de Avaliação", materia.status_criacao_avaliacao)}
-                ${renderEtapaAvaliacao("Plano de Aula", materia.status_plano_aula)}
-                ${renderEtapaAvaliacao("Plano de Ensino", materia.status_plano_ensino)}
+                ${renderEtapaAvaliacao("Criação de Avaliação", materia.status_criacao_avaliacao, materia.id, "status_criacao_avaliacao", "materia")}
+                ${renderEtapaAvaliacao("Plano de Aula", materia.status_plano_aula, materia.id, "status_plano_aula", "materia")}
+                ${renderEtapaAvaliacao("Plano de Ensino", materia.status_plano_ensino, materia.id, "status_plano_ensino", "materia")}
                 <div class="avaliacao-etapa">
                   <span class="avaliacao-etapa-label">ENSALADO</span>
                   ${isProfessor ? `<span class="curso-materia-toggle-ensalado"><span class="curso-materia-toggle-valor ${ensalada ? "sim" : ""}">${ensalada ? "SIM" : "NÃO"}</span><label class="toggle"><input type="checkbox" ${ensalada ? "checked" : ""} onchange="alterarEnsaladoMateria(${Number(materia.id)}, this)"><span class="toggle-slider"></span></label></span>` : `<span class="avaliacao-etapa-status ${ensalada ? "concluido" : ""}">${ensalada ? "SIM" : "NÃO"}</span>`}
@@ -4936,12 +4936,51 @@
         return "";
       }
 
-      function renderEtapaAvaliacao(label, status) {
+      async function abrirMenuEtapa(event, id, nomeDocampo, tipoObjeto) {
+        event.stopPropagation();
+        if (!isProfessor) return;
+        const opcoes = ["PENDENTE", "ANDAMENTO", "CONCLUIDO"];
+        if (nomeDocampo.includes("alunos")) opcoes.push("SEM_ALUNOS");
+
+        const menuHtml = `<div class="etapa-menu" style="position: absolute; background: white; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 1001;">
+          ${opcoes.map(op => `<div class="etapa-menu-item" onclick="atualizarEtapa(${Number(id)}, '${nomeDocampo}', '${tipoObjeto}', '${op}')" style="padding: 8px 16px; cursor: pointer; border-bottom: 1px solid #f0f0f0; hover: background: #f5f5f5;">${op}</div>`).join("")}
+        </div>`;
+
+        const menu = document.createElement("div");
+        menu.innerHTML = menuHtml;
+        document.body.appendChild(menu);
+        menu.firstChild.style.top = (event.clientY + 10) + "px";
+        menu.firstChild.style.left = (event.clientX) + "px";
+
+        setTimeout(() => {
+          document.addEventListener("click", function removerMenu(e) {
+            if (!menu.contains(e.target)) {
+              menu.remove();
+              document.removeEventListener("click", removerMenu);
+            }
+          });
+        }, 0);
+      }
+
+      async function atualizarEtapa(id, nomeDocampo, tipoObjeto, novoStatus) {
+        try {
+          await sbPatch(tipoObjeto, "id", Number(id), { [nomeDocampo]: novoStatus });
+          location.reload();
+        } catch (erro) {
+          console.error("Erro ao atualizar etapa:", erro);
+          alert("Erro ao atualizar campo: " + erro.message);
+        }
+      }
+
+      function renderEtapaAvaliacao(label, status, materiaId, nomeDocampo, tipoObjeto) {
         const valor = String(status || "PENDENTE").toUpperCase();
         const texto = valor === "SEM_ALUNOS" ? "SEM ALUNOS" : valor;
-        return `<div class="avaliacao-etapa">
+        const podeEditar = isProfessor && materiaId && nomeDocampo && tipoObjeto;
+        const cursorStyle = podeEditar ? "cursor: pointer;" : "";
+        const onClickAttr = podeEditar ? `onclick="abrirMenuEtapa(event, ${Number(materiaId)}, '${nomeDocampo}', '${tipoObjeto}')"` : "";
+        return `<div class="avaliacao-etapa" ${onClickAttr} style="${cursorStyle}">
           <span class="avaliacao-etapa-label">${escaparPendencia(label)}</span>
-          <span class="avaliacao-etapa-status ${classeStatusAvaliacao(valor)}">${escaparPendencia(texto)}</span>
+          <span class="avaliacao-etapa-status ${classeStatusAvaliacao(valor)}" style="${cursorStyle}">${escaparPendencia(texto)}</span>
         </div>`;
       }
 
@@ -4975,10 +5014,10 @@
             </div>
             <div class="avaliacao-data">📅 Aplicação: ${escaparPendencia(formatarDataPendencia(avaliacao.data_aplicacao))}</div>
             <div class="avaliacao-etapas">
-              ${renderEtapaAvaliacao("Aplicação da avaliação", avaliacao.status_aplicacao)}
-              ${renderEtapaAvaliacao("Revisão da avaliação", avaliacao.status_revisao)}
-              ${renderEtapaAvaliacao("Cadastro no SGN", avaliacao.status_cadastro_sgn)}
-              ${renderEtapaAvaliacao("Acompanhamentos Pedagógicos (SGN)", avaliacao.acompanhamento_pedagogico_sgn)}
+              ${renderEtapaAvaliacao("Aplicação da avaliação", avaliacao.status_aplicacao, avaliacao.id, "status_aplicacao", "avaliacao")}
+              ${renderEtapaAvaliacao("Revisão da avaliação", avaliacao.status_revisao, avaliacao.id, "status_revisao", "avaliacao")}
+              ${renderEtapaAvaliacao("Cadastro no SGN", avaliacao.status_cadastro_sgn, avaliacao.id, "status_cadastro_sgn", "avaliacao")}
+              ${renderEtapaAvaliacao("Acompanhamentos Pedagógicos (SGN)", avaliacao.acompanhamento_pedagogico_sgn, avaliacao.id, "acompanhamento_pedagogico_sgn", "avaliacao")}
             </div>
             <div class="avaliacao-card-acoes">
               <button class="avaliacao-card-acao avaliacao-card-editar" onclick="editarAvaliacao(${Number(avaliacao.id)})">✏️ Editar</button>
