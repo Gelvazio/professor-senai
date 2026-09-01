@@ -5550,7 +5550,8 @@
         try {
           let conteudoEmenta = "";
           for (const caminho of caminhosEmenta) {
-            const resposta = await fetch(caminho, { cache: "no-store" });
+            const caminhoFinal = /^https?:\/\//i.test(caminho) ? caminho : `sistema/${caminho}`;
+            const resposta = await fetch(caminhoFinal, { cache: "no-store" });
             if (!resposta.ok) continue;
             conteudoEmenta = await resposta.text();
             break;
@@ -5593,7 +5594,8 @@
         try {
           let conteudoApostila = "";
           for (const caminho of caminhosApostila) {
-            const resposta = await fetch(caminho, { cache: "no-store" });
+            const caminhoFinal = /^https?:\/\//i.test(caminho) ? caminho : `sistema/${caminho}`;
+            const resposta = await fetch(caminhoFinal, { cache: "no-store" });
             if (!resposta.ok) continue;
             conteudoApostila = await resposta.text();
             break;
