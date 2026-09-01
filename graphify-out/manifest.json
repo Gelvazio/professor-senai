@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788203810.2139225,
-    "ast_hash": "71ae114599fd9c722e1a014106675743",
+    "mtime": 1788279299.8283584,
+    "ast_hash": "4920bc2b213dfffa7abf6c19e2143b83",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -504,11 +504,6 @@
     "ast_hash": "23b69d39825f79cc2ad12773feb0733d",
     "semantic_hash": ""
   },
-  "sistema/BANCO_DE_DADOS/ORIENTACAO_UC.txt": {
-    "mtime": 1788179515.5421455,
-    "ast_hash": "5020558b4e139e8170f8d8d1fb2e7d91",
-    "semantic_hash": ""
-  },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-08-12-08-2026/ATIVIDADE-DIGITACAO-12-08-2026_OLD.txt": {
     "mtime": 1787856586.5151415,
     "ast_hash": "cf950160a6c1fb794908ab566045eeb2",
@@ -585,8 +580,8 @@
     "semantic_hash": ""
   },
   "sistema/.claude/settings.local.json": {
-    "mtime": 1787921412.0504284,
-    "ast_hash": "1fe896c5a1a2abbce994f0e1448d33b5",
+    "mtime": 1788279091.3880215,
+    "ast_hash": "e52fc855fdaac76e965f7edef13878b6",
     "semantic_hash": ""
   },
   "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md": {
@@ -614,179 +609,14 @@
     "ast_hash": "9c2ea287ff888e37f024b34cfd39ad11",
     "semantic_hash": ""
   },
-  "erp-victor-anato-senai/CLAUDE.md": {
-    "mtime": 1787830216.2659822,
-    "ast_hash": "4886ef31aa04855a3b3ecb68ff9a6c11",
-    "semantic_hash": ""
-  },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.md": {
     "mtime": 1787856586.552664,
     "ast_hash": "43cda7bd56f6e878ca4b6c8a40a6f1ca",
     "semantic_hash": ""
   },
-  "erp-victor-anato-senai/.claude/settings.local.json": {
-    "mtime": 1786966070.1096857,
-    "ast_hash": "71b205ce1d3919e8b5b80ee9291634da",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/DATABASE.sql": {
-    "mtime": 1787827716.5345004,
-    "ast_hash": "0ba6d053e871fb8cabe1149317135130",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/SUPABASE.js": {
-    "mtime": 1787825778.5438132,
-    "ast_hash": "29f0d3438bdd828e605e2bab28b80f35",
-    "semantic_hash": ""
-  },
   "sistema/INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO/AULAS/AULA-10-14-08-2026/ATIVIDADE-14-08-2026.html": {
     "mtime": 1787856586.5494728,
     "ast_hash": "37ddf1fd25fd11bc4f8be8f14582e2f3",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/index.html": {
-    "mtime": 1787830266.1643922,
-    "ast_hash": "1d6f8aff2837fae3c628b1e745c6b1c2",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/.vscode/settings.json": {
-    "mtime": 1786718250.209483,
-    "ast_hash": "51b69d2e590701fbd83940a48867e5ec",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/cadastros/clientes.html": {
-    "mtime": 1787229285.8392682,
-    "ast_hash": "c131b06a86095ec2a2bbfee18bee106e",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/cadastros/fornecedores.html": {
-    "mtime": 1787229285.8415384,
-    "ast_hash": "e8b9d0e2b55e0c656f897c2164d4d3ea",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/cadastros/produtos.html": {
-    "mtime": 1787229285.8470273,
-    "ast_hash": "af4bd47b3a18e10a22ab236671d7fbea",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/compras/conferencia.html": {
-    "mtime": 1787576982.0013964,
-    "ast_hash": "d0be900eb33af92dfea9d28191a77504",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/compras/pedidos.html": {
-    "mtime": 1787577031.2536108,
-    "ast_hash": "b863ece4e3ac933ea503b33312b580cc",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/compras/planejamento.html": {
-    "mtime": 1787576953.5872095,
-    "ast_hash": "c49e640999eb64d81001d3a9dd4e7575",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/compras/recebimento.html": {
-    "mtime": 1787576981.1390698,
-    "ast_hash": "11c56829bfae118c6c972561bac06542",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/compras/solicitacoes.html": {
-    "mtime": 1787578663.6200938,
-    "ast_hash": "337dedcd4fb16dfc6a3f5bec161d4817",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/configuracoes/usuarios.html": {
-    "mtime": 1787231256.4000132,
-    "ast_hash": "3566b4e8e23c49f23a244aaaccfa74f0",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/dashboard.html": {
-    "mtime": 1787229285.837254,
-    "ast_hash": "5690d143aea0a3ec7c13a21f90b41812",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/estoque/armazenagem.html": {
-    "mtime": 1787229285.873629,
-    "ast_hash": "d933ad08cf718d2ba5b6f1b18ea17d1c",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/estoque/controle.html": {
-    "mtime": 1787229285.875143,
-    "ast_hash": "b477a1a6d475cd7d4f16861a73217276",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/estoque/inventario.html": {
-    "mtime": 1787229285.8771524,
-    "ast_hash": "af4da75e67be37279ecbb7654024a4d7",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/estoque/movimentacoes.html": {
-    "mtime": 1787229285.8791552,
-    "ast_hash": "d6df6c115798051f1fe60f8a63087240",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/nota-fiscal-venda.html": {
-    "mtime": 1787229286.0001915,
-    "ast_hash": "c5efda32730d2e6064bd145a1c5e0548",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/pedidos-venda.html": {
-    "mtime": 1787827748.0369518,
-    "ast_hash": "c474600ab4d1814e8e37d1b958bf41c3",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/separacao.html": {
-    "mtime": 1787229286.0068848,
-    "ast_hash": "fb7502ae3c3ec562dc26bec7828fbbf4",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/cadastros/transportadoras.html": {
-    "mtime": 1787229285.8490243,
-    "ast_hash": "aa36519ddac43a4356448106d14a29e8",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/compras/nota-fiscal.html": {
-    "mtime": 1787576982.9437175,
-    "ast_hash": "6fe91d18ec97f872c4ab344456ee0481",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/entrega.html": {
-    "mtime": 1787229285.9956782,
-    "ast_hash": "75b7713f477aa81ca84214814a8a3a6d",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/expedicao.html": {
-    "mtime": 1787229285.9971912,
-    "ast_hash": "9209f8f4b643e74f0667a8f3b19f8cdb",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/romaneio.html": {
-    "mtime": 1787229286.0045059,
-    "ast_hash": "5a60a5c18dc9774e1b8cda364e1b0a2b",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/seed.sql": {
-    "mtime": 1787830218.2666886,
-    "ast_hash": "1e20cd08869843520c0b49c179fa4683",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/financeiro/creditscore.json": {
-    "mtime": 1786908334.3341477,
-    "ast_hash": "346948de29945f3561ede384f67006ab",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/DATABASE.sql": {
-    "mtime": 1786905492.1677418,
-    "ast_hash": "bca2e9f682bd6074b081d777b5605802",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/DATABASE_SEED.sql": {
-    "mtime": 1786905638.2441454,
-    "ast_hash": "f6d6f0d981751e41494b755ca58ac6d8",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/gamif.js": {
-    "mtime": 1786905247.0783286,
-    "ast_hash": "ab0a7646298b92d46f2833fbe0e2dd69",
     "semantic_hash": ""
   },
   ".superpowers/sdd/task-1-brief.md": {
@@ -859,496 +689,6 @@
     "ast_hash": "ccbb50fa7b0061f679f9b15f3662959d",
     "semantic_hash": ""
   },
-  "erp-carlos-alfarth/Readme.md": {
-    "mtime": 1786828707.6007957,
-    "ast_hash": "bfa8ed42ab3f4a8e62568601729a6fe1",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/.superpowers/sdd/progress.md": {
-    "mtime": 1786907697.183786,
-    "ast_hash": "bd5299cde570653cfd9cd1c85588efd6",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. de PCP_436h_Pr\u00e1tica Profissional.md": {
-    "mtime": 1786893895.6125696,
-    "ast_hash": "71de4d1249ce79cd26bee8afc7adcbce",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. de PCP_436h_Pr\u00e1tica Profissional_41a56ba3.md": {
-    "mtime": 1786888540.7768364,
-    "ast_hash": "6fc4c1a3e6ef94a18b30301990208887",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. de PCP_516h_Pr\u00e1tica Profissional.md": {
-    "mtime": 1786893899.1141028,
-    "ast_hash": "e72fbe9e4de45cb025822447057cbbc1",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. de PCP_516h_Pr\u00e1tica Profissional_ff613011.md": {
-    "mtime": 1786888541.439564,
-    "ast_hash": "39f3273ad701b943229c9bf1b6db852c",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. de PCP_FLEX_ 860h.md": {
-    "mtime": 1786893903.737641,
-    "ast_hash": "fe2dadd36332785206efb0d8341d3597",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. de PCP_FLEX_ 860h_9014e82a.md": {
-    "mtime": 1786888541.8516562,
-    "ast_hash": "72cea26ffe39c3360a7bd636104f46c3",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional.md": {
-    "mtime": 1786893907.835047,
-    "ast_hash": "76730e0d7031737d7678a8fa4f357900",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. em Processos Administrativos e Industriais_1636h_Pr\u00e1tica Profissional_b0c8fb28.md": {
-    "mtime": 1786888542.8479815,
-    "ast_hash": "d72607dfcf6e7ac79787c8f1b642cdde",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. em Processos da Qualidade e Log\u00edstica Industrial_860h.md": {
-    "mtime": 1786893912.4662347,
-    "ast_hash": "99ae8110be79cf33d65fc5dbba3f4a08",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/Assist. em Processos da Qualidade e Log\u00edstica Industrial_860h_a23a07b2.md": {
-    "mtime": 1786888543.3183122,
-    "ast_hash": "ab83f026bb8e1d84009becb5347057ea",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/CT Automa\u00e7\u00e3o Industrial_1300h.md": {
-    "mtime": 1786894250.5115523,
-    "ast_hash": "6c854bb19c2054871953f859e5dd54da",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/CT Automa\u00e7\u00e3o Industrial_1300h_b734befb.md": {
-    "mtime": 1786894300.2129278,
-    "ast_hash": "687030117b5792d7341c9ae229003fe1",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/PASSOS-CRIACAO-ERP.md": {
-    "mtime": 1786820554.7611847,
-    "ast_hash": "3835c3019925af55758b97428e26e1d3",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/REGRAS-NEGOCIOS.md": {
-    "mtime": 1786893926.9284236,
-    "ast_hash": "dd524421348d941064269ab6ba041e8c",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/REGRAS-NEGOCIOS.txt": {
-    "mtime": 1786828164.688372,
-    "ast_hash": "41d87b2d9f3e66f18edcd098daad9c88",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/_Assist. em Processos Administrativos e Industriais_1280h.md": {
-    "mtime": 1786893916.3663402,
-    "ast_hash": "cac2db11e6ce922f896c2eb05246f2ee",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/_Assist. em Processos Administrativos e Industriais_1280h_09ea01ca.md": {
-    "mtime": 1786888543.793035,
-    "ast_hash": "73d0e5ce22558afc7f903cd647ddbe40",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Armaz_4.0_cont.md": {
-    "mtime": 1786894029.5381868,
-    "ast_hash": "6a7513950e7f8d7db1b8a3b09e0459f7",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Con_Proj_Eco_4.0.md": {
-    "mtime": 1786894031.1171045,
-    "ast_hash": "cdb5c13e498289c599b9d149f4895495",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Fund_Com_Inf.md": {
-    "mtime": 1786894036.2429764,
-    "ast_hash": "e00ecafbc7d2407d8a1a36a16183fe9c",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Gest_pro_log_4.0.md": {
-    "mtime": 1786894042.9144564,
-    "ast_hash": "2a783add3074594192c505fd0173c2d3",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Gest_proc_rh_4.0.md": {
-    "mtime": 1786894039.5260022,
-    "ast_hash": "106d60ea845b0483c54f765fa9f55861",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Intro_gest_org.md": {
-    "mtime": 1786894048.7087502,
-    "ast_hash": "ae8f556b24a12f707af9504765829e92",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Plan_Org_Trab.md": {
-    "mtime": 1786894051.5755384,
-    "ast_hash": "e1b6d650ef7905e0b469f7cabd090683",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Proc_cont_finan.md": {
-    "mtime": 1786894053.3062637,
-    "ast_hash": "fee2d7e4ea69c60421a53dcceef018f6",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Rel_socio_prof.md": {
-    "mtime": 1786894057.0565548,
-    "ast_hash": "d729545c59a3d90a5f1100743928337a",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Saude_Seg_Trab.md": {
-    "mtime": 1786894059.841006,
-    "ast_hash": "843dd40d39a770d8ff40717f567916dc",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Tec_aplic_mark.md": {
-    "mtime": 1786894062.4912107,
-    "ast_hash": "4dc533f8099885d1f06bdd5ee00f9f99",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/ebook_UCs/Trans_Dig_Set_Ind.md": {
-    "mtime": 1786894068.779955,
-    "ast_hash": "6874a0c06f06d1ef1953526578c586f1",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/tema_dashboard_01.md": {
-    "mtime": 1786893943.7296062,
-    "ast_hash": "3fa4538381b341a4cad7cc0ac815ef2c",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/tema_dashboard_02.md": {
-    "mtime": 1786894274.889658,
-    "ast_hash": "272a44d4cd65b3fb0ca0133ad77146bd",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/andamento.md": {
-    "mtime": 1786911632.0790663,
-    "ast_hash": "a50d983d1aafb3a94f1c557c1109c645",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/cadastros/CLAUDE.md": {
-    "mtime": 1786925072.8155048,
-    "ast_hash": "8b27e1c72e889cac6f6fe117e25eb560",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/cadastros/andamento.md": {
-    "mtime": 1786964742.0247805,
-    "ast_hash": "f816941b1145a6ce1d309d75fca967ef",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/cadastros/impostos.html": {
-    "mtime": 1787229285.842939,
-    "ast_hash": "bbb6f3a15b1151b0812bbd7a21f6d7ae",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/cadastros/ncmsh.html": {
-    "mtime": 1787229285.845017,
-    "ast_hash": "c9db48e107aff2e6072e87ad41f9e388",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/compras/CLAUDE.md": {
-    "mtime": 1786925104.3407116,
-    "ast_hash": "ffc71a89a480a701b82af0a046c22614",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/compras/andamento.md": {
-    "mtime": 1786925446.988788,
-    "ast_hash": "76133fda2324126fbe69b56589ead9e6",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/compras/pipeline.html": {
-    "mtime": 1787229285.857363,
-    "ast_hash": "5af3256386f07a2a149004b8fdc8e191",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/configuracoes/CLAUDE.md": {
-    "mtime": 1786925334.9141028,
-    "ast_hash": "59c01e87b29e9a2ea603b4174cf77c43",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/configuracoes/andamento.md": {
-    "mtime": 1786964650.8249128,
-    "ast_hash": "aca0376cbb0402a6ae456b2cd10cd8f4",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/configuracoes/perfis.html": {
-    "mtime": 1787233201.208429,
-    "ast_hash": "f321a2c4ea376c36a75064a7579ddb68",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/configuracoes/regras-negocios.html": {
-    "mtime": 1787229285.8670392,
-    "ast_hash": "633062467c3bbf8a54af9abbb5e59adc",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/configuracoes/telas.html": {
-    "mtime": 1787233199.833888,
-    "ast_hash": "96ff37c06d4110df32913ad8b72af138",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/superpowers/plans/2026-08-16-gamificacao-erp.md": {
-    "mtime": 1786905778.2284586,
-    "ast_hash": "39afdd4d3c04a76825b274b5fa6fd55f",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/superpowers/specs/2026-08-16-gamificacao-erp-design.md": {
-    "mtime": 1786893868.321446,
-    "ast_hash": "72a4c6de4959f4e2bbc39334d5e21883",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/estoque/CLAUDE.md": {
-    "mtime": 1786925120.853387,
-    "ast_hash": "a541e06a21da600ed33aa8bda1f297e2",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/estoque/andamento.md": {
-    "mtime": 1786925594.0323954,
-    "ast_hash": "fdc8667b3c689231c913b4233cbf70b5",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/financeiro/CLAUDE.md": {
-    "mtime": 1786925139.199816,
-    "ast_hash": "eea25ad660c3289ff8c6265a7747cfd6",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/financeiro/analisecredito.html": {
-    "mtime": 1787229285.881153,
-    "ast_hash": "f99c8062b724aeea8de7e4846130f232",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/financeiro/andamento.md": {
-    "mtime": 1786964649.2991579,
-    "ast_hash": "55c31bfabc383067de2281f2d3e9c339",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/financeiro/balancete.html": {
-    "mtime": 1787229285.8823264,
-    "ast_hash": "fea1e8d4ec872c8a47f619d5d22fcd35",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/financeiro/contas-pagar.html": {
-    "mtime": 1787229285.885031,
-    "ast_hash": "969798fcb24de0d0b0be58eba526d98c",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/financeiro/contas-receber.html": {
-    "mtime": 1787229285.8860781,
-    "ast_hash": "c8225f8affbbc01034ceedb5830ef904",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/CLAUDE.md": {
-    "mtime": 1786925368.9493916,
-    "ast_hash": "26f3b73a67783fab94e9097ab6c2ca58",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/LISTA-PENDENCIAS-GAMIFICACAO.txt": {
-    "mtime": 1786913059.0428257,
-    "ast_hash": "110fc59ae8f888272dbf8d4e20e613f8",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/admin.html": {
-    "mtime": 1787229285.8887744,
-    "ast_hash": "9ff116b1b258b48bf1fcef34c1c3dad4",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/andamento.md": {
-    "mtime": 1786925300.3765507,
-    "ast_hash": "752f174934fc830e6ab83d7ee29d0ea3",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/config-sessao.html": {
-    "mtime": 1787229285.890801,
-    "ast_hash": "120ff74a861796930336f2a5c3588a7d",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/equipe.html": {
-    "mtime": 1787229285.8928192,
-    "ast_hash": "e3466670f56e75c8f9db4f049a9d44fb",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/gamificacao.md": {
-    "mtime": 1786891948.6945477,
-    "ast_hash": "a1e32f643285ca2011576b6710cac119",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/index.html": {
-    "mtime": 1787229285.8951018,
-    "ast_hash": "b9ec09bf1eb66c05ed7a29c0f50e5a12",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/placar.html": {
-    "mtime": 1786965599.293305,
-    "ast_hash": "1ae0c6129d318866fdf13042f2e2ce83",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/professor.html": {
-    "mtime": 1787229285.9189494,
-    "ast_hash": "ce73a9412c2c0c7fc648be55fb251e9b",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/gamificacao/ranking.html": {
-    "mtime": 1787229285.9234946,
-    "ast_hash": "d272c8e97195b78c39faa84aa1964062",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/marketing/CLAUDE.md": {
-    "mtime": 1786925153.1424482,
-    "ast_hash": "2edda8f96631ae6ac6fc9a475d0063b4",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/marketing/andamento.md": {
-    "mtime": 1786925555.7039773,
-    "ast_hash": "f8078ad0119f2b100d481a6e3685f8dc",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/marketing/campanhas.html": {
-    "mtime": 1787229285.9520805,
-    "ast_hash": "08c8aaa86dfaf8b21d4aee8306edc556",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/marketing/retornos.html": {
-    "mtime": 1787229285.9577055,
-    "ast_hash": "315968cae4633c47c083a259383f5d05",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/CLAUDE.md": {
-    "mtime": 1786925422.7180502,
-    "ast_hash": "b53e774aeac805af384a122733c72f58",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/admissao.html": {
-    "mtime": 1787229285.961283,
-    "ast_hash": "f84485f7bbf20d81dab6bf5c36a29535",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/afastamentos.html": {
-    "mtime": 1787229285.9632843,
-    "ast_hash": "7f270db0d314e6594e2da3e114642525",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/andamento.md": {
-    "mtime": 1786925471.2967422,
-    "ast_hash": "ee5eb9f61aa5ec6f8ef4211c2924dbe4",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/apuracao-ponto.html": {
-    "mtime": 1787229285.964616,
-    "ast_hash": "b6078e6415faf7c8db2d557125338174",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/avaliacao-desempenho.html": {
-    "mtime": 1787229285.9667978,
-    "ast_hash": "5d47f18f3a055331d9d5cb48593c34bd",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/beneficios.html": {
-    "mtime": 1787229285.9680686,
-    "ast_hash": "7a359bec34be26d8843d7b5986d7d8cd",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/cargos.html": {
-    "mtime": 1787229285.9700778,
-    "ast_hash": "e995856ff4c8e507117fa498a5feb853",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/dashboard.html": {
-    "mtime": 1787229285.972226,
-    "ast_hash": "4866179aaedbce3c188d0f9144bda072",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/decimo-terceiro.html": {
-    "mtime": 1787229285.9736402,
-    "ast_hash": "ce3f4b8df941944731b38ab25893d9f3",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/departamentos.html": {
-    "mtime": 1787229285.9756505,
-    "ast_hash": "87bf410f44a107befb37a42f4db1a605",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/desligamento.html": {
-    "mtime": 1787229285.9778,
-    "ast_hash": "bbfc96a9de52a3fb109dd1b48962ec2f",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/ferias.html": {
-    "mtime": 1787229285.9791386,
-    "ast_hash": "fc64f752acee9bdafceb253998dc5994",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/folha.html": {
-    "mtime": 1787229285.9806125,
-    "ast_hash": "7b496e8220faf6175d986e7e438417a0",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/funcionarios.html": {
-    "mtime": 1787229285.9828475,
-    "ast_hash": "0b044c285588021f8ead1926cc1d0876",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/jornadas.html": {
-    "mtime": 1787229285.9843535,
-    "ast_hash": "fd474613c24233621c1834bc217f199a",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/participacoes.html": {
-    "mtime": 1787229285.9861073,
-    "ast_hash": "d5d75e079c45b252512fb319198b9422",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/ponto.html": {
-    "mtime": 1787229285.987893,
-    "ast_hash": "5dba532e3c31560c98cca97c4004b4f8",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/progressao-desempenho.html": {
-    "mtime": 1787229285.990198,
-    "ast_hash": "56385375cce56ca6f256f1ad5aa631b4",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/recursos-humanos.md": {
-    "mtime": 1786907699.9080403,
-    "ast_hash": "8791f86094c5e2d4e3ba8c56f32a00e1",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/treinamentos.html": {
-    "mtime": 1787229285.9912052,
-    "ast_hash": "f55b98d2931cdd472b9b0d17a329a9b0",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/rh/vinculo-beneficios.html": {
-    "mtime": 1787229285.993204,
-    "ast_hash": "5c402cd604528cc21f1ba9d085732ed6",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/score-credito/MATERIAIS-PESQUISA-SORE-CREDITO-INDUSTRIA.txt": {
-    "mtime": 1786881986.964951,
-    "ast_hash": "3dd7cb8357323e70929a951fa284cbd2",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/CLAUDE.md": {
-    "mtime": 1786910337.158574,
-    "ast_hash": "016c8e0bc9765ad7bb107b6a1b8f5a0d",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/andamento.md": {
-    "mtime": 1786925559.5822735,
-    "ast_hash": "de8ae5be4022ae5be0cbb99a0e67a263",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/logistica.html": {
-    "mtime": 1787229285.9991934,
-    "ast_hash": "73c834b4a94842576bd4ca5b2e894e64",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/vendas/televendas.html": {
-    "mtime": 1787229286.0088933,
-    "ast_hash": "2b761bf34fb478d069a9ee02bc1a2e4d",
-    "semantic_hash": ""
-  },
   "graphify-out/converted/Checklist Prova Objetiva_9406581b.md": {
     "mtime": 1786985458.6542528,
     "ast_hash": "79495a0112bbae942c9698ab0339104e",
@@ -1382,16 +722,6 @@
   "recursos-humanos/reunioes/REUNIAO-VICTOR-17-08-2026.txt": {
     "mtime": 1786968478.6505108,
     "ast_hash": "99c52992c678ecc1b5d0f61302c6b194",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/REGRAS-NEGOCIOS/AJUSTE-HORARIOS.png": {
-    "mtime": 1786715978.134686,
-    "ast_hash": "21aaeeb705a3050c6fe7be9a95a80291",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/favicon.svg": {
-    "mtime": 1786965060.1413298,
-    "ast_hash": "aa8734750a089d173e96c1746e22c6e9",
     "semantic_hash": ""
   },
   "graphify-out/converted/Atividade-Matematica-e-Raciocinio-Logico_36f08315.md": {
@@ -1639,11 +969,6 @@
     "ast_hash": "de9ba25019ac4eed56c79b46b0348896",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Apostila_Comunicacao_Oral_Escrita_33h.md": {
-    "mtime": 1787159310.6278217,
-    "ast_hash": "a65e4e8d0842f6c52fc5f25208569553",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/gerar_slides.js": {
     "mtime": 1787161245.9910777,
     "ast_hash": "098abc5ec2789edc2c9549dfead257a0",
@@ -1659,34 +984,9 @@
     "ast_hash": "9be5571899d3d9be3b5a05f0a1622285",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/gerar_slides.js": {
-    "mtime": 1787161083.6100254,
-    "ast_hash": "4d4c3add245502658e2c815d4b7ca504",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/gerar_slides.js": {
     "mtime": 1787182953.6624806,
     "ast_hash": "ad9fe139cc2b40b11254e7fb183533b3",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/menu.js": {
-    "mtime": 1787828851.3963025,
-    "ast_hash": "34bdf10b180766df478d239c590db839",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/tests/login-perfil.test.js": {
-    "mtime": 1787236089.0567808,
-    "ast_hash": "a1ec3ccd3d892e99e807a094b278dab6",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/tests/menu.integration.test.js": {
-    "mtime": 1787235638.598402,
-    "ast_hash": "f071edcc84b03fcf7fda5f8b4bdff132",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/tests/menu.test.js": {
-    "mtime": 1787235637.3627093,
-    "ast_hash": "1fcde72dcda91279f1c2b6c1cf4c5b51",
     "semantic_hash": ""
   },
   ".agents/skills/documentacao-padrao/SKILL.md": {
@@ -1702,61 +1002,6 @@
   "AGENTS.md": {
     "mtime": 1787752372.4502585,
     "ast_hash": "41d544e30db31ef28aca7c91ac469382",
-    "semantic_hash": ""
-  },
-  "INTEGRA-SOLUCAO-SENAI/Guia_Cadastro_Solucao_Integra_SENAI_2026.md": {
-    "mtime": 1787241443.2371354,
-    "ast_hash": "efd3c92caf3f0cacc7e199e22210efaf",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/carregar-telas-perfil-no-login.md": {
-    "mtime": 1787236173.9175255,
-    "ast_hash": "d485bae651ba328ffec1a466b4cfe732",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/corrigir-menu-perfil-atual.md": {
-    "mtime": 1787235738.5384727,
-    "ast_hash": "7184cfc6879a0281158b30c29b36f7ea",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/filtrar-menu-por-telas-permitidas.md": {
-    "mtime": 1787234111.8671129,
-    "ast_hash": "50a1cfbc8604b18d18497bd8ce1d237f",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/fix-listagem-telas-pos-login.md": {
-    "mtime": 1787233790.96198,
-    "ast_hash": "6e5d115c90b425cfbf8986c5f759dd68",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/remover-sistema-json.md": {
-    "mtime": 1787233358.929716,
-    "ast_hash": "9d7b5d03d4ba0a551c74eb4db4d24a60",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/sincronizar-menu-sessao-perfil.md": {
-    "mtime": 1787239696.3041823,
-    "ast_hash": "100db2e98e90bb8357a6ac5a6a0f2d33",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/financeiro/fila-credito.html": {
-    "mtime": 1787229388.147187,
-    "ast_hash": "5e7f468f53c4f5cee9677083b414e855",
-    "semantic_hash": ""
-  },
-  "INTEGRA-SOLUCAO-SENAI/CLAUDE.md": {
-    "mtime": 1787241565.8598466,
-    "ast_hash": "c9bf88e7ea284381f9053ad393db5811",
-    "semantic_hash": ""
-  },
-  "scripts-geracao/gerar_apostila_matematica.js": {
-    "mtime": 1787260293.3580105,
-    "ast_hash": "c1ca8ed165ae5c93a9f7bd6d59f8a14c",
-    "semantic_hash": ""
-  },
-  "scripts-geracao/package.json": {
-    "mtime": 1787260300.9881198,
-    "ast_hash": "a0c0b0752c7b3027a301e04f72785e03",
     "semantic_hash": ""
   },
   "graphify-out/converted/Apostila_Reforco_Matematica_Raciocinio_Logico_a019517a.md": {
@@ -2034,21 +1279,6 @@
     "ast_hash": "f81ff6849e85ac1656cc93b2e1546464",
     "semantic_hash": ""
   },
-  "erp-victor-anato-senai/docs/ADICIONAR-FORNECEDOR-SOLICITACAO.md": {
-    "mtime": 1787578597.0586798,
-    "ast_hash": "de4f43c8018ece90966b4a71abb85c71",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/CORRIGIR-FLUXO-COMPRAS.md": {
-    "mtime": 1787577085.0549846,
-    "ast_hash": "2dbd28d0de85ab9bbc541b432c3d7d77",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/DESTACAR-FORNECEDOR-OBRIGATORIO.md": {
-    "mtime": 1787578673.547077,
-    "ast_hash": "4a4e3f50faaad6489585031c7be3869e",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/Apostila_Competencias_Socioemocionais_Empreendedorismo.md": {
     "mtime": 1787159262.4643586,
     "ast_hash": "a5986bdffe6300c848a9790d9197f739",
@@ -2062,16 +1292,6 @@
   "sistema/FICHA-PRODUTO-MAIS-TECH/EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/prompt_plano_curso.md": {
     "mtime": 1787675096.061166,
     "ast_hash": "66ebe2b5d2180c6ba61b4dd48ad753f2",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CHAMADA-25-08-2026.txt": {
-    "mtime": 1787662316.5347488,
-    "ast_hash": "e32e10a9dec51d90d1918424b7bcc417",
-    "semantic_hash": ""
-  },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/ENTREGA-ATIVIDADES/ENTREGA-ATIVIDADES-25-08-2026.txt": {
-    "mtime": 1787674065.055393,
-    "ast_hash": "d50495deb76f7974c3121e6f81a7f563",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Ementa_Introducao_Comunicacao_Oral_Escrita.md": {
@@ -2149,24 +1369,9 @@
     "ast_hash": "b3a0e0114872f54ed90bf1c7a4097e46",
     "semantic_hash": ""
   },
-  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/LISTA-ALUNOS-NOME-UNIDADE.json": {
-    "mtime": 1787683540.481416,
-    "ast_hash": "174ed4fb5755f8b7c60512b2cc17f26c",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/PLANO-ENSINO-V0.md": {
     "mtime": 1787680363.5492313,
     "ast_hash": "33136b0232e02721098724ce65bb692f",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/INSERT_PENDENCIAS.sql": {
-    "mtime": 1787829428.5071044,
-    "ast_hash": "ce24c14e833f7941915c9beb2f276282",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/UPDATE_SENHA_ADMIN.sql": {
-    "mtime": 1787828397.0336428,
-    "ast_hash": "85d6e7377bccfe28ee22e2bbcd94c310",
     "semantic_hash": ""
   },
   "scripts/criar_prova_simples_uc1_tic_equipes.py": {
@@ -2307,51 +1512,6 @@
   "docs/tempo-minimo-modal-atualizar-pendencias.md": {
     "mtime": 1787830337.819461,
     "ast_hash": "ba2546b7848fa9f94e73c7b57fcb1a2c",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/atualizar-claude-remocao-criar-admin.md": {
-    "mtime": 1787828436.6624012,
-    "ast_hash": "e9aaa3419db285309faaccfdaa6a02d8",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/colocar-pipeline-primeiro-em-compras.md": {
-    "mtime": 1787828032.5011775,
-    "ast_hash": "c771513de35c588c4a492a1acd896406",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/corrigir-expansao-accordions-menu.md": {
-    "mtime": 1787827832.4412699,
-    "ast_hash": "bcddae8263785a7b634abb5379671760",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/corrigir-geracao-nota-fiscal-ao-finalizar-pedido.md": {
-    "mtime": 1787827324.6051676,
-    "ast_hash": "3a809c09f1f472c3b92a10a52c93dfdd",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/corrigir-menu-separacao.md": {
-    "mtime": 1787828849.8482873,
-    "ast_hash": "f211fb32eb03bb45b5951b08537d3e15",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/criar-inserts-pendencias.md": {
-    "mtime": 1787829429.9700532,
-    "ast_hash": "d97f234594f834813b3d2412b2ea1d52",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/criar-script-update-senha-admin.md": {
-    "mtime": 1787828398.3243608,
-    "ast_hash": "0e2ac9525ff78ced771aa988db36dc16",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/fluxo-gerar-nota-fiscal-analise-credito.md": {
-    "mtime": 1787827758.048455,
-    "ast_hash": "1172bb04d62874074f715cea0b27cdaf",
-    "semantic_hash": ""
-  },
-  "erp-victor-anato-senai/docs/remover-credencial-administrativa.md": {
-    "mtime": 1787830244.7246604,
-    "ast_hash": "bf61f31f1c234a8feadb5b1eb3064b18",
     "semantic_hash": ""
   },
   "graphify-out/converted/APOSTILA_Introducao_Comunicacao_Oral_Escrita_Versao_Codex_1b54a92b.md": {
@@ -2684,51 +1844,6 @@
     "ast_hash": "72c5086ca9f629944e80a06ecb562530",
     "semantic_hash": ""
   },
-  "syncdata/package.json": {
-    "mtime": 1788203827.32297,
-    "ast_hash": "b313e16c7654d6d4fbb4075b9ff8c772",
-    "semantic_hash": ""
-  },
-  "syncdata/server.js": {
-    "mtime": 1788203827.32297,
-    "ast_hash": "158d4b54f94b7786bfb99c3795a9d6f9",
-    "semantic_hash": ""
-  },
-  "syncdata/src/constants.js": {
-    "mtime": 1788203827.32297,
-    "ast_hash": "fffadcae2d8aab2a041684a902052ca9",
-    "semantic_hash": ""
-  },
-  "syncdata/src/generate-pendencias.js": {
-    "mtime": 1788203827.32297,
-    "ast_hash": "20341c4656abeddc8c5eb8c4be11d9d7",
-    "semantic_hash": ""
-  },
-  "syncdata/src/scan-aulas.js": {
-    "mtime": 1788203827.32297,
-    "ast_hash": "9a11bb8106d86f340e344eb73b0e5350",
-    "semantic_hash": ""
-  },
-  "syncdata/src/utils.js": {
-    "mtime": 1788203827.3284361,
-    "ast_hash": "541777cbf8b32a8d7d0995a992792bf8",
-    "semantic_hash": ""
-  },
-  "syncdata/CLAUDE.md": {
-    "mtime": 1788203827.32297,
-    "ast_hash": "3c3760932419a93f540050b34dcf6ab9",
-    "semantic_hash": ""
-  },
-  "syncdata/README.md": {
-    "mtime": 1788203827.32297,
-    "ast_hash": "c316f0451c0512aae463ef2f47570eb6",
-    "semantic_hash": ""
-  },
-  "syncdata/src/verify-uc.js": {
-    "mtime": 1788203827.3284361,
-    "ast_hash": "11fce74fb9cf55dbfb722340e333bb92",
-    "semantic_hash": ""
-  },
   "sistema/FICHA-PRODUTO-MAIS-TECH/OFICINAS_IMPRESSAO_3D_ROBOTICA/APOSTILA_DA_MATERIA.md": {
     "mtime": 1787159407.6005595,
     "ast_hash": "994eeab96a932ae72f04930687de662b",
@@ -2767,11 +1882,6 @@
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/TEXTO-REFORCO-MODELO-05.md": {
     "mtime": 1787919665.7638428,
     "ast_hash": "a3e15a62e3a5d2b2afc2487d65fa5ef4",
-    "semantic_hash": ""
-  },
-  "syncdata/index.js": {
-    "mtime": 1788203827.32297,
-    "ast_hash": "d87eb45ca2e70891c6f6988038d87687",
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/.claude/settings.local.json": {
@@ -2889,26 +1999,6 @@
     "ast_hash": "40a1cd841d0a3eb6096a36ccc550190a",
     "semantic_hash": ""
   },
-  "transcrever-video-youtube/transcrever.ps1": {
-    "mtime": 1788203823.5244048,
-    "ast_hash": "811b987732c00323e2088244c3dcc32f",
-    "semantic_hash": ""
-  },
-  "transcrever-video-youtube/transcrever.py": {
-    "mtime": 1788203823.5244048,
-    "ast_hash": "41806b063fb98057124da20d8eeb5bc9",
-    "semantic_hash": ""
-  },
-  "transcrever-video-youtube/QUICKSTART.md": {
-    "mtime": 1788203823.5244048,
-    "ast_hash": "341cc89aab1464bf7529673fe272321b",
-    "semantic_hash": ""
-  },
-  "transcrever-video-youtube/README.md": {
-    "mtime": 1788203823.5244048,
-    "ast_hash": "ca5a1b32e00f4d5e2691c551563fecb7",
-    "semantic_hash": ""
-  },
   ".vscode/settings.json": {
     "mtime": 1788010609.7453947,
     "ast_hash": "19751b2a32e46d1ba1477f357123a898",
@@ -2960,8 +2050,8 @@
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/src/main.js": {
-    "mtime": 1788186258.0164764,
-    "ast_hash": "76c20ca392c4debcb9c6144799f5eb98",
+    "mtime": 1788272025.6106844,
+    "ast_hash": "3814b56777e3fee26604a0e700b993c9",
     "semantic_hash": ""
   },
   "graphify-out/converted/Checklist Prova Objetiva_2eba911c.md": {
@@ -3050,8 +2140,8 @@
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/index.html": {
-    "mtime": 1788186209.1209445,
-    "ast_hash": "1096b7c2778237eda478b81b7e9e5567",
+    "mtime": 1788271962.3180475,
+    "ast_hash": "1d809b7c0783c143c00650adea53f4ef",
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/public/favicon.svg": {
@@ -3085,8 +2175,8 @@
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/database.json": {
-    "mtime": 1788186187.5565124,
-    "ast_hash": "b72b3922dd00efef40ac0770ce2e8648",
+    "mtime": 1788272485.932591,
+    "ast_hash": "76eadf5afcfe5c8c4925994321d361b8",
     "semantic_hash": ""
   },
   "sistema/PENDENCIAS-PROFESSOR/INSTRU\u00c7\u00d5ES.md": {
@@ -3362,6 +2452,126 @@
   "sistema/TECNICO DE INFORMATICA PARA INTERNET/TESTES DE FRONTEND/PLANO-AULAS.md": {
     "mtime": 1788203823.5244048,
     "ast_hash": "77a30a4d1842565015e66aba7702b7de",
+    "semantic_hash": ""
+  },
+  "dashboard.html": {
+    "mtime": 1788204613.5876012,
+    "ast_hash": "259cf44b8072ad5b07cc89b9c917529b",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/.claude/settings.local.json": {
+    "mtime": 1788264775.4258766,
+    "ast_hash": "f09a0956e4ab4ab072e56147ff843649",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/AULAS-ATE-01-09-2026.md": {
+    "mtime": 1788257996.3329558,
+    "ast_hash": "a4a38b39af4c29cb355bca6364f42e04",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/Ementa_Introducao_Comunicacao_Oral_Escrita.md": {
+    "mtime": 1787159040.9526887,
+    "ast_hash": "850e34954b254173c62d110a9d504a7c",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/RELATORIO-AULAS.md": {
+    "mtime": 1788258260.874134,
+    "ast_hash": "8416068c41fd41287973a31147e9103c",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/.claude/settings.local.json": {
+    "mtime": 1788258441.4259315,
+    "ast_hash": "8439382d88bb82b48289f1d84ad390e8",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/Apostila_Comunicacao_15h_Versao_Joao_Revisado_2026_02.md": {
+    "mtime": 1788258866.3888042,
+    "ast_hash": "8a5625750a3f20155cdad9c16bf0c6e1",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/VERIFICACAO_COBERTURA_EMENTA.md": {
+    "mtime": 1788258942.1178246,
+    "ast_hash": "63ce80ba7fd60ddca2529f52b31da796",
+    "semantic_hash": ""
+  },
+  "sistema/PROFESSOR/ATESTADO-SENAI-DIA-28-08-2026.jpeg": {
+    "mtime": 1788260192.7147212,
+    "ast_hash": "f6ee5df3822a745852620febc1a85cd0",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/APOSTILA-CEPLAS-VESPERTINO-2026-02.md": {
+    "mtime": 1788261768.5146797,
+    "ast_hash": "1d7e7d5ffd2a20a73ff8c8339e2435a8",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/APOSTILA-CEPLAS-VESPERTINO-2026-02_5eace7f6.md": {
+    "mtime": 1788264424.6473706,
+    "ast_hash": "921f7adcf64dd8e16d38d0b462068421",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/infografico_email_profissional.png": {
+    "mtime": 1788264390.5410385,
+    "ast_hash": "3a20f58a2cee73ea22282e99a76ea628",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/infografico_google_workspace.png": {
+    "mtime": 1788264389.8421907,
+    "ast_hash": "54982eed31308442340ce2136d72ea8e",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/infografico_netiqueta.png": {
+    "mtime": 1788264391.2067878,
+    "ast_hash": "6257703f87f8e684478cbab7b5e4c8a0",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/infografico_phishing.png": {
+    "mtime": 1788264391.6140356,
+    "ast_hash": "07b596e8c20e94d32f738b839d694573",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/infografico_privacidade.png": {
+    "mtime": 1788264393.33493,
+    "ast_hash": "cfbd33ec150bfa709d2075bf1b718402",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/infografico_senhas.png": {
+    "mtime": 1788264392.667108,
+    "ast_hash": "3eb39674e5b7a184f4f21d7e0913c515",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/ATIVIDADES-CEPLAS-VESPERTINO-2026-02.md": {
+    "mtime": 1788267425.5272367,
+    "ast_hash": "c87e76724fdb048d67793fe4d1401253",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/ORIENTACOES-MAISTECH-COM-JOAO.txt": {
+    "mtime": 1788267517.689389,
+    "ast_hash": "e0a0052f9a12374008789e7abb32ec06",
+    "semantic_hash": ""
+  },
+  "graphify-out/converted/ATIVIDADES-CEPLAS-VESPERTINO-2026-02_73714119.md": {
+    "mtime": 1788267652.5820203,
+    "ast_hash": "41e8467fed93d7532148014e1d8e9676",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/MODELOS-DE-ATIVIDADES-REFOR\u00c7O-LINGUAGENS.txt": {
+    "mtime": 1788262575.902239,
+    "ast_hash": "acf46d4af0dbcbd2ed3ce6da6c9e0ebf",
+    "semantic_hash": ""
+  },
+  "sistema/BANCO_DE_DADOS/ORIENTACAO_UC-01-09-2026.txt": {
+    "mtime": 1788257324.0311337,
+    "ast_hash": "8123e4c19da667cd8eaf9cb2efeab288",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/solicitacao de notebooks.txt": {
+    "mtime": 1788271300.4407434,
+    "ast_hash": "6a9d552318a09c4e378815efb9b5bcf3",
+    "semantic_hash": ""
+  },
+  "sistema/scripts/003_add_visivel_alunos.sql": {
+    "mtime": 1788279203.9335153,
+    "ast_hash": "fdd9082decae554911d97d1813df2cf9",
     "semantic_hash": ""
   }
 }
