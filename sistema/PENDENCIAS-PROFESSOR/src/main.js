@@ -60,7 +60,7 @@ class MateriasManager {
     this.materiaParaDelecao = null;
     this.filtrosAtivos = {
       status: ['ANDAMENTO', 'PENDENTE'],
-      campos: ['ementaCriada', 'apostilaCriada', 'planoAulasCriado', 'planoensinoCriado', 'avaliacoesCriadas'],
+      campos: [], // Desmarcado por padrão
       substituto: [false], // Por padrão, mostra apenas Não (false)
     };
     this.init();
