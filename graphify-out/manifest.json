@@ -170,8 +170,8 @@
     "semantic_hash": ""
   },
   "sistema/dashboard.html": {
-    "mtime": 1788280643.1855402,
-    "ast_hash": "078b75cdfc171589b7defc79e21d00a3",
+    "mtime": 1788281239.077745,
+    "ast_hash": "7b313e44ac39db49a6a71f648ba9d0d3",
     "semantic_hash": ""
   },
   "sistema/questionarios.html": {
@@ -320,8 +320,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788279299.8283584,
-    "ast_hash": "4920bc2b213dfffa7abf6c19e2143b83",
+    "mtime": 1788281293.42856,
+    "ast_hash": "30b4a208dc3ca3ac1a173c06f90b28bb",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -2572,6 +2572,11 @@
   "sistema/scripts/003_add_visivel_alunos.sql": {
     "mtime": 1788279203.9335153,
     "ast_hash": "fdd9082decae554911d97d1813df2cf9",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/EMNAIL-GOOGLE-AULAS-SENAI.txt": {
+    "mtime": 1788282788.3315601,
+    "ast_hash": "1c888374848771374ac092cb966ef52c",
     "semantic_hash": ""
   }
 }
