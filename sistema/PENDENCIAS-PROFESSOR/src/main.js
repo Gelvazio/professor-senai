@@ -10,7 +10,10 @@ class ThemeManager {
 
   init() {
     this.applyTheme();
-    this.toggleBtn.addEventListener('click', () => this.toggleTheme());
+    this.toggleBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      this.toggleTheme();
+    });
   }
 
   loadTheme() {
@@ -18,18 +21,17 @@ class ThemeManager {
     if (saved) {
       return saved === 'dark';
     }
+    // Verificar preferência do sistema
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   }
 
   applyTheme() {
     if (this.isDark) {
-      document.documentElement.style.colorScheme = 'dark';
       document.documentElement.setAttribute('data-theme', 'dark');
       this.toggleBtn.classList.add('dark');
       this.toggleBtn.querySelector('.theme-icon').textContent = '☀️';
     } else {
-      document.documentElement.style.colorScheme = 'light';
-      document.documentElement.removeAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', 'light');
       this.toggleBtn.classList.remove('dark');
       this.toggleBtn.querySelector('.theme-icon').textContent = '🌙';
     }
@@ -42,8 +44,14 @@ class ThemeManager {
   }
 }
 
-// Iniciar gerenciador de tema
-const themeManager = new ThemeManager();
+// Iniciar gerenciador de tema quando o DOM estiver pronto
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    const themeManager = new ThemeManager();
+  });
+} else {
+  const themeManager = new ThemeManager();
+}
 
 class MateriasManager {
   constructor() {

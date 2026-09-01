@@ -16,7 +16,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0a0e27;
     --bg-dark: #050a1a;
     --text: #e0e7ff;
@@ -25,6 +25,16 @@
     --filter-bg: #0f2847;
     --filter-border: #1e40af;
   }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0a0e27;
+  --bg-dark: #050a1a;
+  --text: #e0e7ff;
+  --text-light: #a5b4fc;
+  --border: #1e3a8a;
+  --filter-bg: #0f2847;
+  --filter-border: #1e40af;
 }
 
 * {
