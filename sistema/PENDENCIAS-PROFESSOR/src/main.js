@@ -88,6 +88,16 @@ class MateriasManager {
       this.fecharFormulario();
     });
 
+    // Evento do checkbox substituto
+    document.getElementById('substituto').addEventListener('change', (e) => {
+      if (e.target.checked) {
+        // Marca todos os campos de trabalho
+        document.querySelectorAll('.campo-trabalho').forEach((cb) => {
+          cb.checked = true;
+        });
+      }
+    });
+
     // Enviar formulário
     document.getElementById('pendenciaForm').addEventListener('submit', (e) => {
       e.preventDefault();
@@ -173,6 +183,7 @@ class MateriasManager {
     document.getElementById('horas_ministradas').value = materia.horas_ministradas || '';
     document.getElementById('categoria').value = materia.categoria || '';
 
+    document.getElementById('substituto').checked = materia.substituto || false;
     document.getElementById('ementaCriada').checked = materia.ementaCriada || false;
     document.getElementById('apostilaCriada').checked = materia.apostilaCriada || false;
     document.getElementById('planoAulasCriado').checked = materia.planoAulasCriado || false;
@@ -209,6 +220,7 @@ class MateriasManager {
     const dados = {
       nome: nome.trim(),
       status,
+      substituto: document.getElementById('substituto').checked,
       prioridade,
       data: data || new Date().toISOString().split('T')[0],
       datavencimento,
