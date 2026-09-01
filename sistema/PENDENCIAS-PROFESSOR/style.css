@@ -95,6 +95,17 @@ header h1 {
   color: white;
 }
 
+:root[data-theme="dark"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(100, 165, 250, 0.6);
+  color: #e0e7ff;
+}
+
+:root[data-theme="dark"] .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(100, 165, 250, 0.9);
+}
+
 .theme-toggle:hover {
   background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.6);
