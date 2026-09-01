@@ -3,7 +3,7 @@
     {
       "id": "1",
       "nome": "BANCO DE DADOS",
-      "status": "PENDENTE",
+      "status": "CONCLUIDO",
       "substituto": true,
       "ementaCriada": true,
       "apostilaCriada": true,
@@ -17,7 +17,7 @@
       "horas_ministradas": 0,
       "categoria": "Matéria",
       "criado_em": "2026-08-31T00:00:00.000Z",
-      "atualizado_em": "2026-09-01T13:16:43.560Z"
+      "atualizado_em": "2026-09-01T14:21:25.927Z"
     },
     {
       "id": "2",
