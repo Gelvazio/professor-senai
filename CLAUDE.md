@@ -5,7 +5,7 @@
 
 ⚠️ **ATUALIZAR ESTE CONTEXTO A CADA INTERAÇÃO COM O CHAT** — Este documento deve refletir sempre o estado mais recente do projeto.
 
-**Data Última Atualização:** 01-09-2026 (Atualizado: Campo visivel_alunos implementado)  
+**Data Última Atualização:** 01-09-2026 (Atualizado: Corrigidos caminhos de apostila/ementa para Vercel)  
 **Objetivo Principal:** Implementar sistema de validação e sincronização de UCs (Unidades Curriculares) com dashboard interativo
 
 ### ✅ Implementações Realizadas
@@ -18,6 +18,7 @@
 6. **REGRA 07**: Filtro de pendências — busca apenas matérias ATIVAS (ativo=1)
 7. **REGRA 08**: Campo de status de matérias aceita 3 valores: 1 (Ativa), 0 (Inativa), 2 (Concluída)
 8. **REGRA 09**: Campo visivel_alunos em tabela materia — Controla visibilidade (SIM=mostra para alunos | NAO=oculta) — Professor sempre vê tudo
+9. **CORREÇÃO URLS VERCEL**: Funções `abrirApostilaMateria()` e `abrirEmentaMateria()` agora adicionam prefixo `sistema/` aos caminhos para URLs em produção
 
 ### 📋 Estrutura de UCs Existentes
 
