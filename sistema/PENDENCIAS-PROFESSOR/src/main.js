@@ -124,6 +124,13 @@ class MateriasManager {
       });
     });
 
+    // Filtros de campos
+    document.querySelectorAll('.field-filter').forEach((checkbox) => {
+      checkbox.addEventListener('change', () => {
+        this.atualizarFiltrosCampos();
+      });
+    });
+
     // Reset filtros
     document.getElementById('btnResetFilters').addEventListener('click', () => {
       this.resetarFiltros();
@@ -166,6 +173,13 @@ class MateriasManager {
     this.aplicarFiltros();
   }
 
+  atualizarFiltrosCampos() {
+    this.filtrosAtivos.campos = Array.from(document.querySelectorAll('.field-filter:checked')).map(
+      (cb) => cb.value
+    );
+    this.aplicarFiltros();
+  }
+
   resetarFiltros() {
     // Redefine filtros para padrão
     // Status: ANDAMENTO e PENDENTE
@@ -179,6 +193,12 @@ class MateriasManager {
       cb.checked = cb.value === 'false';
     });
     this.filtrosAtivos.substituto = [false];
+
+    // Campos: Todos marcados por padrão
+    document.querySelectorAll('.field-filter').forEach((cb) => {
+      cb.checked = true;
+    });
+    this.filtrosAtivos.campos = ['ementaCriada', 'apostilaCriada', 'planoAulasCriado', 'planoensinoCriado', 'avaliacoesCriadas'];
 
     this.aplicarFiltros();
   }
@@ -286,12 +306,17 @@ class MateriasManager {
     const busca = document.getElementById('searchInput').value.toLowerCase();
     const statusAtivos = this.filtrosAtivos.status;
     const substitutoAtivos = this.filtrosAtivos.substituto;
+    const camposAtivos = this.filtrosAtivos.campos;
 
     const filtradas = this.materias.filter((m) => {
       const matchBusca = m.nome.toLowerCase().includes(busca);
       const matchStatus = statusAtivos.includes(m.status);
       const matchSubstituto = substitutoAtivos.includes(m.substituto);
-      return matchBusca && matchStatus && matchSubstituto;
+
+      // Verificar filtro de campos: só mostra matérias que têm os campos selecionados como true
+      const temTodosCampos = camposAtivos.every((campo) => m[campo] === true);
+
+      return matchBusca && matchStatus && matchSubstituto && temTodosCampos;
     });
 
     this.renderizarMateriasFiltradas(filtradas);
