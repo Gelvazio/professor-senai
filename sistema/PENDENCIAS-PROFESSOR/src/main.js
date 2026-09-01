@@ -1,5 +1,50 @@
 const API_URL = 'http://localhost:3001/materias';
 
+// Gerenciador de tema escuro/claro
+class ThemeManager {
+  constructor() {
+    this.toggleBtn = document.getElementById('themeToggle');
+    this.isDark = this.loadTheme();
+    this.init();
+  }
+
+  init() {
+    this.applyTheme();
+    this.toggleBtn.addEventListener('click', () => this.toggleTheme());
+  }
+
+  loadTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      return saved === 'dark';
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+  applyTheme() {
+    if (this.isDark) {
+      document.documentElement.style.colorScheme = 'dark';
+      document.documentElement.setAttribute('data-theme', 'dark');
+      this.toggleBtn.classList.add('dark');
+      this.toggleBtn.querySelector('.theme-icon').textContent = '☀️';
+    } else {
+      document.documentElement.style.colorScheme = 'light';
+      document.documentElement.removeAttribute('data-theme');
+      this.toggleBtn.classList.remove('dark');
+      this.toggleBtn.querySelector('.theme-icon').textContent = '🌙';
+    }
+  }
+
+  toggleTheme() {
+    this.isDark = !this.isDark;
+    localStorage.setItem('theme', this.isDark ? 'dark' : 'light');
+    this.applyTheme();
+  }
+}
+
+// Iniciar gerenciador de tema
+const themeManager = new ThemeManager();
+
 class MateriasManager {
   constructor() {
     this.materias = [];
