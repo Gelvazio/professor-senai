@@ -374,14 +374,9 @@ class MateriasManager {
       // Se nenhum campo está selecionado, ignore o filtro de campos (mostre todos)
       let matchCampos = true;
       if (camposAtivos.length > 0) {
-        // Campos marcados devem ser true, campos desmarcados devem ser false
-        matchCampos = todosCampos.every((campo) => {
-          if (camposAtivos.includes(campo)) {
-            return m[campo] === true; // Marcado: deve ser true
-          } else {
-            return m[campo] === false; // Desmarcado: deve ser false
-          }
-        });
+        // Apenas campos marcados devem ser true
+        // Campos desmarcados não são filtrados (podem ser true ou false)
+        matchCampos = camposAtivos.every((campo) => m[campo] === true);
       }
 
       return matchBusca && matchStatus && matchSubstituto && matchCampos;
