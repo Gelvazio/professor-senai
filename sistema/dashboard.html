@@ -4731,11 +4731,11 @@
                 ${renderEtapaAvaliacao("Plano de Ensino", materia.status_plano_ensino, materia.id, "status_plano_ensino", "materia")}
                 <div class="avaliacao-etapa">
                   <span class="avaliacao-etapa-label">ENSALADO</span>
-                  ${isProfessor ? `<span class="curso-materia-toggle-ensalado"><span class="curso-materia-toggle-valor ${ensalada ? "sim" : ""}">${ensalada ? "SIM" : "NÃO"}</span><label class="toggle"><input type="checkbox" ${ensalada ? "checked" : ""} onchange="alterarEnsaladoMateria(${Number(materia.id)}, this)"><span class="toggle-slider"></span></label></span>` : `<span class="avaliacao-etapa-status ${ensalada ? "concluido" : ""}">${ensalada ? "SIM" : "NÃO"}</span>`}
+                  ${isProfessor ? `<span class="curso-materia-toggle-ensalado" style="cursor: pointer;" onclick="abrirMenuEtapa(event, ${Number(materia.id)}, 'ensalado', 'materia')"><span class="curso-materia-toggle-valor ${ensalada ? "sim" : ""}" style="cursor: pointer;">${ensalada ? "SIM" : "NÃO"}</span><label class="toggle"><input type="checkbox" ${ensalada ? "checked" : ""} onchange="alterarEnsaladoMateria(${Number(materia.id)}, this)"><span class="toggle-slider"></span></label></span>` : `<span class="avaliacao-etapa-status ${ensalada ? "concluido" : ""}">${ensalada ? "SIM" : "NÃO"}</span>`}
                 </div>
                 <div class="avaliacao-etapa">
                   <span class="avaliacao-etapa-label">Visivel Aluno</span>
-                  ${isProfessor ? `<span class="curso-materia-toggle-visivel"><span class="curso-materia-toggle-visivel-valor ${materia.visivel_alunos === 'SIM' ? "sim" : ""}">${materia.visivel_alunos === 'SIM' ? "SIM" : "NÃO"}</span><label class="toggle"><input type="checkbox" ${materia.visivel_alunos === 'SIM' ? "checked" : ""} onchange="alterarVisivelAlunosMateria(${Number(materia.id)}, this)"><span class="toggle-slider"></span></label></span>` : `<span class="avaliacao-etapa-status ${materia.visivel_alunos === 'SIM' ? "concluido" : ""}">${materia.visivel_alunos === 'SIM' ? "SIM" : "NÃO"}</span>`}
+                  ${isProfessor ? `<span class="curso-materia-toggle-visivel" style="cursor: pointer;" onclick="abrirMenuEtapa(event, ${Number(materia.id)}, 'visivel_alunos', 'materia')"><span class="curso-materia-toggle-visivel-valor ${materia.visivel_alunos === 'SIM' ? "sim" : ""}" style="cursor: pointer;">${materia.visivel_alunos === 'SIM' ? "SIM" : "NÃO"}</span><label class="toggle"><input type="checkbox" ${materia.visivel_alunos === 'SIM' ? "checked" : ""} onchange="alterarVisivelAlunosMateria(${Number(materia.id)}, this)"><span class="toggle-slider"></span></label></span>` : `<span class="avaliacao-etapa-status ${materia.visivel_alunos === 'SIM' ? "concluido" : ""}">${materia.visivel_alunos === 'SIM' ? "SIM" : "NÃO"}</span>`}
                 </div>
               </div>
               <div class="curso-materia-card-rodape">
@@ -4939,8 +4939,13 @@
       async function abrirMenuEtapa(event, id, nomeDocampo, tipoObjeto) {
         event.stopPropagation();
         if (!isProfessor) return;
-        const opcoes = ["PENDENTE", "ANDAMENTO", "CONCLUIDO"];
-        if (nomeDocampo.includes("alunos")) opcoes.push("SEM_ALUNOS");
+        let opcoes = ["PENDENTE", "ANDAMENTO", "CONCLUIDO"];
+
+        if (nomeDocampo === "ensalado" || nomeDocampo === "visivel_alunos") {
+          opcoes = ["SIM", "NAO"];
+        } else if (nomeDocampo.includes("alunos")) {
+          opcoes.push("SEM_ALUNOS");
+        }
 
         const menuHtml = `<div class="etapa-menu" style="position: absolute; background: white; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 1001;">
           ${opcoes.map(op => `<div class="etapa-menu-item" onclick="atualizarEtapa(${Number(id)}, '${nomeDocampo}', '${tipoObjeto}', '${op}')" style="padding: 8px 16px; cursor: pointer; border-bottom: 1px solid #f0f0f0; hover: background: #f5f5f5;">${op}</div>`).join("")}
