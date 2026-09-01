@@ -2858,6 +2858,10 @@
         if (btnDid) btnDid.style.display = 'inline-block';
         const btnRelatorioSync = document.getElementById('btnRelatorioSync');
         if (btnRelatorioSync) btnRelatorioSync.style.display = 'inline-block';
+      } else {
+        // Para alunos, ocultam filtros de matérias
+        const filtros = document.getElementById('cursoMateriasFiltros');
+        if (filtros) filtros.style.display = 'none';
       }
 
       // Botão de tema — sincroniza texto com estado atual
