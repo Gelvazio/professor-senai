@@ -95,15 +95,16 @@ header h1 {
   color: white;
 }
 
-:root[data-theme="dark"] .theme-toggle {
-  background: #9ca3af;
-  border: 2px solid #6b7280;
-  color: #1f2937;
+:root[data-theme="dark"] .theme-toggle:not(.dark) {
+  background: #9ca3af !important;
+  border: 2px solid #6b7280 !important;
+  color: #1f2937 !important;
 }
 
-:root[data-theme="dark"] .theme-toggle:hover {
-  background: #d1d5db;
-  border-color: #9ca3af;
+:root[data-theme="dark"] .theme-toggle:not(.dark):hover {
+  background: #d1d5db !important;
+  border-color: #9ca3af !important;
+  color: #1f2937 !important;
 }
 
 :root[data-theme="dark"] .theme-toggle.dark {
