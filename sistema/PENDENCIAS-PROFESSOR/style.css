@@ -71,7 +71,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
+  gap: 1rem;
 }
 
 header h1 {
@@ -115,9 +115,9 @@ header h1 {
 }
 
 .header-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .stat {
@@ -835,10 +835,6 @@ main {
 
   header h1 {
     font-size: 1.5rem;
-  }
-
-  .header-stats {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .controls {
