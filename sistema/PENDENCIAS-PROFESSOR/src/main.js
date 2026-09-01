@@ -307,16 +307,24 @@ class MateriasManager {
     const statusAtivos = this.filtrosAtivos.status;
     const substitutoAtivos = this.filtrosAtivos.substituto;
     const camposAtivos = this.filtrosAtivos.campos;
+    const todosCampos = ['ementaCriada', 'apostilaCriada', 'planoAulasCriado', 'planoensinoCriado', 'avaliacoesCriadas'];
 
     const filtradas = this.materias.filter((m) => {
       const matchBusca = m.nome.toLowerCase().includes(busca);
       const matchStatus = statusAtivos.includes(m.status);
       const matchSubstituto = substitutoAtivos.includes(m.substituto);
 
-      // Verificar filtro de campos: só mostra matérias que têm os campos selecionados como true
-      const temTodosCampos = camposAtivos.every((campo) => m[campo] === true);
+      // Verificar filtro de campos:
+      // Campos marcados devem ser true, campos desmarcados devem ser false
+      const matchCampos = todosCampos.every((campo) => {
+        if (camposAtivos.includes(campo)) {
+          return m[campo] === true; // Marcado: deve ser true
+        } else {
+          return m[campo] === false; // Desmarcado: deve ser false
+        }
+      });
 
-      return matchBusca && matchStatus && matchSubstituto && temTodosCampos;
+      return matchBusca && matchStatus && matchSubstituto && matchCampos;
     });
 
     this.renderizarMateriasFiltradas(filtradas);
