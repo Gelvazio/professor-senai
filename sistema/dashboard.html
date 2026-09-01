@@ -2178,7 +2178,7 @@
           <button class="btn-novo" onclick="novaMateriaCurso()">＋ Adicionar Matéria</button>
           <span class="crud-msg" id="cursoMateriasMsg"></span>
         </div>
-        <div class="curso-materias-filtros">
+        <div class="curso-materias-filtros" id="cursoMateriasFiltros" style="${isProfessor ? "display:flex; gap:8px;" : "display:none;"}">
           <button class="curso-materias-filtro ativo" id="filtroMateriasTodas" type="button" onclick="filtrarMateriasEnsaladas(false)">Mostrar Todos</button>
           <button class="curso-materias-filtro" id="filtroMateriasEnsaladas" type="button" onclick="filtrarMateriasEnsaladas(true)">Somente Ensalado</button>
         </div>
@@ -4571,7 +4571,12 @@
       }
 
       function filtrarMateriasEnsaladas(somenteEnsaladas) {
-        _somenteMateriasEnsaladas = Boolean(somenteEnsaladas);
+        // Para alunos, sempre filtrar por ensalados=true
+        if (!isProfessor) {
+          _somenteMateriasEnsaladas = true;
+        } else {
+          _somenteMateriasEnsaladas = Boolean(somenteEnsaladas);
+        }
         document.getElementById("filtroMateriasTodas")?.classList.toggle("ativo", !_somenteMateriasEnsaladas);
         document.getElementById("filtroMateriasEnsaladas")?.classList.toggle("ativo", _somenteMateriasEnsaladas);
         let quantidadeVisivel = 0;
