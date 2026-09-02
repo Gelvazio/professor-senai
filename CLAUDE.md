@@ -32,6 +32,7 @@ As seguintes UCs ou contêineres pedagógicos existem no projeto:
 - `LOGICA-PROGRAMACAO`
 - `PENDENCIAS-PROFESSOR`
 - `TECNICO-INFORMATICA-INTERNET` — **curso/contêiner; não é matéria**
+- `Tecnico em Desenvolvimento de Sistemas` — **curso/contêiner; não é matéria**
 
 ⚠️ **Status da Estrutura Obrigatória:**
 - **INTRODUCAO_TIC**: ✅ Completa (AULAS + MATERIAIS)
@@ -148,6 +149,14 @@ Ao listar, validar ou acessar matérias desse curso, o sistema deve navegar dent
 As subpastas pedagógicas dentro desse curso representam suas matérias. Atualmente, `TESTES DE FRONTEND/` é uma matéria identificada no curso. A pasta `MATERIAIS-EXISTENTES/` é uma área de materiais de referência e não deve ser listada como matéria.
 
 Ao listar, validar ou acessar matérias desse curso, o sistema deve navegar dentro de `TECNICO-INFORMATICA-INTERNET/` e aplicar as regras de UC às pastas de matérias, não à pasta do curso nem à área `MATERIAIS-EXISTENTES/`.
+
+### Curso Técnico em Desenvolvimento de Sistemas
+
+**Técnico em Desenvolvimento de Sistemas:** a pasta `sistema/Tecnico em Desenvolvimento de Sistemas/` é um **curso/contêiner de matérias**. Ela **não deve ser tratada como matéria ou UC**.
+
+As subpastas pedagógicas dentro desse curso representam suas matérias. Atualmente, `LOGICA-PROGRAMACAO/` é uma matéria identificada dentro do curso.
+
+Ao listar, validar ou acessar matérias desse curso, o sistema deve navegar dentro de `Tecnico em Desenvolvimento de Sistemas/` e aplicar as regras de UC às pastas de matérias, não à pasta do curso.
 
 ## Pasta PROFESSOR
 
