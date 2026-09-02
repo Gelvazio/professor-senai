@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-09-02)
 
 ## Corpus Check
-- 356 files · ~852,708 words
+- 356 files · ~852,719 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5212 nodes · 5157 edges · 567 communities (522 shown, 45 thin omitted)
+- 5202 nodes · 5147 edges · 566 communities (521 shown, 45 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `84f6d9d3`
+- Built from commit: `cdb3667a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -524,7 +524,6 @@
 - [[_COMMUNITY_Community 563|Community 563]]
 - [[_COMMUNITY_Community 564|Community 564]]
 - [[_COMMUNITY_Community 565|Community 565]]
-- [[_COMMUNITY_Community 566|Community 566]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Currículo Técnico - Informática para Internet` - 86 edges
@@ -553,7 +552,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (567 total, 45 thin omitted)
+## Communities (566 total, 45 thin omitted)
 
 ### Community 0 - "Currículo Técnico - Informática para Internet"
 Cohesion: 0.02
@@ -673,7 +672,7 @@ Nodes (24): 1.1 Objetivos e Competências, 1.2 Estrutura do Curso, 1.3 Importân
 
 ### Community 29 - "AVALIAÇÃO PRÁTICA"
 Cohesion: 0.10
-Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples (+12 more)
+Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, 9.1 Fórmula dos Juros Simples (+12 more)
 
 ### Community 30 - "Relatório de Aulas — Introdução à Comunicação Oral e Escrita"
 Cohesion: 0.08
@@ -685,7 +684,7 @@ Nodes (23): 1. O que é esta pasta, 2. Arquivos na raiz da pasta, 3. Estrutura d
 
 ### Community 32 - "corretor_prova_pratica.py"
 Cohesion: 0.11
-Nodes (19): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Apresentação do Módulo (+11 more)
+Nodes (19): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Apresentação do Módulo (+11 more)
 
 ### Community 33 - "Conhecimentos"
 Cohesion: 0.09
@@ -712,8 +711,8 @@ Cohesion: 0.09
 Nodes (21): 📝 Aulas Ministradas (20h), Avaliações Pendentes, Avaliações Realizadas, ✅ Checklist de Implementação, ✅ Conteúdos Contemplados (20h), ❌ Conteúdos Faltantes (13h), 📚 Conteúdos Ministrados vs. Planejados, 📊 Cronograma Sugerido (+13 more)
 
 ### Community 39 - "Verificação de Cobertura: Apostila vs. Ementa"
-Cohesion: 0.09
-Nodes (22): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental (+14 more)
+Cohesion: 0.11
+Nodes (18): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental, Apresentação do Módulo, Atividade 3.1 (+10 more)
 
 ### Community 40 - "AULA 03: Porcentagem e Conversão de Unidades"
 Cohesion: 0.09
@@ -828,8 +827,8 @@ Cohesion: 0.11
 Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
 
 ### Community 68 - "EMENTA — NOÇÕES DE ELETRICIDADE E CIRCUITOS BÁSICOS"
-Cohesion: 0.14
-Nodes (14): 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo, Atividade 6.2, Atividade 6.3, Atividade 6.4 — Em Grupo (+6 more)
+Cohesion: 0.11
+Nodes (19): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo (+11 more)
 
 ### Community 69 - "Encontro 13-14 — Pontuação e Seu Uso Comunicativo (4h)"
 Cohesion: 0.13
@@ -996,8 +995,8 @@ Cohesion: 0.15
 Nodes (12): 1. Organização e entrega — 1,0 ponto automático, 2. Google Docs — 2,0 pontos automáticos, 3. Google Sheets — 2,0 pontos automáticos, 4. Google Slides — 1,5 ponto automático, 5. Segurança e interpretação — 0,5 ponto automático, 6. Rubrica docente — 3,0 pontos, Apresentação e cooperação — até 1,0 ponto, Clareza e linguagem — até 1,0 ponto (+4 more)
 
 ### Community 110 - "Conteúdo"
-Cohesion: 0.15
-Nodes (13): Atividade final, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h), Explicação: Como fazer uma síntese?, MÓDULO 5 — AUTONOMIA E ESTRATÉGIAS DE ESTUDO (+5 more)
+Cohesion: 0.11
+Nodes (18): Atividade final, Atividades, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h) (+10 more)
 
 ### Community 111 - "Conteúdo"
 Cohesion: 0.17
@@ -1040,8 +1039,8 @@ Cohesion: 0.18
 Nodes (10): APOSTILA DO ALUNO, Apresentação, Como Esta Apostila Está Organizada, FUNDAMENTOS DA TECNOLOGIA E PROGRAMAÇÃO, Glossário, Objetivo da UC, Percurso de Aprendizagem, RIO DO SUL MAIS TECH (+2 more)
 
 ### Community 121 - "Apostila_Competencias_Socioemocionais_Empreendedorismo.md"
-Cohesion: 0.18
-Nodes (10): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFERÊNCIAS, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, RIO DO SUL MAIS TECH, SENAI / PREFEITURA MUNICIPAL DE RIO DO SUL (+2 more)
+Cohesion: 0.29
+Nodes (7): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, Sobre este material, Uma palavra para você, aluno
 
 ### Community 122 - "Conteúdo"
 Cohesion: 0.18
@@ -1372,8 +1371,8 @@ Cohesion: 0.25
 Nodes (8): 🧠 Banco de Questões de Estudo, **Tema 1: Elementos da Comunicação**, **Tema 2: Comunicação Profissional**, **Tema 3: E-mail Corporativo**, **Tema 4: Redação Profissional**, **Tema 5: Ferramentas Digitais (Google Workspace)**, **Tema 6: Netiqueta**, **Tema 7: Segurança Digital**
 
 ### Community 204 - "Global Constraints"
-Cohesion: 0.25
-Nodes (8): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação
+Cohesion: 0.17
+Nodes (11): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação (+3 more)
 
 ### Community 205 - "6. PROCEDIMENTOS DE SEGURANÇA E BACKUP"
 Cohesion: 0.25
@@ -1872,8 +1871,8 @@ Cohesion: 0.33
 Nodes (6): Canais no YouTube (em português), Livros Sugeridos, Plataformas de Programação e Tecnologia, Referências e Para Continuar Aprendendo, Segurança Digital, Verificação de Fake News
 
 ### Community 330 - "Encontro 22 — Lógica Proposicional Introdutória (2h)"
-Cohesion: 0.06
-Nodes (30): 7.2.1 Avaliação Prática — 1h, 7.2.2 Avaliação Teórica Objetiva — 1h, Aplicação Completa de Conhecimento, Atividade 1: Palestra e Discussão (90 min), Atividade 2: Avaliação Prática (60 min), Atividade 3: Avaliação Teórica (60 min), 🎬 Atividades da Aula, AULA 10 — 16-09-2026 (Terça-feira) (+22 more)
+Cohesion: 0.07
+Nodes (29): 7.2.1 AvaliaÃ§Ã£o PrÃ¡tica â€” 1h, 7.2.2 AvaliaÃ§Ã£o TeÃ³rica Objetiva â€” 1h, AplicaÃ§Ã£o Completa de Conhecimento, Atividade 1: Palestra e DiscussÃ£o (90 min), Atividade 2: AvaliaÃ§Ã£o PrÃ¡tica (60 min), Atividade 3: AvaliaÃ§Ã£o TeÃ³rica (60 min), AvaliaÃ§Ã£o PrÃ¡tica, AvaliaÃ§Ã£o TeÃ³rica (+21 more)
 
 ### Community 331 - "🛠️ TECNOLOGIAS E FERRAMENTAS"
 Cohesion: 0.33
@@ -2036,8 +2035,8 @@ Cohesion: 0.40
 Nodes (5): Conteúdo, ENCONTRO 15 — Scratch: Primeiros Passos na Programação em Blocos, Na Prática, O que você vai aprender, Síntese
 
 ### Community 371 - "Community 371"
-Cohesion: 0.09
-Nodes (21): Atividade 1: Quiz Interativo (15 min), Atividade 2: Estudo de Caso (30 min), Atividade 3: Discussão Guiada (20 min), 🎬 Atividades Propostas, AULA 01 — 01-09-2026 (Terça-feira), Autogestão (1.1), Automação de Testes (2.1-2.4), 🎓 Capacidades a Serem Trabalhadas (+13 more)
+Cohesion: 0.10
+Nodes (20): Atividade 1: Quiz Interativo (15 min), Atividade 2: Estudo de Caso (30 min), Atividade 3: DiscussÃ£o Guiada (20 min), AutogestÃ£o (1.1), AutomaÃ§Ã£o de Testes (2.1-2.4), Metodologia, Timeline da Aula (4 horas), Tipos de Testes (4.1-4.5) (+12 more)
 
 ### Community 372 - "Community 372"
 Cohesion: 0.40
@@ -2188,8 +2187,8 @@ Cohesion: 0.40
 Nodes (5): 🔮 FUNCIONALIDADES FUTURAS (Roadmap), Phase 1: MVP (Planejado para Q4 2026), Phase 2: Expansão (Planejado para Q1 2027), Phase 3: Integração Completa (Planejado para Q2 2027), Phase 4: Avançado (Planejado para Q3 2027)
 
 ### Community 409 - "Community 409"
-Cohesion: 0.40
-Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
+Cohesion: 0.10
+Nodes (20): 7.3 â€” ExecuÃ§Ã£o dos Testes (ContinuaÃ§Ã£o), 7.4 â€” MonitoraÃ§Ã£o e Controle de Teste, 7.5 â€” AvaliaÃ§Ã£o dos Resultados, Atividade 1: ExecuÃ§Ã£o PrÃ¡tica (120 min), Atividade 2: MonitoraÃ§Ã£o (45 min), Atividade 3: AnÃ¡lise Conjunta (30 min), DocumentaÃ§Ã£o de Testes, Metodologia (+12 more)
 
 ### Community 410 - "Community 410"
 Cohesion: 0.40
@@ -2372,48 +2371,44 @@ Cohesion: 0.67
 Nodes (3): Logs e Auditoria, Métricas de Qualidade, 📊 MÉTRICAS E MONITORAMENTO
 
 ### Community 556 - "Community 556"
-Cohesion: 0.09
-Nodes (21): 7.3 — Execução dos Testes (Continuação), 7.4 — Monitoração e Controle de Teste, 7.5 — Avaliação dos Resultados, Atividade 1: Execução Prática (120 min), Atividade 2: Monitoração (45 min), Atividade 3: Análise Conjunta (30 min), 🎬 Atividades Propostas, AULA 04 — 04-09-2026 (Sexta-feira) (+13 more)
+Cohesion: 0.10
+Nodes (19): Atividade 1: AnÃ¡lise de Requisitos (30 min), Atividade 2: CriaÃ§Ã£o de Plano (90 min), Atividade 3: Peer Review (30 min), Conceitos Fundamentais (5.1-5.2), EspecificaÃ§Ãµes TÃ©cnicas de Interface, Metodologia, Planejamento de Testes Client-Side (6.1-6.4), Timeline da Aula (4 horas) (+11 more)
 
 ### Community 557 - "Community 557"
 Cohesion: 0.10
-Nodes (20): Atividade 1: Análise de Requisitos (30 min), Atividade 2: Criação de Plano (90 min), Atividade 3: Peer Review (30 min), 🎬 Atividades Propostas, AULA 02 — 02-09-2026 (Quarta-feira), 🎓 Capacidades a Serem Trabalhadas, Conceitos Fundamentais (5.1-5.2), 📚 Conteúdos Programáticos (+12 more)
+Nodes (19): 7.1 â€” Planejamento de Teste, 7.2 â€” Desenho dos Testes, 7.3 â€” ExecuÃ§Ã£o dos Testes (IntroduÃ§Ã£o), Atividade 1: Live Coding (30 min), Atividade 2: ExercÃ­cio PrÃ¡tico (90 min), Atividade 3: ApresentaÃ§Ã£o RÃ¡pida (30 min), Metodologia, Processo Fundamental de Teste (7.1-7.5) â€” PARTE 1 (+11 more)
 
 ### Community 558 - "Community 558"
-Cohesion: 0.10
-Nodes (20): 7.1 — Planejamento de Teste, 7.2 — Desenho dos Testes, 7.3 — Execução dos Testes (Introdução), Atividade 1: Live Coding (30 min), Atividade 2: Exercício Prático (90 min), Atividade 3: Apresentação Rápida (30 min), 🎬 Atividades Propostas, AULA 03 — 03-09-2026 (Quinta-feira) (+12 more)
+Cohesion: 0.12
+Nodes (16): Atividade 1: DemonstraÃ§Ã£o (30 min), Atividade 2: PrÃ¡tica Guiada (120 min), Atividade 3: DocumentaÃ§Ã£o (30 min), ExecuÃ§Ã£o PrÃ¡tica, Metodologia, Testes de Funcionalidade, Testes de Usabilidade (Parte 1), Timeline da Aula (4 horas) (+8 more)
 
 ### Community 559 - "Community 559"
-Cohesion: 0.11
-Nodes (17): Atividade 1: Demonstração (30 min), Atividade 2: Prática Guiada (120 min), Atividade 3: Documentação (30 min), 🎬 Atividades Propostas, AULA 05 — 08-09-2026 (Segunda-feira), 🎓 Capacidades a Serem Trabalhadas, 📚 Conteúdos Programáticos, ✅ Critérios de Avaliação (+9 more)
+Cohesion: 0.15
+Nodes (12): AutomaÃ§Ã£o de Testes (2.1-2.4), ConfiguraÃ§Ã£o de Ambiente, Metodologia, Primeiros Scripts de Teste, Timeline da Aula (4 horas), âœ… CritÃ©rios de AvaliaÃ§Ã£o, ðŸ« EstratÃ©gias de Ensino, ðŸ› ï¸ Recursos NecessÃ¡rios (+4 more)
 
 ### Community 560 - "Community 560"
-Cohesion: 0.14
-Nodes (13): AULA 07 — 10-09-2026 (Quarta-feira), Automação de Testes (2.1-2.4), 🎓 Capacidades a Serem Trabalhadas, Configuração de Ambiente, 📚 Conteúdos Programáticos, ✅ Critérios de Avaliação, 🏫 Estratégias de Ensino, 📌 Informações Gerais (+5 more)
+Cohesion: 0.15
+Nodes (12): DocumentaÃ§Ã£o de Testes (Bloco 06), IntegraÃ§Ã£o ContÃ­nua (CI/CD), Metodologia (Parte 1: DocumentaÃ§Ã£o â€” 2h), Metodologia (Parte 2: CI/CD â€” 2h), MÃ©todos, Normas e Defeitos (Bloco 07), âœ… CritÃ©rios de AvaliaÃ§Ã£o, ðŸ« EstratÃ©gias de Ensino, ðŸ› ï¸ Recursos NecessÃ¡rios (+4 more)
 
 ### Community 561 - "Community 561"
-Cohesion: 0.14
-Nodes (13): AULA 09 — 15-09-2026 (Segunda-feira), 🎓 Capacidades a Serem Trabalhadas, 📚 Conteúdos Programáticos, ✅ Critérios de Avaliação, Documentação de Testes (Bloco 06), 🏫 Estratégias de Ensino, 📌 Informações Gerais, Integração Contínua (CI/CD) (+5 more)
+Cohesion: 0.17
+Nodes (11): AnÃ¡lise de Defeitos, ContinuaÃ§Ã£o de ExecuÃ§Ã£o PrÃ¡tica, Metodologia, Testes de Usabilidade (Parte 2), âœ… CritÃ©rios de AvaliaÃ§Ã£o, ðŸ« EstratÃ©gias de Ensino, ðŸ› ï¸ Recursos NecessÃ¡rios, ðŸ“Œ InformaÃ§Ãµes Gerais (+3 more)
 
 ### Community 562 - "Community 562"
-Cohesion: 0.15
-Nodes (12): Análise de Defeitos, AULA 06 — 09-09-2026 (Terça-feira), 🎓 Capacidades a Serem Trabalhadas, 📚 Conteúdos Programáticos, Continuação de Execução Prática, ✅ Critérios de Avaliação, 🏫 Estratégias de Ensino, 📌 Informações Gerais (+4 more)
+Cohesion: 0.17
+Nodes (11): Metodologia, MonitoraÃ§Ã£o e Controle (7.4), Testes de IntegraÃ§Ã£o, Testes End-to-End (E2E), âœ… CritÃ©rios de AvaliaÃ§Ã£o, ðŸ« EstratÃ©gias de Ensino, ðŸ› ï¸ Recursos NecessÃ¡rios, ðŸ“Œ InformaÃ§Ãµes Gerais (+3 more)
 
 ### Community 563 - "Community 563"
-Cohesion: 0.15
-Nodes (12): AULA 08 — 11-09-2026 (Quinta-feira), 🎓 Capacidades a Serem Trabalhadas, 📚 Conteúdos Programáticos, ✅ Critérios de Avaliação, 🏫 Estratégias de Ensino, 📌 Informações Gerais, Metodologia, Monitoração e Controle (7.4) (+4 more)
+Cohesion: 0.40
+Nodes (5): 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, Atividade 2.2, Encontro 6 — Operações com Frações (2h)
 
 ### Community 564 - "Community 564"
-Cohesion: 0.40
-Nodes (5): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, Atividade 6.1, Encontro 25 — Variáveis e Expressões Algébricas (2h)
+Cohesion: 0.50
+Nodes (4): 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, Atividade 3.3, Encontro 12 — Regra de Três Simples (2h)
 
 ### Community 565 - "Community 565"
-Cohesion: 0.40
-Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
-
-### Community 566 - "Community 566"
 Cohesion: 0.50
-Nodes (4): 17.1 Conceito de Perímetro, 17.2 Fórmulas, Atividade 4.3, Encontro 17 — Perímetro de Figuras Planas (2h)
+Nodes (4): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, Atividade 4.2, Encontro 16 — Capacidade e Tempo (2h)
 
 ## Knowledge Gaps
 - **3605 isolated node(s):** `participantes`, `workbook`, `sheet`, `PptxGenJS`, `pptx` (+3600 more)

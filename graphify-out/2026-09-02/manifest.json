@@ -1435,8 +1435,8 @@
     "semantic_hash": ""
   },
   "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/.claude/settings.local.json": {
-    "mtime": 1788355234.3642354,
-    "ast_hash": "71fadb88933fe99c1aaf49bce3c36e49",
+    "mtime": 1788356561.0796382,
+    "ast_hash": "4f4b6950338341226616985d13e61858",
     "semantic_hash": ""
   },
   "sistema/Tecnico em Desenvolvimento de Sistemas/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -2627,6 +2627,56 @@
   "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/index.html": {
     "mtime": 1788355478.6610398,
     "ast_hash": "40ed74ee0f9950316022dc3d0dbd141b",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 01-01-09-2026.md": {
+    "mtime": 1788356599.4946983,
+    "ast_hash": "76f50621916910e59f48eebb78391f92",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 02-02-09-2026.md": {
+    "mtime": 1788356616.0627148,
+    "ast_hash": "ed03d41b75755a01cb886db24dc7e361",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 03-03-09-2026.md": {
+    "mtime": 1788356630.237782,
+    "ast_hash": "fc60ddd84c595017578d8a8509d69f7e",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 04-04-09-2026.md": {
+    "mtime": 1788356644.1675413,
+    "ast_hash": "87c61110ac3e35784262a75d770160df",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 05-08-09-2026.md": {
+    "mtime": 1788356654.3655553,
+    "ast_hash": "381b73d37a106b852a2af7c1e354879b",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 06-09-09-2026.md": {
+    "mtime": 1788356663.1885781,
+    "ast_hash": "a1d02f56771606ed07199b24e3a5c4fc",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 07-10-09-2026.md": {
+    "mtime": 1788356672.3193214,
+    "ast_hash": "ea3f54c311353c7a8879b204128f9428",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 08-11-09-2026.md": {
+    "mtime": 1788356680.3670714,
+    "ast_hash": "731d620376d13cc2a101488d4a3aa56d",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 09-15-09-2026.md": {
+    "mtime": 1788356689.5110795,
+    "ast_hash": "30ac9985f618b7af0febd176cb585830",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/AULAS/AULA 10-16-09-2026.md": {
+    "mtime": 1788356711.2106025,
+    "ast_hash": "1004008e39e054a19518d0f5bd932d03",
     "semantic_hash": ""
   }
 }
