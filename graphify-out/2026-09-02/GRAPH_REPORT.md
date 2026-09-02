@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-09-02)
 
 ## Corpus Check
-- 327 files · ~759,814 words
+- 346 files · ~846,794 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4702 nodes · 4675 edges · 539 communities (494 shown, 45 thin omitted)
+- 5021 nodes · 4976 edges · 556 communities (511 shown, 45 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c783c296`
+- Built from commit: `f05d5737`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -499,6 +499,21 @@
 - [[_COMMUNITY_Community 481|Community 481]]
 - [[_COMMUNITY_Community 482|Community 482]]
 - [[_COMMUNITY_pendencias.js|pendencias.js]]
+- [[_COMMUNITY_Community 539|Community 539]]
+- [[_COMMUNITY_Community 540|Community 540]]
+- [[_COMMUNITY_Community 541|Community 541]]
+- [[_COMMUNITY_Community 542|Community 542]]
+- [[_COMMUNITY_Community 543|Community 543]]
+- [[_COMMUNITY_Community 544|Community 544]]
+- [[_COMMUNITY_Community 545|Community 545]]
+- [[_COMMUNITY_Community 546|Community 546]]
+- [[_COMMUNITY_Community 547|Community 547]]
+- [[_COMMUNITY_Community 548|Community 548]]
+- [[_COMMUNITY_Community 549|Community 549]]
+- [[_COMMUNITY_Community 550|Community 550]]
+- [[_COMMUNITY_Community 551|Community 551]]
+- [[_COMMUNITY_Community 552|Community 552]]
+- [[_COMMUNITY_Community 553|Community 553]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Currículo Técnico - Informática para Internet` - 86 edges
@@ -527,7 +542,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (539 total, 45 thin omitted)
+## Communities (556 total, 45 thin omitted)
 
 ### Community 0 - "Currículo Técnico - Informática para Internet"
 Cohesion: 0.02
@@ -670,8 +685,8 @@ Cohesion: 0.09
 Nodes (21): 📝 Aulas Ministradas (20h), Avaliações Pendentes, Avaliações Realizadas, ✅ Checklist de Implementação, ✅ Conteúdos Contemplados (20h), ❌ Conteúdos Faltantes (13h), 📚 Conteúdos Ministrados vs. Planejados, 📊 Cronograma Sugerido (+13 more)
 
 ### Community 35 - "MÓDULO 3 — PROPORCIONALIDADE"
-Cohesion: 0.09
-Nodes (22): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental (+14 more)
+Cohesion: 0.11
+Nodes (18): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental, Apresentação do Módulo, Atividade 3.1 (+10 more)
 
 ### Community 36 - "Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)"
 Cohesion: 0.09
@@ -731,7 +746,7 @@ Nodes (18): 1. Operações Matemáticas Aplicadas aos Processos Organizacionais,
 
 ### Community 50 - "ATIVIDADE INTEGRADORA — UC1 Introdução à TIC"
 Cohesion: 0.11
-Nodes (19): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Apresentação do Módulo (+11 more)
+Nodes (19): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Apresentação do Módulo (+11 more)
 
 ### Community 51 - "ATIVIDADE AULA 02 — Configuração de Ambiente e Ferramentas"
 Cohesion: 0.11
@@ -755,11 +770,11 @@ Nodes (17): 10. BIBLIOGRAFIA BÁSICA, 1. INFORMAÇÕES GERAIS, 2. FUNÇÃO, 3. O
 
 ### Community 56 - "ENCONTRO 18 — Projeto Final: Pitch de Negócio"
 Cohesion: 0.11
-Nodes (18): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Apresentação do Módulo, Atividade 5.1 (+10 more)
+Nodes (19): 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Apresentação do Módulo (+11 more)
 
 ### Community 57 - "ENCONTROS"
-Cohesion: 0.11
-Nodes (18): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples (+10 more)
+Cohesion: 0.09
+Nodes (23): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+15 more)
 
 ### Community 58 - "Apostila_Comunicacao_15h_Versao_Joao_Revisado_2026_02.md"
 Cohesion: 0.12
@@ -834,8 +849,8 @@ Cohesion: 0.13
 Nodes (15): Atividades, Atividades, Atividades, Encontro 13-14 — Pontuação e Seu Uso Comunicativo (4h), Encontro 15-16 — Concordância Verbal (4h), Encontro 17 — Concordância Nominal e Revisão (4h), Explicação: O adjetivo concorda com o substantivo, Explicação: O verbo concorda com o sujeito (+7 more)
 
 ### Community 76 - "1. Tarefa Principal — Testar Componente de Formulário"
-Cohesion: 0.13
-Nodes (15): 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.2 — Individual, Atividade 1.3 — Individual (+7 more)
+Cohesion: 0.10
+Nodes (20): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+12 more)
 
 ### Community 77 - "LineForWriting"
 Cohesion: 0.14
@@ -946,8 +961,8 @@ Cohesion: 0.18
 Nodes (10): APOSTILA DO ALUNO, Apresentação, Como Esta Apostila Está Organizada, FUNDAMENTOS DA TECNOLOGIA E PROGRAMAÇÃO, Glossário, Objetivo da UC, Percurso de Aprendizagem, RIO DO SUL MAIS TECH (+2 more)
 
 ### Community 104 - "ATIVIDADE 05: Aplicação de Normalização até 3ª Forma Normal"
-Cohesion: 0.18
-Nodes (10): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFERÊNCIAS, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, RIO DO SUL MAIS TECH, SENAI / PREFEITURA MUNICIPAL DE RIO DO SUL (+2 more)
+Cohesion: 0.29
+Nodes (7): APOSTILA DO ALUNO, Como esta apostila está organizada, Objetivo da UC, Percurso de Aprendizagem, REFORÇO MATEMÁTICA E RACIOCÍNIO LÓGICO, Sobre este material, Uma palavra para você, aluno
 
 ### Community 105 - "Apostila_Competencias_Socioemocionais_Empreendedorismo.md"
 Cohesion: 0.18
@@ -1282,8 +1297,8 @@ Cohesion: 0.29
 Nodes (6): Ementa por Matéria, Passo 1: Persistir caminhos, Passo 2: Editar caminho, Passo 3: Visualizar ementa, Passo 4: Commit e publicação, Status Geral
 
 ### Community 188 - "4. Estrutura de Blocos Temáticos e Plano de Aulas"
-Cohesion: 0.25
-Nodes (8): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação
+Cohesion: 0.17
+Nodes (11): GABARITO GERAL, Módulo 1 — Operações Básicas, Módulo 2 — Frações, Decimais e Porcentagem, Módulo 3 — Proporcionalidade, Módulo 4 — Medidas e Grandezas, Módulo 5 — Raciocínio Lógico, Módulo 6 — Álgebra, Módulo 7 — Tratamento da Informação (+3 more)
 
 ### Community 189 - "Global Constraints"
 Cohesion: 0.25
@@ -1942,8 +1957,8 @@ Cohesion: 0.40
 Nodes (5): Conteúdo, ENCONTRO 15 — Scratch: Primeiros Passos na Programação em Blocos, Na Prática, O que você vai aprender, Síntese
 
 ### Community 354 - "Community 354"
-Cohesion: 0.40
-Nodes (5): 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, Atividade 5.3, Encontro 22 — Lógica Proposicional Introdutória (2h)
+Cohesion: 0.08
+Nodes (25): 1.1 Definição, 1.2 Exemplos Práticos em Gestão, 1. Conceito de Razão, 2.1 Definição, 2.2 Propriedade Fundamental, 2.3 Exemplos Práticos, 2. Proporção, 3.1 Regra de Três Simples (+17 more)
 
 ### Community 355 - "Community 355"
 Cohesion: 0.40
@@ -2090,12 +2105,12 @@ Cohesion: 0.40
 Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
 
 ### Community 391 - "Community 391"
-Cohesion: 0.40
-Nodes (5): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, Atividade 1.1 — Individual, Encontro 1 — Adição e Subtração com Inteiros e Negativos (2h)
+Cohesion: 0.08
+Nodes (24): 1.1 Objetivos e Competências, 1.2 Estrutura do Curso, 1.3 Importância da Análise de Dados, 1. Apresentação da Disciplina (30 min), 2.1 Números Naturais (ℕ), 2.2 Números Inteiros (ℤ), 2.3 Números Racionais (ℚ), 2.4 Números Reais (ℝ) (+16 more)
 
 ### Community 392 - "Community 392"
-Cohesion: 0.40
-Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
 
 ### Community 393 - "Community 393"
 Cohesion: 0.40
@@ -2114,8 +2129,8 @@ Cohesion: 0.40
 Nodes (5): 7.1 Ambiente Físico, 7.2 Softwares e Ferramentas, 7.3 Material Didático, 7.4 Documentação, 7. Recursos Necessários
 
 ### Community 397 - "Community 397"
-Cohesion: 0.50
-Nodes (4): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, Atividade 4.2, Encontro 16 — Capacidade e Tempo (2h)
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
 
 ### Community 398 - "Community 398"
 Cohesion: 0.50
@@ -2285,8 +2300,68 @@ Nodes (4): 1. Ajustar o fluxo de atualização, 2. Preservar o tratamento de fal
 Cohesion: 0.50
 Nodes (3): 1. Atualizar o Git Ignore, Ignorar arquivo ALIBABA_IA.txt, Verificação permitida
 
+### Community 539 - "Community 539"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 540 - "Community 540"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 541 - "Community 541"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 542 - "Community 542"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 543 - "Community 543"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 544 - "Community 544"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 545 - "Community 545"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 546 - "Community 546"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 547 - "Community 547"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 548 - "Community 548"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 549 - "Community 549"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 550 - "Community 550"
+Cohesion: 0.11
+Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
+
+### Community 551 - "Community 551"
+Cohesion: 0.50
+Nodes (4): 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, Atividade 3.3, Encontro 12 — Regra de Três Simples (2h)
+
+### Community 552 - "Community 552"
+Cohesion: 0.50
+Nodes (4): 17.1 Conceito de Perímetro, 17.2 Fórmulas, Atividade 4.3, Encontro 17 — Perímetro de Figuras Planas (2h)
+
+### Community 553 - "Community 553"
+Cohesion: 0.50
+Nodes (4): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, Atividade 5.1, Encontro 20 — Padrões e Sequências (2h)
+
 ## Knowledge Gaps
-- **3249 isolated node(s):** `participantes`, `workbook`, `sheet`, `PptxGenJS`, `pptx` (+3244 more)
+- **3467 isolated node(s):** `participantes`, `workbook`, `sheet`, `PptxGenJS`, `pptx` (+3462 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **45 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2295,15 +2370,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ENCONTROS` connect `Encontro 1-2 — Tipos de Texto e Contexto de Leitura (4h)` to `ENCONTRO 17 — Virtudes do Empreendedor de Sucesso`, `ENCONTRO 2 — Perfil Empreendedor e Autoconhecimento`, `ENCONTRO 6 — Ciclo da Água e Legislação Ambiental`, `Community 358`, `EXPLORAÇÃO DE CARREIRAS INDUSTRIAIS E TECNOLÓGICAS`, `Community 359`, `Community 360`, `Community 361`, `Community 362`, `ENCONTRO 11 — Planejamento de Carreira: Da Escola ao Mercado`, `Community 363`, `converter_md_para_pdf.py`, `markdown_to_docx`, `Referências e Para Continuar Aprendendo`, `ENCONTRO 11 — Aprofundamento: Comunicação Não-Verbal e Empatia`, `ENCONTRO 13 — Aprofundamento: Ferramentas Digitais Corporativas`, `APOSTILA-CEPLAS-VESPERTINO-2026-02.md`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `PARTE 2 — ROBÓTICA` connect `markdown_to_pdf` to `REFERÊNCIAS E RECURSOS`, `ENCONTRO 7 — DIAGRAMAS ELÉTRICOS`, `Conteúdo`, `ENCONTRO 9 — INTERRUPTORES SIMPLES E PARALELO`, `OFICINAS DE IMPRESSÃO 3D E ROBÓTICA`, `ENCONTRO 9 — Impressão do Projeto 1 e Análise dos Resultados`, `Conteúdo`, `5.1 Bloco 01 — Fundamentos de Testes de Software`, `Conteúdo`, `Community 415`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `ENCONTRO 10 — Mapa de Habilidades e Interesses` connect `Community 358` to `Encontro 1-2 — Tipos de Texto e Contexto de Leitura (4h)`?**
+- **Why does `ENCONTRO 18 — Projeto Final: Pitch de Negócio` connect `3.1 Falar em público sem travar` to `4.2 Identificação de Dependências Transitivas`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `participantes`, `workbook`, `sheet` to the rest of the system?**
-  _3279 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3497 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Currículo Técnico - Informática para Internet` be split into smaller, more focused modules?**
   _Cohesion score 0.022988505747126436 - nodes in this community are weakly interconnected._
 - **Should `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` be split into smaller, more focused modules?**
   _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
 - **Should `CLAUDE.md — Pasta REFORCO_LINGUAGENS` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
+- **Should `EMENTA — TESTES DE FRONTEND` be split into smaller, more focused modules?**
+  _Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected._

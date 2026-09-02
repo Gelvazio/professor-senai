@@ -1435,8 +1435,8 @@
     "semantic_hash": ""
   },
   "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/.claude/settings.local.json": {
-    "mtime": 1788200964.2309332,
-    "ast_hash": "9a9ed7e576e226cf3db2a11c474773c3",
+    "mtime": 1788355234.3642354,
+    "ast_hash": "71fadb88933fe99c1aaf49bce3c36e49",
     "semantic_hash": ""
   },
   "sistema/Tecnico em Desenvolvimento de Sistemas/LOGICA-PROGRAMACAO/.claude/settings.local.json": {
@@ -2522,6 +2522,106 @@
   "sistema/Tecnico em Desenvolvimento de Sistemas/LOGICA-PROGRAMACAO/LISTA DE 30 EXERC\u00cdCIOS INTEGRADOS \u2013 PORTUGOL STUDIO.pdf": {
     "mtime": 1786015030.3463182,
     "ast_hash": "c69e6e4be0e51dd201182e67601383e2",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/criar_aulas.py": {
+    "mtime": 1788354416.0338655,
+    "ast_hash": "118772f04fc237e3de9c8e238fce3cb0",
+    "semantic_hash": ""
+  },
+  "sistema/GERADOR-INFOGRAFICOS/PROMPT-INFOGRAFICO-EXEMPLO.md": {
+    "mtime": 1788353329.548765,
+    "ast_hash": "b9bd1f28274a05a8bd177b366b56536d",
+    "semantic_hash": ""
+  },
+  "sistema/GERADOR-INFOGRAFICOS/infografico-de-exemplo.png": {
+    "mtime": 1788353791.3772912,
+    "ast_hash": "2c1588e10befd6c58d5c4db8d0ac8f42",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/.claude/settings.local.json": {
+    "mtime": 1788355157.8797226,
+    "ast_hash": "e6de9e10bb3dbe7a33105abd2af84347",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-01-15-09-2026.md": {
+    "mtime": 1788354340.070016,
+    "ast_hash": "531b7efe7272fa9d880a573e9d37535c",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-02-15-09-2026.md": {
+    "mtime": 1788354359.4792542,
+    "ast_hash": "22406755e0393ecf4a3c5f71af0b3c55",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-03-22-09-2026.md": {
+    "mtime": 1788354950.6174722,
+    "ast_hash": "579347745fdc6405b38c97edb6e538c8",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-04-22-09-2026.md": {
+    "mtime": 1788354950.6174722,
+    "ast_hash": "d7a0f7c012b6da65bbab9c1d98e2724d",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-05-24-09-2026.md": {
+    "mtime": 1788354950.6174722,
+    "ast_hash": "46682bd0bca951010d94ed4e45a29c27",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-06-24-09-2026.md": {
+    "mtime": 1788354950.6199348,
+    "ast_hash": "4822571e45f10f16b272e4d5d4918584",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-07-29-09-2026.md": {
+    "mtime": 1788354950.6199348,
+    "ast_hash": "8bf92e1cf4541b07e0501ecd43fd0a0a",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-08-29-09-2026.md": {
+    "mtime": 1788354950.6199348,
+    "ast_hash": "0a0b268d6f6a548f0382a4c810733eda",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-09-01-10-2026.md": {
+    "mtime": 1788354950.6199348,
+    "ast_hash": "1b08345ca15fe9f07b70dfb832254c2e",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-10-01-10-2026.md": {
+    "mtime": 1788354950.6199348,
+    "ast_hash": "9d6d5fedf989d06a1e6a519a1a7db57a",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-11-06-10-2026.md": {
+    "mtime": 1788354950.6199348,
+    "ast_hash": "00172fa95e1d732ee12d5a33f4e8054f",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-12-06-10-2026.md": {
+    "mtime": 1788354950.6199348,
+    "ast_hash": "784b8b82c53108740d639c708848009b",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-13-08-10-2026.md": {
+    "mtime": 1788354950.6236396,
+    "ast_hash": "1307f450a4fbaf46f1b50c10483db673",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-14-08-10-2026.md": {
+    "mtime": 1788354950.624199,
+    "ast_hash": "99f3e8ae1987a429912a2a709dd51ce3",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-15-13-10-2026.md": {
+    "mtime": 1788354950.624199,
+    "ast_hash": "64ad3c15a05ce7191c0d9f79462460ab",
+    "semantic_hash": ""
+  },
+  "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/AULAS/AULA-16-13-10-2026.md": {
+    "mtime": 1788354950.624199,
+    "ast_hash": "580a67407ed1df7411b033981a5f447c",
     "semantic_hash": ""
   }
 }
