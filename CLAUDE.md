@@ -31,7 +31,7 @@ As seguintes UCs ou contêineres pedagógicos existem no projeto:
 - `INTRODUCAO_TIC`
 - `LOGICA-PROGRAMACAO`
 - `PENDENCIAS-PROFESSOR`
-- `TECNICO DE INFORMATICA PARA INTERNET`
+- `TECNICO-INFORMATICA-INTERNET` — **curso/contêiner; não é matéria**
 
 ⚠️ **Status da Estrutura Obrigatória:**
 - **INTRODUCAO_TIC**: ✅ Completa (AULAS + MATERIAIS)
@@ -124,7 +124,6 @@ Em regra, cada subpasta pedagógica dentro de `sistema/` representa uma **Unidad
 - `INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO`
 - `INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO`
 - `LOGICA-PROGRAMACAO`
-- `TECNICO DE INFORMATICA PARA INTERNET`
 
 ### Curso Gestão e Controle de Materiais
 
@@ -133,6 +132,14 @@ Em regra, cada subpasta pedagógica dentro de `sistema/` representa uma **Unidad
 As subpastas pedagógicas dentro desse curso representam suas matérias. Atualmente, `ANALISE_DADOS_APLICADA_GESTAO/` é uma matéria identificada diretamente no curso, e agrupamentos de turma, como `TURMA_SALETE_2026_02/`, podem conter matérias adicionais.
 
 Ao listar, validar ou acessar matérias desse curso, o sistema deve navegar dentro de `GESTAO_E_CONTROLE_MATERIAIS/` e aplicar as regras de UC às pastas de matérias, não à pasta do curso.
+
+### Curso Técnico de Informática para Internet
+
+**Técnico de Informática para Internet:** a pasta `sistema/TECNICO-INFORMATICA-INTERNET/` é um **curso/contêiner de matérias**. Ela **não deve ser tratada como matéria ou UC**.
+
+As subpastas pedagógicas dentro desse curso representam suas matérias. Atualmente, `TESTES DE FRONTEND/` é uma matéria identificada no curso. A pasta `MATERIAIS-EXISTENTES/` é uma área de materiais de referência e não deve ser listada como matéria.
+
+Ao listar, validar ou acessar matérias desse curso, o sistema deve navegar dentro de `TECNICO-INFORMATICA-INTERNET/` e aplicar as regras de UC às pastas de matérias, não à pasta do curso nem à área `MATERIAIS-EXISTENTES/`.
 
 ## Pasta PROFESSOR
 
