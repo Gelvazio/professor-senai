@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-09-02)
 
 ## Corpus Check
-- 346 files · ~847,004 words
+- 356 files · ~852,708 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5023 nodes · 4978 edges · 556 communities (511 shown, 45 thin omitted)
+- 5212 nodes · 5157 edges · 567 communities (522 shown, 45 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e9437b9d`
+- Built from commit: `84f6d9d3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -514,6 +514,17 @@
 - [[_COMMUNITY_Community 496|Community 496]]
 - [[_COMMUNITY_Community 497|Community 497]]
 - [[_COMMUNITY_pendencias.js|pendencias.js]]
+- [[_COMMUNITY_Community 556|Community 556]]
+- [[_COMMUNITY_Community 557|Community 557]]
+- [[_COMMUNITY_Community 558|Community 558]]
+- [[_COMMUNITY_Community 559|Community 559]]
+- [[_COMMUNITY_Community 560|Community 560]]
+- [[_COMMUNITY_Community 561|Community 561]]
+- [[_COMMUNITY_Community 562|Community 562]]
+- [[_COMMUNITY_Community 563|Community 563]]
+- [[_COMMUNITY_Community 564|Community 564]]
+- [[_COMMUNITY_Community 565|Community 565]]
+- [[_COMMUNITY_Community 566|Community 566]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Currículo Técnico - Informática para Internet` - 86 edges
@@ -542,7 +553,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (556 total, 45 thin omitted)
+## Communities (567 total, 45 thin omitted)
 
 ### Community 0 - "Currículo Técnico - Informática para Internet"
 Cohesion: 0.02
@@ -661,8 +672,8 @@ Cohesion: 0.08
 Nodes (24): 1.1 Objetivos e Competências, 1.2 Estrutura do Curso, 1.3 Importância da Análise de Dados, 1. Apresentação da Disciplina (30 min), 2.1 Números Naturais (ℕ), 2.2 Números Inteiros (ℤ), 2.3 Números Racionais (ℚ), 2.4 Números Reais (ℝ) (+16 more)
 
 ### Community 29 - "AVALIAÇÃO PRÁTICA"
-Cohesion: 0.08
-Nodes (25): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+17 more)
+Cohesion: 0.10
+Nodes (20): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples (+12 more)
 
 ### Community 30 - "Relatório de Aulas — Introdução à Comunicação Oral e Escrita"
 Cohesion: 0.08
@@ -673,8 +684,8 @@ Cohesion: 0.08
 Nodes (23): 1. O que é esta pasta, 2. Arquivos na raiz da pasta, 3. Estrutura do Modelo de Slides (`MODELO_LAYOUT_APRESENTACAO.pptx`), 4.1 `CompetenciasSocioemocionaisEmpreendedorismo/`, 4.2 `FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/`, 4.3 `NocoesEletricidadeCircuitosBasicos/`, 4.4 `OFICINAS_IMPRESSAO_3D_ROBOTICA/`, 4.5 `INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/` (+15 more)
 
 ### Community 32 - "corretor_prova_pratica.py"
-Cohesion: 0.09
-Nodes (23): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas (+15 more)
+Cohesion: 0.11
+Nodes (19): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Apresentação do Módulo (+11 more)
 
 ### Community 33 - "Conhecimentos"
 Cohesion: 0.09
@@ -817,8 +828,8 @@ Cohesion: 0.11
 Nodes (18): 1.1 Definicoes e Contexto, 1.2 Conceitos-Chave, 1. Conceitos Fundamentais, 2.1 Exemplos do Dia a Dia, 2.2 Resolucao de Problemas, 2.3 Boas Praticas, 2. Aplicacoes Praticas, Atividade 1: Compreensao de Conceitos (25 min) (+10 more)
 
 ### Community 68 - "EMENTA — NOÇÕES DE ELETRICIDADE E CIRCUITOS BÁSICOS"
-Cohesion: 0.11
-Nodes (19): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo (+11 more)
+Cohesion: 0.14
+Nodes (14): 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo, Atividade 6.2, Atividade 6.3, Atividade 6.4 — Em Grupo (+6 more)
 
 ### Community 69 - "Encontro 13-14 — Pontuação e Seu Uso Comunicativo (4h)"
 Cohesion: 0.13
@@ -837,8 +848,8 @@ Cohesion: 0.11
 Nodes (17): 10. BIBLIOGRAFIA BÁSICA, 1. INFORMAÇÕES GERAIS, 2. FUNÇÃO, 3. OBJETIVO GERAL, 4.1 Capacidades Básicas, 4.2 Conhecimentos, 4. CONTEÚDOS FORMATIVOS, 5. EIXO ESTRUTURANTE BNCC (+9 more)
 
 ### Community 73 - "ENCONTROS"
-Cohesion: 0.11
-Nodes (18): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Apresentação do Módulo, Atividade 5.1 (+10 more)
+Cohesion: 0.09
+Nodes (23): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+15 more)
 
 ### Community 74 - "Apostila_Comunicacao_15h_Versao_Joao_Revisado_2026_02.md"
 Cohesion: 0.12
@@ -881,8 +892,8 @@ Cohesion: 0.12
 Nodes (15): 1. Identificação da UC, 2. Objetivo da UC, 3.1 Capacidades Básicas, 3.2 Capacidades Técnicas, 3. Capacidades, 4.1 Fundamentos da Comunicação no Mundo do Trabalho, 4.2 Técnicas de Comunicação Oral, 4.3 Estrutura e Normas de Redação Técnica e Formal (+7 more)
 
 ### Community 84 - "EMENTA — OFICINAS DE IMPRESSÃO 3D E ROBÓTICA"
-Cohesion: 0.12
-Nodes (16): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Apresentação do Módulo, Atividade 1.1 — Individual (+8 more)
+Cohesion: 0.09
+Nodes (22): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+14 more)
 
 ### Community 85 - "Arquivos"
 Cohesion: 0.12
@@ -1861,8 +1872,8 @@ Cohesion: 0.33
 Nodes (6): Canais no YouTube (em português), Livros Sugeridos, Plataformas de Programação e Tecnologia, Referências e Para Continuar Aprendendo, Segurança Digital, Verificação de Fake News
 
 ### Community 330 - "Encontro 22 — Lógica Proposicional Introdutória (2h)"
-Cohesion: 0.33
-Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
+Cohesion: 0.06
+Nodes (30): 7.2.1 Avaliação Prática — 1h, 7.2.2 Avaliação Teórica Objetiva — 1h, Aplicação Completa de Conhecimento, Atividade 1: Palestra e Discussão (90 min), Atividade 2: Avaliação Prática (60 min), Atividade 3: Avaliação Teórica (60 min), 🎬 Atividades da Aula, AULA 10 — 16-09-2026 (Terça-feira) (+22 more)
 
 ### Community 331 - "🛠️ TECNOLOGIAS E FERRAMENTAS"
 Cohesion: 0.33
@@ -2025,8 +2036,8 @@ Cohesion: 0.40
 Nodes (5): Conteúdo, ENCONTRO 15 — Scratch: Primeiros Passos na Programação em Blocos, Na Prática, O que você vai aprender, Síntese
 
 ### Community 371 - "Community 371"
-Cohesion: 0.40
-Nodes (5): 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, Atividade 5.3, Encontro 22 — Lógica Proposicional Introdutória (2h)
+Cohesion: 0.09
+Nodes (21): Atividade 1: Quiz Interativo (15 min), Atividade 2: Estudo de Caso (30 min), Atividade 3: Discussão Guiada (20 min), 🎬 Atividades Propostas, AULA 01 — 01-09-2026 (Terça-feira), Autogestão (1.1), Automação de Testes (2.1-2.4), 🎓 Capacidades a Serem Trabalhadas (+13 more)
 
 ### Community 372 - "Community 372"
 Cohesion: 0.40
@@ -2360,8 +2371,52 @@ Nodes (3): 5.1 Scripts DDL (Data Definition Language), 5.2 Scripts DML (Data Man
 Cohesion: 0.67
 Nodes (3): Logs e Auditoria, Métricas de Qualidade, 📊 MÉTRICAS E MONITORAMENTO
 
+### Community 556 - "Community 556"
+Cohesion: 0.09
+Nodes (21): 7.3 — Execução dos Testes (Continuação), 7.4 — Monitoração e Controle de Teste, 7.5 — Avaliação dos Resultados, Atividade 1: Execução Prática (120 min), Atividade 2: Monitoração (45 min), Atividade 3: Análise Conjunta (30 min), 🎬 Atividades Propostas, AULA 04 — 04-09-2026 (Sexta-feira) (+13 more)
+
+### Community 557 - "Community 557"
+Cohesion: 0.10
+Nodes (20): Atividade 1: Análise de Requisitos (30 min), Atividade 2: Criação de Plano (90 min), Atividade 3: Peer Review (30 min), 🎬 Atividades Propostas, AULA 02 — 02-09-2026 (Quarta-feira), 🎓 Capacidades a Serem Trabalhadas, Conceitos Fundamentais (5.1-5.2), 📚 Conteúdos Programáticos (+12 more)
+
+### Community 558 - "Community 558"
+Cohesion: 0.10
+Nodes (20): 7.1 — Planejamento de Teste, 7.2 — Desenho dos Testes, 7.3 — Execução dos Testes (Introdução), Atividade 1: Live Coding (30 min), Atividade 2: Exercício Prático (90 min), Atividade 3: Apresentação Rápida (30 min), 🎬 Atividades Propostas, AULA 03 — 03-09-2026 (Quinta-feira) (+12 more)
+
+### Community 559 - "Community 559"
+Cohesion: 0.11
+Nodes (17): Atividade 1: Demonstração (30 min), Atividade 2: Prática Guiada (120 min), Atividade 3: Documentação (30 min), 🎬 Atividades Propostas, AULA 05 — 08-09-2026 (Segunda-feira), 🎓 Capacidades a Serem Trabalhadas, 📚 Conteúdos Programáticos, ✅ Critérios de Avaliação (+9 more)
+
+### Community 560 - "Community 560"
+Cohesion: 0.14
+Nodes (13): AULA 07 — 10-09-2026 (Quarta-feira), Automação de Testes (2.1-2.4), 🎓 Capacidades a Serem Trabalhadas, Configuração de Ambiente, 📚 Conteúdos Programáticos, ✅ Critérios de Avaliação, 🏫 Estratégias de Ensino, 📌 Informações Gerais (+5 more)
+
+### Community 561 - "Community 561"
+Cohesion: 0.14
+Nodes (13): AULA 09 — 15-09-2026 (Segunda-feira), 🎓 Capacidades a Serem Trabalhadas, 📚 Conteúdos Programáticos, ✅ Critérios de Avaliação, Documentação de Testes (Bloco 06), 🏫 Estratégias de Ensino, 📌 Informações Gerais, Integração Contínua (CI/CD) (+5 more)
+
+### Community 562 - "Community 562"
+Cohesion: 0.15
+Nodes (12): Análise de Defeitos, AULA 06 — 09-09-2026 (Terça-feira), 🎓 Capacidades a Serem Trabalhadas, 📚 Conteúdos Programáticos, Continuação de Execução Prática, ✅ Critérios de Avaliação, 🏫 Estratégias de Ensino, 📌 Informações Gerais (+4 more)
+
+### Community 563 - "Community 563"
+Cohesion: 0.15
+Nodes (12): AULA 08 — 11-09-2026 (Quinta-feira), 🎓 Capacidades a Serem Trabalhadas, 📚 Conteúdos Programáticos, ✅ Critérios de Avaliação, 🏫 Estratégias de Ensino, 📌 Informações Gerais, Metodologia, Monitoração e Controle (7.4) (+4 more)
+
+### Community 564 - "Community 564"
+Cohesion: 0.40
+Nodes (5): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, Atividade 6.1, Encontro 25 — Variáveis e Expressões Algébricas (2h)
+
+### Community 565 - "Community 565"
+Cohesion: 0.40
+Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
+
+### Community 566 - "Community 566"
+Cohesion: 0.50
+Nodes (4): 17.1 Conceito de Perímetro, 17.2 Fórmulas, Atividade 4.3, Encontro 17 — Perímetro de Figuras Planas (2h)
+
 ## Knowledge Gaps
-- **3468 isolated node(s):** `participantes`, `workbook`, `sheet`, `PptxGenJS`, `pptx` (+3463 more)
+- **3605 isolated node(s):** `participantes`, `workbook`, `sheet`, `PptxGenJS`, `pptx` (+3600 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **45 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2370,15 +2425,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ENCONTROS` connect `MÓDULO 7 — TRATAMENTO DA INFORMAÇÃO` to `Referências e Para Continuar Aprendendo`, `ENCONTRO 11 — Aprofundamento: Comunicação Não-Verbal e Empatia`, `ENCONTRO 13 — Aprofundamento: Ferramentas Digitais Corporativas`, `APOSTILA-CEPLAS-VESPERTINO-2026-02.md`, `📋 INSTRUÇÕES GERAIS DA PROVA`, `ENCONTRO 12 — Currículo para Jovens: Como Montar o Seu`, `LISTA DE PRESENÇA`, `ENCONTRO 2 — Perfil Empreendedor e Autoconhecimento`, `ENCONTRO 6 — Ciclo da Água e Legislação Ambiental`, `EXPLORAÇÃO DE CARREIRAS INDUSTRIAIS E TECNOLÓGICAS`, `ENCONTRO 11 — Planejamento de Carreira: Da Escola ao Mercado`, `Community 375`, `Community 376`, `Community 377`, `Community 378`, `Community 379`, `Community 380`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `PARTE 2 — ROBÓTICA` connect `7. NORMALIZAÇÃO ATÉ 3ª FORMA NORMAL` to `OFICINAS DE IMPRESSÃO 3D E ROBÓTICA`, `ENCONTRO 3 — Materiais para Impressão 3D: Filamentos e Resinas`, `REFORÇO DE LINGUAGENS`, `5.2 Bloco 02 — Configuração de Ambiente e Ferramentas`, `Conteúdo`, `Conteúdo`, `Conteúdo`, `3. ANÁLISE COMPARATIVA DE SGBDs`, `Community 440`, `ENCONTRO 10 — TOMADAS, PLUGUES E INSTALAÇÕES PREDIAIS`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `ENCONTRO 18 — Projeto Final: Pitch de Negócio` connect `ENCONTRO 4 — Reuniões, atendimento e comunicação assertiva` to `ENCONTRO 11 — Identificando Oportunidades de Negócio`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `participantes`, `workbook`, `sheet` to the rest of the system?**
-  _3498 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3635 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Currículo Técnico - Informática para Internet` be split into smaller, more focused modules?**
   _Cohesion score 0.022988505747126436 - nodes in this community are weakly interconnected._
 - **Should `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` be split into smaller, more focused modules?**
   _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
 - **Should `CLAUDE.md — Pasta REFORCO_LINGUAGENS` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
-- **Should `EMENTA — TESTES DE FRONTEND` be split into smaller, more focused modules?**
-  _Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected._
