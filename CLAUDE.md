@@ -25,7 +25,7 @@
 As seguintes UCs ou contêineres pedagógicos existem no projeto:
 
 - `BANCO_DE_DADOS`
-- `FICHA-PRODUTO-MAIS-TECH`
+- `FICHA-PRODUTO-MAIS-TECH` — **curso/contêiner; não é matéria**
 - `GESTAO_E_CONTROLE_MATERIAIS` — **curso/contêiner; não é matéria**
 - `INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO`
 - `INTRODUCAO_TIC`
@@ -124,6 +124,14 @@ Em regra, cada subpasta pedagógica dentro de `sistema/` representa uma **Unidad
 - `INTRODUCAO_A_COMUNICACAO_ORAL_E_ESCRITA_PARA_O_MUNDO_DO_TRABALHO`
 - `INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO`
 - `LOGICA-PROGRAMACAO`
+
+### Curso Ficha Produto Mais Tech
+
+**Ficha Produto Mais Tech:** a pasta `sistema/FICHA-PRODUTO-MAIS-TECH/` é um **curso/contêiner de matérias**. Ela **não deve ser tratada como matéria ou UC**.
+
+As subpastas pedagógicas dentro desse curso representam suas matérias: `COMPETENCIAS_SOCIOEMOCIONAIS_E_EMPREENDEDORISMO/`, `EXPLORACAO_CARREIRAS_INDUSTRIAIS_TECNOLOGICAS/`, `FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/`, `INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/`, `NOCOES_ELETRICIDADE_CIRCUITOS_BASICOS/`, `OFICINAS_IMPRESSAO_3D_ROBOTICA/`, `REFORCO_LINGUAGENS/` e `REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/`.
+
+Ao listar, validar ou acessar matérias desse curso, o sistema deve navegar dentro de `FICHA-PRODUTO-MAIS-TECH/` e aplicar as regras de UC às pastas de matérias, não à pasta do curso.
 
 ### Curso Gestão e Controle de Materiais
 
