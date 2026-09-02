@@ -5,7 +5,7 @@
 
 ⚠️ **ATUALIZAR ESTE CONTEXTO A CADA INTERAÇÃO COM O CHAT** — Este documento deve refletir sempre o estado mais recente do projeto.
 
-**Data Última Atualização:** 02-09-2026 (✅ Materiais completos para "Análise de Dados Aplicada à Gestão" — 32h plano, 16 aulas, ementa e apostila)  
+**Data Última Atualização:** 02-09-2026 (✅ PLANO-AULAS-TESTES-FRONT-END.md aprimorado com percentuais de avaliação e cálculo de notas)  
 **Objetivo Principal:** Implementar sistema de validação e sincronização de UCs (Unidades Curriculares) com dashboard interativo
 
 ### ✅ Implementações Realizadas
