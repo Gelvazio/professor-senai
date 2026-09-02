@@ -86,7 +86,9 @@ graphify update .
 
 O Graphify está instalado como executável do `uv` em `C:\Users\gelva\.local\bin\graphify.exe`. O módulo não está disponível no interpretador `C:\Python314\python.exe`.
 
-**Última atualização do grafo (02-09-2026):** 197 arquivos analisados, aproximadamente 511.066 palavras, 3.750 nós, 3.865 relações e 367 comunidades.
+**Última atualização do grafo (02-09-2026):** 198 arquivos analisados, aproximadamente 511.414 palavras, 3.759 nós, 3.873 relações e 366 comunidades.
+
+**Exclusões do corpus:** O arquivo `.graphifyignore` impede a leitura de `sistema/PENDENCIAS-PROFESSOR/node_modules/`, pois essa pasta contém dependências geradas e não código autoral do projeto.
 
 ### Inventário atual da raiz
 

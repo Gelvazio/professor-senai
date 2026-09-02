@@ -3581,7 +3581,7 @@
       "node_kind": "heading",
       "norm_label": "1. **criacao automatica de pendencias**",
       "source_file": "CLAUDE.md",
-      "source_location": "L257"
+      "source_location": "L238"
     },
     {
       "id": "claude_2_descri\u00e7\u00f5es_autom\u00e1ticas",
@@ -3593,7 +3593,7 @@
       "node_kind": "heading",
       "norm_label": "2. **descricoes automaticas**",
       "source_file": "CLAUDE.md",
-      "source_location": "L263"
+      "source_location": "L244"
     },
     {
       "id": "claude_3_sincroniza\u00e7\u00e3o_bidirecional",
@@ -3605,7 +3605,7 @@
       "node_kind": "heading",
       "norm_label": "3. **sincronizacao bidirecional**",
       "source_file": "CLAUDE.md",
-      "source_location": "L280"
+      "source_location": "L261"
     },
     {
       "id": "claude_4_interface_de_pend\u00eancias",
@@ -3617,7 +3617,7 @@
       "node_kind": "heading",
       "norm_label": "4. **interface de pendencias**",
       "source_file": "CLAUDE.md",
-      "source_location": "L286"
+      "source_location": "L267"
     },
     {
       "id": "claude_5_campos_da_tabela_pendencias",
@@ -3629,7 +3629,7 @@
       "node_kind": "heading",
       "norm_label": "5. **campos da tabela `pendencias`**",
       "source_file": "CLAUDE.md",
-      "source_location": "L295"
+      "source_location": "L276"
     },
     {
       "id": "claude_api_endpoints",
@@ -3653,7 +3653,7 @@
       "node_kind": "heading",
       "norm_label": "\u2705 checklist de implementacao",
       "source_file": "CLAUDE.md",
-      "source_location": "L241"
+      "source_location": "L222"
     },
     {
       "id": "claude_commit_e_push_obrigat\u00f3rios",
@@ -3701,7 +3701,7 @@
       "node_kind": "heading",
       "norm_label": "definicao de pendencias",
       "source_file": "CLAUDE.md",
-      "source_location": "L159"
+      "source_location": "L140"
     },
     {
       "id": "claude_estrutura_da_tabela_pendencias",
@@ -3713,7 +3713,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udcca estrutura da tabela \"pendencias\"",
       "source_file": "CLAUDE.md",
-      "source_location": "L204"
+      "source_location": "L185"
     },
     {
       "id": "claude_estrutura_de_ucs_existentes",
@@ -3737,7 +3737,7 @@
       "node_kind": "heading",
       "norm_label": "estrutura de unidades curriculares",
       "source_file": "CLAUDE.md",
-      "source_location": "L118"
+      "source_location": "L99"
     },
     {
       "id": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
@@ -3749,7 +3749,7 @@
       "node_kind": "heading",
       "norm_label": "estrutura obrigatoria de cada uc",
       "source_file": "CLAUDE.md",
-      "source_location": "L137"
+      "source_location": "L118"
     },
     {
       "id": "claude_ferramentas_criadas",
@@ -3785,7 +3785,7 @@
       "node_kind": "heading",
       "norm_label": "fluxo automatico de pendencias",
       "source_file": "CLAUDE.md",
-      "source_location": "L191"
+      "source_location": "L172"
     },
     {
       "id": "claude_fluxo_de_atualiza\u00e7\u00e3o_obrigat\u00f3rio",
@@ -3797,7 +3797,7 @@
       "node_kind": "heading",
       "norm_label": "\u26a1 fluxo de atualizacao obrigatorio",
       "source_file": "CLAUDE.md",
-      "source_location": "L326"
+      "source_location": "L307"
     },
     {
       "id": "claude_fluxo_de_inser\u00e7\u00e3o_de_pend\u00eancias",
@@ -3809,7 +3809,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udd04 fluxo de insercao de pendencias",
       "source_file": "CLAUDE.md",
-      "source_location": "L227"
+      "source_location": "L208"
     },
     {
       "id": "claude_funcionalidades_implementadas",
@@ -3821,7 +3821,7 @@
       "node_kind": "heading",
       "norm_label": "\u2705 funcionalidades implementadas",
       "source_file": "CLAUDE.md",
-      "source_location": "L255"
+      "source_location": "L236"
     },
     {
       "id": "claude_graphify",
@@ -3845,7 +3845,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83c\udfaf implementacao completa do sistema de pendencias (26-08-2026)",
       "source_file": "CLAUDE.md",
-      "source_location": "L253"
+      "source_location": "L234"
     },
     {
       "id": "claude_implementa\u00e7\u00e3o_obrigat\u00f3ria",
@@ -3857,7 +3857,7 @@
       "node_kind": "heading",
       "norm_label": "implementacao obrigatoria",
       "source_file": "CLAUDE.md",
-      "source_location": "L178"
+      "source_location": "L159"
     },
     {
       "id": "claude_implementa\u00e7\u00f5es_realizadas",
@@ -3872,30 +3872,6 @@
       "source_location": "L11"
     },
     {
-      "id": "claude_invent\u00e1rio_atual_da_raiz",
-      "label": "Invent\u00e1rio atual da raiz",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "professor-senai \u2014 Regras do Projeto",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "inventario atual da raiz",
-      "source_file": "CLAUDE.md",
-      "source_location": "L93"
-    },
-    {
-      "id": "claude_invent\u00e1rio_atual_de_sistema",
-      "label": "Invent\u00e1rio atual de `sistema/`",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "professor-senai \u2014 Regras do Projeto",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "inventario atual de `sistema/`",
-      "source_file": "CLAUDE.md",
-      "source_location": "L99"
-    },
-    {
       "id": "claude_nunca_perguntar_sempre_executar",
       "label": "Nunca perguntar \u2014 sempre executar",
       "_origin": "ast",
@@ -3905,7 +3881,7 @@
       "node_kind": "heading",
       "norm_label": "nunca perguntar \u2014 sempre executar",
       "source_file": "CLAUDE.md",
-      "source_location": "L108"
+      "source_location": "L89"
     },
     {
       "id": "claude_o_que_n\u00e3o_fazer",
@@ -3917,7 +3893,7 @@
       "node_kind": "heading",
       "norm_label": "\u274c o que nao fazer",
       "source_file": "CLAUDE.md",
-      "source_location": "L184"
+      "source_location": "L165"
     },
     {
       "id": "claude_organiza\u00e7\u00e3o_das_provas_pr\u00e1ticas_de_introdu\u00e7\u00e3o_\u00e0_tic",
@@ -3929,7 +3905,7 @@
       "node_kind": "heading",
       "norm_label": "organizacao das provas praticas de introducao a tic",
       "source_file": "CLAUDE.md",
-      "source_location": "L147"
+      "source_location": "L128"
     },
     {
       "id": "claude_pasta_professor",
@@ -3941,7 +3917,7 @@
       "node_kind": "heading",
       "norm_label": "pasta professor",
       "source_file": "CLAUDE.md",
-      "source_location": "L129"
+      "source_location": "L110"
     },
     {
       "id": "claude_professor_senai_regras_do_projeto",
@@ -3965,7 +3941,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udccb scripts sql necessarios",
       "source_file": "CLAUDE.md",
-      "source_location": "L319"
+      "source_location": "L300"
     },
     {
       "id": "claude_sistema_de_pend\u00eancias_regra_cr\u00edtica",
@@ -3977,7 +3953,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udd14 sistema de pendencias \u2014 regra critica",
       "source_file": "CLAUDE.md",
-      "source_location": "L155"
+      "source_location": "L136"
     },
     {
       "id": "claude_slides",
@@ -3989,7 +3965,7 @@
       "node_kind": "heading",
       "norm_label": "slides",
       "source_file": "CLAUDE.md",
-      "source_location": "L114"
+      "source_location": "L95"
     },
     {
       "id": "claude_update_branch",
@@ -26211,136 +26187,124 @@
       "source_location": "L1159"
     },
     {
-      "id": "docs_excluir_node_modules_pendencias_do_graphify",
-      "label": "excluir-node-modules-pendencias-do-graphify.md",
+      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_atividades_878",
+      "label": "Atividades",
       "_origin": "ast",
       "community": 298,
-      "community_name": "Status Geral",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "excluir-node-modules-pendencias-do-graphify.md",
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_excluir_node_modules_pendencias_do_graphify_excluir_node_modules_de_pend\u00eancias_do_graphify",
-      "label": "Excluir Node Modules de Pend\u00eancias do Graphify",
-      "_origin": "ast",
-      "community": 298,
-      "community_name": "Status Geral",
+      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "excluir node modules de pendencias do graphify",
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L1"
+      "norm_label": "atividades",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
+      "source_location": "L878"
     },
     {
-      "id": "docs_excluir_node_modules_pendencias_do_graphify_passo_1_criar_regra_de_exclus\u00e3o",
-      "label": "Passo 1: Criar regra de exclus\u00e3o",
+      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_encontro_25_26_leitura_cr\u00edtica_e_an\u00e1lise_de_discurso_4h",
+      "label": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
       "_origin": "ast",
       "community": 298,
-      "community_name": "Status Geral",
+      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "passo 1: criar regra de exclusao",
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L20"
+      "norm_label": "encontro 25-26 \u2014 leitura critica e analise de discurso (4h)",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
+      "source_location": "L845"
     },
     {
-      "id": "docs_excluir_node_modules_pendencias_do_graphify_passo_2_atualizar_o_grafo",
-      "label": "Passo 2: Atualizar o grafo",
+      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_explica\u00e7\u00e3o_fato_x_opini\u00e3o",
+      "label": "Explica\u00e7\u00e3o: Fato x Opini\u00e3o",
       "_origin": "ast",
       "community": 298,
-      "community_name": "Status Geral",
+      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "passo 2: atualizar o grafo",
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L36"
+      "norm_label": "explicacao: fato x opiniao",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
+      "source_location": "L863"
     },
     {
-      "id": "docs_excluir_node_modules_pendencias_do_graphify_passo_3_atualizar_o_contexto",
-      "label": "Passo 3: Atualizar o contexto",
+      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_objetivos_847",
+      "label": "Objetivos",
       "_origin": "ast",
       "community": 298,
-      "community_name": "Status Geral",
+      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "passo 3: atualizar o contexto",
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L48"
+      "norm_label": "objetivos",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
+      "source_location": "L847"
     },
     {
-      "id": "docs_excluir_node_modules_pendencias_do_graphify_passo_4_commit_e_push",
-      "label": "Passo 4: Commit e push",
+      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_texto_base_854",
+      "label": "Texto base",
       "_origin": "ast",
       "community": 298,
-      "community_name": "Status Geral",
+      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "passo 4: commit e push",
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L60"
+      "norm_label": "texto base",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
+      "source_location": "L854"
     },
     {
-      "id": "docs_excluir_node_modules_pendencias_do_graphify_status_geral",
-      "label": "Status Geral",
-      "_origin": "ast",
-      "community": 298,
-      "community_name": "Status Geral",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "status geral",
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L9"
-    },
-    {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_15_1_unidades_de_comprimento",
-      "label": "15.1 Unidades de Comprimento",
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_8_1_o_que_\u00e9_porcentagem",
+      "label": "8.1 O que \u00e9 Porcentagem",
       "_origin": "ast",
       "community": 299,
-      "community_name": "Encontro 15 \u2014 Sistema M\u00e9trico: Comprimento e Massa (2h)",
+      "community_name": "Encontro 8 \u2014 Porcentagem (2h)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "15.1 unidades de comprimento",
+      "norm_label": "8.1 o que e porcentagem",
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L711"
+      "source_location": "L401"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_15_2_unidades_de_massa",
-      "label": "15.2 Unidades de Massa",
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_8_2_calcular_a_porcentagem_de_um_valor",
+      "label": "8.2 Calcular a Porcentagem de um Valor",
       "_origin": "ast",
       "community": 299,
-      "community_name": "Encontro 15 \u2014 Sistema M\u00e9trico: Comprimento e Massa (2h)",
+      "community_name": "Encontro 8 \u2014 Porcentagem (2h)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "15.2 unidades de massa",
+      "norm_label": "8.2 calcular a porcentagem de um valor",
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L727"
+      "source_location": "L407"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_atividade_4_1",
-      "label": "Atividade 4.1",
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_8_3_aumento_percentual",
+      "label": "8.3 Aumento Percentual",
       "_origin": "ast",
       "community": 299,
-      "community_name": "Encontro 15 \u2014 Sistema M\u00e9trico: Comprimento e Massa (2h)",
+      "community_name": "Encontro 8 \u2014 Porcentagem (2h)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "atividade 4.1",
+      "norm_label": "8.3 aumento percentual",
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L735"
+      "source_location": "L433"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_encontro_15_sistema_m\u00e9trico_comprimento_e_massa_2h",
-      "label": "Encontro 15 \u2014 Sistema M\u00e9trico: Comprimento e Massa (2h)",
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_atividade_2_4_situa\u00e7\u00f5es_reais",
+      "label": "Atividade 2.4 \u2014 Situa\u00e7\u00f5es Reais",
       "_origin": "ast",
       "community": 299,
-      "community_name": "Encontro 15 \u2014 Sistema M\u00e9trico: Comprimento e Massa (2h)",
+      "community_name": "Encontro 8 \u2014 Porcentagem (2h)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "encontro 15 \u2014 sistema metrico: comprimento e massa (2h)",
+      "norm_label": "atividade 2.4 \u2014 situacoes reais",
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L709"
+      "source_location": "L440"
+    },
+    {
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_encontro_8_porcentagem_2h",
+      "label": "Encontro 8 \u2014 Porcentagem (2h)",
+      "_origin": "ast",
+      "community": 299,
+      "community_name": "Encontro 8 \u2014 Porcentagem (2h)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "encontro 8 \u2014 porcentagem (2h)",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
+      "source_location": "L399"
     },
     {
       "id": "sistema_tecnico_informatica_internet_testes_de_frontend_ementa_testes_front_end",
@@ -29847,6 +29811,54 @@
       "source_location": "L1079"
     },
     {
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_18_1_conceito_de_\u00e1rea",
+      "label": "18.1 Conceito de \u00c1rea",
+      "_origin": "ast",
+      "community": 330,
+      "community_name": "Encontro 18 \u2014 \u00c1rea de Figuras Planas (2h)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "18.1 conceito de area",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
+      "source_location": "L818"
+    },
+    {
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_18_2_f\u00f3rmulas",
+      "label": "18.2 F\u00f3rmulas",
+      "_origin": "ast",
+      "community": 330,
+      "community_name": "Encontro 18 \u2014 \u00c1rea de Figuras Planas (2h)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "18.2 formulas",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
+      "source_location": "L822"
+    },
+    {
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_atividade_4_4",
+      "label": "Atividade 4.4",
+      "_origin": "ast",
+      "community": 330,
+      "community_name": "Encontro 18 \u2014 \u00c1rea de Figuras Planas (2h)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "atividade 4.4",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
+      "source_location": "L843"
+    },
+    {
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_encontro_18_\u00e1rea_de_figuras_planas_2h",
+      "label": "Encontro 18 \u2014 \u00c1rea de Figuras Planas (2h)",
+      "_origin": "ast",
+      "community": 330,
+      "community_name": "Encontro 18 \u2014 \u00c1rea de Figuras Planas (2h)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "encontro 18 \u2014 area de figuras planas (2h)",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
+      "source_location": "L816"
+    },
+    {
       "id": "sistema_gerador_aulas_claude_caso_de_uso_1_gera\u00e7\u00e3o_de_uc_completa",
       "label": "Caso de Uso 1: Gera\u00e7\u00e3o de UC Completa",
       "_origin": "ast",
@@ -32431,42 +32443,6 @@
       "source_location": "L378"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_8_1_o_que_\u00e9_porcentagem",
-      "label": "8.1 O que \u00e9 Porcentagem",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "M\u00d3DULO 2 \u2014 FRA\u00c7\u00d5ES, DECIMAIS E PORCENTAGEM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "8.1 o que e porcentagem",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L401"
-    },
-    {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_8_2_calcular_a_porcentagem_de_um_valor",
-      "label": "8.2 Calcular a Porcentagem de um Valor",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "M\u00d3DULO 2 \u2014 FRA\u00c7\u00d5ES, DECIMAIS E PORCENTAGEM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "8.2 calcular a porcentagem de um valor",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L407"
-    },
-    {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_8_3_aumento_percentual",
-      "label": "8.3 Aumento Percentual",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "M\u00d3DULO 2 \u2014 FRA\u00c7\u00d5ES, DECIMAIS E PORCENTAGEM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "8.3 aumento percentual",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L433"
-    },
-    {
       "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_9_1_f\u00f3rmula_dos_juros_simples",
       "label": "9.1 F\u00f3rmula dos Juros Simples",
       "_origin": "ast",
@@ -32515,18 +32491,6 @@
       "source_location": "L389"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_atividade_2_4_situa\u00e7\u00f5es_reais",
-      "label": "Atividade 2.4 \u2014 Situa\u00e7\u00f5es Reais",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "M\u00d3DULO 2 \u2014 FRA\u00c7\u00d5ES, DECIMAIS E PORCENTAGEM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "atividade 2.4 \u2014 situacoes reais",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L440"
-    },
-    {
       "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_atividade_2_5_em_grupo",
       "label": "Atividade 2.5 \u2014 Em Grupo",
       "_origin": "ast",
@@ -32573,18 +32537,6 @@
       "norm_label": "encontro 7 \u2014 decimais e conversoes (2h)",
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
       "source_location": "L365"
-    },
-    {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_encontro_8_porcentagem_2h",
-      "label": "Encontro 8 \u2014 Porcentagem (2h)",
-      "_origin": "ast",
-      "community": 40,
-      "community_name": "M\u00d3DULO 2 \u2014 FRA\u00c7\u00d5ES, DECIMAIS E PORCENTAGEM",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "encontro 8 \u2014 porcentagem (2h)",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L399"
     },
     {
       "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_encontro_9_juros_simples_2h",
@@ -33967,6 +33919,30 @@
       "source_location": "L28"
     },
     {
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_15_1_unidades_de_comprimento",
+      "label": "15.1 Unidades de Comprimento",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "M\u00d3DULO 4 \u2014 MEDIDAS E GRANDEZAS",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "15.1 unidades de comprimento",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
+      "source_location": "L711"
+    },
+    {
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_15_2_unidades_de_massa",
+      "label": "15.2 Unidades de Massa",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "M\u00d3DULO 4 \u2014 MEDIDAS E GRANDEZAS",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "15.2 unidades de massa",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
+      "source_location": "L727"
+    },
+    {
       "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_16_1_unidades_de_capacidade",
       "label": "16.1 Unidades de Capacidade",
       "_origin": "ast",
@@ -34015,30 +33991,6 @@
       "source_location": "L789"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_18_1_conceito_de_\u00e1rea",
-      "label": "18.1 Conceito de \u00c1rea",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "M\u00d3DULO 4 \u2014 MEDIDAS E GRANDEZAS",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "18.1 conceito de area",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L818"
-    },
-    {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_18_2_f\u00f3rmulas",
-      "label": "18.2 F\u00f3rmulas",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "M\u00d3DULO 4 \u2014 MEDIDAS E GRANDEZAS",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "18.2 formulas",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L822"
-    },
-    {
       "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_19_1_resolu\u00e7\u00e3o_integrada",
       "label": "19.1 Resolu\u00e7\u00e3o Integrada",
       "_origin": "ast",
@@ -34049,6 +34001,18 @@
       "norm_label": "19.1 resolucao integrada",
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
       "source_location": "L853"
+    },
+    {
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_atividade_4_1",
+      "label": "Atividade 4.1",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "M\u00d3DULO 4 \u2014 MEDIDAS E GRANDEZAS",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "atividade 4.1",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
+      "source_location": "L735"
     },
     {
       "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_atividade_4_2",
@@ -34075,18 +34039,6 @@
       "source_location": "L808"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_atividade_4_4",
-      "label": "Atividade 4.4",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "M\u00d3DULO 4 \u2014 MEDIDAS E GRANDEZAS",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "atividade 4.4",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L843"
-    },
-    {
       "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_atividade_4_5_em_grupo",
       "label": "Atividade 4.5 \u2014 Em Grupo",
       "_origin": "ast",
@@ -34097,6 +34049,18 @@
       "norm_label": "atividade 4.5 \u2014 em grupo",
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
       "source_location": "L866"
+    },
+    {
+      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_encontro_15_sistema_m\u00e9trico_comprimento_e_massa_2h",
+      "label": "Encontro 15 \u2014 Sistema M\u00e9trico: Comprimento e Massa (2h)",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "M\u00d3DULO 4 \u2014 MEDIDAS E GRANDEZAS",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "encontro 15 \u2014 sistema metrico: comprimento e massa (2h)",
+      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
+      "source_location": "L709"
     },
     {
       "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_encontro_16_capacidade_e_tempo_2h",
@@ -34121,18 +34085,6 @@
       "norm_label": "encontro 17 \u2014 perimetro de figuras planas (2h)",
       "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
       "source_location": "L783"
-    },
-    {
-      "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_encontro_18_\u00e1rea_de_figuras_planas_2h",
-      "label": "Encontro 18 \u2014 \u00c1rea de Figuras Planas (2h)",
-      "_origin": "ast",
-      "community": 43,
-      "community_name": "M\u00d3DULO 4 \u2014 MEDIDAS E GRANDEZAS",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "encontro 18 \u2014 area de figuras planas (2h)",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_MATEMATICA_E_RACIOCINIO_LOGICO/Apostila_Reforco_Matematica_Raciocinio_Logico.md",
-      "source_location": "L816"
     },
     {
       "id": "sistema_ficha_produto_mais_tech_reforco_matematica_e_raciocinio_logico_apostila_reforco_matematica_raciocinio_logico_encontro_19_problemas_com_medidas_2h",
@@ -39693,7 +39645,7 @@
       "label": "Atividade final",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "atividade final",
@@ -39705,7 +39657,7 @@
       "label": "Atividades",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "atividades",
@@ -39713,23 +39665,11 @@
       "source_location": "L833"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_atividades_878",
-      "label": "Atividades",
-      "_origin": "ast",
-      "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "atividades",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
-      "source_location": "L878"
-    },
-    {
       "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_atividades_927",
       "label": "Atividades",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "atividades",
@@ -39741,7 +39681,7 @@
       "label": "Encontro 23-24 \u2014 G\u00eaneros Textuais no Cotidiano (4h)",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "encontro 23-24 \u2014 generos textuais no cotidiano (4h)",
@@ -39749,23 +39689,11 @@
       "source_location": "L806"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_encontro_25_26_leitura_cr\u00edtica_e_an\u00e1lise_de_discurso_4h",
-      "label": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
-      "_origin": "ast",
-      "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "encontro 25-26 \u2014 leitura critica e analise de discurso (4h)",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
-      "source_location": "L845"
-    },
-    {
       "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_encontro_27_28_produ\u00e7\u00e3o_de_s\u00ednteses_e_mapas_mentais_4h",
       "label": "Encontro 27-28 \u2014 Produ\u00e7\u00e3o de S\u00ednteses e Mapas Mentais (4h)",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "encontro 27-28 \u2014 producao de sinteses e mapas mentais (4h)",
@@ -39777,7 +39705,7 @@
       "label": "Encontro 29-30 \u2014 Avalia\u00e7\u00e3o Final e Socializa\u00e7\u00e3o (3h)",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "encontro 29-30 \u2014 avaliacao final e socializacao (3h)",
@@ -39789,7 +39717,7 @@
       "label": "Explica\u00e7\u00e3o: Como fazer uma s\u00edntese?",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "explicacao: como fazer uma sintese?",
@@ -39797,23 +39725,11 @@
       "source_location": "L907"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_explica\u00e7\u00e3o_fato_x_opini\u00e3o",
-      "label": "Explica\u00e7\u00e3o: Fato x Opini\u00e3o",
-      "_origin": "ast",
-      "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "explicacao: fato x opiniao",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
-      "source_location": "L863"
-    },
-    {
       "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_m\u00f3dulo_5_autonomia_e_estrat\u00e9gias_de_estudo",
       "label": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "modulo 5 \u2014 autonomia e estrategias de estudo",
@@ -39825,7 +39741,7 @@
       "label": "Objetivos",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "objetivos",
@@ -39833,23 +39749,11 @@
       "source_location": "L808"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_objetivos_847",
-      "label": "Objetivos",
-      "_origin": "ast",
-      "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "objetivos",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
-      "source_location": "L847"
-    },
-    {
       "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_objetivos_900",
       "label": "Objetivos",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "objetivos",
@@ -39861,7 +39765,7 @@
       "label": "Objetivos",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "objetivos",
@@ -39873,7 +39777,7 @@
       "label": "Portf\u00f3lio do aluno",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "portfolio do aluno",
@@ -39881,23 +39785,11 @@
       "source_location": "L955"
     },
     {
-      "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_texto_base_854",
-      "label": "Texto base",
-      "_origin": "ast",
-      "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "texto base",
-      "source_file": "sistema/FICHA-PRODUTO-MAIS-TECH/REFORCO_LINGUAGENS/Apostila_Reforco_Linguagens.md",
-      "source_location": "L854"
-    },
-    {
       "id": "sistema_ficha_produto_mais_tech_reforco_linguagens_apostila_reforco_linguagens_textos_analisados_neste_encontro",
       "label": "Textos analisados neste encontro",
       "_origin": "ast",
       "community": 68,
-      "community_name": "Encontro 25-26 \u2014 Leitura Cr\u00edtica e An\u00e1lise de Discurso (4h)",
+      "community_name": "M\u00d3DULO 5 \u2014 AUTONOMIA E ESTRAT\u00c9GIAS DE ESTUDO",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "textos analisados neste encontro",
@@ -49179,7 +49071,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L257",
+      "source_location": "L238",
       "weight": 1.0
     },
     {
@@ -49190,7 +49082,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L263",
+      "source_location": "L244",
       "weight": 1.0
     },
     {
@@ -49201,7 +49093,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L280",
+      "source_location": "L261",
       "weight": 1.0
     },
     {
@@ -49212,7 +49104,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L286",
+      "source_location": "L267",
       "weight": 1.0
     },
     {
@@ -49223,29 +49115,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L295",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_graphify",
-      "target": "claude_invent\u00e1rio_atual_da_raiz",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "L93",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_graphify",
-      "target": "claude_invent\u00e1rio_atual_de_sistema",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "L99",
+      "source_location": "L276",
       "weight": 1.0
     },
     {
@@ -49256,7 +49126,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L255",
+      "source_location": "L236",
       "weight": 1.0
     },
     {
@@ -49267,7 +49137,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L319",
+      "source_location": "L300",
       "weight": 1.0
     },
     {
@@ -49278,45 +49148,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L326",
+      "source_location": "L307",
       "weight": 1.0
     },
     {
       "source": "claude_pasta_professor",
       "target": "claude_estrutura_obrigat\u00f3ria_de_cada_uc",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "L137",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_professor_senai_regras_do_projeto",
-      "target": "claude_nunca_perguntar_sempre_executar",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "L108",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_professor_senai_regras_do_projeto",
-      "target": "claude_slides",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "L114",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_professor_senai_regras_do_projeto",
-      "target": "claude_estrutura_de_unidades_curriculares",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -49333,7 +49170,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L129",
+      "source_location": "L110",
       "weight": 1.0
     },
     {
@@ -49344,7 +49181,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L147",
+      "source_location": "L128",
       "weight": 1.0
     },
     {
@@ -49355,7 +49192,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L155",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -49366,7 +49203,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L253",
+      "source_location": "L234",
       "weight": 1.0
     },
     {
@@ -49403,6 +49240,39 @@
       "weight": 1.0
     },
     {
+      "source": "claude_professor_senai_regras_do_projeto",
+      "target": "claude_nunca_perguntar_sempre_executar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_professor_senai_regras_do_projeto",
+      "target": "claude_slides",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_professor_senai_regras_do_projeto",
+      "target": "claude_estrutura_de_unidades_curriculares",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
       "source": "claude_sistema_de_pend\u00eancias_regra_cr\u00edtica",
       "target": "claude_defini\u00e7\u00e3o_de_pend\u00eancias",
       "relation": "contains",
@@ -49410,7 +49280,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L159",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -49421,7 +49291,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L178",
+      "source_location": "L159",
       "weight": 1.0
     },
     {
@@ -49432,7 +49302,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L184",
+      "source_location": "L165",
       "weight": 1.0
     },
     {
@@ -49443,7 +49313,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L191",
+      "source_location": "L172",
       "weight": 1.0
     },
     {
@@ -49454,7 +49324,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L204",
+      "source_location": "L185",
       "weight": 1.0
     },
     {
@@ -49465,7 +49335,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L227",
+      "source_location": "L208",
       "weight": 1.0
     },
     {
@@ -49476,7 +49346,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L241",
+      "source_location": "L222",
       "weight": 1.0
     },
     {
@@ -52084,72 +51954,6 @@
       "confidence_score": 1.0,
       "source_file": "docs/excluir-materias-curso.md",
       "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_excluir_node_modules_pendencias_do_graphify",
-      "target": "docs_excluir_node_modules_pendencias_do_graphify_excluir_node_modules_de_pend\u00eancias_do_graphify",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_excluir_node_modules_pendencias_do_graphify_excluir_node_modules_de_pend\u00eancias_do_graphify",
-      "target": "docs_excluir_node_modules_pendencias_do_graphify_status_geral",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_excluir_node_modules_pendencias_do_graphify_status_geral",
-      "target": "docs_excluir_node_modules_pendencias_do_graphify_passo_1_criar_regra_de_exclus\u00e3o",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_excluir_node_modules_pendencias_do_graphify_status_geral",
-      "target": "docs_excluir_node_modules_pendencias_do_graphify_passo_2_atualizar_o_grafo",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L36",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_excluir_node_modules_pendencias_do_graphify_status_geral",
-      "target": "docs_excluir_node_modules_pendencias_do_graphify_passo_3_atualizar_o_contexto",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L48",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_excluir_node_modules_pendencias_do_graphify_status_geral",
-      "target": "docs_excluir_node_modules_pendencias_do_graphify_passo_4_commit_e_push",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/excluir-node-modules-pendencias-do-graphify.md",
-      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -87905,5 +87709,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "aad8b2cf1cbb3c68708baeeacacc3ed07b6143d8"
+  "built_at_commit": "25f04684fd6896b0d79f83c80016248a2e30e3fe"
 }
