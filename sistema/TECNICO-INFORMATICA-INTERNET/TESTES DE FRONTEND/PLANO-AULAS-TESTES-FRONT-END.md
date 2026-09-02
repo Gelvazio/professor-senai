@@ -521,6 +521,25 @@ Frontend é camada crítica: erros afetam experiência do usuário diretamente. 
 
 ---
 
+## 5.3 Cálculo Final de Notas
+
+```
+Nota Final = (Avaliação Contínua × 0,60) + (Avaliação Prática × 0,25) + (Avaliação Teórica × 0,15)
+
+Aprovação: Nota Final ≥ 6,0
+Recuperação: Oportunidade de refazer Avaliação Prática e/ou Teórica
+```
+
+### 5.4 Relatório de Competências
+
+Independente da nota numérica, aluno receberá relatório descritivo por competência:
+
+- ✅ **Desenvolvida** — Aluno demonstra domínio claro
+- 🟡 **Em Desenvolvimento** — Aluno está no caminho certo, com apoio
+- ⚠️ **Não Desenvolvida** — Aluno necessita reforço ou reavaliação
+
+---
+
 ## 6. Metodologia e Estratégias Transversais
 
 ### 6.1 Abordagem Pedagógica
@@ -534,11 +553,18 @@ Frontend é camada crítica: erros afetam experiência do usuário diretamente. 
 - **Alunos em Dificuldade:** Suporte individualizado, exercícios simplificados
 - **Flexibilidade:** Ritmo adaptado conforme progresso
 
-### 6.3 Avaliação Contínua
-- Observação em laboratório
-- Exercícios práticos por bloco
-- Discussões e reflexões
-- Feedback entre pares
+### 6.3 Avaliação Contínua (60% da nota final)
+
+Conforme EMENTA-TESTES-FRONT-END.md, seção 7.1:
+
+| Instrumento | Peso | Detalhes |
+|---|---:|---|
+| Exercícios Práticos | 30% | 1-2 exercícios por bloco, avaliados por funcionalidade e qualidade |
+| Participação em Laboratório | 10% | Observação de engajamento, perguntas, colaboração |
+| Code Reviews entre Pares | 10% | Revisão crítica de código de colegas |
+| Quiz/Discussões | 10% | Verificação conceitual, discussões de boas práticas |
+
+**Subtotal Contínuo: 60%**
 
 ---
 
