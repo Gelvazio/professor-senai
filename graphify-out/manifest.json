@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788355353.0018628,
-    "ast_hash": "141fde53c53d5e15c71a119e932fb158",
+    "mtime": 1788355440.0331793,
+    "ast_hash": "8242cc7e48d916b3f0484e3dc86867f9",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -2622,6 +2622,11 @@
   "sistema/Tecnico em Desenvolvimento de Sistemas/LOGICA-PROGRAMACAO/LISTA DE 30 EXERC\u00cdCIOS INTEGRADOS \u2013 PORTUGOL STUDIO.pdf": {
     "mtime": 1786015030.3463182,
     "ast_hash": "c69e6e4be0e51dd201182e67601383e2",
+    "semantic_hash": ""
+  },
+  "sistema/TECNICO-INFORMATICA-INTERNET/TESTES DE FRONTEND/index.html": {
+    "mtime": 1788355478.6610398,
+    "ast_hash": "40ed74ee0f9950316022dc3d0dbd141b",
     "semantic_hash": ""
   }
 }
