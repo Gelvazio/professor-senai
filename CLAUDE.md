@@ -5,7 +5,7 @@
 
 ⚠️ **ATUALIZAR ESTE CONTEXTO A CADA INTERAÇÃO COM O CHAT** — Este documento deve refletir sempre o estado mais recente do projeto.
 
-**Data Última Atualização:** 01-09-2026 (Atualizado: Corrigidos caminhos de apostila/ementa para Vercel)  
+**Data Última Atualização:** 02-09-2026 (Graphify atualizado e estrutura atual inventariada)  
 **Objetivo Principal:** Implementar sistema de validação e sincronização de UCs (Unidades Curriculares) com dashboard interativo
 
 ### ✅ Implementações Realizadas
@@ -81,8 +81,25 @@ Isso vale para qualquer mudança, por menor que seja. Nunca questionar, nunca pe
 Após commitar, executar:
 
 ```
-C:\Python314\python.exe -m graphify update .
+graphify update .
 ```
+
+O Graphify está instalado como executável do `uv` em `C:\Users\gelva\.local\bin\graphify.exe`. O módulo não está disponível no interpretador `C:\Python314\python.exe`.
+
+**Última atualização do grafo (02-09-2026):** 197 arquivos analisados, aproximadamente 511.066 palavras, 3.750 nós, 3.865 relações e 367 comunidades.
+
+### Inventário atual da raiz
+
+- Pastas principais: `.agents`, `.claude`, `.superpowers`, `.vscode`, `docs`, `graphify-out`, `scripts` e `sistema`.
+- Arquivos operacionais principais: `AGENTS.md`, `CLAUDE.md`, `dashboard.html`, `PLATAFORMA_DE_IA.md`, `GEMINI.bat` e `ALIBABA_IA_OPEN_CLAUDE.bat`.
+- A pasta `sistema/` concentra o conteúdo pedagógico e as aplicações do projeto.
+
+### Inventário atual de `sistema/`
+
+- Conteúdo pedagógico: `BANCO_DE_DADOS`, `FICHA-PRODUTO-MAIS-TECH`, `GESTAO_E_CONTROLE_MATERIAIS`, `INTRODUCAO_TIC`, `LOGICA-PROGRAMACAO` e `TECNICO-INFORMATICA-INTERNET`.
+- Aplicações e apoio: `GERADOR-AULAS`, `PENDENCIAS-PROFESSOR`, `PROFESSOR`, `scripts` e `graphify-out`.
+- Páginas centrais: `dashboard.html`, `index.html`, `uc.html`, `validacao.html`, `questionarios.html`, `backfill-ids.html` e `visualizador-central-aulas-pendentes.html`.
+- Banco e integração: `database.sql`, `pendencias.js` e três scripts SQL em `sistema/scripts/`.
 
 ⚠️ **NUNCA perguntar se deve executar o graphify ou dar push — executar diretamente, sem confirmar, sem perguntar.**
 
