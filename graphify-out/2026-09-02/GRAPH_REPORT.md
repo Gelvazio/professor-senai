@@ -1,16 +1,16 @@
 # Graph Report - professor-senai  (2026-09-02)
 
 ## Corpus Check
-- 197 files · ~511,066 words
+- 198 files · ~511,414 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3750 nodes · 3865 edges · 367 communities (359 shown, 8 thin omitted)
+- 3759 nodes · 3873 edges · 366 communities (358 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `25f04684`
+- Built from commit: `aad8b2cf`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -83,7 +83,7 @@
 - Ementa — Competências Socioemocionais e Empreendedorismo
 - ENCONTRO 7 — Comunicação digital e segurança
 - EMENTA — OFICINAS DE IMPRESSÃO 3D E ROBÓTICA
-- MÓDULO 5 — AUTONOMIA E ESTRATÉGIAS DE ESTUDO
+- Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h)
 - Arquivos
 - Gabarito técnico — Prova Simples UC1 TIC em equipes
 - Conhecimentos
@@ -313,8 +313,8 @@
 - ENCONTRO 13 — Algoritmos: Sequência, Decisão e Repetição
 - FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO/gerar_slides.js
 - 🎯 FASE 3: ENCERRAMENTO E INTEGRAÇÃO
-- Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h)
-- Encontro 8 — Porcentagem (2h)
+- Status Geral
+- Encontro 15 — Sistema Métrico: Comprimento e Massa (2h)
 - Modal de edição de avaliação
 - Notificação de pendências nos cursos
 - 🛠️ TECNOLOGIAS E FERRAMENTAS
@@ -345,7 +345,6 @@
 - criar_lista_presenca_ceplas_barragem_2026.mjs
 - gerar_texto_reforco_25_08_2026.py
 - PARTE 1 — IMPRESSÃO 3D
-- Encontro 18 — Área de Figuras Planas (2h)
 - 🚀 CASOS DE USO E EXEMPLOS
 - 📚 REFERÊNCIAS
 - 👤 Responsabilidades
@@ -408,7 +407,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (367 total, 8 thin omitted)
+## Communities (366 total, 8 thin omitted)
 
 ### Community 0 - "Currículo Técnico - Informática para Internet"
 Cohesion: 0.02
@@ -451,8 +450,8 @@ Cohesion: 0.06
 Nodes (32): For --cluster-only, For git commit hook, For /graphify add, For /graphify explain, For /graphify path, For /graphify query, For native AGENTS.md integration, For --update (incremental re-extraction) (+24 more)
 
 ### Community 10 - "professor-senai — Regras do Projeto"
-Cohesion: 0.06
-Nodes (34): 1. **Criação Automática de Pendências**, 2. **Descrições Automáticas**, 3. **Sincronização Bidirecional**, 4. **Interface de Pendências**, 5. **Campos da Tabela `pendencias`**, 📊 API Endpoints, ✅ Checklist de implementação, Commit e Push obrigatórios (+26 more)
+Cohesion: 0.05
+Nodes (36): 1. **Criação Automática de Pendências**, 2. **Descrições Automáticas**, 3. **Sincronização Bidirecional**, 4. **Interface de Pendências**, 5. **Campos da Tabela `pendencias`**, 📊 API Endpoints, ✅ Checklist de implementação, Commit e Push obrigatórios (+28 more)
 
 ### Community 11 - "criar_apostila_ferramentas_digitais.py"
 Cohesion: 0.24
@@ -571,8 +570,8 @@ Cohesion: 0.11
 Nodes (18): 1. Operações Matemáticas Aplicadas aos Processos Organizacionais, 2. Excel Aplicado à Gestão Organizacional, Ambientes Pedagógicos, Bibliografia Básica, Capacidades Básicas, Capacidades Socioemocionais, Conhecimentos, Conteúdos Formativos (+10 more)
 
 ### Community 40 - "MÓDULO 2 — FRAÇÕES, DECIMAIS E PORCENTAGEM"
-Cohesion: 0.11
-Nodes (18): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples (+10 more)
+Cohesion: 0.09
+Nodes (23): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+15 more)
 
 ### Community 41 - "Pesquisa — Planilha Excel de Controle de Abate de Suínos"
 Cohesion: 0.11
@@ -584,7 +583,7 @@ Nodes (16): 1. IDENTIFICAÇÃO DA UNIDADE CURRICULAR, 2. OBJETIVO GERAL, 3.1 Cap
 
 ### Community 43 - "MÓDULO 4 — MEDIDAS E GRANDEZAS"
 Cohesion: 0.12
-Nodes (17): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 19.1 Resolução Integrada, Atividade 4.1 (+9 more)
+Nodes (17): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Atividade 4.2 (+9 more)
 
 ### Community 44 - "MÓDULO 6 — INTRODUÇÃO À ÁLGEBRA"
 Cohesion: 0.12
@@ -682,9 +681,9 @@ Nodes (13): 7.1 O e-mail profissional, 7.2 Netiqueta e escolha do canal, 7.3 Seg
 Cohesion: 0.15
 Nodes (12): 1. IDENTIFICAÇÃO DA UNIDADE CURRICULAR, 2. OBJETIVO, 3.1 Impressão 3D, 3.2 Robótica, 3. CAPACIDADES BÁSICAS E TÉCNICAS, 4.1 Modelagem e Impressão 3D, 4.2 Robótica, 4. CONHECIMENTOS (+4 more)
 
-### Community 68 - "MÓDULO 5 — AUTONOMIA E ESTRATÉGIAS DE ESTUDO"
-Cohesion: 0.15
-Nodes (13): Atividade final, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h), Explicação: Como fazer uma síntese?, MÓDULO 5 — AUTONOMIA E ESTRATÉGIAS DE ESTUDO (+5 more)
+### Community 68 - "Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h)"
+Cohesion: 0.11
+Nodes (18): Atividade final, Atividades, Atividades, Atividades, Encontro 23-24 — Gêneros Textuais no Cotidiano (4h), Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Encontro 27-28 — Produção de Sínteses e Mapas Mentais (4h), Encontro 29-30 — Avaliação Final e Socialização (3h) (+10 more)
 
 ### Community 69 - "Arquivos"
 Cohesion: 0.15
@@ -1602,13 +1601,13 @@ Nodes (4): addContentSlide(), addFooter(), pptxgen, pres
 Cohesion: 0.40
 Nodes (5): ✅ Checklist Final para o Aluno, 🎯 FASE 3: ENCERRAMENTO E INTEGRAÇÃO, 🎯 Mensagem Final, 📚 Referências e Materiais de Apoio, 📊 RESUMO DAS 3 FASES
 
-### Community 298 - "Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h)"
-Cohesion: 0.40
-Nodes (5): Atividades, Encontro 25-26 — Leitura Crítica e Análise de Discurso (4h), Explicação: Fato x Opinião, Objetivos, Texto base
+### Community 298 - "Status Geral"
+Cohesion: 0.29
+Nodes (6): Excluir Node Modules de Pendências do Graphify, Passo 1: Criar regra de exclusão, Passo 2: Atualizar o grafo, Passo 3: Atualizar o contexto, Passo 4: Commit e push, Status Geral
 
-### Community 299 - "Encontro 8 — Porcentagem (2h)"
-Cohesion: 0.40
-Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
+### Community 299 - "Encontro 15 — Sistema Métrico: Comprimento e Massa (2h)"
+Cohesion: 0.50
+Nodes (4): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, Atividade 4.1, Encontro 15 — Sistema Métrico: Comprimento e Massa (2h)
 
 ### Community 300 - "Modal de edição de avaliação"
 Cohesion: 0.40
@@ -1726,10 +1725,6 @@ Nodes (3): participantes, sheet, workbook
 Cohesion: 0.50
 Nodes (3): PARTE 1 — IMPRESSÃO 3D, RIO DO SUL MAIS TECH, SENAI | PREFEITURA MUNICIPAL DE RIO DO SUL
 
-### Community 330 - "Encontro 18 — Área de Figuras Planas (2h)"
-Cohesion: 0.50
-Nodes (4): 18.1 Conceito de Área, 18.2 Fórmulas, Atividade 4.4, Encontro 18 — Área de Figuras Planas (2h)
-
 ### Community 331 - "🚀 CASOS DE USO E EXEMPLOS"
 Cohesion: 0.50
 Nodes (4): Caso de Uso 1: Geração de UC Completa, Caso de Uso 2: Geração Iterativa com Revisão, Caso de Uso 3: Customização por Turma, 🚀 CASOS DE USO E EXEMPLOS
@@ -1839,21 +1834,21 @@ Cohesion: 0.50
 Nodes (3): 1. Atualizar o Git Ignore, Ignorar arquivo ALIBABA_IA.txt, Verificação permitida
 
 ## Knowledge Gaps
-- **2600 isolated node(s):** `participantes`, `workbook`, `sheet`, `PptxGenJS`, `pptx` (+2595 more)
+- **2605 isolated node(s):** `participantes`, `workbook`, `sheet`, `PptxGenJS`, `pptx` (+2600 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `PARTE 1 — IMPRESSÃO 3D` connect `PARTE 1 — IMPRESSÃO 3D` to `Conteúdo`, `ENCONTRO 2 — Como Funciona uma Impressora 3D: FDM, SLA e SLS`, `Conteúdo`, `ENCONTRO 6 — Projeto 1 no Tinkercad: Modelando um Objeto Funcional`, `ENCONTRO 3 — Materiais para Impressão 3D: Filamentos e Resinas`, `ENCONTRO 9 — Impressão do Projeto 1 e Análise dos Resultados`, `Conteúdo`, `Conteúdo`, `Conteúdo`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `PARTE 2 — ROBÓTICA` connect `PARTE 2 — ROBÓTICA` to `Conteúdo`, `Conteúdo`, `ENCONTRO 16 — Integração: Imprimindo Peças para o Robô`, `PARTE 1 — IMPRESSÃO 3D`, `ENCONTRO 10 — Era dos Robôs: História e Evolução da Robótica`, `ENCONTRO 17 — Projeto Final: Montagem do Protótipo Robótico`, `ENCONTRO 12 — Sensores: Como os Robôs Enxergam o Mundo`, `ENCONTRO 18 — Apresentação dos Projetos e Avaliação Final`, `Conteúdo`, `Conteúdo`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `FUNDAMENTOS DA TECNOLOGIA E PROGRAMAÇÃO` connect `FUNDAMENTOS DA TECNOLOGIA E PROGRAMAÇÃO` to `ENCONTRO 7 — Produtividade: Editor de Texto`, `ENCONTRO 8 — Apresentações Digitais (Google Slides / PowerPoint)`, `ENCONTRO 9 — Planilhas Simples (Google Sheets / Excel Básico)`, `ENCONTRO 10 — Internet Segura: Vírus, Senhas, Privacidade e Navegadores`, `ENCONTRO 11 — Pensamento Computacional: Decomposição e Padrões`, `ENCONTRO 12 — Pensamento Computacional: Abstração e Algoritmos Desplugados`, `ENCONTRO 13 — Algoritmos: Sequência, Decisão e Repetição`, `ENCONTRO 1 — O Que É Tecnologia? Dispositivos Digitais no Cotidiano`, `ENCONTRO 14 — Fluxogramas: Desenhando Soluções`, `ENCONTRO 15 — Scratch: Primeiros Passos na Programação em Blocos`, `ENCONTRO 16 — Scratch: Condições, Repetições e Variáveis`, `ENCONTRO 17 — Scratch: Mini Projeto Final`, `Referências e Para Continuar Aprendendo`, `ENCONTRO 2 — Evolução dos Computadores e História da Tecnologia`, `ENCONTRO 3 — Cidadania Digital: Fake News, Cyberbullying e Pegada Digital`, `ENCONTRO 4 — Hardware e Software: O Que Tem Dentro de um Computador?`, `ENCONTRO 5 — Sistemas Operacionais: Windows, Linux e ChromeOS`, `ENCONTRO 6 — Organização do Computador: Arquivos, Pastas e Atalhos`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `PARTE 1 — IMPRESSÃO 3D` connect `PARTE 1 — IMPRESSÃO 3D` to `Conteúdo`, `ENCONTRO 2 — Como Funciona uma Impressora 3D: FDM, SLA e SLS`, `Conteúdo`, `ENCONTRO 6 — Projeto 1 no Tinkercad: Modelando um Objeto Funcional`, `ENCONTRO 3 — Materiais para Impressão 3D: Filamentos e Resinas`, `ENCONTRO 9 — Impressão do Projeto 1 e Análise dos Resultados`, `Conteúdo`, `Conteúdo`, `Conteúdo`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `participantes`, `workbook`, `sheet` to the rest of the system?**
-  _2600 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2605 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Currículo Técnico - Informática para Internet` be split into smaller, more focused modules?**
   _Cohesion score 0.022988505747126436 - nodes in this community are weakly interconnected._
 - **Should `Unidade Curricular 1: Introdução à Tecnologia da Informação e Comunicação` be split into smaller, more focused modules?**

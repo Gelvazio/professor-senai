@@ -257,9 +257,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788281293.42856,
-    "seen": 1788345133.194431,
-    "ast_hash": "30b4a208dc3ca3ac1a173c06f90b28bb",
+    "mtime": 1788345286.3531322,
+    "seen": 1788345303.3358788,
+    "ast_hash": "9eeff1ff9d12335ff96824f79bbcf7b9",
     "semantic_hash": ""
   },
   "sistema/index.html": {
@@ -1535,9 +1535,9 @@
     "semantic_hash": ""
   },
   "docs/atualizar-graphify-e-resumir-estrutura.md": {
-    "mtime": 1788345039.1497328,
-    "seen": 1788345133.194431,
-    "ast_hash": "31f0709ef1b5d219ba2f92677fc3f677",
+    "mtime": 1788345198.134876,
+    "seen": 1788345303.3358788,
+    "ast_hash": "040e24bb5036d5cf9cb163515b9b4c71",
     "semantic_hash": ""
   },
   "sistema/GESTAO_E_CONTROLE_MATERIAIS/ANALISE_DADOS_APLICADA_GESTAO/EMENTA-ANALISE-DADOS-APLICADA-GESTAO.md": {
@@ -1916,6 +1916,12 @@
     "mtime": 1787856586.5389233,
     "seen": 1788345133.194431,
     "ast_hash": "dfa5b6afac0d0144c9f64ac36659700d",
+    "semantic_hash": ""
+  },
+  "docs/excluir-node-modules-pendencias-do-graphify.md": {
+    "mtime": 1788345283.7198555,
+    "seen": 1788345303.3358788,
+    "ast_hash": "5f9a6b1344de84e0ca19f7214fdfb8c4",
     "semantic_hash": ""
   }
 }
