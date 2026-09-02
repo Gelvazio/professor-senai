@@ -20,13 +20,13 @@
 8. **REGRA 09**: Campo visivel_alunos em tabela materia — Controla visibilidade (SIM=mostra para alunos | NAO=oculta) — Professor sempre vê tudo
 9. **CORREÇÃO URLS VERCEL**: Funções `abrirApostilaMateria()` e `abrirEmentaMateria()` agora adicionam prefixo `sistema/` aos caminhos para URLs em produção
 
-### 📋 Estrutura de UCs Existentes
+### 📋 Estrutura de Cursos e UCs Existentes
 
-As seguintes UCs existem no projeto:
+As seguintes UCs ou contêineres pedagógicos existem no projeto:
 
 - `BANCO_DE_DADOS`
 - `FICHA-PRODUTO-MAIS-TECH`
-- `GESTAO_E_CONTROLE_MATERIAIS`
+- `GESTAO_E_CONTROLE_MATERIAIS` — **curso/contêiner; não é matéria**
 - `INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO`
 - `INTRODUCAO_TIC`
 - `LOGICA-PROGRAMACAO`
@@ -117,7 +117,7 @@ Todo arquivo de slide HTML deve ter **no mínimo 15 slides**.
 
 ## Estrutura de Unidades Curriculares
 
-Cada subpasta dentro de `sistema/` representa uma **Unidade Curricular (UC)**. As pastas existentes são:
+Em regra, cada subpasta pedagógica dentro de `sistema/` representa uma **Unidade Curricular (UC)**, salvo as pastas explicitamente classificadas como cursos ou áreas de apoio. As pastas de UC existentes são:
 
 - `BANCO_DE_DADOS`
 - `FUNDAMENTOS_DA_TECNOLOGIA_E_PROGRAMACAO`
@@ -125,6 +125,14 @@ Cada subpasta dentro de `sistema/` representa uma **Unidade Curricular (UC)**. A
 - `INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO`
 - `LOGICA-PROGRAMACAO`
 - `TECNICO DE INFORMATICA PARA INTERNET`
+
+### Curso Gestão e Controle de Materiais
+
+**Gestão e Controle de Materiais:** a pasta `sistema/GESTAO_E_CONTROLE_MATERIAIS/` é um **curso/contêiner de matérias**. Ela **não deve ser tratada como matéria ou UC**.
+
+As subpastas pedagógicas dentro desse curso representam suas matérias. Atualmente, `ANALISE_DADOS_APLICADA_GESTAO/` é uma matéria identificada diretamente no curso, e agrupamentos de turma, como `TURMA_SALETE_2026_02/`, podem conter matérias adicionais.
+
+Ao listar, validar ou acessar matérias desse curso, o sistema deve navegar dentro de `GESTAO_E_CONTROLE_MATERIAIS/` e aplicar as regras de UC às pastas de matérias, não à pasta do curso.
 
 ## Pasta PROFESSOR
 
