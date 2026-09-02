@@ -144,6 +144,12 @@ Se uma dessas pastas não existir ao tentar acessar a UC no sistema (`uc.html`),
 
 Ao criar ou mencionar arquivos de uma UC, use sempre o caminho `sistema/<NOME_DA_PASTA_UC>/AULAS/` ou `sistema/<NOME_DA_PASTA_UC>/MATERIAIS/`.
 
+### Organização das provas teóricas
+
+**Prova Teórica:** sempre em `AVALIACOES_CRIADAS/PROVA_TEORICA/`.
+
+Todos os dados e artefatos relacionados a provas teóricas devem usar esse caminho dentro da respectiva UC, incluindo provas, recuperações, gabaritos, formulários, notas, instruções, corretores e arquivos auxiliares.
+
 ## Organização das provas práticas de Introdução à TIC
 
 Todos os dados e artefatos de **prova prática** da UC `INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO` devem ficar em:
