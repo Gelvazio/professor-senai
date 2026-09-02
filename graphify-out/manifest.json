@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   "sistema/.claude/settings.local.json": {
-    "mtime": 1788279091.3880215,
-    "ast_hash": "e52fc855fdaac76e965f7edef13878b6",
+    "mtime": 1788287126.8409529,
+    "ast_hash": "26090e76d89e37464ee3575350a45852",
     "semantic_hash": ""
   },
   "graphify-out/converted/ATIVIDADE-EXCEL-13-08-2026_3025f8ae.md": {
@@ -2575,8 +2575,28 @@
     "semantic_hash": ""
   },
   "sistema/FICHA-PRODUTO-MAIS-TECH/EMNAIL-GOOGLE-AULAS-SENAI.txt": {
-    "mtime": 1788282788.3315601,
-    "ast_hash": "1c888374848771374ac092cb966ef52c",
+    "mtime": 1788289761.1699975,
+    "ast_hash": "bd95c8c04489ef08166ae4cb4c658bd5",
+    "semantic_hash": ""
+  },
+  "sistema/FICHA-PRODUTO-MAIS-TECH/INTRODUCAO_COMUNICACAO_ORAL_ESCRITA/CEPLAS-VESPERTINO-2026-02/LISTA-PRESENCA-CEPLAS-BARRAGEM-VESPERTINO-2026-2.md": {
+    "mtime": 1788287534.215054,
+    "ast_hash": "5f0a5baa4957e4507d73536fa43a023d",
+    "semantic_hash": ""
+  },
+  "sistema/GERADOR-AULAS/.claude/settings.local.json": {
+    "mtime": 1788344173.5503075,
+    "ast_hash": "6049cdd3e45d49470f27db59b49fa7d0",
+    "semantic_hash": ""
+  },
+  "sistema/GERADOR-AULAS/CLAUDE.md": {
+    "mtime": 1788344256.1169019,
+    "ast_hash": "59167e2ca55cd11faf152cb8d0040c61",
+    "semantic_hash": ""
+  },
+  "sistema/GERADOR-AULAS/GERADOR-AULAS.txt": {
+    "mtime": 1788343503.382401,
+    "ast_hash": "d7ab7193f51cc344d9a487503c9ec43b",
     "semantic_hash": ""
   }
 }

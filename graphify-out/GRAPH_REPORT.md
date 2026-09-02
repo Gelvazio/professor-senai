@@ -1,16 +1,16 @@
-# Graph Report - professor-senai  (2026-09-01)
+# Graph Report - professor-senai  (2026-09-02)
 
 ## Corpus Check
-- 321 files · ~873,475 words
+- 324 files · ~876,325 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4647 nodes · 4583 edges · 525 communities (481 shown, 44 thin omitted)
+- 4716 nodes · 4650 edges · 532 communities (488 shown, 44 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 18 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1fbd50c1`
+- Built from commit: `ace61146`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -93,12 +93,17 @@
 - [[_COMMUNITY_Community 75|Community 75]]
 - [[_COMMUNITY_Community 76|Community 76]]
 - [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
 - [[_COMMUNITY_Community 80|Community 80]]
 - [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
 - [[_COMMUNITY_Community 83|Community 83]]
 - [[_COMMUNITY_Community 84|Community 84]]
 - [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
 - [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
 - [[_COMMUNITY_Community 89|Community 89]]
 - [[_COMMUNITY_Community 90|Community 90]]
 - [[_COMMUNITY_Community 91|Community 91]]
@@ -110,6 +115,8 @@
 - [[_COMMUNITY_Community 97|Community 97]]
 - [[_COMMUNITY_Community 98|Community 98]]
 - [[_COMMUNITY_Community 99|Community 99]]
+- [[_COMMUNITY_Community 100|Community 100]]
+- [[_COMMUNITY_Community 101|Community 101]]
 - [[_COMMUNITY_Community 115|Community 115]]
 - [[_COMMUNITY_Community 116|Community 116]]
 - [[_COMMUNITY_Community 117|Community 117]]
@@ -515,7 +522,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (525 total, 44 thin omitted)
+## Communities (532 total, 44 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.12
@@ -586,8 +593,8 @@ Cohesion: 0.22
 Nodes (9): **1. O que é Netiqueta?**, **2. Identificando Golpes: Phishing**, **3. Protegendo suas Senhas**, **4. Privacidade no Ambiente Corporativo**, ✍️ ATIVIDADE 3 — Análise de E-mails Suspeitos, ✍️ ATIVIDADE 4 — Criador de Senhas Forte, 📚 Conteúdo Programático, 📌 ENCONTRO 15 — Netiqueta e Segurança Digital (+1 more)
 
 ### Community 17 - "Community 17"
-Cohesion: 0.50
-Nodes (4): 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, Atividade 3.3, Encontro 12 — Regra de Três Simples (2h)
+Cohesion: 0.33
+Nodes (5): Assinatura do Aplicador, Informações da Turma, Lista de Alunos, LISTA DE PRESENÇA, Ocorrências
 
 ### Community 18 - "Community 18"
 Cohesion: 0.15
@@ -598,8 +605,8 @@ Cohesion: 0.04
 Nodes (47): 1. Comunicação em Equipes de Trabalho, 1. O Impacto da Falta de Ética nos Ambientes de Trabalho, 2. Código de Ética Profissional, 2. Segurança da Informação, 3. Acidentes do Trabalho e Doenças Ocupacionais, 3. Internet (World Wide Web), 4.1. Editor de Textos, 4.2. Editor de Planilhas Eletrônicas (+39 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.33
-Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
+Cohesion: 0.18
+Nodes (10): 📌 CHECKLIST DE IMPLEMENTAÇÃO, Componentes Obrigatórios de uma Ementa, 🎯 CONTEXTO E VISÃO GERAL, 📋 ESTRUTURA DE ENTRADA: AS EMENTAS, 💾 ESTRUTURA DE SAÍDA: PASTAS E ARQUIVOS, Exemplo de Ementa Estruturada, GERADOR-AULAS — Sistema Inteligente de Geração de Aulas por Ementas, Padrão de Nomenclatura (+2 more)
 
 ### Community 21 - "Community 21"
 Cohesion: 0.12
@@ -610,12 +617,12 @@ Cohesion: 0.15
 Nodes (12): Arquivos, `ATIVIDADE-EXCEL-13-08-2026.docx`, `ATIVIDADE-EXCEL.md`, AULA 07 — 11/08/2026, `Controle_Abate_Pamplona.xlsx`, `GASTOS-CASA.ini`, `PESQUISA-PAMPLONA-EXCEL-PG.md`, `Planilha-Gastos-Casa-AULA-13-08-2026.xlsx` (+4 more)
 
 ### Community 23 - "Community 23"
-Cohesion: 0.11
-Nodes (19): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual (+11 more)
+Cohesion: 0.09
+Nodes (23): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+15 more)
 
 ### Community 24 - "Community 24"
-Cohesion: 0.12
-Nodes (17): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Atividade 5.1 (+9 more)
+Cohesion: 0.10
+Nodes (21): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+13 more)
 
 ### Community 25 - "Community 25"
 Cohesion: 0.17
@@ -630,8 +637,8 @@ Cohesion: 0.06
 Nodes (30): 10. Síntese semântica, 11. Proveniência, 1. Identificação da unidade curricular, 2. Objetivo geral, 3.1 Comunicação oral e escrita no trabalho, 3.2 Segurança da informação, 3.3 Interpretação de informações e textos técnicos, 3.4 Hardware e software (+22 more)
 
 ### Community 28 - "Community 28"
-Cohesion: 0.50
-Nodes (4): 17.1 Conceito de Perímetro, 17.2 Fórmulas, Atividade 4.3, Encontro 17 — Perímetro de Figuras Planas (2h)
+Cohesion: 0.25
+Nodes (8): 3.1 Slides Interativos (HTML5/PDF), 3.2 Apostila em Markdown/HTML, 3.3 Guia do Professor, 3.4 Atividades Formativas, Fase 1: Análise da Ementa, Fase 2: Planejamento de Aulas, Fase 3: Geração de Conteúdo, 🔄 FLUXO DE GERAÇÃO DE AULAS
 
 ### Community 30 - "Community 30"
 Cohesion: 0.18
@@ -650,20 +657,20 @@ Cohesion: 0.20
 Nodes (10): 5.1 Escrever no trabalho é diferente, 5.2 A estrutura de um texto profissional, 5.3 Revisar antes de enviar, Ao final deste encontro, você será capaz de:, Atividade 5.1 — Oficina de reescrita (45 min — duplas), Checklist de Revisão, ENCONTRO 5 — Redação técnica: princípios e estrutura, Os quatro princípios da redação técnica (+2 more)
 
 ### Community 34 - "Community 34"
-Cohesion: 0.40
-Nodes (5): 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, Atividade 5.3, Encontro 22 — Lógica Proposicional Introdutória (2h)
+Cohesion: 0.25
+Nodes (8): Regra 1: Fidelidade à Ementa, Regra 2: Contexto Profissional e Industrial, Regra 3: Integração de Competências Socioemocionais, Regra 4: Estrutura de Aula, Regra 5: Quantidade de Slides, Regra 6: Nenhuma Duplicata, Regra 7: Linguagem Clara, 📝 REGRAS DE GERAÇÃO
 
 ### Community 35 - "Community 35"
-Cohesion: 0.50
-Nodes (4): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, Atividade 4.1, Encontro 15 — Sistema Métrico: Comprimento e Massa (2h)
+Cohesion: 0.40
+Nodes (5): 8.1 O que é Porcentagem, 8.2 Calcular a Porcentagem de um Valor, 8.3 Aumento Percentual, Atividade 2.4 — Situações Reais, Encontro 8 — Porcentagem (2h)
 
 ### Community 36 - "Community 36"
-Cohesion: 0.50
-Nodes (4): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, Atividade 5.1, Encontro 20 — Padrões e Sequências (2h)
+Cohesion: 0.33
+Nodes (6): 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento, 4.3 Problemas Contextualizados, Atividade 1.4 — Individual (Estimativas), Atividade 1.5 — Em Grupo (Desafio), Encontro 4 — Cálculo Mental, Estimativas e Problemas Cotidianos (2h)
 
 ### Community 37 - "Community 37"
-Cohesion: 0.50
-Nodes (4): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, Atividade 4.1, Encontro 15 — Sistema Métrico: Comprimento e Massa (2h)
+Cohesion: 0.33
+Nodes (6): 1. `materia` table, 2. `avaliacao` table, 3. Nova tabela: `aula_gerada` (proposta), Fluxo de Sincronização, 🔗 INTEGRAÇÃO COM SUPABASE, Tabelas Envolvidas
 
 ### Community 38 - "Community 38"
 Cohesion: 0.22
@@ -682,8 +689,8 @@ Cohesion: 0.22
 Nodes (9): 6.1 Comunicado, 6.2 Relato de ocorrência, 6.3 Ata resumida, Ao final deste encontro, você será capaz de:, Atividade 6.1 — Produção de texto profissional (60 min — individual), ENCONTRO 6 — Gêneros profissionais: comunicado, relato e ata, Por que isso importa, Resumo dos três gêneros (+1 more)
 
 ### Community 42 - "Community 42"
-Cohesion: 0.50
-Nodes (4): 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, Atividade 5.2, Encontro 21 — Estratégias de Resolução de Problemas (2h)
+Cohesion: 0.40
+Nodes (5): Backend, Frontend, IA/LLM, 🛠️ TECNOLOGIAS E FERRAMENTAS, Validação
 
 ### Community 43 - "Community 43"
 Cohesion: 0.25
@@ -738,16 +745,16 @@ Cohesion: 0.14
 Nodes (13): ✍️ ATIVIDADE 1 — Mapa Mental de Ferramentas, ✍️ ATIVIDADE 2 — Simulação de E-mail Profissional, ✍️ ATIVIDADE 3 — Análise de E-mails Suspeitos, ✍️ ATIVIDADE 4 — Criador de Senhas Forte, ✍️ ATIVIDADE 5 — Roteiro de Apresentação, ✍️ ATIVIDADE 6 — Avaliação de Colegas, ✍️ ATIVIDADE 7 — Plano da Avaliação Final, ✍️ ATIVIDADE 8 — Autorreflexão Final (+5 more)
 
 ### Community 56 - "Community 56"
-Cohesion: 0.12
-Nodes (17): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Atividade 4.2 (+9 more)
+Cohesion: 0.10
+Nodes (21): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas (+13 more)
 
 ### Community 57 - "Community 57"
 Cohesion: 0.12
 Nodes (17): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Atividade 6.1 (+9 more)
 
 ### Community 58 - "Community 58"
-Cohesion: 0.50
-Nodes (4): 7.1 Fração → Decimal, 7.2 Decimal → Fração, Atividade 2.3, Encontro 7 — Decimais e Conversões (2h)
+Cohesion: 0.40
+Nodes (5): Dashboard professor-senai, Estrutura de Pastas Existente, 🤝 INTEGRAÇÃO COM ESTRUTURA EXISTENTE, Sistema de Pendências, Supabase Sync
 
 ### Community 59 - "Community 59"
 Cohesion: 0.40
@@ -825,6 +832,14 @@ Nodes (5): Concerns, File created, Status: DONE, Task 5 Report, What was impleme
 Cohesion: 0.14
 Nodes (13): ✍️ ATIVIDADE 1 — Mapa Mental de Ferramentas, ✍️ ATIVIDADE 2 — Simulação de E-mail Profissional, ✍️ ATIVIDADE 3 — Análise de E-mails Suspeitos, ✍️ ATIVIDADE 4 — Criador de Senhas Forte, ✍️ ATIVIDADE 5 — Roteiro de Apresentação, ✍️ ATIVIDADE 6 — Avaliação de Colegas, ✍️ ATIVIDADE 7 — Plano da Avaliação Final, ✍️ ATIVIDADE 8 — Autorreflexão Final (+5 more)
 
+### Community 78 - "Community 78"
+Cohesion: 0.40
+Nodes (5): 🔮 FUNCIONALIDADES FUTURAS (Roadmap), Phase 1: MVP (Planejado para Q4 2026), Phase 2: Expansão (Planejado para Q1 2027), Phase 3: Integração Completa (Planejado para Q2 2027), Phase 4: Avançado (Planejado para Q3 2027)
+
+### Community 79 - "Community 79"
+Cohesion: 0.50
+Nodes (4): 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), Atividade 3.2, Encontro 11 — Grandezas Proporcionais (2h)
+
 ### Community 80 - "Community 80"
 Cohesion: 0.40
 Nodes (4): Interfaces consumidas, O que foi entregue, Summary, Task 3 Report — gamificacao/index.html
@@ -832,6 +847,10 @@ Nodes (4): Interfaces consumidas, O que foi entregue, Summary, Task 3 Report —
 ### Community 81 - "Community 81"
 Cohesion: 0.40
 Nodes (4): Detalhes por arquivo, Observações, Resumo, Task 6 Report — Integração de Eventos de Gamificação nos Módulos ERP
+
+### Community 82 - "Community 82"
+Cohesion: 0.50
+Nodes (4): 18.1 Conceito de Área, 18.2 Fórmulas, Atividade 4.4, Encontro 18 — Área de Figuras Planas (2h)
 
 ### Community 83 - "Community 83"
 Cohesion: 0.50
@@ -844,6 +863,14 @@ Nodes (3): Concerns, O que foi feito, Task 4 Report — ranking.html
 ### Community 85 - "Community 85"
 Cohesion: 0.50
 Nodes (3): Arquivos modificados, O que foi feito, Observações
+
+### Community 86 - "Community 86"
+Cohesion: 0.50
+Nodes (4): Caso de Uso 1: Geração de UC Completa, Caso de Uso 2: Geração Iterativa com Revisão, Caso de Uso 3: Customização por Turma, 🚀 CASOS DE USO E EXEMPLOS
+
+### Community 88 - "Community 88"
+Cohesion: 0.50
+Nodes (4): Estrutura de Ementas, Projetos Similares (Inspiração), 📚 REFERÊNCIAS, Tecnologias
 
 ### Community 95 - "Community 95"
 Cohesion: 0.39
@@ -864,6 +891,14 @@ Nodes (11): 29.1 Leitura de Tabelas, 30.3 Média Aritmética, 31.1 Coleta e Orga
 ### Community 99 - "Community 99"
 Cohesion: 0.20
 Nodes (10): Atividade Prática, Conteúdo, Definição de MPE, Desafios das MPEs, ENCONTRO 10 — Micro e Pequenas Empresas (MPEs), MPEs: o coração da economia brasileira, O contexto local: Rio do Sul e região, Objetivos (+2 more)
+
+### Community 100 - "Community 100"
+Cohesion: 0.50
+Nodes (4): IA (Claude), Professor, 👤 Responsabilidades, Sistema (GERADOR-AULAS)
+
+### Community 101 - "Community 101"
+Cohesion: 0.67
+Nodes (3): Logs e Auditoria, Métricas de Qualidade, 📊 MÉTRICAS E MONITORAMENTO
 
 ### Community 115 - "Community 115"
 Cohesion: 0.20
@@ -1606,12 +1641,12 @@ Cohesion: 0.08
 Nodes (25): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+17 more)
 
 ### Community 350 - "Community 350"
-Cohesion: 0.11
-Nodes (19): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Apresentação do Módulo (+11 more)
+Cohesion: 0.09
+Nodes (23): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas (+15 more)
 
 ### Community 351 - "Community 351"
-Cohesion: 0.09
-Nodes (23): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 8.1 O que é Porcentagem (+15 more)
+Cohesion: 0.11
+Nodes (18): 5.1 Representação de Frações, 5.2 Frações Equivalentes, 6.1 Adição e Subtração, 6.2 Multiplicação, 6.3 Divisão, 7.1 Fração → Decimal, 7.2 Decimal → Fração, 9.1 Fórmula dos Juros Simples (+10 more)
 
 ### Community 352 - "Community 352"
 Cohesion: 0.14
@@ -1623,31 +1658,31 @@ Nodes (21): analisar_arquivo(), corrigir_google_docs(), corrigir_google_sheets()
 
 ### Community 354 - "Community 354"
 Cohesion: 0.11
-Nodes (18): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental, Apresentação do Módulo, Atividade 3.1 (+10 more)
+Nodes (18): 10.1 Razão, 10.2 Proporção, 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental, Apresentação do Módulo, Atividade 3.1 (+10 more)
 
 ### Community 355 - "Community 355"
 Cohesion: 0.12
-Nodes (17): 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 18.1 Conceito de Área, 18.2 Fórmulas, 19.1 Resolução Integrada, Atividade 4.2 (+9 more)
+Nodes (17): 15.1 Unidades de Comprimento, 15.2 Unidades de Massa, 16.1 Unidades de Capacidade, 16.2 Unidades de Tempo, 17.1 Conceito de Perímetro, 17.2 Fórmulas, 19.1 Resolução Integrada, Atividade 4.1 (+9 more)
 
 ### Community 356 - "Community 356"
-Cohesion: 0.12
-Nodes (16): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Atividade 5.1, Atividade 5.2 (+8 more)
+Cohesion: 0.10
+Nodes (21): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+13 more)
 
 ### Community 357 - "Community 357"
 Cohesion: 0.10
 Nodes (20): 10.1 Razão, 10.2 Proporção, 11.1 Grandezas Diretamente Proporcionais (GDP), 11.2 Grandezas Inversamente Proporcionais (GIP), 12.1 Regra de Três Simples — GDP, 12.2 Regra de Três Simples — GIP, 13.1 Quando Usar a Regra de Três Composta, 14.1 A Fórmula Fundamental (+12 more)
 
 ### Community 358 - "Community 358"
-Cohesion: 0.14
-Nodes (14): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Atividade 1.1 — Individual, Atividade 1.2 — Individual (+6 more)
+Cohesion: 0.10
+Nodes (20): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+12 more)
 
 ### Community 359 - "Community 359"
 Cohesion: 0.11
 Nodes (19): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Apresentação do Módulo (+11 more)
 
 ### Community 360 - "Community 360"
-Cohesion: 0.11
-Nodes (19): 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos, 24.1 Raciocínio Lógico na Tecnologia, Apresentação do Módulo (+11 more)
+Cohesion: 0.09
+Nodes (23): 20.1 Sequências Numéricas, 20.2 Sequências com Figuras, 21.1 As 4 Etapas de Polya, 21.2 Estratégias Úteis, 22.1 Proposições, 22.2 Conectivos Lógicos, 22.3 Tabelas-Verdade, 23.1 Problemas de Lógica Clássicos (+15 more)
 
 ### Community 361 - "Community 361"
 Cohesion: 0.12
@@ -1658,8 +1693,8 @@ Cohesion: 0.12
 Nodes (17): 25.1 O que é uma Variável, 25.2 Expressões Algébricas, 25.3 Calculando o Valor Numérico, 26.1 O que é uma Equação, 26.2 Resolvendo Equações, 27.1 Da Linguagem ao Símbolo, 28.1 Álgebra no Mundo da Tecnologia, Atividade 6.1 (+9 more)
 
 ### Community 363 - "Community 363"
-Cohesion: 0.09
-Nodes (22): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), 4.1 Estratégias de Cálculo Mental, 4.2 Estimativas e Arredondamento (+14 more)
+Cohesion: 0.12
+Nodes (16): 1.1 Números Inteiros e a Reta Numérica, 1.2 Adição de Inteiros, 1.3 Subtração de Inteiros, 2.1 Regras de Sinais, 2.2 Multiplicação por 10, 100, 1000, 3.1 A Ordem das Operações (PEMDAS), Apresentação do Módulo, Atividade 1.1 — Individual (+8 more)
 
 ### Community 364 - "Community 364"
 Cohesion: 0.11
@@ -2230,7 +2265,7 @@ Cohesion: 0.50
 Nodes (4): 8.1 Abordagem Pedagógica, 8.2 Diferenciação, 8.3 Avaliação Contínua, 8. Metodologia e Estratégias Transversais
 
 ## Knowledge Gaps
-- **3217 isolated node(s):** `participantes`, `workbook`, `sheet`, `PptxGenJS`, `pptx` (+3212 more)
+- **3267 isolated node(s):** `participantes`, `workbook`, `sheet`, `PptxGenJS`, `pptx` (+3262 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **44 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2241,10 +2276,10 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `PARTE 2 — ROBÓTICA` connect `Community 273` to `Community 256`, `Community 226`, `Community 137`, `Community 240`, `Community 241`, `Community 272`, `Community 116`, `Community 282`, `Community 251`, `Community 157`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `ENCONTRO 2 — GRANDEZAS ELÉTRICAS: TENSÃO E CORRENTE` connect `Community 142` to `Community 127`?**
+- **Why does `ENCONTRO 14 — Plano de Negócios — Parte 2` connect `Community 119` to `Community 117`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `Se o HTML usa o padrão de slides ocultos, cria um arquivo temporário com     to`, `participantes`, `workbook` to the rest of the system?**
-  _3248 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3298 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.125 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
