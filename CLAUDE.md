@@ -5,7 +5,7 @@
 
 ⚠️ **ATUALIZAR ESTE CONTEXTO A CADA INTERAÇÃO COM O CHAT** — Este documento deve refletir sempre o estado mais recente do projeto.
 
-**Data Última Atualização:** 02-09-2026 (Graphify atualizado e estrutura atual inventariada)  
+**Data Última Atualização:** 02-09-2026 (✅ Materiais completos para "Análise de Dados Aplicada à Gestão" — 32h plano, 16 aulas, ementa e apostila)  
 **Objetivo Principal:** Implementar sistema de validação e sincronização de UCs (Unidades Curriculares) com dashboard interativo
 
 ### ✅ Implementações Realizadas
@@ -19,6 +19,7 @@
 7. **REGRA 08**: Campo de status de matérias aceita 3 valores: 1 (Ativa), 0 (Inativa), 2 (Concluída)
 8. **REGRA 09**: Campo visivel_alunos em tabela materia — Controla visibilidade (SIM=mostra para alunos | NAO=oculta) — Professor sempre vê tudo
 9. **CORREÇÃO URLS VERCEL**: Funções `abrirApostilaMateria()` e `abrirEmentaMateria()` agora adicionam prefixo `sistema/` aos caminhos para URLs em produção
+10. **MATÉRIA COMPLETA**: "Análise de Dados Aplicada à Gestão" (TURMA_SALETE_2026_02) — ✅ Ementa + ✅ Apostila DOCX + ✅ Plano de 32h + ✅ 16 aulas detalhadas + ✅ Interface HTML interativa
 
 ### 📋 Estrutura de Cursos e UCs Existentes
 
@@ -37,6 +38,7 @@ As seguintes UCs ou contêineres pedagógicos existem no projeto:
 ⚠️ **Status da Estrutura Obrigatória:**
 - **INTRODUCAO_TIC**: ✅ Completa (AULAS + MATERIAIS)
 - **INTRODUCAO_A_TECNOLOGIA_DA_INFORMACAO_E_COMUNICACAO**: ⚠️ Incompleta (tem AULAS, falta MATERIAIS)
+- **ANALISE_DADOS_APLICADA_GESTAO** (em TURMA_SALETE_2026_02): ✅ Completa (AULAS + EMENTA + APOSTILA + PLANO + INTERFACE)
 - Demais UCs: ❌ Sem estrutura obrigatória (faltam AULAS e/ou MATERIAIS)
 
 ### 🔧 Ferramentas Criadas
@@ -45,11 +47,11 @@ As seguintes UCs ou contêineres pedagógicos existem no projeto:
 - **dashboard.html**: ✅ Dashboard interativo com resumo de UCs, pendências e progresso
 - **Dashboard Modal**: "Relatório SYNC" para visualizar status de sincronização
 
-### ⏳ Ferramentas Planejadas (Não Implementadas)
+### ⏳ Ferramentas Planejadas (Parcialmente Implementadas)
 
 - **syncdata/verify-uc.js**: Verificador de estrutura de UCs (pendente)
 - **scripts/gerar_slides.js**: Script de geração de slides (pendente)
-- **PLANO-AULAS.md**: Plano de aulas para "Testes de Frontend" (pendente)
+- **PLANO-AULAS.md**: ✅ Análise de Dados Aplicada à Gestão (32h implementado) | ⏳ Testes de Frontend (pendente)
 
 ### 📊 API Endpoints
 
@@ -87,7 +89,7 @@ graphify update .
 
 O Graphify está instalado como executável do `uv` em `C:\Users\gelva\.local\bin\graphify.exe`. O módulo não está disponível no interpretador `C:\Python314\python.exe`.
 
-**Última atualização do grafo (02-09-2026):** 198 arquivos analisados, aproximadamente 511.414 palavras, 3.759 nós, 3.873 relações e 366 comunidades.
+**Última atualização do grafo (02-09-2026):** 218 arquivos analisados, 4.051 nós, 4.145 edges, 388 comunidades (atualização final com todas as aulas).
 
 **Exclusões do corpus:** O arquivo `.graphifyignore` impede a leitura de `sistema/PENDENCIAS-PROFESSOR/node_modules/`, pois essa pasta contém dependências geradas e não código autoral do projeto.
 
